@@ -1,8 +1,8 @@
 # Audio prompts (ElevenLabs): the prompt log's section 5
 
-Written by `node Tools/pg3/audio-prompts.cjs` from `Tools/pg3/sfx-gen-log.json`, `music-gen-log.json` and `normalize-log.json` (2026-10-28 19:52 UTC). Route: the ElevenLabs HTTP API called from Node scripts the coding agent wrote (`Tools/pg3/sfx-gen.cjs`, `music-gen.cjs`); the clips land in `Assets/Resources/Audio/PG3/` and are played by `Assets/Scripts/Game/Pg3Audio.cs` (effects) and `MusicDirector.cs` (music). No prompt names an artist or a game (ElevenLabs' rule and GG's "obviously it needs to be origional").
+Written by `node Tools/pg3/audio-prompts.cjs` from `Tools/pg3/sfx-gen-log.json`, `music-gen-log.json` and `normalize-log.json` (2026-10-28 20:52 UTC). Route: the ElevenLabs HTTP API called from Node scripts the coding agent wrote (`Tools/pg3/sfx-gen.cjs`, `music-gen.cjs`); the clips land in `Assets/Resources/Audio/PG3/` and are played by `Assets/Scripts/Game/Pg3Audio.cs` (effects) and `MusicDirector.cs` (music). No prompt names an artist or a game (ElevenLabs' rule and GG's "obviously it needs to be origional").
 
-## Music (31 tracks, POST /v1/music, force_instrumental)
+## Music (36 tracks, POST /v1/music, force_instrumental)
 
 | id | model | state | level | length | LUFS before -> after | prompt |
 |---|---|---|---|---|---|---|
@@ -37,15 +37,20 @@ Written by `node Tools/pg3/audio-prompts.cjs` from `Tools/pg3/sfx-gen-log.json`,
 | boss-wyrm-2 | music_v2_5 | boss2 | kiln | 120 s | -9.8 -> -12.2 | Instrumental enraged final phase of a giant worm boss battle, C minor, 188 bpm: chaotic hyper-fast chopped breaks and blast fills, a monstrous sliding reese bass, low male choir chanting, taiko, a frantic serpentine lead, earthquake sub drops, savage and climactic, no vocals, loopable. |
 | boss-loom-2 | music_v2_5 | boss2 | span | 120 s | -10.3 -> -12.2 | Instrumental enraged final phase of a giant machine boss battle, A minor, 184 bpm: mechanical rhythms accelerating, intricate breakneck chopped breaks, a pipe organ riff, distorted guitars, frantic strings and choir, metallic clanks on every beat, climactic, no vocals, loopable. |
 | boss-crown-2 | music_v2_5 | boss2 | spire | 140 s | -10.1 -> -12.2 | Instrumental enraged final phase of the final boss battle, E minor, 190 bpm: the most intense music in the game, shredded chopped breaks with blast beats, full choir and pipe organ, crushing guitars, orchestral strings in rapid runs, tolling bells, a heroic soaring lead, rising to a transcendent climax, no vocals, loopable. |
+| foundry-combat-c | music_v2_5 | combat | foundry | 120 s | -10.8 -> -12.2 | Instrumental breakcore, D minor, 178 bpm, a third fight theme for a molten foundry: a distorted industrial intro of hammering metal and hissing steam, then explodes into frantic chopped amen breaks with glitch stutters and reversed snares, a fat growling reese bass, a screaming detuned supersaw hook, emotional piano chords under the drops, a half-time breakdown that slams back to full speed. Furious, emotional, loud crisp mix, no vocals, loopable. |
+| iceline-combat-c | music_v2_5 | combat | iceline | 120 s | -13.5 -> -12.5 | Instrumental breakcore, F sharp minor, 172 bpm, a third fight theme in a frozen rail yard: icy granular pads and a fast music-box melody, then rapid chopped amen breaks with stutter edits and drill snare rolls, a deep rolling sub bass, glassy bell arpeggios, a bright melancholic supersaw lead, a glitch freeze before each drop. Cold, fast, emotional, crisp high-fidelity mix, no vocals, loopable. |
+| kiln-combat-c | music_v2_5 | combat | kiln | 120 s | -11.2 -> -12.3 | Instrumental breakcore, C minor, 182 bpm, a third fight theme in scorching kiln halls: thundering taiko and distorted 808 kicks, furious chopped amen breaks with glitch edits, a snarling reese bass, low brass stabs, a wailing distorted guitar lead, a half-time drop that crushes. Hot, aggressive, relentless, loud crisp mix, no vocals, loopable. |
+| span-combat-c | music_v2_5 | combat | span | 120 s | -13 -> -12.5 | Instrumental breakcore, A minor, 172 bpm, a third fight theme on a vast bridge at dusk: a fast harpsichord and violin ostinato, then intricate chopped amen breaks with stutter edits, ticking clockwork percussion, a wobbling reese bass, a soaring supersaw counter-melody, choir swells into each drop. Elegant, frantic, emotional, no vocals, loopable. |
+| spire-combat-c | music_v2_5 | combat | spire | 120 s | -11.5 -> -12.3 | Instrumental breakcore, E minor, 178 bpm, a third fight theme for the final bell tower: tolling church bells and a pipe organ riff, then the most intense chopped amen breaks with glitch stutters and rapid fills, a massive reese bass, a desperate soaring supersaw lead with choir stabs, a piano interlude that rebuilds into a huge final drop. Grand, desperate, loud crisp mix, no vocals, loopable. |
 
 ## Sound effects (138 clips, POST /v1/sound-generation, prompt_influence 0.5)
 
 | id | triad | plays on | length | LUFS before -> after | prompt |
 |---|---|---|---|---|---|
-| fire-kestrel | feel | fire:revolver | 0.8 s | -11.9 -> -13.1 | Punchy sci-fi revolver gunshot, tight low-end thump with a bright metallic crack and a short electric zap tail, close mic, game sound effect |
-| fire-thunderclap | feel | fire:shotgun | 1 s | -8.7 -> -12.4 | Heavy pump shotgun blast, huge boomy low end, crunchy distortion, quick reverb tail in a large concrete hall, game sound effect |
-| fire-gauntlet | feel | punch | 0.6 s | -12.1 -> -13.3 | Powered metal gauntlet punch, a whoosh into a hard meaty impact with an electric crackle, game sound effect |
-| fire-torch | feel | fire:torch | 1 s | -10 -> -12.4 | Short roaring burst from a flamethrower, gas whoosh and crackling fire, game sound effect |
+| fire-kestrel | feel | fire:revolver | 0.8 s | -14.5 -> -13.7 | Punchy sci-fi revolver gunshot, tight low-end thump with a bright metallic crack and a short electric zap tail, close mic, game sound effect |
+| fire-thunderclap | feel | fire:shotgun | 1 s | -13.7 -> -13.5 | Heavy pump shotgun blast, huge boomy low end, crunchy distortion, quick reverb tail in a large concrete hall, game sound effect |
+| fire-gauntlet | feel | punch | 0.6 s | -12.1 -> -12.4 | Powered metal gauntlet punch, a whoosh into a hard meaty impact with an electric crackle, game sound effect |
+| fire-torch | feel | fire:torch | 1 s | -10.7 -> -12.4 | Short roaring burst from a flamethrower, gas whoosh and crackling fire, game sound effect |
 | pump | feel | shotgunPump | 0.5 s | -12.9 -> -17.3 | Shotgun pump action, two crisp mechanical clacks, metal on metal, close mic |
 | hit | reward | hit | 0.3 s | -11.7 -> -14.4 | Satisfying hitmarker tick, a crisp short high click with a soft fleshy thud underneath, game UI feedback |
 | kill | reward | kill | 0.7 s | -9.5 -> -14.4 | Crunchy enemy kill confirm, a stone body shattering with a bright rising chime on top, very satisfying, game sound effect |
@@ -65,20 +70,20 @@ Written by `node Tools/pg3/audio-prompts.cjs` from `Tools/pg3/sfx-gen-log.json`,
 | lose | end | death:player | 3 s | -7.5 -> -11.5 | Game over stinger, a heavy low hit then a slow descending detuned synth tone fading into silence, defeat, video game |
 | retry | end | roomRetry | 1 s | -8.2 -> -14.3 | Respawn whoosh, a reversed swell into a soft digital materialize shimmer, game sound effect |
 | jump | feel | mover:jump | 0.3 s | -16.4 -> -17.6 | Light athletic jump, a quick cloth whoosh with a soft boot push-off, game sound effect |
-| dash | feel | mover:dash | 0.5 s | -7.7 -> -17.4 | Fast air dash, a sharp sci-fi whoosh with a jet burst, game sound effect |
+| dash | feel | mover:dash | 0.5 s | -10.5 -> -17.4 | Fast air dash, a sharp sci-fi whoosh with a jet burst, game sound effect |
 | land | feel | mover:land | 0.3 s | -17.3 -> -18.4 | Boots landing on concrete, a short solid thud, game sound effect |
-| slam | feel | mover:slam | 0.8 s | -28.8 -> -20.6 | Ground slam, a heavy body hitting the floor from height with a concussive boom and debris, game sound effect |
+| slam | feel | mover:slam | 0.8 s | -17.9 -> -14.7 | Ground slam, a heavy body hitting the floor from height with a concussive boom and debris, game sound effect |
 | grapple | feel | mover:ropeFire | 0.6 s | -14.2 -> -17.4 | Grappling hook firing, a pneumatic thunk and a cable zipping out fast, game sound effect |
 | music-loop | bed | music | 22 s loop | -14.7 -> -18.4 | Dark driving synthwave combat loop at dusk, pulsing bass, punchy drums, tense arpeggios, 128 bpm, seamless loop, instrumental |
-| fire-kestrel-2 |  | fire:revolver | 0.8 s | -14 -> -15.3 | Powerful sci-fi revolver shot, sharp transient crack, punchy mid body, a tiny metallic cylinder click, short bright electric tail, tight and satisfying, close mic, game sound effect |
-| fire-kestrel-3 |  | fire:revolver | 0.8 s | -7.4 -> -12.3 | Heavy energy revolver gunshot, hard snappy attack, deep thump, crisp high zap sweetener, quick slap reverb off concrete, game sound effect |
+| fire-kestrel-2 |  | fire:revolver | 0.8 s | -19.9 -> -17.2 | Powerful sci-fi revolver shot, sharp transient crack, punchy mid body, a tiny metallic cylinder click, short bright electric tail, tight and satisfying, close mic, game sound effect |
+| fire-kestrel-3 |  | fire:revolver | 0.8 s | -18.4 -> -16.2 | Heavy energy revolver gunshot, hard snappy attack, deep thump, crisp high zap sweetener, quick slap reverb off concrete, game sound effect |
 | fire-kestrel-charged |  | fire:revolver charged | 1.6 s | -7.9 -> -11.2 | Charged piercing railgun revolver shot, a massive deep boom with a searing electric beam crack that tears through the air, sub bass drop, long metallic ringing tail, devastating and satisfying, game sound effect |
 | charge-loop |  | charge | 2 s loop | -5.6 -> -15.5 | Energy weapon charging up, a smooth rising electric whine and humming capacitor buzz, seamless loop, sci-fi game sound effect |
 | charge-ready |  | charge ready | 0.6 s | -14.4 -> -12.4 | Weapon fully charged ready ping, a bright crystalline ding with a short electric shimmer, clear and satisfying, game UI cue |
-| fire-thunderclap-2 |  | fire:shotgun | 1 s | -9.2 -> -12.2 | Brutal pump shotgun blast, enormous low-end punch, gritty mid crunch, debris rattle, short hall reverb, game sound effect |
-| fire-thunderclap-3 |  | fire:shotgun | 1 s | -16 -> -14 | Huge double barrel shotgun boom, chest-thumping sub, crackling distortion, metallic shell rattle, quick decay, game sound effect |
+| fire-thunderclap-2 |  | fire:shotgun | 1 s | -13.5 -> -13.9 | Brutal pump shotgun blast, enormous low-end punch, gritty mid crunch, debris rattle, short hall reverb, game sound effect |
+| fire-thunderclap-3 |  | fire:shotgun | 1 s | -13.7 -> -13.2 | Huge double barrel shotgun boom, chest-thumping sub, crackling distortion, metallic shell rattle, quick decay, game sound effect |
 | fire-slug |  | fire:shotgun slug | 1.4 s | -12.5 -> -12.7 | Shotgun firing a single heavy explosive slug, a cannon-like deep boom, supersonic crack, a whistling projectile and a heavy impact thud, game sound effect |
-| fire-gauntlet-2 |  | punch | 0.6 s | -15.1 -> -16 | Armored power fist punch, a fast air swish into a bone-crunching heavy hit with an electric discharge snap, game sound effect |
+| fire-gauntlet-2 |  | punch | 0.6 s | -15.1 -> -13.3 | Armored power fist punch, a fast air swish into a bone-crunching heavy hit with an electric discharge snap, game sound effect |
 | gauntlet-pulse |  | pulse blast | 1.4 s | -12.4 -> -11.7 | Power gauntlet releasing a concussive energy pulse blast, a deep whump shockwave, crackling electricity, air pressure rush and a ringing tail, game sound effect |
 | parry-2 |  | parry | 1.2 s | -7.6 -> -12.3 | Perfect parry deflection, an extremely satisfying sharp sword-like metal clang, a time-freeze reverse whoosh and a bright crystal ring that pitches down, game sound effect |
 | ricochet |  | ricochet | 0.7 s | -14.5 -> -15 | Bullet ricochet off metal, a sharp ping with a whizzing zip away, game sound effect |
@@ -94,19 +99,19 @@ Written by `node Tools/pg3/audio-prompts.cjs` from `Tools/pg3/sfx-gen-log.json`,
 | jump-2 |  | mover:jump | 0.5 s | -17 -> -18.5 | Quick athletic jump, a light air whoosh and soft fabric snap, game sound effect |
 | double-jump |  | mover:doubleJump | 0.6 s | -9.1 -> -17.4 | Mid-air double jump boost, a short sci-fi thruster puff with a rising airy whoosh, game sound effect |
 | wall-jump |  | mover:wallJump | 0.6 s | -26.6 -> -22.9 | Kicking off a concrete wall, a solid boot thud on stone and a fast whoosh away, game sound effect |
-| dash-2 |  | mover:dash | 0.6 s | -12.7 -> -17.3 | Explosive air dash, a jet thruster burst with a sharp doppler whoosh past the ears, game sound effect |
+| dash-2 |  | mover:dash | 0.6 s | -15.4 -> -17.3 | Explosive air dash, a jet thruster burst with a sharp doppler whoosh past the ears, game sound effect |
 | dash-fail |  | mover:dashFail | 0.5 s | -19.9 -> -17.4 | Out of stamina dash fail, a weak sputtering thruster fizzle and a dull low blip, game sound effect |
 | slide-start |  | mover:slideStart | 0.8 s | -6.2 -> -17.3 | Power slide start on concrete, a fast scraping skid with a gravelly friction hiss, game sound effect |
 | slide-loop |  | sliding | 2 s loop | -11.1 -> -18.3 | Continuous sliding on metal and concrete, a steady scraping friction hiss with sparks, seamless loop, game sound effect |
 | land-2 |  | mover:land | 0.5 s | -19.3 -> -19.5 | Heavy boots landing, a solid low impact thud with a little grit, game sound effect |
-| land-hard |  | mover:land high | 0.7 s | -22.1 -> -19.9 | Hard landing from a great height, a heavy crunching body impact with a bass thump, game sound effect |
-| slam-2 |  | mover:slam | 1.2 s | -15.2 -> -13 | Ground pound slam from the air, a falling whoosh into a massive concussive boom, cracking concrete and debris, deep sub, game sound effect |
+| land-hard |  | mover:land high | 0.7 s | -12.3 -> -17.4 | Hard landing from a great height, a heavy crunching body impact with a bass thump, game sound effect |
+| slam-2 |  | mover:slam | 1.2 s | -9.7 -> -11.4 | Ground pound slam from the air, a falling whoosh into a massive concussive boom, cracking concrete and debris, deep sub, game sound effect |
 | wallride |  | mover:wallRideStart | 0.8 s | -14.5 -> -17.4 | Starting a wall run, boots scuffing along a wall with a quick rising whoosh, game sound effect |
 | grapple-attach |  | mover:ropeAttach | 0.6 s | -13.9 -> -17.3 | Grappling hook latching onto metal, a sharp clank and a cable snapping taut, game sound effect |
 | grapple-release |  | mover:ropeRelease | 0.5 s | -15.3 -> -17.3 | Grappling cable releasing, a quick metallic unclip and a short whip whoosh, game sound effect |
 | jump-pad |  | jumpPad | 1 s | -11.5 -> -17.2 | Launch pad bounce, a powerful pneumatic boing with an energy whoosh rising upward, game sound effect |
 | stamina-full |  | mover:staminaFull | 0.5 s | -14.1 -> -17.5 | Stamina refilled cue, a soft bright rising two-tone chime, subtle game UI sound |
-| husk-death |  | kill:husk | 0.9 s | -16.2 -> -15.7 | Stone zombie creature death, a crumbling rock body collapse with an ember hiss and a dying rasp, game sound effect |
+| husk-death |  | kill:husk | 0.9 s | -11.9 -> -14.4 | Stone zombie creature death, a crumbling rock body collapse with an ember hiss and a dying rasp, game sound effect |
 | swarmer-death |  | kill:swarmer | 0.7 s | -22.3 -> -16 | Small insect creature splattering, a wet crunch and a high chitter squeal, game sound effect |
 | spitter-death |  | kill:spitter | 1 s | -17.9 -> -17.1 | Bloated acid monster bursting, a wet gooey pop and a sizzling acid splash, game sound effect |
 | charger-death |  | kill:charger | 1.2 s | -8.1 -> -14.4 | Armored beast collapsing, a heavy crash of metal plates and a deep dying groan, game sound effect |
@@ -164,7 +169,7 @@ Written by `node Tools/pg3/audio-prompts.cjs` from `Tools/pg3/sfx-gen-log.json`,
 | tell-parry | damage | tell36 Yellow | 0.6 s | -18.1 -> -14.4 | Parry opportunity cue, a bright sharp metallic glint shing with a quick high crystal ping, instantly readable, game warning sound |
 | tell-danger | damage | tell36 Red | 0.7 s | -9.8 -> -14.4 | Unblockable attack warning, a harsh low distorted alarm stab with a rising whoosh, urgent danger cue, game sound effect |
 | pump-2 |  | shotgunPump | 0.5 s | -11.7 -> -17.4 | Heavy shotgun pump rack, a hard metallic chk-chk, satisfying and solid, close mic |
-| dash-3 |  | mover:dash | 0.5 s | -10.4 -> -17.4 | Short punchy sci-fi dash burst, a tight air blast with a doppler swish, game sound effect |
+| dash-3 |  | mover:dash | 0.5 s | -12.3 -> -17.4 | Short punchy sci-fi dash burst, a tight air blast with a doppler swish, game sound effect |
 | land-3 |  | mover:land | 0.5 s | -47 -> -35.4 | Light landing on a metal grate, a quick clank and thud, game sound effect |
 | jump-3 |  | mover:jump | 0.5 s | -16.8 -> -17.7 | Springy jump take-off, a quick boot scuff and a short whoosh, game sound effect |
 | boss-hit-3 |  | bossHit | 0.6 s | -35.6 -> -24 | Rounds hammering a giant metal monster, a dense clang with a low thump, game sound effect |

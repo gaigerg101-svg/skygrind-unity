@@ -24,6 +24,7 @@ namespace Skygrind.Game
         static readonly Dictionary<string, GameObject> prefabs = new Dictionary<string, GameObject>(StringComparer.Ordinal); // id -> the asset, null: no file (a cached miss)
         static readonly Dictionary<string, int> made = new Dictionary<string, int>(StringComparer.Ordinal); // id -> instances made
         static readonly HashSet<string> warned = new HashSet<string>(StringComparer.Ordinal);
+        static readonly Dictionary<string, Material> glowMats = new Dictionary<string, Material>(StringComparer.Ordinal); // id -> its glow material (one per id, shared by its instances); null: none
         static readonly Dictionary<Renderer, TripoSlot> flashFor = new Dictionary<Renderer, TripoSlot>(); // an enemy view's pill renderer -> the slot whose model flashes with it
         static int onFrame = -1;
         static GameConfig onCfg;
@@ -89,6 +90,7 @@ namespace Skygrind.Game
             inst.name = id;
             Strip(inst);
             FixShaders(inst);
+            Glow(id, inst);
             // measure in the holder's own space (the fit is still the identity), so a parent's squash or turn at this moment does not matter
             if (!Measure(ht, inst, out Bounds b))
             {
@@ -164,6 +166,40 @@ namespace Skygrind.Game
                     changed = true;
                 }
                 if (changed) r.sharedMaterials = ms;
+            }
+        }
+
+        /// <summary>
+        /// PG3 (GG 2026-10-28: the models "look very desaturated"): the model draws with a copy of the TripoGlow material (URP Lit, smoothness 0.3, emission on) carrying the model's own graded
+        /// base map, normal map and accent emission map (Resources/Tripo/Textures/&lt;id&gt;_basecolor / _normal / _emission), the accents at TripoGlowRest. One copy per id. No glow material or
+        /// no emission map for the id: the model keeps the FBX's material.
+        /// </summary>
+        static void Glow(string id, GameObject inst)
+        {
+            if (!glowMats.TryGetValue(id, out Material gm))
+            {
+                gm = null;
+                Material template = Resources.Load<Material>(UnityTuning.TripoGlowMaterial);
+                Texture2D em = Resources.Load<Texture2D>(UnityTuning.TripoFolder + "Textures/" + id + "_emission");
+                Renderer r0 = inst.GetComponentInChildren<Renderer>(true);
+                Material src = r0 != null ? r0.sharedMaterial : null;
+                if (template != null && em != null && src != null)
+                {
+                    gm = new Material(template) { name = id + " (tripo glow)" };
+                    if (src.HasProperty("_BaseMap") && src.GetTexture("_BaseMap") != null) gm.SetTexture("_BaseMap", src.GetTexture("_BaseMap"));
+                    else if (src.mainTexture != null) gm.SetTexture("_BaseMap", src.mainTexture);
+                    gm.SetTexture("_BumpMap", src.HasProperty("_BumpMap") ? src.GetTexture("_BumpMap") : null);
+                    gm.SetTexture("_EmissionMap", em);
+                    gm.SetColor("_EmissionColor", Color.white * UnityTuning.TripoGlowRest);
+                }
+                glowMats[id] = gm;
+            }
+            if (gm == null) return;
+            foreach (Renderer r in inst.GetComponentsInChildren<Renderer>(true))
+            {
+                Material[] ms = r.sharedMaterials;
+                for (int i = 0; i < ms.Length; i++) ms[i] = gm;
+                r.sharedMaterials = ms;
             }
         }
 
@@ -385,6 +421,20 @@ namespace Skygrind.Game
         }
 
         /// <summary>The hit flash (a share 0..1): the model's renderers' base colour x (1 + TripoFlashBoost x flash) through a property block; 0 clears it. Only while the model shows.</summary>
+        float lastGlow = -1f;
+        static readonly int EmissionColorId = Shader.PropertyToID("_EmissionColor");
+
+        /// <summary>A gun model's accents at `k` x the emission map (the charge: Viewmodel.TripoCharge). A gun's slot never flashes (Flash is the enemies'), so the block is this one's alone.</summary>
+        public void Glow(float k)
+        {
+            if (!Shown || rends == null || Mathf.Abs(k - lastGlow) < 0.01f) return;
+            lastGlow = k;
+            block ??= new MaterialPropertyBlock();
+            block.Clear();
+            block.SetColor(EmissionColorId, Color.white * k);
+            for (int i = 0; i < rends.Length; i++) if (rends[i] != null) rends[i].SetPropertyBlock(block);
+        }
+
         public void Flash(float flash)
         {
             if (!shown || Model == null || rends == null || Mathf.Abs(flash - lastFlash) < 0.002f) return;

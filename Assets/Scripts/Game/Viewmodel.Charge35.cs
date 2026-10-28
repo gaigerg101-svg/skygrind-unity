@@ -295,6 +295,7 @@ namespace Skygrind.Game
                 }
                 if (lit > 0 && look.shown != want) { look.shown = want; look.mat.SetColor(BaseColor, want); }
             }
+            TripoCharge(gun, step, flash); // PG3: the Tripo models' own charge fill (Viewmodel.Tripo.cs)
             Gunglow50Probe.Gun = gun ?? "";
             Gunglow50Probe.Level = level;
             Gunglow50Probe.Step = step;

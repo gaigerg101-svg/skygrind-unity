@@ -41,6 +41,49 @@ namespace Skygrind.Game
             if (m40 != null && !tripoHid40) { tripoHid40 = true; m40.TripoHide(tripo); }
             if (extras != null && !tripoHid43) { tripoHid43 = true; extras.TripoHide(tripo); }
             tripo.Show(cfg);
+            TripoMotion();
+        }
+
+        /// <summary>PG3 (GG 2026-10-28): set by the view before Apply: this body is winding up an attack (a husk / swarmer / spitter's windupSteps, a spitter's tell). The other kinds leave it false.</summary>
+        public bool tripoAttack;
+        Vector3 tripoLast;
+        bool tripoHasLast, tripoWasAttack;
+        float tripoSpeed, tripoPhase, tripoWind, tripoStrike, tripoClock;
+
+        /// <summary>The model's walk and attack, on its holder (the fit and the root's own move, turn, squash and flinch are untouched): a step bob, a waddle and a forward lean that grow
+        /// with the root's measured ground speed; the wind-up rears back, the release lunges forward and settles; the drone hovers and banks. UnityTuning.Tripo* has the sizes.</summary>
+        void TripoMotion()
+        {
+            if (!tripo.Shown) { tripoHasLast = false; return; }
+            float dt = Time.deltaTime;
+            if (!(dt > 0f)) return;
+            Vector3 p = root.position;
+            float sp = 0f;
+            if (tripoHasLast) { Vector3 d = p - tripoLast; d.y = 0f; sp = d.magnitude / dt; if (sp > UnityTuning.TripoTeleportSpeed) sp = 0f; }
+            tripoLast = p;
+            tripoHasLast = true;
+            tripoSpeed = Mathf.Lerp(tripoSpeed, sp, 1f - Mathf.Exp(-dt * 10f));
+            float walk = Mathf.Clamp01(tripoSpeed / UnityTuning.TripoWalkFullSpeed);
+            tripoPhase += dt * tripoSpeed / UnityTuning.TripoStrideM * Mathf.PI;
+            tripoClock += dt;
+            if (tripoWasAttack && !tripoAttack) tripoStrike = 1f; // the release
+            tripoWasAttack = tripoAttack;
+            tripoWind = Mathf.MoveTowards(tripoWind, tripoAttack ? 1f : 0f, dt * (tripoAttack ? UnityTuning.TripoWindupRate : 4f * UnityTuning.TripoWindupRate));
+            tripoStrike = Mathf.Max(0f, tripoStrike - dt * UnityTuning.TripoStrikeDecay);
+            float strike = tripoStrike * tripoStrike;
+            Transform h = tripo.Model.transform;
+            if (kind == "drone")
+            {
+                float hover = Mathf.Sin(tripoClock * UnityTuning.TripoHoverHz * 2f * Mathf.PI) * UnityTuning.TripoHoverShare * height;
+                h.localPosition = new Vector3(0f, hover, 0f);
+                h.localRotation = Quaternion.Euler(UnityTuning.TripoDroneBankDeg * walk, 0f, Mathf.Sin(tripoClock * 1.3f) * 3f);
+                return;
+            }
+            float bob = Mathf.Abs(Mathf.Sin(tripoPhase)) * UnityTuning.TripoBobShare * height * walk;
+            float roll = Mathf.Sin(tripoPhase) * UnityTuning.TripoWaddleDeg * walk;
+            float pitch = UnityTuning.TripoLeanDeg * walk - UnityTuning.TripoWindupBackDeg * tripoWind + UnityTuning.TripoStrikeDeg * strike;
+            h.localPosition = new Vector3(0f, bob, UnityTuning.TripoStrikeReach * height * strike);
+            h.localRotation = Quaternion.Euler(pitch, 0f, roll);
         }
     }
 

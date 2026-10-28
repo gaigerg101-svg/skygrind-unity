@@ -161,9 +161,11 @@ namespace Skygrind.Game
             else if (calmSince < 0f) calmSince = now;
             wasFight = fight;
             bool combat = fight || (calmSince >= 0f && now - calmSince < UnityTuning.MusicCalmAfterS && playing != null && playing.Contains("-combat"));
-            // two combat themes per level, alternating fight by fight, so a long level doesn't loop one track
-            string combatId = level + (fights % 2 == 0 ? "-combat-b" : "-combat");
-            if (combat) return Have(combatId) ?? Have(level + "-combat") ?? Have("foundry-combat");
+            // three combat themes per level, rotating fight by fight, so a long level doesn't loop one track (GG 2026-10-28: "some
+            // more breakcore songs"); a missing third falls back to the first two
+            int turn = fights % 3;
+            string combatId = level + (turn == 0 ? "-combat-b" : turn == 1 ? "-combat" : "-combat-c");
+            if (combat) return Have(combatId) ?? Have(level + (turn == 2 ? "-combat-b" : "-combat")) ?? Have(level + "-combat") ?? Have("foundry-combat");
             return Have(level + "-calm") ?? Have("foundry-calm") ?? Have(level + "-combat");
         }
 

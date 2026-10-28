@@ -498,5 +498,665 @@
     "delay": 0,
     "status": 200,
     "at": "2026-10-28T19:48:59.978Z"
+  },
+  {
+    "id": "fire-kestrel",
+    "layer": 2,
+    "prompt": "Sharp powerful heavy revolver shot crack, a snappy explosive crack, close mic, very bright transient",
+    "seconds": 0.6,
+    "gain": -1,
+    "delay": 0,
+    "status": 200,
+    "at": "2026-10-28T20:47:20.809Z"
+  },
+  {
+    "id": "fire-kestrel",
+    "layer": 1,
+    "prompt": "Punchy deep sub bass gunshot thump, a tight low kick-drum-like impact, no high frequencies",
+    "seconds": 0.8,
+    "gain": 0,
+    "delay": 0,
+    "status": 200,
+    "at": "2026-10-28T20:47:20.813Z"
+  },
+  {
+    "id": "fire-kestrel",
+    "layer": 3,
+    "prompt": "Revolver hammer click and cylinder turn, a crisp metallic mechanism clack",
+    "seconds": 0.5,
+    "gain": -6,
+    "delay": 0,
+    "status": 200,
+    "at": "2026-10-28T20:47:22.286Z"
+  },
+  {
+    "id": "fire-kestrel",
+    "layer": 4,
+    "prompt": "Short gunshot echo slapping off concrete walls in a large hall, fading quickly",
+    "seconds": 1.5,
+    "gain": -10,
+    "delay": 40,
+    "status": 200,
+    "at": "2026-10-28T20:47:22.652Z"
+  },
+  {
+    "id": "fire-kestrel-2",
+    "layer": 1,
+    "prompt": "Punchy deep sub bass gunshot thump, a tight low kick-drum-like impact, no high frequencies",
+    "seconds": 0.8,
+    "gain": 0,
+    "delay": 0,
+    "status": 200,
+    "at": "2026-10-28T20:47:24.095Z"
+  },
+  {
+    "id": "fire-kestrel-2",
+    "layer": 2,
+    "prompt": "Sharp powerful heavy revolver shot crack, a slightly darker metallic bang, close mic, very bright transient",
+    "seconds": 0.6,
+    "gain": -1,
+    "delay": 0,
+    "status": 200,
+    "at": "2026-10-28T20:47:24.475Z"
+  },
+  {
+    "id": "fire-kestrel-2",
+    "layer": 3,
+    "prompt": "Revolver hammer click and cylinder turn, a crisp metallic mechanism clack",
+    "seconds": 0.5,
+    "gain": -6,
+    "delay": 0,
+    "status": 200,
+    "at": "2026-10-28T20:47:25.281Z"
+  },
+  {
+    "id": "fire-kestrel-2",
+    "layer": 4,
+    "prompt": "Short gunshot echo slapping off concrete walls in a large hall, fading quickly",
+    "seconds": 1.5,
+    "gain": -10,
+    "delay": 40,
+    "status": 200,
+    "at": "2026-10-28T20:47:26.230Z"
+  },
+  {
+    "id": "fire-kestrel-3",
+    "layer": 1,
+    "prompt": "Punchy deep sub bass gunshot thump, a tight low kick-drum-like impact, no high frequencies",
+    "seconds": 0.8,
+    "gain": 0,
+    "delay": 0,
+    "status": 200,
+    "at": "2026-10-28T20:47:27.188Z"
+  },
+  {
+    "id": "fire-kestrel-3",
+    "layer": 2,
+    "prompt": "Sharp powerful heavy revolver shot crack, a brighter ringing blast, close mic, very bright transient",
+    "seconds": 0.6,
+    "gain": -1,
+    "delay": 0,
+    "status": 200,
+    "at": "2026-10-28T20:47:28.038Z"
+  },
+  {
+    "id": "fire-kestrel-3",
+    "layer": 3,
+    "prompt": "Revolver hammer click and cylinder turn, a crisp metallic mechanism clack",
+    "seconds": 0.5,
+    "gain": -6,
+    "delay": 0,
+    "status": 200,
+    "at": "2026-10-28T20:47:28.547Z"
+  },
+  {
+    "id": "fire-kestrel-3",
+    "layer": 4,
+    "prompt": "Short gunshot echo slapping off concrete walls in a large hall, fading quickly",
+    "seconds": 1.5,
+    "gain": -10,
+    "delay": 40,
+    "status": 200,
+    "at": "2026-10-28T20:47:29.896Z"
+  },
+  {
+    "id": "fire-thunderclap",
+    "layer": 1,
+    "prompt": "Massive sub bass shotgun blast boom, a chest-hitting low thump with a short rumble",
+    "seconds": 1.2,
+    "gain": 0,
+    "delay": 0,
+    "status": 200,
+    "at": "2026-10-28T20:47:30.544Z"
+  },
+  {
+    "id": "fire-thunderclap",
+    "layer": 2,
+    "prompt": "Huge pump shotgun blast, a deep explosive roar, wide and violent, close mic",
+    "seconds": 0.8,
+    "gain": -1,
+    "delay": 0,
+    "status": 200,
+    "at": "2026-10-28T20:47:31.178Z"
+  },
+  {
+    "id": "fire-thunderclap",
+    "layer": 3,
+    "prompt": "Shotgun pump action rack, a heavy metallic shuck-shuck, close mic",
+    "seconds": 0.7,
+    "gain": -5,
+    "delay": 0,
+    "status": 200,
+    "at": "2026-10-28T20:47:31.992Z"
+  },
+  {
+    "id": "fire-thunderclap",
+    "layer": 4,
+    "prompt": "Thunderous shotgun echo rolling across a vast stone arena, fading",
+    "seconds": 2,
+    "gain": -9,
+    "delay": 60,
+    "status": 200,
+    "at": "2026-10-28T20:47:32.632Z"
+  },
+  {
+    "id": "fire-thunderclap-2",
+    "layer": 1,
+    "prompt": "Massive sub bass shotgun blast boom, a chest-hitting low thump with a short rumble",
+    "seconds": 1.2,
+    "gain": 0,
+    "delay": 0,
+    "status": 200,
+    "at": "2026-10-28T20:47:33.824Z"
+  },
+  {
+    "id": "fire-thunderclap-2",
+    "layer": 2,
+    "prompt": "Huge pump shotgun blast, a crunchy distorted roar, wide and violent, close mic",
+    "seconds": 0.8,
+    "gain": -1,
+    "delay": 0,
+    "status": 200,
+    "at": "2026-10-28T20:47:34.273Z"
+  },
+  {
+    "id": "fire-thunderclap-2",
+    "layer": 3,
+    "prompt": "Shotgun pump action rack, a heavy metallic shuck-shuck, close mic",
+    "seconds": 0.7,
+    "gain": -5,
+    "delay": 0,
+    "status": 200,
+    "at": "2026-10-28T20:47:34.991Z"
+  },
+  {
+    "id": "fire-thunderclap-2",
+    "layer": 4,
+    "prompt": "Thunderous shotgun echo rolling across a vast stone arena, fading",
+    "seconds": 2,
+    "gain": -9,
+    "delay": 60,
+    "status": 200,
+    "at": "2026-10-28T20:47:35.851Z"
+  },
+  {
+    "id": "fire-thunderclap-3",
+    "layer": 1,
+    "prompt": "Massive sub bass shotgun blast boom, a chest-hitting low thump with a short rumble",
+    "seconds": 1.2,
+    "gain": 0,
+    "delay": 0,
+    "status": 200,
+    "at": "2026-10-28T20:47:36.864Z"
+  },
+  {
+    "id": "fire-thunderclap-3",
+    "layer": 2,
+    "prompt": "Huge pump shotgun blast, a booming roar with debris crackle, wide and violent, close mic",
+    "seconds": 0.8,
+    "gain": -1,
+    "delay": 0,
+    "status": 200,
+    "at": "2026-10-28T20:47:37.712Z"
+  },
+  {
+    "id": "fire-thunderclap-3",
+    "layer": 3,
+    "prompt": "Shotgun pump action rack, a heavy metallic shuck-shuck, close mic",
+    "seconds": 0.7,
+    "gain": -5,
+    "delay": 0,
+    "status": 200,
+    "at": "2026-10-28T20:47:38.072Z"
+  },
+  {
+    "id": "fire-gauntlet",
+    "layer": 1,
+    "prompt": "Heavy sub bass punch impact, a deep body-blow thump",
+    "seconds": 0.8,
+    "gain": 0,
+    "delay": 0,
+    "status": 200,
+    "at": "2026-10-28T20:47:39.319Z"
+  },
+  {
+    "id": "fire-thunderclap-3",
+    "layer": 4,
+    "prompt": "Thunderous shotgun echo rolling across a vast stone arena, fading",
+    "seconds": 2,
+    "gain": -9,
+    "delay": 60,
+    "status": 200,
+    "at": "2026-10-28T20:47:39.471Z"
+  },
+  {
+    "id": "fire-gauntlet",
+    "layer": 2,
+    "prompt": "Armored metal gauntlet punch smashing into metal, a hard crunchy clang",
+    "seconds": 0.6,
+    "gain": -2,
+    "delay": 0,
+    "status": 200,
+    "at": "2026-10-28T20:47:40.513Z"
+  },
+  {
+    "id": "fire-gauntlet",
+    "layer": 3,
+    "prompt": "Hydraulic piston hiss and mechanical servo whir, short burst",
+    "seconds": 0.8,
+    "gain": -6,
+    "delay": 0,
+    "status": 200,
+    "at": "2026-10-28T20:47:40.836Z"
+  },
+  {
+    "id": "fire-gauntlet-2",
+    "layer": 1,
+    "prompt": "Heavy sub bass punch impact, a deep body-blow thump, slightly lower",
+    "seconds": 0.8,
+    "gain": 0,
+    "delay": 0,
+    "status": 200,
+    "at": "2026-10-28T20:47:41.652Z"
+  },
+  {
+    "id": "fire-gauntlet-2",
+    "layer": 2,
+    "prompt": "Armored metal fist strike with a crackling electric discharge, a hard crunchy hit",
+    "seconds": 0.6,
+    "gain": -2,
+    "delay": 0,
+    "status": 200,
+    "at": "2026-10-28T20:47:42.626Z"
+  },
+  {
+    "id": "fire-gauntlet-2",
+    "layer": 3,
+    "prompt": "Pneumatic piston release hiss, short and sharp",
+    "seconds": 0.8,
+    "gain": -6,
+    "delay": 0,
+    "status": 200,
+    "at": "2026-10-28T20:47:43.093Z"
+  },
+  {
+    "id": "fire-torch",
+    "layer": 1,
+    "prompt": "Roaring flamethrower burst, a violent rush of fire whoosh",
+    "seconds": 1.2,
+    "gain": 0,
+    "delay": 0,
+    "status": 200,
+    "at": "2026-10-28T20:47:44.025Z"
+  },
+  {
+    "id": "fire-torch",
+    "layer": 2,
+    "prompt": "Low sub bass ignition thump, a deep whump",
+    "seconds": 0.8,
+    "gain": -4,
+    "delay": 0,
+    "status": 200,
+    "at": "2026-10-28T20:47:44.221Z"
+  },
+  {
+    "id": "fire-torch",
+    "layer": 3,
+    "prompt": "Crackling sizzling embers and hot sparks, close mic",
+    "seconds": 1,
+    "gain": -8,
+    "delay": 0,
+    "status": 200,
+    "at": "2026-10-28T20:47:45.678Z"
+  },
+  {
+    "id": "slam",
+    "layer": 1,
+    "prompt": "Colossal sub bass ground pound impact, a deep earth-shaking boom",
+    "seconds": 1.5,
+    "gain": 0,
+    "delay": 0,
+    "status": 200,
+    "at": "2026-10-28T20:47:46.027Z"
+  },
+  {
+    "id": "slam",
+    "layer": 2,
+    "prompt": "Heavy metal boots crashing into a steel floor, a huge crunchy smash",
+    "seconds": 0.8,
+    "gain": -2,
+    "delay": 0,
+    "status": 200,
+    "at": "2026-10-28T20:47:47.005Z"
+  },
+  {
+    "id": "slam",
+    "layer": 3,
+    "prompt": "Concrete debris and gravel scattering after an impact, short shockwave whoosh",
+    "seconds": 1.5,
+    "gain": -7,
+    "delay": 30,
+    "status": 200,
+    "at": "2026-10-28T20:47:48.017Z"
+  },
+  {
+    "id": "slam-2",
+    "layer": 1,
+    "prompt": "Colossal sub bass ground slam boom, deep and short",
+    "seconds": 1.5,
+    "gain": 0,
+    "delay": 0,
+    "status": 200,
+    "at": "2026-10-28T20:47:48.613Z"
+  },
+  {
+    "id": "slam-2",
+    "layer": 2,
+    "prompt": "Armored body smashing into a concrete floor, a crunching cracking smash",
+    "seconds": 0.8,
+    "gain": -2,
+    "delay": 0,
+    "status": 200,
+    "at": "2026-10-28T20:47:49.718Z"
+  },
+  {
+    "id": "slam-2",
+    "layer": 3,
+    "prompt": "Shockwave air blast whoosh with rubble rattling",
+    "seconds": 1.5,
+    "gain": -7,
+    "delay": 30,
+    "status": 200,
+    "at": "2026-10-28T20:47:49.919Z"
+  },
+  {
+    "id": "land-hard",
+    "layer": 1,
+    "prompt": "Deep sub bass landing thud, a heavy low impact",
+    "seconds": 1,
+    "gain": 0,
+    "delay": 0,
+    "status": 200,
+    "at": "2026-10-28T20:47:50.974Z"
+  },
+  {
+    "id": "land-hard",
+    "layer": 2,
+    "prompt": "Heavy boots landing hard on a metal grate, a crunchy clank",
+    "seconds": 0.6,
+    "gain": -3,
+    "delay": 0,
+    "status": 200,
+    "at": "2026-10-28T20:47:51.315Z"
+  },
+  {
+    "id": "land-hard",
+    "layer": 3,
+    "prompt": "Short dust puff and grit scatter",
+    "seconds": 0.8,
+    "gain": -9,
+    "delay": 0,
+    "status": 200,
+    "at": "2026-10-28T20:47:52.291Z"
+  },
+  {
+    "id": "dash",
+    "layer": 1,
+    "prompt": "Fast powerful air dash whoosh, a sharp rushing swish",
+    "seconds": 0.7,
+    "gain": 0,
+    "delay": 0,
+    "status": 200,
+    "at": "2026-10-28T20:47:52.634Z"
+  },
+  {
+    "id": "dash",
+    "layer": 2,
+    "prompt": "Short low sub bass thump kick at the start of a burst",
+    "seconds": 0.5,
+    "gain": -4,
+    "delay": 0,
+    "status": 200,
+    "at": "2026-10-28T20:47:53.764Z"
+  },
+  {
+    "id": "dash",
+    "layer": 3,
+    "prompt": "Sci-fi jet thruster burst, a crisp short hiss",
+    "seconds": 0.6,
+    "gain": -8,
+    "delay": 0,
+    "status": 200,
+    "at": "2026-10-28T20:47:54.022Z"
+  },
+  {
+    "id": "dash-2",
+    "layer": 1,
+    "prompt": "Fast powerful air dash whoosh, a tight swish that pans quickly",
+    "seconds": 0.7,
+    "gain": 0,
+    "delay": 0,
+    "status": 200,
+    "at": "2026-10-28T20:47:55.233Z"
+  },
+  {
+    "id": "dash-2",
+    "layer": 2,
+    "prompt": "Short low sub bass thump kick",
+    "seconds": 0.5,
+    "gain": -4,
+    "delay": 0,
+    "status": 200,
+    "at": "2026-10-28T20:47:55.270Z"
+  },
+  {
+    "id": "dash-3",
+    "layer": 1,
+    "prompt": "Fast heavy air dash whoosh, a rushing wind swipe",
+    "seconds": 0.7,
+    "gain": 0,
+    "delay": 0,
+    "status": 200,
+    "at": "2026-10-28T20:47:56.686Z"
+  },
+  {
+    "id": "dash-2",
+    "layer": 3,
+    "prompt": "Electric energy zap burst, short and crisp",
+    "seconds": 0.6,
+    "gain": -8,
+    "delay": 0,
+    "status": 200,
+    "at": "2026-10-28T20:47:56.843Z"
+  },
+  {
+    "id": "dash-3",
+    "layer": 2,
+    "prompt": "Short low sub bass thump kick",
+    "seconds": 0.5,
+    "gain": -4,
+    "delay": 0,
+    "status": 200,
+    "at": "2026-10-28T20:47:58.126Z"
+  },
+  {
+    "id": "dash-3",
+    "layer": 3,
+    "prompt": "Compressed air thruster blast, short hiss",
+    "seconds": 0.6,
+    "gain": -8,
+    "delay": 0,
+    "status": 200,
+    "at": "2026-10-28T20:47:58.502Z"
+  },
+  {
+    "id": "husk-death",
+    "layer": 1,
+    "prompt": "Wet heavy body explosion, a gory meaty splatter burst with a deep thump",
+    "seconds": 1,
+    "gain": 0,
+    "delay": 0,
+    "status": 200,
+    "at": "2026-10-28T20:47:59.468Z"
+  },
+  {
+    "id": "husk-death",
+    "layer": 2,
+    "prompt": "Monster death screech cut short, a raspy distorted shriek",
+    "seconds": 1.2,
+    "gain": -3,
+    "delay": 0,
+    "status": 200,
+    "at": "2026-10-28T20:47:59.848Z"
+  },
+  {
+    "id": "husk-death",
+    "layer": 3,
+    "prompt": "Bones and armor plates clattering onto a metal floor",
+    "seconds": 1,
+    "gain": -7,
+    "delay": 50,
+    "status": 200,
+    "at": "2026-10-28T20:48:00.657Z"
+  },
+  {
+    "id": "fire-kestrel",
+    "layer": 1,
+    "prompt": "Punchy deep sub bass gunshot thump, a tight low kick-drum-like impact, no high frequencies",
+    "seconds": 0.8,
+    "gain": 0,
+    "delay": 0,
+    "status": "kept",
+    "at": "2026-10-28T20:49:40.457Z"
+  },
+  {
+    "id": "fire-kestrel",
+    "layer": 3,
+    "prompt": "Revolver hammer click and cylinder turn, a crisp metallic mechanism clack",
+    "seconds": 0.5,
+    "gain": -6,
+    "delay": 0,
+    "status": "kept",
+    "at": "2026-10-28T20:49:40.475Z"
+  },
+  {
+    "id": "fire-kestrel",
+    "layer": 4,
+    "prompt": "Short gunshot echo slapping off concrete walls in a large hall, fading quickly",
+    "seconds": 1.5,
+    "gain": -10,
+    "delay": 40,
+    "status": "kept",
+    "at": "2026-10-28T20:49:40.475Z"
+  },
+  {
+    "id": "fire-kestrel-2",
+    "layer": 1,
+    "prompt": "Punchy deep sub bass gunshot thump, a tight low kick-drum-like impact, no high frequencies",
+    "seconds": 0.8,
+    "gain": 0,
+    "delay": 0,
+    "status": "kept",
+    "at": "2026-10-28T20:49:40.476Z"
+  },
+  {
+    "id": "fire-kestrel",
+    "layer": 2,
+    "prompt": "Sharp powerful heavy revolver shot crack, a snappy explosive crack, close mic, very bright transient",
+    "seconds": 0.6,
+    "gain": -1,
+    "delay": 0,
+    "status": 200,
+    "at": "2026-10-28T20:49:42.225Z"
+  },
+  {
+    "id": "fire-kestrel-2",
+    "layer": 3,
+    "prompt": "Revolver hammer click and cylinder turn, a crisp metallic mechanism clack",
+    "seconds": 0.5,
+    "gain": -6,
+    "delay": 0,
+    "status": "kept",
+    "at": "2026-10-28T20:49:42.226Z"
+  },
+  {
+    "id": "fire-kestrel-2",
+    "layer": 4,
+    "prompt": "Short gunshot echo slapping off concrete walls in a large hall, fading quickly",
+    "seconds": 1.5,
+    "gain": -10,
+    "delay": 40,
+    "status": "kept",
+    "at": "2026-10-28T20:49:42.226Z"
+  },
+  {
+    "id": "fire-kestrel-2",
+    "layer": 2,
+    "prompt": "Sharp powerful heavy revolver shot crack, a slightly darker metallic bang, close mic, very bright transient",
+    "seconds": 0.6,
+    "gain": -1,
+    "delay": 0,
+    "status": 200,
+    "at": "2026-10-28T20:49:42.396Z"
+  },
+  {
+    "id": "fire-kestrel",
+    "layer": 1,
+    "prompt": "Punchy deep sub bass gunshot thump, a tight low kick-drum-like impact, no high frequencies",
+    "seconds": 0.8,
+    "gain": 0,
+    "delay": 0,
+    "status": "kept",
+    "at": "2026-10-28T20:50:01.687Z"
+  },
+  {
+    "id": "fire-kestrel",
+    "layer": 3,
+    "prompt": "Revolver hammer click and cylinder turn, a crisp metallic mechanism clack",
+    "seconds": 0.5,
+    "gain": -6,
+    "delay": 0,
+    "status": "kept",
+    "at": "2026-10-28T20:50:01.705Z"
+  },
+  {
+    "id": "fire-kestrel",
+    "layer": 4,
+    "prompt": "Short gunshot echo slapping off concrete walls in a large hall, fading quickly",
+    "seconds": 1.5,
+    "gain": -10,
+    "delay": 40,
+    "status": "kept",
+    "at": "2026-10-28T20:50:01.706Z"
+  },
+  {
+    "id": "fire-kestrel",
+    "layer": 2,
+    "prompt": "Loud heavy revolver gunshot, a sharp explosive bang with a bright snapping crack, close mic, full volume",
+    "seconds": 0.6,
+    "gain": -1,
+    "delay": 0,
+    "status": 200,
+    "at": "2026-10-28T20:50:03.820Z"
   }
 ]

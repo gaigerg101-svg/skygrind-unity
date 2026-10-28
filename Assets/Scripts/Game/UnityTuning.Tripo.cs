@@ -14,7 +14,10 @@ namespace Skygrind.Game
         public const string TripoFolder = "Tripo/";
 
         // --- orientation: yaw about each model's own up axis (deg), applied before it is fitted; 0 = the model's front already faces +Z (the way a body, a boss or a gun faces) ---
-        public const float TripoYawKestrel = 0f, TripoYawThunderclap = 0f, TripoYawHusk = 0f, TripoYawSwarmer = 0f, TripoYawSpitter = 0f, TripoYawCharger = 0f,
+        // the KESTREL and THUNDERCLAP files point their muzzle down -Z (pg3-tripo kill12 frame: the KESTREL's muzzle ring faced the camera)
+        // the gauntlet's and the torch's reference images were framed the same way (front to the left); the parts are round, so their yaw does not show
+        public const float TripoYawGauntlet = 180f, TripoYawTorch = 180f, TripoYawKestrelCylinder = 0f, TripoYawThunderclapPump = 0f;
+        public const float TripoYawKestrel = 180f, TripoYawThunderclap = 180f, TripoYawHusk = 0f, TripoYawSwarmer = 0f, TripoYawSpitter = 0f, TripoYawCharger = 0f,
             TripoYawWarden = 0f, TripoYawDrone = 0f, TripoYawWick = 0f, TripoYawIcebreaker = 0f, TripoYawCrown = 0f, TripoYawLoom = 0f;
 
         /// <summary>The yaw offset (deg) of a model by its id (0 for an id with no entry).</summary>
@@ -24,6 +27,10 @@ namespace Skygrind.Game
             {
                 case "kestrel": return TripoYawKestrel;
                 case "thunderclap": return TripoYawThunderclap;
+                case "gauntlet": return TripoYawGauntlet;
+                case "torch": return TripoYawTorch;
+                case "kestrel-cylinder": return TripoYawKestrelCylinder;
+                case "thunderclap-pump": return TripoYawThunderclapPump;
                 case "husk": return TripoYawHusk;
                 case "swarmer": return TripoYawSwarmer;
                 case "spitter": return TripoYawSpitter;
@@ -61,6 +68,31 @@ namespace Skygrind.Game
                 default: return 0;
             }
         }
+
+        // --- the glow (GG 2026-10-28: the models "look very desaturated"; Tools/pg3/tripo-tex.py grades the base maps and makes <id>_emission from the cyan / amber accents) ---
+        /// <summary>The material every model draws with (URP Lit, emission and normal-map variants kept in the build); its maps are set per model.</summary>
+        public const string TripoGlowMaterial = "Tripo/TripoGlow";
+        /// <summary>The accents' emission at rest (x the emission map) on every model.</summary>
+        public const float TripoGlowRest = 1.4f;
+        /// <summary>The gun in hand's accents while it charges: + this per lit quarter (gunglow50's steps, which hide while a model shows: they sat on the pill barrel).</summary>
+        public const float TripoGlowPerStep = 1.6f;
+        /// <summary>The accents at the full-charge flash (gunglow50's flash frames).</summary>
+        public const float TripoGlowFlash = 9f;
+
+        // --- the enemy models' motion (GG 2026-10-28: "enemies need walking or better animations for walking and attacking"; the models are static meshes, so the motion is procedural,
+        //     on the model's holder under the body's root, from the root's own measured ground speed and the view's wind-up flag; view only) ---
+        /// <summary>Ground speed (m/s) at which the walk is at full size.</summary>
+        public const float TripoWalkFullSpeed = 4f;
+        /// <summary>Metres per step (the gait's phase advances half a cycle per step).</summary>
+        public const float TripoStrideM = 0.9f;
+        /// <summary>The step's bob as a share of the body's height, the side-to-side waddle (deg) and the forward lean at full walk (deg).</summary>
+        public const float TripoBobShare = 0.035f, TripoWaddleDeg = 7f, TripoLeanDeg = 9f;
+        /// <summary>The wind-up's rear-back (deg, at a full wind-up), how fast it builds (per s), and the strike's lunge: pitch (deg), reach (share of height), decay (per s).</summary>
+        public const float TripoWindupBackDeg = 16f, TripoWindupRate = 3f, TripoStrikeDeg = 26f, TripoStrikeReach = 0.14f, TripoStrikeDecay = 5f;
+        /// <summary>The drone's hover: bob (share of its size) and rate (Hz), and its bank into its motion (deg at full speed).</summary>
+        public const float TripoHoverShare = 0.06f, TripoHoverHz = 0.7f, TripoDroneBankDeg = 14f;
+        /// <summary>A measured speed above this (m/s) is a teleport (a spawn, a pool reuse): no walk that frame.</summary>
+        public const float TripoTeleportSpeed = 40f;
 
         // --- the hit flash on a model: its renderers' base colour x (1 + this x the flash share) through a property block (the pill's own flash is the Enemy shader's _Flash, which a Lit material has not) ---
         public const float TripoFlashBoost = 4f;

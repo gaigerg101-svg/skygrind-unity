@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SKYGRIND Tripo Prompts</title>
+<style>
+  :root {
+    --bg: #14121c; --panel: #1d1a28; --line: #2e2a3d; --text: #e8e4f2; --muted: #a39cb8;
+    --cyan: #19d3e6; --enemy: #ff4a1c; --amber: #ff9a3c; --bound: #c9bcff;
+  }
+  @media (prefers-color-scheme: light) {
+    :root:not([data-theme="dark"]) { --bg: #f6f4fa; --panel: #ffffff; --line: #ddd8e8; --text: #1d1a28; --muted: #5d5670; --cyan: #0a8ea0; --enemy: #c8350f; --amber: #b8650e; --bound: #5b4bb0; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 15px/1.55 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 980px; margin: 0 auto; padding: 32px 16px 80px; }
+  h1 { font-size: 28px; margin: 0 0 4px; letter-spacing: .02em; }
+  h2 { font-size: 20px; margin: 40px 0 12px; padding-bottom: 6px; border-bottom: 1px solid var(--line); }
+  h3 { font-size: 17px; margin: 0 0 4px; }
+  p, li { color: var(--text); }
+  .sub { color: var(--muted); margin: 0 0 24px; }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 16px; margin: 14px 0; }
+  .card.weapon { border-left: 3px solid var(--cyan); }
+  .card.enemy { border-left: 3px solid var(--enemy); }
+  .meta { color: var(--muted); font-size: 13px; margin: 0 0 10px; }
+  .meta b { color: var(--text); font-weight: 600; }
+  .prompt { position: relative; margin: 10px 0 0; }
+  .prompt .label { font-size: 12px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin-bottom: 4px; }
+  .prompt pre { white-space: pre-wrap; word-break: break-word; margin: 0; padding: 12px 84px 12px 12px; background: var(--bg); border: 1px solid var(--line); border-radius: 8px; font: 13.5px/1.5 ui-monospace, Consolas, monospace; color: var(--text); }
+  .prompt button { position: absolute; top: 26px; right: 8px; border: 1px solid var(--line); background: var(--panel); color: var(--text); border-radius: 6px; padding: 4px 10px; font-size: 12px; cursor: pointer; }
+  .prompt button.done { color: var(--cyan); border-color: var(--cyan); }
+  .note { font-size: 13.5px; color: var(--muted); margin-top: 10px; }
+  .note b { color: var(--text); }
+  .tag { display: inline-block; font-size: 12px; padding: 1px 8px; border-radius: 99px; border: 1px solid var(--line); margin-right: 6px; color: var(--muted); }
+  .tag.ok { color: var(--cyan); border-color: var(--cyan); }
+  .tag.code { color: var(--amber); border-color: var(--amber); }
+  table { border-collapse: collapse; width: 100%; font-size: 13.5px; }
+  td, th { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { color: var(--muted); font-weight: 600; }
+  code { font: 13px ui-monospace, Consolas, monospace; color: var(--bound); }
+  .sw { display: inline-block; width: 11px; height: 11px; border-radius: 3px; vertical-align: -1px; margin-right: 4px; border: 1px solid var(--line); }
+</style>
+</head>
+<body>
+<main>
+  <h1>SKYGRIND: model prompts (ChatGPT image → Tripo 3D)</h1>
+  <p class="sub">Weapons and enemy types (no bosses). Make a reference picture in ChatGPT, then turn it into a model with Tripo's Image to 3D. Same blocky, flat-shaded look as the game now, just cooler. 2026-10-28.</p>
+
+  <h2>How to use these</h2>
+  <div class="card">
+    <ol>
+      <li><b>ChatGPT:</b> copy a model's prompt (each one is complete) into ChatGPT and generate the image. Check it: the whole object is in frame, the background is transparent (a checkerboard in the preview), there's no floor or shadow, and there's one object only. If the background isn't transparent, reply "remove the background, transparent PNG". Download the PNG.</li>
+      <li><b>More views (optional, better shape):</b> in the same chat, paste the "same object from the side / back" prompt below, then use Tripo's multi-view mode with front, side and back.</li>
+      <li><b>Tripo:</b> Image to 3D, upload the PNG (or the views), and generate with textures on and a moderate face count. It should stay low-poly.</li>
+      <li><b>Generate the moving parts on their own</b> (KESTREL cylinder and hammer, THUNDERCLAP pump). The body prompts leave them out, so the game can keep spinning the cylinder and sliding the pump.</li>
+      <li><b>Export FBX in metres</b>, named exactly as the <code>file</code> line says. Put the files in <code>Inbox/tripo/</code>, and I'll check them, fit them and turn the <code>tripo74</code> row on.</li>
+      <li><b>Facing:</b> guns point their muzzle forward (+Z in Unity); enemies face forward with their feet at the bottom.</li>
+    </ol>
+    <p class="note"><b>Plug-in status.</b> <span class="tag ok">ready</span> the code already loads this model.
+      <span class="tag code">small code change</span> the model works once I add a hook (part models, gauntlet, torch). The current hook hides the code-built cylinder, hammer and pump when a gun model loads, so their animations stop. Part models fix that.</p>
+  </div>
+
+  <div class="prompt"><div class="label">Follow-up for more views (paste in the same chat after the first image)</div><pre>Now draw the exact same object again: identical design, proportions, parts and colours, same style and lighting, same scale. Show it from the exact side (a flat profile view) as one image, then from the exact back as a second image. Each image: the whole object fully in frame and centred, transparent background (PNG with alpha), no floor, no shadow, no text.</pre><button>Copy</button></div>
+
+  <h2>Palette</h2>
+  <div class="card">
+    <table>
+      <tr><th>Role</th><th>Colour</th><th>Used on</th></tr>
+      <tr><td>Player-usable glow</td><td><span class="sw" style="background:#19D3E6"></span>cyan #19D3E6</td><td>Gun accents, the charge window. Never on enemies.</td></tr>
+      <tr><td>Gun body</td><td><span class="sw" style="background:#3B3E46"></span>gunmetal #3B3E46 · <span class="sw" style="background:#B9B4A9"></span>bone #B9B4A9 · <span class="sw" style="background:#2E2A26"></span>grip #2E2A26 · <span class="sw" style="background:#24262C"></span>dark #24262C</td><td>Every gun (the same tones as now).</td></tr>
+      <tr><td>Enemy body</td><td><span class="sw" style="background:#5A1A0A"></span>dark red-brown #5A1A0A · <span class="sw" style="background:#24262C"></span>dark armour #24262C</td><td>Every enemy (the game's enemy colour at 35 %).</td></tr>
+      <tr><td>Enemy eyes / visor</td><td><span class="sw" style="background:#FF9A3C"></span>amber #FF9A3C</td><td>Visors, lenses.</td></tr>
+      <tr><td>Danger</td><td><span class="sw" style="background:#FF4A1C"></span>red-orange #FF4A1C</td><td>Drawn by the game (spines, fins, tells), so not in the meshes.</td></tr>
+    </table>
+  </div>
+
+  <h2>Weapons</h2>
+
+  <div class="card weapon">
+    <h3>KESTREL (revolver) · body</h3>
+    <p class="meta"><b>file</b> <code>kestrel.fbx</code> · about 31 cm long, 17 cm tall, 5 cm wide · grip at the origin, muzzle forward · <span class="tag ok">ready</span> (body only needs the part hook below)</p>
+    <div class="prompt"><div class="label">Prompt</div><pre>A sleek heavy sci-fi revolver pistol, side view proportions long and lean. Gunmetal grey frame (#3B3E46) with bevelled armour panels, a bone-white top rib (#B9B4A9) running the full length, a raked dark brown grip (#2E2A26) with chunky finger grooves, a squared trigger guard. Long straight barrel with a thin glowing cyan band (#19D3E6) and a cyan muzzle ring. Along the top of the barrel a recessed charge window: a long narrow dark glass channel split into 4 equal segments by small metal ribs, running from the frame to the muzzle, empty and unlit. An open round gap in the frame where the revolver cylinder sits (leave the cylinder out), and an empty slot behind it for the hammer (leave the hammer out). Muzzle facing forward.</pre><button>Copy</button></div>
+    <p class="note"><b>The charge fill:</b> the game already lights 4 cyan segments along the barrel, one per 25 % of charge, white-hot at full. The 4-segment window puts that fill <i>inside</i> the gun, so it reads as the gun filling up.</p>
+  </div>
+
+  <div class="card weapon">
+    <h3>KESTREL · cylinder (part)</h3>
+    <p class="meta"><b>file</b> <code>kestrel-cylinder.fbx</code> · about 5 cm across, 5 cm long · centred on its spin axis, axis pointing forward · <span class="tag code">small code change</span></p>
+    <div class="prompt"><div class="label">Prompt</div><pre>A chunky six-chamber revolver cylinder on its own, bone-white (#B9B4A9) with deep fluted grooves between the chambers, six dark round chamber holes on the front face, a thin glowing cyan ring (#19D3E6) around the back edge. Perfectly round and symmetric around its centre axis, viewed so the axis points forward.</pre><button>Copy</button></div>
+  </div>
+
+  <div class="card weapon">
+    <h3>KESTREL · hammer (part)</h3>
+    <p class="meta"><b>file</b> <code>kestrel-hammer.fbx</code> · about 3 cm tall · pivot at its bottom hinge · <span class="tag code">small code change</span></p>
+    <div class="prompt"><div class="label">Prompt</div><pre>A small chunky revolver hammer on its own, gunmetal grey (#3B3E46) with a ridged bone-white thumb spur (#B9B4A9), a round hinge hole at its base, simple bold shape.</pre><button>Copy</button></div>
+  </div>
+
+  <div class="card weapon">
+    <h3>THUNDERCLAP (shotgun) · body</h3>
+    <p class="meta"><b>file</b> <code>thunderclap.fbx</code> · about 72 cm long · grip at the origin, muzzles forward · <span class="tag ok">ready</span> (body only needs the part hook below)</p>
+    <div class="prompt"><div class="label">Prompt</div><pre>A brutal sci-fi double-barrel pump shotgun, long and heavy. Two thick stacked barrels in gunmetal grey (#3B3E46) with wide flared bell muzzles, a bone-white stock (#B9B4A9) with a squared butt, a dark pistol grip (#2E2A26), a big hinge pin and a chunky top sight. A heat shroud over the barrels with a row of slanted vents lined in glowing cyan (#19D3E6), and a cyan band near each muzzle. Under the barrels an empty rail where the pump grip slides (leave the pump out). Muzzles facing forward.</pre><button>Copy</button></div>
+    <p class="note">The vents give the charged slug shot somewhere to glow; the game's own charge glow and gem still draw on top.</p>
+  </div>
+
+  <div class="card weapon">
+    <h3>THUNDERCLAP · pump (part)</h3>
+    <p class="meta"><b>file</b> <code>thunderclap-pump.fbx</code> · about 15 cm long · centred, length pointing forward · <span class="tag code">small code change</span></p>
+    <div class="prompt"><div class="label">Prompt</div><pre>A chunky shotgun pump forend on its own, a thick ribbed grip sleeve in dark brown (#2E2A26) with deep horizontal grooves, gunmetal grey end caps (#3B3E46), one thin glowing cyan stripe (#19D3E6) along each side, hollow through the middle like a sleeve.</pre><button>Copy</button></div>
+  </div>
+
+  <div class="card weapon">
+    <h3>PULSE GAUNTLET</h3>
+    <p class="meta"><b>file</b> <code>gauntlet.fbx</code> · about 27 cm long, 10 cm wide · wrist at the origin, knuckles forward · <span class="tag code">small code change</span> (no gauntlet hook yet)</p>
+    <div class="prompt"><div class="label">Prompt</div><pre>A heavy armoured power gauntlet: a clenched mechanical fist on a short forearm bracer, knuckles forward. Gunmetal grey overlapping armour plates (#3B3E46), bone-white segmented fingers (#B9B4A9), dark knuckle guards (#24262C) with a glowing cyan strip across the knuckles (#19D3E6), two chunky hydraulic pistons along the sides of the forearm, a thick dark cuff at the wrist. Powerful, compact, punchy shape.</pre><button>Copy</button></div>
+  </div>
+
+  <div class="card weapon">
+    <h3>TORCH (flamethrower)</h3>
+    <p class="meta"><b>file</b> <code>torch.fbx</code> · about 51 cm long · grip at the origin, nozzle forward · <span class="tag code">small code change</span> (no torch hook yet)</p>
+    <div class="prompt"><div class="label">Prompt</div><pre>A compact sci-fi flamethrower: a short gunmetal grey body (#3B3E46), a barrel ringed with five cooling fins, a wide flared nozzle at the front, a round pressurised fuel tank slung underneath with a bone-white band (#B9B4A9), a dark grip (#2E2A26), a small pilot-light housing under the nozzle, a warm amber glowing gauge window on the tank. Nozzle facing forward.</pre><button>Copy</button></div>
+    <p class="note">The torch's accent stays the fire family's amber (its colour in the game's config). The pilot light and nozzle glows are drawn by the game.</p>
+  </div>
+
+  <h2>Enemies</h2>
+  <div class="card">
+    <p class="note" style="margin-top:0"><b>Leave out what the game draws itself</b>, or it shows twice: the spitter's acid sac, the charger's back plate, the warden's shield and arm, the drone's core, and every red-orange danger part, yellow parry part and bone weak part. All enemies keep the pill-shaped look GG likes, with better visors. They face forward with their feet at the origin. The game scales each model to the enemy's hit-box height, and it already loads all six <span class="tag ok">ready</span>.</p>
+  </div>
+
+  <div class="card enemy">
+    <h3>Husk</h3>
+    <p class="meta"><b>file</b> <code>husk.fbx</code> · 1.8 m tall · the tank uses this model at 1.4×</p>
+    <div class="prompt"><div class="label">Prompt</div><pre>A hunched pill-shaped humanoid creature, a smooth capsule body 1.8 m tall in dark red-brown (#5A1A0A) with dark armour plates (#24262C) on the chest and one shoulder. A blocky helmet-like head tilted forward with a narrow glowing amber slit visor (#FF9A3C) across the face, a thick armoured collar ring, two short stubby arms hanging at its sides. Smooth back with no spines. Menacing, simple, readable at a distance.</pre><button>Copy</button></div>
+  </div>
+
+  <div class="card enemy">
+    <h3>Swarmer</h3>
+    <p class="meta"><b>file</b> <code>swarmer.fbx</code> · 0.75 m tall, 0.8 m long</p>
+    <div class="prompt"><div class="label">Prompt</div><pre>A small fast crawling bug-like creature, low and wide, 0.8 m long: a rounded pill-shaped body in dark red-brown (#5A1A0A) with dark armour shell plates (#24262C), a blunt wedge head pushed forward with three glowing amber lenses (#FF9A3C) in a triangle, six short stubby legs splayed out. No fins or spikes on the back. Compact and twitchy-looking.</pre><button>Copy</button></div>
+  </div>
+
+  <div class="card enemy">
+    <h3>Spitter</h3>
+    <p class="meta"><b>file</b> <code>spitter.fbx</code> · 2 m tall</p>
+    <div class="prompt"><div class="label">Prompt</div><pre>A tall lanky pill-shaped creature leaning forward, 2 m tall: a smooth capsule body in dark red-brown (#5A1A0A), a small round head with one large glowing amber lens (#FF9A3C) like a single eye, a long neck, thin arms. Two thick dark armour straps (#24262C) cross its back around an empty round mount where a tank would sit (leave the tank out). Sinister, top-heavy silhouette.</pre><button>Copy</button></div>
+  </div>
+
+  <div class="card enemy">
+    <h3>Charger</h3>
+    <p class="meta"><b>file</b> <code>charger.fbx</code> · 2.2 m tall, 1.5 m wide, long body</p>
+    <div class="prompt"><div class="label">Prompt</div><pre>A massive low armoured battering-ram beast, long and wide like a rhino made of pill shapes: a heavy rounded body in dark red-brown (#5A1A0A), a thick dark armoured head plate (#24262C) at the nose shaped like a ship's prow, two short sweeping horn blades, glowing amber eye slits (#FF9A3C), three vent openings along its spine, four short pillar legs. Leave the rump bare (a plate goes there). Built to charge, unstoppable silhouette.</pre><button>Copy</button></div>
+  </div>
+
+  <div class="card enemy">
+    <h3>Warden</h3>
+    <p class="meta"><b>file</b> <code>warden.fbx</code> · 2.3 m tall, broad</p>
+    <div class="prompt"><div class="label">Prompt</div><pre>A big broad armoured guardian, 2.3 m tall, pill-shaped and heavy: a wide capsule body in dark red-brown (#5A1A0A), a rounded knight-like helmet with a flat plate visor and a glowing amber visor slit (#FF9A3C), big layered dark shoulder plates (#24262C), a thick armoured belt, short sturdy legs. No arms and no shield (those are separate). Imposing, defensive stance.</pre><button>Copy</button></div>
+  </div>
+
+  <div class="card enemy">
+    <h3>Drone</h3>
+    <p class="meta"><b>file</b> <code>drone.fbx</code> · 1.2 m across · centred (it flies)</p>
+    <div class="prompt"><div class="label">Prompt</div><pre>A small hovering combat drone shaped like a chunky flying saucer, 1.2 m across: a dark red-brown armoured shell (#5A1A0A) with a raised dark rim band (#24262C), three glowing amber lenses (#FF9A3C) evenly spaced around the front, a short antenna on top, a round open socket in the centre of the underside (leave it empty, a glowing core goes there). Symmetric, clean, slightly menacing.</pre><button>Copy</button></div>
+  </div>
+
+  <h2>What I'll do when the files land</h2>
+  <div class="card">
+    <ul>
+      <li>Add the part hook (cylinder, hammer, pump), so the moving parts keep their animations on the new guns, plus gauntlet and torch hooks. All guns keep the same muzzle points, recoil, sway and charge glow.</li>
+      <li>Fit each model to the old gun's length and muzzle, and each enemy to its hit box, then turn <code>tripo74</code> on and check it on a blind before/after pair in a Player, as with every visible change.</li>
+      <li>Known loss: the Tripo enemies use a standard lit material, so they lose the enemy rim and the wind-up tint for now. The hit flash still works.</li>
+    </ul>
+  </div>
+</main>
+<script>
+  // Each card holds the model's description; wrap it into a complete ChatGPT image prompt made for Tripo's Image to 3D.
+  var STYLE = 'Style: a stylized low-poly 3D game asset render for a first-person movement shooter at dusk. Chunky blocky shapes with crisp bevelled edges, flat-shaded clean colours, simple and readable, no fine noise, no rust or grime, slightly heroic proportions.';
+  var SHOT = 'Image rules (this picture will be turned into a 3D model): ONE object only, the whole object fully in frame with a margin around it, centred, nothing cropped. Transparent background (PNG with alpha channel). No floor, no ground shadow, no reflections, no props, no text, no logos, no watermark. Soft even studio lighting from the front with no harsh shadows, so every colour reads clearly. Orthographic-looking camera, no strong perspective distortion. Square image.';
+  function view(card) {
+    if (card.classList.contains('enemy')) return 'View: front three-quarter view (turned about 30 degrees), eye level, standing straight in a neutral pose with arms slightly away from the body, legs and feet fully visible. No weapon in hand, no people.';
+    return 'View: three-quarter view from the front-left side, slightly from above, so the side profile and the top are both visible; the front/muzzle points to the left of the image. No hands, no people.';
+  }
+  document.querySelectorAll('.card.weapon, .card.enemy').forEach(function (card) {
+    card.querySelectorAll('.prompt').forEach(function (p) {
+      var pre = p.querySelector('pre');
+      pre.textContent = 'Create an image: ' + pre.textContent.trim() + '\n\n' + STYLE + '\n\n' + view(card) + '\n\n' + SHOT;
+      var lab = p.querySelector('.label'); if (lab) lab.textContent = 'ChatGPT image prompt';
+    });
+  });
+  document.querySelectorAll('.prompt button').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var t = b.parentElement.querySelector('pre').innerText;
+      try { navigator.clipboard.writeText(t); b.textContent = 'Copied'; b.classList.add('done'); setTimeout(function () { b.textContent = 'Copy'; b.classList.remove('done'); }, 1400); } catch (e) {}
+    });
+  });
+</script>
+</body>
+</html>

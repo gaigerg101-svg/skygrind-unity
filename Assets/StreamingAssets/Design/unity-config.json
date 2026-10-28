@@ -10299,8 +10299,8 @@
         "_why": "PG3 (GG 2026-10-28: breakcore, many tracks): MusicDirector.cs, 21 ElevenLabs tracks by level / fight / boss state"
       },
       "tripo74": {
-        "enabled": false,
-        "enabled_why": "OFF until the lead's ON flip (NIGHT72 D-1, kept by NIGHT73: its same-build pair, a SPOT naming the change, the guards)",
+        "enabled": true,
+        "enabled_why": "ON (PG3): GG asked for the Tripo models in the game (2026-10-28 15:10); pg3-tripo2 kill12 frames show the KESTREL facing forward and textured, Editor renders show the six enemies facing +Z",
         "_why": "PG3 (GG 2026-10-28: weapons, enemies, bosses): the Tripo models over the pill views, TripoModels.cs; off shows the pills"
       },
       "sound74": {

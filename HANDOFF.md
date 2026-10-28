@@ -25,6 +25,15 @@ prompt log, trailer. This pass: "many many" breakcore tracks, powerful SFX, bett
   0 NRE, 0 exceptions; [sound74] played 598, kinds 48; [music74] missing 0); verbs37 PASS foundry 27/27, iceline 29/29,
   kiln 30/30, spire 31/31; boss63 GREEN on kiln (wyrm; boss-hit played 22). Summary: Logs/feel/pg3-final2/summary47.txt (untracked).
 
+- Sound pass 2 (GG 13:45, 30 min cap): 16 more layered SFX (plain KESTREL / THUNDERCLAP x3, gauntlet x2, torch, slam x2,
+  land-hard, dash x3, husk-death; Tools/pg3/add-pass2.cjs), 5 third combat tracks `<level>-combat-c` and MusicDirector rotating 3
+  combat tracks. Build **pg3-final3** (b701f6556 + these, uncommitted at build time): verbs37 foundry 27/27, boss63 GREEN, music
+  missing 0 (foundry-combat-c played 43 s) — but the smoke **FAILS one step twice: attract** ("attract on" then at once
+  "attract off: an input", 0 steps), while pg3-final2 passes it twice (incl. a control run at 14:10). Cause not found. Not the
+  build GG plays until that is fixed: next, read Kiosk.cs's input test and what in pass 2 could feed it; then rebuild + smoke.
+- docs/pg3/TRIPO-PROMPTS.html: Tripo prompts for the 4 weapons (+ KESTREL cylinder / hammer and THUNDERCLAP pump parts, a 4-segment
+  charge window on the KESTREL) and the 6 enemy kinds, no bosses. Code needed for part models and gauntlet / torch hooks.
+
 ## Not done / open
 - rim74 SHORT (spotter: NOTHING OBVIOUS; its fade collapses). tripo74 waits for models. Repo snapshot not pushed.
 - [sound74] "missing 4" in every PG3 smoke since pg3-b (not new): 4 plays asked for an id with no clip (silent). The ids are

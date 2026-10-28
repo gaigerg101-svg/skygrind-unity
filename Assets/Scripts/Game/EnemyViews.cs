@@ -534,6 +534,7 @@ namespace Skygrind.Game
                 if (windingUp) c = Color.Lerp(c, tell, 0.5f + 0.5f * wave);
                 bool staggered = husk.staggerSteps > 0;
                 if (staggered) c = Color.Lerp(c, Color.white, staggerPale);
+                b.l43.tripoAttack = windingUp; // PG3: the Tripo model rears back and lunges (Enemy43View.Tripo.cs)
                 b.l43.Apply(Models43.On(cfg), b.m40); // NIGHT43 A1 models43
                 if (b.l43.on) c = Models43.Body(c);
                 Color hc = c * headShade; // a flash whitens both (the shader's _Flash: husk.js WHITE)
@@ -712,6 +713,7 @@ namespace Skygrind.Game
                 bool crouch = s.state == "crouch";
                 Color c = baseColor;
                 if (crouch) c = Color.Lerp(c, tell, 0.5f + 0.5f * Mathf.Sin((float)s.drawAge * 40));
+                b.l43.tripoAttack = s.windupSteps > 0; // PG3: the Tripo model rears back and lunges (Enemy43View.Tripo.cs)
                 b.l43.Apply(Models43.On(game.cfg), b.m40); // NIGHT43 A1 models43
                 if (b.l43.on) c = Models43.Body(c);
                 Vec3 p = s.previous + (s.position - s.previous) * alpha;
@@ -954,6 +956,7 @@ namespace Skygrind.Game
                 b.parts[1].localScale = Vector3.one * 0.84f * swell;
                 Color sac = acid;
                 if (tell) sac = Color.Lerp(sac, hot, 0.5f + 0.5f * Mathf.Sin((float)s.drawAge * 30)) * 2.2f;
+                b.l43.tripoAttack = s.windupSteps > 0 || s.tellSteps > 0; // PG3: the Tripo model rears back and lunges (Enemy43View.Tripo.cs)
                 b.l43.Apply(Models43.On(game.cfg), b.m40); // NIGHT43 A1 models43: the body and the head darkened, the sac keeps its acid
                 Color body43 = b.l43.on ? Models43.Body(body) : body, box43 = b.l43.on ? Models43.Body(box) : box;
                 b.colors[0] = body43;

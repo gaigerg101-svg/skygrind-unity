@@ -1,36 +1,251 @@
 {
   "note": "PG3 music: one ElevenLabs Music request per track (Tools/pg3/music-gen.cjs). Original tracks: the prompts describe production, never an artist or a game (docs/pg3/PG3-SOUND-PROMPT.md section 2). `state` is what MusicDirector plays it for; `level` the campaign level id it belongs to.",
   "tracks": [
-    { "id": "title", "state": "title", "seconds": 100, "prompt": "Instrumental. Opens with a lone melancholic solo piano in D minor, rubato, reverb-soaked, like dusk over ruins; at 0:30 a string ostinato and soft choir pads build; at 0:50 it drops into emotional breakcore at 174 bpm: frantic chopped and re-sequenced amen breaks, time-stretch stutters, deep reese bass, the piano melody now played on a bright supersaw lead; ends by thinning back to the piano. Cinematic, bittersweet, high-fidelity mix, wide stereo." },
-    { "id": "foundry-combat", "state": "combat", "level": "foundry", "seconds": 120, "prompt": "Instrumental high-energy breakcore for a fast first-person shooter fight in a molten foundry, D minor, 174 bpm. Relentless chopped amen and think breaks with glitch edits and stutter fills, distorted punchy kicks, growling reese and 808 sub bass, metallic anvil and clang percussion layered into the breaks, a soaring detuned supersaw lead hook, short warm piano stabs between phrases. Aggressive but emotional, crisp modern mix, loud, no vocals, seamless loopable structure." },
-    { "id": "foundry-calm", "state": "calm", "level": "foundry", "seconds": 90, "prompt": "Instrumental ambient interlude in D minor, 87 bpm half-time, warm detuned felt piano melody, slow evolving pads, distant metallic clanks with long reverb, soft filtered breakbeat ghosting quietly underneath, low sub drone. Tense calm before a fight in a cooling foundry at dusk. Sparse, atmospheric, loopable, no vocals." },
-    { "id": "boss-wick", "state": "boss", "level": "foundry", "seconds": 150, "prompt": "Instrumental epic boss battle theme, D minor, 178 bpm. Starts with a dramatic church organ and choir chord swell and timpani rolls; then explodes into breakcore: violently chopped amen breaks, blast-beat fills, heavy distorted downtuned guitar riffs, roaring reese bass, a burning fiery lead melody; halfway a breakdown with solo harpsichord and strings building back into the full break. Huge, fiery, triumphant and menacing, cinematic mix, no vocals." },
-    { "id": "iceline-combat", "state": "combat", "level": "iceline", "seconds": 120, "prompt": "Instrumental breakcore for a fast shooter fight in a frozen rail yard, F sharp minor, 170 bpm. Crisp, glassy chopped breakbeats with stutter edits, icy bell and glockenspiel arpeggios, a music-box piano hook, cold supersaw chords, deep rolling sub bass, shimmering reverb tails, occasional glitch freezes. Fast, bright, melancholic, high-fidelity, no vocals, loopable." },
-    { "id": "iceline-calm", "state": "calm", "level": "iceline", "seconds": 90, "prompt": "Instrumental ambient piece in F sharp minor, slow, music-box piano and celesta melody, frozen glassy pads, soft wind texture, distant train-rail creaks, a faint filtered breakbeat pulse. Lonely, cold and beautiful. Loopable, no vocals." },
-    { "id": "boss-icebreaker", "state": "boss", "level": "iceline", "seconds": 150, "prompt": "Instrumental boss battle theme, F sharp minor, 172 bpm. A massive slow intro of low brass and pounding war drums like a golem walking, cracking-ice impacts; then full breakcore: brutal chopped breaks, distorted bass stabs, heavy guitar chugs, an urgent string ostinato, choir hits on the downbeats; a mid-song breakdown of solo cello and piano that rebuilds into the drop. Crushing, heroic, cinematic, no vocals." },
-    { "id": "kiln-combat", "state": "combat", "level": "kiln", "seconds": 120, "prompt": "Instrumental breakcore for a shooter fight in scorching kiln halls, C minor, 180 bpm. Pounding tribal toms and taiko under rapid chopped amen breaks, glitch stutters, low brass blasts, heat-haze distorted guitar textures, a snarling reese bass, a bright urgent lead hook. Hot, aggressive, relentless, crisp mix, no vocals, loopable." },
-    { "id": "kiln-calm", "state": "calm", "level": "kiln", "seconds": 90, "prompt": "Instrumental ambient interlude in C minor, slow, low drones and rumbling furnace texture, a sad solo piano melody, soft brass swells far away, ember crackle, a muffled half-time breakbeat. Oppressive heat and quiet dread. Loopable, no vocals." },
-    { "id": "boss-wyrm", "state": "boss", "level": "kiln", "seconds": 150, "prompt": "Instrumental boss battle theme for a giant burrowing worm, C minor, 182 bpm. Opens with earthquake rumbles, deep taiko and a low male choir chant; then savage breakcore: chaotic chopped amen breaks, blast fills, massive distorted reese bass slides, heavy guitar riffs, a serpentine middle-eastern-scale lead; a harpsichord and string breakdown that rebuilds into an even bigger drop. Monstrous, frantic, cinematic, no vocals." },
-    { "id": "span-combat", "state": "combat", "level": "span", "seconds": 120, "prompt": "Instrumental breakcore for a fast shooter fight on a vast bridge at dusk, A minor, 168 bpm. A baroque harpsichord ostinato and staccato strings over furious chopped amen breaks, mechanical clockwork clicks as percussion, a deep reese bass, a soaring violin-like lead. Elegant, urgent, intricate, crisp mix, no vocals, loopable." },
-    { "id": "span-calm", "state": "calm", "level": "span", "seconds": 90, "prompt": "Instrumental ambient interlude in A minor, slow, solo harpsichord and plucked strings, wind over a high bridge, soft clockwork ticking, warm pads, a faint filtered breakbeat. Wistful and suspended. Loopable, no vocals." },
-    { "id": "boss-loom", "state": "boss", "level": "span", "seconds": 150, "prompt": "Instrumental boss battle theme for a colossal six-legged weaving machine, A minor, 170 bpm. Begins with a mechanical loom rhythm and a tense string quartet; then explodes into breakcore: intricate chopped breaks, glitch stutters, heavy distorted guitars, a pipe organ riff, choir stabs, a reese bass; a solo piano interlude that rebuilds to a climactic drop. Intricate, menacing, epic, no vocals." },
-    { "id": "spire-combat", "state": "combat", "level": "spire", "seconds": 120, "prompt": "Instrumental breakcore for the final level's shooter fights in a bell tower at dusk, E minor, 176 bpm. Huge church bells and organ chords over furious chopped amen breaks with glitch edits, a choir pad, a heavy reese bass, a soaring emotional supersaw lead. Grand, desperate, the biggest and most intense track, crisp loud mix, no vocals, loopable." },
-    { "id": "spire-calm", "state": "calm", "level": "spire", "seconds": 90, "prompt": "Instrumental ambient piece in E minor, slow, soft organ drones, a distant choir, tolling bells far away, a hopeful but sad solo piano melody, a faint filtered break underneath. Sacred, high and lonely. Loopable, no vocals." },
-    { "id": "boss-crown", "state": "boss", "level": "spire", "seconds": 170, "prompt": "Instrumental final boss battle theme for a floating crown of spinning blades, E minor, 180 bpm. Opens with a full choir and pipe organ fanfare and tolling bells; then the most intense breakcore: shredded chopped amen breaks, blast-beat fills, crushing distorted guitars, a roaring reese bass, a heroic soaring lead, orchestral string runs; a breakdown of solo piano and choir that builds through a rising string crescendo into a triumphant final drop. Climactic, transcendent, cinematic, no vocals." },
-    { "id": "select", "state": "select", "seconds": 80, "prompt": "Instrumental menu loop, 87 bpm half-time feel, mellow emotional breakcore: a soft rolling filtered breakbeat, warm electric piano chords, airy pads, gentle bass, a nostalgic lead melody. Dusk, hopeful, relaxed but ready. Loopable, no vocals." },
-    { "id": "results", "state": "results", "seconds": 70, "prompt": "Instrumental results screen music, 87 bpm, reflective: a warm piano melody over a gentle chopped breakbeat, soft strings, airy pads, a satisfied bittersweet mood after a hard fight. Loopable, no vocals." },
-    { "id": "sting-clear", "state": "sting", "seconds": 8, "prompt": "Instrumental short victory sting: a fast chopped breakbeat fill into a huge bright major chord on supersaw and strings, a choir 'ah', cymbal swell, then ring out. Triumphant, 8 seconds." },
-    { "id": "sting-death", "state": "sting", "seconds": 7, "prompt": "Instrumental short defeat sting: a breakbeat that slows down and pitches down like a tape stop, a low detuned piano minor chord, a fading reverse cymbal. Sad, 7 seconds." },
-    { "id": "campaign-complete", "state": "results", "seconds": 120, "prompt": "Instrumental ending credits theme: begins with solo piano reprising a melancholic D minor melody, strings and choir join, then it builds into a euphoric emotional breakcore finale at 174 bpm with chopped breaks, a soaring lead and full orchestra, and resolves into a hopeful major-key piano ending. Cathartic and triumphant, no vocals." },
-    { "id": "foundry-combat-b", "state": "combat", "level": "foundry", "seconds": 120, "prompt": "Instrumental breakcore, D minor, 176 bpm, a second fight theme for a molten foundry: opens with 8 bars of a lone grand piano playing a fast urgent arpeggio, then slams into rapid-fire chopped amen breaks with glitchy stutter edits and drill-like snare rolls, a distorted wobbling reese bass, hammered anvil percussion, choir pad swells and a screaming supersaw counter-melody. Furious, emotional, polished, no vocals, loopable." },
-    { "id": "iceline-combat-b", "state": "combat", "level": "iceline", "seconds": 120, "prompt": "Instrumental breakcore, F sharp minor, 172 bpm, a second fight theme for a frozen rail yard: a pizzicato string and celesta intro, then crisp hyper-fast chopped breaks with time-stretched stutters, a gliding sub bass, crystalline bell chords, a glassy plucked lead, frosty white-noise risers into each drop. Bright, fast, bittersweet, no vocals, loopable." },
-    { "id": "kiln-combat-b", "state": "combat", "level": "kiln", "seconds": 120, "prompt": "Instrumental breakcore, C minor, 182 bpm, a second fight theme for scorching kiln halls: thunderous taiko and frame drums, then violent chopped breaks with blast fills, a grinding distorted guitar riff, a brass section stab on every phrase, a snarling reese bass and a searing high lead. Relentless, hot, heavy, no vocals, loopable." },
-    { "id": "span-combat-b", "state": "combat", "level": "span", "seconds": 120, "prompt": "Instrumental breakcore, A minor, 170 bpm, a second fight theme on a vast bridge: a baroque string quartet fugue opening, then intricate chopped amen breaks with glitch edits, a harpsichord riff doubled by a supersaw, ticking clockwork percussion, a deep rolling bass and soaring violin lines. Elegant, frantic, no vocals, loopable." },
-    { "id": "spire-combat-b", "state": "combat", "level": "spire", "seconds": 120, "prompt": "Instrumental breakcore, E minor, 178 bpm, a second fight theme in a bell tower: tolling bells and a pipe organ chorale, then the hardest chopped breaks with blast fills, choir stabs, crushing distorted guitars, a massive reese bass and a heroic emotional supersaw lead. Grand and desperate, no vocals, loopable." },
-    { "id": "boss-wick-2", "state": "boss2", "level": "foundry", "seconds": 120, "prompt": "Instrumental enraged final phase of a fire boss battle, D minor, 186 bpm: the main theme's urgency doubled, shredded chopped breaks at full speed, blast beats, roaring distorted guitars, a church organ and full choir hammering the melody, fiery brass, relentless and climactic, no vocals, loopable." },
-    { "id": "boss-icebreaker-2", "state": "boss2", "level": "iceline", "seconds": 120, "prompt": "Instrumental enraged final phase of an ice golem boss battle, F sharp minor, 184 bpm: pounding war drums under breakneck chopped breaks, crushing guitar chugs, a frantic string ostinato, choir hits, shattering glass percussion, desperate and huge, no vocals, loopable." },
-    { "id": "boss-wyrm-2", "state": "boss2", "level": "kiln", "seconds": 120, "prompt": "Instrumental enraged final phase of a giant worm boss battle, C minor, 188 bpm: chaotic hyper-fast chopped breaks and blast fills, a monstrous sliding reese bass, low male choir chanting, taiko, a frantic serpentine lead, earthquake sub drops, savage and climactic, no vocals, loopable." },
-    { "id": "boss-loom-2", "state": "boss2", "level": "span", "seconds": 120, "prompt": "Instrumental enraged final phase of a giant machine boss battle, A minor, 184 bpm: mechanical rhythms accelerating, intricate breakneck chopped breaks, a pipe organ riff, distorted guitars, frantic strings and choir, metallic clanks on every beat, climactic, no vocals, loopable." },
-    { "id": "boss-crown-2", "state": "boss2", "level": "spire", "seconds": 140, "prompt": "Instrumental enraged final phase of the final boss battle, E minor, 190 bpm: the most intense music in the game, shredded chopped breaks with blast beats, full choir and pipe organ, crushing guitars, orchestral strings in rapid runs, tolling bells, a heroic soaring lead, rising to a transcendent climax, no vocals, loopable." }
+    {
+      "id": "title",
+      "state": "title",
+      "seconds": 100,
+      "prompt": "Instrumental. Opens with a lone melancholic solo piano in D minor, rubato, reverb-soaked, like dusk over ruins; at 0:30 a string ostinato and soft choir pads build; at 0:50 it drops into emotional breakcore at 174 bpm: frantic chopped and re-sequenced amen breaks, time-stretch stutters, deep reese bass, the piano melody now played on a bright supersaw lead; ends by thinning back to the piano. Cinematic, bittersweet, high-fidelity mix, wide stereo."
+    },
+    {
+      "id": "foundry-combat",
+      "state": "combat",
+      "level": "foundry",
+      "seconds": 120,
+      "prompt": "Instrumental high-energy breakcore for a fast first-person shooter fight in a molten foundry, D minor, 174 bpm. Relentless chopped amen and think breaks with glitch edits and stutter fills, distorted punchy kicks, growling reese and 808 sub bass, metallic anvil and clang percussion layered into the breaks, a soaring detuned supersaw lead hook, short warm piano stabs between phrases. Aggressive but emotional, crisp modern mix, loud, no vocals, seamless loopable structure."
+    },
+    {
+      "id": "foundry-calm",
+      "state": "calm",
+      "level": "foundry",
+      "seconds": 90,
+      "prompt": "Instrumental ambient interlude in D minor, 87 bpm half-time, warm detuned felt piano melody, slow evolving pads, distant metallic clanks with long reverb, soft filtered breakbeat ghosting quietly underneath, low sub drone. Tense calm before a fight in a cooling foundry at dusk. Sparse, atmospheric, loopable, no vocals."
+    },
+    {
+      "id": "boss-wick",
+      "state": "boss",
+      "level": "foundry",
+      "seconds": 150,
+      "prompt": "Instrumental epic boss battle theme, D minor, 178 bpm. Starts with a dramatic church organ and choir chord swell and timpani rolls; then explodes into breakcore: violently chopped amen breaks, blast-beat fills, heavy distorted downtuned guitar riffs, roaring reese bass, a burning fiery lead melody; halfway a breakdown with solo harpsichord and strings building back into the full break. Huge, fiery, triumphant and menacing, cinematic mix, no vocals."
+    },
+    {
+      "id": "iceline-combat",
+      "state": "combat",
+      "level": "iceline",
+      "seconds": 120,
+      "prompt": "Instrumental breakcore for a fast shooter fight in a frozen rail yard, F sharp minor, 170 bpm. Crisp, glassy chopped breakbeats with stutter edits, icy bell and glockenspiel arpeggios, a music-box piano hook, cold supersaw chords, deep rolling sub bass, shimmering reverb tails, occasional glitch freezes. Fast, bright, melancholic, high-fidelity, no vocals, loopable."
+    },
+    {
+      "id": "iceline-calm",
+      "state": "calm",
+      "level": "iceline",
+      "seconds": 90,
+      "prompt": "Instrumental ambient piece in F sharp minor, slow, music-box piano and celesta melody, frozen glassy pads, soft wind texture, distant train-rail creaks, a faint filtered breakbeat pulse. Lonely, cold and beautiful. Loopable, no vocals."
+    },
+    {
+      "id": "boss-icebreaker",
+      "state": "boss",
+      "level": "iceline",
+      "seconds": 150,
+      "prompt": "Instrumental boss battle theme, F sharp minor, 172 bpm. A massive slow intro of low brass and pounding war drums like a golem walking, cracking-ice impacts; then full breakcore: brutal chopped breaks, distorted bass stabs, heavy guitar chugs, an urgent string ostinato, choir hits on the downbeats; a mid-song breakdown of solo cello and piano that rebuilds into the drop. Crushing, heroic, cinematic, no vocals."
+    },
+    {
+      "id": "kiln-combat",
+      "state": "combat",
+      "level": "kiln",
+      "seconds": 120,
+      "prompt": "Instrumental breakcore for a shooter fight in scorching kiln halls, C minor, 180 bpm. Pounding tribal toms and taiko under rapid chopped amen breaks, glitch stutters, low brass blasts, heat-haze distorted guitar textures, a snarling reese bass, a bright urgent lead hook. Hot, aggressive, relentless, crisp mix, no vocals, loopable."
+    },
+    {
+      "id": "kiln-calm",
+      "state": "calm",
+      "level": "kiln",
+      "seconds": 90,
+      "prompt": "Instrumental ambient interlude in C minor, slow, low drones and rumbling furnace texture, a sad solo piano melody, soft brass swells far away, ember crackle, a muffled half-time breakbeat. Oppressive heat and quiet dread. Loopable, no vocals."
+    },
+    {
+      "id": "boss-wyrm",
+      "state": "boss",
+      "level": "kiln",
+      "seconds": 150,
+      "prompt": "Instrumental boss battle theme for a giant burrowing worm, C minor, 182 bpm. Opens with earthquake rumbles, deep taiko and a low male choir chant; then savage breakcore: chaotic chopped amen breaks, blast fills, massive distorted reese bass slides, heavy guitar riffs, a serpentine middle-eastern-scale lead; a harpsichord and string breakdown that rebuilds into an even bigger drop. Monstrous, frantic, cinematic, no vocals."
+    },
+    {
+      "id": "span-combat",
+      "state": "combat",
+      "level": "span",
+      "seconds": 120,
+      "prompt": "Instrumental breakcore for a fast shooter fight on a vast bridge at dusk, A minor, 168 bpm. A baroque harpsichord ostinato and staccato strings over furious chopped amen breaks, mechanical clockwork clicks as percussion, a deep reese bass, a soaring violin-like lead. Elegant, urgent, intricate, crisp mix, no vocals, loopable."
+    },
+    {
+      "id": "span-calm",
+      "state": "calm",
+      "level": "span",
+      "seconds": 90,
+      "prompt": "Instrumental ambient interlude in A minor, slow, solo harpsichord and plucked strings, wind over a high bridge, soft clockwork ticking, warm pads, a faint filtered breakbeat. Wistful and suspended. Loopable, no vocals."
+    },
+    {
+      "id": "boss-loom",
+      "state": "boss",
+      "level": "span",
+      "seconds": 150,
+      "prompt": "Instrumental boss battle theme for a colossal six-legged weaving machine, A minor, 170 bpm. Begins with a mechanical loom rhythm and a tense string quartet; then explodes into breakcore: intricate chopped breaks, glitch stutters, heavy distorted guitars, a pipe organ riff, choir stabs, a reese bass; a solo piano interlude that rebuilds to a climactic drop. Intricate, menacing, epic, no vocals."
+    },
+    {
+      "id": "spire-combat",
+      "state": "combat",
+      "level": "spire",
+      "seconds": 120,
+      "prompt": "Instrumental breakcore for the final level's shooter fights in a bell tower at dusk, E minor, 176 bpm. Huge church bells and organ chords over furious chopped amen breaks with glitch edits, a choir pad, a heavy reese bass, a soaring emotional supersaw lead. Grand, desperate, the biggest and most intense track, crisp loud mix, no vocals, loopable."
+    },
+    {
+      "id": "spire-calm",
+      "state": "calm",
+      "level": "spire",
+      "seconds": 90,
+      "prompt": "Instrumental ambient piece in E minor, slow, soft organ drones, a distant choir, tolling bells far away, a hopeful but sad solo piano melody, a faint filtered break underneath. Sacred, high and lonely. Loopable, no vocals."
+    },
+    {
+      "id": "boss-crown",
+      "state": "boss",
+      "level": "spire",
+      "seconds": 170,
+      "prompt": "Instrumental final boss battle theme for a floating crown of spinning blades, E minor, 180 bpm. Opens with a full choir and pipe organ fanfare and tolling bells; then the most intense breakcore: shredded chopped amen breaks, blast-beat fills, crushing distorted guitars, a roaring reese bass, a heroic soaring lead, orchestral string runs; a breakdown of solo piano and choir that builds through a rising string crescendo into a triumphant final drop. Climactic, transcendent, cinematic, no vocals."
+    },
+    {
+      "id": "select",
+      "state": "select",
+      "seconds": 80,
+      "prompt": "Instrumental menu loop, 87 bpm half-time feel, mellow emotional breakcore: a soft rolling filtered breakbeat, warm electric piano chords, airy pads, gentle bass, a nostalgic lead melody. Dusk, hopeful, relaxed but ready. Loopable, no vocals."
+    },
+    {
+      "id": "results",
+      "state": "results",
+      "seconds": 70,
+      "prompt": "Instrumental results screen music, 87 bpm, reflective: a warm piano melody over a gentle chopped breakbeat, soft strings, airy pads, a satisfied bittersweet mood after a hard fight. Loopable, no vocals."
+    },
+    {
+      "id": "sting-clear",
+      "state": "sting",
+      "seconds": 8,
+      "prompt": "Instrumental short victory sting: a fast chopped breakbeat fill into a huge bright major chord on supersaw and strings, a choir 'ah', cymbal swell, then ring out. Triumphant, 8 seconds."
+    },
+    {
+      "id": "sting-death",
+      "state": "sting",
+      "seconds": 7,
+      "prompt": "Instrumental short defeat sting: a breakbeat that slows down and pitches down like a tape stop, a low detuned piano minor chord, a fading reverse cymbal. Sad, 7 seconds."
+    },
+    {
+      "id": "campaign-complete",
+      "state": "results",
+      "seconds": 120,
+      "prompt": "Instrumental ending credits theme: begins with solo piano reprising a melancholic D minor melody, strings and choir join, then it builds into a euphoric emotional breakcore finale at 174 bpm with chopped breaks, a soaring lead and full orchestra, and resolves into a hopeful major-key piano ending. Cathartic and triumphant, no vocals."
+    },
+    {
+      "id": "foundry-combat-b",
+      "state": "combat",
+      "level": "foundry",
+      "seconds": 120,
+      "prompt": "Instrumental breakcore, D minor, 176 bpm, a second fight theme for a molten foundry: opens with 8 bars of a lone grand piano playing a fast urgent arpeggio, then slams into rapid-fire chopped amen breaks with glitchy stutter edits and drill-like snare rolls, a distorted wobbling reese bass, hammered anvil percussion, choir pad swells and a screaming supersaw counter-melody. Furious, emotional, polished, no vocals, loopable."
+    },
+    {
+      "id": "iceline-combat-b",
+      "state": "combat",
+      "level": "iceline",
+      "seconds": 120,
+      "prompt": "Instrumental breakcore, F sharp minor, 172 bpm, a second fight theme for a frozen rail yard: a pizzicato string and celesta intro, then crisp hyper-fast chopped breaks with time-stretched stutters, a gliding sub bass, crystalline bell chords, a glassy plucked lead, frosty white-noise risers into each drop. Bright, fast, bittersweet, no vocals, loopable."
+    },
+    {
+      "id": "kiln-combat-b",
+      "state": "combat",
+      "level": "kiln",
+      "seconds": 120,
+      "prompt": "Instrumental breakcore, C minor, 182 bpm, a second fight theme for scorching kiln halls: thunderous taiko and frame drums, then violent chopped breaks with blast fills, a grinding distorted guitar riff, a brass section stab on every phrase, a snarling reese bass and a searing high lead. Relentless, hot, heavy, no vocals, loopable."
+    },
+    {
+      "id": "span-combat-b",
+      "state": "combat",
+      "level": "span",
+      "seconds": 120,
+      "prompt": "Instrumental breakcore, A minor, 170 bpm, a second fight theme on a vast bridge: a baroque string quartet fugue opening, then intricate chopped amen breaks with glitch edits, a harpsichord riff doubled by a supersaw, ticking clockwork percussion, a deep rolling bass and soaring violin lines. Elegant, frantic, no vocals, loopable."
+    },
+    {
+      "id": "spire-combat-b",
+      "state": "combat",
+      "level": "spire",
+      "seconds": 120,
+      "prompt": "Instrumental breakcore, E minor, 178 bpm, a second fight theme in a bell tower: tolling bells and a pipe organ chorale, then the hardest chopped breaks with blast fills, choir stabs, crushing distorted guitars, a massive reese bass and a heroic emotional supersaw lead. Grand and desperate, no vocals, loopable."
+    },
+    {
+      "id": "boss-wick-2",
+      "state": "boss2",
+      "level": "foundry",
+      "seconds": 120,
+      "prompt": "Instrumental enraged final phase of a fire boss battle, D minor, 186 bpm: the main theme's urgency doubled, shredded chopped breaks at full speed, blast beats, roaring distorted guitars, a church organ and full choir hammering the melody, fiery brass, relentless and climactic, no vocals, loopable."
+    },
+    {
+      "id": "boss-icebreaker-2",
+      "state": "boss2",
+      "level": "iceline",
+      "seconds": 120,
+      "prompt": "Instrumental enraged final phase of an ice golem boss battle, F sharp minor, 184 bpm: pounding war drums under breakneck chopped breaks, crushing guitar chugs, a frantic string ostinato, choir hits, shattering glass percussion, desperate and huge, no vocals, loopable."
+    },
+    {
+      "id": "boss-wyrm-2",
+      "state": "boss2",
+      "level": "kiln",
+      "seconds": 120,
+      "prompt": "Instrumental enraged final phase of a giant worm boss battle, C minor, 188 bpm: chaotic hyper-fast chopped breaks and blast fills, a monstrous sliding reese bass, low male choir chanting, taiko, a frantic serpentine lead, earthquake sub drops, savage and climactic, no vocals, loopable."
+    },
+    {
+      "id": "boss-loom-2",
+      "state": "boss2",
+      "level": "span",
+      "seconds": 120,
+      "prompt": "Instrumental enraged final phase of a giant machine boss battle, A minor, 184 bpm: mechanical rhythms accelerating, intricate breakneck chopped breaks, a pipe organ riff, distorted guitars, frantic strings and choir, metallic clanks on every beat, climactic, no vocals, loopable."
+    },
+    {
+      "id": "boss-crown-2",
+      "state": "boss2",
+      "level": "spire",
+      "seconds": 140,
+      "prompt": "Instrumental enraged final phase of the final boss battle, E minor, 190 bpm: the most intense music in the game, shredded chopped breaks with blast beats, full choir and pipe organ, crushing guitars, orchestral strings in rapid runs, tolling bells, a heroic soaring lead, rising to a transcendent climax, no vocals, loopable."
+    },
+    {
+      "id": "foundry-combat-c",
+      "state": "combat",
+      "level": "foundry",
+      "seconds": 120,
+      "prompt": "Instrumental breakcore, D minor, 178 bpm, a third fight theme for a molten foundry: a distorted industrial intro of hammering metal and hissing steam, then explodes into frantic chopped amen breaks with glitch stutters and reversed snares, a fat growling reese bass, a screaming detuned supersaw hook, emotional piano chords under the drops, a half-time breakdown that slams back to full speed. Furious, emotional, loud crisp mix, no vocals, loopable."
+    },
+    {
+      "id": "iceline-combat-c",
+      "state": "combat",
+      "level": "iceline",
+      "seconds": 120,
+      "prompt": "Instrumental breakcore, F sharp minor, 172 bpm, a third fight theme in a frozen rail yard: icy granular pads and a fast music-box melody, then rapid chopped amen breaks with stutter edits and drill snare rolls, a deep rolling sub bass, glassy bell arpeggios, a bright melancholic supersaw lead, a glitch freeze before each drop. Cold, fast, emotional, crisp high-fidelity mix, no vocals, loopable."
+    },
+    {
+      "id": "kiln-combat-c",
+      "state": "combat",
+      "level": "kiln",
+      "seconds": 120,
+      "prompt": "Instrumental breakcore, C minor, 182 bpm, a third fight theme in scorching kiln halls: thundering taiko and distorted 808 kicks, furious chopped amen breaks with glitch edits, a snarling reese bass, low brass stabs, a wailing distorted guitar lead, a half-time drop that crushes. Hot, aggressive, relentless, loud crisp mix, no vocals, loopable."
+    },
+    {
+      "id": "span-combat-c",
+      "state": "combat",
+      "level": "span",
+      "seconds": 120,
+      "prompt": "Instrumental breakcore, A minor, 172 bpm, a third fight theme on a vast bridge at dusk: a fast harpsichord and violin ostinato, then intricate chopped amen breaks with stutter edits, ticking clockwork percussion, a wobbling reese bass, a soaring supersaw counter-melody, choir swells into each drop. Elegant, frantic, emotional, no vocals, loopable."
+    },
+    {
+      "id": "spire-combat-c",
+      "state": "combat",
+      "level": "spire",
+      "seconds": 120,
+      "prompt": "Instrumental breakcore, E minor, 178 bpm, a third fight theme for the final bell tower: tolling church bells and a pipe organ riff, then the most intense chopped amen breaks with glitch stutters and rapid fills, a massive reese bass, a desperate soaring supersaw lead with choir stabs, a piano interlude that rebuilds into a huge final drop. Grand, desperate, loud crisp mix, no vocals, loopable."
+    }
   ]
 }
