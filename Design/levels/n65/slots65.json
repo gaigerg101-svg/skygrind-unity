@@ -1,0 +1,35 @@
+{
+ "_why": "NIGHT65 (the lead's; written only by Tools/night/n65-slot-set.cjs): which of n65-foundry's six fight-room slots ship their rebuilt room file (new, bound to its GATE PASS's sha and the file's blob there) and which keep n52-foundry's room (old). gen-n65-foundry.cjs --slots=Design/levels/n65/slots65.json assembles the shipped level from it.",
+ "slots": {
+  "a2": {
+   "use": "old",
+   "why": "the night's initial slot set: every slot holds n52-foundry's room until its GATE PASS (Logs/n65/verdict-T1.md's fix)",
+   "set": "2026-10-23T23:18:56.589Z"
+  },
+  "a3": {
+   "use": "old",
+   "why": "n52-foundry's room until the rebuilt room PASSes its GATE"
+  },
+  "a4": {
+   "use": "old",
+   "why": "n52-foundry's room until the rebuilt room PASSes its GATE"
+  },
+  "a5": {
+   "use": "old",
+   "why": "n52-foundry's room until the rebuilt room PASSes its GATE"
+  },
+  "b1": {
+   "use": "old",
+   "why": "n52-foundry's room until the rebuilt room PASSes its GATE"
+  },
+  "a8": {
+   "use": "old",
+   "why": "n52-foundry's room until the rebuilt room PASSes its GATE"
+  },
+  "b2": {
+   "use": "old",
+   "why": "NIGHT66 T2: b2 THE GANTRY joins the slots as n52's room; rebuilt only on GG's own word (NIGHT66.md: b2 is a slot, not a room, tonight)",
+   "set": "2026-10-24T09:25:27.072Z"
+  }
+ }
+}

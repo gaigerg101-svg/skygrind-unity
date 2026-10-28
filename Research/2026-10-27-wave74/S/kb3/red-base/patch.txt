@@ -1,0 +1,13 @@
+# command: node Tools/night/n70-patch-share.cjs --level kiln --room C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/kb3-d2.json kb3
+# sha: b879f5ddc; time: 2026-10-28 01:52:10
+n70-patch-share: room kb3 | shipped Design/levels/n67/kiln/rooms-base/kb3.json vs rebuilt C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/kb3-d2.json
+| room | shipped pieces kept | by kind (kept / shipped) | rect / spawn / exit | waves |
+|---|---|---|---|---|
+| kb3 | 5 / 16 (31 %) | boxes 3 / 12, ramps 1 / 2, pads 1 / 2, pits 0 / 0 | rect same, spawn same, exit same | waves same |
+  kept: box (9.4, 0, -217.5)..(10, 14, -200.5) (shipped job: verb it celebrates: the forge wall's ride over the charge)
+  kept: box (5, 0, -225.5)..(10, 4.5, -218.5) (shipped job: 30 s problem: THE FAR GALLERY (the spitters' roost, the high)
+  kept: box (3, 2.5, -225.5)..(5, 4.5, -218.5) (shipped job: spatial law: THE FAR GALLERY's west span (the exit lane unde)
+  kept: ramp (-5, -221)->(3, -221) w 3 rise 4.5 (shipped job: molecule: the walkers' climb to the far gallery)
+  kept: pad (-8.5, 0, -224.5)->(5, 4.5, -224) (shipped job: molecule: the upward line, the quench vent)
+  rebuilt room pieces: boxes 9, ramps 1, pads 2, pits 0 | the rule: PASS at <= 25 % of the shipped room's pieces kept (geometry-equal; job / why text ignored)
+n70-patch-share: PATCH kb3 (31 % kept)

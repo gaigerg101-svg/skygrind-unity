@@ -1,0 +1,17 @@
+# command: python -I Tools/night/n74-room-rules.py room C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/a3/v-meterspawn2.json
+# sha: 36ea82efd; time: 2026-10-28 01:18:42
+scratchpad/a3  rect [-10.0, -85.0, 10.0, -59.0]  spawn [2.5, 0.0, -60.3] yaw -30  floor 0.0
+  PLANES  PASS  planes 2 (-0.8 m: 366 cells, 2.5 m: 40 cells)
+  COVER   PASS  cover: free-standing high 0, low 4, between 0 (0 without a job), none 0
+  LOOPS   PASS  loops 2 (floor holes 0 + closed pad / ride routes 2 of 2)
+  REAR    PASS  rear arc: 0 of 4 wave-1 usable nodes behind the entry facing (all waves: 0 node uses behind)
+  VIEW    RED  view: no enemy in view within 2.0 s (0 of 4 wave-1 nodes seen at entry)
+  CROSS   PASS  cross: chord 32.8 m, dash 1.37 s, walk 4.1 s (bar 2.0 s at dash)
+  EXPOSE  PASS  exposure: 53 % of 861 floor-sample pairs see each other (bar 60 %); longest clear line 24.2 m (medium band 19.5 m)
+  CLIMB   PASS  climb: 1 tier group(s), 0 not reached by walker links
+    free-standing low piece: hull [-2.0, 0.0, -76.5]-[1.0, 1.2, -75.5] h 1.20 job "cover"
+    free-standing low piece: hull [1.4, 0.0, -67.0]-[4.0, 1.2, -63.7] h 1.20 job "ride"
+    free-standing low piece: hull [-6.5, 0.0, -63.0]-[-5.0, 1.2, -61.5] h 1.20 job "cover"
+    free-standing low piece: hull [-7.0, 0.0, -76.0]-[-5.0, 1.2, -74.6] h 1.20 job "cover"
+    walkers reach every tier: climb: 1 tier group(s), 0 not reached by walker links
+  core 4/5 PASS, extra 3/3 PASS

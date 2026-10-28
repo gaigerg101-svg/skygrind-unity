@@ -1,0 +1,7 @@
+# command: bash Tools/night/n65-verbs.sh launch Design/levels/n52-foundry.json a2 --pose -4,0,-52.5,0
+# sha: 1f00d1d4 (branch n65-T; tracked changes uncommitted: 1 file(s))
+# time: 2026-10-23 15:25:38 -> 2026-10-23 15:25:41 (local)
+# exit: 0
+
+n65verb launch: RED | the pose (-4.0, 0.0, -52.5) (--pose) is inside a solid (feet + eye): refused
+n65-verbs launch on Design/levels/n52-foundry.json (a2): GREEN 0, RED 1

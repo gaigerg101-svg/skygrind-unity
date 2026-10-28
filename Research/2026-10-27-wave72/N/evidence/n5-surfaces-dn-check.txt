@@ -1,0 +1,10 @@
+command: bash Tools/night/dn-check-wt.sh <fresh scratchpad dir dn3-135606> | tree: n72-N at 06bb71b4e plus the N5c working tree | run 13:56-13:57
+== Skygrind.Game.csproj: 0 error(s)
+== Skygrind.Game.Tests.csproj: 0 error(s)
+== Skygrind.Core.Tests.csproj: 0 error(s)
+== Assembly-CSharp-Editor.csproj: 0 error(s)
+dn-check total errors: 0
+
+real	0m58.445s
+user	0m1.292s
+sys	0m16.958s

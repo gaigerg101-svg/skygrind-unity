@@ -1,0 +1,37 @@
+{
+ "_why": "NIGHT67 (the lead's; written by Tools/night/n67-a1.cjs with every slot old, then only by Tools/night/n65-slot-set.cjs --level=iceline --slots=Design/levels/n67/iceline/slots67.json): which of n67-iceline's fight-room slots ship their rebuilt room file (new, bound to its GATE PASS's sha and the file's blob there) and which keep n52-iceline's room (old). gen-slots.cjs --level iceline --slots=Design/levels/n67/iceline/slots67.json assembles the shipped level from it.",
+ "slots": {
+  "g1": {
+   "use": "old",
+   "why": "the night's initial slot set (n67-a1.cjs): n52-iceline's room until the rebuilt room PASSes its GATE"
+  },
+  "g2": {
+   "use": "old",
+   "why": "the night's initial slot set (n67-a1.cjs): n52-iceline's room until the rebuilt room PASSes its GATE"
+  },
+  "g3": {
+   "use": "old",
+   "why": "the night's initial slot set (n67-a1.cjs): n52-iceline's room until the rebuilt room PASSes its GATE"
+  },
+  "g4": {
+   "use": "old",
+   "why": "the night's initial slot set (n67-a1.cjs): n52-iceline's room until the rebuilt room PASSes its GATE"
+  },
+  "g5": {
+   "use": "old",
+   "why": "the night's initial slot set (n67-a1.cjs): n52-iceline's room until the rebuilt room PASSes its GATE"
+  },
+  "g6": {
+   "use": "old",
+   "why": "the night's initial slot set (n67-a1.cjs): n52-iceline's room until the rebuilt room PASSes its GATE"
+  },
+  "g7": {
+   "use": "old",
+   "why": "the night's initial slot set (n67-a1.cjs): n52-iceline's room until the rebuilt room PASSes its GATE"
+  },
+  "g8": {
+   "use": "old",
+   "why": "the night's initial slot set (n67-a1.cjs): n52-iceline's room until the rebuilt room PASSes its GATE"
+  }
+ }
+}

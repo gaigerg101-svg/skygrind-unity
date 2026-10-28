@@ -1,0 +1,7 @@
+{
+  "_why": "NIGHT25 builder C, the human-style combat-time estimate behind the par cap of levels 6-10 (Tools/night/gen-levels610.py): seconds a player who knows the tool needs per enemy (husk: 2 pistol hits or a pulse swing; swarmer: one hit; spitter: closing in or a headshot; charger: dodge, then 3 hits; lancer: take cover, close, 3 hits; drone: 2 hits when it dips; warden: flank or punch the shield open, then 3 hits). Design numbers for pars only (Unity-only, never read by the sim): the headless bot is slow against shields and with fists only (level 6 room 2 197 s, level 7 room 3 409 s), so a plan's par is min(bot median, parCap) with parCap = capMult x (sum of per-enemy seconds + waveGap per extra wave + walkSeconds). A competent human is inside it; S is within par.",
+  "killSeconds": { "husk": 1.5, "swarmer": 0.8, "spitter": 3.0, "charger": 4.0, "lancer": 5.0, "drone": 3.0, "warden": 6.0 },
+  "waveGap": 0.8,
+  "walkSeconds": 8.0,
+  "capMult": 2.5
+}

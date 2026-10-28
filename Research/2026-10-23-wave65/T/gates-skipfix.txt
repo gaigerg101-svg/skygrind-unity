@@ -1,0 +1,18 @@
+# command: bash Tools/night/n65-gates.sh --no-editor
+# sha: fd9c565b (branch n65-T2; tracked changes uncommitted: 2 file(s))
+# time: 2026-10-23 17:58:26 -> 2026-10-23 17:59:13 (local)
+# exit: 0
+
+gate config: the two copies identical
+gate golden: golden total: 39 vector sets (48094 records), 22 replays (22 exact); 0 failing, 0 mismatches
+gate fingerprint : fingerprint seed 1: 12 hashes in 0.84 s: EQUAL to the baseline; run Fight round 3, kills 35, shots 80, earned 4808, alive 1, owned 2, flow Playing
+gate fingerprint --off57: fingerprint seed 1: 12 hashes in 0.78 s: EQUAL to the baseline; run Fight round 3, kills 35, shots 80, earned 4808, alive 1, owned 2, flow Playing
+gate fingerprint --off58: fingerprint seed 1: 12 hashes in 0.78 s: EQUAL to the baseline; run Fight round 3, kills 35, shots 80, earned 4808, alive 1, owned 2, flow Playing
+gate fingerprint --off59: fingerprint seed 1: 12 hashes in 0.82 s: EQUAL to the baseline; run Fight round 3, kills 35, shots 80, earned 4808, alive 1, owned 2, flow Playing
+gate fingerprint --off60: fingerprint seed 1: 12 hashes in 0.82 s: EQUAL to the baseline; run Fight round 3, kills 35, shots 80, earned 4808, alive 1, owned 2, flow Playing
+gate fingerprint --off61: fingerprint seed 1: 12 hashes in 0.78 s: EQUAL to the baseline; run Fight round 3, kills 35, shots 80, earned 4808, alive 1, owned 2, flow Playing
+gate fingerprint --off62: fingerprint seed 1: 12 hashes in 0.90 s: EQUAL to the baseline; run Fight round 3, kills 35, shots 80, earned 4808, alive 1, owned 2, flow Playing
+gate fingerprint --off63: fingerprint seed 1: 12 hashes in 0.77 s: EQUAL to the baseline; run Fight round 3, kills 35, shots 80, earned 4808, alive 1, owned 2, flow Playing
+gate fingerprint --off64: fingerprint seed 1: 12 hashes in 0.77 s: EQUAL to the baseline; run Fight round 3, kills 35, shots 80, earned 4808, alive 1, owned 2, flow Playing
+gate fingerprint --off65: fingerprint seed 1: 12 hashes in 0.79 s: EQUAL to the baseline; run Fight round 3, kills 35, shots 80, earned 4808, alive 1, owned 2, flow Playing
+gates: all GREEN 17:59:13

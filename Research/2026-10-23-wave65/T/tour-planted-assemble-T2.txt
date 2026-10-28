@@ -1,0 +1,24 @@
+# command: node Tools/night/gen-n65-foundry.cjs --slots=latest --run
+# sha: fef04eb2 (branch n65-T; tracked changes uncommitted: 3 file(s))
+# time: 2026-10-23 14:56:43 -> 2026-10-23 14:56:51 (local)
+# exit: 0
+
+openings: Design/levels/n65/openings65.json none set (every slot keeps n52's opening, openings53.json)
+gen-n65-foundry: Design/levels/n52/foundry.plan.json -> Design/levels/n65/foundry.plan.json (slots latest; rebuilt: a2); every other room, door, piece and key n52's bit for bit
+  slot a2: latest Design/levels/n65/rooms/a2.json: REBUILT; boxes 1, ramps 1, pads 0, grapple 0, pits 0, tunnels 0, lights 3, props 0, teach35 2
+    row keys: keep 21, replace 0, add 2, drop 0
+    add     frames65
+    add     line65
+    WARN: rebuilt but the row has no bot43: false (the walk bot's old id scripts would drive the new geometry)
+  slot a3: latest Design/levels/n65/rooms/a3.json: n52's room exactly; boxes 12, ramps 2, pads 2, grapple 0, pits 1, tunnels 0, lights 8, props 1, teach35 1
+  slot a4: latest Design/levels/n65/rooms/a4.json: n52's room exactly; boxes 1, ramps 2, pads 0, grapple 0, pits 0, tunnels 0, lights 3, props 0, teach35 0
+  slot a5: latest Design/levels/n65/rooms/a5.json: n52's room exactly; boxes 12, ramps 3, pads 3, grapple 0, pits 1, tunnels 0, lights 8, props 3, teach35 0
+  slot b1: latest Design/levels/n65/rooms/b1.json: n52's room exactly; boxes 12, ramps 2, pads 2, grapple 0, pits 1, tunnels 0, lights 6, props 3, teach35 0
+  slot a8: latest Design/levels/n65/rooms/a8.json: n52's room exactly; boxes 6, ramps 0, pads 0, grapple 0, pits 1, tunnels 0, lights 5, props 0, teach35 0
+  levelgen n65-foundry: 2471732 chars -> Design/levels/n65/foundry.json; 201 boxes + the floor, 5 barriers, 10 wedges, 7 pads, 0 grapple nodes, 21 zones (a1, a2, a3, a4, a5, b1, b2, a6, a7, a8, a9, d1, d2, d3, d4, d5, d6, d7, d8, d9, d10) (0.9 s)
+    plan checks: 1 problems
+      ground spawn 22 (-9.8, 0, -240.6): a player's capsule there overlaps collision box 88 (wall)
+    level report: 0 errors -> Reports/LEVEL-n65-foundry-validate.md (1.9 s)
+    bot walk: ; DID NOT reach the last exit; zone at the end a1
+n65-foundry --finish: Design/levels/n65/foundry.json -> Design/levels/n65-foundry.json, Assets/StreamingAssets/Design/levels/n65-foundry.json (2475384 chars, both copies identical); a9 bit-equal to n52-foundry's; kept rooms a1 b2 a6 a7 a9 bit-equal; slots latest: a2 latest rebuilt, a3 latest, a4 latest, a5 latest, b1 latest, a8 latest
+levelgen --walk: 0 ERROR

@@ -1,0 +1,115 @@
+{
+  "_why": "NIGHT65's slate, seeded by the forge FORGE65 (2026-10-23 ~13:09-14:00; GG: 'plan detaile dbuild prompt for next 7 hours 6.5 min 7 hard stop ... i wnat real progress and itterations and not just small polishes'). Level 1 THE FOUNDRY rebuilt from scratch for flight as n65-foundry behind design.n65.foundry65: six fight-room slots, each a card first and three played rounds; tools first so the rounds can run (Research/2026-10-23-forge65/DECISIONS.md D-1..D-11; redteam.md's 15 findings applied). Every doneWhen is written before any measurement and never loosened; a room's numbers are relative to its red (the n52 room, measured by the lead's sim red at 0:05 and tour65 on rc0). The bot and the checkers are guards; MAIN is measured play (air %, STYLE, pads touched, the ride pilot) and the verdicts. A room slice's row is 'slot <id> of n65.foundry65' so no room's PASS can flip the level row: only LV can. A PASS binds to the sha its critic judged (passSha) and the slice's own files (passFiles: its room file, card and evidence; notes left out); slots65.json is written only by n65-slot-set.cjs. NIGHT65 copies this file to Logs/n65/slate.json in its bearings; only the lead edits that copy. A room's doneWhen is its own lines plus the ROOM list at the end of this file.",
+  "slices": [
+    {
+      "id": "T1", "owner": "T", "state": "todo", "passes": false, "verdict": null, "spot": null, "passSha": null, "passFiles": null,
+      "title": "The assembler, the slot tool and the bot opt-out: room files in slots, the generated level the lead's",
+      "why": "Three builders cannot co-edit one 2.5-5 MB generated level or one plan (FORGE65 D-6). The room row carries about 20 keys and the level's teach35, lights and props sit inside rooms (redteam.md 3); gen-n52-foundry.cjs --finish re-applies a9's n47 / n48 keys (redteam.md 2); the walk bot runs the old rooms' id-keyed scripts in new geometry (redteam.md 5).",
+      "row": "none (tools; they ship with the level row foundry65)",
+      "red": "no assembler (gen-n52-foundry.cjs writes the whole plan); no slot tool; Walk36 / Walk38Foundry / Walk43Foundry key on a3, a5, b2, a8 whatever the geometry",
+      "doneWhen": [
+        "`node Tools/night/gen-n65-foundry.cjs --check` with every slot old prints that the assembled level equals n52-foundry.json apart from its names (a planted one-box change prints the difference); the finish step keeps a9's wick47 / frames47 / climbTop48 and data.name",
+        "the room file is the whole room row plus its zone-keyed boxes / ramps / pads / pits, room-keyed lights / props, grapple anchors and teach35 entries; the assembler prints a per-key keep / replace / drop-with-reason table and refuses an unlisted key (a planted unknown key)",
+        "`--slots=latest` and `--slots=Design/levels/n65/slots65.json` both work; a planted room replaces only its slot; levelgen --walk 0 ERROR",
+        "`node Tools/night/n65-slot-set.cjs <room> new` writes slots65.json only when the room file is unchanged since its passSha (a planted changed file is refused)",
+        "a rebuilt row with `bot43: false` runs the generic autopilot (Walk36 / Walk38Foundry / Walk43Foundry skip their id scripts for it), with an EditMode test; the old level's rows unchanged (n46flow on n52-foundry equal to the flow base)"
+      ],
+      "visible": "n/a (tools)", "spotPose": "n/a"
+    },
+    {
+      "id": "T2", "owner": "T", "state": "todo", "passes": false, "verdict": null, "spot": null, "passSha": null, "passFiles": null,
+      "title": "tour65: every room's card poses and its verb line framed in a Player with wave 1 live",
+      "why": "The rooms were judged on verbs37's fixed frames, several of them corridors (history.md section 2 (f)); a157 frames only a3, a5, b1 (redteam.md 8). The reviewers need each room's own poses and its verb line as a sequence, not one still.",
+      "row": "none (a reel scenario)",
+      "red": "no per-room pose reel; a157's entry frame on three of the six slots",
+      "doneWhen": [
+        "`-skygrindReelOnly tour65` frames every pose in each room file's frames65 list with wave 1 live, one Player run per level, one proof line per pose (room, name, camera position, file) (L-089)",
+        "each room file's line65 (the card's verb line: waypoints) framed as a sequence of 8 frames with a proof line",
+        "a room without frames65 falls back to frames36.mid (every room has it), so rc0's level is framed by the same poses; a planted pose prints its frame and a pose inside a wall prints WARN",
+        "verbs37 and a157 unchanged on rc0's level"
+      ],
+      "visible": "n/a (a reel)", "spotPose": "n/a"
+    },
+    {
+      "id": "a2", "owner": "R", "state": "todo", "passes": false, "verdict": null, "spot": null, "passSha": null, "passFiles": null,
+      "title": "1.2 KESTREL rebuilt from its card: a tight room for flight (14 x 20 m)",
+      "why": "The first fight GG plays; its slot is 14 x 20 m with 1 box, 1 ramp, 0 props and no spawn nodes (it uses standIns: redteam.md 3, 9). GG 2026-10-13: 'there's a time and a place for the tight rooms and keep them'; 'they can't be too exploitable'.",
+      "row": "slot a2 of n65.foundry65", "red": "Logs/n65/red/a2/ (the lead's sim red at 0:05) and tour65 on rc0 (frames36.mid fallback)",
+      "doneWhen": ["the ROOM list below"],
+      "visible": "the room's layout, height and dressing are new and its verb's piece reads at a glance", "spotPose": "tour65's entry pose, rc0 against the GATE build"
+    },
+    {
+      "id": "a3", "owner": "R", "state": "todo", "passes": false, "verdict": null, "spot": null, "passSha": null, "passFiles": null,
+      "title": "1.3 RIDE rebuilt from its card (the wall-ride room GG called awful)",
+      "why": "GG 2026-10-14: level 1's 'waallride section ... awful and relaly difficult and not fun'; 'pressing a near a wall you fly bcak so fast'; 2026-10-13 rides 'you just stay on forever'. The core mechanics are not changed (2026-10-20): the room makes the ride readable, fair and worth it. The ride pilot is GREEN on today's a3 (redteam.md 9).",
+      "row": "slot a3 of n65.foundry65", "red": "Logs/n65/red/a3/ (with n53ridekill ride) and tour65 on rc0",
+      "doneWhen": ["the ROOM list below", "`n53ridekill ride --level Design/levels/n65-foundry.json --room a3` GREEN on the GATE round's level"],
+      "visible": "the ride room's walls, line and landing are new and read at a glance", "spotPose": "tour65's entry pose"
+    },
+    {
+      "id": "a5", "owner": "R", "state": "todo", "passes": false, "verdict": null, "spot": null, "passSha": null, "passFiles": null,
+      "title": "1.5 CRUCIBLE rebuilt from its card: an open arena with a roof (20 x 32 m)",
+      "why": "A main fight (8 enemies in 5 + 3, h 10; code-scout.md section 2); it holds a pit and Arena42's grinder and cover key on a5: GG 2026-10-12 'random lava pits random pillars that serve no purpose' (a pit needs a way out and a reason).",
+      "row": "slot a5 of n65.foundry65", "red": "Logs/n65/red/a5/ and tour65 on rc0",
+      "doneWhen": ["the ROOM list below"],
+      "visible": "the arena's layout, height and dressing are new", "spotPose": "tour65's entry pose"
+    },
+    {
+      "id": "b1", "owner": "S", "state": "todo", "passes": false, "verdict": null, "spot": null, "passSha": null, "passFiles": null,
+      "title": "1.6 THE YARD rebuilt from its card: an open arena with a roof (20 x 32 m)",
+      "why": "Level 1's biggest fight (11 enemies in 3 + 4 + 4, h 12); GG 2026-10-13: 'wide open arenas with a roof ... I prefer that side of game play'.",
+      "row": "slot b1 of n65.foundry65", "red": "Logs/n65/red/b1/ and tour65 on rc0",
+      "doneWhen": ["the ROOM list below"],
+      "visible": "the arena's layout, height and dressing are new", "spotPose": "tour65's entry pose"
+    },
+    {
+      "id": "a8", "owner": "S", "state": "todo", "passes": false, "verdict": null, "spot": null, "passSha": null, "passFiles": null,
+      "title": "1.10 PIERCE rebuilt from its card: a tight room (14 x 22 m)",
+      "why": "The last fight before THE WICK; its old geometry has a scripted bot pilot (Walk43Foundry Pierce43) that the rebuilt row opts out of (bot43: false, T1); it carries reachFrom / routeVia keys the validator reads (redteam.md 3).",
+      "row": "slot a8 of n65.foundry65", "red": "Logs/n65/red/a8/ and tour65 on rc0",
+      "doneWhen": ["the ROOM list below"],
+      "visible": "the room's layout, height and dressing are new", "spotPose": "tour65's entry pose"
+    },
+    {
+      "id": "a4", "owner": "S", "state": "todo", "passes": false, "verdict": null, "spot": null, "passSha": null, "passFiles": null,
+      "title": "1.4 PARRY rebuilt from its card: the parry's teach room (8 x 19 m), tight",
+      "why": "The parry teach room (two waves; 'the parry (punch the yellow glob back)'); GG 2026-10-12 'an understanding of parry mechanics'; 2026-10-14 'way too much instruction at the tsrat of the level' (the room teaches by its shape, not by text). Swapped in for b2 THE GANTRY, which stays (verbs37's long wall and lane, the fall return; redteam.md 7).",
+      "row": "slot a4 of n65.foundry65", "red": "Logs/n65/red/a4/ and tour65 on rc0",
+      "doneWhen": ["the ROOM list below", "the parry teach beat kept: its lessons and the parry the room asks for (VERBS.md)"],
+      "visible": "the parry room's layout and the glob's lane are new", "spotPose": "tour65's entry pose"
+    },
+    {
+      "id": "LV", "owner": "lead", "state": "todo", "passes": false, "verdict": null, "spot": null, "passSha": null, "passFiles": null,
+      "title": "The level row: n65-foundry ON with every slot that passed",
+      "why": "The rooms ship as one level (NIGHT57's recipe); a slot stays old until its room passes; only this slice can flip the row (redteam.md 4).",
+      "row": "design.n65.foundry65 (levelFrom n52-foundry, levelTo n65-foundry; -skygrindOff65)",
+      "red": "rc0: level 1 = n52-foundry (verbs37 27 / 27; gg-proxy: 'big empty boxes')",
+      "doneWhen": [
+        "slots65.json holds at least one room set new by n65-slot-set.cjs; every other slot byte-identical to n52-foundry's room (gen --check on the old slots)",
+        "the assembled level (slots65.json): levelgen --walk 0 ERROR; n46flow clears 10 / 10 in every new room and deaths and stall within the red's band; NRE 0 in every reel",
+        "verbs37 n65-foundry 27 / 27 on its GATE build; `-skygrindOff65` boots n52-foundry (a reel line); gates GREEN (flow --off65 EQUAL); look49 and Look52 apply to n65-foundry as to n52-foundry (a frame pair of a kept room, old vs new level, within the same-run residue)",
+        "after the flip, rc1: verbs37 x5 with n65-foundry unchanged from rc0 (27 / 29 / 31 / 31 / 31) and the smoke DONE, or the row rolled back"
+      ],
+      "visible": "level 1 plays the rebuilt rooms", "spotPose": "the rooms' SPOTs"
+    },
+    {
+      "id": "PC", "owner": "lead", "state": "todo", "passes": false, "verdict": null, "spot": null, "passSha": null, "passFiles": null,
+      "title": "GG's play card: two play builds (verified and latest) against the old level, plus eye63's X / Y",
+      "why": "No stills judge stands in for GG (L-105, L-002); eleven nights are unplayed; the card gets his answer on #1 (rooms) and #2 (movement) in one sitting, even if no room passes (redteam.md 1).",
+      "row": "none (the report's section 2)",
+      "red": "no card: GG has not played since 2026-10-20",
+      "doneWhen": [
+        "NIGHT65-REPORT.md section 2: Builds/n65-freeze (the passed rooms, -skygrindOff65 for the old) and Builds/n65-play-latest (every room's newest, labelled unreviewed), what to try in each room, the one question, about five minutes; eye63's X / Y card (Builds/n64-abx / n64-aby) beside it",
+        "DECIDE65.md holds the questions for his answers"
+      ],
+      "visible": "n/a (a card)", "spotPose": "n/a"
+    }
+  ],
+  "ROOM": [
+    "the card first (Research/2026-10-23-wave65/cards/<id>.md, by 0:50): the one verb the room forces and why it cannot be skipped or exploited; the design measured against the slot's rect (the card gate rejects one that does not fit, L-112); at most three planes 1 m apart; every piece's job; enemy climb routes (ramps or stairs); spawns in front; the entry's view and drop; the lit exit; dressing with a job and a role colour each; the teach beat kept (verb36, lessons, teach35); frames65 and line65; its MAIN numbers against its red; the card gate PASS before any geometry",
+    "three rounds (R1-R3), each adding or moving pieces with jobs (never cuts only), each with its sim files and tour65 frames saved; a room short of three rounds is SHORT",
+    "MAIN (against its red, as the card set it before measuring): n46flow air % and STYLE at or above the card's aim; the room's pads touched by the pad proof (hold52 --pads); the ride pilot GREEN on a ride card; the card's verb line framed by tour65 (line65); 'the verb cannot be skipped' reported 'not checked' unless a pilot shows it",
+    "GUARDS: levelgen --walk 0 ERROR; n59-l-room.py (R2 / R5 / R8 / IN VIEW / I1-I7) no item worse than the red; n46flow --rooms clears 10 / 10 with deaths and stall within the red's band (seeds 1-10 vs 11-20); verbs37 n65-foundry 27 / 27 on the GATE build; NRE 0",
+    "the SPOT (the red frame against the GATE build's, the same tour65 pose) names the piece that serves the card's verb; open BLOCKING findings listed for the critic; a skygrind-critic PASS on the GATE build"
+  ]
+}

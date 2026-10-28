@@ -1,0 +1,36 @@
+ice74 evidence (NIGHT74 builder L, leftover 4), rewritten 2026-10-28 00:2x after n74-t4. Tree: n74-L at 8c37e20b2 + this round's files (uncommitted when written).
+Frames read (read only, main tree): Logs/feel/n73-d/{bi,bi0,bi2}/boss63/ (the first look), Logs/feel/n74-t4/{bi0,bi1,bi2}/boss63/shot-N30-B63-brawl40-{idle,windup,stagger,flinch}.png (n52-iceline, THE ICEBREAKER; bi0 = ice74 OFF, lit72 ON at A 0.12; bi1 = ice74 ON; bi2 = ice74 ON, -skygrindIce74Tune=2).
+Logs/player/n47-reel-n74-t4-bi{0,1,2}.log.
+
+## 1. What is dark (a dark-pixel map of the n73-d bi frames: ice74-dark-map-n73d-bi.png beside this file; yellow = display luma under 30, red = under 45)
+The dark pixels are the arena's near rim walls and pillars. Their pixels sit at display luma 0.010 BEFORE lit72's lift (the dark pixels after it average (19.6, 19.4, 50.2) = 2.2 / 2.2 / 5.6 x 9, lit72's gain cap).
+Baseline (python -I -B Tools/night/n74-ice.py --one <bi0's four frames>): idle 20.1 %, windup 19.0 %, stagger 13.8 %, flinch 8.7 % under luma 30.
+
+## 2. The first try failed, and why it could not have worked the way I said (n74-t4, python -I -B on the frames: scratch icediff.py, its numbers below)
+First try: an ambient fill added to RenderSettings.ambientProbe (Ice74.cs at 9d9b1dd04). The n74-t4 frames:
+idle   bi1 vs bi0: dark pixels (20.1 % of the frame) mean diff +0.53 (rgb OFF (19.6, 19.4, 50.2), ON (20.1, 19.9, 50.9)); bi2 (the fill DOUBLED): the identical +0.53 and the identical rgb.
+windup bi1 / bi2 vs bi0: dark pixels +0.02 (19.7, 19.8, 52.5 -> 19.7, 19.8, 52.6), 0.3 % of pixels move by over 3 levels.
+The doubled fill gave the same frame as the single one: the fill never reached the walls. The Player log shows the view alive ("[ice74] arena ambient fill ON: ... player in the arena True, weight 0.02, probe held True": weight 0.02 is the FIRST frame's value, the only line the view printed, not a stuck weight).
+The arena's parts are URP Lit ("[light54] stone colour: Brawl40View brawl40 wall intended #2b2536 drawn lit", also ice and pillar): they do not take a runtime write of the ambient probe (not found why; not worth finding).
+
+## 3. The fix: the place whose effect the Player has measured, lit72's own block (Crt29.shader's Lit72, handed numbers by Crt29Pass.cs through Ice74View.PostVector)
+lit72's shipped numbers took bi0 -> bi: 48 % -> 20 % dark in the Player. Its limit is the gain cap, x9: a wall pixel at luma 0.010 takes (0.010 + 0.12) / 0.010 = 13, capped to 9, and reads 23.
+In the arena the pass gets A 0.14 and a gain cap of 20 (l1 0.42 as lit72's: a lit pixel is left alone): the same wall pixel takes 15 and reads 38. The shader is untouched (no new block): only the vector changes, and only while the player stands in the arena.
+This model re-runs lit72's curve with other numbers on the t4 bi0 frames, so it is exact in its mechanism (its first row, lit72's shipped numbers, reproduces the frames: 20.1 / 19.0 / 13.8 / 8.7 -> the same).
+(command: python -I -B Tools/night/n74-ice-model.py)
+arena lit72: A 0.12, l0 0.12, l1 0.42, gain cap 9    (the shipped numbers: identity)
+  idle     dark<30 whole 20.1 % -> 20.1 % | mean luma 67.7 -> 67.7 | pixels over 115 move +0.0
+arena lit72: A 0.12, l0 0.12, l1 0.42, gain cap 20
+  idle     dark<30 whole 20.1 % -> 0.0 % | mean luma 67.7 -> 69.8 | pixels over 115 move +0.0
+  windup   dark<30 whole 19.0 % -> 0.0 % | mean luma 72.9 -> 74.9 | pixels over 115 move +0.0
+  stagger  dark<30 whole 13.8 % -> 0.0 % | mean luma 87.6 -> 89.0 | pixels over 115 move +0.0
+  flinch   dark<30 whole 8.7 % -> 0.0 % | mean luma 92.3 -> 93.1 | pixels over 115 move +0.0
+arena lit72: A 0.16, l0 0.12, l1 0.42, gain cap 20   (the shipped A is 0.14: between the last two rows)
+  idle     dark<30 whole 20.1 % -> 0.0 % | mean luma 67.7 -> 76.4 | pixels over 115 move +0.0
+  windup   dark<30 whole 19.0 % -> 0.0 % | mean luma 72.9 -> 81.2 | pixels over 115 move +0.0
+  stagger  dark<30 whole 13.8 % -> 0.0 % | mean luma 87.6 -> 94.7 | pixels over 115 move +0.0
+  flinch   dark<30 whole 8.7 % -> 0.0 % | mean luma 92.3 -> 98.7 | pixels over 115 move +0.0
+The whole frame's mean luma moves +2 to +9 (the lift is on the dark walls), the lit pixels by 0.0: no wash. The model does not know the Player's float buffer: a x15 scale of a pixel at 2 / 255 amplifies any quantisation in the camera's colour buffer (an HDR buffer holds it; an 8-bit one would band): look at the walls' banding in the pair.
+
+## 4. Not checked
+A Player frame of this version; the banding above; whether the Player's wall pixels are really 0.010 before the lift at the moment of the shot (the dark pixels' after-lift rgb says so: 2.2 / 2.2 / 5.6 x 9); that the lit72 vector's y / z / w are what the shader's block reads (Crt29.shader line 134-143: x A x weight, y l0, z l1, w the cap: read, not run).

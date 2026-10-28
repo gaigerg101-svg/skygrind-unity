@@ -1,0 +1,24 @@
+# command: bash Research/2026-10-23-wave66/T/t1c-deco-plant.sh C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/b545c660-8250-4a8f-9419-f29ef22d3556/scratchpad/deco
+# sha: b4c0f5c8 (tree 2 dirty paths), 2026-10-24 01:50:48 USMST, /c/Users/gaige/dev/SKYGRIND-unity/.claude/worktrees/agent-af48e888c59fa3626
+
+== 1. the planted room file
+n66-deco --plant: b1's room file + crate A box(-9.3,0,-179.3..-8.3,1,-178.3) (corner) + crate B box(-0.8,0,-151.3..0.8,0.3,-149.7) (step) -> C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/b545c660-8250-4a8f-9419-f29ef22d3556/scratchpad/deco/b1-planted.json
+== 2. the scratch level (gen --room-file --out)
+gen-n65-foundry: --room-file: slot b1 reads C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/b545c660-8250-4a8f-9419-f29ef22d3556/scratchpad/deco/b1-planted.json
+shipped before: Design/levels/n65-foundry.json 5f3eba53c34b84b6a3a4548281865c6cc5691539745636b9ed88215ab296cd85, Assets/StreamingAssets/Design/levels/n65-foundry.json 5f3eba53c34b84b6a3a4548281865c6cc5691539745636b9ed88215ab296cd85
+levelgen --walk: 0 ERROR
+shipped after:  Design/levels/n65-foundry.json 5f3eba53c34b84b6a3a4548281865c6cc5691539745636b9ed88215ab296cd85, Assets/StreamingAssets/Design/levels/n65-foundry.json 5f3eba53c34b84b6a3a4548281865c6cc5691539745636b9ed88215ab296cd85 (byte-identical: --out writes only C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/b545c660-8250-4a8f-9419-f29ef22d3556/scratchpad/deco/deco-plant)
+the round's level: C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/b545c660-8250-4a8f-9419-f29ef22d3556/scratchpad/deco/deco-plant/n65-foundry.json c4850bf9dd9bad4c7cc84b1b2686edb05c776a890c7140b22deaa252306bf6a4; plan C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/b545c660-8250-4a8f-9419-f29ef22d3556/scratchpad/deco/deco-plant/foundry.plan.json, report C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/b545c660-8250-4a8f-9419-f29ef22d3556/scratchpad/deco/deco-plant/LEVEL-n65-foundry-validate.md, openings C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/b545c660-8250-4a8f-9419-f29ef22d3556/scratchpad/deco/deco-plant/openings65.json
+  tracked level files: []
+== 3. skip v2 on it (b1, 10 seeds)
+n65verb skip: M1 UNSURE | room b1, ratio 1.20 vs bar 1.25 (default: no --bars), exercised 6/10 | too few seeds exercised (6 < 7): the comparison does not test the verb
+n65verb skip touch: room b1 | box(-10,0,-180..-9.4,12,-148) | seeds 9/10 | steps 1399 | ride: P1 THE WEST RAIL
+n65verb skip touch: room b1 | box(-6.5,0,-158.5..-1.5,2.4,-157.5) | seeds 8/10 | steps 1149 | gate: P2 THE SLAG WALL, west
+  the touch table and launch kills: Research/2026-10-23-wave66/T/t1c-deco-plant-touch.txt (31 lines)
+== 4. n66-deco.cjs --base e37083cf b1 --file <planted> --touches <the table>
+n66-deco: room b1, C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/b545c660-8250-4a8f-9419-f29ef22d3556/scratchpad/deco/b1-planted.json against Design/levels/n65/rooms/b1.json at e37083cf: 49 items now (47 at the base); new or moved: 2 (2 pieces judged, 0 dressing not judged) | touches: 23 pieces from Research/2026-10-23-wave66/T/t1c-deco-plant-touch.txt; launch kills 8; ranged spots 4; walk-line samples 31; cyan markers in the room 4
+  FAIL added box(-9.3,0,-179.3..-8.3,1,-178.3) | cover: PLANTED: PLANTED crate A | a touched no (2/10 seeds (need 3), 131 steps); b sight no (blocks 0 of 124 spot-to-walk-line sights); c launch no (no launch36 kill on it); d marker no (n/a (not a cyan marker))
+  PASS added box(-0.8,0,-151.3..0.8,0.3,-149.7) | step: PLANTED: PLANTED crate B | a touched YES (10/10 seeds (need 3), 5440 steps); b sight no (blocks 0 of 124 spot-to-walk-line sights); c launch no (no launch36 kill on it); d marker no (n/a (not a cyan marker))
+n66-deco: FAIL | room b1, base e37083cf: 2 piece(s) added or moved, 1 pass, 1 FAIL; dressing 0 not judged
+  exit 1 (1: a piece FAILs, as planted: crate A)
+# exit 0, 01:54:38

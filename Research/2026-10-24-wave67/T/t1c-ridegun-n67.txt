@@ -1,0 +1,17 @@
+# the same pilot on the n67 ids (the A1 rows in this tree: BaseId maps n67-<L> to its base): does an n67 level get its base level's loadout?
+# sha 256f837c + uncommitted V67RideGun; 2026-10-24 11:55:31
+## n65verb ride --level Design/levels/n67-spire.json --room v6 --shoot
+n65verb ride: level n67-spire (Design/levels/n67-spire.json), room v6 "5.6 THE CHOIR", seed 1; pose (-10.0, 0.0, -71.0) yaw 0.0 from the room's spawn (no line65); off switch none
+  the ride's gun: owned at the start revolver gauntlet shotgun (in hand revolver); awards given up to v6: none; the best owned gun revolver; in hand revolver
+  face 0 of 2: x = 1.0, -97.0..-73.0 (24.0 m), top 10.0, normal (-1.0, 0.0), ride along (0.0, -1.0) from (0.6, 0.0, -74.0); the room's wave live, alive 6; weapon revolver
+n65verb ride --shoot: GREEN | room v6 | ride yes (4.7 s on the wall, 12.5 m along it, WallRideStart 1) | look off the wall at most 179.9 deg | shots from the wall 6 (off it 0) | kills from the wall 3 (other kills 0) | pose the room's spawn (no line65)
+## n65verb ride --level Design/levels/n67-iceline.json --room g8 --shoot
+n65verb ride: level n67-iceline (Design/levels/n67-iceline.json), room g8 "2.8 THE STAMPEDE", seed 1; pose (0.0, 0.0, -227.5) yaw 0.0 from the room's spawn (no line65); off switch none
+  the ride's gun: owned at the start gauntlet (in hand gauntlet); awards given up to g8: revolver (g6's award); the best owned gun revolver; in hand revolver
+  face 0 of 2: x = -9.4, -246.0..-223.0 (23.0 m), top 12.0, normal (1.0, 0.0), ride along (0.0, -1.0) from (-9.0, 0.0, -224.0); the room's wave live, alive 1; weapon revolver
+n65verb ride --shoot: RED | room g8 | ride yes (0.8 s on the wall, 6.6 m along it, WallRideStart 2) | look off the wall at most 158.2 deg | shots from the wall 2 (off it 1) | kills from the wall 0 (other kills 0) | pose the room's spawn (no line65) | no kill from the wall
+## n65verb ride --level Design/levels/n67-kiln.json --room kb3 --shoot
+n65verb ride: level n67-kiln (Design/levels/n67-kiln.json), room kb3 "3.3 THE PRESS HALL", seed 1; pose (-8.5, 0.0, -203.0) yaw 0.0 from the room's spawn (no line65); off switch none
+  the ride's gun: owned at the start shotgun gauntlet (in hand shotgun); awards given up to kb3: revolver (kb2b's award); the best owned gun revolver; in hand revolver
+  face 0 of 1: x = 9.4, -217.5..-200.5 (17.0 m), top 14.0, normal (-1.0, 0.0), ride along (0.0, -1.0) from (9.0, 0.0, -201.5); the room's wave live, alive 7; weapon revolver
+n65verb ride --shoot: GREEN | room kb3 | ride yes (1.4 s on the wall, 16.3 m along it, WallRideStart 2) | look off the wall at most 86.4 deg | shots from the wall 3 (off it 1) | kills from the wall 1 (other kills 0) | pose the room's spawn (no line65)

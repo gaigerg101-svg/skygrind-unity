@@ -1,0 +1,16 @@
+# command: python -I Tools/night/n72-crownfx.py <side> <the five Logs/feel/n72-t1/<side>/boss63/shot-N30-B63-crown37-*.png>   (the lead's n72-t1 build afd66240c: bfalone-sp = bossfx72:1 alone, bpoff-sp = plain)
+# builder B, worktree n72-B at 8c68d96db, 2026-10-27 12:17:12 USMST; the aim-clearance bar (120 px disc, 5 %) was added HERE, before any frame of the new look exists
+bfalone-sp	shot-N30-B63-crown37-idle.png	cover  10.2%	aim  27.3%	danger-hue share   0.0%	cyan body  50974 mass    5121	danger body      0 mass       0	visible yes
+bfalone-sp	shot-N30-B63-crown37-flinch.png	cover   4.2%	aim   3.4%	danger-hue share   1.1%	cyan body  22384 mass       0	danger body  18929 mass       0	visible yes
+bfalone-sp	shot-N30-B63-crown37-tell.png	cover   8.7%	aim   9.0%	danger-hue share   7.8%	cyan body   3406 mass       0	danger body  87459 mass   42996	visible NO
+bfalone-sp	shot-N30-B63-crown37-windup.png	cover   4.7%	aim  12.8%	danger-hue share   2.5%	cyan body  18991 mass       0	danger body  30146 mass    4095	visible yes
+bfalone-sp	shot-N30-B63-crown37-stagger.png	cover   8.9%	aim  14.4%	danger-hue share   1.6%	cyan body  53193 mass   11377	danger body  26110 mass       0	visible yes
+bfalone-sp	AIM CLEARANCE	worst glow share of the 120 px disc round the crosshair 27.3% (bar 5%) FAIL
+bfalone-sp	TOTAL	visible 4 of 5	worst coverage 10.2% (bar 15%)	coverage PASS	body PASS (bar 4 of 5)	tell frames' danger-hue share max 7.8% (bar 20%) PASS
+bpoff-sp	shot-N30-B63-crown37-idle.png	cover  24.2%	aim  61.4%	danger-hue share   0.0%	cyan body  35020 mass   78040	danger body      0 mass       0	visible NO
+bpoff-sp	shot-N30-B63-crown37-flinch.png	cover  13.9%	aim  14.0%	danger-hue share   4.7%	cyan body   2700 mass       0	danger body  42780 mass   42176	visible NO
+bpoff-sp	shot-N30-B63-crown37-tell.png	cover  22.7%	aim  28.4%	danger-hue share  26.6%	cyan body      0 mass       0	danger body 107272 mass  228237	visible NO
+bpoff-sp	shot-N30-B63-crown37-windup.png	cover  14.0%	aim  35.5%	danger-hue share   5.3%	cyan body   4327 mass       0	danger body  74146 mass   11686	visible NO
+bpoff-sp	shot-N30-B63-crown37-stagger.png	cover  16.1%	aim  24.4%	danger-hue share   1.3%	cyan body  28109 mass   85634	danger body  19190 mass       0	visible NO
+bpoff-sp	AIM CLEARANCE	worst glow share of the 120 px disc round the crosshair 61.4% (bar 5%) FAIL
+bpoff-sp	TOTAL	visible 0 of 5	worst coverage 24.2% (bar 15%)	coverage FAIL	body FAIL (bar 4 of 5)	tell frames' danger-hue share max 26.6% (bar 20%) FAIL

@@ -1,0 +1,27 @@
+# command (from the main tree, read only): node Research/2026-10-26-wave71/F/F1/spike-align.cjs Logs/player/bench-n64-rc2.log ; then Logs/n63/m1-bench.log
+# sha (F's tree) 106dd56e7; main tree 106dd56e7; 2026-10-26 11:33:36 USMST
+file Logs/player/bench-n64-rc2.log; frames 15585; worst-1% 156
+  interval[n] ms (frame n-1 cycle)                   worst 10.574 | median band 3.612
+  Update[n] ms (bench pairing)                       worst 1.818 | median band 1.213
+  interval[n] - Update[n] (bench "engine")           worst 8.756 | median band 2.400
+  Update[n-1] ms (the measured frame)                worst 1.545 | median band 1.178
+  sim step ms[n-1]                                   worst 0.399 | median band 0.141
+  sim steps[n-1]                                     worst 0.455 | median band 0.402
+  Update[n-1] - step ms[n-1] (render half + input)   worst 1.146 | median band 1.037
+  interval[n] - Update[n-1] (engine, aligned)        worst 9.028 | median band 2.434
+  interval[n+1] ms (the frame after)                 worst 4.128 | median band 3.684
+  worst frames with Update[n-1] > 4 ms: 4 of 156; with aligned engine > 6 ms: 154 of 156
+  Update[n-1] in worst frames: min 0.77 p25 1.02 median 1.25 p75 1.61 max 14.64
+
+file Logs/n63/m1-bench.log; frames 14671; worst-1% 147
+  interval[n] ms (frame n-1 cycle)                   worst 12.087 | median band 3.699
+  Update[n] ms (bench pairing)                       worst 2.001 | median band 1.292
+  interval[n] - Update[n] (bench "engine")           worst 10.085 | median band 2.407
+  Update[n-1] ms (the measured frame)                worst 1.854 | median band 1.187
+  sim step ms[n-1]                                   worst 0.513 | median band 0.142
+  sim steps[n-1]                                     worst 0.578 | median band 0.375
+  Update[n-1] - step ms[n-1] (render half + input)   worst 1.341 | median band 1.045
+  interval[n] - Update[n-1] (engine, aligned)        worst 10.233 | median band 2.512
+  interval[n+1] ms (the frame after)                 worst 5.005 | median band 3.835
+  worst frames with Update[n-1] > 4 ms: 5 of 147; with aligned engine > 6 ms: 144 of 147
+  Update[n-1] in worst frames: min 0.71 p25 1.15 median 1.44 p75 1.95 max 15.12

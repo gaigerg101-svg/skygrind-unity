@@ -1,0 +1,18 @@
+# command: dotnet Temp/wallprobe/bin/Release/net10.0/wallprobe.dll <level> open|locked   and   dotnet Temp/SimHarness/bin/Release/net10.0/SimHarness.dll n39views wall <level>
+# sha: b879f5ddc; time: 2026-10-28 01:46:43; row 9 PASS needs a ride over 1.2 s; the OPEN reading is the Player's, the locked ones are not
+## kiln-kb2-kb2c-kb3-kb3c-kb3d-r2  (C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/kiln-kb3r2/n67-kiln.json)
+-- open (the Player's pick):
+pick: 18 m in kb2c at (7.7, 0.2, -182.0) along (0, 1) normal (-1, 0)
+ride: rode True, rides 2 [0.23-1.55, 1.58-1.58], longest 1.32 s, ends [jump, corner], end pos (8.7, 0.0, -163.9); row 9 PASS, row 11 PASS (16.7 vs 11.9 m/s)
+-- locked (n39views wall, not the Player's pick):
+  NIGHT39 pick: 18 m in kb2 at (-10.7, 0.2, -85.4) along (0, -1) (CHANGED)
+  row 9 PASS: rides 2 [0.23-1.55, 1.55-1.66], longest 1.32 s, ends [jump, corner], rose 0.24 m
+  row 11 PASS: 15.35 m/s after letting go vs 11.42 m/s before
+## kiln-base-t0b  (C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/kiln-base/n67-kiln.json)
+-- open (the Player's pick):
+pick: 18 m in kb2c at (7.7, 0.2, -182.0) along (0, 1) normal (-1, 0)
+ride: rode True, rides 2 [0.23-1.55, 1.58-1.58], longest 1.32 s, ends [jump, corner], end pos (8.7, 0.0, -163.9); row 9 PASS, row 11 PASS (16.7 vs 11.9 m/s)
+-- locked (n39views wall, not the Player's pick):
+  NIGHT39 pick: 18 m in kb2 at (-10.7, 0.2, -85.4) along (0, -1) (CHANGED)
+  row 9 PASS: rides 2 [0.23-1.55, 1.55-1.66], longest 1.32 s, ends [jump, corner], rose 0.24 m
+  row 11 PASS: 15.35 m/s after letting go vs 11.42 m/s before

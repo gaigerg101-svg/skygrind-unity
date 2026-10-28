@@ -1,0 +1,22 @@
+n56-room.py in_wedge: a wedge's yaw is RADIANS (NIGHT74 builder L, 2026-10-28 00:5x; tree n74-L at 8a8c13e21 + this commit's files, uncommitted when written). S's finding (Research/2026-10-27-wave74/S/ledger.md, in S's tree).
+
+## The defect
+Tools/night/n56-room.py in_wedge did `yaw = math.radians(w.get('yaw', 0))`. The level files' collision wedges carry the yaw in radians: the values in every shipped level are 0, +-1.5708 and 3.1416 (python over Design/levels/n52-{foundry,iceline,kiln,span,spire}.json),
+and the sim's collider reads it as radians (PortData.Wedge -> WedgeSpec.yaw -> ArenaMap.WedgeCorners: JsMath.Sin(w.yaw)). So a ramp turned a quarter or half turn stood where a yaw-0 ramp would (1.5708 deg = 0.027 rad): ray_clear, IN VIEW's seen counts, the beside rule and the
+"line into the entry corridor" clause were wrong wherever a rotated ramp stands between an eye and a node. Fix: wedge_yaw() returns the yaw as stored; `--legacy-wedge-degrees` keeps the old reading for the tables below. No other file reads a wedge's yaw (n57-l-room.py and n59-l-room.py only load the list and call this ray_clear).
+
+## The planted case (python -I -B Tools/night/n56-room.py wedge-planted [--legacy-wedge-degrees])
+A 6 x 4 m ramp rising 3 m along its yaw from (0, 0); rays at 1.6 m; across the high end (2.5 m tall there) the ray must be BLOCKED, over the low end (0.5 m) CLEAR, for yaw 0, +pi/2, -pi/2 and pi.
+fixed:  8 of 8 hold, exit 0 ("every rotated wedge blocks and clears as the sim collider would")
+legacy: yaw 0 holds both; +pi/2 and -pi/2 FAIL both (the high-end ray reads clear, the low-end one blocked: the ramp stands where a yaw-0 one would); pi FAILs its high-end case (5 of 8 FAIL), exit 1.
+The existing `planted` command is unaffected by the fix (every check still FAILs its planted case: "trusted", fixed and legacy).
+
+## IN VIEW before / after on S's candidate levels (the gen-slots.cjs --out folders in the shared scratchpad: ice-g4-r6, spire-v5r5, spire-v2r6; command python -I -B Tools/night/n56-room.py room <level> <room> --level-dir <folder> [--legacy-wedge-degrees])
+g4 (ice-g4-r6): w1 entry frame / the entry-eye fallback   0.7 of 1 seen  ->  1.0 of 1 seen          (S: "g4 r6's n56 entry frame reads 0.7 of 1 seen")
+v5 (spire-v5r5): vista, the entry-eye fallback            2.4 of 4 seen (FAIL)  ->  4.0 of 4 seen (PASS)   (S's numbers: 2.4 of 4 -> 4.00 on v5, reproduced)
+v2 (spire-v2r6): w1 entry frame                           0.0 of 5 seen  ->  4.0 of 5 seen; the ambushed rule's "a line into the entry corridor" clause now also flags 2 of the 5 nodes ([-10.5,0,57.5], [-12.5,0,55.5]); the verdict stays FAIL (all 5 are 27 - 30 m from the door, over the 15 m).
+All three rooms stay "not measured: no foothold (R5 FAIL)": IN VIEW is n/c without a foothold, so no room's verdict moves; what moves is the fallback figure and the entry frame (the a156 comparison).
+On the SHIPPED n52 levels the same three rooms read the same before and after (g4 1.0 of 1, v5 4.0 of 4, v2 5.0 of 5): no rotated ramp stands between their eyes and nodes there.
+
+## Not checked
+Whether S's other rooms (g1, g2, g6, kb2c) move; the full 18-room table before / after (the table runs on the n52 files; the candidates need --level-dir per level); the Player's a156 meter against the corrected figures.

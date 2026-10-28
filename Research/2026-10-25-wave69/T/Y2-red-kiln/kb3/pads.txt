@@ -1,0 +1,5 @@
+# command: dotnet Temp/SimHarness/bin/Release/net10.0/SimHarness.dll hold52 --level n57-kiln --room kb3 --pads 
+# sha: 27e0bfc4; time: 2026-10-25 10:26:10
+hold52: level n57-kiln (C:\Users\gaige\dev\SKYGRIND-unity\.claude\worktrees\agent-af48e888c59fa3626\Design\levels\n57-kiln.json), room kb3 "3.3 THE PRESS HALL" rect [-10,-225.5,10,-197.5], off switch none
+pad52 kb3 pad 3 at [-2,0,-210.5] target [-8.5,2.5,-210.5] launched yes apex 4.5 landed [-8.51,2.5,-210.5] miss 0.01 m PASS
+pad52 kb3 pad 4 at [-8.5,0,-224.5] target [5,4.5,-224] launched yes apex 7 landed [5.06,4.5,-224] miss 0.06 m PASS

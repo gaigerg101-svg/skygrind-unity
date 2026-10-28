@@ -1,0 +1,3 @@
+# command: bash Tools/night/n70-throws.sh C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/kiln-base/n67-kiln.json kb3 C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/kiln-base/throws-kb3.txt 20
+# sha: b879f5ddc; time: 2026-10-28 01:52:10
+n70-throws: 20 probes | GREEN 20 | thrown median 0.6 m (min 0.1, max 10.5) | ends wall 6, body 14 | in a pit 0, in lava 0, bursts killing >= 2: 14 | M3 candidates (D-3) 14 / 20

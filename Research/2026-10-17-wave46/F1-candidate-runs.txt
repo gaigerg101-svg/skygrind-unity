@@ -1,0 +1,214 @@
+n46flow: seeds 1..10, cap 240 s per room, rows forced on: retry46,overlap46,teach46,stuck46,walkin46,wyrm46, off switch: none; pilot: Walk38Pilot + the ported autopilot (normal)
+n46flow n46-foundry (loaded n46-foundry; BaseId n45-foundry): 10/10 walks through a2..a8; level time median 250.9 s; the pilot's lava rule: out of lava 1254 steps, held at an edge 18915 steps, chases round it 37, detours 22; put at the next room (a link not crossed in max(30 s, 3 x par) or a cleared room not left in 15 s) 21; stuck46 burrowers ended 0
+  room       kind | stall%  maxStall  air% | kgap med/max | near med/p10/p90 | dwell  dead | deaths falls | clear (k/n)    | geometry
+  a2         room |    8.2      0.4  74.2 |  3.9 / 8.6   |  8.6 /  3.2 / 14.3  |   1.4   8.2 |      0     0 |   14.9 (10/10) | floor 280 m2, tiers 2, loop n (0 m2), pockets 0, sight 23.1 m, w1 in view 2/2
+  a3         room |   49.3      2.9  29.0 |  2.2 / 9.2   |  9.5 /  3.6 / 18.7  |   0.7  11.2 |      1     0 |   15.7 (10/10) | floor 315 m2, tiers 2, loop y (136.6 m2), pockets 0, sight 29.2 m, w1 in view 2/2
+  a4         room |   34.4      2.8  55.6 |  3.4 / 10.8  |  9.0 /  5.0 / 12.6  |   3.4   4.2 |      2     0 |   13.9 (10/10) | floor 152 m2, tiers 2, loop n (1.5 m2), pockets 0, sight 16.6 m, w1 in view 3/3
+  a5         room |   37.4      2.9  43.1 |  3.4 / 10.6  |  7.4 /  2.6 / 13.4  |   3.5   3.2 |      6     0 |   32.3 (10/10) | floor 359 m2, tiers 3, loop y (146.8 m2), pockets 0, sight 24.4 m, w1 in view 3/7
+  b1         room |   22.9      3.0  45.4 |  2.9 / 40.0  |  8.8 /  3.3 / 16.1  |   2.6   4.2 |     13     0 |   48.4 (10/10) | floor 1206 m2, tiers 4, loop y (174.5 m2), pockets 0, sight 40.5 m, w1 in view 4/4
+  a8         room |   39.0      1.3  33.9 |  2.2 / 4.9   |  4.3 /  2.2 / 10.4  |   0.0   0.7 |      0     0 |    5.5 (10/10) | floor 308 m2, tiers 3, loop n (0 m2), pockets 0, sight 13.2 m, w1 in view 3/3
+  LEVEL           |   30.0      3.0  46.4 |  3.1 / 40.0  |  8.3 /  3.0 / 14.9  |  11.6  31.6 |     22     0 |  130.7 sum of medians
+n46flow n46-foundry SUMMARY: GREEN 10/10; stall 30.0 %, longest stall 3.0 s, air 46.4 %, kill gap 3.1 / 40.0 s, nearest 8.3 m, dwell 11.6 s, dead 31.6 s, deaths 22, falls 0, clear 130.7 s
+n46flow n46-foundry: wall time 185 s
+n46flow: seeds 1..10, cap 240 s per room, rows forced on: retry46,overlap46,teach46,stuck46,walkin46,wyrm46, off switch: none; pilot: Walk38Pilot + the ported autopilot (normal)
+n46flow n46-iceline (loaded n46-iceline; BaseId n45-iceline): 10/10 walks through g1..g8; level time median 221.3 s; the pilot's lava rule: out of lava 635 steps, held at an edge 4123 steps, chases round it 1, detours 8; put at the next room (a link not crossed in max(30 s, 3 x par) or a cleared room not left in 15 s) 10; stuck46 burrowers ended 0
+  room       kind | stall%  maxStall  air% | kgap med/max | near med/p10/p90 | dwell  dead | deaths falls | clear (k/n)    | geometry
+  g1         room |   75.0      3.7   0.0 |    - / -     |  7.7 /  3.3 / 11.2  |   0.4   4.2 |      0     0 |    5.0 (10/10) | floor 572 m2, tiers 2, loop n (15.3 m2), pockets 0, sight 32.6 m, w1 in view 1/1
+  g2         room |   54.5      3.5  13.3 |  1.3 / 4.4   |  1.9 /  0.7 / 14.9  |   0.4   4.2 |      0     0 |   12.9 (10/10) | floor 672 m2, tiers 4, loop n (18.7 m2), pockets 0, sight 34.2 m, w1 in view 2/4
+  g3         room |   71.6      7.7   6.3 |  1.3 / 3.6   |  0.8 /  0.4 / 6.0   |   0.3   3.2 |      0     0 |   18.5 (10/10) | floor 680 m2, tiers 4, loop y (57.1 m2), pockets 0, sight 34.8 m, w1 in view 4/4
+  g4         room |   24.7      2.9  43.3 |  6.5 / 37.0  | 10.1 /  6.1 / 17.3  |   0.9   4.2 |      0     0 |   27.5 (10/10) | floor 720 m2, tiers 4, loop n (25.3 m2), pockets 0, sight 37 m, w1 in view 4/4
+  g5         room |   65.0      7.8  10.5 |  1.3 / 27.6  |  1.1 /  0.4 / 11.6  |   0.3   3.2 |      0     0 |   28.1 (10/10) | floor 780 m2, tiers 3, loop n (10.8 m2), pockets 0, sight 37.7 m, w1 in view 9/9
+  g6         room |   36.7      2.7  54.0 |  2.6 / 7.1   |  7.2 /  3.0 / 11.8  |   2.4   3.0 |      0     0 |   11.9 (10/10) | floor 252 m2, tiers 1, loop n (2.6 m2), pockets 0, sight 21.4 m, w1 in view 2/2
+  g7         room |   21.7      2.9  49.4 |  2.3 / 18.1  |  6.7 /  1.7 / 12.6  |   3.4   3.2 |      4   222 |   52.6 (10/10) | floor 792 m2, tiers 2, loop y (119.1 m2), pockets 0, sight 40.5 m, w1 in view 8/10
+  g8         room |   17.0      1.9  35.9 |  3.2 / 12.2  |  8.7 /  3.4 / 19.5  |   1.8   4.2 |      0     0 |   22.5 (10/10) | floor 720 m2, tiers 2, loop n (9.8 m2), pockets 0, sight 35.2 m, w1 in view 2/2
+  LEVEL           |   38.7      7.8  32.1 |  1.3 / 37.0  |  6.3 /  0.7 / 13.2  |   9.9  29.3 |      4   222 |  179.0 sum of medians
+n46flow n46-iceline SUMMARY: GREEN 10/10; stall 38.7 %, longest stall 7.8 s, air 32.1 %, kill gap 1.3 / 37.0 s, nearest 6.3 m, dwell 9.9 s, dead 29.3 s, deaths 4, falls 222, clear 179.0 s
+n46flow n46-iceline: wall time 109 s
+n46flow: seeds 1..10, cap 240 s per room, rows forced on: retry46,overlap46,teach46,stuck46,walkin46,wyrm46, off switch: none; pilot: Walk38Pilot + the ported autopilot (normal)
+n46flow n46-kiln (loaded n46-kiln; BaseId n45-kiln): 10/10 walks through kb2..kb3; level time median 143.4 s; the pilot's lava rule: out of lava 569 steps, held at an edge 2193 steps, chases round it 2, detours 6; put at the next room (a link not crossed in max(30 s, 3 x par) or a cleared room not left in 15 s) 2; stuck46 burrowers ended 1
+  room       kind | stall%  maxStall  air% | kgap med/max | near med/p10/p90 | dwell  dead | deaths falls | clear (k/n)    | geometry
+  kb2        room |   37.5      4.7  38.0 |  2.2 / 24.6  |  8.9 /  3.5 / 17.6  |   1.8   5.2 |      4     0 |   50.2 (10/10) | floor 1408 m2, tiers 4, loop y (104.6 m2), pockets 1, sight 47 m, w1 in view 7/15
+  kb2c       room |   26.2      2.9  33.9 |  2.6 / 17.7  |  5.8 /  1.1 / 13.2  |   1.1   4.2 |      0     0 |   28.6 (10/10) | floor 840 m2, tiers 2, loop n (0 m2), pockets 0, sight 39.6 m, w1 in view 7/7
+  kb3        room |   30.9      3.0  33.2 |  2.3 / 25.8  |  9.7 /  4.0 / 19.8  |   4.4   3.2 |      4     0 |   43.2 (10/10) | floor 1694 m2, tiers 4, loop y (176.6 m2), pockets 0, sight 53.5 m, w1 in view 9/9
+  LEVEL           |   32.4      4.7  35.3 |  2.4 / 25.8  |  8.7 /  3.1 / 17.3  |   7.2  12.6 |      8     0 |  121.9 sum of medians
+n46flow n46-kiln SUMMARY: GREEN 10/10; stall 32.4 %, longest stall 4.7 s, air 35.3 %, kill gap 2.4 / 25.8 s, nearest 8.7 m, dwell 7.2 s, dead 12.6 s, deaths 8, falls 0, clear 121.9 s
+n46flow n46-kiln: wall time 137 s
+n46flow: seeds 1..10, cap 240 s per room, rows forced on: retry46,overlap46,teach46,stuck46,walkin46,wyrm46, off switch: none; pilot: Walk38Pilot + the ported autopilot (normal)
+n46flow n46-span (loaded n46-span; BaseId n40-span): 10/10 walks through p1..p5; level time median 135.5 s; the pilot's lava rule: out of lava 0 steps, held at an edge 0 steps, chases round it 0, detours 0; put at the next room (a link not crossed in max(30 s, 3 x par) or a cleared room not left in 15 s) 0; stuck46 burrowers ended 0
+  room       kind | stall%  maxStall  air% | kgap med/max | near med/p10/p90 | dwell  dead | deaths falls | clear (k/n)    | geometry
+  p1         room |   21.4      3.7  39.4 |  1.4 / 9.6   |  7.5 /  3.2 / 13.6  |   0.3   4.2 |      0     0 |   24.2 (10/10) | floor 1152 m2, tiers 3, loop n (6.9 m2), pockets 0, sight 46.8 m, w1 in view 5/9
+  p3         room |   20.2      2.9  44.9 |  1.8 / 21.4  |  8.1 /  3.1 / 12.8  |   1.7   3.2 |      0     0 |   40.7 (10/10) | floor 1600 m2, tiers 3, loop n (21.4 m2), pockets 0, sight 55.2 m, w1 in view 7/11
+  p5         room |   22.1      2.9  52.7 |  1.5 / 52.6  |  7.6 /  3.3 / 13.6  |   3.9   3.2 |      2     0 |   45.8 (10/10) | floor 1296 m2, tiers 3, loop n (22.6 m2), pockets 0, sight 49.5 m, w1 in view 8/10
+  LEVEL           |   21.3      3.7  47.1 |  1.6 / 52.6  |  7.8 /  3.2 / 13.3  |   5.9  10.6 |      2     0 |  110.6 sum of medians
+n46flow n46-span SUMMARY: GREEN 10/10; stall 21.3 %, longest stall 3.7 s, air 47.1 %, kill gap 1.6 / 52.6 s, nearest 7.8 m, dwell 5.9 s, dead 10.6 s, deaths 2, falls 0, clear 110.6 s
+n46flow n46-span: wall time 118 s
+n46flow: seeds 1..10, cap 240 s per room, rows forced on: retry46,overlap46,teach46,stuck46,walkin46,wyrm46, off switch: none; pilot: Walk38Pilot + the ported autopilot (normal)
+n46flow n46-spire (loaded n46-spire; BaseId n41-spire): 10/10 walks through v2..v6; level time median 172.6 s; the pilot's lava rule: out of lava 0 steps, held at an edge 0 steps, chases round it 0, detours 0; put at the next room (a link not crossed in max(30 s, 3 x par) or a cleared room not left in 15 s) 0; stuck46 burrowers ended 0
+  room       kind | stall%  maxStall  air% | kgap med/max | near med/p10/p90 | dwell  dead | deaths falls | clear (k/n)    | geometry
+  v2         room |   16.8      4.3  54.6 |  2.0 / 43.6  |  7.2 /  2.7 / 12.8  |   1.6   4.2 |      0     0 |   57.9 (10/10) | floor 1140 m2, tiers 5, loop n (21.4 m2), pockets 4, sight 46.5 m, w1 in view 0/5
+  v5         room |   30.4      2.8  44.0 |  0.7 / 11.4  |  6.7 /  1.9 / 13.3  |   2.6   3.0 |      0     0 |    9.6 (10/10) | floor 420 m2, tiers 2, loop n (0 m2), pockets 0, sight 35.7 m, w1 in view 5/5
+  v6         room |    9.5      2.9  55.8 |  1.9 / 57.8  |  7.8 /  2.8 / 13.3  |   4.4   3.2 |      0     0 |   87.8 (10/10) | floor 1163 m2, tiers 5, loop n (13.9 m2), pockets 0, sight 47.5 m, w1 in view 6/6
+  LEVEL           |   13.7      4.3  54.5 |  1.9 / 57.8  |  7.5 /  2.7 / 13.1  |   8.6  10.4 |      0     0 |  155.2 sum of medians
+n46flow n46-spire SUMMARY: GREEN 10/10; stall 13.7 %, longest stall 4.3 s, air 54.5 %, kill gap 1.9 / 57.8 s, nearest 7.5 m, dwell 8.6 s, dead 10.4 s, deaths 0, falls 0, clear 155.2 s
+n46flow n46-spire: wall time 112 s
+n46flow: seeds 11..20, cap 240 s per room, rows forced on: retry46,overlap46,teach46,stuck46,walkin46,wyrm46, off switch: none; pilot: Walk38Pilot + the ported autopilot (normal)
+n46flow n46-foundry (loaded n46-foundry; BaseId n45-foundry): 10/10 walks through a2..a8; level time median 243.1 s; the pilot's lava rule: out of lava 1577 steps, held at an edge 17473 steps, chases round it 26, detours 24; put at the next room (a link not crossed in max(30 s, 3 x par) or a cleared room not left in 15 s) 22; stuck46 burrowers ended 0
+  room       kind | stall%  maxStall  air% | kgap med/max | near med/p10/p90 | dwell  dead | deaths falls | clear (k/n)    | geometry
+  a2         room |   13.1      0.5  78.3 |  4.4 / 10.4  |  8.0 /  2.9 / 16.1  |   0.7   8.2 |      0     0 |   13.4 (10/10) | -
+  a3         room |   43.9      3.1  36.0 |  2.2 / 16.5  |  9.5 /  4.5 / 19.2  |   0.7   7.4 |      2     0 |   14.3 (10/10) | -
+  a4         room |   36.7      2.8  58.1 |  4.4 / 9.6   |  8.6 /  5.0 / 12.7  |   5.4   4.2 |      2     0 |   14.4 (10/10) | -
+  a5         room |   31.2      2.8  45.9 |  3.1 / 26.4  |  7.9 /  3.2 / 13.4  |   3.4   4.2 |     12     0 |   48.6 (10/10) | -
+  b1         room |   24.3      3.0  44.4 |  2.7 / 23.1  |  9.1 /  3.4 / 16.2  |   2.7   4.2 |     13     0 |   49.4 (10/10) | -
+  a8         room |   41.4      1.4  34.5 |  1.8 / 3.5   |  4.4 /  2.2 / 10.4  |   0.0   0.6 |      0     0 |    5.4 (10/10) | -
+  LEVEL           |   29.7      3.1  48.4 |  3.1 / 26.4  |  8.4 /  3.4 / 14.9  |  12.9  28.8 |     29     0 |  145.5 sum of medians
+n46flow n46-foundry SUMMARY: GREEN 10/10; stall 29.7 %, longest stall 3.1 s, air 48.4 %, kill gap 3.1 / 26.4 s, nearest 8.4 m, dwell 12.9 s, dead 28.8 s, deaths 29, falls 0, clear 145.5 s
+n46flow n46-foundry: wall time 183 s
+n46flow: seeds 11..20, cap 240 s per room, rows forced on: retry46,overlap46,teach46,stuck46,walkin46,wyrm46, off switch: none; pilot: Walk38Pilot + the ported autopilot (normal)
+n46flow n46-iceline (loaded n46-iceline; BaseId n45-iceline): 10/10 walks through g1..g8; level time median 210.7 s; the pilot's lava rule: out of lava 506 steps, held at an edge 5513 steps, chases round it 7, detours 8; put at the next room (a link not crossed in max(30 s, 3 x par) or a cleared room not left in 15 s) 8; stuck46 burrowers ended 0
+  room       kind | stall%  maxStall  air% | kgap med/max | near med/p10/p90 | dwell  dead | deaths falls | clear (k/n)    | geometry
+  g1         room |   75.0      3.7   0.0 |    - / -     |  7.7 /  3.3 / 11.2  |   0.4   4.2 |      0     0 |    5.0 (10/10) | -
+  g2         room |   50.4      3.3   9.6 |  1.3 / 4.4   |  2.0 /  0.7 / 19.0  |   0.4   4.2 |      0     0 |   14.1 (10/10) | -
+  g3         room |   70.1      7.1   9.6 |  1.3 / 3.7   |  0.7 /  0.3 / 6.1   |   0.4   3.2 |      0     0 |   18.7 (10/10) | -
+  g4         room |   26.0      2.9  36.3 |  7.2 / 19.5  | 10.1 /  6.0 / 15.7  |   1.2   4.2 |      0     0 |   29.2 (10/10) | -
+  g5         room |   55.6      7.0  13.4 |  1.3 / 35.5  |  1.9 /  0.5 / 13.0  |   0.4   3.2 |      0     0 |   33.9 (10/10) | -
+  g6         room |   37.2      2.7  44.2 |  2.4 / 10.5  |  8.0 /  3.0 / 12.2  |   3.0   3.8 |      0     0 |   11.1 (10/10) | -
+  g7         room |   26.2      2.9  48.3 |  1.9 / 13.6  |  6.2 /  1.6 / 12.6  |   3.3   4.2 |      5   182 |   44.9 (10/10) | -
+  g8         room |   17.1      2.8  35.1 |  3.7 / 11.8  |  8.5 /  3.3 / 18.0  |   2.0   4.2 |      0     0 |   27.4 (10/10) | -
+  LEVEL           |   38.9      7.1  29.6 |  1.3 / 35.5  |  6.5 /  0.7 / 13.6  |  11.0  31.2 |      5   182 |  184.2 sum of medians
+n46flow n46-iceline SUMMARY: GREEN 10/10; stall 38.9 %, longest stall 7.1 s, air 29.6 %, kill gap 1.3 / 35.5 s, nearest 6.5 m, dwell 11.0 s, dead 31.2 s, deaths 5, falls 182, clear 184.2 s
+n46flow n46-iceline: wall time 109 s
+n46flow: seeds 11..20, cap 240 s per room, rows forced on: retry46,overlap46,teach46,stuck46,walkin46,wyrm46, off switch: none; pilot: Walk38Pilot + the ported autopilot (normal)
+  n46-kiln seed 19: cap: 240 s in kb2 (Fight); in kb2 Fight wave 3 at (13.2, -0.0, -93.9), alive 1 (drone (-4.4, 7.7, -109.5)), hp 55
+n46flow n46-kiln (loaded n46-kiln; BaseId n45-kiln): 9/10 walks through kb2..kb3; level time median 145.9 s; the pilot's lava rule: out of lava 602 steps, held at an edge 6297 steps, chases round it 5, detours 4; put at the next room (a link not crossed in max(30 s, 3 x par) or a cleared room not left in 15 s) 1; stuck46 burrowers ended 0
+  room       kind | stall%  maxStall  air% | kgap med/max | near med/p10/p90 | dwell  dead | deaths falls | clear (k/n)    | geometry
+  kb2        room |   39.8      4.7  52.4 |  2.1 / 48.4  |  7.3 /  2.3 / 14.6  |   0.5   4.2 |      1     0 |   52.2 (9/10, cap 1) | -
+  kb2c       room |   23.2      2.9  38.0 |  3.3 / 11.1  |  5.3 /  0.6 / 13.4  |   1.4   4.2 |      0     0 |   26.4 (9/10) | -
+  kb3        room |   24.3      3.1  35.0 |  2.5 / 11.3  |  9.7 /  4.1 / 15.5  |   3.3   3.2 |      3     0 |   45.5 (9/10) | -
+  LEVEL           |   30.9      4.7  43.3 |  2.4 / 48.4  |  7.8 /  2.2 / 14.6  |   5.1  11.6 |      4     0 |  124.1 sum of medians
+n46flow n46-kiln SUMMARY: SHORT 9/10; stall 30.9 %, longest stall 4.7 s, air 43.3 %, kill gap 2.4 / 48.4 s, nearest 7.8 m, dwell 5.1 s, dead 11.6 s, deaths 4, falls 0, clear 124.1 s
+n46flow n46-kiln: wall time 92 s
+n46flow: seeds 11..20, cap 240 s per room, rows forced on: retry46,overlap46,teach46,stuck46,walkin46,wyrm46, off switch: none; pilot: Walk38Pilot + the ported autopilot (normal)
+n46flow n46-span (loaded n46-span; BaseId n40-span): 10/10 walks through p1..p5; level time median 128.0 s; the pilot's lava rule: out of lava 0 steps, held at an edge 0 steps, chases round it 0, detours 0; put at the next room (a link not crossed in max(30 s, 3 x par) or a cleared room not left in 15 s) 1; stuck46 burrowers ended 0
+  room       kind | stall%  maxStall  air% | kgap med/max | near med/p10/p90 | dwell  dead | deaths falls | clear (k/n)    | geometry
+  p1         room |   20.6      3.7  39.4 |  1.7 / 6.9   |  7.9 /  3.1 / 13.3  |   1.0   4.2 |      0     0 |   26.1 (10/10) | -
+  p3         room |   16.4      2.9  51.5 |  1.4 / 10.7  |  7.6 /  3.0 / 13.6  |   3.0   3.2 |      0     0 |   35.6 (10/10) | -
+  p5         room |   17.7      2.9  53.8 |  1.6 / 26.9  |  8.2 /  3.3 / 13.9  |   3.0   3.2 |      1     0 |   51.6 (10/10) | -
+  LEVEL           |   17.9      3.7  49.7 |  1.5 / 26.9  |  7.9 /  3.1 / 13.7  |   7.0  10.6 |      1     0 |  113.3 sum of medians
+n46flow n46-span SUMMARY: GREEN 10/10; stall 17.9 %, longest stall 3.7 s, air 49.7 %, kill gap 1.5 / 26.9 s, nearest 7.9 m, dwell 7.0 s, dead 10.6 s, deaths 1, falls 0, clear 113.3 s
+n46flow n46-span: wall time 103 s
+n46flow: seeds 11..20, cap 240 s per room, rows forced on: retry46,overlap46,teach46,stuck46,walkin46,wyrm46, off switch: none; pilot: Walk38Pilot + the ported autopilot (normal)
+n46flow n46-spire (loaded n46-spire; BaseId n41-spire): 10/10 walks through v2..v6; level time median 169.3 s; the pilot's lava rule: out of lava 0 steps, held at an edge 0 steps, chases round it 0, detours 0; put at the next room (a link not crossed in max(30 s, 3 x par) or a cleared room not left in 15 s) 0; stuck46 burrowers ended 0
+  room       kind | stall%  maxStall  air% | kgap med/max | near med/p10/p90 | dwell  dead | deaths falls | clear (k/n)    | geometry
+  v2         room |   18.6      4.3  59.9 |  2.1 / 65.5  |  7.1 /  2.7 / 13.2  |   1.7   4.2 |      0     0 |   62.3 (10/10) | -
+  v5         room |   29.4      2.7  52.2 |  1.4 / 7.8   |  7.5 /  2.4 / 16.1  |   2.2   3.0 |      0     0 |   11.4 (10/10) | -
+  v6         room |    9.9      2.9  55.3 |  3.0 / 49.8  |  7.3 /  2.5 / 12.8  |   2.7   3.2 |      0     0 |   90.1 (10/10) | -
+  LEVEL           |   14.5      4.3  56.8 |  2.1 / 65.5  |  7.2 /  2.6 / 13.1  |   6.5  10.4 |      0     0 |  163.7 sum of medians
+n46flow n46-spire SUMMARY: GREEN 10/10; stall 14.5 %, longest stall 4.3 s, air 56.8 %, kill gap 2.1 / 65.5 s, nearest 7.2 m, dwell 6.5 s, dead 10.4 s, deaths 0, falls 0, clear 163.7 s
+n46flow n46-spire: wall time 112 s
+n46flow: seeds 1..10, cap 240 s per room, rows forced on: retry46,overlap46,teach46,stuck46,walkin46,wyrm46, off switch: none; pilot: Walk38Pilot + the ported autopilot (normal)
+n46flow n46-foundry (loaded n46-foundry; BaseId n45-foundry): 10/10 walks through a2..a8; level time median 250.9 s; the pilot's lava rule: out of lava 1254 steps, held at an edge 18915 steps, chases round it 37, detours 22; put at the next room (a link not crossed in max(30 s, 3 x par) or a cleared room not left in 15 s) 21; stuck46 burrowers ended 0
+  room       kind | stall%  maxStall  air% | kgap med/max | near med/p10/p90 | dwell  dead | deaths falls | clear (k/n)    | geometry
+  a2         room |    8.2      0.4  74.2 |  3.9 / 8.6   |  8.6 /  3.2 / 14.3  |   1.4   8.2 |      0     0 |   14.9 (10/10) | floor 280 m2, tiers 2, loop n (0 m2), pockets 0, sight 23.1 m, w1 in view 2/2
+  a3         room |   49.3      2.9  29.0 |  2.2 / 9.2   |  9.5 /  3.6 / 18.7  |   0.7  11.2 |      1     0 |   15.7 (10/10) | floor 315 m2, tiers 2, loop y (136.6 m2), pockets 0, sight 29.2 m, w1 in view 2/2
+  a4         room |   34.4      2.8  55.6 |  3.4 / 10.8  |  9.0 /  5.0 / 12.6  |   3.4   4.2 |      2     0 |   13.9 (10/10) | floor 152 m2, tiers 2, loop n (1.5 m2), pockets 0, sight 16.6 m, w1 in view 3/3
+  a5         room |   37.4      2.9  43.1 |  3.4 / 10.6  |  7.4 /  2.6 / 13.4  |   3.5   3.2 |      6     0 |   32.3 (10/10) | floor 359 m2, tiers 3, loop y (146.8 m2), pockets 0, sight 24.4 m, w1 in view 3/7
+  b1         room |   22.9      3.0  45.4 |  2.9 / 40.0  |  8.8 /  3.3 / 16.1  |   2.6   4.2 |     13     0 |   48.4 (10/10) | floor 1206 m2, tiers 4, loop y (174.5 m2), pockets 0, sight 40.5 m, w1 in view 4/4
+  a8         room |   39.0      1.3  33.9 |  2.2 / 4.9   |  4.3 /  2.2 / 10.4  |   0.0   0.7 |      0     0 |    5.5 (10/10) | floor 308 m2, tiers 3, loop n (0 m2), pockets 0, sight 13.2 m, w1 in view 3/3
+  LEVEL           |   30.0      3.0  46.4 |  3.1 / 40.0  |  8.3 /  3.0 / 14.9  |  11.6  31.6 |     22     0 |  130.7 sum of medians
+n46flow n46-foundry SUMMARY: GREEN 10/10; stall 30.0 %, longest stall 3.0 s, air 46.4 %, kill gap 3.1 / 40.0 s, nearest 8.3 m, dwell 11.6 s, dead 31.6 s, deaths 22, falls 0, clear 130.7 s
+n46flow n46-foundry: wall time 213 s
+n46flow: seeds 1..10, cap 240 s per room, rows forced on: retry46,overlap46,teach46,stuck46,walkin46,wyrm46, off switch: none; pilot: Walk38Pilot + the ported autopilot (normal)
+n46flow n46-iceline (loaded n46-iceline; BaseId n45-iceline): 10/10 walks through g1..g8; level time median 228.3 s; the pilot's lava rule: out of lava 415 steps, held at an edge 8038 steps, chases round it 7, detours 7; put at the next room (a link not crossed in max(30 s, 3 x par) or a cleared room not left in 15 s) 7; stuck46 burrowers ended 0
+  room       kind | stall%  maxStall  air% | kgap med/max | near med/p10/p90 | dwell  dead | deaths falls | clear (k/n)    | geometry
+  g1         room |   75.0      3.7   0.0 |    - / -     |  7.7 /  3.3 / 11.2  |   0.4   4.2 |      0     0 |    5.0 (10/10) | floor 572 m2, tiers 2, loop n (15.3 m2), pockets 0, sight 32.6 m, w1 in view 1/1
+  g2         room |   54.5      3.5  13.3 |  1.3 / 4.4   |  1.9 /  0.7 / 14.9  |   0.4   4.2 |      0     0 |   12.9 (10/10) | floor 672 m2, tiers 4, loop n (18.7 m2), pockets 0, sight 34.2 m, w1 in view 2/4
+  g3         room |   64.3      7.0   6.6 |  1.3 / 3.8   |  0.8 /  0.3 / 8.0   |   0.6   4.2 |      0     0 |   19.1 (10/10) | floor 680 m2, tiers 4, loop y (57.1 m2), pockets 0, sight 34.8 m, w1 in view 4/4
+  g4         room |   27.6      2.9  41.0 |  6.5 / 26.5  |  9.9 /  6.1 / 16.4  |   0.7   4.2 |      0     0 |   23.3 (10/10) | floor 720 m2, tiers 4, loop n (25.3 m2), pockets 0, sight 37 m, w1 in view 4/4
+  g5         room |   55.2      5.8  17.9 |  1.3 / 40.3  |  2.0 /  0.4 / 13.0  |   1.4   3.2 |      0     0 |   31.7 (10/10) | floor 780 m2, tiers 3, loop n (10.8 m2), pockets 0, sight 37.7 m, w1 in view 9/9
+  g6         room |   36.7      2.7  49.4 |  2.0 / 5.5   |  7.6 /  3.3 / 11.8  |   2.8   3.8 |      0     0 |   10.1 (10/10) | floor 252 m2, tiers 1, loop n (2.6 m2), pockets 0, sight 21.4 m, w1 in view 2/2
+  g7         room |   23.4      2.9  40.5 |  2.3 / 11.9  |  8.2 /  2.0 / 13.8  |   7.3   5.2 |      1   145 |   51.5 (10/10) | floor 792 m2, tiers 2, loop y (119.1 m2), pockets 0, sight 40.5 m, w1 in view 8/10
+  g8         room |   17.3      1.6  39.8 |  3.5 / 18.8  |  8.1 /  3.6 / 15.7  |   2.3   4.2 |      0     0 |   27.7 (10/10) | floor 720 m2, tiers 2, loop n (9.8 m2), pockets 0, sight 35.2 m, w1 in view 2/2
+  LEVEL           |   37.5      7.0  30.2 |  1.3 / 40.3  |  7.1 /  0.7 / 13.9  |  15.8  33.1 |      1   145 |  181.3 sum of medians
+n46flow n46-iceline SUMMARY: GREEN 10/10; stall 37.5 %, longest stall 7.0 s, air 30.2 %, kill gap 1.3 / 40.3 s, nearest 7.1 m, dwell 15.8 s, dead 33.1 s, deaths 1, falls 145, clear 181.3 s
+n46flow n46-iceline: wall time 144 s
+n46flow: seeds 1..10, cap 240 s per room, rows forced on: retry46,overlap46,teach46,stuck46,walkin46,wyrm46, off switch: none; pilot: Walk38Pilot + the ported autopilot (normal)
+n46flow n46-kiln (loaded n46-kiln; BaseId n45-kiln): 10/10 walks through kb2..kb3; level time median 143.4 s; the pilot's lava rule: out of lava 569 steps, held at an edge 2193 steps, chases round it 2, detours 6; put at the next room (a link not crossed in max(30 s, 3 x par) or a cleared room not left in 15 s) 2; stuck46 burrowers ended 1
+  room       kind | stall%  maxStall  air% | kgap med/max | near med/p10/p90 | dwell  dead | deaths falls | clear (k/n)    | geometry
+  kb2        room |   37.5      4.7  38.0 |  2.2 / 24.6  |  8.9 /  3.5 / 17.6  |   1.8   5.2 |      4     0 |   50.2 (10/10) | floor 1408 m2, tiers 4, loop y (104.6 m2), pockets 1, sight 47 m, w1 in view 7/15
+  kb2c       room |   26.2      2.9  33.9 |  2.6 / 17.7  |  5.8 /  1.1 / 13.2  |   1.1   4.2 |      0     0 |   28.6 (10/10) | floor 840 m2, tiers 2, loop n (0 m2), pockets 0, sight 39.6 m, w1 in view 7/7
+  kb3        room |   30.9      3.0  33.2 |  2.3 / 25.8  |  9.7 /  4.0 / 19.8  |   4.4   3.2 |      4     0 |   43.2 (10/10) | floor 1694 m2, tiers 4, loop y (176.6 m2), pockets 0, sight 53.5 m, w1 in view 9/9
+  LEVEL           |   32.4      4.7  35.3 |  2.4 / 25.8  |  8.7 /  3.1 / 17.3  |   7.2  12.6 |      8     0 |  121.9 sum of medians
+n46flow n46-kiln SUMMARY: GREEN 10/10; stall 32.4 %, longest stall 4.7 s, air 35.3 %, kill gap 2.4 / 25.8 s, nearest 8.7 m, dwell 7.2 s, dead 12.6 s, deaths 8, falls 0, clear 121.9 s
+n46flow n46-kiln: wall time 187 s
+n46flow: seeds 1..10, cap 240 s per room, rows forced on: retry46,overlap46,teach46,stuck46,walkin46,wyrm46, off switch: none; pilot: Walk38Pilot + the ported autopilot (normal)
+n46flow n46-span (loaded n46-span; BaseId n40-span): 10/10 walks through p1..p5; level time median 135.5 s; the pilot's lava rule: out of lava 0 steps, held at an edge 0 steps, chases round it 0, detours 0; put at the next room (a link not crossed in max(30 s, 3 x par) or a cleared room not left in 15 s) 0; stuck46 burrowers ended 0
+  room       kind | stall%  maxStall  air% | kgap med/max | near med/p10/p90 | dwell  dead | deaths falls | clear (k/n)    | geometry
+  p1         room |   21.4      3.7  39.4 |  1.4 / 9.6   |  7.5 /  3.2 / 13.6  |   0.3   4.2 |      0     0 |   24.2 (10/10) | floor 1152 m2, tiers 3, loop n (6.9 m2), pockets 0, sight 46.8 m, w1 in view 5/9
+  p3         room |   20.2      2.9  44.9 |  1.8 / 21.4  |  8.1 /  3.1 / 12.8  |   1.7   3.2 |      0     0 |   40.7 (10/10) | floor 1600 m2, tiers 3, loop n (21.4 m2), pockets 0, sight 55.2 m, w1 in view 7/11
+  p5         room |   22.1      2.9  52.7 |  1.5 / 52.6  |  7.6 /  3.3 / 13.6  |   3.9   3.2 |      2     0 |   45.8 (10/10) | floor 1296 m2, tiers 3, loop n (22.6 m2), pockets 0, sight 49.5 m, w1 in view 8/10
+  LEVEL           |   21.3      3.7  47.1 |  1.6 / 52.6  |  7.8 /  3.2 / 13.3  |   5.9  10.6 |      2     0 |  110.6 sum of medians
+n46flow n46-span SUMMARY: GREEN 10/10; stall 21.3 %, longest stall 3.7 s, air 47.1 %, kill gap 1.6 / 52.6 s, nearest 7.8 m, dwell 5.9 s, dead 10.6 s, deaths 2, falls 0, clear 110.6 s
+n46flow n46-span: wall time 141 s
+n46flow: seeds 1..10, cap 240 s per room, rows forced on: retry46,overlap46,teach46,stuck46,walkin46,wyrm46, off switch: none; pilot: Walk38Pilot + the ported autopilot (normal)
+n46flow n46-spire (loaded n46-spire; BaseId n41-spire): 10/10 walks through v2..v6; level time median 172.6 s; the pilot's lava rule: out of lava 0 steps, held at an edge 0 steps, chases round it 0, detours 0; put at the next room (a link not crossed in max(30 s, 3 x par) or a cleared room not left in 15 s) 0; stuck46 burrowers ended 0
+  room       kind | stall%  maxStall  air% | kgap med/max | near med/p10/p90 | dwell  dead | deaths falls | clear (k/n)    | geometry
+  v2         room |   16.8      4.3  54.6 |  2.0 / 43.6  |  7.2 /  2.7 / 12.8  |   1.6   4.2 |      0     0 |   57.9 (10/10) | floor 1140 m2, tiers 5, loop n (21.4 m2), pockets 4, sight 46.5 m, w1 in view 0/5
+  v5         room |   30.4      2.8  44.0 |  0.7 / 11.4  |  6.7 /  1.9 / 13.3  |   2.6   3.0 |      0     0 |    9.6 (10/10) | floor 420 m2, tiers 2, loop n (0 m2), pockets 0, sight 35.7 m, w1 in view 5/5
+  v6         room |    9.5      2.9  55.8 |  1.9 / 57.8  |  7.8 /  2.8 / 13.3  |   4.4   3.2 |      0     0 |   87.8 (10/10) | floor 1163 m2, tiers 5, loop n (13.9 m2), pockets 0, sight 47.5 m, w1 in view 6/6
+  LEVEL           |   13.7      4.3  54.5 |  1.9 / 57.8  |  7.5 /  2.7 / 13.1  |   8.6  10.4 |      0     0 |  155.2 sum of medians
+n46flow n46-spire SUMMARY: GREEN 10/10; stall 13.7 %, longest stall 4.3 s, air 54.5 %, kill gap 1.9 / 57.8 s, nearest 7.5 m, dwell 8.6 s, dead 10.4 s, deaths 0, falls 0, clear 155.2 s
+n46flow n46-spire: wall time 141 s
+n46flow: seeds 11..20, cap 240 s per room, rows forced on: retry46,overlap46,teach46,stuck46,walkin46,wyrm46, off switch: none; pilot: Walk38Pilot + the ported autopilot (normal)
+n46flow n46-foundry (loaded n46-foundry; BaseId n45-foundry): 10/10 walks through a2..a8; level time median 243.1 s; the pilot's lava rule: out of lava 1577 steps, held at an edge 17473 steps, chases round it 26, detours 24; put at the next room (a link not crossed in max(30 s, 3 x par) or a cleared room not left in 15 s) 22; stuck46 burrowers ended 0
+  room       kind | stall%  maxStall  air% | kgap med/max | near med/p10/p90 | dwell  dead | deaths falls | clear (k/n)    | geometry
+  a2         room |   13.1      0.5  78.3 |  4.4 / 10.4  |  8.0 /  2.9 / 16.1  |   0.7   8.2 |      0     0 |   13.4 (10/10) | -
+  a3         room |   43.9      3.1  36.0 |  2.2 / 16.5  |  9.5 /  4.5 / 19.2  |   0.7   7.4 |      2     0 |   14.3 (10/10) | -
+  a4         room |   36.7      2.8  58.1 |  4.4 / 9.6   |  8.6 /  5.0 / 12.7  |   5.4   4.2 |      2     0 |   14.4 (10/10) | -
+  a5         room |   31.2      2.8  45.9 |  3.1 / 26.4  |  7.9 /  3.2 / 13.4  |   3.4   4.2 |     12     0 |   48.6 (10/10) | -
+  b1         room |   24.3      3.0  44.4 |  2.7 / 23.1  |  9.1 /  3.4 / 16.2  |   2.7   4.2 |     13     0 |   49.4 (10/10) | -
+  a8         room |   41.4      1.4  34.5 |  1.8 / 3.5   |  4.4 /  2.2 / 10.4  |   0.0   0.6 |      0     0 |    5.4 (10/10) | -
+  LEVEL           |   29.7      3.1  48.4 |  3.1 / 26.4  |  8.4 /  3.4 / 14.9  |  12.9  28.8 |     29     0 |  145.5 sum of medians
+n46flow n46-foundry SUMMARY: GREEN 10/10; stall 29.7 %, longest stall 3.1 s, air 48.4 %, kill gap 3.1 / 26.4 s, nearest 8.4 m, dwell 12.9 s, dead 28.8 s, deaths 29, falls 0, clear 145.5 s
+n46flow n46-foundry: wall time 214 s
+n46flow: seeds 11..20, cap 240 s per room, rows forced on: retry46,overlap46,teach46,stuck46,walkin46,wyrm46, off switch: none; pilot: Walk38Pilot + the ported autopilot (normal)
+n46flow n46-iceline (loaded n46-iceline; BaseId n45-iceline): 10/10 walks through g1..g8; level time median 223.5 s; the pilot's lava rule: out of lava 409 steps, held at an edge 6067 steps, chases round it 8, detours 8; put at the next room (a link not crossed in max(30 s, 3 x par) or a cleared room not left in 15 s) 6; stuck46 burrowers ended 0
+  room       kind | stall%  maxStall  air% | kgap med/max | near med/p10/p90 | dwell  dead | deaths falls | clear (k/n)    | geometry
+  g1         room |   75.0      3.7   0.0 |    - / -     |  7.7 /  3.3 / 11.2  |   0.4   4.2 |      0     0 |    5.0 (10/10) | -
+  g2         room |   50.4      3.3   9.6 |  1.3 / 4.4   |  2.0 /  0.7 / 19.0  |   0.4   4.2 |      0     0 |   14.1 (10/10) | -
+  g3         room |   64.4      7.8   9.2 |  1.3 / 3.3   |  0.8 /  0.3 / 7.6   |   0.7   4.2 |      0     0 |   19.5 (10/10) | -
+  g4         room |   25.0      2.9  39.6 |  7.4 / 25.2  | 10.6 /  6.3 / 16.0  |   1.3   4.2 |      0     0 |   32.5 (10/10) | -
+  g5         room |   58.8      5.5   9.0 |  1.3 / 38.3  |  1.5 /  0.4 / 12.2  |   1.0   3.2 |      0     0 |   28.7 (10/10) | -
+  g6         room |   33.0      2.7  46.2 |  2.2 / 6.4   |  7.2 /  2.9 / 12.5  |   2.9   3.8 |      0     0 |    9.9 (10/10) | -
+  g7         room |   22.3      2.9  37.4 |  2.4 / 11.4  |  7.6 /  1.9 / 13.4  |   5.1   5.2 |      2   150 |   52.9 (10/10) | -
+  g8         room |   17.8      2.4  37.7 |  3.0 / 9.5   |  7.9 /  2.8 / 18.7  |   2.0   2.7 |      0     0 |   22.8 (10/10) | -
+  LEVEL           |   37.1      7.8  27.3 |  1.3 / 38.3  |  7.2 /  0.7 / 14.0  |  13.9  31.6 |      2   150 |  185.6 sum of medians
+n46flow n46-iceline SUMMARY: GREEN 10/10; stall 37.1 %, longest stall 7.8 s, air 27.3 %, kill gap 1.3 / 38.3 s, nearest 7.2 m, dwell 13.9 s, dead 31.6 s, deaths 2, falls 150, clear 185.6 s
+n46flow n46-iceline: wall time 131 s
+n46flow: seeds 11..20, cap 240 s per room, rows forced on: retry46,overlap46,teach46,stuck46,walkin46,wyrm46, off switch: none; pilot: Walk38Pilot + the ported autopilot (normal)
+  n46-kiln seed 19: cap: 240 s in kb2 (Fight); in kb2 Fight wave 3 at (13.2, -0.0, -93.9), alive 1 (drone (-4.4, 7.7, -109.5)), hp 55
+n46flow n46-kiln (loaded n46-kiln; BaseId n45-kiln): 9/10 walks through kb2..kb3; level time median 145.9 s; the pilot's lava rule: out of lava 602 steps, held at an edge 6297 steps, chases round it 5, detours 4; put at the next room (a link not crossed in max(30 s, 3 x par) or a cleared room not left in 15 s) 1; stuck46 burrowers ended 0
+  room       kind | stall%  maxStall  air% | kgap med/max | near med/p10/p90 | dwell  dead | deaths falls | clear (k/n)    | geometry
+  kb2        room |   39.8      4.7  52.4 |  2.1 / 48.4  |  7.3 /  2.3 / 14.6  |   0.5   4.2 |      1     0 |   52.2 (9/10, cap 1) | -
+  kb2c       room |   23.2      2.9  38.0 |  3.3 / 11.1  |  5.3 /  0.6 / 13.4  |   1.4   4.2 |      0     0 |   26.4 (9/10) | -
+  kb3        room |   24.3      3.1  35.0 |  2.5 / 11.3  |  9.7 /  4.1 / 15.5  |   3.3   3.2 |      3     0 |   45.5 (9/10) | -
+  LEVEL           |   30.9      4.7  43.3 |  2.4 / 48.4  |  7.8 /  2.2 / 14.6  |   5.1  11.6 |      4     0 |  124.1 sum of medians
+n46flow n46-kiln SUMMARY: SHORT 9/10; stall 30.9 %, longest stall 4.7 s, air 43.3 %, kill gap 2.4 / 48.4 s, nearest 7.8 m, dwell 5.1 s, dead 11.6 s, deaths 4, falls 0, clear 124.1 s
+n46flow n46-kiln: wall time 186 s
+n46flow: seeds 11..20, cap 240 s per room, rows forced on: retry46,overlap46,teach46,stuck46,walkin46,wyrm46, off switch: none; pilot: Walk38Pilot + the ported autopilot (normal)
+n46flow n46-span (loaded n46-span; BaseId n40-span): 10/10 walks through p1..p5; level time median 128.0 s; the pilot's lava rule: out of lava 0 steps, held at an edge 0 steps, chases round it 0, detours 0; put at the next room (a link not crossed in max(30 s, 3 x par) or a cleared room not left in 15 s) 1; stuck46 burrowers ended 0
+  room       kind | stall%  maxStall  air% | kgap med/max | near med/p10/p90 | dwell  dead | deaths falls | clear (k/n)    | geometry
+  p1         room |   20.6      3.7  39.4 |  1.7 / 6.9   |  7.9 /  3.1 / 13.3  |   1.0   4.2 |      0     0 |   26.1 (10/10) | -
+  p3         room |   16.4      2.9  51.5 |  1.4 / 10.7  |  7.6 /  3.0 / 13.6  |   3.0   3.2 |      0     0 |   35.6 (10/10) | -
+  p5         room |   17.7      2.9  53.8 |  1.6 / 26.9  |  8.2 /  3.3 / 13.9  |   3.0   3.2 |      1     0 |   51.6 (10/10) | -
+  LEVEL           |   17.9      3.7  49.7 |  1.5 / 26.9  |  7.9 /  3.1 / 13.7  |   7.0  10.6 |      1     0 |  113.3 sum of medians
+n46flow n46-span SUMMARY: GREEN 10/10; stall 17.9 %, longest stall 3.7 s, air 49.7 %, kill gap 1.5 / 26.9 s, nearest 7.9 m, dwell 7.0 s, dead 10.6 s, deaths 1, falls 0, clear 113.3 s
+n46flow n46-span: wall time 138 s
+n46flow: seeds 11..20, cap 240 s per room, rows forced on: retry46,overlap46,teach46,stuck46,walkin46,wyrm46, off switch: none; pilot: Walk38Pilot + the ported autopilot (normal)
+n46flow n46-spire (loaded n46-spire; BaseId n41-spire): 10/10 walks through v2..v6; level time median 169.3 s; the pilot's lava rule: out of lava 0 steps, held at an edge 0 steps, chases round it 0, detours 0; put at the next room (a link not crossed in max(30 s, 3 x par) or a cleared room not left in 15 s) 0; stuck46 burrowers ended 0
+  room       kind | stall%  maxStall  air% | kgap med/max | near med/p10/p90 | dwell  dead | deaths falls | clear (k/n)    | geometry
+  v2         room |   18.6      4.3  59.9 |  2.1 / 65.5  |  7.1 /  2.7 / 13.2  |   1.7   4.2 |      0     0 |   62.3 (10/10) | -
+  v5         room |   29.4      2.7  52.2 |  1.4 / 7.8   |  7.5 /  2.4 / 16.1  |   2.2   3.0 |      0     0 |   11.4 (10/10) | -
+  v6         room |    9.9      2.9  55.3 |  3.0 / 49.8  |  7.3 /  2.5 / 12.8  |   2.7   3.2 |      0     0 |   90.1 (10/10) | -
+  LEVEL           |   14.5      4.3  56.8 |  2.1 / 65.5  |  7.2 /  2.6 / 13.1  |   6.5  10.4 |      0     0 |  163.7 sum of medians
+n46flow n46-spire SUMMARY: GREEN 10/10; stall 14.5 %, longest stall 4.3 s, air 56.8 %, kill gap 2.1 / 65.5 s, nearest 7.2 m, dwell 6.5 s, dead 10.4 s, deaths 0, falls 0, clear 163.7 s
+n46flow n46-spire: wall time 128 s

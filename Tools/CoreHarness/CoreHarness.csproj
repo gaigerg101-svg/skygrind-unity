@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- NIGHT9: Skygrind.Core (noEngineReferences) compiled outside Unity, running the golden oracle (Core/Golden) on a
+       PortExport-shaped folder in about a second. A fast loop beside the Editor, not the gate: the gate is Unity's
+       EditMode run (Mono) and the Player's -skygrindGolden. Extra .cs files (work staged outside Assets) with
+       -p:Extra="path1;path2". C# 9, as Unity. -->
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <LangVersion>9.0</LangVersion>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <NoWarn>$(NoWarn);CS0162;CS0168;CS0219;CS0414;CS0649;CS0169;CS8632;CS0108;CS0618</NoWarn>
+    <InvariantGlobalization>true</InvariantGlobalization>
+    <BaseOutputPath>../../Temp/CoreHarness/bin/</BaseOutputPath>
+    <BaseIntermediateOutputPath>../../Temp/CoreHarness/obj/</BaseIntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../../Assets/Scripts/Core/**/*.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="NavGridCheck.cs" />
+    <Compile Include="$(Extra)" Condition="'$(Extra)' != ''" />
+  </ItemGroup>
+</Project>

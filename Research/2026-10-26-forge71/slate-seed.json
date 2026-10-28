@@ -1,0 +1,357 @@
+{
+ "_why": "NIGHT71's slate (FORGE71 D-3): four tracks ranked, about 2x the building time. The lead copies it to Logs/n71/slate.json at the bearings and is its only editor (n71-slate-set.cjs). States: todo / building / measuring / critic / pass / short / blocked. Rooms are judged by GG (D-1): their `visible` is n/a and their verdict is the batched room critic's reading of the GUARD files, one file per room slice (Logs/n71/verdict-R<n>.md, first line `R<n>: PASS` / `FAIL <the guard>`); rows need a Player proof (RED off, GREEN on), a blind SPOT line for a visible row, and a critic PASS. `est` is minutes from NIGHT70's measured work (a room candidate's guard cycle 6-7 min; a feature row 45-90 min by the scout).",
+ "slices": [
+  {
+   "id": "PB0",
+   "track": "lead",
+   "owner": "lead",
+   "est": 60,
+   "state": "todo",
+   "passes": false,
+   "verdict": null,
+   "spot": null,
+   "title": "GG's first play build: every rebuilt room that holds its guards, in Builds/n71-play, booted, with PLAY71.md (by 1:15)",
+   "why": "No rebuilt room of NIGHT65-70 has reached GG (scout-rooms.md 3); GG 2026-10-26: \"Bots guard, I judge\".",
+   "row": "n65.foundry65, n67.iceline67, n67.kiln67, n67.spire67 ON in the PLAY build's config only (the repo's stay OFF)",
+   "red": "Builds/n69-play: 3 rooms, not booted in a level (Logs/n69/play-pc2.txt)",
+   "visible": "n/a (GG judges by play: D-1)",
+   "doneWhen": [
+    "Builds/n71-freeze built from HEAD; the level files generated under Logs/n71/play/ (never committed)",
+    "each room's guards run (NIGHT71.md section 5.1) and saved under Logs/n71/play/<level>/; a room that fails a guard stays old in the play build and is listed for R",
+    "Builds/n71-play made with n65-play-build.sh; verbs37 on vn vi vk vp of n71-play and the smoke on n71-play (Logs/player/n71-play-smoke.log DONE); tour65 on n67-kiln",
+    "PLAY71.md committed: per level the rooms that are new, their labels and numbers (info), how to reach each (level select, DOORFREE), keep / drop boxes"
+   ]
+  },
+  {
+   "id": "D1",
+   "track": "cleanup",
+   "owner": "D",
+   "est": 50,
+   "state": "todo",
+   "passes": false,
+   "verdict": null,
+   "spot": null,
+   "title": "Delete three old OFF rows the audit ranks DELETE: flow46, drone49, teach42 (one row per commit); shift46 moved to DECIDE71 (its -skygrindShift46 flag feeds two reel scenarios)",
+   "why": "GG 2026-10-26: \"Dead code + old OFF rows\"; DEADCODE-candidates.md Part B (scores 7-9; view rows with no tape bit). drone49 (DECIDE49 D-2) and teach42 (DECIDE42 D-11) carry DECIDED OFF verdicts, not open questions (NIGHT71.md 5.3).",
+   "row": "removes design.n46.flow46, n49.drone49, n42.teach42 from both config copies",
+   "red": "the three rows OFF in both copies; their code present (DEADCODE-candidates.md Part B)",
+   "visible": "n/a (no change with the rows OFF)",
+   "doneWhen": [
+    "per row: the OFF path kept, the ON branch and row-only helpers removed, the key gone from both copies (byte-identical), tests that test only the ON branch removed and named",
+    "teach42: Teach42Hold / Teach42Lesson read before deletion (the HUD unchanged with the row OFF); drone49: Foes48.On read for side effects",
+    "per commit: the dotnet compile 0 errors, a re-grep of the row key and symbols (0 hits outside the deleted lines), n71-gates.sh --no-editor (golden 0 mismatches, fingerprints EQUAL), the touched test classes",
+    "Logs/n71/D/ledger.md one line per commit (sha, what, why safe, the evidence file)",
+    "the cleanup critic's verdict file Logs/n71/verdict-D1.md, first line `D1: PASS` / `FAIL <reason>`"
+   ]
+  },
+  {
+   "id": "D2",
+   "track": "cleanup",
+   "owner": "D",
+   "est": 40,
+   "state": "todo",
+   "passes": false,
+   "verdict": null,
+   "spot": null,
+   "title": "Proven-dead code: DEADCODE-candidates.md Part A batches in order (N1-N4, 8-10, 37-51), Game / Editor only; no new batch after 1:20",
+   "why": "FORGE61 / GG 2026-10-22 \"kill dead code\"; NIGHT61 deleted 35 batches (370 lines) safely this way (Logs/n61/DEADCODE.md).",
+   "row": "none (code only)",
+   "red": "the symbols present with one reference each (the audit's proofs)",
+   "visible": "n/a (no behaviour change)",
+   "doneWhen": [
+    "one batch per commit, the audit's proofs re-run at its head; compile 0 errors; gates GREEN on the last batch; Core batches 52-59 NOT tonight",
+    "the cleanup critic (one, after D ends, reading the whole D diff against NIGHT71.md section 5.3's never-delete list) writes Logs/n71/verdict-D2.md, first line `D2: PASS` / `FAIL <reason>` (and verdict-D1.md for D1)"
+   ]
+  },
+  {
+   "id": "R1",
+   "track": "rooms",
+   "owner": "R",
+   "est": 40,
+   "state": "todo",
+   "passes": false,
+   "verdict": null,
+   "spot": null,
+   "title": "kb3d THE CRACKED FLOOR: the R2 dead end fixed (the room check no worse than the shipped red), then into the play build",
+   "why": "scout-rooms.md 3: R2 dead end (red PASS) = a reachability guard; level 3 \"just isn't good\" (GG 2026-10-13).",
+   "row": "n67.kiln67 (play build only)",
+   "level": "kiln",
+   "red": "Logs/n68/r2-kiln (R2 FAIL; area 3/4)",
+   "visible": "n/a (GG judges by play: D-1)",
+   "doneWhen": [
+    "the guards (section 5.1) on the builder's tree, saved under Research/2026-10-26-wave71/R/kb3d/",
+    "the room's card for GG (<= 15 lines: the one verb it asks for, what to try, the numbers as info)"
+   ]
+  },
+  {
+   "id": "R2",
+   "track": "rooms",
+   "owner": "R",
+   "est": 40,
+   "state": "todo",
+   "passes": false,
+   "verdict": null,
+   "spot": null,
+   "title": "g8 THE STAMPEDE: the lost air65 hand-offs given back (3 like the shipped room), then into the play build",
+   "why": "Rule 1, nothing the player had is lost: air65 1 vs the shipped 3 (Logs/n69/play-pc2.txt).",
+   "row": "n67.iceline67 (play build only)",
+   "level": "iceline",
+   "red": "Logs/n68 r1f: air65 1 of 3",
+   "visible": "n/a (GG judges by play: D-1)",
+   "doneWhen": [
+    "air65 3 of 3 (the shipped count) and every other guard",
+    "the card"
+   ]
+  },
+  {
+   "id": "R3",
+   "track": "rooms",
+   "owner": "R",
+   "est": 40,
+   "state": "todo",
+   "passes": false,
+   "verdict": null,
+   "spot": null,
+   "title": "g7 THE MIX: the walk stall back inside the band (54.0 % vs the red's 29.3 %), then into the play build",
+   "why": "scout-rooms.md 3 (Logs/n68/r3-iceline): a bot stuck that long is a room a person may stall in too.",
+   "row": "n67.iceline67 (play build only)",
+   "level": "iceline",
+   "red": "Logs/n68/r3-iceline stall A 54.0 % (red 29.3)",
+   "visible": "n/a (GG judges by play: D-1)",
+   "doneWhen": [
+    "stall A <= the red + 10 points, deaths <= the red + 1, every other guard",
+    "the card"
+   ]
+  },
+  {
+   "id": "R4",
+   "track": "rooms",
+   "owner": "R",
+   "est": 50,
+   "state": "todo",
+   "passes": false,
+   "verdict": null,
+   "spot": null,
+   "title": "kb2c (level 3, still the shipped room): rebuilt from the blank rect as an ACTION BLOCK that pays one verb (section 5.2 patterns)",
+   "why": "GG: \"every single level needs a complete arena overhaul\"; \"a lot smaller and more action packed\" (2026-10-09); kiln's last old slot.",
+   "row": "n67.kiln67 (play build only)",
+   "level": "kiln",
+   "red": "the shipped kb2c (rooms-base)",
+   "visible": "n/a (GG judges by play: D-1)",
+   "doneWhen": [
+    "the card first (the verb, the pattern A-E it uses, each piece's job); the guards; the M2 / launch / throw numbers printed as info",
+    "<= 25 % of the shipped room kept",
+    "SLATE= R's own Research/2026-10-26-wave71/R/slate-r.json ({\"slices\":[{\"id\",\"level\",\"verb\"}]}: no older slate holds this room) and the red made first from `gen-slots --slots=old` (builder-brief.md R step 2)"
+   ]
+  },
+  {
+   "id": "R5",
+   "track": "rooms",
+   "owner": "R",
+   "est": 50,
+   "state": "todo",
+   "passes": false,
+   "verdict": null,
+   "spot": null,
+   "title": "v5 (level 5, still the shipped room): rebuilt as an action block",
+   "why": "spire's last old slot; GG's overhaul order.",
+   "row": "n67.spire67 (play build only)",
+   "level": "spire",
+   "red": "the shipped v5",
+   "visible": "n/a (GG judges by play: D-1)",
+   "doneWhen": [
+    "as R4",
+    "SLATE= R's own Research/2026-10-26-wave71/R/slate-r.json ({\"slices\":[{\"id\",\"level\",\"verb\"}]}: no older slate holds this room) and the red made first from `gen-slots --slots=old` (builder-brief.md R step 2)"
+   ]
+  },
+  {
+   "id": "R6",
+   "track": "rooms",
+   "owner": "R",
+   "est": 50,
+   "state": "todo",
+   "passes": false,
+   "verdict": null,
+   "spot": null,
+   "title": "g1 .. g6 (level 2, still the shipped rooms): rebuilt as action blocks, one slice per room in order g3 g4 g2 g5 g6 g1 (the persona reviews' worst first: T-123)",
+   "why": "level 2 has two rebuilt rooms of eight; T-123's persona findings on g3 / g4 / g2.",
+   "row": "n67.iceline67 (play build only)",
+   "level": "iceline",
+   "red": "the shipped rooms",
+   "visible": "n/a (GG judges by play: D-1)",
+   "doneWhen": [
+    "as R4, per room; each room its own commit and card; R6 is PASS when at least one room landed, SHORT with the rest listed",
+    "SLATE= R's own Research/2026-10-26-wave71/R/slate-r.json ({\"slices\":[{\"id\",\"level\",\"verb\"}]}: no older slate holds this room) and the red made first from `gen-slots --slots=old` (builder-brief.md R step 2)"
+   ]
+  },
+  {
+   "id": "R7",
+   "track": "rooms",
+   "owner": "R",
+   "est": 30,
+   "state": "todo",
+   "passes": false,
+   "verdict": null,
+   "spot": null,
+   "title": "The labels made good where cheap: kb2's area P11, v2 t16's open square (12.5 m vs 12), kb3 d2's door kerb, v6's P9 climb tops",
+   "why": "scout-rooms.md 3: label FAILs GG will see on the card; each is a small geometry fix.",
+   "row": "the level rows (play build only)",
+   "red": "scout-rooms.md 3",
+   "visible": "n/a (GG judges by play: D-1)",
+   "doneWhen": [
+    "each fixed label's lint / deco line PASS, every guard held; or SHORT with the reason"
+   ]
+  },
+  {
+   "id": "B1",
+   "track": "bosses",
+   "owner": "B",
+   "est": 50,
+   "state": "todo",
+   "passes": false,
+   "verdict": null,
+   "spot": null,
+   "title": "voice71: one order at a time on THE CROWN (call40 hidden while the fight line or bar draws the window order)",
+   "why": "T-155 (gg-proxy rc2: two orders at once; GG 2026-10-14 \"way too much instruction\"); no arbiter sees call40 (scout-feel.md).",
+   "row": "design.n71.voice71 (new; OFF in the repo, ON in the play build)",
+   "red": "Logs/n64/u1-dup-b1.txt; bp/crown37-stagger frame (two orders)",
+   "visible": "the boss frame shows one order line",
+   "doneWhen": [
+    "a counter `[voice71] crown both drawn N frames`: > 0 with the row OFF and 0 with it ON on a boss63 n52-spire same-run pair (the row added to SameRun63Math.N63D.cs:28 FrameRows)",
+    "the gates with the row OFF: fingerprints EQUAL; verbs37 on the play build unchanged",
+    "a blind SPOT on the pair; one critic PASS"
+   ]
+  },
+  {
+   "id": "B2",
+   "track": "bosses",
+   "owner": "B",
+   "est": 75,
+   "state": "todo",
+   "passes": false,
+   "verdict": null,
+   "spot": null,
+   "title": "words71: the orders name the hand you hold (the wyrm's lines get {punch}; a swing lesson waits while the gauntlet is not held)",
+   "why": "T-155 (\"PUNCH THE HEAD\" with the THUNDERCLAP); DECIDE63 D-4; ResolveLesson25 is the one resolver (UiLesson25.cs:87).",
+   "row": "design.n71.words71 (new; OFF in the repo, ON in the play build)",
+   "red": "gg-proxy rc2: a line naming a weapon not held in 2 frames",
+   "visible": "the bar hint text",
+   "doneWhen": [
+    "a counter of lines naming a weapon not held: > 0 OFF, 0 ON over boss63 on n57-kiln and verbs37 on five levels (verbs37 totals unchanged: 27 / 29 / 31 / 31 / 31)",
+    "gates with the row OFF EQUAL; SPOT; critic PASS"
+   ]
+  },
+  {
+   "id": "B3",
+   "track": "bosses",
+   "owner": "B",
+   "est": 50,
+   "state": "todo",
+   "passes": false,
+   "verdict": null,
+   "spot": null,
+   "title": "wyrm71: a wyrm motion that reads (BossMotion63's wyrm numbers up; the boss63 reel stands 12-15 m off, not 29.4 m)",
+   "why": "GG 2026-10-22 \"boss animations are too rigid\"; T-154: stagger 16,649 px vs the 41,472 bar, idle 389 (Logs/n63/verdict-B1.md).",
+   "row": "design.n71.wyrm71 (new numbers block; OFF in the repo, ON in the play build)",
+   "red": "Logs/n63/verdict-B1.md:69,73",
+   "visible": "the wyrm's body moves on the pair",
+   "doneWhen": [
+    "the b1k pair: stagger > 41,472 px and idle > 3,000 px with the row ON; the drawn body within BossMotion63's hitbox guard (its own check)",
+    "render only: fingerprints EQUAL with the row ON and OFF; SPOT; critic PASS"
+   ]
+  },
+  {
+   "id": "B4",
+   "track": "bosses",
+   "owner": "B",
+   "est": 60,
+   "state": "todo",
+   "passes": false,
+   "verdict": null,
+   "spot": null,
+   "title": "cyan71: boss weak points in bone while closed and cyan only while open (a play-build A / B for GG's DECIDE64 call)",
+   "why": "T-153: bosses wear the player's cyan in 5 shots (gg-proxy rc2); GG's call is open (DECIDE64.md:19-20), so it ships as GG's switch, never ON in the repo.",
+   "row": "design.n71.cyan71 (new; OFF in the repo; ON in the play build with the card saying how to compare: -skygrindNoCyan71)",
+   "red": "Logs/n64/gg-proxy.md:90-98",
+   "visible": "the weak point's colour while closed",
+   "doneWhen": [
+    "n63-b3-roles.py on idle / wind-up: player-cyan px near 0 ON vs > 0 OFF; on stagger (open) >= 300 cyan px kept (B3's check (d) read on the open frames only: say so)",
+    "SPOT; critic PASS; DECIDE71 row"
+   ]
+  },
+  {
+   "id": "B5",
+   "track": "bosses",
+   "owner": "B",
+   "est": 40,
+   "state": "todo",
+   "passes": false,
+   "verdict": null,
+   "spot": null,
+   "title": "blast48 and guns48 frames retaken with each row ON (a748), then each row ON in the play build",
+   "why": "T-86: the lance won 2-1 and was never switched ON; guns48's frames with the row on were never taken (DECIDE49 D-13).",
+   "row": "design.n48.blast48, n48.guns48 (play build only)",
+   "red": "DECIDE49 D-13",
+   "visible": "the gun's kick and the blast",
+   "doneWhen": [
+    "a748 pairs with each row ON vs OFF saved; verbs37 x5 nothing lost; SPOT per row; critic PASS"
+   ]
+  },
+  {
+   "id": "F1",
+   "track": "feel",
+   "owner": "F",
+   "est": 60,
+   "state": "todo",
+   "passes": false,
+   "verdict": null,
+   "spot": null,
+   "title": "The camera's chop measured honestly: a -skygrindVsync bench arm, then the bench pair (vsync 0 vs 1) on n71-freeze",
+   "why": "GG 2026-10-20 \"less choppy\"; T-152a: p99 9.03 / max 22.48 ms with vsync 0 (bench-n64-rc2.log); VSYNC-on never measured.",
+   "row": "none (a bench switch: Game/PlayerChecks.cs, not a game row)",
+   "red": "Logs/player/bench-n64-rc2.log:204-215",
+   "visible": "n/a (a measurement)",
+   "doneWhen": [
+    "the bench line prints `vsync 1` with the arm; p99, p99.9, max and the over-6.94 ms share for both arms on the same build, median of 3, the power plan polled before and after (MEMORY: bench power plan flips)",
+    "the worst-1 % frames' engine time split, and the top spike source named or 'not found'",
+    "the bench arms run in the quiet window 3:50-4:10 (builders: code and docs only, no dotnet), the power plan logged before and after"
+   ]
+  },
+  {
+   "id": "F3",
+   "track": "feel",
+   "owner": "F",
+   "est": 45,
+   "state": "todo",
+   "passes": false,
+   "verdict": null,
+   "spot": null,
+   "title": "feel46 kicks bigger and rarer (G2 hit kick, G3 kill ladder, G4 THUNDERCLAP shake), ON in the play build",
+   "why": "T-77; GG NIGHT16: kills not crunchy; the last blind pairs said \"same\" (THREADS:18).",
+   "row": "design.n71.kicks71 (new: ON turns feel46's kicks on with the new numbers; n46-build-rows.cjs flips only `enabled`, so the sub-key `kicks` cannot be the play build's switch; OFF in the repo, ON in the play build)",
+   "red": "n46-r2 kill-000 / pumpkill-050 \"same\"",
+   "visible": "the camera kick on a kill",
+   "doneWhen": [
+    "a546 probe: hit and kill kicks > 0 ON; SPOT names the kick; critic PASS"
+   ]
+  },
+  {
+   "id": "F4",
+   "track": "feel",
+   "owner": "F",
+   "est": 30,
+   "state": "todo",
+   "passes": false,
+   "verdict": null,
+   "spot": null,
+   "title": "Does a KESTREL tap pressed and released inside a freeze fire? (release edges are not latched: CombatReader.cs:130-133)",
+   "why": "scout-feel.md: not checked; a dropped tap is a lost input.",
+   "row": "none (a check; a fix goes into press71)",
+   "red": "not checked",
+   "visible": "n/a (a check)",
+   "doneWhen": [
+    "a Player reel line: taps inside freezes N, fired M; if M < N, the fix in press71 and the line again"
+   ]
+  }
+ ]
+}

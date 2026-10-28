@@ -1,0 +1,6 @@
+# command: dotnet Temp/SimHarness/bin/Release/net10.0/SimHarness.dll hold52 --level n67-iceline --room g5 --pads --file C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/ice/g5/base/n67-iceline.json
+# sha: f360cf025; time: 2026-10-28 00:29:01
+hold52: level n67-iceline (C:\Users\gaige\AppData\Local\Temp\claude\C--Users-gaige-dev-SKYGRIND-unity\07ef7707-bc3a-4541-8901-f98169a14875\scratchpad\ice\g5\base\n67-iceline.json), room g5 "2.5 THE COOLDOWN" rect [-11,-158,10,-128], off switch none
+pad52 g5 pad 2 at [2.5,0,-136] target [8,4.5,-141.5] launched yes apex 7.5 landed [8.03,4.5,-141.53] miss 0.04 m PASS
+pad52 g5 pad 3 at [7.75,4.5,-145.5] target [-7.5,2,-153] launched yes apex 6.5 landed [-7.6,2,-153.05] miss 0.11 m PASS
+pad52 g5 pad 5 at [-7.5,0,-131.5] target [-8,2,-154] launched yes apex 5 landed [-8,2,-154.09] miss 0.09 m PASS

@@ -1,0 +1,107 @@
+{
+  "_why": "NIGHT74 R: THE RACK is now ONE stand-in, THE TARGET (card Research/2026-10-27-wave74/R/card-a2.md; the two-stand-in file is Research/2026-10-27-wave74/R/a2-two-standins.json); 'the rack' in a piece's why below means it. NIGHT65 builder R (card Research/2026-10-23-wave65/cards/a2.md): a2 rebuilt from scratch as THE RANGE: the KESTREL's charged pierce. Round 2 (gg-proxy r1 BLOCKING, GG 2026-10-13 'you're encouraged to just start shooting immediately and I don't want that gameplay'): THE MARK is on THE PRESS's 2.2 m top (a double jump up), and THE RACK's three stand-ins stand on THE BREECH (2.5 m) on one line from it: spread from the door, one line only from the press's top. Wave 1's four husks hold THE BREECH beside the rack and come down THE FEED RAMP; wave 2 steps out from behind THE CARTRIDGE STACK on the west. Every piece has a job and a why.",
+  "room": "a2",
+  "row": {
+    "id": "a2",
+    "name": "1.2 KESTREL",
+    "kind": "room",
+    "rect": [-7, -55, 7, -35],
+    "height": 7,
+    "roof": true,
+    "par": 20,
+    "job36": "teach",
+    "verb36": "fire (tap), charge (hold: pierces): charge on the entry run: THE TARGET on THE BREECH falls to one charged shot (it breaks its 8 s hold); then THE FEED RAMP's file of husks comes down the same line, the second pierce; THE PRESS and its pad the high line after (NIGHT65 R, THE RANGE; NIGHT66 R round 1; NIGHT74 R: one stand-in)",
+    "spawn": { "at": [0, 0, -37], "yawDeg": 0 },
+    "exit": [0, 0, -53],
+    "arena36": true,
+    "standIns": [
+      { "at": [5, 2.5, -52.2], "mode": "static" }
+    ],
+    "standIns31": [
+      { "at": [5, 2.5, -52.2], "mode": "static" }
+    ],
+    "standIns36": [
+      { "at": [5, 2.5, -52.2], "job": "marker", "why": "THE TARGET (NIGHT74 R, a2; NIGHT65 / NIGHT66's rack was two stand-ins 0.85 m apart, three before round 2): one stand-in mid-way along THE BREECH (2.5 m), 15 m from the entry on THE RANGE LINE (bearing 19 deg east of north from (0, -38)): from the entry run one charged shot kills it and wave 1 comes at once; a tap never hurts it (Combat.cs:1464), so a refuser waits out its 8 s hold (teach46 standInHoldS). Why one: flow-A's stall read 30.5 % with the rack's two (the bar, the red's + 10, is 22.2) and 19.7 % with this one body here (Research/2026-10-27-wave74/R/a2-guards.md). The line is still taught: wave 1's four husks come down THE FEED RAMP in a file on the same line, the second pierce" }
+    ],
+    "waves": [["husk", "husk", "husk", "husk"], ["husk", "husk"]],
+    "lessons_why": "NIGHT66 R round 2 (the lead's round-1 finding: reward the verb's first use on the entry line): the room's second lesson is every body down, THE TARGET included (husksDead 7: the one stand-in and the six husks; NIGHT74 R: it was 8 with the rack's two; Lesson25 counts the room's kills from its start). A stand-in dies only to the charged shot (standIns31) or a shot from a wall ride (Combat.cs:1464), so the lesson is the charge the room teaches (teach35 l1.charge). A player who never charges gets the fight's last wave again (design.n25.lesson top-ups, at most 2 under rooms43, never a locked door) and the room clears on that kill count: refusing costs time, not a wall",
+    "lessons": [
+      { "promptPad": "", "kind": "shots", "n": 3, "prompt": "" },
+      { "promptPad": "", "kind": "husksDead", "n": 7, "prompt": "" }
+    ],
+    "lessons31": [
+      { "promptPad": "", "kind": "shots", "n": 3, "prompt": "" },
+      { "promptPad": "", "kind": "husksDead", "n": 7, "prompt": "" }
+    ],
+    "proofs": [
+      { "kind": "walk", "points": [[0, 0, -37], [0, 0, -43.5], [-1.5, 0.1, -44.5], [-2.2, 0, -47.5], [0, 0, -53]] },
+      { "kind": "walk", "points": [[0, 0, -43.5], [-1, 0.05, -45], [1.8, 2.4, -48.8], [3, 2.5, -50.2], [4.5, 2.5, -51]] },
+      { "kind": "walk", "points": [[0, 0, -37], [-1.8, 0, -41], [-1.8, 0, -43.5], [-2.2, 0, -47.5], [-6, 0, -47.3], [-3.5, 0, -47.8], [-3, 0, -52], [0, 0, -53]] }
+    ],
+    "frames36": { "mid": [-3.75, 2.2, -41.3, -36.7, -0.03], "exit": [5.5, 2.5, -50.5, 165, -0.2] },
+    "frames52": {
+      "_why": "NIGHT65 R: a157's poses for THE RANGE (feet x, y, z, yaw deg, pitch rad): entry = just inside d1, the press left with its cyan top, the breech and its rack and ramp ahead-right; mid = on THE MARK (the press's top) down the rack's line; high = on THE BREECH back over the room to the door",
+      "entry": [0, 0, -36, -10, 0.05],
+      "mid": [-3.75, 2.2, -41.3, -36.7, -0.03],
+      "high": [5.5, 2.5, -50.5, 165, -0.2]
+    },
+    "frames65": {
+      "entry": [0, 0, -36, -10, 0.05],
+      "verb": [0, 0, -39.5, -21.5, 0.14],
+      "mid": [-3.75, 2.2, -41.3, -36.7, -0.03],
+      "high": [5.5, 2.5, -50.5, 165, -0.2]
+    },
+    "line65_why": "NIGHT66 R round 1 (plan a2): THE RANGE LINE from the entry run (its first segment is the pierce's aim: NIGHT74 R: from (0, 0, -38) to (2.01, 0.77, -43.72), 7.2 deg up at 19.4 deg east of north, through THE TARGET at (5, 2.5, -52.2); it was (1.83, 0.78, -43.71) at 17.8 deg through the rack's two), then up THE PRESS (a double jump), THE PRESS PAD's arc to THE BREECH, off its west edge to the exit; every segment kept out of the solids (tour65's round-1 WARN at the old frame 7, feet under THE FEED RAMP, is gone with the old last leg)",
+    "line65": [[0, 0, -38], [2.01, 0.77, -43.72], [-1.5, 0, -41.8], [-2.2, 2.4, -42.5], [-3.75, 2.2, -45], [1.3, 4.5, -48.2], [6.3, 2.5, -51.2], [4, 2.5, -54], [2.3, 2.5, -53.5], [0, 0, -53]],
+    "nodes": [[-6.5, 0, -50.5], [-6.5, 0, -51.6]],
+    "highNodes": [[6.5, 2.5, -50.5], [3.2, 2.5, -54.3], [6.6, 2.5, -54.3], [5.7, 2.5, -51], [6.6, 2.5, -52.4], [4.4, 2.5, -54.4]],
+    "waveNodes43": [
+      [[6.5, 2.5, -50.5], [3.2, 2.5, -54.3], [6.6, 2.5, -54.3], [5.7, 2.5, -51], [6.6, 2.5, -52.4], [4.4, 2.5, -54.4]],
+      [[-6.5, 0, -50.5], [-6.5, 0, -51.6]]
+    ],
+    "waveNodes43_why": "NIGHT65 R (card a2): wave 1's four husks hold THE BREECH round THE TARGET, in view from THE PRESS's east flank (opening held), and come down THE FEED RAMP (or off the breech's edges); wave 2's two step out from behind THE CARTRIDGE STACK on the west (both nodes in the stack's shadow from THE MARK's eye on the press's top, body and head, with the stack at 2.4 m)",
+    "bot43": false,
+    "verb65": "pierce",
+    "card65": "Research/2026-10-23-wave65/cards/a2.md"
+  },
+  "boxes": [
+    { "zone": "a2", "kind": "deck", "min": [2.5, 0, -55], "max": [7, 2.5, -49.5], "job": "line", "why": "THE BREECH (deck 2.5 m, NIGHT65 R): THE RACK's ledge (round 2) and wave 1's, in the north-east corner, in view from the press's flank (opening held); the husks come off it down THE FEED RAMP (or its 2.5 m edges); the high ground after (a double jump reaches it)" },
+    { "zone": "a2", "kind": "deck", "min": [1.5, 0, -51], "max": [3.5, 2.5, -49], "job": "climb", "why": "THE FEED STEP (deck 2.5 m, NIGHT65 R round 3): THE BREECH's south-west corner carried 1 m west and 0.5 m south, so THE FEED RAMP's top (on the rack's line) lands flat on it and the walkers step onto the breech (the validator's 'enemies reach every tier')" },
+    { "zone": "a2", "kind": "hull", "min": [-5, 0, -46], "max": [-2.5, 2.2, -40.5], "job": "line", "why": "THE PRESS (hull 2.2 m, NIGHT65 R; round 2, gg-proxy r1: THE MARK on its top; round 3, the level-design review r2: 2 m longer to the north, so THE PRESS PAD's disc sits 2 m clear of THE MARK and a landing or a step during the 0.9 s charge never throws you off): the KESTREL's firing step, a double jump up (2.7 m reach): from its top THE RACK on THE BREECH is one line; the foothold (R5: 7.5-11 m from the door's centre, free-standing) and the gun room's landmark (its die on the south face); the cover you step behind when wave 2 comes from the west" },
+    { "zone": "a2", "kind": "hull", "min": [-7, 0, -50], "max": [-4.5, 2.4, -48.5], "job": "cover", "why": "THE CARTRIDGE STACK (hull 2.4 m, NIGHT65 R; round 2: 1.8 -> 2.4 m for the press-top eye): hides wave 2's two nodes from THE MARK on the press's top (the eye's rays to their bodies and heads meet its east face inside z -50..-48.5 under its top), so wave 2 steps out from the west side: a front shift, not a spawn behind" }
+  ],
+  "ramps": [
+    { "zone": "a2", "from": [-1.08, -44.9], "to": [1.97, -49], "width": 2.5, "rise": 2.5, "job": "climb", "why": "THE FEED RAMP (NIGHT65 R; round 3, the level-design review r2: 'the feed ramp's file comes down 9 m east, broadside, since the mark moved and the ramp did not'): turned onto THE RACK's own line, 2.5 m over 6.5 m from THE BREECH's south-west corner down toward THE PRESS: the walkers' climb route, and the husks' file comes down the line THE MARK's charged shot runs along (the second pierce from the same spot, after the rack)" }
+  ],
+  "pads": [
+    { "zone": "a2", "at": [-3.75, 2.2, -45], "target": [6.3, 2.5, -51.2], "apexAbove": 2, "job": "pad", "why": "THE PRESS PAD (NIGHT65 R round 2, the level-design review's hand-off): on THE PRESS's north half, behind THE MARK: after the pierce from the mark, it throws you 13 m over the floor onto THE BREECH among wave 1's husks, so the line stays off the floor (press -> pad -> breech -> the feed ramp's file)" }
+  ],
+  "grapple": [],
+  "pits": [],
+  "tunnels": [],
+  "lights": [
+    { "id": "a2-L1", "room": "a2", "kind": "ceiling", "at": [4.5, 6.95, -52.38], "normal": [0, -1, 0], "size": [3, 3, 0.1], "color": "white", "range": 9, "intensity": 1.2, "job": "light", "why": "NIGHT65 R: lights THE RACK on THE BREECH, the lesson's targets" },
+    { "id": "a2-L2", "room": "a2", "kind": "ceiling", "at": [-3.75, 6.95, -42.25], "normal": [0, -1, 0], "size": [2.5, 3, 0.1], "color": "amber", "range": 8, "intensity": 1, "job": "landmark", "why": "NIGHT65 R round 2: THE PRESS's lamp, the room's one landmark light: the firing step lit warm from the door" },
+    { "id": "a2-L3", "room": "a2", "kind": "pool", "at": [0, 0.025, -53], "normal": [0, 1, 0], "size": [2.5, 2.5, 0.05], "color": "cyan", "range": 7, "intensity": 1.6, "job": "exit", "why": "NIGHT65 R: the lit exit (cyan: the way on)" },
+    { "id": "a2-L4", "room": "a2", "kind": "ceiling", "at": [0, 6.95, -46], "normal": [0, -1, 0], "size": [3, 3, 0.1], "color": "white", "range": 9, "intensity": 0.9, "job": "light", "why": "NIGHT65 R: lights the floor and THE FEED RAMP's foot" }
+  ],
+  "props": [
+    { "id": "a2-P1", "room": "a2", "kind": "floorStrip", "at": [0, 0.02, -39.5], "size": [1.6, 0.02, 1.4], "yawDeg": 0, "collider": false, "job": "line", "why": "THE MARK (NIGHT65 R round 2; NIGHT66 R round 1, plan a2: from THE PRESS's top to the floor of the entry run, inside teach35 l1.charge; cyan, player-usable): charge here, walking in: THE RACK on THE BREECH is one line from it (and within about 1.3 m either side of it); 2.5 m from THE PRESS, the next piece" },
+    { "id": "a2-P2", "room": "a2", "kind": "truss", "at": [4.5, 6.3, -52.38], "size": [0.4, 0.4, 4.5], "yawDeg": -39, "collider": false, "decor": true, "job": "landmark", "why": "THE RACK RAIL (NIGHT65 R): the rack's line drawn overhead so it reads as a line (the yaw sign: checked on the plan picture)" },
+    { "id": "a2-P3", "room": "a2", "kind": "hazardStripe", "at": [4.75, 2.52, -49.7], "size": [4.5, 0.03, 0.4], "yawDeg": 0, "collider": false, "decor": true, "job": "hazard", "why": "THE BREECH LIP (NIGHT65 R; red-orange: enemies): the edge the husks come over and down from" },
+    { "id": "a2-P4", "room": "a2", "kind": "hero", "at": [-3.75, 1.1, -40.45], "size": [2.2, 1.6, 0.2], "yawDeg": 0, "collider": false, "decor": true, "job": "hero", "why": "THE PRESS DIE (NIGHT65 R; pale brass): the gun room's landmark on the press's south face, toward the entry" },
+    { "id": "a2-P5", "room": "a2", "kind": "lintelLight", "at": [0, 4.7, -54.95], "size": [4, 0.2, 0.1], "yawDeg": 0, "collider": false, "decor": true, "job": "exit", "why": "NIGHT65 R: the exit's lintel lamp over d2 (warm white): the way on, lit" },
+    { "id": "a2-P6", "room": "a2", "kind": "lamp", "at": [-2.9, 3.8, -54.9], "size": [0.5, 0.5, 0.2], "yawDeg": 0, "collider": false, "decor": true, "job": "exit", "why": "the exit's west wall lamp (NIGHT65 R density pass; warm white): the lit exit's fixture" },
+    { "id": "a2-P7", "room": "a2", "kind": "chain", "at": [-3.75, 5.9, -42.5], "size": [0.2, 2.1, 0.2], "yawDeg": 0, "collider": false, "decor": true, "job": "light", "why": "THE PRESS LAMP's chain (NIGHT65 R density pass): from the roof over THE PRESS: the room's one amber light hangs from a real fixture (rule 7)" },
+    { "id": "a2-P8", "room": "a2", "kind": "lamp", "at": [-3.75, 4.65, -42.5], "size": [0.7, 0.4, 0.7], "yawDeg": 0, "collider": false, "decor": true, "job": "light", "why": "THE PRESS LAMP (NIGHT65 R density pass; warm white): the firing step's lamp over THE MARK, read from the door (the landmark light's fixture)" },
+    { "id": "a2-P9", "room": "a2", "kind": "wallPipe", "at": [6.9, 4.2, -50], "size": [0.2, 1.2, 9], "yawDeg": 0, "collider": false, "decor": true, "job": "landmark", "why": "THE FEED PIPES (NIGHT65 R density pass): along the east wall over THE BREECH: the husks' ledge reads as the breech of the machine they are fed from (structure: metal)" },
+    { "id": "a2-P10", "room": "a2", "kind": "pilaster", "at": [-6.9, 3.5, -38], "size": [0.2, 7, 0.8], "yawDeg": 0, "collider": false, "decor": true, "job": "landmark", "why": "THE ENTRY PILASTER (NIGHT65 R density pass): frames the west side of the teach strip by the door: the room's scale read on entry (structure: stone)" }
+  ],
+  "teach35": [
+    { "id": "l1.fire", "room": "a2", "rect": [-7, -39, 7, -35], "minY": -1 },
+    { "id": "l1.charge", "room": "a2", "rect": [-7, -42, 7, -39], "minY": -1 }
+  ],
+  "drop": {},
+  "opening": "held",
+  "opening_why": "card a2: wave 1's four husks hold THE BREECH round THE TARGET, in view from THE PRESS's east flank; one charged shot from the entry run takes the target (held)"
+}

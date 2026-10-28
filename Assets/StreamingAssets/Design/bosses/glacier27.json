@@ -1,0 +1,17 @@
+{
+ "_why": "THE GLACIER's body (builder B, NIGHT27 boss2; GG: 'just switch back to the original [model] because it doesn't look good, and keep the effects'; DECIDE27 D-3: a large blocky skater in the web's blocky enemy style on ONE blade, replacing NIGHT26's hull + engine block). Boxes in the skater's own frame (a = right, b = up from the feet, c = forward along the course, metres; half = half sizes), each one named part: `blade` (the pale glow under the boot), `plate` (a pale chest plate), `visor` (the red-orange eye: an enemy's), `head`, `body` (dark steel). The sim's hit box is the one 2.4 x 3.4 x 1.8 m box of design.n27.boss2.body that this fits inside. Unity-only: the web had no glacier. The view draws exactly these boxes (blocky models as they are, GG owns enemy design).",
+ "parts": [
+  {"name": "blade", "part": "blade", "a": 0.0, "b": 0.1, "c": 0.05, "half": [0.06, 0.1, 0.9]},
+  {"name": "boot", "part": "body", "a": 0.0, "b": 0.38, "c": 0.1, "half": [0.26, 0.18, 0.5]},
+  {"name": "leg", "part": "body", "a": 0.0, "b": 1.05, "c": 0.05, "half": [0.3, 0.55, 0.3]},
+  {"name": "hips", "part": "body", "a": 0.0, "b": 1.75, "c": 0.0, "half": [0.55, 0.25, 0.4]},
+  {"name": "torso", "part": "body", "a": 0.0, "b": 2.45, "c": 0.0, "half": [0.85, 0.55, 0.5]},
+  {"name": "chest", "part": "plate", "a": 0.0, "b": 2.5, "c": 0.52, "half": [0.55, 0.35, 0.05]},
+  {"name": "shoulderL", "part": "body", "a": -1.15, "b": 2.8, "c": 0.0, "half": [0.3, 0.25, 0.35]},
+  {"name": "shoulderR", "part": "body", "a": 1.15, "b": 2.8, "c": 0.0, "half": [0.3, 0.25, 0.35]},
+  {"name": "armL", "part": "body", "a": -1.2, "b": 2.1, "c": 0.15, "half": [0.2, 0.5, 0.22]},
+  {"name": "armR", "part": "body", "a": 1.2, "b": 2.1, "c": 0.15, "half": [0.2, 0.5, 0.22]},
+  {"name": "head", "part": "body", "a": 0.0, "b": 3.35, "c": 0.05, "half": [0.38, 0.32, 0.38]},
+  {"name": "visor", "part": "visor", "a": 0.0, "b": 3.38, "c": 0.42, "half": [0.3, 0.1, 0.03]}
+ ]
+}

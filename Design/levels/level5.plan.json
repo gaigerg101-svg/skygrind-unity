@@ -1,0 +1,52 @@
+{
+  "_why": "LEVEL 5, CHARGERS AND LANCERS (NIGHT25, builder L; CURRICULUM.md: crowd control; the new things are the CHARGER (a rush down a lane: sidestep, slide or flick out of it) and the LANCER (a stationary lancer that must be broken from cover)). Four rooms, long open lanes with pillars: room 1 is a breath (one charger with husks, so the rush is seen alone), room 2 is NO SLIDE (jump and the PULSE flick answer the charge instead), room 3 has a shelf (ramp), room 4 is the first with lancers. Web coordinates: x east, y up, z SOUTH (north is -z); metres. See LEVEL-FORMAT.md and CURRICULUM.md.",
+  "id": "level5",
+  "name": "LEVEL 5 CHARGERS AND LANCERS",
+  "floorSize": 320,
+  "killPlaneY": -30,
+  "rooms": [
+    { "id": "r1", "name": "5.1 THE LANE", "kind": "room", "rect": [-24, 40, 24, 84], "par": 17,
+      "spawn": { "at": [0, 0, 80], "yawDeg": 0 }, "exit": [0, 0, 44],
+      "nodes": [ [-18, 0, 48], [18, 0, 48], [0, 0, 52], [-14, 0, 62], [14, 0, 62] ],
+      "lessons": [ { "kind": "husksDead", "n": 1, "prompt": "{slide} OR SIDESTEP THE CHARGE" } ],
+      "waves": [ [ "charger", "husk", "husk" ], [ "charger", "charger", "husk", "husk" ] ] },
+    { "id": "r2", "name": "5.2 THE STAMPEDE", "kind": "room", "rect": [-24, -10, 24, 34], "par": 43, "limit": ["noSlide"],
+      "spawn": { "at": [0, 0, 30], "yawDeg": 0 }, "exit": [0, 0, -6],
+      "nodes": [ [-18, 0, -4], [18, 0, -4], [0, 0, 0], [-14, 0, 12], [14, 0, 12], [-6, 0, 18] ],
+      "waves": [ [ "husk", "husk", "husk", "charger" ], [ "husk", "husk", "charger", "charger", "charger", "swarmer", "swarmer" ], [ "husk", "husk", "husk", "charger", "charger", "charger", "swarmer", "swarmer", "spitter", "spitter" ] ] },
+    { "id": "r3", "name": "5.3 THE SHELF", "kind": "room", "rect": [-24, -60, 24, -16], "par": 40,
+      "spawn": { "at": [0, 0, -20], "yawDeg": 0 }, "exit": [0, 0, -56],
+      "nodes": [ [-18, 0, -54], [-6, 0, -52], [6, 0, -52], [-18, 0, -34], [-8, 0, -30] ],
+      "highNodes": [ [18, 4, -54], [18, 4, -30], [20, 4, -42] ],
+      "waves": [ [ "husk", "husk", "charger", "charger" ], [ "swarmer", "swarmer", "swarmer", "charger", "charger", "spitter" ], [ "husk", "husk", "husk", "charger", "charger", "swarmer", "swarmer", "spitter" ] ] },
+    { "id": "r4", "name": "5.4 THE BATTERY", "kind": "room", "rect": [-24, -110, 24, -66], "par": 41,
+      "spawn": { "at": [0, 0, -70], "yawDeg": 0 }, "exit": [0, 0, -106],
+      "nodes": [ [6, 0, -100], [18, 0, -100], [18, 0, -80], [8, 0, -84], [0, 0, -96] ],
+      "highNodes": [ [-18, 3, -100], [-18, 3, -76], [-20, 3, -88] ],
+      "waves": [ [ "lancer", "husk", "husk", "husk" ], [ "lancer", "charger", "husk", "husk", "husk", "swarmer" ], [ "lancer", "lancer", "charger", "husk", "husk", "spitter" ] ] }
+  ],
+  "doors": [
+    { "id": "d1", "between": ["r1", "r2"], "rect": [-4, 34, 4, 40], "checkpoint": true },
+    { "id": "d2", "between": ["r2", "r3"], "rect": [-4, -16, 4, -10], "checkpoint": true },
+    { "id": "d3", "between": ["r3", "r4"], "rect": [-4, -66, 4, -60], "checkpoint": true }
+  ],
+  "boxes": [
+    { "zone": "r1", "kind": "hull", "min": [-12, 0, 58], "max": [-8, 3, 62], "note": "pillar" },
+    { "zone": "r1", "kind": "hull", "min": [8, 0, 58], "max": [12, 3, 62], "note": "pillar" },
+    { "zone": "r2", "kind": "hull", "min": [-12, 0, 8], "max": [-8, 3, 12], "note": "pillar" },
+    { "zone": "r2", "kind": "hull", "min": [8, 0, 16], "max": [12, 3, 20], "note": "pillar" },
+    { "zone": "r2", "kind": "hull", "min": [-3, 0, 6], "max": [3, 3, 10], "note": "pillar" },
+    { "zone": "r3", "kind": "deck", "min": [12, 0, -58], "max": [24, 4, -26], "note": "the shelf (tier 2)" },
+    { "zone": "r3", "kind": "hull", "min": [-12, 0, -40], "max": [-8, 3, -36], "note": "pillar" },
+    { "zone": "r3", "kind": "hull", "min": [-2, 0, -30], "max": [2, 3, -26], "note": "pillar" },
+    { "zone": "r4", "kind": "deck", "min": [-24, 0, -104], "max": [-12, 3, -72], "note": "the west gallery (tier 2)" },
+    { "zone": "r4", "kind": "hull", "min": [6, 0, -96], "max": [10, 3, -92], "note": "cover from the lancers" },
+    { "zone": "r4", "kind": "hull", "min": [-6, 0, -78], "max": [-2, 3, -74], "note": "cover from the lancers" }
+  ],
+  "ramps": [
+    { "zone": "r3", "from": [0, -42], "to": [12, -42], "width": 6, "rise": 4, "note": "up to the shelf" },
+    { "zone": "r4", "from": [0, -88], "to": [-12, -88], "width": 6, "rise": 3, "note": "up to the west gallery" }
+  ],
+  "pads": [],
+  "grapple": []
+}

@@ -1,0 +1,11 @@
+# command: node Tools/night/n67-area.cjs --level iceline --dir Logs/n67/dry-pack2-iceline --touches Logs/n67/dry-pack2-iceline/verbs-skip.txt g8
+# sha: a80093a6; time: 2026-10-24 12:11:39
+n67-area: room g8; plan Logs/n67/dry-pack2-iceline/iceline.plan.json, level Logs/n67/dry-pack2-iceline/n67-iceline.json (the round's folder Logs/n67/dry-pack2-iceline); touches Logs/n67/dry-pack2-iceline/verbs-skip.txt (11 touch rows, 0 launch kills); card none
+OPEN  PASS largest open square 7.0 m (x -1.5..5.5, z -227.0..-220.0; 18 pieces on a 21.0 x 30.0 m rect; 12 m or less passes)
+P1    FAIL the last wave's 2 ranged of 5; its spawn set (waveNodes43) 1 / 5 nodes 3.5 m or more over the floor (y 0.0; each enemy takes a random node: all must be high)
+P4    FAIL 3 / 9 standing solids >= 1.75 m do a job ((a) touched 3, (b) sight 1, (c) launch kill 0); no job: box(7.83,0,-228..8.82,12,-226.5) cover: the EAST SAND TOWER; prop(g8-P1@-5,6,-228) prop g8-P1; prop(g8-P2@5,6,-228) prop g8-P2; prop(g8-P3@-5,6,-235) prop g8-P3 (+2)
+P5    N/A  no line65 in the row
+P9    N/A  no plane 1 m or more up with a short side of 6 m or more
+P11   N/A  the card names no TOWER / GALLERY / SPLIT LEVEL (no card)
+P17   PASS 2 / 2 ride walls 4 m tall and 8 m long; 0 non-ride wall(s) in that band; the strip = ride: true (ride36 faces 2)
+n67-area: FAIL g8 (2/4)

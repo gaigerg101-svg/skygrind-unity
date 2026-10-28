@@ -1,0 +1,85 @@
+{
+  "note": "PG3 layered effects (GG 2026-10-28: the charge and the blast 'sound too basic, i wnat them to feel more powerful, also damadge sound efefct or hitting enemy'). Each output clip is a mix of separately generated ElevenLabs layers (game audio practice: sub / body punch, transient crack, mechanical or electric sweetener, tail; RESEARCH.md section 4). Tools/pg3/layer-mix.cjs generates every layer, then mixes them with ffmpeg (gain dB, delay ms) and a -1 dBTP limiter. The output replaces Assets/Resources/Audio/PG3/<id>.mp3; the single-take originals stay under Research/2026-10-28-pg3-audio/raw/sfx/.",
+  "clips": [
+    { "id": "fire-kestrel-charged", "layers": [
+      { "seconds": 1.5, "gain": 0, "prompt": "Massive cinematic sub bass impact boom, a deep chest-shaking thump with a short low rumble, no high frequencies" },
+      { "seconds": 1.0, "gain": -1, "prompt": "Searing electric railgun discharge crack, an extremely sharp high-voltage snap and sizzle, very bright transient" },
+      { "seconds": 0.8, "gain": -4, "prompt": "Heavy revolver hammer and cylinder mechanism slam, a hard metallic clack, close mic" },
+      { "seconds": 2.5, "gain": -7, "delay": 60, "prompt": "Huge metallic ringing reverb tail of a giant gunshot echoing across a vast concrete hall, fading slowly" },
+      { "seconds": 1.0, "gain": -9, "delay": 20, "prompt": "Energy burst shattering like glass, a crystalline crackling spray" }
+    ]},
+    { "id": "fire-slug", "layers": [
+      { "seconds": 1.5, "gain": 0, "prompt": "Artillery cannon sub boom, an enormous deep low-frequency blast and pressure thump" },
+      { "seconds": 1.0, "gain": -1, "prompt": "Point-blank shotgun blast crack, an aggressive distorted close explosion transient" },
+      { "seconds": 0.8, "gain": -5, "delay": 30, "prompt": "Supersonic projectile whip crack and a short air tear" },
+      { "seconds": 1.2, "gain": -7, "delay": 120, "prompt": "Heavy shotgun shell ejecting and clinking on concrete, a pump racking, metal debris rattle" },
+      { "seconds": 2.0, "gain": -8, "delay": 60, "prompt": "Long booming outdoor echo of a huge gunshot rolling away" }
+    ]},
+    { "id": "gauntlet-pulse", "layers": [
+      { "seconds": 1.5, "gain": 0, "prompt": "Concussive shockwave blast, a deep whump of air pressure exploding outward, sub bass heavy" },
+      { "seconds": 1.0, "gain": -2, "prompt": "Violent electric discharge burst, crackling high-voltage arcs snapping" },
+      { "seconds": 0.6, "gain": -3, "prompt": "Armored power fist slamming forward, a heavy metal punch impact" },
+      { "seconds": 2.0, "gain": -7, "delay": 80, "prompt": "Low rumbling aftershock and a ringing energy tail fading away" }
+    ]},
+    { "id": "charge-loop", "loop": true, "layers": [
+      { "seconds": 3.0, "gain": 0, "loop": true, "prompt": "Deep powerful energy weapon charging, a thick sub bass hum that throbs and swells, building pressure, seamless loop" },
+      { "seconds": 3.0, "gain": -4, "loop": true, "prompt": "High rising capacitor whine with crackling electricity and sparks, intense and tense, seamless loop" }
+    ]},
+    { "id": "charge-ready", "layers": [
+      { "seconds": 0.8, "gain": 0, "prompt": "Weapon fully charged ping, a bright crystalline bell ding, very clear" },
+      { "seconds": 0.6, "gain": -3, "prompt": "Short deep bass thump, a weighty low impact" },
+      { "seconds": 0.6, "gain": -6, "prompt": "Quick electric zap snap and shimmer" }
+    ]},
+    { "id": "hit", "layers": [
+      { "seconds": 0.5, "gain": 0, "prompt": "Meaty bullet impact into a creature, a dense wet thwack, punchy" },
+      { "seconds": 0.5, "gain": -2, "prompt": "Crisp sharp hitmarker tick, a short bright metallic click" },
+      { "seconds": 0.5, "gain": -5, "prompt": "Small tight bass punch, a short low thud" }
+    ]},
+    { "id": "hit-2", "layers": [
+      { "seconds": 0.5, "gain": 0, "prompt": "Heavy flesh hit, a thick crunchy impact smack" },
+      { "seconds": 0.5, "gain": -2, "prompt": "Bright snappy hit confirm click, very crisp" },
+      { "seconds": 0.5, "gain": -5, "prompt": "Short punchy low thump" }
+    ]},
+    { "id": "hit-3", "layers": [
+      { "seconds": 0.5, "gain": 0, "prompt": "Bullet slamming into armored flesh, a hard thunk with a gritty crunch" },
+      { "seconds": 0.5, "gain": -2, "prompt": "Sharp metallic tick, a tiny high ping" },
+      { "seconds": 0.5, "gain": -5, "prompt": "Quick deep body thud" }
+    ]},
+    { "id": "kill", "layers": [
+      { "seconds": 0.8, "gain": 0, "prompt": "Brutal enemy body exploding, a crunchy bone-breaking burst with a wet splatter" },
+      { "seconds": 0.8, "gain": -2, "prompt": "Bright satisfying rising chime ding, a short reward sparkle" },
+      { "seconds": 0.8, "gain": -4, "prompt": "Heavy sub bass impact drop, a deep thump" },
+      { "seconds": 1.0, "gain": -8, "delay": 40, "prompt": "Rubble and debris scattering on stone" }
+    ]},
+    { "id": "kill-2", "layers": [
+      { "seconds": 0.8, "gain": 0, "prompt": "Stone creature shattering into pieces, a crunchy rock burst" },
+      { "seconds": 0.8, "gain": -2, "prompt": "Glassy bright confirm ding with a shimmer" },
+      { "seconds": 0.8, "gain": -4, "prompt": "Deep punchy bass hit" }
+    ]},
+    { "id": "kill-3", "layers": [
+      { "seconds": 0.8, "gain": 0, "prompt": "Gory creature pop, a thick wet crunch and splatter" },
+      { "seconds": 0.8, "gain": -2, "prompt": "Rising bright two-note reward chime" },
+      { "seconds": 0.8, "gain": -4, "prompt": "Low sub thump impact" }
+    ]},
+    { "id": "hurt", "layers": [
+      { "seconds": 0.6, "gain": 0, "prompt": "Player taking a heavy hit, a muffled body punch impact with a dull thud, first-person" },
+      { "seconds": 0.6, "gain": -3, "prompt": "Short harsh distorted crunch, gritty and painful" },
+      { "seconds": 0.8, "gain": -5, "prompt": "Deep sub bass hit with a short low ringing tinnitus-like tone" }
+    ]},
+    { "id": "hurt-2", "layers": [
+      { "seconds": 0.6, "gain": 0, "prompt": "Heavy blow to the body, a dense punch impact, first-person" },
+      { "seconds": 0.6, "gain": -3, "prompt": "Crunchy distorted static burst, short" },
+      { "seconds": 0.6, "gain": -5, "prompt": "Low thump with a heartbeat-like pulse" }
+    ]},
+    { "id": "boss-hit", "layers": [
+      { "seconds": 0.6, "gain": 0, "prompt": "Bullet hitting thick armor plating on a giant monster, a hard heavy metal clang" },
+      { "seconds": 0.6, "gain": -3, "prompt": "Deep resonant sub thump, the giant body shuddering" },
+      { "seconds": 0.5, "gain": -6, "prompt": "Bright spark crackle on metal" }
+    ]},
+    { "id": "parry", "layers": [
+      { "seconds": 1.0, "gain": 0, "prompt": "Perfect sword parry, an extremely sharp bright metal clang ringing" },
+      { "seconds": 1.2, "gain": -3, "prompt": "Time-freeze reverse whoosh pitching down" },
+      { "seconds": 0.8, "gain": -4, "prompt": "Deep cinematic bass impact boom" }
+    ]}
+  ]
+}

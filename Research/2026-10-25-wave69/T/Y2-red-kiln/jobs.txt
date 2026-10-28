@@ -1,0 +1,4 @@
+Research/2026-10-25-wave69/T/Y2-red-kiln/kb3/flow-A.txt	n46flow --level n57-kiln --rooms kb3 --seeds 10 --first 1 
+Research/2026-10-25-wave69/T/Y2-red-kiln/kb3/flow-B.txt	n46flow --level n57-kiln --rooms kb3 --seeds 10 --first 11 --no-geo 
+Research/2026-10-25-wave69/T/Y2-red-kiln/kb3/pads.txt	hold52 --level n57-kiln --room kb3 --pads 
+Research/2026-10-25-wave69/T/Y2-red-kiln/kb3/flow-V.txt	n46flow --level n57-kiln --rooms kb3 --seeds 10 --first 1 --verbs65  --plant-verb65 kb3:launch

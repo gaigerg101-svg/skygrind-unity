@@ -1,0 +1,3 @@
+# command: dotnet Temp/SimHarness/bin/Release/net10.0/SimHarness.dll n53ridekill ride --level C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/a3/cand2/n65-foundry.json --room a3   (n70-red.sh's ride line; room-guards.sh's ride.txt is the n65verb ride --shoot pilot, which overwrote it)
+# sha: 36ea82efd (+ rooms/a3.json as in the tree); time: 2026-10-28 01:29:16
+n53ridekill ride: RED no ride wall within 24 m of a3's spawn (2.5, 1.45, -61.8)

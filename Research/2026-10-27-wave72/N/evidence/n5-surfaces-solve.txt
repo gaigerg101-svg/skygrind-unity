@@ -1,0 +1,4 @@
+command: dotnet Temp/SimHarness/bin/Release/net10.0/SimHarness.dll n72lab --solve ice=4.766,mud=0.437 --out Research/2026-10-27-wave72/N/evidence/n5-surfaces-solve.txt | tree: n72-N at 06bb71b4e plus the --solve working tree (committed with N5c) | run 13:49
+n72lab --solve ice=4.766,mud=0.437 (2026-10-27 13:49:11): the profile 'now' is design.ultra71.set of this tree
+solve ice: target stop 4.766 m under the profile now: groundFrictionMult 0.048281 gives 4.766 m (steady walk 8.49 m/s, 1.47 s); rounded to 4 places 0.0483: 4.764 m (steady 8.49); to 3 places 0.048: 4.794 m. The web's ice (x0.25 on its friction 6, accel 10): stop 4.444 m, steady walk 8.00 m/s.
+solve mud: target stop 0.437 m under the profile now: groundFrictionMult 0.468508 gives 0.437 m (steady walk 8.49 m/s, 0.15 s); rounded to 4 places 0.4685: 0.437 m (steady 8.49); to 3 places 0.469: 0.436 m. The web's mud (x2 on its friction 6, accel 10): stop 0.406 m, steady walk 6.67 m/s.

@@ -1,0 +1,13 @@
+# command: python -I Tools/night/n59-l-room.py n65-foundry room a3
+# sha: 3d8a7a76; time: 2026-10-23 15:17:35
+== n56-room room foundry a3 (ambushed)
+  PASS R2 no dead ends      0 dead-end cells of 86 (2 m x 0.5 m cells; 0 bridges)
+  PASS R5 foothold          box [4, 0, -80]..[4.6, 6, -61] (wall, job ride): top 6.0 m over the floor, 4.0-23.0 m inside
+  PASS R8 every job         0 untagged of 6 solids
+  PASS IN VIEW ambushed     ambushed: 0 of 4 nodes in use fail (every one 8-15 m from the door, <= 15 m from midfield, within 10 m of the foothold and not behind it, no line into the corridor)
+  w1 entry frame (a156): 0.0 of 4 seen, nearest 11.8 m; node distances 11.8, 11.8, 11.9, 12.0
+  PASS I1 no mirror         mirror overlap 2 % across the door axis x = 0 (d2; 6 solids, 120 m2 footprint; < 60 % PASS)
+  PASS I2 ride shortcut     ride 19 m at x 4..4.6 z -80..-61: best side -1 dir -1: walk 26.0 m / ride 19.0 m = 1.37 (>= 1.3 or unreachable PASS: at least one ride a shortcut)
+  n/c  I3 teach verb needed not a grapple-pull teach room (ride lessons: I2; whip, pad and slide lessons: not computed)
+  PASS I4 pads clear        no pads
+ROOM a3: PASS

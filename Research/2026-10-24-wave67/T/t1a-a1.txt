@@ -1,0 +1,66 @@
+# node Tools/night/n67-a1.cjs (builder T's tree, proof only: the lead runs it on main and commits its output)
+# sha 00638946; dirty: ?? Tools/night/gen-slots.cjs ?? Tools/night/levels67.json ?? Tools/night/n67-a1.cjs ; start 2026-10-24 10:53:59
+n67-a1: design.n67 (iceline67 n52-iceline -> n67-iceline off; kiln67 n57-kiln -> n67-kiln off; spire67 n52-spire -> n67-spire off) after design.n65; maps.list rows after their bases; look49's levels ["n48-foundry","n47-spire","n52-foundry","n65-foundry","n52-spire","n67-spire"] (both config copies byte-identical; nothing else changed); Assets/Scripts/Game/UnityTuning.N53.cs: Polish53IcelineLevels + "n67-iceline" (one line); placeholders Design/levels/n67-iceline.json, Design/levels/n67-kiln.json, Design/levels/n67-spire.json and their Player copies (each base's data.name kept)
+n67-a1: iceline --export: 8 room(s) exported (g1 g2 g3 g4 g5 g6 g7 g8)
+n67-a1: iceline --slots=Design/levels/n67/iceline/slots67.json: openings: Design/levels/n67/openings67.json iceline g2 held, g3 ambushed, g4 held, g5 ambushed, g7 held, g8 ambushed (seed Design/levels/n52/openings53.json) | gen-slots --level iceline: Design/levels/n52/iceline.plan.json -> Design/levels/n67/iceline.plan.json (slots Design/levels/n67/iceline/slots67.json; rebuilt: none); every other room, door, piece and key n52-iceline's bit for bit
+n67-a1: Design/levels/n67/iceline/slots67.json written, every slot old (g1 g2 g3 g4 g5 g6 g7 g8)
+n67-a1: kiln --export: 5 room(s) exported (kb2 kb2c kb3 kb3c kb3d)
+n67-a1: kiln --slots=Design/levels/n67/kiln/slots67.json: openings: Design/levels/n67/openings67.json kiln kb2 held, kb2c vista, kb3 held, kb3c vista, kb3d held (seed Design/levels/n57/openings57.json) | gen-slots --level kiln: Design/levels/n57/kiln.plan.json -> Design/levels/n67/kiln.plan.json (slots Design/levels/n67/kiln/slots67.json; rebuilt: none); every other room, door, piece and key n57-kiln's bit for bit
+n67-a1: Design/levels/n67/kiln/slots67.json written, every slot old (kb2 kb2c kb3 kb3c kb3d)
+n67-a1: spire --export: 3 room(s) exported (v2 v5 v6)
+n67-a1: spire --slots=Design/levels/n67/spire/slots67.json: openings: Design/levels/n67/openings67.json spire v2 ambushed, v5 vista, v6 held (seed Design/levels/n52/openings53.json) | gen-slots --level spire: Design/levels/n52/spire.plan.json -> Design/levels/n67/spire.plan.json (slots Design/levels/n67/spire/slots67.json; rebuilt: none); every other room, door, piece and key n52-spire's bit for bit
+n67-a1: Design/levels/n67/spire/slots67.json written, every slot old (v2 v5 v6)
+PASS the two config copies are byte-identical (1115036 chars)
+PASS design.n67.iceline67: levelFrom n52-iceline, levelTo n67-iceline, enabled false
+PASS BaseId(n67-iceline) = n45-iceline = BaseId(n52-iceline) (the older systems read it as its base: loadout, awards, unlocks)
+PASS maps.list: n67-iceline listed once, right after n52-iceline, file Design/levels/n67-iceline.json
+PASS n67-iceline: both level copies exist and are byte-identical
+PASS n67-iceline: name n67-iceline, the A1 placeholder: equal to n52-iceline apart from name / _why / generatedBy
+PASS Design/levels/n67/iceline/slots67.json: g1 old, g2 old, g3 old, g4 old, g5 old, g6 old, g7 old, g8 old
+PASS iceline: rooms-base / rooms exported for 8 / 8 slots
+PASS design.n67.kiln67: levelFrom n57-kiln, levelTo n67-kiln, enabled false
+PASS BaseId(n67-kiln) = n45-kiln = BaseId(n57-kiln) (the older systems read it as its base: loadout, awards, unlocks)
+PASS maps.list: n67-kiln listed once, right after n57-kiln, file Design/levels/n67-kiln.json
+PASS n67-kiln: both level copies exist and are byte-identical
+PASS n67-kiln: name n67-kiln, the A1 placeholder: equal to n57-kiln apart from name / _why / generatedBy
+PASS Design/levels/n67/kiln/slots67.json: kb2 old, kb2c old, kb3 old, kb3c old, kb3d old
+PASS kiln: rooms-base / rooms exported for 5 / 5 slots
+PASS design.n67.spire67: levelFrom n52-spire, levelTo n67-spire, enabled false
+PASS BaseId(n67-spire) = n41-spire = BaseId(n52-spire) (the older systems read it as its base: loadout, awards, unlocks)
+PASS maps.list: n67-spire listed once, right after n52-spire, file Design/levels/n67-spire.json
+PASS n67-spire: both level copies exist and are byte-identical
+PASS n67-spire: name n67-spire, the A1 placeholder: equal to n52-spire apart from name / _why / generatedBy
+PASS Design/levels/n67/spire/slots67.json: v2 old, v5 old, v6 old
+PASS spire: rooms-base / rooms exported for 3 / 3 slots
+PASS look49's levels: n67-spire right after n52-spire (n48-foundry, n47-spire, n52-foundry, n65-foundry, n52-spire, n67-spire)
+PASS Assets/Scripts/Game/UnityTuning.N53.cs: Polish53IcelineLevels holds n67-iceline
+PASS no design.n67 level row is ON (the campaign order is unchanged: SwapLevels skips an off row)
+n67-a1 --verify: all PASS
+# exit 0
+
+# a second run (refused)
+    at node:internal/main/run_main_module:33:47
+
+Node.js v24.19.0
+# exit 0
+
+# git status --short after (tracked changes + new files)
+ M Assets/Scripts/Game/UnityTuning.N53.cs
+ M Assets/StreamingAssets/Design/unity-config.json
+ M Design/unity-config.json
+?? Assets/StreamingAssets/Design/levels/n67-iceline.json
+?? Assets/StreamingAssets/Design/levels/n67-kiln.json
+?? Assets/StreamingAssets/Design/levels/n67-spire.json
+?? Design/levels/n67-iceline.json
+?? Design/levels/n67-kiln.json
+?? Design/levels/n67-spire.json
+?? Design/levels/n67/
+# git diff --stat
+ Assets/Scripts/Game/UnityTuning.N53.cs          |  2 +-
+ Assets/StreamingAssets/Design/unity-config.json | 29 ++++++++++++++++++++++++-
+ Design/unity-config.json                        | 29 ++++++++++++++++++++++++-
+ 3 files changed, 57 insertions(+), 3 deletions(-)
+
+# after the refusal fix (process.on uncaughtException: one line, exit 1), 2026-10-24 10:54:53: node Tools/night/n67-a1.cjs (a second run)
+n67-a1: REFUSED: design.n67 already exists (already run?)
+# exit 1

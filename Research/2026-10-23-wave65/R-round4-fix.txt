@@ -1,0 +1,38 @@
+# NIGHT65 builder R fix round (the GATE verdicts Logs/n65/verdict-a2.md / verdict-a5.md; branch n65-R4 from fd9c565b; room files 412e9501)
+# Every command below ran in this tree on the level assembled by `node Tools/night/gen-n65-foundry.cjs --slots=latest --run`
+# (levelgen --walk 0 ERROR), with Temp/SimHarness/bin/Release/net10.0/SimHarness.dll; time ~3:55-4:05 on the night clock.
+
+## The changes (dressing only, no geometry)
+a5: THE SLIDE LINE: prop a5-P2 floorStrip at [-2, 0.02, -127.2], size [1.6, 0.02, 7.8] (z -131.1..-123.3: between the kerbs, through the slot,
+    out onto THE APRON to wave 2's husks at (-2, -131.5) / (-1.5, -132.5)); THE BEAM'S EDGE: light a5-TB, kind wall, cyan, at [-2, 1.35, -126.45],
+    normal [0, 0, 1], size [2, 0.15, 0.1], on THE TAP BEAM's south face just over the slot's 1.2 m ceiling.
+a2: lights a2-RW and a2-RL (THE WEST RIDE's strip and its line bar) deleted.
+
+## levelgen's report on this level (the full report copied to Research/2026-10-23-wave65/a5/round4/levelgen-report.md)
+| slide tunnel: a5 (-2, z -129.5..-126.5) | PASS | ceiling 1.2 m: a sliding player (collider 1 m) passes in 0.78 s, a standing one (body 1.8 m) is stopped; a swarmer (0.75 m) fits, a husk (1.8 m) goes round |
+| pit recovery: a5 (-7..2 x -141..-134.5) | PASS | 12 pit-floor cells, each walks and jumps back to the room's spawn: no soft-lock |
+| lava | PASS | 3 lava pits: each 0.6-1 m below the floor, no respawnY in its room, in the map's `lava` array, the collider at the surface |
+| lights | PASS | 65 light sockets in 10 rooms: each flush to a surface by rays (back face on the surface, at most 0.15 m deep), palette colours only, one accent per room, a pool at every goal |
+| props | PASS | 47 authored props (0 with colliders) in their rooms: unique ids, each on a surface, no scatter, no loose prop thicker than 0.15 m without a collider, no collider on a spawn, exit or node |
+| enemies reach every tier: a2 / a3 / a5 | PASS | (2 / 1 / 1 raised ledge tops; 8 / 9 / 8 encounter nodes) |
+| completable: a2 / a3 / a5 | PASS | every walk proof walks |
+
+## bash Tools/night/n65-red.sh 4 n65-foundry tmpR/q4 (copied to <id>/round4/), the table (node Tools/night/n65-table.cjs)
+| a2 | PASS (FAIL R5 foothold) | 66.5 / 70.0 (73.9 / 78.8) | 30.2 / 22.9 (12.4 / 11.9) | 48.7 / 50.3 (21.1 / 23.6) | BOLD / SAVAGE (10) (BOLD / AIRBORNE (10)) | 0 / 0 (0 / 0) | 18.7 / 25.1 (14.7 / 13.0) | 1 / 1 (none) |  |
+| a3 | PASS (PASS) | 54.2 / 53.0 (50.3 / 50.6) | 38.0 / 29.1 (39.3 / 38.6) | 63.4 / 61.9 (56.8 / 69.6) | COOL / BOLD (10) (BOLD / AIRBORNE (10)) | 0 / 0 (6 / 2) | 23.4 / 32.4 (36.3 / 26.6) | 1 / 1 (2 / 2) | GREEN (GREEN) |
+| a5 | PASS (FAIL R5 foothold) | 50.8 / 52.3 (51.7 / 49.2) | 30.6 / 24.2 (44.4 / 43.5) | 59.1 / 49.8 (70.4 / 69.4) | BOLD / SAVAGE (10) (COOL / AIRBORNE (10)) | 0 / 0 (0 / 2) | 30.4 / 29.4 (22.8 / 28.9) | 1 / 1 (3 / 3) |  |
+(columns: room check (red) | air % A / B | stall % A / B | DULL % A / B | top rank | deaths | clear s | pads | ride; every number equals round 3b's:
+the changes are a strip and lights, which no sim system reads)
+
+## the verb pilots
+n65verb skip: RED | room a2, verb65 pierce, refuse pierce | verb-aware: cleared 5/5, median 19.7 s, deaths 0, the verb used 26 time(s), STYLE above DULL 67.3 %, trigger held 6252 steps | refused: cleared 5/5, median 18.9 s, deaths 0, STYLE above DULL 31.3 % | the room clears as well without the verb: it can be skipped (by this pilot)
+n65verb skip: RED | room a3, verb65 ride, refuse ride | verb-aware: cleared 5/5, median 33.7 s, deaths 0, the verb used 36 time(s), STYLE above DULL 35.7 %, trigger held 2921 steps | refused: cleared 5/5, median 24.2 s, deaths 0, STYLE above DULL 16.6 % | the room clears as well without the verb: it can be skipped (by this pilot)
+n65verb skip: GREEN | room a5, verb65 launch+slide, refuse launch | verb-aware: cleared 5/5, median 22.7 s, deaths 0, the verb used 5 time(s), STYLE above DULL 58.3 %, trigger held 1918 steps | refused: cleared 5/5, median 31.7 s, deaths 0, STYLE above DULL 53.0 % | the verb is hard to skip for this pilot (slower by >= 25 %)
+n65verb pierce: GREEN | room a2 | the charged shot hit 3 bodies, kills 3, stand-ins killed 3/3 | aim line65's first segment | pose line65[0]
+n65verb launch: GREEN | room a5 | launch36 1, flight end wall thrown 3.3 m (max 3.2 m), bursts 1 (hits 2, kills 2) | landed (0.0, 1.5, -123.9), in a pit no, in lava no, target dead (launch36) | pose line65[0]
+n53ridekill ride: GREEN | level n65-foundry, room a3 | wall in room a3: start (3.58, 0.00, -79.81), along (0.00, 1.00), normal (-1.00, 0.00) (THE RUNNER)
+
+## not done in this round
+- The launch pilot on wave 2 from the slot's mouth (verdict-a5.md's "separately"): n65verb launch has no wave option; it takes wave 1's nearest
+  husk from line65[0]. Not run: it needs a pilot option (T's tool), not a room change.
+- The blind SPOT re-take and the iso picture: the lead's / T's tools, not run here.

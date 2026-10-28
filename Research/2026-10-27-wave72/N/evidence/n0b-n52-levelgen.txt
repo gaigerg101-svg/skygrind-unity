@@ -1,0 +1,31 @@
+10:58:48
+C:\Program Files\dotnet\sdk\10.0.401\Microsoft.Common.CurrentVersion.targets(887,5): warning MSB3539: The value of the property "BaseIntermediateOutputPath" was modified after it was used by MSBuild which can lead to unexpected build results. Tools such as NuGet will write outputs to the path specified by the "MSBuildProjectExtensionsPath" instead. To set this property, you must do so before Microsoft.Common.props is imported, for example by using Directory.Build.props.  For more information, please visit https://go.microsoft.com/fwlink/?linkid=869650" [C:\Users\gaige\dev\SKYGRIND-unity\.claude\worktrees\n72-N\Tools\SimHarness\SimHarness.csproj]
+levelgen: NOT WRITTEN (RED)
+levelgen n52-foundry: 2373071 chars -> Design/levels/n52/foundry.json; 200 boxes + the floor, 5 barriers, 10 wedges, 7 pads, 0 grapple nodes, 21 zones (a1, a2, a3, a4, a5, b1, b2, a6, a7, a8, a9, d1, d2, d3, d4, d5, d6, d7, d8, d9, d10) (1.1 s)
+  note: box kind 'wall' has no web kind in DrydockPlan.Kinds: kept as it is
+  note: box kind 'wall' has no web kind in DrydockPlan.Kinds: kept as it is
+  note: box kind 'wall' has no web kind in DrydockPlan.Kinds: kept as it is
+  note: box kind 'wall' has no web kind in DrydockPlan.Kinds: kept as it is
+  note: box kind 'wall' has no web kind in DrydockPlan.Kinds: kept as it is
+  note: box kind 'wall' has no web kind in DrydockPlan.Kinds: kept as it is
+  note: box kind 'wall' has no web kind in DrydockPlan.Kinds: kept as it is
+  note: box kind 'wall' has no web kind in DrydockPlan.Kinds: kept as it is
+  note: box kind 'wall' has no web kind in DrydockPlan.Kinds: kept as it is
+  note: box kind 'wall' has no web kind in DrydockPlan.Kinds: kept as it is
+  note: box kind 'wall' has no web kind in DrydockPlan.Kinds: kept as it is
+  note: box kind 'wall' has no web kind in DrydockPlan.Kinds: kept as it is
+  note: box kind 'wall' has no web kind in DrydockPlan.Kinds: kept as it is
+  note: box kind 'wall' has no web kind in DrydockPlan.Kinds: kept as it is
+  note: box kind 'wall' has no web kind in DrydockPlan.Kinds: kept as it is
+  note: box kind 'wall' has no web kind in DrydockPlan.Kinds: kept as it is
+  note: box kind 'wall' has no web kind in DrydockPlan.Kinds: kept as it is
+  note: box kind 'wall' has no web kind in DrydockPlan.Kinds: kept as it is
+  note: box kind 'wall' has no web kind in DrydockPlan.Kinds: kept as it is
+  plan checks: 1 problems
+    ground spawn 22 (-9.8, 0, -240.6): a player's capsule there overlaps collision box 88 (wall)
+  level report: 2 errors -> Reports/LEVEL-n52-foundry-validate.md (3.2 s)
+    | lights | ERROR | a3-L1: not flush to a surface: no surface behind it; a3-L2: not flush to a surface: no surface behind it; a3-L4: not flush to a surface: no surface behind it |
+    | closedRoom | ERROR | a3: no `roof: true` |
+  bot walk: ; DID NOT reach the last exit; zone at the end a1
+exit 1
+10:59:04

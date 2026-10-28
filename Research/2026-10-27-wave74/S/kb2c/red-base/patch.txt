@@ -1,0 +1,23 @@
+# command: node Tools/night/n70-patch-share.cjs --level kiln --room Design/levels/n67/kiln/rooms-base/kb2c.json kb2c
+# sha: 9783f7f80; time: 2026-10-27 23:11:44
+n70-patch-share: room kb2c | shipped Design/levels/n67/kiln/rooms-base/kb2c.json vs rebuilt Design/levels/n67/kiln/rooms-base/kb2c.json
+| room | shipped pieces kept | by kind (kept / shipped) | rect / spawn / exit | waves |
+|---|---|---|---|---|
+| kb2c | 15 / 15 (100 %) | boxes 12 / 12, ramps 2 / 2, pads 1 / 1, pits 0 / 0 | rect same, spawn same, exit same | waves same |
+  kept: box (8.4, 0, -181.5)..(9, 12, -164.5) (shipped job: verb it celebrates: the cooling wall's ride off the ash)
+  kept: box (1, 2.5, -184.5)..(7, 4.5, -181.5) (shipped job: spatial law: THE FAR BRIDGE (the crane's run, the high tier))
+  kept: box (7, 0, -184.5)..(9, 4.5, -181.5) (shipped job: spatial law: THE FAR BRIDGE's landing pier (the ride's end))
+  kept: box (-9, 0, -174.5)..(-2, 1.5, -171.5) (shipped job: spatial law: THE NEAR BRIDGE (the mid tier))
+  kept: box (3, 0, -168.5)..(5, 12, -165.15) (shipped job: hero prop: THE CRANE MAST (the foothold))
+  kept: box (-9, 0, -167)..(-6.5, 0.4, -164.5) (shipped job: spatial law: iron on the ash (burrow-safe))
+  kept: box (5.5, 0, -178)..(8, 0.4, -175.5) (shipped job: spatial law: iron on the ash (burrow-safe))
+  kept: box (-6, 0, -181)..(-3, 0.4, -178.5) (shipped job: spatial law: iron on the ash (burrow-safe))
+  kept: box (2, 0, -191)..(5, 0.4, -188.5) (shipped job: spatial law: iron on the ash (burrow-safe))
+  kept: box (4, 0, -187)..(7, 0.9, -184.5) (shipped job: molecule: the small boost (T-5))
+  kept: box (-6, 0, -164.5)..(-2, 12, -163.5) (shipped job: molecule: the entrance gated (the door's west liner))
+  kept: box (2, 0, -164.5)..(6, 12, -163.5) (shipped job: molecule: the entrance gated (the door's east liner))
+  kept: ramp (-3.5, -177.5)->(-3.5, -174.5) w 3 rise 1.5 (shipped job: molecule: the walkers' climb to the near bridge)
+  kept: ramp (-7, -183)->(1, -183) w 3 rise 4.5 (shipped job: molecule: the walkers' climb to the far bridge)
+  kept: pad (4, 0, -179)->(5, 4.5, -183) (shipped job: molecule: the upward line, the ash vent)
+  rebuilt room pieces: boxes 12, ramps 2, pads 1, pits 0 | the rule: PASS at <= 25 % of the shipped room's pieces kept (geometry-equal; job / why text ignored)
+n70-patch-share: PATCH kb2c (100 % kept)

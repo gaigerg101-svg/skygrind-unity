@@ -1,0 +1,9 @@
+# command: bash Tools/night/n65-verbs.sh pierce Design/levels/n65-foundry.json a2
+# sha: 1f00d1d4 (branch n65-T; tracked changes uncommitted: 2 file(s))
+# time: 2026-10-23 15:26:15 -> 2026-10-23 15:26:19 (local)
+# exit: 0
+
+n65verb pierce: level n65-foundry (Design/levels/n65-foundry.json), room a2 "1.2 KESTREL", seed 1; pose (0.0, 0.0, -38.0) yaw -0.0 from line65[0]; off switch none
+  aim line65's first segment: yaw -0.0 deg, pitch 0.0 deg at the release; held 110 steps (0.9 s), charge35Full 1, charged shots 1; bodies in the room before 3 (stand-ins 3)
+n65verb pierce: GREEN | room a2 | the charged shot hit 3 bodies, kills 3, stand-ins killed 3/3 | aim line65's first segment | pose line65[0]
+n65-verbs pierce on Design/levels/n65-foundry.json (a2): GREEN 1, RED 0

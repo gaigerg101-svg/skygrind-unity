@@ -1,0 +1,11 @@
+# command: bash Tools/night/n65-verbs.sh ride C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/ice/g3/base/n67-iceline.json g3 --shoot
+# sha: f360cf025 (+ the room file as in the tree); time: 2026-10-28 00:19:17
+  put-in loadout (g3, BEFORE entering it: the room's own award, if any, comes on entry): awards of the rooms before it given: none; owned gauntlet
+  entry loadout (pilot, g3, on entering): owned gauntlet, in hand gauntlet, pending none
+n65verb ride: level n67-iceline (C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/ice/g3/base/n67-iceline.json), room g3 "2.3 THE SWARM", seed 1; pose (0.0, 0.0, -64.0) yaw 0.0 from the room's spawn (no line65); off switch none
+  the ride's gun: owned at the start gauntlet (in hand gauntlet); awards given up to g3: none; the level's loadout holds NO gun at this room (owned: gauntlet): ride --shoot cannot fire; in hand gauntlet
+  face 0 of 1: x = -11.0, -84.0..-66.0 (18.0 m), top 5.0, normal (1.0, 0.0), ride along (0.0, -1.0) from (-10.6, 0.0, -67.0); the room's wave live, alive 3; weapon gauntlet
+    kill husk #2 by gauntlet at (-8.4, 1.0, -68.4), 3.0 m, step 4: not from the wall
+n65verb ride --shoot: RED | room g3 | ride yes (1.6 s on the wall, 22.2 m along it, WallRideStart 2) | look off the wall at most 169.9 deg | shots from the wall 0 (off it 0) | kills from the wall 0 (other kills 1) | pose the room's spawn (no line65) | no kill from the wall
+n65verb: exit 1
+n65-verbs ride on C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/ice/g3/base/n67-iceline.json (g3): GREEN 0, RED 1, UNSURE 0

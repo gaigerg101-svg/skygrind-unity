@@ -1,0 +1,54 @@
+# command: bash Research/2026-10-23-wave66/T/t1b-fix.sh C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/b545c660-8250-4a8f-9419-f29ef22d3556/scratchpad/genout/latest/n65-foundry.json
+# sha: 9d31727a (tree 2 dirty paths), 2026-10-24 01:34:08 USMST, /c/Users/gaige/dev/SKYGRIND-unity/.claude/worktrees/agent-af48e888c59fa3626
+
+saved Research/2026-10-23-wave66/T/t1b-fix-noride-a2.txt (exit 1)
+saved Research/2026-10-23-wave66/T/t1b-fix-noride-a4.txt (exit 0)
+saved Research/2026-10-23-wave66/T/t1b-fix-a3.txt (exit 1)
+saved Research/2026-10-23-wave66/T/t1b-fix-a3-bar.txt (exit 1)
+== the walker, refuse none vs ride, per seed (a2, a4): its own wall rides with nothing refused, both clear times, the steps refused
+  Research/2026-10-23-wave66/T/t1b-fix-noride-a2.txt
+  seed 1: none 5.2 s (its wall rides 1) | ride refused 12.9 s (wall rides 0), steps refused 361
+  seed 2: none 11.1 s (its wall rides 3) | ride refused 14.0 s (wall rides 0), steps refused 300
+  seed 3: none 15.4 s (its wall rides 4) | ride refused 13.0 s (wall rides 0), steps refused 280
+  seed 4: none 14.9 s (its wall rides 6) | ride refused 12.3 s (wall rides 0), steps refused 224
+  seed 5: none 14.9 s (its wall rides 5) | ride refused 16.4 s (wall rides 1), steps refused 393
+  seed 6: none 14.7 s (its wall rides 4) | ride refused 13.0 s (wall rides 0), steps refused 236
+  seed 7: none 9.1 s (its wall rides 2) | ride refused 11.6 s (wall rides 0), steps refused 223
+  seed 8: none 9.3 s (its wall rides 4) | ride refused 14.8 s (wall rides 1), steps refused 418
+  seed 9: none 15.9 s (its wall rides 4) | ride refused 14.4 s (wall rides 0), steps refused 115
+  seed 10: none 13.2 s (its wall rides 4) | ride refused 15.5 s (wall rides 0), steps refused 250
+  Research/2026-10-23-wave66/T/t1b-fix-noride-a4.txt
+  seed 1: none 20.5 s (its wall rides 3) | ride refused 19.6 s (wall rides 0), steps refused 318
+  seed 2: none 11.8 s (its wall rides 2) | ride refused 15.1 s (wall rides 0), steps refused 96
+  seed 3: none 10.5 s (its wall rides 0) | ride refused 10.5 s (wall rides 0), steps refused 1
+  seed 4: none 10.6 s (its wall rides 2) | ride refused 19.6 s (wall rides 0), steps refused 277
+  seed 5: none 15.1 s (its wall rides 4) | ride refused 15.9 s (wall rides 2), steps refused 190
+  seed 6: none 10.4 s (its wall rides 3) | ride refused 19.4 s (wall rides 3), steps refused 368
+  seed 7: none 17.5 s (its wall rides 3) | ride refused 15.1 s (wall rides 0), steps refused 124
+  seed 8: none 15.1 s (its wall rides 3) | ride refused 20.4 s (wall rides 2), steps refused 246
+  seed 9: none 19.4 s (its wall rides 5) | ride refused 19.2 s (wall rides 4), steps refused 434
+  seed 10: none 14.5 s (its wall rides 4) | ride refused 15.2 s (wall rides 0), steps refused 32
+== a3's refused runs: wall rides per seed
+seed 1 refused-in	wall rides 0	stick taken off a wall 250 steps, dashes into a wall dropped 0
+seed 1 walker	wall rides 0	stick taken off a wall 250 steps, dashes into a wall dropped 0
+seed 2 refused-in	wall rides 0	stick taken off a wall 128 steps, dashes into a wall dropped 0
+seed 2 walker	wall rides 0	stick taken off a wall 128 steps, dashes into a wall dropped 0
+seed 3 refused-in	wall rides 0	stick taken off a wall 232 steps, dashes into a wall dropped 0
+seed 3 walker	wall rides 0	stick taken off a wall 232 steps, dashes into a wall dropped 0
+seed 4 refused-in	wall rides 0	stick taken off a wall 161 steps, dashes into a wall dropped 0
+seed 4 walker	wall rides 0	stick taken off a wall 161 steps, dashes into a wall dropped 0
+seed 5 refused-in	wall rides 0	stick taken off a wall 262 steps, dashes into a wall dropped 0
+seed 5 walker	wall rides 0	stick taken off a wall 262 steps, dashes into a wall dropped 0
+seed 6 refused-in	wall rides 0	stick taken off a wall 172 steps, dashes into a wall dropped 0
+seed 6 walker	wall rides 0	stick taken off a wall 172 steps, dashes into a wall dropped 0
+seed 7 refused-in	wall rides 1	stick taken off a wall 124 steps, dashes into a wall dropped 0
+seed 7 walker	wall rides 1	stick taken off a wall 124 steps, dashes into a wall dropped 0
+seed 8 refused-in	wall rides 0	stick taken off a wall 12 steps, dashes into a wall dropped 0
+seed 8 walker	wall rides 0	stick taken off a wall 12 steps, dashes into a wall dropped 0
+seed 9 refused-in	wall rides 1	stick taken off a wall 256 steps, dashes into a wall dropped 0
+seed 9 walker	wall rides 1	stick taken off a wall 256 steps, dashes into a wall dropped 0
+seed 10 refused-in	wall rides 0	stick taken off a wall 155 steps, dashes into a wall dropped 0
+seed 10 walker	wall rides 0	stick taken off a wall 155 steps, dashes into a wall dropped 0
+n65verb skip: M1 FAIL | room a3, ratio 0.83 vs bar 1.25 (mainBar), exercised 10/10
+n65verb skip: M1 FAIL | room a3, ratio 1.03 vs bar 1.40 (--bar), exercised 2/2
+# exit 0, 01:42:24

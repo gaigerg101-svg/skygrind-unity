@@ -1,0 +1,4673 @@
+{
+ "_why": "NIGHT40 builder B5 (design.n40.crown40 swaps n38-spire for this file while the row is on): Tools/night/gen-n40-spire.cjs copies n38-spire's plan whole and changes only: v10 THE RING's lesson prompt (the pass taught with the CROWN's buttons). n38-spire's _why: NIGHT38 builder C2 (design.n38.spire38 swaps n37-spire for this file while the row is on): Tools/night/gen-n38-spire.cjs from the beat sheet Design/levels/n38/spire.beats.md. Eight new rooms (v1 THE LANDING: the TORCH; v2 THE NAVE and v6 THE CHOIR: open roofed arenas; v3-v5 BELFRY I-III and v7 THE LONG BELL: one jump-dash gate each under a ceiling, a gate meter on each pad; v8 THE VESTRY: a rest), then NIGHT37's v9 FALLING STONES, v10 THE RING and v11 THE SPIRE (THE CROWN), unchanged. Spacing from PortExport/config.json (ground.walkSpeed, jump.height, dash.speed x dash.duration, slide.colliderHeight) + Design/levels/n35-ride-distances.json (rideSpeed, jumpOff.pitch0, facingGapsThatWork) and the real sim's jumps (Harness crown37 jumps).",
+ "id": "n40-spire",
+ "name": "LEVEL 5 THE SPIRE",
+ "n29": true,
+ "n30": true,
+ "n36": true,
+ "floorSize": 670,
+ "killPlaneY": -95,
+ "wallHeight": 14,
+ "rank": {
+  "time": [
+   209,
+   322,
+   483,
+   725
+  ],
+  "kills": [
+   100,
+   85,
+   65,
+   40
+  ],
+  "style": [
+   2500,
+   1500,
+   700,
+   250
+  ],
+  "_why": "Unity-only (builder F): S/A/B/C cuts: time in seconds = (the spire32 pilot's summed room medians + the boss band 60 s) x [1.3, 2, 3, 4.5] (Tools/night/n32-spire-pars.json); kills = percent of the waves' enemies, style = points (NOT calibrated)."
+ },
+ "rooms": [
+  {
+   "id": "v1",
+   "name": "5.1 THE LANDING",
+   "kind": "link",
+   "rect": [
+    -17,
+    93,
+    -3,
+    115
+   ],
+   "height": 9,
+   "roof": true,
+   "par": 12,
+   "job36": "teach",
+   "verb36": "the TORCH (pick up, burn close)",
+   "spawn": {
+    "at": [
+     -10,
+     0,
+     113
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    -10,
+    0,
+    95
+   ],
+   "standIns": [
+    {
+     "at": [
+      -11.5,
+      0,
+      104
+     ],
+     "mode": "static"
+    },
+    {
+     "at": [
+      -10,
+      0,
+      103
+     ],
+     "mode": "static"
+    },
+    {
+     "at": [
+      -8.5,
+      0,
+      104
+     ],
+     "mode": "static"
+    }
+   ],
+   "standIns31": [
+    {
+     "at": [
+      -11.5,
+      0,
+      104
+     ],
+     "mode": "static"
+    },
+    {
+     "at": [
+      -10,
+      0,
+      103
+     ],
+     "mode": "static"
+    },
+    {
+     "at": [
+      -8.5,
+      0,
+      104
+     ],
+     "mode": "static"
+    }
+   ],
+   "standIns36": [
+    {
+     "at": [
+      -11.5,
+      0,
+      104
+     ],
+     "job": "marker",
+     "why": "a stand-in in a tight row, 5 m past the TORCH: burn it up close"
+    },
+    {
+     "at": [
+      -10,
+      0,
+      103
+     ],
+     "job": "marker",
+     "why": "a stand-in in a tight row, 5 m past the TORCH: burn it up close"
+    },
+    {
+     "at": [
+      -8.5,
+      0,
+      104
+     ],
+     "job": "marker",
+     "why": "a stand-in in a tight row, 5 m past the TORCH: burn it up close"
+    }
+   ],
+   "lessons": [
+    {
+     "promptPad": "THE TORCH: HOLD {fire} CLOSE",
+     "kind": "reached",
+     "rect": [
+      -17,
+      93,
+      -3,
+      99
+     ],
+     "minY": -0.2,
+     "prompt": "THE TORCH: HOLD {fire} CLOSE"
+    }
+   ],
+   "lessons31": [
+    {
+     "promptPad": "THE TORCH: HOLD {fire} CLOSE",
+     "kind": "reached",
+     "rect": [
+      -17,
+      93,
+      -3,
+      99
+     ],
+     "minY": -0.2,
+     "prompt": "THE TORCH: HOLD {fire} CLOSE"
+    }
+   ],
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -10,
+       0,
+       113
+      ],
+      [
+       -10,
+       0,
+       107
+      ],
+      [
+       -10,
+       0,
+       99
+      ],
+      [
+       -10,
+       0,
+       95
+      ]
+     ]
+    }
+   ],
+   "frames36": {
+    "mid": [
+     -10,
+     0,
+     112,
+     0,
+     -0.067
+    ],
+    "exit": [
+     -10,
+     0,
+     99,
+     0,
+     -0.075
+    ]
+   }
+  },
+  {
+   "id": "v2",
+   "name": "5.2 THE NAVE",
+   "kind": "room",
+   "rect": [
+    -25,
+    51,
+    5,
+    89
+   ],
+   "height": 14,
+   "roof": true,
+   "par": 45,
+   "job36": "practise",
+   "verb36": "an open roofed arena: TORCH close, jump-dash to the aisles",
+   "spawn": {
+    "at": [
+     -10,
+     0,
+     87
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    -10,
+    0,
+    53
+   ],
+   "arena36": true,
+   "waves": [
+    [
+     "husk",
+     "husk",
+     "husk",
+     "swarmer",
+     "swarmer"
+    ],
+    [
+     "spitter",
+     "spitter",
+     "husk",
+     "husk"
+    ],
+    [
+     "heavy",
+     "swarmer",
+     "swarmer",
+     "swarmer"
+    ]
+   ],
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -10,
+       0,
+       87
+      ],
+      [
+       -10,
+       0,
+       81
+      ],
+      [
+       -17,
+       0,
+       71
+      ],
+      [
+       -17,
+       0,
+       59
+      ],
+      [
+       -10,
+       0,
+       55
+      ],
+      [
+       -10,
+       0,
+       53
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       2,
+       0,
+       88
+      ],
+      [
+       2,
+       2.4,
+       81
+      ],
+      [
+       2,
+       2.4,
+       61
+      ]
+     ]
+    }
+   ],
+   "frames36": {
+    "mid": [
+     -10,
+     0,
+     85,
+     0,
+     0.015
+    ],
+    "exit": [
+     2,
+     2.4,
+     61,
+     53.13,
+     -0.197
+    ]
+   },
+   "nodes": [
+    [
+     -10,
+     0,
+     75
+    ],
+    [
+     -14,
+     0,
+     71
+    ],
+    [
+     -6,
+     0,
+     71
+    ],
+    [
+     -10,
+     0,
+     63
+    ],
+    [
+     -14,
+     0,
+     59
+    ],
+    [
+     -6,
+     0,
+     59
+    ]
+   ],
+   "highNodes": [
+    [
+     -22,
+     2.4,
+     73
+    ],
+    [
+     2,
+     2.4,
+     73
+    ],
+    [
+     -22,
+     2.4,
+     63
+    ],
+    [
+     2,
+     2.4,
+     63
+    ]
+   ]
+  },
+  {
+   "id": "v3",
+   "name": "5.3 BELFRY I",
+   "kind": "link",
+   "rect": [
+    -16,
+    13,
+    -4,
+    47
+   ],
+   "height": 9,
+   "roof": true,
+   "par": 8,
+   "job36": "test",
+   "verb36": "the jump-dash gate, taught: dash, then jump inside the dash, under the ceiling",
+   "spawn": {
+    "at": [
+     -10,
+     0,
+     45
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    -10,
+    0,
+    15
+   ],
+   "flight38": true,
+   "limit": [
+    "pistolOnly"
+   ],
+   "limitReason": "ONE JUMP-DASH PER PAD",
+   "meter38": [
+    {
+     "gate": "v3.G",
+     "rect": [
+      -16,
+      37,
+      -4,
+      47
+     ],
+     "y": 0,
+     "dashJumps": 1,
+     "why": "the PAD: the bar set to one jump-dash (spire38's meter)"
+    }
+   ],
+   "routeVia": [
+    [
+     [
+      -10,
+      0,
+      37.5
+     ],
+     [
+      -10,
+      0,
+      19
+     ]
+    ]
+   ],
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -10,
+       0,
+       45
+      ],
+      [
+       -10,
+       0,
+       38
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -10,
+       0,
+       18.5
+      ],
+      [
+       -10,
+       0,
+       15
+      ]
+     ]
+    }
+   ],
+   "frames36": {
+    "mid": [
+     -10,
+     0,
+     45,
+     0,
+     -0.024
+    ],
+    "exit": [
+     -10,
+     0,
+     18,
+     0,
+     -0.086
+    ]
+   },
+   "lessons": [
+    {
+     "promptPad": "{dash} DASH, THEN {jump}: FLY",
+     "kind": "reached",
+     "rect": [
+      -16,
+      13,
+      -4,
+      20
+     ],
+     "minY": -0.2,
+     "prompt": "{dash} DASH, THEN {jump}: FLY"
+    }
+   ],
+   "lessons31": [
+    {
+     "promptPad": "{dash} DASH, THEN {jump}: FLY",
+     "kind": "reached",
+     "rect": [
+      -16,
+      13,
+      -4,
+      20
+     ],
+     "minY": -0.2,
+     "prompt": "{dash} DASH, THEN {jump}: FLY"
+    }
+   ]
+  },
+  {
+   "id": "v4",
+   "name": "5.4 BELFRY II",
+   "kind": "link",
+   "rect": [
+    -16,
+    -26,
+    -4,
+    9
+   ],
+   "height": 9,
+   "roof": true,
+   "par": 6,
+   "job36": "test",
+   "verb36": "a jump-dash gate (one per pad)",
+   "spawn": {
+    "at": [
+     -10,
+     0,
+     7
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    -10,
+    0,
+    -24
+   ],
+   "flight38": true,
+   "limit": [
+    "pistolOnly"
+   ],
+   "limitReason": "ONE JUMP-DASH PER PAD",
+   "meter38": [
+    {
+     "gate": "v4.G",
+     "rect": [
+      -16,
+      -1,
+      -4,
+      9
+     ],
+     "y": 0,
+     "dashJumps": 1,
+     "why": "the PAD: the bar set to one jump-dash (spire38's meter)"
+    }
+   ],
+   "routeVia": [
+    [
+     [
+      -10,
+      0,
+      -0.5
+     ],
+     [
+      -10,
+      0,
+      -20
+     ]
+    ]
+   ],
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -10,
+       0,
+       7
+      ],
+      [
+       -10,
+       0,
+       0
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -10,
+       0,
+       -20.5
+      ],
+      [
+       -10,
+       0,
+       -24
+      ]
+     ]
+    }
+   ],
+   "frames36": {
+    "mid": [
+     -10,
+     0,
+     7,
+     0,
+     -0.023
+    ],
+    "exit": [
+     -10,
+     0,
+     -21,
+     0,
+     -0.086
+    ]
+   }
+  },
+  {
+   "id": "v5",
+   "name": "5.5 BELFRY III",
+   "kind": "link",
+   "rect": [
+    -16,
+    -65,
+    -4,
+    -30
+   ],
+   "height": 9,
+   "roof": true,
+   "par": 6,
+   "job36": "test",
+   "verb36": "a jump-dash gate (one per pad)",
+   "spawn": {
+    "at": [
+     -10,
+     0,
+     -32
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    -10,
+    0,
+    -63
+   ],
+   "flight38": true,
+   "limit": [
+    "pistolOnly"
+   ],
+   "limitReason": "ONE JUMP-DASH PER PAD",
+   "meter38": [
+    {
+     "gate": "v5.G",
+     "rect": [
+      -16,
+      -40,
+      -4,
+      -30
+     ],
+     "y": 0,
+     "dashJumps": 1,
+     "why": "the PAD: the bar set to one jump-dash (spire38's meter)"
+    }
+   ],
+   "routeVia": [
+    [
+     [
+      -10,
+      0,
+      -39.5
+     ],
+     [
+      -10,
+      0,
+      -59
+     ]
+    ]
+   ],
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -10,
+       0,
+       -32
+      ],
+      [
+       -10,
+       0,
+       -39
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -10,
+       0,
+       -59.5
+      ],
+      [
+       -10,
+       0,
+       -63
+      ]
+     ]
+    }
+   ],
+   "frames36": {
+    "mid": [
+     -10,
+     0,
+     -32,
+     0,
+     -0.023
+    ],
+    "exit": [
+     -10,
+     0,
+     -60,
+     0,
+     -0.086
+    ]
+   }
+  },
+  {
+   "id": "v6",
+   "name": "5.6 THE CHOIR",
+   "kind": "room",
+   "rect": [
+    -27,
+    -111,
+    7,
+    -69
+   ],
+   "height": 16,
+   "roof": true,
+   "par": 60,
+   "job36": "combine",
+   "verb36": "an open roofed arena: jump-dash between three heights, TORCH, parry",
+   "spawn": {
+    "at": [
+     -10,
+     0,
+     -71
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    -10,
+    0,
+    -109
+   ],
+   "arena36": true,
+   "waves": [
+    [
+     "husk",
+     "husk",
+     "husk",
+     "husk",
+     "swarmer",
+     "swarmer"
+    ],
+    [
+     "spitter",
+     "spitter",
+     "husk",
+     "husk",
+     "heavy"
+    ],
+    [
+     "heavy",
+     "heavy",
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "swarmer"
+    ]
+   ],
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -10,
+       0,
+       -71
+      ],
+      [
+       -10,
+       0,
+       -78
+      ],
+      [
+       -10,
+       1.5,
+       -87
+      ],
+      [
+       -10,
+       1.5,
+       -94
+      ],
+      [
+       -10,
+       0,
+       -100
+      ],
+      [
+       -10,
+       0,
+       -107
+      ],
+      [
+       -10,
+       0,
+       -109
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       4,
+       0,
+       -70
+      ],
+      [
+       4,
+       2.4,
+       -81
+      ],
+      [
+       4,
+       2.4,
+       -99
+      ]
+     ]
+    }
+   ],
+   "frames36": {
+    "mid": [
+     -10,
+     1.5,
+     -85,
+     -66.801,
+     0.02
+    ],
+    "exit": [
+     -10,
+     0,
+     -105,
+     0,
+     -0.086
+    ]
+   },
+   "nodes": [
+    [
+     -18,
+     0,
+     -89
+    ],
+    [
+     -2,
+     0,
+     -89
+    ],
+    [
+     -14,
+     0,
+     -101
+    ],
+    [
+     -6,
+     0,
+     -101
+    ],
+    [
+     -10,
+     0,
+     -106
+    ]
+   ],
+   "highNodes": [
+    [
+     -24,
+     2.4,
+     -87
+    ],
+    [
+     4,
+     2.4,
+     -87
+    ],
+    [
+     -24,
+     2.4,
+     -97
+    ],
+    [
+     4,
+     2.4,
+     -97
+    ],
+    [
+     -10,
+     1.5,
+     -89
+    ]
+   ]
+  },
+  {
+   "id": "v7",
+   "name": "5.7 THE LONG BELL",
+   "kind": "link",
+   "rect": [
+    -16,
+    -150,
+    -4,
+    -115
+   ],
+   "height": 9,
+   "roof": true,
+   "par": 8,
+   "job36": "test",
+   "verb36": "the last jump-dash gate (the exam before the rehearsals)",
+   "spawn": {
+    "at": [
+     -10,
+     0,
+     -117
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    -10,
+    0,
+    -148
+   ],
+   "flight38": true,
+   "limit": [
+    "pistolOnly"
+   ],
+   "limitReason": "ONE JUMP-DASH PER PAD",
+   "meter38": [
+    {
+     "gate": "v7.G",
+     "rect": [
+      -16,
+      -125,
+      -4,
+      -115
+     ],
+     "y": 0,
+     "dashJumps": 1,
+     "why": "the PAD: the bar set to one jump-dash (spire38's meter)"
+    }
+   ],
+   "routeVia": [
+    [
+     [
+      -10,
+      0,
+      -124.5
+     ],
+     [
+      -10,
+      0,
+      -144
+     ]
+    ]
+   ],
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -10,
+       0,
+       -117
+      ],
+      [
+       -10,
+       0,
+       -124
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -10,
+       0,
+       -144.5
+      ],
+      [
+       -10,
+       0,
+       -148
+      ]
+     ]
+    }
+   ],
+   "frames36": {
+    "mid": [
+     -10,
+     0,
+     -117,
+     0,
+     -0.023
+    ],
+    "exit": [
+     -10,
+     0,
+     -145,
+     0,
+     -0.086
+    ]
+   }
+  },
+  {
+   "id": "v8",
+   "name": "5.8 THE VESTRY",
+   "kind": "link",
+   "rect": [
+    -16,
+    -166,
+    -4,
+    -154
+   ],
+   "height": 6,
+   "roof": true,
+   "par": 4,
+   "job36": "rest",
+   "verb36": "none",
+   "spawn": {
+    "at": [
+     -10,
+     0,
+     -155.5
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    -10,
+    0,
+    -164.5
+   ],
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -10,
+       0,
+       -155.5
+      ],
+      [
+       -10,
+       0,
+       -164.5
+      ]
+     ]
+    }
+   ],
+   "frames36": {
+    "mid": [
+     -10,
+     0,
+     -156,
+     0,
+     -0.181
+    ],
+    "exit": [
+     -8,
+     0,
+     -160,
+     18.435,
+     -0.095
+    ]
+   }
+  },
+  {
+   "id": "v9",
+   "name": "5.9 FALLING STONES",
+   "kind": "link",
+   "rect": [
+    -22,
+    -211,
+    2,
+    -170
+   ],
+   "height": 10,
+   "roof": true,
+   "par": 12,
+   "spawn": {
+    "at": [
+     -10,
+     0,
+     -171.5
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    -10,
+    0,
+    -209.5
+   ],
+   "job36": "teach",
+   "verb36": "jump-dash (dash, then jump inside the dash) across stones that drop 2 s after you land",
+   "lessons": [
+    {
+     "kind": "reached",
+     "rect": [
+      -22,
+      -211,
+      2,
+      -208
+     ],
+     "minY": -0.5,
+     "prompt": "",
+     "promptPad": ""
+    }
+   ],
+   "lessons31": [
+    {
+     "kind": "reached",
+     "rect": [
+      -22,
+      -211,
+      2,
+      -208
+     ],
+     "minY": -0.5,
+     "prompt": "",
+     "promptPad": ""
+    }
+   ],
+   "fall37": [
+    {
+     "at": [
+      -13,
+      0,
+      -184
+     ],
+     "size": [
+      4,
+      1,
+      4
+     ],
+     "why": "stone 1: 9 m past the entry edge (a run jump falls short at 7.1 m; a jump-dash clears it): it drops 2 s after you land"
+    },
+    {
+     "at": [
+      -7,
+      0,
+      -197
+     ],
+     "size": [
+      4,
+      1,
+      4
+     ],
+     "why": "stone 2: 9 m on, 6 m east: the jump-dash's line bends, then 9 m to the exit floor"
+    }
+   ],
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -10,
+       0,
+       -171.5
+      ],
+      [
+       -10,
+       0,
+       -172.5
+      ]
+     ]
+    }
+   ],
+   "routeVia": [
+    [
+     [
+      -10,
+      0,
+      -172.5
+     ],
+     [
+      -10,
+      0,
+      -208.5
+     ]
+    ]
+   ],
+   "frames36": {
+    "mid": [
+     -10,
+     0,
+     -172,
+     0,
+     -0.064
+    ],
+    "exit": [
+     -10,
+     0,
+     -209,
+     0,
+     -0.381
+    ]
+   }
+  },
+  {
+   "id": "v10",
+   "name": "5.10 THE RING",
+   "kind": "link",
+   "rect": [
+    -22,
+    -251,
+    2,
+    -215
+   ],
+   "height": 10,
+   "roof": true,
+   "par": 10,
+   "spawn": {
+    "at": [
+     -10,
+     0,
+     -217
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    -10,
+    0,
+    -248
+   ],
+   "job36": "teach",
+   "verb36": "jump-dash THROUGH a spinning ring (the pass: a cyan flash), as the Crown's ring will be passed",
+   "lessons": [
+    {
+     "kind": "reached",
+     "rect": [
+      -22,
+      -237,
+      2,
+      -231
+     ],
+     "minY": -0.5,
+     "prompt": "{dash} + {jump}: THROUGH THE RING",
+     "promptPad": "{dash} + {jump}: THROUGH THE RING"
+    }
+   ],
+   "lessons31": [
+    {
+     "kind": "reached",
+     "rect": [
+      -22,
+      -237,
+      2,
+      -231
+     ],
+     "minY": -0.5,
+     "prompt": "{dash} + {jump}: THROUGH THE RING",
+     "promptPad": "{dash} + {jump}: THROUGH THE RING"
+    }
+   ],
+   "hoop37": [
+    {
+     "at": [
+      -10,
+      1.6,
+      -226
+     ],
+     "normal": [
+      0,
+      0,
+      1
+     ],
+     "why": "the RING over the 10 m gap: the jump-dash from the edge passes through its centre (a cyan flash); the Crown's damage rule rehearsed"
+    }
+   ],
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -10,
+       0,
+       -217
+      ],
+      [
+       -10,
+       0,
+       -220
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -10,
+       0,
+       -233
+      ],
+      [
+       -10,
+       0,
+       -248
+      ]
+     ]
+    }
+   ],
+   "frames36": {
+    "mid": [
+     -10,
+     0,
+     -219,
+     0,
+     0
+    ],
+    "exit": [
+     -10,
+     0,
+     -247,
+     0,
+     -0.31
+    ]
+   },
+   "lesson40_why": "B5: v10's prompt was empty since NIGHT37 (nothing on screen said what the ring is for); now the pass with the same two buttons as the CROWN's entry line (design.n40.crown40.line.ringPrompt, six words: the room-lesson limit), so the fight's rule is rehearsed here first."
+  },
+  {
+   "id": "v11",
+   "name": "5.11 THE SPIRE",
+   "kind": "boss",
+   "rect": [
+    -44,
+    -323,
+    24,
+    -255
+   ],
+   "height": 12,
+   "roof": false,
+   "par": 40,
+   "spawn": {
+    "at": [
+     -10,
+     0,
+     -258
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    -10,
+    0,
+    -258
+   ],
+   "boss": "crown37",
+   "job36": "boss",
+   "verb36": "the descent: drop onto orbiting platforms, jump-dash through the Crown's ring, down the broken gallery to the plaza",
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -10,
+       0,
+       -258
+      ],
+      [
+       -10,
+       0,
+       -263
+      ]
+     ]
+    }
+   ],
+   "spire37": {
+    "axis": [
+     -10,
+     0,
+     -289
+    ],
+    "coreHalf": 4,
+    "checkpoints": [
+     [
+      -10,
+      0,
+      -258,
+      0
+     ],
+     [
+      -22,
+      -27,
+      -279,
+      270
+     ],
+     [
+      -10,
+      -60,
+      -281,
+      0
+     ]
+    ],
+    "legFloors": [
+     -26,
+     -56,
+     -66
+    ],
+    "pieces": [
+     {
+      "id": "sumN",
+      "kind": "summit",
+      "leg": 1,
+      "at": [
+       -10,
+       0,
+       -296
+      ],
+      "size": [
+       20,
+       1,
+       6
+      ],
+      "why": "the summit's north slab"
+     },
+     {
+      "id": "sumS",
+      "kind": "summit",
+      "leg": 1,
+      "at": [
+       -10,
+       0,
+       -282
+      ],
+      "size": [
+       20,
+       1,
+       6
+      ],
+      "why": "the summit's south slab (the bridge lands here)"
+     },
+     {
+      "id": "sumW",
+      "kind": "summit",
+      "leg": 1,
+      "at": [
+       -17,
+       0,
+       -289
+      ],
+      "size": [
+       6,
+       1,
+       8
+      ],
+      "why": "the summit's west slab"
+     },
+     {
+      "id": "sumE",
+      "kind": "summit",
+      "leg": 1,
+      "at": [
+       -3,
+       0,
+       -289
+      ],
+      "size": [
+       6,
+       1,
+       8
+      ],
+      "why": "the summit's east slab"
+     },
+     {
+      "id": "bridge",
+      "kind": "summit",
+      "leg": 1,
+      "at": [
+       -10,
+       0,
+       -272
+      ],
+      "size": [
+       4,
+       1,
+       14
+      ],
+      "why": "the bridge's far half (z -279..-265): it falls with the summit"
+     },
+     {
+      "id": "orb00",
+      "kind": "orbit",
+      "leg": 1,
+      "size": [
+       5,
+       1,
+       5
+      ],
+      "orbit": {
+       "centre": [
+        -10,
+        -8,
+        -289
+       ],
+       "radius": 13,
+       "phase": 0,
+       "dir": 1
+      },
+      "why": "leg 1 orbit ring 1 (top -8): a summit fragment circling the spire; stand on it and it carries you"
+     },
+     {
+      "id": "orb01",
+      "kind": "orbit",
+      "leg": 1,
+      "size": [
+       5,
+       1,
+       5
+      ],
+      "orbit": {
+       "centre": [
+        -10,
+        -8,
+        -289
+       ],
+       "radius": 13,
+       "phase": 0.25,
+       "dir": 1
+      },
+      "why": "leg 1 orbit ring 1 (top -8): a summit fragment circling the spire; stand on it and it carries you"
+     },
+     {
+      "id": "orb02",
+      "kind": "orbit",
+      "leg": 1,
+      "size": [
+       5,
+       1,
+       5
+      ],
+      "orbit": {
+       "centre": [
+        -10,
+        -8,
+        -289
+       ],
+       "radius": 13,
+       "phase": 0.5,
+       "dir": 1
+      },
+      "why": "leg 1 orbit ring 1 (top -8): a summit fragment circling the spire; stand on it and it carries you"
+     },
+     {
+      "id": "orb03",
+      "kind": "orbit",
+      "leg": 1,
+      "size": [
+       5,
+       1,
+       5
+      ],
+      "orbit": {
+       "centre": [
+        -10,
+        -8,
+        -289
+       ],
+       "radius": 13,
+       "phase": 0.75,
+       "dir": 1
+      },
+      "why": "leg 1 orbit ring 1 (top -8): a summit fragment circling the spire; stand on it and it carries you"
+     },
+     {
+      "id": "orb10",
+      "kind": "orbit",
+      "leg": 1,
+      "size": [
+       5,
+       1,
+       5
+      ],
+      "orbit": {
+       "centre": [
+        -10,
+        -15,
+        -289
+       ],
+       "radius": 13,
+       "phase": 0.125,
+       "dir": -1
+      },
+      "why": "leg 1 orbit ring 2 (top -15): a summit fragment circling the spire; stand on it and it carries you"
+     },
+     {
+      "id": "orb11",
+      "kind": "orbit",
+      "leg": 1,
+      "size": [
+       5,
+       1,
+       5
+      ],
+      "orbit": {
+       "centre": [
+        -10,
+        -15,
+        -289
+       ],
+       "radius": 13,
+       "phase": 0.375,
+       "dir": -1
+      },
+      "why": "leg 1 orbit ring 2 (top -15): a summit fragment circling the spire; stand on it and it carries you"
+     },
+     {
+      "id": "orb12",
+      "kind": "orbit",
+      "leg": 1,
+      "size": [
+       5,
+       1,
+       5
+      ],
+      "orbit": {
+       "centre": [
+        -10,
+        -15,
+        -289
+       ],
+       "radius": 13,
+       "phase": 0.625,
+       "dir": -1
+      },
+      "why": "leg 1 orbit ring 2 (top -15): a summit fragment circling the spire; stand on it and it carries you"
+     },
+     {
+      "id": "orb13",
+      "kind": "orbit",
+      "leg": 1,
+      "size": [
+       5,
+       1,
+       5
+      ],
+      "orbit": {
+       "centre": [
+        -10,
+        -15,
+        -289
+       ],
+       "radius": 13,
+       "phase": 0.875,
+       "dir": -1
+      },
+      "why": "leg 1 orbit ring 2 (top -15): a summit fragment circling the spire; stand on it and it carries you"
+     },
+     {
+      "id": "orb20",
+      "kind": "orbit",
+      "leg": 1,
+      "size": [
+       5,
+       1,
+       5
+      ],
+      "orbit": {
+       "centre": [
+        -10,
+        -22,
+        -289
+       ],
+       "radius": 13,
+       "phase": 0.25,
+       "dir": 1
+      },
+      "why": "leg 1 orbit ring 3 (top -22): a summit fragment circling the spire; stand on it and it carries you"
+     },
+     {
+      "id": "orb21",
+      "kind": "orbit",
+      "leg": 1,
+      "size": [
+       5,
+       1,
+       5
+      ],
+      "orbit": {
+       "centre": [
+        -10,
+        -22,
+        -289
+       ],
+       "radius": 13,
+       "phase": 0.5,
+       "dir": 1
+      },
+      "why": "leg 1 orbit ring 3 (top -22): a summit fragment circling the spire; stand on it and it carries you"
+     },
+     {
+      "id": "orb22",
+      "kind": "orbit",
+      "leg": 1,
+      "size": [
+       5,
+       1,
+       5
+      ],
+      "orbit": {
+       "centre": [
+        -10,
+        -22,
+        -289
+       ],
+       "radius": 13,
+       "phase": 0.75,
+       "dir": 1
+      },
+      "why": "leg 1 orbit ring 3 (top -22): a summit fragment circling the spire; stand on it and it carries you"
+     },
+     {
+      "id": "orb23",
+      "kind": "orbit",
+      "leg": 1,
+      "size": [
+       5,
+       1,
+       5
+      ],
+      "orbit": {
+       "centre": [
+        -10,
+        -22,
+        -289
+       ],
+       "radius": 13,
+       "phase": 1,
+       "dir": 1
+      },
+      "why": "leg 1 orbit ring 3 (top -22): a summit fragment circling the spire; stand on it and it carries you"
+     },
+     {
+      "id": "gal0",
+      "kind": "gallery",
+      "leg": 2,
+      "at": [
+       -10,
+       -30,
+       -279
+      ],
+      "size": [
+       6,
+       1,
+       4
+      ],
+      "why": "leg 2 gallery slab 1 (top -30): the broken spiral; the Crown's beam drops the one you head for"
+     },
+     {
+      "id": "gal1",
+      "kind": "gallery",
+      "leg": 2,
+      "at": [
+       0,
+       -33,
+       -289
+      ],
+      "size": [
+       4,
+       1,
+       6
+      ],
+      "why": "leg 2 gallery slab 2 (top -33): the broken spiral; the Crown's beam drops the one you head for"
+     },
+     {
+      "id": "gal2",
+      "kind": "gallery",
+      "leg": 2,
+      "at": [
+       -10,
+       -36,
+       -299
+      ],
+      "size": [
+       6,
+       1,
+       4
+      ],
+      "why": "leg 2 gallery slab 3 (top -36): the broken spiral; the Crown's beam drops the one you head for"
+     },
+     {
+      "id": "gal3",
+      "kind": "gallery",
+      "leg": 2,
+      "at": [
+       -20,
+       -39,
+       -289
+      ],
+      "size": [
+       4,
+       1,
+       6
+      ],
+      "why": "leg 2 gallery slab 4 (top -39): the broken spiral; the Crown's beam drops the one you head for"
+     },
+     {
+      "id": "gal4",
+      "kind": "gallery",
+      "leg": 2,
+      "at": [
+       -10,
+       -42,
+       -279
+      ],
+      "size": [
+       6,
+       1,
+       4
+      ],
+      "why": "leg 2 gallery slab 5 (top -42): the broken spiral; the Crown's beam drops the one you head for"
+     },
+     {
+      "id": "gal5",
+      "kind": "gallery",
+      "leg": 2,
+      "at": [
+       0,
+       -45,
+       -289
+      ],
+      "size": [
+       4,
+       1,
+       6
+      ],
+      "why": "leg 2 gallery slab 6 (top -45): the broken spiral; the Crown's beam drops the one you head for"
+     },
+     {
+      "id": "gal6",
+      "kind": "gallery",
+      "leg": 2,
+      "at": [
+       -10,
+       -48,
+       -299
+      ],
+      "size": [
+       6,
+       1,
+       4
+      ],
+      "why": "leg 2 gallery slab 7 (top -48): the broken spiral; the Crown's beam drops the one you head for"
+     },
+     {
+      "id": "gal7",
+      "kind": "gallery",
+      "leg": 2,
+      "at": [
+       -20,
+       -51,
+       -289
+      ],
+      "size": [
+       4,
+       1,
+       6
+      ],
+      "why": "leg 2 gallery slab 8 (top -51): the broken spiral; the Crown's beam drops the one you head for"
+     },
+     {
+      "id": "plN1",
+      "kind": "plaza",
+      "leg": 3,
+      "at": [
+       -19,
+       -60,
+       -303
+      ],
+      "size": [
+       18,
+       1,
+       8
+      ],
+      "why": "leg 3 plaza sector: drops into the chasm one by one"
+     },
+     {
+      "id": "plN2",
+      "kind": "plaza",
+      "leg": 3,
+      "at": [
+       -1,
+       -60,
+       -303
+      ],
+      "size": [
+       18,
+       1,
+       8
+      ],
+      "why": "leg 3 plaza sector: drops into the chasm one by one"
+     },
+     {
+      "id": "plS1",
+      "kind": "plaza",
+      "leg": 3,
+      "at": [
+       -19,
+       -60,
+       -275
+      ],
+      "size": [
+       18,
+       1,
+       8
+      ],
+      "why": "leg 3 plaza sector: drops into the chasm one by one"
+     },
+     {
+      "id": "plS2",
+      "kind": "plaza",
+      "leg": 3,
+      "at": [
+       -1,
+       -60,
+       -275
+      ],
+      "size": [
+       18,
+       1,
+       8
+      ],
+      "why": "leg 3 plaza sector: drops into the chasm one by one"
+     },
+     {
+      "id": "plW1",
+      "kind": "plaza",
+      "leg": 3,
+      "at": [
+       -24,
+       -60,
+       -294
+      ],
+      "size": [
+       8,
+       1,
+       10
+      ],
+      "why": "leg 3 plaza sector: drops into the chasm one by one"
+     },
+     {
+      "id": "plW2",
+      "kind": "plaza",
+      "leg": 3,
+      "at": [
+       -24,
+       -60,
+       -284
+      ],
+      "size": [
+       8,
+       1,
+       10
+      ],
+      "why": "leg 3 plaza sector: drops into the chasm one by one"
+     },
+     {
+      "id": "plE1",
+      "kind": "plaza",
+      "leg": 3,
+      "at": [
+       4,
+       -60,
+       -294
+      ],
+      "size": [
+       8,
+       1,
+       10
+      ],
+      "why": "leg 3 plaza sector: drops into the chasm one by one"
+     },
+     {
+      "id": "plE2",
+      "kind": "plaza",
+      "leg": 3,
+      "at": [
+       4,
+       -60,
+       -284
+      ],
+      "size": [
+       8,
+       1,
+       10
+      ],
+      "why": "leg 3 plaza sector: drops into the chasm one by one"
+     }
+    ],
+    "_why": "builder C: the descent's places (Core/Orbit37.cs builds them as the world layer crown37Spire); timings and speeds are design.n37.crown37's"
+   },
+   "frames36": {
+    "mid": [
+     -10,
+     0,
+     -262,
+     0,
+     -0.406
+    ],
+    "exit": [
+     -22,
+     -27,
+     -279,
+     -50.194,
+     -0.6
+    ]
+   }
+  }
+ ],
+ "doors": [
+  {
+   "id": "d1",
+   "between": [
+    "v1",
+    "v2"
+   ],
+   "rect": [
+    -12,
+    89,
+    -8,
+    93
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  },
+  {
+   "id": "d2",
+   "between": [
+    "v2",
+    "v3"
+   ],
+   "rect": [
+    -12,
+    47,
+    -8,
+    51
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  },
+  {
+   "id": "d3",
+   "between": [
+    "v3",
+    "v4"
+   ],
+   "rect": [
+    -12,
+    9,
+    -8,
+    13
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  },
+  {
+   "id": "d4",
+   "between": [
+    "v4",
+    "v5"
+   ],
+   "rect": [
+    -12,
+    -30,
+    -8,
+    -26
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  },
+  {
+   "id": "d5",
+   "between": [
+    "v5",
+    "v6"
+   ],
+   "rect": [
+    -12,
+    -69,
+    -8,
+    -65
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  },
+  {
+   "id": "d6",
+   "between": [
+    "v6",
+    "v7"
+   ],
+   "rect": [
+    -12,
+    -115,
+    -8,
+    -111
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  },
+  {
+   "id": "d7",
+   "between": [
+    "v7",
+    "v8"
+   ],
+   "rect": [
+    -12,
+    -154,
+    -8,
+    -150
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  },
+  {
+   "id": "d8",
+   "between": [
+    "v8",
+    "v9"
+   ],
+   "rect": [
+    -12,
+    -170,
+    -8,
+    -166
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  },
+  {
+   "id": "d9",
+   "between": [
+    "v9",
+    "v10"
+   ],
+   "rect": [
+    -12,
+    -215,
+    -8,
+    -211
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  },
+  {
+   "id": "d10",
+   "between": [
+    "v10",
+    "v11"
+   ],
+   "rect": [
+    -12,
+    -255,
+    -8,
+    -251
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  }
+ ],
+ "boxes": [
+  {
+   "zone": "v1",
+   "kind": "hull",
+   "min": [
+    -17,
+    0,
+    101
+   ],
+   "max": [
+    -13,
+    9,
+    106
+   ],
+   "job": "cover",
+   "why": "the alcove's west wall: the stand-ins are met up close, as the TORCH wants",
+   "note": "the alcove's west wall: the stand-ins are met up close, as the TORCH wants"
+  },
+  {
+   "zone": "v1",
+   "kind": "hull",
+   "min": [
+    -7,
+    0,
+    101
+   ],
+   "max": [
+    -3,
+    9,
+    106
+   ],
+   "job": "cover",
+   "why": "the alcove's east wall",
+   "note": "the alcove's east wall"
+  },
+  {
+   "zone": "v2",
+   "kind": "deck",
+   "min": [
+    -25,
+    0,
+    57
+   ],
+   "max": [
+    -19,
+    2.4,
+    83
+   ],
+   "job": "line",
+   "why": "the west AISLE (2.4 m): the spitters' stand and the high ground a jump-dash from the nave reaches",
+   "note": "the west AISLE (2.4 m): the spitters' stand and the high ground a jump-dash from the nave reaches"
+  },
+  {
+   "zone": "v2",
+   "kind": "deck",
+   "min": [
+    -1,
+    0,
+    57
+   ],
+   "max": [
+    5,
+    2.4,
+    83
+   ],
+   "job": "line",
+   "why": "the east AISLE (2.4 m): the spitters' stand and the high ground a jump-dash from the nave reaches",
+   "note": "the east AISLE (2.4 m): the spitters' stand and the high ground a jump-dash from the nave reaches"
+  },
+  {
+   "zone": "v3",
+   "kind": "hull",
+   "min": [
+    -16,
+    4,
+    20
+   ],
+   "max": [
+    -4,
+    9,
+    38
+   ],
+   "job": "line",
+   "why": "the CEILING (4 m over the takeoff; undefined m capsule): the jump-dash's apex (1.85 m) passes under it; it caps a double jump's and a jump's rise",
+   "note": "the CEILING (4 m over the takeoff; undefined m capsule): the jump-dash's apex (1.85 m) passes under it; it caps a double jump's and a jump's rise",
+   "ceiling": true
+  },
+  {
+   "zone": "v3",
+   "kind": "deck",
+   "min": [
+    -15,
+    -1,
+    14
+   ],
+   "max": [
+    -5,
+    0,
+    20
+   ],
+   "job": "line",
+   "why": "the LANDING past the gap (flush with the floor): the gate's landing solid (builder E's checker judges the jump-dash on it)",
+   "note": "the LANDING past the gap (flush with the floor): the gate's landing solid (builder E's checker judges the jump-dash on it)",
+   "gate": {
+    "id": "v3.G",
+    "verb": "dashjump",
+    "from": [
+     -10,
+     0,
+     37.1
+    ],
+    "to": [
+     -10,
+     0,
+     18
+    ],
+    "runUp": 8,
+    "gap": 17,
+    "meter": 1,
+    "why": "room v3's gate: the jump-dash, one per pad (spire38's meter)"
+   }
+  },
+  {
+   "zone": "v3",
+   "kind": "hull",
+   "min": [
+    -16,
+    -5,
+    20
+   ],
+   "max": [
+    -15,
+    4,
+    38
+   ],
+   "job": "line",
+   "why": "the west LINER over the gap (1 m thick): a dull wall that can't be ridden (noride): a wall ride is not a way across",
+   "note": "the west LINER over the gap (1 m thick): a dull wall that can't be ridden (noride): a wall ride is not a way across",
+   "noride": true
+  },
+  {
+   "zone": "v3",
+   "kind": "hull",
+   "min": [
+    -5,
+    -5,
+    20
+   ],
+   "max": [
+    -4,
+    4,
+    38
+   ],
+   "job": "line",
+   "why": "the east LINER over the gap (1 m thick): a dull wall that can't be ridden (noride): a wall ride is not a way across",
+   "note": "the east LINER over the gap (1 m thick): a dull wall that can't be ridden (noride): a wall ride is not a way across",
+   "noride": true
+  },
+  {
+   "zone": "v3",
+   "kind": "deck",
+   "min": [
+    -15,
+    -5,
+    34
+   ],
+   "max": [
+    -12,
+    -1.25,
+    37
+   ],
+   "job": "climb",
+   "why": "the recovery stair, step 1 (top -1.25 m): the way back up to the pad after a miss (each step <= 1.25 m)",
+   "note": "the recovery stair, step 1 (top -1.25 m): the way back up to the pad after a miss (each step <= 1.25 m)"
+  },
+  {
+   "zone": "v3",
+   "kind": "deck",
+   "min": [
+    -12,
+    -5,
+    34
+   ],
+   "max": [
+    -9,
+    -2.5,
+    37
+   ],
+   "job": "climb",
+   "why": "the recovery stair, step 2 (top -2.5 m): the way back up to the pad after a miss (each step <= 1.25 m)",
+   "note": "the recovery stair, step 2 (top -2.5 m): the way back up to the pad after a miss (each step <= 1.25 m)"
+  },
+  {
+   "zone": "v3",
+   "kind": "deck",
+   "min": [
+    -9,
+    -5,
+    34
+   ],
+   "max": [
+    -6,
+    -3.75,
+    37
+   ],
+   "job": "climb",
+   "why": "the recovery stair, step 3 (top -3.75 m): the way back up to the pad after a miss (each step <= 1.25 m)",
+   "note": "the recovery stair, step 3 (top -3.75 m): the way back up to the pad after a miss (each step <= 1.25 m)"
+  },
+  {
+   "zone": "v4",
+   "kind": "hull",
+   "min": [
+    -16,
+    4,
+    -19
+   ],
+   "max": [
+    -4,
+    9,
+    0
+   ],
+   "job": "line",
+   "why": "the CEILING (4 m over the takeoff; undefined m capsule): the jump-dash's apex (1.85 m) passes under it; it caps a double jump's and a jump's rise",
+   "note": "the CEILING (4 m over the takeoff; undefined m capsule): the jump-dash's apex (1.85 m) passes under it; it caps a double jump's and a jump's rise",
+   "ceiling": true
+  },
+  {
+   "zone": "v4",
+   "kind": "deck",
+   "min": [
+    -15,
+    -1,
+    -25
+   ],
+   "max": [
+    -5,
+    0,
+    -19
+   ],
+   "job": "line",
+   "why": "the LANDING past the gap (flush with the floor): the gate's landing solid (builder E's checker judges the jump-dash on it)",
+   "note": "the LANDING past the gap (flush with the floor): the gate's landing solid (builder E's checker judges the jump-dash on it)",
+   "gate": {
+    "id": "v4.G",
+    "verb": "dashjump",
+    "from": [
+     -10,
+     0,
+     -0.9
+    ],
+    "to": [
+     -10,
+     0,
+     -21
+    ],
+    "runUp": 8,
+    "gap": 18,
+    "meter": 1,
+    "why": "room v4's gate: the jump-dash, one per pad (spire38's meter)"
+   }
+  },
+  {
+   "zone": "v4",
+   "kind": "hull",
+   "min": [
+    -16,
+    -5,
+    -19
+   ],
+   "max": [
+    -15,
+    4,
+    0
+   ],
+   "job": "line",
+   "why": "the west LINER over the gap (1 m thick): a dull wall that can't be ridden (noride): a wall ride is not a way across",
+   "note": "the west LINER over the gap (1 m thick): a dull wall that can't be ridden (noride): a wall ride is not a way across",
+   "noride": true
+  },
+  {
+   "zone": "v4",
+   "kind": "hull",
+   "min": [
+    -5,
+    -5,
+    -19
+   ],
+   "max": [
+    -4,
+    4,
+    0
+   ],
+   "job": "line",
+   "why": "the east LINER over the gap (1 m thick): a dull wall that can't be ridden (noride): a wall ride is not a way across",
+   "note": "the east LINER over the gap (1 m thick): a dull wall that can't be ridden (noride): a wall ride is not a way across",
+   "noride": true
+  },
+  {
+   "zone": "v4",
+   "kind": "deck",
+   "min": [
+    -15,
+    -5,
+    -4
+   ],
+   "max": [
+    -12,
+    -1.25,
+    -1
+   ],
+   "job": "climb",
+   "why": "the recovery stair, step 1 (top -1.25 m): the way back up to the pad after a miss (each step <= 1.25 m)",
+   "note": "the recovery stair, step 1 (top -1.25 m): the way back up to the pad after a miss (each step <= 1.25 m)"
+  },
+  {
+   "zone": "v4",
+   "kind": "deck",
+   "min": [
+    -12,
+    -5,
+    -4
+   ],
+   "max": [
+    -9,
+    -2.5,
+    -1
+   ],
+   "job": "climb",
+   "why": "the recovery stair, step 2 (top -2.5 m): the way back up to the pad after a miss (each step <= 1.25 m)",
+   "note": "the recovery stair, step 2 (top -2.5 m): the way back up to the pad after a miss (each step <= 1.25 m)"
+  },
+  {
+   "zone": "v4",
+   "kind": "deck",
+   "min": [
+    -9,
+    -5,
+    -4
+   ],
+   "max": [
+    -6,
+    -3.75,
+    -1
+   ],
+   "job": "climb",
+   "why": "the recovery stair, step 3 (top -3.75 m): the way back up to the pad after a miss (each step <= 1.25 m)",
+   "note": "the recovery stair, step 3 (top -3.75 m): the way back up to the pad after a miss (each step <= 1.25 m)"
+  },
+  {
+   "zone": "v5",
+   "kind": "hull",
+   "min": [
+    -16,
+    4,
+    -58
+   ],
+   "max": [
+    -4,
+    9,
+    -39
+   ],
+   "job": "line",
+   "why": "the CEILING (4 m over the takeoff; undefined m capsule): the jump-dash's apex (1.85 m) passes under it; it caps a double jump's and a jump's rise",
+   "note": "the CEILING (4 m over the takeoff; undefined m capsule): the jump-dash's apex (1.85 m) passes under it; it caps a double jump's and a jump's rise",
+   "ceiling": true
+  },
+  {
+   "zone": "v5",
+   "kind": "deck",
+   "min": [
+    -15,
+    -1,
+    -64
+   ],
+   "max": [
+    -5,
+    0,
+    -58
+   ],
+   "job": "line",
+   "why": "the LANDING past the gap (flush with the floor): the gate's landing solid (builder E's checker judges the jump-dash on it)",
+   "note": "the LANDING past the gap (flush with the floor): the gate's landing solid (builder E's checker judges the jump-dash on it)",
+   "gate": {
+    "id": "v5.G",
+    "verb": "dashjump",
+    "from": [
+     -10,
+     0,
+     -39.9
+    ],
+    "to": [
+     -10,
+     0,
+     -60
+    ],
+    "runUp": 8,
+    "gap": 18,
+    "meter": 1,
+    "why": "room v5's gate: the jump-dash, one per pad (spire38's meter)"
+   }
+  },
+  {
+   "zone": "v5",
+   "kind": "hull",
+   "min": [
+    -16,
+    -5,
+    -58
+   ],
+   "max": [
+    -15,
+    4,
+    -39
+   ],
+   "job": "line",
+   "why": "the west LINER over the gap (1 m thick): a dull wall that can't be ridden (noride): a wall ride is not a way across",
+   "note": "the west LINER over the gap (1 m thick): a dull wall that can't be ridden (noride): a wall ride is not a way across",
+   "noride": true
+  },
+  {
+   "zone": "v5",
+   "kind": "hull",
+   "min": [
+    -5,
+    -5,
+    -58
+   ],
+   "max": [
+    -4,
+    4,
+    -39
+   ],
+   "job": "line",
+   "why": "the east LINER over the gap (1 m thick): a dull wall that can't be ridden (noride): a wall ride is not a way across",
+   "note": "the east LINER over the gap (1 m thick): a dull wall that can't be ridden (noride): a wall ride is not a way across",
+   "noride": true
+  },
+  {
+   "zone": "v5",
+   "kind": "deck",
+   "min": [
+    -15,
+    -5,
+    -43
+   ],
+   "max": [
+    -12,
+    -1.25,
+    -40
+   ],
+   "job": "climb",
+   "why": "the recovery stair, step 1 (top -1.25 m): the way back up to the pad after a miss (each step <= 1.25 m)",
+   "note": "the recovery stair, step 1 (top -1.25 m): the way back up to the pad after a miss (each step <= 1.25 m)"
+  },
+  {
+   "zone": "v5",
+   "kind": "deck",
+   "min": [
+    -12,
+    -5,
+    -43
+   ],
+   "max": [
+    -9,
+    -2.5,
+    -40
+   ],
+   "job": "climb",
+   "why": "the recovery stair, step 2 (top -2.5 m): the way back up to the pad after a miss (each step <= 1.25 m)",
+   "note": "the recovery stair, step 2 (top -2.5 m): the way back up to the pad after a miss (each step <= 1.25 m)"
+  },
+  {
+   "zone": "v5",
+   "kind": "deck",
+   "min": [
+    -9,
+    -5,
+    -43
+   ],
+   "max": [
+    -6,
+    -3.75,
+    -40
+   ],
+   "job": "climb",
+   "why": "the recovery stair, step 3 (top -3.75 m): the way back up to the pad after a miss (each step <= 1.25 m)",
+   "note": "the recovery stair, step 3 (top -3.75 m): the way back up to the pad after a miss (each step <= 1.25 m)"
+  },
+  {
+   "zone": "v6",
+   "kind": "deck",
+   "min": [
+    -27,
+    0,
+    -105
+   ],
+   "max": [
+    -21,
+    2.4,
+    -75
+   ],
+   "job": "line",
+   "why": "the west GALLERY (2.4 m): spitters' stand; a jump-dash from the dais's edge (5 m across, 0.9 m up) lands on it",
+   "note": "the west GALLERY (2.4 m): spitters' stand; a jump-dash from the dais's edge (5 m across, 0.9 m up) lands on it"
+  },
+  {
+   "zone": "v6",
+   "kind": "deck",
+   "min": [
+    1,
+    0,
+    -105
+   ],
+   "max": [
+    7,
+    2.4,
+    -75
+   ],
+   "job": "line",
+   "why": "the east GALLERY (2.4 m): spitters' stand; a jump-dash from the dais's edge (5 m across, 0.9 m up) lands on it",
+   "note": "the east GALLERY (2.4 m): spitters' stand; a jump-dash from the dais's edge (5 m across, 0.9 m up) lands on it"
+  },
+  {
+   "zone": "v6",
+   "kind": "deck",
+   "min": [
+    -16,
+    0,
+    -95
+   ],
+   "max": [
+    -4,
+    1.5,
+    -83
+   ],
+   "job": "line",
+   "why": "the DAIS (1.5 m) in the middle: the high centre to jump-dash from onto either gallery",
+   "note": "the DAIS (1.5 m) in the middle: the high centre to jump-dash from onto either gallery"
+  },
+  {
+   "zone": "v7",
+   "kind": "hull",
+   "min": [
+    -16,
+    4,
+    -143
+   ],
+   "max": [
+    -4,
+    9,
+    -124
+   ],
+   "job": "line",
+   "why": "the CEILING (4 m over the takeoff; undefined m capsule): the jump-dash's apex (1.85 m) passes under it; it caps a double jump's and a jump's rise",
+   "note": "the CEILING (4 m over the takeoff; undefined m capsule): the jump-dash's apex (1.85 m) passes under it; it caps a double jump's and a jump's rise",
+   "ceiling": true
+  },
+  {
+   "zone": "v7",
+   "kind": "deck",
+   "min": [
+    -15,
+    -1,
+    -149
+   ],
+   "max": [
+    -5,
+    0,
+    -143
+   ],
+   "job": "line",
+   "why": "the LANDING past the gap (flush with the floor): the gate's landing solid (builder E's checker judges the jump-dash on it)",
+   "note": "the LANDING past the gap (flush with the floor): the gate's landing solid (builder E's checker judges the jump-dash on it)",
+   "gate": {
+    "id": "v7.G",
+    "verb": "dashjump",
+    "from": [
+     -10,
+     0,
+     -124.9
+    ],
+    "to": [
+     -10,
+     0,
+     -145
+    ],
+    "runUp": 8,
+    "gap": 18,
+    "meter": 1,
+    "why": "room v7's gate: the jump-dash, one per pad (spire38's meter)"
+   }
+  },
+  {
+   "zone": "v7",
+   "kind": "hull",
+   "min": [
+    -16,
+    -5,
+    -143
+   ],
+   "max": [
+    -15,
+    4,
+    -124
+   ],
+   "job": "line",
+   "why": "the west LINER over the gap (1 m thick): a dull wall that can't be ridden (noride): a wall ride is not a way across",
+   "note": "the west LINER over the gap (1 m thick): a dull wall that can't be ridden (noride): a wall ride is not a way across",
+   "noride": true
+  },
+  {
+   "zone": "v7",
+   "kind": "hull",
+   "min": [
+    -5,
+    -5,
+    -143
+   ],
+   "max": [
+    -4,
+    4,
+    -124
+   ],
+   "job": "line",
+   "why": "the east LINER over the gap (1 m thick): a dull wall that can't be ridden (noride): a wall ride is not a way across",
+   "note": "the east LINER over the gap (1 m thick): a dull wall that can't be ridden (noride): a wall ride is not a way across",
+   "noride": true
+  },
+  {
+   "zone": "v7",
+   "kind": "deck",
+   "min": [
+    -15,
+    -5,
+    -128
+   ],
+   "max": [
+    -12,
+    -1.25,
+    -125
+   ],
+   "job": "climb",
+   "why": "the recovery stair, step 1 (top -1.25 m): the way back up to the pad after a miss (each step <= 1.25 m)",
+   "note": "the recovery stair, step 1 (top -1.25 m): the way back up to the pad after a miss (each step <= 1.25 m)"
+  },
+  {
+   "zone": "v7",
+   "kind": "deck",
+   "min": [
+    -12,
+    -5,
+    -128
+   ],
+   "max": [
+    -9,
+    -2.5,
+    -125
+   ],
+   "job": "climb",
+   "why": "the recovery stair, step 2 (top -2.5 m): the way back up to the pad after a miss (each step <= 1.25 m)",
+   "note": "the recovery stair, step 2 (top -2.5 m): the way back up to the pad after a miss (each step <= 1.25 m)"
+  },
+  {
+   "zone": "v7",
+   "kind": "deck",
+   "min": [
+    -9,
+    -5,
+    -128
+   ],
+   "max": [
+    -6,
+    -3.75,
+    -125
+   ],
+   "job": "climb",
+   "why": "the recovery stair, step 3 (top -3.75 m): the way back up to the pad after a miss (each step <= 1.25 m)",
+   "note": "the recovery stair, step 3 (top -3.75 m): the way back up to the pad after a miss (each step <= 1.25 m)"
+  },
+  {
+   "zone": "v9",
+   "kind": "deck",
+   "min": [
+    -22,
+    -6,
+    -185
+   ],
+   "max": [
+    -19,
+    -3.75,
+    -181
+   ],
+   "job": "climb",
+   "why": "v9 recovery stair: step 1 (top -3.75 m; each step <= 1.3 m: the way back after a missed jump)",
+   "note": "v9 recovery stair: step 1 (top -3.75 m; each step <= 1.3 m: the way back after a missed jump)"
+  },
+  {
+   "zone": "v9",
+   "kind": "deck",
+   "min": [
+    -22,
+    -6,
+    -181
+   ],
+   "max": [
+    -19,
+    -2.5,
+    -177
+   ],
+   "job": "climb",
+   "why": "v9 recovery stair: step 2 (top -2.5 m; each step <= 1.3 m: the way back after a missed jump)",
+   "note": "v9 recovery stair: step 2 (top -2.5 m; each step <= 1.3 m: the way back after a missed jump)"
+  },
+  {
+   "zone": "v9",
+   "kind": "deck",
+   "min": [
+    -22,
+    -6,
+    -177
+   ],
+   "max": [
+    -19,
+    -1.25,
+    -173
+   ],
+   "job": "climb",
+   "why": "v9 recovery stair: step 3 (top -1.25 m; each step <= 1.3 m: the way back after a missed jump)",
+   "note": "v9 recovery stair: step 3 (top -1.25 m; each step <= 1.3 m: the way back after a missed jump)"
+  },
+  {
+   "zone": "v10",
+   "kind": "deck",
+   "min": [
+    -22,
+    -6,
+    -233
+   ],
+   "max": [
+    -19,
+    -3.75,
+    -229
+   ],
+   "job": "climb",
+   "why": "v10 recovery stair: step 1 (top -3.75 m; each step <= 1.3 m: the way back after a missed jump)",
+   "note": "v10 recovery stair: step 1 (top -3.75 m; each step <= 1.3 m: the way back after a missed jump)"
+  },
+  {
+   "zone": "v10",
+   "kind": "deck",
+   "min": [
+    -22,
+    -6,
+    -229
+   ],
+   "max": [
+    -19,
+    -2.5,
+    -225
+   ],
+   "job": "climb",
+   "why": "v10 recovery stair: step 2 (top -2.5 m; each step <= 1.3 m: the way back after a missed jump)",
+   "note": "v10 recovery stair: step 2 (top -2.5 m; each step <= 1.3 m: the way back after a missed jump)"
+  },
+  {
+   "zone": "v10",
+   "kind": "deck",
+   "min": [
+    -22,
+    -6,
+    -225
+   ],
+   "max": [
+    -19,
+    -1.25,
+    -221
+   ],
+   "job": "climb",
+   "why": "v10 recovery stair: step 3 (top -1.25 m; each step <= 1.3 m: the way back after a missed jump)",
+   "note": "v10 recovery stair: step 3 (top -1.25 m; each step <= 1.3 m: the way back after a missed jump)"
+  },
+  {
+   "zone": "v11",
+   "kind": "deck",
+   "min": [
+    -12,
+    -1,
+    -265
+   ],
+   "max": [
+    -8,
+    0,
+    -255
+   ],
+   "job": "line",
+   "why": "the WALK-IN bridge's stub (the door to the chasm): leg 1's checkpoint; the rest of the bridge is the summit's and shatters",
+   "note": "the WALK-IN bridge's stub (the door to the chasm): leg 1's checkpoint; the rest of the bridge is the summit's and shatters"
+  },
+  {
+   "zone": "v11",
+   "kind": "deck",
+   "min": [
+    -14,
+    -60,
+    -293
+   ],
+   "max": [
+    -6,
+    0,
+    -285
+   ],
+   "job": "line",
+   "why": "the SPIRE's core: 8 x 8 m, 60 m tall from the plaza to the summit; every face rideable; the axis the fight descends",
+   "note": "the SPIRE's core: 8 x 8 m, 60 m tall from the plaza to the summit; every face rideable; the axis the fight descends"
+  },
+  {
+   "zone": "v11",
+   "kind": "deck",
+   "min": [
+    -25,
+    -28,
+    -282
+   ],
+   "max": [
+    -19,
+    -27,
+    -276
+   ],
+   "job": "line",
+   "why": "leg 2's CHECKPOINT: a broken buttress off the spire's SW (top -27), clear of the core: the gallery's first slabs lie in line from it (a fall in the gallery puts you back here)",
+   "note": "leg 2's CHECKPOINT: a broken buttress off the spire's SW (top -27), clear of the core: the gallery's first slabs lie in line from it (a fall in the gallery puts you back here)"
+  },
+  {
+   "zone": "v11",
+   "kind": "deck",
+   "min": [
+    -20,
+    -61,
+    -299
+   ],
+   "max": [
+    0,
+    -60,
+    -279
+   ],
+   "job": "line",
+   "why": "the PLAZA's inner square (20 x 20 m at -60): leg 3's floor and checkpoint; its outer ring is eight sectors that drop",
+   "note": "the PLAZA's inner square (20 x 20 m at -60): leg 3's floor and checkpoint; its outer ring is eight sectors that drop"
+  },
+  {
+   "zone": "v11",
+   "kind": "wall",
+   "min": [
+    -14.3,
+    -50,
+    -292
+   ],
+   "max": [
+    -14,
+    -29,
+    -286
+   ],
+   "job": "line",
+   "why": "ride panel, the core's west face: ride past a cut slab",
+   "note": "ride panel, the core's west face: ride past a cut slab",
+   "ride": true
+  },
+  {
+   "zone": "v11",
+   "kind": "wall",
+   "min": [
+    -6,
+    -50,
+    -292
+   ],
+   "max": [
+    -5.7,
+    -29,
+    -286
+   ],
+   "job": "line",
+   "why": "ride panel, the core's east face: ride past a cut slab",
+   "note": "ride panel, the core's east face: ride past a cut slab",
+   "ride": true
+  },
+  {
+   "zone": "v11",
+   "kind": "wall",
+   "min": [
+    -13,
+    -50,
+    -293.3
+   ],
+   "max": [
+    -7,
+    -29,
+    -293
+   ],
+   "job": "line",
+   "why": "ride panel, the core's north face: ride past a cut slab",
+   "note": "ride panel, the core's north face: ride past a cut slab",
+   "ride": true
+  },
+  {
+   "zone": "v11",
+   "kind": "wall",
+   "min": [
+    -13,
+    -50,
+    -285
+   ],
+   "max": [
+    -7,
+    -29,
+    -284.7
+   ],
+   "job": "line",
+   "why": "ride panel, the core's south face: ride past a cut slab",
+   "note": "ride panel, the core's south face: ride past a cut slab",
+   "ride": true
+  }
+ ],
+ "ramps": [
+  {
+   "zone": "v2",
+   "from": [
+    -22,
+    89
+   ],
+   "to": [
+    -22,
+    83
+   ],
+   "width": 3,
+   "rise": 2.4,
+   "job": "climb",
+   "why": "the west aisle's south ramp (the walkers' way up and down: 2.4 m over 6 m)",
+   "note": "the west aisle's south ramp (the walkers' way up and down: 2.4 m over 6 m)"
+  },
+  {
+   "zone": "v2",
+   "from": [
+    -22,
+    51
+   ],
+   "to": [
+    -22,
+    57
+   ],
+   "width": 3,
+   "rise": 2.4,
+   "job": "climb",
+   "why": "the west aisle's north ramp (the walkers' way down to the exit end)",
+   "note": "the west aisle's north ramp (the walkers' way down to the exit end)"
+  },
+  {
+   "zone": "v2",
+   "from": [
+    2,
+    89
+   ],
+   "to": [
+    2,
+    83
+   ],
+   "width": 3,
+   "rise": 2.4,
+   "job": "climb",
+   "why": "the east aisle's south ramp (the walkers' way up and down: 2.4 m over 6 m)",
+   "note": "the east aisle's south ramp (the walkers' way up and down: 2.4 m over 6 m)"
+  },
+  {
+   "zone": "v2",
+   "from": [
+    2,
+    51
+   ],
+   "to": [
+    2,
+    57
+   ],
+   "width": 3,
+   "rise": 2.4,
+   "job": "climb",
+   "why": "the east aisle's north ramp (the walkers' way down to the exit end)",
+   "note": "the east aisle's north ramp (the walkers' way down to the exit end)"
+  },
+  {
+   "zone": "v6",
+   "from": [
+    -24,
+    -69
+   ],
+   "to": [
+    -24,
+    -75
+   ],
+   "width": 3,
+   "rise": 2.4,
+   "job": "climb",
+   "why": "the west gallery's south ramp (the walkers' way up: 2.4 m over 6 m)",
+   "note": "the west gallery's south ramp (the walkers' way up: 2.4 m over 6 m)"
+  },
+  {
+   "zone": "v6",
+   "from": [
+    -24,
+    -111
+   ],
+   "to": [
+    -24,
+    -105
+   ],
+   "width": 3,
+   "rise": 2.4,
+   "job": "climb",
+   "why": "the west gallery's north ramp (the walkers' way down to the exit end)",
+   "note": "the west gallery's north ramp (the walkers' way down to the exit end)"
+  },
+  {
+   "zone": "v6",
+   "from": [
+    4,
+    -69
+   ],
+   "to": [
+    4,
+    -75
+   ],
+   "width": 3,
+   "rise": 2.4,
+   "job": "climb",
+   "why": "the east gallery's south ramp (the walkers' way up: 2.4 m over 6 m)",
+   "note": "the east gallery's south ramp (the walkers' way up: 2.4 m over 6 m)"
+  },
+  {
+   "zone": "v6",
+   "from": [
+    4,
+    -111
+   ],
+   "to": [
+    4,
+    -105
+   ],
+   "width": 3,
+   "rise": 2.4,
+   "job": "climb",
+   "why": "the east gallery's north ramp (the walkers' way down to the exit end)",
+   "note": "the east gallery's north ramp (the walkers' way down to the exit end)"
+  },
+  {
+   "zone": "v6",
+   "from": [
+    -10,
+    -79
+   ],
+   "to": [
+    -10,
+    -83
+   ],
+   "width": 4,
+   "rise": 1.5,
+   "job": "climb",
+   "why": "the dais's south ramp (1.5 m over 4 m: the walkers' way up)",
+   "note": "the dais's south ramp (1.5 m over 4 m: the walkers' way up)"
+  },
+  {
+   "zone": "v6",
+   "from": [
+    -10,
+    -99
+   ],
+   "to": [
+    -10,
+    -95
+   ],
+   "width": 4,
+   "rise": 1.5,
+   "job": "climb",
+   "why": "the dais's north ramp",
+   "note": "the dais's north ramp"
+  }
+ ],
+ "pads": [],
+ "grapple": [],
+ "pits": [
+  {
+   "zone": "v3",
+   "rect": [
+    -16,
+    20,
+    -4,
+    37
+   ],
+   "floorY": -5,
+   "job": "hazard",
+   "why": "the GAP, 17 m (a jump-dash crosses; nothing else the player owns here does); a dry pit, a miss costs the stair's climb back to the pad",
+   "note": "the GAP, 17 m (a jump-dash crosses; nothing else the player owns here does); a dry pit, a miss costs the stair's climb back to the pad"
+  },
+  {
+   "zone": "v4",
+   "rect": [
+    -16,
+    -19,
+    -4,
+    -1
+   ],
+   "floorY": -5,
+   "job": "hazard",
+   "why": "the GAP, 18 m (a jump-dash crosses; nothing else the player owns here does); a dry pit, a miss costs the stair's climb back to the pad",
+   "note": "the GAP, 18 m (a jump-dash crosses; nothing else the player owns here does); a dry pit, a miss costs the stair's climb back to the pad"
+  },
+  {
+   "zone": "v5",
+   "rect": [
+    -16,
+    -58,
+    -4,
+    -40
+   ],
+   "floorY": -5,
+   "job": "hazard",
+   "why": "the GAP, 18 m (a jump-dash crosses; nothing else the player owns here does); a dry pit, a miss costs the stair's climb back to the pad",
+   "note": "the GAP, 18 m (a jump-dash crosses; nothing else the player owns here does); a dry pit, a miss costs the stair's climb back to the pad"
+  },
+  {
+   "zone": "v7",
+   "rect": [
+    -16,
+    -143,
+    -4,
+    -125
+   ],
+   "floorY": -5,
+   "job": "hazard",
+   "why": "the GAP, 18 m (a jump-dash crosses; nothing else the player owns here does); a dry pit, a miss costs the stair's climb back to the pad",
+   "note": "the GAP, 18 m (a jump-dash crosses; nothing else the player owns here does); a dry pit, a miss costs the stair's climb back to the pad"
+  },
+  {
+   "zone": "v9",
+   "rect": [
+    -22,
+    -208,
+    2,
+    -173
+   ],
+   "floorY": -5,
+   "job": "hazard",
+   "why": "the FALL: a 35 m pit (5 m deep) crossed only on the two falling stones; a miss costs the stair's climb, never health",
+   "note": "the FALL: a 35 m pit (5 m deep) crossed only on the two falling stones; a miss costs the stair's climb, never health"
+  },
+  {
+   "zone": "v10",
+   "rect": [
+    -22,
+    -231,
+    2,
+    -221
+   ],
+   "floorY": -5,
+   "job": "hazard",
+   "why": "the RING's gap: 10 m (a run jump falls short; the jump-dash through the ring clears it); a miss costs the stair's climb",
+   "note": "the RING's gap: 10 m (a run jump falls short; the jump-dash through the ring clears it); a miss costs the stair's climb"
+  },
+  {
+   "zone": "v11",
+   "rect": [
+    -44,
+    -323,
+    24,
+    -255
+   ],
+   "floorY": -74,
+   "job": "hazard",
+   "why": "THE CHASM: the spire stands in a 74 m deep pit; there is no floor but the spire's pieces (a fall is caught by the leg's floor rule: back to its checkpoint, -20 HP)",
+   "note": "THE CHASM: the spire stands in a 74 m deep pit; there is no floor but the spire's pieces (a fall is caught by the leg's floor rule: back to its checkpoint, -20 HP)"
+  }
+ ],
+ "tunnels": [],
+ "lights": [
+  {
+   "id": "v1-L1",
+   "room": "v1",
+   "kind": "ceiling",
+   "at": [
+    -10,
+    8.95,
+    109
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    2,
+    0.1
+   ],
+   "color": "white",
+   "range": 8,
+   "intensity": 1.1
+  },
+  {
+   "id": "v1-L2",
+   "room": "v1",
+   "kind": "ceiling",
+   "at": [
+    -10,
+    8.95,
+    103.5
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    2,
+    0.1
+   ],
+   "color": "amber",
+   "range": 7,
+   "intensity": 1
+  },
+  {
+   "id": "v1-L3",
+   "room": "v1",
+   "kind": "pool",
+   "at": [
+    -10,
+    0.025,
+    95.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.5,
+    2.5,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.6
+  },
+  {
+   "id": "v2-L1",
+   "room": "v2",
+   "kind": "ceiling",
+   "at": [
+    -10,
+    13.95,
+    81
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 12,
+   "intensity": 1.2
+  },
+  {
+   "id": "v2-L2",
+   "room": "v2",
+   "kind": "ceiling",
+   "at": [
+    -10,
+    13.95,
+    69
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 12,
+   "intensity": 1.2
+  },
+  {
+   "id": "v2-L3",
+   "room": "v2",
+   "kind": "ceiling",
+   "at": [
+    -10,
+    13.95,
+    57
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 12,
+   "intensity": 1.2
+  },
+  {
+   "id": "v2-L4",
+   "room": "v2",
+   "kind": "wall",
+   "at": [
+    -24.95,
+    3.4,
+    70
+   ],
+   "normal": [
+    1,
+    0,
+    0
+   ],
+   "size": [
+    24,
+    0.2,
+    0.1
+   ],
+   "color": "amber",
+   "range": 8,
+   "intensity": 1
+  },
+  {
+   "id": "v2-L5",
+   "room": "v2",
+   "kind": "wall",
+   "at": [
+    4.95,
+    3.4,
+    70
+   ],
+   "normal": [
+    -1,
+    0,
+    0
+   ],
+   "size": [
+    24,
+    0.2,
+    0.1
+   ],
+   "color": "white",
+   "range": 8,
+   "intensity": 1
+  },
+  {
+   "id": "v2-L6",
+   "room": "v2",
+   "kind": "pool",
+   "at": [
+    -10,
+    0.025,
+    53
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.5,
+    2.5,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.6
+  },
+  {
+   "id": "v3-L1",
+   "room": "v3",
+   "kind": "pool",
+   "at": [
+    -10,
+    0.025,
+    41
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    4,
+    4,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.5
+  },
+  {
+   "id": "v3-L2",
+   "room": "v3",
+   "kind": "ceiling",
+   "at": [
+    -10,
+    3.95,
+    36.5
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    11,
+    0.4,
+    0.1
+   ],
+   "color": "white",
+   "range": 6,
+   "intensity": 0.9
+  },
+  {
+   "id": "v3-L3",
+   "room": "v3",
+   "kind": "pool",
+   "at": [
+    -10,
+    0.025,
+    15.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.5,
+    2.5,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.6
+  },
+  {
+   "id": "v3-L4",
+   "room": "v3",
+   "kind": "ceiling",
+   "at": [
+    -10,
+    8.95,
+    43
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 9,
+   "intensity": 1
+  },
+  {
+   "id": "v4-L1",
+   "room": "v4",
+   "kind": "pool",
+   "at": [
+    -10,
+    0.025,
+    3
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    4,
+    4,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.5
+  },
+  {
+   "id": "v4-L2",
+   "room": "v4",
+   "kind": "ceiling",
+   "at": [
+    -10,
+    3.95,
+    -1.5
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    11,
+    0.4,
+    0.1
+   ],
+   "color": "white",
+   "range": 6,
+   "intensity": 0.9
+  },
+  {
+   "id": "v4-L3",
+   "room": "v4",
+   "kind": "pool",
+   "at": [
+    -10,
+    0.025,
+    -23.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.5,
+    2.5,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.6
+  },
+  {
+   "id": "v4-L4",
+   "room": "v4",
+   "kind": "ceiling",
+   "at": [
+    -10,
+    8.95,
+    5
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 9,
+   "intensity": 1
+  },
+  {
+   "id": "v5-L1",
+   "room": "v5",
+   "kind": "pool",
+   "at": [
+    -10,
+    0.025,
+    -36
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    4,
+    4,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.5
+  },
+  {
+   "id": "v5-L2",
+   "room": "v5",
+   "kind": "ceiling",
+   "at": [
+    -10,
+    3.95,
+    -40.5
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    11,
+    0.4,
+    0.1
+   ],
+   "color": "white",
+   "range": 6,
+   "intensity": 0.9
+  },
+  {
+   "id": "v5-L3",
+   "room": "v5",
+   "kind": "pool",
+   "at": [
+    -10,
+    0.025,
+    -62.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.5,
+    2.5,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.6
+  },
+  {
+   "id": "v5-L4",
+   "room": "v5",
+   "kind": "ceiling",
+   "at": [
+    -10,
+    8.95,
+    -34
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 9,
+   "intensity": 1
+  },
+  {
+   "id": "v6-L1",
+   "room": "v6",
+   "kind": "ceiling",
+   "at": [
+    -10,
+    15.95,
+    -89
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    6,
+    6,
+    0.1
+   ],
+   "color": "white",
+   "range": 14,
+   "intensity": 1.3
+  },
+  {
+   "id": "v6-L2",
+   "room": "v6",
+   "kind": "ceiling",
+   "at": [
+    -24,
+    15.95,
+    -90
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    10,
+    0.1
+   ],
+   "color": "amber",
+   "range": 10,
+   "intensity": 1
+  },
+  {
+   "id": "v6-L3",
+   "room": "v6",
+   "kind": "ceiling",
+   "at": [
+    4,
+    15.95,
+    -90
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    10,
+    0.1
+   ],
+   "color": "white",
+   "range": 10,
+   "intensity": 1
+  },
+  {
+   "id": "v6-L4",
+   "room": "v6",
+   "kind": "pool",
+   "at": [
+    -10,
+    0.025,
+    -109
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.5,
+    2.5,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.6
+  },
+  {
+   "id": "v7-L1",
+   "room": "v7",
+   "kind": "pool",
+   "at": [
+    -10,
+    0.025,
+    -121
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    4,
+    4,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.5
+  },
+  {
+   "id": "v7-L2",
+   "room": "v7",
+   "kind": "ceiling",
+   "at": [
+    -10,
+    3.95,
+    -125.5
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    11,
+    0.4,
+    0.1
+   ],
+   "color": "white",
+   "range": 6,
+   "intensity": 0.9
+  },
+  {
+   "id": "v7-L3",
+   "room": "v7",
+   "kind": "pool",
+   "at": [
+    -10,
+    0.025,
+    -147.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.5,
+    2.5,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.6
+  },
+  {
+   "id": "v7-L4",
+   "room": "v7",
+   "kind": "ceiling",
+   "at": [
+    -10,
+    8.95,
+    -119
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 9,
+   "intensity": 1
+  },
+  {
+   "id": "v8-L1",
+   "room": "v8",
+   "kind": "ceiling",
+   "at": [
+    -10,
+    5.95,
+    -160
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 8,
+   "intensity": 1
+  },
+  {
+   "id": "v8-L2",
+   "room": "v8",
+   "kind": "pool",
+   "at": [
+    -10,
+    0.025,
+    -164.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2,
+    2,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 6,
+   "intensity": 1.4
+  },
+  {
+   "id": "v9-L1",
+   "room": "v9",
+   "kind": "pool",
+   "at": [
+    -10,
+    0.025,
+    -171.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.5,
+    2.5,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 6,
+   "intensity": 1.4
+  },
+  {
+   "id": "v9-L2",
+   "room": "v9",
+   "kind": "pool",
+   "at": [
+    -10,
+    0.025,
+    -209.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.5,
+    2.5,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.6
+  },
+  {
+   "id": "v9-L3",
+   "room": "v9",
+   "kind": "wall",
+   "at": [
+    -21.95,
+    1.6,
+    -190
+   ],
+   "normal": [
+    1,
+    0,
+    0
+   ],
+   "size": [
+    30,
+    0.2,
+    0.1
+   ],
+   "color": "amber",
+   "range": 8,
+   "intensity": 1
+  },
+  {
+   "id": "v9-L4",
+   "room": "v9",
+   "kind": "wall",
+   "at": [
+    1.95,
+    1.6,
+    -190
+   ],
+   "normal": [
+    -1,
+    0,
+    0
+   ],
+   "size": [
+    30,
+    0.2,
+    0.1
+   ],
+   "color": "white",
+   "range": 8,
+   "intensity": 1
+  },
+  {
+   "id": "v10-L1",
+   "room": "v10",
+   "kind": "pool",
+   "at": [
+    -10,
+    0.025,
+    -218.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.5,
+    2.5,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 6,
+   "intensity": 1.4
+  },
+  {
+   "id": "v10-L2",
+   "room": "v10",
+   "kind": "pool",
+   "at": [
+    -10,
+    0.025,
+    -248
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.5,
+    2.5,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.6
+  },
+  {
+   "id": "v10-L3",
+   "room": "v10",
+   "kind": "wall",
+   "at": [
+    -21.95,
+    1.6,
+    -233
+   ],
+   "normal": [
+    1,
+    0,
+    0
+   ],
+   "size": [
+    30,
+    0.2,
+    0.1
+   ],
+   "color": "amber",
+   "range": 8,
+   "intensity": 1
+  },
+  {
+   "id": "v10-L4",
+   "room": "v10",
+   "kind": "wall",
+   "at": [
+    1.95,
+    1.6,
+    -233
+   ],
+   "normal": [
+    -1,
+    0,
+    0
+   ],
+   "size": [
+    30,
+    0.2,
+    0.1
+   ],
+   "color": "white",
+   "range": 8,
+   "intensity": 1
+  },
+  {
+   "id": "v11-L1",
+   "room": "v11",
+   "kind": "pool",
+   "at": [
+    -10,
+    0.025,
+    -259
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 8,
+   "intensity": 1.6
+  },
+  {
+   "id": "v11-L2",
+   "room": "v11",
+   "kind": "pool",
+   "at": [
+    -22,
+    -26.975,
+    -279
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.4,
+    2.4,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 8,
+   "intensity": 1.6
+  },
+  {
+   "id": "v11-L3",
+   "room": "v11",
+   "kind": "pool",
+   "at": [
+    -10,
+    -59.975,
+    -281
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 10,
+   "intensity": 1.8
+  }
+ ],
+ "props": [
+  {
+   "id": "v1-P1",
+   "room": "v1",
+   "kind": "weaponPickup",
+   "at": [
+    -10,
+    1,
+    109
+   ],
+   "size": [
+    0.6,
+    0.6,
+    0.6
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "pickup": true,
+   "job": "reward",
+   "why": "the TORCH on the axis, in view from the spawn: walk onto it (the level's weapon, VERBS row 33)",
+   "weapon": "torch"
+  },
+  {
+   "id": "v2-P1",
+   "room": "v2",
+   "kind": "pillar",
+   "at": [
+    -15,
+    7,
+    77
+   ],
+   "size": [
+    1.6,
+    14,
+    1.6
+   ],
+   "yawDeg": 0,
+   "collider": true,
+   "job": "cover",
+   "why": "a nave PILLAR (west, lz 12): cover to break a spitter's line, floor to roof"
+  },
+  {
+   "id": "v2-P2",
+   "room": "v2",
+   "kind": "pillar",
+   "at": [
+    -15,
+    7,
+    65
+   ],
+   "size": [
+    1.6,
+    14,
+    1.6
+   ],
+   "yawDeg": 0,
+   "collider": true,
+   "job": "cover",
+   "why": "a nave PILLAR (west, lz 24): cover to break a spitter's line, floor to roof"
+  },
+  {
+   "id": "v2-P3",
+   "room": "v2",
+   "kind": "pillar",
+   "at": [
+    -5,
+    7,
+    77
+   ],
+   "size": [
+    1.6,
+    14,
+    1.6
+   ],
+   "yawDeg": 0,
+   "collider": true,
+   "job": "cover",
+   "why": "a nave PILLAR (east, lz 12): cover to break a spitter's line, floor to roof"
+  },
+  {
+   "id": "v2-P4",
+   "room": "v2",
+   "kind": "pillar",
+   "at": [
+    -5,
+    7,
+    65
+   ],
+   "size": [
+    1.6,
+    14,
+    1.6
+   ],
+   "yawDeg": 0,
+   "collider": true,
+   "job": "cover",
+   "why": "a nave PILLAR (east, lz 24): cover to break a spitter's line, floor to roof"
+  },
+  {
+   "id": "v2-P5",
+   "room": "v2",
+   "kind": "healthPickup",
+   "at": [
+    2,
+    3.3,
+    59
+   ],
+   "size": [
+    0.6,
+    0.6,
+    0.6
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "pickup": true,
+   "job": "reward",
+   "why": "the high ground pays health: the east aisle's north end"
+  },
+  {
+   "id": "v6-P1",
+   "room": "v6",
+   "kind": "pillar",
+   "at": [
+    -18,
+    8,
+    -75
+   ],
+   "size": [
+    1.8,
+    16,
+    1.8
+   ],
+   "yawDeg": 0,
+   "collider": true,
+   "job": "cover",
+   "why": "a CHOIR pillar (west, lz 6): cover off the dais's line, floor to roof"
+  },
+  {
+   "id": "v6-P2",
+   "room": "v6",
+   "kind": "pillar",
+   "at": [
+    -18,
+    8,
+    -105
+   ],
+   "size": [
+    1.8,
+    16,
+    1.8
+   ],
+   "yawDeg": 0,
+   "collider": true,
+   "job": "cover",
+   "why": "a CHOIR pillar (west, lz 36): cover off the dais's line, floor to roof"
+  },
+  {
+   "id": "v6-P3",
+   "room": "v6",
+   "kind": "pillar",
+   "at": [
+    -2,
+    8,
+    -75
+   ],
+   "size": [
+    1.8,
+    16,
+    1.8
+   ],
+   "yawDeg": 0,
+   "collider": true,
+   "job": "cover",
+   "why": "a CHOIR pillar (east, lz 6): cover off the dais's line, floor to roof"
+  },
+  {
+   "id": "v6-P4",
+   "room": "v6",
+   "kind": "pillar",
+   "at": [
+    -2,
+    8,
+    -105
+   ],
+   "size": [
+    1.8,
+    16,
+    1.8
+   ],
+   "yawDeg": 0,
+   "collider": true,
+   "job": "cover",
+   "why": "a CHOIR pillar (east, lz 36): cover off the dais's line, floor to roof"
+  },
+  {
+   "id": "v6-P5",
+   "room": "v6",
+   "kind": "healthPickup",
+   "at": [
+    -10,
+    2.4,
+    -89
+   ],
+   "size": [
+    0.6,
+    0.6,
+    0.6
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "pickup": true,
+   "job": "reward",
+   "why": "the dais pays health: the centre you fight from"
+  },
+  {
+   "id": "v8-P1",
+   "room": "v8",
+   "kind": "healthPickup",
+   "at": [
+    -10,
+    0.9,
+    -160
+   ],
+   "size": [
+    0.6,
+    0.6,
+    0.6
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "pickup": true,
+   "job": "reward",
+   "why": "the last rest before FALLING STONES, THE RING and THE CROWN: full health"
+  }
+ ],
+ "surfaces": [],
+ "gates38": {
+  "_why": "builder C2: every gate in the level (the landing solids' `gate` tags), for builder E's checker and the report",
+  "list": [
+   {
+    "id": "v3.G",
+    "verb": "dashjump",
+    "from": [
+     -10,
+     0,
+     37.1
+    ],
+    "to": [
+     -10,
+     0,
+     18
+    ],
+    "runUp": 8,
+    "gap": 17,
+    "meter": 1,
+    "why": "room v3's gate: the jump-dash, one per pad (spire38's meter)"
+   },
+   {
+    "id": "v4.G",
+    "verb": "dashjump",
+    "from": [
+     -10,
+     0,
+     -0.9
+    ],
+    "to": [
+     -10,
+     0,
+     -21
+    ],
+    "runUp": 8,
+    "gap": 18,
+    "meter": 1,
+    "why": "room v4's gate: the jump-dash, one per pad (spire38's meter)"
+   },
+   {
+    "id": "v5.G",
+    "verb": "dashjump",
+    "from": [
+     -10,
+     0,
+     -39.9
+    ],
+    "to": [
+     -10,
+     0,
+     -60
+    ],
+    "runUp": 8,
+    "gap": 18,
+    "meter": 1,
+    "why": "room v5's gate: the jump-dash, one per pad (spire38's meter)"
+   },
+   {
+    "id": "v7.G",
+    "verb": "dashjump",
+    "from": [
+     -10,
+     0,
+     -124.9
+    ],
+    "to": [
+     -10,
+     0,
+     -145
+    ],
+    "runUp": 8,
+    "gap": 18,
+    "meter": 1,
+    "why": "room v7's gate: the jump-dash, one per pad (spire38's meter)"
+   }
+  ]
+ },
+ "owns38": [
+  "jump",
+  "double",
+  "dash",
+  "slide",
+  "ride",
+  "walljump"
+ ],
+ "owns38_why": "builder C2: the gates are all in flight38 rooms: no boost (LIMIT pistolOnly) and no grapple (spire38 meter.noHook); the shockwave is off game-wide (shockwaveOff25)"
+}

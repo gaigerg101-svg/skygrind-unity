@@ -1,0 +1,9 @@
+# node Tools/night/gen-slots.cjs --level foundry --cross-n65 --slots=latest
+# sha 00638946; dirty: ?? Tools/night/gen-slots.cjs ?? Tools/night/levels67.json ?? Tools/night/n67-a1.cjs 
+# start 2026-10-24 10:51:40
+gen-n65-foundry.cjs --slots=latest --out=<a>: exit 0; openings: C:/Users/gaige/AppData/Local/Temp/gen-slots-cross-xXiz4e/n65/openings65.json a2 held, a3 ambushed, a4 held, a5 held, b1 ambushed, a8 held | gen-n65-foundry: Design/levels/n52/foundry.plan.json -> C:/Users/gaige/AppData/Local/Temp/gen-slots-cross-xXiz4e/n65/foundry.plan.json (slots latest; rebuilt: a2, a3, a4, a5, b1, a8); every other room, door, piece and key n52's bit for bit
+gen-slots.cjs --level foundry --slots=latest --out=<b>: exit 0; openings: C:/Users/gaige/AppData/Local/Temp/gen-slots-cross-xXiz4e/slots/openings65.json foundry a2 held, a3 ambushed, a4 held, a5 held, b1 ambushed, a8 held (seed none) | gen-slots --level foundry: Design/levels/n52/foundry.plan.json -> C:/Users/gaige/AppData/Local/Temp/gen-slots-cross-xXiz4e/slots/foundry.plan.json (slots latest; rebuilt: a2, a3, a4, a5, b1, a8); every other room, door, piece an
+PASS level 1 --slots=latest: the plans are byte for byte the same (182070 / 182070 chars; sha256 8ba012fa5c42edc5 / 8ba012fa5c42edc5)
+PASS level 1 --slots=latest: openings65.json the same ({"a2":"held","a3":"ambushed","a4":"held","a5":"held","b1":"ambushed","a8":"held"})
+gen-slots --cross-n65 --slots=latest: all PASS
+# exit 0 at 10:51:40

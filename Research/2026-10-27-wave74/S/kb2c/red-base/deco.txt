@@ -1,0 +1,4 @@
+# command: L67=kiln node Tools/night/n70-deco.cjs kb2c  --file Design/levels/n67/kiln/rooms-base/kb2c.json
+# sha: 9783f7f80; time: 2026-10-27 23:11:45
+n70-deco: room kb2c (level kiln), Design/levels/n67/kiln/rooms-base/kb2c.json against Design/levels/n67/kiln/rooms/kb2c.json at 16116dead (the file's first commit): 24 items now (24 at the base); new or moved: 0 (0 pieces judged, 0 dressing not judged) | touches: none given (test a not run); launch kills 0; ranged spots 0 (no ranged enemy in the waves: test b cannot pass); walk-line samples 25; cyan markers in the room 3
+n70-deco: PASS | room kb2c, base 16116dead: 0 piece(s) added or moved, 0 pass, 0 FAIL; dressing 0 not judged

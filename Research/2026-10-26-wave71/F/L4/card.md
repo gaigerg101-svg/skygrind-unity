@@ -1,0 +1,10 @@
+# L4: the kill's wash, its f3-f4 source (T-105; design.n71.wash71, a view row; OFF in the repo, ON in the play build)
+
+- **The change, plainly:** a kill no longer floods the centre of the screen with red-orange for the length of its freeze: the kill's pop light fades from the moment of the kill, and the kill's white blocks and burst are trimmed (polish53's shipped killWash cuts).
+- **The source, measured on EXT53's saved crops (wash-classes.txt):** with killWash on, foundry's box rise f1 -> f3 is warm-lit pixels 0.011 -> 0.214 of its luma (white 0.242 -> 0.209); iceline's is red-pink on pale surfaces (+0.095). The light: every kill's pop (fx.popIntensity 60, 9 m, 0.12 s, the enemy's colour) fades on WORLD time (LightPools.cs:282 Step54(worldDt)), so a kill's freeze holds it at its peak; the reel's tail f5 +0.236 .. f8 +0.126 is its fade after the hold.
+- **Not found:** a near-white ring round the reticle on f2-f6 (about 0.2 of the f3 box): fx49's kill ring was skipped there (9 frames) and KillConfirm draws nothing while fx49 is on; its drawer is not named. Left as it is.
+- **Off flag:** `-skygrindNoWash71` (also `-skygrindOff71` or older; polish53 off). ON: a play build made with `n71.wash71`.
+- **Reel (proof, the lead):** on the ON build, `bash Tools/night/n71-reels.sh <tag> w71on,n52-foundry,a153 w71off,n52-foundry,a153,-skygrindNoWash71` (and n52-iceline). GREEN: T-111 `ON peak within the bar True`, the line's `wash71 live, kill pops on frame time 1`; RED: the off side `wash71 off (-skygrindNoWash71)`, ON peak about +0.425. Bar +0.25 (Wash49Rise), never moved.
+- **Numbers:** design.n71.wash71.numbers popFrameClock 1, popK 1 (a second value for the slot: popK 0.6); re-apply with `node Research/2026-10-26-wave71/F/L4/wash71-config.cjs`.
+- **Gates:** with the row off: gates-off.txt. With it on: EQUAL by construction (the sim harness compiles no view). EditMode: N71WashTests (4).
+- **Expected, not measured:** f3 about +0.18 if the warm part is the held pop (k^2 at 50 ms = 0.34); if a153 stays over the bar, the ring is next.

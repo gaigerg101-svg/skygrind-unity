@@ -1,0 +1,19 @@
+# command: node Tools/night/gen-slots.cjs --level kiln --run --slots=latest --out=Logs/n67/dry-kiln
+# sha: e4fae1a2; time: 2026-10-24 11:16:25
+openings: Logs/n67/dry-kiln/openings67.json kiln kb2 held, kb2c vista, kb3 held, kb3c vista, kb3d held (seed Design/levels/n57/openings57.json)
+gen-slots --level kiln: Design/levels/n57/kiln.plan.json -> Logs/n67/dry-kiln/kiln.plan.json (slots latest; rebuilt: none); every other room, door, piece and key n57-kiln's bit for bit
+  slot kb2: latest Design/levels/n67/kiln/rooms/kb2.json: n57-kiln's room exactly; boxes 10, ramps 2, pads 2, grapple 0, pits 0, tunnels 0, lights 7, props 1
+  slot kb2c: latest Design/levels/n67/kiln/rooms/kb2c.json: n57-kiln's room exactly; boxes 12, ramps 2, pads 1, grapple 0, pits 0, tunnels 0, lights 8, props 1
+  slot kb3: latest Design/levels/n67/kiln/rooms/kb3.json: n57-kiln's room exactly; boxes 12, ramps 2, pads 2, grapple 0, pits 0, tunnels 0, lights 7, props 1
+  slot kb3c: latest Design/levels/n67/kiln/rooms/kb3c.json: n57-kiln's room exactly; boxes 10, ramps 3, pads 2, grapple 0, pits 1, tunnels 0, lights 8, props 1
+  slot kb3d: latest Design/levels/n67/kiln/rooms/kb3d.json: n57-kiln's room exactly; boxes 11, ramps 2, pads 1, grapple 0, pits 1, tunnels 0, lights 9, props 1
+shipped before: Design/levels/n67-kiln.json 79d29b5a8f834a0daba04584bed7b53afa7cbc04f7eb50caa1e355751135fee2, Assets/StreamingAssets/Design/levels/n67-kiln.json 79d29b5a8f834a0daba04584bed7b53afa7cbc04f7eb50caa1e355751135fee2
+  levelgen n67-kiln: 3442519 chars -> Logs/n67/dry-kiln/kiln.json; 179 boxes + the floor, 17 barriers, 11 wedges, 8 pads, 0 grapple nodes, 19 zones (kb1, kb1b, kb2, kb2b, kb2c, kb3, kb3c, kb3d, kb4, k5, d1, d2, d3, d4, d5, d6, d6b, d7, d8) (1.1 s)
+    plan checks: 0 problems
+    level report: 0 errors -> Logs/n67/dry-kiln/LEVEL-n67-kiln-validate.md (2.3 s)
+    bot walk: ; DID NOT reach the last exit; zone at the end kb1
+n67-kiln --finish: Logs/n67/dry-kiln/kiln.json -> Logs/n67/dry-kiln/n67-kiln.json (3443174 chars); kept rooms bit-equal to n57-kiln's; ERROR rows 0 (none); slots latest: kb2 latest, kb2c latest, kb3 latest, kb3c latest, kb3d latest
+levelgen --walk: 0 ERROR (none; 9 s)
+shipped after:  Design/levels/n67-kiln.json 79d29b5a8f834a0daba04584bed7b53afa7cbc04f7eb50caa1e355751135fee2, Assets/StreamingAssets/Design/levels/n67-kiln.json 79d29b5a8f834a0daba04584bed7b53afa7cbc04f7eb50caa1e355751135fee2 (byte-identical: --out writes only Logs/n67/dry-kiln)
+the round's level: Logs/n67/dry-kiln/n67-kiln.json c1fcbeebc2823f8bb069a6030c98bb420b9e6cb04073ab6f0fd7239e69963f4d; plan Logs/n67/dry-kiln/kiln.plan.json, report Logs/n67/dry-kiln/LEVEL-n67-kiln-validate.md, openings Logs/n67/dry-kiln/openings67.json
+exit 0

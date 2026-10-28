@@ -1,0 +1,15 @@
+# command: python -I Tools/night/n74-room-rules.py room Design/levels/n67/spire/rooms-base/v2.json
+# sha: 70e86859c; time: 2026-10-27 23:49:25
+spire/v2  rect [-22.0, 51.0, 2.0, 83.0]  spawn [-10.0, 0.0, 75.0] yaw 0  floor 0.0
+  PLANES  PASS  planes 3 (0.0 m: 505 cells, 2.4 m: 112 cells, 5.0 m: 18 cells)
+  COVER   PASS  cover: free-standing high 2, low 0, between 0 (0 without a job), none 0
+  LOOPS   PASS  loops 3 (floor holes 1 + closed pad / ride routes 2 of 2)
+  REAR    RED  rear arc: 2 of 4 wave-1 usable nodes behind the entry facing (all waves: 6 node uses behind) [no node 12 m out: every node taken]
+  VIEW    RED  view: no enemy in view within 2.0 s (0 of 4 wave-1 nodes seen at entry)
+  CROSS   PASS  cross: chord 40.0 m, dash 1.67 s, walk 5.0 s (bar 2.0 s at dash)
+  EXPOSE  RED  exposure: 64 % of 1540 floor-sample pairs see each other (bar 60 %); longest clear line 32.3 m (medium band 19.5 m)
+  CLIMB   PASS  climb: 4 tier group(s), 0 not reached by walker links
+    free-standing high piece: deck [-15.0, 0.0, 64.0]-[-9.0, 5.0, 67.0] h 5.00 job "line"
+    free-standing high piece: hull [-2.0, 0.0, 67.0]-[-1.0, 14.0, 68.0] h 14.00 job "cover"
+    walkers reach every tier: climb: 4 tier group(s), 0 not reached by walker links
+  core 3/5 PASS, extra 2/3 PASS

@@ -1,0 +1,12 @@
+cmd: bash Tools/night/dn-check-wt.sh <scratch>/dn
+base sha: 3bdbd2e7a + the uncommitted N2 diff
+ Assets/Scripts/Game/UnityTuning.FeelPolish.cs | 6 ------
+ Assets/Scripts/Game/UnityTuning.Glacier26.cs  | 2 --
+ 2 files changed, 8 deletions(-)
+start: 11:42:35
+== Skygrind.Game.csproj: 0 error(s)
+== Skygrind.Game.Tests.csproj: 0 error(s)
+== Skygrind.Core.Tests.csproj: 0 error(s)
+== Assembly-CSharp-Editor.csproj: 0 error(s)
+dn-check total errors: 0
+end: 11:44:01

@@ -1,0 +1,100 @@
+{
+ "_why": "NIGHT65 builder S round 1 (card Research/2026-10-23-wave65/cards/b1.md rev 2): THE KNOCKOUT YARD, rebuilt from scratch in slot b1 (20 x 32 m, roofed). The one verb is the launch (design.n36.launch36): the packs come through two 3 m gates in a 1.8 m slag wall; dash or ride in and punch the front husk back into its pack (burst 60 in 3.5 m). Every piece carries its job and why.",
+ "room": "b1",
+ "opening": "ambushed",
+ "opening_why": "card b1 section 4: wave 1's three husks start just north of the slag wall, 14.3-14.5 m from d5's centre and hidden from the corridor by it, and come through the gates at you (ambushed, as the red)",
+ "row": {
+  "id": "b1",
+  "name": "1.6 THE KNOCKOUT YARD",
+  "kind": "room",
+  "rect": [-10,-180,10,-148],
+  "height": 12,
+  "roof": true,
+  "par": 45,
+  "job36": "combine",
+  "verb36": "the launch: dash or ride into a pack at a gate and punch the front husk back into it (it bursts on the pack or a wall)",
+  "spawn": {"at":[0,0,-148.5],"yawDeg":0},
+  "exit": [0,0,-178],
+  "arena36": true,
+  "waves": [["husk","husk","husk"],["spitter","spitter","husk","husk"],["husk","husk","husk","husk"]],
+  "waves_why": "NIGHT66 S tried and reverted, each measured alone: round 1, wave 1 three -> four husks (v1 1.68 -> 1.20, b1/r1/C); round 2, wave 1 one husk leading four swarmers (builder R's finding that a punch on a winding-up husk resolves as a parry while a swarmer always launches): skip v2 M1 1.33 -> 1.15, a death in the refused-in run (Research/2026-10-23-wave66/b1/r2/D)",
+  "proofs": [
+   {"kind":"walk","points":[[0,0,-148.5],[-7.5,0,-152],[-7.9,0,-157],[-7.9,0,-165],[-7.9,0,-174],[-3,0,-177],[0,0,-178]]},
+   {"kind":"walk","points":[[0,0,-148.5],[-8,0,-152],[-8,0,-157],[-8,0,-160],[-8,0,-168],[-8,0,-175],[-2,0,-178]]},
+   {"kind":"walk","points":[[5,0,-150.5],[8,0,-151],[8,2.2,-155.2],[8,4,-160],[8,4,-170]]}
+  ],
+  "frames36": {"mid":[-1,0,-155.5,0,0.05],"exit":[0,0,-175,0,0]},
+  "frames52": {"_why":"NIGHT65 S (card b1 section 7): a157's poses on the rebuilt yard: entry = inside d5 looking at the gates; mid = the rail's foot by the furnace; high = on the gantry looking south-west over both gates","entry":[0,0,-148.5,0,0.08],"mid":[-8,0,-152,-15,0.1],"high":[8,4,-166,120,-0.25]},
+  "frames65": {"entry":[0,0,-148.5,0,0.08],"gate":[-1,0,-155.5,0,0.05],"rail":[-9,2.5,-157.5,0,-0.05],"gantry":[8,4,-166,120,-0.25],"exit":[0,0,-175,0,0]},
+  "line65_why": "NIGHT66 S round 2 (M3: a launch burst of 2 or more kills; the staged launch from the sill facing north flew 6.8 m to THE LADLE and killed 1, facing the pack's approach along the slag wall's north face at yaw -60 / -90 it burst on the next body and killed 3: Research/2026-10-23-wave66/b1/r2/pose): the line's first segment now faces the file wave 1 makes along P2 into GATE W (yaw about -60) and stays inside the gate (x <= -6.6)",
+  "line65": [[-7.9,1,-158.5],[-6.7,0.9,-159.2],[-8.6,0,-151.5],[-9,2.2,-154],[-9,2.5,-158.5],[-9,2.6,-171],[-4,0,-173.5],[8,4,-174]],
+  "card65": "Research/2026-10-23-wave65/cards/b1.md",
+  "bot43": false,
+  "verb65": "launch",
+  "nodes": [[-5.5,0,-159.5],[-2,0,-160.8],[2.5,0,-160.6],[-8,0,-175],[-4,0,-177.5],[-8,0,-178.5],[-5,0,-179],[8,0,-178.5],[3,0,-178]],
+  "highNodes": [[8,4,-165.5],[8,4,-172.5]],
+  "waveNodes43": [
+   [[-5.5,0,-159.5],[-2,0,-160.8],[2.5,0,-160.6]],
+   [[8,4,-165.5],[8,4,-172.5],[-8,0,-175],[-4,0,-177.5]],
+   [[-8,0,-178.5],[-5,0,-179],[8,0,-178.5],[3,0,-178]]
+  ],
+  "waveNodes43_why": "NIGHT66 S round 2 tried the r1 level-design review's one change (wave 3's east pair, (8, -178.5) and (3, -178), moved west to (-6, -177.5) and (-2, -177.5) so all of wave 3 comes through a gate): skip v2 M1 1.33 -> 1.21, 7 / 10 exercised (Research/2026-10-23-wave66/b1/r2/C2): reverted. NIGHT65 S (card b1 section 4): wave 1 (husk x3) just north of the slag wall, 14.3-14.5 m from d5's centre (0,-146), each hidden from an eye 3 m outside the door by P2 / P3 (ambushed): they come through the gates at you; wave 2 the spitters on the gantry over the gates, its husks from the far yard's north-west; wave 3 the north corners and the lane under the gantry (the front moves north and east)"
+ },
+ "boxes": [
+  {"zone":"b1","kind":"wall","min":[-10,0,-180],"max":[-9.4,12,-148],"job":"ride","ride":true,"ride36":{"face":"E","planeX":-9.4,"lz":[0,32]},"why":"P1 THE WEST RAIL (card b1): the room's flight line, one flush 32 m face (EXT53: nothing proud of it); ride north over GATE W, where the pack is within punch.range of the face: a riding punch launches its front husk east into GATE M's pack. Kept 32 m so verbs37 rows 9 / 11 keep level 1's longest wall (VerbsWall39.Pick)"},
+  {"zone":"b1","kind":"hull","min":[-6.5,0,-158.5],"max":[-1.5,2.4,-157.5],"job":"gate","why":"P2 THE SLAG WALL, west (card b1; round 2: 1.8 -> 2.4 m, over the enemies' grid jump ai.grid jumpUp 2.2, so the packs cannot hop it and must bunch in the gates): GATE W (x -9.4..-6.5) and GATE M (x -1.5..1.5) are 3 m, the launch's target; it hides wave 1 from the corridor (IN VIEW ambushed); the player still double-jumps it (2.7 m)"},
+  {"zone":"b1","kind":"hull","min":[-1.5,0,-158.5],"max":[6,2.4,-157.5],"job":"gate","why":"P3 THE SLAG WALL, east (round 3, gg-proxy r2 BLOCKING: GATE M was the straight walk-in gate on the door's axis, where a standing shooter holds the pack: closed, P3 now joins P2, so every pack comes through GATE W under the rail, where a dash or a ride reaches it; card b1; round 2: 2.4 m, over jumpUp 2.2): GATE M's other cheek; it meets the gantry stair at x 6, so the yard's east side is closed"},
+  {"zone":"b1","kind":"hull","min":[-6.4,0,-171.5],"max":[-1.5,2.4,-170.5],"job":"gate","why":"P12 THE NORTH SLAG LINE, west (round 2, gg-proxy r1 BLOCKING: the far yard was one anvil, 'you're encouraged to just start shooting immediately'): a second 2.4 m slag line across the far yard (over ai.grid jumpUp 2.2), making GATE FW (x -9.4..-6.4) under the west rail and GATE FM (x -1.5..1.5, on the entry's centre line so the exit stays in view from the door): wave 2's husks and wave 3 bunch in them, GATE FW within a riding punch of the rail. NIGHT66 S round 1 tried GATE FM closed (verb plan b1 lever A): v1 skip ratio 1.68 -> 1.48 and a walk-bot death (Research/2026-10-23-wave66/b1/r1/A): reverted"},
+  {"zone":"b1","kind":"hull","min":[1.5,0,-171.5],"max":[6,2.4,-170.5],"job":"gate","why":"P13 THE NORTH SLAG LINE, east (round 2): GATE FM's other cheek, from x 1.5 to the gantry posts' line"},
+  {"zone":"b1","kind":"wall","min":[-4.6,0,-170.5],"max":[-4,5.5,-160.5],"ride":true,"ride36":{"face":"W","planeX":-4.6,"lz":[12.5,22.5]},"job":"ride","why":"P15 THE LADLE (round 2, the level-design review r1 BLOCKING, rules 8 / 9 / 15 and the round's hand-off theme): a free-standing 5.5 m ride wall between the two slag lines, facing THE WEST RAIL 4.8 m away: a canyon over GATE W's pack (ride the rail, wall-jump across, ride the ladle, the jump-off east over GATE M); a burst wall where GATE W's pack comes out; placed z -159.5..-170.5 (the review's z -165..-177 would cross P12)"},
+  {"zone":"b1","kind":"hull","min":[6.6,0,-171.5],"max":[10,2.4,-170.5],"job":"gate","why":"P14 THE NORTH SLAG LINE under the gantry (round 2): closes the lane under the slab (its top 2.4 under the slab's 3.4), so the line's only ways through are the two gates; the middle post stands in it"},
+  {"zone":"b1","kind":"slab","min":[6,3.4,-177],"max":[10,4,-160],"job":"perch","why":"P4 THE GANTRY (card b1): the crane runway, the third plane at 4 m: wave 2's spitters lob over the gates from it; the player's high ground; a slab on posts, so the floor under it is the far yard's east lane"},
+  {"zone":"b1","kind":"hull","min":[6,0,-165.6],"max":[6.6,3.4,-165],"job":"cover","why":"P6 THE GANTRY POST, south (card b1): holds the slab; a burst post on the east lane (a launched husk that hits it bursts); a line-of-sight break from the floor to the gantry"},
+  {"zone":"b1","kind":"hull","min":[6,0,-171],"max":[6.6,3.4,-170.4],"job":"cover","why":"P6 THE GANTRY POST, middle (card b1): a burst post and a LOS break on the east lane"},
+  {"zone":"b1","kind":"hull","min":[6,0,-176.8],"max":[6.6,3.4,-176.2],"job":"cover","why":"P6 THE GANTRY POST, north (card b1): a burst post and a LOS break where wave 3 comes along the lane"},
+  {"zone":"b1","kind":"hull","min":[2.5,0,-175.6],"max":[5.5,1,-175],"job":"cover","why":"P18 THE CASTING TROUGH (density pass): a 1.0 m low cover in the far yard facing the floor (wave 3's north packs), under a rider's line; its look is the b1-coverLow prop"},
+  {"zone":"b1","kind":"hull","min":[1,0,-166.7],"max":[2.2,2.2,-165.5],"job":"cover","why":"P7 THE ANVIL (card b1): 8 m north of GATE M, just east of its line: the pack coming through splits round it and bunches (a launch target); a burst wall; the far yard's one cover; off the centre line so the exit stays in view from the door"},
+  {"zone":"b1","kind":"hull","min":[-7,0,-155.5],"max":[-4,3.5,-152.5],"job":"foothold","why":"P8 THE FURNACE (card b1): the foothold (R5): free-standing, 2.4 m off the rail's face (the rider's lane), 6.5-9.5 m from d5's centre; cover from the gantry's lobs; a burst wall; the landmark (its amber mouth faces the gates); 3.5 m, so not a stand (double jump 2.7 m)"}
+ ],
+ "ramps": [
+  {"zone":"b1","from":[-7.95,-156.5],"to":[-7.95,-158.5],"width":2.9,"rise":1,"job":"sill","why":"P16 THE SILL, south half (round 3, the level-design review r2 BLOCKING: the riding punch at 2.5 m over GATE W could not reach a pack on the floor, 2.3-2.5 m from the eye against punch.range 2): a 1 m cast hump filling GATE W, built as two ramps (the Mover has no step-up, so a 1 m step would stop the walk proofs): the pack crosses it 1 m up, inside the rider's punch"},
+  {"zone":"b1","from":[-7.95,-160.5],"to":[-7.95,-158.5],"width":2.9,"rise":1,"job":"sill","why":"P16 THE SILL, north half (round 3): the hump's far side, so the packs from the canyon climb it into the gate"},
+  {"zone":"b1","from":[-7.9,-169],"to":[-7.9,-171],"width":3,"rise":1,"job":"sill","why":"P17 THE NORTH SILL, south half (fix round, the level-design review round 3; the runs 2 m, 26.6 deg, so I1 stays under 60 %: 4 m runs read 72 %, the gantry mirroring onto both sills): a 1 m hump in GATE FW (x -9.4..-6.4) as two ramps: the packs of waves 2 and 3 cross the far gate 1 m up, inside a rider's punch from the west rail, as at GATE W"},
+  {"zone":"b1","from":[-7.9,-173],"to":[-7.9,-171],"width":3,"rise":1,"job":"sill","why":"P17 THE NORTH SILL, north half (fix round): the hump's far side"},
+  {"zone":"b1","from":[8,-149.5],"to":[8,-160],"width":4,"rise":4,"job":"climb","why":"P5 THE GANTRY STAIR (card b1): the walkers' way onto the gantry from the near yard's east corner (validator row 4); it closes the east side at the slag wall's line"}
+ ],
+ "pads": [
+  {"zone":"b1","at":[3,0,-153],"target":[8,4,-163],"apexAbove":2,"job":"pad","why":"P9 THE GANTRY PAD (card b1): the near yard's fast way onto the spitters' gantry, over P3; off the walk proofs (I4) and 3 m off the spawn's forward line"},
+  {"zone":"b1","at":[-4,0,-173.5],"target":[8,4,-174],"apexAbove":2,"job":"pad","why":"P10 THE NORTH PAD (card b1; round 2: moved 2.5 m north, off the new slag line): the far yard's way back onto the gantry across the room: the gantry on a loop (stair, two pads, the drop)"}
+ ],
+ "grapple": [],
+ "pits": [],
+ "tunnels": [],
+ "lights": [
+  {"id":"b1-rail","room":"b1","kind":"wall","at":[-9.35,1.2,-164],"normal":[1,0,0],"size":[32,0.2,0.1],"color":"cyan","range":6,"intensity":1.1},
+  {"id":"b1-ladle","room":"b1","kind":"wall","at":[-4.65,1.2,-165.5],"normal":[-1,0,0],"size":[10,0.2,0.1],"color":"cyan","range":5,"intensity":1.0},
+  {"id":"b1-gateW","room":"b1","kind":"ceiling","at":[-8,11.95,-158],"normal":[0,-1,0],"size":[3,3,0.1],"color":"white","range":12,"intensity":1.1},
+  {"id":"b1-far","room":"b1","kind":"ceiling","at":[0,11.95,-170],"normal":[0,-1,0],"size":[5,3,0.1],"color":"white","range":12,"intensity":1.0},
+  {"id":"b1-gantry","room":"b1","kind":"pool","at":[8,4.025,-168],"normal":[0,1,0],"size":[2.5,2.5,0.05],"color":"white","range":7,"intensity":1.1},
+  {"id":"b1-furnace","room":"b1","kind":"pool","at":[-5.5,0.025,-156.5],"normal":[0,1,0],"size":[2.5,1.5,0.05],"color":"amber","range":6,"intensity":1.4},
+  {"id":"b1-exitLintel","room":"b1","kind":"wall","at":[0,4.75,-179.95],"normal":[0,0,1],"size":[4,0.3,0.1],"color":"cyan","range":9,"intensity":1.5},
+  {"id":"b1-exit","room":"b1","kind":"pool","at":[0,0.025,-178],"normal":[0,1,0],"size":[2.5,2.5,0.05],"color":"cyan","range":8,"intensity":1.6}
+ ],
+ "props": [
+  {"id":"b1-mouth","room":"b1","kind":"kilnArch","at":[-5.5,1.2,-155.65],"size":[2.4,2.4,0.3],"yawDeg":0,"collider":false,"decor":true,"job":"landmark","why":"D1 the furnace's mouth on P8's north face, facing the gates: the landmark at eye height (amber: neutral warm)"},
+  {"id":"b1-stripeW","room":"b1","kind":"hazardStripe","at":[-7.95,0.02,-158],"size":[2.9,0.04,1],"yawDeg":0,"collider":false,"decor":true,"job":"danger","why":"D2 GATE W's threshold: the packs come through here (red-orange: the enemies' way in)"},
+  {"id":"b1-lintel","room":"b1","kind":"lintelLight","at":[0,4.6,-179.9],"size":[4,0.2,0.2],"yawDeg":0,"collider":false,"decor":true,"job":"exit","why":"D7 the exit's frame over d6 (kit lamp)"},
+  {"id":"b1-lampW","room":"b1","kind":"lamp","at":[-8,10.9,-158],"size":[0.7,1.4,0.7],"yawDeg":0,"collider":false,"decor":true,"job":"fixture","why":"density pass: the hanging lamp the GATE W ceiling light hangs from (lights from real fixtures; kit lamp, amber)"},
+  {"id":"b1-lampFar","room":"b1","kind":"lamp","at":[0,10.9,-170],"size":[0.7,1.4,0.7],"yawDeg":0,"collider":false,"decor":true,"job":"fixture","why":"density pass: the far yard's hanging lamp (kit lamp, amber)"},
+  {"id":"b1-exitFrame","room":"b1","kind":"doorFrame","at":[0,2.4,-179.9],"size":[5,4.8,0.3],"yawDeg":0,"collider":false,"decor":true,"job":"exit","why":"density pass: d6's frame under its lit lintel (b1-exitLintel, cyan at 4.75 m: seen from the door over both slag lines since GATE M closed)"},
+  {"id":"b1-coverLow","room":"b1","kind":"lowWall","at":[4,0.5,-175.3],"size":[3,1,0.6],"yawDeg":0,"collider":false,"decor":true,"job":"cover","why":"density pass: the far yard's low casting trough (1.0 m, its box P18), cover for a floor fighter against wave 3's north packs, below a rider's line"},
+  {"id":"b1-P1","room":"b1","kind":"healthPickup","at":[-8.5,0.9,-165],"size":[0.6,0.6,0.6],"yawDeg":0,"collider":false,"pickup":true,"job":"reward","why":"D8 the riskiest line pays (A20): under the rail past GATE W, in the pack's path"}
+ ],
+ "teach35": [],
+ "drop": {
+  "bridges45": "read only by Tools/SimHarness/Harness.N45.Yard.cs (n45yard's bridge probe on the old yard); the river and its two bridges are gone in the rebuilt room (card b1 section 3)",
+  "bridges45_why": "the doc line of bridges45, dropped with it (the bridges are gone)",
+  "card52_why": "doc only (nothing reads it): NIGHT52's card history of the old yard; the rebuilt room's card is card65 (Research/2026-10-23-wave65/cards/b1.md)",
+  "ext53_why": "doc only (nothing reads it): EXT53's mirror fix of the old yard (the tipped ladle); the ladle is gone in the rebuild"
+ }
+}

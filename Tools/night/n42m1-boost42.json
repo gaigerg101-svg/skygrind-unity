@@ -1,0 +1,8 @@
+{
+  "lift": 11,
+  "lift_why": "M1 (G5, round 2: 12 -> 11 after the kiln gates: at 12 the gate checker's 3-shot climb hit kb1b's roof and G1 / G2b / G3 read +7 %; at 11 G2a +56, G2b +52, G3 +51 %, G1 +10 % (just under its 10 % floor, the roof); n42move gates --lift 11. Was: 'shoutgun jumping is too difficult and needs to be eaiser to boost'): the up speed, m/s, an air shot aimed fullDeg or more below level gives (today -aim x weapons.shotgun.jumpSpeed: 10 straight down, 7.07 at 45 deg; CODE-FACTS G5). 12 = 1.2 x the web's straight-down push: a shot at the top of a jump rises 3.1 m (12^2 / 2g, g 23.15) instead of 2.2.",
+  "fullDeg": 40,
+  "fullDeg_why": "M1 (G5 card: 'a looser look-down threshold ... lift scaled by pitch'): the full lift from this pitch below level and steeper; above it the lift is lift x sin(pitch) / sin(fullDeg) (20 deg: 6.4 m/s, was 3.4). kiln40 teaches 'LOOK STRAIGHT DOWN' and counts a boost from 45 deg (design.n40.kiln40.boostPitchDeg): 40 means the taught 45 already gets it all.",
+  "fallFloor": 3,
+  "fallFloor_why": "M1 (G5): before the lift the fall is cut to at most this, m/s down (today a falling player keeps his fall: at -8 m/s a 45 deg shot nets -0.9). 3, not 0: a shot every fire interval (0.9 s) from the cut still loses height (12 m/s up, then 0.9 s of gravity at 23-31 m/s^2), so chained shots never climb forever."
+}

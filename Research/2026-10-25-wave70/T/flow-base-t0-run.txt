@@ -1,0 +1,4 @@
+# command: bash Tools/night/n70-gates.sh --flow-base (builder T's tree, the t0 code)
+# sha: 08455efa; start 2026-10-25 22:51:02
+flow base: Logs/n70/flow-base.txt, 5 level summaries, 22:55:04
+exit 0 at 22:55:04

@@ -1,0 +1,1625 @@
+{
+ "_why": "LEVEL 1, THE FOUNDRY (NIGHT26, builder L; GG: 'for that first map the arena is just way too wide ... I want it to really encourage better uses of mechanics like the wall jump and the dashing like platforming sections'). The NIGHT25 tutorial (stages 1.1-1.3 and the pistol, fist and first fight) with a PLATFORMING RUN after 1.3 (1.4 dash islands, 1.5 pad hops, 1.6 a wall-jump shaft, one verb each, a recovery stair under every pit, a stage respawn so nothing soft-locks), a WALL-RIDE HALL (1.7: one continuous wall over three pits), a husks-only last fight and THE SLAG HULK (boss hulk; the level's unlock, the THUNDERCLAP, comes from Design/levels/unlocks.json). Every room is 28 m wide (x -14..14: the widest room is 28 m). The id stays 'tutorial' (tests and tapes). Web coordinates (x east, y up, z SOUTH, north is -z), metres, the player walks north.",
+ "id": "tutorial",
+ "name": "LEVEL 1 THE FOUNDRY",
+ "floorSize": 1060,
+ "killPlaneY": -30,
+ "wallHeight": 14,
+ "rank": {
+  "time": [
+   300,
+   420,
+   600,
+   900
+  ],
+  "kills": [
+   100,
+   85,
+   65,
+   40
+  ],
+  "style": [
+   2500,
+   1500,
+   700,
+   250
+  ],
+  "_why": "Unity-only (builder L): S/A/B/C cuts for this level: time in seconds (a human with the pistol takes 4-6 minutes: the platforming run about 40 s, the HULK 60-90 s), kills = percent of the waves' enemies, style = points. Style is NOT calibrated (no run measured it)."
+ },
+ "rooms": [
+  {
+   "id": "s1",
+   "name": "1.1 LOOK AND WALK",
+   "kind": "link",
+   "rect": [
+    -14,
+    142,
+    14,
+    172
+   ],
+   "par": 3,
+   "spawn": {
+    "at": [
+     0,
+     0,
+     168
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    0,
+    0,
+    146
+   ],
+   "lessons": [
+    {
+     "kind": "reached",
+     "rect": [
+      -14,
+      142,
+      14,
+      149
+     ],
+     "minY": -0.5,
+     "prompt": "{move} MOVE  {look} LOOK"
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "name": "1.2 JUMP AND SLIDE",
+   "kind": "link",
+   "rect": [
+    -14,
+    90,
+    14,
+    136
+   ],
+   "par": 5,
+   "spawn": {
+    "at": [
+     0,
+     0,
+     132
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    0,
+    0,
+    93
+   ],
+   "respawnY": -3,
+   "routeVia": [
+    [
+     [
+      0,
+      0,
+      110
+     ],
+     [
+      0,
+      0,
+      94
+     ]
+    ]
+   ],
+   "lessons": [
+    {
+     "kind": "jumpedPit",
+     "rect": [
+      -14,
+      112,
+      14,
+      121
+     ],
+     "minY": -0.5,
+     "prompt": "{jump} JUMP"
+    },
+    {
+     "kind": "slidTunnel",
+     "via": [
+      -3,
+      96,
+      3,
+      106
+     ],
+     "rect": [
+      -14,
+      90,
+      14,
+      95
+     ],
+     "prompt": "HOLD {slide} TO SLIDE"
+    }
+   ]
+  },
+  {
+   "id": "s3a",
+   "name": "1.3 WALL JUMP",
+   "kind": "link",
+   "rect": [
+    -14,
+    38,
+    14,
+    84
+   ],
+   "par": 3,
+   "spawn": {
+    "at": [
+     0,
+     0,
+     82
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    0,
+    0,
+    39
+   ],
+   "routeVia": [
+    [
+     [
+      0,
+      0,
+      78
+     ],
+     [
+      0,
+      3.4,
+      55
+     ]
+    ]
+   ],
+   "wallRoute": {
+    "required": true,
+    "goalY": 3.4,
+    "note": "the flue's wall line is the only way up: the deck is 3.4 m, a jump reaches 1.5 m"
+   },
+   "lessons": [
+    {
+     "kind": "wallJumped",
+     "n": 2,
+     "prompt": "{jump} OFF THE WALLS"
+    },
+    {
+     "kind": "reached",
+     "rect": [
+      -14,
+      50,
+      14,
+      60
+     ],
+     "minY": 3,
+     "prompt": ""
+    }
+   ]
+  },
+  {
+   "id": "s3b",
+   "name": "1.3 JUMP PAD",
+   "kind": "link",
+   "rect": [
+    -14,
+    -14,
+    14,
+    32
+   ],
+   "par": 3,
+   "spawn": {
+    "at": [
+     0,
+     0,
+     28
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    0,
+    0,
+    -13
+   ],
+   "lessons": [
+    {
+     "kind": "padHop",
+     "rect": [
+      -14,
+      0,
+      14,
+      8
+     ],
+     "minY": 4,
+     "prompt": "STEP ON THE PAD"
+    }
+   ]
+  },
+  {
+   "id": "s3c",
+   "name": "1.3 DASH",
+   "kind": "link",
+   "rect": [
+    -14,
+    -64,
+    14,
+    -20
+   ],
+   "par": 4,
+   "spawn": {
+    "at": [
+     0,
+     0,
+     -24
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    0,
+    0,
+    -60
+   ],
+   "respawnY": -3,
+   "lessons": [
+    {
+     "kind": "dashedGap",
+     "rect": [
+      -14,
+      -56,
+      14,
+      -47
+     ],
+     "minY": -0.5,
+     "prompt": "JUMP, THEN {dash} TO DASH"
+    }
+   ]
+  },
+  {
+   "id": "p1",
+   "name": "1.4 DASH ISLANDS",
+   "kind": "link",
+   "rect": [
+    -14,
+    -132,
+    14,
+    -70
+   ],
+   "par": 6,
+   "spawn": {
+    "at": [
+     0,
+     0,
+     -74
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    0,
+    0,
+    -128
+   ],
+   "respawnY": -3
+  },
+  {
+   "id": "p2",
+   "name": "1.5 PAD HOPS",
+   "kind": "link",
+   "rect": [
+    -14,
+    -182,
+    14,
+    -138
+   ],
+   "par": 4,
+   "spawn": {
+    "at": [
+     0,
+     0,
+     -142
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    0,
+    0,
+    -178
+   ],
+   "respawnY": -3
+  },
+  {
+   "id": "p3",
+   "name": "1.6 WALL-JUMP SHAFT",
+   "kind": "link",
+   "rect": [
+    -14,
+    -234,
+    14,
+    -188
+   ],
+   "par": 5,
+   "spawn": {
+    "at": [
+     0,
+     0,
+     -190
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    0,
+    0,
+    -233
+   ],
+   "routeVia": [
+    [
+     [
+      0,
+      0,
+      -194
+     ],
+     [
+      0,
+      3.4,
+      -217
+     ]
+    ]
+   ],
+   "wallRoute": {
+    "required": true,
+    "goalY": 3.4,
+    "note": "the flue's wall line is the only way up: the deck is 3.4 m, a jump reaches 1.5 m"
+   }
+  },
+  {
+   "id": "p4",
+   "name": "1.7 WALL-RIDE HALL",
+   "kind": "link",
+   "rect": [
+    -14,
+    -304,
+    14,
+    -240
+   ],
+   "par": 6,
+   "spawn": {
+    "at": [
+     0,
+     0,
+     -244
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    0,
+    0,
+    -300
+   ],
+   "respawnY": -3
+  },
+  {
+   "id": "s4",
+   "name": "1.4 THE PISTOL",
+   "kind": "room",
+   "rect": [
+    -14,
+    -348,
+    14,
+    -310
+   ],
+   "par": 5,
+   "spawn": {
+    "at": [
+     0,
+     0,
+     -314
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    0,
+    0,
+    -344
+   ],
+   "nodes": [
+    [
+     -8,
+     0,
+     -342
+    ],
+    [
+     8,
+     0,
+     -342
+    ],
+    [
+     0,
+     0,
+     -338
+    ],
+    [
+     -12,
+     0,
+     -334
+    ],
+    [
+     12,
+     0,
+     -334
+    ]
+   ],
+   "waves": [
+    [
+     "husk",
+     "husk",
+     "husk"
+    ]
+   ],
+   "lessons": [
+    {
+     "kind": "shots",
+     "n": 4,
+     "prompt": "{fire} TO FIRE"
+    },
+    {
+     "kind": "targetsHit",
+     "n": 3,
+     "prompt": "HIT THE HUSKS"
+    },
+    {
+     "kind": "husksDead",
+     "n": 3,
+     "prompt": ""
+    }
+   ]
+  },
+  {
+   "id": "s5",
+   "name": "1.5 THE FIST",
+   "kind": "room",
+   "rect": [
+    -14,
+    -398,
+    14,
+    -354
+   ],
+   "par": 15,
+   "spawn": {
+    "at": [
+     0,
+     0,
+     -358
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    0,
+    0,
+    -394
+   ],
+   "respawnY": -3,
+   "nodes": [
+    [
+     -8,
+     0,
+     -364
+    ],
+    [
+     8,
+     0,
+     -364
+    ],
+    [
+     0,
+     0,
+     -368
+    ]
+   ],
+   "waves": [
+    [
+     "husk",
+     "husk",
+     "husk"
+    ]
+   ],
+   "lessons": [
+    {
+     "kind": "punchWhileFiring",
+     "n": 1,
+     "prompt": "{punch} PUNCH WHILE FIRING"
+    },
+    {
+     "kind": "flickCrossed",
+     "rect": [
+      -14,
+      -396,
+      14,
+      -384
+     ],
+     "minY": -0.5,
+     "prompt": "HOLD {altFire}: BUILD, RELEASE, LAUNCH"
+    }
+   ]
+  },
+  {
+   "id": "s6",
+   "name": "1.6 FIRST FIGHT",
+   "kind": "room",
+   "rect": [
+    -14,
+    -454,
+    14,
+    -404
+   ],
+   "par": 14,
+   "spawn": {
+    "at": [
+     0,
+     0,
+     -408
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    0,
+    0,
+    -450
+   ],
+   "nodes": [
+    [
+     -10,
+     0,
+     -446
+    ],
+    [
+     -4,
+     0,
+     -446
+    ],
+    [
+     -10,
+     0,
+     -428
+    ],
+    [
+     0,
+     0,
+     -424
+    ],
+    [
+     -12,
+     0,
+     -416
+    ]
+   ],
+   "highNodes": [
+    [
+     10,
+     3,
+     -444
+    ],
+    [
+     10,
+     3,
+     -430
+    ]
+   ],
+   "waves": [
+    [
+     "husk",
+     "husk",
+     "husk"
+    ],
+    [
+     "husk",
+     "husk",
+     "husk",
+     "husk",
+     "husk"
+    ]
+   ]
+  },
+  {
+   "id": "s7",
+   "name": "1.8 THE FOUNDRY FLOOR",
+   "kind": "room",
+   "rect": [
+    -14,
+    -500,
+    14,
+    -460
+   ],
+   "par": 15,
+   "spawn": {
+    "at": [
+     0,
+     0,
+     -464
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    0,
+    0,
+    -496
+   ],
+   "nodes": [
+    [
+     -10,
+     0,
+     -495
+    ],
+    [
+     0,
+     0,
+     -495
+    ],
+    [
+     10,
+     0,
+     -495
+    ],
+    [
+     -10,
+     0,
+     -488
+    ],
+    [
+     10,
+     0,
+     -488
+    ],
+    [
+     0,
+     0,
+     -486
+    ]
+   ],
+   "waves": [
+    [
+     "husk",
+     "husk",
+     "husk",
+     "husk"
+    ],
+    [
+     "husk",
+     "husk",
+     "husk",
+     "husk",
+     "husk",
+     "husk"
+    ]
+   ]
+  },
+  {
+   "id": "boss",
+   "name": "1.9 THE SLAG HULK",
+   "kind": "boss",
+   "rect": [
+    -14,
+    -522,
+    14,
+    -506
+   ],
+   "par": 90,
+   "spawn": {
+    "at": [
+     0,
+     0,
+     -510
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    0,
+    0,
+    -518
+   ],
+   "boss": "hulk"
+  }
+ ],
+ "doors": [
+  {
+   "id": "d1",
+   "between": [
+    "s1",
+    "s2"
+   ],
+   "rect": [
+    -4,
+    136,
+    4,
+    142
+   ],
+   "checkpoint": true
+  },
+  {
+   "id": "d2",
+   "between": [
+    "s2",
+    "s3a"
+   ],
+   "rect": [
+    -4,
+    84,
+    4,
+    90
+   ],
+   "checkpoint": true
+  },
+  {
+   "id": "d3",
+   "between": [
+    "s3a",
+    "s3b"
+   ],
+   "rect": [
+    -4,
+    32,
+    4,
+    38
+   ],
+   "checkpoint": true
+  },
+  {
+   "id": "d4",
+   "between": [
+    "s3b",
+    "s3c"
+   ],
+   "rect": [
+    -4,
+    -20,
+    4,
+    -14
+   ],
+   "checkpoint": true
+  },
+  {
+   "id": "d5",
+   "between": [
+    "s3c",
+    "p1"
+   ],
+   "rect": [
+    -4,
+    -70,
+    4,
+    -64
+   ],
+   "checkpoint": true
+  },
+  {
+   "id": "d6",
+   "between": [
+    "p1",
+    "p2"
+   ],
+   "rect": [
+    -4,
+    -138,
+    4,
+    -132
+   ],
+   "checkpoint": true
+  },
+  {
+   "id": "d7",
+   "between": [
+    "p2",
+    "p3"
+   ],
+   "rect": [
+    -4,
+    -188,
+    4,
+    -182
+   ],
+   "checkpoint": true
+  },
+  {
+   "id": "d8",
+   "between": [
+    "p3",
+    "p4"
+   ],
+   "rect": [
+    -4,
+    -240,
+    4,
+    -234
+   ],
+   "checkpoint": true
+  },
+  {
+   "id": "d9",
+   "between": [
+    "p4",
+    "s4"
+   ],
+   "rect": [
+    -4,
+    -310,
+    4,
+    -304
+   ],
+   "checkpoint": true
+  },
+  {
+   "id": "d10",
+   "between": [
+    "s4",
+    "s5"
+   ],
+   "rect": [
+    -4,
+    -354,
+    4,
+    -348
+   ],
+   "checkpoint": true
+  },
+  {
+   "id": "d11",
+   "between": [
+    "s5",
+    "s6"
+   ],
+   "rect": [
+    -4,
+    -404,
+    4,
+    -398
+   ],
+   "checkpoint": true
+  },
+  {
+   "id": "d12",
+   "between": [
+    "s6",
+    "s7"
+   ],
+   "rect": [
+    -4,
+    -460,
+    4,
+    -454
+   ],
+   "checkpoint": true
+  },
+  {
+   "id": "d13",
+   "between": [
+    "s7",
+    "boss"
+   ],
+   "rect": [
+    -4,
+    -506,
+    4,
+    -500
+   ],
+   "checkpoint": true
+  }
+ ],
+ "boxes": [
+  {
+   "zone": "s2",
+   "kind": "deck",
+   "min": [
+    10,
+    -4.5,
+    125
+   ],
+   "max": [
+    14,
+    -2.4,
+    127
+   ],
+   "note": "recovery stair, step 1 (from the pit floor)"
+  },
+  {
+   "zone": "s2",
+   "kind": "deck",
+   "min": [
+    6,
+    -4.5,
+    125
+   ],
+   "max": [
+    10,
+    -1.2,
+    127
+   ],
+   "note": "recovery stair, step 2 (then up to the hall floor)"
+  },
+  {
+   "zone": "s2",
+   "kind": "hull",
+   "min": [
+    -14,
+    0,
+    96
+   ],
+   "max": [
+    -3,
+    6,
+    106
+   ],
+   "note": "the tunnel's west wall (the only way on is under the ceiling)"
+  },
+  {
+   "zone": "s2",
+   "kind": "hull",
+   "min": [
+    3,
+    0,
+    96
+   ],
+   "max": [
+    14,
+    6,
+    106
+   ],
+   "note": "the tunnel's east wall"
+  },
+  {
+   "zone": "s3a",
+   "kind": "slab",
+   "min": [
+    -4.5,
+    0,
+    60
+   ],
+   "max": [
+    -2.5,
+    18,
+    76
+   ],
+   "note": "wall-jump wall west (the corridor between the walls is 5 m)"
+  },
+  {
+   "zone": "s3a",
+   "kind": "slab",
+   "min": [
+    2.5,
+    0,
+    60
+   ],
+   "max": [
+    4.5,
+    18,
+    76
+   ],
+   "note": "wall-jump wall east"
+  },
+  {
+   "zone": "s3a",
+   "kind": "deck",
+   "min": [
+    -14,
+    0,
+    50
+   ],
+   "max": [
+    14,
+    3.4,
+    60
+   ],
+   "note": "the exit deck at the top of the flue (3.4 m, only the wall line reaches it)"
+  },
+  {
+   "zone": "s3b",
+   "kind": "hull",
+   "min": [
+    -14,
+    0,
+    8
+   ],
+   "max": [
+    14,
+    7,
+    12
+   ],
+   "note": "the vent wall: the deck behind it is only reached by the pad"
+  },
+  {
+   "zone": "s3b",
+   "kind": "deck",
+   "min": [
+    -14,
+    0,
+    0
+   ],
+   "max": [
+    14,
+    5.5,
+    8
+   ],
+   "note": "the landing deck behind the wall (a ramp down the far side)"
+  },
+  {
+   "zone": "s3c",
+   "kind": "deck",
+   "min": [
+    10,
+    -4.5,
+    -38
+   ],
+   "max": [
+    14,
+    -2.4,
+    -36
+   ],
+   "note": "recovery stair, step 1"
+  },
+  {
+   "zone": "s3c",
+   "kind": "deck",
+   "min": [
+    6,
+    -4.5,
+    -38
+   ],
+   "max": [
+    10,
+    -1.2,
+    -36
+   ],
+   "note": "recovery stair, step 2"
+  },
+  {
+   "zone": "p1",
+   "kind": "deck",
+   "min": [
+    -5,
+    -4.5,
+    -100
+   ],
+   "max": [
+    5,
+    0,
+    -91
+   ],
+   "note": "island 1"
+  },
+  {
+   "zone": "p1",
+   "kind": "deck",
+   "min": [
+    -5,
+    -4.5,
+    -116
+   ],
+   "max": [
+    5,
+    0,
+    -107
+   ],
+   "note": "island 2"
+  },
+  {
+   "zone": "p1",
+   "kind": "deck",
+   "min": [
+    10,
+    -4.5,
+    -86
+   ],
+   "max": [
+    14,
+    -2.4,
+    -84
+   ],
+   "note": "recovery stair step 1"
+  },
+  {
+   "zone": "p1",
+   "kind": "deck",
+   "min": [
+    6,
+    -4.5,
+    -86
+   ],
+   "max": [
+    10,
+    -1.2,
+    -84
+   ],
+   "note": "recovery stair step 2"
+  },
+  {
+   "zone": "p2",
+   "kind": "deck",
+   "min": [
+    -5,
+    -4.5,
+    -167
+   ],
+   "max": [
+    5,
+    2.5,
+    -159
+   ],
+   "note": "the island (2.5 m: the first pad lands on it)"
+  },
+  {
+   "zone": "p2",
+   "kind": "deck",
+   "min": [
+    10,
+    -4.5,
+    -152
+   ],
+   "max": [
+    14,
+    -2.4,
+    -150
+   ],
+   "note": "recovery stair step 1"
+  },
+  {
+   "zone": "p2",
+   "kind": "deck",
+   "min": [
+    6,
+    -4.5,
+    -152
+   ],
+   "max": [
+    10,
+    -1.2,
+    -150
+   ],
+   "note": "recovery stair step 2"
+  },
+  {
+   "zone": "p3",
+   "kind": "slab",
+   "min": [
+    -4.5,
+    0,
+    -212
+   ],
+   "max": [
+    -2.5,
+    18,
+    -196
+   ],
+   "note": "wall-jump wall west (the corridor between the walls is 5 m)"
+  },
+  {
+   "zone": "p3",
+   "kind": "slab",
+   "min": [
+    2.5,
+    0,
+    -212
+   ],
+   "max": [
+    4.5,
+    18,
+    -196
+   ],
+   "note": "wall-jump wall east"
+  },
+  {
+   "zone": "p3",
+   "kind": "deck",
+   "min": [
+    -14,
+    0,
+    -222
+   ],
+   "max": [
+    14,
+    3.4,
+    -212
+   ],
+   "note": "the exit deck at the top of the flue (3.4 m, only the wall line reaches it)"
+  },
+  {
+   "zone": "p4",
+   "kind": "slab",
+   "min": [
+    -9,
+    0,
+    -304
+   ],
+   "max": [
+    -7,
+    12,
+    -240
+   ],
+   "note": "the continuous wall: ride it across every pit (a wall jump or a dash bridges a gap)"
+  },
+  {
+   "zone": "p4",
+   "kind": "deck",
+   "min": [
+    10,
+    -4.5,
+    -254
+   ],
+   "max": [
+    14,
+    -2.4,
+    -252
+   ],
+   "note": "recovery stair (gap 1) step 1"
+  },
+  {
+   "zone": "p4",
+   "kind": "deck",
+   "min": [
+    6,
+    -4.5,
+    -254
+   ],
+   "max": [
+    10,
+    -1.2,
+    -252
+   ],
+   "note": "recovery stair (gap 1) step 2"
+  },
+  {
+   "zone": "p4",
+   "kind": "deck",
+   "min": [
+    10,
+    -4.5,
+    -272
+   ],
+   "max": [
+    14,
+    -2.4,
+    -270
+   ],
+   "note": "recovery stair (gap 2) step 1"
+  },
+  {
+   "zone": "p4",
+   "kind": "deck",
+   "min": [
+    6,
+    -4.5,
+    -272
+   ],
+   "max": [
+    10,
+    -1.2,
+    -270
+   ],
+   "note": "recovery stair (gap 2) step 2"
+  },
+  {
+   "zone": "p4",
+   "kind": "deck",
+   "min": [
+    10,
+    -4.5,
+    -290
+   ],
+   "max": [
+    14,
+    -2.4,
+    -288
+   ],
+   "note": "recovery stair (gap 3) step 1"
+  },
+  {
+   "zone": "p4",
+   "kind": "deck",
+   "min": [
+    6,
+    -4.5,
+    -290
+   ],
+   "max": [
+    10,
+    -1.2,
+    -288
+   ],
+   "note": "recovery stair (gap 3) step 2"
+  },
+  {
+   "zone": "s4",
+   "kind": "hull",
+   "min": [
+    -8,
+    0,
+    -330
+   ],
+   "max": [
+    -4,
+    3,
+    -326
+   ],
+   "note": "cover"
+  },
+  {
+   "zone": "s4",
+   "kind": "hull",
+   "min": [
+    4,
+    0,
+    -330
+   ],
+   "max": [
+    8,
+    3,
+    -326
+   ],
+   "note": "cover"
+  },
+  {
+   "zone": "s5",
+   "kind": "deck",
+   "min": [
+    10,
+    -4.5,
+    -377
+   ],
+   "max": [
+    14,
+    -2.4,
+    -375
+   ],
+   "note": "recovery stair, step 1"
+  },
+  {
+   "zone": "s5",
+   "kind": "deck",
+   "min": [
+    6,
+    -4.5,
+    -377
+   ],
+   "max": [
+    10,
+    -1.2,
+    -375
+   ],
+   "note": "recovery stair, step 2"
+  },
+  {
+   "zone": "s6",
+   "kind": "deck",
+   "min": [
+    6,
+    0,
+    -448
+   ],
+   "max": [
+    14,
+    3,
+    -426
+   ],
+   "note": "the east shelf (tier 2)"
+  },
+  {
+   "zone": "s6",
+   "kind": "hull",
+   "min": [
+    -10,
+    0,
+    -420
+   ],
+   "max": [
+    -6,
+    3,
+    -416
+   ],
+   "note": "cover"
+  }
+ ],
+ "ramps": [
+  {
+   "zone": "s3a",
+   "from": [
+    0,
+    40
+   ],
+   "to": [
+    0,
+    50
+   ],
+   "width": 8,
+   "rise": 3.4,
+   "note": "down the north side of the flue's deck (the way out)"
+  },
+  {
+   "zone": "s3b",
+   "from": [
+    0,
+    -12
+   ],
+   "to": [
+    0,
+    0
+   ],
+   "width": 8,
+   "rise": 5.5,
+   "note": "down the far side of the landing deck (the way out)"
+  },
+  {
+   "zone": "p3",
+   "from": [
+    0,
+    -232
+   ],
+   "to": [
+    0,
+    -222
+   ],
+   "width": 8,
+   "rise": 3.4,
+   "note": "down the north side of the flue's deck (the way out)"
+  },
+  {
+   "zone": "s6",
+   "from": [
+    -6,
+    -437
+   ],
+   "to": [
+    6,
+    -437
+   ],
+   "width": 6,
+   "rise": 3,
+   "note": "up to the east shelf"
+  }
+ ],
+ "pads": [
+  {
+   "zone": "s3b",
+   "at": [
+    0,
+    0,
+    18
+   ],
+   "target": [
+    0,
+    5.5,
+    4
+   ],
+   "apexAbove": 4,
+   "note": "the vent pad: throws you over the 7 m wall onto the landing deck"
+  },
+  {
+   "zone": "p2",
+   "at": [
+    0,
+    0,
+    -146
+   ],
+   "target": [
+    0,
+    2.5,
+    -161
+   ],
+   "apexAbove": 4,
+   "note": "hop 1: the start ledge to the island"
+  },
+  {
+   "zone": "p2",
+   "at": [
+    0,
+    2.5,
+    -166
+   ],
+   "target": [
+    0,
+    0,
+    -178
+   ],
+   "apexAbove": 4,
+   "note": "hop 2: the island to the far ledge"
+  }
+ ],
+ "grapple": [],
+ "pits": [
+  {
+   "zone": "s2",
+   "rect": [
+    -14,
+    122,
+    14,
+    127
+   ],
+   "floorY": -3.5,
+   "note": "1.2: a 5 m pit across the hall (a jump); the stair at its south-east corner, and the stage respawn (respawnY)"
+  },
+  {
+   "zone": "s3c",
+   "rect": [
+    -14,
+    -46,
+    14,
+    -36
+   ],
+   "floorY": -3.5,
+   "note": "1.3: a 10 m pit across the hall (a jump and a dash)"
+  },
+  {
+   "zone": "p1",
+   "rect": [
+    -14,
+    -123,
+    14,
+    -84
+   ],
+   "floorY": -3.5,
+   "note": "1.4: a 39 m pit with two 9 m islands, 7 m between each: a dash-jump per gap (one verb)"
+  },
+  {
+   "zone": "p2",
+   "rect": [
+    -14,
+    -174,
+    14,
+    -150
+   ],
+   "floorY": -3.5,
+   "note": "1.5: a 24 m pit crossed by two pad hops over one island"
+  },
+  {
+   "zone": "p4",
+   "rect": [
+    -14,
+    -259,
+    14,
+    -252
+   ],
+   "floorY": -3.5,
+   "note": "gap 1: 7 m, under the wall"
+  },
+  {
+   "zone": "p4",
+   "rect": [
+    -14,
+    -277,
+    14,
+    -270
+   ],
+   "floorY": -3.5,
+   "note": "gap 2: 7 m, under the wall"
+  },
+  {
+   "zone": "p4",
+   "rect": [
+    -14,
+    -295,
+    14,
+    -288
+   ],
+   "floorY": -3.5,
+   "note": "gap 3: 7 m, under the wall"
+  },
+  {
+   "zone": "s5",
+   "rect": [
+    -14,
+    -382,
+    14,
+    -375
+   ],
+   "floorY": -3.5,
+   "note": "1.5: a 7 m pit (the charged flick)"
+  }
+ ],
+ "tunnels": [
+  {
+   "zone": "s2",
+   "rect": [
+    -3,
+    96,
+    3,
+    106
+   ],
+   "ceiling": 1.2,
+   "note": "1.2: the SLIDE TUNNEL: 6 m wide gap in a wall, 10 m long, a 1.2 m ceiling: the only way on"
+  }
+ ]
+}

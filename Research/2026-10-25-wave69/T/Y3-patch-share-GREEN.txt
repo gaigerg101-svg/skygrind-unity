@@ -1,0 +1,108 @@
+# Y3 GREEN: n69-T worktree, Tools/night/n69-patch-share.cjs; 2026-10-25 10:08:03
+# cmd: node Tools/night/n69-patch-share.cjs --cases
+n69-patch-share --cases: the planted cases (rooms read from git at the t0 sha d9e22d48)
+  | kb3 | 16 / 16 (100 %) | boxes 12 / 12, ramps 2 / 2, pads 2 / 2, pits 0 / 0 | rect same, spawn same, exit same | waves same |
+  n69-patch-share: PATCH kb3 (100 % kept)
+  case a copy of rooms-base/kb3.json as the room (text rewritten, order reversed): 100 % PATCH (expected 100 % PATCH: OK)
+  case the copy with one box moved 1 m: 15 / 16 (expected 15 / 16: OK)
+  case a copy of rooms-base/kb3c.json with its pit's lava flag flipped: 0 / 1 pits (expected 0 / 1 pits: OK)
+  case NIGHT68's g7 at t0: 0 % PASS (expected 0 % PASS: OK)
+  case NIGHT68's v2 at t0: 0 % PASS (expected 0 % PASS: OK)
+  the seven NIGHT68 rooms at t0:
+  | room | shipped pieces kept | by kind (kept / shipped) | rect / spawn / exit | waves |
+  |---|---|---|---|---|
+  | kb3c | 7 / 16 (44 %) | boxes 5 / 10, ramps 1 / 3, pads 1 / 2, pits 0 / 1 | rect same, spawn same, exit same | waves changed |
+  case kb3c vs the scout: 7 / 16, boxes 5 / 10, rect / spawn / exit same, waves changed (expected 7 / 16, boxes 5 / 10, rect / spawn / exit same, waves changed: OK)
+  | kb2 | 3 / 14 (21 %) | boxes 3 / 10, ramps 0 / 2, pads 0 / 2, pits 0 / 0 | rect same, spawn same, exit same | waves same |
+  case kb2 vs the scout: 3 / 14, boxes 3 / 10, rect / spawn / exit same, waves same (expected 3 / 14, boxes 3 / 10, rect / spawn / exit same, waves same: OK)
+  | kb3d | 11 / 15 (73 %) | boxes 9 / 11, ramps 2 / 2, pads 0 / 1, pits 0 / 1 | rect same, spawn same, exit same | waves changed |
+  case kb3d vs the scout: 11 / 15, boxes 9 / 11, rect / spawn / exit same, waves changed (expected 11 / 15, boxes 9 / 11, rect / spawn / exit same, waves changed: OK)
+  | kb3 | 9 / 16 (56 %) | boxes 6 / 12, ramps 2 / 2, pads 1 / 2, pits 0 / 0 | rect same, spawn same, exit same | waves same |
+  case kb3 vs the scout: 9 / 16, boxes 6 / 12, rect / spawn / exit same, waves same (expected 9 / 16, boxes 6 / 12, rect / spawn / exit same, waves same: OK)
+  | g8 | 1 / 13 (8 %) | boxes 1 / 8, ramps 0 / 2, pads 0 / 1, pits 0 / 2 | rect same, spawn same, exit same | waves changed |
+  case g8 vs the scout: 1 / 13, boxes 1 / 8, rect / spawn / exit same, waves changed (expected 1 / 13, boxes 1 / 8, rect / spawn / exit same, waves changed: OK)
+  | g7 | 0 / 24 (0 %) | boxes 0 / 15, ramps 0 / 4, pads 0 / 2, pits 0 / 3 | rect same, spawn same, exit same | waves changed |
+  case g7 vs the scout: 0 / 24, boxes 0 / 15, rect / spawn / exit same, waves changed (expected 0 / 24, boxes 0 / 15, rect / spawn / exit same, waves changed: OK)
+  | v2 | 0 / 17 (0 %) | boxes 0 / 11, ramps 0 / 4, pads 0 / 2, pits 0 / 0 | rect same, spawn same, exit same | waves changed |
+  case v2 vs the scout: 0 / 17, boxes 0 / 11, rect / spawn / exit same, waves changed (expected 0 / 17, boxes 0 / 11, rect / spawn / exit same, waves changed: OK)
+n69-patch-share --cases: 12 / 12 as expected (GREEN)
+# exit 0
+
+# cmd: node Tools/night/n69-patch-share.cjs --level kiln kb3 --room Design/levels/n67/kiln/rooms-base/kb3.json   (planted: rooms-base as the room)
+n69-patch-share: room kb3 | shipped Design/levels/n67/kiln/rooms-base/kb3.json vs rebuilt Design/levels/n67/kiln/rooms-base/kb3.json
+| room | shipped pieces kept | by kind (kept / shipped) | rect / spawn / exit | waves |
+|---|---|---|---|---|
+| kb3 | 16 / 16 (100 %) | boxes 12 / 12, ramps 2 / 2, pads 2 / 2, pits 0 / 0 | rect same, spawn same, exit same | waves same |
+  kept: box (4, 0, -202)..(5.5, 14, -199.15) (shipped job: hero prop: a drop press (the charger's stun post); the footh)
+  kept: box (6, 0, -211.5)..(7.5, 14, -209.5) (shipped job: hero prop: a drop press (the charger's stun post))
+  kept: box (-5.5, 0, -207.5)..(-4, 14, -205.5) (shipped job: hero prop: a drop press (the charger's stun post))
+  kept: box (-5.5, 0, -215.5)..(-4, 14, -213.5) (shipped job: hero prop: a drop press (the charger's stun post))
+  kept: box (9.4, 0, -217.5)..(10, 14, -200.5) (shipped job: verb it celebrates: the forge wall's ride over the charge)
+  kept: box (5, 0, -225.5)..(10, 4.5, -218.5) (shipped job: 30 s problem: THE FAR GALLERY (the spitters' roost, the high)
+  kept: box (3, 2.5, -225.5)..(5, 4.5, -218.5) (shipped job: spatial law: THE FAR GALLERY's west span (the exit lane unde)
+  kept: box (8.5, 4.5, -224.5)..(10, 14, -221.5) (shipped job: every-solid: the gallery's hood (cover on the high tier))
+  kept: box (-10, 0, -214.5)..(-7, 2.5, -205.5) (shipped job: spatial law: THE PRESS GANTRY (the mid tier along the west w)
+  kept: box (5.5, 0, -218.5)..(8, 0.9, -216.5) (shipped job: molecule: the small boost (T-5))
+  kept: box (-10, 0, -198.5)..(-2, 14, -197.5) (shipped job: molecule: the entrance gated (the door's west liner))
+  kept: box (2, 0, -198.5)..(10, 14, -197.5) (shipped job: molecule: the entrance gated (the door's east liner))
+  kept: ramp (-5, -221)->(3, -221) w 3 rise 4.5 (shipped job: molecule: the walkers' climb to the far gallery)
+  kept: ramp (-8.5, -219.5)->(-8.5, -214.5) w 3 rise 2.5 (shipped job: molecule: the walkers' climb to the press gantry)
+  kept: pad (-2, 0, -210.5)->(-8.5, 2.5, -210.5) (shipped job: molecule: the upward line, the hammer vent)
+  kept: pad (-8.5, 0, -224.5)->(5, 4.5, -224) (shipped job: molecule: the upward line, the quench vent)
+  rebuilt room pieces: boxes 12, ramps 2, pads 2, pits 0 | the rule: PASS at <= 25 % of the shipped room's pieces kept (geometry-equal; job / why text ignored)
+n69-patch-share: PATCH kb3 (100 % kept)
+# exit 1
+
+# cmd: node Tools/night/n69-patch-share.cjs --level iceline g7   (the room file in this tree = t0's: NIGHT68's)
+n69-patch-share: room g7 | shipped Design/levels/n67/iceline/rooms-base/g7.json vs rebuilt Design/levels/n67/iceline/rooms/g7.json
+| room | shipped pieces kept | by kind (kept / shipped) | rect / spawn / exit | waves |
+|---|---|---|---|---|
+| g7 | 0 / 24 (0 %) | boxes 0 / 15, ramps 0 / 4, pads 0 / 2, pits 0 / 3 | rect same, spawn same, exit same | waves changed |
+  rebuilt room pieces: boxes 3, ramps 1, pads 0, pits 0 | the rule: PASS at <= 25 % of the shipped room's pieces kept (geometry-equal; job / why text ignored)
+n69-patch-share: PASS g7 (0 % kept)
+# exit 0
+
+# cmd: node Tools/night/n69-patch-share.cjs --level spire v2   (the room file in this tree = t0's: NIGHT68's)
+n69-patch-share: room v2 | shipped Design/levels/n67/spire/rooms-base/v2.json vs rebuilt Design/levels/n67/spire/rooms/v2.json
+| room | shipped pieces kept | by kind (kept / shipped) | rect / spawn / exit | waves |
+|---|---|---|---|---|
+| v2 | 0 / 17 (0 %) | boxes 0 / 11, ramps 0 / 4, pads 0 / 2, pits 0 / 0 | rect same, spawn same, exit same | waves changed |
+  rebuilt room pieces: boxes 5, ramps 1, pads 0, pits 1 | the rule: PASS at <= 25 % of the shipped room's pieces kept (geometry-equal; job / why text ignored)
+n69-patch-share: PASS v2 (0 % kept)
+# exit 0
+
+# cmd: node Tools/night/n69-patch-share.cjs --level kiln kb3   (the room file in this tree = t0's: NIGHT68's)
+n69-patch-share: room kb3 | shipped Design/levels/n67/kiln/rooms-base/kb3.json vs rebuilt Design/levels/n67/kiln/rooms/kb3.json
+| room | shipped pieces kept | by kind (kept / shipped) | rect / spawn / exit | waves |
+|---|---|---|---|---|
+| kb3 | 9 / 16 (56 %) | boxes 6 / 12, ramps 2 / 2, pads 1 / 2, pits 0 / 0 | rect same, spawn same, exit same | waves same |
+  kept: box (9.4, 0, -217.5)..(10, 14, -200.5) (shipped job: verb it celebrates: the forge wall's ride over the charge)
+  kept: box (5, 0, -225.5)..(10, 4.5, -218.5) (shipped job: 30 s problem: THE FAR GALLERY (the spitters' roost, the high)
+  kept: box (3, 2.5, -225.5)..(5, 4.5, -218.5) (shipped job: spatial law: THE FAR GALLERY's west span (the exit lane unde)
+  kept: box (8.5, 4.5, -224.5)..(10, 14, -221.5) (shipped job: every-solid: the gallery's hood (cover on the high tier))
+  kept: box (-10, 0, -214.5)..(-7, 2.5, -205.5) (shipped job: spatial law: THE PRESS GANTRY (the mid tier along the west w)
+  kept: box (5.5, 0, -218.5)..(8, 0.9, -216.5) (shipped job: molecule: the small boost (T-5))
+  kept: ramp (-5, -221)->(3, -221) w 3 rise 4.5 (shipped job: molecule: the walkers' climb to the far gallery)
+  kept: ramp (-8.5, -219.5)->(-8.5, -214.5) w 3 rise 2.5 (shipped job: molecule: the walkers' climb to the press gantry)
+  kept: pad (-8.5, 0, -224.5)->(5, 4.5, -224) (shipped job: molecule: the upward line, the quench vent)
+  rebuilt room pieces: boxes 12, ramps 2, pads 2, pits 2 | the rule: PASS at <= 25 % of the shipped room's pieces kept (geometry-equal; job / why text ignored)
+n69-patch-share: PATCH kb3 (56 % kept)
+# exit 1
+
+# cmd: node Tools/night/n69-patch-share.cjs --level iceline g8   (the room file in this tree = t0's: NIGHT68's)
+n69-patch-share: room g8 | shipped Design/levels/n67/iceline/rooms-base/g8.json vs rebuilt Design/levels/n67/iceline/rooms/g8.json
+| room | shipped pieces kept | by kind (kept / shipped) | rect / spawn / exit | waves |
+|---|---|---|---|---|
+| g8 | 1 / 13 (8 %) | boxes 1 / 8, ramps 0 / 2, pads 0 / 1, pits 0 / 2 | rect same, spawn same, exit same | waves changed |
+  kept: box (-10, 0, -246)..(-9.4, 12, -223) (shipped job: line)
+  rebuilt room pieces: boxes 5, ramps 1, pads 0, pits 1 | the rule: PASS at <= 25 % of the shipped room's pieces kept (geometry-equal; job / why text ignored)
+n69-patch-share: PASS g8 (8 % kept)
+# exit 0
+
+# cmd: node Tools/night/n69-patch-share.cjs --level kiln kb3 --bogus   (an unknown option)
+n69-patch-share: REFUSED: unknown option --bogus (known: --level --at --base --room --cases)
+# exit 2
+
+# cmd: node Tools/night/n69-patch-share.cjs --level kiln nosuch   (a missing room)
+n69-patch-share: ERROR nosuch: ENOENT: no such file or directory, open 'C:\Users\gaige\dev\SKYGRIND-unity\.claude\worktrees\agent-af48e888c59fa3626\Design\levels\n67\kiln\rooms-base\nosuch.json'
+# exit 2

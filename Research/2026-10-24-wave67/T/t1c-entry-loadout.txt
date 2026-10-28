@@ -1,0 +1,14 @@
+# the loadout on entering kb3 (n57-kiln) in the three instruments (print-only probe); sha 2cd23882 + uncommitted probe; 2026-10-24 12:37:53
+## n65verb launch (a pilot)
+  put-in loadout (kb3): awards of the rooms before it given: revolver (kb2b's award); owned shotgun revolver
+  entry loadout (pilot, kb3, on entering): owned shotgun revolver gauntlet, in hand shotgun, pending gauntlet (pending: goes in hand on the next step with no weapon input)
+n65verb launch: level n57-kiln (Design/levels/n57-kiln.json), room kb3 "3.3 THE PRESS HALL", seed 1; pose (-8.5, 0.0, -203.0) yaw 0.0 from the room's spawn (no line65); off switch none
+n65verb launch: RED | room kb3 | launch36 0, flight end  thrown 0.0 m (max 1.1 m), bursts 0 (hits 0, kills 0) | landed (-5.0, 0.0, -210.0), in a pit no, in lava no, target alive | pose the room's spawn (no line65) | the punch launched nothing far
+## n65verb skip (skip v2, seed 1)
+  put-in loadout (kb3): awards of the rooms before it given: revolver (kb2b's award); owned shotgun revolver
+  entry loadout (skip v2, kb3, 0.5 s after entering): owned shotgun revolver gauntlet, in hand gauntlet
+n65verb skip: M1 FAIL | room kb3, ratio 0.91 vs bar 1.25 (default: no --bars), exercised 1/1
+## n46flow --rooms kb3 (seed 1)
+  put-in loadout (kb3): awards of the rooms before it given: revolver (kb2b's award); owned shotgun revolver
+  entry loadout (n46flow, kb3, 0.5 s after entering): owned shotgun revolver gauntlet, in hand gauntlet
+n46flow n57-kiln SUMMARY: GREEN 1/1; stall 29.8 %, longest stall 4.3 s, air 60.6 %, kill gap 1.2 / 10.0 s, nearest 6.2 m, dwell 10.3 s, dead 5.2 s, deaths 0, falls 0, clear 52.3 s

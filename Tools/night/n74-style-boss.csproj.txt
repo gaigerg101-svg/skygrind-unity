@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <LangVersion>9.0</LangVersion>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="C:\Users\gaige\dev\SKYGRIND-unity\.claude\worktrees\n74-L\Assets\Scripts\Core\**\*.cs" />
+    <Compile Include="C:\Users\gaige\dev\SKYGRIND-unity\.claude\worktrees\n74-L\Tools\night\n74-style-boss.cs" Link="n74-style-boss.cs" />
+  </ItemGroup>
+</Project>

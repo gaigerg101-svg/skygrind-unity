@@ -1,0 +1,25 @@
+{
+  "_why": "LEVEL 2, THE ICE LINE (NIGHT26, builder L with M and B; GG: 'the second one to feel like you're speed skating to get this boss and use movement dodge these telegraph attacks and get close to the boss and do damage', 'you're only allowed to use the first [weapon] and you have to get close'). The level is ONE boss room: `boss: \"glacier\"`, THE GLACIER (builder B), fought in its own course far from this map (Design/maps/glacier-course.json, builder B; its ice and boost strips are builder M's `surfaces`). This plan is only the entry zone the run starts in (a 32 m hall: the player is taken to the course when the fight begins, as the worm's room works) and the level's rank thresholds. LIMIT pistolOnly: the KESTREL alone (the pistol's close-range bonus is builder B's / W's config). The unlock at its end, the NAILGUN, comes from Design/levels/unlocks.json (id level2). Web coordinates (x east, y up, z SOUTH), metres.",
+  "id": "level2",
+  "name": "LEVEL 2 THE ICE LINE",
+  "floorSize": 96,
+  "killPlaneY": -30,
+  "wallHeight": 14,
+  "rank": {
+    "time": [150, 210, 330, 480],
+    "kills": [0, 0, 0, 0],
+    "style": [1500, 900, 400, 150],
+    "_why": "Unity-only (builder L): S/A/B/C cuts for the chase: time in seconds (the course is a chase: a clean run is about two minutes, a first try more; no estimate was measured: the bot of the glacier harness decides), kills 0 each (a level with no waves is S for kills: the kills column reads 100 percent when nothing was planned), style = points (NOT calibrated)."
+  },
+  "rooms": [
+    { "id": "ice", "name": "THE ICE LINE", "kind": "boss", "boss": "glacier", "rect": [-16, -40, 16, 0], "par": 120, "limit": ["pistolOnly"],
+      "spawn": { "at": [0, 0, -4], "yawDeg": 0 }, "exit": [0, 0, -36] }
+  ],
+  "doors": [],
+  "boxes": [],
+  "ramps": [],
+  "pads": [],
+  "grapple": [],
+  "pits": [],
+  "tunnels": []
+}

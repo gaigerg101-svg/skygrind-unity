@@ -1,0 +1,4 @@
+# command: dotnet <the Z3 build>/SimHarness.dll n46flow --level n52-foundry,n52-iceline,n57-kiln,n52-span,n52-spire --seeds 10 --off67 --out C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/6cb0a03b-4981-4743-8f49-6cccc18ebf8d/scratchpad/flow-z3.txt (n70-gates.sh --flow's walk), then diff against Research/2026-10-25-wave70/T/flow-base-t0.txt (wall-time and seeds lines aside)
+# sha: add266e1 + the Z3 working copy (build C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/6cb0a03b-4981-4743-8f49-6cccc18ebf8d/scratchpad/sim-z3c); start 2026-10-25 23:25:38
+n46flow exit 0 at 23:30:02; 5 level summaries
+the five-level walk on the Z3 build: EQUAL to the t0 base (flow-base-t0.txt = the main tree's Logs/n70/flow-base.txt)

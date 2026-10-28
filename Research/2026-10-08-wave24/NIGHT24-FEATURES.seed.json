@@ -1,0 +1,123 @@
+{
+ "schema": "night24-features-1",
+ "about": "The 13 contracts of NIGHT24 (the master prompt). The run copies this file to NIGHT24-FEATURES.json at U3-38.1 and sets passes / evidence only from this night's printed lines. owner = the builder queue in NIGHT24.md (R removals and pad, F fist / arc / rewards, L levels and the campaign, B the worm boss, lead = the Editor-bound rows). A number in a check is a threshold the run must print; where a number is our inference (RESEARCH.md), the run tunes the config to meet it and prints both the first and the final value.",
+ "features": [
+  {
+   "id": "remove-replay",
+   "owner": "R",
+   "switch": "(removal; the input tape stays)",
+   "scenario": "none: a grep, the suite, one reel line",
+   "check": "a grep over Assets/ and Tools/ excluding *.md and *.meta finds no Replay22, Replay21, replayClip, ReplayEnsureClip, design.n21.replay, the replay2 / replay scenarios or the VIEW prompt (the input tape RunTape / TapeReplay stay: they are not the replay feature); the config rows are gone in both copies (cmp identical); the suite has no replay test; Editor Play shows 0 console errors; one Player reel line shows DOWN to RESULTS with no prompt; a tape RECORDED AFTER the removal replays EQUAL and a format 7 tape recorded before it still reads (a test)",
+   "passes": false,
+   "evidence": null
+  },
+  {
+   "id": "remove-daily-weekly",
+   "owner": "R",
+   "switch": "(removal)",
+   "scenario": "reel title (the TITLE rows)",
+   "check": "a grep over Assets/ and Tools/ excluding *.md and *.meta finds no Daily.cs, Weekly20.cs, RunSetup.Daily, the DAILY / WEEKLY TITLE rows, RESULTS daily lines, GhostDaily22 or design.n22.ghostDaily; the SliceSmoke DAILY step is removed and the smoke steps renumbered (a premise change, logged); seed codes, RETRY SAME SEED, the CHALLENGE CODE field, SURVIVAL and THE GRIND still work (their tests and the smoke); a saved profile from NIGHT23 loads without error (a test: the old daily fields are ignored); the Player reel title lists the MODE rows CAMPAIGN (once built), SURVIVAL, THE GRIND and no DAILY or WEEKLY",
+   "passes": false,
+   "evidence": null
+  },
+  {
+   "id": "pad-y-weapons",
+   "owner": "R",
+   "switch": "design.n24.padY",
+   "scenario": "reel padweapons (virtual pad)",
+   "check": "on the Player with a virtual pad: Y tap = next weapon (the loadout slot advances; a NEW port-only event weaponSwitch, added to PORT-STATUS), Y hold opens the wheel, RB = SPECIAL + ARCLINE (a yank fires, arclinePull 1); LB stays DASH (it is bound in every default layout: the old RB scroll is dropped); the saved v3 layout migrates to v4 (a test); S12 reads 0 keyboard words on the pad pass; --off24 restores v3",
+   "passes": false,
+   "evidence": null
+  },
+  {
+   "id": "shotgun-rate",
+   "owner": "R",
+   "switch": "design.n24.shotgunTune",
+   "scenario": "reel shotgun + harness shotgun",
+   "check": "the result line prints the THUNDERCLAP's measured shot-to-shot time on the Player (pump delay included) BEFORE the change and AFTER; AFTER = 1.30 x BEFORE (DECIDE D-8), and the per-pellet damage is scaled by 1.30 so DPS stays within 10 % (slower, not weaker: GG said it fires too fast); a harness bench prints shotgun and revolver DPS before and after; if BEFORE is not the 0.9 s of the web's config, the result line names what shortened it (a perk, a MOVE or stamina flag) and the fix goes there; --off24 restores the old interval",
+   "passes": false,
+   "evidence": null
+  },
+  {
+   "id": "big-pick",
+   "owner": "F",
+   "switch": "design.n24.bigPick",
+   "scenario": "reel bigpick",
+   "check": "SURVIVAL: no draft before round 5; at rounds 5, 10, 15 ... a BIG PICK of 3 cards from {FREE MYSTERY BOX SPIN, +1000 POINTS (x2 at round 10, x3 at round 20), WEAPON PACK (the held gun gains a damage tier), PERK, FULL HEAL + ARMOR, FULL FIST CHARGE}; no reroll, no percentage cards; one press to pick (pad A or keys 1-3), a default pick after 6 s; the box spin really spins a box (event boxRoll); text 18 px or more; M9 0 pop-ins on the cards; the old percentage draft sits behind design.mods.legacy (off); --off24 restores NIGHT21's draft; the fingerprint is re-recorded once at the freeze because the round-2 draft was on its path",
+   "passes": false,
+   "evidence": null
+  },
+  {
+   "id": "reticle-arc",
+   "owner": "F",
+   "switch": "design.n24.reticleArc",
+   "scenario": "reel reticle",
+   "check": "a curved bar 26-48 px under the crosshair, about 140 x 5 px at 1080p (the numbers are research inference: the result line prints the final values): it fills as the held ability recharges (the ARCLINE yank, 15 s), shows dash pips and the fist charge as 3 notches; idle alpha 0.15-0.25, a ready flash of 250 ms or less; it is not text (M10 unaffected) and it is the one persistent element allowed in the central 40 %: the lead adds a named allow-entry for it in Tools/feel-metrics.py S14 (a selftest seen both ways) and logs the carve-out in DECIDE24 D-14; M-MAGENTA 0; no red for out-of-range; the result line prints the arc's fill at three moments (empty, half, ready); the ARCLINE chip of NIGHT22 moves into it",
+   "passes": false,
+   "evidence": null
+  },
+  {
+   "id": "charge-fist",
+   "owner": "F",
+   "switch": "design.n24.chargeFist",
+   "scenario": "reel fist + harness fist",
+   "check": "the PULSE GAUNTLET charge rises from fist hits (2 %), fist kills (8 %) and other kills (3 %) and never with time (a harness idles 60 s: +0); three tiers at 33 / 66 / 100 %; the harness first prints J = the horizontal distance of a standing jump measured on the Mover; a punch with charge flicks the player along the aim by 0.5 J / 1.0 J / 2.0-2.5 J (the three measured distances printed), spends all charge, allows one air flick until grounded or a wall touch, and is clamped on the collider (a harness aims into a wall: no launch through geometry); the GG rule 'a movement verb needs a long cooldown' (CORE.md) is met by the charge itself: a tier-1 flick costs 33 % (about 10 fist kills), a full flick 100 %, plus a 3 s lockout (DECIDE D-13); a third of the charge is lost when hit; a harness bot run (fist kills only, then revolver kills only, from the same husk waves) prints kills-to-FULL for both and the fist-only number is 25-35 after tuning the config rates (first and final rates printed); golden exact (Mover.cs untouched: the flick is an impulse through the existing API); --off24 restores the plain punch",
+   "passes": false,
+   "evidence": null
+  },
+  {
+   "id": "switch-lag",
+   "owner": "lead",
+   "switch": "design.n24.prewarm",
+   "scenario": "hitch tour (Player, cold then warm)",
+   "check": "a scripted tour of TITLE, PAUSED, SETTINGS, MODE switches, 3 weapon switches, a BIG PICK and RESULTS runs cold then warm in BOTH the Editor Game view at 1x and a Development Player, with a frame-delta hitch logger, BEFORE any fix and after each fix: worst frame, p99 and the count of frames above 33 ms printed with the CPU load and the python-process count; AFTER (on a run with CPU under 50 %): no frame above 33 ms and the worst cold frame under 20 ms in the Player, or SHORT with the dominant marker named and the numbers; every fix is a measured cause (Canvas.enabled instead of SetActive, TMP pre-fill, shader prewarm, preloads), never a guess; the hitch logger stays in the smoke as a check",
+   "passes": false,
+   "evidence": null
+  },
+  {
+   "id": "campaign-core",
+   "owner": "L",
+   "switch": "design.n24.campaign",
+   "scenario": "reel room + harness campaign",
+   "check": "a CAMPAIGN run from Design/levels/<id>.json: ROOMS with a door that locks on entry (NEW Core: Zones has Open but no re-lock: Zones.Lock(id) with Save / Load and tests, or a start-locked door set) and unlocks free (Zones.Open(id, free: true)) when the encounter script (a wave list of enemy kinds with room-local spawn nodes) is cleared; a checkpoint at each room door; death restarts the ROOM within 1.5 s of GAME time with the same seed (RETRY ROOM); the run state (room index, checkpoint, weapons owned, limit flags) is in the tape (format 8) and a campaign tape replays EQUAL; the headless bot clears rooms 1-3 of layer 1 within 4x each room's par time (the times printed); the TITLE MODE row has CAMPAIGN; the other modes are untouched (their tests)",
+   "passes": false,
+   "evidence": null
+  },
+  {
+   "id": "weapons-limits",
+   "owner": "L",
+   "switch": "design.n24.campaign",
+   "scenario": "reel limit",
+   "check": "the start loadout is KESTREL + the gauntlet only; the THUNDERCLAP is awarded at the end of room 2 (a pedestal pickup, a name card, a NEW port-only event weaponEarned, added to PORT-STATUS); a LIMIT room flag strips weapons or a verb for that room only: PISTOL ONLY and NO DASH (a banner on entry, shown in the HUD, restored at the door, recorded in the tape); clearing a LIMIT room pays a style bonus; the result line prints what was owned before, inside and after",
+   "passes": false,
+   "evidence": null
+  },
+  {
+   "id": "layer-1",
+   "owner": "L",
+   "switch": "design.n24.campaign",
+   "scenario": "reel layer1 (a bot run through the whole layer) + a map report",
+   "check": "LAYER 1 plays door to door: 3 combat ROOMS (40-60 m across, 2-3 tiers) + 2 traversal LINKS (a jump-pad hall, and a shaft that needs a WALL JUMP, GG: 'wall riding'; a grapple node may help; existing Mover verbs only) + the boss room holding THE KILN WYRM; built from ONE plan file (DrydockPlan's format: zones = rooms, doorways = doors, plus a rooms block) by a re-runnable generator (a headless levelgen command like mapgen: the lead pre-places its dispatch) into collision boxes on the C# collider; a MapValidate-style report with 0 errors: every room reachable, doors close the nav, no stuck pockets, AND every tier reachable by enemies from the floor (the nav check: GG's standing rule 'there always needs to be a route that enemies can climb'); the bot finishes the layer in a measured time and its per-room clear rate over 10 seeds is printed (a hard but fair first layer: 60-90 % per room, tune enemy counts in the room rows); a rank letter per layer (the stamp) from time + kills + style",
+   "passes": false,
+   "evidence": null
+  },
+  {
+   "id": "lighting-kit",
+   "owner": "L",
+   "switch": "design.n24.lighting",
+   "scenario": "reel lit",
+   "check": "closed rooms get a room accent (cyan safe trim, red-orange only on enemies and hazards), a guide light toward the exit door and emissive trim; shipped materials and shaders only; the LUM meter prints each room scene's median luminance and it lies between 20 and 80 (readable, not black); M-MAGENTA 0; M11 0 new unlisted roles; three frames per room are read by the lead and the log says what they show; the art pass is later (GG); this row is the FIRST cut if time is short",
+   "passes": false,
+   "evidence": null
+  },
+  {
+   "id": "wyrm",
+   "owner": "B",
+   "switch": "design.n24.wyrm",
+   "scenario": "reel wyrm + harness wyrm",
+   "check": "THE KILN WYRM per DESIGN24-bosses.md section 1: 24 body + head + tail boxes on a head-position ring buffer; the body pieces are NOT solid to the player (shots test a ray against each oriented box; the player takes contact damage and a knockback: no BoxLayer change); one shared HP pool (head x2, exposed core x3); the four-pattern path cycle (spiral, dive, lunge, loop) from Design/bosses/wyrm.json; every attack's tell is at least stepsFor(0.5 s) (the harness reads the attack table); 3 phases (+25 % speed each); the BossKit intro card, bar and finisher; a headless bot kills it at a fixed seed within 6 minutes of game time (the bot's time printed; the human target is 2.5-3.5 min); over 10000 sampled steps the worm is never within 6 m of the player's spawn; a step-exact tape replays EQUAL; fingerprint EQUAL with the row off; events use the web's boss names; the reel shows the intro, the coil, the dive telegraph and the finisher",
+   "passes": false,
+   "evidence": null
+  }
+ ]
+}

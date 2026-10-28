@@ -1,0 +1,47 @@
+levelgen --walk: 0 ERROR (none; 5 s)
+shipped after:  Design/levels/n67-iceline.json 71310b9b469fc009be5ae13092d74950fe18472242c8279b80c076a88a376467, Assets/StreamingAssets/Design/levels/n67-iceline.json 71310b9b469fc009be5ae13092d74950fe18472242c8279b80c07
+the round's level: C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/ice/g5/cand1/n67-iceline.json 147ec46acc8b9d7073f9d2fce9756ece857215f707cf43e5
+== g5 cand1 (g5)
+  PASS R2 no dead ends      0 dead-end cells of 167 (2 m x 0.5 m cells; 0 bridges)
+  FAIL R5 foothold          no box above the eye (1.6 m) reaching 4-8 m inside the entry
+  PASS R8 every job         0 untagged of 14 solids
+  n/c  IN VIEW ambushed     not measured: no foothold (R5 FAIL) | without the foothold clauses: PASS, 0 of 4 nodes in use fail (8-15 m from the door, <= 15 m from midfield, no line into the corridor)
+  PASS I1 no mirror         mirror overlap 47 % across the door axis x = 0 (d4; 14 solids, 175 m2 footprint; < 60 % PASS)
+  PASS I2 ride shortcut     ride 16 m at x -11..-10.4 z -147..-131: best side +1 dir -1: walk 19.1 m / ride 16.0 m = 1.19; ride 10 m at x 9.4..10 z -139..-129: best side -1 dir -1: walk 39.5 m / ride 
+  n/c  I3 teach verb needed not a grapple-pull teach room (ride lessons: I2; whip, pad and slide lessons: not computed)
+  PASS I4 pads clear        3 pads, 4 walk lines; all clear (nearest line distances 3.0, 3.5, 3.0 m)
+ROOM g5: FAIL R5 foothold
+-- flow-A
+n46flow n67-iceline SUMMARY: GREEN 10/10; stall 39.5 %, longest stall 4.7 s, air 29.5 %, kill gap 1.3 / 65.6 s, nearest 6.6 m, dwell 1.3 s, dead 3.2 s, deaths 0, falls 0, clear 60.0 s
+n46flow n67-iceline STYLE: DULL 93.7 % of 623 s of fight; above DULL 6.3 %; rooms reaching SAVAGE 0/1; top rank BOLD
+-- flow-B
+n46flow n67-iceline SUMMARY: GREEN 10/10; stall 54.1 %, longest stall 4.9 s, air 25.4 %, kill gap 1.3 / 26.7 s, nearest 2.7 m, dwell 0.7 s, dead 3.2 s, deaths 0, falls 0, clear 40.3 s
+n46flow n67-iceline STYLE: DULL 84.2 % of 389 s of fight; above DULL 15.8 %; rooms reaching SAVAGE 0/1; top rank BOLD
+-- flow-V
+n46flow n67-iceline SUMMARY: GREEN 10/10; stall 48.8 %, longest stall 5.0 s, air 26.8 %, kill gap 1.3 / 46.8 s, nearest 5.7 m, dwell 0.5 s, dead 3.2 s, deaths 0, falls 0, clear 58.0 s
+n46flow n67-iceline STYLE: DULL 94.2 % of 527 s of fight; above DULL 5.8 %; rooms reaching SAVAGE 0/1; top rank BOLD
+  g5     verb65 ride         | trigger held 461 of 63291 fight steps (0.7 %), episodes 2, performed: wall rides 1 (the face: g5 E x -10.4 (-147..-131); off-line ride starts cut 142 wall contacts)
+n65-air n67-iceline g5 "2.5 THE CRANE YARD" (C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/ice/g5/cand1/iceline.plan.json):
+n65-air g5: air pieces 14 (rides 4, decks 2, ledges 5, pads 3), hand-offs 62, longest floor-free chain 12, dead ends 0/11 | without the dash-jump: hand-offs 39, chain 11, dead ends 0/11 | flights handed on: 5 of 7 on one path (4 without the dash-jump)
+pad52 g5 pad 2 at [3,0,-135.5] target [8,4.5,-142.5] launched yes apex 6.5 landed [8.01,4.5,-142.51] miss 0.01 m PASS
+pad52 g5 pad 3 at [2.5,0,-152.5] target [8,4.5,-142] launched yes apex 6.5 landed [8.01,4.5,-141.99] miss 0.01 m PASS
+pad52 g5 pad 4 at [-6,0,-133] target [-8,2.5,-154] launched yes apex 4.5 landed [-8,2.5,-154.04] miss 0.04 m PASS
+n53ridekill ride: GREEN | level n67-iceline, room g5, rideKill53 on True | ride yes (WallRideStart 1), kill on the wall yes, rideKill53 events 1, bar after 0.650 vs the foot kill's 0.150 (+0.500, one boost = 0.500) | foot kill yes, paid no
+Research/2026-10-27-wave74/R/evidence/g5/cand1/g5/ride-pilot.txt:n65verb ride: level n67-iceline (C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/ice/g5/cand1/n67-iceline.json), room g5 "2.5 THE CRANE YARD", seed 1; pose (-9.
+Research/2026-10-27-wave74/R/evidence/g5/cand1/g5/ride-pilot.txt:n65verb ride --shoot: RED | room g5 | ride yes (1.9 s on the wall, 4.7 m along it, WallRideStart 2) | look off the wall at most 175.1 deg | shots from the wall 0 (off it 0) | kills from the wall 0 (other kills 0) | pose line65[0] | no 
+n65verb skip: M1 UNSURE | room g5, ratio 1.00 vs bar 1.25 (default: no --bars), exercised 2/20 | too few seeds exercised (2 < 14): the comparison does not test the verb
+n65verb skip: M2 VERB UNSURE | room g5, verb ride, pooled ratio 1.00 vs mainBar 1.25 (default: no --bars), sets 1-10 1.13 (1/10), 11-20 0.87 (1/10), exercised 2 / 20 (need 14), median of all 20 seeds 1.00, refusal fired on 2 of 2 exercised seeds (by construction: an exercised seed refused a press), the refused run used the verb 
+n70-area: room g5; plan C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/ice/g5/cand1/iceline.plan.json, level C:/Users/gaige/
+OPEN  PASS largest open square 7.0 m (x -5.0..2.0, z -135.0..-128.0; 17 pieces on a 21.0 x 30.0 m rect; 12 m or less passes)
+P1    FAIL the last wave's 2 ranged of 3; its spawn set (nodes + highNodes) 2 / 9 nodes 3.5 m or more over the floor (y 0.0; each enemy takes a random node: all must be high)
+P4    PASS 8 / 8 standing solids >= 1.75 m do a job ((a) touched 8, (b) sight 2, (c) launch kill 0)
+P5    PASS walk line in a ranged spawn's sight at 6-24 m 88.9 % (>= 50 %), line65 100.0 % (<= walk - 30 points: no); line65's nearest enemy spawn 0.6 m (<= 6: yes); 9 ranged spawns
+P9    FAIL 0 / 1 planes with 2 climb tops >= 8 m apart: box(-11,0,-158..-5,2.5,-147) 6.0 x 11.0 m at 2.5 m: 7 climb top(s), farthest apart 2.0 m (NO)
+P11   N/A  the card names no TOWER / GALLERY / SPLIT LEVEL (no card)
+P17   FAIL 2 / 4 ride walls 4 m tall and 8 m long (short: box(-5.3,0,-139..-4.7,4,-135) 4.0 x 4.0 m; box(4.7,0,-139..5.3,4,-135) 4.0 x 4.0 m); 0 non-ride wall(s) in that band; the strip = ride: true (
+n70-area: FAIL g5 (3/6)
+n70-deco: FAIL | room g5, base 16116dead: 16 piece(s) added or moved, 11 pass, 5 FAIL; dressing 5 not judged
+  rebuilt room pieces: boxes 12, ramps 2, pads 3, pits 0 | the rule: PASS at <= 25 % of the shipped room's pieces kept (geometry-equal; job / why text ignored)
+n70-patch-share: PASS g5 (25 % kept)
+  core 5/5 PASS, extra 3/3 PASS
+finished

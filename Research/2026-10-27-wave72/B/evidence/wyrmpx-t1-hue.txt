@@ -1,0 +1,4 @@
+# command: python -I Tools/night/n72-wyrmpx.py --hue <label> <frame> 858,590,912,760   (the lead's n72-t1 f0100 frames of the kiln boss63: Logs/n72/pairs/body72-alone/{on,off}.png; ON = body72:1 alone, OFF = plain)
+# builder B, worktree n72-B, 2026-10-27 12:26:11 USMST. Bars set before any round-2 frame: median hue <= 35 deg AND yellow-band (45-70 deg) share <= 42 % (the plain config's own 41.1 % rounded up: a first bar of 15 % failed the OFF frame itself, because the seams' HDR cores clip yellow in the plain game too; changed here, before any round-2 frame, and said). The box is the worm's column, cut at x 912 to leave out the arena's yellow pillar bars (x 920-955).
+t1-ON	on.png	box 858,590,912,760	bright px 8148	median hue 46.9 deg (bar <= 35)	yellow-band share 52.4% (bar <= 42%)	FAIL
+t1-OFF	off.png	box 858,590,912,760	bright px 7805	median hue 30.9 deg (bar <= 35)	yellow-band share 41.1% (bar <= 42%)	PASS

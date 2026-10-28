@@ -1,0 +1,17 @@
+# command: python -I Tools/night/n74-room-rules.py room Design/levels/n67/iceline/rooms/g1.json
+# sha: efa8df54e; time: 2026-10-28 00:02:20
+iceline/g1  rect [-11.0, -26.0, 11.0, 0.0]  spawn [0.0, 0.0, -2.0] yaw 0  floor 0.0
+  PLANES  PASS  planes 2 (0.0 m: 455 cells, 3.0 m: 30 cells)
+  COVER   PASS  cover: free-standing high 2, low 2, between 0 (0 without a job), none 1
+  LOOPS   PASS  loops 4 (floor holes 3 + closed pad / ride routes 1 of 1)
+  REAR    PASS  rear arc: 0 of 1 wave-1 usable nodes behind the entry facing (all waves: 0 node uses behind)
+  VIEW    PASS  view: enemy in view at 0.00 s (1 of 1 wave-1 nodes seen at entry)
+  CROSS   PASS  cross: chord 34.1 m, dash 1.42 s, walk 4.3 s (bar 2.0 s at dash)
+  EXPOSE  RED  exposure: 66 % of 1770 floor-sample pairs see each other (bar 60 %); longest clear line 31.9 m (medium band 19.5 m)
+  CLIMB   PASS  climb: 1 tier group(s), 0 not reached by walker links
+    free-standing high piece: hull [-3.5, 0.0, -19.0]-[-2.0, 9.0, -17.5] h 9.00 job "30 s problem: THE WEST CHARGE POST (to the roof: t"
+    free-standing high piece: hull [2.0, 0.0, -19.0]-[3.5, 9.0, -17.5] h 9.00 job "30 s problem: THE EAST CHARGE POST (to the roof: t"
+    free-standing low piece: hull [-6.0, 0.0, -8.0]-[-4.0, 1.2, -6.0] h 1.20 job "cover: THE WEST PEN RAIL (1.2 m low cover in the d"
+    free-standing low piece: hull [4.0, 0.0, -5.0]-[6.0, 1.2, -3.0] h 1.20 job "cover: THE EAST PEN RAIL (1.2 m low cover by the d"
+    walkers reach every tier: climb: 1 tier group(s), 0 not reached by walker links
+  core 5/5 PASS, extra 2/3 PASS

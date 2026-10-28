@@ -1,0 +1,29 @@
+# command: node Tools/night/n65-air.cjs C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/ice-g6/iceline.plan.json g6
+# sha: bf5edde7e; time: 2026-10-28 00:06:47
+n65-air n67-iceline g6 "2.6 THE ARMOURY" (C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/ice-g6/iceline.plan.json):
+  numbers: jump v0 8.33 m/s, g 23.15 m/s2 (fall x1.35), double v0 7.50, dash 24 m/s x 0.25 s = 6.0 m, dash-jump v0 6.67 with g x0.5 for 0.5 s at 24 m/s, run-up 8 m/s, wall jump out 5 up 8.33 (wallfling42 on), ride 9.20 m/s, jump-off out 8 +1 up 7.30 (ride39 on), capsule 0.35 m; a ride held 2.5 m over its base
+  air pieces 5:
+    D1   deck  top 2.0 m over [-7.0, -177.0, -4.0, -168.0] | line: THE WEST SHELF (2 m: the armoury's raised shelf over the dash lane: shoot down the far husks, throw a husk at its face): NIGHT74 S g6 r1 (Research/2026-10-27-wav
+    L2   ledge top 2.5 m over [4.3, -176.0, 5.5, -169.0] | line: THE EAST RACK (a free-standing 2.5 m gun rack: the burst wall beside the dash lane and the cover from the far husks' line): NIGHT74 S g6 r1 (Research/2026-10-27-wav
+    L3   ledge top 2.2 m over [-3.6, -170.0, -2.0, -168.4] | cover: THE PIER (a 2.2 m pillar west of the plinth: high cover on the way to the far husks): NIGHT74 S g6 r1 (Research/2026-10-27-wav
+    L4   ledge top 1.2 m over [2.0, -171.5, 3.6, -170.0] | cover: THE CART (1.2 m low cover east of the dash lane: hop it or shelter behind it from the far husks): NIGHT74 S g6 r1 (Research/2026-10-27-wav
+    P5   pad   at (-2.5, 0.0, -173.5) -> (-5.5, 2.0, -172.5) (on the floor) | line: THE GUN LIFT (a jump pad from the floor onto the west shelf: the launch room's way up)
+  hand-offs 13 (piece -> piece without touching the floor, the easiest move first):
+    D1 -> L2  dash, margin 1.48 m (gap 8.7 m); also dash-jump 11.15, dash-jump + double 21.55
+    D1 -> L3  jump, margin 4.38 m (gap 0.7 m); also jump + double 7.85, dash 9.72, dash-jump 19.85, dash-jump + double 30.05
+    D1 -> L4  jump + double, margin 2.85 m (gap 6.4 m); also dash 4.98, dash-jump 16.25, dash-jump + double 26.05
+    L2 -> D1  jump + double, margin 0.35 m (gap 8.7 m); also dash 2.48, dash-jump 13.35, dash-jump + double 23.35
+    L2 -> L3  jump + double, margin 2.28 m (gap 6.7 m); also dash 4.28, dash-jump 14.95, dash-jump + double 24.95
+    L2 -> L4  jump, margin 5.15 m (gap 1.0 m); also jump + double 8.42, dash 10.62, dash-jump 22.55, dash-jump + double 32.15
+    L3 -> D1  jump, margin 4.72 m (gap 0.7 m); also jump + double 8.12, dash 10.12, dash-jump 20.65, dash-jump + double 30.65
+    L3 -> L2  jump + double, margin 1.88 m (gap 6.7 m); also dash 3.75, dash-jump 13.75, dash-jump + double 23.95
+    L3 -> L4  jump, margin 1.65 m (gap 4.4 m); also jump + double 4.92, dash 7.12, dash-jump 18.65, dash-jump + double 28.45
+    L4 -> D1  jump + double, margin 1.85 m (gap 6.4 m); also dash 3.38, dash-jump 12.65, dash-jump + double 23.25
+    L4 -> L2  jump, margin 2.62 m (gap 1.0 m); also jump + double 6.75, dash-jump 16.35, dash-jump + double 27.55
+    L4 -> L3  jump + double, margin 3.65 m (gap 4.4 m); also dash 4.98, dash-jump 14.05, dash-jump + double 24.85
+    P5 -> D1  pad (gap 3.2 m)
+  longest floor-free chain: 5 piece(s): P5 -> D1 -> L2 -> L3 -> L4 (opened by a floor pad)
+  note: a dash-jump keeps the dash's 24 m/s for its whole flight (Mover.cs:1080; air accel never slows a body: MovementMath.Accelerate), so its reach is long; no obstacle, line-of-sight or air-control test
+  flight pieces (rides + pads) on one floor-free path: 1 of 1: P5 -> D1 -> L2 -> L3 -> L4; without the dash-jump: 1: P5 -> D1 -> L2 -> L3 -> L4
+  without the dash-jump: hand-offs 13, longest chain 5: P5 -> D1 -> L2 -> L3 -> L4, dead ends 0/4
+n65-air g6: air pieces 5 (rides 0, decks 1, ledges 3, pads 1), hand-offs 13, longest floor-free chain 5, dead ends 0/4 | without the dash-jump: hand-offs 13, chain 5, dead ends 0/4 | flights handed on: 1 of 1 on one path (1 without the dash-jump)

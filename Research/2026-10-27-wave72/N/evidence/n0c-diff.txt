@@ -1,0 +1,2 @@
+n0c diff 11:18:01 N0 commit 38fefdf84 (A) vs the level without the a3 ceiling lights (B)
+campaign.lights: only in A 3, only in B 0 {"A":["{\"id\":\"a3-L1\",\"room\":\"a3\",\"kind\":\"ceiling\",\"at\":[1,9.95,-64],\"normal\":[0,-1,0],\"size\":[3,3,0.1],\"color\":\"white","{\"id\":\"a3-L2\",\"room\":\"a3\",\"kind\":\"ceiling\",\"at\":[0,9.95,-82.5],\"normal\":[0,-1,0],\"size\":[4,3,0.1],\"color\":\"whi","{\"id\":\"a3-L4\",\"room\":\"a3\",\"kind\":\"ceiling\",\"at\":[-8.5,9.95,-75],\"nor

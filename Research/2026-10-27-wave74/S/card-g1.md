@@ -1,0 +1,11 @@
+# g1 2.1 TANK ALONE r1 (level 2, iceline; NIGHT74 S, the lead's slice: gg-proxy-start ranks g1 a flat floor; rect, door, spawn, exit, waves, lessons kept)
+- **Why:** the shipped room is one bare floor with two free-standing panels; the meter reads PLANES 1, COVER none, EXPOSE 73 %; gg-proxy: "bare floor x0-1920, y560-1080, one tank at the end". The first room of level 2 teaches the punch (wave 1 one tank: "ONE SWING FELLS A TANK") and the charger ("Dodge late. It can't turn.").
+- **The one verb: ride** (NIGHT71 R's slate verb): if the swing misses, the wall is the line round the tank.
+- **A entry:** the door and the spawn on the axis; in view: the tank 12 m ahead, THE WEST WALL's cyan strip and THE PEN GALLERY on the left, THE EAST STEP and the east panel on the right, two 1.2 m pen rails at the feet.
+- **B the verb's line:** THE WEST WALL (ride, 15 m, on the west wall) north onto THE PEN GALLERY (3 m); the east panel (ride, 15.5 m, 5 m high) on the other side.
+- **C the fight:** the tank holds the middle; the charger comes from the far end between THE WEST and EAST CHARGE POSTS (to the roof: dodge late into one and it stuns: punch its back); circuits round the tank and the posts.
+- **D the reward:** the gallery is the high ground over the charger's lane. **E the shortcut only the verb opens:** the west wall's ride onto the gallery (the walkers take THE GALLERY STAIR, 3 m over 7.5 m).
+- **New in r1:** THE WEST WALL, THE PEN GALLERY, THE GALLERY STAIR, two charge posts, THE EAST STEP (0.9 m, a walkers' tier: a first 1.25 m step was refused by levelgen), two pen rails; the east panel runs 13 -> 15.5 m, the free-standing west panel leaves. **Floor planes** 0 / 3 (the step is 0.9 m, a hop).
+- **Kept (rule 1):** the rect, the door, the spawn, the exit, both waves, both lessons, the nodes, a ride face on each side, every light, the east perimeter lane the Player's wall pick rides (23 m at (10.3, -24.0), ride 1.73 s PASS: Research/2026-10-27-wave74/S/g1/verbs-wall.txt).
+- **Guards:** Research/2026-10-27-wave74/S/g1/{red-base,r1}. Never the verdict: the lead's two-build tour65 pair (g1:0/0/-2/0/0.04, the entry frame) and the blind spotter are.
+- **Files:** Design/levels/n67/iceline/rooms/g1.json, Research/2026-10-27-wave74/S/g1/make-g1-r1.cjs. Iceline slot list: `g4,g1` (g4 stays).

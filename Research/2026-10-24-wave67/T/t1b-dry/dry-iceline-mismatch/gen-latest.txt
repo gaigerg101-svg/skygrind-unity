@@ -1,0 +1,25 @@
+# command: node Tools/night/gen-slots.cjs --level iceline --run --slots=latest --out=Logs/n67/dry-iceline-mismatch
+# sha: e4fae1a2; time: 2026-10-24 11:26:06
+openings: Logs/n67/dry-iceline-mismatch/openings67.json iceline g2 held, g3 ambushed, g4 held, g5 ambushed, g7 held, g8 ambushed (seed Design/levels/n52/openings53.json)
+gen-slots --level iceline: Design/levels/n52/iceline.plan.json -> Logs/n67/dry-iceline-mismatch/iceline.plan.json (slots latest; rebuilt: g8); every other room, door, piece and key n52-iceline's bit for bit
+  slot g1: latest Design/levels/n67/iceline/rooms/g1.json: n52-iceline's room exactly; boxes 2, ramps 0, pads 0, grapple 0, pits 0, tunnels 0, lights 6, props 0, surfaces 0
+  slot g2: latest Design/levels/n67/iceline/rooms/g2.json: n52-iceline's room exactly; boxes 7, ramps 3, pads 4, grapple 0, pits 0, tunnels 0, lights 5, props 2, surfaces 0
+  slot g3: latest Design/levels/n67/iceline/rooms/g3.json: n52-iceline's room exactly; boxes 13, ramps 2, pads 2, grapple 0, pits 0, tunnels 0, lights 7, props 2, surfaces 0
+  slot g4: latest Design/levels/n67/iceline/rooms/g4.json: n52-iceline's room exactly; boxes 14, ramps 2, pads 3, grapple 0, pits 1, tunnels 0, lights 7, props 1, surfaces 1
+  slot g5: latest Design/levels/n67/iceline/rooms/g5.json: n52-iceline's room exactly; boxes 11, ramps 2, pads 3, grapple 0, pits 0, tunnels 0, lights 6, props 1, surfaces 0
+  slot g6: latest Design/levels/n67/iceline/rooms/g6.json: n52-iceline's room exactly; boxes 0, ramps 0, pads 0, grapple 0, pits 0, tunnels 0, lights 3, props 2, surfaces 0
+  slot g7: latest Design/levels/n67/iceline/rooms/g7.json: n52-iceline's room exactly; boxes 15, ramps 4, pads 2, grapple 0, pits 3, tunnels 0, lights 6, props 2, surfaces 0
+  slot g8: latest Design/levels/n67/iceline/rooms/g8.json: REBUILT; boxes 8, ramps 2, pads 1, grapple 0, pits 2, tunnels 0, lights 6, props 7, surfaces 0; verb65 pierce
+    row keys: keep 29, replace 0, add 1, drop 0
+    add     verb65
+    WARN: rebuilt but the row has no bot43: false (the walk bot's old id scripts would drive the new geometry)
+shipped before: Design/levels/n67-iceline.json 57139ce98a8bdce9a9f0efd9ee4a43c704f7f75cc3dd39fbdaac5e68c0c0fc72, Assets/StreamingAssets/Design/levels/n67-iceline.json 57139ce98a8bdce9a9f0efd9ee4a43c704f7f75cc3dd39fbdaac5e68c0c0fc72
+  levelgen n67-iceline: 2602902 chars -> Logs/n67/dry-iceline-mismatch/iceline.json; 192 boxes + the floor, 5 barriers, 15 wedges, 15 pads, 0 grapple nodes, 19 zones (g1, g2, g3, g4, g5, g6, g7, g8, gr, x9, d1, d2, d3, d4, d5, d6, d7, d8, d9) (1.0 s)
+    plan checks: 0 problems
+    level report: 0 errors -> Logs/n67/dry-iceline-mismatch/LEVEL-n67-iceline-validate.md (1.8 s)
+    bot walk: room 1 exit at 6.5 s; room 2 exit at 34.0 s; room 3 exit at 37.8 s; room 4 exit at 41.5 s; room 5 exit at 72.5 s; DID NOT reach the last exit; zone at the end g5
+n67-iceline --finish: Logs/n67/dry-iceline-mismatch/iceline.json -> Logs/n67/dry-iceline-mismatch/n67-iceline.json (2603674 chars); kept rooms bit-equal to n52-iceline's; ERROR rows 0 (none); slots latest: g1 latest, g2 latest, g3 latest, g4 latest, g5 latest, g6 latest, g7 latest, g8 latest rebuilt
+levelgen --walk: 0 ERROR (none; 8 s)
+shipped after:  Design/levels/n67-iceline.json 57139ce98a8bdce9a9f0efd9ee4a43c704f7f75cc3dd39fbdaac5e68c0c0fc72, Assets/StreamingAssets/Design/levels/n67-iceline.json 57139ce98a8bdce9a9f0efd9ee4a43c704f7f75cc3dd39fbdaac5e68c0c0fc72 (byte-identical: --out writes only Logs/n67/dry-iceline-mismatch)
+the round's level: Logs/n67/dry-iceline-mismatch/n67-iceline.json 6df693c83488403aafd61c105e341f4d7eb4f4672b116ee187a785d10095e876; plan Logs/n67/dry-iceline-mismatch/iceline.plan.json, report Logs/n67/dry-iceline-mismatch/LEVEL-n67-iceline-validate.md, openings Logs/n67/dry-iceline-mismatch/openings67.json
+exit 0

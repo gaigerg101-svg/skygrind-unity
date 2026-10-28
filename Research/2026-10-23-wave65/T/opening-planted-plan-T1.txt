@@ -1,0 +1,13 @@
+# command: node Tools/night/gen-n65-foundry.cjs --slots=latest
+# sha: 7d6a2e5c (branch n65-T; tracked changes uncommitted: 13 file(s))
+# time: 2026-10-23 14:28:30 -> 2026-10-23 14:28:30 (local)
+# exit: 0
+
+openings: Design/levels/n65/openings65.json a3 vista
+gen-n65-foundry: Design/levels/n52/foundry.plan.json -> Design/levels/n65/foundry.plan.json (slots latest; rebuilt: none); every other room, door, piece and key n52's bit for bit
+  slot a2: latest Design/levels/n65/rooms/a2.json: n52's room exactly; boxes 1, ramps 1, pads 0, grapple 0, pits 0, tunnels 0, lights 3, props 0, teach35 2
+  slot a3: latest Design/levels/n65/rooms/a3.json: n52's room exactly; boxes 12, ramps 2, pads 2, grapple 0, pits 1, tunnels 0, lights 8, props 1, teach35 1
+  slot a4: latest Design/levels/n65/rooms/a4.json: n52's room exactly; boxes 1, ramps 2, pads 0, grapple 0, pits 0, tunnels 0, lights 3, props 0, teach35 0
+  slot a5: latest Design/levels/n65/rooms/a5.json: n52's room exactly; boxes 12, ramps 3, pads 3, grapple 0, pits 1, tunnels 0, lights 8, props 3, teach35 0
+  slot b1: latest Design/levels/n65/rooms/b1.json: n52's room exactly; boxes 12, ramps 2, pads 2, grapple 0, pits 1, tunnels 0, lights 6, props 3, teach35 0
+  slot a8: latest Design/levels/n65/rooms/a8.json: n52's room exactly; boxes 6, ramps 0, pads 0, grapple 0, pits 1, tunnels 0, lights 5, props 0, teach35 0

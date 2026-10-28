@@ -1,0 +1,10 @@
+# command: bash Tools/night/n65-verbs.sh ride C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/ice/g3/cand1/n67-iceline.json g3 --shoot
+# sha: f360cf025 (+ the room file as in the tree); time: 2026-10-28 00:25:27
+  put-in loadout (g3, BEFORE entering it: the room's own award, if any, comes on entry): awards of the rooms before it given: none; owned gauntlet
+  entry loadout (pilot, g3, on entering): owned gauntlet, in hand gauntlet, pending none
+n65verb ride: level n67-iceline (C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/ice/g3/cand1/n67-iceline.json), room g3 "2.3 THE TIPPLE RIDES", seed 1; pose (10.8, 0.0, -65.0) yaw -0.0 from line65[0]; off switch none
+  the ride's gun: owned at the start gauntlet (in hand gauntlet); awards given up to g3: none; the level's loadout holds NO gun at this room (owned: gauntlet): ride --shoot cannot fire; in hand gauntlet
+  face 0 of 2: x = 11.4, -79.0..-64.0 (15.0 m), top 8.0, normal (-1.0, 0.0), ride along (0.0, -1.0) from (11.0, 0.0, -65.0); the room's wave live, alive 3; weapon gauntlet
+n65verb ride --shoot: RED | room g3 | ride yes (2.4 s on the wall, 17.4 m along it, WallRideStart 1) | look off the wall at most 152.0 deg | shots from the wall 0 (off it 0) | kills from the wall 0 (other kills 0) | pose line65[0] | no kill from the wall
+n65verb: exit 1
+n65-verbs ride on C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/ice/g3/cand1/n67-iceline.json (g3): GREEN 0, RED 1, UNSURE 0

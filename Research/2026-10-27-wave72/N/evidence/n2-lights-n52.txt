@@ -1,0 +1,8 @@
+n2 lights 12:39:34 45db9a79e
+lights 65 -> 62 in Design/levels/n52/foundry.plan.json (a3-L1, a3-L2, a3-L4 out; lights_why added to a3)
+levelgen n52-foundry: 2371686 chars -> Design/levels/n52/foundry.json; 200 boxes + the floor, 5 barriers, 10 wedges, 7 pads, 0 grapple nodes, 21 zones (a1, a2, a3, a4, a5, b1, b2, a6, a7, a8, a9, d1, d2, d3, d4, d5, d6, d7, d8, d9, d10) (2.0 s)
+  level report: 1 errors -> Reports/LEVEL-n52-foundry-validate.md (4.3 s)
+    | closedRoom | ERROR | a3: no `roof: true` |
+n52-foundry: finished Design\levels\n52\foundry.json -> Design/levels/n52-foundry.json, Assets/StreamingAssets/Design/levels/n52-foundry.json (2374765 chars, both copies identical); a9 bit-equal to n48-foundry's; rooms not rebuilt bit-equal; rebuilt: a3, a5, b1
+export a3: Design/levels/n65/rooms-n52/a3.json (Design/levels/n65/rooms/a3.json kept: a builder's file) (20488 chars)
+12:40:12

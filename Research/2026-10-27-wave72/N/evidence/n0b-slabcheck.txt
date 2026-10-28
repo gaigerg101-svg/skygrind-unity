@@ -1,0 +1,11 @@
+n0b slabcheck 11:11:16 t0b b80afc2fa; scripts: scratchpad slabcheck.cjs (slab = box min [-12,10,-87] max [12,11,-57])
+-- HEAD (t0b) blobs:
+C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/699f7fa0-58df-46a1-afe7-1fa627be0b9e/scratchpad/n52-head-shipped.json boxes 201 slab 1 a3.roof true teach l1.wallrun 0 chars 2474617
+C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/699f7fa0-58df-46a1-afe7-1fa627be0b9e/scratchpad/n52-head-streaming.json boxes 201 slab 1 a3.roof true teach l1.wallrun 0 chars 2474617
+C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/699f7fa0-58df-46a1-afe7-1fa627be0b9e/scratchpad/n52-head-raw.json boxes 200 slab 0 a3.roof true teach l1.wallrun 1 chars 2471552
+-- the working copies now:
+Design/levels/n52-foundry.json boxes 200 slab 0 a3.roof false teach l1.wallrun 1 chars 2376150
+Assets/StreamingAssets/Design/levels/n52-foundry.json boxes 200 slab 0 a3.roof false teach l1.wallrun 1 chars 2376150
+Design/levels/n52/foundry.json boxes 200 slab 0 a3.roof false teach l1.wallrun 1 chars 2373071
+Design/levels/n65-foundry.json boxes 194 slab 0 a3.roof false teach l1.wallrun 1 chars 2382097
+Assets/StreamingAssets/Design/levels/n65-foundry.json boxes 194 slab 0 a3.roof false teach l1.wallrun 1 chars 2382097

@@ -1,0 +1,6948 @@
+{
+ "_why": "NIGHT67 (row design.n67.kiln67; Tools/night/gen-slots.cjs --level kiln): n57-kiln's plan with 5 slots from room files (kb2 latest (rebuilt), kb2c latest (rebuilt), kb3 latest (rebuilt), kb3c latest (rebuilt), kb3d latest (rebuilt)). Before it: NIGHT57 L (row kiln57; Tools/night/gen-n57-kiln.cjs; GG 2026-10-21 '3. yes'): level 3 rebuilt from scratch, five combat-room slots, each new room from its A-9 card (docs/ROOMS.md, Level 3 as n57-kiln). Before it: NIGHT52 K (row kiln52; Tools/night/gen-n52-kiln.cjs): n47-kiln's plan with the combat rooms rebuilt to THE ROOM CONTRACT (NIGHT52.md section 2). Before it: NIGHT47 B (row kiln47; Tools/night/gen-n47-kiln.cjs): n46-kiln's plan with k5's worm arena swapped for wyrm47-arena.json (THE SLAG ISLANDS, G33). Before it: NIGHT46 B1 (Tools/night/gen-n46-kiln.cjs; docs/ROOMS.md, NIGHT46 identity cards: k5 3.5 THE RING: THE KILN'S HEART, walked into (builder B1)): n45-kiln's plan with k5 rebuilt as the worm's own arena (walked into) and the three cliff links given a ride run-up. Before it: NIGHT45 builder A3 (design.n45.kiln45 swaps n43-kiln for this level): Tools/night/gen-n45-kiln.cjs, n43-kiln's plan with k5 3.5 THE RING rebuilt from its identity card (THE KILN'S HEART: the arena Design/maps/wyrm45-arena.json, the 76 props kept with a job or cut). Before it: NIGHT43 builder K1 (design.n43.kiln43 swaps n41-kiln for this file): Tools/night/gen-n43-kiln.cjs, n40-kiln's rooms (Tools/night/gen-n40-kiln.cjs, NIGHT39 K4's level) with 3.1 rebuilt as THE STEPS (three boost steps 4 / 5.8 / 9 m, small then big, from Design/levels/n43/kiln-boost.json (n43kiln steps --write, 2026-10-16 18:51)), the rosters by role (drones and the CHARGER in 3.2, the BURROWER introduced in the new 3.2c THE ASH BED and combined in 3.3), THE RING's arena. Rooms: 3.1 THE STEPS, 3.1b THE FLUE (gate G1), 3.2 POUR HALL, 3.2b THE STACK (G2a, G2b), 3.2c THE ASH BED, 3.3 CASTING FLOOR, 3.3b THE SPOUT (G3), 3.4 REST, 3.5 THE RING.",
+ "id": "n67-kiln",
+ "name": "LEVEL 3 THE KILN",
+ "n29": true,
+ "n30": true,
+ "n36": true,
+ "floorSize": 728,
+ "killPlaneY": -30,
+ "wallHeight": 14,
+ "owns38": [
+  "jump",
+  "double",
+  "dash",
+  "slide",
+  "boost",
+  "ride",
+  "walljump"
+ ],
+ "rank": {
+  "time": [
+   330,
+   510,
+   760,
+   1140
+  ],
+  "kills": [
+   100,
+   85,
+   65,
+   40
+  ],
+  "style": [
+   2500,
+   1500,
+   700,
+   250
+  ],
+  "_why": "Unity-only (builder K4, NIGHT39; kept by K1 NIGHT43): n35-kiln's S/A/B/C cuts (not calibrated on this level's walk)."
+ },
+ "rooms": [
+  {
+   "id": "kb1",
+   "name": "3.1 THE STEPS",
+   "kind": "link",
+   "rect": [
+    -8,
+    -41.5,
+    8,
+    0
+   ],
+   "height": 26,
+   "roof": true,
+   "par": 25,
+   "job36": "teach",
+   "verb36": "the boost, small then big: three steps (4 / 5.8 / 9 m)",
+   "spawn": {
+    "at": [
+     0,
+     0,
+     -2
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    0,
+    0,
+    -39.5
+   ],
+   "award": "shotgun",
+   "owns38": [
+    "jump",
+    "double",
+    "dash",
+    "slide",
+    "boost",
+    "ride",
+    "walljump"
+   ],
+   "owns38_why": "K1 NIGHT43: the verbs held in kb1 (the THUNDERCLAP only until the gauntlet's award at kb3: design.n40.kiln40.startSet / awards): no PULSE blast",
+   "routeVia": [
+    [
+     [
+      0,
+      0,
+      -7
+     ],
+     [
+      0,
+      4,
+      -10
+     ]
+    ],
+    [
+     [
+      0,
+      4,
+      -15
+     ],
+     [
+      0,
+      9.8,
+      -18
+     ]
+    ],
+    [
+     [
+      0,
+      9.8,
+      -23
+     ],
+     [
+      0,
+      18.8,
+      -26
+     ]
+    ]
+   ],
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       0,
+       -3
+      ],
+      [
+       0,
+       0,
+       -7
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       4,
+       -9.3
+      ],
+      [
+       0,
+       4,
+       -15.9
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       4,
+       -11
+      ],
+      [
+       0,
+       4,
+       -15
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       9.8,
+       -17.3
+      ],
+      [
+       0,
+       9.8,
+       -23.9
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       9.8,
+       -19
+      ],
+      [
+       0,
+       9.8,
+       -23
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       18.8,
+       -25.3
+      ],
+      [
+       0,
+       18.8,
+       -33.9
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       0,
+       -35.5
+      ],
+      [
+       0,
+       0,
+       -39.5
+      ]
+     ]
+    }
+   ],
+   "lessons": [
+    {
+     "promptPad": "THREE STEPS, EACH ONE HIGHER",
+     "kind": "reached",
+     "rect": [
+      -5,
+      -33.5,
+      5,
+      -9.5
+     ],
+     "minY": 3.7,
+     "prompt": "THREE STEPS, EACH ONE HIGHER"
+    },
+    {
+     "promptPad": "UP ALL THREE, THEN DROP DOWN",
+     "kind": "reached",
+     "rect": [
+      -6,
+      -39.5,
+      6,
+      -35.5
+     ],
+     "minY": -0.2,
+     "prompt": "UP ALL THREE, THEN DROP DOWN"
+    }
+   ],
+   "lessons31": [
+    {
+     "promptPad": "THREE STEPS, EACH ONE HIGHER",
+     "kind": "reached",
+     "rect": [
+      -5,
+      -33.5,
+      5,
+      -9.5
+     ],
+     "minY": 3.7,
+     "prompt": "THREE STEPS, EACH ONE HIGHER"
+    },
+    {
+     "promptPad": "UP ALL THREE, THEN DROP DOWN",
+     "kind": "reached",
+     "rect": [
+      -6,
+      -39.5,
+      6,
+      -35.5
+     ],
+     "minY": -0.2,
+     "prompt": "UP ALL THREE, THEN DROP DOWN"
+    }
+   ],
+   "frames36": {
+    "mid": [
+     0,
+     0,
+     -2,
+     0,
+     0.4
+    ],
+    "exit": [
+     0,
+     18.8,
+     -33.5,
+     0,
+     -0.4
+    ]
+   },
+   "tops43": {
+    "s1": 4,
+    "s2": 9.8,
+    "s3": 18.8,
+    "rises": [
+     4,
+     5.8,
+     9
+    ],
+    "take": [
+     [
+      0,
+      0,
+      -7
+     ],
+     [
+      0,
+      4,
+      -15
+     ],
+     [
+      0,
+      9.8,
+      -23
+     ]
+    ],
+    "src": "Design/levels/n43/kiln-boost.json (n43kiln steps --write, 2026-10-16 18:51)",
+    "why": "K1 NIGHT43 (G26): the boost taught small then big; take = each step's take-off point (feet)"
+   }
+  },
+  {
+   "id": "kb1b",
+   "name": "3.1b THE FLUE",
+   "kind": "link",
+   "rect": [
+    -8,
+    -71.5,
+    8,
+    -45.5
+   ],
+   "height": 32,
+   "roof": true,
+   "par": 4,
+   "job36": "teach",
+   "verb36": "the THUNDERCLAP CLIMB: jump, shoot down, double jump, shoot down",
+   "spawn": {
+    "at": [
+     0,
+     0,
+     -47
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    0,
+    0,
+    -69.5
+   ],
+   "owns38": [
+    "jump",
+    "double",
+    "dash",
+    "slide",
+    "boost",
+    "ride",
+    "walljump"
+   ],
+   "owns38_why": "K1 NIGHT43: the verbs held in kb1b (the THUNDERCLAP only until the gauntlet's award at kb3: design.n40.kiln40.startSet / awards): no PULSE blast",
+   "routeVia": [
+    [
+     [
+      0,
+      0,
+      -55.5
+     ],
+     [
+      0,
+      12,
+      -58.5
+     ]
+    ]
+   ],
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       0,
+       -51.5
+      ],
+      [
+       0,
+       0,
+       -55.5
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       12,
+       -57.8
+      ],
+      [
+       0,
+       12,
+       -64.4
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       0,
+       -66
+      ],
+      [
+       0,
+       0,
+       -69.5
+      ]
+     ]
+    }
+   ],
+   "lessons": [
+    {
+     "promptPad": "JUMP. SHOOT DOWN. JUMP. SHOOT DOWN.",
+     "kind": "reached",
+     "rect": [
+      -6,
+      -69.5,
+      6,
+      -67
+     ],
+     "minY": -0.2,
+     "prompt": "JUMP. SHOOT DOWN. JUMP. SHOOT DOWN."
+    }
+   ],
+   "lessons31": [
+    {
+     "promptPad": "JUMP. SHOOT DOWN. JUMP. SHOOT DOWN.",
+     "kind": "reached",
+     "rect": [
+      -6,
+      -69.5,
+      6,
+      -67
+     ],
+     "minY": -0.2,
+     "prompt": "JUMP. SHOOT DOWN. JUMP. SHOOT DOWN."
+    }
+   ],
+   "frames36": {
+    "mid": [
+     0,
+     0,
+     -47.5,
+     0,
+     0.4
+    ],
+    "exit": [
+     0,
+     12,
+     -64.5,
+     0,
+     -0.4
+    ]
+   },
+   "tops43": {
+    "climb": 12,
+    "take": [
+     [
+      0,
+      0,
+      -55.5
+     ]
+    ],
+    "why": "K1 NIGHT43: the climb's top (the kiln43 chain's climb line is done on it)"
+   }
+  },
+  {
+   "id": "kb2",
+   "name": "3.2 THE CHARGING FLOOR",
+   "kind": "room",
+   "rect": [
+    -10,
+    -103.5,
+    10,
+    -75.5
+   ],
+   "height": 14,
+   "roof": true,
+   "par": 60,
+   "job36": "teach",
+   "card57": "THE CHARGING FLOOR",
+   "verb36": "the THUNDERCLAP boost out of the pack onto the charging deck (4.5 m: its walkers' ramp is the long way round); the flue wall's ride down the east lane onto the deck; the bellows from the lane's end",
+   "spawn": {
+    "at": [
+     1.5,
+     0,
+     -80.5
+    ],
+    "yawDeg": 0
+   },
+   "spawn_why": "NIGHT57 L (card kb2, Molecule: the apron): 5 m in and 1.5 m off the door's axis (T-119: a back-step stays out of the door's 4 m band)",
+   "exit": [
+    0,
+    0,
+    -101.5
+   ],
+   "arena36": true,
+   "waves": [
+    [
+     "husk",
+     "husk",
+     "husk",
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "swarmer"
+    ],
+    [
+     "spitter",
+     "spitter",
+     "husk",
+     "husk",
+     "husk"
+    ],
+    [
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "spitter",
+     "spitter"
+    ]
+   ],
+   "roles43": [
+    "fodder (the pack floods the charging floor: boost out of it)",
+    "ranged + fodder (the spitters hold the roosts; the husks come down the ramps: return the globs)",
+    "fodder + ranged (the swarmers drop off the roosts at you while the spitters lob: return the globs)"
+   ],
+   "roles43_why": "NIGHT57 L (card kb2, The 30 s problem; R-2 / R-3): the level's first fight uses the roles level 1 taught (fodder, ranged): the boost is the only new thing; wave 2 puts the ranged where the boost reaches them first",
+   "nodes": [
+    [
+     -2.5,
+     0,
+     -92.5
+    ],
+    [
+     0.5,
+     0,
+     -93
+    ],
+    [
+     -2.5,
+     0,
+     -96.5
+    ],
+    [
+     -1,
+     0,
+     -100
+    ],
+    [
+     -1.5,
+     0,
+     -95
+    ],
+    [
+     -4.5,
+     0,
+     -93
+    ]
+   ],
+   "highNodes": [
+    [
+     -8,
+     4.5,
+     -101
+    ],
+    [
+     -5.5,
+     4.5,
+     -101.5
+    ],
+    [
+     4,
+     4.5,
+     -101.5
+    ],
+    [
+     8,
+     4.5,
+     -101
+    ]
+   ],
+   "nodes_why": "NIGHT71 R: the west roost's inner high node -4 -> -5.5 (the roost now ends at x -4). NIGHT57 L (card kb2, Molecule; R-4): the pack on the open charging floor 13-25 m from the door (spawn31: the entry's cone only past 12 m), the ranged on the deck and the barrow run",
+   "waveNodes43": [
+    [
+     [
+      -2.5,
+      0,
+      -92.5
+     ],
+     [
+      0.5,
+      0,
+      -93
+     ],
+     [
+      -2.5,
+      0,
+      -96.5
+     ],
+     [
+      -1,
+      0,
+      -100
+     ],
+     [
+      -1.5,
+      0,
+      -95
+     ],
+     [
+      -4.5,
+      0,
+      -93
+     ]
+    ],
+    [
+     [
+      -8,
+      4.5,
+      -101
+     ],
+     [
+      -5.5,
+      4.5,
+      -101.5
+     ],
+     [
+      4,
+      4.5,
+      -101.5
+     ],
+     [
+      8,
+      4.5,
+      -101
+     ]
+    ],
+    [
+     [
+      -8,
+      4.5,
+      -101
+     ],
+     [
+      -5.5,
+      4.5,
+      -101.5
+     ],
+     [
+      4,
+      4.5,
+      -101.5
+     ],
+     [
+      8,
+      4.5,
+      -101
+     ]
+    ]
+   ],
+   "waveNodes43_why": "NIGHT68 S r1 (card kb2): wave 1 (the pack) on the floor in front of the chute (the boost lesson's fight); waves 2 and 3 (the spitters, with the husks / swarmers that come down the ramps) only on the two roosts (P1: every node of the last wave's set 4.5 m up), 15-22 m from the pack's floor",
+   "lessons": [
+    {
+     "promptPad": "JUMP IN. SHOOT {fire} DOWN. FLY.",
+     "kind": "reached",
+     "rect": [
+      -2.5,
+      -86,
+      2.4,
+      -82
+     ],
+     "minY": -0.2,
+     "prompt": "JUMP IN. SHOOT {fire} DOWN. FLY."
+    }
+   ],
+   "lessons31": [
+    {
+     "promptPad": "JUMP IN. SHOOT {fire} DOWN. FLY.",
+     "kind": "reached",
+     "rect": [
+      -2.5,
+      -86,
+      2.4,
+      -82
+     ],
+     "minY": -0.2,
+     "prompt": "JUMP IN. SHOOT {fire} DOWN. FLY."
+    }
+   ],
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       1.5,
+       0,
+       -81
+      ],
+      [
+       0.5,
+       0,
+       -91
+      ],
+      [
+       -3,
+       0,
+       -95
+      ],
+      [
+       -1,
+       0,
+       -97
+      ],
+      [
+       0,
+       0,
+       -101.5
+      ],
+      [
+       1,
+       0,
+       -94
+      ],
+      [
+       1,
+       0,
+       -86
+      ],
+      [
+       1.5,
+       0,
+       -81
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       3.9,
+       0,
+       -84
+      ],
+      [
+       3.9,
+       4.5,
+       -98.5
+      ],
+      [
+       6,
+       4.5,
+       -101
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -8.5,
+       0,
+       -87
+      ],
+      [
+       -8.5,
+       4.5,
+       -98.5
+      ],
+      [
+       -6,
+       4.5,
+       -101
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       8,
+       0,
+       -79
+      ],
+      [
+       8,
+       0,
+       -90
+      ]
+     ]
+    }
+   ],
+   "frames36": {
+    "mid": [
+     0,
+     0,
+     -77.5,
+     0,
+     0.1
+    ],
+    "exit": [
+     6,
+     4.5,
+     -100.5,
+     0,
+     -0.3
+    ]
+   },
+   "frames52": {
+    "_why": "NIGHT57 L the room frames (a452 / a157): the door just crossed (the pack's floor, the charging deck and the flue wall beyond), the fight from the apron, the deck's top",
+    "entry": [
+     0,
+     0,
+     -77,
+     0,
+     0.04
+    ],
+    "mid": [
+     -1,
+     0,
+     -84,
+     15,
+     0.05
+    ],
+    "high": [
+     6,
+     4.5,
+     -100,
+     160,
+     -0.25
+    ]
+   },
+   "kiln57_why": "NIGHT57 L (Tools/night/gen-n57-kiln.cjs; docs/ROOMS.md, Level 3 as n57-kiln, kb2 THE CHARGING FLOOR): built from scratch (no n52 piece): 20 x 28 x 14 m, three planes (0 / 2.5 / 4.5 m), the flue wall (a 17 m ride, also the foothold), the bellows and the draught (pads), the stack; the boost card and the worm's pass (kiln47 beat 2, by room id) kept",
+   "bot43": false,
+   "verb65": "parry",
+   "line65": [
+    [
+     1.5,
+     0,
+     -81
+    ],
+    [
+     0.5,
+     0,
+     -88
+    ],
+    [
+     0,
+     0,
+     -93
+    ]
+   ],
+   "card65": "Research/2026-10-24-wave67/cards/kb2.md",
+   "waves_why": "NIGHT68 S r1h (card kb2): wave 2 as shipped (two spitters, three husks) on the roosts: r1e-r1g's three lone spitters kited the walk bot on the floor (r1g flow-A seed 10 out of time, stall A 31.5 %); wave 3 as shipped"
+  },
+  {
+   "id": "kb2b",
+   "name": "3.2b THE STACK",
+   "kind": "link",
+   "rect": [
+    -8,
+    -159.5,
+    8,
+    -107.5
+   ],
+   "height": 32,
+   "roof": true,
+   "par": 8,
+   "job36": "test",
+   "verb36": "one climb from a ride: 12 m, then the drop to the door (NIGHT46 B1: G2b cut)",
+   "spawn": {
+    "at": [
+     0,
+     0,
+     -109
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    0,
+    0,
+    -157.5
+   ],
+   "owns38": [
+    "jump",
+    "double",
+    "dash",
+    "slide",
+    "boost",
+    "ride",
+    "walljump"
+   ],
+   "owns38_why": "K1 NIGHT43: the verbs held in kb2b (the THUNDERCLAP only until the gauntlet's award at kb3: design.n40.kiln40.startSet / awards): no PULSE blast",
+   "routeVia": [
+    [
+     [
+      0,
+      0,
+      -133.5
+     ],
+     [
+      0,
+      12,
+      -136.5
+     ]
+    ]
+   ],
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       0,
+       -129.5
+      ],
+      [
+       0,
+       0,
+       -133.5
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       12,
+       -135.8
+      ],
+      [
+       0,
+       12,
+       -146.4
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       12,
+       -141.5
+      ],
+      [
+       0,
+       12,
+       -145.5
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       0,
+       -153
+      ],
+      [
+       0,
+       0,
+       -157.5
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       0,
+       -149
+      ],
+      [
+       0,
+       0,
+       -157.5
+      ]
+     ]
+    }
+   ],
+   "lessons": [
+    {
+     "promptPad": "CLIMB.",
+     "kind": "reached",
+     "rect": [
+      -6,
+      -159.5,
+      6,
+      -154
+     ],
+     "minY": -0.2,
+     "prompt": "CLIMB."
+    }
+   ],
+   "lessons31": [
+    {
+     "promptPad": "CLIMB.",
+     "kind": "reached",
+     "rect": [
+      -6,
+      -159.5,
+      6,
+      -154
+     ],
+     "minY": -0.2,
+     "prompt": "CLIMB."
+    }
+   ],
+   "frames36": {
+    "mid": [
+     0,
+     0,
+     -109.5,
+     0,
+     0.4
+    ],
+    "exit": [
+     0,
+     12,
+     -145.5,
+     0,
+     -0.4
+    ]
+   },
+   "recut52_why": "NIGHT52 K: the entry edge moved 16 m (z -123.5 -> -107.5) to meet the moved door (the room before it shrank to THE ROOM CONTRACT's size); the spawn and the entry frame follow the door; the liners run to the new edge; the climb, its gate, the run-up panel and the lesson are n47's"
+  },
+  {
+   "id": "kb2c",
+   "name": "3.2c THE ASH FLOOR",
+   "kind": "room",
+   "rect": [
+    -9,
+    -193.5,
+    9,
+    -163.5
+   ],
+   "height": 12,
+   "roof": true,
+   "par": 60,
+   "job36": "teach",
+   "card57": "THE ASH FLOOR",
+   "verb36": "the BURROWER owns the ash: get off it (an iron plate, the catwalk, a wall ride) or hit it as it surfaces; ride the cooling wall over the ash onto the hearth, the flue wall onto the catwalk; the ash vent onto the hearth",
+   "spawn": {
+    "at": [
+     -2,
+     0,
+     -168
+    ],
+    "yawDeg": -10
+   },
+   "spawn_why": "NIGHT57 L (card kb2c, Molecule: the apron): 4.5 m in from the door (NIGHT57: 5.5 m, T-119), 2 m west of its axis (was 7.5 m, south of the iron apron): the walk from the link kb2b's exit (0, -157.5) to this spawn ran into the entry wall west of the door (n46flow put the bot at the next room 8 times of 29 in kb2b, at (-6.6, -159.2) and the like); now the line goes through the door and clears the west liner by 0.8 m. NIGHT58 EXT: out of n46flow's 4 m door circle (NIGHT58 L0's (-1, -166) sat 2.5 m from the door). NIGHT60 L B13: facing the fight down the middle channel (yaw -10: wave 1's nodes ahead at 12.75-13.3 m, spawn31's 12 m in the cone met by moving them 2 m south); NIGHT58 EXT's yaw 45 faced the west wall and the near bridge's face 2-4 m off, 0 of wave 1's 5 seen in the a157 spawn frame (NIGHT60 B1)",
+   "exit": [
+    0,
+    0,
+    -191.5
+   ],
+   "arena36": true,
+   "waves": [
+    [
+     "burrower",
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "swarmer"
+    ],
+    [
+     "husk",
+     "husk",
+     "husk",
+     "husk",
+     "swarmer",
+     "swarmer"
+    ],
+    [
+     "burrower",
+     "husk",
+     "husk",
+     "husk"
+    ]
+   ],
+   "roles43": [
+    "burrower + fodder (it hunts the ash; the swarmers come after you onto the plates and the catwalk)",
+    "fodder (the husks come down the hearth and the catwalk; fight them from the hearth)",
+    "burrower + fodder (again, with the husks: the ride onto the hearth is the way off the ash)"
+   ],
+   "roles43_why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/kb2c/card.md, THE ASH FLOOR, ride; rebuilt from the blank rect): the shipped roles kept (the burrower taught here, R-2), the pieces new",
+   "nodes": [
+    [
+     0.5,
+     0,
+     -180.5
+    ],
+    [
+     -1,
+     0,
+     -180.25
+    ],
+    [
+     1,
+     0,
+     -181
+    ],
+    [
+     2,
+     0,
+     -180.5
+    ],
+    [
+     -5,
+     0,
+     -188
+    ],
+    [
+     3,
+     0,
+     -191
+    ],
+    [
+     -6.5,
+     0,
+     -184.5
+    ]
+   ],
+   "highNodes": [
+    [
+     6,
+     4,
+     -187
+    ],
+    [
+     7.5,
+     4,
+     -189
+    ]
+   ],
+   "nodes_why": "NIGHT74 S kb2c r6 (Research/2026-10-27-wave74/S/card-kb2c.md): ground node (-1, 0, -180.75) -> (-1, 0, -180.25): the plan check named it (a capsule overlap with the mid iron plate's edge, z -181). NIGHT71 R r1 (Research/2026-10-26-wave71/R/kb2c/card.md, THE ASH FLOOR, ride; rebuilt from the blank rect): wave 1 (the burrower's first) on the shipped mid-room cluster, 17 m from the door (spawn31); waves 2-3 add the far floor (off the hearth and its stair) and wave 2 the hearth's top (the husks come down at you)",
+   "waveNodes43": [
+    [
+     [
+      0.5,
+      0,
+      -180.5
+     ],
+     [
+      -1,
+      0,
+      -180.25
+     ],
+     [
+      1,
+      0,
+      -181
+     ],
+     [
+      2,
+      0,
+      -180.5
+     ]
+    ],
+    [
+     [
+      0.5,
+      0,
+      -180.5
+     ],
+     [
+      -1,
+      0,
+      -180.25
+     ],
+     [
+      1,
+      0,
+      -181
+     ],
+     [
+      2,
+      0,
+      -180.5
+     ],
+     [
+      -5,
+      0,
+      -188
+     ],
+     [
+      3,
+      0,
+      -191
+     ],
+     [
+      -6.5,
+      0,
+      -184.5
+     ],
+     [
+      6,
+      4,
+      -187
+     ],
+     [
+      7.5,
+      4,
+      -189
+     ]
+    ],
+    [
+     [
+      0.5,
+      0,
+      -180.5
+     ],
+     [
+      -1,
+      0,
+      -180.25
+     ],
+     [
+      1,
+      0,
+      -181
+     ],
+     [
+      2,
+      0,
+      -180.5
+     ],
+     [
+      -5,
+      0,
+      -188
+     ],
+     [
+      3,
+      0,
+      -191
+     ],
+     [
+      -6.5,
+      0,
+      -184.5
+     ]
+    ]
+   ],
+   "waveNodes43_why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/kb2c/card.md, THE ASH FLOOR, ride; rebuilt from the blank rect): wave 1 (the burrower's first) on the shipped mid-room cluster, 17 m from the door (spawn31); waves 2-3 add the far floor (off the hearth and its stair) and wave 2 the hearth's top (the husks come down at you)",
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -2,
+       0,
+       -168
+      ],
+      [
+       -1.5,
+       0,
+       -173
+      ],
+      [
+       1.5,
+       0,
+       -180
+      ],
+      [
+       0.2,
+       0,
+       -183
+      ],
+      [
+       0.2,
+       0,
+       -185.5
+      ],
+      [
+       -4,
+       0,
+       -185.5
+      ],
+      [
+       -4,
+       0,
+       -190.5
+      ],
+      [
+       0,
+       0,
+       -191.5
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -4,
+       0,
+       -187.5
+      ],
+      [
+       5,
+       4,
+       -187.5
+      ],
+      [
+       7,
+       4,
+       -189.5
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -6,
+       0,
+       -184
+      ],
+      [
+       -6,
+       2.5,
+       -178
+      ],
+      [
+       -8,
+       2.5,
+       -177
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       6.5,
+       0,
+       -168
+      ],
+      [
+       6.5,
+       0,
+       -173.5
+      ]
+     ]
+    }
+   ],
+   "frames36": {
+    "mid": [
+     -1,
+     0,
+     -172,
+     0,
+     0.05
+    ],
+    "exit": [
+     7,
+     4,
+     -186,
+     160,
+     -0.25
+    ]
+   },
+   "frames52": {
+    "_why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/kb2c/card.md, THE ASH FLOOR, ride; rebuilt from the blank rect): the room frames: the door just crossed (the ash, the catwalk, the cooling wall), the fight from the catwalk, the hearth's top",
+    "entry": [
+     -1,
+     0,
+     -166,
+     0,
+     0.04
+    ],
+    "mid": [
+     -6,
+     2.5,
+     -176.5,
+     -30,
+     -0.05
+    ],
+    "high": [
+     7,
+     4,
+     -187,
+     160,
+     -0.25
+    ]
+   },
+   "kiln57_why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/kb2c/card.md, THE ASH FLOOR, ride; rebuilt from the blank rect): the slot DE rebuilt: 18 x 30 x 12 m, two planes (2.5 / 4 m), two ride walls, the burrow-safe iron. Before: NIGHT57 L (Tools/night/gen-n57-kiln.cjs; docs/ROOMS.md, Level 3 as n57-kiln, kb2c THE CLINKER BRIDGES): built from scratch (no n52 piece): 18 x 30 x 12 m, three planes (0 / 1.5 / 4.5 m), two bridges across the ash, the cooling wall (a 17 m ride), the crane mast (the foothold), four iron plates, the ash vent; the burrower's lesson cards (kiln43, by room id) kept",
+   "bot43": false,
+   "verb65": "ride",
+   "line65": [
+    [
+     7.8,
+     0,
+     -168.5
+    ],
+    [
+     7.8,
+     2,
+     -175
+    ],
+    [
+     7.8,
+     2,
+     -182
+    ],
+    [
+     7,
+     4,
+     -186
+    ]
+   ],
+   "line65_why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/kb2c/card.md, THE ASH FLOOR, ride; rebuilt from the blank rect): the cooling wall's ride: along its west face 0.6 m out from the door's corner to its end over the hearth",
+   "card65": "Research/2026-10-26-wave71/R/kb2c/card.md"
+  },
+  {
+   "id": "kb3",
+   "name": "3.3 THE PRESS HALL",
+   "kind": "room",
+   "rect": [
+    -10,
+    -225.5,
+    10,
+    -197.5
+   ],
+   "height": 14,
+   "roof": true,
+   "par": 70,
+   "job36": "combine",
+   "card57": "THE PRESS HALL",
+   "verb36": "launch: the bodies come to THE PRESS LINE through two gates and the forge aisle, each round a baffle 2 m behind it, so they turn into the gate fresh and single file 2-4 m from a player who holds it; dash-punch the first and it flies back into the ones behind it (a burst: 60 to every body within 3.5 m) or into the baffle's face (a wall burst); refuse it and every body is shot at the gate one by one",
+   "spawn": {
+    "at": [
+     -8.5,
+     0,
+     -203
+    ],
+    "yawDeg": 0
+   },
+   "spawn_why": "NIGHT57 L (card kb3, Molecule: the west aisle under the press gantry's near end): 5.5 m in and 8.5 m off the door's axis, 8.5 m from the door (n52 kb3's T-119 distance; rounds 1-4 at 6.4 m read dwell 1.15-2.50 s)",
+   "exit": [
+    0,
+    0,
+    -224
+   ],
+   "arena36": true,
+   "waves": [
+    [
+     "husk",
+     "husk",
+     "husk",
+     "husk",
+     "husk",
+     "spitter",
+     "spitter"
+    ],
+    [
+     "charger",
+     "husk",
+     "husk",
+     "husk",
+     "husk"
+    ],
+    [
+     "charger",
+     "spitter",
+     "spitter"
+    ],
+    [
+     "husk",
+     "husk",
+     "husk",
+     "husk",
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "swarmer"
+    ]
+   ],
+   "waves_why": "NIGHT57 L (card kb3; the level walk r2: n52's kb3 was the level's deadliest room, 6 / 6 deaths): no drones here (they are kb3c's role); the charger alone with fodder first, then with the spitters",
+   "roles43": [
+    "fodder + ranged (the spitters on the far gallery)",
+    "charger + fodder (the charger introduced to level 3: bait it into a press, punch)",
+    "charger + ranged (the charge with the globs coming in)",
+    "fodder (the hall floods: the last push down the nave)"
+   ],
+   "roles43_why": "NIGHT57 L (card kb3; R-2: the charger reinforced with fodder before it combines with ranged; the gauntlet arrives in this room)",
+   "lessons": [
+    {
+     "promptPad": "When the floor glows, jump.",
+     "kind": "husksDead",
+     "n": 1,
+     "prompt": "When the floor glows, jump."
+    }
+   ],
+   "lessons31": [
+    {
+     "promptPad": "When the floor glows, jump.",
+     "kind": "husksDead",
+     "n": 1,
+     "prompt": "When the floor glows, jump."
+    }
+   ],
+   "kiln47_why": "NIGHT47 B G35 (kept by NIGHT57 L): the cameo's card (<= 6 words): the worm's breach tell is taught here before the fight",
+   "nodes": [
+    [
+     -6.5,
+     0,
+     -223.5
+    ],
+    [
+     -3.5,
+     0,
+     -224.5
+    ],
+    [
+     0,
+     0,
+     -223.5
+    ],
+    [
+     2.5,
+     0,
+     -224.5
+    ],
+    [
+     -2,
+     0,
+     -218.5
+    ],
+    [
+     -6.5,
+     0,
+     -221
+    ],
+    [
+     -3.5,
+     0,
+     -217
+    ],
+    [
+     1,
+     0,
+     -216
+    ],
+    [
+     3.5,
+     0,
+     -216.5
+    ]
+   ],
+   "highNodes": [
+    [
+     9,
+     4.5,
+     -224.5
+    ],
+    [
+     8,
+     4.5,
+     -220.5
+    ]
+   ],
+   "nodes_why": "NIGHT74 S kb3 r1 (Research/2026-10-27-wave74/S/card-kb3.md): the ground nodes: the far floor as shipped plus wave 1's three on the open floor.",
+   "waveNodes43": [
+    [
+     [
+      -3.5,
+      0,
+      -217
+     ],
+     [
+      1,
+      0,
+      -216
+     ],
+     [
+      3.5,
+      0,
+      -216.5
+     ]
+    ],
+    [
+     [
+      -2,
+      0,
+      -218.5
+     ],
+     [
+      0,
+      0,
+      -223.5
+     ],
+     [
+      2.5,
+      0,
+      -224.5
+     ]
+    ],
+    [
+     [
+      -2,
+      0,
+      -218.5
+     ],
+     [
+      0,
+      0,
+      -223.5
+     ],
+     [
+      2.5,
+      0,
+      -224.5
+     ],
+     [
+      9,
+      4.5,
+      -224.5
+     ],
+     [
+      8,
+      4.5,
+      -220.5
+     ]
+    ],
+    [
+     [
+      -2,
+      0,
+      -218.5
+     ],
+     [
+      0,
+      0,
+      -223.5
+     ],
+     [
+      2.5,
+      0,
+      -224.5
+     ]
+    ]
+   ],
+   "waveNodes43_why": "NIGHT74 S kb3 r1 (Research/2026-10-27-wave74/S/card-kb3.md): wave 1 on three nodes of the open floor (A (-3.5, 0, -217) and B (1, 0, -216) in view from the door and the spawn, C (3.5, 0, -216.5) behind the east baffle): the shipped three stood in a clump behind the east gate, hidden by the press line.",
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -6.5,
+       0,
+       -202
+      ],
+      [
+       -4,
+       0,
+       -207
+      ],
+      [
+       -3,
+       0,
+       -214
+      ],
+      [
+       -4.5,
+       0,
+       -219
+      ],
+      [
+       -4.5,
+       0,
+       -223.5
+      ],
+      [
+       0,
+       0,
+       -224
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -4.5,
+       0,
+       -221
+      ],
+      [
+       4.5,
+       4.5,
+       -221
+      ],
+      [
+       7,
+       4.5,
+       -223
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       8.5,
+       0,
+       -201
+      ],
+      [
+       8.5,
+       0,
+       -208
+      ]
+     ]
+    }
+   ],
+   "frames36": {
+    "mid": [
+     -3,
+     0,
+     -203,
+     0,
+     0.05
+    ],
+    "exit": [
+     7,
+     4.5,
+     -223,
+     0,
+     -0.3
+    ]
+   },
+   "frames52": {
+    "_why": "NIGHT70 R d2 (Research/2026-10-24-wave67/cards/kb3.md, THE PRESS LINE, launch): the room frames: the door just crossed (the apron, the press line and its gates), the apron looking at the east gate, the gallery looking back over the far floor",
+    "entry": [
+     0,
+     0,
+     -199,
+     0,
+     0.05
+    ],
+    "mid": [
+     -2,
+     0,
+     -204.5,
+     -30,
+     -0.05
+    ],
+    "high": [
+     7,
+     4.5,
+     -223,
+     180,
+     -0.25
+    ]
+   },
+   "kiln57_why": "NIGHT57 L (Tools/night/gen-n57-kiln.cjs; docs/ROOMS.md, Level 3 as n57-kiln, kb3 THE PRESS HALL): built from scratch (no n52 piece): 20 x 28 x 14 m, three planes (0 / 2.5 / 4.5 m), four drop presses (the charger's stun posts, the first the foothold), the forge wall (a 17 m ride), two pads; the cameo's card and beat (by room id) and the gauntlet award (by room id) kept",
+   "bot43": false,
+   "verb65": "launch",
+   "line65": [
+    [
+     -6,
+     0,
+     -203.5
+    ],
+    [
+     -1,
+     0,
+     -206
+    ],
+    [
+     2.5,
+     0,
+     -209
+    ],
+    [
+     3.5,
+     0,
+     -212
+    ]
+   ],
+   "line65_why": "NIGHT74 S kb3 r1 (Research/2026-10-27-wave74/S/card-kb3.md): the launch line: from the spawn across the apron to the east baffle's south face (the gate it ran to is open floor now)",
+   "card65": "Research/2026-10-27-wave74/S/card-kb3.md",
+   "kiln70_why": "NIGHT70 R d2 (Research/2026-10-24-wave67/cards/kb3.md, THE PRESS LINE, launch): rebuilt from the blank rect (GG 2026-10-09: 'complete arena overhaul completely from scratch'): rect, doors, spawn, exit, waves, roles and lessons kept; THE PRESS LINE (three floor-to-roof presses, two gates), two BAFFLES, the FOOTHOLD PRESS, THE CRANE RAMP, THE HAMMER VENT and the door kerb new; the forge wall (ride), the far gallery and the quench vent kept exactly (3 of 16 shipped pieces); no pit (NIGHT69's quenches cost 52-78 falls a flow set)"
+  },
+  {
+   "id": "kb3c",
+   "name": "3.3c THE TAP RUN",
+   "kind": "room",
+   "rect": [
+    -11,
+    -253.5,
+    11,
+    -229.5
+   ],
+   "height": 12,
+   "roof": true,
+   "par": 60,
+   "job36": "test",
+   "card57": "THE TAP RUN",
+   "verb36": "the ride: the run wall over the tap run up to the drones' height and onto the spout ledge; the tap vent onto the furnace, the blow pipe onto the fettlers' walk",
+   "spawn": {
+    "at": [
+     -6.5,
+     0,
+     -234
+    ],
+    "yawDeg": 0
+   },
+   "spawn_why": "NIGHT57 L (card kb3c, Molecule: the apron's west side): 4.5 m in and 6.5 m off the door's axis: a back-step ends at the west liner, 4.5 m from the door (T-119), not in the doorway",
+   "exit": [
+    -6,
+    0,
+    -251.5
+   ],
+   "arena36": true,
+   "waves": [
+    [
+     "drone",
+     "drone",
+     "husk",
+     "husk",
+     "husk",
+     "husk"
+    ],
+    [
+     "drone",
+     "drone",
+     "spitter",
+     "spitter"
+    ]
+   ],
+   "waves_why": "NIGHT68 S r1g (card kb3c): the last wave two drones and two spitters on the tower (r1f's three spitters raised the walk bot's stall A to 33.8 % against the ceiling 33); the spitters hold 6-24 m and lob from the tower, so the last kills stay at the ride's end",
+   "roles43": [
+    "flyer + fodder (the drones over the tap run, the husks round the ring)",
+    "flyer + ranged (the drones and two spitters hold the spout tower behind its parapet: the ride lands among the spitters)"
+   ],
+   "roles43_why": "NIGHT57 L (card kb3c; R-2 / R-3): the flyer (level 2's drone) comes to level 3 with a known fodder role; the ride is the verb that reaches it over the lava",
+   "nodes": [
+    [
+     2.5,
+     0,
+     -247.5
+    ],
+    [
+     0,
+     0,
+     -249.5
+    ],
+    [
+     -6.5,
+     0,
+     -248
+    ],
+    [
+     -6.5,
+     0,
+     -252
+    ]
+   ],
+   "highNodes": [
+    [
+     7.5,
+     3.5,
+     -249
+    ],
+    [
+     9.5,
+     3.5,
+     -249
+    ],
+    [
+     7,
+     3.5,
+     -252.5
+    ],
+    [
+     8,
+     3.5,
+     -250.5
+    ]
+   ],
+   "nodes_why": "NIGHT67 S r1c (card kb3c): wave 1 at the far end in view of the tap hood's flanks (IN VIEW: r1's apron nodes stood behind the flank eyes and inside minSpawnDist 12 m of the door) - the far floor beside the run's north rim and THE SPOUT LEDGE (highNodes); wave 2 also the west lane's far end. The apron stays the ride's start on the floor",
+   "waveNodes43": [
+    [
+     [
+      2.5,
+      0,
+      -247.5
+     ],
+     [
+      0,
+      0,
+      -249.5
+     ],
+     [
+      7.5,
+      3.5,
+      -249
+     ],
+     [
+      9.5,
+      3.5,
+      -249
+     ]
+    ],
+    [
+     [
+      7.5,
+      3.5,
+      -249
+     ],
+     [
+      9.5,
+      3.5,
+      -249
+     ],
+     [
+      7,
+      3.5,
+      -252.5
+     ],
+     [
+      8,
+      3.5,
+      -250.5
+     ]
+    ]
+   ],
+   "waveNodes43_why": "NIGHT67 S r2a: wave 1 on the far floor and the tower's front (in view of the tap hood's flanks: IN VIEW); wave 2 (the last: 2 drones + 4 swarmers) only on THE SPOUT TOWER (3.5 m: P1)",
+   "rims36": {
+    "rects": [
+     [
+      6.5,
+      -247,
+      7,
+      -237
+     ]
+    ],
+    "why": "NIGHT68 S r1: the run's west rim is THE RUN CURB now (0.9 m): a blast still lifts a walker over it; as NIGHT67 r1d otherwise"
+   },
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -6.5,
+       0,
+       -234
+      ],
+      [
+       -6.5,
+       0,
+       -249
+      ],
+      [
+       -6,
+       0,
+       -251.5
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -2.5,
+       0,
+       -252
+      ],
+      [
+       -2.5,
+       2.5,
+       -246
+      ],
+      [
+       -2,
+       2.5,
+       -239
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -1.5,
+       0,
+       -252
+      ],
+      [
+       6,
+       3.5,
+       -252
+      ],
+      [
+       7.5,
+       3.5,
+       -249.5
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -9.5,
+       0,
+       -252
+      ],
+      [
+       -9.5,
+       4.5,
+       -242
+      ],
+      [
+       -9.5,
+       4.5,
+       -234
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -6.5,
+       0,
+       -234
+      ],
+      [
+       -6.5,
+       0,
+       -231
+      ],
+      [
+       -2,
+       0,
+       -231
+      ],
+      [
+       1,
+       0,
+       -235.5
+      ],
+      [
+       8.5,
+       0,
+       -234.5
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       6.5,
+       0,
+       -238.5
+      ],
+      [
+       2.5,
+       2,
+       -238.5
+      ]
+     ]
+    }
+   ],
+   "frames36": {
+    "mid": [
+     0,
+     0,
+     -231.5,
+     0,
+     0.1
+    ],
+    "exit": [
+     7.5,
+     3.5,
+     -250,
+     0,
+     -0.3
+    ]
+   },
+   "frames52": {
+    "_why": "NIGHT57 L the room frames (a452 / a157): the door just crossed (the furnace ahead, the tap run's glow and the run wall to the east), the fight from the east floor, the fettlers' walk looking over the room to the run",
+    "entry": [
+     0,
+     0,
+     -231,
+     0,
+     0.04
+    ],
+    "mid": [
+     3,
+     0,
+     -236,
+     10,
+     0.05
+    ],
+    "high": [
+     -9.5,
+     4.5,
+     -236,
+     -45,
+     -0.2
+    ]
+   },
+   "kiln57_why": "NIGHT57 L (Tools/night/gen-n57-kiln.cjs; docs/ROOMS.md, Level 3 as n57-kiln, kb3c THE TAP RUN): built from scratch in the slot DE (n52's link kb3b removed): 22 x 24 x 12 m, three planes (0 / 2.5 / 4.5 m), the run wall (an 18 m ride over the tap run, the foothold), the furnace (the ring's mass), two pads",
+   "bot43": false,
+   "verb65": "ride",
+   "line65": [
+    [
+     5.5,
+     0,
+     -233.5
+    ],
+    [
+     9.6,
+     1.7,
+     -236.5
+    ],
+    [
+     9.6,
+     1.7,
+     -246
+    ],
+    [
+     8.5,
+     3.5,
+     -249.5
+    ]
+   ],
+   "card65": "Research/2026-10-24-wave67/cards/kb3c.md",
+   "fallReturn43": {
+    "belowY": -0.3,
+    "to": [
+     9,
+     0,
+     -234.5
+    ],
+    "yawDeg": 0,
+    "damage": 10,
+    "_why": "NIGHT68 S r3a (card kb3c; DECIDE43 D-5's rule, as THE GANTRY): feet under -0.3 m in the room (the drained tap run) -> back on THE TAP APRON at the ride's start, facing the run, 10 health (never a death)"
+   }
+  },
+  {
+   "id": "kb3d",
+   "name": "3.3d THE CRACKED FLOOR",
+   "kind": "room",
+   "rect": [
+    -12,
+    -277.5,
+    12,
+    -257.5
+   ],
+   "height": 12,
+   "roof": true,
+   "par": 60,
+   "job36": "combine",
+   "card57": "THE CRACKED FLOOR",
+   "verb36": "the worm's two moves, small: hop to an iron plate when the ash glows (the burrower), side-step the charge into a kiln post and punch its back (the charger); the kiln wall's ride over the charge onto the mouth ledge",
+   "spawn": {
+    "at": [
+     -7.5,
+     0,
+     -262
+    ],
+    "yawDeg": 0
+   },
+   "spawn_why": "NIGHT57 L (card kb3d, Molecule: the apron): 4.5 m in, 1.5 m off the door's axis (T-119)",
+   "exit": [
+    0,
+    0,
+    -275.5
+   ],
+   "arena36": true,
+   "waves": [
+    [
+     "burrower",
+     "husk",
+     "husk",
+     "husk",
+     "husk"
+    ],
+    [
+     "charger",
+     "husk",
+     "husk",
+     "husk",
+     "husk"
+    ],
+    [
+     "burrower",
+     "charger"
+    ]
+   ],
+   "roles43": [
+    "burrower + fodder (the breach under you on the ash; the husks come off the lava's rim)",
+    "charger + fodder (the line down the straight; the husks come off the rim: throw them back)",
+    "burrower + charger (the worm's two moves together: E-7)"
+   ],
+   "roles43_why": "NIGHT57 L (card kb3d; R-2 combine, E-7): both roles were introduced before (the burrower in kb2c, the charger in kb3); here they combine, the boss's language shown small before the boss",
+   "nodes": [
+    [
+     -2,
+     0,
+     -276.5
+    ],
+    [
+     1,
+     0,
+     -276.5
+    ]
+   ],
+   "highNodes": [
+    [
+     8.5,
+     2.5,
+     -275
+    ],
+    [
+     -10,
+     4.5,
+     -274.5
+    ]
+   ],
+   "nodes_why": "NIGHT68 S r1h (card kb3d): the far strip beyond the 8 m moat (14.8-16.1 m from the door), the mouth ledge and the clinker heap: every enemy crosses the bridge (or comes down the heap's ramp)",
+   "waveNodes43": [
+    [
+     [
+      -2,
+      0,
+      -276.5
+     ],
+     [
+      1,
+      0,
+      -276.5
+     ]
+    ],
+    [
+     [
+      -2,
+      0,
+      -276.5
+     ],
+     [
+      1,
+      0,
+      -276.5
+     ],
+     [
+      8.5,
+      2.5,
+      -275
+     ],
+     [
+      -10,
+      4.5,
+      -274.5
+     ]
+    ],
+    [
+     [
+      -2,
+      0,
+      -276.5
+     ],
+     [
+      1,
+      0,
+      -276.5
+     ]
+    ]
+   ],
+   "waveNodes43_why": "NIGHT68 S r1g (card kb3d): waves 1 and 3 (each with a burrower) on the far floor only: a burrower spawned on the mouth ledge sat under it at y -3.5 (r1f flow-B, the walk bot out of time); wave 2 (the charger and the husks) on the far floor, the ledge and the heap",
+   "rims36": {
+    "rects": [
+     [
+      -7.5,
+      -275.5,
+      -1,
+      -275
+     ],
+     [
+      -1.3,
+      -275,
+      -1,
+      -267
+     ],
+     [
+      1,
+      -274,
+      1.3,
+      -267
+     ]
+    ],
+    "why": "NIGHT68 S r1h (card kb3d): the moat's far rim and the bridge's two edges: a body punched or blasted off them goes in"
+   },
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -7.5,
+       0,
+       -262
+      ],
+      [
+       -0.5,
+       0,
+       -260
+      ],
+      [
+       3,
+       0,
+       -260.5
+      ],
+      [
+       3,
+       0,
+       -265.5
+      ],
+      [
+       0,
+       0,
+       -265.5
+      ],
+      [
+       0,
+       0,
+       -270
+      ],
+      [
+       0,
+       0,
+       -275.5
+      ],
+      [
+       -2,
+       0,
+       -276.5
+      ],
+      [
+       0,
+       0,
+       -275.5
+      ],
+      [
+       0,
+       0,
+       -265.5
+      ],
+      [
+       -1.5,
+       0,
+       -260
+      ],
+      [
+       -7.5,
+       0,
+       -260
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -9.5,
+       0,
+       -262.2
+      ],
+      [
+       -9.5,
+       4.5,
+       -271
+      ],
+      [
+       -9,
+       4.5,
+       -274.5
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       1,
+       0,
+       -275.5
+      ],
+      [
+       6,
+       2.5,
+       -275.5
+      ],
+      [
+       9,
+       2.5,
+       -276
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       9.5,
+       0,
+       -260
+      ],
+      [
+       9.5,
+       0,
+       -265.5
+      ]
+     ]
+    }
+   ],
+   "frames36": {
+    "mid": [
+     -6,
+     0,
+     -259.5,
+     0,
+     0.1
+    ],
+    "exit": [
+     8.5,
+     2.5,
+     -275,
+     0,
+     -0.3
+    ]
+   },
+   "frames52": {
+    "_why": "NIGHT57 L the room frames (a452 / a157): the door just crossed (the breach's crack, the ash and the straight either side), the fight from the apron's east, the clinker heap's top",
+    "entry": [
+     -6,
+     0,
+     -259,
+     0,
+     0.04
+    ],
+    "mid": [
+     -1,
+     0,
+     -261,
+     -20,
+     0.05
+    ],
+    "high": [
+     -9.5,
+     4.5,
+     -273,
+     -60,
+     -0.25
+    ]
+   },
+   "kiln57_why": "NIGHT57 L (Tools/night/gen-n57-kiln.cjs; docs/ROOMS.md, Level 3 as n57-kiln, kb3d THE CRACKED FLOOR): built from scratch in the slot DE: 24 x 20 x 12 m, three planes (0 / 2.5 / 4.5 m), the kiln wall (a 17 m ride), the breach, two kiln posts, three iron plates, the breach vent",
+   "waves_why": "NIGHT68 S r1 (card kb3d): wave 2's four swarmers -> four husks: the punch kills a 10 hp swarmer outright (punch 10 x momentum up to 3), so a swarmer is never thrown; a 40 hp husk can be (levels-data.md section 0 fact 2). Waves 1 and 3 as shipped (wave 3, the burrower and the charger together, is the room's combine job)",
+   "bot43": false,
+   "verb65": "launch",
+   "line65": [
+    [
+     3,
+     0,
+     -265.5
+    ],
+    [
+     0,
+     0,
+     -267.5
+    ],
+    [
+     -3,
+     0,
+     -270
+    ]
+   ],
+   "card65": "Research/2026-10-24-wave67/cards/kb3d.md",
+   "fallReturn43": {
+    "belowY": -0.3,
+    "to": [
+     0,
+     0,
+     -264.5
+    ],
+    "yawDeg": 0,
+    "damage": 10,
+    "_why": "NIGHT68 S r1f (card kb3d; DECIDE43 D-5's rule, as THE GANTRY): feet under -0.3 m in the room (the moat) -> back at the bridge's north mouth, facing it, 10 health (never a death)"
+   }
+  },
+  {
+   "id": "kb4",
+   "name": "3.4 REST",
+   "kind": "link",
+   "rect": [
+    -5,
+    -291.5,
+    5,
+    -281.5
+   ],
+   "height": 5,
+   "roof": true,
+   "par": 3,
+   "job36": "rest",
+   "verb36": "none",
+   "spawn": {
+    "at": [
+     0,
+     0,
+     -283
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    0,
+    0,
+    -290
+   ],
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       0,
+       -283
+      ],
+      [
+       0,
+       0,
+       -290
+      ]
+     ]
+    }
+   ],
+   "frames36": {
+    "mid": [
+     0,
+     0,
+     -283.5,
+     0,
+     -0.268
+    ],
+    "exit": [
+     2,
+     0,
+     -286.5,
+     21.801,
+     -0.111
+    ]
+   }
+  },
+  {
+   "id": "k5",
+   "name": "3.5 THE RING",
+   "kind": "boss",
+   "rect": [
+    -32,
+    -359.5,
+    32,
+    -295.5
+   ],
+   "height": 32,
+   "roof": true,
+   "par": 180,
+   "spawn": {
+    "at": [
+     0,
+     0,
+     -300
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    0,
+    0,
+    -347.5
+   ],
+   "boss": "wyrm",
+   "wyrmArena": "Design/maps/wyrm47-arena.json",
+   "wyrmArena_why": "NIGHT47 B (G33, B-cards.md 4.2; Tools/night/gen-n47-wyrm-arena.cjs): wyrm46-arena.json + THE SLAG ISLANDS (boxes 35-37, top 6.0 m, R 12: only the THUNDERCLAP's boost chain reaches them). Before: NIGHT46 B1 (walkin46; docs/ROOMS.md, NIGHT46 identity cards: k5 3.5 THE RING: THE KILN'S HEART, walked into (builder B1); Tools/night/gen-n46-wyrm-arena.cjs): wyrm45-arena.json with d8's door cut in its south wall (box 2 west, 33 east, 34 the lintel; every other index unchanged) and walkIn46.origin [0,0,-327.5]: with design.n46.walkin46 on the worm's room is THIS room (no teleport, the speed kept). Before it: NIGHT45 A3 (T-65; the identity card THE KILN'S HEART, docs/ROOMS.md): THE KILN WYRM's arena for n45-kiln (NIGHT45 A3, T-65; the identity card THE KILN'S HEART, docs/ROOMS.md; Tools/night/gen-n45-wyrm-arena.cjs): Design/maps/wyrm43-arena.json's 30 boxes in order (the shell, the stepped corners, the ride slabs, the crucible stacks, the perches, K1's plate re-cut as the step to the 6 m perch: recut45; crumble39's indices unchanged) plus 3 slag plates, each 2.9 m clear of every worm route, never reached by the worm in the sim (n45ring wyrm) and tied to the attack it answers (plates45). Every box's reason: solids45. The worm's paths and AI are wyrm26.json's, untouched. No lava (WyrmArena is boxes only). Before it: NIGHT43 K1 (G28): THE KILN WYRM's arena for n43-kiln (NIGHT43 K1, G28; Tools/night/gen-n43-wyrm-arena.cjs): wyrm39-arena.json's 29 boxes in order (the shell, slabs, stacks, perches; the crumble's indices unchanged) plus 1 pieces 2.9 m clear of every worm route: 1 SLAG PLATES (1.2 m islands at [65] deg) and no KILN MOUTH (no clear spot). The worm's paths and AI are wyrm26.json's, untouched. No lava (WyrmArena is boxes only). Before it, NIGHT39 K4 (GG: 'a new arena, and keep the worm AI the same'): the worm's room for this level: wyrm26-arena.json's shell (half 30, height 30) with a new inside (Tools/night/gen-n39-wyrm-arena.cjs); the paths file and the AI unchanged",
+   "crumble31": {
+    "arena": "Design/maps/wyrm46-arena.json",
+    "boxes": [
+     27,
+     28
+    ],
+    "keep": [
+     23
+    ],
+    "tell": "1 s (red-orange cracks)",
+    "when": "half health",
+    "_why": "NIGHT31 DESIGN31 C3 / D: the two higher platforms (the camp test's highest perch) crumble at half health; indices into the arena file's collision.boxes. Builder B: the times are design.n31.wyrm31 rows. NIGHT39 K4: re-pointed at Design/maps/wyrm43-arena.json (the two highest perches (indices 27, 28) crumble at half health, the highest 6 m perch (23) stays: NIGHT31's camp test on the new perches). NIGHT45 A3: re-pointed at Design/maps/wyrm45-arena.json (wyrm43's boxes in order: the same indices). NIGHT46 B1: re-pointed at Design/maps/wyrm46-arena.json (the same indices); draw at the walk-in origin.",
+    "draw": {
+     "half": 30,
+     "center": [
+      0,
+      -327.5
+     ],
+     "boxes": [
+      {
+       "index": 18,
+       "kind": "wall",
+       "top": 12,
+       "crumble": false,
+       "rect": [
+        15.09,
+        -309.16,
+        23.09,
+        -307.66
+       ]
+      },
+      {
+       "index": 19,
+       "kind": "wall",
+       "top": 12,
+       "crumble": false,
+       "rect": [
+        -15.41,
+        -303.78,
+        -7.41,
+        -302.28
+       ]
+      },
+      {
+       "index": 20,
+       "kind": "wall",
+       "top": 12,
+       "crumble": false,
+       "rect": [
+        -6.35,
+        -355.15,
+        1.65,
+        -353.65
+       ]
+      },
+      {
+       "index": 21,
+       "kind": "pillar",
+       "top": 18,
+       "crumble": false,
+       "rect": [
+        24.34,
+        -319.59,
+        27.34,
+        -316.59
+       ]
+      },
+      {
+       "index": 22,
+       "kind": "pillar",
+       "top": 18,
+       "crumble": false,
+       "rect": [
+        -22.57,
+        -311.32,
+        -19.57,
+        -308.32
+       ]
+      },
+      {
+       "index": 23,
+       "kind": "platform",
+       "top": 6,
+       "crumble": false,
+       "rect": [
+        6.23,
+        -305.13,
+        12.23,
+        -299.13
+       ]
+      },
+      {
+       "index": 24,
+       "kind": "platform",
+       "top": 9.5,
+       "crumble": false,
+       "rect": [
+        -25.12,
+        -345.99,
+        -19.12,
+        -339.99
+       ]
+      },
+      {
+       "index": 25,
+       "kind": "platform",
+       "top": 9.5,
+       "crumble": false,
+       "rect": [
+        3.99,
+        -356.58,
+        9.99,
+        -350.58
+       ]
+      },
+      {
+       "index": 26,
+       "kind": "platform",
+       "top": 9.5,
+       "crumble": false,
+       "rect": [
+        -5.18,
+        -305.6,
+        0.82,
+        -299.6
+       ]
+      },
+      {
+       "index": 27,
+       "kind": "platform",
+       "top": 13,
+       "crumble": true,
+       "rect": [
+        6.23,
+        -305.13,
+        12.23,
+        -299.13
+       ]
+      },
+      {
+       "index": 28,
+       "kind": "platform",
+       "top": 13,
+       "crumble": true,
+       "rect": [
+        -28.37,
+        -321.27,
+        -22.37,
+        -315.27
+       ]
+      }
+     ]
+    }
+   },
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       0,
+       -300
+      ],
+      [
+       0,
+       0,
+       -317.5
+      ]
+     ]
+    }
+   ],
+   "copied38": "n35-kiln k5 (THE KILN WYRM's room) copied and moved by (0, -129.5) to the level's end (GG: the worm's AI the same)",
+   "frames36": {
+    "mid": [
+     0,
+     0,
+     -300,
+     0,
+     0.154
+    ],
+    "exit": [
+     0,
+     0,
+     -347.5,
+     0,
+     -0.149
+    ]
+   },
+   "identity45": "docs/ROOMS.md, NIGHT45 identity cards: k5 3.5 THE RING: THE KILN'S HEART (DESIGN-RULES A-9); the arena Design/maps/wyrm45-arena.json (plates45, solids45)",
+   "props45": {
+    "why": "NIGHT45 A3 (A-9, V-4; the audit's k5: 0 of 76 props with a reason): each of n43's 76 k5 props kept with its job (SEEN through the boss door from 3.4 REST and telling the kiln's world) or cut with its reason. `seen` = the prop's sample points visible from REST (of 75).",
+    "kept": [
+     {
+      "id": "k33-k5-hero-83",
+      "kind": "hero",
+      "seen": 75,
+      "job": "hero",
+      "why": "the kiln furnace on the far wall, framed by the boss door from REST: the KILN'S HEART the worm guards (the arena's KILN MOUTH answers it inside)"
+     },
+     {
+      "id": "k33-k5-banner-9",
+      "kind": "banner",
+      "seen": 75,
+      "job": "world",
+      "why": "a founders' banner on the far wall, seen through the boss door: whose kiln this was"
+     },
+     {
+      "id": "k33-k5-banner-10",
+      "kind": "banner",
+      "seen": 75,
+      "job": "world",
+      "why": "a founders' banner on the far wall, seen through the boss door: whose kiln this was"
+     },
+     {
+      "id": "k33-k5-banner-12",
+      "kind": "banner",
+      "seen": 75,
+      "job": "world",
+      "why": "a founders' banner on the far wall, seen through the boss door: whose kiln this was"
+     },
+     {
+      "id": "k33-k5-banner-13",
+      "kind": "banner",
+      "seen": 75,
+      "job": "world",
+      "why": "a founders' banner on the far wall, seen through the boss door: whose kiln this was"
+     },
+     {
+      "id": "k33-k5-pipes-14",
+      "kind": "pipes",
+      "seen": 75,
+      "job": "world",
+      "why": "the kiln's feed pipe along the far wall, seen through the boss door"
+     },
+     {
+      "id": "k33-k5-banner-49",
+      "kind": "banner",
+      "seen": 75,
+      "job": "world",
+      "why": "a founders' banner on the far wall, seen through the boss door: whose kiln this was"
+     },
+     {
+      "id": "k33-k5-banner-50",
+      "kind": "banner",
+      "seen": 75,
+      "job": "world",
+      "why": "a founders' banner on the far wall, seen through the boss door: whose kiln this was"
+     },
+     {
+      "id": "k33-k5-banner-51",
+      "kind": "banner",
+      "seen": 50,
+      "job": "world",
+      "why": "a founders' banner on the far wall, seen through the boss door: whose kiln this was"
+     },
+     {
+      "id": "k33-k5-pipes-54",
+      "kind": "pipes",
+      "seen": 50,
+      "job": "world",
+      "why": "the kiln's feed pipe along the far wall, seen through the boss door"
+     },
+     {
+      "id": "k33-k5-banner-67",
+      "kind": "banner",
+      "seen": 75,
+      "job": "world",
+      "why": "a founders' banner on the far wall, seen through the boss door: whose kiln this was"
+     },
+     {
+      "id": "k33-k5-banner-68",
+      "kind": "banner",
+      "seen": 75,
+      "job": "world",
+      "why": "a founders' banner on the far wall, seen through the boss door: whose kiln this was"
+     },
+     {
+      "id": "k33-k5-banner-69",
+      "kind": "banner",
+      "seen": 50,
+      "job": "world",
+      "why": "a founders' banner on the far wall, seen through the boss door: whose kiln this was"
+     },
+     {
+      "id": "k33-k5-pipes-72",
+      "kind": "pipes",
+      "seen": 50,
+      "job": "world",
+      "why": "the kiln's feed pipe along the far wall, seen through the boss door"
+     },
+     {
+      "id": "k33-k5-truss-84",
+      "kind": "truss",
+      "seen": 75,
+      "job": "world",
+      "why": "the roof truss the lamp's chain hangs from (V-5)"
+     },
+     {
+      "id": "k33-k5-chain-85",
+      "kind": "chain",
+      "seen": 75,
+      "job": "world",
+      "why": "the chain the lamp hangs from (V-5)"
+     },
+     {
+      "id": "k33-k5-lamp-86",
+      "kind": "lamp",
+      "seen": 75,
+      "job": "world",
+      "why": "a lamp hung over the firing floor (V-5: a light on a real fixture), seen through the boss door"
+     },
+     {
+      "id": "k33-k5-truss-87",
+      "kind": "truss",
+      "seen": 49,
+      "job": "world",
+      "why": "the roof truss the lamp's chain hangs from (V-5)"
+     },
+     {
+      "id": "k33-k5-chain-88",
+      "kind": "chain",
+      "seen": 75,
+      "job": "world",
+      "why": "the chain the lamp hangs from (V-5)"
+     },
+     {
+      "id": "k33-k5-lamp-89",
+      "kind": "lamp",
+      "seen": 75,
+      "job": "world",
+      "why": "a lamp hung over the firing floor (V-5: a light on a real fixture), seen through the boss door"
+     },
+     {
+      "id": "k33-k5-debris-15",
+      "kind": "debris",
+      "seen": 75,
+      "job": "world",
+      "why": "slag spilled at the furnace's foot: the crew ran"
+     },
+     {
+      "id": "k33-k5-debris-16",
+      "kind": "debris",
+      "seen": 75,
+      "job": "world",
+      "why": "slag spilled at the furnace's foot: the crew ran"
+     },
+     {
+      "id": "k33-k5-scorch-17",
+      "kind": "scorch",
+      "seen": 75,
+      "job": "world",
+      "why": "a scorch mark at the furnace's foot: the worm broke out here"
+     },
+     {
+      "id": "k33-k5-ingots-18",
+      "kind": "ingots",
+      "seen": 75,
+      "job": "world",
+      "why": "castings left stacked at the furnace's foot: the firing was cut short"
+     }
+    ],
+    "cut": [
+     {
+      "id": "k33-k5-wash-3",
+      "kind": "wash",
+      "seen": 75,
+      "reason": "generic dress33 trim: tells no route, threat or world (V-4: never a strip or a skin because the wall was empty)"
+     },
+     {
+      "id": "k33-k5-wash-21",
+      "kind": "wash",
+      "seen": 0,
+      "reason": "generic dress33 trim: tells no route, threat or world (V-4: never a strip or a skin because the wall was empty)"
+     },
+     {
+      "id": "k33-k5-wash-32",
+      "kind": "wash",
+      "seen": 0,
+      "reason": "generic dress33 trim: tells no route, threat or world (V-4: never a strip or a skin because the wall was empty)"
+     },
+     {
+      "id": "k33-k5-wash-43",
+      "kind": "wash",
+      "seen": 45,
+      "reason": "generic dress33 trim: tells no route, threat or world (V-4: never a strip or a skin because the wall was empty)"
+     },
+     {
+      "id": "k33-k5-wash-61",
+      "kind": "wash",
+      "seen": 45,
+      "reason": "generic dress33 trim: tells no route, threat or world (V-4: never a strip or a skin because the wall was empty)"
+     },
+     {
+      "id": "k33-k5-skirt-1",
+      "kind": "skirt",
+      "seen": 75,
+      "reason": "generic dress33 trim: tells no route, threat or world (V-4: never a strip or a skin because the wall was empty)"
+     },
+     {
+      "id": "k33-k5-cornice-2",
+      "kind": "cornice",
+      "seen": 75,
+      "reason": "generic dress33 trim: tells no route, threat or world (V-4: never a strip or a skin because the wall was empty)"
+     },
+     {
+      "id": "k33-k5-rib-4",
+      "kind": "rib",
+      "seen": 75,
+      "reason": "generic dress33 trim: tells no route, threat or world (V-4: never a strip or a skin because the wall was empty)"
+     },
+     {
+      "id": "k33-k5-recess-7",
+      "kind": "recess",
+      "seen": 75,
+      "reason": "generic dress33 trim: tells no route, threat or world (V-4: never a strip or a skin because the wall was empty)"
+     },
+     {
+      "id": "k33-k5-skirt-19",
+      "kind": "skirt",
+      "seen": 0,
+      "reason": "generic dress33 trim: tells no route, threat or world (V-4: never a strip or a skin because the wall was empty)"
+     },
+     {
+      "id": "k33-k5-cornice-20",
+      "kind": "cornice",
+      "seen": 0,
+      "reason": "generic dress33 trim: tells no route, threat or world (V-4: never a strip or a skin because the wall was empty)"
+     },
+     {
+      "id": "k33-k5-rib-22",
+      "kind": "rib",
+      "seen": 0,
+      "reason": "generic dress33 trim: tells no route, threat or world (V-4: never a strip or a skin because the wall was empty)"
+     },
+     {
+      "id": "k33-k5-skirt-30",
+      "kind": "skirt",
+      "seen": 0,
+      "reason": "generic dress33 trim: tells no route, threat or world (V-4: never a strip or a skin because the wall was empty)"
+     },
+     {
+      "id": "k33-k5-cornice-31",
+      "kind": "cornice",
+      "seen": 0,
+      "reason": "generic dress33 trim: tells no route, threat or world (V-4: never a strip or a skin because the wall was empty)"
+     },
+     {
+      "id": "k33-k5-rib-33",
+      "kind": "rib",
+      "seen": 0,
+      "reason": "generic dress33 trim: tells no route, threat or world (V-4: never a strip or a skin because the wall was empty)"
+     },
+     {
+      "id": "k33-k5-skirt-41",
+      "kind": "skirt",
+      "seen": 50,
+      "reason": "generic dress33 trim: tells no route, threat or world (V-4: never a strip or a skin because the wall was empty)"
+     },
+     {
+      "id": "k33-k5-cornice-42",
+      "kind": "cornice",
+      "seen": 25,
+      "reason": "generic dress33 trim: tells no route, threat or world (V-4: never a strip or a skin because the wall was empty)"
+     },
+     {
+      "id": "k33-k5-rib-44",
+      "kind": "rib",
+      "seen": 75,
+      "reason": "generic dress33 trim: tells no route, threat or world (V-4: never a strip or a skin because the wall was empty)"
+     },
+     {
+      "id": "k33-k5-recess-45",
+      "kind": "recess",
+      "seen": 75,
+      "reason": "generic dress33 trim: tells no route, threat or world (V-4: never a strip or a skin because the wall was empty)"
+     },
+     {
+      "id": "k33-k5-kilnArch-46",
+      "kind": "kilnArch",
+      "seen": 0,
+      "reason": "unseen: no line from 3.4 REST through door d8 reaches it (Campaign24.Enter moves the player into the worm's arena on the first step past d8)"
+     },
+     {
+      "id": "k33-k5-recess-47",
+      "kind": "recess",
+      "seen": 0,
+      "reason": "generic dress33 trim: tells no route, threat or world (V-4: never a strip or a skin because the wall was empty)"
+     },
+     {
+      "id": "k33-k5-skirt-59",
+      "kind": "skirt",
+      "seen": 50,
+      "reason": "generic dress33 trim: tells no route, threat or world (V-4: never a strip or a skin because the wall was empty)"
+     },
+     {
+      "id": "k33-k5-cornice-60",
+      "kind": "cornice",
+      "seen": 25,
+      "reason": "generic dress33 trim: tells no route, threat or world (V-4: never a strip or a skin because the wall was empty)"
+     },
+     {
+      "id": "k33-k5-rib-62",
+      "kind": "rib",
+      "seen": 75,
+      "reason": "generic dress33 trim: tells no route, threat or world (V-4: never a strip or a skin because the wall was empty)"
+     },
+     {
+      "id": "k33-k5-recess-63",
+      "kind": "recess",
+      "seen": 75,
+      "reason": "generic dress33 trim: tells no route, threat or world (V-4: never a strip or a skin because the wall was empty)"
+     },
+     {
+      "id": "k33-k5-kilnArch-64",
+      "kind": "kilnArch",
+      "seen": 0,
+      "reason": "unseen: no line from 3.4 REST through door d8 reaches it (Campaign24.Enter moves the player into the worm's arena on the first step past d8)"
+     },
+     {
+      "id": "k33-k5-recess-65",
+      "kind": "recess",
+      "seen": 0,
+      "reason": "generic dress33 trim: tells no route, threat or world (V-4: never a strip or a skin because the wall was empty)"
+     },
+     {
+      "id": "k33-k5-pilaster-77",
+      "kind": "pilaster",
+      "seen": 75,
+      "reason": "generic dress33 trim: tells no route, threat or world (V-4: never a strip or a skin because the wall was empty)"
+     },
+     {
+      "id": "k33-k5-pilaster-78",
+      "kind": "pilaster",
+      "seen": 75,
+      "reason": "generic dress33 trim: tells no route, threat or world (V-4: never a strip or a skin because the wall was empty)"
+     },
+     {
+      "id": "k33-k5-pilaster-79",
+      "kind": "pilaster",
+      "seen": 0,
+      "reason": "generic dress33 trim: tells no route, threat or world (V-4: never a strip or a skin because the wall was empty)"
+     },
+     {
+      "id": "k33-k5-pilaster-80",
+      "kind": "pilaster",
+      "seen": 0,
+      "reason": "generic dress33 trim: tells no route, threat or world (V-4: never a strip or a skin because the wall was empty)"
+     },
+     {
+      "id": "k33-k5-doorFrame-81",
+      "kind": "doorFrame",
+      "seen": 0,
+      "reason": "unseen: no line from 3.4 REST through door d8 reaches it (Campaign24.Enter moves the player into the worm's arena on the first step past d8)"
+     },
+     {
+      "id": "k33-k5-edgeLight-8",
+      "kind": "edgeLight",
+      "seen": 75,
+      "reason": "generic dress33 trim: tells no route, threat or world (V-4: never a strip or a skin because the wall was empty)"
+     },
+     {
+      "id": "k33-k5-edgeLight-23",
+      "kind": "edgeLight",
+      "seen": 0,
+      "reason": "generic dress33 trim: tells no route, threat or world (V-4: never a strip or a skin because the wall was empty)"
+     },
+     {
+      "id": "k33-k5-banner-24",
+      "kind": "banner",
+      "seen": 0,
+      "reason": "unseen: no line from 3.4 REST through door d8 reaches it (Campaign24.Enter moves the player into the worm's arena on the first step past d8)"
+     },
+     {
+      "id": "k33-k5-banner-25",
+      "kind": "banner",
+      "seen": 0,
+      "reason": "unseen: no line from 3.4 REST through door d8 reaches it (Campaign24.Enter moves the player into the worm's arena on the first step past d8)"
+     },
+     {
+      "id": "k33-k5-pipes-26",
+      "kind": "pipes",
+      "seen": 0,
+      "reason": "unseen: no line from 3.4 REST through door d8 reaches it (Campaign24.Enter moves the player into the worm's arena on the first step past d8)"
+     },
+     {
+      "id": "k33-k5-edgeLight-34",
+      "kind": "edgeLight",
+      "seen": 0,
+      "reason": "generic dress33 trim: tells no route, threat or world (V-4: never a strip or a skin because the wall was empty)"
+     },
+     {
+      "id": "k33-k5-banner-35",
+      "kind": "banner",
+      "seen": 0,
+      "reason": "unseen: no line from 3.4 REST through door d8 reaches it (Campaign24.Enter moves the player into the worm's arena on the first step past d8)"
+     },
+     {
+      "id": "k33-k5-banner-36",
+      "kind": "banner",
+      "seen": 0,
+      "reason": "unseen: no line from 3.4 REST through door d8 reaches it (Campaign24.Enter moves the player into the worm's arena on the first step past d8)"
+     },
+     {
+      "id": "k33-k5-pipes-37",
+      "kind": "pipes",
+      "seen": 0,
+      "reason": "unseen: no line from 3.4 REST through door d8 reaches it (Campaign24.Enter moves the player into the worm's arena on the first step past d8)"
+     },
+     {
+      "id": "k33-k5-edgeLight-48",
+      "kind": "edgeLight",
+      "seen": 50,
+      "reason": "generic dress33 trim: tells no route, threat or world (V-4: never a strip or a skin because the wall was empty)"
+     },
+     {
+      "id": "k33-k5-banner-52",
+      "kind": "banner",
+      "seen": 0,
+      "reason": "unseen: no line from 3.4 REST through door d8 reaches it (Campaign24.Enter moves the player into the worm's arena on the first step past d8)"
+     },
+     {
+      "id": "k33-k5-banner-53",
+      "kind": "banner",
+      "seen": 0,
+      "reason": "unseen: no line from 3.4 REST through door d8 reaches it (Campaign24.Enter moves the player into the worm's arena on the first step past d8)"
+     },
+     {
+      "id": "k33-k5-edgeLight-66",
+      "kind": "edgeLight",
+      "seen": 50,
+      "reason": "generic dress33 trim: tells no route, threat or world (V-4: never a strip or a skin because the wall was empty)"
+     },
+     {
+      "id": "k33-k5-banner-70",
+      "kind": "banner",
+      "seen": 0,
+      "reason": "unseen: no line from 3.4 REST through door d8 reaches it (Campaign24.Enter moves the player into the worm's arena on the first step past d8)"
+     },
+     {
+      "id": "k33-k5-banner-71",
+      "kind": "banner",
+      "seen": 0,
+      "reason": "unseen: no line from 3.4 REST through door d8 reaches it (Campaign24.Enter moves the player into the worm's arena on the first step past d8)"
+     },
+     {
+      "id": "k33-k5-lintelLight-82",
+      "kind": "lintelLight",
+      "seen": 0,
+      "reason": "unseen: no line from 3.4 REST through door d8 reaches it (Campaign24.Enter moves the player into the worm's arena on the first step past d8)"
+     },
+     {
+      "id": "k33-k5-truss-90",
+      "kind": "truss",
+      "seen": 0,
+      "reason": "unseen: no line from 3.4 REST through door d8 reaches it (Campaign24.Enter moves the player into the worm's arena on the first step past d8)"
+     },
+     {
+      "id": "k33-k5-chain-91",
+      "kind": "chain",
+      "seen": 0,
+      "reason": "unseen: no line from 3.4 REST through door d8 reaches it (Campaign24.Enter moves the player into the worm's arena on the first step past d8)"
+     },
+     {
+      "id": "k33-k5-lamp-92",
+      "kind": "lamp",
+      "seen": 0,
+      "reason": "unseen: no line from 3.4 REST through door d8 reaches it (Campaign24.Enter moves the player into the worm's arena on the first step past d8)"
+     },
+     {
+      "id": "k33-k5-scorch-28",
+      "kind": "scorch",
+      "seen": 0,
+      "reason": "unseen: no line from 3.4 REST through door d8 reaches it (Campaign24.Enter moves the player into the worm's arena on the first step past d8)"
+     }
+    ]
+   },
+   "identity46": "docs/ROOMS.md, NIGHT46 identity cards: k5 3.5 THE RING: THE KILN'S HEART, walked into (builder B1)",
+   "props46": {
+    "why": "NIGHT46 B1: the old 26 x 26 m room's 24 kept props are cut: their walls and floor spots are inside the ring now (the worm's routes and the fight's floor); the ring is dressed by its own views (WyrmRoomView, WyrmRing43View: THE KILN MOUTH, the crucible)",
+    "cut": [
+     "k33-k5-hero-83",
+     "k33-k5-banner-9",
+     "k33-k5-banner-10",
+     "k33-k5-banner-12",
+     "k33-k5-banner-13",
+     "k33-k5-pipes-14",
+     "k33-k5-banner-49",
+     "k33-k5-banner-50",
+     "k33-k5-banner-51",
+     "k33-k5-pipes-54",
+     "k33-k5-banner-67",
+     "k33-k5-banner-68",
+     "k33-k5-banner-69",
+     "k33-k5-pipes-72",
+     "k33-k5-truss-84",
+     "k33-k5-chain-85",
+     "k33-k5-lamp-86",
+     "k33-k5-truss-87",
+     "k33-k5-chain-88",
+     "k33-k5-lamp-89",
+     "k33-k5-debris-15",
+     "k33-k5-debris-16",
+     "k33-k5-scorch-17",
+     "k33-k5-ingots-18"
+    ]
+   }
+  }
+ ],
+ "doors": [
+  {
+   "id": "d1",
+   "between": [
+    "kb1",
+    "kb1b"
+   ],
+   "rect": [
+    -2,
+    -45.5,
+    2,
+    -41.5
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  },
+  {
+   "id": "d2",
+   "between": [
+    "kb1b",
+    "kb2"
+   ],
+   "rect": [
+    -2,
+    -75.5,
+    2,
+    -71.5
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  },
+  {
+   "id": "d3",
+   "between": [
+    "kb2",
+    "kb2b"
+   ],
+   "rect": [
+    -2,
+    -107.5,
+    2,
+    -103.5
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  },
+  {
+   "id": "d4",
+   "between": [
+    "kb2b",
+    "kb2c"
+   ],
+   "rect": [
+    -2,
+    -163.5,
+    2,
+    -159.5
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  },
+  {
+   "id": "d5",
+   "between": [
+    "kb2c",
+    "kb3"
+   ],
+   "rect": [
+    -2,
+    -197.5,
+    2,
+    -193.5
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  },
+  {
+   "id": "d6",
+   "between": [
+    "kb3",
+    "kb3c"
+   ],
+   "rect": [
+    -2,
+    -229.5,
+    2,
+    -225.5
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  },
+  {
+   "id": "d6b",
+   "between": [
+    "kb3c",
+    "kb3d"
+   ],
+   "rect": [
+    -8,
+    -257.5,
+    -4,
+    -253.5
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  },
+  {
+   "id": "d7",
+   "between": [
+    "kb3d",
+    "kb4"
+   ],
+   "rect": [
+    -2,
+    -281.5,
+    2,
+    -277.5
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  },
+  {
+   "id": "d8",
+   "between": [
+    "kb4",
+    "k5"
+   ],
+   "rect": [
+    -2,
+    -295.5,
+    2,
+    -291.5
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  }
+ ],
+ "boxes": [
+  {
+   "zone": "kb1",
+   "kind": "deck",
+   "min": [
+    -8,
+    -1,
+    -16.5
+   ],
+   "max": [
+    8,
+    4,
+    -8.5
+   ],
+   "job": "line",
+   "why": "S1's CLIFF (top 4 m, 4 m over the take-off, wall to wall, faces noride): STEP 1, the small one (4 m): one boost lands it (55 % of a person's one boost, 7.256 / 8.068 m); the double jump (3.167 m) and the corner wall jump (3.5 m) fall short",
+   "note": "S1's CLIFF (top 4 m, 4 m over the take-off, wall to wall, faces noride): STEP 1, the small one (4 m): one boost lands it (55 % of a person's one boost, 7.256 / 8.068 m); the double jump (3.167 m) and the corner wall jump (3.5 m) fall short",
+   "noride": true,
+   "gate": {
+    "id": "S1",
+    "verb": "boost",
+    "from": [
+     0,
+     0,
+     -7
+    ],
+    "to": [
+     0,
+     4,
+     -12.5
+    ],
+    "runUp": 5,
+    "why": "STEP 1, the small one (4 m): one boost lands it (55 % of a person's one boost, 7.256 / 8.068 m); the double jump (3.167 m) and the corner wall jump (3.5 m) fall short"
+   }
+  },
+  {
+   "zone": "kb1",
+   "kind": "deck",
+   "min": [
+    -8,
+    -1,
+    -24.5
+   ],
+   "max": [
+    8,
+    9.8,
+    -16.5
+   ],
+   "job": "line",
+   "why": "S2's CLIFF (top 9.8 m, 5.8 m over the take-off, wall to wall, faces noride): STEP 2, bigger (5.8 m over step 1): 80 % of one boost (7.256 / 8.068 m): the shot WITH the jump",
+   "note": "S2's CLIFF (top 9.8 m, 5.8 m over the take-off, wall to wall, faces noride): STEP 2, bigger (5.8 m over step 1): 80 % of one boost (7.256 / 8.068 m): the shot WITH the jump",
+   "noride": true,
+   "gate": {
+    "id": "S2",
+    "verb": "boost",
+    "from": [
+     0,
+     4,
+     -15
+    ],
+    "to": [
+     0,
+     9.8,
+     -20.5
+    ],
+    "runUp": 5,
+    "why": "STEP 2, bigger (5.8 m over step 1): 80 % of one boost (7.256 / 8.068 m): the shot WITH the jump"
+   }
+  },
+  {
+   "zone": "kb1",
+   "kind": "deck",
+   "min": [
+    -8,
+    -1,
+    -34.5
+   ],
+   "max": [
+    8,
+    18.8,
+    -24.5
+   ],
+   "job": "line",
+   "why": "S3's CLIFF (top 18.8 m, 9 m over the take-off, wall to wall, faces noride): STEP 3, the biggest (9 m over step 2): one boost (7.256 / 8.068 m) and the boost + the double (8.549 / 9.361 m) fall short; TWO SHOTS (the second at the top: 13.222 / 22.086 m) land it; 3.1b then asks the whole climb",
+   "note": "S3's CLIFF (top 18.8 m, 9 m over the take-off, wall to wall, faces noride): STEP 3, the biggest (9 m over step 2): one boost (7.256 / 8.068 m) and the boost + the double (8.549 / 9.361 m) fall short; TWO SHOTS (the second at the top: 13.222 / 22.086 m) land it; 3.1b then asks the whole climb",
+   "noride": true,
+   "gate": {
+    "id": "S3",
+    "verb": "boost",
+    "from": [
+     0,
+     9.8,
+     -23
+    ],
+    "to": [
+     0,
+     18.8,
+     -29.5
+    ],
+    "runUp": 5,
+    "why": "STEP 3, the biggest (9 m over step 2): one boost (7.256 / 8.068 m) and the boost + the double (8.549 / 9.361 m) fall short; TWO SHOTS (the second at the top: 13.222 / 22.086 m) land it; 3.1b then asks the whole climb"
+   }
+  },
+  {
+   "zone": "kb1",
+   "kind": "hull",
+   "min": [
+    -8,
+    -1,
+    -34.5
+   ],
+   "max": [
+    -7.7,
+    26,
+    0
+   ],
+   "job": "line",
+   "why": "noride liner, west wall (THE STEPS: a ride or a wall run along the room's wall would skip a step)",
+   "note": "noride liner, west wall (THE STEPS: a ride or a wall run along the room's wall would skip a step)",
+   "noride": true
+  },
+  {
+   "zone": "kb1",
+   "kind": "hull",
+   "min": [
+    7.7,
+    -1,
+    -34.5
+   ],
+   "max": [
+    8,
+    26,
+    0
+   ],
+   "job": "line",
+   "why": "noride liner, east wall (THE STEPS: a ride or a wall run along the room's wall would skip a step)",
+   "note": "noride liner, east wall (THE STEPS: a ride or a wall run along the room's wall would skip a step)",
+   "noride": true
+  },
+  {
+   "zone": "kb1b",
+   "kind": "deck",
+   "min": [
+    -8,
+    -1,
+    -65
+   ],
+   "max": [
+    8,
+    12,
+    -57
+   ],
+   "job": "line",
+   "why": "G1's CLIFF (top 12 m, 12 m over the take-off, wall to wall, faces noride): the CLIMB taught: one shot lifts 7.256 / 8.068 m, the climb (shot, double, shot) 13.36 m; the PULSE blast tops at 7.75 m",
+   "note": "G1's CLIFF (top 12 m, 12 m over the take-off, wall to wall, faces noride): the CLIMB taught: one shot lifts 7.256 / 8.068 m, the climb (shot, double, shot) 13.36 m; the PULSE blast tops at 7.75 m",
+   "noride": true,
+   "gate": {
+    "id": "G1",
+    "verb": "boost",
+    "from": [
+     0,
+     0,
+     -55.5
+    ],
+    "to": [
+     0,
+     12,
+     -61
+    ],
+    "runUp": 6,
+    "why": "the CLIMB taught: one shot lifts 7.256 / 8.068 m, the climb (shot, double, shot) 13.36 m; the PULSE blast tops at 7.75 m"
+   }
+  },
+  {
+   "zone": "kb1b",
+   "kind": "hull",
+   "min": [
+    -8,
+    -1,
+    -71.5
+   ],
+   "max": [
+    -7.7,
+    32,
+    -45.5
+   ],
+   "job": "line",
+   "why": "noride liner, west wall (G1: the take-off, the cliff and the landing)",
+   "note": "noride liner, west wall (G1: the take-off, the cliff and the landing)",
+   "noride": true
+  },
+  {
+   "zone": "kb1b",
+   "kind": "hull",
+   "min": [
+    7.7,
+    -1,
+    -71.5
+   ],
+   "max": [
+    8,
+    32,
+    -57
+   ],
+   "job": "line",
+   "why": "noride liner, east wall (G1: the take-off, the cliff and the landing) (NIGHT46 B1: the cliff and the landing)",
+   "note": "noride liner, east wall (G1: the take-off, the cliff and the landing) (NIGHT46 B1: the cliff and the landing)",
+   "noride": true
+  },
+  {
+   "zone": "kb1b",
+   "kind": "hull",
+   "min": [
+    7.7,
+    6,
+    -57
+   ],
+   "max": [
+    8,
+    32,
+    -47.5
+   ],
+   "job": "line",
+   "why": "noride liner, east wall (G1: the take-off, the cliff and the landing) (NIGHT46 B1: above the ride panel)",
+   "note": "noride liner, east wall (G1: the take-off, the cliff and the landing) (NIGHT46 B1: above the ride panel)",
+   "noride": true
+  },
+  {
+   "zone": "kb1b",
+   "kind": "hull",
+   "min": [
+    7.7,
+    -1,
+    -47.5
+   ],
+   "max": [
+    8,
+    6,
+    -45.5
+   ],
+   "job": "line",
+   "why": "noride liner, east wall (G1: the take-off, the cliff and the landing) (NIGHT46 B1: the door's jamb)",
+   "note": "noride liner, east wall (G1: the take-off, the cliff and the landing) (NIGHT46 B1: the door's jamb)",
+   "noride": true
+  },
+  {
+   "zone": "kb1b",
+   "kind": "wall",
+   "min": [
+    7.4,
+    0,
+    -57
+   ],
+   "max": [
+    8,
+    6,
+    -47.5
+   ],
+   "job": "line",
+   "why": "kb1b THE FLUE's RUN-UP (cyan): ride the east wall from the door into G1's cliff face, jump off, then the climb (shot, double, shot) from speed (docs/ROOMS.md, NIGHT46 identity cards: k5 3.5 THE RING: THE KILN'S HEART, walked into (builder B1); VERBS rows 9 / 11 into 29 / 30)",
+   "note": "kb1b THE FLUE's RUN-UP (cyan): ride the east wall from the door into G1's cliff face, jump off, then the climb (shot, double, shot) from speed",
+   "ride": true,
+   "ride36": {
+    "face": "W",
+    "planeX": 7.4,
+    "lz": [
+     2,
+     11.5
+    ]
+   }
+  },
+  {
+   "zone": "kb2",
+   "kind": "wall",
+   "min": [
+    5.4,
+    0,
+    -95.5
+   ],
+   "max": [
+    6,
+    14,
+    -78.5
+   ],
+   "job": "molecule: the one-way ride, the flue wall (and the foothold)",
+   "why": "THE FLUE WALL (ride, cyan, 17 m, 3-20 m in, floor to roof): ride its east face down the east lane out of the pack and off its end onto the charging deck (the walk round is the deck ramp's long way); its near end is the foothold beside the spawn (R5: 3 m in, above the eye)",
+   "note": "THE FLUE WALL (ride, cyan, 17 m, 3-20 m in, floor to roof): ride its east face down the east lane out of the pack and off its end onto the charging deck (the walk round is the deck ramp's long way); its near end is the foothold beside the spawn (R5: 3 m in, above the eye)",
+   "ride": true,
+   "ride36": {
+    "face": "E",
+    "planeX": 6,
+    "lz": [
+     3,
+     20
+    ]
+   }
+  },
+  {
+   "zone": "kb2",
+   "kind": "deck",
+   "min": [
+    2,
+    0,
+    -103.5
+   ],
+   "max": [
+    10,
+    4.5,
+    -98.5
+   ],
+   "job": "verb it celebrates: THE EAST ROOST (the spitters' perch the returned glob reaches and the THUNDERCLAP does not)",
+   "why": "NIGHT68 S r1 (card kb2): the charging deck halved in depth (8 x 8 -> 8 x 5; P9: an 8 x 8 plane with one climb FAILed): the spitters' east roost at the chute's side, 15-22 m from the pack's floor (the shotgun's 8 deg cone puts about 1 of 8 pellets on a spitter there; a returned glob deals 24 + 40 = 64 >= 60)",
+   "note": "THE EAST ROOST (4.5 m, 8 x 5 m east of the exit chute): the charging deck halved (8 x 8 -> 8 x 5): the spitters' east roost, 15-22 m from the pack's floor, out of the THUNDERCLAP's spread; the walkers come up the deck ramp, the flue wall's ride carries over the chute's mouth onto it"
+  },
+  {
+   "zone": "kb2",
+   "kind": "deck",
+   "min": [
+    -5,
+    0,
+    -98.5
+   ],
+   "max": [
+    -3.5,
+    0.9,
+    -96
+   ],
+   "job": "molecule: the small boost (T-5)",
+   "why": "NIGHT68 S r1 (card kb2): moved from the old tipping lip (now the chute's mouth) to the west roost's foot: the small boost still reaches a 4.5 m lip; r1c: 1 m east, 2 m clear of the long west ramp",
+   "note": "THE SLAG CAKE (0.9 m at the west roost's foot): the small boost (jump, look down, fire) from it reaches the roost's lip (T-5: small, then big)"
+  },
+  {
+   "zone": "kb2",
+   "kind": "hull",
+   "min": [
+    -6,
+    0,
+    -76.5
+   ],
+   "max": [
+    -2,
+    14,
+    -75.5
+   ],
+   "job": "molecule: the entrance gated (the door's west liner)",
+   "why": "the DOOR's west LINER (1 m thick, noride): no ride across the doorway: the fight goes into the room (the walk pilot rode the door wall: dwell, NIGHT52 kb3)",
+   "note": "the DOOR's west LINER (1 m thick, noride): no ride across the doorway: the fight goes into the room (the walk pilot rode the door wall: dwell, NIGHT52 kb3)",
+   "noride": true
+  },
+  {
+   "zone": "kb2",
+   "kind": "hull",
+   "min": [
+    2,
+    0,
+    -76.5
+   ],
+   "max": [
+    5.4,
+    14,
+    -75.5
+   ],
+   "job": "molecule: the entrance gated (the door's east liner)",
+   "why": "the DOOR's east LINER (1 m thick, noride): as the west's: the room's ride is the flue wall",
+   "note": "the DOOR's east LINER (1 m thick, noride): as the west's: the room's ride is the flue wall",
+   "noride": true
+  },
+  {
+   "zone": "kb2",
+   "kind": "deck",
+   "min": [
+    -10,
+    0,
+    -103.5
+   ],
+   "max": [
+    -4,
+    4.5,
+    -98.5
+   ],
+   "note": "THE WEST ROOST (4.5 m, 6 x 5 m west of the exit chute): the spitters' west roost; its walkers' ramp runs up the west wall",
+   "job": "verb it celebrates: THE WEST ROOST (the spitters' second perch: two lob lines cross the pack's floor)",
+   "why": "NIGHT71 R (Research/2026-10-26-wave71/R/kb2/card.md): x -2 -> -4 (8 -> 6 m wide): the two roosts were mirror images across the door axis x = 0 (room check I1 63 %, the shipped room PASSes it: Logs/n71/play/kiln/red/kb2/room-check.txt); the chute between the roosts is now x -4..2, off the axis. NIGHT68 S r1 (card kb2): added: the spitters' second roost, flanking the exit chute with the east roost (a 4 m chute between them, x -2..2), 15-22 m from the pack's floor; reached on foot only by THE WEST RAMP"
+  },
+  {
+   "zone": "kb2",
+   "kind": "deck",
+   "min": [
+    -5,
+    0,
+    -86
+   ],
+   "max": [
+    -3,
+    0.9,
+    -83
+   ],
+   "note": "THE BARROW (0.9 m, 2 x 3 m, 5-8 m in, west of the lesson): a tipped ore barrow: the pack's pivot near the door (the stack's job without a floor-to-roof pillar); the boost lesson's floor stays open",
+   "job": "molecule: THE BARROW (low cover the pack wraps round; OPEN)",
+   "why": "NIGHT68 S r1 (card kb2): added where THE STACK stood, 0.9 m not 14 m (r1b: a 1 m top is a tier levelgen makes walkers reach) (GG 2026-10-12: 'random pillars that serve no purpose'): the pack wraps round it near the door; it keeps the floor's open square under 12 m (OPEN); r1c: 1.5 m east, 2 m clear of the long west ramp; r1d: 0.5 m west, clear of the boost lesson's rect (levelgen's lesson check)"
+  },
+  {
+   "zone": "kb2",
+   "kind": "deck",
+   "min": [
+    6,
+    0,
+    -98.5
+   ],
+   "max": [
+    10,
+    4.5,
+    -95.5
+   ],
+   "note": "THE ROOST'S LIP (4.5 m, 4 x 3 m: the east roost's north end in the east lane, where the flue wall's ride ends)",
+   "job": "verb it celebrates: THE ROOST'S LIP (the flue wall's ride lands on the east roost: the ride's shortcut, room-check I2)",
+   "why": "NIGHT68 S r1h (card kb2; the card critic: 'restore the ride's shortcut'): added: r1-r1g's ride ended over the east lane's floor (I2 1.10 vs the shipped 1.44); the lip puts its landing on the roost, reached on foot only by the deck ramp round the flue wall"
+  },
+  {
+   "zone": "kb2b",
+   "kind": "deck",
+   "min": [
+    -8,
+    -1,
+    -147
+   ],
+   "max": [
+    8,
+    12,
+    -135
+   ],
+   "job": "line",
+   "why": "G2a's CLIFF (top 12 m, 12 m over the take-off, wall to wall, faces noride): the first climb onto TIER 1 (12 m deep: a 6 m run-up on it for the second)",
+   "note": "G2a's CLIFF (top 12 m, 12 m over the take-off, wall to wall, faces noride): the first climb onto TIER 1 (12 m deep: a 6 m run-up on it for the second)",
+   "noride": true,
+   "gate": {
+    "id": "G2a",
+    "verb": "boost",
+    "from": [
+     0,
+     0,
+     -133.5
+    ],
+    "to": [
+     0,
+     12,
+     -141
+    ],
+    "runUp": 6,
+    "why": "the first climb onto TIER 1 (12 m deep: a 6 m run-up on it for the second)"
+   }
+  },
+  {
+   "zone": "kb2b",
+   "kind": "hull",
+   "min": [
+    -8,
+    -1,
+    -159.5
+   ],
+   "max": [
+    -7.7,
+    32,
+    -107.5
+   ],
+   "job": "line",
+   "why": "noride liner, west wall (G2a / G2b: the take-offs, the cliffs and the landing) (NIGHT52 K: re-cut to the moved door at z -107.5)",
+   "note": "noride liner, west wall (G2a / G2b: the take-offs, the cliffs and the landing) (NIGHT52 K: re-cut to the moved door at z -107.5)",
+   "noride": true
+  },
+  {
+   "zone": "kb2b",
+   "kind": "hull",
+   "min": [
+    7.7,
+    -1,
+    -159.5
+   ],
+   "max": [
+    8,
+    32,
+    -135
+   ],
+   "job": "line",
+   "why": "noride liner, east wall (G2a / G2b: the take-offs, the cliffs and the landing) (NIGHT46 B1: the cliff and the landing)",
+   "note": "noride liner, east wall (G2a / G2b: the take-offs, the cliffs and the landing) (NIGHT46 B1: the cliff and the landing)",
+   "noride": true
+  },
+  {
+   "zone": "kb2b",
+   "kind": "hull",
+   "min": [
+    7.7,
+    6,
+    -135
+   ],
+   "max": [
+    8,
+    32,
+    -107.5
+   ],
+   "job": "line",
+   "why": "noride liner, east wall (G2a / G2b: the take-offs, the cliffs and the landing) (NIGHT46 B1: above the ride panel) (NIGHT52 K: and over the moved jamb to z -107.5)",
+   "note": "noride liner, east wall (G2a / G2b: the take-offs, the cliffs and the landing) (NIGHT46 B1: above the ride panel) (NIGHT52 K: and over the moved jamb to z -107.5)",
+   "noride": true
+  },
+  {
+   "zone": "kb2b",
+   "kind": "hull",
+   "min": [
+    7.7,
+    -1,
+    -125.5
+   ],
+   "max": [
+    8,
+    6,
+    -107.5
+   ],
+   "job": "line",
+   "why": "noride liner, east wall (G2a / G2b: the take-offs, the cliffs and the landing) (NIGHT46 B1: the door's jamb) (NIGHT52 K: re-cut to the moved door at z -107.5)",
+   "note": "noride liner, east wall (G2a / G2b: the take-offs, the cliffs and the landing) (NIGHT46 B1: the door's jamb) (NIGHT52 K: re-cut to the moved door at z -107.5)",
+   "noride": true
+  },
+  {
+   "zone": "kb2b",
+   "kind": "wall",
+   "min": [
+    7.4,
+    0,
+    -135
+   ],
+   "max": [
+    8,
+    6,
+    -125.5
+   ],
+   "job": "line",
+   "why": "kb2b THE STACK's RUN-UP (cyan): ride the east wall from the door into G2a's cliff face, then one 12 m climb (G2b's second 12 m cut: FLOW-AUDIT row 7) (docs/ROOMS.md, NIGHT46 identity cards: k5 3.5 THE RING: THE KILN'S HEART, walked into (builder B1); VERBS rows 9 / 11 into 29 / 30)",
+   "note": "kb2b THE STACK's RUN-UP (cyan): ride the east wall from the door into G2a's cliff face, then one 12 m climb (G2b's second 12 m cut: FLOW-AUDIT row 7)",
+   "ride": true,
+   "ride36": {
+    "face": "W",
+    "planeX": 7.4,
+    "lz": [
+     2,
+     11.5
+    ]
+   }
+  },
+  {
+   "zone": "kb2c",
+   "kind": "wall",
+   "min": [
+    8.4,
+    0,
+    -184
+   ],
+   "max": [
+    9,
+    12,
+    -164.5
+   ],
+   "job": "verb it celebrates: THE COOLING WALL (ride over the burrower's ash onto the hearth)",
+   "why": "NIGHT71 R r5 (Research/2026-10-26-wave71/R/kb2c/card.md; the verbs37 row 9 return): z -167 -> -164.5 (19.5 m), on to the north corner: the face no longer stops 2.5 m short with the room wall 0.6 m behind it (the reel's ride ended 'away' at 1.10 s). NIGHT71 R r1 (Research/2026-10-26-wave71/R/kb2c/card.md, THE ASH FLOOR, ride; rebuilt from the blank rect): THE COOLING WALL (ride, cyan, 19.5 m on the east wall, to the roof): ride it down the east lane off the ash and onto THE HEARTH at its end; on foot the hearth is the long way round (its stair starts at the far west)",
+   "note": "THE COOLING WALL (ride, cyan, 17 m on the east wall, to the roof)",
+   "ride": true,
+   "ride36": {
+    "face": "W",
+    "planeX": 8.4,
+    "lz": [
+     0,
+     19.5
+    ]
+   }
+  },
+  {
+   "zone": "kb2c",
+   "kind": "deck",
+   "min": [
+    5,
+    0,
+    -191
+   ],
+   "max": [
+    9,
+    4,
+    -184
+   ],
+   "job": "molecule: THE HEARTH (the high tier, the cooling wall's landing)",
+   "why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/kb2c/card.md, THE ASH FLOOR, ride; rebuilt from the blank rect): THE HEARTH (4 m, 4 x 7 m in the far east corner): the cooling wall's landing and the stand over the exit; the burrower cannot reach you there; the health on it; the walkers come up its stair (no safe ledge)",
+   "note": "THE HEARTH (4 m, 4 x 7 m in the far east corner)"
+  },
+  {
+   "zone": "kb2c",
+   "kind": "deck",
+   "min": [
+    -9,
+    0,
+    -178.5
+   ],
+   "max": [
+    -2,
+    2.5,
+    -175.5
+   ],
+   "job": "spatial law: THE CATWALK (the mid tier off the ash)",
+   "why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/kb2c/card.md, THE ASH FLOOR, ride; rebuilt from the blank rect): THE CATWALK (2.5 m, 7 x 3 m off the west wall across half the room): burrow-safe high ground mid-room, the flue wall's landing; the swarmers come up its stair after you",
+   "note": "THE CATWALK (2.5 m, 7 x 3 m off the west wall across half the room)"
+  },
+  {
+   "zone": "kb2c",
+   "kind": "wall",
+   "min": [
+    -9,
+    0,
+    -191
+   ],
+   "max": [
+    -8.4,
+    12,
+    -178.5
+   ],
+   "job": "verb it celebrates: THE FLUE WALL (ride up the west side onto the catwalk)",
+   "why": "NIGHT71 R r2 (Research/2026-10-26-wave71/R/kb2c/card.md): to the catwalk's south face (z -180 -> -178.5, 12.5 m): the ride ends where the catwalk begins, so it hands you onto it. NIGHT71 R r1 (Research/2026-10-26-wave71/R/kb2c/card.md, THE ASH FLOOR, ride; rebuilt from the blank rect): THE FLUE WALL (ride, cyan, 11 m on the west wall, to the roof): from the far west floor ride north off the ash and onto THE CATWALK's west end",
+   "note": "THE FLUE WALL (ride, cyan, 11 m on the west wall, to the roof)",
+   "ride": true,
+   "ride36": {
+    "face": "E",
+    "planeX": -8.4,
+    "lz": [
+     2.5,
+     15
+    ]
+   }
+  },
+  {
+   "zone": "kb2c",
+   "kind": "hull",
+   "min": [
+    -5.5,
+    0,
+    -171
+   ],
+   "max": [
+    -3,
+    12,
+    -168.5
+   ],
+   "job": "30 s problem: THE BELLOWS HOUSING (the entry's foothold, R5)",
+   "why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/kb2c/card.md, THE ASH FLOOR, ride; rebuilt from the blank rect): THE BELLOWS HOUSING (floor to roof, 2.5 x 2.5 m, 4.5-7.5 m in, west of the door's axis): the entry's foothold of cover (R5) and the vista's flank onto wave 1",
+   "note": "THE BELLOWS HOUSING (floor to roof, 2.5 x 2.5 m, 4.5-7.5 m in, west of the door's axis)"
+  },
+  {
+   "zone": "kb2c",
+   "kind": "deck",
+   "min": [
+    -8.5,
+    0,
+    -190
+   ],
+   "max": [
+    -6,
+    0.9,
+    -187.5
+   ],
+   "job": "spatial law: an iron plate on the ash (burrow-safe)",
+   "why": "NIGHT74 S kb2c r6 (Research/2026-10-27-wave74/S/card-kb2c.md): the plate 0.4 -> 0.9 m: a raised iron block the player hops onto (walkers climb 0.9 m), rimmed, seen from the door; the burrow rule is the same. NIGHT71 R r1 (Research/2026-10-26-wave71/R/kb2c/card.md, THE ASH FLOOR, ride; rebuilt from the blank rect): AN IRON PLATE (the far west, 0.4 m): burrow-safe ground at the flue wall's foot: the hop you make when the ash glows",
+   "note": "AN IRON PLATE (the far west, 0.9 m)",
+   "burrowSafe43": true
+  },
+  {
+   "zone": "kb2c",
+   "kind": "deck",
+   "min": [
+    -3,
+    0,
+    -183.5
+   ],
+   "max": [
+    -0.5,
+    0.9,
+    -181
+   ],
+   "job": "spatial law: an iron plate on the ash (burrow-safe)",
+   "why": "NIGHT74 S kb2c r6 (Research/2026-10-27-wave74/S/card-kb2c.md): the plate 0.4 -> 0.9 m: a raised iron block the player hops onto (walkers climb 0.9 m), rimmed, seen from the door; the burrow rule is the same. NIGHT71 R r1 (Research/2026-10-26-wave71/R/kb2c/card.md, THE ASH FLOOR, ride; rebuilt from the blank rect): AN IRON PLATE (mid-room, 0.4 m): burrow-safe ground beside wave 1's cluster: the hop when the burrower hunts you",
+   "note": "AN IRON PLATE (mid-room, 0.9 m)",
+   "burrowSafe43": true
+  },
+  {
+   "zone": "kb2c",
+   "kind": "deck",
+   "min": [
+    3.5,
+    0,
+    -175
+   ],
+   "max": [
+    6,
+    0.9,
+    -172.5
+   ],
+   "job": "spatial law: an iron plate on the ash (burrow-safe)",
+   "why": "NIGHT74 S kb2c r6 (Research/2026-10-27-wave74/S/card-kb2c.md): the plate 0.4 -> 0.9 m: a raised iron block the player hops onto (walkers climb 0.9 m), rimmed, seen from the door; the burrow rule is the same. NIGHT71 R r4 (Research/2026-10-26-wave71/R/kb2c/card.md): x 5.5..8 -> 3.5..6, z -175..-172.5: off the cooling wall's run line (the ride pilot's 14 m clear run) and off the east lane's walk proof. NIGHT71 R r1 (Research/2026-10-26-wave71/R/kb2c/card.md, THE ASH FLOOR, ride; rebuilt from the blank rect): AN IRON PLATE (the east lane, 0.4 m): burrow-safe ground at the cooling wall's start: the ride's run-up off the ash",
+   "note": "AN IRON PLATE (the east lane, 0.9 m)",
+   "burrowSafe43": true
+  },
+  {
+   "zone": "kb2c",
+   "kind": "hull",
+   "min": [
+    -6,
+    0,
+    -164.5
+   ],
+   "max": [
+    -2,
+    12,
+    -163.5
+   ],
+   "job": "molecule: the entrance gated (the door's west liner)",
+   "why": "the DOOR's west LINER (1 m thick, noride): no ride across the doorway: the fight goes into the room",
+   "note": "the DOOR's west LINER (1 m thick, noride): no ride across the doorway: the fight goes into the room",
+   "noride": true
+  },
+  {
+   "zone": "kb2c",
+   "kind": "hull",
+   "min": [
+    2,
+    0,
+    -164.5
+   ],
+   "max": [
+    6,
+    12,
+    -163.5
+   ],
+   "job": "molecule: the entrance gated (the door's east liner)",
+   "why": "the DOOR's east LINER (1 m thick, noride): as the west's: the room's ride is the cooling wall",
+   "note": "the DOOR's east LINER (1 m thick, noride): as the west's: the room's ride is the cooling wall",
+   "noride": true
+  },
+  {
+   "zone": "kb2c",
+   "kind": "hull",
+   "min": [
+    0.5,
+    0,
+    -176
+   ],
+   "max": [
+    2.5,
+    2.2,
+    -174
+   ],
+   "job": "cover: THE KILN HOOD (a 2.2 m stack mid-room: the burrower fight's pillar to circle; it breaks the door-to-hearth line)",
+   "why": "NIGHT74 S kb2c r6 (Research/2026-10-27-wave74/S/card-kb2c.md): a free-standing 2 x 2 x 2.2 m stack 7 m beyond the door: high cover (1.75 m or more) to circle while the ash glows, west of the east plate (x 3.5) with a 1 m lane between, clear of the entry's sight line to wave 1's east node and of the verbs37 pick's rays to the cooling wall.",
+   "note": "THE KILN HOOD (2.2 m, 2 x 2 m, mid-room)"
+  },
+  {
+   "zone": "kb3",
+   "kind": "wall",
+   "min": [
+    9.4,
+    0,
+    -217.5
+   ],
+   "max": [
+    10,
+    14,
+    -200.5
+   ],
+   "job": "verb it celebrates: the forge wall's ride over the charge",
+   "why": "THE FORGE WALL (ride, cyan, 17 m on the east wall, to the roof): ride the east aisle over the charger's next charge and off its end onto the far gallery (the walk round is the gallery ramp's long way, by the west of the far end)",
+   "note": "THE FORGE WALL (ride, cyan, 17 m on the east wall, to the roof): ride the east aisle over the charger's next charge and off its end onto the far gallery (the walk round is the gallery ramp's long way, by the west of the far end)",
+   "ride": true,
+   "ride36": {
+    "face": "W",
+    "planeX": 9.4,
+    "lz": [
+     3,
+     20
+    ]
+   }
+  },
+  {
+   "zone": "kb3",
+   "kind": "deck",
+   "min": [
+    5,
+    0,
+    -225.5
+   ],
+   "max": [
+    10,
+    4.5,
+    -218.5
+   ],
+   "job": "30 s problem: THE FAR GALLERY (the spitters' roost, the high tier)",
+   "why": "THE FAR GALLERY (4.5 m, 7 x 7 m across the far end's east side): the sprayers' roost lobbing down the nave; the forge wall's ride lands on it, the boost or the step reaches its lip; the walkers take its long ramp (no safe ledge)",
+   "note": "THE FAR GALLERY (4.5 m, 7 x 7 m across the far end's east side): the sprayers' roost lobbing down the nave; the forge wall's ride lands on it, the boost or the step reaches its lip; the walkers take its long ramp (no safe ledge)"
+  },
+  {
+   "zone": "kb3",
+   "kind": "deck",
+   "min": [
+    3,
+    2.5,
+    -225.5
+   ],
+   "max": [
+    5,
+    4.5,
+    -218.5
+   ],
+   "job": "spatial law: THE FAR GALLERY's west span (the exit lane under it)",
+   "why": "NIGHT71 R (Research/2026-10-26-wave71/R/kb3/card.md): the shipped room's GALLERY ARCH given back, exactly as shipped (rule 1: d2 dropped it and air65 fell from the shipped 6 hand-offs to 3): the forge wall's jump-off lands on it, it hands you to the gallery and back to the wall; THE GALLERY ARCH (NIGHT58 L0: the gallery's west 2 m on a 2 m span, its underside 2.5 m up, where the gallery ramp lands): the ramp still reaches the gallery at 4.5 m; the exit strip walks under it",
+   "note": "THE GALLERY ARCH (the gallery's west 2 m, its underside 2.5 m up, where the crane ramp lands)"
+  },
+  {
+   "zone": "kb3",
+   "kind": "hull",
+   "min": [
+    3.5,
+    0,
+    -204.5
+   ],
+   "max": [
+    5,
+    14,
+    -202.5
+   ],
+   "job": "hero prop: THE FOOTHOLD PRESS (the entry's foothold, R5; the east gate's screen)",
+   "why": "NIGHT70 R d2 (Research/2026-10-24-wave67/cards/kb3.md, THE PRESS LINE, launch): THE FOOTHOLD PRESS (1.5 x 2 m, floor to roof, 5-7 m inside the entry on the east apron): the foothold you take on entry (R5) and see the east gate and the aisle from; it screens the east gate from the spawn's corner, so a body turning out of the gate meets you at the press, not at range; a burst face",
+   "note": "THE FOOTHOLD PRESS (1.5 x 2 m, floor to roof, 5-7 m inside the entry on the east apron)",
+   "noride": true
+  },
+  {
+   "zone": "kb3",
+   "kind": "hull",
+   "min": [
+    5.5,
+    0,
+    -211
+   ],
+   "max": [
+    7.5,
+    14,
+    -209
+   ],
+   "job": "spatial law: THE PRESS LINE, east press (the sight cut; the forge aisle's west side)",
+   "why": "NIGHT70 R d2 (Research/2026-10-24-wave67/cards/kb3.md, THE PRESS LINE, launch): THE PRESS LINE east press (floor to roof, 2 x 2 m): closes the line up to the forge aisle (x 7.5..9.4, the ride's lane, left open)",
+   "note": "THE PRESS LINE east press (floor to roof, 2 x 2 m)",
+   "noride": true
+  },
+  {
+   "zone": "kb3",
+   "kind": "hull",
+   "min": [
+    2,
+    0,
+    -215
+   ],
+   "max": [
+    6.5,
+    14,
+    -213
+   ],
+   "job": "30 s problem: THE EAST BAFFLE (the corner every body turns; the throw's wall)",
+   "why": "NIGHT70 R d2 (Research/2026-10-24-wave67/cards/kb3.md, THE PRESS LINE, launch): THE EAST BAFFLE (floor to roof, 4.5 x 2 m, 2 m behind the east gate): as the west one for the east gate and line65's punch",
+   "note": "THE EAST BAFFLE (floor to roof, 4.5 x 2 m, 2 m behind the east gate)",
+   "noride": true
+  },
+  {
+   "zone": "kb3",
+   "kind": "hull",
+   "min": [
+    -7.5,
+    0,
+    -214
+   ],
+   "max": [
+    -5.5,
+    14,
+    -212
+   ],
+   "job": "30 s problem: THE WEST PRESS (2 x 2 m, floor to roof, beside the spawn's lane: the west flank's cover and the throw's wall)",
+   "why": "NIGHT74 S kb3 r1 (Research/2026-10-27-wave74/S/card-kb3.md): the west block (4.5 x 2 m, a wall 6 m ahead of the spawn) and the west baffle leave; one 2 x 2 m stack stands 9 m out and 1.5 m off the spawn's axis (x -8.5): the first look up the west wall is open to the quench vent's glow, and the stack is a burst face for a body punched west and cover from the far floor's spitters for whoever runs the west flank.",
+   "note": "THE WEST PRESS (2 x 2 m, floor to roof)",
+   "noride": true
+  },
+  {
+   "zone": "kb3",
+   "kind": "hull",
+   "min": [
+    -10,
+    0,
+    -211
+   ],
+   "max": [
+    -8,
+    1.2,
+    -209
+   ],
+   "job": "cover: THE DIE SILL (1.2 m plinth, 2 x 2 m, against the west wall 6 m ahead of the spawn: hop it, shelter behind it from the far floor's spitters)",
+   "why": "NIGHT74 S kb3 r2 (Research/2026-10-27-wave74/S/card-kb3.md): r1 left the apron an open 13.5 m square (n70-area OPEN, 12 m or less passes) and the west wall one 23 m run (the Player's wall pick moved off kb2c's 18 m wall); a waist-high 2 x 2 m plinth at the west block's old end cuts both (runs 11.5 m and 14.5 m, open square 11.5 m), is the first cover on the spawn's lane, and stands under the eye (1.6 m) so the spawn still sees wave 1's nodes; a body punched west bursts on its face.",
+   "note": "THE DIE SILL (1.2 m, 2 x 2 m)",
+   "noride": true
+  },
+  {
+   "zone": "kb3c",
+   "kind": "wall",
+   "min": [
+    10.4,
+    0,
+    -249.5
+   ],
+   "max": [
+    11,
+    12,
+    -231.5
+   ],
+   "job": "verb it celebrates: the run wall's ride over the tap run",
+   "why": "NIGHT67 S r2b: THE RUN WALL (ride, cyan, 18 m on the east wall; its base raised from the lava's floor to the floor, so its south end stands on THE TAP APRON where the ride starts, and the run flows under its foot): ride it over the tap run and off its end onto THE SPOUT TOWER",
+   "note": "THE RUN WALL (ride, cyan, 18 m on the east wall standing in the tap run's lava, to the roof): ride it over the molten run up to the drones' height and off its end onto the spout ledge (the walk round is the ledge ramp's long way)",
+   "ride": true,
+   "ride36": {
+    "face": "W",
+    "planeX": 10.4,
+    "lz": [
+     2,
+     20
+    ]
+   }
+  },
+  {
+   "zone": "kb3c",
+   "kind": "hull",
+   "min": [
+    2,
+    0,
+    -234.5
+   ],
+   "max": [
+    5,
+    12,
+    -230.5
+   ],
+   "job": "hero prop: THE TAP HOOD (the run's head; the foothold)",
+   "why": "THE TAP HOOD (3 x 4 m, floor to roof, 1-5 m in, flush to the door's east jamb, at the head of the tap run; round 2: the ring's north crossing goes south of it, 5-8 m from the door, out of the dwell band; NIGHT60 L B14: 2 m narrower on its east side (x 7 -> 5), so the corner between it, the run wall's north end and the run's head (x 7..10.4, z -233.5..-229.5) opens on foot onto the east floor: it was a closed 3.4 x 4 m pocket, reached only out of the lava's knock-up or off the ride and left only through the lava (n46flow's pilot: NO PATH, put at the next room)): where the iron came out of the furnace's tap into the run: the entry's foothold of cover (R5) beside the door; you step out round it to fight down the run",
+   "note": "THE TAP HOOD (3 x 4 m, floor to roof, 1-5 m in, flush to the door's east jamb, at the head of the tap run; round 2: the ring's north crossing goes south of it, 5-8 m from the door, out of the dwell band; NIGHT60 L B14: 2 m narrower on its east side (x 7 -> 5), so the corner between it, the run wall's north end and the run's head (x 7..10.4, z -233.5..-229.5) opens on foot onto the east floor: it was a closed 3.4 x 4 m pocket, reached only out of the lava's knock-up or off the ride and left only through the lava (n46flow's pilot: NO PATH, put at the next room)): where the iron came out of the furnace's tap into the run: the entry's foothold of cover (R5) beside the door; you step out round it to fight down the run"
+  },
+  {
+   "zone": "kb3c",
+   "kind": "deck",
+   "min": [
+    6,
+    0,
+    -253.5
+   ],
+   "max": [
+    11,
+    3.5,
+    -247.5
+   ],
+   "job": "30 s problem: THE SPOUT TOWER (the ride's landing, the last wave's roost)",
+   "why": "NIGHT67 S r2a: THE SPOUT TOWER (the spout ledge raised 2.5 -> 3.5 m; the card critic's CHANGE): the run wall's landing and the last wave's roost (its 2 drones and 4 swarmers spawn only here: P1), reached on foot only the long way (the far floor's ramp from the west), by the ride over the tap run the short way",
+   "note": "THE SPOUT LEDGE (2.5 m, the far east corner where the run poured into the spout): the run wall's landing (jump off the ride's end); a stand level with the drones over the run; the walkers come up its ramp (no safe ledge)"
+  },
+  {
+   "zone": "kb3c",
+   "kind": "deck",
+   "min": [
+    4,
+    0,
+    -250.5
+   ],
+   "max": [
+    6,
+    0.9,
+    -248
+   ],
+   "job": "molecule: the small boost (T-5)",
+   "why": "THE INGOT PILE (0.9 m at the ledge's west face): the small boost (jump, look down, fire) from it onto the ledge; a step out of the pack on the east floor",
+   "note": "THE INGOT PILE (0.9 m at the ledge's west face): the small boost (jump, look down, fire) from it onto the ledge; a step out of the pack on the east floor"
+  },
+  {
+   "zone": "kb3c",
+   "kind": "deck",
+   "min": [
+    -5,
+    0,
+    -246.5
+   ],
+   "max": [
+    1,
+    2.5,
+    -237.5
+   ],
+   "job": "hero prop: THE TAPPING FURNACE (the ring's mass, a mid-tier stand)",
+   "why": "NIGHT67 S r2d: THE TAPPING FURNACE (2.5 m, 6 x 6 -> 6 x 9 m, z -237.5..-246.5; P9: two climbs 8 m apart need the length): the ring's mass, a mid-tier stand over the west lane; climbed by its north ramp from the far floor and THE CHARGING RAMP from the entry side",
+   "note": "THE TAPPING FURNACE (2.5 m, 6 x 6 m, 8-14 m in): the ring's mass the loop runs round (its north crossing 8 m from the door); a stand over the ring (the tap vent throws you on it, the walkers take its ramp)"
+  },
+  {
+   "zone": "kb3c",
+   "kind": "hull",
+   "min": [
+    -5,
+    2.5,
+    -241.5
+   ],
+   "max": [
+    -3.5,
+    12,
+    -239.5
+   ],
+   "job": "every-solid: the furnace's stack (cover on the furnace)",
+   "why": "THE FURNACE STACK (on the furnace top, to the roof): the cover on the furnace you come round; it cuts the furnace top's line to the fettlers' walk",
+   "note": "THE FURNACE STACK (on the furnace top, to the roof): the cover on the furnace you come round; it cuts the furnace top's line to the fettlers' walk"
+  },
+  {
+   "zone": "kb3c",
+   "kind": "deck",
+   "min": [
+    -11,
+    0,
+    -242.5
+   ],
+   "max": [
+    -8,
+    4.5,
+    -229.5
+   ],
+   "job": "spatial law: the fettlers' walk (the high tier on the west wall)",
+   "why": "THE FETTLERS' WALK (4.5 m, 3 x 13 m on the west wall from the entry wall): the walk the fettlers skimmed from: the high ground over the ring, level with the drones; the blow pipe throws you up, the walkers come up its long ramp (no safe ledge)",
+   "note": "THE FETTLERS' WALK (4.5 m, 3 x 13 m on the west wall from the entry wall): the walk the fettlers skimmed from: the high ground over the ring, level with the drones; the blow pipe throws you up, the walkers come up its long ramp (no safe ledge)"
+  },
+  {
+   "zone": "kb3c",
+   "kind": "hull",
+   "min": [
+    -8,
+    0,
+    -230.5
+   ],
+   "max": [
+    -2,
+    12,
+    -229.5
+   ],
+   "job": "molecule: the entrance gated (the door's west liner)",
+   "why": "the DOOR's west LINER (1 m thick, noride, to the fettlers' walk): no ride across the doorway: the fight goes into the room",
+   "note": "the DOOR's west LINER (1 m thick, noride, to the fettlers' walk): no ride across the doorway: the fight goes into the room",
+   "noride": true
+  },
+  {
+   "zone": "kb3c",
+   "kind": "hull",
+   "min": [
+    6.5,
+    0,
+    -247
+   ],
+   "max": [
+    7,
+    0.9,
+    -237
+   ],
+   "note": "THE RUN CURB (0.9 m, the tap run's west rim, 10 m): the iron's kerb along the molten run: the fighting floor's east strip ends at it; the run is crossed only by the ride",
+   "job": "molecule: THE RUN CURB (the fighting floor kept out of the ride's lava: the deaths guard)",
+   "why": "NIGHT68 S r1 (card kb3c): added: NIGHT67 r3c's set A death was the walk bot in the tap run (flow-A: out of lava 204 steps); the curb keeps the east strip's fight out of the lava the ride crosses (NIGHT68.md: a hazard on the verb's line, never beside the walk); 0.9 m, under P4's 1.75 m"
+  },
+  {
+   "zone": "kb3c",
+   "kind": "hull",
+   "min": [
+    6,
+    3.5,
+    -250.5
+   ],
+   "max": [
+    6.5,
+    5,
+    -247.5
+   ],
+   "note": "THE SPOUT PARAPET (1.5 m on THE SPOUT TOWER's west edge, north of the tower ramp's landing): the spout's iron lip: the far floor's line to the tower's spitters is cut; the run's line (the ride's way in) stays open",
+   "job": "every-solid: THE SPOUT PARAPET (the far floor's sight to the tower's spitters cut: the hold at the ride's end)",
+   "why": "NIGHT68 S r1f (card kb3c; the card critic: 'name the hold ... and build that piece'): added: the last wave's spitters lob from the tower; from the far floor the KESTREL cannot see them past it, so the refusal walks round to the tower ramp or waits, while the ride lands among them"
+  },
+  {
+   "zone": "kb3d",
+   "kind": "wall",
+   "min": [
+    11.4,
+    0,
+    -275.5
+   ],
+   "max": [
+    12,
+    12,
+    -258.5
+   ],
+   "job": "verb it celebrates: the kiln wall's ride over the charger's straight",
+   "why": "THE KILN WALL (ride, cyan, 17 m on the east wall, to the roof): ride it down the charger's straight out of its line and off its end onto the mouth ledge (the walk round is the ledge ramp's long way)",
+   "note": "THE KILN WALL (ride, cyan, 17 m on the east wall, to the roof): ride it down the charger's straight out of its line and off its end onto the mouth ledge (the walk round is the ledge ramp's long way)",
+   "ride": true,
+   "ride36": {
+    "face": "W",
+    "planeX": 11.4,
+    "lz": [
+     1,
+     18
+    ]
+   }
+  },
+  {
+   "zone": "kb3d",
+   "kind": "deck",
+   "min": [
+    6,
+    0,
+    -277.5
+   ],
+   "max": [
+    11.4,
+    2.5,
+    -272.5
+   ],
+   "job": "molecule: the mouth ledge (the mid tier, the ride's landing)",
+   "why": "THE MOUTH LEDGE (2.5 m, the far east corner at the kiln mouth): the kiln wall's landing; a stand over the straight; the charger cannot climb, the walkers come up its ramp (no safe ledge)",
+   "note": "THE MOUTH LEDGE (2.5 m, the far east corner at the kiln mouth): the kiln wall's landing; a stand over the straight; the charger cannot climb, the walkers come up its ramp (no safe ledge)"
+  },
+  {
+   "zone": "kb3d",
+   "kind": "deck",
+   "min": [
+    -12,
+    0,
+    -277.5
+   ],
+   "max": [
+    -7.5,
+    4.5,
+    -270.5
+   ],
+   "job": "spatial law: the clinker heap (the high tier)",
+   "why": "THE CLINKER HEAP (4.5 m, the far west corner over the ash): the high ground the breach vent throws you onto; the burrower cannot reach you there, the husks come up its ramp (no safe ledge)",
+   "note": "THE CLINKER HEAP (4.5 m, the far west corner over the ash): the high ground the breach vent throws you onto; the burrower cannot reach you there, the husks come up its ramp (no safe ledge)"
+  },
+  {
+   "zone": "kb3d",
+   "kind": "hull",
+   "min": [
+    -12,
+    4.5,
+    -276
+   ],
+   "max": [
+    -10.5,
+    12,
+    -273.5
+   ],
+   "job": "every-solid: the heap's stack (cover on the high tier)",
+   "why": "THE HEAP's STACK (on the heap's back corner, to the roof): the cover on the high tier you come round; it cuts the heap's line to the door",
+   "note": "THE HEAP's STACK (on the heap's back corner, to the roof): the cover on the high tier you come round; it cuts the heap's line to the door"
+  },
+  {
+   "zone": "kb3d",
+   "kind": "hull",
+   "min": [
+    -3.5,
+    0,
+    -264.5
+   ],
+   "max": [
+    -2,
+    12,
+    -261.5
+   ],
+   "job": "30 s problem: the first kiln post (the charger's stun post; the foothold)",
+   "why": "THE FIRST KILN POST (floor to roof, 4-7 m in beside the breach's head): the entry's foothold of cover (R5); bait the charge into it (the charger stuns 1.5 s, its back open: punch it)",
+   "note": "THE FIRST KILN POST (floor to roof, 4-7 m in beside the breach's head): the entry's foothold of cover (R5); bait the charge into it (the charger stuns 1.5 s, its back open: punch it)"
+  },
+  {
+   "zone": "kb3d",
+   "kind": "hull",
+   "min": [
+    4,
+    0,
+    -266.5
+   ],
+   "max": [
+    5.5,
+    12,
+    -264.5
+   ],
+   "job": "30 s problem: the second kiln post (the charger's stun post on the straight)",
+   "why": "THE SECOND KILN POST (floor to roof, on the straight): the charger's stun post where its line runs; side-step the charge into it, then punch",
+   "note": "THE SECOND KILN POST (floor to roof, on the straight): the charger's stun post where its line runs; side-step the charge into it, then punch"
+  },
+  {
+   "zone": "kb3d",
+   "kind": "deck",
+   "min": [
+    -11.5,
+    0,
+    -261.5
+   ],
+   "max": [
+    -8.5,
+    0.4,
+    -259
+   ],
+   "job": "spatial law: an iron plate on the ash (burrow-safe)",
+   "why": "AN IRON PLATE (west, by the heap ramp's foot, 0.4 m): burrow-safe ground (the burrower cannot surface through iron): the hop you make when the ash glows under you",
+   "note": "AN IRON PLATE (west, by the heap ramp's foot, 0.4 m): burrow-safe ground (the burrower cannot surface through iron): the hop you make when the ash glows under you",
+   "burrowSafe43": true
+  },
+  {
+   "zone": "kb3d",
+   "kind": "deck",
+   "min": [
+    -6.5,
+    0,
+    -264
+   ],
+   "max": [
+    -3.5,
+    0.4,
+    -261.5
+   ],
+   "job": "spatial law: an iron plate on the ash (burrow-safe)",
+   "why": "NIGHT68 S r1f: moved north of the moat with the vent (burrow-safe ground on the near floor); AN IRON PLATE (the middle of the ash, beside the breach vent, 0.4 m): burrow-safe ground (the burrower cannot surface through iron): the hop you make when the ash glows under you",
+   "note": "AN IRON PLATE (the middle of the ash, beside the breach vent, 0.4 m): burrow-safe ground (the burrower cannot surface through iron): the hop you make when the ash glows under you",
+   "burrowSafe43": true
+  },
+  {
+   "zone": "kb3d",
+   "kind": "deck",
+   "min": [
+    -7.5,
+    0,
+    -277.5
+   ],
+   "max": [
+    -3,
+    0.4,
+    -275
+   ],
+   "job": "spatial law: an iron plate on the ash (burrow-safe)",
+   "why": "NIGHT71 R r1 (card Research/2026-10-26-wave71/R/kb3d/card.md): x -6 -> -7.5 (flush with the clinker heap's foot) and z -275.5 -> -275 (to the moat's far rim): the 1.5 m pocket between the heap and the plate was the room check's R2 dead end (one nav node at (-6.5, -276.5) with one way out; Research/2026-10-26-wave71/R/kb3d/r0/kb3d/room-check.txt); the plate is now two node rows deep and joins the far strip both ways. NIGHT68 S r1h: onto the far strip west of the bridge's south end (the moat 8 m now); NIGHT68 S r1f: moved onto the far side, east of the bridge's south mouth (burrow-safe ground where the enemies gather to cross); AN IRON PLATE (east of the breach, on the straight, 0.4 m): burrow-safe ground (the burrower cannot surface through iron): the hop you make when the ash glows under you",
+   "note": "AN IRON PLATE (east of the breach, on the straight, 0.4 m): burrow-safe ground (the burrower cannot surface through iron): the hop you make when the ash glows under you",
+   "burrowSafe43": true
+  },
+  {
+   "zone": "kb3d",
+   "kind": "hull",
+   "min": [
+    -12,
+    0,
+    -258.5
+   ],
+   "max": [
+    -8,
+    12,
+    -257.5
+   ],
+   "job": "molecule: the entrance gated (the door's west liner)",
+   "why": "the DOOR's west LINER (1 m thick, noride): no ride across the doorway: the fight goes into the room",
+   "note": "the DOOR's west LINER (1 m thick, noride): no ride across the doorway: the fight goes into the room",
+   "noride": true
+  },
+  {
+   "zone": "kb3d",
+   "kind": "hull",
+   "min": [
+    -4,
+    0,
+    -258.5
+   ],
+   "max": [
+    0,
+    12,
+    -257.5
+   ],
+   "job": "molecule: the entrance gated (the door's east liner)",
+   "why": "the DOOR's east LINER (1 m thick, noride): as the west's: the room's ride is the kiln wall",
+   "note": "the DOOR's east LINER (1 m thick, noride): as the west's: the room's ride is the kiln wall",
+   "noride": true
+  },
+  {
+   "zone": "kb3d",
+   "kind": "hull",
+   "min": [
+    -7.5,
+    0,
+    -267
+   ],
+   "max": [
+    -1,
+    0.9,
+    -266.5
+   ],
+   "note": "THE POURING LIP (west, 0.9 m along the moat's north rim from the heap's foot to the bridge)",
+   "job": "molecule: THE POURING LIP (the near floor's walk kept off the moat's edge)",
+   "why": "NIGHT68 S r1f (card kb3d): added: NIGHT68.md's launch rule (the hazard on the throw's line, never beside the walk): the near floor's fight stops at the lip; the bodies punched at the bridge fly off its sides south of it; 0.9 m (under P4)"
+  },
+  {
+   "zone": "kb3d",
+   "kind": "hull",
+   "min": [
+    1,
+    0,
+    -267
+   ],
+   "max": [
+    11.4,
+    0.9,
+    -266.5
+   ],
+   "note": "THE POURING LIP (east, 0.9 m along the moat's north rim from the bridge to the kiln wall)",
+   "job": "molecule: THE POURING LIP (the near floor's walk kept off the moat's edge)",
+   "why": "NIGHT68 S r1f (card kb3d): added with the west lip; the kiln wall's rider passes over it on the wall"
+  }
+ ],
+ "ramps": [
+  {
+   "zone": "kb2",
+   "from": [
+    3.9,
+    -84.5
+   ],
+   "to": [
+    3.9,
+    -98.5
+   ],
+   "width": 3,
+   "rise": 4.5,
+   "job": "molecule: the walkers' climb to the charging deck",
+   "why": "NIGHT68 S r1g (card kb2): 14 m (r1 9.5 m read room-check I2 1.11 against the shipped 1.44; r1f's 19 m raised stall A to 23.7 % against the ceiling 18.6): the walk from the ride's start to the east roost leaves the east lane and climbs it",
+   "note": "THE DECK RAMP (4.5 m over 14 m, flush to the flue wall's west face): the walkers' climb onto the east roost; the long way round for a player (the flue wall's ride is the short one)"
+  },
+  {
+   "zone": "kb2",
+   "from": [
+    -8.5,
+    -89
+   ],
+   "to": [
+    -8.5,
+    -98.5
+   ],
+   "width": 3,
+   "rise": 4.5,
+   "note": "THE WEST RAMP (4.5 m over 9.5 m along the west wall): the walkers' climb onto the west roost (GG: a route enemies can climb); the long way up for a player",
+   "job": "molecule: the walkers' climb to the west roost",
+   "why": "NIGHT68 S r1e (card kb2): back to 9.5 m (r1c's 19 m raised the walk bot's stall A to 24.9 % against the shipped 18.6 % and bought no ratio); added in r1 with the west roost"
+  },
+  {
+   "zone": "kb3",
+   "from": [
+    -5,
+    -221
+   ],
+   "to": [
+    3,
+    -221
+   ],
+   "width": 3,
+   "rise": 4.5,
+   "job": "molecule: the walkers' climb onto the far gallery",
+   "why": "NIGHT71 R: 2 m west (-3..5 -> -5..3, the shipped ramp's line) so it lands on the restored GALLERY ARCH's west edge at 4.5 m. NIGHT70 R d2 (Research/2026-10-24-wave67/cards/kb3.md, THE PRESS LINE, launch): THE CRANE RAMP (4.5 m over 8 m, from the far floor east onto THE FAR GALLERY's west edge): the walkers' climb to the gallery (GG NIGHT20); the exit strip (z -225.5..-222.5) runs south of it to the door",
+   "note": "THE CRANE RAMP"
+  },
+  {
+   "zone": "kb2c",
+   "from": [
+    -3,
+    -187.5
+   ],
+   "to": [
+    5,
+    -187.5
+   ],
+   "width": 3,
+   "rise": 4,
+   "job": "molecule: the walkers' climb to the hearth",
+   "why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/kb2c/card.md, THE ASH FLOOR, ride; rebuilt from the blank rect): THE HEARTH STAIR (4 m over 8 m, from the far floor's west side east onto the hearth): the walkers' climb (GG: a route enemies can climb); for a player the long way round, the ride is the short one",
+   "note": "THE HEARTH STAIR"
+  },
+  {
+   "zone": "kb2c",
+   "from": [
+    -6,
+    -183
+   ],
+   "to": [
+    -6,
+    -178.5
+   ],
+   "width": 3,
+   "rise": 2.5,
+   "job": "molecule: the walkers' climb to the catwalk",
+   "why": "NIGHT71 R r2 (Research/2026-10-26-wave71/R/kb2c/card.md): THE CATWALK STAIR (2.5 m over 4.5 m, from the far floor north onto the catwalk's south edge, x -7.5..-4.5): the swarmers' climb after you (GG: a route enemies can climb); r1's east-west stair walled the room across",
+   "note": "THE CATWALK STAIR"
+  },
+  {
+   "zone": "kb3c",
+   "from": [
+    -1,
+    -252
+   ],
+   "to": [
+    6,
+    -252
+   ],
+   "width": 3,
+   "rise": 3.5,
+   "job": "molecule: the walkers' climb to the spout ledge",
+   "why": "NIGHT67 S r2a: THE TOWER RAMP (3.5 m over 7 m along the far wall east onto the spout tower; was 2.5 m over 5 m): the walkers' climb to the last wave's roost, the long way round for a player",
+   "note": "THE LEDGE RAMP (2.5 m over 5 m, along the far wall east onto the ledge): the walkers' climb to the ride's landing (no safe ledge); the long way round for a player"
+  },
+  {
+   "zone": "kb3c",
+   "from": [
+    -2.5,
+    -251.5
+   ],
+   "to": [
+    -2.5,
+    -246.5
+   ],
+   "width": 3,
+   "rise": 2.5,
+   "job": "molecule: the walkers' climb to the furnace",
+   "why": "NIGHT67 S r2d: THE FURNACE RAMP (2.5 m over 5 m, up the furnace's far face, moved 3 m north with it): the walkers' climb from the far floor",
+   "note": "THE FURNACE RAMP (2.5 m over 5 m, up the furnace's far face): the walkers' climb onto the furnace (GG: a route enemies can climb)"
+  },
+  {
+   "zone": "kb3c",
+   "from": [
+    -9.5,
+    -251.5
+   ],
+   "to": [
+    -9.5,
+    -242.5
+   ],
+   "width": 3,
+   "rise": 4.5,
+   "job": "molecule: the walkers' climb to the fettlers' walk",
+   "why": "THE WALK RAMP (4.5 m over 9 m along the west wall): the walkers' climb onto the high tier (no safe ledge); the slow way up for a player",
+   "note": "THE WALK RAMP (4.5 m over 9 m along the west wall): the walkers' climb onto the high tier (no safe ledge); the slow way up for a player"
+  },
+  {
+   "zone": "kb3c",
+   "from": [
+    6,
+    -238.5
+   ],
+   "to": [
+    1,
+    -238.5
+   ],
+   "width": 2,
+   "rise": 2.5,
+   "job": "climb",
+   "why": "NIGHT67 S r3a: THE SLAG RAMP (added; 2.5 m over 5 m up the furnace's east face at its south end, from the east floor strip beside the tap run): the furnace's second climb (P9: its top 8.7 m from the furnace ramp's), away from the spawn (r2d's CHARGING RAMP at the spawn's side gave the refusals the entry side's way up: skip v2 1.08 -> 0.92)",
+   "note": "NIGHT67 S r3a: THE SLAG RAMP (added; 2.5 m over 5 m up the furnace's east face at its south end, from the east floor strip beside the tap run): the furnace's second climb (P9: its top 8.7 m from the furnace ramp's), away from the spawn (r2d's CHARGING RAMP at the spawn's side gave the refusals the entry side's way up: skip v2 1.08 -> 0.92)"
+  },
+  {
+   "zone": "kb3d",
+   "from": [
+    1.5,
+    -275.5
+   ],
+   "to": [
+    6,
+    -275.5
+   ],
+   "width": 3,
+   "rise": 2.5,
+   "job": "molecule: the walkers' climb to the mouth ledge",
+   "why": "THE LEDGE RAMP (2.5 m over 4.5 m, from beside the exit east onto the ledge): the walkers' climb to the ride's landing (no safe ledge)",
+   "note": "THE LEDGE RAMP (2.5 m over 4.5 m, from beside the exit east onto the ledge): the walkers' climb to the ride's landing (no safe ledge)"
+  },
+  {
+   "zone": "kb3d",
+   "from": [
+    -9.5,
+    -262.5
+   ],
+   "to": [
+    -9.5,
+    -270.5
+   ],
+   "width": 3,
+   "rise": 4.5,
+   "job": "molecule: the walkers' climb to the clinker heap",
+   "why": "THE HEAP RAMP (4.5 m over 8 m, along the west wall): the walkers' climb onto the high tier (GG: a route enemies can climb); the slow way up for a player, over the burrower's ash",
+   "note": "THE HEAP RAMP (4.5 m over 8 m, along the west wall): the walkers' climb onto the high tier (GG: a route enemies can climb); the slow way up for a player, over the burrower's ash"
+  }
+ ],
+ "pads": [
+  {
+   "zone": "kb2",
+   "at": [
+    8,
+    0,
+    -92.5
+   ],
+   "target": [
+    8,
+    4.5,
+    -97
+   ],
+   "apexAbove": 2,
+   "job": "molecule: the upward line, the bellows",
+   "why": "NIGHT71 R (Research/2026-10-26-wave71/R/kb2/card.md): the shipped room's BELLOWS given back (rule 1: the shipped kb2 had 2 pads, the NIGHT68 rebuild 0): at the flue lane's end (between the flue wall and the east wall), it throws you onto THE ROOST'S LIP (4.5 m) beside the east roost's spitters; the pack that follows you down the lane is left on the floor",
+   "note": "the bellows"
+  },
+  {
+   "zone": "kb2",
+   "at": [
+    -5.5,
+    0,
+    -90.5
+   ],
+   "target": [
+    -7,
+    4.5,
+    -100.5
+   ],
+   "apexAbove": 2,
+   "job": "molecule: the upward line, the draught",
+   "why": "NIGHT71 R (Research/2026-10-26-wave71/R/kb2/card.md): the shipped room's DRAUGHT given back (rule 1): on the pack's floor west of the barrow, it throws you out of the pack onto THE WEST ROOST (4.5 m), into wave 2's spitters (punch them, or parry their globs on the way up)",
+   "note": "the draught"
+  },
+  {
+   "zone": "kb2c",
+   "at": [
+    2.5,
+    0,
+    -184.5
+   ],
+   "target": [
+    6.5,
+    4,
+    -188
+   ],
+   "apexAbove": 2,
+   "job": "molecule: the upward line, the ash vent",
+   "why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/kb2c/card.md, THE ASH FLOOR, ride; rebuilt from the blank rect): THE ASH VENT (a jump pad on the ash beside the hearth stair's foot): the worm's heat throws you out of the burrower's ash onto THE HEARTH (4 m)",
+   "note": "the ash vent"
+  },
+  {
+   "zone": "kb2c",
+   "at": [
+    -3.5,
+    2.5,
+    -177
+   ],
+   "target": [
+    6,
+    4,
+    -186.5
+   ],
+   "apexAbove": 2,
+   "job": "molecule: the upward line, the draught",
+   "why": "NIGHT71 R r2 (Research/2026-10-26-wave71/R/kb2c/card.md): THE DRAUGHT (a jump pad on the catwalk's east end): from the mid tier over the ash onto THE HEARTH (4 m): the high road between the two decks",
+   "note": "the draught"
+  },
+  {
+   "zone": "kb2c",
+   "at": [
+    7.5,
+    4,
+    -186.5
+   ],
+   "target": [
+    -5.5,
+    2.5,
+    -177
+   ],
+   "apexAbove": 2,
+   "job": "molecule: the upward line, the chimney",
+   "why": "NIGHT71 R r3 (Research/2026-10-26-wave71/R/kb2c/card.md): THE CHIMNEY (a jump pad on the hearth's north end): from the high tier back over the ash onto THE CATWALK (2.5 m): the draught's return, so the two decks are one high road both ways",
+   "note": "the chimney"
+  },
+  {
+   "zone": "kb3",
+   "at": [
+    7.25,
+    0,
+    -212
+   ],
+   "target": [
+    8,
+    4.5,
+    -221
+   ],
+   "apexAbove": 2,
+   "job": "molecule: the upward line, the hammer vent",
+   "why": "NIGHT70 R d2 (Research/2026-10-24-wave67/cards/kb3.md, THE PRESS LINE, launch): THE HAMMER VENT (the corridor's east end, in the forge aisle beside the east baffle; 4 m off every walk line): throws you down the aisle onto THE FAR GALLERY over the queue; the shipped vent's way up, moved with the line",
+   "note": "the hammer vent"
+  },
+  {
+   "zone": "kb3",
+   "at": [
+    -8.5,
+    0,
+    -224.5
+   ],
+   "target": [
+    5,
+    4.5,
+    -224
+   ],
+   "apexAbove": 2.5,
+   "job": "molecule: the upward line, the quench vent",
+   "why": "THE QUENCH VENT (a jump pad in the far west corner): throws you over the gallery ramp onto the far gallery: the nave's far end turned into a climb (the loop's second end)",
+   "note": "the quench vent"
+  },
+  {
+   "zone": "kb3c",
+   "at": [
+    0,
+    2.5,
+    -238.5
+   ],
+   "target": [
+    -9.5,
+    4.5,
+    -236
+   ],
+   "apexAbove": 2.5,
+   "job": "molecule: the upward line, the blow pipe",
+   "why": "THE BLOW PIPE (a jump pad on the tapping furnace's top, its north-east corner): the furnace's blow pipe launches you from the furnace (2.5 m) over the west lane onto the fettlers' walk (4.5 m), the high ground level with the drones: the ring's mass turned into the climb to the high tier (the walk ramp is the lane's slow way up). NIGHT60 L B15: it stood on the far west lane's floor at (-6.5, -251), 2.5 m in front of d6b's mouth, on every line out of the room (L-087: a pad on a walk line): n46flow's bot leaving for kb3d was thrown onto the walk past its path and stood at d6b's west jamb (put at the next room, seeds 14 / 17 / 20 / 27 over two levels); on the furnace it is off every floor line, 2 m from the furnace ramp's top and from the tap vent's landing",
+   "note": "the blow pipe"
+  },
+  {
+   "zone": "kb3c",
+   "at": [
+    -4,
+    0,
+    -236.3
+   ],
+   "target": [
+    -1.5,
+    2.5,
+    -240.5
+   ],
+   "apexAbove": 2,
+   "job": "molecule: the upward line, the tap vent",
+   "why": "NIGHT67 S r3a: THE TAP VENT back (as r1-r2: the floor at the furnace's south face, 2.3 m off the walk proofs): it throws you onto the furnace top over the west lane",
+   "note": "NIGHT67 S r3a: THE TAP VENT back (as r1-r2: the floor at the furnace's south face, 2.3 m off the walk proofs): it throws you onto the furnace top over the west lane"
+  },
+  {
+   "zone": "kb3d",
+   "at": [
+    -5.5,
+    0,
+    -265.5
+   ],
+   "target": [
+    -10,
+    4.5,
+    -274
+   ],
+   "apexAbove": 2.5,
+   "job": "molecule: the upward line, the breach vent",
+   "why": "NIGHT68 S r1f: 0.5 m north-west, clear of THE POURING LIP: the breach vent throws you over the moat onto the clinker heap; THE BREACH VENT (a jump pad on the ash beside the breach): the worm's heat through the crack throws you out of the burrower's ash onto the clinker heap (4.5 m)",
+   "note": "the breach vent"
+  }
+ ],
+ "grapple": [],
+ "pits": [
+  {
+   "zone": "kb3c",
+   "rect": [
+    7,
+    -247,
+    11,
+    -237
+   ],
+   "floorY": -2,
+   "job": "hazard: THE TAP RUN (the gap the ride crosses: a dry run 2 m deep)",
+   "why": "NIGHT68 S r3a (card kb3c): drained, lava at -0.8 -> a dry pit 2 m deep: r1g's verb-aware deaths (seeds 7, 9) and its slow seeds were rides that dropped the rider into the lava; a fall now returns the rider to the apron (fallReturn43), a body in it is ended after 2 s (rooms43); the walkers still go round. NIGHT67 S r1d: THE TAP RUN back to its shipped 4 m (x 7..11; r1's 10 m widening killed the walk bot, deaths 3 on r1c's set A, and is history.md corner 16), kept 3.5 m north of shipped (z -237..-247) so THE TAP APRON (x 7.9..10.4, z -232.5..-237) stays the run wall's start on the floor; the run wall stands in it, the east floor strip x 5..7 walks beside it",
+   "note": "the tap run"
+  },
+  {
+   "zone": "kb3d",
+   "rect": [
+    -7.5,
+    -275,
+    -1,
+    -267
+   ],
+   "floorY": -2,
+   "note": "THE KILN MOAT (west)",
+   "job": "hazard: THE KILN MOAT (the launch's landing west of the bridge)",
+   "why": "NIGHT68 S r1h: 4 -> 8 m deep across (z -275..-267): a throw from the bridge's mouth flies 8-11 m (r1g M3 landed past the 4 m moat); NIGHT68 S r1f (card kb3d): a dry pit 2 m deep from the clinker heap's foot to the bridge: every enemy crosses the bridge beside it, so a punch at the bridge's mouth throws the body over its edge; a body under the room's floor for 2 s is ended (rooms43), the player is returned by fallReturn43 (never a death)"
+  },
+  {
+   "zone": "kb3d",
+   "rect": [
+    1,
+    -274,
+    6,
+    -267
+   ],
+   "floorY": -2,
+   "note": "THE KILN MOAT (east)",
+   "job": "hazard: THE KILN MOAT (the launch's landing east of the bridge; the kiln wall's ride crosses it)",
+   "why": "NIGHT68 S r1h: 4 -> 7 m across (z -274..-267) east of the bridge as far as the ledge ramp; the kiln wall's lane (x 6..11.4) keeps r1g's 4 m (z -271..-267) under the ride; NIGHT68 S r1f (card kb3d): the moat's east cell from the bridge to the kiln wall: the throws off the bridge's east side land in it; the kiln wall's ride crosses it onto the mouth ledge (a ride over a gap, NIGHT68.md)"
+  },
+  {
+   "zone": "kb3d",
+   "rect": [
+    6,
+    -271,
+    11.4,
+    -267
+   ],
+   "floorY": -2,
+   "note": "THE KILN MOAT (east lane)",
+   "job": "hazard: THE KILN MOAT (the kiln wall's lane: the ride crosses it onto the mouth ledge)",
+   "why": "NIGHT68 S r1h (card kb3d): the moat's cell under the kiln wall's ride, r1g's 4 m, from the east cell to the wall (the mouth ledge starts at z -272.5)"
+  },
+  {
+   "zone": "k5",
+   "rect": [
+    -32,
+    -359.5,
+    32,
+    -295.5
+   ],
+   "floorY": -0.5,
+   "job": "line",
+   "why": "NIGHT46 B1: k5's floor 0.5 m low under the ring's own floor box (wyrm46-arena.json box 0, top 0, on in the fight): no two floors share a plane (no z-fight when the ring is drawn); before the fight nobody stands here (the fight begins on the first step past d8)",
+   "note": "NIGHT46 B1: the floor under the ring's floor"
+  }
+ ],
+ "tunnels": [],
+ "lights": [
+  {
+   "id": "kb1-L1",
+   "room": "kb1",
+   "kind": "ceiling",
+   "at": [
+    0,
+    25.95,
+    -5
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    2,
+    0.1
+   ],
+   "color": "amber",
+   "range": 14,
+   "intensity": 1
+  },
+  {
+   "id": "kb1-L2",
+   "room": "kb1",
+   "kind": "wall",
+   "at": [
+    0,
+    3.85,
+    -8.45
+   ],
+   "normal": [
+    0,
+    0,
+    1
+   ],
+   "size": [
+    15,
+    0.2,
+    0.1
+   ],
+   "color": "cyan",
+   "range": 9,
+   "intensity": 1.5
+  },
+  {
+   "id": "kb1-L3",
+   "room": "kb1",
+   "kind": "wall",
+   "at": [
+    0,
+    2,
+    -8.45
+   ],
+   "normal": [
+    0,
+    0,
+    1
+   ],
+   "size": [
+    3,
+    0.2,
+    0.1
+   ],
+   "color": "white",
+   "range": 8,
+   "intensity": 0.8
+  },
+  {
+   "id": "kb1-L4",
+   "room": "kb1",
+   "kind": "pool",
+   "at": [
+    0,
+    4.025,
+    -12.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2,
+    2,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 6,
+   "intensity": 1.2
+  },
+  {
+   "id": "kb1-L5",
+   "room": "kb1",
+   "kind": "ceiling",
+   "at": [
+    0,
+    25.95,
+    -13
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    2,
+    0.1
+   ],
+   "color": "white",
+   "range": 14,
+   "intensity": 1
+  },
+  {
+   "id": "kb1-L6",
+   "room": "kb1",
+   "kind": "wall",
+   "at": [
+    0,
+    9.65,
+    -16.45
+   ],
+   "normal": [
+    0,
+    0,
+    1
+   ],
+   "size": [
+    15,
+    0.2,
+    0.1
+   ],
+   "color": "cyan",
+   "range": 9,
+   "intensity": 1.5
+  },
+  {
+   "id": "kb1-L7",
+   "room": "kb1",
+   "kind": "wall",
+   "at": [
+    0,
+    6.9,
+    -16.45
+   ],
+   "normal": [
+    0,
+    0,
+    1
+   ],
+   "size": [
+    3,
+    0.2,
+    0.1
+   ],
+   "color": "white",
+   "range": 8,
+   "intensity": 0.8
+  },
+  {
+   "id": "kb1-L8",
+   "room": "kb1",
+   "kind": "pool",
+   "at": [
+    0,
+    9.825,
+    -20.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2,
+    2,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 6,
+   "intensity": 1.2
+  },
+  {
+   "id": "kb1-L9",
+   "room": "kb1",
+   "kind": "ceiling",
+   "at": [
+    0,
+    25.95,
+    -21
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    2,
+    0.1
+   ],
+   "color": "white",
+   "range": 14,
+   "intensity": 1
+  },
+  {
+   "id": "kb1-L10",
+   "room": "kb1",
+   "kind": "wall",
+   "at": [
+    0,
+    18.65,
+    -24.45
+   ],
+   "normal": [
+    0,
+    0,
+    1
+   ],
+   "size": [
+    15,
+    0.2,
+    0.1
+   ],
+   "color": "cyan",
+   "range": 9,
+   "intensity": 1.5
+  },
+  {
+   "id": "kb1-L11",
+   "room": "kb1",
+   "kind": "wall",
+   "at": [
+    0,
+    14.3,
+    -24.45
+   ],
+   "normal": [
+    0,
+    0,
+    1
+   ],
+   "size": [
+    3,
+    0.2,
+    0.1
+   ],
+   "color": "white",
+   "range": 8,
+   "intensity": 0.8
+  },
+  {
+   "id": "kb1-L12",
+   "room": "kb1",
+   "kind": "pool",
+   "at": [
+    0,
+    18.825,
+    -29.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2,
+    2,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 6,
+   "intensity": 1.2
+  },
+  {
+   "id": "kb1-L13",
+   "room": "kb1",
+   "kind": "ceiling",
+   "at": [
+    0,
+    25.95,
+    -3
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    2,
+    0.1
+   ],
+   "color": "white",
+   "range": 9,
+   "intensity": 1
+  },
+  {
+   "id": "kb1-L14",
+   "room": "kb1",
+   "kind": "pool",
+   "at": [
+    0,
+    0.025,
+    -39.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.5,
+    2.5,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 8,
+   "intensity": 1.6
+  },
+  {
+   "id": "kb1b-L1",
+   "room": "kb1b",
+   "kind": "ceiling",
+   "at": [
+    0,
+    31.95,
+    -53.5
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    2,
+    0.1
+   ],
+   "color": "amber",
+   "range": 14,
+   "intensity": 1
+  },
+  {
+   "id": "kb1b-L2",
+   "room": "kb1b",
+   "kind": "wall",
+   "at": [
+    0,
+    11.85,
+    -56.95
+   ],
+   "normal": [
+    0,
+    0,
+    1
+   ],
+   "size": [
+    15,
+    0.2,
+    0.1
+   ],
+   "color": "cyan",
+   "range": 9,
+   "intensity": 1.5
+  },
+  {
+   "id": "kb1b-L3",
+   "room": "kb1b",
+   "kind": "wall",
+   "at": [
+    0,
+    6,
+    -56.95
+   ],
+   "normal": [
+    0,
+    0,
+    1
+   ],
+   "size": [
+    3,
+    0.2,
+    0.1
+   ],
+   "color": "white",
+   "range": 8,
+   "intensity": 0.8
+  },
+  {
+   "id": "kb1b-L4",
+   "room": "kb1b",
+   "kind": "pool",
+   "at": [
+    0,
+    12.025,
+    -61
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2,
+    2,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 6,
+   "intensity": 1.2
+  },
+  {
+   "id": "kb1b-L5",
+   "room": "kb1b",
+   "kind": "ceiling",
+   "at": [
+    0,
+    31.95,
+    -69
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    2,
+    0.1
+   ],
+   "color": "white",
+   "range": 12,
+   "intensity": 1
+  },
+  {
+   "id": "kb1b-L6",
+   "room": "kb1b",
+   "kind": "pool",
+   "at": [
+    0,
+    0.025,
+    -69.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.5,
+    2.5,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.6
+  },
+  {
+   "id": "kb2-L1",
+   "room": "kb2",
+   "kind": "ceiling",
+   "at": [
+    0,
+    13.95,
+    -80.5
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    4,
+    0.1
+   ],
+   "color": "white",
+   "range": 12,
+   "intensity": 0.9
+  },
+  {
+   "id": "kb2-L2",
+   "room": "kb2",
+   "kind": "ceiling",
+   "at": [
+    -2,
+    13.95,
+    -90.5
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    6,
+    4,
+    0.1
+   ],
+   "color": "white",
+   "range": 12,
+   "intensity": 1.1
+  },
+  {
+   "id": "kb2-L3",
+   "room": "kb2",
+   "kind": "ceiling",
+   "at": [
+    -2,
+    13.95,
+    -99.5
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    4,
+    0.1
+   ],
+   "color": "white",
+   "range": 12,
+   "intensity": 1
+  },
+  {
+   "id": "kb2-L4",
+   "room": "kb2",
+   "kind": "pool",
+   "at": [
+    6,
+    4.525,
+    -101
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.05
+   ],
+   "color": "white",
+   "range": 9,
+   "intensity": 1
+  },
+  {
+   "id": "kb2-L5",
+   "room": "kb2",
+   "kind": "pool",
+   "at": [
+    -6,
+    4.525,
+    -101
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.5,
+    2.5,
+    0.05
+   ],
+   "color": "white",
+   "range": 7,
+   "intensity": 0.9
+  },
+  {
+   "id": "kb2-L7",
+   "room": "kb2",
+   "kind": "pool",
+   "at": [
+    -1.5,
+    0.025,
+    -101.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.5,
+    2.5,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 8,
+   "intensity": 1.7
+  },
+  {
+   "id": "kb2b-L1",
+   "room": "kb2b",
+   "kind": "ceiling",
+   "at": [
+    0,
+    31.95,
+    -131.5
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    2,
+    0.1
+   ],
+   "color": "amber",
+   "range": 14,
+   "intensity": 1
+  },
+  {
+   "id": "kb2b-L2",
+   "room": "kb2b",
+   "kind": "wall",
+   "at": [
+    0,
+    11.85,
+    -134.95
+   ],
+   "normal": [
+    0,
+    0,
+    1
+   ],
+   "size": [
+    15,
+    0.2,
+    0.1
+   ],
+   "color": "cyan",
+   "range": 9,
+   "intensity": 1.5
+  },
+  {
+   "id": "kb2b-L3",
+   "room": "kb2b",
+   "kind": "wall",
+   "at": [
+    0,
+    6,
+    -134.95
+   ],
+   "normal": [
+    0,
+    0,
+    1
+   ],
+   "size": [
+    3,
+    0.2,
+    0.1
+   ],
+   "color": "white",
+   "range": 8,
+   "intensity": 0.8
+  },
+  {
+   "id": "kb2b-L4",
+   "room": "kb2b",
+   "kind": "pool",
+   "at": [
+    0,
+    12.025,
+    -141
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2,
+    2,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 6,
+   "intensity": 1.2
+  },
+  {
+   "id": "kb2b-L5",
+   "room": "kb2b",
+   "kind": "ceiling",
+   "at": [
+    0,
+    31.95,
+    -143.5
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    2,
+    0.1
+   ],
+   "color": "white",
+   "range": 14,
+   "intensity": 1
+  },
+  {
+   "id": "kb2b-L9",
+   "room": "kb2b",
+   "kind": "ceiling",
+   "at": [
+    0,
+    31.95,
+    -156
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    2,
+    0.1
+   ],
+   "color": "white",
+   "range": 14,
+   "intensity": 1
+  },
+  {
+   "id": "kb2b-L10",
+   "room": "kb2b",
+   "kind": "pool",
+   "at": [
+    0,
+    0.025,
+    -157.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.5,
+    2.5,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.6
+  },
+  {
+   "id": "kb2c-L1",
+   "room": "kb2c",
+   "kind": "ceiling",
+   "at": [
+    -2,
+    11.95,
+    -169
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 10,
+   "intensity": 0.9
+  },
+  {
+   "id": "kb2c-L2",
+   "room": "kb2c",
+   "kind": "ceiling",
+   "at": [
+    0,
+    11.95,
+    -180
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    6,
+    4,
+    0.1
+   ],
+   "color": "white",
+   "range": 11,
+   "intensity": 1.1
+  },
+  {
+   "id": "kb2c-L3",
+   "room": "kb2c",
+   "kind": "ceiling",
+   "at": [
+    0,
+    11.95,
+    -189
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 10,
+   "intensity": 1
+  },
+  {
+   "id": "kb2c-L4",
+   "room": "kb2c",
+   "kind": "pool",
+   "at": [
+    7,
+    4.025,
+    -187.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2,
+    2,
+    0.05
+   ],
+   "color": "white",
+   "range": 8,
+   "intensity": 1
+  },
+  {
+   "id": "kb2c-L5",
+   "room": "kb2c",
+   "kind": "pool",
+   "at": [
+    -5.5,
+    2.525,
+    -176.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2,
+    2,
+    0.05
+   ],
+   "color": "white",
+   "range": 7,
+   "intensity": 0.9
+  },
+  {
+   "id": "kb2c-L6",
+   "room": "kb2c",
+   "kind": "pool",
+   "at": [
+    -1.75,
+    0.925,
+    -182.25
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    1.6,
+    1.6,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 5,
+   "intensity": 1,
+   "marks": "box(-3,0,-183.5..-0.5,0.9,-181)"
+  },
+  {
+   "id": "kb2c-L7",
+   "room": "kb2c",
+   "kind": "pool",
+   "at": [
+    0,
+    0.025,
+    -191.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    1.8,
+    1.8,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 8,
+   "intensity": 1.7
+  },
+  {
+   "id": "kb3-L1",
+   "room": "kb3",
+   "kind": "ceiling",
+   "at": [
+    0,
+    13.95,
+    -203
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 12,
+   "intensity": 0.9
+  },
+  {
+   "id": "kb3-L2",
+   "room": "kb3",
+   "kind": "ceiling",
+   "at": [
+    0,
+    13.95,
+    -212
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 12,
+   "intensity": 1.1
+  },
+  {
+   "id": "kb3-L3",
+   "room": "kb3",
+   "kind": "ceiling",
+   "at": [
+    0,
+    13.95,
+    -221
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    4,
+    0.1
+   ],
+   "color": "white",
+   "range": 12,
+   "intensity": 1
+  },
+  {
+   "id": "kb3-L5",
+   "room": "kb3",
+   "kind": "pool",
+   "at": [
+    7,
+    4.525,
+    -222.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2,
+    2,
+    0.05
+   ],
+   "color": "white",
+   "range": 8,
+   "intensity": 1
+  },
+  {
+   "id": "kb3-L7",
+   "room": "kb3",
+   "kind": "pool",
+   "at": [
+    0,
+    0.025,
+    -224
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.5,
+    2.5,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 8,
+   "intensity": 1.7
+  },
+  {
+   "id": "kb3c-L1",
+   "room": "kb3c",
+   "kind": "ceiling",
+   "at": [
+    0,
+    11.95,
+    -232.5
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 11,
+   "intensity": 0.9
+  },
+  {
+   "id": "kb3c-L2",
+   "room": "kb3c",
+   "kind": "ceiling",
+   "at": [
+    2,
+    11.95,
+    -241.5
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    4,
+    0.1
+   ],
+   "color": "white",
+   "range": 11,
+   "intensity": 1.1
+  },
+  {
+   "id": "kb3c-L3",
+   "room": "kb3c",
+   "kind": "ceiling",
+   "at": [
+    -2,
+    11.95,
+    -250
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    4,
+    0.1
+   ],
+   "color": "white",
+   "range": 11,
+   "intensity": 1
+  },
+  {
+   "id": "kb3c-L4",
+   "room": "kb3c",
+   "kind": "pool",
+   "at": [
+    -1,
+    2.525,
+    -240.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.5,
+    2.5,
+    0.05
+   ],
+   "color": "white",
+   "range": 8,
+   "intensity": 1
+  },
+  {
+   "id": "kb3c-L5",
+   "room": "kb3c",
+   "kind": "pool",
+   "at": [
+    8,
+    3.525,
+    -250.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2,
+    2,
+    0.05
+   ],
+   "color": "white",
+   "range": 7,
+   "intensity": 0.9
+  },
+  {
+   "id": "kb3c-L6",
+   "room": "kb3c",
+   "kind": "pool",
+   "at": [
+    -9.5,
+    4.525,
+    -236
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2,
+    2,
+    0.05
+   ],
+   "color": "white",
+   "range": 7,
+   "intensity": 0.9
+  },
+  {
+   "id": "kb3c-L7",
+   "room": "kb3c",
+   "kind": "pool",
+   "at": [
+    9,
+    -1.975,
+    -242
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2,
+    9,
+    0.05
+   ],
+   "color": "white",
+   "range": 9,
+   "intensity": 1.1
+  },
+  {
+   "id": "kb3c-L8",
+   "room": "kb3c",
+   "kind": "pool",
+   "at": [
+    -6,
+    0.025,
+    -251.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.5,
+    2.5,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 8,
+   "intensity": 1.7
+  },
+  {
+   "id": "kb3d-L1",
+   "room": "kb3d",
+   "kind": "ceiling",
+   "at": [
+    -6,
+    11.95,
+    -261
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 10,
+   "intensity": 0.9
+  },
+  {
+   "id": "kb3d-L2",
+   "room": "kb3d",
+   "kind": "ceiling",
+   "at": [
+    0,
+    11.95,
+    -267
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    6,
+    4,
+    0.1
+   ],
+   "color": "white",
+   "range": 11,
+   "intensity": 1.1
+  },
+  {
+   "id": "kb3d-L3",
+   "room": "kb3d",
+   "kind": "ceiling",
+   "at": [
+    2,
+    11.95,
+    -274.5
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    4,
+    0.1
+   ],
+   "color": "white",
+   "range": 10,
+   "intensity": 1
+  },
+  {
+   "id": "kb3d-L4",
+   "room": "kb3d",
+   "kind": "pool",
+   "at": [
+    -9.5,
+    4.525,
+    -272.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2,
+    2,
+    0.05
+   ],
+   "color": "white",
+   "range": 8,
+   "intensity": 1
+  },
+  {
+   "id": "kb3d-L5",
+   "room": "kb3d",
+   "kind": "pool",
+   "at": [
+    8.5,
+    2.525,
+    -275
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2,
+    2,
+    0.05
+   ],
+   "color": "white",
+   "range": 7,
+   "intensity": 0.9
+  },
+  {
+   "id": "kb3d-L6",
+   "room": "kb3d",
+   "kind": "pool",
+   "at": [
+    -4.25,
+    -1.975,
+    -271
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    6.5,
+    8,
+    0.05
+   ],
+   "color": "white",
+   "range": 8,
+   "intensity": 1.1
+  },
+  {
+   "id": "kb3d-L7",
+   "room": "kb3d",
+   "kind": "pool",
+   "at": [
+    -5,
+    0.425,
+    -262.75
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    1.6,
+    1.6,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 5,
+   "intensity": 1,
+   "marks": "box(-6.5,0,-264..-3.5,0.4,-261.5)"
+  },
+  {
+   "id": "kb3d-L9",
+   "room": "kb3d",
+   "kind": "pool",
+   "at": [
+    0,
+    0.025,
+    -275.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    1.8,
+    1.8,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 8,
+   "intensity": 1.7
+  },
+  {
+   "id": "kb3d-L10",
+   "room": "kb3d",
+   "kind": "pool",
+   "at": [
+    3.5,
+    -1.975,
+    -270.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    5,
+    7,
+    0.05
+   ],
+   "color": "white",
+   "range": 9,
+   "intensity": 1.1
+  },
+  {
+   "id": "kb4-L1",
+   "room": "kb4",
+   "kind": "ceiling",
+   "at": [
+    0,
+    4.95,
+    -286.5
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 8,
+   "intensity": 1
+  },
+  {
+   "id": "kb4-L2",
+   "room": "kb4",
+   "kind": "pool",
+   "at": [
+    0,
+    0.025,
+    -290
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2,
+    2,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 6,
+   "intensity": 1.4
+  },
+  {
+   "id": "k5-L3",
+   "room": "k5",
+   "kind": "ceiling",
+   "at": [
+    0,
+    31.95,
+    -327.5
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    8,
+    8,
+    0.1
+   ],
+   "color": "white",
+   "range": 40,
+   "intensity": 1,
+   "why": "NIGHT46 B1: the ring's ceiling light at its centre (the old room's moved with the room)"
+  },
+  {
+   "id": "kb2b-L52",
+   "room": "kb2b",
+   "kind": "ceiling",
+   "at": [
+    0,
+    31.95,
+    -115.5
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    2,
+    0.1
+   ],
+   "color": "white",
+   "range": 14,
+   "intensity": 1,
+   "why": "NIGHT52 K: the re-cut entry floor's light"
+  },
+  {
+   "id": "kb2b-L55a",
+   "room": "kb2b",
+   "kind": "wall",
+   "at": [
+    -7.65,
+    3.5,
+    -130
+   ],
+   "normal": [
+    1,
+    0,
+    0
+   ],
+   "size": [
+    2.5,
+    0.3,
+    0.1
+   ],
+   "color": "white",
+   "range": 11,
+   "intensity": 1.4,
+   "job": "light",
+   "why": "NIGHT55 (n55-r-kb2b.cjs, P1-doorDark): the STOKE LAMP on the west liner at the cliff's foot: the 12 m climb face's west half and the take-off floor lit (the ceiling panels at 32 m reach nothing below ~18 m)"
+  },
+  {
+   "id": "kb2b-L55b",
+   "room": "kb2b",
+   "kind": "wall",
+   "at": [
+    7.65,
+    8,
+    -130
+   ],
+   "normal": [
+    -1,
+    0,
+    0
+   ],
+   "size": [
+    2.5,
+    0.3,
+    0.1
+   ],
+   "color": "white",
+   "range": 11,
+   "intensity": 1.2,
+   "job": "light",
+   "why": "NIGHT55 (P1-doorDark): the east STOKE LAMP on the liner over the cyan run-up panel (2 m above its top, off the ride face): the climb face's east half and the panel's run lit"
+  },
+  {
+   "id": "kb2b-L55c",
+   "room": "kb2b",
+   "kind": "pool",
+   "at": [
+    0,
+    0.025,
+    -132
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    3,
+    1,
+    0.05
+   ],
+   "color": "white",
+   "range": 9,
+   "intensity": 1,
+   "job": "light",
+   "why": "NIGHT55 (P1-doorDark): the cliff's FOOT LAMP (a floor pool 3 m before the face): the climb face lit from below, so it reads as a wall to climb, not a dark void"
+  },
+  {
+   "id": "kb2b-L55d",
+   "room": "kb2b",
+   "kind": "wall",
+   "at": [
+    -7.65,
+    3.5,
+    -113
+   ],
+   "normal": [
+    1,
+    0,
+    0
+   ],
+   "size": [
+    2.5,
+    0.3,
+    0.1
+   ],
+   "color": "white",
+   "range": 10,
+   "intensity": 1,
+   "job": "light",
+   "why": "NIGHT55 (P1-doorDark): the DOOR LANDING LAMP on the west liner 5.5 m in from d3: the entry floor lit as you come through the door (GG w37: 'you just run through it and it's like dark')"
+  }
+ ],
+ "props": [
+  {
+   "id": "kb2-P1",
+   "room": "kb2",
+   "kind": "healthPickup",
+   "at": [
+    8,
+    0.9,
+    -86
+   ],
+   "size": [
+    0.6,
+    0.6,
+    0.6
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "pickup": true,
+   "job": "reward",
+   "card57": "30 s problem: the reward on the risky leg",
+   "why": "the health in the east lane, halfway down the flue wall (the riskiest leg: the pack follows you in, and the lane is closed at its end but for the bellows): ride or run for it"
+  },
+  {
+   "id": "kb3-P1",
+   "room": "kb3",
+   "kind": "healthPickup",
+   "at": [
+    -0.5,
+    0.9,
+    -212
+   ],
+   "size": [
+    0.6,
+    0.6,
+    0.6
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "pickup": true,
+   "job": "reward",
+   "card57": "30 s problem: the reward on the risky leg",
+   "why": "NIGHT70 R d2 (Research/2026-10-24-wave67/cards/kb3.md, THE PRESS LINE, launch): the health in the corridor behind THE PRESS LINE (the bodies' way between the gates: the riskiest spot)"
+  },
+  {
+   "id": "kb4-P1",
+   "room": "kb4",
+   "kind": "healthPickup",
+   "at": [
+    0,
+    0.9,
+    -286.5
+   ],
+   "size": [
+    0.6,
+    0.6,
+    0.6
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "pickup": true,
+   "job": "reward",
+   "why": "the last rest before THE KILN WYRM: health for the fight"
+  },
+  {
+   "id": "kb2c-P1",
+   "room": "kb2c",
+   "kind": "healthPickup",
+   "at": [
+    7.5,
+    4.9,
+    -190
+   ],
+   "size": [
+    0.6,
+    0.6,
+    0.6
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "pickup": true,
+   "job": "reward",
+   "card57": "the reward where the verb lands",
+   "why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/kb2c/card.md, THE ASH FLOOR, ride; rebuilt from the blank rect): the health on THE HEARTH: the cooling wall's ride pays (pattern D inside B)"
+  },
+  {
+   "id": "kb3c-P1",
+   "room": "kb3c",
+   "kind": "healthPickup",
+   "at": [
+    7.5,
+    4.4,
+    -250
+   ],
+   "size": [
+    0.6,
+    0.6,
+    0.6
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "pickup": true,
+   "job": "reward",
+   "card57": "30 s problem: the reward on the risky leg",
+   "why": "NIGHT67 S r1 (card kb3c, RACETRACK THE TAP RING, verb ride): the health on THE SPOUT LEDGE (the run wall's landing): the ride pays (its shipped spot on the run's west rim is lava now)"
+  },
+  {
+   "id": "kb3d-P1",
+   "room": "kb3d",
+   "kind": "healthPickup",
+   "at": [
+    2.5,
+    0.9,
+    -266
+   ],
+   "size": [
+    0.6,
+    0.6,
+    0.6
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "pickup": true,
+   "job": "reward",
+   "card57": "30 s problem: the reward on the risky leg",
+   "why": "the health on the breach's east rim, on the charger's straight (the riskiest spot: the charge comes down the straight, the lava beside it)"
+  }
+ ],
+ "floorSize_why": "NIGHT46 B1: the map's square grows from 668 to reach k5's ring (z to -361.5 with its shell): the nav grid must cover the worm's room now that it is the level's own"
+}

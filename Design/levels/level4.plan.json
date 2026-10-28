@@ -1,0 +1,58 @@
+{
+  "_why": "LEVEL 4, VERTICAL (NIGHT25, builder L; CURRICULUM.md: the ONE new thing is the DRONE, an enemy that fights from the air, and with it air control and the grapple). Four tall combat rooms (walls 24 m): room 1 is a breath (two drones over a flat floor, so the player learns to look up); room 2 THE STACK has two tiers (a 4 m deck by a ramp, an 8 m deck by a long ramp) and grapple nodes on its pillars; room 3 THE GANTRY is a 6 m gallery; room 4 THE AVIARY is a drone swarm over a deck. Every tier has a ramp so walkers reach it (the report proves it). Web coordinates: x east, y up, z SOUTH (north is -z); metres. See LEVEL-FORMAT.md and CURRICULUM.md.",
+  "id": "level4",
+  "name": "LEVEL 4 VERTICAL",
+  "floorSize": 320,
+  "killPlaneY": -30,
+  "wallHeight": 24,
+  "rooms": [
+    { "id": "r1", "name": "4.1 THE LOW ROOF", "kind": "room", "rect": [-24, 40, 24, 84], "par": 14,
+      "spawn": { "at": [0, 0, 80], "yawDeg": 0 }, "exit": [0, 0, 44],
+      "nodes": [ [-18, 0, 48], [18, 0, 48], [0, 0, 52], [-14, 0, 62], [14, 0, 62] ],
+      "lessons": [ { "kind": "husksDead", "n": 1, "prompt": "LOOK UP. DRONES FLY." } ],
+      "waves": [ [ "drone", "husk", "husk" ], [ "drone", "drone", "husk", "husk" ] ] },
+    { "id": "r2", "name": "4.2 THE STACK", "kind": "room", "rect": [-24, -10, 24, 34], "par": 43,
+      "spawn": { "at": [0, 0, 30], "yawDeg": 0 }, "exit": [0, 0, -6],
+      "nodes": [ [-6, 0, -3], [6, 0, -3], [0, 0, 14], [8, 0, 20], [-6, 0, 16] ],
+      "highNodes": [ [18, 4, -2], [18, 4, 12], [-18, 8, 0], [-18, 8, 24] ],
+      "lessons": [ { "kind": "husksDead", "n": 1, "prompt": "{grapple} TO A NODE" } ],
+      "waves": [ [ "husk", "husk", "husk", "drone", "spitter" ], [ "husk", "husk", "drone", "drone", "drone", "swarmer", "swarmer", "spitter", "spitter" ], [ "husk", "husk", "husk", "drone", "drone", "drone", "spitter", "spitter", "spitter", "swarmer", "swarmer" ] ] },
+    { "id": "r3", "name": "4.3 THE GANTRY", "kind": "room", "rect": [-24, -60, 24, -16], "par": 34,
+      "spawn": { "at": [0, 0, -20], "yawDeg": 0 }, "exit": [0, 0, -56],
+      "nodes": [ [-18, 0, -54], [-6, 0, -52], [6, 0, -52], [-18, 0, -34], [-8, 0, -30] ],
+      "highNodes": [ [18, 6, -54], [18, 6, -30], [20, 6, -42] ],
+      "waves": [ [ "husk", "husk", "husk", "drone", "drone" ], [ "swarmer", "swarmer", "swarmer", "drone", "drone", "spitter" ], [ "husk", "husk", "husk", "swarmer", "drone", "drone", "drone", "spitter" ] ] },
+    { "id": "r4", "name": "4.4 THE AVIARY", "kind": "room", "rect": [-24, -110, 24, -66], "par": 30,
+      "spawn": { "at": [0, 0, -70], "yawDeg": 0 }, "exit": [0, 0, -106],
+      "nodes": [ [6, 0, -100], [18, 0, -100], [18, 0, -80], [8, 0, -84], [0, 0, -96] ],
+      "highNodes": [ [-18, 3, -100], [-18, 3, -76], [-20, 3, -88] ],
+      "waves": [ [ "drone", "drone", "husk", "husk", "husk" ], [ "drone", "drone", "drone", "husk", "husk", "spitter" ], [ "drone", "drone", "drone", "husk", "husk", "husk", "spitter" ] ] }
+  ],
+  "doors": [
+    { "id": "d1", "between": ["r1", "r2"], "rect": [-4, 34, 4, 40], "checkpoint": true },
+    { "id": "d2", "between": ["r2", "r3"], "rect": [-4, -16, 4, -10], "checkpoint": true },
+    { "id": "d3", "between": ["r3", "r4"], "rect": [-4, -66, 4, -60], "checkpoint": true }
+  ],
+  "boxes": [
+    { "zone": "r1", "kind": "hull", "min": [-12, 0, 58], "max": [-8, 3, 62], "note": "cover" },
+    { "zone": "r1", "kind": "hull", "min": [8, 0, 58], "max": [12, 3, 62], "note": "cover" },
+    { "zone": "r2", "kind": "deck", "min": [12, 0, -6], "max": [24, 4, 16], "note": "deck A, 4 m (tier 2)" },
+    { "zone": "r2", "kind": "deck", "min": [-24, 0, -6], "max": [-12, 8, 30], "note": "deck B, 8 m (tier 3)" },
+    { "zone": "r2", "kind": "hull", "min": [-3, 0, 6], "max": [3, 3, 10], "note": "cover" },
+    { "zone": "r3", "kind": "deck", "min": [12, 0, -58], "max": [24, 6, -26], "note": "the gantry, 6 m (tier 2)" },
+    { "zone": "r3", "kind": "hull", "min": [-12, 0, -40], "max": [-8, 3, -36], "note": "cover" },
+    { "zone": "r4", "kind": "deck", "min": [-24, 0, -104], "max": [-12, 3, -72], "note": "the west gallery (tier 2)" },
+    { "zone": "r4", "kind": "hull", "min": [6, 0, -96], "max": [10, 3, -92], "note": "cover" }
+  ],
+  "ramps": [
+    { "zone": "r2", "from": [0, 5], "to": [12, 5], "width": 6, "rise": 4, "note": "up to deck A" },
+    { "zone": "r2", "from": [4, 24], "to": [-12, 24], "width": 6, "rise": 8, "note": "the long ramp up to deck B (16 m for 8 m of rise)" },
+    { "zone": "r3", "from": [-2, -42], "to": [12, -42], "width": 6, "rise": 6, "note": "up to the gantry" },
+    { "zone": "r4", "from": [0, -88], "to": [-12, -88], "width": 6, "rise": 3, "note": "up to the west gallery" }
+  ],
+  "pads": [],
+  "grapple": [
+    { "zone": "r2", "at": [-18, 12, 12], "note": "a node above deck B: the ARCLINE's anchor" },
+    { "zone": "r2", "at": [18, 9, 5], "note": "a node above deck A" }
+  ]
+}

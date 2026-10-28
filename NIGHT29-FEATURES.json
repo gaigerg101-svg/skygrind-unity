@@ -1,0 +1,22 @@
+{
+  "_why": "NIGHT29's contracts: each is the check named in its item, a Player or harness line from tonight, RED once and GREEN once. State is filled at the close in NIGHT29-PROOF.md.",
+  "contracts": [
+    { "id": "select", "item": 1, "check": "Player -skygrindLevelSelect29: 20 real-reload presses incl. double presses", "red": "-skygrindOff29: 4 PASS / 16 FAIL", "green": "20 / 20 PASS (n29-1, n29-2, n29-4)" },
+    { "id": "lights", "item": 2, "check": "LevelValidate29 rows lights + an Editor still", "red": "bad plan trips lights / props / closedRoom (builder R)", "green": "levelgen 0 errors on the three levels; foundry f10 still" },
+    { "id": "props", "item": 3, "check": "authored props rows in the plans; PropsView29", "red": "not run", "green": "Props29Tests 1/1; not seen in a Player" },
+    { "id": "crt", "item": 4, "check": "Editor still at 0 / 35 / 100 %", "red": "shader redefinition error (fixed)", "green": "looked at: visible, not loud; no numeric diff" },
+    { "id": "doors", "item": 5, "check": "LevelValidate29 doorFit + DoorFrames29", "red": "n/a", "green": "levelgen doorFit rows PASS; a framed door seen in the f10 still" },
+    { "id": "wall-ride-room", "item": 6, "check": "f5 + wallRiddenAndFired + stand-ins", "red": "standins29 off: 0 stand-ins", "green": "standins29: a shot from the wall lands, from the floor does not (harness)" },
+    { "id": "boss-hp", "item": 7, "check": "boss29 hp", "red": "Lantern 0 of 3 in 300 s", "green": "Lantern median 57 s, worm 5:09 -> 3:40, Glacier unchanged" },
+    { "id": "lockout", "item": 8, "check": "lockout29 harness", "red": "422 overlaps / 10,000 steps (off)", "green": "0 overlaps" },
+    { "id": "rooms-closed", "item": 9, "check": "closedRoom validator + stills", "red": "n/a", "green": "closedRoom PASS; closed rooms seen" },
+    { "id": "shotgun", "item": 10, "check": "shotgun29", "red": "63 steps", "green": "82 steps (x1.3)" },
+    { "id": "unlocks-tank", "item": 11, "check": "tank29, unlock table test", "red": "tank29 --off: plain 40 hp husk", "green": "600 hp, one gauntlet hit; Systems29 16/16" },
+    { "id": "lantern", "item": 12, "check": "boss29 lantern + Player reel lantern29", "red": "floor bot / old rule: 0 damage", "green": "rider kills 48.0 s in the Player; floor-bot 3x rule NOT met in the Player (round 4)" },
+    { "id": "glacier-skate", "item": 13, "check": "boss29 glacier + Player reel glacier29", "red": "Player kill at 49.6 s (band 80-120)", "green": "harness median 89 s; Player in round 4" },
+    { "id": "doorfree", "item": 14, "check": "Player -skygrindDoorFree29", "red": "-skygrindNoHold29: 1 of 12 open", "green": "12 of 12 open, unranked, a wave spawns" },
+    { "id": "level-1", "item": "9/levels", "check": "levelgen + walk29", "red": "-", "green": "see NIGHT29-PROOF.md" },
+    { "id": "level-2", "item": "9/levels", "check": "levelgen + walk29", "red": "-", "green": "see NIGHT29-PROOF.md" },
+    { "id": "level-3", "item": "9/levels", "check": "levelgen + walk29", "red": "-", "green": "see NIGHT29-PROOF.md" }
+  ]
+}

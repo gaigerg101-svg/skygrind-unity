@@ -1,0 +1,33 @@
+// NIGHT40 builder E3: writes design.n40.foes40's numbers (the DRONE, WARDEN and CHARGER in the campaign) into Design/unity-config.json by text, keeping
+// the line endings and the layout, then copies the file to Assets/StreamingAssets/Design/unity-config.json (the two stay byte-identical). Patches ONLY the
+// foes40 block: every line from its "enabled" line up to the block's close is replaced by the rows below (re-runnable; `enabled` is left as it is unless
+// --enable / --disable). Run from the repo root: node Tools/night/n40e3-config-foes40.cjs [--enable|--disable]
+const fs = require('fs');
+const path = 'Design/unity-config.json';
+const copy = 'Assets/StreamingAssets/Design/unity-config.json';
+let text = fs.readFileSync(path, 'utf8');
+const eol = text.includes('\r\n') ? '\r\n' : '\n';
+const n40 = text.indexOf('"n40": {');
+if (n40 < 0) throw new Error('no design.n40 block');
+const at = text.indexOf('"foes40": {', n40);
+if (at < 0) throw new Error('no design.n40.foes40 block');
+const close = text.indexOf(eol + '      }', at); // the foes40 block's closing brace (6 spaces: a row of design.n40)
+const m = /"enabled": (true|false)/.exec(text.slice(at));
+if (!m || at + m.index > close) throw new Error('no enabled line in foes40');
+let enabled = m[1];
+if (process.argv.includes('--enable')) enabled = 'true';
+if (process.argv.includes('--disable')) enabled = 'false';
+const I = '        ';
+const rows = [
+  `"enabled_why": "Off until the lead has looked at its Player frames once and iterated once (NIGHT40.md method 2)."`,
+  `"drone": {${eol}${I}  "chargeS": 1.0,${eol}${I}  "chargeS_why": "The DRONE's glow before its orb (s; the web's drone.chargeTime 0.4 s). NIGHT36's tells36 already makes it 1.0 s (design.n36.tells36.droneChargeS); foes40 holds 1.0 s even with tells36 off: ULTRAKILL's Stray throws 1-2 s after it spots you (https://ultrakill.wiki.gg/wiki/Stray); the low end, because the drone's orb is the slowest shot the player meets.",${eol}${I}  "orbSpeed": 12,${eol}${I}  "orbSpeed_why": "m/s of the DRONE's orb in the campaign. The card asked '~14 m/s, slower'; the port's orb is already 12 m/s (config orb.speed, read 2026-10-14), slower than the spitter's glob (16 m/s), so it is kept at 12: at 12 m/s the orb crosses the punch's reflect reach (orb.reflectRange 2 m) in 0.17 s, longer than parry36's 0.12 s buffer. ULTRAKILL's Drone shot is 27.86 u/s on Harmless vs V1's 16.5 u/s walk (https://ultrakill.wiki.gg/wiki/Drone): ~1.7x walk; ours is ~1.3x the player's ~9 m/s run.",${eol}${I}  "approachSpeed": 3.6,${eol}${I}  "approachSpeed_why": "m/s the DRONE flies to its slot (the brain caps it at ai.kinds.drone.speed 7 m/s x the drone's paceMult, set to approachSpeed / 7 at its spawn in Drone.cs; its climb and hover keep drone.speed). 0.6x the husk's 6 m/s: ULTRAKILL's Stray (the parry teacher) moves at 10 u/s, 0.61x V1's walk (https://ultrakill.wiki.gg/wiki/Stray). A slow drone stays where the player can read its glow and punch its orb back.",${eol}${I}  "reflectKillsShooter": true,${eol}${I}  "reflectKillsShooter_why": "A parried orb that reaches the DRONE that fired it kills it (its damage raised to the drone's hit points). parry36 already homes a parried orb on its shooter (Parry36.cs) and bursts 40 in 3 m; with parry36 off the web's return (orb.damage 10 x reflectDamageMult 2 = 20) leaves a 30 hp drone alive. The card: 'a reflected orb kills or staggers it'; the drone has no stagger (drone.js), so it kills. Doom: The Dark Ages: a parried projectile homes back to whoever fired it (https://www.shacknews.com/article/144239/how-to-parry-doom-the-dark-ages)."${eol}${I}}`,
+  `"warden": {${eol}${I}  "meleeShield": true,${eol}${I}  "meleeShield_why": "Only a melee knock (the punch, the PULSE gauntlet's swing) opens the WARDEN's shield (its 1 s stun, warden.shieldStun, kept). The port opened it for ANY knock from the front, so the THUNDERCLAP's knock broke it too: n40foes ttk (2026-10-14) measured the shotgun killing a warden in 3.9 s, the gauntlet in 5.0 s, the revolver 17.3 s: the gauntlet was not its answer. The card: 'the WARDEN is the gauntlet's: its punch-stun stays the answer, a flank the other' (Halo's Jackal: a front shield you open, then the kill, https://www.halopedia.org/Kig-Yar/Gameplay).",${eol}${I}  "frontSoft": 0.5,${eol}${I}  "frontSoft_why": "x a front hit the shield already softens (design.n26.weaponIdentity.vulnerability.warden.soft 0.2, so x0.1 in all; the gauntlet and the punch still land whole). With meleeShield alone n40foes ttk measured the shotgun at 5.5 s against the gauntlet's 5.0 s (the THUNDERCLAP's volley is ~200 raw, so 0.2 of it still kills); the card asks the counter to be >= 1.5x faster."${eol}${I}}`,
+  `"charger": {${eol}${I}  "frontMult": 0.3,${eol}${I}  "frontMult_why": "x the damage of every hit on the CHARGER while it is not stunned, and of a stunned hit from its front (its armour; stunned from behind x charger.weakMult 3 as before: the stunned back is the one open spot). n40foes ttk (2026-10-14) measured the KESTREL killing a 150 hp charger from the front in 2.4 s, faster than any back attack: the card's 'jump or ride its charge, then its stunned back (x3)' paid nothing. Doom Eternal's Pinky: hit its tail after dodging its charge (https://www.thumbsticks.com/how-to-exploit-demon-weaknesses-doom-eternal/). 0.3 is a guess tuned by the matrix.",${eol}${I}  "stunS": 2.0,${eol}${I}  "stunS_why": "s stunned after a charge into a wall (charger.stunTime 1.5): long enough to run round it and fire one THUNDERCLAP shot into its back (the shot's interval is ~1.5 s, CODE-MAP; boss_rules 2: a punish window of ~1 s after an attack, plus the walk round).",${eol}${I}  "skidStunS": 1.2,${eol}${I}  "skidStunS_why": "s stunned when a charge ends without meeting a wall (the web: 0.8 s recover, face still armoured). In an open room a dodged charge then still opens the back, shorter than a wall's.",${eol}${I}  "backOff": true,${eol}${I}  "backOff_why": "Closer than charger.minRange (6 m) and free, the CHARGER backs out to charge range. The port's charger (it has no close attack) walked onto an idle player and stood there 9 s, harmless and never charging again (n40foes trace charger, 2026-10-14)."${eol}${I}}`,
+];
+const body = [`"enabled": ${enabled}`].concat(rows).map(r => I + r).join(',' + eol);
+const start = at + m.index; // the enabled line's text
+text = text.slice(0, start) + body.slice(I.length) + text.slice(close);
+JSON.parse(text); // still valid JSON
+fs.writeFileSync(path, text);
+fs.copyFileSync(path, copy);
+console.log(`design.n40.foes40: ${rows.length} rows written, enabled ${enabled}; ${copy} copied`);

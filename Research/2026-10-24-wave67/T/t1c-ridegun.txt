@@ -1,0 +1,63 @@
+# sha 256f837c + the uncommitted Tools/SimHarness/Harness.N65.Verb.cs (V67RideGun); 2026-10-24 11:54:13
+
+## bash Tools/night/n65-verbs.sh ride Design/levels/n52-iceline.json g8 --shoot --weapon gauntlet
+n65verb ride: level n52-iceline (Design/levels/n52-iceline.json), room g8 "2.8 THE STAMPEDE", seed 1; pose (0.0, 0.0, -227.5) yaw 0.0 from the room's spawn (no line65); off switch none
+  the ride's gun: owned at the start gauntlet (in hand gauntlet); awards given up to g8: revolver (g6's award); --weapon gauntlet; in hand gauntlet
+  face 0 of 2: x = -9.4, -246.0..-223.0 (23.0 m), top 12.0, normal (1.0, 0.0), ride along (0.0, -1.0) from (-9.0, 0.0, -224.0); the room's wave live, alive 1; weapon gauntlet
+n65verb ride --shoot: RED | room g8 | ride yes (1.0 s on the wall, 9.7 m along it, WallRideStart 3) | look off the wall at most 147.1 deg | shots from the wall 0 (off it 0) | kills from the wall 0 (other kills 0) | pose the room's spawn (no line65) | no kill from the wall
+
+## bash Tools/night/n65-verbs.sh ride Design/levels/n52-iceline.json g8 --shoot
+n65verb ride: level n52-iceline (Design/levels/n52-iceline.json), room g8 "2.8 THE STAMPEDE", seed 1; pose (0.0, 0.0, -227.5) yaw 0.0 from the room's spawn (no line65); off switch none
+  the ride's gun: owned at the start gauntlet (in hand gauntlet); awards given up to g8: revolver (g6's award); the best owned gun revolver; in hand revolver
+  face 0 of 2: x = -9.4, -246.0..-223.0 (23.0 m), top 12.0, normal (1.0, 0.0), ride along (0.0, -1.0) from (-9.0, 0.0, -224.0); the room's wave live, alive 1; weapon revolver
+n65verb ride --shoot: RED | room g8 | ride yes (0.8 s on the wall, 6.6 m along it, WallRideStart 2) | look off the wall at most 158.2 deg | shots from the wall 2 (off it 1) | kills from the wall 0 (other kills 0) | pose the room's spawn (no line65) | no kill from the wall
+
+## bash Tools/night/n65-verbs.sh ride Design/levels/n52-iceline.json g8 --shoot --plant-target auto --weapon gauntlet
+n65verb ride: level n52-iceline (Design/levels/n52-iceline.json), room g8 "2.8 THE STAMPEDE", seed 1; pose (0.0, 0.0, -227.5) yaw 0.0 from the room's spawn (no line65); off switch none
+  the ride's gun: owned at the start gauntlet (in hand gauntlet); awards given up to g8: revolver (g6's award); --weapon gauntlet; in hand gauntlet
+  face 0 of 2: x = -9.4, -246.0..-223.0 (23.0 m), top 12.0, normal (1.0, 0.0), ride along (0.0, -1.0) from (-9.0, 0.0, -224.0); the room's wave live, alive 1; weapon gauntlet
+n65verb ride: RED | the planted husk did not spawn at (-6.4, 0.0, -234.0)
+
+## bash Tools/night/n65-verbs.sh ride Design/levels/n52-iceline.json g8 --shoot --plant-target auto
+n65verb ride: level n52-iceline (Design/levels/n52-iceline.json), room g8 "2.8 THE STAMPEDE", seed 1; pose (0.0, 0.0, -227.5) yaw 0.0 from the room's spawn (no line65); off switch none
+  the ride's gun: owned at the start gauntlet (in hand gauntlet); awards given up to g8: revolver (g6's award); the best owned gun revolver; in hand revolver
+  face 0 of 2: x = -9.4, -246.0..-223.0 (23.0 m), top 12.0, normal (1.0, 0.0), ride along (0.0, -1.0) from (-9.0, 0.0, -224.0); the room's wave live, alive 1; weapon revolver
+n65verb ride: RED | the planted husk did not spawn at (-6.4, 0.0, -234.0)
+
+## bash Tools/night/n65-verbs.sh ride Design/levels/n52-iceline.json g7 --shoot
+n65verb ride: level n52-iceline (Design/levels/n52-iceline.json), room g7 "2.7 THE MIX", seed 1; pose (0.0, 0.0, -189.5) yaw 0.0 from the room's spawn (no line65); off switch none
+  the ride's gun: owned at the start gauntlet (in hand gauntlet); awards given up to g7: revolver (g6's award); the best owned gun revolver; in hand revolver
+  face 0 of 2: x = -11.0, -205.5..-187.5 (18.0 m), top 5.0, normal (1.0, 0.0), ride along (0.0, -1.0) from (-10.6, -0.8, -188.5); the room's wave live, alive 3; weapon revolver
+n65verb ride --shoot: RED | room g7 | ride NO | look off the wall at most 0.0 deg | shots from the wall 0 (off it 0) | kills from the wall 0 (other kills 0) | pose the room's spawn (no line65) | the rider never got on the face
+
+## bash Tools/night/n65-verbs.sh ride Design/levels/n57-kiln.json kb3 --shoot --weapon gauntlet
+n65verb ride: level n57-kiln (Design/levels/n57-kiln.json), room kb3 "3.3 THE PRESS HALL", seed 1; pose (-8.5, 0.0, -203.0) yaw 0.0 from the room's spawn (no line65); off switch none
+  the ride's gun: owned at the start shotgun gauntlet (in hand shotgun); awards given up to kb3: revolver (kb2b's award); --weapon gauntlet; in hand gauntlet
+  face 0 of 1: x = 9.4, -217.5..-200.5 (17.0 m), top 14.0, normal (-1.0, 0.0), ride along (0.0, -1.0) from (9.0, 0.0, -201.5); the room's wave live, alive 7; weapon gauntlet
+n65verb ride --shoot: RED | room kb3 | ride yes (1.4 s on the wall, 16.3 m along it, WallRideStart 2) | look off the wall at most 86.7 deg | shots from the wall 0 (off it 0) | kills from the wall 0 (other kills 0) | pose the room's spawn (no line65) | no kill from the wall
+
+## bash Tools/night/n65-verbs.sh ride Design/levels/n57-kiln.json kb3 --shoot
+n65verb ride: level n57-kiln (Design/levels/n57-kiln.json), room kb3 "3.3 THE PRESS HALL", seed 1; pose (-8.5, 0.0, -203.0) yaw 0.0 from the room's spawn (no line65); off switch none
+  the ride's gun: owned at the start shotgun gauntlet (in hand shotgun); awards given up to kb3: revolver (kb2b's award); the best owned gun revolver; in hand revolver
+  face 0 of 1: x = 9.4, -217.5..-200.5 (17.0 m), top 14.0, normal (-1.0, 0.0), ride along (0.0, -1.0) from (9.0, 0.0, -201.5); the room's wave live, alive 7; weapon revolver
+n65verb ride --shoot: GREEN | room kb3 | ride yes (1.4 s on the wall, 16.3 m along it, WallRideStart 2) | look off the wall at most 86.4 deg | shots from the wall 3 (off it 1) | kills from the wall 1 (other kills 0) | pose the room's spawn (no line65)
+
+## bash Tools/night/n65-verbs.sh ride Design/levels/n57-kiln.json kb3c --shoot
+n65verb ride: level n57-kiln (Design/levels/n57-kiln.json), room kb3c "3.3c THE TAP RUN", seed 1; pose (-6.5, 0.0, -234.0) yaw 0.0 from the room's spawn (no line65); off switch none
+  the ride's gun: owned at the start shotgun (in hand shotgun); awards given up to kb3c: revolver (kb2b's award), gauntlet (kb3's award); the best owned gun revolver; in hand revolver
+  face 0 of 1: x = 10.4, -249.5..-231.5 (18.0 m), top 12.0, normal (-1.0, 0.0), ride along (0.0, -1.0) from (10.0, -0.8, -232.5); the room's wave live, alive 6; weapon revolver
+n65verb ride --shoot: GREEN | room kb3c | ride yes (1.8 s on the wall, 16.6 m along it, WallRideStart 1) | look off the wall at most 166.6 deg | shots from the wall 4 (off it 1) | kills from the wall 1 (other kills 0) | pose the room's spawn (no line65)
+
+## bash Tools/night/n65-verbs.sh ride Design/levels/n52-spire.json v6 --shoot
+n65verb ride: level n52-spire (Design/levels/n52-spire.json), room v6 "5.6 THE CHOIR", seed 1; pose (-10.0, 0.0, -71.0) yaw 0.0 from the room's spawn (no line65); off switch none
+  the ride's gun: owned at the start revolver gauntlet shotgun (in hand revolver); awards given up to v6: none; the best owned gun revolver; in hand revolver
+  face 0 of 2: x = 1.0, -97.0..-73.0 (24.0 m), top 10.0, normal (-1.0, 0.0), ride along (0.0, -1.0) from (0.6, 0.0, -74.0); the room's wave live, alive 6; weapon revolver
+n65verb ride --shoot: GREEN | room v6 | ride yes (4.7 s on the wall, 12.5 m along it, WallRideStart 1) | look off the wall at most 179.9 deg | shots from the wall 6 (off it 0) | kills from the wall 3 (other kills 0) | pose the room's spawn (no line65)
+
+## bash Tools/night/n65-verbs.sh ride Design/levels/n52-spire.json v2 --shoot
+n65verb ride: level n52-spire (Design/levels/n52-spire.json), room v2 "5.2 THE NAVE", seed 1; pose (-10.0, 0.0, 75.0) yaw 0.0 from the room's spawn (no line65); off switch none
+  the ride's gun: owned at the start revolver gauntlet shotgun (in hand revolver); awards given up to v2: none; the best owned gun revolver; in hand revolver
+  face 0 of 1: x = -21.4, 59.0..76.0 (17.0 m), top 9.0, normal (1.0, 0.0), ride along (0.0, -1.0) from (-21.0, 0.0, 75.0); the room's wave live, alive 5; weapon revolver
+n65verb ride --shoot: RED | room v2 | ride yes (0.5 s on the wall, 4.6 m along it, WallRideStart 1) | look off the wall at most 159.5 deg | shots from the wall 1 (off it 1) | kills from the wall 0 (other kills 0) | pose the room's spawn (no line65) | no kill from the wall
+
+# done 11:55:14

@@ -1,0 +1,22 @@
+# command: dotnet Temp/SimHarness/bin/Release/net10.0/SimHarness.dll n46flow --level n65-foundry --file C:/Users/gaige/dev/SKYGRIND-unity/Logs/n66/r2/n65-foundry.json --rooms a8 --seeds 10 --first 1 --verbs65
+# sha: 4d86b960 (tracked changes:  M Assets/Scripts/Game/UnityTuning.N53.cs  M Assets/StreamingAssets/Design/unity-config.json  M Design/unity-config.json ); harness Temp/SimHarness/bin/Release/net10.0/SimHarness.dll (2026-10-24_10:56:04); 2026-10-24 11:04:18; C:/Users/gaige/dev/SKYGRIND-unity/.claude/worktrees/agent-af48e888c59fa3626
+
+n46flow: seeds 1..10, cap 240 s per room, rows forced on: none, off switch: none; pilot: Walk38Pilot + the ported autopilot (normal)
+n46flow n65-foundry: --file C:/Users/gaige/dev/SKYGRIND-unity/Logs/n66/r2/n65-foundry.json
+n46flow n65-foundry (loaded n65-foundry; BaseId n45-foundry): 10/10 walks through a8..a8; level time median 15.5 s; the pilot's lava rule: out of lava 0 steps, held at an edge 0 steps, chases round it 0, detours 0; put at the next room (a link not crossed in max(30 s, 3 x par) or a cleared room not left in 15 s) 0; stuck46 burrowers ended 0
+  room       kind | stall%  maxStall  air% | kgap med/max | near med/p10/p90 | dwell  dead | deaths falls | clear (k/n)    | geometry
+  a8         room |   45.8      4.3  57.8 |  1.4 / 9.8   |  6.1 /  2.1 / 11.1  |   0.5   4.2 |      0     0 |   15.5 (10/10) | floor 308 m2, tiers 3, loop n (0 m2), pockets 0, sight 13.2 m, w1 in view 3/3
+  LEVEL           |   45.8      4.3  57.8 |  1.4 / 9.8   |  6.1 /  2.1 / 11.1  |   0.5   4.2 |      0     0 |   15.5 sum of medians
+n46flow n65-foundry SUMMARY: GREEN 10/10; stall 45.8 %, longest stall 4.3 s, air 57.8 %, kill gap 1.4 / 9.8 s, nearest 6.1 m, dwell 0.5 s, dead 4.2 s, deaths 0, falls 0, clear 15.5 s
+  style      kind |  DULL  COOL  BOLD  AIRB  SAVA  SKYG (% of fight steps) | top rank med / max (seeds)
+  a8         room |  52.1  17.7  22.1   7.3   0.8   0.0                    | BOLD / SAVAGE (10)
+  LEVEL           |  52.1  17.7  22.1   7.3   0.8   0.0                    | top SAVAGE
+n46flow n65-foundry STYLE: DULL 52.1 % of 182 s of fight; above DULL 47.9 %; rooms reaching SAVAGE 1/1; top rank SAVAGE
+n46flow n65-foundry PAYOFFS: heal36 HP per close kill by rank: DULL 8.00 (1), COOL 10.00 (1), BOLD 7.33 (3), AIRBORNE - (0), SAVAGE - (0), SKYGRIND - (0); RIDE KILL refund per ride kill by rank: DULL 0.00 (4), COOL 0.00 (2), BOLD - (0), AIRBORNE 0.00 (3), SAVAGE - (0), SKYGRIND - (0)
+n46flow n65-foundry TOKENS: attack starts inside the sim cone (camera.fovDeg 74 / 2) 35/41 = 85.4 % (by kind: husk 21/23, spitter 14/18); tokens56 thinks waited out of view 857, advances 5
+n46flow n65-foundry RANGED: hit rate by the player's speed at the shot: stand 0/3 = 0.0 %, run 0/11 = 0.0 %, fast 0/0 = - %, dash 0/0 = - %; dash / stand -, fast+dash / stand -
+n46flow n65-foundry IDLE: idle in place 9.3 % of enemy-alive steps; per enemy (alive >= 2 s, 85): median 6.6 %, p90 18.5 %, over 20 %: 6 (7.1 %); by kind: husk 9.5 %, spitter 8.1 %
+n46flow n65-foundry VERBS65 (--verbs65: the verb-aware pilot in rooms with verb65):
+  a8     verb65 pierce       | trigger held 7721 of 21877 fight steps (35.3 %), episodes 36, performed: charged shots 33
+n46flow n65-foundry: wall time 51 s
+# exit 0, 11:05:10

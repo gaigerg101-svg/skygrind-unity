@@ -1,0 +1,42 @@
+# command (main tree, read only): python -I .claude/worktrees/n71-F/Research/2026-10-26-wave71/F/L4/wash-classes.py Logs/feel/e53-freeze/u1on/a153 Logs/feel/e53-freeze/u2on/a153
+# sha (F's tree) b56ddbcbc; main tree 02fba5b74; 2026-10-26 12:46:55 USMST
+# the frames: EXT53's freeze build (e53-freeze), a153 T-111, u1 = n52-foundry, u2 = n52-iceline; side off = Polish53.Force false (NIGHT52), on = killWash live; the reel's own curves (Logs/player/n47-reel-e53-freeze-u1on.log): off f-2 0.244 peak +0.425 f4; on f-2 0.239 [f0 +0.147 f1 +0.119 f2 +0.254 f3 +0.315 f4 +0.249 f5 +0.236 f6 +0.203 f7 +0.184 f8 +0.126]
+== Logs/feel/e53-freeze/u1on/a153
+  off f1: box luma 0.419 = warm (red-orange-yellow, lit) 0.102 (60 % of px), white / grey-white 0.274 (31 % of px), cyan 0.010 (2 % of px), dark (< 0.15) 0.000 (0 % of px), other 0.033 (8 % of px)
+  off f2: box luma 0.539 = warm (red-orange-yellow, lit) 0.120 (49 % of px), white / grey-white 0.360 (39 % of px), cyan 0.013 (2 % of px), dark (< 0.15) 0.000 (0 % of px), other 0.046 (10 % of px)
+  off f3: box luma 0.674 = warm (red-orange-yellow, lit) 0.147 (38 % of px), white / grey-white 0.461 (50 % of px), cyan 0.007 (1 % of px), dark (< 0.15) 0.000 (0 % of px), other 0.059 (11 % of px)
+  off f4: box luma 0.659 = warm (red-orange-yellow, lit) 0.153 (39 % of px), white / grey-white 0.431 (47 % of px), cyan 0.015 (2 % of px), dark (< 0.15) 0.000 (0 % of px), other 0.060 (12 % of px)
+  off f5: box luma 0.553 = warm (red-orange-yellow, lit) 0.233 (55 % of px), white / grey-white 0.193 (21 % of px), cyan 0.010 (2 % of px), dark (< 0.15) 0.000 (1 % of px), other 0.117 (22 % of px)
+  off f6: box luma 0.459 = warm (red-orange-yellow, lit) 0.259 (67 % of px), white / grey-white 0.144 (17 % of px), cyan 0.015 (3 % of px), dark (< 0.15) 0.004 (5 % of px), other 0.038 (7 % of px)
+  off f7: box luma 0.425 = warm (red-orange-yellow, lit) 0.262 (68 % of px), white / grey-white 0.026 (3 % of px), cyan 0.015 (3 % of px), dark (< 0.15) 0.004 (6 % of px), other 0.118 (20 % of px)
+  off f8: box luma 0.393 = warm (red-orange-yellow, lit) 0.324 (85 % of px), white / grey-white 0.031 (4 % of px), cyan 0.002 (0 % of px), dark (< 0.15) 0.001 (3 % of px), other 0.036 (8 % of px)
+  on f1: box luma 0.363 = warm (red-orange-yellow, lit) 0.011 (5 % of px), white / grey-white 0.242 (27 % of px), cyan 0.011 (3 % of px), dark (< 0.15) 0.042 (43 % of px), other 0.057 (22 % of px)
+  on f2: box luma 0.496 = warm (red-orange-yellow, lit) 0.130 (53 % of px), white / grey-white 0.292 (32 % of px), cyan 0.013 (2 % of px), dark (< 0.15) 0.000 (0 % of px), other 0.062 (13 % of px)
+  on f3: box luma 0.562 = warm (red-orange-yellow, lit) 0.214 (50 % of px), white / grey-white 0.209 (23 % of px), cyan 0.018 (3 % of px), dark (< 0.15) 0.000 (0 % of px), other 0.120 (24 % of px)
+  on f4: box luma 0.496 = warm (red-orange-yellow, lit) 0.258 (68 % of px), white / grey-white 0.193 (20 % of px), cyan 0.017 (3 % of px), dark (< 0.15) 0.002 (3 % of px), other 0.026 (5 % of px)
+  on f5: box luma 0.484 = warm (red-orange-yellow, lit) 0.257 (66 % of px), white / grey-white 0.186 (20 % of px), cyan 0.016 (3 % of px), dark (< 0.15) 0.003 (6 % of px), other 0.021 (4 % of px)
+  on f6: box luma 0.458 = warm (red-orange-yellow, lit) 0.270 (70 % of px), white / grey-white 0.144 (17 % of px), cyan 0.017 (3 % of px), dark (< 0.15) 0.003 (5 % of px), other 0.025 (5 % of px)
+  on f7: box luma 0.427 = warm (red-orange-yellow, lit) 0.292 (74 % of px), white / grey-white 0.027 (3 % of px), cyan 0.015 (3 % of px), dark (< 0.15) 0.003 (5 % of px), other 0.090 (15 % of px)
+  on f8: box luma 0.376 = warm (red-orange-yellow, lit) 0.320 (87 % of px), white / grey-white 0.034 (4 % of px), cyan 0.002 (0 % of px), dark (< 0.15) 0.002 (4 % of px), other 0.018 (4 % of px)
+== Logs/feel/e53-freeze/u2on/a153
+  off f1: box luma 0.422 = warm (red-orange-yellow, lit) 0.010 (2 % of px), white / grey-white 0.273 (30 % of px), cyan 0.032 (10 % of px), dark (< 0.15) 0.013 (22 % of px), other 0.093 (37 % of px)
+  off f2: box luma 0.540 = warm (red-orange-yellow, lit) 0.017 (3 % of px), white / grey-white 0.394 (42 % of px), cyan 0.029 (6 % of px), dark (< 0.15) 0.001 (2 % of px), other 0.098 (47 % of px)
+  off f3: box luma 0.665 = warm (red-orange-yellow, lit) 0.019 (3 % of px), white / grey-white 0.489 (52 % of px), cyan 0.047 (9 % of px), dark (< 0.15) 0.000 (0 % of px), other 0.110 (36 % of px)
+  off f4: box luma 0.663 = warm (red-orange-yellow, lit) 0.026 (4 % of px), white / grey-white 0.451 (48 % of px), cyan 0.067 (13 % of px), dark (< 0.15) 0.000 (0 % of px), other 0.119 (35 % of px)
+  off f5: box luma 0.568 = warm (red-orange-yellow, lit) 0.042 (8 % of px), white / grey-white 0.252 (29 % of px), cyan 0.077 (15 % of px), dark (< 0.15) 0.000 (0 % of px), other 0.197 (48 % of px)
+  off f6: box luma 0.476 = warm (red-orange-yellow, lit) 0.105 (24 % of px), white / grey-white 0.170 (20 % of px), cyan 0.084 (18 % of px), dark (< 0.15) 0.001 (3 % of px), other 0.115 (36 % of px)
+  off f7: box luma 0.442 = warm (red-orange-yellow, lit) 0.106 (24 % of px), white / grey-white 0.122 (17 % of px), cyan 0.088 (18 % of px), dark (< 0.15) 0.001 (2 % of px), other 0.124 (38 % of px)
+  off f8: box luma 0.390 = warm (red-orange-yellow, lit) 0.139 (32 % of px), white / grey-white 0.037 (4 % of px), cyan 0.073 (14 % of px), dark (< 0.15) 0.003 (5 % of px), other 0.138 (45 % of px)
+  on f1: box luma 0.401 = warm (red-orange-yellow, lit) 0.008 (1 % of px), white / grey-white 0.267 (29 % of px), cyan 0.032 (10 % of px), dark (< 0.15) 0.018 (26 % of px), other 0.076 (33 % of px)
+  on f2: box luma 0.503 = warm (red-orange-yellow, lit) 0.013 (2 % of px), white / grey-white 0.324 (35 % of px), cyan 0.041 (11 % of px), dark (< 0.15) 0.001 (1 % of px), other 0.123 (51 % of px)
+  on f3: box luma 0.561 = warm (red-orange-yellow, lit) 0.037 (6 % of px), white / grey-white 0.262 (31 % of px), cyan 0.061 (12 % of px), dark (< 0.15) 0.000 (0 % of px), other 0.201 (51 % of px)
+  on f4: box luma 0.482 = warm (red-orange-yellow, lit) 0.120 (28 % of px), white / grey-white 0.202 (21 % of px), cyan 0.049 (9 % of px), dark (< 0.15) 0.001 (2 % of px), other 0.110 (39 % of px)
+  on f5: box luma 0.465 = warm (red-orange-yellow, lit) 0.102 (23 % of px), white / grey-white 0.197 (21 % of px), cyan 0.047 (9 % of px), dark (< 0.15) 0.001 (2 % of px), other 0.117 (45 % of px)
+  on f6: box luma 0.436 = warm (red-orange-yellow, lit) 0.104 (23 % of px), white / grey-white 0.156 (19 % of px), cyan 0.050 (9 % of px), dark (< 0.15) 0.001 (3 % of px), other 0.124 (47 % of px)
+  on f7: box luma 0.403 = warm (red-orange-yellow, lit) 0.108 (24 % of px), white / grey-white 0.086 (13 % of px), cyan 0.067 (12 % of px), dark (< 0.15) 0.001 (2 % of px), other 0.140 (50 % of px)
+  on f8: box luma 0.393 = warm (red-orange-yellow, lit) 0.154 (38 % of px), white / grey-white 0.031 (3 % of px), cyan 0.094 (18 % of px), dark (< 0.15) 0.001 (2 % of px), other 0.113 (39 % of px)
+
+# command: python -I .claude/worktrees/n71-F/Research/2026-10-26-wave71/F/L4/wash-hues.py (iceline on f1, f3, f4)
+shot-N30-S53-wash-on-f1-box.png: 0-30 0.002 30-60 0.004 60-90 0.007 90-120 0.001 120-150 0.003 150-180 0.005 180-210 0.025 210-240 0.023 240-270 0.038 270-300 0.001 300-330 0.001 330-360 0.004
+shot-N30-S53-wash-on-f3-box.png: 0-30 0.074 30-60 0.012 60-90 0.046 90-120 0.002 120-150 0.003 150-180 0.013 180-210 0.063 210-240 0.043 240-270 0.008 270-300 0.002 300-330 0.002 330-360 0.027
+shot-N30-S53-wash-on-f4-box.png: 0-30 0.041 30-60 0.038 60-90 0.048 90-120 0.002 120-150 0.002 150-180 0.009 180-210 0.046 210-240 0.049 240-270 0.007 270-300 0.001 300-330 0.001 330-360 0.008

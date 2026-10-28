@@ -1,0 +1,883 @@
+{
+ "_why": "NIGHT74 S kb2c r6 (Research/2026-10-27-wave74/S/card-kb2c.md): node 7 off the plate's edge, the iron plates 0.9 m, THE KILN HOOD added; the verb (ride), the cooling wall (19.5 m, r5), the hearth, the catwalk, the flue wall, the pads and the waves are NIGHT71 R's. NIGHT71 R r1 (Research/2026-10-26-wave71/R/kb2c/card.md, THE ASH FLOOR, ride; rebuilt from the blank rect): the burrower owns the ash floor, the walls and the iron are yours: THE COOLING WALL (east ride) onto THE HEARTH (4 m), THE FLUE WALL (west ride) onto THE CATWALK (2.5 m), THE BELLOWS HOUSING the entry's foothold, three iron plates, THE ASH VENT; the door liners kept. NIGHT67 T1a (Tools/night/gen-slots.cjs --level kiln --export): n57-kiln's room kb2c (3.2c THE CLINKER BRIDGES) exactly as Design/levels/n57/kiln.plan.json has it: the row (every key), its zone-keyed pieces (boxes, ramps, pads, grapple, pits, tunnels), its room-keyed pieces (lights, props). The slot's starting point: rebuild it here (every new piece with a job and a why), give the row bot43: false, verb65 (the slate's verb) and line65 (the verb's line, 3+ waypoints); never an area67 block (refused). A key the row drops needs a reason in drop{}. The room's opening: top-level \"opening\": \"vista\" | \"ambushed\" | \"ambusher\" | \"held\" (and \"opening_why\"); left out, the room keeps n57-kiln's.",
+ "room": "kb2c",
+ "row": {
+  "id": "kb2c",
+  "name": "3.2c THE ASH FLOOR",
+  "kind": "room",
+  "rect": [
+   -9,
+   -193.5,
+   9,
+   -163.5
+  ],
+  "height": 12,
+  "roof": true,
+  "par": 60,
+  "job36": "teach",
+  "card57": "THE ASH FLOOR",
+  "verb36": "the BURROWER owns the ash: get off it (an iron plate, the catwalk, a wall ride) or hit it as it surfaces; ride the cooling wall over the ash onto the hearth, the flue wall onto the catwalk; the ash vent onto the hearth",
+  "spawn": {
+   "at": [
+    -2,
+    0,
+    -168
+   ],
+   "yawDeg": -10
+  },
+  "spawn_why": "NIGHT57 L (card kb2c, Molecule: the apron): 4.5 m in from the door (NIGHT57: 5.5 m, T-119), 2 m west of its axis (was 7.5 m, south of the iron apron): the walk from the link kb2b's exit (0, -157.5) to this spawn ran into the entry wall west of the door (n46flow put the bot at the next room 8 times of 29 in kb2b, at (-6.6, -159.2) and the like); now the line goes through the door and clears the west liner by 0.8 m. NIGHT58 EXT: out of n46flow's 4 m door circle (NIGHT58 L0's (-1, -166) sat 2.5 m from the door). NIGHT60 L B13: facing the fight down the middle channel (yaw -10: wave 1's nodes ahead at 12.75-13.3 m, spawn31's 12 m in the cone met by moving them 2 m south); NIGHT58 EXT's yaw 45 faced the west wall and the near bridge's face 2-4 m off, 0 of wave 1's 5 seen in the a157 spawn frame (NIGHT60 B1)",
+  "exit": [
+   0,
+   0,
+   -191.5
+  ],
+  "arena36": true,
+  "waves": [
+   [
+    "burrower",
+    "swarmer",
+    "swarmer",
+    "swarmer",
+    "swarmer"
+   ],
+   [
+    "husk",
+    "husk",
+    "husk",
+    "husk",
+    "swarmer",
+    "swarmer"
+   ],
+   [
+    "burrower",
+    "husk",
+    "husk",
+    "husk"
+   ]
+  ],
+  "roles43": [
+   "burrower + fodder (it hunts the ash; the swarmers come after you onto the plates and the catwalk)",
+   "fodder (the husks come down the hearth and the catwalk; fight them from the hearth)",
+   "burrower + fodder (again, with the husks: the ride onto the hearth is the way off the ash)"
+  ],
+  "roles43_why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/kb2c/card.md, THE ASH FLOOR, ride; rebuilt from the blank rect): the shipped roles kept (the burrower taught here, R-2), the pieces new",
+  "nodes": [
+   [
+    0.5,
+    0,
+    -180.5
+   ],
+   [
+    -1,
+    0,
+    -180.25
+   ],
+   [
+    1,
+    0,
+    -181
+   ],
+   [
+    2,
+    0,
+    -180.5
+   ],
+   [
+    -5,
+    0,
+    -188
+   ],
+   [
+    3,
+    0,
+    -191
+   ],
+   [
+    -6.5,
+    0,
+    -184.5
+   ]
+  ],
+  "highNodes": [
+   [
+    6,
+    4,
+    -187
+   ],
+   [
+    7.5,
+    4,
+    -189
+   ]
+  ],
+  "nodes_why": "NIGHT74 S kb2c r6 (Research/2026-10-27-wave74/S/card-kb2c.md): ground node (-1, 0, -180.75) -> (-1, 0, -180.25): the plan check named it (a capsule overlap with the mid iron plate's edge, z -181). NIGHT71 R r1 (Research/2026-10-26-wave71/R/kb2c/card.md, THE ASH FLOOR, ride; rebuilt from the blank rect): wave 1 (the burrower's first) on the shipped mid-room cluster, 17 m from the door (spawn31); waves 2-3 add the far floor (off the hearth and its stair) and wave 2 the hearth's top (the husks come down at you)",
+  "waveNodes43": [
+   [
+    [
+     0.5,
+     0,
+     -180.5
+    ],
+    [
+     -1,
+     0,
+     -180.25
+    ],
+    [
+     1,
+     0,
+     -181
+    ],
+    [
+     2,
+     0,
+     -180.5
+    ]
+   ],
+   [
+    [
+     0.5,
+     0,
+     -180.5
+    ],
+    [
+     -1,
+     0,
+     -180.25
+    ],
+    [
+     1,
+     0,
+     -181
+    ],
+    [
+     2,
+     0,
+     -180.5
+    ],
+    [
+     -5,
+     0,
+     -188
+    ],
+    [
+     3,
+     0,
+     -191
+    ],
+    [
+     -6.5,
+     0,
+     -184.5
+    ],
+    [
+     6,
+     4,
+     -187
+    ],
+    [
+     7.5,
+     4,
+     -189
+    ]
+   ],
+   [
+    [
+     0.5,
+     0,
+     -180.5
+    ],
+    [
+     -1,
+     0,
+     -180.25
+    ],
+    [
+     1,
+     0,
+     -181
+    ],
+    [
+     2,
+     0,
+     -180.5
+    ],
+    [
+     -5,
+     0,
+     -188
+    ],
+    [
+     3,
+     0,
+     -191
+    ],
+    [
+     -6.5,
+     0,
+     -184.5
+    ]
+   ]
+  ],
+  "waveNodes43_why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/kb2c/card.md, THE ASH FLOOR, ride; rebuilt from the blank rect): wave 1 (the burrower's first) on the shipped mid-room cluster, 17 m from the door (spawn31); waves 2-3 add the far floor (off the hearth and its stair) and wave 2 the hearth's top (the husks come down at you)",
+  "proofs": [
+   {
+    "kind": "walk",
+    "points": [
+     [
+      -2,
+      0,
+      -168
+     ],
+     [
+      -1.5,
+      0,
+      -173
+     ],
+     [
+      1.5,
+      0,
+      -180
+     ],
+     [
+      0.2,
+      0,
+      -183
+     ],
+     [
+      0.2,
+      0,
+      -185.5
+     ],
+     [
+      -4,
+      0,
+      -185.5
+     ],
+     [
+      -4,
+      0,
+      -190.5
+     ],
+     [
+      0,
+      0,
+      -191.5
+     ]
+    ]
+   },
+   {
+    "kind": "walk",
+    "points": [
+     [
+      -4,
+      0,
+      -187.5
+     ],
+     [
+      5,
+      4,
+      -187.5
+     ],
+     [
+      7,
+      4,
+      -189.5
+     ]
+    ]
+   },
+   {
+    "kind": "walk",
+    "points": [
+     [
+      -6,
+      0,
+      -184
+     ],
+     [
+      -6,
+      2.5,
+      -178
+     ],
+     [
+      -8,
+      2.5,
+      -177
+     ]
+    ]
+   },
+   {
+    "kind": "walk",
+    "points": [
+     [
+      6.5,
+      0,
+      -168
+     ],
+     [
+      6.5,
+      0,
+      -173.5
+     ]
+    ]
+   }
+  ],
+  "frames36": {
+   "mid": [
+    -1,
+    0,
+    -172,
+    0,
+    0.05
+   ],
+   "exit": [
+    7,
+    4,
+    -186,
+    160,
+    -0.25
+   ]
+  },
+  "frames52": {
+   "_why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/kb2c/card.md, THE ASH FLOOR, ride; rebuilt from the blank rect): the room frames: the door just crossed (the ash, the catwalk, the cooling wall), the fight from the catwalk, the hearth's top",
+   "entry": [
+    -1,
+    0,
+    -166,
+    0,
+    0.04
+   ],
+   "mid": [
+    -6,
+    2.5,
+    -176.5,
+    -30,
+    -0.05
+   ],
+   "high": [
+    7,
+    4,
+    -187,
+    160,
+    -0.25
+   ]
+  },
+  "kiln57_why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/kb2c/card.md, THE ASH FLOOR, ride; rebuilt from the blank rect): the slot DE rebuilt: 18 x 30 x 12 m, two planes (2.5 / 4 m), two ride walls, the burrow-safe iron. Before: NIGHT57 L (Tools/night/gen-n57-kiln.cjs; docs/ROOMS.md, Level 3 as n57-kiln, kb2c THE CLINKER BRIDGES): built from scratch (no n52 piece): 18 x 30 x 12 m, three planes (0 / 1.5 / 4.5 m), two bridges across the ash, the cooling wall (a 17 m ride), the crane mast (the foothold), four iron plates, the ash vent; the burrower's lesson cards (kiln43, by room id) kept",
+  "bot43": false,
+  "verb65": "ride",
+  "line65": [
+   [
+    7.8,
+    0,
+    -168.5
+   ],
+   [
+    7.8,
+    2,
+    -175
+   ],
+   [
+    7.8,
+    2,
+    -182
+   ],
+   [
+    7,
+    4,
+    -186
+   ]
+  ],
+  "line65_why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/kb2c/card.md, THE ASH FLOOR, ride; rebuilt from the blank rect): the cooling wall's ride: along its west face 0.6 m out from the door's corner to its end over the hearth",
+  "card65": "Research/2026-10-26-wave71/R/kb2c/card.md"
+ },
+ "boxes": [
+  {
+   "zone": "kb2c",
+   "kind": "wall",
+   "min": [
+    8.4,
+    0,
+    -184
+   ],
+   "max": [
+    9,
+    12,
+    -164.5
+   ],
+   "job": "verb it celebrates: THE COOLING WALL (ride over the burrower's ash onto the hearth)",
+   "why": "NIGHT71 R r5 (Research/2026-10-26-wave71/R/kb2c/card.md; the verbs37 row 9 return): z -167 -> -164.5 (19.5 m), on to the north corner: the face no longer stops 2.5 m short with the room wall 0.6 m behind it (the reel's ride ended 'away' at 1.10 s). NIGHT71 R r1 (Research/2026-10-26-wave71/R/kb2c/card.md, THE ASH FLOOR, ride; rebuilt from the blank rect): THE COOLING WALL (ride, cyan, 19.5 m on the east wall, to the roof): ride it down the east lane off the ash and onto THE HEARTH at its end; on foot the hearth is the long way round (its stair starts at the far west)",
+   "note": "THE COOLING WALL (ride, cyan, 17 m on the east wall, to the roof)",
+   "ride": true,
+   "ride36": {
+    "face": "W",
+    "planeX": 8.4,
+    "lz": [
+     0,
+     19.5
+    ]
+   }
+  },
+  {
+   "zone": "kb2c",
+   "kind": "deck",
+   "min": [
+    5,
+    0,
+    -191
+   ],
+   "max": [
+    9,
+    4,
+    -184
+   ],
+   "job": "molecule: THE HEARTH (the high tier, the cooling wall's landing)",
+   "why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/kb2c/card.md, THE ASH FLOOR, ride; rebuilt from the blank rect): THE HEARTH (4 m, 4 x 7 m in the far east corner): the cooling wall's landing and the stand over the exit; the burrower cannot reach you there; the health on it; the walkers come up its stair (no safe ledge)",
+   "note": "THE HEARTH (4 m, 4 x 7 m in the far east corner)"
+  },
+  {
+   "zone": "kb2c",
+   "kind": "deck",
+   "min": [
+    -9,
+    0,
+    -178.5
+   ],
+   "max": [
+    -2,
+    2.5,
+    -175.5
+   ],
+   "job": "spatial law: THE CATWALK (the mid tier off the ash)",
+   "why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/kb2c/card.md, THE ASH FLOOR, ride; rebuilt from the blank rect): THE CATWALK (2.5 m, 7 x 3 m off the west wall across half the room): burrow-safe high ground mid-room, the flue wall's landing; the swarmers come up its stair after you",
+   "note": "THE CATWALK (2.5 m, 7 x 3 m off the west wall across half the room)"
+  },
+  {
+   "zone": "kb2c",
+   "kind": "wall",
+   "min": [
+    -9,
+    0,
+    -191
+   ],
+   "max": [
+    -8.4,
+    12,
+    -178.5
+   ],
+   "job": "verb it celebrates: THE FLUE WALL (ride up the west side onto the catwalk)",
+   "why": "NIGHT71 R r2 (Research/2026-10-26-wave71/R/kb2c/card.md): to the catwalk's south face (z -180 -> -178.5, 12.5 m): the ride ends where the catwalk begins, so it hands you onto it. NIGHT71 R r1 (Research/2026-10-26-wave71/R/kb2c/card.md, THE ASH FLOOR, ride; rebuilt from the blank rect): THE FLUE WALL (ride, cyan, 11 m on the west wall, to the roof): from the far west floor ride north off the ash and onto THE CATWALK's west end",
+   "note": "THE FLUE WALL (ride, cyan, 11 m on the west wall, to the roof)",
+   "ride": true,
+   "ride36": {
+    "face": "E",
+    "planeX": -8.4,
+    "lz": [
+     2.5,
+     15
+    ]
+   }
+  },
+  {
+   "zone": "kb2c",
+   "kind": "hull",
+   "min": [
+    -5.5,
+    0,
+    -171
+   ],
+   "max": [
+    -3,
+    12,
+    -168.5
+   ],
+   "job": "30 s problem: THE BELLOWS HOUSING (the entry's foothold, R5)",
+   "why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/kb2c/card.md, THE ASH FLOOR, ride; rebuilt from the blank rect): THE BELLOWS HOUSING (floor to roof, 2.5 x 2.5 m, 4.5-7.5 m in, west of the door's axis): the entry's foothold of cover (R5) and the vista's flank onto wave 1",
+   "note": "THE BELLOWS HOUSING (floor to roof, 2.5 x 2.5 m, 4.5-7.5 m in, west of the door's axis)"
+  },
+  {
+   "zone": "kb2c",
+   "kind": "deck",
+   "min": [
+    -8.5,
+    0,
+    -190
+   ],
+   "max": [
+    -6,
+    0.9,
+    -187.5
+   ],
+   "job": "spatial law: an iron plate on the ash (burrow-safe)",
+   "why": "NIGHT74 S kb2c r6 (Research/2026-10-27-wave74/S/card-kb2c.md): the plate 0.4 -> 0.9 m: a raised iron block the player hops onto (walkers climb 0.9 m), rimmed, seen from the door; the burrow rule is the same. NIGHT71 R r1 (Research/2026-10-26-wave71/R/kb2c/card.md, THE ASH FLOOR, ride; rebuilt from the blank rect): AN IRON PLATE (the far west, 0.4 m): burrow-safe ground at the flue wall's foot: the hop you make when the ash glows",
+   "note": "AN IRON PLATE (the far west, 0.9 m)",
+   "burrowSafe43": true
+  },
+  {
+   "zone": "kb2c",
+   "kind": "deck",
+   "min": [
+    -3,
+    0,
+    -183.5
+   ],
+   "max": [
+    -0.5,
+    0.9,
+    -181
+   ],
+   "job": "spatial law: an iron plate on the ash (burrow-safe)",
+   "why": "NIGHT74 S kb2c r6 (Research/2026-10-27-wave74/S/card-kb2c.md): the plate 0.4 -> 0.9 m: a raised iron block the player hops onto (walkers climb 0.9 m), rimmed, seen from the door; the burrow rule is the same. NIGHT71 R r1 (Research/2026-10-26-wave71/R/kb2c/card.md, THE ASH FLOOR, ride; rebuilt from the blank rect): AN IRON PLATE (mid-room, 0.4 m): burrow-safe ground beside wave 1's cluster: the hop when the burrower hunts you",
+   "note": "AN IRON PLATE (mid-room, 0.9 m)",
+   "burrowSafe43": true
+  },
+  {
+   "zone": "kb2c",
+   "kind": "deck",
+   "min": [
+    3.5,
+    0,
+    -175
+   ],
+   "max": [
+    6,
+    0.9,
+    -172.5
+   ],
+   "job": "spatial law: an iron plate on the ash (burrow-safe)",
+   "why": "NIGHT74 S kb2c r6 (Research/2026-10-27-wave74/S/card-kb2c.md): the plate 0.4 -> 0.9 m: a raised iron block the player hops onto (walkers climb 0.9 m), rimmed, seen from the door; the burrow rule is the same. NIGHT71 R r4 (Research/2026-10-26-wave71/R/kb2c/card.md): x 5.5..8 -> 3.5..6, z -175..-172.5: off the cooling wall's run line (the ride pilot's 14 m clear run) and off the east lane's walk proof. NIGHT71 R r1 (Research/2026-10-26-wave71/R/kb2c/card.md, THE ASH FLOOR, ride; rebuilt from the blank rect): AN IRON PLATE (the east lane, 0.4 m): burrow-safe ground at the cooling wall's start: the ride's run-up off the ash",
+   "note": "AN IRON PLATE (the east lane, 0.9 m)",
+   "burrowSafe43": true
+  },
+  {
+   "zone": "kb2c",
+   "kind": "hull",
+   "min": [
+    -6,
+    0,
+    -164.5
+   ],
+   "max": [
+    -2,
+    12,
+    -163.5
+   ],
+   "job": "molecule: the entrance gated (the door's west liner)",
+   "why": "the DOOR's west LINER (1 m thick, noride): no ride across the doorway: the fight goes into the room",
+   "note": "the DOOR's west LINER (1 m thick, noride): no ride across the doorway: the fight goes into the room",
+   "noride": true
+  },
+  {
+   "zone": "kb2c",
+   "kind": "hull",
+   "min": [
+    2,
+    0,
+    -164.5
+   ],
+   "max": [
+    6,
+    12,
+    -163.5
+   ],
+   "job": "molecule: the entrance gated (the door's east liner)",
+   "why": "the DOOR's east LINER (1 m thick, noride): as the west's: the room's ride is the cooling wall",
+   "note": "the DOOR's east LINER (1 m thick, noride): as the west's: the room's ride is the cooling wall",
+   "noride": true
+  },
+  {
+   "zone": "kb2c",
+   "kind": "hull",
+   "min": [
+    0.5,
+    0,
+    -176
+   ],
+   "max": [
+    2.5,
+    2.2,
+    -174
+   ],
+   "job": "cover: THE KILN HOOD (a 2.2 m stack mid-room: the burrower fight's pillar to circle; it breaks the door-to-hearth line)",
+   "why": "NIGHT74 S kb2c r6 (Research/2026-10-27-wave74/S/card-kb2c.md): a free-standing 2 x 2 x 2.2 m stack 7 m beyond the door: high cover (1.75 m or more) to circle while the ash glows, west of the east plate (x 3.5) with a 1 m lane between, clear of the entry's sight line to wave 1's east node and of the verbs37 pick's rays to the cooling wall.",
+   "note": "THE KILN HOOD (2.2 m, 2 x 2 m, mid-room)"
+  }
+ ],
+ "ramps": [
+  {
+   "zone": "kb2c",
+   "from": [
+    -3,
+    -187.5
+   ],
+   "to": [
+    5,
+    -187.5
+   ],
+   "width": 3,
+   "rise": 4,
+   "job": "molecule: the walkers' climb to the hearth",
+   "why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/kb2c/card.md, THE ASH FLOOR, ride; rebuilt from the blank rect): THE HEARTH STAIR (4 m over 8 m, from the far floor's west side east onto the hearth): the walkers' climb (GG: a route enemies can climb); for a player the long way round, the ride is the short one",
+   "note": "THE HEARTH STAIR"
+  },
+  {
+   "zone": "kb2c",
+   "from": [
+    -6,
+    -183
+   ],
+   "to": [
+    -6,
+    -178.5
+   ],
+   "width": 3,
+   "rise": 2.5,
+   "job": "molecule: the walkers' climb to the catwalk",
+   "why": "NIGHT71 R r2 (Research/2026-10-26-wave71/R/kb2c/card.md): THE CATWALK STAIR (2.5 m over 4.5 m, from the far floor north onto the catwalk's south edge, x -7.5..-4.5): the swarmers' climb after you (GG: a route enemies can climb); r1's east-west stair walled the room across",
+   "note": "THE CATWALK STAIR"
+  }
+ ],
+ "pads": [
+  {
+   "zone": "kb2c",
+   "at": [
+    2.5,
+    0,
+    -184.5
+   ],
+   "target": [
+    6.5,
+    4,
+    -188
+   ],
+   "apexAbove": 2,
+   "job": "molecule: the upward line, the ash vent",
+   "why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/kb2c/card.md, THE ASH FLOOR, ride; rebuilt from the blank rect): THE ASH VENT (a jump pad on the ash beside the hearth stair's foot): the worm's heat throws you out of the burrower's ash onto THE HEARTH (4 m)",
+   "note": "the ash vent"
+  },
+  {
+   "zone": "kb2c",
+   "at": [
+    -3.5,
+    2.5,
+    -177
+   ],
+   "target": [
+    6,
+    4,
+    -186.5
+   ],
+   "apexAbove": 2,
+   "job": "molecule: the upward line, the draught",
+   "why": "NIGHT71 R r2 (Research/2026-10-26-wave71/R/kb2c/card.md): THE DRAUGHT (a jump pad on the catwalk's east end): from the mid tier over the ash onto THE HEARTH (4 m): the high road between the two decks",
+   "note": "the draught"
+  },
+  {
+   "zone": "kb2c",
+   "at": [
+    7.5,
+    4,
+    -186.5
+   ],
+   "target": [
+    -5.5,
+    2.5,
+    -177
+   ],
+   "apexAbove": 2,
+   "job": "molecule: the upward line, the chimney",
+   "why": "NIGHT71 R r3 (Research/2026-10-26-wave71/R/kb2c/card.md): THE CHIMNEY (a jump pad on the hearth's north end): from the high tier back over the ash onto THE CATWALK (2.5 m): the draught's return, so the two decks are one high road both ways",
+   "note": "the chimney"
+  }
+ ],
+ "grapple": [],
+ "pits": [],
+ "tunnels": [],
+ "lights": [
+  {
+   "id": "kb2c-L1",
+   "room": "kb2c",
+   "kind": "ceiling",
+   "at": [
+    -2,
+    11.95,
+    -169
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 10,
+   "intensity": 0.9
+  },
+  {
+   "id": "kb2c-L2",
+   "room": "kb2c",
+   "kind": "ceiling",
+   "at": [
+    0,
+    11.95,
+    -180
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    6,
+    4,
+    0.1
+   ],
+   "color": "white",
+   "range": 11,
+   "intensity": 1.1
+  },
+  {
+   "id": "kb2c-L3",
+   "room": "kb2c",
+   "kind": "ceiling",
+   "at": [
+    0,
+    11.95,
+    -189
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 10,
+   "intensity": 1
+  },
+  {
+   "id": "kb2c-L4",
+   "room": "kb2c",
+   "kind": "pool",
+   "at": [
+    7,
+    4.025,
+    -187.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2,
+    2,
+    0.05
+   ],
+   "color": "white",
+   "range": 8,
+   "intensity": 1
+  },
+  {
+   "id": "kb2c-L5",
+   "room": "kb2c",
+   "kind": "pool",
+   "at": [
+    -5.5,
+    2.525,
+    -176.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2,
+    2,
+    0.05
+   ],
+   "color": "white",
+   "range": 7,
+   "intensity": 0.9
+  },
+  {
+   "id": "kb2c-L6",
+   "room": "kb2c",
+   "kind": "pool",
+   "at": [
+    -1.75,
+    0.925,
+    -182.25
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    1.6,
+    1.6,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 5,
+   "intensity": 1,
+   "marks": "box(-3,0,-183.5..-0.5,0.9,-181)"
+  },
+  {
+   "id": "kb2c-L7",
+   "room": "kb2c",
+   "kind": "pool",
+   "at": [
+    0,
+    0.025,
+    -191.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    1.8,
+    1.8,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 8,
+   "intensity": 1.7
+  }
+ ],
+ "props": [
+  {
+   "id": "kb2c-P1",
+   "room": "kb2c",
+   "kind": "healthPickup",
+   "at": [
+    7.5,
+    4.9,
+    -190
+   ],
+   "size": [
+    0.6,
+    0.6,
+    0.6
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "pickup": true,
+   "job": "reward",
+   "card57": "the reward where the verb lands",
+   "why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/kb2c/card.md, THE ASH FLOOR, ride; rebuilt from the blank rect): the health on THE HEARTH: the cooling wall's ride pays (pattern D inside B)"
+  }
+ ],
+ "drop": {}
+}

@@ -1,0 +1,38 @@
+# command: node Tools/night/n65-air.cjs C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/a5/base/foundry.plan.json a5
+# sha: e9837ffc2; time: 2026-10-27 23:34:13
+n65-air n65-foundry a5 "1.5 CRUCIBLE" (C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/a5/base/foundry.plan.json):
+  numbers: jump v0 8.33 m/s, g 23.15 m/s2 (fall x1.35), double v0 7.50, dash 24 m/s x 0.25 s = 6.0 m, dash-jump v0 6.67 with g x0.5 for 0.5 s at 24 m/s, run-up 8 m/s, wall jump out 5 up 8.33 (wallfling42 on), ride 9.20 m/s, jump-off out 8 +1 up 7.30 (ride39 on), capsule 0.35 m; a ride held 2.5 m over its base
+  air pieces 7:
+    D1   deck  top 5.0 m over [-10.0, -144.0, -4.0, -128.0] | perch: THE CHARGING GANTRY (deck 5 m, card: Mol
+    D2   deck  top 5.0 m over [-4.0, -132.0, -1.0, -128.5] | perch: THE CHARGING BRIDGE (deck 5 m, new: EXT5
+    D3   deck  top 2.5 m over [7.0, -144.0, 10.0, -131.0] | perch: THE SKIM LEDGE (deck 2.5 m, card: Molecu
+    R4   ride  face x = 9.4 (-x), -131.0..-113.0 (18.0 m), band 0.0..7.0, held at 2.5 | ride: THE CRANE RAIL (card: Verb it celebrates
+    P5   pad   at (3.5, 0.0, -130.0) -> (-2.5, 5.0, -130.2) (on the floor) | pad
+    P6   pad   at (8.0, 2.5, -133.5) -> (-6.5, 5.0, -132.0) | pad
+    P7   pad   at (-7.0, 5.0, -141.0) -> (8.5, 2.5, -141.0) | pad
+  hand-offs 18 (piece -> piece without touching the floor, the easiest move first):
+    D1 -> D2  jump, margin 4.92 m (gap 0.4 m); also jump + double 8.38, dash 10.32, dash-jump 20.65, dash-jump + double 30.85
+    D1 -> D3  dash, margin 1.05 m (gap 11.4 m); also dash-jump 14.05, dash-jump + double 23.45
+    D1 -> R4  dash, margin 0.67 m of height (gap 13.1 m)
+    D1 -> P6  dash, margin 0.55 m (gap 11.9 m); also dash-jump 13.55, dash-jump + double 22.95
+    D1 -> P7  jump, margin 2.42 m (gap 2.9 m); also jump + double 5.88, dash 7.82, dash-jump 18.15, dash-jump + double 28.35
+    D2 -> D1  jump, margin 4.92 m (gap 0.4 m); also jump + double 8.38, dash 10.32, dash-jump 20.65, dash-jump + double 30.85
+    D2 -> D3  jump + double, margin 1.65 m (gap 8.4 m); also dash 4.05, dash-jump 17.05, dash-jump + double 26.45
+    D2 -> R4  jump + double, margin 1.98 m of height (gap 10.1 m); also dash 1.10
+    D2 -> P6  jump + double, margin 1.09 m (gap 8.9 m); also dash 3.49, dash-jump 16.49, dash-jump + double 25.89
+    D2 -> P7  dash, margin 1.46 m (gap 9.2 m); also dash-jump 11.79, dash-jump + double 21.99
+    D3 -> D1  dash-jump + double, margin 13.65 m (gap 11.4 m)
+    D3 -> D2  dash-jump + double, margin 16.65 m (gap 8.4 m)
+    D3 -> P6  jump, margin 4.42 m (gap 0.9 m); also jump + double 7.88, dash 9.82, dash-jump 20.15, dash-jump + double 30.35
+    R4 -> D3  jump-off, margin 4.63 m (gap 0.4 m); also jump-off + double 8.45, wall jump 2.94, wall jump + double 5.11, dash 10.32
+    R4 -> P6  jump-off, margin 4.72 m (gap 2.5 m); also jump-off + double 10.30, wall jump 4.33, wall jump + double 8.86, dash 8.12
+    P5 -> D2  pad (gap 6.0 m)
+    P6 -> D1  pad (gap 14.6 m)
+    D3 -> P6  walk onto the pad (gap 0.0 m)
+    P7 -> D3  pad (gap 15.5 m)
+    D1 -> P7  walk onto the pad (gap 0.0 m)
+  longest floor-free chain: 7 piece(s): P5 -> D2 -> R4 -> D3 -> P6 -> D1 -> P7 (opened by a floor pad)
+  note: a dash-jump keeps the dash's 24 m/s for its whole flight (Mover.cs:1080; air accel never slows a body: MovementMath.Accelerate), so its reach is long; no obstacle, line-of-sight or air-control test
+  flight pieces (rides + pads) on one floor-free path: 4 of 4: P5 -> D2 -> R4 -> D3 -> P6 -> D1 -> P7; without the dash-jump: 4: P5 -> D2 -> R4 -> D3 -> P6 -> D1 -> P7
+  without the dash-jump: hand-offs 16, longest chain 7: P5 -> D2 -> R4 -> D3 -> P6 -> D1 -> P7, dead ends 0/4
+n65-air a5: air pieces 7 (rides 1, decks 3, ledges 0, pads 3), hand-offs 18, longest floor-free chain 7, dead ends 0/4 | without the dash-jump: hand-offs 16, chain 7, dead ends 0/4 | flights handed on: 4 of 4 on one path (4 without the dash-jump)

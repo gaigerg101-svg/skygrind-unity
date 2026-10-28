@@ -1,0 +1,11 @@
+# command: node Tools/night/n70-area.cjs --level spire --dir C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/spire-play  v5
+# sha: d3bf2c47e; time: 2026-10-27 23:33:36
+n70-area: room v5; plan C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/spire-play/spire.plan.json, level C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/spire-play/n67-spire.json (the round's folder C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/spire-play); touches none (P4's (a) / (c) not read); card none
+OPEN  PASS largest open square 8.5 m (x -16.5..-8.0, z -57.0..-48.5; 13 pieces on a 24.0 x 26.0 m rect; 12 m or less passes)
+P1    N/A  the last wave (swarmer swarmer husk husk) has no ranged enemy (spitter / drone)
+P4    FAIL 2 / 5 standing solids >= 1.75 m do a job ((a) touched NOT READ, (b) sight 2, (c) launch kill NOT READ); no job: box(-16,0,-43..-12,2.5,-39) line: the stair hall's west CH; box(-8,0,-43..-4,2.5,-39) line: the stair hall's east CH; box(-8,0,-53..-7,12,-48) line: THE NEWEL; no --touches: (a) / (c) not read
+P5    N/A  no line65 in the row
+P9    FAIL 1 / 2 planes with 2 climb tops >= 8 m apart: box(-22,0,-65..-15,5,-58) 7.0 x 7.0 m at 5.0 m: 7 climb top(s), farthest apart 2.0 m (NO); box(-8,0,-57..2,2.5,-47) 10.0 x 10.0 m at 2.5 m: 14 climb top(s), farthest apart 9.2 m
+P11   N/A  the card names no TOWER / GALLERY / SPLIT LEVEL (no card)
+P17   FAIL 1 / 2 ride walls 4 m tall and 8 m long (short: box(-8,0,-53..-7,12,-48) 12.0 x 5.0 m); 0 non-ride wall(s) in that band; the strip = ride: true (ride36 faces 1)
+n70-area: FAIL v5 (1/4)

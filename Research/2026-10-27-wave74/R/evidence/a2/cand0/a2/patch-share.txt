@@ -1,0 +1,2 @@
+# command: node Tools/night/n70-patch-share.cjs --level foundry --room Design/levels/n65/rooms/a2.json a2
+n70-patch-share: ERROR a2: ENOENT: no such file or directory, open 'C:\Users\gaige\dev\SKYGRIND-unity\.claude\worktrees\n74-R\Design\levels\n67\foundry\rooms-base\a2.json'

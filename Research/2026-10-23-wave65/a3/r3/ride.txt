@@ -1,0 +1,3 @@
+# command: dotnet Temp/SimHarness/bin/Release/net10.0/SimHarness.dll n53ridekill ride --level Design/levels/n65-foundry.json --room a3
+# sha: d86dd1ca; time: 2026-10-23 15:14:31
+n53ridekill ride: RED no ride wall within 24 m of a3's spawn (0, 0, -59.5)

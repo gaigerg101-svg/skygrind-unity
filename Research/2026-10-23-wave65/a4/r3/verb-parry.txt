@@ -1,0 +1,6 @@
+# command: bash Tools/night/n65-verbs.sh parry Design/levels/n65-foundry.json a4
+# sha: e252b885; time: 2026-10-23 17:06:55
+n65verb parry: level n65-foundry (Design/levels/n65-foundry.json), room a4 "1.4 THE SPITTING GALLERY", seed 1; pose (-3.0, 1.5, -94.0) yaw -0.0 from line65[0]; off switch none
+  spitter #2 at (3.3, 0.0, -102.2), 10.3 m off; its volleys 3, the closest glob 1.8 m (reach 2.0 m), punches 1, parry36 events 1, parry36 on
+n65verb parry: GREEN | room a4 | parried yes (1 glob(s)), the return's hits 2 (bodies 1), spitter killed (orb) | parry36 return bursts 1 (hits 1, kills 1; a second victim no) | pose line65[0]
+n65-verbs parry on Design/levels/n65-foundry.json (a4): GREEN 1, RED 0

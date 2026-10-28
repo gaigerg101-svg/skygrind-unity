@@ -1,0 +1,63 @@
+=== n65-foundry: HEAD (all old) vs now
+top: collision
+top: spawns
+top: pads
+top: navGrid
+data.boxes: 201 vs 194; only in A 28, only in B 21
+data.wedges: 10 vs 15; only in A 2, only in B 7
+data.pads: 7 vs 8; only in A 2, only in B 3
+data.spawns differs
+data.zones: 21 vs 21; only in A 2, only in B 2
+top: lava
+campaign.pits: only in A 2, only in B 0 {"A":["{\"zone\":\"a8\",\"rect\":[-7,-360,7,-345],\"floorY\":-4,\"job\":\"hazard\",\"why\":\"the PIERCE pit (4 m deep, dry; NIGHT43 ","{\"zone\":\"b1\",\"rect\":[-9.4,-165,9.4,-159],\"floorY
+campaign.teach35: only in A 0, only in B 1 {"A":[],"B":["{\"id\":\"l1.wallrun\",\"room\":\"a3\",\"rect\":[-9,-84,-6,-60],\"minY\":0.3}"]}
+campaign.lights: only in A 11, only in B 13
+campaign.props: only in A 3, only in B 13
+campaign.boxes: only in A 18, only in B 20
+campaign.rooms a3: roof
+campaign.rooms b1: name, verb36, spawn, proofs, frames36, frames52, nodes, highNodes, waveNodes43, waveNodes43_why, bridges45, bridges45_why, card52_why, ext53_why, waves_why, frames65, line65_why, line65, card65, bot43, verb65
+campaign.rooms a8: name, verb36, exit, lessons, lessons31, routeVia, proofs, frames36, nodes, reachFrom, waves, afterLesson43_why, foundry43_why, foundry46_why, frames65, line65, card65, bot43, verb65, standIns, standIns31, standI
+=== n67-iceline: HEAD (all old) vs now
+top: collision
+top: spawns
+top: pads
+top: navGrid
+data.boxes: 192 vs 183; only in A 16, only in B 7
+data.wedges: 15 vs 15; only in A 2, only in B 2
+data.pads: 15 vs 15; only in A 3, only in B 3
+data.spawns differs
+data.zones: 19 vs 19; only in A 1, only in B 1
+campaign.pits: only in A 1, only in B 0 {"A":["{\"zone\":\"g4\",\"rect\":[-12,-112,12,-106],\"floorY\":-1,\"job\":\"hazard\",\"why\":\"THE CANAL (6 m across, a dry channel "],"B":[]}
+campaign.surfaces: only in A 1, only in B 1 {"A":["{\"kind\":\"ice\",\"rect\":[-12,-112,12,-106],\"minY\":-1.5,\"maxY\":-0.5,\"room\":\"g4\",\"note\":\"THE CANAL's frozen floor ("],"B":["{\"kind\":\"ice\",\"rect\":[-6,-113,4.5,-10
+campaign.lights: only in A 7, only in B 8
+campaign.props: only in A 1, only in B 1 {"A":["{\"id\":\"g4-P1\",\"room\":\"g4\",\"kind\":\"healthPickup\",\"at\":[0,0.9,-109],\"size\":[0.6,0.6,0.6],\"yawDeg\":0,\"collider\":f"],"B":["{\"id\":\"g4-P1\",\"room\":\"g4\",\"kind\":
+campaign.boxes: only in A 13, only in B 8
+campaign.rooms g4: name, verb36, proofs, frames36, nodes, nodes_why, highNodes, highNodes_why, frames52, bot43, verb65, line65, line65_why, card65
+=== n67-kiln: HEAD (all old) vs now
+top: collision
+top: spawns
+top: pads
+top: navGrid
+data.boxes: 179 vs 181; only in A 33, only in B 35
+data.wedges: 11 vs 11; only in A 5, only in B 5
+data.pads: 8 vs 8; only in A 5, only in B 5
+data.spawns differs
+top: lava
+campaign.pits: only in A 2, only in B 4
+campaign.lights: only in A 15, only in B 12
+campaign.props: only in A 2, only in B 2 {"A":["{\"id\":\"kb3-P1\",\"room\":\"kb3\",\"kind\":\"healthPickup\",\"at\":[0,0.9,-212],\"size\":[0.6,0.6,0.6],\"yawDeg\":0,\"collider\"","{\"id\":\"kb3c-P1\",\"room\":\"kb3c\",\"kind\":\"
+campaign.boxes: only in A 24, only in B 21
+campaign.rooms kb2: roles43, nodes, highNodes, nodes_why, waveNodes43, waveNodes43_why, lessons, lessons31, proofs, frames36, frames52, bot43, verb65, line65, card65, waves_why
+campaign.rooms kb3: verb36, nodes, highNodes, nodes_why, waveNodes43, waveNodes43_why, proofs, frames36, frames52, bot43, verb65, line65, line65_why, card65, kiln70_why
+campaign.rooms kb3c: waves, waves_why, roles43, nodes, highNodes, nodes_why, waveNodes43, waveNodes43_why, rims36, proofs, frames36, bot43, verb65, line65, card65, fallReturn43
+campaign.rooms kb3d: waves, roles43, nodes, highNodes, nodes_why, waveNodes43, waveNodes43_why, rims36, proofs, waves_why, bot43, verb65, line65, card65, fallReturn43
+=== n67-spire: HEAD (all old) vs now
+top: collision
+top: spawns
+top: navGrid
+data.boxes: 199 vs 204; only in A 1, only in B 6
+data.wedges: 10 vs 11; only in A 0, only in B 1
+data.spawns differs
+campaign.pits: only in A 0, only in B 2 {"A":[],"B":["{\"zone\":\"v6\",\"rect\":[-10.5,-81,-8,-79.5],\"floorY\":-0.5,\"job\":\"hazard: THE BELL GUTTER, west (the launch's land","{\"zone\":\"v6\",\"rect\":[-5,-81,-2.5,-79.5],\"floo
+campaign.boxes: only in A 1, only in B 1 {"A":["{\"zone\":\"v6\",\"kind\":\"hull\",\"min\":[-23,6,-101],\"max\":[-13,16,-100],\"job\":\"cover\",\"why\":\"THE ORGAN (the landmark"],"B":["{\"zone\":\"v6\",\"kind\":\"wall\",\"min\":[
+campaign.rooms v6: proofs, nodes, waveNodes43, bot43, verb65, line65, card65, nodes_why

@@ -1,0 +1,11 @@
+# command: node Tools/night/n70-area.cjs --level foundry --dir C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/a5/cand1 --touches Research/2026-10-27-wave74/R/evidence/a5/cand1/a5/skip.txt a5
+# sha: e9837ffc2 (+ the room file as in the tree); time: 2026-10-27 23:47:15
+n70-area: room a5; plan C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/a5/cand1/foundry.plan.json, level C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/a5/cand1/n65-foundry.json (the round's folder C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/a5/cand1); touches Research/2026-10-27-wave74/R/evidence/a5/cand1/a5/skip.txt (15 touch rows, 15 launch kills); card none
+OPEN  PASS largest open square 9.0 m (x -2.0..7.0, z -122.0..-113.0; 18 pieces on a 20.0 x 32.0 m rect; 12 m or less passes)
+P1    FAIL the last wave's 1 ranged of 3; its spawn set (waveNodes43) 0 / 4 nodes 3.5 m or more over the floor (y 0.0; each enemy takes a random node: all must be high)
+P4    PASS 6 / 6 standing solids >= 1.75 m do a job ((a) touched 6, (b) sight 2, (c) launch kill 5)
+P5    PASS walk line in a ranged spawn's sight at 6-24 m 72.4 % (>= 50 %), line65 97.1 % (<= walk - 30 points: no); line65's nearest enemy spawn 0.0 m (<= 6: yes); 4 ranged spawns
+P9    FAIL 0 / 1 planes with 2 climb tops >= 8 m apart: box(2.5,0,-144..10,2.5,-138) 7.5 x 6.0 m at 2.5 m: 7 climb top(s), farthest apart 2.0 m (NO)
+P11   N/A  the card names no TOWER / GALLERY / SPLIT LEVEL (no card)
+P17   PASS 1 / 1 ride walls 4 m tall and 8 m long; 0 non-ride wall(s) in that band; the strip = ride: true (ride36 faces 1)
+n70-area: FAIL a5 (4/6)

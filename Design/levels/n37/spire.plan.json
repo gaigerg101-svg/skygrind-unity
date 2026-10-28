@@ -1,0 +1,13312 @@
+{
+ "_why": "NIGHT37 builder C (design.n37.crown37 swaps n33-spire for this file while the row is on): Tools/night/gen-n37-spire-boss.cjs. Rooms v1-v8 are level 5's rooms copied as they are from Design/levels/n33/spire.plan.json; v9 FALLING STONES and v10 THE RING rehearse the jump-dash (BOSSES.md rule 9); v11 THE SPIRE is THE CROWN's descent (BOSSES.md 'L5 THE CROWN'). Source of the copied rooms: NIGHT33 builder R (design.n33.kit33 swaps n32-spire for this file): Tools/night/gen-n33-spire.cjs = gen-n32-spire.cjs. LEVEL 5, THE SPIRE (NIGHT32, builder F, DESIGN32.md card F, D-6; GG 2026-10-10: '",
+ "id": "n37-spire",
+ "name": "LEVEL 5 THE SPIRE",
+ "n29": true,
+ "n30": true,
+ "floorSize": 670,
+ "killPlaneY": -95,
+ "wallHeight": 14,
+ "rank": {
+  "time": [
+   209,
+   322,
+   483,
+   725
+  ],
+  "kills": [
+   100,
+   85,
+   65,
+   40
+  ],
+  "style": [
+   2500,
+   1500,
+   700,
+   250
+  ],
+  "_why": "Unity-only (builder F): S/A/B/C cuts: time in seconds = (the spire32 pilot's summed room medians + the boss band 60 s) x [1.3, 2, 3, 4.5] (Tools/night/n32-spire-pars.json); kills = percent of the waves' enemies, style = points (NOT calibrated)."
+ },
+ "rooms": [
+  {
+   "id": "v1",
+   "name": "5.1 THRESHOLD",
+   "kind": "link",
+   "rect": [
+    -21,
+    -8,
+    5,
+    0
+   ],
+   "height": 6,
+   "roof": true,
+   "par": 2.3,
+   "spawn": {
+    "at": [
+     2,
+     0,
+     -4
+    ],
+    "yawDeg": 90
+   },
+   "exit": [
+    -18,
+    0,
+    -5.5
+   ],
+   "lessons": [
+    {
+     "kind": "reached",
+     "rect": [
+      -21,
+      -8,
+      -15,
+      0
+     ],
+     "minY": -0.5,
+     "prompt": "THE SPIRE. ALL FOUR GUNS.",
+     "promptPad": "THE SPIRE. ALL FOUR GUNS."
+    }
+   ],
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       2,
+       0,
+       -4
+      ],
+      [
+       -7,
+       0,
+       -4
+      ],
+      [
+       -18,
+       0,
+       -4
+      ],
+      [
+       -18,
+       0,
+       -5.5
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "v2",
+   "name": "5.2 FOUNDRY FLOOR",
+   "kind": "room",
+   "rect": [
+    -27,
+    -34,
+    -9,
+    -12
+   ],
+   "height": 10,
+   "roof": true,
+   "par": 16.9,
+   "spawn": {
+    "at": [
+     -18,
+     0,
+     -16
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    -16,
+    0,
+    -31.5
+   ],
+   "waves": [
+    [
+     "husk",
+     "husk",
+     "husk",
+     "husk"
+    ],
+    [
+     "husk",
+     "husk",
+     "spitter",
+     "spitter"
+    ]
+   ],
+   "lessons": [
+    {
+     "kind": "husksDead",
+     "n": 8,
+     "prompt": "RIDE THE WALL OVER LAVA.",
+     "promptPad": "RIDE THE WALL OVER LAVA."
+    }
+   ],
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -18,
+       0,
+       -16
+      ],
+      [
+       -11.5,
+       0,
+       -16
+      ],
+      [
+       -11.5,
+       0,
+       -27
+      ],
+      [
+       -16,
+       0,
+       -31.5
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -20,
+       0,
+       -15
+      ],
+      [
+       -20,
+       0,
+       -24.5
+      ],
+      [
+       -20.5,
+       2.4,
+       -31.5
+      ]
+     ]
+    },
+    {
+     "kind": "ride",
+     "from": [
+      -25.8,
+      0,
+      -13
+     ],
+     "hazardZ": [
+      -24,
+      -17
+     ],
+     "toZ": -25
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -24,
+       -0.8,
+       -18.5
+      ],
+      [
+       -24,
+       0,
+       -15
+      ]
+     ],
+     "jump": true,
+     "maxSeconds": 10
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -16.5,
+       -0.8,
+       -22.5
+      ],
+      [
+       -16.5,
+       0,
+       -25.5
+      ]
+     ],
+     "jump": true,
+     "maxSeconds": 10
+    }
+   ],
+   "devices33": [
+    {
+     "kind": "platform",
+     "from": [
+      -24,
+      0,
+      -18.5
+     ],
+     "to": [
+      -24,
+      0,
+      -22.5
+     ],
+     "size": [
+      3,
+      0.5,
+      3
+     ],
+     "phase": 0.25,
+     "refuge": [
+      -24,
+      0,
+      -15
+     ],
+     "note": "the west pool ferry: entry floor to north floor under the W wall lane"
+    },
+    {
+     "kind": "fan",
+     "rect": [
+      -26,
+      -29,
+      -24.5,
+      -27.5
+     ],
+     "y": 0,
+     "height": 3,
+     "refuge": [
+      -23,
+      0,
+      -27
+     ],
+     "note": "the deck fan: rise, drift north onto the 2.4 m deck"
+    }
+   ],
+   "arenas33": {
+    "note": "v2 FOUNDRY FLOOR overhauled: a ferry over the west pool, a fan up to the NW deck, a low wall, a landmark plinth",
+    "pieces": 4,
+    "landmark": [
+     -27,
+     -34,
+     -25.5,
+     -32.5
+    ],
+    "landmarkNote": "a foundry crucible on the deck's plinth, lit from below by the west pool"
+   },
+   "nodes": [
+    [
+     -11,
+     0,
+     -15.5
+    ],
+    [
+     -10.5,
+     0,
+     -27
+    ],
+    [
+     -15,
+     0,
+     -30
+    ],
+    [
+     -12,
+     0,
+     -32
+    ]
+   ],
+   "highNodes": [
+    [
+     -24,
+     2.4,
+     -32
+    ],
+    [
+     -21.5,
+     2.4,
+     -32.5
+    ]
+   ]
+  },
+  {
+   "id": "v3",
+   "name": "5.3 ICE GLIDE",
+   "kind": "room",
+   "rect": [
+    -25,
+    -62,
+    -7,
+    -38
+   ],
+   "height": 9,
+   "roof": true,
+   "par": 19.7,
+   "spawn": {
+    "at": [
+     -16,
+     0,
+     -40
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    -13,
+    0,
+    -59.5
+   ],
+   "waves": [
+    [
+     "husk",
+     "husk",
+     "husk",
+     "swarmer",
+     "swarmer",
+     "swarmer"
+    ],
+    [
+     "heavy",
+     "husk",
+     "husk"
+    ]
+   ],
+   "lessons": [
+    {
+     "kind": "husksDead",
+     "n": 9,
+     "prompt": "GLIDE THE ICE. CIRCLE THE LAVA.",
+     "promptPad": "GLIDE THE ICE. CIRCLE THE LAVA."
+    }
+   ],
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -16,
+       0,
+       -40
+      ],
+      [
+       -19.5,
+       0,
+       -46
+      ],
+      [
+       -19.5,
+       0,
+       -55
+      ],
+      [
+       -13,
+       0,
+       -59.5
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -23,
+       0,
+       -39
+      ],
+      [
+       -23,
+       2,
+       -48
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -9,
+       0,
+       -39
+      ],
+      [
+       -9,
+       2,
+       -48
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -16,
+       -0.8,
+       -50.5
+      ],
+      [
+       -16,
+       0,
+       -53.5
+      ]
+     ],
+     "jump": true,
+     "maxSeconds": 10
+    }
+   ],
+   "nodes": [
+    [
+     -16,
+     0,
+     -56
+    ],
+    [
+     -19.5,
+     0,
+     -57.5
+    ],
+    [
+     -12.5,
+     0,
+     -58.5
+    ],
+    [
+     -22,
+     0,
+     -60
+    ]
+   ],
+   "highNodes": [
+    [
+     -23,
+     2,
+     -54
+    ],
+    [
+     -9,
+     2,
+     -55
+    ]
+   ]
+  },
+  {
+   "id": "v4",
+   "name": "5.4 EAST GALLERY",
+   "kind": "link",
+   "rect": [
+    -16,
+    -73,
+    20,
+    -66
+   ],
+   "height": 5,
+   "roof": true,
+   "par": 2.9,
+   "spawn": {
+    "at": [
+     -13,
+     0,
+     -67.5
+    ],
+    "yawDeg": -90
+   },
+   "exit": [
+    15,
+    0,
+    -71.5
+   ],
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -13,
+       0,
+       -67.5
+      ],
+      [
+       -11,
+       0,
+       -67.2
+      ],
+      [
+       7,
+       0,
+       -68.2
+      ],
+      [
+       12.5,
+       0,
+       -68.5
+      ],
+      [
+       15,
+       0,
+       -71.5
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -8.5,
+       0,
+       -67.3
+      ],
+      [
+       -8.5,
+       1.2,
+       -71.5
+      ],
+      [
+       10.5,
+       1.2,
+       -71.7
+      ]
+     ]
+    }
+   ],
+   "devices33": [
+    {
+     "kind": "vent",
+     "rect": [
+      -2,
+      -67.8,
+      -0.5,
+      -66.3
+     ],
+     "y": 0,
+     "phase": 0,
+     "refuge": [
+      -1.25,
+      1.2,
+      -71.5
+     ],
+     "note": "the west lane vent (refuge: the catwalk above)"
+    },
+    {
+     "kind": "vent",
+     "rect": [
+      4.5,
+      -67.8,
+      6,
+      -66.3
+     ],
+     "y": 0,
+     "phase": 0.5,
+     "refuge": [
+      5.25,
+      1.2,
+      -71.5
+     ],
+     "note": "the east lane vent, half a cycle after the west one"
+    }
+   ],
+   "arenas33": {
+    "note": "v4 EAST GALLERY overhauled: a catwalk (1.2 m) over the south lane, two timed vents in the lane, a crate, a shrine plinth",
+    "pieces": 1,
+    "landmark": [
+     1,
+     -73,
+     3,
+     -72
+    ],
+    "landmarkNote": "a dusk shrine or a lantern on the catwalk's plinth, half way down the gallery"
+   }
+  },
+  {
+   "id": "v5",
+   "name": "5.5 KILN VENTS",
+   "kind": "room",
+   "rect": [
+    4,
+    -99,
+    22,
+    -77
+   ],
+   "height": 12,
+   "roof": true,
+   "par": 12.1,
+   "spawn": {
+    "at": [
+     15,
+     0,
+     -79
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    13,
+    0,
+    -96.5
+   ],
+   "waves": [
+    [
+     "husk",
+     "husk",
+     "husk",
+     "husk"
+    ],
+    [
+     "heavy",
+     "husk",
+     "husk",
+     "spitter"
+    ]
+   ],
+   "lessons": [
+    {
+     "kind": "husksDead",
+     "n": 8,
+     "prompt": "RIDE THE VENTS. SHOTGUN CLOSE.",
+     "promptPad": "RIDE THE VENTS. SHOTGUN CLOSE."
+    }
+   ],
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       15,
+       0,
+       -79
+      ],
+      [
+       17.5,
+       0,
+       -80
+      ],
+      [
+       17.5,
+       0,
+       -93
+      ],
+      [
+       13,
+       0,
+       -96.5
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       7.5,
+       0,
+       -98
+      ],
+      [
+       7.5,
+       3,
+       -89
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       20.5,
+       0,
+       -83
+      ],
+      [
+       20.5,
+       5,
+       -97
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       9,
+       -0.8,
+       -84
+      ],
+      [
+       11.5,
+       0,
+       -84
+      ]
+     ],
+     "jump": true,
+     "maxSeconds": 10
+    }
+   ],
+   "nodes": [
+    [
+     21,
+     0,
+     -81
+    ],
+    [
+     17.5,
+     0,
+     -92
+    ],
+    [
+     12,
+     0,
+     -96.5
+    ],
+    [
+     15,
+     0,
+     -97.5
+    ]
+   ],
+   "highNodes": [
+    [
+     7,
+     3,
+     -89
+    ],
+    [
+     9.5,
+     3,
+     -90
+    ],
+    [
+     20.5,
+     5,
+     -97.5
+    ]
+   ]
+  },
+  {
+   "id": "v6",
+   "name": "5.6 RING SPAN",
+   "kind": "room",
+   "rect": [
+    1,
+    -127,
+    21,
+    -103
+   ],
+   "height": 12,
+   "roof": true,
+   "par": 9.2,
+   "spawn": {
+    "at": [
+     13,
+     0,
+     -104.5
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    7,
+    0,
+    -124.5
+   ],
+   "grappleNodes": [
+    [
+     5,
+     6.5,
+     -109.5
+    ],
+    [
+     9,
+     8.5,
+     -118
+    ]
+   ],
+   "grapple": "ring A (lx -6, y 6.5, lz 6.5, by the west wall, in view from the entry) -> the W wall lane (lz 4.5-12.5, between the baffles: a ride) -> ring B (lx -2, y 8.5, lz 15) -> the north floor (ground). The 17 m gap cannot be walked or jumped (the validator's running jump + dash reaches 14.65 m); the baffles stop a ride from the entry. NOT proved by the validator (the rope is not the Mover): spire32's pilot crosses it",
+   "gapLz31": 19.5,
+   "reachFrom": [
+    5,
+    0,
+    -124
+   ],
+   "waves": [
+    [
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "husk",
+     "husk"
+    ],
+    [
+     "spitter",
+     "spitter",
+     "husk",
+     "husk"
+    ]
+   ],
+   "lessons": [
+    {
+     "kind": "husksDead",
+     "n": 9,
+     "prompt": "TAP {grapple}. RIDE. TAP AGAIN.",
+     "promptPad": "TAP {grapple}. RIDE. TAP AGAIN."
+    }
+   ],
+   "proofs": [
+    {
+     "kind": "jumpDash",
+     "start": [
+      13,
+      0,
+      -103.5
+     ],
+     "lipZ": -105.5,
+     "gap": 17,
+     "toY": 0,
+     "expectFail": true
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       5,
+       0,
+       -123.3
+      ],
+      [
+       7,
+       0,
+       -124.5
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       8,
+       0,
+       -125
+      ],
+      [
+       18.5,
+       2,
+       -125
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       7,
+       -0.8,
+       -106.5
+      ],
+      [
+       7,
+       0,
+       -104.2
+      ]
+     ],
+     "jump": true,
+     "maxSeconds": 10
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       5,
+       -0.8,
+       -121.5
+      ],
+      [
+       5,
+       0,
+       -123.6
+      ]
+     ],
+     "jump": true,
+     "maxSeconds": 10
+    }
+   ],
+   "nodes": [
+    [
+     9,
+     0,
+     -123.8
+    ],
+    [
+     4,
+     0,
+     -124.5
+    ],
+    [
+     7,
+     0,
+     -126.5
+    ],
+    [
+     3,
+     0,
+     -126.5
+    ]
+   ],
+   "highNodes": [
+    [
+     18,
+     2,
+     -125
+    ],
+    [
+     19.5,
+     2,
+     -126
+    ]
+   ]
+  },
+  {
+   "id": "v7",
+   "name": "5.7 WEST GALLERY",
+   "kind": "link",
+   "rect": [
+    -22,
+    -138,
+    12,
+    -131
+   ],
+   "height": 5,
+   "roof": true,
+   "par": 2.3,
+   "spawn": {
+    "at": [
+     7,
+     0,
+     -132.5
+    ],
+    "yawDeg": 90
+   },
+   "exit": [
+    -16,
+    0,
+    -136.5
+   ],
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       7,
+       0,
+       -132.5
+      ],
+      [
+       -16,
+       0,
+       -136.5
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "v8",
+   "name": "5.8 THE GAUNTLET",
+   "kind": "room",
+   "rect": [
+    -26,
+    -166,
+    -2,
+    -142
+   ],
+   "height": 12,
+   "roof": true,
+   "par": 35.6,
+   "spawn": {
+    "at": [
+     -16,
+     0,
+     -144
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    -10,
+    0,
+    -163.5
+   ],
+   "grappleNodes": [
+    [
+     -20.5,
+     8,
+     -149.5
+    ],
+    [
+     -7.5,
+     8,
+     -149.5
+    ],
+    [
+     -7.5,
+     8.5,
+     -160.5
+    ],
+    [
+     -20.5,
+     8.5,
+     -160.5
+    ]
+   ],
+   "grapple": "four rings at y 8-8.5 over the moat's corners: swing round the plateau while you fight (NOT proved by the validator)",
+   "waves": [
+    [
+     "husk",
+     "husk",
+     "husk",
+     "husk",
+     "husk",
+     "swarmer",
+     "swarmer"
+    ],
+    [
+     "heavy",
+     "spitter",
+     "spitter",
+     "husk",
+     "husk",
+     "husk"
+    ],
+    [
+     "heavy",
+     "heavy",
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "swarmer"
+    ]
+   ],
+   "lessons": [
+    {
+     "kind": "husksDead",
+     "n": 19,
+     "prompt": "EVERYTHING YOU LEARNED. ALL AT ONCE.",
+     "promptPad": "EVERYTHING YOU LEARNED. ALL AT ONCE."
+    }
+   ],
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -16,
+       0,
+       -144
+      ],
+      [
+       -24,
+       0,
+       -146
+      ],
+      [
+       -24,
+       0,
+       -162
+      ],
+      [
+       -10,
+       0,
+       -163.5
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -14,
+       0,
+       -165.3
+      ],
+      [
+       -14,
+       2.75,
+       -156
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -17,
+       -0.8,
+       -149.5
+      ],
+      [
+       -17,
+       0,
+       -146.5
+      ]
+     ],
+     "jump": true,
+     "maxSeconds": 10
+    }
+   ],
+   "nodes": [
+    [
+     -24,
+     0,
+     -148
+    ],
+    [
+     -4,
+     0,
+     -147
+    ],
+    [
+     -24,
+     0,
+     -154
+    ],
+    [
+     -4,
+     0,
+     -155
+    ],
+    [
+     -20,
+     0,
+     -163
+    ],
+    [
+     -8,
+     0,
+     -163
+    ],
+    [
+     -14,
+     0,
+     -165
+    ],
+    [
+     -24,
+     0,
+     -164
+    ],
+    [
+     -4,
+     0,
+     -164
+    ]
+   ],
+   "highNodes": [
+    [
+     -17,
+     2.75,
+     -157
+    ],
+    [
+     -11,
+     2.75,
+     -157.5
+    ]
+   ]
+  },
+  {
+   "id": "v9",
+   "name": "5.9 FALLING STONES",
+   "kind": "link",
+   "rect": [
+    -22,
+    -211,
+    2,
+    -170
+   ],
+   "height": 10,
+   "roof": true,
+   "par": 12,
+   "spawn": {
+    "at": [
+     -10,
+     0,
+     -171.5
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    -10,
+    0,
+    -209.5
+   ],
+   "job36": "teach",
+   "verb36": "jump-dash (dash, then jump inside the dash) across stones that drop 2 s after you land",
+   "lessons": [
+    {
+     "kind": "reached",
+     "rect": [
+      -22,
+      -211,
+      2,
+      -208
+     ],
+     "minY": -0.5,
+     "prompt": "",
+     "promptPad": ""
+    }
+   ],
+   "lessons31": [
+    {
+     "kind": "reached",
+     "rect": [
+      -22,
+      -211,
+      2,
+      -208
+     ],
+     "minY": -0.5,
+     "prompt": "",
+     "promptPad": ""
+    }
+   ],
+   "fall37": [
+    {
+     "at": [
+      -13,
+      0,
+      -184
+     ],
+     "size": [
+      4,
+      1,
+      4
+     ],
+     "why": "stone 1: 9 m past the entry edge (a run jump falls short at 7.1 m; a jump-dash clears it): it drops 2 s after you land"
+    },
+    {
+     "at": [
+      -7,
+      0,
+      -197
+     ],
+     "size": [
+      4,
+      1,
+      4
+     ],
+     "why": "stone 2: 9 m on, 6 m east: the jump-dash's line bends, then 9 m to the exit floor"
+    }
+   ],
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -10,
+       0,
+       -171.5
+      ],
+      [
+       -10,
+       0,
+       -172.5
+      ]
+     ]
+    }
+   ],
+   "routeVia": [
+    [
+     [
+      -10,
+      0,
+      -172.5
+     ],
+     [
+      -10,
+      0,
+      -208.5
+     ]
+    ]
+   ],
+   "frames36": {
+    "mid": [
+     -10,
+     0,
+     -172,
+     0,
+     -0.064
+    ],
+    "exit": [
+     -10,
+     0,
+     -209,
+     0,
+     -0.381
+    ]
+   }
+  },
+  {
+   "id": "v10",
+   "name": "5.10 THE RING",
+   "kind": "link",
+   "rect": [
+    -22,
+    -251,
+    2,
+    -215
+   ],
+   "height": 10,
+   "roof": true,
+   "par": 10,
+   "spawn": {
+    "at": [
+     -10,
+     0,
+     -217
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    -10,
+    0,
+    -248
+   ],
+   "job36": "teach",
+   "verb36": "jump-dash THROUGH a spinning ring (the pass: a cyan flash), as the Crown's ring will be passed",
+   "lessons": [
+    {
+     "kind": "reached",
+     "rect": [
+      -22,
+      -237,
+      2,
+      -231
+     ],
+     "minY": -0.5,
+     "prompt": "",
+     "promptPad": ""
+    }
+   ],
+   "lessons31": [
+    {
+     "kind": "reached",
+     "rect": [
+      -22,
+      -237,
+      2,
+      -231
+     ],
+     "minY": -0.5,
+     "prompt": "",
+     "promptPad": ""
+    }
+   ],
+   "hoop37": [
+    {
+     "at": [
+      -10,
+      1.6,
+      -226
+     ],
+     "normal": [
+      0,
+      0,
+      1
+     ],
+     "why": "the RING over the 10 m gap: the jump-dash from the edge passes through its centre (a cyan flash); the Crown's damage rule rehearsed"
+    }
+   ],
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -10,
+       0,
+       -217
+      ],
+      [
+       -10,
+       0,
+       -220
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -10,
+       0,
+       -233
+      ],
+      [
+       -10,
+       0,
+       -248
+      ]
+     ]
+    }
+   ],
+   "frames36": {
+    "mid": [
+     -10,
+     0,
+     -219,
+     0,
+     0
+    ],
+    "exit": [
+     -10,
+     0,
+     -247,
+     0,
+     -0.31
+    ]
+   }
+  },
+  {
+   "id": "v11",
+   "name": "5.11 THE SPIRE",
+   "kind": "boss",
+   "rect": [
+    -44,
+    -323,
+    24,
+    -255
+   ],
+   "height": 12,
+   "roof": false,
+   "par": 40,
+   "spawn": {
+    "at": [
+     -10,
+     0,
+     -258
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    -10,
+    0,
+    -258
+   ],
+   "boss": "crown37",
+   "job36": "boss",
+   "verb36": "the descent: drop onto orbiting platforms, jump-dash through the Crown's ring, down the broken gallery to the plaza",
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -10,
+       0,
+       -258
+      ],
+      [
+       -10,
+       0,
+       -263
+      ]
+     ]
+    }
+   ],
+   "spire37": {
+    "axis": [
+     -10,
+     0,
+     -289
+    ],
+    "coreHalf": 4,
+    "checkpoints": [
+     [
+      -10,
+      0,
+      -258,
+      0
+     ],
+     [
+      -22,
+      -27,
+      -279,
+      270
+     ],
+     [
+      -10,
+      -60,
+      -281,
+      0
+     ]
+    ],
+    "legFloors": [
+     -26,
+     -56,
+     -66
+    ],
+    "pieces": [
+     {
+      "id": "sumN",
+      "kind": "summit",
+      "leg": 1,
+      "at": [
+       -10,
+       0,
+       -296
+      ],
+      "size": [
+       20,
+       1,
+       6
+      ],
+      "why": "the summit's north slab"
+     },
+     {
+      "id": "sumS",
+      "kind": "summit",
+      "leg": 1,
+      "at": [
+       -10,
+       0,
+       -282
+      ],
+      "size": [
+       20,
+       1,
+       6
+      ],
+      "why": "the summit's south slab (the bridge lands here)"
+     },
+     {
+      "id": "sumW",
+      "kind": "summit",
+      "leg": 1,
+      "at": [
+       -17,
+       0,
+       -289
+      ],
+      "size": [
+       6,
+       1,
+       8
+      ],
+      "why": "the summit's west slab"
+     },
+     {
+      "id": "sumE",
+      "kind": "summit",
+      "leg": 1,
+      "at": [
+       -3,
+       0,
+       -289
+      ],
+      "size": [
+       6,
+       1,
+       8
+      ],
+      "why": "the summit's east slab"
+     },
+     {
+      "id": "bridge",
+      "kind": "summit",
+      "leg": 1,
+      "at": [
+       -10,
+       0,
+       -272
+      ],
+      "size": [
+       4,
+       1,
+       14
+      ],
+      "why": "the bridge's far half (z -279..-265): it falls with the summit"
+     },
+     {
+      "id": "orb00",
+      "kind": "orbit",
+      "leg": 1,
+      "size": [
+       5,
+       1,
+       5
+      ],
+      "orbit": {
+       "centre": [
+        -10,
+        -8,
+        -289
+       ],
+       "radius": 13,
+       "phase": 0,
+       "dir": 1
+      },
+      "why": "leg 1 orbit ring 1 (top -8): a summit fragment circling the spire; stand on it and it carries you"
+     },
+     {
+      "id": "orb01",
+      "kind": "orbit",
+      "leg": 1,
+      "size": [
+       5,
+       1,
+       5
+      ],
+      "orbit": {
+       "centre": [
+        -10,
+        -8,
+        -289
+       ],
+       "radius": 13,
+       "phase": 0.25,
+       "dir": 1
+      },
+      "why": "leg 1 orbit ring 1 (top -8): a summit fragment circling the spire; stand on it and it carries you"
+     },
+     {
+      "id": "orb02",
+      "kind": "orbit",
+      "leg": 1,
+      "size": [
+       5,
+       1,
+       5
+      ],
+      "orbit": {
+       "centre": [
+        -10,
+        -8,
+        -289
+       ],
+       "radius": 13,
+       "phase": 0.5,
+       "dir": 1
+      },
+      "why": "leg 1 orbit ring 1 (top -8): a summit fragment circling the spire; stand on it and it carries you"
+     },
+     {
+      "id": "orb03",
+      "kind": "orbit",
+      "leg": 1,
+      "size": [
+       5,
+       1,
+       5
+      ],
+      "orbit": {
+       "centre": [
+        -10,
+        -8,
+        -289
+       ],
+       "radius": 13,
+       "phase": 0.75,
+       "dir": 1
+      },
+      "why": "leg 1 orbit ring 1 (top -8): a summit fragment circling the spire; stand on it and it carries you"
+     },
+     {
+      "id": "orb10",
+      "kind": "orbit",
+      "leg": 1,
+      "size": [
+       5,
+       1,
+       5
+      ],
+      "orbit": {
+       "centre": [
+        -10,
+        -15,
+        -289
+       ],
+       "radius": 13,
+       "phase": 0.125,
+       "dir": -1
+      },
+      "why": "leg 1 orbit ring 2 (top -15): a summit fragment circling the spire; stand on it and it carries you"
+     },
+     {
+      "id": "orb11",
+      "kind": "orbit",
+      "leg": 1,
+      "size": [
+       5,
+       1,
+       5
+      ],
+      "orbit": {
+       "centre": [
+        -10,
+        -15,
+        -289
+       ],
+       "radius": 13,
+       "phase": 0.375,
+       "dir": -1
+      },
+      "why": "leg 1 orbit ring 2 (top -15): a summit fragment circling the spire; stand on it and it carries you"
+     },
+     {
+      "id": "orb12",
+      "kind": "orbit",
+      "leg": 1,
+      "size": [
+       5,
+       1,
+       5
+      ],
+      "orbit": {
+       "centre": [
+        -10,
+        -15,
+        -289
+       ],
+       "radius": 13,
+       "phase": 0.625,
+       "dir": -1
+      },
+      "why": "leg 1 orbit ring 2 (top -15): a summit fragment circling the spire; stand on it and it carries you"
+     },
+     {
+      "id": "orb13",
+      "kind": "orbit",
+      "leg": 1,
+      "size": [
+       5,
+       1,
+       5
+      ],
+      "orbit": {
+       "centre": [
+        -10,
+        -15,
+        -289
+       ],
+       "radius": 13,
+       "phase": 0.875,
+       "dir": -1
+      },
+      "why": "leg 1 orbit ring 2 (top -15): a summit fragment circling the spire; stand on it and it carries you"
+     },
+     {
+      "id": "orb20",
+      "kind": "orbit",
+      "leg": 1,
+      "size": [
+       5,
+       1,
+       5
+      ],
+      "orbit": {
+       "centre": [
+        -10,
+        -22,
+        -289
+       ],
+       "radius": 13,
+       "phase": 0.25,
+       "dir": 1
+      },
+      "why": "leg 1 orbit ring 3 (top -22): a summit fragment circling the spire; stand on it and it carries you"
+     },
+     {
+      "id": "orb21",
+      "kind": "orbit",
+      "leg": 1,
+      "size": [
+       5,
+       1,
+       5
+      ],
+      "orbit": {
+       "centre": [
+        -10,
+        -22,
+        -289
+       ],
+       "radius": 13,
+       "phase": 0.5,
+       "dir": 1
+      },
+      "why": "leg 1 orbit ring 3 (top -22): a summit fragment circling the spire; stand on it and it carries you"
+     },
+     {
+      "id": "orb22",
+      "kind": "orbit",
+      "leg": 1,
+      "size": [
+       5,
+       1,
+       5
+      ],
+      "orbit": {
+       "centre": [
+        -10,
+        -22,
+        -289
+       ],
+       "radius": 13,
+       "phase": 0.75,
+       "dir": 1
+      },
+      "why": "leg 1 orbit ring 3 (top -22): a summit fragment circling the spire; stand on it and it carries you"
+     },
+     {
+      "id": "orb23",
+      "kind": "orbit",
+      "leg": 1,
+      "size": [
+       5,
+       1,
+       5
+      ],
+      "orbit": {
+       "centre": [
+        -10,
+        -22,
+        -289
+       ],
+       "radius": 13,
+       "phase": 1,
+       "dir": 1
+      },
+      "why": "leg 1 orbit ring 3 (top -22): a summit fragment circling the spire; stand on it and it carries you"
+     },
+     {
+      "id": "gal0",
+      "kind": "gallery",
+      "leg": 2,
+      "at": [
+       -10,
+       -30,
+       -279
+      ],
+      "size": [
+       6,
+       1,
+       4
+      ],
+      "why": "leg 2 gallery slab 1 (top -30): the broken spiral; the Crown's beam drops the one you head for"
+     },
+     {
+      "id": "gal1",
+      "kind": "gallery",
+      "leg": 2,
+      "at": [
+       0,
+       -33,
+       -289
+      ],
+      "size": [
+       4,
+       1,
+       6
+      ],
+      "why": "leg 2 gallery slab 2 (top -33): the broken spiral; the Crown's beam drops the one you head for"
+     },
+     {
+      "id": "gal2",
+      "kind": "gallery",
+      "leg": 2,
+      "at": [
+       -10,
+       -36,
+       -299
+      ],
+      "size": [
+       6,
+       1,
+       4
+      ],
+      "why": "leg 2 gallery slab 3 (top -36): the broken spiral; the Crown's beam drops the one you head for"
+     },
+     {
+      "id": "gal3",
+      "kind": "gallery",
+      "leg": 2,
+      "at": [
+       -20,
+       -39,
+       -289
+      ],
+      "size": [
+       4,
+       1,
+       6
+      ],
+      "why": "leg 2 gallery slab 4 (top -39): the broken spiral; the Crown's beam drops the one you head for"
+     },
+     {
+      "id": "gal4",
+      "kind": "gallery",
+      "leg": 2,
+      "at": [
+       -10,
+       -42,
+       -279
+      ],
+      "size": [
+       6,
+       1,
+       4
+      ],
+      "why": "leg 2 gallery slab 5 (top -42): the broken spiral; the Crown's beam drops the one you head for"
+     },
+     {
+      "id": "gal5",
+      "kind": "gallery",
+      "leg": 2,
+      "at": [
+       0,
+       -45,
+       -289
+      ],
+      "size": [
+       4,
+       1,
+       6
+      ],
+      "why": "leg 2 gallery slab 6 (top -45): the broken spiral; the Crown's beam drops the one you head for"
+     },
+     {
+      "id": "gal6",
+      "kind": "gallery",
+      "leg": 2,
+      "at": [
+       -10,
+       -48,
+       -299
+      ],
+      "size": [
+       6,
+       1,
+       4
+      ],
+      "why": "leg 2 gallery slab 7 (top -48): the broken spiral; the Crown's beam drops the one you head for"
+     },
+     {
+      "id": "gal7",
+      "kind": "gallery",
+      "leg": 2,
+      "at": [
+       -20,
+       -51,
+       -289
+      ],
+      "size": [
+       4,
+       1,
+       6
+      ],
+      "why": "leg 2 gallery slab 8 (top -51): the broken spiral; the Crown's beam drops the one you head for"
+     },
+     {
+      "id": "plN1",
+      "kind": "plaza",
+      "leg": 3,
+      "at": [
+       -19,
+       -60,
+       -303
+      ],
+      "size": [
+       18,
+       1,
+       8
+      ],
+      "why": "leg 3 plaza sector: drops into the chasm one by one"
+     },
+     {
+      "id": "plN2",
+      "kind": "plaza",
+      "leg": 3,
+      "at": [
+       -1,
+       -60,
+       -303
+      ],
+      "size": [
+       18,
+       1,
+       8
+      ],
+      "why": "leg 3 plaza sector: drops into the chasm one by one"
+     },
+     {
+      "id": "plS1",
+      "kind": "plaza",
+      "leg": 3,
+      "at": [
+       -19,
+       -60,
+       -275
+      ],
+      "size": [
+       18,
+       1,
+       8
+      ],
+      "why": "leg 3 plaza sector: drops into the chasm one by one"
+     },
+     {
+      "id": "plS2",
+      "kind": "plaza",
+      "leg": 3,
+      "at": [
+       -1,
+       -60,
+       -275
+      ],
+      "size": [
+       18,
+       1,
+       8
+      ],
+      "why": "leg 3 plaza sector: drops into the chasm one by one"
+     },
+     {
+      "id": "plW1",
+      "kind": "plaza",
+      "leg": 3,
+      "at": [
+       -24,
+       -60,
+       -294
+      ],
+      "size": [
+       8,
+       1,
+       10
+      ],
+      "why": "leg 3 plaza sector: drops into the chasm one by one"
+     },
+     {
+      "id": "plW2",
+      "kind": "plaza",
+      "leg": 3,
+      "at": [
+       -24,
+       -60,
+       -284
+      ],
+      "size": [
+       8,
+       1,
+       10
+      ],
+      "why": "leg 3 plaza sector: drops into the chasm one by one"
+     },
+     {
+      "id": "plE1",
+      "kind": "plaza",
+      "leg": 3,
+      "at": [
+       4,
+       -60,
+       -294
+      ],
+      "size": [
+       8,
+       1,
+       10
+      ],
+      "why": "leg 3 plaza sector: drops into the chasm one by one"
+     },
+     {
+      "id": "plE2",
+      "kind": "plaza",
+      "leg": 3,
+      "at": [
+       4,
+       -60,
+       -284
+      ],
+      "size": [
+       8,
+       1,
+       10
+      ],
+      "why": "leg 3 plaza sector: drops into the chasm one by one"
+     }
+    ],
+    "_why": "builder C: the descent's places (Core/Orbit37.cs builds them as the world layer crown37Spire); timings and speeds are design.n37.crown37's"
+   },
+   "frames36": {
+    "mid": [
+     -10,
+     0,
+     -262,
+     0,
+     -0.406
+    ],
+    "exit": [
+     -22,
+     -27,
+     -279,
+     -50.194,
+     -0.6
+    ]
+   }
+  }
+ ],
+ "doors": [
+  {
+   "id": "d1",
+   "between": [
+    "v1",
+    "v2"
+   ],
+   "rect": [
+    -20,
+    -12,
+    -16,
+    -8
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  },
+  {
+   "id": "d2",
+   "between": [
+    "v2",
+    "v3"
+   ],
+   "rect": [
+    -18,
+    -38,
+    -14,
+    -34
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  },
+  {
+   "id": "d3",
+   "between": [
+    "v3",
+    "v4"
+   ],
+   "rect": [
+    -15,
+    -66,
+    -11,
+    -62
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  },
+  {
+   "id": "d4",
+   "between": [
+    "v4",
+    "v5"
+   ],
+   "rect": [
+    13,
+    -77,
+    17,
+    -73
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  },
+  {
+   "id": "d5",
+   "between": [
+    "v5",
+    "v6"
+   ],
+   "rect": [
+    11,
+    -103,
+    15,
+    -99
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  },
+  {
+   "id": "d6",
+   "between": [
+    "v6",
+    "v7"
+   ],
+   "rect": [
+    5,
+    -131,
+    9,
+    -127
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  },
+  {
+   "id": "d7",
+   "between": [
+    "v7",
+    "v8"
+   ],
+   "rect": [
+    -18,
+    -142,
+    -14,
+    -138
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  },
+  {
+   "id": "d8",
+   "between": [
+    "v8",
+    "v9"
+   ],
+   "rect": [
+    -12,
+    -170,
+    -8,
+    -166
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  },
+  {
+   "id": "d9",
+   "between": [
+    "v9",
+    "v10"
+   ],
+   "rect": [
+    -12,
+    -215,
+    -8,
+    -211
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  },
+  {
+   "id": "d10",
+   "between": [
+    "v10",
+    "v11"
+   ],
+   "rect": [
+    -12,
+    -255,
+    -8,
+    -251
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  }
+ ],
+ "boxes": [
+  {
+   "zone": "v2",
+   "kind": "deck",
+   "min": [
+    -27,
+    0,
+    -34
+   ],
+   "max": [
+    -19,
+    2.4,
+    -30
+   ],
+   "note": "the NW deck (2.4 m): the spitters' perch over the north floor",
+   "job": "line",
+   "why": "level 5 as it was (n33-spire, copied unchanged): the NW deck (2.4 m): the spitters' perch over the north floor"
+  },
+  {
+   "zone": "v2",
+   "kind": "hull",
+   "min": [
+    -27,
+    2.4,
+    -34
+   ],
+   "max": [
+    -25.5,
+    3.4,
+    -32.5
+   ],
+   "note": "NIGHT33 R: the landmark plinth on the NW deck (builder K's hero)",
+   "job": "cover",
+   "why": "level 5 as it was (n33-spire, copied unchanged): NIGHT33 R: the landmark plinth on the NW deck (builder K's hero)"
+  },
+  {
+   "zone": "v3",
+   "kind": "deck",
+   "min": [
+    -25,
+    0,
+    -58
+   ],
+   "max": [
+    -21,
+    2,
+    -44
+   ],
+   "note": "the west bank (2.0 m)",
+   "job": "line",
+   "why": "level 5 as it was (n33-spire, copied unchanged): the west bank (2.0 m)"
+  },
+  {
+   "zone": "v3",
+   "kind": "deck",
+   "min": [
+    -11,
+    0,
+    -58
+   ],
+   "max": [
+    -7,
+    2,
+    -44
+   ],
+   "note": "the east bank (2.0 m)",
+   "job": "line",
+   "why": "level 5 as it was (n33-spire, copied unchanged): the east bank (2.0 m)"
+  },
+  {
+   "zone": "v4",
+   "kind": "deck",
+   "min": [
+    -10,
+    0,
+    -73
+   ],
+   "max": [
+    11.5,
+    1.2,
+    -70.5
+   ],
+   "note": "NIGHT33 R: the catwalk (1.2 m) along the north wall: the vents' refuge, a view down the gallery",
+   "job": "line",
+   "why": "level 5 as it was (n33-spire, copied unchanged): NIGHT33 R: the catwalk (1.2 m) along the north wall: the vents' refuge, a view down the gallery"
+  },
+  {
+   "zone": "v4",
+   "kind": "hull",
+   "min": [
+    1,
+    1.2,
+    -73
+   ],
+   "max": [
+    3,
+    2.2,
+    -72
+   ],
+   "note": "NIGHT33 R: the shrine plinth on the catwalk (builder K's landmark)",
+   "job": "cover",
+   "why": "level 5 as it was (n33-spire, copied unchanged): NIGHT33 R: the shrine plinth on the catwalk (builder K's landmark)"
+  },
+  {
+   "zone": "v5",
+   "kind": "deck",
+   "min": [
+    4,
+    -0.8,
+    -91
+   ],
+   "max": [
+    11,
+    3,
+    -87
+   ],
+   "note": "the gantry (3.0 m) standing in the flue's north end",
+   "job": "line",
+   "why": "level 5 as it was (n33-spire, copied unchanged): the gantry (3.0 m) standing in the flue's north end"
+  },
+  {
+   "zone": "v5",
+   "kind": "deck",
+   "min": [
+    19,
+    0,
+    -99
+   ],
+   "max": [
+    22,
+    5,
+    -95
+   ],
+   "note": "the perch (5.0 m) in the NE corner: the spitter's nest",
+   "job": "line",
+   "why": "level 5 as it was (n33-spire, copied unchanged): the perch (5.0 m) in the NE corner: the spitter's nest"
+  },
+  {
+   "zone": "v6",
+   "kind": "hull",
+   "min": [
+    1,
+    -0.8,
+    -107.5
+   ],
+   "max": [
+    2,
+    12,
+    -105.5
+   ],
+   "note": "a baffle on the west wall (lz 2.5..4.5): no wall ride past it",
+   "job": "cover",
+   "why": "level 5 as it was (n33-spire, copied unchanged): a baffle on the west wall (lz 2.5..4.5): no wall ride past it"
+  },
+  {
+   "zone": "v6",
+   "kind": "hull",
+   "min": [
+    20,
+    -0.8,
+    -107.5
+   ],
+   "max": [
+    21,
+    12,
+    -105.5
+   ],
+   "note": "a baffle on the east wall (lz 2.5..4.5): no wall ride past it",
+   "job": "cover",
+   "why": "level 5 as it was (n33-spire, copied unchanged): a baffle on the east wall (lz 2.5..4.5): no wall ride past it"
+  },
+  {
+   "zone": "v6",
+   "kind": "hull",
+   "min": [
+    1,
+    -0.8,
+    -117.5
+   ],
+   "max": [
+    2,
+    12,
+    -115.5
+   ],
+   "note": "a baffle on the west wall (lz 12.5..14.5): no wall ride past it",
+   "job": "cover",
+   "why": "level 5 as it was (n33-spire, copied unchanged): a baffle on the west wall (lz 12.5..14.5): no wall ride past it"
+  },
+  {
+   "zone": "v6",
+   "kind": "hull",
+   "min": [
+    20,
+    -0.8,
+    -117.5
+   ],
+   "max": [
+    21,
+    12,
+    -115.5
+   ],
+   "note": "a baffle on the east wall (lz 12.5..14.5): no wall ride past it",
+   "job": "cover",
+   "why": "level 5 as it was (n33-spire, copied unchanged): a baffle on the east wall (lz 12.5..14.5): no wall ride past it"
+  },
+  {
+   "zone": "v6",
+   "kind": "deck",
+   "min": [
+    16,
+    0,
+    -127
+   ],
+   "max": [
+    21,
+    2,
+    -123
+   ],
+   "note": "the NE deck (2.0 m): the spitters' perch",
+   "job": "line",
+   "why": "level 5 as it was (n33-spire, copied unchanged): the NE deck (2.0 m): the spitters' perch"
+  },
+  {
+   "zone": "v6",
+   "kind": "deck",
+   "min": [
+    18,
+    -1.8,
+    -123
+   ],
+   "max": [
+    21,
+    2,
+    -105
+   ],
+   "note": "NIGHT33 R: the enemies' catwalk (2.0 m) from the NE deck south over the lava, wall to wall on the east (solid from below the lava: no lava slot behind it): they drop off its south end onto the entry floor",
+   "job": "line",
+   "why": "level 5 as it was (n33-spire, copied unchanged): NIGHT33 R: the enemies' catwalk (2.0 m) from the NE deck south over the lava, wall to wall on the east (solid from below the lava: no lava slot behind it): they drop off its south end onto the entry floor"
+  },
+  {
+   "zone": "v8",
+   "kind": "deck",
+   "min": [
+    -19,
+    0,
+    -159
+   ],
+   "max": [
+    -9,
+    2.75,
+    -151
+   ],
+   "note": "the plateau (2.75 m) in the moat: its top is ice",
+   "job": "line",
+   "why": "level 5 as it was (n33-spire, copied unchanged): the plateau (2.75 m) in the moat: its top is ice"
+  },
+  {
+   "zone": "v9",
+   "kind": "deck",
+   "min": [
+    -22,
+    -6,
+    -185
+   ],
+   "max": [
+    -19,
+    -3.75,
+    -181
+   ],
+   "job": "climb",
+   "why": "v9 recovery stair: step 1 (top -3.75 m; each step <= 1.3 m: the way back after a missed jump)",
+   "note": "v9 recovery stair: step 1 (top -3.75 m; each step <= 1.3 m: the way back after a missed jump)"
+  },
+  {
+   "zone": "v9",
+   "kind": "deck",
+   "min": [
+    -22,
+    -6,
+    -181
+   ],
+   "max": [
+    -19,
+    -2.5,
+    -177
+   ],
+   "job": "climb",
+   "why": "v9 recovery stair: step 2 (top -2.5 m; each step <= 1.3 m: the way back after a missed jump)",
+   "note": "v9 recovery stair: step 2 (top -2.5 m; each step <= 1.3 m: the way back after a missed jump)"
+  },
+  {
+   "zone": "v9",
+   "kind": "deck",
+   "min": [
+    -22,
+    -6,
+    -177
+   ],
+   "max": [
+    -19,
+    -1.25,
+    -173
+   ],
+   "job": "climb",
+   "why": "v9 recovery stair: step 3 (top -1.25 m; each step <= 1.3 m: the way back after a missed jump)",
+   "note": "v9 recovery stair: step 3 (top -1.25 m; each step <= 1.3 m: the way back after a missed jump)"
+  },
+  {
+   "zone": "v10",
+   "kind": "deck",
+   "min": [
+    -22,
+    -6,
+    -233
+   ],
+   "max": [
+    -19,
+    -3.75,
+    -229
+   ],
+   "job": "climb",
+   "why": "v10 recovery stair: step 1 (top -3.75 m; each step <= 1.3 m: the way back after a missed jump)",
+   "note": "v10 recovery stair: step 1 (top -3.75 m; each step <= 1.3 m: the way back after a missed jump)"
+  },
+  {
+   "zone": "v10",
+   "kind": "deck",
+   "min": [
+    -22,
+    -6,
+    -229
+   ],
+   "max": [
+    -19,
+    -2.5,
+    -225
+   ],
+   "job": "climb",
+   "why": "v10 recovery stair: step 2 (top -2.5 m; each step <= 1.3 m: the way back after a missed jump)",
+   "note": "v10 recovery stair: step 2 (top -2.5 m; each step <= 1.3 m: the way back after a missed jump)"
+  },
+  {
+   "zone": "v10",
+   "kind": "deck",
+   "min": [
+    -22,
+    -6,
+    -225
+   ],
+   "max": [
+    -19,
+    -1.25,
+    -221
+   ],
+   "job": "climb",
+   "why": "v10 recovery stair: step 3 (top -1.25 m; each step <= 1.3 m: the way back after a missed jump)",
+   "note": "v10 recovery stair: step 3 (top -1.25 m; each step <= 1.3 m: the way back after a missed jump)"
+  },
+  {
+   "zone": "v11",
+   "kind": "deck",
+   "min": [
+    -12,
+    -1,
+    -265
+   ],
+   "max": [
+    -8,
+    0,
+    -255
+   ],
+   "job": "line",
+   "why": "the WALK-IN bridge's stub (the door to the chasm): leg 1's checkpoint; the rest of the bridge is the summit's and shatters",
+   "note": "the WALK-IN bridge's stub (the door to the chasm): leg 1's checkpoint; the rest of the bridge is the summit's and shatters"
+  },
+  {
+   "zone": "v11",
+   "kind": "deck",
+   "min": [
+    -14,
+    -60,
+    -293
+   ],
+   "max": [
+    -6,
+    0,
+    -285
+   ],
+   "job": "line",
+   "why": "the SPIRE's core: 8 x 8 m, 60 m tall from the plaza to the summit; every face rideable; the axis the fight descends",
+   "note": "the SPIRE's core: 8 x 8 m, 60 m tall from the plaza to the summit; every face rideable; the axis the fight descends"
+  },
+  {
+   "zone": "v11",
+   "kind": "deck",
+   "min": [
+    -25,
+    -28,
+    -282
+   ],
+   "max": [
+    -19,
+    -27,
+    -276
+   ],
+   "job": "line",
+   "why": "leg 2's CHECKPOINT: a broken buttress off the spire's SW (top -27), clear of the core: the gallery's first slabs lie in line from it (a fall in the gallery puts you back here)",
+   "note": "leg 2's CHECKPOINT: a broken buttress off the spire's SW (top -27), clear of the core: the gallery's first slabs lie in line from it (a fall in the gallery puts you back here)"
+  },
+  {
+   "zone": "v11",
+   "kind": "deck",
+   "min": [
+    -20,
+    -61,
+    -299
+   ],
+   "max": [
+    0,
+    -60,
+    -279
+   ],
+   "job": "line",
+   "why": "the PLAZA's inner square (20 x 20 m at -60): leg 3's floor and checkpoint; its outer ring is eight sectors that drop",
+   "note": "the PLAZA's inner square (20 x 20 m at -60): leg 3's floor and checkpoint; its outer ring is eight sectors that drop"
+  },
+  {
+   "zone": "v11",
+   "kind": "wall",
+   "min": [
+    -14.3,
+    -50,
+    -292
+   ],
+   "max": [
+    -14,
+    -29,
+    -286
+   ],
+   "job": "line",
+   "why": "ride panel, the core's west face: ride past a cut slab",
+   "note": "ride panel, the core's west face: ride past a cut slab",
+   "ride": true
+  },
+  {
+   "zone": "v11",
+   "kind": "wall",
+   "min": [
+    -6,
+    -50,
+    -292
+   ],
+   "max": [
+    -5.7,
+    -29,
+    -286
+   ],
+   "job": "line",
+   "why": "ride panel, the core's east face: ride past a cut slab",
+   "note": "ride panel, the core's east face: ride past a cut slab",
+   "ride": true
+  },
+  {
+   "zone": "v11",
+   "kind": "wall",
+   "min": [
+    -13,
+    -50,
+    -293.3
+   ],
+   "max": [
+    -7,
+    -29,
+    -293
+   ],
+   "job": "line",
+   "why": "ride panel, the core's north face: ride past a cut slab",
+   "note": "ride panel, the core's north face: ride past a cut slab",
+   "ride": true
+  },
+  {
+   "zone": "v11",
+   "kind": "wall",
+   "min": [
+    -13,
+    -50,
+    -285
+   ],
+   "max": [
+    -7,
+    -29,
+    -284.7
+   ],
+   "job": "line",
+   "why": "ride panel, the core's south face: ride past a cut slab",
+   "note": "ride panel, the core's south face: ride past a cut slab",
+   "ride": true
+  }
+ ],
+ "ramps": [
+  {
+   "zone": "v2",
+   "from": [
+    -20.5,
+    -25
+   ],
+   "to": [
+    -20.5,
+    -30
+   ],
+   "width": 3,
+   "rise": 2.4,
+   "note": "up to the deck from the bridge's north end (walkers: 5 m for 2.4 m)",
+   "job": "climb",
+   "why": "level 5 as it was (n33-spire, copied unchanged): up to the deck from the bridge's north end (walkers: 5 m for 2.4 m)"
+  },
+  {
+   "zone": "v3",
+   "from": [
+    -23,
+    -40
+   ],
+   "to": [
+    -23,
+    -44
+   ],
+   "width": 3,
+   "rise": 2,
+   "note": "up to the west bank (walkers: 4 m for 2 m)",
+   "job": "climb",
+   "why": "level 5 as it was (n33-spire, copied unchanged): up to the west bank (walkers: 4 m for 2 m)"
+  },
+  {
+   "zone": "v3",
+   "from": [
+    -9,
+    -40
+   ],
+   "to": [
+    -9,
+    -44
+   ],
+   "width": 3,
+   "rise": 2,
+   "note": "up to the east bank (walkers)",
+   "job": "climb",
+   "why": "level 5 as it was (n33-spire, copied unchanged): up to the east bank (walkers)"
+  },
+  {
+   "zone": "v4",
+   "from": [
+    -8.5,
+    -68.1
+   ],
+   "to": [
+    -8.5,
+    -70.5
+   ],
+   "width": 3,
+   "rise": 1.2,
+   "note": "NIGHT33 R: up to the catwalk from the south lane (walkers: 2.4 m for 1.2 m; the lane south of it stays 2 m wide)",
+   "job": "climb",
+   "why": "level 5 as it was (n33-spire, copied unchanged): NIGHT33 R: up to the catwalk from the south lane (walkers: 2.4 m for 1.2 m; the lane south of it stays 2 m wide)"
+  },
+  {
+   "zone": "v5",
+   "from": [
+    7.5,
+    -97
+   ],
+   "to": [
+    7.5,
+    -91
+   ],
+   "width": 3,
+   "rise": 3,
+   "note": "up to the gantry from the north floor (walkers: 6 m for 3 m)",
+   "job": "climb",
+   "why": "level 5 as it was (n33-spire, copied unchanged): up to the gantry from the north floor (walkers: 6 m for 3 m)"
+  },
+  {
+   "zone": "v5",
+   "from": [
+    20.5,
+    -85
+   ],
+   "to": [
+    20.5,
+    -95
+   ],
+   "width": 3,
+   "rise": 5,
+   "note": "up to the perch along the east wall (walkers: 10 m for 5 m)",
+   "job": "climb",
+   "why": "level 5 as it was (n33-spire, copied unchanged): up to the perch along the east wall (walkers: 10 m for 5 m)"
+  },
+  {
+   "zone": "v6",
+   "from": [
+    10,
+    -125
+   ],
+   "to": [
+    16,
+    -125
+   ],
+   "width": 3,
+   "rise": 2,
+   "note": "up to the NE deck, east-going (walkers: 6 m for 2 m)",
+   "job": "climb",
+   "why": "level 5 as it was (n33-spire, copied unchanged): up to the NE deck, east-going (walkers: 6 m for 2 m)"
+  },
+  {
+   "zone": "v8",
+   "from": [
+    -14,
+    -164.5
+   ],
+   "to": [
+    -14,
+    -159
+   ],
+   "width": 3,
+   "rise": 2.75,
+   "note": "up to the plateau from the north floor (walkers: 5.5 m for 2.75 m)",
+   "job": "climb",
+   "why": "level 5 as it was (n33-spire, copied unchanged): up to the plateau from the north floor (walkers: 5.5 m for 2.75 m)"
+  }
+ ],
+ "pads": [
+  {
+   "zone": "v5",
+   "at": [
+    6,
+    0,
+    -79
+   ],
+   "target": [
+    7.5,
+    3,
+    -89
+   ],
+   "apexAbove": 2.5,
+   "note": "VENT 1 (the kiln's heat): from the entry's west corner over the flue onto the gantry"
+  },
+  {
+   "zone": "v5",
+   "at": [
+    12,
+    0,
+    -94
+   ],
+   "target": [
+    20.5,
+    5,
+    -97.5
+   ],
+   "apexAbove": 2,
+   "note": "VENT 2: from the north floor up to the perch"
+  },
+  {
+   "zone": "v8",
+   "at": [
+    -11,
+    0,
+    -145
+   ],
+   "target": [
+    -12,
+    2.75,
+    -154
+   ],
+   "apexAbove": 3,
+   "note": "the VENT on the entry floor: over the south moat onto the plateau"
+  }
+ ],
+ "grapple": [],
+ "pits": [
+  {
+   "zone": "v2",
+   "rect": [
+    -27,
+    -24,
+    -21,
+    -17
+   ],
+   "floorY": -0.8,
+   "lava": true,
+   "note": "the west pool under the W wall lane (a touch burns and knocks up, no respawn)",
+   "job": "hazard",
+   "why": "level 5 as it was (n33-spire, copied unchanged): the west pool under the W wall lane (a touch burns and knocks up, no respawn)"
+  },
+  {
+   "zone": "v2",
+   "rect": [
+    -19,
+    -24,
+    -14,
+    -17
+   ],
+   "floorY": -0.8,
+   "lava": true,
+   "note": "the middle pool (the bridge runs west of it, the walkway east)",
+   "job": "hazard",
+   "why": "level 5 as it was (n33-spire, copied unchanged): the middle pool (the bridge runs west of it, the walkway east)"
+  },
+  {
+   "zone": "v3",
+   "rect": [
+    -18,
+    -52,
+    -14,
+    -48
+   ],
+   "floorY": -0.8,
+   "lava": true,
+   "note": "the lava eye in the middle of the ice (glide round it)",
+   "job": "hazard",
+   "why": "level 5 as it was (n33-spire, copied unchanged): the lava eye in the middle of the ice (glide round it)"
+  },
+  {
+   "zone": "v5",
+   "rect": [
+    4,
+    -91,
+    10,
+    -81
+   ],
+   "floorY": -0.8,
+   "lava": true,
+   "note": "the lava flue along the west wall, under the gantry (vent over it)",
+   "job": "hazard",
+   "why": "level 5 as it was (n33-spire, copied unchanged): the lava flue along the west wall, under the gantry (vent over it)"
+  },
+  {
+   "zone": "v6",
+   "rect": [
+    1,
+    -122.5,
+    21,
+    -105.5
+   ],
+   "floorY": -0.8,
+   "lava": true,
+   "note": "the lava gap, wall to wall (17 m: rings and the W wall lane only)",
+   "job": "hazard",
+   "why": "level 5 as it was (n33-spire, copied unchanged): the lava gap, wall to wall (17 m: rings and the W wall lane only)"
+  },
+  {
+   "zone": "v8",
+   "rect": [
+    -22,
+    -151,
+    -6,
+    -148
+   ],
+   "floorY": -0.8,
+   "lava": true,
+   "note": "the moat, south of the plateau",
+   "job": "hazard",
+   "why": "level 5 as it was (n33-spire, copied unchanged): the moat, south of the plateau"
+  },
+  {
+   "zone": "v8",
+   "rect": [
+    -22,
+    -159,
+    -19,
+    -151
+   ],
+   "floorY": -0.8,
+   "lava": true,
+   "note": "the moat, west of the plateau",
+   "job": "hazard",
+   "why": "level 5 as it was (n33-spire, copied unchanged): the moat, west of the plateau"
+  },
+  {
+   "zone": "v8",
+   "rect": [
+    -9,
+    -159,
+    -6,
+    -151
+   ],
+   "floorY": -0.8,
+   "lava": true,
+   "note": "the moat, east of the plateau",
+   "job": "hazard",
+   "why": "level 5 as it was (n33-spire, copied unchanged): the moat, east of the plateau"
+  },
+  {
+   "zone": "v9",
+   "rect": [
+    -22,
+    -208,
+    2,
+    -173
+   ],
+   "floorY": -5,
+   "job": "hazard",
+   "why": "the FALL: a 35 m pit (5 m deep) crossed only on the two falling stones; a miss costs the stair's climb, never health",
+   "note": "the FALL: a 35 m pit (5 m deep) crossed only on the two falling stones; a miss costs the stair's climb, never health"
+  },
+  {
+   "zone": "v10",
+   "rect": [
+    -22,
+    -231,
+    2,
+    -221
+   ],
+   "floorY": -5,
+   "job": "hazard",
+   "why": "the RING's gap: 10 m (a run jump falls short; the jump-dash through the ring clears it); a miss costs the stair's climb",
+   "note": "the RING's gap: 10 m (a run jump falls short; the jump-dash through the ring clears it); a miss costs the stair's climb"
+  },
+  {
+   "zone": "v11",
+   "rect": [
+    -44,
+    -323,
+    24,
+    -255
+   ],
+   "floorY": -74,
+   "job": "hazard",
+   "why": "THE CHASM: the spire stands in a 74 m deep pit; there is no floor but the spire's pieces (a fall is caught by the leg's floor rule: back to its checkpoint, -20 HP)",
+   "note": "THE CHASM: the spire stands in a 74 m deep pit; there is no floor but the spire's pieces (a fall is caught by the leg's floor rule: back to its checkpoint, -20 HP)"
+  }
+ ],
+ "tunnels": [],
+ "surfaces": [
+  {
+   "kind": "ice",
+   "rect": [
+    -21,
+    -60,
+    -18,
+    -40
+   ],
+   "minY": -0.5,
+   "maxY": 0.5,
+   "room": "v3",
+   "lane": {
+    "axis": "z",
+    "line": -19.5,
+    "halfWidth": 1.5,
+    "dir": [
+     0,
+     -1
+    ]
+   },
+   "note": "the west skate lane (beside the eye)"
+  },
+  {
+   "kind": "ice",
+   "rect": [
+    -14,
+    -60,
+    -11,
+    -40
+   ],
+   "minY": -0.5,
+   "maxY": 0.5,
+   "room": "v3",
+   "lane": {
+    "axis": "z",
+    "line": -12.5,
+    "halfWidth": 1.5,
+    "dir": [
+     0,
+     -1
+    ]
+   },
+   "note": "the east skate lane (beside the eye)"
+  },
+  {
+   "kind": "ice",
+   "rect": [
+    -18,
+    -48,
+    -14,
+    -40
+   ],
+   "minY": -0.5,
+   "maxY": 0.5,
+   "room": "v3",
+   "note": "the ice south of the eye"
+  },
+  {
+   "kind": "ice",
+   "rect": [
+    -18,
+    -60,
+    -14,
+    -52
+   ],
+   "minY": -0.5,
+   "maxY": 0.5,
+   "room": "v3",
+   "note": "the ice north of the eye"
+  },
+  {
+   "kind": "ice",
+   "rect": [
+    -19,
+    -159,
+    -9,
+    -151
+   ],
+   "minY": 2.25,
+   "maxY": 3.35,
+   "room": "v8",
+   "note": "the plateau's ice top (glide, then jump the moat)"
+  }
+ ],
+ "lights": [
+  {
+   "id": "v1-L1",
+   "room": "v1",
+   "kind": "wall",
+   "at": [
+    0,
+    0.4,
+    -7.95
+   ],
+   "normal": [
+    0,
+    0,
+    1
+   ],
+   "size": [
+    3,
+    0.2,
+    0.1
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.1
+  },
+  {
+   "id": "v1-L2",
+   "room": "v1",
+   "kind": "wall",
+   "at": [
+    -6,
+    0.4,
+    -0.05
+   ],
+   "normal": [
+    0,
+    0,
+    -1
+   ],
+   "size": [
+    3,
+    0.2,
+    0.1
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.1
+  },
+  {
+   "id": "v1-L3",
+   "room": "v1",
+   "kind": "wall",
+   "at": [
+    -12,
+    0.4,
+    -7.95
+   ],
+   "normal": [
+    0,
+    0,
+    1
+   ],
+   "size": [
+    3,
+    0.2,
+    0.1
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.1
+  },
+  {
+   "id": "v1-L4",
+   "room": "v1",
+   "kind": "ceiling",
+   "at": [
+    -4,
+    5.95,
+    -4
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    2,
+    2,
+    0.1
+   ],
+   "color": "white",
+   "range": 8,
+   "intensity": 1
+  },
+  {
+   "id": "v1-L5",
+   "room": "v1",
+   "kind": "ceiling",
+   "at": [
+    -14,
+    5.95,
+    -4
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    2,
+    2,
+    0.1
+   ],
+   "color": "white",
+   "range": 8,
+   "intensity": 1
+  },
+  {
+   "id": "v1-L6",
+   "room": "v1",
+   "kind": "pool",
+   "at": [
+    -18,
+    0.025,
+    -5.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.4,
+    2.4,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.8
+  },
+  {
+   "id": "v2-L1",
+   "room": "v2",
+   "kind": "pool",
+   "at": [
+    -24,
+    -0.775,
+    -20.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.4,
+    2.4,
+    0.05
+   ],
+   "color": "orange",
+   "range": 8,
+   "intensity": 2.2,
+   "danger": true
+  },
+  {
+   "id": "v2-L2",
+   "room": "v2",
+   "kind": "wall",
+   "at": [
+    -26.95,
+    1.8,
+    -20.5
+   ],
+   "normal": [
+    1,
+    0,
+    0
+   ],
+   "size": [
+    8,
+    0.25,
+    0.1
+   ],
+   "color": "cyan",
+   "range": 8,
+   "intensity": 1.6
+  },
+  {
+   "id": "v2-L3",
+   "room": "v2",
+   "kind": "wall",
+   "at": [
+    -26.95,
+    4.4,
+    -32
+   ],
+   "normal": [
+    1,
+    0,
+    0
+   ],
+   "size": [
+    3,
+    0.3,
+    0.1
+   ],
+   "color": "white",
+   "range": 8,
+   "intensity": 1.3
+  },
+  {
+   "id": "v2-L4",
+   "room": "v2",
+   "kind": "wall",
+   "at": [
+    -9.05,
+    0.4,
+    -14
+   ],
+   "normal": [
+    -1,
+    0,
+    0
+   ],
+   "size": [
+    3,
+    0.2,
+    0.1
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.1
+  },
+  {
+   "id": "v2-L5",
+   "room": "v2",
+   "kind": "wall",
+   "at": [
+    -9.05,
+    0.4,
+    -27
+   ],
+   "normal": [
+    -1,
+    0,
+    0
+   ],
+   "size": [
+    3,
+    0.2,
+    0.1
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.1
+  },
+  {
+   "id": "v2-L6",
+   "room": "v2",
+   "kind": "ceiling",
+   "at": [
+    -22,
+    9.95,
+    -18
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 10,
+   "intensity": 0.9
+  },
+  {
+   "id": "v2-L7",
+   "room": "v2",
+   "kind": "ceiling",
+   "at": [
+    -14,
+    9.95,
+    -28
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 10,
+   "intensity": 0.9
+  },
+  {
+   "id": "v2-L8",
+   "room": "v2",
+   "kind": "pool",
+   "at": [
+    -16,
+    0.025,
+    -31.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.8
+  },
+  {
+   "id": "v3-L1",
+   "room": "v3",
+   "kind": "pool",
+   "at": [
+    -16,
+    -0.775,
+    -50
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2,
+    2,
+    0.05
+   ],
+   "color": "orange",
+   "range": 7,
+   "intensity": 2,
+   "danger": true
+  },
+  {
+   "id": "v3-L2",
+   "room": "v3",
+   "kind": "wall",
+   "at": [
+    -24.95,
+    3.4,
+    -51
+   ],
+   "normal": [
+    1,
+    0,
+    0
+   ],
+   "size": [
+    12,
+    0.2,
+    0.1
+   ],
+   "color": "cyan",
+   "range": 8,
+   "intensity": 1.4
+  },
+  {
+   "id": "v3-L3",
+   "room": "v3",
+   "kind": "wall",
+   "at": [
+    -7.05,
+    3.4,
+    -51
+   ],
+   "normal": [
+    -1,
+    0,
+    0
+   ],
+   "size": [
+    12,
+    0.2,
+    0.1
+   ],
+   "color": "cyan",
+   "range": 8,
+   "intensity": 1.4
+  },
+  {
+   "id": "v3-L4",
+   "room": "v3",
+   "kind": "wall",
+   "at": [
+    -24.95,
+    0.4,
+    -39.5
+   ],
+   "normal": [
+    1,
+    0,
+    0
+   ],
+   "size": [
+    3,
+    0.2,
+    0.1
+   ],
+   "color": "white",
+   "range": 7,
+   "intensity": 1
+  },
+  {
+   "id": "v3-L5",
+   "room": "v3",
+   "kind": "wall",
+   "at": [
+    -7.05,
+    0.4,
+    -60
+   ],
+   "normal": [
+    -1,
+    0,
+    0
+   ],
+   "size": [
+    3,
+    0.2,
+    0.1
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.1
+  },
+  {
+   "id": "v3-L6",
+   "room": "v3",
+   "kind": "ceiling",
+   "at": [
+    -19,
+    8.95,
+    -45
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 10,
+   "intensity": 0.9
+  },
+  {
+   "id": "v3-L7",
+   "room": "v3",
+   "kind": "ceiling",
+   "at": [
+    -13,
+    8.95,
+    -56
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 10,
+   "intensity": 0.9
+  },
+  {
+   "id": "v3-L8",
+   "room": "v3",
+   "kind": "pool",
+   "at": [
+    -13,
+    0.025,
+    -59.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.8
+  },
+  {
+   "id": "v4-L1",
+   "room": "v4",
+   "kind": "wall",
+   "at": [
+    -10,
+    0.4,
+    -72.95
+   ],
+   "normal": [
+    0,
+    0,
+    1
+   ],
+   "size": [
+    3,
+    0.2,
+    0.1
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.1
+  },
+  {
+   "id": "v4-L2",
+   "room": "v4",
+   "kind": "wall",
+   "at": [
+    8,
+    0.4,
+    -72.95
+   ],
+   "normal": [
+    0,
+    0,
+    1
+   ],
+   "size": [
+    3,
+    0.2,
+    0.1
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.1
+  },
+  {
+   "id": "v4-L3",
+   "room": "v4",
+   "kind": "ceiling",
+   "at": [
+    -4,
+    4.95,
+    -69.5
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    2,
+    2,
+    0.1
+   ],
+   "color": "white",
+   "range": 6,
+   "intensity": 0.9
+  },
+  {
+   "id": "v4-L4",
+   "room": "v4",
+   "kind": "ceiling",
+   "at": [
+    10,
+    4.95,
+    -69.5
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    2,
+    2,
+    0.1
+   ],
+   "color": "white",
+   "range": 6,
+   "intensity": 0.9
+  },
+  {
+   "id": "v4-L5",
+   "room": "v4",
+   "kind": "pool",
+   "at": [
+    15,
+    0.025,
+    -71.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.4,
+    2.4,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 6,
+   "intensity": 1.4
+  },
+  {
+   "id": "v5-L1",
+   "room": "v5",
+   "kind": "pool",
+   "at": [
+    7,
+    -0.775,
+    -84
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.4,
+    2.4,
+    0.05
+   ],
+   "color": "orange",
+   "range": 8,
+   "intensity": 2,
+   "danger": true
+  },
+  {
+   "id": "v5-L2",
+   "room": "v5",
+   "kind": "wall",
+   "at": [
+    4.05,
+    5,
+    -89
+   ],
+   "normal": [
+    1,
+    0,
+    0
+   ],
+   "size": [
+    4,
+    0.3,
+    0.1
+   ],
+   "color": "green",
+   "range": 8,
+   "intensity": 1.5
+  },
+  {
+   "id": "v5-L3",
+   "room": "v5",
+   "kind": "wall",
+   "at": [
+    21.95,
+    2.4,
+    -87
+   ],
+   "normal": [
+    -1,
+    0,
+    0
+   ],
+   "size": [
+    8,
+    0.25,
+    0.1
+   ],
+   "color": "cyan",
+   "range": 8,
+   "intensity": 1.5
+  },
+  {
+   "id": "v5-L4",
+   "room": "v5",
+   "kind": "wall",
+   "at": [
+    4.05,
+    0.4,
+    -79
+   ],
+   "normal": [
+    1,
+    0,
+    0
+   ],
+   "size": [
+    3,
+    0.2,
+    0.1
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.1
+  },
+  {
+   "id": "v5-L5",
+   "room": "v5",
+   "kind": "wall",
+   "at": [
+    21.95,
+    6.4,
+    -97
+   ],
+   "normal": [
+    -1,
+    0,
+    0
+   ],
+   "size": [
+    3,
+    0.2,
+    0.1
+   ],
+   "color": "white",
+   "range": 8,
+   "intensity": 1.2
+  },
+  {
+   "id": "v5-L6",
+   "room": "v5",
+   "kind": "ceiling",
+   "at": [
+    10,
+    11.95,
+    -83
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 12,
+   "intensity": 0.9
+  },
+  {
+   "id": "v5-L7",
+   "room": "v5",
+   "kind": "ceiling",
+   "at": [
+    13,
+    11.95,
+    -94
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 12,
+   "intensity": 0.9
+  },
+  {
+   "id": "v5-L8",
+   "room": "v5",
+   "kind": "pool",
+   "at": [
+    13,
+    0.025,
+    -96.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.8
+  },
+  {
+   "id": "v6-L1",
+   "room": "v6",
+   "kind": "pool",
+   "at": [
+    8,
+    -0.775,
+    -113
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.4,
+    2.4,
+    0.05
+   ],
+   "color": "orange",
+   "range": 9,
+   "intensity": 2.2,
+   "danger": true
+  },
+  {
+   "id": "v6-L2",
+   "room": "v6",
+   "kind": "wall",
+   "at": [
+    1.05,
+    2.6,
+    -111.75
+   ],
+   "normal": [
+    1,
+    0,
+    0
+   ],
+   "size": [
+    7,
+    0.25,
+    0.1
+   ],
+   "color": "cyan",
+   "range": 8,
+   "intensity": 1.6
+  },
+  {
+   "id": "v6-L3",
+   "room": "v6",
+   "kind": "wall",
+   "at": [
+    20.95,
+    0.4,
+    -104.5
+   ],
+   "normal": [
+    -1,
+    0,
+    0
+   ],
+   "size": [
+    2,
+    0.2,
+    0.1
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.1
+  },
+  {
+   "id": "v6-L4",
+   "room": "v6",
+   "kind": "wall",
+   "at": [
+    20.95,
+    3,
+    -124
+   ],
+   "normal": [
+    -1,
+    0,
+    0
+   ],
+   "size": [
+    3,
+    0.2,
+    0.1
+   ],
+   "color": "white",
+   "range": 8,
+   "intensity": 1
+  },
+  {
+   "id": "v6-L5",
+   "room": "v6",
+   "kind": "ceiling",
+   "at": [
+    6,
+    11.95,
+    -105
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    2,
+    1.5,
+    0.1
+   ],
+   "color": "white",
+   "range": 11,
+   "intensity": 1
+  },
+  {
+   "id": "v6-L6",
+   "room": "v6",
+   "kind": "ceiling",
+   "at": [
+    7,
+    11.95,
+    -124
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    2,
+    2,
+    0.1
+   ],
+   "color": "white",
+   "range": 11,
+   "intensity": 1
+  },
+  {
+   "id": "v6-L7",
+   "room": "v6",
+   "kind": "pool",
+   "at": [
+    7,
+    0.025,
+    -124.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.4,
+    2.4,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.8
+  },
+  {
+   "id": "v7-L1",
+   "room": "v7",
+   "kind": "wall",
+   "at": [
+    5,
+    0.4,
+    -137.95
+   ],
+   "normal": [
+    0,
+    0,
+    1
+   ],
+   "size": [
+    3,
+    0.2,
+    0.1
+   ],
+   "color": "white",
+   "range": 5,
+   "intensity": 1
+  },
+  {
+   "id": "v7-L2",
+   "room": "v7",
+   "kind": "wall",
+   "at": [
+    -9,
+    0.4,
+    -137.95
+   ],
+   "normal": [
+    0,
+    0,
+    1
+   ],
+   "size": [
+    3,
+    0.2,
+    0.1
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.1
+  },
+  {
+   "id": "v7-L3",
+   "room": "v7",
+   "kind": "ceiling",
+   "at": [
+    -1,
+    4.95,
+    -134.5
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    2,
+    2,
+    0.1
+   ],
+   "color": "white",
+   "range": 6,
+   "intensity": 0.9
+  },
+  {
+   "id": "v7-L4",
+   "room": "v7",
+   "kind": "ceiling",
+   "at": [
+    -11,
+    4.95,
+    -134.5
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    2,
+    2,
+    0.1
+   ],
+   "color": "white",
+   "range": 6,
+   "intensity": 0.9
+  },
+  {
+   "id": "v7-L5",
+   "room": "v7",
+   "kind": "pool",
+   "at": [
+    -16,
+    0.025,
+    -136.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.4,
+    2.4,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 6,
+   "intensity": 1.4
+  },
+  {
+   "id": "v8-L1",
+   "room": "v8",
+   "kind": "pool",
+   "at": [
+    -14,
+    -0.775,
+    -149.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.4,
+    2.4,
+    0.05
+   ],
+   "color": "orange",
+   "range": 8,
+   "intensity": 2,
+   "danger": true
+  },
+  {
+   "id": "v8-L2",
+   "room": "v8",
+   "kind": "wall",
+   "at": [
+    -25.95,
+    1.8,
+    -154
+   ],
+   "normal": [
+    1,
+    0,
+    0
+   ],
+   "size": [
+    16,
+    0.25,
+    0.1
+   ],
+   "color": "cyan",
+   "range": 8,
+   "intensity": 1.6
+  },
+  {
+   "id": "v8-L3",
+   "room": "v8",
+   "kind": "wall",
+   "at": [
+    -2.05,
+    1.8,
+    -154
+   ],
+   "normal": [
+    -1,
+    0,
+    0
+   ],
+   "size": [
+    16,
+    0.25,
+    0.1
+   ],
+   "color": "cyan",
+   "range": 8,
+   "intensity": 1.6
+  },
+  {
+   "id": "v8-L4",
+   "room": "v8",
+   "kind": "ceiling",
+   "at": [
+    -20,
+    11.95,
+    -146
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 12,
+   "intensity": 0.9
+  },
+  {
+   "id": "v8-L5",
+   "room": "v8",
+   "kind": "ceiling",
+   "at": [
+    -8,
+    11.95,
+    -162
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 12,
+   "intensity": 0.9
+  },
+  {
+   "id": "v8-L6",
+   "room": "v8",
+   "kind": "ceiling",
+   "at": [
+    -14,
+    11.95,
+    -155
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 12,
+   "intensity": 0.9
+  },
+  {
+   "id": "v8-L7",
+   "room": "v8",
+   "kind": "pool",
+   "at": [
+    -14,
+    2.775,
+    -155
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.4,
+    2.4,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.6
+  },
+  {
+   "id": "v8-L8",
+   "room": "v8",
+   "kind": "pool",
+   "at": [
+    -10,
+    0.025,
+    -163.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.8
+  },
+  {
+   "id": "v9-L1",
+   "room": "v9",
+   "kind": "pool",
+   "at": [
+    -10,
+    0.025,
+    -171.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.5,
+    2.5,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 6,
+   "intensity": 1.4
+  },
+  {
+   "id": "v9-L2",
+   "room": "v9",
+   "kind": "pool",
+   "at": [
+    -10,
+    0.025,
+    -209.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.5,
+    2.5,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.6
+  },
+  {
+   "id": "v9-L3",
+   "room": "v9",
+   "kind": "wall",
+   "at": [
+    -21.95,
+    1.6,
+    -190
+   ],
+   "normal": [
+    1,
+    0,
+    0
+   ],
+   "size": [
+    30,
+    0.2,
+    0.1
+   ],
+   "color": "amber",
+   "range": 8,
+   "intensity": 1
+  },
+  {
+   "id": "v9-L4",
+   "room": "v9",
+   "kind": "wall",
+   "at": [
+    1.95,
+    1.6,
+    -190
+   ],
+   "normal": [
+    -1,
+    0,
+    0
+   ],
+   "size": [
+    30,
+    0.2,
+    0.1
+   ],
+   "color": "white",
+   "range": 8,
+   "intensity": 1
+  },
+  {
+   "id": "v10-L1",
+   "room": "v10",
+   "kind": "pool",
+   "at": [
+    -10,
+    0.025,
+    -218.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.5,
+    2.5,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 6,
+   "intensity": 1.4
+  },
+  {
+   "id": "v10-L2",
+   "room": "v10",
+   "kind": "pool",
+   "at": [
+    -10,
+    0.025,
+    -248
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.5,
+    2.5,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.6
+  },
+  {
+   "id": "v10-L3",
+   "room": "v10",
+   "kind": "wall",
+   "at": [
+    -21.95,
+    1.6,
+    -233
+   ],
+   "normal": [
+    1,
+    0,
+    0
+   ],
+   "size": [
+    30,
+    0.2,
+    0.1
+   ],
+   "color": "amber",
+   "range": 8,
+   "intensity": 1
+  },
+  {
+   "id": "v10-L4",
+   "room": "v10",
+   "kind": "wall",
+   "at": [
+    1.95,
+    1.6,
+    -233
+   ],
+   "normal": [
+    -1,
+    0,
+    0
+   ],
+   "size": [
+    30,
+    0.2,
+    0.1
+   ],
+   "color": "white",
+   "range": 8,
+   "intensity": 1
+  },
+  {
+   "id": "v11-L1",
+   "room": "v11",
+   "kind": "pool",
+   "at": [
+    -10,
+    0.025,
+    -259
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 8,
+   "intensity": 1.6
+  },
+  {
+   "id": "v11-L2",
+   "room": "v11",
+   "kind": "pool",
+   "at": [
+    -22,
+    -26.975,
+    -279
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.4,
+    2.4,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 8,
+   "intensity": 1.6
+  },
+  {
+   "id": "v11-L3",
+   "room": "v11",
+   "kind": "pool",
+   "at": [
+    -10,
+    -59.975,
+    -281
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 10,
+   "intensity": 1.8
+  }
+ ],
+ "props": [
+  {
+   "id": "v1-P1",
+   "room": "v1",
+   "kind": "pillar",
+   "at": [
+    -4,
+    2.95,
+    -2
+   ],
+   "size": [
+    1,
+    5.9,
+    1
+   ],
+   "yawDeg": 0,
+   "collider": true,
+   "job": "cover",
+   "why": "level 5 as it was (n33-spire, copied unchanged): pillar"
+  },
+  {
+   "id": "v1-P2",
+   "room": "v1",
+   "kind": "pillar",
+   "at": [
+    -10,
+    2.95,
+    -6
+   ],
+   "size": [
+    1,
+    5.9,
+    1
+   ],
+   "yawDeg": 0,
+   "collider": true,
+   "job": "cover",
+   "why": "level 5 as it was (n33-spire, copied unchanged): pillar"
+  },
+  {
+   "id": "v1-P3",
+   "room": "v1",
+   "kind": "pillar",
+   "at": [
+    -15,
+    2.95,
+    -2
+   ],
+   "size": [
+    1,
+    5.9,
+    1
+   ],
+   "yawDeg": 0,
+   "collider": true,
+   "job": "cover",
+   "why": "level 5 as it was (n33-spire, copied unchanged): pillar"
+  },
+  {
+   "id": "v1-P4",
+   "room": "v1",
+   "kind": "floorStrip",
+   "at": [
+    -2,
+    0.025,
+    -4
+   ],
+   "size": [
+    2,
+    0.05,
+    0.6
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "color": "cyan"
+  },
+  {
+   "id": "v1-P5",
+   "room": "v1",
+   "kind": "floorStrip",
+   "at": [
+    -8,
+    0.025,
+    -4
+   ],
+   "size": [
+    2,
+    0.05,
+    0.6
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "color": "cyan"
+  },
+  {
+   "id": "v2-P1",
+   "room": "v2",
+   "kind": "crate",
+   "at": [
+    -25.5,
+    0.6,
+    -26
+   ],
+   "size": [
+    1.4,
+    1.2,
+    1.4
+   ],
+   "yawDeg": 0,
+   "collider": true,
+   "job": "cover",
+   "why": "level 5 as it was (n33-spire, copied unchanged): crate"
+  },
+  {
+   "id": "v2-P2",
+   "room": "v2",
+   "kind": "pillar",
+   "at": [
+    -16.5,
+    4.95,
+    -28
+   ],
+   "size": [
+    1,
+    9.9,
+    1
+   ],
+   "yawDeg": 0,
+   "collider": true,
+   "job": "cover",
+   "why": "level 5 as it was (n33-spire, copied unchanged): pillar"
+  },
+  {
+   "id": "v2-R33-1",
+   "room": "v2",
+   "kind": "lowWall",
+   "at": [
+    -15,
+    0.6,
+    -26
+   ],
+   "size": [
+    2,
+    1.2,
+    0.6
+   ],
+   "yawDeg": 0,
+   "collider": true,
+   "job": "cover",
+   "why": "level 5 as it was (n33-spire, copied unchanged): lowWall"
+  },
+  {
+   "id": "v2-R33-2",
+   "room": "v2",
+   "kind": "pillar",
+   "at": [
+    -22,
+    0.6,
+    -14
+   ],
+   "size": [
+    0.8,
+    1.2,
+    0.8
+   ],
+   "yawDeg": 0,
+   "collider": true,
+   "job": "cover",
+   "why": "level 5 as it was (n33-spire, copied unchanged): pillar"
+  },
+  {
+   "id": "v2-R33-3",
+   "room": "v2",
+   "kind": "crate",
+   "at": [
+    -11.5,
+    0.6,
+    -13.5
+   ],
+   "size": [
+    1.2,
+    1.2,
+    1.2
+   ],
+   "yawDeg": 0,
+   "collider": true,
+   "job": "cover",
+   "why": "level 5 as it was (n33-spire, copied unchanged): crate"
+  },
+  {
+   "id": "v2-R33-4",
+   "room": "v2",
+   "kind": "crate",
+   "at": [
+    -10,
+    0.6,
+    -33
+   ],
+   "size": [
+    1.2,
+    1.2,
+    1.2
+   ],
+   "yawDeg": 0,
+   "collider": true,
+   "job": "cover",
+   "why": "level 5 as it was (n33-spire, copied unchanged): crate"
+  },
+  {
+   "id": "v3-P1",
+   "room": "v3",
+   "kind": "crate",
+   "at": [
+    -8.5,
+    0.6,
+    -60.5
+   ],
+   "size": [
+    1.4,
+    1.2,
+    1.4
+   ],
+   "yawDeg": 0,
+   "collider": true,
+   "job": "cover",
+   "why": "level 5 as it was (n33-spire, copied unchanged): crate"
+  },
+  {
+   "id": "v4-P1",
+   "room": "v4",
+   "kind": "healthPickup",
+   "at": [
+    2,
+    0.9,
+    -69.5
+   ],
+   "size": [
+    0.6,
+    0.6,
+    0.6
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "pickup": true,
+   "note": "a health pickup half way along the gallery"
+  },
+  {
+   "id": "v4-P2",
+   "room": "v4",
+   "kind": "pillar",
+   "at": [
+    -6,
+    2.45,
+    -69.5
+   ],
+   "size": [
+    1,
+    4.9,
+    1
+   ],
+   "yawDeg": 0,
+   "collider": true,
+   "job": "cover",
+   "why": "level 5 as it was (n33-spire, copied unchanged): pillar"
+  },
+  {
+   "id": "v4-P3",
+   "room": "v4",
+   "kind": "pillar",
+   "at": [
+    8,
+    2.45,
+    -69.5
+   ],
+   "size": [
+    1,
+    4.9,
+    1
+   ],
+   "yawDeg": 0,
+   "collider": true,
+   "job": "cover",
+   "why": "level 5 as it was (n33-spire, copied unchanged): pillar"
+  },
+  {
+   "id": "v4-P4",
+   "room": "v4",
+   "kind": "floorStrip",
+   "at": [
+    0,
+    0.025,
+    -69.5
+   ],
+   "size": [
+    2,
+    0.05,
+    0.6
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "color": "white"
+  },
+  {
+   "id": "v4-R33-1",
+   "room": "v4",
+   "kind": "crate",
+   "at": [
+    18.5,
+    0.6,
+    -67.5
+   ],
+   "size": [
+    1.4,
+    1.2,
+    1.4
+   ],
+   "yawDeg": 0,
+   "collider": true,
+   "job": "cover",
+   "why": "level 5 as it was (n33-spire, copied unchanged): crate"
+  },
+  {
+   "id": "v5-P1",
+   "room": "v5",
+   "kind": "pillar",
+   "at": [
+    14,
+    5.95,
+    -86
+   ],
+   "size": [
+    2,
+    11.9,
+    2
+   ],
+   "yawDeg": 0,
+   "collider": true,
+   "job": "cover",
+   "why": "level 5 as it was (n33-spire, copied unchanged): pillar"
+  },
+  {
+   "id": "v5-P2",
+   "room": "v5",
+   "kind": "heatVent",
+   "at": [
+    6,
+    0.025,
+    -79
+   ],
+   "size": [
+    1.4,
+    0.05,
+    1.4
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "color": "amber",
+   "viewOnly": true,
+   "note": "vent 1's grate (view only)"
+  },
+  {
+   "id": "v5-P3",
+   "room": "v5",
+   "kind": "heatVent",
+   "at": [
+    12,
+    0.025,
+    -94
+   ],
+   "size": [
+    1.4,
+    0.05,
+    1.4
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "color": "amber",
+   "viewOnly": true,
+   "note": "vent 2's grate (view only)"
+  },
+  {
+   "id": "v5-P4",
+   "room": "v5",
+   "kind": "console",
+   "at": [
+    21,
+    0.6,
+    -78.5
+   ],
+   "size": [
+    1.6,
+    1.2,
+    1.2
+   ],
+   "yawDeg": 0,
+   "collider": true,
+   "job": "cover",
+   "why": "level 5 as it was (n33-spire, copied unchanged): console"
+  },
+  {
+   "id": "v6-P1",
+   "room": "v6",
+   "kind": "crate",
+   "at": [
+    1.8,
+    0.6,
+    -123.4
+   ],
+   "size": [
+    1.2,
+    1.2,
+    1.2
+   ],
+   "yawDeg": 0,
+   "collider": true,
+   "job": "cover",
+   "why": "level 5 as it was (n33-spire, copied unchanged): crate"
+  },
+  {
+   "id": "v7-P1",
+   "room": "v7",
+   "kind": "healthPickup",
+   "at": [
+    -3,
+    0.9,
+    -134.5
+   ],
+   "size": [
+    0.6,
+    0.6,
+    0.6
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "pickup": true,
+   "note": "a health pickup half way along the gallery"
+  },
+  {
+   "id": "v7-P2",
+   "room": "v7",
+   "kind": "pillar",
+   "at": [
+    3,
+    2.45,
+    -134.5
+   ],
+   "size": [
+    1,
+    4.9,
+    1
+   ],
+   "yawDeg": 0,
+   "collider": true,
+   "job": "cover",
+   "why": "level 5 as it was (n33-spire, copied unchanged): pillar"
+  },
+  {
+   "id": "v7-P3",
+   "room": "v7",
+   "kind": "pillar",
+   "at": [
+    -9,
+    2.45,
+    -134.5
+   ],
+   "size": [
+    1,
+    4.9,
+    1
+   ],
+   "yawDeg": 0,
+   "collider": true,
+   "job": "cover",
+   "why": "level 5 as it was (n33-spire, copied unchanged): pillar"
+  },
+  {
+   "id": "v7-P4",
+   "room": "v7",
+   "kind": "checkpoint",
+   "at": [
+    -14,
+    0.025,
+    -134
+   ],
+   "size": [
+    2,
+    0.05,
+    2
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "color": "cyan",
+   "note": "the checkpoint: the next door sets it (the door rows say checkpoint: true)"
+  },
+  {
+   "id": "v8-P1",
+   "room": "v8",
+   "kind": "heatVent",
+   "at": [
+    -11,
+    0.025,
+    -145
+   ],
+   "size": [
+    1.4,
+    0.05,
+    1.4
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "color": "amber",
+   "viewOnly": true,
+   "note": "the vent's grate (view only)"
+  },
+  {
+   "id": "v8-P2",
+   "room": "v8",
+   "kind": "crate",
+   "at": [
+    -24,
+    0.6,
+    -144
+   ],
+   "size": [
+    1.4,
+    1.2,
+    1.4
+   ],
+   "yawDeg": 0,
+   "collider": true,
+   "job": "cover",
+   "why": "level 5 as it was (n33-spire, copied unchanged): crate"
+  },
+  {
+   "id": "v8-P3",
+   "room": "v8",
+   "kind": "crate",
+   "at": [
+    -4,
+    0.6,
+    -160
+   ],
+   "size": [
+    1.4,
+    1.2,
+    1.4
+   ],
+   "yawDeg": 0,
+   "collider": true,
+   "job": "cover",
+   "why": "level 5 as it was (n33-spire, copied unchanged): crate"
+  },
+  {
+   "id": "k33-v1-wash-3",
+   "room": "v1",
+   "kind": "wash",
+   "at": [
+    -20.5,
+    2.8,
+    -7.99
+   ],
+   "size": [
+    1,
+    5.6,
+    0.02
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v1-wash-7",
+   "room": "v1",
+   "kind": "wash",
+   "at": [
+    -5.5,
+    2.8,
+    -7.99
+   ],
+   "size": [
+    21,
+    5.6,
+    0.02
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v1-wash-17",
+   "room": "v1",
+   "kind": "wash",
+   "at": [
+    -8,
+    2.8,
+    -0.01
+   ],
+   "size": [
+    26,
+    5.6,
+    0.02
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v1-wash-29",
+   "room": "v1",
+   "kind": "wash",
+   "at": [
+    -20.99,
+    2.8,
+    -4
+   ],
+   "size": [
+    7.94,
+    5.6,
+    0.02
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v1-wash-37",
+   "room": "v1",
+   "kind": "wash",
+   "at": [
+    4.99,
+    2.8,
+    -4
+   ],
+   "size": [
+    7.94,
+    5.6,
+    0.02
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v1-skirt-1",
+   "room": "v1",
+   "kind": "skirt",
+   "at": [
+    -20.5,
+    0.11,
+    -7.925
+   ],
+   "size": [
+    1,
+    0.22,
+    0.15
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v1-cornice-2",
+   "room": "v1",
+   "kind": "cornice",
+   "at": [
+    -20.5,
+    5.8,
+    -7.85
+   ],
+   "size": [
+    1,
+    0.4,
+    0.3
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v1-skirt-5",
+   "room": "v1",
+   "kind": "skirt",
+   "at": [
+    -5.5,
+    0.11,
+    -7.925
+   ],
+   "size": [
+    21,
+    0.22,
+    0.15
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v1-cornice-6",
+   "room": "v1",
+   "kind": "cornice",
+   "at": [
+    -5.5,
+    5.8,
+    -7.85
+   ],
+   "size": [
+    21,
+    0.4,
+    0.3
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v1-fin-8",
+   "room": "v1",
+   "kind": "fin",
+   "at": [
+    -10.75,
+    2.8,
+    -7.84
+   ],
+   "size": [
+    0.5,
+    5.6,
+    0.32
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86,
+    0.25,
+    0.55
+   ]
+  },
+  {
+   "id": "k33-v1-recess-9",
+   "room": "v1",
+   "kind": "recess",
+   "at": [
+    -5.5,
+    3.655,
+    -7.9
+   ],
+   "size": [
+    3,
+    3.29,
+    0.2
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v1-fin-10",
+   "room": "v1",
+   "kind": "fin",
+   "at": [
+    -0.25,
+    2.8,
+    -7.84
+   ],
+   "size": [
+    0.5,
+    5.6,
+    0.32
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86,
+    0.25,
+    0.55
+   ]
+  },
+  {
+   "id": "k33-v1-skirt-15",
+   "room": "v1",
+   "kind": "skirt",
+   "at": [
+    -8,
+    0.11,
+    -0.075
+   ],
+   "size": [
+    26,
+    0.22,
+    0.15
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v1-cornice-16",
+   "room": "v1",
+   "kind": "cornice",
+   "at": [
+    -8,
+    5.8,
+    -0.15
+   ],
+   "size": [
+    26,
+    0.4,
+    0.3
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v1-fin-18",
+   "room": "v1",
+   "kind": "fin",
+   "at": [
+    -15.8,
+    2.8,
+    -0.16
+   ],
+   "size": [
+    0.5,
+    5.6,
+    0.32
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86
+   ]
+  },
+  {
+   "id": "k33-v1-recess-19",
+   "room": "v1",
+   "kind": "recess",
+   "at": [
+    -10.6,
+    3.655,
+    -0.1
+   ],
+   "size": [
+    3,
+    3.29,
+    0.2
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v1-fin-20",
+   "room": "v1",
+   "kind": "fin",
+   "at": [
+    -5.4,
+    2.8,
+    -0.16
+   ],
+   "size": [
+    0.5,
+    5.6,
+    0.32
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86,
+    0.25,
+    0.55
+   ]
+  },
+  {
+   "id": "k33-v1-recess-21",
+   "room": "v1",
+   "kind": "recess",
+   "at": [
+    -0.2,
+    3.655,
+    -0.1
+   ],
+   "size": [
+    3,
+    3.29,
+    0.2
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v1-skirt-27",
+   "room": "v1",
+   "kind": "skirt",
+   "at": [
+    -20.925,
+    0.11,
+    -4
+   ],
+   "size": [
+    7.68,
+    0.22,
+    0.15
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v1-cornice-28",
+   "room": "v1",
+   "kind": "cornice",
+   "at": [
+    -20.85,
+    5.8,
+    -4
+   ],
+   "size": [
+    7.38,
+    0.4,
+    0.3
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v1-skirt-35",
+   "room": "v1",
+   "kind": "skirt",
+   "at": [
+    4.925,
+    0.11,
+    -4
+   ],
+   "size": [
+    7.68,
+    0.22,
+    0.15
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v1-cornice-36",
+   "room": "v1",
+   "kind": "cornice",
+   "at": [
+    4.85,
+    5.8,
+    -4
+   ],
+   "size": [
+    7.38,
+    0.4,
+    0.3
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v1-fin-38",
+   "room": "v1",
+   "kind": "fin",
+   "at": [
+    4.84,
+    2.8,
+    -4
+   ],
+   "size": [
+    0.5,
+    5.6,
+    0.32
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86
+   ]
+  },
+  {
+   "id": "k33-v1-pilaster-43",
+   "room": "v1",
+   "kind": "pilaster",
+   "at": [
+    -20.827,
+    2.8,
+    -7.827
+   ],
+   "size": [
+    0.345,
+    5.6,
+    0.345
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86
+   ]
+  },
+  {
+   "id": "k33-v1-pilaster-44",
+   "room": "v1",
+   "kind": "pilaster",
+   "at": [
+    4.828,
+    2.8,
+    -7.827
+   ],
+   "size": [
+    0.345,
+    5.6,
+    0.345
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86
+   ]
+  },
+  {
+   "id": "k33-v1-pilaster-45",
+   "room": "v1",
+   "kind": "pilaster",
+   "at": [
+    -20.827,
+    2.8,
+    -0.172
+   ],
+   "size": [
+    0.345,
+    5.6,
+    0.345
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86
+   ]
+  },
+  {
+   "id": "k33-v1-pilaster-46",
+   "room": "v1",
+   "kind": "pilaster",
+   "at": [
+    4.828,
+    2.8,
+    -0.172
+   ],
+   "size": [
+    0.345,
+    5.6,
+    0.345
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86
+   ]
+  },
+  {
+   "id": "k33-v1-doorFrame-47",
+   "room": "v1",
+   "kind": "doorFrame",
+   "at": [
+    -18,
+    2.45,
+    -7.845
+   ],
+   "size": [
+    4.8,
+    4.9,
+    0.31
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86
+   ]
+  },
+  {
+   "id": "k33-v1-hero-49",
+   "room": "v1",
+   "kind": "hero",
+   "at": [
+    -20.5,
+    4.2,
+    -4
+   ],
+   "size": [
+    6,
+    2.3,
+    1
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v1-edgeLight-4",
+   "room": "v1",
+   "kind": "edgeLight",
+   "at": [
+    -20.5,
+    3.05,
+    -7.97
+   ],
+   "size": [
+    1,
+    0.1,
+    0.06
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v1-edgeLight-11",
+   "room": "v1",
+   "kind": "edgeLight",
+   "at": [
+    -5.5,
+    3.05,
+    -7.97
+   ],
+   "size": [
+    21,
+    0.1,
+    0.06
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v1-wallPipe-12",
+   "room": "v1",
+   "kind": "wallPipe",
+   "at": [
+    -5.5,
+    3.6,
+    -7.865
+   ],
+   "size": [
+    20.4,
+    0.3,
+    0.27
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v1-edgeLight-22",
+   "room": "v1",
+   "kind": "edgeLight",
+   "at": [
+    -8,
+    3.05,
+    -0.03
+   ],
+   "size": [
+    26,
+    0.1,
+    0.06
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v1-wallPipe-23",
+   "room": "v1",
+   "kind": "wallPipe",
+   "at": [
+    -8,
+    3.6,
+    -0.135
+   ],
+   "size": [
+    25.4,
+    0.3,
+    0.27
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v1-edgeLight-31",
+   "room": "v1",
+   "kind": "edgeLight",
+   "at": [
+    -20.97,
+    3.05,
+    -4
+   ],
+   "size": [
+    7.86,
+    0.1,
+    0.06
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v1-wallPipe-32",
+   "room": "v1",
+   "kind": "wallPipe",
+   "at": [
+    -20.865,
+    3.6,
+    -4
+   ],
+   "size": [
+    6.84,
+    0.3,
+    0.27
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v1-edgeLight-39",
+   "room": "v1",
+   "kind": "edgeLight",
+   "at": [
+    4.97,
+    3.05,
+    -4
+   ],
+   "size": [
+    7.86,
+    0.1,
+    0.06
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v1-wallPipe-40",
+   "room": "v1",
+   "kind": "wallPipe",
+   "at": [
+    4.865,
+    3.6,
+    -4
+   ],
+   "size": [
+    6.84,
+    0.3,
+    0.27
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v1-lintelLight-48",
+   "room": "v1",
+   "kind": "lintelLight",
+   "at": [
+    -18,
+    5.275,
+    -7.95
+   ],
+   "size": [
+    4,
+    0.15,
+    0.1
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v2-wash-3",
+   "room": "v2",
+   "kind": "wash",
+   "at": [
+    -22.5,
+    4.8,
+    -33.99
+   ],
+   "size": [
+    9,
+    9.6,
+    0.02
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v2-wash-13",
+   "room": "v2",
+   "kind": "wash",
+   "at": [
+    -11.5,
+    4.8,
+    -33.99
+   ],
+   "size": [
+    5,
+    9.6,
+    0.02
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v2-wash-21",
+   "room": "v2",
+   "kind": "wash",
+   "at": [
+    -23.5,
+    4.8,
+    -12.01
+   ],
+   "size": [
+    7,
+    9.6,
+    0.02
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v2-wash-31",
+   "room": "v2",
+   "kind": "wash",
+   "at": [
+    -12.5,
+    4.8,
+    -12.01
+   ],
+   "size": [
+    7,
+    9.6,
+    0.02
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v2-wash-42",
+   "room": "v2",
+   "kind": "wash",
+   "at": [
+    -26.99,
+    4.8,
+    -23
+   ],
+   "size": [
+    21.94,
+    9.6,
+    0.02
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v2-wash-56",
+   "room": "v2",
+   "kind": "wash",
+   "at": [
+    -9.01,
+    4.8,
+    -23
+   ],
+   "size": [
+    21.94,
+    9.6,
+    0.02
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v2-skirt-1",
+   "room": "v2",
+   "kind": "skirt",
+   "at": [
+    -22.5,
+    0.11,
+    -33.925
+   ],
+   "size": [
+    9,
+    0.22,
+    0.15
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v2-cornice-2",
+   "room": "v2",
+   "kind": "cornice",
+   "at": [
+    -22.5,
+    9.8,
+    -33.85
+   ],
+   "size": [
+    9,
+    0.4,
+    0.3
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v2-skirt-11",
+   "room": "v2",
+   "kind": "skirt",
+   "at": [
+    -11.5,
+    0.11,
+    -33.925
+   ],
+   "size": [
+    5,
+    0.22,
+    0.15
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v2-cornice-12",
+   "room": "v2",
+   "kind": "cornice",
+   "at": [
+    -11.5,
+    9.8,
+    -33.85
+   ],
+   "size": [
+    5,
+    0.4,
+    0.3
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v2-skirt-19",
+   "room": "v2",
+   "kind": "skirt",
+   "at": [
+    -23.5,
+    0.11,
+    -12.075
+   ],
+   "size": [
+    7,
+    0.22,
+    0.15
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v2-cornice-20",
+   "room": "v2",
+   "kind": "cornice",
+   "at": [
+    -23.5,
+    9.8,
+    -12.15
+   ],
+   "size": [
+    7,
+    0.4,
+    0.3
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v2-fin-22",
+   "room": "v2",
+   "kind": "fin",
+   "at": [
+    -23.5,
+    4.8,
+    -12.16
+   ],
+   "size": [
+    0.5,
+    9.6,
+    0.32
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86
+   ]
+  },
+  {
+   "id": "k33-v2-skirt-29",
+   "room": "v2",
+   "kind": "skirt",
+   "at": [
+    -12.5,
+    0.11,
+    -12.075
+   ],
+   "size": [
+    7,
+    0.22,
+    0.15
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v2-cornice-30",
+   "room": "v2",
+   "kind": "cornice",
+   "at": [
+    -12.5,
+    9.8,
+    -12.15
+   ],
+   "size": [
+    7,
+    0.4,
+    0.3
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v2-fin-32",
+   "room": "v2",
+   "kind": "fin",
+   "at": [
+    -12.5,
+    4.8,
+    -12.16
+   ],
+   "size": [
+    0.5,
+    9.6,
+    0.32
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86
+   ]
+  },
+  {
+   "id": "k33-v2-skirt-39",
+   "room": "v2",
+   "kind": "skirt",
+   "at": [
+    -26.925,
+    0.11,
+    -28.92
+   ],
+   "size": [
+    9.84,
+    0.22,
+    0.15
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v2-skirt-40",
+   "room": "v2",
+   "kind": "skirt",
+   "at": [
+    -26.925,
+    0.11,
+    -14.58
+   ],
+   "size": [
+    4.84,
+    0.22,
+    0.15
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v2-cornice-41",
+   "room": "v2",
+   "kind": "cornice",
+   "at": [
+    -26.85,
+    9.8,
+    -23
+   ],
+   "size": [
+    21.38,
+    0.4,
+    0.3
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v2-fin-43",
+   "room": "v2",
+   "kind": "fin",
+   "at": [
+    -26.84,
+    4.8,
+    -28.5
+   ],
+   "size": [
+    0.5,
+    9.6,
+    0.32
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86
+   ]
+  },
+  {
+   "id": "k33-v2-recess-44",
+   "room": "v2",
+   "kind": "recess",
+   "at": [
+    -26.9,
+    4.01,
+    -23
+   ],
+   "size": [
+    3,
+    4,
+    0.2
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v2-fin-45",
+   "room": "v2",
+   "kind": "fin",
+   "at": [
+    -26.84,
+    4.4,
+    -17.5
+   ],
+   "size": [
+    0.5,
+    10.4,
+    0.32
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86,
+    1.625,
+    1.975
+   ]
+  },
+  {
+   "id": "k33-v2-skirt-54",
+   "room": "v2",
+   "kind": "skirt",
+   "at": [
+    -9.075,
+    0.11,
+    -23
+   ],
+   "size": [
+    21.68,
+    0.22,
+    0.15
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v2-cornice-55",
+   "room": "v2",
+   "kind": "cornice",
+   "at": [
+    -9.15,
+    9.8,
+    -23
+   ],
+   "size": [
+    21.38,
+    0.4,
+    0.3
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v2-fin-57",
+   "room": "v2",
+   "kind": "fin",
+   "at": [
+    -9.16,
+    4.8,
+    -28.5
+   ],
+   "size": [
+    0.5,
+    9.6,
+    0.32
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86,
+    0.25,
+    0.55
+   ]
+  },
+  {
+   "id": "k33-v2-recess-58",
+   "room": "v2",
+   "kind": "recess",
+   "at": [
+    -9.1,
+    4.01,
+    -23
+   ],
+   "size": [
+    3,
+    4,
+    0.2
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v2-fin-59",
+   "room": "v2",
+   "kind": "fin",
+   "at": [
+    -9.16,
+    4.8,
+    -17.5
+   ],
+   "size": [
+    0.5,
+    9.6,
+    0.32
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86
+   ]
+  },
+  {
+   "id": "k33-v2-pilaster-68",
+   "room": "v2",
+   "kind": "pilaster",
+   "at": [
+    -26.827,
+    4.8,
+    -33.827
+   ],
+   "size": [
+    0.345,
+    9.6,
+    0.345
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86
+   ]
+  },
+  {
+   "id": "k33-v2-pilaster-69",
+   "room": "v2",
+   "kind": "pilaster",
+   "at": [
+    -9.172,
+    4.8,
+    -33.827
+   ],
+   "size": [
+    0.345,
+    9.6,
+    0.345
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86
+   ]
+  },
+  {
+   "id": "k33-v2-pilaster-70",
+   "room": "v2",
+   "kind": "pilaster",
+   "at": [
+    -26.827,
+    4.8,
+    -12.172
+   ],
+   "size": [
+    0.345,
+    9.6,
+    0.345
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86
+   ]
+  },
+  {
+   "id": "k33-v2-pilaster-71",
+   "room": "v2",
+   "kind": "pilaster",
+   "at": [
+    -9.172,
+    4.8,
+    -12.172
+   ],
+   "size": [
+    0.345,
+    9.6,
+    0.345
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86
+   ]
+  },
+  {
+   "id": "k33-v2-doorFrame-72",
+   "room": "v2",
+   "kind": "doorFrame",
+   "at": [
+    -16,
+    2.45,
+    -33.845
+   ],
+   "size": [
+    4.8,
+    4.9,
+    0.31
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86
+   ]
+  },
+  {
+   "id": "k33-v2-doorFrame-74",
+   "room": "v2",
+   "kind": "doorFrame",
+   "at": [
+    -18,
+    2.45,
+    -12.155
+   ],
+   "size": [
+    4.8,
+    4.9,
+    0.31
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86
+   ]
+  },
+  {
+   "id": "k33-v2-hero-76",
+   "room": "v2",
+   "kind": "hero",
+   "at": [
+    -22.5,
+    6.2,
+    -33.5
+   ],
+   "size": [
+    6,
+    6.3,
+    1
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v2-edgeLight-5",
+   "room": "v2",
+   "kind": "edgeLight",
+   "at": [
+    -22.5,
+    3.05,
+    -33.97
+   ],
+   "size": [
+    9,
+    0.1,
+    0.06
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v2-wallPipe-8",
+   "room": "v2",
+   "kind": "wallPipe",
+   "at": [
+    -22.5,
+    3.6,
+    -33.865
+   ],
+   "size": [
+    8.4,
+    0.3,
+    0.27
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v2-edgeLight-14",
+   "room": "v2",
+   "kind": "edgeLight",
+   "at": [
+    -11.5,
+    3.05,
+    -33.97
+   ],
+   "size": [
+    5,
+    0.1,
+    0.06
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v2-banner-15",
+   "room": "v2",
+   "kind": "banner",
+   "at": [
+    -11.5,
+    5.2,
+    -33.975
+   ],
+   "size": [
+    1,
+    3.6,
+    0.05
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v2-wallPipe-16",
+   "room": "v2",
+   "kind": "wallPipe",
+   "at": [
+    -11.5,
+    3.6,
+    -33.865
+   ],
+   "size": [
+    4.4,
+    0.3,
+    0.27
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v2-edgeLight-23",
+   "room": "v2",
+   "kind": "edgeLight",
+   "at": [
+    -23.5,
+    3.05,
+    -12.03
+   ],
+   "size": [
+    7,
+    0.1,
+    0.06
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v2-banner-24",
+   "room": "v2",
+   "kind": "banner",
+   "at": [
+    -25.25,
+    5.2,
+    -12.025
+   ],
+   "size": [
+    1,
+    3.6,
+    0.05
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v2-banner-25",
+   "room": "v2",
+   "kind": "banner",
+   "at": [
+    -21.75,
+    5.2,
+    -12.025
+   ],
+   "size": [
+    1,
+    3.6,
+    0.05
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v2-wallPipe-26",
+   "room": "v2",
+   "kind": "wallPipe",
+   "at": [
+    -23.5,
+    3.6,
+    -12.135
+   ],
+   "size": [
+    6.4,
+    0.3,
+    0.27
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v2-edgeLight-33",
+   "room": "v2",
+   "kind": "edgeLight",
+   "at": [
+    -12.5,
+    3.05,
+    -12.03
+   ],
+   "size": [
+    7,
+    0.1,
+    0.06
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v2-banner-34",
+   "room": "v2",
+   "kind": "banner",
+   "at": [
+    -14.25,
+    5.2,
+    -12.025
+   ],
+   "size": [
+    1,
+    3.6,
+    0.05
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v2-banner-35",
+   "room": "v2",
+   "kind": "banner",
+   "at": [
+    -10.75,
+    5.2,
+    -12.025
+   ],
+   "size": [
+    1,
+    3.6,
+    0.05
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v2-wallPipe-36",
+   "room": "v2",
+   "kind": "wallPipe",
+   "at": [
+    -12.5,
+    3.6,
+    -12.135
+   ],
+   "size": [
+    6.4,
+    0.3,
+    0.27
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v2-edgeLight-46",
+   "room": "v2",
+   "kind": "edgeLight",
+   "at": [
+    -26.97,
+    3.05,
+    -23
+   ],
+   "size": [
+    21.86,
+    0.1,
+    0.06
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v3-wash-3",
+   "room": "v3",
+   "kind": "wash",
+   "at": [
+    -20,
+    4.3,
+    -61.99
+   ],
+   "size": [
+    10,
+    8.6,
+    0.02
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v3-wash-13",
+   "room": "v3",
+   "kind": "wash",
+   "at": [
+    -9,
+    4.3,
+    -61.99
+   ],
+   "size": [
+    4,
+    8.6,
+    0.02
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v3-wash-21",
+   "room": "v3",
+   "kind": "wash",
+   "at": [
+    -21.5,
+    4.3,
+    -38.01
+   ],
+   "size": [
+    7,
+    8.6,
+    0.02
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v3-wash-31",
+   "room": "v3",
+   "kind": "wash",
+   "at": [
+    -10.5,
+    4.3,
+    -38.01
+   ],
+   "size": [
+    7,
+    8.6,
+    0.02
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v3-wash-41",
+   "room": "v3",
+   "kind": "wash",
+   "at": [
+    -24.99,
+    4.3,
+    -50
+   ],
+   "size": [
+    23.94,
+    8.6,
+    0.02
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v3-wash-56",
+   "room": "v3",
+   "kind": "wash",
+   "at": [
+    -7.01,
+    4.3,
+    -50
+   ],
+   "size": [
+    23.94,
+    8.6,
+    0.02
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v3-skirt-1",
+   "room": "v3",
+   "kind": "skirt",
+   "at": [
+    -20,
+    0.11,
+    -61.925
+   ],
+   "size": [
+    10,
+    0.22,
+    0.15
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v3-cornice-2",
+   "room": "v3",
+   "kind": "cornice",
+   "at": [
+    -20,
+    8.8,
+    -61.85
+   ],
+   "size": [
+    10,
+    0.4,
+    0.3
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v3-skirt-11",
+   "room": "v3",
+   "kind": "skirt",
+   "at": [
+    -9,
+    0.11,
+    -61.925
+   ],
+   "size": [
+    4,
+    0.22,
+    0.15
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v3-cornice-12",
+   "room": "v3",
+   "kind": "cornice",
+   "at": [
+    -9,
+    8.8,
+    -61.85
+   ],
+   "size": [
+    4,
+    0.4,
+    0.3
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v3-skirt-19",
+   "room": "v3",
+   "kind": "skirt",
+   "at": [
+    -21.5,
+    0.11,
+    -38.075
+   ],
+   "size": [
+    7,
+    0.22,
+    0.15
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v3-cornice-20",
+   "room": "v3",
+   "kind": "cornice",
+   "at": [
+    -21.5,
+    8.8,
+    -38.15
+   ],
+   "size": [
+    7,
+    0.4,
+    0.3
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v3-fin-22",
+   "room": "v3",
+   "kind": "fin",
+   "at": [
+    -21.5,
+    4.3,
+    -38.16
+   ],
+   "size": [
+    0.5,
+    8.6,
+    0.32
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86
+   ]
+  },
+  {
+   "id": "k33-v3-skirt-29",
+   "room": "v3",
+   "kind": "skirt",
+   "at": [
+    -10.5,
+    0.11,
+    -38.075
+   ],
+   "size": [
+    7,
+    0.22,
+    0.15
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v3-cornice-30",
+   "room": "v3",
+   "kind": "cornice",
+   "at": [
+    -10.5,
+    8.8,
+    -38.15
+   ],
+   "size": [
+    7,
+    0.4,
+    0.3
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v3-fin-32",
+   "room": "v3",
+   "kind": "fin",
+   "at": [
+    -10.5,
+    4.3,
+    -38.16
+   ],
+   "size": [
+    0.5,
+    8.6,
+    0.32
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86
+   ]
+  },
+  {
+   "id": "k33-v3-skirt-39",
+   "room": "v3",
+   "kind": "skirt",
+   "at": [
+    -24.925,
+    0.11,
+    -50
+   ],
+   "size": [
+    23.68,
+    0.22,
+    0.15
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v3-cornice-40",
+   "room": "v3",
+   "kind": "cornice",
+   "at": [
+    -24.85,
+    8.8,
+    -50
+   ],
+   "size": [
+    23.38,
+    0.4,
+    0.3
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v3-fin-42",
+   "room": "v3",
+   "kind": "fin",
+   "at": [
+    -24.84,
+    4.3,
+    -56
+   ],
+   "size": [
+    0.5,
+    8.6,
+    0.32
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86,
+    3.25,
+    3.55
+   ]
+  },
+  {
+   "id": "k33-v3-fin-43",
+   "room": "v3",
+   "kind": "fin",
+   "at": [
+    -24.84,
+    4.3,
+    -50
+   ],
+   "size": [
+    0.5,
+    8.6,
+    0.32
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86,
+    3.25,
+    3.55
+   ]
+  },
+  {
+   "id": "k33-v3-fin-44",
+   "room": "v3",
+   "kind": "fin",
+   "at": [
+    -24.84,
+    4.3,
+    -44
+   ],
+   "size": [
+    0.5,
+    8.6,
+    0.32
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86
+   ]
+  },
+  {
+   "id": "k33-v3-skirt-54",
+   "room": "v3",
+   "kind": "skirt",
+   "at": [
+    -7.075,
+    0.11,
+    -50
+   ],
+   "size": [
+    23.68,
+    0.22,
+    0.15
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v3-cornice-55",
+   "room": "v3",
+   "kind": "cornice",
+   "at": [
+    -7.15,
+    8.8,
+    -50
+   ],
+   "size": [
+    23.38,
+    0.4,
+    0.3
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v3-fin-57",
+   "room": "v3",
+   "kind": "fin",
+   "at": [
+    -7.16,
+    4.3,
+    -56
+   ],
+   "size": [
+    0.5,
+    8.6,
+    0.32
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86,
+    3.25,
+    3.55
+   ]
+  },
+  {
+   "id": "k33-v3-fin-58",
+   "room": "v3",
+   "kind": "fin",
+   "at": [
+    -7.16,
+    4.3,
+    -50
+   ],
+   "size": [
+    0.5,
+    8.6,
+    0.32
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86,
+    3.25,
+    3.55
+   ]
+  },
+  {
+   "id": "k33-v3-fin-59",
+   "room": "v3",
+   "kind": "fin",
+   "at": [
+    -7.16,
+    4.3,
+    -44
+   ],
+   "size": [
+    0.5,
+    8.6,
+    0.32
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86
+   ]
+  },
+  {
+   "id": "k33-v3-pilaster-69",
+   "room": "v3",
+   "kind": "pilaster",
+   "at": [
+    -24.827,
+    4.3,
+    -61.827
+   ],
+   "size": [
+    0.345,
+    8.6,
+    0.345
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86
+   ]
+  },
+  {
+   "id": "k33-v3-pilaster-70",
+   "room": "v3",
+   "kind": "pilaster",
+   "at": [
+    -7.172,
+    4.3,
+    -61.827
+   ],
+   "size": [
+    0.345,
+    8.6,
+    0.345
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86
+   ]
+  },
+  {
+   "id": "k33-v3-pilaster-71",
+   "room": "v3",
+   "kind": "pilaster",
+   "at": [
+    -24.827,
+    4.3,
+    -38.172
+   ],
+   "size": [
+    0.345,
+    8.6,
+    0.345
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86,
+    0.25,
+    0.55
+   ]
+  },
+  {
+   "id": "k33-v3-pilaster-72",
+   "room": "v3",
+   "kind": "pilaster",
+   "at": [
+    -7.172,
+    4.3,
+    -38.172
+   ],
+   "size": [
+    0.345,
+    8.6,
+    0.345
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86
+   ]
+  },
+  {
+   "id": "k33-v3-doorFrame-73",
+   "room": "v3",
+   "kind": "doorFrame",
+   "at": [
+    -13,
+    2.45,
+    -61.845
+   ],
+   "size": [
+    4.8,
+    4.9,
+    0.31
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86
+   ]
+  },
+  {
+   "id": "k33-v3-doorFrame-75",
+   "room": "v3",
+   "kind": "doorFrame",
+   "at": [
+    -16,
+    2.45,
+    -38.155
+   ],
+   "size": [
+    4.8,
+    4.9,
+    0.31
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86
+   ]
+  },
+  {
+   "id": "k33-v3-hero-77",
+   "room": "v3",
+   "kind": "hero",
+   "at": [
+    -20,
+    5.7,
+    -61.5
+   ],
+   "size": [
+    6,
+    5.3,
+    1
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v3-edgeLight-5",
+   "room": "v3",
+   "kind": "edgeLight",
+   "at": [
+    -20,
+    3.05,
+    -61.97
+   ],
+   "size": [
+    10,
+    0.1,
+    0.06
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v3-wallPipe-8",
+   "room": "v3",
+   "kind": "wallPipe",
+   "at": [
+    -20,
+    3.6,
+    -61.865
+   ],
+   "size": [
+    9.4,
+    0.3,
+    0.27
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v3-edgeLight-14",
+   "room": "v3",
+   "kind": "edgeLight",
+   "at": [
+    -9,
+    3.05,
+    -61.97
+   ],
+   "size": [
+    4,
+    0.1,
+    0.06
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v3-banner-15",
+   "room": "v3",
+   "kind": "banner",
+   "at": [
+    -9,
+    5.2,
+    -61.975
+   ],
+   "size": [
+    1,
+    3.6,
+    0.05
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v3-wallPipe-16",
+   "room": "v3",
+   "kind": "wallPipe",
+   "at": [
+    -9,
+    3.6,
+    -61.865
+   ],
+   "size": [
+    3.4,
+    0.3,
+    0.27
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v3-edgeLight-23",
+   "room": "v3",
+   "kind": "edgeLight",
+   "at": [
+    -21.5,
+    3.05,
+    -38.03
+   ],
+   "size": [
+    7,
+    0.1,
+    0.06
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v3-banner-24",
+   "room": "v3",
+   "kind": "banner",
+   "at": [
+    -23.25,
+    5.2,
+    -38.025
+   ],
+   "size": [
+    1,
+    3.6,
+    0.05
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v3-banner-25",
+   "room": "v3",
+   "kind": "banner",
+   "at": [
+    -19.75,
+    5.2,
+    -38.025
+   ],
+   "size": [
+    1,
+    3.6,
+    0.05
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v3-wallPipe-26",
+   "room": "v3",
+   "kind": "wallPipe",
+   "at": [
+    -21.5,
+    3.6,
+    -38.135
+   ],
+   "size": [
+    6.4,
+    0.3,
+    0.27
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v3-edgeLight-33",
+   "room": "v3",
+   "kind": "edgeLight",
+   "at": [
+    -10.5,
+    3.05,
+    -38.03
+   ],
+   "size": [
+    7,
+    0.1,
+    0.06
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v3-banner-34",
+   "room": "v3",
+   "kind": "banner",
+   "at": [
+    -12.25,
+    5.2,
+    -38.025
+   ],
+   "size": [
+    1,
+    3.6,
+    0.05
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v3-banner-35",
+   "room": "v3",
+   "kind": "banner",
+   "at": [
+    -8.75,
+    5.2,
+    -38.025
+   ],
+   "size": [
+    1,
+    3.6,
+    0.05
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v3-wallPipe-36",
+   "room": "v3",
+   "kind": "wallPipe",
+   "at": [
+    -10.5,
+    3.6,
+    -38.135
+   ],
+   "size": [
+    6.4,
+    0.3,
+    0.27
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v3-edgeLight-45",
+   "room": "v3",
+   "kind": "edgeLight",
+   "at": [
+    -24.97,
+    3.05,
+    -50
+   ],
+   "size": [
+    23.86,
+    0.1,
+    0.06
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v3-banner-46",
+   "room": "v3",
+   "kind": "banner",
+   "at": [
+    -24.975,
+    5.2,
+    -59
+   ],
+   "size": [
+    1,
+    3.6,
+    0.05
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v3-banner-49",
+   "room": "v3",
+   "kind": "banner",
+   "at": [
+    -24.975,
+    5.2,
+    -41
+   ],
+   "size": [
+    1,
+    3.6,
+    0.05
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v3-wallPipe-50-a",
+   "room": "v3",
+   "kind": "wallPipe",
+   "at": [
+    -24.865,
+    3.6,
+    -59.235
+   ],
+   "size": [
+    4.37,
+    0.3,
+    0.27
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v3-wallPipe-50-b",
+   "room": "v3",
+   "kind": "wallPipe",
+   "at": [
+    -24.865,
+    3.6,
+    -41.765
+   ],
+   "size": [
+    6.37,
+    0.3,
+    0.27
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v3-edgeLight-60",
+   "room": "v3",
+   "kind": "edgeLight",
+   "at": [
+    -7.03,
+    3.05,
+    -50
+   ],
+   "size": [
+    23.86,
+    0.1,
+    0.06
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v4-wash-3",
+   "room": "v4",
+   "kind": "wash",
+   "at": [
+    -1.5,
+    2.3,
+    -72.99
+   ],
+   "size": [
+    29,
+    4.6,
+    0.02
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v4-wash-15",
+   "room": "v4",
+   "kind": "wash",
+   "at": [
+    18.5,
+    2.3,
+    -72.99
+   ],
+   "size": [
+    3,
+    4.6,
+    0.02
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v4-wash-20",
+   "room": "v4",
+   "kind": "wash",
+   "at": [
+    -15.5,
+    2.3,
+    -66.01
+   ],
+   "size": [
+    1,
+    4.6,
+    0.02
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v4-wash-24",
+   "room": "v4",
+   "kind": "wash",
+   "at": [
+    4.5,
+    2.3,
+    -66.01
+   ],
+   "size": [
+    31,
+    4.6,
+    0.02
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v4-wash-37",
+   "room": "v4",
+   "kind": "wash",
+   "at": [
+    -15.99,
+    2.3,
+    -69.5
+   ],
+   "size": [
+    6.94,
+    4.6,
+    0.02
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v4-wash-45",
+   "room": "v4",
+   "kind": "wash",
+   "at": [
+    19.99,
+    2.3,
+    -69.5
+   ],
+   "size": [
+    6.94,
+    4.6,
+    0.02
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v4-skirt-1",
+   "room": "v4",
+   "kind": "skirt",
+   "at": [
+    -1.5,
+    0.11,
+    -72.925
+   ],
+   "size": [
+    29,
+    0.22,
+    0.15
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v4-cornice-2",
+   "room": "v4",
+   "kind": "cornice",
+   "at": [
+    -1.5,
+    4.8,
+    -72.85
+   ],
+   "size": [
+    29,
+    0.4,
+    0.3
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v4-fin-4",
+   "room": "v4",
+   "kind": "fin",
+   "at": [
+    -10.2,
+    2.3,
+    -72.84
+   ],
+   "size": [
+    0.5,
+    4.6,
+    0.32
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86,
+    0.25,
+    0.55
+   ]
+  },
+  {
+   "id": "k33-v4-recess-5",
+   "room": "v4",
+   "kind": "recess",
+   "at": [
+    -4.4,
+    3.155,
+    -72.9
+   ],
+   "size": [
+    3,
+    2.29,
+    0.2
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v4-fin-6",
+   "room": "v4",
+   "kind": "fin",
+   "at": [
+    1.4,
+    2.3,
+    -72.84
+   ],
+   "size": [
+    0.5,
+    4.6,
+    0.32
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86
+   ]
+  },
+  {
+   "id": "k33-v4-recess-7",
+   "room": "v4",
+   "kind": "recess",
+   "at": [
+    7.2,
+    3.155,
+    -72.9
+   ],
+   "size": [
+    3,
+    2.29,
+    0.2
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v4-skirt-13",
+   "room": "v4",
+   "kind": "skirt",
+   "at": [
+    18.5,
+    0.11,
+    -72.925
+   ],
+   "size": [
+    3,
+    0.22,
+    0.15
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v4-cornice-14",
+   "room": "v4",
+   "kind": "cornice",
+   "at": [
+    18.5,
+    4.8,
+    -72.85
+   ],
+   "size": [
+    3,
+    0.4,
+    0.3
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v4-skirt-18",
+   "room": "v4",
+   "kind": "skirt",
+   "at": [
+    -15.5,
+    0.11,
+    -66.075
+   ],
+   "size": [
+    1,
+    0.22,
+    0.15
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v4-cornice-19",
+   "room": "v4",
+   "kind": "cornice",
+   "at": [
+    -15.5,
+    4.8,
+    -66.15
+   ],
+   "size": [
+    1,
+    0.4,
+    0.3
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v4-skirt-22",
+   "room": "v4",
+   "kind": "skirt",
+   "at": [
+    4.5,
+    0.11,
+    -66.075
+   ],
+   "size": [
+    31,
+    0.22,
+    0.15
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v4-cornice-23",
+   "room": "v4",
+   "kind": "cornice",
+   "at": [
+    4.5,
+    4.8,
+    -66.15
+   ],
+   "size": [
+    31,
+    0.4,
+    0.3
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v4-fin-25",
+   "room": "v4",
+   "kind": "fin",
+   "at": [
+    -5.833,
+    2.3,
+    -66.16
+   ],
+   "size": [
+    0.5,
+    4.6,
+    0.32
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86
+   ]
+  },
+  {
+   "id": "k33-v4-recess-26",
+   "room": "v4",
+   "kind": "recess",
+   "at": [
+    -0.667,
+    3.155,
+    -66.1
+   ],
+   "size": [
+    3,
+    2.29,
+    0.2
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v4-fin-27",
+   "room": "v4",
+   "kind": "fin",
+   "at": [
+    4.5,
+    2.3,
+    -66.16
+   ],
+   "size": [
+    0.5,
+    4.6,
+    0.32
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86
+   ]
+  },
+  {
+   "id": "k33-v4-recess-28",
+   "room": "v4",
+   "kind": "recess",
+   "at": [
+    9.667,
+    3.155,
+    -66.1
+   ],
+   "size": [
+    3,
+    2.29,
+    0.2
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v4-fin-29",
+   "room": "v4",
+   "kind": "fin",
+   "at": [
+    14.833,
+    2.3,
+    -66.16
+   ],
+   "size": [
+    0.5,
+    4.6,
+    0.32
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86
+   ]
+  },
+  {
+   "id": "k33-v4-skirt-35",
+   "room": "v4",
+   "kind": "skirt",
+   "at": [
+    -15.925,
+    0.11,
+    -69.5
+   ],
+   "size": [
+    6.68,
+    0.22,
+    0.15
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v4-cornice-36",
+   "room": "v4",
+   "kind": "cornice",
+   "at": [
+    -15.85,
+    4.8,
+    -69.5
+   ],
+   "size": [
+    6.38,
+    0.4,
+    0.3
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v4-fin-38",
+   "room": "v4",
+   "kind": "fin",
+   "at": [
+    -15.84,
+    2.3,
+    -69.5
+   ],
+   "size": [
+    0.5,
+    4.6,
+    0.32
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86
+   ]
+  },
+  {
+   "id": "k33-v4-skirt-43",
+   "room": "v4",
+   "kind": "skirt",
+   "at": [
+    19.925,
+    0.11,
+    -69.5
+   ],
+   "size": [
+    6.68,
+    0.22,
+    0.15
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v4-cornice-44",
+   "room": "v4",
+   "kind": "cornice",
+   "at": [
+    19.85,
+    4.8,
+    -69.5
+   ],
+   "size": [
+    6.38,
+    0.4,
+    0.3
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v4-pilaster-51",
+   "room": "v4",
+   "kind": "pilaster",
+   "at": [
+    -15.827,
+    2.3,
+    -72.827
+   ],
+   "size": [
+    0.345,
+    4.6,
+    0.345
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86
+   ]
+  },
+  {
+   "id": "k33-v4-pilaster-52",
+   "room": "v4",
+   "kind": "pilaster",
+   "at": [
+    19.828,
+    2.3,
+    -72.827
+   ],
+   "size": [
+    0.345,
+    4.6,
+    0.345
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86
+   ]
+  },
+  {
+   "id": "k33-v4-pilaster-53",
+   "room": "v4",
+   "kind": "pilaster",
+   "at": [
+    -15.827,
+    2.3,
+    -66.172
+   ],
+   "size": [
+    0.345,
+    4.6,
+    0.345
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86
+   ]
+  },
+  {
+   "id": "k33-v4-pilaster-54",
+   "room": "v4",
+   "kind": "pilaster",
+   "at": [
+    19.828,
+    2.3,
+    -66.172
+   ],
+   "size": [
+    0.345,
+    4.6,
+    0.345
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86
+   ]
+  },
+  {
+   "id": "k33-v4-doorFrame-56",
+   "room": "v4",
+   "kind": "doorFrame",
+   "at": [
+    -13,
+    2.275,
+    -66.155
+   ],
+   "size": [
+    4.8,
+    4.55,
+    0.31
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86
+   ]
+  },
+  {
+   "id": "k33-v4-hero-57",
+   "room": "v4",
+   "kind": "hero",
+   "at": [
+    19.5,
+    3.8,
+    -69.5
+   ],
+   "size": [
+    5.6,
+    1.5,
+    1
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v4-edgeLight-8",
+   "room": "v4",
+   "kind": "edgeLight",
+   "at": [
+    -1.5,
+    3.05,
+    -72.97
+   ],
+   "size": [
+    29,
+    0.1,
+    0.06
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v4-wallPipe-9",
+   "room": "v4",
+   "kind": "wallPipe",
+   "at": [
+    -1.5,
+    3.6,
+    -72.865
+   ],
+   "size": [
+    28.4,
+    0.3,
+    0.27
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v4-edgeLight-16",
+   "room": "v4",
+   "kind": "edgeLight",
+   "at": [
+    18.5,
+    3.05,
+    -72.97
+   ],
+   "size": [
+    3,
+    0.1,
+    0.06
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v4-edgeLight-21",
+   "room": "v4",
+   "kind": "edgeLight",
+   "at": [
+    -15.5,
+    3.05,
+    -66.03
+   ],
+   "size": [
+    1,
+    0.1,
+    0.06
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v4-edgeLight-30",
+   "room": "v4",
+   "kind": "edgeLight",
+   "at": [
+    4.5,
+    3.05,
+    -66.03
+   ],
+   "size": [
+    31,
+    0.1,
+    0.06
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v4-wallPipe-31",
+   "room": "v4",
+   "kind": "wallPipe",
+   "at": [
+    4.5,
+    3.6,
+    -66.135
+   ],
+   "size": [
+    30.4,
+    0.3,
+    0.27
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v4-edgeLight-39",
+   "room": "v4",
+   "kind": "edgeLight",
+   "at": [
+    -15.97,
+    3.05,
+    -69.5
+   ],
+   "size": [
+    6.86,
+    0.1,
+    0.06
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v4-wallPipe-40",
+   "room": "v4",
+   "kind": "wallPipe",
+   "at": [
+    -15.865,
+    3.6,
+    -69.5
+   ],
+   "size": [
+    5.84,
+    0.3,
+    0.27
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v4-edgeLight-47",
+   "room": "v4",
+   "kind": "edgeLight",
+   "at": [
+    19.97,
+    3.05,
+    -69.5
+   ],
+   "size": [
+    6.86,
+    0.1,
+    0.06
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v4-wallPipe-48",
+   "room": "v4",
+   "kind": "wallPipe",
+   "at": [
+    19.865,
+    3.6,
+    -69.5
+   ],
+   "size": [
+    5.84,
+    0.3,
+    0.27
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v4-lamp-58",
+   "room": "v4",
+   "kind": "lamp",
+   "at": [
+    -13,
+    4.7,
+    -69.5
+   ],
+   "size": [
+    0.5,
+    0.5,
+    0.5
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v5-wash-3",
+   "room": "v5",
+   "kind": "wash",
+   "at": [
+    7.5,
+    5.8,
+    -98.99
+   ],
+   "size": [
+    7,
+    11.6,
+    0.02
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v5-wash-13",
+   "room": "v5",
+   "kind": "wash",
+   "at": [
+    18.5,
+    5.8,
+    -98.99
+   ],
+   "size": [
+    7,
+    11.6,
+    0.02
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v5-wash-23",
+   "room": "v5",
+   "kind": "wash",
+   "at": [
+    8.5,
+    5.8,
+    -77.01
+   ],
+   "size": [
+    9,
+    11.6,
+    0.02
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v5-wash-33",
+   "room": "v5",
+   "kind": "wash",
+   "at": [
+    19.5,
+    5.8,
+    -77.01
+   ],
+   "size": [
+    5,
+    11.6,
+    0.02
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v5-wash-42",
+   "room": "v5",
+   "kind": "wash",
+   "at": [
+    4.01,
+    5.8,
+    -88
+   ],
+   "size": [
+    21.94,
+    11.6,
+    0.02
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v5-wash-56",
+   "room": "v5",
+   "kind": "wash",
+   "at": [
+    21.99,
+    5.8,
+    -88
+   ],
+   "size": [
+    21.94,
+    11.6,
+    0.02
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v5-skirt-1",
+   "room": "v5",
+   "kind": "skirt",
+   "at": [
+    7.5,
+    0.11,
+    -98.925
+   ],
+   "size": [
+    7,
+    0.22,
+    0.15
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v5-cornice-2",
+   "room": "v5",
+   "kind": "cornice",
+   "at": [
+    7.5,
+    11.8,
+    -98.85
+   ],
+   "size": [
+    7,
+    0.4,
+    0.3
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v5-skirt-11",
+   "room": "v5",
+   "kind": "skirt",
+   "at": [
+    18.5,
+    0.11,
+    -98.925
+   ],
+   "size": [
+    7,
+    0.22,
+    0.15
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v5-cornice-12",
+   "room": "v5",
+   "kind": "cornice",
+   "at": [
+    18.5,
+    11.8,
+    -98.85
+   ],
+   "size": [
+    7,
+    0.4,
+    0.3
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v5-fin-14",
+   "room": "v5",
+   "kind": "fin",
+   "at": [
+    18.5,
+    5.8,
+    -98.84
+   ],
+   "size": [
+    0.5,
+    11.6,
+    0.32
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86
+   ]
+  },
+  {
+   "id": "k33-v5-skirt-21",
+   "room": "v5",
+   "kind": "skirt",
+   "at": [
+    8.5,
+    0.11,
+    -77.075
+   ],
+   "size": [
+    9,
+    0.22,
+    0.15
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v5-cornice-22",
+   "room": "v5",
+   "kind": "cornice",
+   "at": [
+    8.5,
+    11.8,
+    -77.15
+   ],
+   "size": [
+    9,
+    0.4,
+    0.3
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v5-fin-24",
+   "room": "v5",
+   "kind": "fin",
+   "at": [
+    8.5,
+    5.8,
+    -77.16
+   ],
+   "size": [
+    0.5,
+    11.6,
+    0.32
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86
+   ]
+  },
+  {
+   "id": "k33-v5-skirt-31",
+   "room": "v5",
+   "kind": "skirt",
+   "at": [
+    19.5,
+    0.11,
+    -77.075
+   ],
+   "size": [
+    5,
+    0.22,
+    0.15
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v5-cornice-32",
+   "room": "v5",
+   "kind": "cornice",
+   "at": [
+    19.5,
+    11.8,
+    -77.15
+   ],
+   "size": [
+    5,
+    0.4,
+    0.3
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v5-skirt-39",
+   "room": "v5",
+   "kind": "skirt",
+   "at": [
+    4.075,
+    0.11,
+    -94.92
+   ],
+   "size": [
+    7.84,
+    0.22,
+    0.15
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v5-skirt-40",
+   "room": "v5",
+   "kind": "skirt",
+   "at": [
+    4.075,
+    0.11,
+    -79.08
+   ],
+   "size": [
+    3.84,
+    0.22,
+    0.15
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v5-cornice-41",
+   "room": "v5",
+   "kind": "cornice",
+   "at": [
+    4.15,
+    11.8,
+    -88
+   ],
+   "size": [
+    21.38,
+    0.4,
+    0.3
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v5-fin-43",
+   "room": "v5",
+   "kind": "fin",
+   "at": [
+    4.16,
+    5.8,
+    -93.5
+   ],
+   "size": [
+    0.5,
+    11.6,
+    0.32
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86
+   ]
+  },
+  {
+   "id": "k33-v5-fin-44",
+   "room": "v5",
+   "kind": "fin",
+   "at": [
+    4.16,
+    5.8,
+    -88
+   ],
+   "size": [
+    0.5,
+    11.6,
+    0.32
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86,
+    4.8,
+    5.2
+   ]
+  },
+  {
+   "id": "k33-v5-fin-45",
+   "room": "v5",
+   "kind": "fin",
+   "at": [
+    4.16,
+    5.4,
+    -82.5
+   ],
+   "size": [
+    0.5,
+    12.4,
+    0.32
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86
+   ]
+  },
+  {
+   "id": "k33-v5-skirt-54",
+   "room": "v5",
+   "kind": "skirt",
+   "at": [
+    21.925,
+    0.11,
+    -88
+   ],
+   "size": [
+    21.68,
+    0.22,
+    0.15
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v5-cornice-55",
+   "room": "v5",
+   "kind": "cornice",
+   "at": [
+    21.85,
+    11.8,
+    -88
+   ],
+   "size": [
+    21.38,
+    0.4,
+    0.3
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v5-fin-57",
+   "room": "v5",
+   "kind": "fin",
+   "at": [
+    21.84,
+    5.8,
+    -93.5
+   ],
+   "size": [
+    0.5,
+    11.6,
+    0.32
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86
+   ]
+  },
+  {
+   "id": "k33-v5-fin-58",
+   "room": "v5",
+   "kind": "fin",
+   "at": [
+    21.84,
+    5.8,
+    -88
+   ],
+   "size": [
+    0.5,
+    11.6,
+    0.32
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86,
+    2.225,
+    2.575
+   ]
+  },
+  {
+   "id": "k33-v5-fin-59",
+   "room": "v5",
+   "kind": "fin",
+   "at": [
+    21.84,
+    5.8,
+    -82.5
+   ],
+   "size": [
+    0.5,
+    11.6,
+    0.32
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86
+   ]
+  },
+  {
+   "id": "k33-v5-pilaster-68",
+   "room": "v5",
+   "kind": "pilaster",
+   "at": [
+    4.173,
+    5.8,
+    -98.827
+   ],
+   "size": [
+    0.345,
+    11.6,
+    0.345
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86
+   ]
+  },
+  {
+   "id": "k33-v5-pilaster-69",
+   "room": "v5",
+   "kind": "pilaster",
+   "at": [
+    21.828,
+    5.8,
+    -98.827
+   ],
+   "size": [
+    0.345,
+    11.6,
+    0.345
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86
+   ]
+  },
+  {
+   "id": "k33-v5-pilaster-70",
+   "room": "v5",
+   "kind": "pilaster",
+   "at": [
+    4.173,
+    5.8,
+    -77.172
+   ],
+   "size": [
+    0.345,
+    11.6,
+    0.345
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86
+   ]
+  },
+  {
+   "id": "k33-v5-pilaster-71",
+   "room": "v5",
+   "kind": "pilaster",
+   "at": [
+    21.828,
+    5.8,
+    -77.172
+   ],
+   "size": [
+    0.345,
+    11.6,
+    0.345
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86
+   ]
+  },
+  {
+   "id": "k33-v5-doorFrame-72",
+   "room": "v5",
+   "kind": "doorFrame",
+   "at": [
+    13,
+    2.45,
+    -98.845
+   ],
+   "size": [
+    4.8,
+    4.9,
+    0.31
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86
+   ]
+  },
+  {
+   "id": "k33-v5-doorFrame-74",
+   "room": "v5",
+   "kind": "doorFrame",
+   "at": [
+    15,
+    2.45,
+    -77.155
+   ],
+   "size": [
+    4.8,
+    4.9,
+    0.31
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86
+   ]
+  },
+  {
+   "id": "k33-v5-hero-76",
+   "room": "v5",
+   "kind": "hero",
+   "at": [
+    7.5,
+    7.2,
+    -98.5
+   ],
+   "size": [
+    5.6,
+    8.3,
+    1
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v5-edgeLight-5",
+   "room": "v5",
+   "kind": "edgeLight",
+   "at": [
+    7.5,
+    3.05,
+    -98.97
+   ],
+   "size": [
+    7,
+    0.1,
+    0.06
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v5-wallPipe-8",
+   "room": "v5",
+   "kind": "wallPipe",
+   "at": [
+    7.5,
+    3.6,
+    -98.865
+   ],
+   "size": [
+    6.4,
+    0.3,
+    0.27
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v5-edgeLight-15",
+   "room": "v5",
+   "kind": "edgeLight",
+   "at": [
+    18.5,
+    3.05,
+    -98.97
+   ],
+   "size": [
+    7,
+    0.1,
+    0.06
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v5-banner-16",
+   "room": "v5",
+   "kind": "banner",
+   "at": [
+    16.75,
+    5.2,
+    -98.975
+   ],
+   "size": [
+    1,
+    3.6,
+    0.05
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v5-banner-17",
+   "room": "v5",
+   "kind": "banner",
+   "at": [
+    20.25,
+    5.2,
+    -98.975
+   ],
+   "size": [
+    1,
+    3.6,
+    0.05
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v5-wallPipe-18",
+   "room": "v5",
+   "kind": "wallPipe",
+   "at": [
+    18.5,
+    3.6,
+    -98.865
+   ],
+   "size": [
+    6.4,
+    0.3,
+    0.27
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v5-edgeLight-25",
+   "room": "v5",
+   "kind": "edgeLight",
+   "at": [
+    8.5,
+    3.05,
+    -77.03
+   ],
+   "size": [
+    9,
+    0.1,
+    0.06
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v5-banner-26",
+   "room": "v5",
+   "kind": "banner",
+   "at": [
+    6.25,
+    5.2,
+    -77.025
+   ],
+   "size": [
+    1,
+    3.6,
+    0.05
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v5-banner-27",
+   "room": "v5",
+   "kind": "banner",
+   "at": [
+    10.75,
+    5.2,
+    -77.025
+   ],
+   "size": [
+    1,
+    3.6,
+    0.05
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v5-wallPipe-28",
+   "room": "v5",
+   "kind": "wallPipe",
+   "at": [
+    8.5,
+    3.6,
+    -77.135
+   ],
+   "size": [
+    8.4,
+    0.3,
+    0.27
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v5-edgeLight-34",
+   "room": "v5",
+   "kind": "edgeLight",
+   "at": [
+    19.5,
+    3.05,
+    -77.03
+   ],
+   "size": [
+    5,
+    0.1,
+    0.06
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v5-banner-35",
+   "room": "v5",
+   "kind": "banner",
+   "at": [
+    19.5,
+    5.2,
+    -77.025
+   ],
+   "size": [
+    1,
+    3.6,
+    0.05
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v5-wallPipe-36",
+   "room": "v5",
+   "kind": "wallPipe",
+   "at": [
+    19.5,
+    3.6,
+    -77.135
+   ],
+   "size": [
+    4.4,
+    0.3,
+    0.27
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v5-edgeLight-46",
+   "room": "v5",
+   "kind": "edgeLight",
+   "at": [
+    4.03,
+    3.05,
+    -88
+   ],
+   "size": [
+    21.86,
+    0.1,
+    0.06
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v6-wash-3",
+   "room": "v6",
+   "kind": "wash",
+   "at": [
+    3,
+    5.8,
+    -126.99
+   ],
+   "size": [
+    4,
+    11.6,
+    0.02
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v6-wash-11",
+   "room": "v6",
+   "kind": "wash",
+   "at": [
+    15,
+    5.8,
+    -126.99
+   ],
+   "size": [
+    12,
+    11.6,
+    0.02
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v6-wash-21",
+   "room": "v6",
+   "kind": "wash",
+   "at": [
+    6,
+    5.8,
+    -103.01
+   ],
+   "size": [
+    10,
+    11.6,
+    0.02
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v6-wash-31",
+   "room": "v6",
+   "kind": "wash",
+   "at": [
+    18,
+    5.8,
+    -103.01
+   ],
+   "size": [
+    6,
+    11.6,
+    0.02
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v6-wash-40",
+   "room": "v6",
+   "kind": "wash",
+   "at": [
+    1.01,
+    5.8,
+    -115
+   ],
+   "size": [
+    23.94,
+    11.6,
+    0.02
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v6-wash-56",
+   "room": "v6",
+   "kind": "wash",
+   "at": [
+    20.99,
+    5.8,
+    -115
+   ],
+   "size": [
+    23.94,
+    11.6,
+    0.02
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v6-skirt-1",
+   "room": "v6",
+   "kind": "skirt",
+   "at": [
+    3,
+    0.11,
+    -126.925
+   ],
+   "size": [
+    4,
+    0.22,
+    0.15
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v6-cornice-2",
+   "room": "v6",
+   "kind": "cornice",
+   "at": [
+    3,
+    11.8,
+    -126.85
+   ],
+   "size": [
+    4,
+    0.4,
+    0.3
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v6-skirt-9",
+   "room": "v6",
+   "kind": "skirt",
+   "at": [
+    15,
+    0.11,
+    -126.925
+   ],
+   "size": [
+    12,
+    0.22,
+    0.15
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v6-cornice-10",
+   "room": "v6",
+   "kind": "cornice",
+   "at": [
+    15,
+    11.8,
+    -126.85
+   ],
+   "size": [
+    12,
+    0.4,
+    0.3
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v6-skirt-19",
+   "room": "v6",
+   "kind": "skirt",
+   "at": [
+    6,
+    0.11,
+    -103.075
+   ],
+   "size": [
+    10,
+    0.22,
+    0.15
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v6-cornice-20",
+   "room": "v6",
+   "kind": "cornice",
+   "at": [
+    6,
+    11.8,
+    -103.15
+   ],
+   "size": [
+    10,
+    0.4,
+    0.3
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v6-fin-22",
+   "room": "v6",
+   "kind": "fin",
+   "at": [
+    6,
+    5.8,
+    -103.16
+   ],
+   "size": [
+    0.5,
+    11.6,
+    0.32
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86
+   ]
+  },
+  {
+   "id": "k33-v6-skirt-29",
+   "room": "v6",
+   "kind": "skirt",
+   "at": [
+    18,
+    0.11,
+    -103.075
+   ],
+   "size": [
+    6,
+    0.22,
+    0.15
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v6-cornice-30",
+   "room": "v6",
+   "kind": "cornice",
+   "at": [
+    18,
+    11.8,
+    -103.15
+   ],
+   "size": [
+    6,
+    0.4,
+    0.3
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v6-skirt-37",
+   "room": "v6",
+   "kind": "skirt",
+   "at": [
+    1.075,
+    0.11,
+    -124.67
+   ],
+   "size": [
+    4.34,
+    0.22,
+    0.15
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v6-skirt-38",
+   "room": "v6",
+   "kind": "skirt",
+   "at": [
+    1.075,
+    0.11,
+    -104.33
+   ],
+   "size": [
+    2.34,
+    0.22,
+    0.15
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v6-cornice-39",
+   "room": "v6",
+   "kind": "cornice",
+   "at": [
+    1.15,
+    11.8,
+    -115
+   ],
+   "size": [
+    23.38,
+    0.4,
+    0.3
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v6-fin-41",
+   "room": "v6",
+   "kind": "fin",
+   "at": [
+    1.16,
+    5.4,
+    -121
+   ],
+   "size": [
+    0.5,
+    12.4,
+    0.32
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86
+   ]
+  },
+  {
+   "id": "k33-v6-fin-42",
+   "room": "v6",
+   "kind": "fin",
+   "at": [
+    1.16,
+    5.8,
+    -115
+   ],
+   "size": [
+    0.5,
+    11.6,
+    0.32
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86,
+    2.425,
+    2.775
+   ]
+  },
+  {
+   "id": "k33-v6-fin-43",
+   "room": "v6",
+   "kind": "fin",
+   "at": [
+    1.16,
+    5.4,
+    -109
+   ],
+   "size": [
+    0.5,
+    12.4,
+    0.32
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86,
+    2.425,
+    2.775
+   ]
+  },
+  {
+   "id": "k33-v6-skirt-53",
+   "room": "v6",
+   "kind": "skirt",
+   "at": [
+    20.925,
+    0.11,
+    -124.67
+   ],
+   "size": [
+    4.34,
+    0.22,
+    0.15
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v6-skirt-54",
+   "room": "v6",
+   "kind": "skirt",
+   "at": [
+    20.925,
+    0.11,
+    -104.33
+   ],
+   "size": [
+    2.34,
+    0.22,
+    0.15
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v6-cornice-55",
+   "room": "v6",
+   "kind": "cornice",
+   "at": [
+    20.85,
+    11.8,
+    -115
+   ],
+   "size": [
+    23.38,
+    0.4,
+    0.3
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v6-fin-57",
+   "room": "v6",
+   "kind": "fin",
+   "at": [
+    20.84,
+    5.4,
+    -121
+   ],
+   "size": [
+    0.5,
+    12.4,
+    0.32
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86
+   ]
+  },
+  {
+   "id": "k33-v6-recess-58",
+   "room": "v6",
+   "kind": "recess",
+   "at": [
+    20.9,
+    4.01,
+    -115
+   ],
+   "size": [
+    3,
+    4,
+    0.2
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v6-fin-59",
+   "room": "v6",
+   "kind": "fin",
+   "at": [
+    20.84,
+    5.4,
+    -109
+   ],
+   "size": [
+    0.5,
+    12.4,
+    0.32
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86
+   ]
+  },
+  {
+   "id": "k33-v6-pilaster-69",
+   "room": "v6",
+   "kind": "pilaster",
+   "at": [
+    1.172,
+    5.8,
+    -126.827
+   ],
+   "size": [
+    0.345,
+    11.6,
+    0.345
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86
+   ]
+  },
+  {
+   "id": "k33-v6-pilaster-70",
+   "room": "v6",
+   "kind": "pilaster",
+   "at": [
+    20.828,
+    5.8,
+    -126.827
+   ],
+   "size": [
+    0.345,
+    11.6,
+    0.345
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86
+   ]
+  },
+  {
+   "id": "k33-v6-pilaster-71",
+   "room": "v6",
+   "kind": "pilaster",
+   "at": [
+    1.172,
+    5.8,
+    -103.172
+   ],
+   "size": [
+    0.345,
+    11.6,
+    0.345
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86
+   ]
+  },
+  {
+   "id": "k33-v6-pilaster-72",
+   "room": "v6",
+   "kind": "pilaster",
+   "at": [
+    20.828,
+    5.8,
+    -103.172
+   ],
+   "size": [
+    0.345,
+    11.6,
+    0.345
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86
+   ]
+  },
+  {
+   "id": "k33-v6-doorFrame-73",
+   "room": "v6",
+   "kind": "doorFrame",
+   "at": [
+    7,
+    2.45,
+    -126.845
+   ],
+   "size": [
+    4.8,
+    4.9,
+    0.31
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86
+   ]
+  },
+  {
+   "id": "k33-v6-doorFrame-75",
+   "room": "v6",
+   "kind": "doorFrame",
+   "at": [
+    13,
+    2.45,
+    -103.155
+   ],
+   "size": [
+    4.8,
+    4.9,
+    0.31
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86
+   ]
+  },
+  {
+   "id": "k33-v6-hero-77",
+   "room": "v6",
+   "kind": "hero",
+   "at": [
+    15,
+    7.2,
+    -126.5
+   ],
+   "size": [
+    6,
+    8.3,
+    1
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v6-edgeLight-4",
+   "room": "v6",
+   "kind": "edgeLight",
+   "at": [
+    3,
+    3.05,
+    -126.97
+   ],
+   "size": [
+    4,
+    0.1,
+    0.06
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v6-banner-5",
+   "room": "v6",
+   "kind": "banner",
+   "at": [
+    3,
+    5.2,
+    -126.975
+   ],
+   "size": [
+    1,
+    3.6,
+    0.05
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v6-wallPipe-6",
+   "room": "v6",
+   "kind": "wallPipe",
+   "at": [
+    3,
+    3.6,
+    -126.865
+   ],
+   "size": [
+    3.4,
+    0.3,
+    0.27
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v6-edgeLight-13",
+   "room": "v6",
+   "kind": "edgeLight",
+   "at": [
+    15,
+    3.05,
+    -126.97
+   ],
+   "size": [
+    12,
+    0.1,
+    0.06
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v6-wallPipe-16",
+   "room": "v6",
+   "kind": "wallPipe",
+   "at": [
+    15,
+    3.6,
+    -126.865
+   ],
+   "size": [
+    11.4,
+    0.3,
+    0.27
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v6-edgeLight-23",
+   "room": "v6",
+   "kind": "edgeLight",
+   "at": [
+    6,
+    3.05,
+    -103.03
+   ],
+   "size": [
+    10,
+    0.1,
+    0.06
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v6-banner-24",
+   "room": "v6",
+   "kind": "banner",
+   "at": [
+    3.5,
+    5.2,
+    -103.025
+   ],
+   "size": [
+    1,
+    3.6,
+    0.05
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v6-banner-25",
+   "room": "v6",
+   "kind": "banner",
+   "at": [
+    8.5,
+    5.2,
+    -103.025
+   ],
+   "size": [
+    1,
+    3.6,
+    0.05
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v6-wallPipe-26",
+   "room": "v6",
+   "kind": "wallPipe",
+   "at": [
+    6,
+    3.6,
+    -103.135
+   ],
+   "size": [
+    9.4,
+    0.3,
+    0.27
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v6-edgeLight-32",
+   "room": "v6",
+   "kind": "edgeLight",
+   "at": [
+    18,
+    3.05,
+    -103.03
+   ],
+   "size": [
+    6,
+    0.1,
+    0.06
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v6-banner-33",
+   "room": "v6",
+   "kind": "banner",
+   "at": [
+    18,
+    5.2,
+    -103.025
+   ],
+   "size": [
+    1,
+    3.6,
+    0.05
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v6-wallPipe-34",
+   "room": "v6",
+   "kind": "wallPipe",
+   "at": [
+    18,
+    3.6,
+    -103.135
+   ],
+   "size": [
+    5.4,
+    0.3,
+    0.27
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v6-edgeLight-44",
+   "room": "v6",
+   "kind": "edgeLight",
+   "at": [
+    1.03,
+    3.05,
+    -115
+   ],
+   "size": [
+    23.86,
+    0.1,
+    0.06
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v6-banner-45",
+   "room": "v6",
+   "kind": "banner",
+   "at": [
+    1.025,
+    5.2,
+    -124
+   ],
+   "size": [
+    1,
+    3.6,
+    0.05
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v6-banner-46",
+   "room": "v6",
+   "kind": "banner",
+   "at": [
+    1.025,
+    5.2,
+    -118
+   ],
+   "size": [
+    1,
+    3.6,
+    0.05
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v6-banner-47",
+   "room": "v6",
+   "kind": "banner",
+   "at": [
+    1.025,
+    5.2,
+    -112
+   ],
+   "size": [
+    1,
+    3.6,
+    0.05
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v6-banner-48",
+   "room": "v6",
+   "kind": "banner",
+   "at": [
+    1.025,
+    5.2,
+    -106
+   ],
+   "size": [
+    1,
+    3.6,
+    0.05
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v6-wallPipe-49",
+   "room": "v6",
+   "kind": "wallPipe",
+   "at": [
+    1.135,
+    3.6,
+    -115
+   ],
+   "size": [
+    22.84,
+    0.3,
+    0.27
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v6-edgeLight-60-a",
+   "room": "v6",
+   "kind": "edgeLight",
+   "at": [
+    20.97,
+    3.05,
+    -126.24
+   ],
+   "size": [
+    1.38,
+    0.1,
+    0.06
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v6-edgeLight-60-b",
+   "room": "v6",
+   "kind": "edgeLight",
+   "at": [
+    20.97,
+    3.05,
+    -112.76
+   ],
+   "size": [
+    19.38,
+    0.1,
+    0.06
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v6-banner-61",
+   "room": "v6",
+   "kind": "banner",
+   "at": [
+    20.975,
+    5.2,
+    -124
+   ],
+   "size": [
+    1,
+    3.6,
+    0.05
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v6-banner-62",
+   "room": "v6",
+   "kind": "banner",
+   "at": [
+    20.975,
+    5.2,
+    -118
+   ],
+   "size": [
+    1,
+    3.6,
+    0.05
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v6-banner-63",
+   "room": "v6",
+   "kind": "banner",
+   "at": [
+    20.975,
+    5.2,
+    -112
+   ],
+   "size": [
+    1,
+    3.6,
+    0.05
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v7-wash-3",
+   "room": "v7",
+   "kind": "wash",
+   "at": [
+    -20,
+    2.3,
+    -137.99
+   ],
+   "size": [
+    4,
+    4.6,
+    0.02
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v7-wash-10",
+   "room": "v7",
+   "kind": "wash",
+   "at": [
+    -1,
+    2.3,
+    -137.99
+   ],
+   "size": [
+    26,
+    4.6,
+    0.02
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v7-wash-22",
+   "room": "v7",
+   "kind": "wash",
+   "at": [
+    -8.5,
+    2.3,
+    -131.01
+   ],
+   "size": [
+    27,
+    4.6,
+    0.02
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v7-wash-34",
+   "room": "v7",
+   "kind": "wash",
+   "at": [
+    10.5,
+    2.3,
+    -131.01
+   ],
+   "size": [
+    3,
+    4.6,
+    0.02
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v7-wash-39",
+   "room": "v7",
+   "kind": "wash",
+   "at": [
+    -21.99,
+    2.3,
+    -134.5
+   ],
+   "size": [
+    6.94,
+    4.6,
+    0.02
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v7-wash-47",
+   "room": "v7",
+   "kind": "wash",
+   "at": [
+    11.99,
+    2.3,
+    -134.5
+   ],
+   "size": [
+    6.94,
+    4.6,
+    0.02
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v7-skirt-1",
+   "room": "v7",
+   "kind": "skirt",
+   "at": [
+    -20,
+    0.11,
+    -137.925
+   ],
+   "size": [
+    4,
+    0.22,
+    0.15
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v7-cornice-2",
+   "room": "v7",
+   "kind": "cornice",
+   "at": [
+    -20,
+    4.8,
+    -137.85
+   ],
+   "size": [
+    4,
+    0.4,
+    0.3
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v7-skirt-8",
+   "room": "v7",
+   "kind": "skirt",
+   "at": [
+    -1,
+    0.11,
+    -137.925
+   ],
+   "size": [
+    26,
+    0.22,
+    0.15
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v7-cornice-9",
+   "room": "v7",
+   "kind": "cornice",
+   "at": [
+    -1,
+    4.8,
+    -137.85
+   ],
+   "size": [
+    26,
+    0.4,
+    0.3
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v7-fin-11",
+   "room": "v7",
+   "kind": "fin",
+   "at": [
+    -8.8,
+    2.3,
+    -137.84
+   ],
+   "size": [
+    0.5,
+    4.6,
+    0.32
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86,
+    0.25,
+    0.55
+   ]
+  },
+  {
+   "id": "k33-v7-recess-12",
+   "room": "v7",
+   "kind": "recess",
+   "at": [
+    -3.6,
+    3.155,
+    -137.9
+   ],
+   "size": [
+    3,
+    2.29,
+    0.2
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v7-fin-13",
+   "room": "v7",
+   "kind": "fin",
+   "at": [
+    1.6,
+    2.3,
+    -137.84
+   ],
+   "size": [
+    0.5,
+    4.6,
+    0.32
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86
+   ]
+  },
+  {
+   "id": "k33-v7-recess-14",
+   "room": "v7",
+   "kind": "recess",
+   "at": [
+    6.8,
+    3.155,
+    -137.9
+   ],
+   "size": [
+    3,
+    2.29,
+    0.2
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v7-skirt-20",
+   "room": "v7",
+   "kind": "skirt",
+   "at": [
+    -8.5,
+    0.11,
+    -131.075
+   ],
+   "size": [
+    27,
+    0.22,
+    0.15
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v7-cornice-21",
+   "room": "v7",
+   "kind": "cornice",
+   "at": [
+    -8.5,
+    4.8,
+    -131.15
+   ],
+   "size": [
+    27,
+    0.4,
+    0.3
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v7-fin-23",
+   "room": "v7",
+   "kind": "fin",
+   "at": [
+    -16.6,
+    2.3,
+    -131.16
+   ],
+   "size": [
+    0.5,
+    4.6,
+    0.32
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86
+   ]
+  },
+  {
+   "id": "k33-v7-recess-24",
+   "room": "v7",
+   "kind": "recess",
+   "at": [
+    -11.2,
+    3.155,
+    -131.1
+   ],
+   "size": [
+    3,
+    2.29,
+    0.2
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v7-fin-25",
+   "room": "v7",
+   "kind": "fin",
+   "at": [
+    -5.8,
+    2.3,
+    -131.16
+   ],
+   "size": [
+    0.5,
+    4.6,
+    0.32
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86
+   ]
+  },
+  {
+   "id": "k33-v7-recess-26",
+   "room": "v7",
+   "kind": "recess",
+   "at": [
+    -0.4,
+    3.155,
+    -131.1
+   ],
+   "size": [
+    3,
+    2.29,
+    0.2
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v7-skirt-32",
+   "room": "v7",
+   "kind": "skirt",
+   "at": [
+    10.5,
+    0.11,
+    -131.075
+   ],
+   "size": [
+    3,
+    0.22,
+    0.15
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v7-cornice-33",
+   "room": "v7",
+   "kind": "cornice",
+   "at": [
+    10.5,
+    4.8,
+    -131.15
+   ],
+   "size": [
+    3,
+    0.4,
+    0.3
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v7-skirt-37",
+   "room": "v7",
+   "kind": "skirt",
+   "at": [
+    -21.925,
+    0.11,
+    -134.5
+   ],
+   "size": [
+    6.68,
+    0.22,
+    0.15
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v7-cornice-38",
+   "room": "v7",
+   "kind": "cornice",
+   "at": [
+    -21.85,
+    4.8,
+    -134.5
+   ],
+   "size": [
+    6.38,
+    0.4,
+    0.3
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v7-skirt-45",
+   "room": "v7",
+   "kind": "skirt",
+   "at": [
+    11.925,
+    0.11,
+    -134.5
+   ],
+   "size": [
+    6.68,
+    0.22,
+    0.15
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v7-cornice-46",
+   "room": "v7",
+   "kind": "cornice",
+   "at": [
+    11.85,
+    4.8,
+    -134.5
+   ],
+   "size": [
+    6.38,
+    0.4,
+    0.3
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v7-fin-48",
+   "room": "v7",
+   "kind": "fin",
+   "at": [
+    11.84,
+    2.3,
+    -134.5
+   ],
+   "size": [
+    0.5,
+    4.6,
+    0.32
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86
+   ]
+  },
+  {
+   "id": "k33-v7-pilaster-53",
+   "room": "v7",
+   "kind": "pilaster",
+   "at": [
+    -21.827,
+    2.3,
+    -137.827
+   ],
+   "size": [
+    0.345,
+    4.6,
+    0.345
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86
+   ]
+  },
+  {
+   "id": "k33-v7-pilaster-54",
+   "room": "v7",
+   "kind": "pilaster",
+   "at": [
+    11.828,
+    2.3,
+    -137.827
+   ],
+   "size": [
+    0.345,
+    4.6,
+    0.345
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86
+   ]
+  },
+  {
+   "id": "k33-v7-pilaster-55",
+   "room": "v7",
+   "kind": "pilaster",
+   "at": [
+    -21.827,
+    2.3,
+    -131.172
+   ],
+   "size": [
+    0.345,
+    4.6,
+    0.345
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86
+   ]
+  },
+  {
+   "id": "k33-v7-pilaster-56",
+   "room": "v7",
+   "kind": "pilaster",
+   "at": [
+    11.828,
+    2.3,
+    -131.172
+   ],
+   "size": [
+    0.345,
+    4.6,
+    0.345
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86
+   ]
+  },
+  {
+   "id": "k33-v7-doorFrame-58",
+   "room": "v7",
+   "kind": "doorFrame",
+   "at": [
+    7,
+    2.275,
+    -131.155
+   ],
+   "size": [
+    4.8,
+    4.55,
+    0.31
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86
+   ]
+  },
+  {
+   "id": "k33-v7-hero-59",
+   "room": "v7",
+   "kind": "hero",
+   "at": [
+    -21.5,
+    3.8,
+    -134.5
+   ],
+   "size": [
+    5.6,
+    1.5,
+    1
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v7-edgeLight-4",
+   "room": "v7",
+   "kind": "edgeLight",
+   "at": [
+    -20,
+    3.05,
+    -137.97
+   ],
+   "size": [
+    4,
+    0.1,
+    0.06
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v7-wallPipe-5",
+   "room": "v7",
+   "kind": "wallPipe",
+   "at": [
+    -20,
+    3.6,
+    -137.865
+   ],
+   "size": [
+    3.4,
+    0.3,
+    0.27
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v7-edgeLight-15",
+   "room": "v7",
+   "kind": "edgeLight",
+   "at": [
+    -1,
+    3.05,
+    -137.97
+   ],
+   "size": [
+    26,
+    0.1,
+    0.06
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v7-wallPipe-16",
+   "room": "v7",
+   "kind": "wallPipe",
+   "at": [
+    -1,
+    3.6,
+    -137.865
+   ],
+   "size": [
+    25.4,
+    0.3,
+    0.27
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v7-edgeLight-27",
+   "room": "v7",
+   "kind": "edgeLight",
+   "at": [
+    -8.5,
+    3.05,
+    -131.03
+   ],
+   "size": [
+    27,
+    0.1,
+    0.06
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v7-wallPipe-28",
+   "room": "v7",
+   "kind": "wallPipe",
+   "at": [
+    -8.5,
+    3.6,
+    -131.135
+   ],
+   "size": [
+    26.4,
+    0.3,
+    0.27
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v7-edgeLight-35",
+   "room": "v7",
+   "kind": "edgeLight",
+   "at": [
+    10.5,
+    3.05,
+    -131.03
+   ],
+   "size": [
+    3,
+    0.1,
+    0.06
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v7-edgeLight-41",
+   "room": "v7",
+   "kind": "edgeLight",
+   "at": [
+    -21.97,
+    3.05,
+    -134.5
+   ],
+   "size": [
+    6.86,
+    0.1,
+    0.06
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v7-wallPipe-42",
+   "room": "v7",
+   "kind": "wallPipe",
+   "at": [
+    -21.865,
+    3.6,
+    -134.5
+   ],
+   "size": [
+    5.84,
+    0.3,
+    0.27
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v7-edgeLight-49",
+   "room": "v7",
+   "kind": "edgeLight",
+   "at": [
+    11.97,
+    3.05,
+    -134.5
+   ],
+   "size": [
+    6.86,
+    0.1,
+    0.06
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v7-wallPipe-50",
+   "room": "v7",
+   "kind": "wallPipe",
+   "at": [
+    11.865,
+    3.6,
+    -134.5
+   ],
+   "size": [
+    5.84,
+    0.3,
+    0.27
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v8-wash-3",
+   "room": "v8",
+   "kind": "wash",
+   "at": [
+    -19,
+    5.8,
+    -165.99
+   ],
+   "size": [
+    14,
+    11.6,
+    0.02
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v8-wash-15",
+   "room": "v8",
+   "kind": "wash",
+   "at": [
+    -5,
+    5.8,
+    -165.99
+   ],
+   "size": [
+    6,
+    11.6,
+    0.02
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v8-wash-23",
+   "room": "v8",
+   "kind": "wash",
+   "at": [
+    -22,
+    5.8,
+    -142.01
+   ],
+   "size": [
+    8,
+    11.6,
+    0.02
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v8-wash-33",
+   "room": "v8",
+   "kind": "wash",
+   "at": [
+    -8,
+    5.8,
+    -142.01
+   ],
+   "size": [
+    12,
+    11.6,
+    0.02
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v8-wash-43",
+   "room": "v8",
+   "kind": "wash",
+   "at": [
+    -25.99,
+    5.8,
+    -154
+   ],
+   "size": [
+    23.94,
+    11.6,
+    0.02
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v8-wash-58",
+   "room": "v8",
+   "kind": "wash",
+   "at": [
+    -2.01,
+    5.8,
+    -154
+   ],
+   "size": [
+    23.94,
+    11.6,
+    0.02
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v8-skirt-1",
+   "room": "v8",
+   "kind": "skirt",
+   "at": [
+    -19,
+    0.11,
+    -165.925
+   ],
+   "size": [
+    14,
+    0.22,
+    0.15
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v8-cornice-2",
+   "room": "v8",
+   "kind": "cornice",
+   "at": [
+    -19,
+    11.8,
+    -165.85
+   ],
+   "size": [
+    14,
+    0.4,
+    0.3
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v8-skirt-13",
+   "room": "v8",
+   "kind": "skirt",
+   "at": [
+    -5,
+    0.11,
+    -165.925
+   ],
+   "size": [
+    6,
+    0.22,
+    0.15
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v8-cornice-14",
+   "room": "v8",
+   "kind": "cornice",
+   "at": [
+    -5,
+    11.8,
+    -165.85
+   ],
+   "size": [
+    6,
+    0.4,
+    0.3
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v8-skirt-21",
+   "room": "v8",
+   "kind": "skirt",
+   "at": [
+    -22,
+    0.11,
+    -142.075
+   ],
+   "size": [
+    8,
+    0.22,
+    0.15
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v8-cornice-22",
+   "room": "v8",
+   "kind": "cornice",
+   "at": [
+    -22,
+    11.8,
+    -142.15
+   ],
+   "size": [
+    8,
+    0.4,
+    0.3
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v8-fin-24",
+   "room": "v8",
+   "kind": "fin",
+   "at": [
+    -22,
+    5.8,
+    -142.16
+   ],
+   "size": [
+    0.5,
+    11.6,
+    0.32
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86
+   ]
+  },
+  {
+   "id": "k33-v8-skirt-31",
+   "room": "v8",
+   "kind": "skirt",
+   "at": [
+    -8,
+    0.11,
+    -142.075
+   ],
+   "size": [
+    12,
+    0.22,
+    0.15
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v8-cornice-32",
+   "room": "v8",
+   "kind": "cornice",
+   "at": [
+    -8,
+    11.8,
+    -142.15
+   ],
+   "size": [
+    12,
+    0.4,
+    0.3
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v8-fin-34",
+   "room": "v8",
+   "kind": "fin",
+   "at": [
+    -8,
+    5.8,
+    -142.16
+   ],
+   "size": [
+    0.5,
+    11.6,
+    0.32
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86
+   ]
+  },
+  {
+   "id": "k33-v8-skirt-41",
+   "room": "v8",
+   "kind": "skirt",
+   "at": [
+    -25.925,
+    0.11,
+    -154
+   ],
+   "size": [
+    23.68,
+    0.22,
+    0.15
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v8-cornice-42",
+   "room": "v8",
+   "kind": "cornice",
+   "at": [
+    -25.85,
+    11.8,
+    -154
+   ],
+   "size": [
+    23.38,
+    0.4,
+    0.3
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v8-fin-44",
+   "room": "v8",
+   "kind": "fin",
+   "at": [
+    -25.84,
+    5.8,
+    -160
+   ],
+   "size": [
+    0.5,
+    11.6,
+    0.32
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86,
+    1.625,
+    1.975
+   ]
+  },
+  {
+   "id": "k33-v8-recess-45",
+   "room": "v8",
+   "kind": "recess",
+   "at": [
+    -25.9,
+    4.01,
+    -154
+   ],
+   "size": [
+    3,
+    4,
+    0.2
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v8-fin-46",
+   "room": "v8",
+   "kind": "fin",
+   "at": [
+    -25.84,
+    5.8,
+    -148
+   ],
+   "size": [
+    0.5,
+    11.6,
+    0.32
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86,
+    1.625,
+    1.975
+   ]
+  },
+  {
+   "id": "k33-v8-skirt-56",
+   "room": "v8",
+   "kind": "skirt",
+   "at": [
+    -2.075,
+    0.11,
+    -154
+   ],
+   "size": [
+    23.68,
+    0.22,
+    0.15
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v8-cornice-57",
+   "room": "v8",
+   "kind": "cornice",
+   "at": [
+    -2.15,
+    11.8,
+    -154
+   ],
+   "size": [
+    23.38,
+    0.4,
+    0.3
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v8-fin-59",
+   "room": "v8",
+   "kind": "fin",
+   "at": [
+    -2.16,
+    5.8,
+    -160
+   ],
+   "size": [
+    0.5,
+    11.6,
+    0.32
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86,
+    1.625,
+    1.975
+   ]
+  },
+  {
+   "id": "k33-v8-recess-60",
+   "room": "v8",
+   "kind": "recess",
+   "at": [
+    -2.1,
+    4.01,
+    -154
+   ],
+   "size": [
+    3,
+    4,
+    0.2
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v8-fin-61",
+   "room": "v8",
+   "kind": "fin",
+   "at": [
+    -2.16,
+    5.8,
+    -148
+   ],
+   "size": [
+    0.5,
+    11.6,
+    0.32
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86,
+    1.625,
+    1.975
+   ]
+  },
+  {
+   "id": "k33-v8-pilaster-71",
+   "room": "v8",
+   "kind": "pilaster",
+   "at": [
+    -25.827,
+    5.8,
+    -165.827
+   ],
+   "size": [
+    0.345,
+    11.6,
+    0.345
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86
+   ]
+  },
+  {
+   "id": "k33-v8-pilaster-72",
+   "room": "v8",
+   "kind": "pilaster",
+   "at": [
+    -2.172,
+    5.8,
+    -165.827
+   ],
+   "size": [
+    0.345,
+    11.6,
+    0.345
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86
+   ]
+  },
+  {
+   "id": "k33-v8-pilaster-73",
+   "room": "v8",
+   "kind": "pilaster",
+   "at": [
+    -25.827,
+    5.8,
+    -142.172
+   ],
+   "size": [
+    0.345,
+    11.6,
+    0.345
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86
+   ]
+  },
+  {
+   "id": "k33-v8-pilaster-74",
+   "room": "v8",
+   "kind": "pilaster",
+   "at": [
+    -2.172,
+    5.8,
+    -142.172
+   ],
+   "size": [
+    0.345,
+    11.6,
+    0.345
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86
+   ]
+  },
+  {
+   "id": "k33-v8-doorFrame-75",
+   "room": "v8",
+   "kind": "doorFrame",
+   "at": [
+    -10,
+    2.45,
+    -165.845
+   ],
+   "size": [
+    4.8,
+    4.9,
+    0.31
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86
+   ]
+  },
+  {
+   "id": "k33-v8-doorFrame-77",
+   "room": "v8",
+   "kind": "doorFrame",
+   "at": [
+    -16,
+    2.45,
+    -142.155
+   ],
+   "size": [
+    4.8,
+    4.9,
+    0.31
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true,
+   "gap": [
+    1.34,
+    1.86
+   ]
+  },
+  {
+   "id": "k33-v8-hero-79",
+   "room": "v8",
+   "kind": "hero",
+   "at": [
+    -19,
+    7.2,
+    -165.5
+   ],
+   "size": [
+    6,
+    8.3,
+    1
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v8-edgeLight-6",
+   "room": "v8",
+   "kind": "edgeLight",
+   "at": [
+    -19,
+    3.05,
+    -165.97
+   ],
+   "size": [
+    14,
+    0.1,
+    0.06
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v8-banner-7",
+   "room": "v8",
+   "kind": "banner",
+   "at": [
+    -23.667,
+    5.2,
+    -165.975
+   ],
+   "size": [
+    1,
+    3.6,
+    0.05
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v8-banner-9",
+   "room": "v8",
+   "kind": "banner",
+   "at": [
+    -14.333,
+    5.2,
+    -165.975
+   ],
+   "size": [
+    1,
+    3.6,
+    0.05
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v8-wallPipe-10",
+   "room": "v8",
+   "kind": "wallPipe",
+   "at": [
+    -19,
+    3.6,
+    -165.865
+   ],
+   "size": [
+    13.4,
+    0.3,
+    0.27
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v8-edgeLight-16",
+   "room": "v8",
+   "kind": "edgeLight",
+   "at": [
+    -5,
+    3.05,
+    -165.97
+   ],
+   "size": [
+    6,
+    0.1,
+    0.06
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v8-banner-17",
+   "room": "v8",
+   "kind": "banner",
+   "at": [
+    -5,
+    5.2,
+    -165.975
+   ],
+   "size": [
+    1,
+    3.6,
+    0.05
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v8-wallPipe-18",
+   "room": "v8",
+   "kind": "wallPipe",
+   "at": [
+    -5,
+    3.6,
+    -165.865
+   ],
+   "size": [
+    5.4,
+    0.3,
+    0.27
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v8-edgeLight-25",
+   "room": "v8",
+   "kind": "edgeLight",
+   "at": [
+    -22,
+    3.05,
+    -142.03
+   ],
+   "size": [
+    8,
+    0.1,
+    0.06
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v8-banner-26",
+   "room": "v8",
+   "kind": "banner",
+   "at": [
+    -24,
+    5.2,
+    -142.025
+   ],
+   "size": [
+    1,
+    3.6,
+    0.05
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v8-banner-27",
+   "room": "v8",
+   "kind": "banner",
+   "at": [
+    -20,
+    5.2,
+    -142.025
+   ],
+   "size": [
+    1,
+    3.6,
+    0.05
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v8-wallPipe-28",
+   "room": "v8",
+   "kind": "wallPipe",
+   "at": [
+    -22,
+    3.6,
+    -142.135
+   ],
+   "size": [
+    7.4,
+    0.3,
+    0.27
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v8-edgeLight-35",
+   "room": "v8",
+   "kind": "edgeLight",
+   "at": [
+    -8,
+    3.05,
+    -142.03
+   ],
+   "size": [
+    12,
+    0.1,
+    0.06
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v8-banner-36",
+   "room": "v8",
+   "kind": "banner",
+   "at": [
+    -11,
+    5.2,
+    -142.025
+   ],
+   "size": [
+    1,
+    3.6,
+    0.05
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v8-banner-37",
+   "room": "v8",
+   "kind": "banner",
+   "at": [
+    -5,
+    5.2,
+    -142.025
+   ],
+   "size": [
+    1,
+    3.6,
+    0.05
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v8-wallPipe-38",
+   "room": "v8",
+   "kind": "wallPipe",
+   "at": [
+    -8,
+    3.6,
+    -142.135
+   ],
+   "size": [
+    11.4,
+    0.3,
+    0.27
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v8-edgeLight-47",
+   "room": "v8",
+   "kind": "edgeLight",
+   "at": [
+    -25.97,
+    3.05,
+    -154
+   ],
+   "size": [
+    23.86,
+    0.1,
+    0.06
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v8-banner-48",
+   "room": "v8",
+   "kind": "banner",
+   "at": [
+    -25.975,
+    5.2,
+    -163
+   ],
+   "size": [
+    1,
+    3.6,
+    0.05
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v8-banner-49",
+   "room": "v8",
+   "kind": "banner",
+   "at": [
+    -25.975,
+    5.2,
+    -157
+   ],
+   "size": [
+    1,
+    3.6,
+    0.05
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v8-banner-50",
+   "room": "v8",
+   "kind": "banner",
+   "at": [
+    -25.975,
+    5.2,
+    -151
+   ],
+   "size": [
+    1,
+    3.6,
+    0.05
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v8-banner-51",
+   "room": "v8",
+   "kind": "banner",
+   "at": [
+    -25.975,
+    5.2,
+    -145
+   ],
+   "size": [
+    1,
+    3.6,
+    0.05
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v8-wallPipe-52",
+   "room": "v8",
+   "kind": "wallPipe",
+   "at": [
+    -25.865,
+    3.6,
+    -154
+   ],
+   "size": [
+    22.84,
+    0.3,
+    0.27
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v8-edgeLight-62",
+   "room": "v8",
+   "kind": "edgeLight",
+   "at": [
+    -2.03,
+    3.05,
+    -154
+   ],
+   "size": [
+    23.86,
+    0.1,
+    0.06
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v8-banner-63",
+   "room": "v8",
+   "kind": "banner",
+   "at": [
+    -2.025,
+    5.2,
+    -163
+   ],
+   "size": [
+    1,
+    3.6,
+    0.05
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v8-banner-64",
+   "room": "v8",
+   "kind": "banner",
+   "at": [
+    -2.025,
+    5.2,
+    -157
+   ],
+   "size": [
+    1,
+    3.6,
+    0.05
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v8-banner-65",
+   "room": "v8",
+   "kind": "banner",
+   "at": [
+    -2.025,
+    5.2,
+    -151
+   ],
+   "size": [
+    1,
+    3.6,
+    0.05
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v8-banner-66",
+   "room": "v8",
+   "kind": "banner",
+   "at": [
+    -2.025,
+    5.2,
+    -145
+   ],
+   "size": [
+    1,
+    3.6,
+    0.05
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v8-wallPipe-67",
+   "room": "v8",
+   "kind": "wallPipe",
+   "at": [
+    -2.135,
+    3.6,
+    -154
+   ],
+   "size": [
+    22.84,
+    0.3,
+    0.27
+   ],
+   "yawDeg": 90,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v8-lintelLight-76",
+   "room": "v8",
+   "kind": "lintelLight",
+   "at": [
+    -10,
+    5.275,
+    -165.95
+   ],
+   "size": [
+    4,
+    0.15,
+    0.1
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v8-lintelLight-78",
+   "room": "v8",
+   "kind": "lintelLight",
+   "at": [
+    -16,
+    5.275,
+    -142.05
+   ],
+   "size": [
+    4,
+    0.15,
+    0.1
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v8-truss-80",
+   "room": "v8",
+   "kind": "truss",
+   "at": [
+    -14,
+    11.1,
+    -162
+   ],
+   "size": [
+    23.8,
+    0.8,
+    0.56
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v8-chain-81",
+   "room": "v8",
+   "kind": "chain",
+   "at": [
+    -14,
+    9.725,
+    -162
+   ],
+   "size": [
+    0.12,
+    1.95,
+    0.12
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v8-lamp-82",
+   "room": "v8",
+   "kind": "lamp",
+   "at": [
+    -14,
+    8.5,
+    -162
+   ],
+   "size": [
+    0.5,
+    0.5,
+    0.5
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v8-truss-83",
+   "room": "v8",
+   "kind": "truss",
+   "at": [
+    -14,
+    11.1,
+    -154
+   ],
+   "size": [
+    23.8,
+    0.8,
+    0.56
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  },
+  {
+   "id": "k33-v8-chain-84",
+   "room": "v8",
+   "kind": "chain",
+   "at": [
+    -14,
+    9.725,
+    -154
+   ],
+   "size": [
+    0.12,
+    1.95,
+    0.12
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "dress33": true
+  }
+ ]
+}

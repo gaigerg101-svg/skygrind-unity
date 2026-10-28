@@ -1,0 +1,822 @@
+{
+ "_why": "NIGHT74 S v2 r6 (Research/2026-10-27-wave74/S/card-v2.md): the aisle tier 2.5 m (planes -2 / 0 / 2.5-3.5), THE PIER and THE FONT, wave 1's east-most node in the screen's door; the verb (launch), the crypt, the screen, the loft, the pads and the waves are NIGHT71 R's. NIGHT70 S t16 (Research/2026-10-24-wave67/cards/v2.md, CHUTE, launch; rebuilt from the blank rect): THE NAVE: THE ROOD SCREEN 4.5 m in front of the hold with one door; THE LANE behind it; THE CRYPT across the throw past the lane, closed by THE RETABLE; THE ORGAN LOFT north-east; the air line handed back (THE FONT pad, THE TRIBUNE and its stair, THE CLERESTORY ride face, THE ORGAN PAD over the screen onto the loft); three rings. Variant tanknorth+cryptwide+noretable+clump+line65clump+proofeast+screenride+padscrypt.",
+ "room": "v2",
+ "row": {
+  "id": "v2",
+  "name": "5.2 THE NAVE",
+  "kind": "room",
+  "rect": [
+   -22,
+   51,
+   2,
+   83
+  ],
+  "height": 14,
+  "roof": true,
+  "par": 45,
+  "job36": "practise",
+  "spawn": {
+   "at": [
+    -10,
+    0,
+    75
+   ],
+   "yawDeg": 0
+  },
+  "exit": [
+   -10,
+   0,
+   52
+  ],
+  "arena36": true,
+  "bot43": false,
+  "verb36": "launch: THE ROOD SCREEN stands 4.5 m in front of you with one door; the bodies come along THE LANE behind it and step into the door one or two at a time, close; dash-punch the one in the door: it bursts the next one in the lane or flies over the lane into THE CRYPT and dies on the retable's foot; the clerestory ride and the two pads carry you over the screen onto the organ loft",
+  "waves": [
+   [
+    "husk",
+    "husk",
+    "husk",
+    "husk",
+    "swarmer"
+   ],
+   [
+    "spitter",
+    "spitter",
+    "husk",
+    "husk"
+   ],
+   [
+    "heavy",
+    "husk",
+    "husk",
+    "swarmer"
+   ]
+  ],
+  "waves_why": "NIGHT69 S s1b (Research/2026-10-24-wave67/cards/v2.md, CHUTE, launch; rebuilt from the blank rect): the shipped kinds (level 5's roster); 3 of the shipped 5 swarmers are husks (husk.hp 40 against swarmer.hp 10: a body the punch leaves alive, so the queue has bodies to burst and the crypt bodies to end); the TANK (heavy) kept",
+  "proofs": [
+   {
+    "kind": "walk",
+    "points": [
+     [
+      -10,
+      0,
+      82.5
+     ],
+     [
+      -10,
+      0,
+      73
+     ],
+     [
+      -10.5,
+      0,
+      69
+     ],
+     [
+      -4.5,
+      0,
+      68.25
+     ],
+     [
+      -3.5,
+      0,
+      66
+     ],
+     [
+      -3.5,
+      0,
+      57
+     ],
+     [
+      -6,
+      0,
+      53.5
+     ],
+     [
+      -10,
+      0,
+      52.5
+     ]
+    ]
+   },
+   {
+    "kind": "walk",
+    "points": [
+     [
+      -4.5,
+      0,
+      64
+     ],
+     [
+      -0.5,
+      0,
+      64
+     ],
+     [
+      -0.5,
+      3.5,
+      56
+     ],
+     [
+      -0.5,
+      3.5,
+      53
+     ]
+    ]
+   }
+  ],
+  "frames36": {
+   "mid": [
+    -10,
+    0,
+    77.5,
+    0,
+    0.06
+   ],
+   "exit": [
+    -4.5,
+    0,
+    62,
+    0,
+    -0.05
+   ]
+  },
+  "frames52": {
+   "_why": "NIGHT70 S t16 (Research/2026-10-24-wave67/cards/v2.md, CHUTE, launch; rebuilt from the blank rect): entry looking down the narthex at the rood screen's door; mid in the door looking north over the lane and the crypt at the retable; high on the organ loft looking south-west over the crypt",
+   "entry": [
+    -10,
+    0,
+    81.5,
+    0,
+    0.08
+   ],
+   "mid": [
+    -10.5,
+    0,
+    71.5,
+    0,
+    0.05
+   ],
+   "high": [
+    -0.5,
+    3.5,
+    53.5,
+    150,
+    -0.2
+   ]
+  },
+  "nodes": [
+   [
+    -12.5,
+    0,
+    52.5
+   ],
+   [
+    -9.5,
+    0,
+    52.5
+   ],
+   [
+    -12.5,
+    0,
+    55.5
+   ],
+   [
+    -9.5,
+    0,
+    55.5
+   ],
+   [
+    -11,
+    0,
+    54
+   ],
+   [
+    -10.5,
+    0,
+    57.5
+   ],
+   [
+    -7.5,
+    0,
+    57.5
+   ],
+   [
+    -13.5,
+    0,
+    57.5
+   ]
+  ],
+  "nodes_why": "NIGHT74 S v2 r6 (Research/2026-10-27-wave74/S/card-v2.md): wave 1 moved from the hold's sides to the crypt's far side ((-10.5 | -7.5 | -13.5, 0, 57.5), (-12.5 | -9.5, 0, 55.5): 17-23 m from the spawn, in the entry's view through the screen's door); the hold nodes leave the list. NIGHT70 S t16 (Research/2026-10-24-wave67/cards/v2.md, CHUTE, launch; rebuilt from the blank rect): every floor node in one 3 x 3 m clump in the apse (-11, 54): each wave walks to you as one clump, so a launch into it is a burst on all of them (variant clump)",
+  "highNodes": [
+   [
+    -1.5,
+    3.5,
+    53
+   ],
+   [
+    0.5,
+    3.5,
+    53.5
+   ],
+   [
+    -0.5,
+    3.5,
+    55
+   ]
+  ],
+  "highNodes_why": "NIGHT70 S t16 (Research/2026-10-24-wave67/cards/v2.md, CHUTE, launch; rebuilt from the blank rect): THE ORGAN LOFT's top (3.5 m, the north-east corner): W2's spitters' stand; the screen and the retable cut their sight of the hold, so they come down and through the door too (a 60 hp spitter is a launch target)",
+  "waveNodes43": [
+   [
+    [
+     -10.5,
+     0,
+     57.5
+    ],
+    [
+     -7.5,
+     0,
+     57.5
+    ],
+    [
+     -13.5,
+     0,
+     57.5
+    ],
+    [
+     -12.5,
+     0,
+     55.5
+    ],
+    [
+     -9.5,
+     0,
+     55.5
+    ]
+   ],
+   [
+    [
+     -1.5,
+     3.5,
+     53
+    ],
+    [
+     0.5,
+     3.5,
+     53.5
+    ],
+    [
+     -12.5,
+     0,
+     52.5
+    ],
+    [
+     -9.5,
+     0,
+     52.5
+    ],
+    [
+     -12.5,
+     0,
+     55.5
+    ]
+   ],
+   [
+    [
+     -12.5,
+     0,
+     52.5
+    ],
+    [
+     -9.5,
+     0,
+     52.5
+    ],
+    [
+     -12.5,
+     0,
+     55.5
+    ],
+    [
+     -9.5,
+     0,
+     55.5
+    ],
+    [
+     -11,
+     0,
+     54
+    ]
+   ]
+  ],
+  "waveNodes43_why": "NIGHT71 R (the lead's IN VIEW return; Research/2026-10-26-wave71/R/v2/card.md): wave 1 (the ambush) in the hold either side of the spawn, hidden from the corridor by the narthex stair and the door wall, 12-13 m from the commit feet, 8-15 m from the door (ambushed fallback, spawn31). NIGHT70 S t16 (Research/2026-10-24-wave67/cards/v2.md, CHUTE, launch; rebuilt from the blank rect): W1 from both ends of the lane and both strips (the nearest 4.5 m from the door, the farthest 16 m: a trickle); W2's spitters on the loft, its husks at the lane's ends; W3's TANK behind the retable (its walk round the retable's east end and along the lane on the crypt's rim to the door), one body in the narthex's east corner behind the player",
+  "grappleNodes": [
+   [
+    -10.5,
+    8.5,
+    70
+   ],
+   [
+    -11,
+    8,
+    63.75
+   ],
+   [
+    -1,
+    8,
+    59
+   ]
+  ],
+  "grapple": "THREE rings (R5 spire41 kept: level 5's descent rooms carry grapple nodes, VERBS rows 17 / 19 / 22 / 23): the DOOR RING 8.5 m over the rood screen's door (a swing over the screen), the CRYPT RING 8 m over the crypt, the LOFT RING 8 m by the organ loft (floor -> the spitters)",
+  "grapple41_why": "R5 (spire41, INVENTORY A10): level 5 had no grapple node (VERBS rows 17 / 19 / 22 / 23 RED since NIGHT39); THE NAVE is the descent's first arena and its aisles are the spitters' stand",
+  "verb65": "launch",
+  "line65": [
+   [
+    -10,
+    0,
+    76
+   ],
+   [
+    -10.5,
+    0,
+    72.5
+   ],
+   [
+    -4,
+    0,
+    66.5
+   ],
+   [
+    -4,
+    0,
+    57.5
+   ]
+  ],
+  "line65_why": "NIGHT70 S t16 (Research/2026-10-24-wave67/cards/v2.md, CHUTE, launch; rebuilt from the blank rect): from the hold through the door, along the lane's east end and up the east strip to the clump's front by the crypt's north-east corner: a punch at the lead body of a clump bursts the clump (60 in 3.5 m), a punch across the crypt throws the body in",
+  "card65": "Research/2026-10-24-wave67/cards/v2.md",
+  "spawn_why": "NIGHT70 S t16 (Research/2026-10-24-wave67/cards/v2.md, CHUTE, launch; rebuilt from the blank rect): the shipped spawn kept (never moved toward line65)"
+ },
+ "boxes": [
+  {
+   "zone": "v2",
+   "kind": "hull",
+   "min": [
+    -22,
+    0,
+    70
+   ],
+   "max": [
+    -12,
+    4.5,
+    71
+   ],
+   "job": "line",
+   "why": "NIGHT71 R r4 (R7, area OPEN: the hold 12.5 -> 12 m deep): 0.5 m north (z 69.5..70.5 -> 70..71). NIGHT70 S t16 (Research/2026-10-24-wave67/cards/v2.md, CHUTE, launch; rebuilt from the blank rect): THE ROOD SCREEN, west (10 m, 4.5 m), 4.5 m north of the hold, its south face THE CLERESTORY (the cyan ride face: the shipped room's clerestory ride handed back, rule 1, on the wall the fight rubs): with the east half it hides the lane and the far half, so a body is first seen in the door at 4.5-6 m; a body thrown along the lane's west end bursts on the room's west wall",
+   "ride": true,
+   "ride36": {
+    "face": "S",
+    "planeZ": 71,
+    "lx": [
+     -22,
+     -12
+    ]
+   }
+  },
+  {
+   "zone": "v2",
+   "kind": "hull",
+   "min": [
+    -9,
+    0,
+    70
+   ],
+   "max": [
+    2,
+    3.9,
+    71
+   ],
+   "job": "line",
+   "why": "NIGHT71 R r4 (R7, area OPEN: the hold 12.5 -> 12 m deep): 0.5 m north (z 69.5..70.5 -> 70..71). NIGHT70 S t16 (Research/2026-10-24-wave67/cards/v2.md, CHUTE, launch; rebuilt from the blank rect): THE ROOD SCREEN, east (11 m, 3.9 m): the door's east jamb; the lane behind it brings the east strip's bodies to the door one at a time"
+  },
+  {
+   "zone": "v2",
+   "kind": "deck",
+   "min": [
+    -3,
+    0,
+    51
+   ],
+   "max": [
+    2,
+    3.5,
+    56
+   ],
+   "job": "line",
+   "why": "NIGHT70 S t16 (Research/2026-10-24-wave67/cards/v2.md, CHUTE, launch; rebuilt from the blank rect): THE ORGAN LOFT (5 x 5 m, 3.5 m; P9 N/A) in the north-east corner: W2's spitters' stand, the health on its top, THE ORGAN PAD's landing; the one accent (amber)"
+  },
+  {
+   "zone": "v2",
+   "kind": "deck",
+   "min": [
+    -22,
+    0,
+    75
+   ],
+   "max": [
+    -16,
+    2.5,
+    83
+   ],
+   "job": "line: THE NARTHEX's west wing (the hold's high step; the screen ride's landing)",
+   "why": "NIGHT74 S v2 r6 (Research/2026-10-27-wave74/S/card-v2.md): the deck's top 2.4 -> 2.5 m (the room's planes: the aisle and the loft's 3.5 m are one tier within 1.0 m). NIGHT71 R (Research/2026-10-26-wave71/R/v2/card.md; rule 1: the shipped v2's air line, 33 hand-offs, against t16's 3): the shipped NARTHEX west wing exactly (2.4 m, 6 x 8 m beside the hold): the screen's ride (face north) jumps off onto it; from it a dash-jump reaches the screen's top, the aisle and the loft",
+   "note": "THE NARTHEX's west wing (2.4 m)"
+  },
+  {
+   "zone": "v2",
+   "kind": "deck",
+   "min": [
+    -22,
+    0,
+    71
+   ],
+   "max": [
+    -18,
+    2.5,
+    75
+   ],
+   "job": "line: the WEST AISLE's south part (the screen ride's first landing)",
+   "why": "NIGHT74 S v2 r6 (Research/2026-10-27-wave74/S/card-v2.md): the deck's top 2.4 -> 2.5 m (the room's planes: the aisle and the loft's 3.5 m are one tier within 1.0 m). NIGHT71 R r4 (R7, area OPEN: the hold 12.5 -> 12 m deep): its south edge follows the screen (70.5 -> 71). NIGHT71 R (Research/2026-10-26-wave71/R/v2/card.md; rule 1: the shipped v2's air line, 33 hand-offs, against t16's 3): the shipped west aisle's south part (2.4 m) trimmed to the rood screen's north face (z 70 -> 70.5): the screen's west ride face lands here",
+   "note": "the WEST AISLE's south part (2.4 m)"
+  },
+  {
+   "zone": "v2",
+   "kind": "deck",
+   "min": [
+    -22,
+    0,
+    59
+   ],
+   "max": [
+    -18,
+    2.5,
+    65
+   ],
+   "job": "line: the WEST AISLE's north part (the far side's high step over the crypt's west end)",
+   "why": "NIGHT74 S v2 r6 (Research/2026-10-27-wave74/S/card-v2.md): the deck's top 2.4 -> 2.5 m (the room's planes: the aisle and the loft's 3.5 m are one tier within 1.0 m). NIGHT71 R (Research/2026-10-26-wave71/R/v2/card.md; rule 1: the shipped v2's air line, 33 hand-offs, against t16's 3): the shipped west aisle's north part exactly (2.4 m, 4 x 6 m west of THE CRYPT): a stand over the crypt's west end; the hand-off across the screen to the narthex and on to the loft",
+   "note": "the WEST AISLE's north part (2.4 m)"
+  },
+  {
+   "zone": "v2",
+   "kind": "wall",
+   "min": [
+    -22,
+    0,
+    59
+   ],
+   "max": [
+    -21.4,
+    9,
+    70
+   ],
+   "job": "line: THE CLERESTORY WALL (ride, the west aisle's face south of the rood screen)",
+   "why": "NIGHT71 R r4 (R7, area OPEN: the hold 12.5 -> 12 m deep): to the screen's new south face (69.5 -> 70: 11 m). NIGHT71 R r2 (Research/2026-10-26-wave71/R/v2/card.md; rule 1: the shipped v2's air line, 33 hand-offs): the shipped CLERESTORY WALL (ride, cyan, 9 m, face east at x -21.4) cut at the rood screen's south face (z 76 -> 69.5: 10.5 m): ride it along the crypt's west side from the aisle to the screen and jump off onto the west aisle or across the crypt",
+   "note": "THE CLERESTORY WALL (ride, 10.5 m)",
+   "ride": true,
+   "ride36": {
+    "face": "E",
+    "planeX": -21.4,
+    "lz": [
+     7,
+     18
+    ]
+   }
+  },
+  {
+   "zone": "v2",
+   "kind": "hull",
+   "min": [
+    -14,
+    0,
+    72
+   ],
+   "max": [
+    -12.4,
+    2.4,
+    73.6
+   ],
+   "job": "cover: THE PIER (a 2.4 m pillar in the hold's west: high cover to circle while the queue forms)",
+   "why": "NIGHT74 S v2 r6 (Research/2026-10-27-wave74/S/card-v2.md): the hall had no free-standing piece (the meter's COVER RED): a 1.6 x 1.6 x 2.4 m pillar 2.4 m east of wave 1's west nodes and 2.4 m west of the walk line (x -10), clear of the narthex stair (z 76-79) and of the organ pad's flight.",
+   "note": "THE PIER (2.4 m, 1.6 x 1.6 m, the hold's west)"
+  },
+  {
+   "zone": "v2",
+   "kind": "hull",
+   "min": [
+    -6,
+    0,
+    76.5
+   ],
+   "max": [
+    -4,
+    1.2,
+    78.5
+   ],
+   "job": "cover: THE FONT (1.2 m low cover in the hold's east: hop it or shelter behind it from the queue)",
+   "why": "NIGHT74 S v2 r6 (Research/2026-10-27-wave74/S/card-v2.md): 2 x 2 x 1.2 m low cover (1.0-1.25 m), 4 m east of the spawn's line, off the walk line and the east lane.",
+   "note": "THE FONT (1.2 m, 2 x 2 m, the hold's east)"
+  }
+ ],
+ "ramps": [
+  {
+   "zone": "v2",
+   "from": [
+    -0.5,
+    63
+   ],
+   "to": [
+    -0.5,
+    56
+   ],
+   "width": 3,
+   "rise": 3.5,
+   "job": "climb",
+   "why": "NIGHT70 S t16 (Research/2026-10-24-wave67/cards/v2.md, CHUTE, launch; rebuilt from the blank rect): THE LOFT STAIR (3.5 m over 7 m, rising north onto THE ORGAN LOFT): the loft's climb (GG NIGHT20), on the east strip"
+  },
+  {
+   "zone": "v2",
+   "from": [
+    -20,
+    53
+   ],
+   "to": [
+    -20,
+    59
+   ],
+   "width": 4,
+   "rise": 2.5,
+   "job": "climb: the walkers' climb to the west aisle (north part)",
+   "why": "NIGHT74 S v2 r6 (Research/2026-10-27-wave74/S/card-v2.md): rise 2.4 -> 2.5 (the aisle's tier). NIGHT71 R (Research/2026-10-26-wave71/R/v2/card.md; rule 1: the shipped v2's air line, 33 hand-offs, against t16's 3): the shipped west aisle stair exactly (2.4 m over 6 m from the exit's corner): the enemies' climb route onto the aisle (GG: a route enemies can climb)",
+   "note": "the west aisle stair"
+  },
+  {
+   "zone": "v2",
+   "from": [
+    -11,
+    77.5
+   ],
+   "to": [
+    -16,
+    77.5
+   ],
+   "width": 3,
+   "rise": 2.5,
+   "job": "climb: the walkers' climb to the narthex wing and the aisle",
+   "why": "NIGHT74 S v2 r6 (Research/2026-10-27-wave74/S/card-v2.md): rise 2.4 -> 2.5 (the aisle's tier). NIGHT71 R (Research/2026-10-26-wave71/R/v2/card.md; rule 1: the shipped v2's air line, 33 hand-offs, against t16's 3): new: 2.4 m over 5 m in the hold, from 1 m west of the spawn (r3: its foot x -11.5 -> -11, so the hold's open square is 12 m, area OPEN) up west onto the narthex wing's east edge (x -16, z 76..79): the enemies' climb route onto the hold's high step and the west aisle (GG: a route enemies can climb)",
+   "note": "the narthex stair"
+  }
+ ],
+ "pads": [
+  {
+   "zone": "v2",
+   "at": [
+    -14,
+    -2,
+    63.75
+   ],
+   "target": [
+    -19.5,
+    2.5,
+    62
+   ],
+   "apexAbove": 1.5,
+   "job": "line",
+   "why": "NIGHT74 S v2 r6 (Research/2026-10-27-wave74/S/card-v2.md): the pad's landing height 2.4 -> 2.5 (the aisle's tier). NIGHT71 R r2 (Research/2026-10-26-wave71/R/v2/card.md; rule 1: the shipped v2's air line, 33 hand-offs): the crypt's west pad's target (-15, 0, 68.25) -> the west aisle's north part (-19.5, 2.4, 62): still the way out of the crypt, now onto the air line. NIGHT70 S t16 (Research/2026-10-24-wave67/cards/v2.md, CHUTE, launch; rebuilt from the blank rect): THE FONT (on THE CRYPT's floor, west): the pit's lift up into the lane under the clerestory ride (the shipped room's aisle hoist handed back)"
+  },
+  {
+   "zone": "v2",
+   "at": [
+    -8,
+    -2,
+    63.75
+   ],
+   "target": [
+    -0.5,
+    3.5,
+    54
+   ],
+   "apexAbove": 1.5,
+   "job": "line",
+   "why": "NIGHT70 S t16 (Research/2026-10-24-wave67/cards/v2.md, CHUTE, launch; rebuilt from the blank rect): THE ORGAN PAD (on THE CRYPT's floor, east): the pit's lift up onto THE ORGAN LOFT (the spitters, the health; the shipped room's bell hoist handed back)"
+  },
+  {
+   "zone": "v2",
+   "at": [
+    -20,
+    2.5,
+    73
+   ],
+   "target": [
+    -0.5,
+    3.5,
+    53.5
+   ],
+   "apexAbove": 6,
+   "job": "line: THE ORGAN PAD (the hold's way over the screen and the crypt onto the organ loft)",
+   "why": "NIGHT74 S v2 r6 (Research/2026-10-27-wave74/S/card-v2.md): the pad's standing height 2.4 -> 2.5 (the aisle's tier). NIGHT71 R r2 (Research/2026-10-26-wave71/R/v2/card.md; rule 1: the shipped v2's air line, 33 hand-offs): t16's ORGAN PAD over the screen onto the loft (its _why; dropped by the variant): from the west aisle's south part (2.4 m) over the rood screen (4.5 m) and THE CRYPT onto THE ORGAN LOFT (3.5 m), where wave 2's spitters stand; apex 9.5 m to clear the screen",
+   "note": "THE ORGAN PAD"
+  }
+ ],
+ "grapple": [],
+ "pits": [
+  {
+   "zone": "v2",
+   "rect": [
+    -17,
+    60.5,
+    -5,
+    67
+   ],
+   "floorY": -2,
+   "job": "hazard",
+   "why": "NIGHT70 S t16 (Research/2026-10-24-wave67/cards/v2.md, CHUTE, launch; rebuilt from the blank rect): THE CRYPT (8 m across the throw, 6.5 m along it, dry, 2 m deep: a body ended in it) north of the lane, its near rim 3 m past the door: a body thrown from the hold through the door flies over the lane (apex 0.54 m) and meets the crypt's far wall under THE RETABLE 10 m out at about -1.4 m (scout.md A), or lands on its floor; the walk goes round it by the east strip"
+  }
+ ],
+ "tunnels": [],
+ "lights": [
+  {
+   "id": "v2-L1",
+   "room": "v2",
+   "kind": "ceiling",
+   "at": [
+    -10,
+    13.95,
+    76
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    4,
+    0.1
+   ],
+   "color": "white",
+   "range": 14,
+   "intensity": 1.2,
+   "job": "light",
+   "why": "NIGHT70 S t16 (Research/2026-10-24-wave67/cards/v2.md, CHUTE, launch; rebuilt from the blank rect): the narthex's roof panel"
+  },
+  {
+   "id": "v2-L2",
+   "room": "v2",
+   "kind": "ceiling",
+   "at": [
+    -11,
+    13.95,
+    63.5
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    6,
+    6,
+    0.1
+   ],
+   "color": "white",
+   "range": 14,
+   "intensity": 1.2,
+   "job": "light",
+   "why": "NIGHT70 S t16 (Research/2026-10-24-wave67/cards/v2.md, CHUTE, launch; rebuilt from the blank rect): the crypt's roof panel beyond the screen"
+  },
+  {
+   "id": "v2-L3",
+   "room": "v2",
+   "kind": "ceiling",
+   "at": [
+    -0.5,
+    13.95,
+    53.5
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    5,
+    4,
+    0.1
+   ],
+   "color": "amber",
+   "range": 14,
+   "intensity": 1.2,
+   "job": "light",
+   "why": "NIGHT70 S t16 (Research/2026-10-24-wave67/cards/v2.md, CHUTE, launch; rebuilt from the blank rect): THE ORGAN LOFT's lamp (amber, the room's one accent)"
+  },
+  {
+   "id": "v2-L4",
+   "room": "v2",
+   "kind": "pool",
+   "at": [
+    -11,
+    -1.975,
+    63.75
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    11,
+    5.5,
+    0.05
+   ],
+   "color": "white",
+   "range": 8,
+   "intensity": 1.1,
+   "job": "light",
+   "why": "NIGHT70 S t16 (Research/2026-10-24-wave67/cards/v2.md, CHUTE, launch; rebuilt from the blank rect): THE CRYPT's floor lit (a pit read black in NIGHT69's plan)"
+  },
+  {
+   "id": "v2-L6",
+   "room": "v2",
+   "kind": "pool",
+   "at": [
+    -10,
+    0.025,
+    52
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.5,
+    2.5,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.6,
+   "job": "light",
+   "why": "the exit's cyan pool (A-6)"
+  }
+ ],
+ "props": [
+  {
+   "id": "v2-P1",
+   "room": "v2",
+   "kind": "healthPickup",
+   "at": [
+    -0.5,
+    4.4,
+    53.5
+   ],
+   "size": [
+    0.6,
+    0.6,
+    0.6
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "pickup": true,
+   "job": "reward",
+   "why": "NIGHT70 S t16 (Research/2026-10-24-wave67/cards/v2.md, CHUTE, launch; rebuilt from the blank rect): the health on THE ORGAN LOFT among W2's spitters, at THE ORGAN PAD's landing (A20)"
+  },
+  {
+   "id": "v2-rim-s",
+   "room": "v2",
+   "kind": "edgeLight",
+   "at": [
+    -11,
+    0.05,
+    67
+   ],
+   "size": [
+    8,
+    0.08,
+    0.05
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "job": "marker",
+   "why": "NIGHT70 S t16 (Research/2026-10-24-wave67/cards/v2.md, CHUTE, launch; rebuilt from the blank rect): THE CRYPT's near rim along the lane, lit (a pit is lit at its rim)"
+  }
+ ],
+ "surfaces": [],
+ "drop": {
+  "loop52_why": "NIGHT70 S t16 (Research/2026-10-24-wave67/cards/v2.md, CHUTE, launch; rebuilt from the blank rect): NIGHT52's loop history named the cut bell, aisles and pads",
+  "f52b_why": "NIGHT70 S t16 (Research/2026-10-24-wave67/cards/v2.md, CHUTE, launch; rebuilt from the blank rect): the NIGHT52 F history of cut pieces",
+  "f52c_why": "NIGHT70 S t16 (Research/2026-10-24-wave67/cards/v2.md, CHUTE, launch; rebuilt from the blank rect): the NIGHT52 F history of cut pieces",
+  "f52d_why": "NIGHT70 S t16 (Research/2026-10-24-wave67/cards/v2.md, CHUTE, launch; rebuilt from the blank rect): the NIGHT52 F history of cut pieces",
+  "ext53_why": "NIGHT70 S t16 (Research/2026-10-24-wave67/cards/v2.md, CHUTE, launch; rebuilt from the blank rect): EXT53's loop pads and rings were moved for the cut bell; the rings are re-placed (grapple); the two pads and the ride face are handed back as new pieces (THE FONT, THE ORGAN PAD, THE CLERESTORY)"
+ }
+}

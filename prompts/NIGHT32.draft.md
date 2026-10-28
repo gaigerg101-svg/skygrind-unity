@@ -1,0 +1,15 @@
+# NIGHT32.md (draft by the NIGHT31 lead, 2026-10-10): the leftovers of NIGHT31, in priority order
+
+Base: branch port/stage3 at the NIGHT31 close (tag u3-n31 if the close reached it; else the last commit). Read first: NIGHT31-REPORT.md, NIGHT31-LOG.md, NIGHT31-PROOF.md (the camp table), Design/levels/DESIGN31.md (section R overrides the cards), DECIDE31.md, HANDOFF.md (NIGHT31 block). GG's playtest of NIGHT31 (FEEL-PLAYTEST.md) comes first and outranks this list.
+
+## Leftovers (each with the measured state at the NIGHT31 close; see NIGHT31-PROOF.md for the final lines)
+1. **The camp test in the Player (the forge experiment):** the first Player camp table (n31-r4) had THE STAG at 3 of 5 campers losing: the island-top and half-a-lap campers lost 0 % in 30 s while the harness said they lose. B added per-camper charge / stomp / shard / drift lines to the reel; read them in the latest run and make the Stag reach both spots. Then run camp31 on the Lantern, the Wyrm and the Loom in the Player (only the Stag has a Player camp scenario: add the other three).
+2. **Boss kill times in the Player:** n31-r4's lantern31 / stag31 / wyrm31 reels never landed a damage state (B's reel input bug: pilots held fire on alternate sim steps; fixed in 7d42e4fc, harness-emulated only). The freeze run (n31-r5) is the first Player test of the fix: see the proof. The Wyrm's harness pilot takes 475 s with 8 deaths (band 3-4 min): decide whether the fight or the pilot is wrong.
+3. **The Loom's hips:** a pull to a hip joint lets go after 0.4 s (a 4 m rope from a hip 1.5 m above the deck dips into the lava); only the 4 knees hang. Raise the hips to about 5 m over the lava (B's Loom31) or shorten the hang rope there.
+4. **The Stag's camp margin** is thin in the plain harness (centre 0.36 %/s against a bar of 0.35; passes with the build's rows). The Wyrm's is thin too (0.14 vs 0.15).
+5. **A real tell for the Stag's charge before the fight:** level 2's tank has no charge in the sim, so i7 teaches it with text only ("IT CHARGES. GLIDE SIDEWAYS. PUNCH ITS BACK."). A tank charge in i5 / i6 would teach it by play.
+6. **The grapple's 0.2 s tap window** is a guess (no real pad tap lengths on disk); the 0.4 s rope cooldown carries a player past the next node at high speed (D-11).
+7. **Frames that fail to write in long reels** (163 in camp31, 1825 in the boss reel on n31-r4; disk C 94 % full, 127 GB free; Logs/feel is 88 GB): find the cause in Shot29 / the reel capture; ask GG before deleting old reel folders.
+8. **Pad Player line for the reel button** (P0 e is harness only: REEL is on X with INTERACT in all five layouts).
+9. NIGHT30's leftovers not touched tonight: the Lantern ring's light stone in the lava glow; a `hero` row in level plans; vertex snap / stone texture noise / heat shimmer; the level card's boss column; pad reels menus30 / weaponhud30 with nobody at the machine; f7 / i2 / k4 room cards.
+10. **The DECIDE31 rows** stand at their defaults unless GG answers (D-1 the order as the lead changed it, D-2 THE STAG, D-3 the grapple, D-6 the edge red, D-11 the pull cooldown).

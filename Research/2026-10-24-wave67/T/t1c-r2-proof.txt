@@ -1,0 +1,30 @@
+# sha 9cbb41a4 (+ uncommitted: ); 2026-10-24 15:47:21
+
+## P1: no level review anywhere
+# exit 3
+n67-gate-pack g8: verb65 g8 ride (slate ride, C:/Users/gaige/dev/SKYGRIND-unity/.claude/worktrees/agent-af48e888c59fa3626/Logs/n67/dry-rec-iceline/slate-at-start.json): equal
+n67-gate-pack g8: the room file Design/levels/n67/iceline/rooms/g8.json: the round's 9e20b02982d790c2 (dry-rec-iceline/room-files/g8.json (the round's own record)), now 9e20b02982d790c2: UNCHANGED
+# README: MISSING: 9 piece(s) the GATE needs came back not found: verbs: the red's lines (Logs/n67/red-iceline); card: Research/2026-10-24-wave67/cards/g8.md at fdb4911c; room-diff: empty (the room equals the base's export); checks: Logs/n67/red-iceline/g8/room-check.txt; checks: Logs/n67/red-iceline/g8/flow-A.txt; checks: Logs/n67/red-iceline/g8/flow-B.txt; checks: Logs/n67/red-iceline/g8/flow-V.txt; check
+# open-findings:  MISSING: no level review of dry-rec-iceline has a '## g8' section (no review file of the round exists: NIGHT67.md section 4 step 2, the lead writes it before the GATE) 
+
+## P2: a review of ANOTHER round (Logs/n67/r8-other/review-level.md) names g8
+# exit 3
+n67-gate-pack g8: verb65 g8 ride (slate ride, C:/Users/gaige/dev/SKYGRIND-unity/.claude/worktrees/agent-af48e888c59fa3626/Logs/n67/dry-rec-iceline/slate-at-start.json): equal
+n67-gate-pack g8: the room file Design/levels/n67/iceline/rooms/g8.json: the round's 9e20b02982d790c2 (dry-rec-iceline/room-files/g8.json (the round's own record)), now 9e20b02982d790c2: UNCHANGED
+# README: MISSING: 9 piece(s) the GATE needs came back not found: verbs: the red's lines (Logs/n67/red-iceline); card: Research/2026-10-24-wave67/cards/g8.md at fdb4911c; room-diff: empty (the room equals the base's export); checks: Logs/n67/red-iceline/g8/room-check.txt; checks: Logs/n67/red-iceline/g8/flow-A.txt; checks: Logs/n67/red-iceline/g8/flow-B.txt; checks: Logs/n67/red-iceline/g8/flow-V.txt; check
+# open-findings:  MISSING: no level review of dry-rec-iceline has a '## g8' section (no review file of the round exists: NIGHT67.md section 4 step 2, the lead writes it before the GATE) 
+
+## P3: the round's own review (dry-rec-iceline/review-level.md) with '## g8' and a BLOCKING line
+# exit 3
+n67-gate-pack g8: verb65 g8 ride (slate ride, C:/Users/gaige/dev/SKYGRIND-unity/.claude/worktrees/agent-af48e888c59fa3626/Logs/n67/dry-rec-iceline/slate-at-start.json): equal
+n67-gate-pack g8: the room file Design/levels/n67/iceline/rooms/g8.json: the round's 9e20b02982d790c2 (dry-rec-iceline/room-files/g8.json (the round's own record)), now 9e20b02982d790c2: UNCHANGED
+# README: MISSING: 8 piece(s) the GATE needs came back not found: verbs: the red's lines (Logs/n67/red-iceline); card: Research/2026-10-24-wave67/cards/g8.md at fdb4911c; room-diff: empty (the room equals the base's export); checks: Logs/n67/red-iceline/g8/room-check.txt; checks: Logs/n67/red-iceline/g8/flow-A.txt; checks: Logs/n67/red-iceline/g8/flow-B.txt; checks: Logs/n67/red-iceline/g8/flow-V.txt; check
+# open-findings:  BLOCKING: the planted finding of this round (must show in open-findings) 
+
+## P4: the round as r9-iceline, its review at Logs/n67/r9/review-level.md; its table.md removed
+# exit 3
+n67-gate-pack g8: verb65 g8 ride (slate ride, C:/Users/gaige/dev/SKYGRIND-unity/.claude/worktrees/agent-af48e888c59fa3626/Logs/n67/r9-iceline/slate-at-start.json): equal
+n67-gate-pack g8: the room file Design/levels/n67/iceline/rooms/g8.json: the round's 9e20b02982d790c2 (r9-iceline/room-files/g8.json (the round's own record)), now 9e20b02982d790c2: UNCHANGED
+# README: MISSING: 9 piece(s) the GATE needs came back not found: table: no r9-iceline/table.md; verbs: the red's lines (Logs/n67/red-iceline); card: Research/2026-10-24-wave67/cards/g8.md at fdb4911c; room-diff: empty (the room equals the base's export); checks: Logs/n67/red-iceline/g8/room-check.txt; checks: Logs/n67/red-iceline/g8/flow-A.txt; checks: Logs/n67/red-iceline/g8/flow-B.txt; checks: Logs/n67/r
+# open-findings:  no BLOCKING line 
+# done 15:47:45

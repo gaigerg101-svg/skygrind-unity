@@ -1,0 +1,57 @@
+{
+ "_why": "NIGHT65: what the last gen-n65-foundry.cjs plan step assembled (read by --finish for generatedBy; the lead's, never committed by a builder)",
+ "slots": "b1,a8,a2,a5,a3",
+ "plan": "Design/levels/n65/foundry.plan.json",
+ "at": "2026-10-28T08:32:02.974Z",
+ "rooms": [
+  {
+   "id": "a2",
+   "use": "latest",
+   "file": "Design/levels/n65/rooms/a2.json",
+   "rebuilt": true,
+   "passSha": null
+  },
+  {
+   "id": "a3",
+   "use": "latest",
+   "file": "Design/levels/n65/rooms/a3.json",
+   "rebuilt": true,
+   "passSha": null
+  },
+  {
+   "id": "a4",
+   "use": "old",
+   "file": "Design/levels/n65/rooms-n52/a4.json",
+   "rebuilt": false,
+   "passSha": null
+  },
+  {
+   "id": "a5",
+   "use": "latest",
+   "file": "Design/levels/n65/rooms/a5.json",
+   "rebuilt": true,
+   "passSha": null
+  },
+  {
+   "id": "b1",
+   "use": "latest",
+   "file": "Design/levels/n65/rooms/b1.json",
+   "rebuilt": true,
+   "passSha": null
+  },
+  {
+   "id": "b2",
+   "use": "old",
+   "file": "Design/levels/n65/rooms-n52/b2.json",
+   "rebuilt": false,
+   "passSha": null
+  },
+  {
+   "id": "a8",
+   "use": "latest",
+   "file": "Design/levels/n65/rooms/a8.json",
+   "rebuilt": true,
+   "passSha": null
+  }
+ ]
+}

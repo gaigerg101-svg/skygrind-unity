@@ -1,0 +1,56 @@
+# sha 3ed91b5f + the uncommitted put-in fix (Harness.N65.Verb.cs V67PutInAwards, Harness.N46.Flow.cs); DLL 12:01:27; 2026-10-24 12:01:50
+
+## dotnet Temp/SimHarness/bin/Release/net10.0/SimHarness.dll n65verb skip --level Design/levels/n52-iceline.json --room g7 --plant-verb65 g7:parry --seeds 2 --no-put-in-awards
+  seed 1 verb-aware: cleared yes in 32.0 s | deaths 0, falls 0 | globs parried 1 | ... walked 110.9 m, shots 0 (charged 0)
+  seed 1 refused-in: cleared yes in 28.1 s | deaths 0, falls 0 | globs parried 0 | ... walked 90.8 m, shots 0 (charged 0)
+  seed 1 walker:     cleared yes in 28.1 s | deaths 0, falls 0 | globs parried 0 | ... walked 90.8 m, shots 0 (charged 0)
+  seed 2 verb-aware: cleared yes in 29.7 s | deaths 0, falls 0 | globs parried 2 | ... walked 76.8 m, shots 0 (charged 0)
+  seed 2 refused-in: cleared yes in 31.9 s | deaths 0, falls 0 | globs parried 0 | ... walked 101.5 m, shots 0 (charged 0)
+  seed 2 walker:     cleared yes in 31.9 s | deaths 0, falls 0 | globs parried 0 | ... walked 101.5 m, shots 0 (charged 0)
+n65verb skip: M1 FAIL | room g7, ratio 0.98 vs bar 1.25 (default: no --bars), exercised 2/2
+n65verb skip: totals | room g7 | median clear (all seeds; the cap for a non-clear): verb-aware 30.8 s, refused-in 30.0 s, walker 30.0 s | cleared 2 / 2 / 2 of 2 | deaths 0 / 0 / 0 | globs parried 3 / 0 / 0 | presses refused (refused-in) 243, (walker) 236 | walked (median m) 93.9 / 96.1 / 96.1 | shots (median) 0.0 / 0.0 / 0.0 | wall time 30 s
+
+## dotnet Temp/SimHarness/bin/Release/net10.0/SimHarness.dll n65verb skip --level Design/levels/n52-iceline.json --room g7 --plant-verb65 g7:parry --seeds 2 
+  put-in loadout (g7): awards of the rooms before it given: revolver (g6's award); owned gauntlet revolver
+  seed 1 verb-aware: cleared yes in 41.8 s | deaths 0, falls 0 | globs parried 2 | ... walked 238.1 m, shots 49 (charged 3, bodies hit per KESTREL charged shot 1/0/0) | parry36 events 4 (melee parries too) | trigger held 22 steps
+  seed 1 refused-in: cleared yes in 56.3 s | deaths 0, falls 0 | globs parried 0 | ... walked 312.3 m, shots 63 (charged 7, bodies hit per KESTREL charged shot 1/0/0/1/0/0/1) | parry36 events 2 (melee parries too) | presses refused 3 (episodes declined 3, the inner pilot's presses dropped 0)
+  seed 1 walker:     cleared yes in 56.3 s | deaths 0, falls 0 | globs parried 0 | ... walked 312.3 m, shots 63 (charged 7, bodies hit per KESTREL charged shot 1/0/0/1/0/0/1) | parry36 events 2 (melee parries too) | presses refused 0
+  seed 2 verb-aware: cleared yes in 49.2 s | deaths 0, falls 0 | globs parried 2 | ... walked 289.3 m, shots 56 (charged 3, bodies hit per KESTREL charged shot 1/1/0) | parry36 events 3 (melee parries too) | trigger held 15 steps
+  seed 2 refused-in: cleared yes in 53.6 s | deaths 0, falls 0 | globs parried 0 | ... walked 295.8 m, shots 60 (charged 5, bodies hit per KESTREL charged shot 1/1/0/0/1) | parry36 events 1 (melee parries too) | presses refused 4 (episodes declined 4, the inner pilot's presses dropped 0)
+  seed 2 walker:     cleared yes in 53.6 s | deaths 0, falls 0 | globs parried 0 | ... walked 295.8 m, shots 60 (charged 5, bodies hit per KESTREL charged shot 1/1/0/0/1) | parry36 events 1 (melee parries too) | presses refused 0
+n65verb skip: M1 FAIL | room g7, ratio 1.22 vs bar 1.25 (default: no --bars), exercised 2/2
+n65verb skip: totals | room g7 | median clear (all seeds; the cap for a non-clear): verb-aware 45.5 s, refused-in 55.0 s, walker 55.0 s | cleared 2 / 2 / 2 of 2 | deaths 0 / 0 / 0 | globs parried 4 / 0 / 0 | presses refused (refused-in) 7, (walker) 0 | walked (median m) 263.7 / 304.1 / 304.1 | shots (median) 52.5 / 61.5 / 61.5 | wall time 36 s
+
+## dotnet Temp/SimHarness/bin/Release/net10.0/SimHarness.dll n65verb skip --level Design/levels/n57-kiln.json --room kb3 --plant-verb65 kb3:launch --seeds 2 --no-put-in-awards
+  seed 1 verb-aware: cleared yes in 29.7 s | deaths 0, falls 0 | launch36 2 | ... walked 251.4 m, shots 23 (charged 0)
+  seed 1 refused-in: cleared yes in 47.4 s | deaths 0, falls 0 | launch36 0 | ... walked 320.2 m, shots 37 (charged 3)
+  seed 1 walker:     cleared yes in 46.8 s | deaths 0, falls 0 | launch36 0 | ... walked 351.8 m, shots 36 (charged 1)
+  seed 2 verb-aware: cleared yes in 31.3 s | deaths 0, falls 0 | launch36 4 | ... walked 276.4 m, shots 27 (charged 1)
+  seed 2 refused-in: cleared yes in 29.9 s | deaths 0, falls 0 | launch36 0 | ... walked 199.1 m, shots 25 (charged 1)
+  seed 2 walker:     cleared yes in 50.5 s | deaths 0, falls 0 | launch36 0 | ... walked 360.7 m, shots 40 (charged 1)
+n65verb skip: M1 PASS | room kb3, ratio 1.27 vs bar 1.25 (default: no --bars), exercised 2/2
+n65verb skip: totals | room kb3 | median clear (all seeds; the cap for a non-clear): verb-aware 30.5 s, refused-in 38.7 s, walker 48.7 s | cleared 2 / 2 / 2 of 2 | deaths 0 / 0 / 0 | launch36 6 / 0 / 0 | presses refused (refused-in) 32, (walker) 14 | walked (median m) 263.9 / 259.7 / 356.3 | shots (median) 25.0 / 31.0 / 38.0 | wall time 42 s
+
+## dotnet Temp/SimHarness/bin/Release/net10.0/SimHarness.dll n65verb skip --level Design/levels/n57-kiln.json --room kb3 --plant-verb65 kb3:launch --seeds 2 
+  put-in loadout (kb3): awards of the rooms before it given: revolver (kb2b's award); owned shotgun revolver
+  seed 1 verb-aware: cleared yes in 47.8 s | deaths 0, falls 0 | launch36 5 | ... walked 395.6 m, shots 34 (charged 1, bodies hit per KESTREL charged shot 1) | trigger held 664 steps
+  seed 1 refused-in: cleared yes in 43.6 s | deaths 0, falls 0 | launch36 0 | ... walked 220.0 m, shots 29 (charged 2, bodies hit per KESTREL charged shot 1) | presses refused 79 (episodes declined 17, the inner pilot's presses dropped 62)
+  seed 1 walker:     cleared yes in 52.3 s | deaths 0, falls 0 | launch36 0 | ... walked 299.8 m, shots 38 (charged 4, bodies hit per KESTREL charged shot 1/0/1/0) | presses refused 0
+  seed 2 verb-aware: cleared yes in 38.0 s | deaths 0, falls 0 | launch36 6 | ... walked 346.7 m, shots 35 (charged 1, bodies hit per KESTREL charged shot 0) | trigger held 500 steps
+  seed 2 refused-in: cleared yes in 38.9 s | deaths 0, falls 0 | launch36 0 | ... walked 217.8 m, shots 34 (charged 0)
+  seed 2 walker:     cleared yes in 37.9 s | deaths 0, falls 0 | launch36 0 | ... walked 233.0 m, shots 35 (charged 1)
+n65verb skip: M1 FAIL | room kb3, ratio 0.96 vs bar 1.25 (default: no --bars), exercised 2/2
+n65verb skip: totals | room kb3 | median clear (all seeds; the cap for a non-clear): verb-aware 42.9 s, refused-in 41.3 s, walker 45.1 s | cleared 2 / 2 / 2 of 2 | deaths 0 / 0 / 0 | launch36 11 / 0 / 0 | presses refused (refused-in) 94, (walker) 0 | walked (median m) 371.2 / 218.9 / 266.4 | shots (median) 34.5 / 31.5 / 36.5 | wall time 41 s
+
+## dotnet Temp/SimHarness/bin/Release/net10.0/SimHarness.dll n46flow --level n52-iceline --rooms g7 --seeds 2 --first 1 --no-put-in-awards
+  g7         room |   60.5      7.3   4.8 |  1.3 / 6.2   |  4.2 /  0.6 / 12.8  |   6.1   5.2 |      0     3 |   32.4 (2/2) | floor 659 m2, tiers 5, loop y (58.1 m2), pockets 3, sight 36.9 m, w1 in view 2/6
+n46flow n52-iceline SUMMARY: GREEN 2/2; stall 60.5 %, longest stall 7.3 s, air 4.8 %, kill gap 1.3 / 6.2 s, nearest 4.2 m, dwell 6.1 s, dead 5.2 s, deaths 0, falls 3, clear 32.4 s
+  g7         room |  61.6  36.8   1.6   0.0   0.0   0.0                    | BOLD / BOLD (2)
+
+## dotnet Temp/SimHarness/bin/Release/net10.0/SimHarness.dll n46flow --level n52-iceline --rooms g7 --seeds 2 --first 1 
+  put-in loadout (g7): awards of the rooms before it given: revolver (g6's award); owned gauntlet revolver
+  g7         room |   27.1      2.8  48.5 |  2.5 / 10.1  |  6.6 /  1.2 / 12.2  |   3.4   5.2 |      0     6 |   56.3 (2/2) | floor 659 m2, tiers 5, loop y (58.1 m2), pockets 3, sight 36.9 m, w1 in view 2/6
+n46flow n52-iceline SUMMARY: GREEN 2/2; stall 27.1 %, longest stall 2.8 s, air 48.5 %, kill gap 2.5 / 10.1 s, nearest 6.6 m, dwell 3.4 s, dead 5.2 s, deaths 0, falls 6, clear 56.3 s
+  g7         room |  57.3  31.5  11.2   0.0   0.0   0.0                    | BOLD / BOLD (2)
+
+# done 12:04:59

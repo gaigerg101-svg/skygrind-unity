@@ -1,0 +1,26 @@
+# command: node Tools/night/gen-slots.cjs --level iceline --slots=<list> --run --out=<dir>; dotnet Temp/wallprobe/bin/Release/net10.0/wallprobe.dll <level> open [cands]   (S's wallprobe, zones OPENED: the Player's verbs37 pick, rows 9 / 11)
+# sha: 716e3003a (+ R's g3 / g5 room files as in the tree, S's g4 / g1 / g6 from port/stage3); time: 2026-10-28 00:47:48; row 9 PASS needs a ride over 1.2 s
+## g4,g1,g6,g5  (0 levelgen: levelgen --walk: 0 ERROR (none; 5 s))
+pick: 23 m in g1 at (10.3, 0.2, -24.0) along (0, 1) normal (-1, 0)
+ride: rode True, rides 2 [0.23-1.96, 2.03-on], longest 1.73 s, ends [jump], end pos (-3.3, 2.0, -0.4); row 9 PASS, row 11 PASS (16.6 vs 11.7 m/s)
+-- rooms with a run of 12 m or more (open):
+room g1: longest run 23 m k 6 dir - start (10.3, -24.0) along (0, 1) normal (-1, 0) run 23 m
+room g2: longest run 16 m k 10 dir + start (-8.3, -51.5) along (-0, 1) normal (1, 0) run 16 m
+room g3: longest run 6 m
+room g4: longest run 12 m k 3 dir + start (10.7, -104.3) along (-0, -1) normal (-1, 0) run 12 m
+room g5: longest run 14 m k 12 dir + start (-9.7, -143.0) along (-0, 1) normal (1, 0) run 14 m
+room g6: longest run 15 m k 2 dir + start (6.3, -164.0) along (-0, -1) normal (-1, 0) run 15 m
+room g7: longest run 7 m
+room g8: longest run 10 m k 3 dir - start (9.7, -230.9) along (0, 1) normal (-1, 0) run 10 m
+## g4,g1,g6,g3,g5  (0 levelgen: levelgen --walk: 0 ERROR (none; 5 s))
+pick: 23 m in g1 at (10.3, 0.2, -24.0) along (0, 1) normal (-1, 0)
+ride: rode True, rides 2 [0.23-1.96, 2.03-on], longest 1.73 s, ends [jump], end pos (-3.3, 2.0, -0.4); row 9 PASS, row 11 PASS (16.6 vs 11.7 m/s)
+-- rooms with a run of 12 m or more (open):
+room g1: longest run 23 m k 6 dir - start (10.3, -24.0) along (0, 1) normal (-1, 0) run 23 m
+room g2: longest run 16 m k 10 dir + start (-8.3, -51.5) along (-0, 1) normal (1, 0) run 16 m
+room g3: longest run 18 m k 13 dir - start (-10.7, -71.3) along (0, -1) normal (1, 0) run 18 m
+room g4: longest run 12 m k 3 dir + start (10.7, -104.3) along (-0, -1) normal (-1, 0) run 12 m
+room g5: longest run 14 m k 12 dir + start (-9.7, -143.0) along (-0, 1) normal (1, 0) run 14 m
+room g6: longest run 15 m k 2 dir + start (6.3, -164.0) along (-0, -1) normal (-1, 0) run 15 m
+room g7: longest run 7 m
+room g8: longest run 10 m k 3 dir - start (9.7, -230.9) along (0, 1) normal (-1, 0) run 10 m

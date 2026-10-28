@@ -1,0 +1,839 @@
+{
+  "_why": "LEVEL 10, FINALE (NIGHT25; forked by builder L from builder C's generated level10 to give each room its own GEOMETRY). C's ids, enemies (waves), pars semantics and LIMIT flags are kept. FINALE ONE (PISTOL ONLY): the grapple-and-slide room: an 8 m pit across the hall (a jump pad hops it, a grapple node hangs over it, a narrow bridge walks it), then a wall with a slide tunnel (the cut) and an east gap (the long way). FINALE TWO (NO DASH): the vertical room: a 4 m deck by a ramp, a 9 m deck by a long ramp, a pad onto the lower deck, walls 24 m. FINALE THREE (NO SLIDE): the wall-ride shaft: a flue of two 22 m walls to a 3.4 m catwalk (three wall jumps) over a weave of three baffles; the report prints both routes. THE DUEL (kind boss, boss rival) is RIVAL PRIME and THE ELDER FURNACE (boss final) is the ELDER KILN WYRM, each in its own arena by the boss hook (design.n25.bosses); the map rooms are stubs. Pars of the boss rooms are the composed-sim bot means x 1.2. Web coordinates: x east, y up, z SOUTH; metres.",
+  "id": "level10",
+  "name": "LEVEL 10 FINALE",
+  "floorSize": 340,
+  "killPlaneY": -30,
+  "wallHeight": 24,
+  "rooms": [
+    {
+      "id": "f1",
+      "name": "FINALE ONE",
+      "kind": "room",
+      "par": 46,
+      "botMedian": 46,
+      "parCap": 103.5,
+      "limit": [
+        "pistolOnly"
+      ],
+      "spawn": {
+        "at": [
+          0,
+          0,
+          99
+        ],
+        "yawDeg": 0
+      },
+      "exit": [
+        0,
+        0,
+        61
+      ],
+      "waves": [
+        [
+          "husk",
+          "husk",
+          "husk",
+          "husk",
+          "swarmer",
+          "swarmer",
+          "spitter"
+        ],
+        [
+          "husk",
+          "husk",
+          "husk",
+          "husk",
+          "swarmer",
+          "swarmer",
+          "spitter"
+        ],
+        [
+          "husk",
+          "husk",
+          "husk",
+          "husk",
+          "swarmer",
+          "swarmer",
+          "spitter"
+        ]
+      ],
+      "rect": [
+        -26,
+        57,
+        26,
+        105
+      ],
+      "respawnY": -3,
+      "nodes": [
+        [
+          -18,
+          0,
+          92
+        ],
+        [
+          18,
+          0,
+          92
+        ],
+        [
+          -10,
+          0,
+          100
+        ],
+        [
+          10,
+          0,
+          100
+        ],
+        [
+          -18,
+          0,
+          64
+        ],
+        [
+          0,
+          0,
+          64
+        ],
+        [
+          18,
+          0,
+          64
+        ],
+        [
+          20,
+          0,
+          72
+        ]
+      ],
+      "shortcuts": [
+        {
+          "name": "slide cut",
+          "tunnelZone": "f1",
+          "a": [
+            -9,
+            0,
+            76
+          ],
+          "b": [
+            -9,
+            0,
+            66
+          ],
+          "minGain": 2,
+          "note": "the tunnel through the wall north of the pit against going round it by the east gap"
+        }
+      ]
+    },
+    {
+      "id": "f2",
+      "name": "FINALE TWO",
+      "kind": "room",
+      "par": 75,
+      "botMedian": 75,
+      "parCap": 135.5,
+      "limit": [
+        "noDash"
+      ],
+      "spawn": {
+        "at": [
+          0,
+          0,
+          45
+        ],
+        "yawDeg": 0
+      },
+      "exit": [
+        0,
+        0,
+        7
+      ],
+      "waves": [
+        [
+          "husk",
+          "husk",
+          "husk",
+          "husk",
+          "charger",
+          "drone"
+        ],
+        [
+          "husk",
+          "husk",
+          "husk",
+          "husk",
+          "charger",
+          "drone"
+        ],
+        [
+          "husk",
+          "husk",
+          "husk",
+          "husk",
+          "warden",
+          "lancer",
+          "swarmer",
+          "swarmer",
+          "charger",
+          "charger",
+          "drone",
+          "drone",
+          "drone",
+          "spitter",
+          "spitter"
+        ]
+      ],
+      "rect": [
+        -26,
+        3,
+        26,
+        51
+      ],
+      "nodes": [
+        [
+          -8,
+          0,
+          38
+        ],
+        [
+          8,
+          0,
+          40
+        ],
+        [
+          -8,
+          0,
+          28
+        ],
+        [
+          8,
+          0,
+          30
+        ],
+        [
+          -6,
+          0,
+          20
+        ],
+        [
+          -4,
+          0,
+          24
+        ],
+        [
+          8,
+          0,
+          12
+        ],
+        [
+          -6,
+          0,
+          10
+        ]
+      ],
+      "highNodes": [
+        [
+          20,
+          4,
+          16
+        ],
+        [
+          20,
+          4,
+          34
+        ],
+        [
+          18,
+          4,
+          26
+        ],
+        [
+          -20,
+          9,
+          14
+        ],
+        [
+          -20,
+          9,
+          40
+        ],
+        [
+          -18,
+          9,
+          28
+        ]
+      ]
+    },
+    {
+      "id": "f3",
+      "name": "FINALE THREE",
+      "kind": "room",
+      "par": 101,
+      "botMedian": 101,
+      "parCap": 145,
+      "limit": [
+        "noSlide"
+      ],
+      "spawn": {
+        "at": [
+          0,
+          0,
+          -9
+        ],
+        "yawDeg": 0
+      },
+      "exit": [
+        0,
+        0,
+        -47
+      ],
+      "waves": [
+        [
+          "husk",
+          "husk",
+          "husk",
+          "husk",
+          "swarmer",
+          "swarmer",
+          "swarmer",
+          "warden"
+        ],
+        [
+          "husk",
+          "husk",
+          "husk",
+          "husk",
+          "charger",
+          "lancer"
+        ],
+        [
+          "husk",
+          "husk",
+          "husk",
+          "warden",
+          "charger"
+        ]
+      ],
+      "rect": [
+        -26,
+        -51,
+        26,
+        -3
+      ],
+      "nodes": [
+        [
+          -18,
+          0,
+          -10
+        ],
+        [
+          8,
+          0,
+          -9
+        ],
+        [
+          -18,
+          0,
+          -20
+        ],
+        [
+          4,
+          0,
+          -20
+        ],
+        [
+          -18,
+          0,
+          -30
+        ],
+        [
+          2,
+          0,
+          -30
+        ],
+        [
+          -18,
+          0,
+          -40
+        ],
+        [
+          0,
+          0,
+          -40
+        ]
+      ],
+      "highNodes": [
+        [
+          18,
+          3.4,
+          -30
+        ],
+        [
+          18,
+          3.4,
+          -36
+        ],
+        [
+          22,
+          3.4,
+          -33
+        ]
+      ],
+      "wallRoute": {
+        "goalY": 3.4,
+        "after": [
+          19,
+          3.4,
+          -34
+        ],
+        "note": "the wall-ride shaft: three wall jumps up to a 3.4 m catwalk, along it, the ramp down; timed against the weave on the floor"
+      }
+    },
+    {
+      "id": "f4",
+      "name": "THE DUEL",
+      "kind": "boss",
+      "boss": "rival",
+      "rect": [
+        -26,
+        -105,
+        26,
+        -57
+      ],
+      "par": 211,
+      "botMedian": 176,
+      "parCap": 211,
+      "spawn": {
+        "at": [
+          0,
+          0,
+          -63
+        ],
+        "yawDeg": 0
+      },
+      "exit": [
+        0,
+        0,
+        -101
+      ],
+      "nodes": [],
+      "highNodes": [],
+      "_note": "par = W's composed-sim bot mean 2:56 x 1.2 (wyrm25 / rival harness)"
+    },
+    {
+      "id": "f5",
+      "name": "THE ELDER FURNACE",
+      "kind": "boss",
+      "boss": "final",
+      "rect": [
+        -26,
+        -159,
+        26,
+        -111
+      ],
+      "par": 397,
+      "botMedian": 331,
+      "parCap": 397,
+      "spawn": {
+        "at": [
+          0,
+          0,
+          -117
+        ],
+        "yawDeg": 0
+      },
+      "exit": [
+        0,
+        0,
+        -155
+      ],
+      "nodes": [],
+      "highNodes": [],
+      "_note": "par = W's composed-sim bot mean 5:31 x 1.2 (wyrm25 --final)"
+    }
+  ],
+  "doors": [
+    {
+      "id": "d1",
+      "between": [
+        "f1",
+        "f2"
+      ],
+      "rect": [
+        -4,
+        51,
+        4,
+        57
+      ],
+      "checkpoint": true
+    },
+    {
+      "id": "d2",
+      "between": [
+        "f2",
+        "f3"
+      ],
+      "rect": [
+        -4,
+        -3,
+        4,
+        3
+      ],
+      "checkpoint": true
+    },
+    {
+      "id": "d3",
+      "between": [
+        "f3",
+        "f4"
+      ],
+      "rect": [
+        -4,
+        -57,
+        4,
+        -51
+      ],
+      "checkpoint": true
+    },
+    {
+      "id": "d4",
+      "between": [
+        "f4",
+        "f5"
+      ],
+      "rect": [
+        -4,
+        -111,
+        4,
+        -105
+      ],
+      "checkpoint": true
+    }
+  ],
+  "boxes": [
+    {
+      "zone": "f1",
+      "kind": "deck",
+      "min": [
+        -26,
+        -4.5,
+        78
+      ],
+      "max": [
+        -22,
+        0,
+        86
+      ],
+      "note": "the narrow bridge on the west edge (walkers cross by it: the slow way)"
+    },
+    {
+      "zone": "f1",
+      "kind": "deck",
+      "min": [
+        22,
+        -4.5,
+        84
+      ],
+      "max": [
+        26,
+        -2.4,
+        86
+      ],
+      "note": "recovery stair, step 1"
+    },
+    {
+      "zone": "f1",
+      "kind": "deck",
+      "min": [
+        18,
+        -4.5,
+        84
+      ],
+      "max": [
+        22,
+        -1.2,
+        86
+      ],
+      "note": "recovery stair, step 2"
+    },
+    {
+      "zone": "f1",
+      "kind": "hull",
+      "min": [
+        -26,
+        0,
+        68
+      ],
+      "max": [
+        -12,
+        5,
+        74
+      ],
+      "note": "wall, west piece (the tunnel is its gap)"
+    },
+    {
+      "zone": "f1",
+      "kind": "hull",
+      "min": [
+        -6,
+        0,
+        68
+      ],
+      "max": [
+        18,
+        5,
+        74
+      ],
+      "note": "wall, middle piece (the east gap x 18..26 is the long way round)"
+    },
+    {
+      "zone": "f2",
+      "kind": "deck",
+      "min": [
+        12,
+        0,
+        10
+      ],
+      "max": [
+        26,
+        4,
+        40
+      ],
+      "note": "deck A, 4 m (tier 2)"
+    },
+    {
+      "zone": "f2",
+      "kind": "deck",
+      "min": [
+        -26,
+        0,
+        10
+      ],
+      "max": [
+        -12,
+        9,
+        46
+      ],
+      "note": "deck B, 9 m (tier 3)"
+    },
+    {
+      "zone": "f2",
+      "kind": "hull",
+      "min": [
+        -9,
+        0,
+        30
+      ],
+      "max": [
+        -5,
+        3,
+        34
+      ],
+      "note": "cover"
+    },
+    {
+      "zone": "f3",
+      "kind": "slab",
+      "min": [
+        16,
+        0,
+        -27
+      ],
+      "max": [
+        18,
+        18,
+        -10
+      ],
+      "note": "wall-ride wall west (the corridor between the walls is 5 m)"
+    },
+    {
+      "zone": "f3",
+      "kind": "slab",
+      "min": [
+        23,
+        0,
+        -27
+      ],
+      "max": [
+        25,
+        18,
+        -10
+      ],
+      "note": "wall-ride wall east"
+    },
+    {
+      "zone": "f3",
+      "kind": "deck",
+      "min": [
+        12,
+        0,
+        -39
+      ],
+      "max": [
+        26,
+        3.4,
+        -27
+      ],
+      "note": "the catwalk (3.4 m, only the wall line reaches its south end; a ramp at the north end)"
+    },
+    {
+      "zone": "f3",
+      "kind": "hull",
+      "min": [
+        -26,
+        0,
+        -17
+      ],
+      "max": [
+        4,
+        5,
+        -14
+      ],
+      "note": "baffle 1 (east gap x 4..16)"
+    },
+    {
+      "zone": "f3",
+      "kind": "hull",
+      "min": [
+        -12,
+        0,
+        -27
+      ],
+      "max": [
+        16,
+        5,
+        -24
+      ],
+      "note": "baffle 2 (west gap)"
+    },
+    {
+      "zone": "f3",
+      "kind": "hull",
+      "min": [
+        -26,
+        0,
+        -37
+      ],
+      "max": [
+        0,
+        5,
+        -34
+      ],
+      "note": "baffle 3 (east gap x 0..12)"
+    }
+  ],
+  "ramps": [
+    {
+      "zone": "f2",
+      "from": [
+        0,
+        22
+      ],
+      "to": [
+        12,
+        22
+      ],
+      "width": 6,
+      "rise": 4,
+      "note": "up to deck A"
+    },
+    {
+      "zone": "f2",
+      "from": [
+        8,
+        14
+      ],
+      "to": [
+        -12,
+        14
+      ],
+      "width": 6,
+      "rise": 9,
+      "note": "the long ramp up to deck B (20 m for 9 m of rise)"
+    },
+    {
+      "zone": "f3",
+      "from": [
+        19,
+        -49
+      ],
+      "to": [
+        19,
+        -39
+      ],
+      "width": 6,
+      "rise": 3.4,
+      "note": "down the north end of the catwalk"
+    }
+  ],
+  "pads": [
+    {
+      "zone": "f1",
+      "at": [
+        0,
+        0,
+        90
+      ],
+      "target": [
+        0,
+        0,
+        75
+      ],
+      "apexAbove": 3,
+      "note": "the pad hops the pit"
+    },
+    {
+      "zone": "f2",
+      "at": [
+        6,
+        0,
+        34
+      ],
+      "target": [
+        16,
+        4,
+        34
+      ],
+      "apexAbove": 2,
+      "note": "the pad up to deck A"
+    }
+  ],
+  "grapple": [
+    {
+      "zone": "f1",
+      "at": [
+        0,
+        9,
+        82
+      ],
+      "note": "a node over the pit (the ARCLINE crosses it too)"
+    }
+  ],
+  "pits": [
+    {
+      "zone": "f1",
+      "rect": [
+        -26,
+        78,
+        26,
+        86
+      ],
+      "floorY": -3.5,
+      "note": "an 8 m pit across the hall"
+    }
+  ],
+  "tunnels": [
+    {
+      "zone": "f1",
+      "rect": [
+        -12,
+        68,
+        -6,
+        74
+      ],
+      "ceiling": 1.2,
+      "note": "the slide cut through the wall"
+    }
+  ]
+}

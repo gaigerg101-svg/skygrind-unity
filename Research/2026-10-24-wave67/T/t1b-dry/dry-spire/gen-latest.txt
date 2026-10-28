@@ -1,0 +1,18 @@
+# command: node Tools/night/gen-slots.cjs --level spire --run --slots=latest --out=Logs/n67/dry-spire
+# sha: e4fae1a2; time: 2026-10-24 11:22:00
+openings: Logs/n67/dry-spire/openings67.json spire v2 ambushed, v5 vista, v6 held (seed Design/levels/n52/openings53.json)
+gen-slots --level spire: Design/levels/n52/spire.plan.json -> Logs/n67/dry-spire/spire.plan.json (slots latest; rebuilt: none); every other room, door, piece and key n52-spire's bit for bit
+  slot v2: latest Design/levels/n67/spire/rooms/v2.json: n52-spire's room exactly; boxes 11, ramps 4, pads 2, grapple 0, pits 0, tunnels 0, lights 10, props 4, surfaces 0
+  slot v5: latest Design/levels/n67/spire/rooms/v5.json: n52-spire's room exactly; boxes 8, ramps 3, pads 2, grapple 0, pits 0, tunnels 0, lights 7, props 1, surfaces 0
+  slot v6: latest Design/levels/n67/spire/rooms/v6.json: n52-spire's room exactly; boxes 11, ramps 3, pads 2, grapple 0, pits 1, tunnels 0, lights 5, props 1, surfaces 0
+shipped before: Design/levels/n67-spire.json 3f08271dc99d58c4329fe21cdc71cf59aee7dc51b07d31961289e318c2aa3857, Assets/StreamingAssets/Design/levels/n67-spire.json 3f08271dc99d58c4329fe21cdc71cf59aee7dc51b07d31961289e318c2aa3857
+  levelgen n67-spire: 3434126 chars -> Logs/n67/dry-spire/spire.json; 199 boxes + the floor, 6 barriers, 10 wedges, 6 pads, 0 grapple nodes, 21 zones (v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, d1, d2, d3, d4, d5, d6, d7, d8, d9, d10) (1.0 s)
+    plan checks: 0 problems
+    level report: 1 errors -> Logs/n67/dry-spire/LEVEL-n67-spire-validate.md (2.0 s)
+      | pit recovery: v11 (-44..24 x -323..-255) | ERROR | stuck cells x -43..23, z -322..-256: 1047 of 1047 pit-floor cells cannot get back to the room's spawn: a soft-lock |
+    bot walk: room 1 exit at 2.2 s; room 2 exit at 27.7 s; DID NOT reach the last exit; zone at the end 
+n67-spire --finish: Logs/n67/dry-spire/spire.json -> Logs/n67/dry-spire/n67-spire.json (3434732 chars); kept rooms bit-equal to n52-spire's; ERROR rows 1 (pit recovery: v11 (-44..24 x -323..-255): all n52-spire's own); slots latest: v2 latest, v5 latest, v6 latest
+levelgen --walk: 1 ERROR (pit recovery: v11 (-44..24 x -323..-255): n52-spire's own; 8 s)
+shipped after:  Design/levels/n67-spire.json 3f08271dc99d58c4329fe21cdc71cf59aee7dc51b07d31961289e318c2aa3857, Assets/StreamingAssets/Design/levels/n67-spire.json 3f08271dc99d58c4329fe21cdc71cf59aee7dc51b07d31961289e318c2aa3857 (byte-identical: --out writes only Logs/n67/dry-spire)
+the round's level: Logs/n67/dry-spire/n67-spire.json 1c0463972619267625a164f74bd6c7bb865d3c7bd7eb6e2e44a57579bc553984; plan Logs/n67/dry-spire/spire.plan.json, report Logs/n67/dry-spire/LEVEL-n67-spire-validate.md, openings Logs/n67/dry-spire/openings67.json
+exit 0

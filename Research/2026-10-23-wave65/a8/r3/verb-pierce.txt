@@ -1,0 +1,6 @@
+# command: bash Tools/night/n65-verbs.sh pierce Design/levels/n65-foundry.json a8
+# sha: e252b885; time: 2026-10-23 17:05:03
+n65verb pierce: level n65-foundry (Design/levels/n65-foundry.json), room a8 "1.10 THE SPILLWAY", seed 1; pose (-5.5, 0.0, -352.0) yaw -0.0 from line65[0]; off switch none
+  aim line65's first segment: yaw -0.0 deg, pitch 0.0 deg at the release; held 110 steps (0.9 s), charge35Full 1, charged shots 1; bodies in the room before 4 (stand-ins 0)
+n65verb pierce: GREEN | room a8 | the charged shot hit 3 bodies, kills 3, stand-ins killed 0/0 | aim line65's first segment | pose line65[0]
+n65-verbs pierce on Design/levels/n65-foundry.json (a8): GREEN 1, RED 0

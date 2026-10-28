@@ -1,0 +1,28 @@
+# n72-btext-words.py at 2026-10-27 14:22:59 on the t3-cut table (sha before commit: 105738266 + working tree)
+planted: the t3 ON line reads 7 (must be 7), the cut line 6 (must be 6): PASS
+12 table rows from Assets/Scripts/Game/UnityTuning.N72B.cs (bar: at most 6 displayed words on a keyboard, a verb in capitals, the glyph token where the raw has one)
+held keyboard 6 pad 5 caps yes ok | SWING {fire} at the head | raw: Swing the gauntlet {fire} at its charging head.
+swap keyboard 6 pad 5 caps yes ok | SWAP gauntlet, then SWING {fire} | raw: Swing the gauntlet {fire} at its charging head.
+held keyboard 6 pad 5 caps yes ok | SWING {fire} at the head | raw: PUNCH THE HEAD TO STAGGER IT
+swap keyboard 6 pad 5 caps yes ok | SWAP gauntlet, then SWING {fire} | raw: PUNCH THE HEAD TO STAGGER IT
+held keyboard 6 pad 5 caps yes ok | SWING {fire} at glowing head | raw: PUNCH THE GLOWING HEAD.
+swap keyboard 6 pad 5 caps yes ok | SWAP gauntlet, then SWING {fire} | raw: PUNCH THE GLOWING HEAD.
+held keyboard 6 pad 5 caps yes ok | GET CLOSE, SWING gauntlet {fire} | raw: Get close and swing the gauntlet {fire}.
+swap keyboard 6 pad 5 caps yes ok | SWAP gauntlet, then SWING {fire} | raw: Get close and swing the gauntlet {fire}.
+held keyboard 6 pad 5 caps yes ok | GET CLOSE, SWING gauntlet {fire} | raw: GET IN CLOSE: {fire} THE GAUNTLET HITS FULL
+swap keyboard 6 pad 5 caps yes ok | SWAP gauntlet, then SWING {fire} | raw: GET IN CLOSE: {fire} THE GAUNTLET HITS FULL
+held keyboard 6 pad 6 caps yes ok | PARRY {punch} yellow embers, then SHOOT | raw: Parry {punch} the yellow embers, then shoot.
+swap keyboard 6 pad 6 caps yes ok | PARRY {punch} yellow embers, then SHOOT | raw: Parry {punch} the yellow embers, then shoot.
+held keyboard 6 pad 6 caps yes ok | HOOK lit knee {grapple}, GRAPPLE away | raw: Hook a lit knee {grapple}, then grapple away.
+swap keyboard 6 pad 6 caps yes ok | HOOK lit knee {grapple}, GRAPPLE away | raw: Hook a lit knee {grapple}, then grapple away.
+held keyboard 6 pad 6 caps yes ok | JUMP {jump}, DASH {dash} through ring | raw: Jump {jump} and dash {dash} through the ring.
+swap keyboard 6 pad 6 caps yes ok | JUMP {jump}, DASH {dash} through ring | raw: Jump {jump} and dash {dash} through the ring.
+held keyboard 6 pad 5 caps yes ok | SWING {fire} as it comes | raw: {punch} ITS HEAD AS IT COMES
+swap keyboard 6 pad 5 caps yes ok | SWAP gauntlet, then SWING {fire} | raw: {punch} ITS HEAD AS IT COMES
+held keyboard 6 pad 6 caps yes ok | HOLD {jump} RIDE, RELEASE to LEAP | raw: HOLD {jump}: RIDE. LET GO: LEAP UP
+swap keyboard 6 pad 6 caps yes ok | HOLD {jump} RIDE, RELEASE to LEAP | raw: HOLD {jump}: RIDE. LET GO: LEAP UP
+held keyboard 6 pad 6 caps yes ok | JUMP {jump}, DASH {dash} through ring | raw: {dash} + {jump} through the ring.
+swap keyboard 6 pad 6 caps yes ok | JUMP {jump}, DASH {dash} through ring | raw: {dash} + {jump} through the ring.
+held keyboard 5 pad 5 caps yes ok | HOOK knee {grapple}, PULL away | raw: Hook a knee {grapple}, pull away.
+swap keyboard 5 pad 5 caps yes ok | HOOK knee {grapple}, PULL away | raw: Hook a knee {grapple}, pull away.
+RESULT: PASS (0 lines over the bar)

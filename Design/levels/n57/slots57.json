@@ -1,0 +1,11 @@
+{
+  "_why": "NIGHT57 L (L0 / L2): n57-kiln's combat-room slots (NIGHT57.md L2, THE SLOTS) and, per new room, the n52-kiln room its slot replaces: Tools/night/n57-l-contract.sh runs that room's n46flow on n52-kiln (--off57) as the room's 'before' (THE ROOM CONTRACT's dwell item). Slots A / B / C replace kb2 / kb2c / kb3 in place (the same ids); the slot DE replaces n52's link kb3b (no fight) with two rooms, whose base is n52's last combat room kb3 (the fight they follow).",
+  "slots": { "A": ["kb2"], "B": ["kb2c"], "C": ["kb3"], "DE": ["kb3c", "kb3d"] },
+  "rooms": {
+    "kb2": { "slot": "A", "base": "kb2" },
+    "kb2c": { "slot": "B", "base": "kb2c" },
+    "kb3": { "slot": "C", "base": "kb3" },
+    "kb3c": { "slot": "DE", "base": "kb3" },
+    "kb3d": { "slot": "DE", "base": "kb3" }
+  }
+}

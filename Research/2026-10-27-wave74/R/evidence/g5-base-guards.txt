@@ -1,0 +1,46 @@
+levelgen --walk: 0 ERROR (none; 9 s)
+shipped after:  Design/levels/n67-iceline.json 71310b9b469fc009be5ae13092d74950fe18472242c8279b80c076a88a376467, Assets/StreamingAssets/Design/levels/n67-iceline.json 71310b9b469fc009be5ae13092d74950fe18472242c8279b80c07
+the round's level: C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/ice/g5/base/n67-iceline.json 2873311fe7c815651a28bd41ad5044e547aa6465e59a87367
+== g5 base (old)
+  PASS R2 no dead ends      0 dead-end cells of 183 (2 m x 0.5 m cells; 0 bridges)
+  FAIL R5 foothold          no box above the eye (1.6 m) reaching 4-8 m inside the entry
+  PASS R8 every job         0 untagged of 13 solids
+  n/c  IN VIEW ambushed     not measured: no foothold (R5 FAIL) | without the foothold clauses: PASS, 0 of 4 nodes in use fail (8-15 m from the door, <= 15 m from midfield, no line into the corridor)
+  PASS I1 no mirror         mirror overlap 50 % across the door axis x = 0 (d4; 13 solids, 200 m2 footprint; < 60 % PASS)
+  PASS I2 ride shortcut     ride 18 m at x -11..-10 z -146.5..-128.5: best side +1 dir -1: walk 20.2 m / ride 18.0 m = 1.12; ride 10 m at x 9..10 z -138..-128.5: best side -1 dir -1: walk 44.3 m / rid
+  n/c  I3 teach verb needed not a grapple-pull teach room (ride lessons: I2; whip, pad and slide lessons: not computed)
+  PASS I4 pads clear        3 pads, 2 walk lines; all clear (nearest line distances 2.5, 7.5 m)
+ROOM g5: FAIL R5 foothold
+-- flow-A
+n46flow n67-iceline SUMMARY: GREEN 10/10; stall 41.1 %, longest stall 4.4 s, air 26.7 %, kill gap 1.3 / 69.5 s, nearest 5.2 m, dwell 0.9 s, dead 3.2 s, deaths 0, falls 0, clear 56.3 s
+n46flow n67-iceline STYLE: DULL 90.1 % of 558 s of fight; above DULL 9.9 %; rooms reaching SAVAGE 0/1; top rank BOLD
+-- flow-B
+n46flow n67-iceline SUMMARY: GREEN 10/10; stall 46.6 %, longest stall 4.4 s, air 23.9 %, kill gap 1.3 / 40.1 s, nearest 3.8 m, dwell 3.6 s, dead 3.2 s, deaths 0, falls 0, clear 43.2 s
+n46flow n67-iceline STYLE: DULL 93.4 % of 445 s of fight; above DULL 6.6 %; rooms reaching SAVAGE 0/1; top rank BOLD
+-- flow-V
+# command: dotnet Temp/SimHarness/bin/Release/net10.0/SimHarness.dll n46flow --level n67-iceline --rooms g5 --seeds 10 --first 1 --verbs65 --file C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/sc
+n46flow n67-iceline SUMMARY: GREEN 10/10; stall 50.6 %, longest stall 4.7 s, air 25.6 %, kill gap 1.3 / 41.5 s, nearest 3.6 m, dwell 0.9 s, dead 3.2 s, deaths 0, falls 0, clear 48.1 s
+n46flow n67-iceline STYLE: DULL 90.0 % of 465 s of fight; above DULL 10.0 %; rooms reaching SAVAGE 0/1; top rank BOLD
+  g5     verb65 ride         | trigger held 3657 of 55785 fight steps (6.6 %), episodes 21, performed: wall rides 17 (the face: any face (no line65); off-line ride starts cut 148 wall contacts)
+n65-air n67-iceline g5 "2.5 THE COOLDOWN" (C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/ice/g5/base/iceline.plan.json):
+n65-air g5: air pieces 13 (rides 4, decks 2, ledges 4, pads 3), hand-offs 49, longest floor-free chain 12, dead ends 0/10 | without the dash-jump: hand-offs 31, chain 10, dead ends 0/10 | flights handed on: 6 of 7 on one path (5 without the dash-jump)
+pad52 g5 pad 2 at [2.5,0,-136] target [8,4.5,-141.5] launched yes apex 7.5 landed [8.03,4.5,-141.53] miss 0.04 m PASS
+pad52 g5 pad 3 at [7.75,4.5,-145.5] target [-7.5,2,-153] launched yes apex 6.5 landed [-7.6,2,-153.05] miss 0.11 m PASS
+pad52 g5 pad 5 at [-7.5,0,-131.5] target [-8,2,-154] launched yes apex 5 landed [-8,2,-154.09] miss 0.09 m PASS
+n53ridekill ride: GREEN | level n67-iceline, room g5, rideKill53 on True | ride yes (WallRideStart 1), kill on the wall yes, rideKill53 events 1, bar after 0.650 vs the foot kill's 0.150 (+0.500, one boost = 0.500) | foot kill yes, paid no
+Research/2026-10-27-wave74/R/evidence/g5/base/g5/ride-pilot.txt:n65verb ride: level n67-iceline (C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/ice/g5/base/n67-iceline.json), room g5 "2.5 THE COOLDOWN", seed 1; pose (0.0, 0.
+Research/2026-10-27-wave74/R/evidence/g5/base/g5/ride-pilot.txt:n65verb ride --shoot: RED | room g5 | ride yes (0.6 s on the wall, 8.9 m along it, WallRideStart 2) | look off the wall at most 150.7 deg | shots from the wall 0 (off it 0) | kills from the wall 0 (other kills 1) | pose the room's spawn
+n65verb skip: M1 UNSURE | room g5, ratio - vs bar 1.25 (default: no --bars), exercised 0/20 | no verb65: nothing to refuse
+n70-area: room g5; plan C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/ice/g5/base/iceline.plan.json, level C:/Users/gaige/A
+OPEN  PASS largest open square 8.5 m (x -4.0..4.5, z -153.5..-145.0; 16 pieces on a 21.0 x 30.0 m rect; 12 m or less passes)
+P1    FAIL the last wave's 2 ranged of 3; its spawn set (nodes + highNodes) 2 / 9 nodes 3.5 m or more over the floor (y 0.0; each enemy takes a random node: all must be high)
+P4    FAIL 2 / 8 standing solids >= 1.75 m do a job ((a) touched 0, (b) sight 2, (c) launch kill 0); no job: box(-11,0,-158..-5,2,-146) line: the WEST SHELF; box(6.5,0,-148..10,4.5,-138) line: THE CRA
+P5    N/A  no line65 in the row
+P9    PASS 1 / 1 planes with 2 climb tops >= 8 m apart: box(-11,0,-158..-5,2,-146) 6.0 x 12.0 m at 2.0 m: 18 climb top(s), farthest apart 11.7 m
+P11   N/A  the card names no TOWER / GALLERY / SPLIT LEVEL (no card)
+P17   FAIL 2 / 4 ride walls 4 m tall and 8 m long (short: box(-5.3,0,-139..-4.7,4,-135) 4.0 x 4.0 m; box(4.7,0,-139..5.3,4,-135) 4.0 x 4.0 m); 0 non-ride wall(s) in that band; the strip = ride: true (
+n70-area: FAIL g5 (2/5)
+n70-deco: FAIL | room g5, base 16116dead: 16 piece(s) added or moved, 3 pass, 13 FAIL; dressing 5 not judged
+  rebuilt room pieces: boxes 12, ramps 2, pads 3, pits 0 | the rule: PASS at <= 25 % of the shipped room's pieces kept (geometry-equal; job / why text ignored)
+n70-patch-share: PASS g5 (25 % kept)
+  core 5/5 PASS, extra 3/3 PASS

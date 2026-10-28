@@ -1,0 +1,12 @@
+n2 12:01:01 13898e790
+a3.height 10 -> 15 in Design/levels/n52/foundry.plan.json (height_why added)
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+levelgen n52-foundry: 2371861 chars -> Design/levels/n52/foundry.json; 200 boxes + the floor, 5 barriers, 10 wedges, 7 pads, 0 grapple nodes, 21 zones (a1, a2, a3, a4, a5, b1, b2, a6, a7, a8, a9, d1, d2, d3, d4, d5, d6, d7, d8, d9, d10) (1.0 s)
+  plan checks: 1 problems
+  level report: 2 errors -> Reports/LEVEL-n52-foundry-validate.md (1.9 s)
+    | lights | ERROR | a3-L1: not flush to a surface: no surface behind it; a3-L2: not flush to a surface: no surface behind it; a3-L4: not flush to a surface: no surface behind it |
+    | closedRoom | ERROR | a3: no `roof: true` |
+  bot walk: ; DID NOT reach the last exit; zone at the end a1
+n52-foundry: finished Design\levels\n52\foundry.json -> Design/levels/n52-foundry.json, Assets/StreamingAssets/Design/levels/n52-foundry.json (2374940 chars, both copies identical); a9 bit-equal to n48-foundry's; rooms not rebuilt bit-equal; rebuilt: a3, a5, b1
+export a3: Design/levels/n65/rooms-n52/a3.json (Design/levels/n65/rooms/a3.json kept: a builder's file) (20668 chars)
+12:01:36

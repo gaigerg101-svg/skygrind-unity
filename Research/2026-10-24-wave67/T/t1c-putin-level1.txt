@@ -1,0 +1,5 @@
+# level 1 (n52-foundry a8, skip v2 pierce, seeds 1-2): the old put-in against the fix; sha bf0f39b4; 2026-10-24 12:06:57
+## the fix's put-in line:   put-in loadout (a8): awards of the rooms before it given: none; owned revolver
+## diff of the two outputs, the put-in line and wall-time aside:
+IDENTICAL (23 lines)
+n65verb skip: M1 UNSURE | room a8, ratio - vs bar 1.25 (default: no --bars), exercised 0/2 | too few seeds exercised (0 < 2): the comparison does not test the verb

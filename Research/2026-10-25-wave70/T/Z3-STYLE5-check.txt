@@ -1,0 +1,4 @@
+# command: node Research/2026-10-25-wave70/T/z3-style5-check.cjs Research/2026-10-25-wave70/T/Z3-skip-v2-GREEN4.txt Research/2026-10-25-wave70/T/Z3-skip-v2-STYLE5.txt
+# sha: 39ca95f44 + the P3 working copy; time: 2026-10-25 23:46:53
+line 26 (the M2 VERB line): differs ONLY by the inserted text "(plain STYLE 67.2 %: the verb-aware run alone, over its 3 exercised seeds)"
+z3-style5-check: 53 / 53 lines; PASS: every other line identical (the # headers, the exit clock and the wall time aside)

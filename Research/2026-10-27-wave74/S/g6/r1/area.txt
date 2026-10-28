@@ -1,0 +1,11 @@
+# command: node Tools/night/n70-area.cjs --level iceline --dir C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/ice-g6 --touches Research/2026-10-27-wave74/S/g6/r1/skip.txt g6
+# sha: bf5edde7e; time: 2026-10-28 00:09:54
+n70-area: room g6; plan C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/ice-g6/iceline.plan.json, level C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/ice-g6/n67-iceline.json (the round's folder C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/ice-g6); touches Research/2026-10-27-wave74/S/g6/r1/skip.txt (6 touch rows, 5 launch kills); card none
+OPEN  PASS largest open square 6.5 m (x 0.5..7.0, z -169.0..-162.5; 7 pieces on a 14.0 x 18.0 m rect; 12 m or less passes)
+P1    N/A  the last wave (husk) has no ranged enemy (spitter / drone)
+P4    PASS 2 / 2 standing solids >= 1.75 m do a job ((a) touched 2, (b) sight 0, (c) launch kill 2)
+P5    PASS walk line in a ranged spawn's sight at 6-24 m 0.0 % (>= 50 %), line65 0.0 % (<= walk - 30 points: no); line65's nearest enemy spawn 0.0 m (<= 6: yes); 0 ranged spawns
+P9    N/A  no plane 1 m or more up with a short side of 6 m or more
+P11   N/A  the card names no TOWER / GALLERY / SPLIT LEVEL (no card)
+P17   N/A  no ride wall and no wall-like box 4 m x 8 m
+n70-area: PASS g6 (3/3)

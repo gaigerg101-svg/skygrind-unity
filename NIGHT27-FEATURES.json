@@ -1,0 +1,18 @@
+{
+  "night": 27,
+  "written": "2026-10-09 07:25 (the lead, U3-42.2)",
+  "note": "Each row: its switch, its RED line (row off or a pilot that cannot win), its GREEN line, its owner. passes is set only from a printed line.",
+  "features": [
+    {"id": "arenas27", "switch": "design.n27.arenas27.enabled (N27Blocks bit 0)", "owner": "A", "red": "levelgen on NIGHT26's plans: limits present, rooms > 24 m, waves over budget", "green": "levelgen 0 errors for the 4 plans, per-room size and budget, kills 35-55 per level", "passes": false},
+    {"id": "wallLanes27", "switch": "plan rule (validator)", "owner": "A", "red": "a room whose wall route is not 30 % faster fails the validator", "green": "printed wall / floor time ratio per room", "passes": false},
+    {"id": "hazardFloor27", "switch": "design.n27.hazardFloor27.enabled (bit 1)", "owner": "A", "red": "row off: the strip does no damage", "green": "harness: 12 HP/s only while live, telegraph 1.5 s, the wall lane avoids it", "passes": false},
+    {"id": "slowAim27", "switch": "design.n27.slowAim27.enabled (view row, no bit)", "owner": "lead (hook) + V (cue)", "red": "row off: scale stays 1", "green": "Player line: scale 0.75 only while riding + aiming, eases 130 / 100 ms; replays EQUAL", "passes": false},
+    {"id": "pulse27", "switch": "design.n27.pulse27.enabled (bit 2)", "owner": "W", "red": "row off: NIGHT26's 7-hit notches", "green": "harness: swing 300 steps, 5 kills fill pips (hits do not), LT gated by a full charge, blast cooldown 15 s+", "passes": false},
+    {"id": "chargeShots27", "switch": "design.n27.chargeShots27.enabled (bit 3)", "owner": "W", "red": "row off: the normal shot only", "green": "harness: tap no latency; hold 0.4 s + 0.6 s (pistol) / 0.8 s (shotgun) charges; cooldown 10 s / 14 s", "passes": false},
+    {"id": "boss1", "switch": "design.n27.boss1.enabled (bit 4)", "owner": "B", "red": "a pilot that never rides a wall cannot hurt it", "green": "pilot kills organically on 10 seeds 75-100 s; LanternShield unit test; Player shield RED / GREEN frames", "passes": false},
+    {"id": "boss2", "switch": "design.n27.boss2.enabled (bit 5)", "owner": "B", "red": "a pilot that never launches the PULSE cannot hurt it", "green": "pilot kills organically on 10 seeds; gap clamp +-15 %; miss costs 20 m; ONE organic Player kill", "passes": false},
+    {"id": "skate27", "switch": "design.n27.skate27.enabled (view row)", "owner": "V", "red": "row off: plain floor", "green": "floor-pixel motion +25 % on ice at matched speed (Player frames)", "passes": false},
+    {"id": "roof27", "switch": "design.n27.roof27.enabled (view row)", "owner": "V", "red": "row off: open sky", "green": "frame ms ON vs OFF with 24 enemies; three frames per row", "passes": false},
+    {"id": "tutorial27", "switch": "design.n27.tutorial27.enabled (level data)", "owner": "A", "red": "NIGHT26's tutorial: repeated husk rooms", "green": "pilot clears 10 stages, par <= 180 s, no repeated lesson", "passes": false}
+  ]
+}

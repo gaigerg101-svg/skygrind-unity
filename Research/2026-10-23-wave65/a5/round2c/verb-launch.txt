@@ -1,0 +1,16 @@
+# command: dotnet run --project Tools/SimHarness -c Release --no-build -- n65verb launch --level Design/levels/n65-foundry.json --room a5 [--slide]   (T's n65verb from port/stage3, unstaged in this tree)
+# sha: 8e1a26d7 (room files); time: 2026-10-23 ~2:00 night clock
+n65verb launch: level n65-foundry (Design/levels/n65-foundry.json), room a5 "1.5 CRUCIBLE", seed 1; pose (0.0, 0.0, -114.0) yaw 14.0 from line65[0]; off switch none
+  burst at (0.7, 1.5, -125.8) hits 1 kills 1 (a wall)
+  target husk #2 at (0.9, 0.0, -121.2) (from (0.0, -0.0, -114.0)), dash at step 43, punch at step 59 in state Dash (grace 18)
+n65verb launch: GREEN | room a5 | launch36 1, flight end wall thrown 4.8 m (max 4.7 m), bursts 1 (hits 1, kills 1) | landed (0.7, 1.5, -125.8), in a pit no, in lava no, target dead (launch36) | pose line65[0]
+
+# --slide
+n65verb launch: level n65-foundry (Design/levels/n65-foundry.json), room a5 "1.5 CRUCIBLE", seed 1; pose (0.0, 0.0, -114.0) yaw 14.0 from line65[0]; off switch none
+  burst at (0.0, 1.5, -123.9) hits 1 kills 1 (a wall)
+  target husk #2 at (0.8, 0.0, -120.8) (from (0.0, -0.0, -114.0)), slide at step 34, punch at step 68 in state Slide (grace 18)
+n65verb launch: GREEN | room a5 | launch36 1, flight end wall thrown 3.3 m (max 3.2 m), bursts 1 (hits 1, kills 1) | landed (0.0, 1.5, -123.9), in a pit no, in lava no, target dead (launch36) | pose line65[0]
+
+# read honestly: both GREEN launches throw a wave-1 husk from the south floor into THE TAP WALL (a wall burst), not into THE POUR. The pilot
+# starts at line65[0] (the entry) and takes wave 1's nearest husk; wave 2's apron husks (the card's slide-launch targets) spawn only after
+# wave 1, so the slot -> apron -> pour line is not what this pilot measured.

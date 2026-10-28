@@ -1,0 +1,13 @@
+# command: dotnet run --project Tools/SimHarness -c Release -- taps71h --level n52-foundry --reps 3 (F's tree; warnings filtered)
+# sha (F's tree) 89b842ea8 + the F4 working files (Tools/SimHarness/Harness.N71.Taps.cs); 2026-10-26 12:22:46 USMST
+taps71h on n52-foundry: campaign n52-foundry room 0, in hand revolver, p39 on, simHz 120
+  rel 1: the freeze-starting shot fired yes (its step's pressed bit False); the tap after it fired yes (1 shots; p39 press taps +1, release taps +0)
+  rel 2: the freeze-starting shot fired yes (its step's pressed bit False); the tap after it fired yes (1 shots; p39 press taps +1, release taps +0)
+  rel 3: the freeze-starting shot fired yes (its step's pressed bit False); the tap after it fired yes (1 shots; p39 press taps +1, release taps +0)
+  prs 1: the freeze-starting shot fired yes (its step's pressed bit True); the tap after it fired NO (0 shots; p39 press taps +0, release taps +0)
+  prs 2: the freeze-starting shot fired yes (its step's pressed bit True); the tap after it fired NO (0 shots; p39 press taps +0, release taps +0)
+  prs 3: the freeze-starting shot fired yes (its step's pressed bit True); the tap after it fired NO (0 shots; p39 press taps +0, release taps +0)
+  prs-gap 1: the freeze-starting shot fired yes (its step's pressed bit True); the tap after it fired yes (1 shots; p39 press taps +1, release taps +0)
+  prs-gap 2: the freeze-starting shot fired yes (its step's pressed bit True); the tap after it fired yes (1 shots; p39 press taps +1, release taps +0)
+  prs-gap 3: the freeze-starting shot fired yes (its step's pressed bit True); the tap after it fired yes (1 shots; p39 press taps +1, release taps +0)
+taps71h: RED taps inside freezes 6, fired 3 (rel and prs; prs-gap is the no-freeze control)

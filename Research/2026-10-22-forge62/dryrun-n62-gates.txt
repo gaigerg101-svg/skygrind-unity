@@ -1,0 +1,13 @@
+Thu, Oct 22, 2026  4:58:04 PM
+gate config: the two copies identical
+gate golden: golden total: 39 vector sets (48094 records), 22 replays (22 exact); 0 failing, 0 mismatches
+gate fingerprint : fingerprint seed 1: 12 hashes in 2.23 s: EQUAL to the baseline; run Fight round 3, kills 35, shots 80, earned 4808, alive 1, owned 2, flow Playing
+gate fingerprint --off57: fingerprint seed 1: 12 hashes in 0.78 s: EQUAL to the baseline; run Fight round 3, kills 35, shots 80, earned 4808, alive 1, owned 2, flow Playing
+gate fingerprint --off58: fingerprint seed 1: 12 hashes in 0.83 s: EQUAL to the baseline; run Fight round 3, kills 35, shots 80, earned 4808, alive 1, owned 2, flow Playing
+gate fingerprint --off59: fingerprint seed 1: 12 hashes in 0.78 s: EQUAL to the baseline; run Fight round 3, kills 35, shots 80, earned 4808, alive 1, owned 2, flow Playing
+gate fingerprint --off60: fingerprint seed 1: 12 hashes in 0.78 s: EQUAL to the baseline; run Fight round 3, kills 35, shots 80, earned 4808, alive 1, owned 2, flow Playing
+gate fingerprint --off61: fingerprint seed 1: 12 hashes in 0.77 s: EQUAL to the baseline; run Fight round 3, kills 35, shots 80, earned 4808, alive 1, owned 2, flow Playing
+gate fingerprint --off62: fingerprint seed 1: 12 hashes in 0.77 s: EQUAL to the baseline; run Fight round 3, kills 35, shots 80, earned 4808, alive 1, owned 2, flow Playing
+GATE FAIL: editor compile (editor_status gave no answer in 60 s: not checked)
+exit=1
+Thu, Oct 22, 2026  5:01:24 PM

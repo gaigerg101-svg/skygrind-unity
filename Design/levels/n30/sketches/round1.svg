@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="420" viewBox="0 0 1600 420" font-family="monospace" font-size="11">
+  <rect width="1600" height="420" fill="#14121c"/>
+  <!-- legend: 10 px = 1 m; north (exit) is UP; grey floor, orange lava, cyan wall lanes, numbers = heights in m -->
+  <text x="10" y="410" fill="#ccc">10 px = 1 m, exit north (up). grey = floor (height in m), orange = LAVA, cyan = wall lane (y band), green = pickup / reward, red = enemy, violet = door</text>
+
+  <!-- A: f2 STEP, a 3.5 m lava trench (10 x 18) -->
+  <g transform="translate(40,40)">
+    <text x="0" y="-8" fill="#fff">A f2 STEP (10 x 18): lava trench</text>
+    <rect x="0" y="0" width="100" height="180" fill="#4a4a55" stroke="#888"/>
+    <rect x="0" y="75" width="100" height="35" fill="#ff5a1f"/>
+    <text x="22" y="96" fill="#000">LAVA -1.0</text>
+    <rect x="0" y="73" width="100" height="2" fill="#ffd27a"/><rect x="0" y="110" width="100" height="2" fill="#ffd27a"/>
+    <rect x="70" y="140" width="14" height="14" fill="#6a6a78"/><text x="72" y="150" fill="#fff">1.2</text>
+    <rect x="10" y="20" width="14" height="14" fill="#6a6a78"/><text x="12" y="30" fill="#fff">1.2</text>
+    <rect x="40" y="0" width="25" height="4" fill="#b58cff"/><rect x="40" y="176" width="25" height="4" fill="#b58cff"/>
+    <text x="0" y="200" fill="#ccc">rim 2 px gold; jump 3.5 m</text>
+  </g>
+
+  <!-- B: f5b LAVA RUN (14 x 28): new lava wall-ride room -->
+  <g transform="translate(220,30)">
+    <text x="0" y="-8" fill="#fff">B f5b LAVA RUN (14 x 28 x 10)</text>
+    <rect x="0" y="0" width="140" height="280" fill="#ff5a1f" stroke="#888"/>
+    <rect x="0" y="240" width="140" height="40" fill="#4a4a55"/><text x="40" y="265" fill="#fff">ENTRY 0</text>
+    <rect x="0" y="0" width="140" height="40" fill="#4a4a55"/><text x="30" y="25" fill="#fff">EXIT DECK 3.0</text>
+    <rect x="0" y="140" width="5" height="100" fill="#29e3ff"/><text x="8" y="200" fill="#000">lane W y1.5-4</text>
+    <rect x="135" y="40" width="5" height="100" fill="#29e3ff"/><text x="70" y="90" fill="#000">lane E y3-6</text>
+    <rect x="55" y="125" width="30" height="30" fill="#6a6a78"/><text x="57" y="143" fill="#fff">isle 2.0</text>
+    <rect x="0" y="40" width="20" height="20" fill="#6a6a78"/><circle cx="10" cy="50" r="5" fill="#39ff7a"/><text x="22" y="55" fill="#000">ledge 6.0 +HP</text>
+    <circle cx="110" cy="20" r="5" fill="#ff3030"/><circle cx="30" cy="20" r="5" fill="#ff3030"/>
+    <text x="0" y="300" fill="#ccc">ride W, jump to isle, jump to E, ride E</text>
+    <text x="0" y="314" fill="#ccc">up to the deck; 2 spitters shoot the rider</text>
+    <polyline points="3,235 3,150 70,140 137,130 137,45" fill="none" stroke="#fff" stroke-dasharray="4 3"/>
+  </g>
+
+  <!-- C: i1a TANK ALONE (12 x 20) -->
+  <g transform="translate(440,40)">
+    <text x="0" y="-8" fill="#fff">C i1a TANK ALONE (12 x 20 x 6)</text>
+    <rect x="0" y="0" width="120" height="200" fill="#3a4a5a" stroke="#888"/>
+    <rect x="15" y="90" width="20" height="12" fill="#6a6a78"/><text x="16" y="99" fill="#fff">1.2</text>
+    <rect x="85" y="90" width="20" height="12" fill="#6a6a78"/><text x="86" y="99" fill="#fff">1.2</text>
+    <rect x="0" y="40" width="5" height="100" fill="#29e3ff"/><rect x="115" y="40" width="5" height="100" fill="#29e3ff"/>
+    <rect x="50" y="30" width="20" height="20" fill="#ff3030"/><text x="48" y="25" fill="#fff">TANK</text>
+    <rect x="40" y="0" width="40" height="4" fill="#b58cff"/><rect x="45" y="196" width="30" height="4" fill="#b58cff"/>
+    <text x="0" y="220" fill="#ccc">walk-in: tank walks the centre;</text>
+    <text x="0" y="234" fill="#ccc">flank by the lanes, punch its back</text>
+  </g>
+
+  <!-- D: f12 THE LANTERN ring, 12 flat panels, 30 m across -->
+  <g transform="translate(800,200)">
+    <text x="-150" y="-170" fill="#fff">D f12 THE LANTERN RING (12 panels, d 30 m)</text>
+    <polygon points="150,0 129.9,75 75,129.9 0,150 -75,129.9 -129.9,75 -150,0 -129.9,-75 -75,-129.9 0,-150 75,-129.9 129.9,-75" fill="#ff5a1f" fill-opacity="0.55" stroke="#29e3ff" stroke-width="4"/>
+    <text x="-60" y="-100" fill="#000">floor: rock, LAVA when live</text>
+    <rect x="-20" y="-110" width="40" height="40" fill="#6a6a78"/><text x="-14" y="-86" fill="#fff">P1 2.4</text>
+    <rect x="75" y="35" width="40" height="40" fill="#6a6a78"/><text x="78" y="59" fill="#fff">P2 2.4</text>
+    <rect x="-115" y="35" width="40" height="40" fill="#6a6a78"/><text x="-112" y="59" fill="#fff">P3 2.4</text>
+    <circle cx="0" cy="0" r="18" fill="#fff"/><text x="-22" y="4" fill="#000">LANTERN</text>
+    <circle cx="0" cy="130" r="6" fill="#ffd27a"/><circle cx="112" cy="-65" r="6" fill="#ffd27a"/><circle cx="-112" cy="-65" r="6" fill="#ffd27a"/>
+    <text x="20" y="128" fill="#fff">vent (lava rises here first)</text>
+    <rect x="-15" y="146" width="30" height="6" fill="#b58cff"/>
+    <text x="-150" y="180" fill="#ccc">cyan = rideable panels, 4.6 m wide lane at y 2-6; sweep tell marks one panel red 1.2 s</text>
+  </g>
+
+  <!-- E: f5 WALL-RIDE ROOM, hazard floor becomes lava (14 x 24) + vents -->
+  <g transform="translate(1060,40)">
+    <text x="0" y="-8" fill="#fff">E f5 WALL-RIDE (14 x 24): lava floor</text>
+    <rect x="0" y="0" width="140" height="240" fill="#ff5a1f" stroke="#888"/>
+    <rect x="0" y="200" width="140" height="40" fill="#4a4a55"/><text x="40" y="225" fill="#fff">ENTRY 0</text>
+    <rect x="80" y="0" width="60" height="30" fill="#4a4a55"/><text x="84" y="18" fill="#fff">EXIT 0.6</text>
+    <rect x="0" y="30" width="5" height="170" fill="#29e3ff"/><text x="8" y="120" fill="#000">lane W (the old one)</text>
+    <rect x="100" y="90" width="40" height="30" fill="#6a6a78"/><text x="102" y="108" fill="#fff">target 3.0</text>
+    <circle cx="70" cy="60" r="7" fill="#ffd27a"/><circle cx="70" cy="160" r="7" fill="#ffd27a"/>
+    <text x="0" y="260" fill="#ccc">the floor is LAVA from the start (not a timer):</text>
+    <text x="0" y="274" fill="#ccc">two heat vents (view) show it is hot</text>
+  </g>
+
+  <!-- F: i1b TANK + HUSKS (14 x 22) -->
+  <g transform="translate(1300,40)">
+    <text x="0" y="-8" fill="#fff">F i1b TANK + HUSKS (14 x 22 x 7)</text>
+    <rect x="0" y="0" width="140" height="220" fill="#3a4a5a" stroke="#888"/>
+    <rect x="40" y="80" width="60" height="50" fill="#6a6a78"/><text x="48" y="108" fill="#fff">deck 2.0</text>
+    <rect x="100" y="95" width="30" height="20" fill="#7a7a88"/><text x="102" y="108" fill="#fff">ramp</text>
+    <rect x="0" y="20" width="5" height="170" fill="#29e3ff"/>
+    <rect x="60" y="30" width="20" height="20" fill="#ff3030"/>
+    <circle cx="20" cy="60" r="5" fill="#ff3030"/><circle cx="120" cy="60" r="5" fill="#ff3030"/><circle cx="20" cy="150" r="5" fill="#ff3030"/><circle cx="120" cy="150" r="5" fill="#ff3030"/>
+    <text x="0" y="240" fill="#ccc">ring route around the deck (combat loop)</text>
+  </g>
+</svg>

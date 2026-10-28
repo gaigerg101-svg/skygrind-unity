@@ -1,0 +1,19 @@
+proofs at 28ef8cbf9 11:36:25: StaminaBarWidthN17 StaminaBarHeightN17 StaminaBarYN17 Hud17StaminaWidth Hud17StaminaHeight Hud17StaminaY
+== StaminaBarWidthN17: (a1) worktree hits 1
+   Assets/Scripts/Game/UnityTuning.CameraMove.cs:109:        public const float StaminaBarWidthN17 = Hud17StaminaWidth; // px
+== StaminaBarHeightN17: (a1) worktree hits 1
+   Assets/Scripts/Game/UnityTuning.CameraMove.cs:110:        public const float StaminaBarHeightN17 = Hud17StaminaHeight; // px
+== StaminaBarYN17: (a1) worktree hits 1
+   Assets/Scripts/Game/UnityTuning.CameraMove.cs:111:        public const float StaminaBarYN17 = Hud17StaminaY; // px under the crosshair's centre
+== Hud17StaminaWidth: (a1) worktree hits 2
+   Assets/Scripts/Game/UnityTuning.CameraMove.cs:109:        public const float StaminaBarWidthN17 = Hud17StaminaWidth; // px
+   Assets/Scripts/Game/UnityTuning.Hud17.cs:115:        public const float Hud17StaminaWidth = 160; // px: the whole bar (round 1: a 64 px segment read as a sliver); VIGOR's two bars split it
+== Hud17StaminaHeight: (a1) worktree hits 2
+   Assets/Scripts/Game/UnityTuning.CameraMove.cs:110:        public const float StaminaBarHeightN17 = Hud17StaminaHeight; // px
+   Assets/Scripts/Game/UnityTuning.Hud17.cs:116:        public const float Hud17StaminaHeight = 9; // px (round 1: 8-10)
+== Hud17StaminaY: (a1) worktree hits 2
+   Assets/Scripts/Game/UnityTuning.CameraMove.cs:111:        public const float StaminaBarYN17 = Hud17StaminaY; // px under the crosshair's centre
+   Assets/Scripts/Game/UnityTuning.Hud17.cs:114:        public const float Hud17StaminaY = -46; // px under the crosshair's centre (under the slide tick at FeelHudY)
+(a2) main-tree untracked hits (7 files): none
+(a3) main-tree Logs/n71 + Research/2026-10-26* script hits: none
+(a4) UnityEvent m_MethodName hits: 0

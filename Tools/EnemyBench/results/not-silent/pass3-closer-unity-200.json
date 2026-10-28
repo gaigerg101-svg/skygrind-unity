@@ -1,0 +1,57 @@
+[
+ {
+  "tag": "pass3",
+  "variant": "closer-unity",
+  "n": 200,
+  "aliveAtEnd": 200,
+  "within3mAtEnd": 144,
+  "fps": 445.49883576304256,
+  "measuredSeconds": 30.0000784,
+  "frameMs": {
+   "count": 13365,
+   "mean": 2.2447316882042356,
+   "p50": 2.102806232869625,
+   "p99": 4.785898607224226,
+   "worst1pctMean": 5.965520043982498,
+   "max": 11.404294520616531
+  },
+  "frameWindowMeansMs": [
+   2.1158412043533135,
+   2.2088292392354143,
+   2.1126753573995933,
+   2.1724366390017606,
+   2.408692536615185,
+   2.507717502590665
+  ],
+  "stepsPerSecond": 119.99968640081954,
+  "stepMs": {
+   "count": 3600,
+   "mean": 0.8556138888888897,
+   "p50": 0.7704,
+   "p99": 1.4868,
+   "worst1pctMean": 1.5840249999999996,
+   "max": 2.1473
+  },
+  "losRaysPerSecond": 799.997909338797,
+  "flowRebuilds": 1,
+  "warmSeconds": 10,
+  "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+  "graphicsApi": "Direct3D12",
+  "gpuMemoryMB": 7891,
+  "cpu": "AMD Ryzen AI 9 HX 370 w/ Radeon 890M ",
+  "logicalCores": 24,
+  "ramMB": 64633,
+  "os": "Windows 11  (10.0.26200)",
+  "unity": "6000.3.7f1",
+  "editor": false,
+  "backend": "Mono",
+  "developmentBuild": false,
+  "screen": "1920x1080",
+  "fullScreenMode": "Windowed",
+  "vSyncCount": 0,
+  "targetFrameRate": -1,
+  "quality": "PC",
+  "utc": "2026-10-01T02:47:31.8745015Z",
+  "powerPlans": "Balanced x17"
+ }
+]

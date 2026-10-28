@@ -1,0 +1,1026 @@
+{
+ "_why": "THE KILN WYRM's arena for n43-kiln (NIGHT43 K1, G28; Tools/night/gen-n43-wyrm-arena.cjs): wyrm39-arena.json's 29 boxes in order (the shell, slabs, stacks, perches; the crumble's indices unchanged) plus 1 pieces 2.9 m clear of every worm route: 1 SLAG PLATES (1.2 m islands at [65] deg) and no KILN MOUTH (no clear spot). The worm's paths and AI are wyrm26.json's, untouched. No lava (WyrmArena is boxes only).",
+ "name": "wyrm43-arena",
+ "half": 30,
+ "height": 30,
+ "floorSize": 64,
+ "killPlaneY": -30,
+ "center": [
+  0,
+  0,
+  0
+ ],
+ "playerSpawn": {
+  "x": 0,
+  "y": 0,
+  "z": 27.5,
+  "yawDeg": 0
+ },
+ "collision": {
+  "boxes": [
+   {
+    "min": [
+     -32,
+     -0.5,
+     -32
+    ],
+    "max": [
+     32,
+     0,
+     32
+    ],
+    "kind": "floor"
+   },
+   {
+    "min": [
+     -32,
+     0,
+     -32
+    ],
+    "max": [
+     32,
+     30,
+     -30
+    ],
+    "kind": "wall"
+   },
+   {
+    "min": [
+     -32,
+     0,
+     30
+    ],
+    "max": [
+     32,
+     30,
+     32
+    ],
+    "kind": "wall"
+   },
+   {
+    "min": [
+     -32,
+     0,
+     -30
+    ],
+    "max": [
+     -30,
+     30,
+     30
+    ],
+    "kind": "wall"
+   },
+   {
+    "min": [
+     30,
+     0,
+     -30
+    ],
+    "max": [
+     32,
+     30,
+     30
+    ],
+    "kind": "wall"
+   },
+   {
+    "min": [
+     -32,
+     30,
+     -32
+    ],
+    "max": [
+     32,
+     32,
+     32
+    ],
+    "kind": "ceiling"
+   },
+   {
+    "min": [
+     -30,
+     0,
+     -30
+    ],
+    "max": [
+     -18,
+     30,
+     -26
+    ],
+    "kind": "wall"
+   },
+   {
+    "min": [
+     -30,
+     0,
+     -30
+    ],
+    "max": [
+     -22,
+     30,
+     -22
+    ],
+    "kind": "wall"
+   },
+   {
+    "min": [
+     -30,
+     0,
+     -30
+    ],
+    "max": [
+     -26,
+     30,
+     -18
+    ],
+    "kind": "wall"
+   },
+   {
+    "min": [
+     -30,
+     0,
+     26
+    ],
+    "max": [
+     -18,
+     30,
+     30
+    ],
+    "kind": "wall"
+   },
+   {
+    "min": [
+     -30,
+     0,
+     22
+    ],
+    "max": [
+     -22,
+     30,
+     30
+    ],
+    "kind": "wall"
+   },
+   {
+    "min": [
+     -30,
+     0,
+     18
+    ],
+    "max": [
+     -26,
+     30,
+     30
+    ],
+    "kind": "wall"
+   },
+   {
+    "min": [
+     18,
+     0,
+     -30
+    ],
+    "max": [
+     30,
+     30,
+     -26
+    ],
+    "kind": "wall"
+   },
+   {
+    "min": [
+     22,
+     0,
+     -30
+    ],
+    "max": [
+     30,
+     30,
+     -22
+    ],
+    "kind": "wall"
+   },
+   {
+    "min": [
+     26,
+     0,
+     -30
+    ],
+    "max": [
+     30,
+     30,
+     -18
+    ],
+    "kind": "wall"
+   },
+   {
+    "min": [
+     18,
+     0,
+     26
+    ],
+    "max": [
+     30,
+     30,
+     30
+    ],
+    "kind": "wall"
+   },
+   {
+    "min": [
+     22,
+     0,
+     22
+    ],
+    "max": [
+     30,
+     30,
+     30
+    ],
+    "kind": "wall"
+   },
+   {
+    "min": [
+     26,
+     0,
+     18
+    ],
+    "max": [
+     30,
+     30,
+     30
+    ],
+    "kind": "wall"
+   },
+   {
+    "min": [
+     15.09,
+     0,
+     18.34
+    ],
+    "max": [
+     23.09,
+     12,
+     19.84
+    ],
+    "kind": "wall"
+   },
+   {
+    "min": [
+     -15.41,
+     0,
+     23.72
+    ],
+    "max": [
+     -7.41,
+     12,
+     25.22
+    ],
+    "kind": "wall"
+   },
+   {
+    "min": [
+     -6.35,
+     0,
+     -27.65
+    ],
+    "max": [
+     1.65,
+     12,
+     -26.15
+    ],
+    "kind": "wall"
+   },
+   {
+    "min": [
+     24.34,
+     0,
+     7.91
+    ],
+    "max": [
+     27.34,
+     18,
+     10.91
+    ],
+    "kind": "pillar"
+   },
+   {
+    "min": [
+     -22.57,
+     0,
+     16.18
+    ],
+    "max": [
+     -19.57,
+     18,
+     19.18
+    ],
+    "kind": "pillar"
+   },
+   {
+    "min": [
+     6.23,
+     5,
+     22.37
+    ],
+    "max": [
+     12.23,
+     6,
+     28.37
+    ],
+    "kind": "platform"
+   },
+   {
+    "min": [
+     -25.12,
+     8.5,
+     -18.49
+    ],
+    "max": [
+     -19.12,
+     9.5,
+     -12.49
+    ],
+    "kind": "platform"
+   },
+   {
+    "min": [
+     3.99,
+     8.5,
+     -29.08
+    ],
+    "max": [
+     9.99,
+     9.5,
+     -23.08
+    ],
+    "kind": "platform"
+   },
+   {
+    "min": [
+     -5.18,
+     8.5,
+     21.9
+    ],
+    "max": [
+     0.82,
+     9.5,
+     27.9
+    ],
+    "kind": "platform"
+   },
+   {
+    "min": [
+     6.23,
+     12,
+     22.37
+    ],
+    "max": [
+     12.23,
+     13,
+     28.37
+    ],
+    "kind": "platform"
+   },
+   {
+    "min": [
+     -28.37,
+     12,
+     6.23
+    ],
+    "max": [
+     -22.37,
+     13,
+     12.23
+    ],
+    "kind": "platform"
+   },
+   {
+    "min": [
+     8.57,
+     0,
+     20.66
+    ],
+    "max": [
+     12.57,
+     1.2,
+     24.66
+    ],
+    "kind": "platform"
+   }
+  ]
+ },
+ "crumble39": {
+  "_why": "the two highest perches (indices 27, 28) crumble at half health, the highest 6 m perch (23) stays: NIGHT31's camp test on the new perches",
+  "boxes": [
+   27,
+   28
+  ],
+  "keep": [
+   23
+  ],
+  "draw": [
+   {
+    "index": 18,
+    "kind": "wall",
+    "top": 12,
+    "crumble": false,
+    "rect": [
+     15.09,
+     18.34,
+     23.09,
+     19.84
+    ]
+   },
+   {
+    "index": 19,
+    "kind": "wall",
+    "top": 12,
+    "crumble": false,
+    "rect": [
+     -15.41,
+     23.72,
+     -7.41,
+     25.22
+    ]
+   },
+   {
+    "index": 20,
+    "kind": "wall",
+    "top": 12,
+    "crumble": false,
+    "rect": [
+     -6.35,
+     -27.65,
+     1.65,
+     -26.15
+    ]
+   },
+   {
+    "index": 21,
+    "kind": "pillar",
+    "top": 18,
+    "crumble": false,
+    "rect": [
+     24.34,
+     7.91,
+     27.34,
+     10.91
+    ]
+   },
+   {
+    "index": 22,
+    "kind": "pillar",
+    "top": 18,
+    "crumble": false,
+    "rect": [
+     -22.57,
+     16.18,
+     -19.57,
+     19.18
+    ]
+   },
+   {
+    "index": 23,
+    "kind": "platform",
+    "top": 6,
+    "crumble": false,
+    "rect": [
+     6.23,
+     22.37,
+     12.23,
+     28.37
+    ]
+   },
+   {
+    "index": 24,
+    "kind": "platform",
+    "top": 9.5,
+    "crumble": false,
+    "rect": [
+     -25.12,
+     -18.49,
+     -19.12,
+     -12.49
+    ]
+   },
+   {
+    "index": 25,
+    "kind": "platform",
+    "top": 9.5,
+    "crumble": false,
+    "rect": [
+     3.99,
+     -29.08,
+     9.99,
+     -23.08
+    ]
+   },
+   {
+    "index": 26,
+    "kind": "platform",
+    "top": 9.5,
+    "crumble": false,
+    "rect": [
+     -5.18,
+     21.9,
+     0.82,
+     27.9
+    ]
+   },
+   {
+    "index": 27,
+    "kind": "platform",
+    "top": 13,
+    "crumble": true,
+    "rect": [
+     6.23,
+     22.37,
+     12.23,
+     28.37
+    ]
+   },
+   {
+    "index": 28,
+    "kind": "platform",
+    "top": 13,
+    "crumble": true,
+    "rect": [
+     -28.37,
+     6.23,
+     -22.37,
+     12.23
+    ]
+   }
+  ]
+ },
+ "pieces43": [
+  {
+   "index": 29,
+   "kind": "platform",
+   "why": "a SLAG PLATE (1.2 m, 4 x 4 m, R 25): an island one jump high (apex 1.58 m) on the outer ring, off every route by 2.9 m: where the LUNGE (slide height) and the DIVE's floor crack cannot reach you; a step toward the boost perches",
+   "rect": [
+    8.57,
+    20.66,
+    12.57,
+    24.66
+   ],
+   "top": 1.2
+  }
+ ],
+ "landmark43": {
+  "kind": "kilnMouth",
+  "solid": false,
+  "rect": [
+   -6,
+   -30,
+   6,
+   -29.9
+  ],
+  "top": 16,
+  "why": "THE RING's landmark, flush on the north wall's face (no solid fits the worm's 2.9 m clearance): the far side, opposite the spawn nook; A1's look draws and lights it"
+ },
+ "loop43": {
+  "why": "every 5 degrees round the centre: the free floor radii (14-27 m) at that angle: one loop, no dead end",
+  "narrowest": {
+   "deg": 65,
+   "free": 17,
+   "inner": 14,
+   "outer": 22
+  },
+  "angles": [
+   {
+    "deg": 0,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 5,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 10,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 15,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 20,
+    "free": 23,
+    "inner": 14,
+    "outer": 25
+   },
+   {
+    "deg": 25,
+    "free": 26,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 30,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 35,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 40,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 45,
+    "free": 23,
+    "inner": 14,
+    "outer": 25
+   },
+   {
+    "deg": 50,
+    "free": 20,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 55,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 60,
+    "free": 21,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 65,
+    "free": 17,
+    "inner": 14,
+    "outer": 22
+   },
+   {
+    "deg": 70,
+    "free": 21,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 75,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 80,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 85,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 90,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 95,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 100,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 105,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 110,
+    "free": 22,
+    "inner": 14,
+    "outer": 24.5
+   },
+   {
+    "deg": 115,
+    "free": 24,
+    "inner": 14,
+    "outer": 25.5
+   },
+   {
+    "deg": 120,
+    "free": 26,
+    "inner": 14,
+    "outer": 26.5
+   },
+   {
+    "deg": 125,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 130,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 135,
+    "free": 26,
+    "inner": 14,
+    "outer": 26.5
+   },
+   {
+    "deg": 140,
+    "free": 22,
+    "inner": 14,
+    "outer": 24.5
+   },
+   {
+    "deg": 145,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 150,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 155,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 160,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 165,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 170,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 175,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 180,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 185,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 190,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 195,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 200,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 205,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 210,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 215,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 220,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 225,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 230,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 235,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 240,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 245,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 250,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 255,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 260,
+    "free": 25,
+    "inner": 14,
+    "outer": 26
+   },
+   {
+    "deg": 265,
+    "free": 24,
+    "inner": 14,
+    "outer": 25.5
+   },
+   {
+    "deg": 270,
+    "free": 24,
+    "inner": 14,
+    "outer": 25.5
+   },
+   {
+    "deg": 275,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 280,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 285,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 290,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 295,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 300,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 305,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 310,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 315,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 320,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 325,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 330,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 335,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 340,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 345,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 350,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 355,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   }
+  ]
+ }
+}

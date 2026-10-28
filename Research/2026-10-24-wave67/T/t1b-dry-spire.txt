@@ -1,0 +1,12 @@
+# L67=spire ROOMS=v6 SLATE=Research/2026-10-24-wave67/T/t1b-dry-slate.json bash Tools/night/n67-round.sh dry-spire
+# sha e4fae1a2; dirty: ; 2026-10-24 11:21:56
+n67-round dry-spire: level spire (n67-spire), rooms v6, the slate snapshot Logs/n67/dry-spire/slate-at-start.json (from Research/2026-10-24-wave67/T/t1b-dry-slate.json, sha256 4217ea8aaac3c30b)
+n67-round dry-spire: latest assembled into Logs/n67/dry-spire (13 s): levelgen --walk: 1 ERROR (pit recovery: v11 (-44..24 x -323..-255): n52-spire's own; 8 s)
+n67-round dry-spire: verb65 v6 - (slate ride): plant
+n67-red: 5 jobs on n67-spire in 74 s; outputs under Logs/n67/dry-spire/<room>/ (11:23:25)
+n67-round dry-spire: iso pictures 1 / 1
+n67-round-verbs dry-spire: 4 verdicts in 152 s (Logs/n67/dry-spire/verbs.md)
+n67-round dry-spire: done in 245 s; table Logs/n67/dry-spire/table.md; the round's level is Logs/n67/dry-spire/n67-spire.json (never the tracked files); tracked status before / after (Logs/n67/dry-spire/tracked-status.txt):
+  # git status --short Design/levels Assets/StreamingAssets/Design/levels Reports, before the round (2026-10-24 11:21:59):
+  # git status --short Design/levels Assets/StreamingAssets/Design/levels Reports, after the round (2026-10-24 11:26:02):
+# exit 0 at 11:26:02

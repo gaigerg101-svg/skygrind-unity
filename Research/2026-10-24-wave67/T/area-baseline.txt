@@ -1,0 +1,267 @@
+# node Tools/night/n67-area.cjs --baseline
+# sha e4fae1a2; 2026-10-24 11:14:01
+n67-area --baseline: the 25 shipped fight rooms, each from its plan + level file; no --touches (P4's (a) / (c) not read: 25 skip v2 runs not made), no cards (P11 N/A); 2026-10-24T18:14:01.544Z
+
+## n52-foundry a2
+OPEN  PASS largest open square 10.0 m (x -7.0..3.0, z -45.0..-35.0; 2 pieces on a 14.0 x 20.0 m rect; 12 m or less passes)
+P1    N/A  the last wave (husk husk) has no ranged enemy (spitter / drone)
+P4    FAIL 0 / 1 standing solids >= 1.75 m do a job ((a) touched NOT READ, (b) sight 0, (c) launch kill NOT READ); no job: box(-7,0,-55..-1,2,-50) line: the north deck; no --touches: (a) / (c) not read
+P5    N/A  no line65 in the row
+P9    N/A  no plane 1 m or more up with a short side of 6 m or more
+P11   N/A  the card names no TOWER / GALLERY / SPLIT LEVEL (no card)
+P17   N/A  no ride wall and no wall-like box 4 m x 8 m
+n67-area: FAIL a2 (1/2)
+
+## n52-foundry a3
+OPEN  PASS largest open square 6.0 m (x -2.0..4.0, z -69.0..-63.0; 17 pieces on a 20.0 x 26.0 m rect; 12 m or less passes)
+P1    N/A  the last wave (swarmer swarmer swarmer husk) has no ranged enemy (spitter / drone)
+P4    FAIL 0 / 9 standing solids >= 1.75 m do a job ((a) touched NOT READ, (b) sight 0, (c) launch kill NOT READ); no job: box(-5,0,-61..-2,10,-59) lane: the pit's west CHEEK; box(2,0,-61..5,10,-59) lane: the pit's east CHEEK; box(-2.6,-0.8,-81..-2,10,-63) ride: THE RUNNER; box(-7,0,-85..-2,2.5,-80) line: THE POURING PLATFORM, we (+5); no --touches: (a) / (c) not read
+P5    N/A  no line65 in the row
+P9    N/A  no plane 1 m or more up with a short side of 6 m or more
+P11   N/A  the card names no TOWER / GALLERY / SPLIT LEVEL (no card)
+P17   PASS 1 / 1 ride walls 4 m tall and 8 m long; 0 non-ride wall(s) in that band; the strip = ride: true (ride36 faces 1)
+n67-area: FAIL a3 (2/3)
+
+## n52-foundry a4
+OPEN  PASS largest open square 8.0 m (x -4.0..4.0, z -98.0..-90.0; 3 pieces on a 8.0 x 19.0 m rect; 12 m or less passes)
+P1    FAIL the last wave's 2 ranged of 2; its spawn set (nodes + highNodes) 0 / 3 nodes 3.5 m or more over the floor (y 0.0; each enemy takes a random node: all must be high)
+P4    N/A  no standing solid 1.75 m or taller (bounding walls aside)
+P5    N/A  no line65 in the row
+P9    N/A  no plane 1 m or more up with a short side of 6 m or more
+P11   N/A  the card names no TOWER / GALLERY / SPLIT LEVEL (no card)
+P17   N/A  no ride wall and no wall-like box 4 m x 8 m
+n67-area: FAIL a4 (1/2)
+
+## n52-foundry a5
+OPEN  PASS largest open square 8.0 m (x -2.0..6.0, z -140.0..-132.0; 19 pieces on a 20.0 x 32.0 m rect; 12 m or less passes)
+P1    FAIL the last wave's 2 ranged of 3; its spawn set (waveNodes43) 2 / 3 nodes 3.5 m or more over the floor (y 0.0; each enemy takes a random node: all must be high)
+P4    FAIL 2 / 5 standing solids >= 1.75 m do a job ((a) touched NOT READ, (b) sight 2, (c) launch kill NOT READ); no job: box(7,0,-144..10,2.5,-131) perch: THE SKIM LEDGE; box(-6,0,-114..-2,10,-112) lane: the hearth's west CHEEK; box(2,0,-114..6,10,-112) lane: the hearth's east CHEEK; no --touches: (a) / (c) not read
+P5    N/A  no line65 in the row
+P9    N/A  no plane 1 m or more up with a short side of 6 m or more
+P11   N/A  the card names no TOWER / GALLERY / SPLIT LEVEL (no card)
+P17   PASS 1 / 1 ride walls 4 m tall and 8 m long; 0 non-ride wall(s) in that band; the strip = ride: true (ride36 faces 1)
+n67-area: FAIL a5 (2/4)
+
+## n52-foundry b1
+OPEN  PASS largest open square 8.0 m (x -3.5..4.5, z -159.0..-151.0; 17 pieces on a 20.0 x 32.0 m rect; 12 m or less passes)
+P1    N/A  the last wave (husk husk husk husk) has no ranged enemy (spitter / drone)
+P4    FAIL 2 / 7 standing solids >= 1.75 m do a job ((a) touched NOT READ, (b) sight 2, (c) launch kill NOT READ); no job: box(-7.1,0,-173..-6.5,12,-172) cover: THE LADLE's BAIL, west ; box(5.5,0,-180..10,4.5,-174.5) perch: THE EAST CRANE CAB; box(4.4,0,-156.1..5.6,12,-154.9) cover: the near bank's FURNACE; box(-6,0,-150..-2,12,-148) lane: the yard gate's west CHE (+1); no --touches: (a) / (c) not read
+P5    N/A  no line65 in the row
+P9    N/A  no plane 1 m or more up with a short side of 6 m or more
+P11   N/A  the card names no TOWER / GALLERY / SPLIT LEVEL (no card)
+P17   PASS 2 / 2 ride walls 4 m tall and 8 m long; 0 non-ride wall(s) in that band; the strip = ride: true (ride36 faces 2)
+n67-area: FAIL b1 (2/3)
+
+## n52-foundry a8
+OPEN  PASS largest open square 4.0 m (x -7.0..-3.0, z -364.0..-360.0; 7 pieces on a 14.0 x 22.0 m rect; 12 m or less passes)
+P1    N/A  the last wave (husk husk husk) has no ranged enemy (spitter / drone)
+P4    FAIL 0 / 2 standing solids >= 1.75 m do a job ((a) touched NOT READ, (b) sight 0, (c) launch kill NOT READ); no job: box(-4.6,-4,-349.5..-4,3.2,-345) line: ride panel P1; box(4,-4,-360..4.6,3.2,-353) line: ride panel P2; no --touches: (a) / (c) not read
+P5    N/A  no line65 in the row
+P9    N/A  no plane 1 m or more up with a short side of 6 m or more
+P11   N/A  the card names no TOWER / GALLERY / SPLIT LEVEL (no card)
+P17   FAIL 0 / 2 ride walls 4 m tall and 8 m long (short: box(-4.6,-4,-349.5..-4,3.2,-345) 3.2 x 4.5 m; box(4,-4,-360..4.6,3.2,-353) 3.2 x 7.0 m); 0 non-ride wall(s) in that band; the strip = ride: true (ride36 faces 2)
+n67-area: FAIL a8 (1/3)
+
+## n52-iceline g1
+OPEN  FAIL largest open square 16.0 m (x -8.0..8.0, z -26.0..-10.0; 2 pieces on a 22.0 x 26.0 m rect; 12 m or less passes)
+P1    N/A  the last wave (charger) has no ranged enemy (spitter / drone)
+P4    FAIL 0 / 2 standing solids >= 1.75 m do a job ((a) touched NOT READ, (b) sight 0, (c) launch kill NOT READ); no job: box(-8.6,0,-18..-8,5,-5) line: ride panel W; box(8,0,-18..8.6,5,-5) line: ride panel E; no --touches: (a) / (c) not read
+P5    N/A  no line65 in the row
+P9    N/A  no plane 1 m or more up with a short side of 6 m or more
+P11   N/A  the card names no TOWER / GALLERY / SPLIT LEVEL (no card)
+P17   PASS 2 / 2 ride walls 4 m tall and 8 m long; 0 non-ride wall(s) in that band; the strip = ride: true (ride36 faces 2)
+n67-area: FAIL g1 (1/3)
+
+## n52-iceline g2
+OPEN  PASS largest open square 8.0 m (x -5.5..2.5, z -39.0..-31.0; 15 pieces on a 21.0 x 28.0 m rect; 12 m or less passes)
+P1    N/A  the last wave (charger husk husk) has no ranged enemy (spitter / drone)
+P4    FAIL 0 / 5 standing solids >= 1.75 m do a job ((a) touched NOT READ, (b) sight 0, (c) launch kill NOT READ); no job: box(-9.6,0,-53..-9,10,-35) line: the WEST RIDE PANEL; box(-12,0,-58..-7,4,-53) line: THE WEST GANTRY; box(5,0,-58..9,4,-53) line: THE EAST GANTRY; box(-1.5,0,-46..1.5,10,-43) line: THE ANVIL (+1); no --touches: (a) / (c) not read
+P5    N/A  no line65 in the row
+P9    N/A  no plane 1 m or more up with a short side of 6 m or more
+P11   N/A  the card names no TOWER / GALLERY / SPLIT LEVEL (no card)
+P17   PASS 1 / 1 ride walls 4 m tall and 8 m long; 0 non-ride wall(s) in that band; the strip = ride: true (ride36 faces 1)
+n67-area: FAIL g2 (2/3)
+
+## n52-iceline g3
+OPEN  PASS largest open square 9.5 m (x -2.0..7.5, z -83.5..-74.0; 17 pieces on a 24.0 x 28.0 m rect; 12 m or less passes)
+P1    N/A  the last wave (swarmer swarmer swarmer swarmer swarmer swarmer swarmer swarmer) has no ranged enemy (spitter / drone)
+P4    FAIL 0 / 6 standing solids >= 1.75 m do a job ((a) touched NOT READ, (b) sight 0, (c) launch kill NOT READ); no job: box(-6,0,-81..-2,10,-75) cover: THE HOPPER; box(-11.6,0,-84..-11,5,-66) line: the WEST RIDE PANEL RW; box(4,0,-66..9,4,-62) line: THE LOFT; box(6.5,0,-90..12,2,-86) line: THE TIPPLE HEAD (+2); no --touches: (a) / (c) not read
+P5    N/A  no line65 in the row
+P9    N/A  no plane 1 m or more up with a short side of 6 m or more
+P11   N/A  the card names no TOWER / GALLERY / SPLIT LEVEL (no card)
+P17   PASS 1 / 1 ride walls 4 m tall and 8 m long; 0 non-ride wall(s) in that band; the strip = ride: true (ride36 faces 1)
+n67-area: FAIL g3 (2/3)
+
+## n52-iceline g4
+OPEN  PASS largest open square 10.5 m (x -6.0..4.5, z -106.0..-95.5; 20 pieces on a 24.0 x 30.0 m rect; 12 m or less passes)
+P1    FAIL the last wave's 2 ranged of 2; its spawn set (nodes + highNodes) 1 / 6 nodes 3.5 m or more over the floor (y 0.0; each enemy takes a random node: all must be high)
+P4    FAIL 0 / 4 standing solids >= 1.75 m do a job ((a) touched NOT READ, (b) sight 0, (c) launch kill NOT READ); no job: box(-12,0,-124..-6,2,-118) line: the NW LEDGE; box(6,0,-124..12,4,-119) line: the NE GALLERY; box(-8.6,0,-101.6..-7.4,4,-100.4) cover: the WEST ICE POST; box(4.4,0,-101.6..5.6,4,-100.4) cover: the EAST ICE POST; no --touches: (a) / (c) not read
+P5    N/A  no line65 in the row
+P9    FAIL 0 / 1 planes with 2 climb tops >= 8 m apart: box(-12,0,-124..-6,2,-118) 6.0 x 6.0 m at 2.0 m: 16 climb top(s), farthest apart 7.1 m (NO)
+P11   N/A  the card names no TOWER / GALLERY / SPLIT LEVEL (no card)
+P17   PASS 1 / 1 ride walls 4 m tall and 8 m long; 0 non-ride wall(s) in that band; the strip = ride: true (ride36 faces 1)
+n67-area: FAIL g4 (2/5)
+
+## n52-iceline g5
+OPEN  PASS largest open square 8.5 m (x -4.0..4.5, z -153.5..-145.0; 16 pieces on a 21.0 x 30.0 m rect; 12 m or less passes)
+P1    FAIL the last wave's 2 ranged of 3; its spawn set (nodes + highNodes) 2 / 9 nodes 3.5 m or more over the floor (y 0.0; each enemy takes a random node: all must be high)
+P4    FAIL 2 / 8 standing solids >= 1.75 m do a job ((a) touched NOT READ, (b) sight 2, (c) launch kill NOT READ); no job: box(-11,0,-158..-5,2,-146) line: the WEST SHELF; box(6.5,0,-148..10,4.5,-138) line: THE CRANE RUNWAY; box(9,0,-138..10,6,-128.5) line: the EAST RIDE WALL; box(-5.3,0,-139..-4.7,4,-135) line: the WEST ICE WALL (+2); no --touches: (a) / (c) not read
+P5    N/A  no line65 in the row
+P9    PASS 1 / 1 planes with 2 climb tops >= 8 m apart: box(-11,0,-158..-5,2,-146) 6.0 x 12.0 m at 2.0 m: 18 climb top(s), farthest apart 11.7 m
+P11   N/A  the card names no TOWER / GALLERY / SPLIT LEVEL (no card)
+P17   FAIL 2 / 4 ride walls 4 m tall and 8 m long (short: box(-5.3,0,-139..-4.7,4,-135) 4.0 x 4.0 m; box(4.7,0,-139..5.3,4,-135) 4.0 x 4.0 m); 0 non-ride wall(s) in that band; the strip = ride: true (ride36 faces 4)
+n67-area: FAIL g5 (2/5)
+
+## n52-iceline g6
+OPEN  FAIL largest open square 12.5 m (x -7.0..5.5, z -180.0..-167.5; 1 pieces on a 14.0 x 18.0 m rect; 12 m or less passes)
+P1    N/A  the last wave (husk) has no ranged enemy (spitter / drone)
+P4    N/A  no standing solid 1.75 m or taller (bounding walls aside)
+P5    N/A  no line65 in the row
+P9    N/A  no plane 1 m or more up with a short side of 6 m or more
+P11   N/A  the card names no TOWER / GALLERY / SPLIT LEVEL (no card)
+P17   N/A  no ride wall and no wall-like box 4 m x 8 m
+n67-area: FAIL g6 (0/1)
+
+## n52-iceline g7
+OPEN  PASS largest open square 7.5 m (x -5.5..2.0, z -195.5..-188.0; 24 pieces on a 24.0 x 32.0 m rect; 12 m or less passes)
+P1    FAIL the last wave's 1 ranged of 6; its spawn set (waveNodes43) 0 / 6 nodes 3.5 m or more over the floor (y 0.0; each enemy takes a random node: all must be high)
+P4    FAIL 5 / 11 standing solids >= 1.75 m do a job ((a) touched NOT READ, (b) sight 5, (c) launch kill NOT READ); no job: box(-12,0,-216..-4,2,-210) line: the WEST COAL GANTRY; box(8.5,0,-211..12,4,-204.5) line: THE KEEPER'S TOWER; box(11,-0.8,-202.5..12,5,-191) line: the EAST SLUICE WALL; box(-12,0,-188..-7,2,-184) line: the WEST COAL BUNKER (+2); no --touches: (a) / (c) not read
+P5    N/A  no line65 in the row
+P9    PASS 1 / 1 planes with 2 climb tops >= 8 m apart: box(-12,0,-216..-4,2,-210) 8.0 x 6.0 m at 2.0 m: 17 climb top(s), farthest apart 8.6 m
+P11   N/A  the card names no TOWER / GALLERY / SPLIT LEVEL (no card)
+P17   PASS 2 / 2 ride walls 4 m tall and 8 m long; 0 non-ride wall(s) in that band; the strip = ride: true (ride36 faces 2)
+n67-area: FAIL g7 (3/5)
+
+## n52-iceline g8
+OPEN  PASS largest open square 7.0 m (x -1.5..5.5, z -227.0..-220.0; 18 pieces on a 21.0 x 30.0 m rect; 12 m or less passes)
+P1    FAIL the last wave's 2 ranged of 5; its spawn set (waveNodes43) 1 / 5 nodes 3.5 m or more over the floor (y 0.0; each enemy takes a random node: all must be high)
+P4    FAIL 1 / 9 standing solids >= 1.75 m do a job ((a) touched NOT READ, (b) sight 1, (c) launch kill NOT READ); no job: box(-8,0,-250..-3,3,-246) line: THE GALLERY; box(-8.82,0,-232.75..-7.82,12,-231.25) cover: the WEST SAND TOWER; box(7.83,0,-228..8.82,12,-226.5) cover: the EAST SAND TOWER; prop(g8-P1@-5,6,-228) prop g8-P1 (+4); no --touches: (a) / (c) not read
+P5    N/A  no line65 in the row
+P9    N/A  no plane 1 m or more up with a short side of 6 m or more
+P11   N/A  the card names no TOWER / GALLERY / SPLIT LEVEL (no card)
+P17   PASS 2 / 2 ride walls 4 m tall and 8 m long; 0 non-ride wall(s) in that band; the strip = ride: true (ride36 faces 2)
+n67-area: FAIL g8 (2/4)
+
+## n57-kiln kb2
+OPEN  PASS largest open square 8.0 m (x -2.5..5.5, z -86.0..-78.0; 14 pieces on a 20.0 x 28.0 m rect; 12 m or less passes)
+P1    FAIL the last wave's 2 ranged of 6; its spawn set (waveNodes43) 2 / 10 nodes 3.5 m or more over the floor (y 0.0; each enemy takes a random node: all must be high)
+P4    FAIL 2 / 5 standing solids >= 1.75 m do a job ((a) touched NOT READ, (b) sight 2, (c) launch kill NOT READ); no job: box(5.4,0,-95.5..6,14,-78.5) molecule: the one-way ride, th; box(-6,0,-76.5..-2,14,-75.5) molecule: the entrance gated (; box(2,0,-76.5..5.4,14,-75.5) molecule: the entrance gated (; no --touches: (a) / (c) not read
+P5    N/A  no line65 in the row
+P9    FAIL 0 / 1 planes with 2 climb tops >= 8 m apart: box(2,0,-103.5..10,4.5,-95.5) 8.0 x 8.0 m at 4.5 m: 7 climb top(s), farthest apart 2.0 m (NO)
+P11   N/A  the card names no TOWER / GALLERY / SPLIT LEVEL (no card)
+P17   PASS 1 / 1 ride walls 4 m tall and 8 m long; 0 non-ride wall(s) in that band; the strip = ride: true (ride36 faces 1)
+n67-area: FAIL kb2 (2/5)
+
+## n57-kiln kb2c
+OPEN  PASS largest open square 9.0 m (x -9.0..0.0, z -193.5..-184.5; 15 pieces on a 18.0 x 30.0 m rect; 12 m or less passes)
+P1    N/A  the last wave (burrower husk husk husk) has no ranged enemy (spitter / drone)
+P4    FAIL 0 / 4 standing solids >= 1.75 m do a job ((a) touched NOT READ, (b) sight 0, (c) launch kill NOT READ); no job: box(7,0,-184.5..9,4.5,-181.5) spatial law: THE FAR BRIDGE's ; box(3,0,-168.5..5,12,-165.15) hero prop: THE CRANE MAST (the; box(-6,0,-164.5..-2,12,-163.5) molecule: the entrance gated (; box(2,0,-164.5..6,12,-163.5) molecule: the entrance gated (; no --touches: (a) / (c) not read
+P5    N/A  no line65 in the row
+P9    N/A  no plane 1 m or more up with a short side of 6 m or more
+P11   N/A  the card names no TOWER / GALLERY / SPLIT LEVEL (no card)
+P17   PASS 1 / 1 ride walls 4 m tall and 8 m long; 0 non-ride wall(s) in that band; the strip = ride: true (ride36 faces 1)
+n67-area: FAIL kb2c (2/3)
+
+## n57-kiln kb3
+OPEN  PASS largest open square 8.0 m (x -4.0..4.0, z -209.5..-201.5; 16 pieces on a 20.0 x 28.0 m rect; 12 m or less passes)
+P1    N/A  the last wave (husk husk husk husk swarmer swarmer swarmer swarmer) has no ranged enemy (spitter / drone)
+P4    FAIL 3 / 8 standing solids >= 1.75 m do a job ((a) touched NOT READ, (b) sight 3, (c) launch kill NOT READ); no job: box(4,0,-202..5.5,14,-199.15) hero prop: a drop press (the c; box(6,0,-211.5..7.5,14,-209.5) hero prop: a drop press (the c; box(5,0,-225.5..10,4.5,-218.5) 30 s problem: THE FAR GALLERY ; box(-10,0,-198.5..-2,14,-197.5) molecule: the entrance gated ( (+1); no --touches: (a) / (c) not read
+P5    N/A  no line65 in the row
+P9    N/A  no plane 1 m or more up with a short side of 6 m or more
+P11   N/A  the card names no TOWER / GALLERY / SPLIT LEVEL (no card)
+P17   FAIL 1 / 1 ride walls 4 m tall and 8 m long; 2 non-ride wall(s) in that band (box(-10,0,-198.5..-2,14,-197.5); box(2,0,-198.5..10,14,-197.5)); the strip = ride: true (ride36 faces 1)
+n67-area: FAIL kb3 (1/3)
+
+## n57-kiln kb3c
+OPEN  PASS largest open square 7.0 m (x -8.0..-1.0, z -237.5..-230.5; 16 pieces on a 22.0 x 24.0 m rect; 12 m or less passes)
+P1    FAIL the last wave's 2 ranged of 6; its spawn set (waveNodes43) 0 / 6 nodes 3.5 m or more over the floor (y 0.0; each enemy takes a random node: all must be high)
+P4    FAIL 1 / 5 standing solids >= 1.75 m do a job ((a) touched NOT READ, (b) sight 1, (c) launch kill NOT READ); no job: box(2,0,-234.5..5,12,-230.5) hero prop: THE TAP HOOD (the r; box(6,0,-253.5..11,2.5,-247.5) molecule: the spout ledge (the; box(-8,0,-230.5..-2,12,-229.5) molecule: the entrance gated (; box(2,0,-230.5..7,12,-229.5) molecule: the entrance gated (; no --touches: (a) / (c) not read
+P5    N/A  no line65 in the row
+P9    FAIL 0 / 1 planes with 2 climb tops >= 8 m apart: box(-5,0,-243.5..1,2.5,-237.5) 6.0 x 6.0 m at 2.5 m: 7 climb top(s), farthest apart 2.0 m (NO)
+P11   N/A  the card names no TOWER / GALLERY / SPLIT LEVEL (no card)
+P17   PASS 1 / 1 ride walls 4 m tall and 8 m long; 0 non-ride wall(s) in that band; the strip = ride: true (ride36 faces 1)
+n67-area: FAIL kb3c (2/5)
+
+## n57-kiln kb3d
+OPEN  PASS largest open square 7.0 m (x -7.5..-0.5, z -277.5..-270.5; 15 pieces on a 24.0 x 20.0 m rect; 12 m or less passes)
+P1    N/A  the last wave (burrower charger) has no ranged enemy (spitter / drone)
+P4    FAIL 0 / 6 standing solids >= 1.75 m do a job ((a) touched NOT READ, (b) sight 0, (c) launch kill NOT READ); no job: box(6,0,-277.5..11.4,2.5,-272.5) molecule: the mouth ledge (the; box(-12,0,-277.5..-7.5,4.5,-270.5) spatial law: the clinker heap ; box(-3.5,0,-264.5..-2,12,-261.5) 30 s problem: the first kiln p; box(4,0,-266.5..5.5,12,-264.5) 30 s problem: the second kiln  (+2); no --touches: (a) / (c) not read
+P5    N/A  no line65 in the row
+P9    N/A  no plane 1 m or more up with a short side of 6 m or more
+P11   N/A  the card names no TOWER / GALLERY / SPLIT LEVEL (no card)
+P17   PASS 1 / 1 ride walls 4 m tall and 8 m long; 0 non-ride wall(s) in that band; the strip = ride: true (ride36 faces 1)
+n67-area: FAIL kb3d (2/3)
+
+## n52-span p1
+OPEN  PASS largest open square 10.0 m (x -3.5..6.5, z 94.5..104.5; 17 pieces on a 24.0 x 32.0 m rect; 12 m or less passes)
+P1    FAIL the last wave's 2 ranged of 5; its spawn set (waveNodes43) 2 / 6 nodes 3.5 m or more over the floor (y 0.0; each enemy takes a random node: all must be high)
+P4    FAIL 1 / 6 standing solids >= 1.75 m do a job ((a) touched NOT READ, (b) sight 1, (c) launch kill NOT READ); no job: box(-12,0,120.5..-5,12,123.5) line: the WEST HOIST HOUSE; box(5,0,120.5..12,12,123.5) line: the EAST HOIST HOUSE; box(-12,0,91.5..-6,4,103.5) line: THE LOADING TERRACE; box(7,0,91.5..12,2.4,99.5) line: THE ENGINE DECK (+1); no --touches: (a) / (c) not read
+P5    N/A  no line65 in the row
+P9    FAIL 0 / 1 planes with 2 climb tops >= 8 m apart: box(-12,0,91.5..-6,4,103.5) 6.0 x 12.0 m at 4.0 m: 6 climb top(s), farthest apart 5.0 m (NO)
+P11   N/A  the card names no TOWER / GALLERY / SPLIT LEVEL (no card)
+P17   PASS 2 / 2 ride walls 4 m tall and 8 m long; 0 non-ride wall(s) in that band; the strip = ride: true (ride36 faces 2)
+n67-area: FAIL p1 (2/5)
+
+## n52-span p3
+OPEN  PASS largest open square 10.0 m (x -6.5..3.5, z 23.5..33.5; 14 pieces on a 24.0 x 30.0 m rect; 12 m or less passes)
+P1    N/A  the last wave (swarmer swarmer swarmer swarmer husk husk) has no ranged enemy (spitter / drone)
+P4    FAIL 2 / 6 standing solids >= 1.75 m do a job ((a) touched NOT READ, (b) sight 2, (c) launch kill NOT READ); no job: box(-12,0,12..-7,2.5,25) line: THE WEST ANCHORAGE; box(9,-14,13..12,4.2,17) line: THE WINCH BALCONY; box(-3.5,0,11.5..-2,14,13) cover: THE TIE-OFF POST, west; box(2,0,11.5..3.5,14,13) cover: THE TIE-OFF POST, east; no --touches: (a) / (c) not read
+P5    N/A  no line65 in the row
+P9    N/A  no plane 1 m or more up with a short side of 6 m or more
+P11   N/A  the card names no TOWER / GALLERY / SPLIT LEVEL (no card)
+P17   PASS 2 / 2 ride walls 4 m tall and 8 m long; 0 non-ride wall(s) in that band; the strip = ride: true (ride36 faces 2)
+n67-area: FAIL p3 (2/3)
+
+## n52-span p5
+OPEN  PASS largest open square 5.5 m (x -4.5..1.0, z -134.5..-129.0; 16 pieces on a 26.0 x 28.0 m rect; 12 m or less passes)
+P1    FAIL the last wave's 2 ranged of 6; its spawn set (waveNodes43) 2 / 5 nodes 3.5 m or more over the floor (y 0.0; each enemy takes a random node: all must be high)
+P4    FAIL 6 / 8 standing solids >= 1.75 m do a job ((a) touched NOT READ, (b) sight 6, (c) launch kill NOT READ); no job: box(-1,0,-124.5..4,4.2,-112) line: THE GALLERY; box(-22,0,-110.5..-18,2.5,-106.5) line: THE TAIL SPOOL; no --touches: (a) / (c) not read
+P5    N/A  no line65 in the row
+P9    FAIL 0 / 1 planes with 2 climb tops >= 8 m apart: box(-13,0,-124..-5,2.5,-117) 8.0 x 7.0 m at 2.5 m: 14 climb top(s), farthest apart 6.7 m (NO)
+P11   N/A  the card names no TOWER / GALLERY / SPLIT LEVEL (no card)
+P17   PASS 4 / 4 ride walls 4 m tall and 8 m long; 0 non-ride wall(s) in that band; the strip = ride: true (ride36 faces 4)
+n67-area: FAIL p5 (2/5)
+
+## n52-spire v2
+OPEN  PASS largest open square 12.0 m (x -16.0..-4.0, z 67.0..79.0; 17 pieces on a 24.0 x 32.0 m rect; 12 m or less passes)
+P1    N/A  the last wave (heavy swarmer swarmer swarmer) has no ranged enemy (spitter / drone)
+P4    FAIL 2 / 10 standing solids >= 1.75 m do a job ((a) touched NOT READ, (b) sight 2, (c) launch kill NOT READ); no job: box(-16,0,79..-12,14,83) line: the narthex's west CHEEK; box(-8,0,79..-4,14,83) line: the narthex's east CHEEK; box(-22,0,75..-16,2.4,83) line: THE NARTHEX's west wing; box(-22,0,70..-18,2.4,75) line: the WEST AISLE's south p (+4); no --touches: (a) / (c) not read
+P5    N/A  no line65 in the row
+P9    FAIL 0 / 1 planes with 2 climb tops >= 8 m apart: box(-22,0,75..-16,2.4,83) 6.0 x 8.0 m at 2.4 m: 0 climb top(s), farthest apart 0.0 m (NO)
+P11   N/A  the card names no TOWER / GALLERY / SPLIT LEVEL (no card)
+P17   PASS 1 / 1 ride walls 4 m tall and 8 m long; 0 non-ride wall(s) in that band; the strip = ride: true (ride36 faces 1)
+n67-area: FAIL v2 (2/4)
+
+## n52-spire v5
+OPEN  PASS largest open square 8.5 m (x -16.5..-8.0, z -57.0..-48.5; 13 pieces on a 24.0 x 26.0 m rect; 12 m or less passes)
+P1    N/A  the last wave (swarmer swarmer husk husk) has no ranged enemy (spitter / drone)
+P4    FAIL 2 / 5 standing solids >= 1.75 m do a job ((a) touched NOT READ, (b) sight 2, (c) launch kill NOT READ); no job: box(-16,0,-43..-12,2.5,-39) line: the stair hall's west CH; box(-8,0,-43..-4,2.5,-39) line: the stair hall's east CH; box(-8,0,-53..-7,12,-48) line: THE NEWEL; no --touches: (a) / (c) not read
+P5    N/A  no line65 in the row
+P9    FAIL 1 / 2 planes with 2 climb tops >= 8 m apart: box(-22,0,-65..-15,5,-58) 7.0 x 7.0 m at 5.0 m: 7 climb top(s), farthest apart 2.0 m (NO); box(-8,0,-57..2,2.5,-47) 10.0 x 10.0 m at 2.5 m: 14 climb top(s), farthest apart 9.2 m
+P11   N/A  the card names no TOWER / GALLERY / SPLIT LEVEL (no card)
+P17   FAIL 1 / 2 ride walls 4 m tall and 8 m long (short: box(-8,0,-53..-7,12,-48) 12.0 x 5.0 m); 0 non-ride wall(s) in that band; the strip = ride: true (ride36 faces 1)
+n67-area: FAIL v5 (1/4)
+
+## n52-spire v6
+OPEN  PASS largest open square 9.0 m (x -17.0..-8.0, z -81.0..-72.0; 17 pieces on a 24.0 x 32.0 m rect; 12 m or less passes)
+P1    N/A  the last wave (heavy swarmer swarmer swarmer swarmer husk husk) has no ranged enemy (spitter / drone)
+P4    FAIL 1 / 3 standing solids >= 1.75 m do a job ((a) touched NOT READ, (b) sight 1, (c) launch kill NOT READ); no job: box(-23,0,-101..-13,6,-95) line: THE ORGAN LOFT; box(-14.5,0,-86.5..-13.5,16,-85.5) cover: THE WEST LANE PIER; no --touches: (a) / (c) not read
+P5    N/A  no line65 in the row
+P9    FAIL 0 / 2 planes with 2 climb tops >= 8 m apart: box(-10.5,0,-91..-2.5,2.4,-81) 8.0 x 10.0 m at 2.4 m: 7 climb top(s), farthest apart 2.0 m (NO); box(-23,0,-101..-13,6,-95) 10.0 x 6.0 m at 6.0 m: 7 climb top(s), farthest apart 2.0 m (NO)
+P11   N/A  the card names no TOWER / GALLERY / SPLIT LEVEL (no card)
+P17   FAIL 2 / 2 ride walls 4 m tall and 8 m long; 1 non-ride wall(s) in that band (box(-23,6,-101..-13,16,-100)); the strip = ride: true (ride36 faces 2)
+n67-area: FAIL v6 (1/4)
+
+## per rule over 25 rooms
+OPEN  PASS 23, FAIL 2 (g1 g6), N/A 0
+P1    PASS 0, FAIL 10 (a4 a5 g4 g5 g7 g8 kb2 kb3c p1 p5), N/A 15: NOT DISCRIMINATING (every applicable shipped room FAILs)
+P4    PASS 0, FAIL 23 (a2 a3 a5 b1 a8 g1 g2 g3 g4 g5 g7 g8 kb2 kb2c kb3 kb3c kb3d p1 p3 p5 v2 v5 v6), N/A 2: NOT DISCRIMINATING (every applicable shipped room FAILs)
+P5    PASS 0, FAIL 0 (), N/A 25: NOT DISCRIMINATING (N/A on every shipped room)
+P9    PASS 2, FAIL 8 (g4 kb2 kb3c p1 p5 v2 v5 v6), N/A 15
+P11   PASS 0, FAIL 0 (), N/A 25: NOT DISCRIMINATING (N/A on every shipped room)
+P17   PASS 17, FAIL 5 (a8 g5 kb3 v5 v6), N/A 3
+
+real	0m0.453s
+user	0m0.015s
+sys	0m0.140s
+# exit 0

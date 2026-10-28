@@ -1,0 +1,30 @@
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+MemoryCaptures/
+.vs/
+.idea/
+*.csproj
+*.sln
+*.slnx
+*.user
+sysinfo.txt
+*.apk
+*.unitypackage
+
+# NIGHT9 U3-04: the oracle copies SKYGRIND/Sync Port Data makes for the Player (PortExport/ is the tracked source)
+/Assets/StreamingAssets/PortExport/vectors/
+/Assets/StreamingAssets/PortExport/vectors.meta
+/Assets/StreamingAssets/PortExport/trajectories/
+/Assets/StreamingAssets/PortExport/trajectories.meta
+/Assets/StreamingAssets/PortExport/maps/spire.json*
+/Assets/StreamingAssets/PortExport/maps/training.json*
+/Assets/StreamingAssets/PortExport/maps/spire-duel-navgrid.json*
+# NIGHT9: the Core golden harness (Tools/CoreHarness, dotnet; its build output goes to Temp/)
+!/Tools/CoreHarness/CoreHarness.csproj
+# NIGHT14: the sim harness (Tools/SimHarness, dotnet: SurvivalSim headless; its build output goes to Temp/)
+!/Tools/SimHarness/SimHarness.csproj

@@ -1,0 +1,81 @@
+# bash Tools/night/n65-verbs.sh skip Design/levels/n52-iceline.json g7 --plant-verb65 g7:parry --seeds 10   (AFTER the fix: V65Filter refuses the gauntlet's swing / LT near a glob)
+# sha 8595cc58 + the uncommitted Tools/SimHarness/Harness.N65.Verb.cs fix; 2026-10-24 11:36:54
+n65verb skip v2: level Design/levels/n52-iceline.json, room g7, verb65 parry (planted, bot43 false), refuse parry, seeds 1..10 (--seeds 10), cap 120.0 s, bar 1.25 from the default 1.25 (no --bars / --bar), need 7 exercised
+  runs: verb-aware = Walk38Pilot + n46flow's lava rule + the ported autopilot (normal) + the verb-aware layer; refused-in = the same with the verb refused inside the layer (episodes declined, holds and approach released) and the inner pilot's verb presses dropped; walker = the plain pilot with the verb's presses dropped. Not invulnerable. A run that does not clear counts the cap.
+  seed 1 verb-aware: cleared yes in 32.0 s | deaths 0, falls 0 | globs parried 1 | STYLE above DULL 16.4 %, top COOL | walked 110.9 m, shots 0 (charged 0) | parry36 events 2 (melee parries too) | trigger held 21 steps
+  seed 1 refused-in: cleared yes in 30.3 s | deaths 0, falls 0 | globs parried 2 | STYLE above DULL 26.8 %, top COOL | walked 97.9 m, shots 0 (charged 0) | parry36 events 3 (melee parries too) | presses refused 46 (episodes declined 1, the inner pilot's presses dropped 45) | WARN the refused run used the verb 2 time(s) | WARN the refused run hardly moved or never fired
+  seed 1 walker:     cleared yes in 30.3 s | deaths 0, falls 0 | globs parried 2 | STYLE above DULL 26.8 %, top COOL | walked 97.9 m, shots 0 (charged 0) | parry36 events 3 (melee parries too) | presses refused 45 | NOTE the walker used the verb 2 time(s) past the filter
+  seed 1 => ratio 0.95 (the faster refusal: refused-in 30.3 s / verb-aware 32.0 s) | exercised
+  seed 1 touches (verb-aware, steps): box(-3.6,0,-207.1..-2.4,4,-205.9) 110; ramp(2.5,-185.25,4.5,2.5,2) 112; ramp(-7,-202.5,7.5,3,2) 25; ramp(0.5,-208.5,8,3,4) 27
+  seed 2 verb-aware: cleared yes in 29.7 s | deaths 0, falls 0 | globs parried 2 | STYLE above DULL 60.7 %, top BOLD | walked 76.8 m, shots 0 (charged 0) | parry36 events 3 (melee parries too) | trigger held 14 steps
+  seed 2 refused-in: cleared yes in 33.5 s | deaths 0, falls 0 | globs parried 1 | STYLE above DULL 3.7 %, top COOL | walked 100.4 m, shots 0 (charged 0) | parry36 events 3 (melee parries too) | presses refused 95 (episodes declined 6, the inner pilot's presses dropped 89) | WARN the refused run used the verb 1 time(s) | WARN the refused run hardly moved or never fired
+  seed 2 walker:     cleared yes in 33.5 s | deaths 0, falls 0 | globs parried 1 | STYLE above DULL 3.7 %, top COOL | walked 100.4 m, shots 0 (charged 0) | parry36 events 3 (melee parries too) | presses refused 89 | NOTE the walker used the verb 1 time(s) past the filter
+  seed 2 => ratio 1.13 (the faster refusal: refused-in 33.5 s / verb-aware 29.7 s) | exercised
+  seed 2 touches (verb-aware, steps): box(7,0,-188..12,2,-184) 116; box(-3.6,0,-207.1..-2.4,4,-205.9) 4; ramp(2.5,-185.25,4.5,2.5,2) 639; ramp(-7,-202.5,7.5,3,2) 13
+  seed 3 verb-aware: cleared yes in 27.2 s | deaths 0, falls 0 | globs parried 0 | STYLE above DULL 24.9 %, top COOL | walked 89.4 m, shots 0 (charged 0) | parry36 events 1 (melee parries too) | trigger held 14 steps
+  seed 3 refused-in: cleared yes in 27.1 s | deaths 0, falls 0 | globs parried 0 | STYLE above DULL 25.0 %, top COOL | walked 89.5 m, shots 0 (charged 0) | parry36 events 1 (melee parries too) | presses refused 51 (episodes declined 2, the inner pilot's presses dropped 49) | WARN the refused run hardly moved or never fired
+  seed 3 walker:     cleared yes in 27.1 s | deaths 0, falls 0 | globs parried 0 | STYLE above DULL 25.0 %, top COOL | walked 89.5 m, shots 0 (charged 0) | parry36 events 1 (melee parries too) | presses refused 49
+  seed 3 => ratio 1.00 (the faster refusal: refused-in 27.1 s / verb-aware 27.2 s) | NOT exercised (the verb-aware run never used the verb; not counted)
+  seed 3 touches (verb-aware, steps): box(-1.5,-0.8,-200.5..1.5,10,-197.5) 15; box(-12,0,-188..-7,2,-184) 5; box(-3.6,0,-207.1..-2.4,4,-205.9) 46; ramp(-7,-202.5,7.5,3,2) 529; ramp(0.5,-208.5,8,3,4) 36
+  seed 4 verb-aware: cleared yes in 28.8 s | deaths 0, falls 0 | globs parried 2 | STYLE above DULL 17.0 %, top BOLD | walked 76.0 m, shots 0 (charged 0) | parry36 events 4 (melee parries too) | trigger held 21 steps
+  seed 4 refused-in: cleared yes in 47.8 s | deaths 0, falls 0 | globs parried 0 | STYLE above DULL 6.3 %, top COOL | walked 172.3 m, shots 0 (charged 0) | parry36 events 1 (melee parries too) | presses refused 49 (episodes declined 7, the inner pilot's presses dropped 42) | WARN the refused run hardly moved or never fired
+  seed 4 walker:     cleared yes in 47.8 s | deaths 0, falls 0 | globs parried 0 | STYLE above DULL 6.3 %, top COOL | walked 172.3 m, shots 0 (charged 0) | parry36 events 1 (melee parries too) | presses refused 42
+  seed 4 => ratio 1.66 (the faster refusal: refused-in 47.8 s / verb-aware 28.8 s) | exercised
+  seed 4 touches (verb-aware, steps): box(4.4,0,-204.6..5.6,4,-203.4) 81; ramp(-7,-202.5,7.5,3,2) 52; ramp(0.5,-208.5,8,3,4) 864
+  seed 5 verb-aware: cleared yes in 38.8 s | deaths 0, falls 0 | globs parried 1 | STYLE above DULL 24.8 %, top BOLD | walked 157.2 m, shots 0 (charged 0) | parry36 events 2 (melee parries too) | trigger held 56 steps
+  seed 5 refused-in: cleared yes in 33.2 s | deaths 0, falls 0 | globs parried 0 | STYLE above DULL 4.4 %, top COOL | walked 92.9 m, shots 0 (charged 0) | parry36 events 1 (melee parries too) | presses refused 16 (episodes declined 4, the inner pilot's presses dropped 12) | WARN the refused run hardly moved or never fired
+  seed 5 walker:     cleared yes in 33.2 s | deaths 0, falls 0 | globs parried 0 | STYLE above DULL 4.4 %, top COOL | walked 92.9 m, shots 0 (charged 0) | parry36 events 1 (melee parries too) | presses refused 12
+  seed 5 => ratio 0.86 (the faster refusal: refused-in 33.2 s / verb-aware 38.8 s) | exercised
+  seed 5 touches (verb-aware, steps): box(-1.5,-0.8,-200.5..1.5,10,-197.5) 603; box(-12,0,-216..-4,2,-210) 51; box(-12,-0.8,-205.5..-11,5,-187.5) 8; box(-3.6,0,-207.1..-2.4,4,-205.9) 47; box(4.4,0,-204.6..5.6,4,-203.4) 14; ramp(-7,-202.5,7.5,3,2) 116; ramp(0.5,-208.5,8,3,4) 255
+  seed 6 verb-aware: cleared yes in 29.4 s | deaths 0, falls 0 | globs parried 1 | STYLE above DULL 27.4 %, top COOL | walked 77.4 m, shots 0 (charged 0) | parry36 events 2 (melee parries too) | trigger held 21 steps
+  seed 6 refused-in: cleared yes in 29.7 s | deaths 0, falls 0 | globs parried 0 | STYLE above DULL 27.1 %, top COOL | walked 87.2 m, shots 0 (charged 0) | parry36 events 1 (melee parries too) | presses refused 32 (episodes declined 3, the inner pilot's presses dropped 29) | WARN the refused run hardly moved or never fired
+  seed 6 walker:     cleared yes in 29.7 s | deaths 0, falls 0 | globs parried 0 | STYLE above DULL 27.1 %, top COOL | walked 87.2 m, shots 0 (charged 0) | parry36 events 1 (melee parries too) | presses refused 29
+  seed 6 => ratio 1.01 (the faster refusal: refused-in 29.7 s / verb-aware 29.4 s) | exercised
+  seed 6 touches (verb-aware, steps): box(-1.5,-0.8,-200.5..1.5,10,-197.5) 189; box(-3.6,0,-207.1..-2.4,4,-205.9) 93; ramp(-7,-202.5,7.5,3,2) 6
+  seed 7 verb-aware: cleared yes in 29.1 s | deaths 0, falls 0 | globs parried 1 | STYLE above DULL 25.4 %, top COOL | walked 72.9 m, shots 0 (charged 0) | parry36 events 2 (melee parries too) | trigger held 28 steps
+  seed 7 refused-in: cleared yes in 28.1 s | deaths 0, falls 0 | globs parried 1 | STYLE above DULL 38.3 %, top COOL | walked 75.7 m, shots 0 (charged 0) | parry36 events 3 (melee parries too) | presses refused 31 (episodes declined 4, the inner pilot's presses dropped 27) | WARN the refused run used the verb 1 time(s) | WARN the refused run hardly moved or never fired
+  seed 7 walker:     cleared yes in 28.1 s | deaths 0, falls 0 | globs parried 1 | STYLE above DULL 38.3 %, top COOL | walked 75.7 m, shots 0 (charged 0) | parry36 events 3 (melee parries too) | presses refused 27 | NOTE the walker used the verb 1 time(s) past the filter
+  seed 7 => ratio 0.97 (the faster refusal: refused-in 28.1 s / verb-aware 29.1 s) | exercised
+  seed 7 touches (verb-aware, steps): box(-1.5,-0.8,-200.5..1.5,10,-197.5) 62; box(3.9,0,-192.6..5.1,3.5,-191.4) 2; ramp(0.5,-208.5,8,3,4) 8
+  seed 8 verb-aware: cleared yes in 24.6 s | deaths 0, falls 0 | globs parried 2 | STYLE above DULL 39.2 %, top BOLD | walked 65.0 m, shots 0 (charged 0) | parry36 events 3 (melee parries too) | trigger held 7 steps
+  seed 8 refused-in: cleared yes in 28.7 s | deaths 0, falls 0 | globs parried 1 | STYLE above DULL 22.0 %, top COOL | walked 86.4 m, shots 0 (charged 0) | parry36 events 2 (melee parries too) | presses refused 44 (episodes declined 1, the inner pilot's presses dropped 43) | WARN the refused run used the verb 1 time(s) | WARN the refused run hardly moved or never fired
+  seed 8 walker:     cleared yes in 28.7 s | deaths 0, falls 0 | globs parried 1 | STYLE above DULL 22.0 %, top COOL | walked 86.4 m, shots 0 (charged 0) | parry36 events 2 (melee parries too) | presses refused 43 | NOTE the walker used the verb 1 time(s) past the filter
+  seed 8 => ratio 1.17 (the faster refusal: refused-in 28.7 s / verb-aware 24.6 s) | exercised
+  seed 8 touches (verb-aware, steps): box(-1.5,-0.8,-200.5..1.5,10,-197.5) 11; box(-3.6,0,-207.1..-2.4,4,-205.9) 18; box(4.4,0,-204.6..5.6,4,-203.4) 8; ramp(0.5,-208.5,8,3,4) 41
+  seed 9 verb-aware: cleared yes in 30.7 s | deaths 0, falls 0 | globs parried 1 | STYLE above DULL 8.8 %, top COOL | walked 111.5 m, shots 0 (charged 0) | parry36 events 2 (melee parries too) | trigger held 35 steps
+  seed 9 refused-in: cleared yes in 42.7 s | deaths 0, falls 0 | globs parried 0 | STYLE above DULL 2.6 %, top COOL | walked 186.6 m, shots 0 (charged 0) | parry36 events 1 (melee parries too) | presses refused 28 (episodes declined 5, the inner pilot's presses dropped 23) | WARN the refused run hardly moved or never fired
+  seed 9 walker:     cleared yes in 42.7 s | deaths 0, falls 0 | globs parried 0 | STYLE above DULL 2.6 %, top COOL | walked 186.6 m, shots 0 (charged 0) | parry36 events 1 (melee parries too) | presses refused 23
+  seed 9 => ratio 1.39 (the faster refusal: refused-in 42.7 s / verb-aware 30.7 s) | exercised
+  seed 9 touches (verb-aware, steps): box(-1.5,-0.8,-200.5..1.5,10,-197.5) 69; box(7,0,-188..12,2,-184) 20; box(8,0,-191..12,2,-188) 70; box(-3.6,0,-207.1..-2.4,4,-205.9) 53; ramp(-7,-202.5,7.5,3,2) 172; ramp(0.5,-208.5,8,3,4) 133
+  seed 10 verb-aware: cleared yes in 38.0 s | deaths 0, falls 0 | globs parried 1 | STYLE above DULL 21.1 %, top COOL | walked 139.8 m, shots 0 (charged 0) | parry36 events 3 (melee parries too) | trigger held 21 steps
+  seed 10 refused-in: cleared yes in 25.7 s | deaths 0, falls 0 | globs parried 2 | STYLE above DULL 31.3 %, top COOL | walked 69.8 m, shots 0 (charged 0) | parry36 events 4 (melee parries too) | presses refused 27 (episodes declined 1, the inner pilot's presses dropped 26) | WARN the refused run used the verb 2 time(s) | WARN the refused run hardly moved or never fired
+  seed 10 walker:     cleared yes in 25.7 s | deaths 0, falls 0 | globs parried 2 | STYLE above DULL 31.3 %, top COOL | walked 69.8 m, shots 0 (charged 0) | parry36 events 4 (melee parries too) | presses refused 26 | NOTE the walker used the verb 2 time(s) past the filter
+  seed 10 => ratio 0.67 (the faster refusal: refused-in 25.7 s / verb-aware 38.0 s) | exercised
+  seed 10 touches (verb-aware, steps): box(-1.5,-0.8,-200.5..1.5,10,-197.5) 23; box(-12,0,-216..-4,2,-210) 24; box(-3.6,0,-207.1..-2.4,4,-205.9) 27; box(4.4,0,-204.6..5.6,4,-203.4) 4; ramp(-7,-202.5,7.5,3,2) 12; ramp(0.5,-208.5,8,3,4) 15; pad(7,0,-193.5) 15
+n65verb skip: M1 FAIL | room g7, ratio 1.01 vs bar 1.25 (default: no --bars), exercised 9/10
+n65verb skip: M2 FAIL | room g7, STYLE above DULL verb-aware 26.2 % vs the faster refusal 16.0 % (+15 needed), over the 9 exercised seed(s)
+n65verb skip: totals | room g7 | median clear (all seeds; the cap for a non-clear): verb-aware 29.5 s, refused-in 30.0 s, walker 30.0 s | cleared 10 / 10 / 10 of 10 | deaths 0 / 0 / 0 | globs parried 12 / 7 / 7 | presses refused (refused-in) 419, (walker) 385 | walked (median m) 83.4 / 91.2 / 91.2 | shots (median) 0.0 / 0.0 / 0.0 | wall time 131 s
+n65verb skip touch: room g7 | box(-1.5,-0.8,-200.5..1.5,10,-197.5) | seeds 7/10 | steps 972 | cover: THE BOILER
+n65verb skip touch: room g7 | box(-12,0,-216..-4,2,-210) | seeds 2/10 | steps 75 | line: the WEST COAL GANTRY
+n65verb skip touch: room g7 | box(8.5,0,-211..12,4,-204.5) | seeds 0/10 | steps 0 | line: THE KEEPER'S TOWER
+n65verb skip touch: room g7 | box(-12,-0.8,-205.5..-11,5,-187.5) | seeds 1/10 | steps 8 | line: the WEST SLUICE WALL
+n65verb skip touch: room g7 | box(11,-0.8,-202.5..12,5,-191) | seeds 0/10 | steps 0 | line: the EAST SLUICE WALL
+n65verb skip touch: room g7 | box(-6.6,0,-191.6..-5.4,3.5,-190.4) | seeds 0/10 | steps 0 | cover: the WEST MOORING POST
+n65verb skip touch: room g7 | box(3.9,0,-192.6..5.1,3.5,-191.4) | seeds 1/10 | steps 2 | cover: the EAST MOORING POST
+n65verb skip touch: room g7 | box(-12,0,-188..-7,2,-184) | seeds 1/10 | steps 5 | line: the WEST COAL BUNKER
+n65verb skip touch: room g7 | box(7,0,-188..12,2,-184) | seeds 2/10 | steps 136 | line: the EAST COAL BUNKER
+n65verb skip touch: room g7 | box(8,0,-191..12,2,-188) | seeds 1/10 | steps 70 | line: THE COAL STAGE
+n65verb skip touch: room g7 | box(-3.6,0,-207.1..-2.4,4,-205.9) | seeds 8/10 | steps 398 | cover: the WEST SLUICE POST
+n65verb skip touch: room g7 | box(4.4,0,-204.6..5.6,4,-203.4) | seeds 4/10 | steps 107 | cover: THE STOKER'S POST
+n65verb skip touch: room g7 | box(-4.5,-0.8,-200..-3,0.6,-198) | seeds 0/10 | steps 0 | line: the WEST COAL ISLAND
+n65verb skip touch: room g7 | box(-12,2,-216..-10,4.5,-213.5) | seeds 0/10 | steps 0 | cover: the WEST GANTRY's COAL HOPPER
+n65verb skip touch: room g7 | box(10.5,4,-211..12,6,-209) | seeds 0/10 | steps 0 | cover: the KEEPER'S HUT
+n65verb skip touch: room g7 | ramp(-2.5,-186,4.5,4,2) | seeds 0/10 | steps 0 | ramp
+n65verb skip touch: room g7 | ramp(2.5,-185.25,4.5,2.5,2) | seeds 2/10 | steps 751 | ramp
+n65verb skip touch: room g7 | ramp(-7,-202.5,7.5,3,2) | seeds 8/10 | steps 925 | ramp
+n65verb skip touch: room g7 | ramp(0.5,-208.5,8,3,4) | seeds 8/10 | steps 1379 | ramp
+n65verb skip touch: room g7 | pad(7,0,-193.5) | seeds 1/10 | steps 15 | pad
+n65verb skip touch: room g7 | pad(7,0,-205.2) | seeds 0/10 | steps 0 | pad
+n65verb: exit 1
+n65-verbs skip on Design/levels/n52-iceline.json (g7): GREEN 0, RED 1, UNSURE 0 (skip v2: GREEN = M1 PASS, RED = M1 FAIL or a refusal)
+# exit 0 at 11:39:18

@@ -1,0 +1,31 @@
+# command: node Tools/night/n65-air.cjs C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/ice-g8r2/iceline.plan.json g8
+# sha: 5a2b04ff9; time: 2026-10-28 01:08:37
+n65-air n67-iceline g8 "2.8 THE STAMPEDE" (C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/ice-g8r2/iceline.plan.json):
+  numbers: jump v0 8.33 m/s, g 23.15 m/s2 (fall x1.35), double v0 7.50, dash 24 m/s x 0.25 s = 6.0 m, dash-jump v0 6.67 with g x0.5 for 0.5 s at 24 m/s, run-up 8 m/s, wall jump out 5 up 8.33 (wallfling42 on), ride 9.20 m/s, jump-off out 8 +1 up 7.30 (ride39 on), capsule 0.35 m; a ride held 2.5 m over its base
+  air pieces 7:
+    R1   ride  face x = -9.4 (+x), -246.0..-223.0 (23.0 m), band 0.0..12.0, held at 2.5 | line: the WEST LANE WALL (ride, cyan, 23 m; EX
+    R2   ride  face x = 10.4 (-x), -246.0..-223.0 (23.0 m), band 0.0..12.0, held at 2.5 | line: the EAST LANE WALL (ride, cyan, 23 m x 5
+    D3   deck  top 2.5 m over [-10.0, -250.0, -5.0, -244.0] | line: THE GALLERY (2.5 m: the west lane wall's landing, the spitters' west stand): NIGHT74 S g8 r1 (Research/2026-10-27-wav
+    D4   deck  top 5.0 m over [5.5, -250.0, 11.0, -243.0] | line: THE SIGNAL BOX (5 m: the east lane wall's landing, the third tier, the spitters' east stand): NIGHT74 S g8 r2 (Research/2026-10-27-wav
+    L5   ledge top 1.2 m over [-9.0, -241.0, -7.5, -239.5] | cover: THE WEST RAIL (1.2 m low cover on the west wall's lane: hop it, shelter behind it): NIGHT74 S g8 r1 (Research/2026-10-27-wav
+    P6   pad   at (3.0, 0.0, -245.0) -> (7.5, 5.0, -247.0) (on the floor) | line: THE CROSS HOIST (the far floor onto the signal box: the hoist bay's way up)
+    P7   pad   at (-7.0, 0.0, -243.0) -> (-7.5, 2.5, -247.0) (on the floor) | line: THE GALLERY HOIST (the west lane onto the gallery)
+  hand-offs 13 (piece -> piece without touching the floor, the easiest move first):
+    R1 -> D3  jump-off, margin 4.63 m (gap 0.4 m); also jump-off + double 8.45, wall jump 2.94, wall jump + double 5.11, dash 10.32
+    R1 -> L5  jump-off, margin 5.31 m (gap 0.8 m); also jump-off + double 8.84, wall jump 3.12, wall jump + double 5.17, dash 10.92
+    R2 -> D4  wall jump + double, margin 3.48 m (gap 0.4 m)
+    D3 -> D4  dash-jump + double, margin 14.15 m (gap 10.9 m)
+    D3 -> L5  jump, margin 2.85 m (gap 3.4 m); also jump + double 6.12, dash 8.32, dash-jump 20.25, dash-jump + double 29.85
+    D4 -> R1  dash-jump, margin 4.91 m of height (gap 14.6 m); also dash-jump + double 4.39
+    D4 -> D3  dash, margin 1.55 m (gap 10.9 m); also dash-jump 14.55, dash-jump + double 23.95
+    D4 -> L5  dash-jump, margin 13.70 m (gap 13.5 m); also dash-jump + double 22.90
+    L5 -> R1  jump, margin 0.83 m of height (gap 0.1 m); also jump + double 0.83, dash 0.70, dash-jump 0.81, dash-jump + double 0.81
+    L5 -> R2  dash-jump, margin 1.96 m of height (gap 17.5 m); also dash-jump + double 3.56
+    L5 -> D3  jump, margin 0.32 m (gap 3.4 m); also jump + double 4.45, dash-jump 14.05, dash-jump + double 25.25
+    P6 -> D4  pad (gap 4.9 m)
+    P7 -> D3  pad (gap 4.0 m)
+  longest floor-free chain: 6 piece(s): P6 -> D4 -> R1 -> D3 -> L5 -> R2 (opened by a floor pad)
+  note: a dash-jump keeps the dash's 24 m/s for its whole flight (Mover.cs:1080; air accel never slows a body: MovementMath.Accelerate), so its reach is long; no obstacle, line-of-sight or air-control test
+  flight pieces (rides + pads) on one floor-free path: 3 of 4: P6 -> D4 -> R1 -> D3 -> L5 -> R2; without the dash-jump: 2: R2 -> D4 -> D3 -> L5 -> R1
+  without the dash-jump: hand-offs 9, longest chain 5: R2 -> D4 -> D3 -> L5 -> R1, dead ends 0/5
+n65-air g8: air pieces 7 (rides 2, decks 2, ledges 1, pads 2), hand-offs 13, longest floor-free chain 6, dead ends 0/5 | without the dash-jump: hand-offs 9, chain 5, dead ends 0/5 | flights handed on: 3 of 4 on one path (2 without the dash-jump)

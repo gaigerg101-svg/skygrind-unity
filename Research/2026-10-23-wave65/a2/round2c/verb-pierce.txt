@@ -1,0 +1,12 @@
+# command: bash Tools/night/n65-verbs.sh pierce Design/levels/n65-foundry.json a2   (T's n65verb, port/stage3's Harness.N65.Verb.cs and n65-verbs.sh checked out unstaged into this tree for the run)
+# sha: 8e1a26d7 (room files); level assembled by gen-n65-foundry.cjs --slots=latest --run; time: 2026-10-23 ~2:00 night clock
+n65verb pierce: level n65-foundry (Design/levels/n65-foundry.json), room a2 "1.2 KESTREL", seed 1; pose (-3.8, 2.2, -42.3) yaw -39.1 from line65[0]; off switch none
+  aim line65's first segment: yaw -39.1 deg, pitch 0.0 deg at the release; held 110 steps (0.9 s), charge35Full 1, charged shots 1; bodies in the room before 3 (stand-ins 3)
+n65verb pierce: GREEN | room a2 | the charged shot hit 3 bodies, kills 3, stand-ins killed 3/3 | aim line65's first segment | pose line65[0]
+n65-verbs pierce on Design/levels/n65-foundry.json (a2): GREEN 1, RED 0
+
+# control 1: dotnet run --project Tools/SimHarness -c Release --no-build -- n65verb pierce --level Design/levels/n65-foundry.json --room a2 --pose 0,0,-36,0   (the door)
+n65verb pierce: RED | room a2 | the charged shot hit 1 bodies, kills 1, stand-ins killed 1/3 | aim the nearest body, tracked (husk, a stand-in #1 at (3.5, 2.6, -51.2)) | pose --pose | one body or none: no pierce
+
+# control 2: ... n65verb pierce --level Design/levels/n65-foundry.json --room a2 --pose 2,0,-41.5,0   (the floor near round 1's mark)
+n65verb pierce: RED | room a2 | the charged shot hit 1 bodies, kills 1, stand-ins killed 1/3 | aim the nearest body, tracked (husk, a stand-in #1 at (3.5, 2.6, -51.2)) | pose --pose | one body or none: no pierce

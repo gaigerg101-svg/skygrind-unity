@@ -1,0 +1,56 @@
+diff --git a/Tools/night/gen-n57-kiln.cjs b/Tools/night/gen-n57-kiln.cjs
+index 2c18e027..09f212c4 100644
+--- a/Tools/night/gen-n57-kiln.cjs
++++ b/Tools/night/gen-n57-kiln.cjs
+@@ -344,8 +344,8 @@ function slotB() {
+     id: Z, name: "3.2c THE CLINKER BRIDGES", kind: "room", rect: [-9, -193.5, 9, -163.5], height: 12, roof: true, par: 60, job36: "teach",
+     card57: "THE CLINKER BRIDGES",
+     verb36: "the BURROWER: stay off its ash on the iron (the bridges, the plates) or hit it as it surfaces; the boost / the ash vent onto the far bridge; the cooling wall's ride down the east lane onto it",
+-    spawn: { at: [-7.5, 0, -169], yawDeg: 0 },
+-    spawn_why: "NIGHT57 L (card kb2c, Molecule: the apron): 5.5 m in and 7.5 m off the door's axis, south of the iron apron: a back-step ends on the apron by the entry wall, 5.5 m from the door (T-119)",
++    spawn: { at: [-2, 0, -168], yawDeg: 45 },
++    spawn_why: "NIGHT57 L (card kb2c, Molecule: the apron): 4.5 m in from the door (NIGHT57: 5.5 m, T-119), 2 m west of its axis (was 7.5 m, south of the iron apron): the walk from the link kb2b's exit (0, -157.5) to this spawn ran into the entry wall west of the door (n46flow put the bot at the next room 8 times of 29 in kb2b, at (-6.6, -159.2) and the like); now the line goes through the door and clears the west liner by 0.8 m. NIGHT58 EXT: out of n46flow's 4 m door circle (NIGHT58 L0's (-1, -166) sat 2.5 m from the door); facing 45 deg south-west, toward THE NEAR BRIDGE (the burrow-safe stand), so wave 1's middle-channel nodes (9-11 m) sit outside the first view cone (spawn31: in the cone only from 12 m)",
+     exit: [0, 0, -191.5],
+     arena36: true,
+     waves: [["burrower", "swarmer", "swarmer", "swarmer", "swarmer"], ["husk", "husk", "husk", "husk", "swarmer", "swarmer"], ["burrower", "husk", "husk", "husk"]],
+@@ -361,7 +361,7 @@ function slotB() {
+   r.waveNodes43 = [w1, w1.concat(far, high), w1.concat(far)];
+   r.waveNodes43_why = "NIGHT57 L (card kb2c): wave 1 (the burrower and the swarmers) only on the ash: a burrower hunts on its spawn's height; wave 2 (the stokers) also on the far bridge; wave 3 on the ash";
+   r.proofs = [
+-    { kind: "walk", points: [[-7.5, 0, -169], [-1.5, 0, -170.5], [-0.5, 0, -177], [-8, 0, -178], [-8, 0, -186], [0, 0, -192], [7, 0, -192], [7, 0, -186]] },
++    { kind: "walk", points: [[-2, 0, -168], [-1.5, 0, -170.5], [-0.5, 0, -177], [-8, 0, -178], [-8, 0, -186], [0, 0, -192], [7, 0, -192], [7, 0, -186]] },
+     { kind: "walk", points: [[-3.5, 0, -178], [-3.5, 1.5, -174], [-7, 1.5, -173]] },
+     { kind: "walk", points: [[-8, 0, -183], [1, 4.5, -183], [6, 4.5, -183]] },
+     { kind: "walk", points: [[6.5, 0, -165.5], [6.5, 0, -174]] },
+@@ -372,14 +372,15 @@ function slotB() {
+   const plate = (min, max, where, why) => P.box("deck", min, max, "spatial law: iron on the ash (burrow-safe)", `${where} (0.4 m): burrow-safe ground (the burrower cannot surface through iron): ${why}`, { burrowSafe43: true });
+   const boxes = [
+     P.box("wall", [8.4, 0, -181.5], [9, 12, -164.5], "verb it celebrates: the cooling wall's ride off the ash", "THE COOLING WALL (ride, cyan, 17 m on the east wall, to the roof): ride the east lane off the burrower's ash and off its end onto the far bridge (the walk round is the far ramp's long way, by the west passage)", { ride: true, ride36: { face: "W", planeX: 8.4, lz: [1, 18] } }),
+-    P.box("deck", [1, 0, -184.5], [9, 4.5, -181.5], "spatial law: THE FAR BRIDGE (the crane's run, the high tier)", "THE FAR BRIDGE (4.5 m, 8 x 3 m from the east wall across the bay: the crane's run): the burrow-safe high ground; the ride's landing, the ash vent's goal; the stokers come up its ramp from the west passage (no safe ledge)"),
++    P.box("deck", [1, 2.5, -184.5], [7, 4.5, -181.5], "spatial law: THE FAR BRIDGE (the crane's run, the high tier)", "THE FAR BRIDGE (4.5 m, 8 x 3 m from the east wall across the bay: the crane's run; NIGHT58 L0: x 1..7 a 2 m span, its underside 2.5 m up, the bay walks under it to the exit; x 7..9 THE LANDING PIER, solid, the ride's landing): the burrow-safe high ground; the ride's landing, the ash vent's goal; the stokers come up its ramp from the west passage (no safe ledge). NIGHT58 L0 why: n46flow put the bot at the next room 12 times of 29 here, pinned at (6.4, 0, -181.2) (the cooling wall's end and the bridge's north face): the bridge on the floor and the far ramp walled the room off from x -7 to the east wall; a 2 m east arch alone left 9 of 20"),
++    P.box("deck", [7, 0, -184.5], [9, 4.5, -181.5], "spatial law: THE FAR BRIDGE's landing pier (the ride's end)", "THE LANDING PIER (NIGHT58 L0: the far bridge's east 2 m, solid to the floor, 4.5 m): the cooling wall's ride lands on it (the ride stays a shortcut: I2), the bridge's span west of it walks under"),
+     P.box("deck", [-9, 0, -174.5], [-2, 1.5, -171.5], "spatial law: THE NEAR BRIDGE (the mid tier)", "THE NEAR BRIDGE (1.5 m, 7 x 3 m from the west wall over the ash): the burrow-safe stand one jump off the ash; the swarmers come up its ramp from the middle channel (no safe ledge)"),
+     P.box("hull", [3, 0, -168.5], [5, 12, -165.15], "hero prop: THE CRANE MAST (the foothold)", "THE CRANE MAST (2 x 3.35 m, floor to roof, 1.65-5 m in, east of the door, 0.65 m off the east liner: no way round its north side; round 2: on the door's axis the walk pilot circled it in the doorway, dwell 0.20 -> 1.40 s): the clinker crane's mast: the entry's foothold of cover (R5); step out past it onto the ash"),
+     plate([-9, 0, -167], [-6.5, 0.4, -164.5], "THE IRON APRON", "by the door: the restart's back-step lands on iron, the burrower's tell never blooms there"),
+     plate([5.5, 0, -178], [8, 0.4, -175.5], "AN IRON PLATE (the east lane)", "the hop off the ash under the cooling wall, before the ride"),
+     plate([-6, 0, -181], [-3, 0.4, -178.5], "AN IRON PLATE (the middle bay, west)", "the island in the middle bay: hop to it when the ash glows under you"),
+     plate([2, 0, -191], [5, 0.4, -188.5], "AN IRON PLATE (the far bay)", "the island by the exit: the last hop off the ash"),
+-    P.box("deck", [1.5, 0, -187], [4.5, 0.9, -184.5], "molecule: the small boost (T-5)", "THE SLAG STEP (0.9 m against the far bridge's south face): the small boost (jump, look down, fire) onto the far bridge; a step off the ash"),
++    P.box("deck", [4, 0, -187], [7, 0.9, -184.5], "molecule: the small boost (T-5)", "THE SLAG STEP (0.9 m against the far bridge's south face; NIGHT58 L0: 2.5 m east, so the walk out from under the arch is clear between it and the far ramp's top (round 2: the bot pinned at (2.2, 0, -184.2) between them, 5 of 20)): the small boost (jump, look down, fire) onto the far bridge; a step off the ash"),
+     P.box("hull", [-6, 0, -164.5], [-2, 12, -163.5], "molecule: the entrance gated (the door's west liner)", "the DOOR's west LINER (1 m thick, noride): no ride across the doorway: the fight goes into the room", { noride: true }),
+     P.box("hull", [2, 0, -164.5], [6, 12, -163.5], "molecule: the entrance gated (the door's east liner)", "the DOOR's east LINER (1 m thick, noride): as the west's: the room's ride is the cooling wall", { noride: true }),
+   ];
+@@ -455,10 +456,11 @@ function slotC() {
+     press([-5.5, 0, -207.5], [-4, 14, -205.5], "THIRD (west)"),
+     press([-5.5, 0, -215.5], [-4, 14, -213.5], "FOURTH (west)"),
+     P.box("wall", [9.4, 0, -217.5], [10, 14, -200.5], "verb it celebrates: the forge wall's ride over the charge", "THE FORGE WALL (ride, cyan, 17 m on the east wall, to the roof): ride the east aisle over the charger's next charge and off its end onto the far gallery (the walk round is the gallery ramp's long way, by the west of the far end)", { ride: true, ride36: { face: "W", planeX: 9.4, lz: [3, 20] } }),
+-    P.box("deck", [3, 0, -225.5], [10, 4.5, -218.5], "30 s problem: THE FAR GALLERY (the spitters' roost, the high tier)", "THE FAR GALLERY (4.5 m, 7 x 7 m across the far end's east side): the sprayers' roost lobbing down the nave; the forge wall's ride lands on it, the boost or the step reaches its lip; the walkers take its long ramp (no safe ledge)"),
++    P.box("deck", [5, 0, -225.5], [10, 4.5, -218.5], "30 s problem: THE FAR GALLERY (the spitters' roost, the high tier)", "THE FAR GALLERY (4.5 m, 7 x 7 m across the far end's east side): the sprayers' roost lobbing down the nave; the forge wall's ride lands on it, the boost or the step reaches its lip; the walkers take its long ramp (no safe ledge)"),
++    P.box("deck", [3, 2.5, -225.5], [5, 4.5, -218.5], "spatial law: THE FAR GALLERY's west span (the exit lane under it)", "THE GALLERY ARCH (NIGHT58 L0: the gallery's west 2 m on a 2 m span, its underside 2.5 m up, where the gallery ramp lands): the ramp still reaches the gallery at 4.5 m; the nave walks under it to the door's corridor (n46flow: the bot was put at the next room 6 times of 29 pinned on the ramp's north face at (0.6, -219.2) / (2.7, -217.6): the ramp and the gallery walled the door off from x -5 to the east wall)"),
+     P.box("hull", [8.5, 4.5, -224.5], [10, 14, -221.5], "every-solid: the gallery's hood (cover on the high tier)", "THE GALLERY HOOD (on the gallery's back corner, to the roof): the spitters' cover you come round after the ride"),
+     P.box("deck", [-10, 0, -214.5], [-7, 2.5, -205.5], "spatial law: THE PRESS GANTRY (the mid tier along the west wall)", "THE PRESS GANTRY (2.5 m, 3 x 9 m on the west wall, from 8 m in): the press operators' walk over the west aisle: a stand out of the charger's line (it cannot climb), the walkers come up its ramp (no safe ledge)"),
+-    P.box("deck", [3, 0, -218.5], [5.5, 0.9, -216.5], "molecule: the small boost (T-5)", "THE INGOT STACK (0.9 m at the far gallery's north face): the small boost (jump, look down, fire) onto the gallery's lip"),
++    P.box("deck", [5.5, 0, -218.5], [8, 0.9, -216.5], "molecule: the small boost (T-5)", "THE INGOT STACK (0.9 m at the far gallery's north face; NIGHT58 L0: 2.5 m east, off the gallery arch's mouth): the small boost (jump, look down, fire) onto the gallery's lip"),
+     P.box("hull", [-10, 0, -198.5], [-2, 14, -197.5], "molecule: the entrance gated (the door's west liner)", "the DOOR's west LINER (1 m thick, the entry wall's whole west half, noride; round 4: the walk pilot rode the bare entry wall into the doorway): no ride across the doorway: the fight goes into the hall", { noride: true }),
+     P.box("hull", [2, 0, -198.5], [10, 14, -197.5], "molecule: the entrance gated (the door's east liner)", "the DOOR's east LINER (1 m thick, the entry wall's whole east half, noride): as the west's: the hall's ride is the forge wall", { noride: true }),
+   ];

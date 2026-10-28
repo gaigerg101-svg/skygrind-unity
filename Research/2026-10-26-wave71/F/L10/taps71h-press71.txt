@@ -1,0 +1,26 @@
+# command: dotnet run --project Tools/SimHarness -c Release -- taps71h --level n52-foundry --reps 3 (press71 off), then the same with --press71 (warnings filtered)
+# sha (F's tree) 2f66a3b07 + the L10 working files (Press71.cs, ReaderInput.cs, Harness.N71.Taps.cs, SimHarness.csproj); 2026-10-26 13:06:52 USMST
+## press71 off
+taps71h on n52-foundry: campaign n52-foundry room 0, in hand revolver, p39 on, simHz 120
+  rel 1: the freeze-starting shot fired yes (its step's pressed bit False); the tap after it fired yes (1 shots; p39 press taps +1, release taps +0)
+  rel 2: the freeze-starting shot fired yes (its step's pressed bit False); the tap after it fired yes (1 shots; p39 press taps +1, release taps +0)
+  rel 3: the freeze-starting shot fired yes (its step's pressed bit False); the tap after it fired yes (1 shots; p39 press taps +1, release taps +0)
+  prs 1: the freeze-starting shot fired yes (its step's pressed bit True); the tap after it fired NO (0 shots; p39 press taps +0, release taps +0)
+  prs 2: the freeze-starting shot fired yes (its step's pressed bit True); the tap after it fired NO (0 shots; p39 press taps +0, release taps +0)
+  prs 3: the freeze-starting shot fired yes (its step's pressed bit True); the tap after it fired NO (0 shots; p39 press taps +0, release taps +0)
+  prs-gap 1: the freeze-starting shot fired yes (its step's pressed bit True); the tap after it fired yes (1 shots; p39 press taps +1, release taps +0)
+  prs-gap 2: the freeze-starting shot fired yes (its step's pressed bit True); the tap after it fired yes (1 shots; p39 press taps +1, release taps +0)
+  prs-gap 3: the freeze-starting shot fired yes (its step's pressed bit True); the tap after it fired yes (1 shots; p39 press taps +1, release taps +0)
+taps71h: RED taps inside freezes 6, fired 3 (rel and prs; prs-gap is the no-freeze control)
+## press71 on (--press71: each step's fire press through Game/Press71.cs)
+taps71h on n52-foundry: campaign n52-foundry room 0, in hand revolver, p39 on, simHz 120
+  rel 1: the freeze-starting shot fired yes (its step's pressed bit False); the tap after it fired yes (1 shots; p39 press taps +1, release taps +0)
+  rel 2: the freeze-starting shot fired yes (its step's pressed bit False); the tap after it fired yes (1 shots; p39 press taps +1, release taps +0)
+  rel 3: the freeze-starting shot fired yes (its step's pressed bit False); the tap after it fired yes (1 shots; p39 press taps +1, release taps +0)
+  prs 1: the freeze-starting shot fired yes (its step's pressed bit True); the tap after it fired yes (1 shots; p39 press taps +1, release taps +0)
+  prs 2: the freeze-starting shot fired yes (its step's pressed bit True); the tap after it fired yes (1 shots; p39 press taps +1, release taps +0)
+  prs 3: the freeze-starting shot fired yes (its step's pressed bit True); the tap after it fired yes (1 shots; p39 press taps +1, release taps +0)
+  prs-gap 1: the freeze-starting shot fired yes (its step's pressed bit True); the tap after it fired yes (1 shots; p39 press taps +1, release taps +0)
+  prs-gap 2: the freeze-starting shot fired yes (its step's pressed bit True); the tap after it fired yes (1 shots; p39 press taps +1, release taps +0)
+  prs-gap 3: the freeze-starting shot fired yes (its step's pressed bit True); the tap after it fired yes (1 shots; p39 press taps +1, release taps +0)
+taps71h: GREEN taps inside freezes 6, fired 6 (rel and prs; prs-gap is the no-freeze control); press71 on: presses delivered one step late 3

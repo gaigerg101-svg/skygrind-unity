@@ -1,0 +1,14 @@
+# Y2 probe RED: the t0 launch probe (n69-T at 27e0bfc4: Harness.N65.Verb.cs's launch code is t0's) and t0's reader n65-verbs.sh, on NIGHT68 r2's level (main tree, read only); 2026-10-25 10:10:56
+# cmd: N65_VERBS_TIMEOUT=300 bash Tools/night/n65-verbs.sh launch C:/Users/gaige/dev/SKYGRIND-unity/Logs/n68/r2-kiln/n67-kiln.json kb3
+  put-in loadout (kb3, BEFORE entering it: the room's own award, if any, comes on entry): awards of the rooms before it given: revolver (kb2b's award); owned shotgun revolver
+  entry loadout (pilot, kb3, on entering): owned shotgun revolver gauntlet, in hand shotgun, pending gauntlet (pending: goes in hand on the next step with no weapon input)
+n65verb launch: level n67-kiln (C:/Users/gaige/dev/SKYGRIND-unity/Logs/n68/r2-kiln/n67-kiln.json), room kb3 "3.3 THE PRESS HALL", seed 1; pose (-5.0, 0.0, -203.0) yaw -48.8 from line65[0]; off switch none
+  the hand: the gauntlet in hand drops the punch, so the pilot switched to revolver (in hand revolver), as a player does to punch
+  target chosen: husk #1 hp 40.0 > the launch bound 30.0 (max(punch.damage 10.0 x momentum.meleeMax 3.0 = 30.0, the largest non-parry punch in this run 0.0)) (the nearest husk-shaped body the punch leaves alive, so launch36 can throw it), 11.1 m off
+  punch: no punch landed on the target | target husk hp 40.0 | the punch not a parry | held 0 steps while it would be a parry, dashes re-made 0
+  target husk #1 at (-0.8, 0.0, -208.7) (from (-5.0, 0.0, -203.0)), dash at step 87, punch at step 102 in state Dash (grace 18), 1.8 m off (reach 2.0), launch36 wants it yes, its hp 40.0 vs the punch's 10.0, in hand revolver
+n65verb launch: RED | room kb3 | launch36 0, flight end  thrown 0.0 m (max 5.2 m), bursts 0 (hits 0, kills 0) | landed (4.2, -1.5, -207.2), in a pit YES, in lava no, target alive | pose line65[0] | the punch launched nothing far
+n65verb: exit 1
+n65-verbs launch M3: kb3 PASS (the slate's launch test: 'in a pit yes' or 'in lava yes' on the launched body; the pilot said: in a pit YES, in lava no)
+n65-verbs launch on C:/Users/gaige/dev/SKYGRIND-unity/Logs/n68/r2-kiln/n67-kiln.json (kb3): GREEN 0, RED 1, UNSURE 0 (launch: GREEN = the pilot's GREEN AND the slate's M3, in a pit or in lava yes)
+# exit 0

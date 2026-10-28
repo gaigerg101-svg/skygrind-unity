@@ -1,0 +1,824 @@
+{
+ "_why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/g5/card.md, THE CRANE YARD, ride; rebuilt from the blank rect): the blast's cooldown room: THE ICE STACK splits the first pack; THE WEST WALL rides onto THE POUR SHELF (2.5 m, where the second pack pours off), THE EAST WALL onto THE CRANE RUNWAY (4.5 m, the drones' height); the shipped far west post and crane hook kept; three hoists; the lesson kept. NIGHT67 T1a (Tools/night/gen-slots.cjs --level iceline --export): n52-iceline's room g5 (2.5 THE COOLDOWN) exactly as Design/levels/n52/iceline.plan.json has it: the row (every key), its zone-keyed pieces (boxes, ramps, pads, grapple, pits, tunnels), its room-keyed pieces (lights, props, surfaces). The slot's starting point: rebuild it here (every new piece with a job and a why), give the row bot43: false, verb65 (the slate's verb) and line65 (the verb's line, 3+ waypoints); never an area67 block (refused). A key the row drops needs a reason in drop{}. The room's opening: top-level \"opening\": \"vista\" | \"ambushed\" | \"ambusher\" | \"held\" (and \"opening_why\"); left out, the room keeps n52-iceline's.",
+ "room": "g5",
+ "row": {
+  "id": "g5",
+  "name": "2.5 THE CRANE YARD",
+  "kind": "room",
+  "rect": [
+   -11,
+   -158,
+   10,
+   -128
+  ],
+  "height": 12,
+  "roof": true,
+  "par": 30,
+  "job36": "twist",
+  "verb36": "the blast's 15 s cooldown: punch the first pack, save the blast for the second as it pours off the shelf; ride the west wall onto the shelf or the east wall onto the crane runway; the hoists up when the warden's drones come",
+  "spawn": {
+   "at": [
+    0,
+    0,
+    -130
+   ],
+   "yawDeg": 0
+  },
+  "exit": [
+   0,
+   0,
+   -156
+  ],
+  "arena36": true,
+  "waves": [
+   [
+    "swarmer",
+    "swarmer",
+    "swarmer",
+    "swarmer",
+    "swarmer"
+   ],
+   [
+    "swarmer",
+    "swarmer",
+    "swarmer",
+    "swarmer",
+    "swarmer",
+    "swarmer",
+    "charger"
+   ],
+   [
+    "warden",
+    "drone",
+    "drone"
+   ]
+  ],
+  "lessons": [
+   {
+    "promptPad": "SAVE {altFire} FOR THE SECOND PACK",
+    "kind": "husksDead",
+    "n": 5,
+    "prompt": "SAVE {altFire} FOR THE SECOND PACK"
+   }
+  ],
+  "lessons31": [
+   {
+    "promptPad": "SAVE {altFire} FOR THE SECOND PACK",
+    "kind": "husksDead",
+    "n": 5,
+    "prompt": "SAVE {altFire} FOR THE SECOND PACK"
+   }
+  ],
+  "proofs": [
+   {
+    "kind": "walk",
+    "points": [
+     [
+      0,
+      0,
+      -130
+     ],
+     [
+      0,
+      0,
+      -138
+     ],
+     [
+      -3,
+      0,
+      -144
+     ],
+     [
+      -2,
+      0,
+      -150
+     ],
+     [
+      0,
+      0,
+      -156
+     ]
+    ]
+   },
+   {
+    "kind": "walk",
+    "points": [
+     [
+      -6,
+      0,
+      -140
+     ],
+     [
+      -6,
+      2.5,
+      -147
+     ],
+     [
+      -8,
+      2.5,
+      -152
+     ]
+    ]
+   },
+   {
+    "kind": "walk",
+    "points": [
+     [
+      8,
+      0,
+      -156
+     ],
+     [
+      8,
+      4.5,
+      -147
+     ],
+     [
+      7,
+      4.5,
+      -142
+     ]
+    ]
+   },
+   {
+    "kind": "walk",
+    "points": [
+     [
+      -9,
+      0,
+      -131
+     ],
+     [
+      -9,
+      0,
+      -139
+     ]
+    ]
+   }
+  ],
+  "frames36": {
+   "mid": [
+    0,
+    0,
+    -134,
+    0,
+    0.05
+   ],
+   "exit": [
+    8,
+    4.5,
+    -142,
+    200,
+    -0.2
+   ]
+  },
+  "nodes": [
+   [
+    -3,
+    0,
+    -149
+   ],
+   [
+    4.5,
+    0,
+    -150.5
+   ],
+   [
+    0,
+    0,
+    -150
+   ],
+   [
+    -2,
+    0,
+    -153
+   ],
+   [
+    2,
+    0,
+    -153
+   ]
+  ],
+  "highNodes": [
+   [
+    -8,
+    2.5,
+    -152
+   ],
+   [
+    -8,
+    2.5,
+    -156
+   ],
+   [
+    8,
+    4.5,
+    -141
+   ],
+   [
+    7.5,
+    4.5,
+    -144.5
+   ]
+  ],
+  "iceline43_why": "NIGHT43 E1 round 2 (R-3; one new role per room, no role before its own room): a third wave, a WARDEN with two DRONES, moved from g7 THE MIX: after the two packs, the shield with flyers over it while the blast cools (punch the shield or flank it, punch the orbs back). Both roles were taught before (g2 the shield, g4 the flyer); the room's roles: fodder, shield, flyer (3).",
+  "iceline47_why": "NIGHT47 B G25: wave 2 is the six swarmers + 1 charger (its two husks out: LevelValidate's budget is 2 kinds a wave): with charger47 a charge through the swarm bursts it (the charger as your tool while the blast cools)",
+  "nodes_why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/g5/card.md, THE CRANE YARD, ride; rebuilt from the blank rect): the far floor round the posts; the high nodes on the shelf and the runway (the second pack pours off the shelf, the drones over the runway)",
+  "highNodes_why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/g5/card.md, THE CRANE YARD, ride; rebuilt from the blank rect): the far floor round the posts; the high nodes on the shelf and the runway (the second pack pours off the shelf, the drones over the runway)",
+  "frames52": {
+   "_why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/g5/card.md, THE CRANE YARD, ride; rebuilt from the blank rect): the room frames: the door just crossed (the ice stack, both ride walls), the fight from the shelf, the runway's top",
+   "entry": [
+    0,
+    0,
+    -129,
+    0,
+    0.04
+   ],
+   "mid": [
+    -8,
+    2.5,
+    -150,
+    -30,
+    -0.05
+   ],
+   "high": [
+    8,
+    4.5,
+    -142,
+    200,
+    -0.2
+   ]
+  },
+  "loop52_why": "NIGHT52 the room loop, cycle 2 (Tools/night/n52-loop-g5.cjs; THE ROOM CONTRACT): n47's THE COOLDOWN rebuilt as THE ICEHOUSE: 22 x 30 x 12 m; 17 pieces; three tiers (floor, 2 m shelf, 4.5 m crane deck), each on a walkers' ramp; two 18 m ride walls; the ice hoist and the shelf hoist (pads); a ring round the ice stack; the waves and the lesson kept. Fix 1 (n52-loop-fix1.cjs, the persona reviews): 21 x 30 m; the door-side posts cut, the inner ice walls 4 m, the crane hoist turned round, the west hoist added, the frost lamp. NIGHT52 fix K1 (n52-loop-fix-k1.cjs, the QA sweep): the far posts flush to the decks (no slot). NIGHT55 (n55-r-g5.cjs, builder R; O-15): the mirror broken: the west is the pour (the shelf and the west ride kept, its ramp moved to the pour chute facing the ring), the east the crane: the crane deck moved out of the SE corner onto a 3.5 x 10 m runway along the east wall over the ring, the east ride wall 9.5 m into it (the ride the shortcut onto the drones' perch), its ramp from the far corner, the crane hook at the ramp's foot (the far east post moved), the cab and the crane hoist on the runway, the ice hoist re-aimed.",
+  "waveNodes43": [
+   [
+    [
+     -9.5,
+     0,
+     -137.5
+    ],
+    [
+     -9.5,
+     0,
+     -135.5
+    ],
+    [
+     6.5,
+     0,
+     -133.5
+    ],
+    [
+     6.5,
+     0,
+     -132.5
+    ]
+   ]
+  ],
+  "waveNodes43_why": "NIGHT71 R (the lead's IN VIEW return; Research/2026-10-26-wave71/R/g5/card.md): the first pack in the two side lanes (r7), hidden from the corridor by the door wall, 8-15 m from the door (ambushed fallback), off the spawn's view cone (spawn31). NIGHT71 R r1 (Research/2026-10-26-wave71/R/g5/card.md, THE CRANE YARD, ride; rebuilt from the blank rect): the first pack 14-20 m from the spawn either side of the ice stack (spawn31)",
+  "bot43": false,
+  "verb65": "ride",
+  "line65": [
+   [
+    -9.8,
+    0,
+    -132
+   ],
+   [
+    -9.8,
+    2,
+    -137
+   ],
+   [
+    -9.8,
+    2,
+    -143
+   ],
+   [
+    -9,
+    2.5,
+    -147.5
+   ]
+  ],
+  "line65_why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/g5/card.md, THE CRANE YARD, ride; rebuilt from the blank rect): THE WEST WALL's ride: along its east face 0.6 m out from the door wall's corner to its end over the pour shelf",
+  "card65": "Research/2026-10-26-wave71/R/g5/card.md"
+ },
+ "boxes": [
+  {
+   "zone": "g5",
+   "kind": "hull",
+   "min": [
+    -5,
+    0,
+    -151.6
+   ],
+   "max": [
+    -3.8,
+    3.5,
+    -150.4
+   ],
+   "job": "cover",
+   "why": "the FAR WEST POST (1.2 m x 3.5 m) on the far floor: the pack pouring off the shelf rounds it into the blast's cone; it breaks the crane's line onto the shelf's foot (NIGHT52 fix K1 (n52-loop-fix-k1.cjs, the QA sweep): flush to the west shelf's inner face (x -5): it stood 0.9 m off it, a slot)",
+   "note": "the FAR WEST POST (1.2 m x 3.5 m) on the far floor: the pack pouring off the shelf rounds it into the blast's cone; it breaks the crane's line onto the shelf's foot (NIGHT52 fix K1 (n52-loop-fix-k1.cjs, the QA sweep): flush to the west shelf's inner face (x -5): it stood 0.9 m off it, a slot)"
+  },
+  {
+   "zone": "g5",
+   "kind": "hull",
+   "min": [
+    3.4,
+    0,
+    -156.6
+   ],
+   "max": [
+    4.6,
+    3.5,
+    -155.4
+   ],
+   "job": "cover",
+   "why": "THE CRANE HOOK (1.2 m x 3.5 m, the crane's block lowered to the far floor at the runway ramp's foot; NIGHT55: the far east post moved off the old ramp's foot): the corner the warden circles to reach you, and the break on the runway's line down to the exit: duck behind it while the drones are up",
+   "note": "THE CRANE HOOK (1.2 m x 3.5 m, the crane's block lowered to the far floor at the runway ramp's foot; NIGHT55: the far east post moved off the old ramp's foot): the corner the warden circles to reach you, and the break on the runway's line down to the exit: duck behind it while the drones are up"
+  },
+  {
+   "zone": "g5",
+   "kind": "wall",
+   "min": [
+    -11,
+    0,
+    -147
+   ],
+   "max": [
+    -10.4,
+    8,
+    -131
+   ],
+   "job": "line: THE WEST WALL (ride onto the pour shelf)",
+   "why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/g5/card.md, THE CRANE YARD, ride; rebuilt from the blank rect): THE WEST WALL (ride, cyan, 16 m x 8 m on the west wall): from the door wall's corner along the west side and off its end onto THE POUR SHELF",
+   "note": "THE WEST WALL (ride, cyan, 16 m x 8 m on the west wall)",
+   "ride": true,
+   "ride36": {
+    "face": "E",
+    "planeX": -10.4,
+    "lz": [
+     11,
+     27
+    ]
+   }
+  },
+  {
+   "zone": "g5",
+   "kind": "wall",
+   "min": [
+    9.4,
+    0,
+    -139
+   ],
+   "max": [
+    10,
+    8,
+    -129
+   ],
+   "job": "line: THE EAST WALL (ride onto the crane runway)",
+   "why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/g5/card.md, THE CRANE YARD, ride; rebuilt from the blank rect): THE EAST WALL (ride, cyan, 10 m x 8 m on the east wall): from the door wall's corner off its end onto THE CRANE RUNWAY",
+   "note": "THE EAST WALL (ride, cyan, 10 m x 8 m on the east wall)",
+   "ride": true,
+   "ride36": {
+    "face": "W",
+    "planeX": 9.4,
+    "lz": [
+     17,
+     27
+    ]
+   }
+  },
+  {
+   "zone": "g5",
+   "kind": "deck",
+   "min": [
+    -11,
+    0,
+    -158
+   ],
+   "max": [
+    -5,
+    2.5,
+    -147
+   ],
+   "job": "line: THE POUR SHELF (the second pack's shelf, the west wall's landing)",
+   "why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/g5/card.md, THE CRANE YARD, ride; rebuilt from the blank rect): THE POUR SHELF (2.5 m, 6 x 11 m in the far west): the second pack pours off it at once (save the blast for it); the west wall's landing",
+   "note": "THE POUR SHELF (2.5 m, 6 x 11 m in the far west)"
+  },
+  {
+   "zone": "g5",
+   "kind": "deck",
+   "min": [
+    6,
+    0,
+    -147
+   ],
+   "max": [
+    10,
+    4.5,
+    -139
+   ],
+   "job": "line: THE CRANE RUNWAY (the drones' height, the east wall's landing)",
+   "why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/g5/card.md, THE CRANE YARD, ride; rebuilt from the blank rect): THE CRANE RUNWAY (4.5 m, 4 x 8 m on the east wall mid-yard): the east wall's landing, level with the warden's drones; the walkers come up its stair",
+   "note": "THE CRANE RUNWAY (4.5 m, 4 x 8 m on the east wall mid-yard)"
+  },
+  {
+   "zone": "g5",
+   "kind": "hull",
+   "min": [
+    -1.5,
+    0,
+    -145
+   ],
+   "max": [
+    2.5,
+    12,
+    -141
+   ],
+   "job": "spatial law: THE ICE STACK (the landmark; splits the first pack)",
+   "why": "NIGHT74 R: moved 1 m south to z -145..-141, the shipped room's place: at z -146..-142 seed 6 of the verb-aware flow capped at 240 s with one drone alive at (4.6, 11.4, -146.4) against the stack's north-east corner (flow-V 9 / 10, NIGHT71's SHORT); at z -145..-141 flow-V reads 10 / 10, stall 48.8 %. NIGHT71 R r1/r4 (Research/2026-10-26-wave71/R/g5/card.md, THE CRANE YARD, ride; rebuilt from the blank rect): THE ICE STACK (4 x 4 m, floor to roof, dead ahead of the door): the first pack splits round it; the blast's line is down either side (r3 tried it at 4 m: walk stall A 55.1 %, back to the roof at r4)",
+   "note": "THE ICE STACK (4 x 4 m, floor to roof; the landmark dead ahead of the door)"
+  },
+  {
+   "zone": "g5",
+   "kind": "hull",
+   "min": [
+    9,
+    4.5,
+    -145
+   ],
+   "max": [
+    10,
+    6.5,
+    -143
+   ],
+   "job": "every-solid: THE CRANE CAB (cover on the runway)",
+   "why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/g5/card.md, THE CRANE YARD, ride; rebuilt from the blank rect): THE CRANE CAB (1 x 2 m against the east wall on the runway): the runway's shield from the far drone; a step",
+   "note": "THE CRANE CAB (1 x 2 m against the east wall on the runway)"
+  },
+  {
+   "zone": "g5",
+   "kind": "hull",
+   "min": [
+    -11,
+    2.5,
+    -158
+   ],
+   "max": [
+    -9,
+    5,
+    -155
+   ],
+   "job": "every-solid: THE ICE SAW (cover on the shelf)",
+   "why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/g5/card.md, THE CRANE YARD, ride; rebuilt from the blank rect): THE ICE SAW (2 x 3 m on the shelf's back corner): the shelf's one shield; a step",
+   "note": "THE ICE SAW (2 x 3 m on the shelf's back corner)"
+  },
+  {
+   "zone": "g5",
+   "kind": "wall",
+   "min": [
+    -5.3,
+    0,
+    -139
+   ],
+   "max": [
+    -4.7,
+    4,
+    -135
+   ],
+   "job": "line",
+   "why": "NIGHT71 R r2 (Research/2026-10-26-wave71/R/g5/card.md; rule 1, air65): the shipped piece exactly. the WEST ICE WALL (cyan, 4 m x 4 m, 7-11 m in): the short ride off the door's diagonal into the west lane; it splits the bait into lanes for the punch (cut to its north 4 m: the door chute opens onto the west ride wall)",
+   "note": "the WEST ICE WALL (cyan, 4 m x 4 m, 7-11 m in): the short ride off the door's diagonal into the west lane; it splits the bait into lanes for the punch (cut to its north 4 m: the door chute opens onto the west ride wall)",
+   "ride": true,
+   "ride36": {
+    "face": "W",
+    "planeX": -5.3,
+    "lz": [
+     7,
+     11
+    ]
+   }
+  },
+  {
+   "zone": "g5",
+   "kind": "wall",
+   "min": [
+    4.7,
+    0,
+    -139
+   ],
+   "max": [
+    5.3,
+    4,
+    -135
+   ],
+   "job": "line",
+   "why": "NIGHT71 R r2 (Research/2026-10-26-wave71/R/g5/card.md; rule 1, air65): the shipped piece exactly. the EAST ICE WALL (cyan, 4 m, the west's mirror): the short ride into the east lane toward the crane's ramp",
+   "note": "the EAST ICE WALL (cyan, 4 m, the west's mirror): the short ride into the east lane toward the crane's ramp",
+   "ride": true,
+   "ride36": {
+    "face": "E",
+    "planeX": 5.3,
+    "lz": [
+     7,
+     11
+    ]
+   }
+  },
+  {
+   "zone": "g5",
+   "kind": "hull",
+   "min": [
+    -7,
+    2.5,
+    -158
+   ],
+   "max": [
+    -5,
+    4,
+    -155.5
+   ],
+   "job": "every-solid: THE ICE BLOCKS (cover on the shelf's front corner)",
+   "why": "NIGHT71 R r5 (Research/2026-10-26-wave71/R/g5/card.md; air65): THE ICE BLOCKS (1.5 m, 2 x 2.5 m on the pour shelf's south-east corner): cover on the shelf from the far floor, a step to the runway and the walls; r4's coal tub on the door floor sat where the walker stuck (flow-V seed 3)",
+   "note": "THE ICE BLOCKS (on the shelf)"
+  }
+ ],
+ "ramps": [
+  {
+   "zone": "g5",
+   "from": [
+    -6,
+    -141
+   ],
+   "to": [
+    -6,
+    -147
+   ],
+   "width": 3,
+   "rise": 2.5,
+   "job": "climb: the walkers' climb to the pour shelf",
+   "why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/g5/card.md, THE CRANE YARD, ride; rebuilt from the blank rect): THE POUR CHUTE (2.5 m over 6 m, x -7.5..-4.5, 2.9 m off the west wall's face, onto the shelf's north edge): the walkers' climb (GG: a route enemies can climb)",
+   "note": "THE POUR CHUTE"
+  },
+  {
+   "zone": "g5",
+   "from": [
+    8,
+    -155
+   ],
+   "to": [
+    8,
+    -147
+   ],
+   "width": 3,
+   "rise": 4.5,
+   "job": "climb: the walkers' climb to the crane runway",
+   "why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/g5/card.md, THE CRANE YARD, ride; rebuilt from the blank rect): THE RUNWAY RAMP (4.5 m over 8 m from the far floor's east side north onto the runway): the walkers' climb (GG: a route enemies can climb)",
+   "note": "THE RUNWAY RAMP"
+  }
+ ],
+ "pads": [
+  {
+   "zone": "g5",
+   "at": [
+    3,
+    0,
+    -135.5
+   ],
+   "target": [
+    8,
+    4.5,
+    -142.5
+   ],
+   "apexAbove": 2,
+   "job": "line: THE ICE HOIST (the door floor onto the crane runway)",
+   "why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/g5/card.md, THE CRANE YARD, ride; rebuilt from the blank rect): THE ICE HOIST (the shipped room's: a jump pad on the door floor's east side): onto THE CRANE RUNWAY",
+   "note": "THE ICE HOIST"
+  },
+  {
+   "zone": "g5",
+   "at": [
+    2.5,
+    0,
+    -152.5
+   ],
+   "target": [
+    8,
+    4.5,
+    -142
+   ],
+   "apexAbove": 2,
+   "job": "line: THE CRANE HOIST (the far floor onto the crane runway)",
+   "why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/g5/card.md, THE CRANE YARD, ride; rebuilt from the blank rect): THE CRANE HOIST (the shipped room's second: a jump pad on the far floor): back up onto THE CRANE RUNWAY when the drones come",
+   "note": "THE CRANE HOIST"
+  },
+  {
+   "zone": "g5",
+   "at": [
+    -6,
+    0,
+    -133
+   ],
+   "target": [
+    -8,
+    2.5,
+    -154
+   ],
+   "apexAbove": 2,
+   "job": "line: THE WEST HOIST (the door floor onto the pour shelf)",
+   "why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/g5/card.md, THE CRANE YARD, ride; rebuilt from the blank rect): THE WEST HOIST (the shipped room's third: a jump pad on the door floor's west side): over the first pack onto THE POUR SHELF",
+   "note": "THE WEST HOIST"
+  }
+ ],
+ "grapple": [],
+ "pits": [],
+ "tunnels": [],
+ "lights": [
+  {
+   "id": "g5-L1",
+   "room": "g5",
+   "kind": "ceiling",
+   "at": [
+    0,
+    11.95,
+    -131
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 11,
+   "intensity": 1
+  },
+  {
+   "id": "g5-L2",
+   "room": "g5",
+   "kind": "ceiling",
+   "at": [
+    0,
+    11.95,
+    -150
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    6,
+    4,
+    0.1
+   ],
+   "color": "white",
+   "range": 12,
+   "intensity": 1.1
+  },
+  {
+   "id": "g5-L3",
+   "room": "g5",
+   "kind": "pool",
+   "at": [
+    0,
+    0.025,
+    -156
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.5,
+    2.5,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 8,
+   "intensity": 1.7
+  },
+  {
+   "id": "g5-L4",
+   "room": "g5",
+   "kind": "pool",
+   "at": [
+    -8,
+    2.525,
+    -151
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2,
+    2,
+    0.05
+   ],
+   "color": "white",
+   "range": 8,
+   "intensity": 1
+  },
+  {
+   "id": "g5-L5",
+   "room": "g5",
+   "kind": "pool",
+   "at": [
+    7.5,
+    4.525,
+    -141.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2,
+    2,
+    0.05
+   ],
+   "color": "white",
+   "range": 8,
+   "intensity": 1
+  },
+  {
+   "id": "g5-RW",
+   "room": "g5",
+   "kind": "wall",
+   "at": [
+    -10.35,
+    1.2,
+    -139
+   ],
+   "normal": [
+    1,
+    0,
+    0
+   ],
+   "size": [
+    16,
+    0.2,
+    0.1
+   ],
+   "color": "cyan",
+   "range": 6,
+   "intensity": 1.1
+  },
+  {
+   "id": "g5-RE",
+   "room": "g5",
+   "kind": "wall",
+   "at": [
+    9.35,
+    1.2,
+    -134
+   ],
+   "normal": [
+    -1,
+    0,
+    0
+   ],
+   "size": [
+    10,
+    0.2,
+    0.1
+   ],
+   "color": "cyan",
+   "range": 6,
+   "intensity": 1.1
+  }
+ ],
+ "props": [
+  {
+   "id": "g5-P1",
+   "room": "g5",
+   "kind": "healthPickup",
+   "at": [
+    8.5,
+    5.4,
+    -140.5
+   ],
+   "size": [
+    0.6,
+    0.6,
+    0.6
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "pickup": true,
+   "job": "reward",
+   "why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/g5/card.md, THE CRANE YARD, ride; rebuilt from the blank rect): the health on THE CRANE RUNWAY: the east wall's ride pays"
+  }
+ ],
+ "surfaces": [],
+ "drop": {}
+}

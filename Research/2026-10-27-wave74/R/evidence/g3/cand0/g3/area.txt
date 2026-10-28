@@ -1,0 +1,11 @@
+# command: node Tools/night/n70-area.cjs --level iceline --dir C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/ice/g3/cand0 --touches Research/2026-10-27-wave74/R/evidence/g3/cand0/g3/skip.txt g3
+# sha: f360cf025 (+ the room file as in the tree); time: 2026-10-28 00:23:23
+n70-area: room g3; plan C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/ice/g3/cand0/iceline.plan.json, level C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/ice/g3/cand0/n67-iceline.json (the round's folder C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/ice/g3/cand0); touches Research/2026-10-27-wave74/R/evidence/g3/cand0/g3/skip.txt (10 touch rows, 0 launch kills); card none
+OPEN  PASS largest open square 11.0 m (x -6.0..5.0, z -73.0..-62.0; 10 pieces on a 24.0 x 28.0 m rect; 12 m or less passes)
+P1    N/A  the last wave (swarmer swarmer swarmer swarmer swarmer swarmer swarmer swarmer) has no ranged enemy (spitter / drone)
+P4    FAIL 1 / 4 standing solids >= 1.75 m do a job ((a) touched 1, (b) sight 0, (c) launch kill 0); no job: box(5,0,-86..12,4,-79) line: THE TIPPLE HEAD (the hig; box(-12,0,-66..-6,4,-62) line: THE WEIGH LOFT (the high; box(-7.5,0,-83..-4.5,2,-81) 30 s problem: THE COAL CAR (fa
+P5    PASS walk line in a ranged spawn's sight at 6-24 m 0.0 % (>= 50 %), line65 0.0 % (<= walk - 30 points: no); line65's nearest enemy spawn 3.8 m (<= 6: yes); 0 ranged spawns
+P9    FAIL 0 / 1 planes with 2 climb tops >= 8 m apart: box(5,0,-86..12,4,-79) 7.0 x 7.0 m at 4.0 m: 7 climb top(s), farthest apart 2.0 m (NO)
+P11   N/A  the card names no TOWER / GALLERY / SPLIT LEVEL (no card)
+P17   PASS 2 / 2 ride walls 4 m tall and 8 m long; 0 non-ride wall(s) in that band; the strip = ride: true (ride36 faces 2)
+n70-area: FAIL g3 (3/5)

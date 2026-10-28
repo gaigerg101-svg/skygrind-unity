@@ -1,0 +1,4 @@
+  verb65 g7 - (slate ride): plant
+n70-red: 5 jobs on n67-iceline in 76 s; outputs under Research/2026-10-27-wave74/S/g7/red-base/<room>/ (00:41:50)
+  g7: flow-A.txt flow-B.txt flow-V.txt pads.txt plan.png plan.svg ride.txt room-check.txt 
+run-red: n67-iceline g7 C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/ice-base -> Research/2026-10-27-wave74/S/g7/red-base rc=0 (00:41:50)

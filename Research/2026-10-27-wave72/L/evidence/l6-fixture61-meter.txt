@@ -1,0 +1,12 @@
+command: (cd fix61-meter && dotnet run -- <worktree>)   Fixture61Math.Mounts / Count over LightPlan33.GreenFor, the repo's config, drawn = all ceiling lights (the Player skips panels over a grapple node: this is the superset)
+worktree n72-L, code with UnityTuning.N61V4.cs RimW 0.22 Drop 0.26 HangerW 0.16 HangerH 0.12; run 2026-10-27 11:28:28 USMST
+[fixture61] mounts on n52-foundry: ceiling lights 10, housed 10, held by a beam 10, by a wall 0, unmounted 0 | red (no mounts) unmounted 10 | mount boxes 60
+[fixture61] mounts on n52-iceline: ceiling lights 10, housed 10, held by a beam 10, by a wall 0, unmounted 0 | red (no mounts) unmounted 10 | mount boxes 60
+[fixture61] mounts on n57-kiln: ceiling lights 11, housed 11, held by a beam 11, by a wall 0, unmounted 0 | red (no mounts) unmounted 11 | mount boxes 66
+[fixture61] mounts on n58-span: ceiling lights 8, housed 8, held by a beam 8, by a wall 0, unmounted 0 | red (no mounts) unmounted 8 | mount boxes 48
+[fixture61] mounts on n52-spire: ceiling lights 10, housed 10, held by a beam 10, by a wall 0, unmounted 0 | red (no mounts) unmounted 10 | mount boxes 60
+[fixture61] mounts on n65-foundry: ceiling lights 10, housed 10, held by a beam 10, by a wall 0, unmounted 0 | red (no mounts) unmounted 10 | mount boxes 60
+[fixture61] mounts on n67-iceline: ceiling lights 10, housed 10, held by a beam 10, by a wall 0, unmounted 0 | red (no mounts) unmounted 10 | mount boxes 60
+[fixture61] mounts on n67-kiln: ceiling lights 11, housed 11, held by a beam 11, by a wall 0, unmounted 0 | red (no mounts) unmounted 11 | mount boxes 66
+[fixture61] mounts on n67-spire: ceiling lights 10, housed 10, held by a beam 10, by a wall 0, unmounted 0 | red (no mounts) unmounted 10 | mount boxes 60
+TOTAL unmounted 0

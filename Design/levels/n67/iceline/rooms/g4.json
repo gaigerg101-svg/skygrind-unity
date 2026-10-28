@@ -1,0 +1,828 @@
+{
+ "_why": "NIGHT74 S g4 r6 (Research/2026-10-27-wave74/S/card-g4.md; the lead's slice: GG's g4 was flatter than THE REACH): the pond raised into THE ICE STAGE (0.9 m, rimmed), THE STAGE STEP and THE STAGE DROP, and THE LEDGE RAMP; the verb (parry), the ice, the lock wall, the gallery, the ledge, the posts, the hoists and the waves are NIGHT71 R's, unchanged. NIGHT71 R r1 (Research/2026-10-26-wave71/R/g4/card.md, THE ORB YARD, parry; rebuilt from the blank rect): the drones hang over the far side; the glove cannot reach them, the parried orb can: THE ICE POND mid-floor (level 2's glide), two ICE POSTS that break the orb lines, THE GALLERY (4 m) and THE WEST LEDGE (2.5 m) at the drones' height, THE LOCK WALL's ride onto the gallery, three hoists. NIGHT67 T1a (Tools/night/gen-slots.cjs --level iceline --export): n52-iceline's room g4 (2.4 THE REACH) exactly as Design/levels/n52/iceline.plan.json has it: the row (every key), its zone-keyed pieces (boxes, ramps, pads, grapple, pits, tunnels), its room-keyed pieces (lights, props, surfaces). The slot's starting point: rebuild it here (every new piece with a job and a why), give the row bot43: false, verb65 (the slate's verb) and line65 (the verb's line, 3+ waypoints); never an area67 block (refused). A key the row drops needs a reason in drop{}. The room's opening: top-level \"opening\": \"vista\" | \"ambushed\" | \"ambusher\" | \"held\" (and \"opening_why\"); left out, the room keeps n52-iceline's.",
+ "room": "g4",
+ "row": {
+  "id": "g4",
+  "name": "2.4 THE ORB YARD",
+  "kind": "room",
+  "rect": [
+   -12,
+   -124,
+   12,
+   -94
+  ],
+  "height": 10,
+  "roof": true,
+  "par": 30,
+  "job36": "twist",
+  "verb36": "the glove cannot reach a flyer: punch its yellow orb back at it; skate the ice pond under the orbs, break their line at the ice posts, ride the lock wall onto the gallery or take a hoist to meet the drones at their height",
+  "spawn": {
+   "at": [
+    0,
+    0,
+    -96
+   ],
+   "yawDeg": 0
+  },
+  "exit": [
+   0,
+   0,
+   -122
+  ],
+  "arena36": true,
+  "waves": [
+   [
+    "drone"
+   ],
+   [
+    "drone",
+    "drone"
+   ]
+  ],
+  "lessons": [
+   {
+    "promptPad": "{fire} AS THE YELLOW ORB ARRIVES",
+    "kind": "husksDead",
+    "n": 1,
+    "prompt": "{fire} AS THE YELLOW ORB ARRIVES"
+   }
+  ],
+  "lessons31": [
+   {
+    "promptPad": "{fire} AS THE YELLOW ORB ARRIVES",
+    "kind": "husksDead",
+    "n": 1,
+    "prompt": "{fire} AS THE YELLOW ORB ARRIVES"
+   }
+  ],
+  "proofs": [
+   {
+    "kind": "walk",
+    "points": [
+     [
+      0,
+      0,
+      -96
+     ],
+     [
+      2,
+      0,
+      -102
+     ],
+     [
+      2,
+      0.9,
+      -108
+     ],
+     [
+      0,
+      0.9,
+      -112
+     ],
+     [
+      0,
+      0,
+      -118
+     ],
+     [
+      0,
+      0,
+      -122
+     ]
+    ]
+   },
+   {
+    "kind": "walk",
+    "points": [
+     [
+      6.5,
+      0,
+      -108
+     ],
+     [
+      6.5,
+      4,
+      -117
+     ],
+     [
+      9,
+      4,
+      -121
+     ]
+    ]
+   },
+   {
+    "kind": "walk",
+    "points": [
+     [
+      -9.5,
+      0,
+      -115
+     ],
+     [
+      -9.5,
+      2.5,
+      -108
+     ],
+     [
+      -9,
+      2.5,
+      -104
+     ]
+    ]
+   },
+   {
+    "kind": "walk",
+    "points": [
+     [
+      9,
+      0,
+      -97
+     ],
+     [
+      9,
+      0,
+      -106
+     ]
+    ]
+   },
+   {
+    "kind": "walk",
+    "points": [
+     [
+      -0.5,
+      0,
+      -105
+     ],
+     [
+      -6,
+      2.5,
+      -105
+     ],
+     [
+      -6.5,
+      2.5,
+      -106.5
+     ]
+    ]
+   }
+  ],
+  "frames36": {
+   "mid": [
+    0,
+    0,
+    -100,
+    0,
+    0.1
+   ],
+   "exit": [
+    9,
+    4,
+    -119,
+    160,
+    -0.2
+   ]
+  },
+  "nodes": [
+   [
+    -6,
+    0,
+    -114
+   ],
+   [
+    -3,
+    0,
+    -119
+   ],
+   [
+    4.5,
+    0,
+    -120
+   ],
+   [
+    3,
+    0,
+    -121
+   ],
+   [
+    -9,
+    0,
+    -121
+   ]
+  ],
+  "iceline46_why": "NIGHT46 A3 I-1: the east bridge x 6..9 over the canal (2 crossings, a loop); the drones, their nodes, the lesson and the NW ledge unchanged",
+  "nodes_why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/g4/card.md, THE ORB YARD, parry; rebuilt from the blank rect): the drones rise from the far floor (the shipped nodes, the west one on the floor now), the gallery and the west ledge",
+  "highNodes": [
+   [
+    8.5,
+    4,
+    -121.5
+   ],
+   [
+    -9,
+    2.5,
+    -105
+   ]
+  ],
+  "highNodes_why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/g4/card.md, THE ORB YARD, parry; rebuilt from the blank rect): the drones rise from the far floor (the shipped nodes, the west one on the floor now), the gallery and the west ledge",
+  "frames52": {
+   "_why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/g4/card.md, THE ORB YARD, parry; rebuilt from the blank rect): the room frames: the door just crossed (the pond, the posts, the gallery beyond), the fight from the west ledge, the gallery's top",
+   "entry": [
+    0,
+    0,
+    -95,
+    0,
+    0.08
+   ],
+   "mid": [
+    -9,
+    2.5,
+    -105,
+    -150,
+    0.05
+   ],
+   "high": [
+    9,
+    4,
+    -119,
+    160,
+    -0.2
+   ]
+  },
+  "loop52_why": "NIGHT52 the room loop (Tools/night/n52-loop-g4.cjs; THE ROOM CONTRACT's spirit, a teach room: the enemy-types item exempt): n47's THE REACH rebuilt as THE REACH II: 24 x 30 x 10 m; 19 pieces; three tiers (floor, the 2 m NW ledge, the 4 m NE gallery, each on a walkers' ramp); two 17.5 m lock walls over the canal; the canal hoist and the return hoist (pads); the lesson and the waves kept. Fix 6 (n52-loop-fix6.cjs): the canal hoist in the east ride's pocket, the NW ramp flush to the wall. NIGHT53 (n53-loop-g4.cjs): the mirror broken: the east lock wall runs on to the gallery (24 m), the west wall and run-up cut, a sluice head and a canal stone in the west, the west post 3 m west, the first drone off-axis west, the canal lit from below.",
+  "bot43": false,
+  "verb65": "parry",
+  "line65": [
+   [
+    1.5,
+    0,
+    -100
+   ],
+   [
+    2,
+    0.45,
+    -105.25
+   ],
+   [
+    0,
+    0.9,
+    -110
+   ],
+   [
+    0,
+    0.45,
+    -114.75
+   ],
+   [
+    0,
+    0,
+    -119
+   ]
+  ],
+  "line65_why": "NIGHT74 S g4 r6 (Research/2026-10-27-wave74/S/card-g4.md; the lead's slice: GG's g4 was flatter than THE REACH): the parry line over the raised ice: the door floor, THE STAGE STEP, the stage, THE STAGE DROP, the far floor (y follows the surface)",
+  "card65": "Research/2026-10-26-wave71/R/g4/card.md"
+ },
+ "boxes": [
+  {
+   "zone": "g4",
+   "kind": "wall",
+   "min": [
+    11.4,
+    0,
+    -117
+   ],
+   "max": [
+    12,
+    6,
+    -99
+   ],
+   "job": "line: THE LOCK WALL (ride over the east floor onto the gallery)",
+   "why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/g4/card.md, THE ORB YARD, parry; rebuilt from the blank rect): THE LOCK WALL (ride, cyan, 18 m x 6 m on the east wall): from the door floor over the east lane and off its end onto THE GALLERY, the drones' height",
+   "note": "THE LOCK WALL (ride, cyan, 18 m x 6 m on the east wall)",
+   "ride": true,
+   "ride36": {
+    "face": "W",
+    "planeX": 11.4,
+    "lz": [
+     5,
+     23
+    ]
+   }
+  },
+  {
+   "zone": "g4",
+   "kind": "deck",
+   "min": [
+    6,
+    0,
+    -124
+   ],
+   "max": [
+    12,
+    4,
+    -117
+   ],
+   "job": "line: THE GALLERY (the drones' height, the lock wall's landing)",
+   "why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/g4/card.md, THE ORB YARD, parry; rebuilt from the blank rect): THE GALLERY (4 m, 6 x 7 m in the far east corner): the lock wall's landing and the canal hoist's; from it the far drone is level with you; the walkers come up its stair",
+   "note": "THE GALLERY (4 m, 6 x 7 m in the far east corner)"
+  },
+  {
+   "zone": "g4",
+   "kind": "hull",
+   "min": [
+    10,
+    4,
+    -124
+   ],
+   "max": [
+    12,
+    6.5,
+    -122
+   ],
+   "job": "cover",
+   "why": "the GALLERY's WINCH HOUSE (2 x 2 m on its back corner): your shield from the far drone's orb on the gallery (a stand you must move to break)",
+   "note": "the GALLERY's WINCH HOUSE (2 x 2 m on its back corner): your shield from the far drone's orb on the gallery (a stand you must move to break)"
+  },
+  {
+   "zone": "g4",
+   "kind": "deck",
+   "min": [
+    -12,
+    0,
+    -108
+   ],
+   "max": [
+    -6,
+    2.5,
+    -102
+   ],
+   "job": "line: THE WEST LEDGE (the near-west stand at the drones' near height)",
+   "why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/g4/card.md, THE ORB YARD, parry; rebuilt from the blank rect): THE WEST LEDGE (2.5 m, 6 x 6 m on the west wall): a stand over the pond where the orbs cross; its stair from the far floor",
+   "note": "THE WEST LEDGE (2.5 m, 6 x 6 m on the west wall)"
+  },
+  {
+   "zone": "g4",
+   "kind": "hull",
+   "min": [
+    4.4,
+    0,
+    -104.6
+   ],
+   "max": [
+    5.6,
+    4,
+    -103.4
+   ],
+   "job": "30 s problem: THE EAST ICE POST (breaks the orb line onto the door floor)",
+   "why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/g4/card.md, THE ORB YARD, parry; rebuilt from the blank rect): THE EAST ICE POST (1.2 x 1.2 x 4 m on the door floor's east side): breaks the far drones' orb line onto the door floor; its top a step",
+   "note": "THE EAST ICE POST (1.2 x 1.2 x 4 m on the door floor's east side)"
+  },
+  {
+   "zone": "g4",
+   "kind": "hull",
+   "min": [
+    -5.6,
+    0,
+    -116.6
+   ],
+   "max": [
+    -4.4,
+    4,
+    -115.4
+   ],
+   "job": "30 s problem: THE WEST ICE POST (breaks the orb line onto the far floor)",
+   "why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/g4/card.md, THE ORB YARD, parry; rebuilt from the blank rect): THE WEST ICE POST (1.2 x 1.2 x 4 m on the far floor's west side): breaks the gallery drone's orb line across the far floor; its top a step",
+   "note": "THE WEST ICE POST (1.2 x 1.2 x 4 m on the far floor's west side)"
+  },
+  {
+   "zone": "g4",
+   "kind": "hull",
+   "min": [
+    -12,
+    0,
+    -101
+   ],
+   "max": [
+    -9,
+    1.2,
+    -98.5
+   ],
+   "job": "cover",
+   "why": "NIGHT71 R r2 (Research/2026-10-26-wave71/R/g4/card.md; rule 1, air65): the shipped piece exactly. the WEST SLUICE HEAD (1.2 m, 3 x 2.5 m, on the door floor's west side): cover from the west drone's orbs over the canal and a vault step to see the far lip (NIGHT53: where the run-up stood; the west has no ride now)",
+   "note": "the WEST SLUICE HEAD (1.2 m, 3 x 2.5 m, on the door floor's west side): cover from the west drone's orbs over the canal and a vault step to see the far lip (NIGHT53: where the run-up stood; the west has no ride now)"
+  },
+  {
+   "zone": "g4",
+   "kind": "hull",
+   "min": [
+    8,
+    0,
+    -99
+   ],
+   "max": [
+    11,
+    1.2,
+    -96
+   ],
+   "job": "line",
+   "why": "NIGHT71 R r2 (Research/2026-10-26-wave71/R/g4/card.md; rule 1, air65): the shipped piece exactly. the EAST RUN-UP BLOCK (the west's mirror): onto the east lock wall; the return hoist lands on it",
+   "note": "the EAST RUN-UP BLOCK (the west's mirror): onto the east lock wall; the return hoist lands on it"
+  },
+  {
+   "zone": "g4",
+   "kind": "hull",
+   "min": [
+    -12,
+    2.5,
+    -104
+   ],
+   "max": [
+    -10,
+    5,
+    -102
+   ],
+   "job": "every-solid: the west ledge's ICE HOPPER (cover on the ledge)",
+   "why": "NIGHT71 R r2 (Research/2026-10-26-wave71/R/g4/card.md; rule 1, air65): THE ICE HOPPER (2 x 2 m on the west ledge's back corner, 2.5 m tall): the ledge's shield from the far drones' orbs, its top a step (the shipped ledge had one)",
+   "note": "THE ICE HOPPER (on the west ledge)"
+  },
+  {
+   "zone": "g4",
+   "kind": "deck",
+   "min": [
+    -6,
+    0,
+    -113
+   ],
+   "max": [
+    4.5,
+    0.9,
+    -107
+   ],
+   "job": "line: THE ICE STAGE (the pond raised 0.9 m: the glide lane under the orbs; the raised, rimmed block the room reads from the door)",
+   "why": "NIGHT74 S g4 r6 (Research/2026-10-27-wave74/S/card-g4.md; the lead's slice: GG's g4 was flatter than THE REACH): THE ICE POND (x -6..4.5, z -113..-107) stood on the floor, so the yard read flat from the door. It is now a deck 0.9 m high (10.5 x 6 m, rimmed like every deck, the ice on its top: surfaces minY 0.4 / maxY 1.4); two short ramps (south and north) put the walkers' and the skater's way onto it.",
+   "note": "THE ICE STAGE (0.9 m, 10.5 x 6 m: the ice pond raised)"
+  }
+ ],
+ "ramps": [
+  {
+   "zone": "g4",
+   "from": [
+    6.5,
+    -109
+   ],
+   "to": [
+    6.5,
+    -117
+   ],
+   "width": 3,
+   "rise": 4,
+   "job": "climb: the walkers' climb to the gallery",
+   "why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/g4/card.md, THE ORB YARD, parry; rebuilt from the blank rect): THE GALLERY STAIR (4 m over 8 m, from the pond's east end south onto the gallery, x 5..8, clear of the lock wall's lane): the walkers' climb (GG: a route enemies can climb)",
+   "note": "THE GALLERY STAIR"
+  },
+  {
+   "zone": "g4",
+   "from": [
+    -9.5,
+    -114
+   ],
+   "to": [
+    -9.5,
+    -108
+   ],
+   "width": 3,
+   "rise": 2.5,
+   "job": "climb: the walkers' climb to the west ledge",
+   "why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/g4/card.md, THE ORB YARD, parry; rebuilt from the blank rect): THE LEDGE STAIR (2.5 m over 6 m, from the far west floor north onto the ledge): the walkers' climb (GG: a route enemies can climb)",
+   "note": "THE LEDGE STAIR"
+  },
+  {
+   "zone": "g4",
+   "from": [
+    2,
+    -103.5
+   ],
+   "to": [
+    2,
+    -107
+   ],
+   "width": 3,
+   "rise": 0.9,
+   "job": "climb: THE STAGE STEP (the door floor onto the ice stage: the skater's and the walkers' way up, 0.9 m over 3.5 m)",
+   "why": "NIGHT74 S g4 r6 (Research/2026-10-27-wave74/S/card-g4.md; the lead's slice: GG's g4 was flatter than THE REACH): the south ramp onto THE ICE STAGE (x 0.5..3.5), 2 m east of the ledge ramp and 0.9 m clear of THE EAST ICE POST (x 4.4).",
+   "note": "THE STAGE STEP"
+  },
+  {
+   "zone": "g4",
+   "from": [
+    0,
+    -116.5
+   ],
+   "to": [
+    0,
+    -113
+   ],
+   "width": 3,
+   "rise": 0.9,
+   "job": "climb: THE STAGE DROP (the far floor onto the ice stage and back: 0.9 m over 3.5 m)",
+   "why": "NIGHT74 S g4 r6 (Research/2026-10-27-wave74/S/card-g4.md; the lead's slice: GG's g4 was flatter than THE REACH): the north ramp off THE ICE STAGE onto the far floor, west of THE CANAL HOIST's pad (x 2..4) and east of THE WEST ICE POST (x -5.6..-4.4).",
+   "note": "THE STAGE DROP"
+  },
+  {
+   "zone": "g4",
+   "from": [
+    -1.5,
+    -105
+   ],
+   "to": [
+    -6,
+    -105
+   ],
+   "width": 3,
+   "rise": 2.5,
+   "job": "climb: THE LEDGE RAMP (the door floor onto THE WEST LEDGE: 2.5 m over 4.5 m, in the entry's view; the walkers' second way up)",
+   "why": "NIGHT74 S g4 r6 (Research/2026-10-27-wave74/S/card-g4.md; the lead's slice: GG's g4 was flatter than THE REACH): the west ledge's only stair (x -11..-8, z -114..-108) stood behind the ledge, out of the door's view; this second ramp climbs the ledge's east face from the door floor (z -106.5..-103.5), 2 m clear of the stage step.",
+   "note": "THE LEDGE RAMP"
+  }
+ ],
+ "pads": [
+  {
+   "zone": "g4",
+   "at": [
+    3,
+    0,
+    -117.5
+   ],
+   "target": [
+    8.5,
+    4,
+    -121
+   ],
+   "apexAbove": 2,
+   "job": "line: THE CANAL HOIST (the far floor onto the gallery)",
+   "why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/g4/card.md, THE ORB YARD, parry; rebuilt from the blank rect): THE CANAL HOIST (the shipped room's: a jump pad on the far floor by the gallery stair): onto THE GALLERY (4 m), level with the far drone",
+   "note": "THE CANAL HOIST"
+  },
+  {
+   "zone": "g4",
+   "at": [
+    -7,
+    0,
+    -120.5
+   ],
+   "target": [
+    -9,
+    2.5,
+    -105
+   ],
+   "apexAbove": 2,
+   "job": "line: THE RETURN HOIST (the far floor back onto the west ledge)",
+   "why": "NIGHT71 R r3: (-4, 0, -119.5) -> (-7, 0, -120.5), its flight clear of THE WEST ICE POST. NIGHT71 R r1 (Research/2026-10-26-wave71/R/g4/card.md, THE ORB YARD, parry; rebuilt from the blank rect): THE RETURN HOIST (the shipped room's: a jump pad on the far floor's west side): back over the pond onto THE WEST LEDGE",
+   "note": "THE RETURN HOIST"
+  },
+  {
+   "zone": "g4",
+   "at": [
+    -6.8,
+    2.5,
+    -103
+   ],
+   "target": [
+    8.5,
+    4,
+    -120.5
+   ],
+   "apexAbove": 2,
+   "job": "line: THE LEDGE HOIST (the west ledge over the yard onto the gallery)",
+   "why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/g4/card.md, THE ORB YARD, parry; rebuilt from the blank rect): THE LEDGE HOIST (the shipped room's third: a jump pad on the west ledge's east edge): from one high stand over the pond to the other",
+   "note": "THE LEDGE HOIST"
+  }
+ ],
+ "grapple": [],
+ "pits": [],
+ "tunnels": [],
+ "lights": [
+  {
+   "id": "g4-L1",
+   "room": "g4",
+   "kind": "ceiling",
+   "at": [
+    0,
+    9.95,
+    -97
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 10,
+   "intensity": 0.9
+  },
+  {
+   "id": "g4-L2",
+   "room": "g4",
+   "kind": "ceiling",
+   "at": [
+    0,
+    9.95,
+    -110
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    6,
+    0.1
+   ],
+   "color": "white",
+   "range": 11,
+   "intensity": 1.1
+  },
+  {
+   "id": "g4-L3",
+   "room": "g4",
+   "kind": "ceiling",
+   "at": [
+    0,
+    9.95,
+    -120
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    6,
+    4,
+    0.1
+   ],
+   "color": "white",
+   "range": 10,
+   "intensity": 1
+  },
+  {
+   "id": "g4-L4",
+   "room": "g4",
+   "kind": "pool",
+   "at": [
+    0,
+    0.025,
+    -122
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.5,
+    2.5,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 8,
+   "intensity": 1.7
+  },
+  {
+   "id": "g4-L5",
+   "room": "g4",
+   "kind": "pool",
+   "at": [
+    9,
+    4.025,
+    -120.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2,
+    2,
+    0.05
+   ],
+   "color": "white",
+   "range": 8,
+   "intensity": 1
+  },
+  {
+   "id": "g4-L6",
+   "room": "g4",
+   "kind": "pool",
+   "at": [
+    -9,
+    2.525,
+    -105.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2,
+    2,
+    0.05
+   ],
+   "color": "white",
+   "range": 7,
+   "intensity": 0.9
+  },
+  {
+   "id": "g4-L7",
+   "room": "g4",
+   "kind": "pool",
+   "at": [
+    -1,
+    0.925,
+    -110
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    5,
+    4,
+    0.05
+   ],
+   "color": "white",
+   "range": 8,
+   "intensity": 1
+  },
+  {
+   "id": "g4-RE",
+   "room": "g4",
+   "kind": "wall",
+   "at": [
+    11.35,
+    1.2,
+    -108
+   ],
+   "normal": [
+    -1,
+    0,
+    0
+   ],
+   "size": [
+    18,
+    0.2,
+    0.1
+   ],
+   "color": "cyan",
+   "range": 6,
+   "intensity": 1.1
+  }
+ ],
+ "props": [
+  {
+   "id": "g4-P1",
+   "room": "g4",
+   "kind": "healthPickup",
+   "at": [
+    0,
+    1.8,
+    -110
+   ],
+   "size": [
+    0.6,
+    0.6,
+    0.6
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "pickup": true,
+   "job": "reward",
+   "why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/g4/card.md, THE ORB YARD, parry; rebuilt from the blank rect): the health in the middle of the ice pond, under the orbs: the riskiest spot (the shipped room's on its centre bridge)"
+  }
+ ],
+ "surfaces": [
+  {
+   "kind": "ice",
+   "rect": [
+    -6,
+    -113,
+    4.5,
+    -107
+   ],
+   "minY": 0.4,
+   "maxY": 1.4,
+   "room": "g4",
+   "note": "THE ICE POND's frozen floor (the level's name; design.n30.glide): you skate it under the orbs (NIGHT71 R: the shipped canal's ice, kept on the floor); NIGHT74 S g4 r6: the pond is THE ICE STAGE now (0.9 m): the band follows its top (0.4 .. 1.4)"
+  }
+ ],
+ "drop": {}
+}

@@ -1,0 +1,3 @@
+# Y2 five-level walk compare: 2026-10-25 10:26:06; the Y2 DLL (sha256 in Y2-chain.txt line 1)
+# cmd: diff <(grep -v -i -E 'wall time|^n46flow: seeds' /c/Users/gaige/dev/SKYGRIND-unity/Logs/n69/flow-base.txt) <(grep -v -i -E 'wall time|^n46flow: seeds' Research/2026-10-25-wave69/T/Y2-flow-off67.txt) (n69-gates.sh --flow's compare)
+Y2 flow --off67: EQUAL to main's Logs/n69/flow-base.txt, 5 level summaries

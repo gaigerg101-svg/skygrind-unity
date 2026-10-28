@@ -1,0 +1,18 @@
+# command: python -I Tools/night/n74-room-rules.py room Design/levels/n67/iceline/rooms/g7.json
+# sha: f1c885137; time: 2026-10-28 00:43:00
+iceline/g7  rect [-12.0, -216.0, 12.0, -184.0]  spawn [0.0, 0.0, -189.5] yaw 0  floor 0.0
+  PLANES  PASS  planes 3 (0.0 m: 564 cells, 2.0 m: 36 cells, 3.5 m: 65 cells)
+  COVER   PASS  cover: free-standing high 3, low 2, between 0 (0 without a job), none 0
+  LOOPS   PASS  loops 6 (floor holes 3 + closed pad / ride routes 3 of 3)
+  REAR    PASS  rear arc: 0 of 3 wave-1 usable nodes behind the entry facing (all waves: 0 node uses behind)
+  VIEW    PASS  view: enemy in view at 0.00 s (2 of 3 wave-1 nodes seen at entry)
+  CROSS   PASS  cross: chord 40.0 m, dash 1.67 s, walk 5.0 s (bar 2.0 s at dash)
+  EXPOSE  RED  exposure: 62 % of 1953 floor-sample pairs see each other (bar 60 %); longest clear line 32.3 m (medium band 19.5 m)
+  CLIMB   PASS  climb: 3 tier group(s), 0 not reached by walker links
+    free-standing high piece: deck [-3.0, 0.0, -204.0]-[3.0, 2.0, -198.0] h 2.00 job "line: THE BOILER STAGE (2 m: the middle tier; a ci"
+    free-standing high piece: hull [-7.2, 0.0, -193.5]-[-5.7, 3.5, -192.0] h 3.50 job "cover: THE WEST MOORING POST (a 3.5 m post by the "
+    free-standing high piece: hull [5.7, 0.0, -193.5]-[7.2, 3.5, -192.0] h 3.50 job "cover: THE EAST MOORING POST (the west post's mirr"
+    free-standing low piece: hull [3.5, 0.0, -207.5]-[5.5, 1.2, -206.0] h 1.20 job "cover: THE EAST RAIL (1.2 m low cover on the far f"
+    free-standing low piece: hull [-5.5, 0.0, -207.5]-[-3.5, 1.2, -206.0] h 1.20 job "cover: THE WEST RAIL (1.2 m low cover: the east ra"
+    walkers reach every tier: climb: 3 tier group(s), 0 not reached by walker links
+  core 5/5 PASS, extra 2/3 PASS

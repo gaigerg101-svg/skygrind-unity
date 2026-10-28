@@ -1,0 +1,17 @@
+# command: dotnet Temp/SimHarness/bin/Release/net10.0/SimHarness.dll n46flow --level n65-foundry --rooms a8 --seeds 10 --first 1
+# sha: 515bcb60; time: 2026-10-23 16:06:53
+n46flow: seeds 1..10, cap 240 s per room, rows forced on: none, off switch: none; pilot: Walk38Pilot + the ported autopilot (normal)
+n46flow n65-foundry (loaded n65-foundry; BaseId n45-foundry): 10/10 walks through a8..a8; level time median 17.2 s; the pilot's lava rule: out of lava 0 steps, held at an edge 0 steps, chases round it 0, detours 0; put at the next room (a link not crossed in max(30 s, 3 x par) or a cleared room not left in 15 s) 0; stuck46 burrowers ended 0
+  room       kind | stall%  maxStall  air% | kgap med/max | near med/p10/p90 | dwell  dead | deaths falls | clear (k/n)    | geometry
+  a8         room |   51.3      4.3  54.3 |  1.9 / 14.5  |  6.0 /  2.1 / 11.3  |   0.5   4.2 |      0     0 |   17.2 (10/10) | floor 308 m2, tiers 6, loop n (3.6 m2), pockets 2, sight 24.3 m, w1 in view 1/4
+  LEVEL           |   51.3      4.3  54.3 |  1.9 / 14.5  |  6.0 /  2.1 / 11.3  |   0.5   4.2 |      0     0 |   17.2 sum of medians
+n46flow n65-foundry SUMMARY: GREEN 10/10; stall 51.3 %, longest stall 4.3 s, air 54.3 %, kill gap 1.9 / 14.5 s, nearest 6.0 m, dwell 0.5 s, dead 4.2 s, deaths 0, falls 0, clear 17.2 s
+  style      kind |  DULL  COOL  BOLD  AIRB  SAVA  SKYG (% of fight steps) | top rank med / max (seeds)
+  a8         room |  56.4  31.9  11.6   0.0   0.0   0.0                    | BOLD / BOLD (10)
+  LEVEL           |  56.4  31.9  11.6   0.0   0.0   0.0                    | top BOLD
+n46flow n65-foundry STYLE: DULL 56.4 % of 173 s of fight; above DULL 43.6 %; rooms reaching SAVAGE 0/1; top rank BOLD
+n46flow n65-foundry PAYOFFS: heal36 HP per close kill by rank: DULL 10.00 (3), COOL 5.75 (2), BOLD - (0), AIRBORNE - (0), SAVAGE - (0), SKYGRIND - (0); RIDE KILL refund per ride kill by rank: DULL 0.00 (3), COOL 0.00 (6), BOLD 0.00 (5), AIRBORNE - (0), SAVAGE - (0), SKYGRIND - (0)
+n46flow n65-foundry TOKENS: attack starts inside the sim cone (camera.fovDeg 74 / 2) 35/41 = 85.4 % (by kind: husk 22/22, spitter 13/19); tokens56 thinks waited out of view 783, advances 0
+n46flow n65-foundry RANGED: hit rate by the player's speed at the shot: stand 3/5 = 60.0 %, run 1/12 = 8.3 %, fast 0/0 = - %, dash 0/0 = - %; dash / stand NaN %, fast+dash / stand NaN %
+n46flow n65-foundry IDLE: idle in place 10.6 % of enemy-alive steps; per enemy (alive >= 2 s, 61): median 8.1 %, p90 17.0 %, over 20 %: 1 (1.6 %); by kind: husk 11.4 %, spitter 6.9 %
+n46flow n65-foundry: wall time 33 s

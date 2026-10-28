@@ -1,0 +1,20 @@
+{
+  "_about": "NIGHT19 U3-33.2: THE RANGE's frozen settings (NIGHT19.md section 1; the lead's file, builders never edit it). Read by Game/Bot/Sandbox.cs (SandboxSpec.Load). aim: the error's sigma standing / moving (deg) and the judge's own Mulberry32 salt; score: the clear time's cap (s), the weight of the HP taken (0.05: 20 HP = 1 s, inferred), the seeds per cell (the median); script: the parry's reach (m), the strafe's half width (m), the boost's period (s), the rotation's period (points mode, s). A cell: its round's HP, the player's script (stand | strafe | backpedal | boost), its groups (kind, count, distance ahead m, spread across m, or line: one every N m from distance on; affix), forged (each gun at its forge tier).",
+  "version": 1,
+  "aim": { "sigmaStandDeg": 0.6, "sigmaMoveDeg": 1.5, "seedSalt": 1515002131 },
+  "score": { "capSeconds": 30, "damageWeight": 0.1, "seeds": 10 },
+  "script": { "parryRange": 2, "strafeMeters": 4, "boostEvery": 2, "rotateEvery": 3 },
+  "cells": [
+    { "id": "C1", "name": "husk-rush", "round": 5, "script": "stand", "groups": [ { "kind": "husk", "count": 1, "distance": 20 } ] },
+    { "id": "C2", "name": "husk-close", "round": 5, "script": "stand", "groups": [ { "kind": "husk", "count": 3, "distance": 4, "spread": 3 } ] },
+    { "id": "C3", "name": "swarm", "round": 8, "script": "stand", "groups": [ { "kind": "swarmer", "count": 8, "distance": 15, "spread": 7 } ] },
+    { "id": "C4", "name": "spitter-far", "round": 8, "script": "stand", "groups": [ { "kind": "spitter", "count": 2, "distance": 22, "spread": 6 } ] },
+    { "id": "C5", "name": "line", "round": 8, "script": "stand", "groups": [ { "kind": "husk", "count": 5, "distance": 10, "line": 2 } ] },
+    { "id": "C6", "name": "mixed-12", "round": 12, "script": "strafe", "groups": [ { "kind": "husk", "count": 6, "distance": 14, "spread": 10 }, { "kind": "swarmer", "count": 6, "distance": 17, "spread": 10 }, { "kind": "spitter", "count": 1, "distance": 21 } ] },
+    { "id": "C7", "name": "mixed-20", "round": 20, "script": "strafe", "forged": true, "groups": [ { "kind": "husk", "count": 6, "distance": 14, "spread": 10 }, { "kind": "swarmer", "count": 6, "distance": 17, "spread": 10 }, { "kind": "spitter", "count": 1, "distance": 21 } ] },
+    { "id": "C8", "name": "charger", "round": 8, "script": "stand", "groups": [ { "kind": "charger", "count": 1, "distance": 18 } ] },
+    { "id": "C9", "name": "drones", "round": 10, "script": "stand", "groups": [ { "kind": "drone", "count": 2, "distance": 14, "spread": 6 } ] },
+    { "id": "C10", "name": "shielded", "round": 10, "script": "stand", "groups": [ { "kind": "husk", "count": 3, "distance": 12, "spread": 4, "affix": "shielded" } ] },
+    { "id": "C11", "name": "on-the-move", "round": 12, "script": "boost", "groups": [ { "kind": "husk", "count": 6, "distance": 14, "spread": 10 }, { "kind": "swarmer", "count": 6, "distance": 17, "spread": 10 }, { "kind": "spitter", "count": 1, "distance": 21 } ] }
+  ]
+}

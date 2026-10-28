@@ -1,0 +1,73 @@
+{
+ "_why": "NIGHT67 T1a (Tools/night/gen-slots.cjs --level kiln --export): n57-kiln's room kb3d (3.3d THE CRACKED FLOOR) exactly as Design/levels/n57/kiln.plan.json has it: the row (every key), its zone-keyed pieces (boxes, ramps, pads, grapple, pits, tunnels), its room-keyed pieces (lights, props). The slot's starting point: rebuild it here (every new piece with a job and a why), give the row bot43: false, verb65 (the slate's verb) and line65 (the verb's line, 3+ waypoints); never an area67 block (refused). A key the row drops needs a reason in drop{}. The room's opening: top-level \"opening\": \"vista\" | \"ambushed\" | \"ambusher\" | \"held\" (and \"opening_why\"); left out, the room keeps n57-kiln's.",
+ "room": "kb3d",
+ "row": {
+  "id": "kb3d",
+  "name": "3.3d THE CRACKED FLOOR",
+  "kind": "room",
+  "rect": [-12,-277.5,12,-257.5],
+  "height": 12,
+  "roof": true,
+  "par": 60,
+  "job36": "combine",
+  "card57": "THE CRACKED FLOOR",
+  "verb36": "the worm's two moves, small: hop to an iron plate when the ash glows (the burrower), side-step the charge into a kiln post and punch its back (the charger); the kiln wall's ride over the charge onto the mouth ledge",
+  "spawn": {"at":[-7.5,0,-262],"yawDeg":0},
+  "spawn_why": "NIGHT57 L (card kb3d, Molecule: the apron): 4.5 m in, 1.5 m off the door's axis (T-119)",
+  "exit": [0,0,-275.5],
+  "arena36": true,
+  "waves": [["burrower","husk","husk","husk","husk"],["charger","swarmer","swarmer","swarmer","swarmer"],["burrower","charger"]],
+  "roles43": ["burrower + fodder (the breach under you on the ash)","charger + fodder (the line down the straight)","burrower + charger (the worm's two moves together: E-7)"],
+  "roles43_why": "NIGHT57 L (card kb3d; R-2 combine, E-7): both roles were introduced before (the burrower in kb2c, the charger in kb3); here they combine, the boss's language shown small before the boss",
+  "nodes": [[-6,0,-275],[-3.5,0,-275.5],[-0.5,0,-274.5],[3,0,-272.5],[5,0,-272],[8,0,-266],[9,0,-263]],
+  "highNodes": [[-10,4.5,-274.5],[9.5,2.5,-275.5]],
+  "nodes_why": "NIGHT57 L (card kb3d, Molecule; R-4: chargers on the long straight, burrowers under the open floor): wave 1 across the far floor in the entry's view past the first kiln post, the charger's straight (east, out of the entry's cone), the heap and the ledge",
+  "waveNodes43": [[[-6,0,-275],[-3.5,0,-275.5],[-0.5,0,-274.5],[3,0,-272.5],[5,0,-272]],[[8,0,-266],[9,0,-263],[-6,0,-275],[-3.5,0,-275.5],[-0.5,0,-274.5],[3,0,-272.5],[5,0,-272]],[[-6,0,-275],[-3.5,0,-275.5],[-0.5,0,-274.5],[3,0,-272.5],[5,0,-272],[8,0,-266],[9,0,-263]]],
+  "waveNodes43_why": "NIGHT57 L (card kb3d): wave 1 (the burrower and the husks) on the far floor in view; wave 2 (the charger) from the straight's end; wave 3 anywhere on the floor",
+  "rims36": {"rects":[[-2,-270.5,-1.5,-261.5],[1,-270.5,1.5,-261.5]],"why":"NIGHT57 L (card kb3d, Hazard both ways): the breach's two rims: a charger that misses you at its edge goes in; a blast puts the walkers in"},
+  "proofs": [{"kind":"walk","points":[[-7.5,0,-262],[-0.5,0,-260],[2.5,0,-260.5],[2.5,0,-268.5],[1.5,0,-273],[-2.5,0,-274],[-7,0,-272],[-7.5,0,-266],[-7.5,0,-262]]},{"kind":"walk","points":[[-9.5,0,-262.2],[-9.5,4.5,-271],[-9,4.5,-274.5]]},{"kind":"walk","points":[[1,0,-275.5],[6,2.5,-275.5],[9,2.5,-276]]},{"kind":"walk","points":[[9.5,0,-260],[9.5,0,-270]]}],
+  "frames36": {"mid":[-6,0,-259.5,0,0.1],"exit":[8.5,2.5,-275,0,-0.3]},
+  "frames52": {"_why":"NIGHT57 L the room frames (a452 / a157): the door just crossed (the breach's crack, the ash and the straight either side), the fight from the apron's east, the clinker heap's top","entry":[-6,0,-259,0,0.04],"mid":[-1,0,-261,-20,0.05],"high":[-9.5,4.5,-273,-60,-0.25]},
+  "kiln57_why": "NIGHT57 L (Tools/night/gen-n57-kiln.cjs; docs/ROOMS.md, Level 3 as n57-kiln, kb3d THE CRACKED FLOOR): built from scratch in the slot DE: 24 x 20 x 12 m, three planes (0 / 2.5 / 4.5 m), the kiln wall (a 17 m ride), the breach, two kiln posts, three iron plates, the breach vent"
+ },
+ "boxes": [
+  {"zone":"kb3d","kind":"wall","min":[11.4,0,-275.5],"max":[12,12,-258.5],"job":"verb it celebrates: the kiln wall's ride over the charger's straight","why":"THE KILN WALL (ride, cyan, 17 m on the east wall, to the roof): ride it down the charger's straight out of its line and off its end onto the mouth ledge (the walk round is the ledge ramp's long way)","note":"THE KILN WALL (ride, cyan, 17 m on the east wall, to the roof): ride it down the charger's straight out of its line and off its end onto the mouth ledge (the walk round is the ledge ramp's long way)","ride":true,"ride36":{"face":"W","planeX":11.4,"lz":[1,18]}},
+  {"zone":"kb3d","kind":"deck","min":[6,0,-277.5],"max":[11.4,2.5,-272.5],"job":"molecule: the mouth ledge (the mid tier, the ride's landing)","why":"THE MOUTH LEDGE (2.5 m, the far east corner at the kiln mouth): the kiln wall's landing; a stand over the straight; the charger cannot climb, the walkers come up its ramp (no safe ledge)","note":"THE MOUTH LEDGE (2.5 m, the far east corner at the kiln mouth): the kiln wall's landing; a stand over the straight; the charger cannot climb, the walkers come up its ramp (no safe ledge)"},
+  {"zone":"kb3d","kind":"deck","min":[-12,0,-277.5],"max":[-7.5,4.5,-270.5],"job":"spatial law: the clinker heap (the high tier)","why":"THE CLINKER HEAP (4.5 m, the far west corner over the ash): the high ground the breach vent throws you onto; the burrower cannot reach you there, the husks come up its ramp (no safe ledge)","note":"THE CLINKER HEAP (4.5 m, the far west corner over the ash): the high ground the breach vent throws you onto; the burrower cannot reach you there, the husks come up its ramp (no safe ledge)"},
+  {"zone":"kb3d","kind":"hull","min":[-12,4.5,-276],"max":[-10.5,12,-273.5],"job":"every-solid: the heap's stack (cover on the high tier)","why":"THE HEAP's STACK (on the heap's back corner, to the roof): the cover on the high tier you come round; it cuts the heap's line to the door","note":"THE HEAP's STACK (on the heap's back corner, to the roof): the cover on the high tier you come round; it cuts the heap's line to the door"},
+  {"zone":"kb3d","kind":"hull","min":[-3.5,0,-264.5],"max":[-2,12,-261.5],"job":"30 s problem: the first kiln post (the charger's stun post; the foothold)","why":"THE FIRST KILN POST (floor to roof, 4-7 m in beside the breach's head): the entry's foothold of cover (R5); bait the charge into it (the charger stuns 1.5 s, its back open: punch it)","note":"THE FIRST KILN POST (floor to roof, 4-7 m in beside the breach's head): the entry's foothold of cover (R5); bait the charge into it (the charger stuns 1.5 s, its back open: punch it)"},
+  {"zone":"kb3d","kind":"hull","min":[4,0,-266.5],"max":[5.5,12,-264.5],"job":"30 s problem: the second kiln post (the charger's stun post on the straight)","why":"THE SECOND KILN POST (floor to roof, on the straight): the charger's stun post where its line runs; side-step the charge into it, then punch","note":"THE SECOND KILN POST (floor to roof, on the straight): the charger's stun post where its line runs; side-step the charge into it, then punch"},
+  {"zone":"kb3d","kind":"deck","min":[-11.5,0,-261.5],"max":[-8.5,0.4,-259],"job":"spatial law: an iron plate on the ash (burrow-safe)","why":"AN IRON PLATE (west, by the heap ramp's foot, 0.4 m): burrow-safe ground (the burrower cannot surface through iron): the hop you make when the ash glows under you","note":"AN IRON PLATE (west, by the heap ramp's foot, 0.4 m): burrow-safe ground (the burrower cannot surface through iron): the hop you make when the ash glows under you","burrowSafe43":true},
+  {"zone":"kb3d","kind":"deck","min":[-6.5,0,-270],"max":[-3.5,0.4,-267],"job":"spatial law: an iron plate on the ash (burrow-safe)","why":"AN IRON PLATE (the middle of the ash, beside the breach vent, 0.4 m): burrow-safe ground (the burrower cannot surface through iron): the hop you make when the ash glows under you","note":"AN IRON PLATE (the middle of the ash, beside the breach vent, 0.4 m): burrow-safe ground (the burrower cannot surface through iron): the hop you make when the ash glows under you","burrowSafe43":true},
+  {"zone":"kb3d","kind":"deck","min":[3.5,0,-271],"max":[6.5,0.4,-268.5],"job":"spatial law: an iron plate on the ash (burrow-safe)","why":"AN IRON PLATE (east of the breach, on the straight, 0.4 m): burrow-safe ground (the burrower cannot surface through iron): the hop you make when the ash glows under you","note":"AN IRON PLATE (east of the breach, on the straight, 0.4 m): burrow-safe ground (the burrower cannot surface through iron): the hop you make when the ash glows under you","burrowSafe43":true},
+  {"zone":"kb3d","kind":"hull","min":[-12,0,-258.5],"max":[-8,12,-257.5],"job":"molecule: the entrance gated (the door's west liner)","why":"the DOOR's west LINER (1 m thick, noride): no ride across the doorway: the fight goes into the room","note":"the DOOR's west LINER (1 m thick, noride): no ride across the doorway: the fight goes into the room","noride":true},
+  {"zone":"kb3d","kind":"hull","min":[-4,0,-258.5],"max":[0,12,-257.5],"job":"molecule: the entrance gated (the door's east liner)","why":"the DOOR's east LINER (1 m thick, noride): as the west's: the room's ride is the kiln wall","note":"the DOOR's east LINER (1 m thick, noride): as the west's: the room's ride is the kiln wall","noride":true}
+ ],
+ "ramps": [
+  {"zone":"kb3d","from":[1.5,-275.5],"to":[6,-275.5],"width":3,"rise":2.5,"job":"molecule: the walkers' climb to the mouth ledge","why":"THE LEDGE RAMP (2.5 m over 4.5 m, from beside the exit east onto the ledge): the walkers' climb to the ride's landing (no safe ledge)","note":"THE LEDGE RAMP (2.5 m over 4.5 m, from beside the exit east onto the ledge): the walkers' climb to the ride's landing (no safe ledge)"},
+  {"zone":"kb3d","from":[-9.5,-262.5],"to":[-9.5,-270.5],"width":3,"rise":4.5,"job":"molecule: the walkers' climb to the clinker heap","why":"THE HEAP RAMP (4.5 m over 8 m, along the west wall): the walkers' climb onto the high tier (GG: a route enemies can climb); the slow way up for a player, over the burrower's ash","note":"THE HEAP RAMP (4.5 m over 8 m, along the west wall): the walkers' climb onto the high tier (GG: a route enemies can climb); the slow way up for a player, over the burrower's ash"}
+ ],
+ "pads": [
+  {"zone":"kb3d","at":[-5,0,-266],"target":[-10,4.5,-274],"apexAbove":2.5,"job":"molecule: the upward line, the breach vent","why":"THE BREACH VENT (a jump pad on the ash beside the breach): the worm's heat through the crack throws you out of the burrower's ash onto the clinker heap (4.5 m)","note":"the breach vent"}
+ ],
+ "grapple": [],
+ "pits": [
+  {"zone":"kb3d","rect":[-1.5,-270.5,1,-261.5],"floorY":-0.8,"lava":true,"job":"hazard","why":"THE BREACH (2.5 x 9 m of lava from the door's side into the room: where the worm came up): both ways (A-5): it burns you and knocks you up; a charger that misses you at its edge goes in; a blast puts the walkers in; it splits the burrower's ash from the charger's straight","note":"the breach"}
+ ],
+ "tunnels": [],
+ "lights": [
+  {"id":"kb3d-L1","room":"kb3d","kind":"ceiling","at":[-6,11.95,-261],"normal":[0,-1,0],"size":[4,3,0.1],"color":"white","range":10,"intensity":0.9},
+  {"id":"kb3d-L2","room":"kb3d","kind":"ceiling","at":[0,11.95,-267],"normal":[0,-1,0],"size":[6,4,0.1],"color":"white","range":11,"intensity":1.1},
+  {"id":"kb3d-L3","room":"kb3d","kind":"ceiling","at":[2,11.95,-274.5],"normal":[0,-1,0],"size":[4,4,0.1],"color":"white","range":10,"intensity":1},
+  {"id":"kb3d-L4","room":"kb3d","kind":"pool","at":[-9.5,4.525,-272.5],"normal":[0,1,0],"size":[2,2,0.05],"color":"white","range":8,"intensity":1},
+  {"id":"kb3d-L5","room":"kb3d","kind":"pool","at":[8.5,2.525,-275],"normal":[0,1,0],"size":[2,2,0.05],"color":"white","range":7,"intensity":0.9},
+  {"id":"kb3d-L6","room":"kb3d","kind":"pool","at":[-0.25,-0.775,-266],"normal":[0,1,0],"size":[1.5,6,0.05],"color":"orange","range":9,"intensity":1.4,"danger":true},
+  {"id":"kb3d-L7","room":"kb3d","kind":"pool","at":[-5,0.42500000000000004,-268.5],"normal":[0,1,0],"size":[1.6,1.6,0.05],"color":"cyan","range":5,"intensity":1},
+  {"id":"kb3d-L8","room":"kb3d","kind":"pool","at":[5,0.42500000000000004,-269.75],"normal":[0,1,0],"size":[1.6,1.6,0.05],"color":"cyan","range":5,"intensity":1},
+  {"id":"kb3d-L9","room":"kb3d","kind":"pool","at":[0,0.025,-275.5],"normal":[0,1,0],"size":[2.5,2.5,0.05],"color":"cyan","range":8,"intensity":1.7}
+ ],
+ "props": [
+  {"id":"kb3d-P1","room":"kb3d","kind":"healthPickup","at":[2.5,0.9,-266],"size":[0.6,0.6,0.6],"yawDeg":0,"collider":false,"pickup":true,"job":"reward","card57":"30 s problem: the reward on the risky leg","why":"the health on the breach's east rim, on the charger's straight (the riskiest spot: the charge comes down the straight, the lava beside it)"}
+ ],
+ "drop": {}
+}

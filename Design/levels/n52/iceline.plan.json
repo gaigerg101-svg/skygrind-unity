@@ -1,0 +1,5736 @@
+{
+ "_why": "NIGHT52 the room loop (design.n52.iceline52 swaps n47-iceline for n52-iceline while the row is on; NIGHT52.md section 5): n47's plan with the loop's rebuilt rooms (THE ROOM CONTRACT, section 2). Before it: NIGHT47 builder B (design.n47.iceline47 swaps n46-iceline for this file while the row is on; GG 2026-10-18 \"the charging enemy in the second stage needs to appear earlier and more frequently before the boss fight ... a mini challenge with three or more of them plus other enemies\"): Tools/night/gen-n47-iceline.cjs copies n46-iceline's plan whole: a charger alone in g1 after the tank, one in g2's third wave and g5's second, and g8 rebuilt as THE STAMPEDE (the card THE ROUNDHOUSE). n46-iceline's _why: NIGHT46 builder A3 (design.n46.iceline46 swaps n45-iceline for this file while the row is on; GG 2026-10-17 \"need to feel and flow better\"): Tools/night/gen-n46-iceline.cjs copies n45-iceline's plan whole: g4 gets a second bridge (a loop round the canal), g8's first charger stands in view, and g3 THE SWARM is rebuilt from its identity card THE TIPPLE (docs/ROOMS.md, NIGHT46). n45-iceline's _why: NIGHT45 builder A2 (design.n45.iceline45 swaps n43-iceline for this file while the row is on; GG 2026-10-17 J4; DESIGN-RULES A-9): Tools/night/gen-n45-iceline.cjs copies n43-iceline's plan whole and rebuilds g7 THE MIX only, from its identity card THE THAW LOCK (docs/ROOMS.md): a stone quay, a burning grate (Lava30) with two bridges and THE BOILER standing in it, two coal gantries; wave 2 from the door side. n43-iceline's _why: NIGHT43 builder E1 (design.n43.iceline43 swaps n40-iceline for this file while the row is on; GG G23 / G19; DESIGN-RULES R-3): Tools/night/gen-n43-iceline.cjs copies n40-iceline's plan whole and changes four rooms' rows only: g5 a WARDEN + 2 DRONES (from g7), g6 a FUSION husk at the far end of a 13.5 m dash lane after the KESTREL lesson ('{dash} INTO IT. {fire} THE GAUNTLET.'), g7 THE MIX cut to 3 roles (tank, spitter, swarmer: introduce, combine, escalate), g8 a CHARGER alone beside a wall ('{dash} ASIDE: IT HITS THE WALL'), a CHARGER with an escort, two CHARGERS. n40-iceline's _why: NIGHT40 builder L2 (design.n40.iceline40 swaps n37-iceline for this file): Tools/night/gen-n40-iceline.cjs from the beat sheet Design/levels/n40/iceline.beats.md: the gauntlet's curriculum, one job per room: 2.1 TANK ALONE, 2.2 THE SHIELD (a WARDEN), 2.3 THE SWARM (the blast for the pack), 2.4 THE REACH (a DRONE across the canal), 2.5 THE COOLDOWN (the 15 s), 2.6 THE ARMOURY (the KESTREL returns: iceline40.awards), 2.7 THE MIX, 2.8 THE REHEARSAL (a CHARGER), 2.9 REST, THE BRAWL (B2's boss room x9). GG 2026-10-13 asks 13-14 (Research/2026-10-14-wave40/GG-REQUEST.md).",
+ "id": "n52-iceline",
+ "name": "LEVEL 2 THE ICE LINE",
+ "n29": true,
+ "n30": true,
+ "n36": true,
+ "floorSize": 636,
+ "killPlaneY": -30,
+ "wallHeight": 14,
+ "rank": {
+  "time": [
+   345,
+   530,
+   790,
+   1190
+  ],
+  "kills": [
+   100,
+   85,
+   65,
+   40
+  ],
+  "style": [
+   2500,
+   1500,
+   700,
+   250
+  ],
+  "_why": "Unity-only (builder L2, NIGHT40): S/A/B/C cuts: time = the beat sheet's room times (219 s) + THE BRAWL's bot band middle 45 s (boss_rules 7), x [1.3, 2, 3, 4.5] as NIGHT36's; kills and style as n38-iceline's (NOT calibrated: no walk bot medians yet)."
+ },
+ "n27": {
+  "noKills": true
+ },
+ "rooms": [
+  {
+   "id": "g1",
+   "name": "2.1 TANK ALONE",
+   "kind": "room",
+   "rect": [
+    -11,
+    -26,
+    11,
+    0
+   ],
+   "height": 9,
+   "roof": true,
+   "par": 12,
+   "job36": "teach",
+   "verb36": "the punch: a tank dies to one swing of the gauntlet",
+   "spawn": {
+    "at": [
+     0,
+     0,
+     -2
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    0,
+    0,
+    -24.5
+   ],
+   "arena36": true,
+   "waves": [
+    [
+     "tank"
+    ],
+    [
+     "charger"
+    ]
+   ],
+   "lessons": [
+    {
+     "promptPad": "{fire}: ONE SWING FELLS A TANK",
+     "kind": "husksDead",
+     "n": 1,
+     "prompt": "{fire}: ONE SWING FELLS A TANK"
+    },
+    {
+     "promptPad": "Dodge late. It can't turn.",
+     "kind": "husksDead",
+     "n": 2,
+     "prompt": "Dodge late. It can't turn."
+    }
+   ],
+   "lessons31": [
+    {
+     "promptPad": "{fire}: ONE SWING FELLS A TANK",
+     "kind": "husksDead",
+     "n": 1,
+     "prompt": "{fire}: ONE SWING FELLS A TANK"
+    },
+    {
+     "promptPad": "Dodge late. It can't turn.",
+     "kind": "husksDead",
+     "n": 2,
+     "prompt": "Dodge late. It can't turn."
+    }
+   ],
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       0,
+       -2
+      ],
+      [
+       3,
+       0,
+       -8
+      ],
+      [
+       3,
+       0,
+       -20
+      ],
+      [
+       0,
+       0,
+       -24.5
+      ]
+     ]
+    }
+   ],
+   "frames36": {
+    "mid": [
+     5,
+     0,
+     -3,
+     24.444,
+     -0.05
+    ],
+    "exit": [
+     0,
+     0,
+     -18,
+     0,
+     -0.075
+    ]
+   },
+   "nodes": [
+    [
+     0,
+     0,
+     -14
+    ]
+   ],
+   "waveNodes43": [
+    null,
+    [
+     [
+      0,
+      0,
+      -22
+     ]
+    ]
+   ],
+   "waveNodes43_why": "NIGHT47 B (G25): wave 2's CHARGER comes in at the exit door's mouth (0, -22), 20 m down the room's axis from the spawn and in view, alone; its first charge runs at you down the axis: sidestep late and it breaks on the entry wall or a ride panel (x +-8), its back open",
+   "iceline47_why": "NIGHT47 B G25 (DECIDE47 D-10): a second wave, the level's first CHARGER alone after the tank (R-3 broken on purpose: GG's \"appear earlier\"); its lesson (copy for F) after the tank's"
+  },
+  {
+   "id": "g2",
+   "name": "2.2 THE SHIELD",
+   "kind": "room",
+   "rect": [
+    -12,
+    -58,
+    9,
+    -30
+   ],
+   "height": 10,
+   "roof": true,
+   "par": 30,
+   "job36": "teach",
+   "verb36": "the WARDEN: punch the shield (a 1 s stun) or get round it",
+   "spawn": {
+    "at": [
+     0,
+     0,
+     -34.5
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    0,
+    0,
+    -56
+   ],
+   "arena36": true,
+   "waves": [
+    [
+     "warden",
+     "warden",
+     "husk",
+     "husk"
+    ],
+    [
+     "charger",
+     "husk",
+     "husk"
+    ]
+   ],
+   "lessons": [
+    {
+     "promptPad": "{fire} THE SHIELD, OR FLANK IT",
+     "kind": "husksDead",
+     "n": 1,
+     "prompt": "{fire} THE SHIELD, OR FLANK IT"
+    }
+   ],
+   "lessons31": [
+    {
+     "promptPad": "{fire} THE SHIELD, OR FLANK IT",
+     "kind": "husksDead",
+     "n": 1,
+     "prompt": "{fire} THE SHIELD, OR FLANK IT"
+    }
+   ],
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       0,
+       -34.5
+      ],
+      [
+       0,
+       0,
+       -38
+      ],
+      [
+       -2,
+       0,
+       -42
+      ],
+      [
+       -2.5,
+       0,
+       -47.5
+      ],
+      [
+       0,
+       0,
+       -51
+      ],
+      [
+       0,
+       0,
+       -56
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -4.5,
+       0,
+       -46
+      ],
+      [
+       -4.5,
+       1.5,
+       -54
+      ],
+      [
+       -3,
+       1.5,
+       -55.5
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -10.8,
+       0,
+       -39.5
+      ],
+      [
+       -10.8,
+       0,
+       -43
+      ],
+      [
+       -10.8,
+       4,
+       -53.5
+      ],
+      [
+       -9.5,
+       4,
+       -55.5
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       7.8,
+       0,
+       -39.5
+      ],
+      [
+       7.8,
+       0,
+       -43
+      ],
+      [
+       7.8,
+       4,
+       -53.5
+      ],
+      [
+       7,
+       4,
+       -55.5
+      ]
+     ]
+    }
+   ],
+   "frames36": {
+    "mid": [
+     6,
+     0,
+     -33,
+     24.775,
+     -0.042
+    ],
+    "exit": [
+     0,
+     0,
+     -50,
+     0,
+     -0.075
+    ]
+   },
+   "nodes": [
+    [
+     0,
+     0,
+     -49.5
+    ],
+    [
+     0,
+     0,
+     -51.5
+    ]
+   ],
+   "highNodes": [
+    [
+     -9.5,
+     4,
+     -55.5
+    ],
+    [
+     7,
+     4,
+     -55.5
+    ]
+   ],
+   "iceline47_why": "NIGHT47 B G25: wave 3 [charger, husk, husk]: the flank pillars (x +-9..9.6) break its charge; at most 3 roles at once (warden, husk, charger)",
+   "spawn_why": "NIGHT52 fix K2 (n52-loop-fix-k2.cjs): 4.5 m in from the door d1 (it stood 2 m in, on the door's 4 m dwell band): a retry starts you facing the anvil, not in the doorway",
+   "nodes_why": "NIGHT52 fix K2 (n52-loop-fix-k2.cjs): the warden's ground north of the anvil (it turns on the anvil while you loop round); the husks of waves 2 / 3 from the two gantries (4 m), down their ramps and lanes; EXT53 (e53-m-g2.cjs): the east gantry's high node 2.5 m west with the gantry (the east wall 3 m in)",
+   "loop52_why": "NIGHT52 fix K2 (n52-loop-fix-k2.cjs): n47's THE SHIELD (24 x 28 x 9 m, 8 pieces 1.19 per 100 m2, the lead's D-25: an open floor with two pillars) rebuilt to THE ROOM CONTRACT: 24 x 28 x 10 m, 17 pieces, three planes (0 / 1.5 / 4 m) on walkers' ramps, two 18 m ride panels with a flank lane behind each, THE ANVIL to loop round, four springs (two over the warden onto the north decks, two up the flank lanes); the lesson and the waves kept EXT53 (e53-m-g2.cjs, builder M): the mirror broken: the west is the flank (its panel, hidden lane, springs, gantry and health kept), the east is the face: the east wall 3 m in (21 x 28 m), the east panel, deck 1.5, its ramp, spring and pillar cut, the east gantry 4 x 5 m with its ramp on the new wall, the quench tank, the run-up step and the yard spring added.",
+   "frames52": {
+    "_why": "NIGHT53 (n53-loop-g4.cjs, queue q2): the room frames reel a452: entry at the spawn, mid in the door half facing the anvil, high on the west gantry looking back (off the pads)",
+    "entry": [
+     0,
+     0,
+     -34.5,
+     0,
+     0.02
+    ],
+    "mid": [
+     -4,
+     0,
+     -40,
+     10,
+     0.05
+    ],
+    "high": [
+     -9.5,
+     4,
+     -55.5,
+     -140,
+     -0.12
+    ]
+   },
+   "waveNodes43": [
+    [
+     [
+      -2.5,
+      0,
+      -48.5
+     ],
+     [
+      -6.5,
+      0,
+      -51.5
+     ],
+     [
+      -8.5,
+      4,
+      -55.5
+     ],
+     [
+      -3.5,
+      1.5,
+      -53.5
+     ]
+    ]
+   ],
+   "waveNodes43_why": "NIGHT56 L (n56-l-wave1.py, L2 spawns in view): wave 1 (warden, warden, husk, husk) spawns where the entry sees it (held, 45 passing floor spots, 36 in the minSpawnDist band): [-2.5, 0, -48.5]; [-6.5, 0, -51.5]; [-8.5, 4, -55.5]; [-3.5, 1.5, -53.5]; waves 1 + 2 merged [1, 3, 3] -> [4, 3]: both wardens and their husks hold the pillars at once",
+   "waves56_why": "NIGHT56 L (n56-l-wave1.py, L2 spawns in view): waves 1 + 2 merged [1, 3, 3] -> [4, 3]: both wardens and their husks hold the pillars at once (the same enemies, re-dealt: no wave-1 placement can show 4 of a smaller wave)"
+  },
+  {
+   "id": "g3",
+   "name": "2.3 THE SWARM",
+   "kind": "room",
+   "rect": [
+    -12,
+    -90,
+    12,
+    -62
+   ],
+   "height": 10,
+   "roof": true,
+   "par": 25,
+   "job36": "teach",
+   "verb36": "the LT blast: fill the glove on the crew, then blast the swarm where the spill walls pack it into the west lane; ride the panel past the pack, hoist out of it onto the trestle, or hold the loft and drop on it",
+   "spawn": {
+    "at": [
+     0,
+     0,
+     -64
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    0,
+    0,
+    -88
+   ],
+   "arena36": true,
+   "waves": [
+    [
+     "husk",
+     "husk",
+     "husk"
+    ],
+    [
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "swarmer"
+    ]
+   ],
+   "lessons": [
+    {
+     "promptPad": "FIVE KILLS: {altFire} BLASTS THE PACK",
+     "kind": "husksDead",
+     "n": 3,
+     "prompt": "FIVE KILLS: {altFire} BLASTS THE PACK"
+    }
+   ],
+   "lessons31": [
+    {
+     "promptPad": "FIVE KILLS: {altFire} BLASTS THE PACK",
+     "kind": "husksDead",
+     "n": 3,
+     "prompt": "FIVE KILLS: {altFire} BLASTS THE PACK"
+    }
+   ],
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       0,
+       -64
+      ],
+      [
+       -8.5,
+       0,
+       -71
+      ],
+      [
+       -8.5,
+       0,
+       -81
+      ],
+      [
+       -3.5,
+       0,
+       -84
+      ],
+      [
+       0,
+       0,
+       -88
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       0,
+       -64
+      ],
+      [
+       3,
+       0,
+       -73
+      ],
+      [
+       3,
+       0,
+       -82
+      ],
+      [
+       0,
+       0,
+       -88
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       10.5,
+       0,
+       -64.5
+      ],
+      [
+       10.5,
+       2,
+       -71
+      ],
+      [
+       10.5,
+       2,
+       -84.5
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       5.5,
+       0,
+       -75
+      ],
+      [
+       5.5,
+       4,
+       -66
+      ],
+      [
+       7,
+       4,
+       -64
+      ]
+     ]
+    }
+   ],
+   "frames36": {
+    "mid": [
+     5,
+     0,
+     -65,
+     34.695,
+     -0.04
+    ],
+    "exit": [
+     0,
+     0,
+     -77,
+     0,
+     -0.046
+    ]
+   },
+   "nodes": [
+    [
+     -8.5,
+     0,
+     -82
+    ],
+    [
+     -9.5,
+     0,
+     -84.5
+    ],
+    [
+     -7,
+     0,
+     -88.5
+    ],
+    [
+     -9.5,
+     0,
+     -79
+    ],
+    [
+     -6,
+     0,
+     -86.5
+    ],
+    [
+     -4,
+     0,
+     -87
+    ],
+    [
+     8.5,
+     2,
+     -88
+    ]
+   ],
+   "nodes_why": "NIGHT46 A3 (THE TIPPLE): the chute's mouth and the far floor's corners; NIGHT52 loop: the NE corner's node on the tipple head (2 m: spawns on two heights); NIGHT53 (n53-loop-g3.cjs): wave 2's floor nodes packed at the west lane's north end, out of the chute (the review: spread on three sides, the swarm never packed); the tipple head's 2 m node kept; EXT53 (e53-fix-g3.cjs): the (-7.5, 0, -86.5) node off the NW coal car's margin to (-7, 0, -88.5) (levelgen: no grid node under it)",
+   "waveNodes43": [
+    [
+     [
+      -4.5,
+      0,
+      -67.5
+     ],
+     [
+      -6.5,
+      0,
+      -70.5
+     ],
+     [
+      -8.5,
+      0,
+      -68.5
+     ]
+    ],
+    [
+     [
+      -8.5,
+      0,
+      -75
+     ],
+     [
+      -9.5,
+      0,
+      -77.5
+     ],
+     [
+      0,
+      0,
+      -76.5
+     ],
+     [
+      0.5,
+      0,
+      -78.5
+     ],
+     [
+      -6,
+      0,
+      -86.5
+     ],
+     [
+      4,
+      0,
+      -86
+     ],
+     [
+      8.5,
+      2,
+      -88
+     ]
+    ]
+   ],
+   "waveNodes43_why": "NIGHT46 A3 (THE TIPPLE, flow plan 8): wave 1 (the crew, 3 husks) either side of the hopper 13.5-14 m from the door, in view; wave 2 (the swarm) pours from the chute's two sides (12.5-16.5 m from the door), or from the far floor's corners when you stand within 12 m of the chute (minSpawnDist): always ahead, never behind the door NIGHT56 L (n56-l-wave1.py, L2 spawns in view): wave 1 (husk, husk, husk) spawns where the entry sees it (ambushed, 19 passing floor spots, 17 in the minSpawnDist band): [-7.5, 0, -72.5]; [-4.5, 0, -67.5]; [7.5, -0, -72.5] NIGHT56 L (n56-l-l3.py, L3) L2 attempt 2: wave 1 onto the circuit's west leg [-4.5, 0, -67.5], [-6.5, 0, -70.5], [-8.5, 0, -68.5]",
+   "iceline46_why": "NIGHT46 A3 I-3 (docs/ROOMS.md THE TIPPLE): n43's PEN and east ride panel cut; THE HOPPER (6 x 8 m to the roof, off the door's axis), THE TRESTLE (2 m deck + ramp, one-way drop north), four 0.9 m coal cars, the west ride panel kept; wave 1 in view either side of the hopper, wave 2 from the chute; rect, doors, waves and lesson unchanged",
+   "frames52": {
+    "_why": "NIGHT52 the room frames reel a452 (FeelReel.N52.Rooms.cs): entry, the fight live, the highest tier",
+    "entry": [
+     0,
+     0,
+     -64,
+     0,
+     0.02
+    ],
+    "mid": [
+     -3,
+     0,
+     -68,
+     12,
+     0.04
+    ],
+    "high": [
+     7,
+     4,
+     -64.5,
+     -20,
+     -0.14
+    ]
+   },
+   "loop52_why": "NIGHT52 the room loop (Tools/night/n52-loop-g3.cjs; THE ROOM CONTRACT's spirit, a teach room): NIGHT46's THE TIPPLE rebuilt as THE TIPPLE II: 24 x 28 x 10 m; 17 pieces; three tiers (floor, the 2 m trestle and tipple head, the 4 m SE loft), each on a walkers' ramp; the 18 m ride panel; the tipple and loft hoists (pads); two spill walls pack the swarm into the west lane; the lesson and waves kept. NIGHT53 (n53-loop-g3.cjs): the hopper 4 x 6 m, the chute's cheeks on its west face, wave 2's nodes in the west lane's north end."
+  },
+  {
+   "id": "g4",
+   "name": "2.4 THE REACH",
+   "kind": "room",
+   "rect": [
+    -12,
+    -124,
+    12,
+    -94
+   ],
+   "height": 10,
+   "roof": true,
+   "par": 30,
+   "job36": "twist",
+   "verb36": "the glove cannot reach a flyer: punch its orb back at it; ride the lock walls over the canal, take the hoist to the gallery and meet the drones at their height",
+   "spawn": {
+    "at": [
+     0,
+     0,
+     -96
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    0,
+    0,
+    -122
+   ],
+   "arena36": true,
+   "waves": [
+    [
+     "drone"
+    ],
+    [
+     "drone",
+     "drone"
+    ]
+   ],
+   "lessons": [
+    {
+     "promptPad": "{fire} AS THE YELLOW ORB ARRIVES",
+     "kind": "husksDead",
+     "n": 1,
+     "prompt": "{fire} AS THE YELLOW ORB ARRIVES"
+    }
+   ],
+   "lessons31": [
+    {
+     "promptPad": "{fire} AS THE YELLOW ORB ARRIVES",
+     "kind": "husksDead",
+     "n": 1,
+     "prompt": "{fire} AS THE YELLOW ORB ARRIVES"
+    }
+   ],
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       0,
+       -96
+      ],
+      [
+       0,
+       0,
+       -104
+      ],
+      [
+       0,
+       0,
+       -114
+      ],
+      [
+       0,
+       0,
+       -122
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -10,
+       -1,
+       -110.5
+      ],
+      [
+       -10,
+       -0.5,
+       -107.5
+      ],
+      [
+       -10,
+       0,
+       -104
+      ]
+     ],
+     "jump": true,
+     "maxSeconds": 8
+    }
+   ],
+   "frames36": {
+    "mid": [
+     4,
+     0,
+     -97,
+     10.784,
+     0.112
+    ],
+    "exit": [
+     0,
+     0,
+     -114,
+     0,
+     -0.06
+    ]
+   },
+   "nodes": [
+    [
+     -6,
+     0,
+     -113.5
+    ],
+    [
+     -3,
+     0,
+     -119
+    ],
+    [
+     4.5,
+     0,
+     -120
+    ],
+    [
+     3,
+     0,
+     -121
+    ]
+   ],
+   "iceline46_why": "NIGHT46 A3 I-1: the east bridge x 6..9 over the canal (2 crossings, a loop); the drones, their nodes, the lesson and the NW ledge unchanged",
+   "nodes_why": "n47's four drone nodes over the far floor; NIGHT52 loop: the east one 1.5 m off the NE gallery's corner (it was on it); NIGHT53: the first drone off the door's axis, west, on the canal's far lip (the review: the drone parked on the axis)",
+   "highNodes": [
+    [
+     -9,
+     2,
+     -121
+    ],
+    [
+     8,
+     4,
+     -121.5
+    ]
+   ],
+   "highNodes_why": "NIGHT52 loop: the NW ledge (2 m) and the NE gallery (4 m): the drones' high side across the canal",
+   "frames52": {
+    "_why": "NIGHT52 the room frames reel a452 (FeelReel.N52.Rooms.cs): entry, the fight live, the highest tier",
+    "entry": [
+     0,
+     0,
+     -96,
+     0,
+     0.02
+    ],
+    "mid": [
+     -3.5,
+     0,
+     -101,
+     10,
+     0.06
+    ],
+    "high": [
+     9,
+     4,
+     -121.5,
+     160,
+     -0.12
+    ]
+   },
+   "loop52_why": "NIGHT52 the room loop (Tools/night/n52-loop-g4.cjs; THE ROOM CONTRACT's spirit, a teach room: the enemy-types item exempt): n47's THE REACH rebuilt as THE REACH II: 24 x 30 x 10 m; 19 pieces; three tiers (floor, the 2 m NW ledge, the 4 m NE gallery, each on a walkers' ramp); two 17.5 m lock walls over the canal; the canal hoist and the return hoist (pads); the lesson and the waves kept. Fix 6 (n52-loop-fix6.cjs): the canal hoist in the east ride's pocket, the NW ramp flush to the wall. NIGHT53 (n53-loop-g4.cjs): the mirror broken: the east lock wall runs on to the gallery (24 m), the west wall and run-up cut, a sluice head and a canal stone in the west, the west post 3 m west, the first drone off-axis west, the canal lit from below."
+  },
+  {
+   "id": "g5",
+   "name": "2.5 THE COOLDOWN",
+   "kind": "room",
+   "rect": [
+    -11,
+    -158,
+    10,
+    -128
+   ],
+   "height": 12,
+   "roof": true,
+   "par": 30,
+   "job36": "twist",
+   "verb36": "the blast's 15 s cooldown: punch the bait on the floor, blast the second pack where it pours off the west shelf; ride the side walls or take the ice hoist to the crane when the warden's drones come",
+   "spawn": {
+    "at": [
+     0,
+     0,
+     -130
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    0,
+    0,
+    -156
+   ],
+   "arena36": true,
+   "waves": [
+    [
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "swarmer"
+    ],
+    [
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "charger"
+    ],
+    [
+     "warden",
+     "drone",
+     "drone"
+    ]
+   ],
+   "lessons": [
+    {
+     "promptPad": "SAVE {altFire} FOR THE SECOND PACK",
+     "kind": "husksDead",
+     "n": 5,
+     "prompt": "SAVE {altFire} FOR THE SECOND PACK"
+    }
+   ],
+   "lessons31": [
+    {
+     "promptPad": "SAVE {altFire} FOR THE SECOND PACK",
+     "kind": "husksDead",
+     "n": 5,
+     "prompt": "SAVE {altFire} FOR THE SECOND PACK"
+    }
+   ],
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       0,
+       -130
+      ],
+      [
+       0,
+       0,
+       -138
+      ],
+      [
+       -3.5,
+       0,
+       -143
+      ],
+      [
+       0,
+       0,
+       -149
+      ],
+      [
+       0,
+       0,
+       -156
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       0,
+       -150
+      ],
+      [
+       -0.5,
+       0,
+       -155
+      ],
+      [
+       -5.5,
+       2,
+       -155
+      ],
+      [
+       -8,
+       2,
+       -152
+      ]
+     ]
+    }
+   ],
+   "frames36": {
+    "mid": [
+     3,
+     0,
+     -131,
+     15,
+     -0.045
+    ],
+    "exit": [
+     0,
+     0,
+     -150,
+     0,
+     -0.075
+    ]
+   },
+   "nodes": [
+    [
+     -4.5,
+     0,
+     -146.5
+    ],
+    [
+     4.5,
+     0,
+     -146.5
+    ],
+    [
+     0,
+     0,
+     -149
+    ],
+    [
+     -2,
+     0,
+     -153
+    ],
+    [
+     2,
+     0,
+     -153
+    ]
+   ],
+   "highNodes": [
+    [
+     -8,
+     2,
+     -152
+    ],
+    [
+     -8,
+     2,
+     -156
+    ],
+    [
+     8,
+     4.5,
+     -140.5
+    ],
+    [
+     7.5,
+     4.5,
+     -142.5
+    ]
+   ],
+   "iceline43_why": "NIGHT43 E1 round 2 (R-3; one new role per room, no role before its own room): a third wave, a WARDEN with two DRONES, moved from g7 THE MIX: after the two packs, the shield with flyers over it while the blast cools (punch the shield or flank it, punch the orbs back). Both roles were taught before (g2 the shield, g4 the flyer); the room's roles: fodder, shield, flyer (3).",
+   "iceline47_why": "NIGHT47 B G25: wave 2 is the six swarmers + 1 charger (its two husks out: LevelValidate's budget is 2 kinds a wave): with charger47 a charge through the swarm bursts it (the charger as your tool while the blast cools)",
+   "nodes_why": "NIGHT52 loop (R-4, A18): the far floor round THE ICE STACK, the first two nodes outside the stack's shadow from the door (in view on entry: the bait pulls you into the ring; with them behind the stack the walk pilot waited at the door, dwell 0.9 -> 1.5 s)",
+   "highNodes_why": "NIGHT52 loop (R-4): the west shelf (2 m: the second pack pours off it, the blast's target) and the east crane deck (4.5 m: the drones' perch over the warden); NIGHT55 (n55-r-g5.cjs): the crane's two nodes onto the crane runway over the ring",
+   "frames52": {
+    "_why": "NIGHT52 the room frames reel a452 (FeelReel.N52.Rooms.cs): entry, the fight live, the highest tier",
+    "entry": [
+     0,
+     0,
+     -130,
+     0,
+     0.02
+    ],
+    "mid": [
+     -2.5,
+     0,
+     -137.5,
+     10,
+     0.04
+    ],
+    "high": [
+     8.5,
+     4.5,
+     -147.5,
+     146,
+     -0.12
+    ]
+   },
+   "loop52_why": "NIGHT52 the room loop, cycle 2 (Tools/night/n52-loop-g5.cjs; THE ROOM CONTRACT): n47's THE COOLDOWN rebuilt as THE ICEHOUSE: 22 x 30 x 12 m; 17 pieces; three tiers (floor, 2 m shelf, 4.5 m crane deck), each on a walkers' ramp; two 18 m ride walls; the ice hoist and the shelf hoist (pads); a ring round the ice stack; the waves and the lesson kept. Fix 1 (n52-loop-fix1.cjs, the persona reviews): 21 x 30 m; the door-side posts cut, the inner ice walls 4 m, the crane hoist turned round, the west hoist added, the frost lamp. NIGHT52 fix K1 (n52-loop-fix-k1.cjs, the QA sweep): the far posts flush to the decks (no slot). NIGHT55 (n55-r-g5.cjs, builder R; O-15): the mirror broken: the west is the pour (the shelf and the west ride kept, its ramp moved to the pour chute facing the ring), the east the crane: the crane deck moved out of the SE corner onto a 3.5 x 10 m runway along the east wall over the ring, the east ride wall 9.5 m into it (the ride the shortcut onto the drones' perch), its ramp from the far corner, the crane hook at the ramp's foot (the far east post moved), the cab and the crane hoist on the runway, the ice hoist re-aimed.",
+   "waveNodes43": [
+    [
+     [
+      -8.5,
+      0,
+      -137.5
+     ],
+     [
+      8.5,
+      0,
+      -137.5
+     ],
+     [
+      -5.5,
+      0,
+      -134.5
+     ],
+     [
+      5.5,
+      0,
+      -134.5
+     ]
+    ]
+   ],
+   "waveNodes43_why": "NIGHT56 L (n56-l-wave1.py, L2 spawns in view): wave 1 (swarmer, swarmer, swarmer, swarmer, swarmer) spawns where the entry sees it (ambushed, 15 passing floor spots, 14 in the minSpawnDist band): [-8.5, 0, -137.5]; [8.5, 0, -137.5]; [-5.5, -0, -134.5]; [5.5, 0, -134.5]"
+  },
+  {
+   "id": "g6",
+   "name": "2.6 THE ARMOURY",
+   "kind": "room",
+   "rect": [
+    -7,
+    -180,
+    7,
+    -162
+   ],
+   "height": 6,
+   "roof": true,
+   "par": 8,
+   "job36": "reward",
+   "verb36": "the KESTREL returns: shoot the two husks",
+   "spawn": {
+    "at": [
+     0,
+     0,
+     -163.5
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    0,
+    0,
+    -178.5
+   ],
+   "waves": [
+    [
+     "husk",
+     "husk"
+    ],
+    [
+     "husk"
+    ]
+   ],
+   "lessons": [
+    {
+     "promptPad": "KESTREL BACK: {fire} THE FAR ONES",
+     "kind": "husksDead",
+     "n": 2,
+     "prompt": "KESTREL BACK: {fire} THE FAR ONES"
+    },
+    {
+     "promptPad": "{dash} INTO IT. {fire} THE GAUNTLET.",
+     "kind": "husksDead",
+     "n": 3,
+     "prompt": "{dash} INTO IT. {fire} THE GAUNTLET."
+    }
+   ],
+   "lessons31": [
+    {
+     "promptPad": "KESTREL BACK: {fire} THE FAR ONES",
+     "kind": "husksDead",
+     "n": 2,
+     "prompt": "KESTREL BACK: {fire} THE FAR ONES"
+    },
+    {
+     "promptPad": "{dash} INTO IT. {fire} THE GAUNTLET.",
+     "kind": "husksDead",
+     "n": 3,
+     "prompt": "{dash} INTO IT. {fire} THE GAUNTLET."
+    }
+   ],
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       0,
+       -163.5
+      ],
+      [
+       2,
+       0,
+       -167
+      ],
+      [
+       0,
+       0,
+       -173
+      ],
+      [
+       0,
+       0,
+       -178.5
+      ]
+     ]
+    }
+   ],
+   "frames36": {
+    "mid": [
+     4,
+     0,
+     -164,
+     18.435,
+     -0.047
+    ],
+    "exit": [
+     0,
+     0,
+     -172,
+     0,
+     -0.075
+    ]
+   },
+   "nodes": [
+    [
+     -3,
+     0,
+     -176.5
+    ],
+    [
+     3,
+     0,
+     -176.5
+    ]
+   ],
+   "afterLesson43": [
+    -1,
+    0
+   ],
+   "afterLesson43_why": "rooms43 (E1): wave 1 (the FUSION husk) waits for lesson 0 (the two KESTREL kills), so the gauntlet lesson comes after the gun's, never on top of it",
+   "waveNodes43": [
+    null,
+    [
+     [
+      4.5,
+      0,
+      -177.5
+     ]
+    ]
+   ],
+   "waveNodes43_why": "rooms43 (E1 round 2): wave 1's own spot, the far end of the dash lane (x 4.5, 15.5 m in; the lane from the door line 2 m in is 13.5 m long and empty: the plinth stands on the axis): the husk walks down the lane at you, a dash (6 m at 24 m/s) plus a swing closes it",
+   "iceline43_why": "NIGHT43 E1 (G19): the gun-again room teaches the dash into a gauntlet hit (W1's FUSION) on one husk that comes in down a straight lane after the KESTREL's two; lesson 1 counts 3 kills from the stage's start (husksDead counts from the stage's start: the KESTREL's 2 + this one)"
+  },
+  {
+   "id": "g7",
+   "name": "2.7 THE MIX",
+   "kind": "room",
+   "rect": [
+    -12,
+    -216,
+    12,
+    -184
+   ],
+   "height": 10,
+   "roof": true,
+   "par": 50,
+   "job36": "combine",
+   "verb36": "switch: the KESTREL for the far gantry and the keeper's house, the glove for the bridge; ride the side walls over the fire or take the coal hoist up, punch a body off a bridge into the grate",
+   "spawn": {
+    "at": [
+     0,
+     0,
+     -189.5
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    0,
+    0,
+    -214
+   ],
+   "arena36": true,
+   "waves": [
+    [
+     "tank",
+     "spitter",
+     "spitter"
+    ],
+    [
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "spitter"
+    ],
+    [
+     "tank",
+     "spitter",
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "swarmer"
+    ]
+   ],
+   "lessons": [
+    {
+     "promptPad": "{quickSwap}: KESTREL FAR, GLOVE CLOSE",
+     "kind": "husksDead",
+     "n": 3,
+     "prompt": "{quickSwap}: KESTREL FAR, GLOVE CLOSE"
+    }
+   ],
+   "lessons31": [
+    {
+     "promptPad": "{quickSwap}: KESTREL FAR, GLOVE CLOSE",
+     "kind": "husksDead",
+     "n": 3,
+     "prompt": "{quickSwap}: KESTREL FAR, GLOVE CLOSE"
+    }
+   ],
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       0,
+       -186
+      ],
+      [
+       -7,
+       0,
+       -193
+      ],
+      [
+       -7,
+       0,
+       -199
+      ],
+      [
+       -4.5,
+       0,
+       -203.5
+      ],
+      [
+       -1,
+       0,
+       -209.5
+      ],
+      [
+       0,
+       0,
+       -214
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       3,
+       0,
+       -193
+      ],
+      [
+       3,
+       0,
+       -199
+      ],
+      [
+       3,
+       0,
+       -203.5
+      ],
+      [
+       0,
+       0,
+       -208.5
+      ],
+      [
+       9.5,
+       4,
+       -208.5
+      ],
+      [
+       10,
+       4,
+       -205.5
+      ]
+     ]
+    }
+   ],
+   "frames36": {
+    "mid": [
+     5,
+     0,
+     -189,
+     20,
+     -0.03
+    ],
+    "exit": [
+     -2.5,
+     0,
+     -205,
+     0,
+     -0.06
+    ]
+   },
+   "nodes": [
+    [
+     -1.5,
+     0,
+     -204
+    ],
+    [
+     1.5,
+     0,
+     -204
+    ],
+    [
+     -4.5,
+     0,
+     -209
+    ],
+    [
+     4.5,
+     0,
+     -213.5
+    ],
+    [
+     -9.8,
+     0,
+     -205
+    ],
+    [
+     9,
+     0,
+     -213.5
+    ],
+    [
+     -10,
+     0,
+     -192.8
+    ],
+    [
+     10,
+     0,
+     -192.8
+    ]
+   ],
+   "highNodes": [
+    [
+     -9,
+     2,
+     -213
+    ],
+    [
+     -6,
+     2,
+     -213.5
+    ],
+    [
+     10,
+     4,
+     -205.5
+    ],
+    [
+     9.5,
+     4,
+     -209.5
+    ]
+   ],
+   "iceline43_why": "NIGHT43 E1 round 2 (DESIGN-RULES R-3, at most three roles before level 4; n40 had five: tank, spitter, warden, drone, swarmer): introduce (tank + 2 spitters: KESTREL far, glove close), combine (6 swarmers + a spitter: the pack under fire from the perch), escalate (tank + spitter + 4 swarmers: the three at once). The warden and the drones moved to g5; n40's lesson ('{quickSwap}: KESTREL FAR, GLOVE CLOSE', 3 kills) kept.",
+   "nodes_why": "NIGHT52 loop (R-4): the far floor beyond the grate: the tank and the pack spawn across the fire and must come over a bridge or up the ramps (the posts and the chute's mouth); NIGHT52 fix 3: two quay nodes beside the mooring posts (the P-rank review: the door third must be attackable from its own side, not a keep behind the fire); NIGHT55 (n55-r-g7.cjs): the two east far-floor nodes moved off the new tower and conveyor into the keeper's yard (the tank comes out of the yard round the conveyor's foot), the house's high nodes onto the keeper's tower",
+   "highNodes_why": "NIGHT52 loop (R-4: ranged on high ground): the west coal gantry (2 m) and THE KEEPER'S HOUSE (4 m), ~27 m from the door across the fire",
+   "waveNodes43": [
+    [
+     [
+      -2.5,
+      0,
+      -204.5
+     ],
+     [
+      2.5,
+      0,
+      -204.5
+     ],
+     [
+      3.5,
+      0,
+      -210.5
+     ],
+     [
+      4.5,
+      0,
+      -213.5
+     ],
+     [
+      -10.5,
+      2,
+      -210.5
+     ],
+     [
+      9.5,
+      0,
+      -214.5
+     ]
+    ],
+    null,
+    [
+     [
+      -9,
+      2,
+      -186
+     ],
+     [
+      9,
+      2,
+      -186
+     ],
+     [
+      -9.5,
+      2,
+      -187
+     ],
+     [
+      9.5,
+      2,
+      -187
+     ],
+     [
+      -8,
+      2,
+      -185.5
+     ],
+     [
+      8,
+      2,
+      -185.5
+     ]
+    ]
+   ],
+   "waveNodes43_why": "NIGHT52 loop (the card's state change, data only): wave 3 (tank, spitter, 4 swarmers) comes out of the two COAL BUNKERS on the door side (2 m), 9 m off the door's axis: the fight turns around and the grate is crossed back (spawn33's tells show each body before it lands) NIGHT56 L (n56-l-wave1.py, L2 spawns in view): wave 1 (tank, spitter, spitter) spawns where the entry sees it (held, 104 passing floor spots, 64 in the minSpawnDist band): [-2.5, -0, -204.5]; [2.5, -0, -204.5]; [3.5, -0, -210.5]; [4.5, 0, -213.5]; [-10.5, 2, -210.5]; [9.5, -0, -214.5]",
+   "fallReturn43": {
+    "belowY": -0.3,
+    "to": [
+     -2.75,
+     0,
+     -193.5
+    ],
+    "yawDeg": 0,
+    "damage": 10,
+    "by": [
+     {
+      "rect": [
+       -12,
+       -202.5,
+       -8.5,
+       -195.5
+      ],
+      "to": [
+       -10,
+       0,
+       -193.5
+      ],
+      "yawDeg": 0
+     },
+     {
+      "rect": [
+       -5.5,
+       -202.5,
+       -1.5,
+       -195.5
+      ],
+      "to": [
+       -2.75,
+       0,
+       -193.5
+      ],
+      "yawDeg": 0
+     },
+     {
+      "rect": [
+       -1.5,
+       -202.5,
+       1.5,
+       -195.5
+      ],
+      "to": [
+       0,
+       0,
+       -193.5
+      ],
+      "yawDeg": 0
+     },
+     {
+      "rect": [
+       4.5,
+       -202.5,
+       8.5,
+       -195.5
+      ],
+      "to": [
+       5.5,
+       0,
+       -193.5
+      ],
+      "yawDeg": 0
+     },
+     {
+      "rect": [
+       8.5,
+       -202.5,
+       12,
+       -195.5
+      ],
+      "to": [
+       10,
+       0,
+       -193.5
+      ],
+      "yawDeg": 0
+     }
+    ],
+    "_why": "NIGHT45 A2's rule (A-4, DECIDE43 D-5) on NIGHT52's narrower grate: feet under -0.3 m in a pit -> back on the quay 2 m before that pit, facing the grate, 10 health; NIGHT55: the middle pit narrowed and the firebox widened (n55-r-g7.cjs)"
+   },
+   "iceline45_why": "NIGHT45 A2 (DESIGN-RULES A-9; docs/ROOMS.md's card THE THAW LOCK): rebuilt from its identity card: the quay, the grate (three lava pits, two 3 m bridges), THE BOILER in the fire, the two coal gantries with ramps; nodes across the fire, the spitters on the gantries, wave 2 from the door side. n43's rect, doors, waves and lesson kept.",
+   "frames52": {
+    "_why": "NIGHT52 the room frames reel a452 (FeelReel.N52.Rooms.cs): entry, the fight live, the highest tier",
+    "entry": [
+     0,
+     0,
+     -186,
+     0,
+     0.02
+    ],
+    "mid": [
+     -3.5,
+     0,
+     -192.5,
+     8,
+     0.04
+    ],
+    "high": [
+     10,
+     4,
+     -206.5,
+     150,
+     -0.12
+    ]
+   },
+   "loop52_why": "NIGHT52 the room loop, cycle 1 (Tools/night/n52-loop-g7.cjs; THE ROOM CONTRACT): n47's THE THAW LOCK rebuilt as THE THAW LOCK II: 24 x 32 x 10 m; 21 pieces; three tiers (floor, 2 m gantry and bunkers, 4 m keeper's house), every perch on a walkers' ramp; two 18 m ride walls over the fire; the coal hoist and the return hoist (pads); a circuit round the boiler over both bridges; the waves, lesson and lights' roles kept. Fix 2 (n52-loop-fix2.cjs): the pockets the isolated walk found closed. Fix 3 (n52-loop-fix3.cjs): two quay nodes. Fix 4 (n52-loop-fix4.cjs): the retry spawn 3.5 m in. Fix 5 (n52-loop-fix5.cjs): the bunker ramps face the door. NIGHT55 (n55-r-g7.cjs, builder R; O-14): the mirror broken by giving each half a job: the west is the walkers' lock (kept), the east the riders' firebox: the east pit 7.5 m wide, the walkers' east crossing the stoker's bridge against the boiler, the east sluice wall 15 m to the firebox's far edge, the keeper's house moved to the keeper's tower over the fire with the coal conveyor, the stoker's post added at the bridge's mouth, the coal and return hoists re-sited, the east coal island cut.",
+   "spawn_why": "NIGHT52 fix 4: the retry point on the quay's middle, 5.5 m from the door wall (outside the door's 4 m band): a death never restarts the fight camped at the door"
+  },
+  {
+   "id": "g8",
+   "name": "2.8 THE STAMPEDE",
+   "kind": "room",
+   "rect": [
+    -10,
+    -250,
+    11,
+    -220
+   ],
+   "height": 12,
+   "roof": true,
+   "par": 30,
+   "job36": "the stampede: three chargers and the gallery's spitters before THE BRAWL",
+   "verb36": "the late dodge into a column or a sand tower (the charge ends in it: the stun), then the punish from behind with the right tool; ride the lane walls past the stampede, take the cross hoist out of the hoist bay to the signal box",
+   "spawn": {
+    "at": [
+     0,
+     0,
+     -227.5
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    0,
+    0,
+    -248
+   ],
+   "arena36": true,
+   "waves": [
+    [
+     "charger"
+    ],
+    [
+     "charger",
+     "charger",
+     "husk",
+     "husk"
+    ],
+    [
+     "charger",
+     "charger",
+     "charger",
+     "spitter",
+     "spitter"
+    ]
+   ],
+   "lessons": [
+    {
+     "promptPad": "Hit its back with {fire}.",
+     "kind": "husksDead",
+     "n": 1,
+     "prompt": "Hit its back with {fire}."
+    },
+    {
+     "promptPad": "Lead one into the pit.",
+     "kind": "husksDead",
+     "n": 2,
+     "prompt": "Lead one into the pit."
+    }
+   ],
+   "lessons31": [
+    {
+     "promptPad": "Hit its back with {fire}.",
+     "kind": "husksDead",
+     "n": 1,
+     "prompt": "Hit its back with {fire}."
+    },
+    {
+     "promptPad": "Lead one into the pit.",
+     "kind": "husksDead",
+     "n": 2,
+     "prompt": "Lead one into the pit."
+    }
+   ],
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       0,
+       -222
+      ],
+      [
+       2.8,
+       0,
+       -228.3
+      ],
+      [
+       3,
+       0,
+       -241.3
+      ],
+      [
+       -2.3,
+       0,
+       -241.3
+      ],
+      [
+       -2.3,
+       0,
+       -244.5
+      ],
+      [
+       0,
+       0,
+       -248
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       0,
+       -222
+      ],
+      [
+       7,
+       0,
+       -226
+      ],
+      [
+       7,
+       0,
+       -233
+      ],
+      [
+       3,
+       0,
+       -245
+      ],
+      [
+       0,
+       0,
+       -248
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -4.5,
+       0,
+       -238.5
+      ],
+      [
+       -4.5,
+       3,
+       -246
+      ],
+      [
+       -4.5,
+       3,
+       -248
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       8.9,
+       0,
+       -234.5
+      ],
+      [
+       8.9,
+       5.5,
+       -246
+      ],
+      [
+       7,
+       5.5,
+       -248
+      ]
+     ]
+    }
+   ],
+   "frames36": {
+    "mid": [
+     6,
+     0,
+     -223,
+     17.526,
+     -0.03
+    ],
+    "exit": [
+     -1.5,
+     0,
+     -243.5,
+     0,
+     -0.06
+    ]
+   },
+   "nodes": [
+    [
+     -7.5,
+     0,
+     -245.2
+    ],
+    [
+     5,
+     0,
+     -245
+    ],
+    [
+     0,
+     0,
+     -244.5
+    ]
+   ],
+   "waveNodes43": [
+    [
+     [
+      -4.5,
+      0,
+      -231.5
+     ],
+     [
+      4.5,
+      0,
+      -231.5
+     ],
+     [
+      -4.5,
+      0,
+      -225.5
+     ]
+    ],
+    [
+     [
+      -7.5,
+      0,
+      -245.2
+     ],
+     [
+      5,
+      0,
+      -245
+     ],
+     [
+      -8.3,
+      0,
+      -236
+     ],
+     [
+      8.3,
+      0,
+      -232
+     ]
+    ],
+    [
+     [
+      -7.5,
+      0,
+      -245.2
+     ],
+     [
+      5,
+      0,
+      -245
+     ],
+     [
+      0,
+      0,
+      -244.5
+     ],
+     [
+      -4.5,
+      3,
+      -248
+     ],
+     [
+      6,
+      5.5,
+      -248
+     ]
+    ]
+   ],
+   "waveNodes43_why": "NIGHT52 loop (THE ROUNDHOUSE II): wave 1's charger at a lane's far end in view from the door past the columns; wave 2's two chargers at the lane ends and the husks in the outer lanes between a sand tower and a ramp's foot; wave 3's three chargers at the three lane ends (the centre one's charge crosses THE PIT) and the spitters on the gallery and the signal box. Never behind the door; EXT53 (e53-m-g8.cjs): the west far-end charger node from the ramp's place into the hoist bay NIGHT56 L (n56-l-wave1.py, L2 spawns in view): wave 1 (charger) spawns where the entry sees it (ambushed, 4 passing floor spots, 2 in the minSpawnDist band): [-4.5, -0, -231.5]; [4.5, 0, -231.5]; [-4.5, -0, -225.5]",
+   "iceline43_why": "NIGHT43 E1 (G23): the CHARGER rehearsed three ways before THE BRAWL: alone beside a wall (the lesson names the stun: a charge that ends in a wall stuns it 1.5 s with its back open, Charger.cs), with a husk escort (n40's wave), two at once (escalate). 4 chargers in the room (n40: 2).",
+   "iceline46_why": "NIGHT46 A3 I-2: wave 1's charger nodes in view; the pillars, waves and lessons unchanged",
+   "iceline47_why": "NIGHT47 B G27: rebuilt as THE STAMPEDE from its card THE ROUNDHOUSE (B-cards.md section 2): 6 columns, THE PIT, THE GALLERY (two halves + ramps), two carts, the east ride panel, the turntable gate, two gallery lamps; waves 1 / 2 / 3 chargers (6) with husks and spitters; the door lip of the card cut (the spawn and retry point stand at the door: a lip there holds them in a solid)",
+   "highNodes": [
+    [
+     -4.5,
+     3,
+     -248
+    ],
+    [
+     6,
+     5.5,
+     -248
+    ]
+   ],
+   "highNodes_why": "NIGHT52 loop (R-4): the spitters' stands: the west gallery (3 m) and THE SIGNAL BOX (5.5 m) over the exit, 25-28 m from the door; EXT53 (e53-m-g8.cjs): the gallery's spitter node 2.5 m east with the gallery's new west end",
+   "frames52": {
+    "_why": "NIGHT52 the room frames reel a452 (FeelReel.N52.Rooms.cs): entry, the fight live, the highest tier",
+    "entry": [
+     0,
+     0,
+     -222,
+     0,
+     0.02
+    ],
+    "mid": [
+     -3,
+     0,
+     -225,
+     5,
+     0.05
+    ],
+    "high": [
+     7,
+     5.5,
+     -248,
+     170,
+     -0.15
+    ]
+   },
+   "loop52_why": "NIGHT52 the room loop, cycle 3 (Tools/night/n52-loop-g8.cjs; THE ROOM CONTRACT): NIGHT47's THE ROUNDHOUSE kept and finished as THE ROUNDHOUSE II: 22 x 30 x 12 m; 17 pieces; three tiers (floor, 3 m gallery, 5.5 m signal box) each on a walkers' ramp; two 20 m ride panels; the cross hoist (a pad); the coal carts (waist-high) cut; the columns, the pit, the lessons and the waves kept. Fix 1 (n52-loop-fix1.cjs): the columns to the roof (their 5 m tops were 0-hit perches), the east tower out of the ramp's run-out. Fix 2 (n52-loop-fix2.cjs): the pockets the isolated walk found closed. NIGHT52 fix K1 (n52-loop-fix-k1.cjs, the QA sweep): the cross hoist clear of the NW column; the lane walls, towers, hopper and lever frame to the roof (no 0-hit perch); the towers 1.0 m wide and centred (no slot); the retry spawn 5.5 m in (off the dwell band). Fix 5 (n52-loop-fix5.cjs): the two east columns beside THE PIT 1 m out. EXT53 (e53-m-g8.cjs, builder M): the mirror broken: the west wall 1 m in (21 x 30 m), the gallery's ramp at its east end in the NW column's place, the cross hoist in the hoist bay behind it (off the walk line), the far-end charger node in the bay.",
+   "spawn_why": "NIGHT52 fix K1: the retry point 7.5 m from the door wall, between the south columns (outside the door's 4 m dwell band, as fix 4 for g7): a death never restarts the fight at the door, where the charges end",
+   "proofs56_why": "NIGHT56 L (n56-l-l3.py, L3): proofs[0] re-walked round THE PIT's south end, up its east side and west past its north end (THE ASH PIT closes the west lane at z -230.5 .. -226.5)"
+  },
+  {
+   "id": "gr",
+   "name": "2.9 REST",
+   "kind": "link",
+   "rect": [
+    -5,
+    -264,
+    5,
+    -254
+   ],
+   "height": 5,
+   "roof": true,
+   "par": 4,
+   "job36": "rest",
+   "verb36": "none",
+   "spawn": {
+    "at": [
+     0,
+     0,
+     -255.5
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    0,
+    0,
+    -262.5
+   ],
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       0,
+       -255.5
+      ],
+      [
+       0,
+       0,
+       -262.5
+      ]
+     ]
+    }
+   ],
+   "frames36": {
+    "mid": [
+     0,
+     0,
+     -256,
+     0,
+     -0.268
+    ],
+    "exit": [
+     2,
+     0,
+     -259,
+     21.801,
+     -0.111
+    ]
+   }
+  },
+  {
+   "id": "x9",
+   "name": "THE BRAWL",
+   "kind": "boss",
+   "rect": [
+    -19,
+    -306,
+    19,
+    -268
+   ],
+   "height": 14,
+   "roof": true,
+   "par": 60,
+   "job36": "boss",
+   "verb36": "the brawler: close in, punch, punish the stuck fist (B2's)",
+   "spawn": {
+    "at": [
+     0,
+     0,
+     -271
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    0,
+    0,
+    -287
+   ],
+   "boss": "brawl40",
+   "brawl40": {
+    "centre": [
+     0,
+     0,
+     -287
+    ],
+    "size": [
+     36,
+     36
+    ],
+    "_why": "NIGHT40 B2's arena (Research/2026-10-14-wave40/B2.md): the floor's centre (world); the sim builds THE BRAWL's 36 x 36 arena here (the lead's id x9); the room is 38 x 38 so nothing of its own is solid in the arena's footprint"
+   },
+   "frames36": {
+    "mid": [
+     0,
+     0,
+     -271,
+     0,
+     -0.037
+    ],
+    "exit": [
+     10,
+     0,
+     -278,
+     21.038,
+     -0.022
+    ]
+   }
+  }
+ ],
+ "doors": [
+  {
+   "id": "d1",
+   "between": [
+    "g1",
+    "g2"
+   ],
+   "rect": [
+    -2,
+    -30,
+    2,
+    -26
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  },
+  {
+   "id": "d2",
+   "between": [
+    "g2",
+    "g3"
+   ],
+   "rect": [
+    -2,
+    -62,
+    2,
+    -58
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  },
+  {
+   "id": "d3",
+   "between": [
+    "g3",
+    "g4"
+   ],
+   "rect": [
+    -2,
+    -94,
+    2,
+    -90
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  },
+  {
+   "id": "d4",
+   "between": [
+    "g4",
+    "g5"
+   ],
+   "rect": [
+    -2,
+    -128,
+    2,
+    -124
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  },
+  {
+   "id": "d5",
+   "between": [
+    "g5",
+    "g6"
+   ],
+   "rect": [
+    -2,
+    -162,
+    2,
+    -158
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  },
+  {
+   "id": "d6",
+   "between": [
+    "g6",
+    "g7"
+   ],
+   "rect": [
+    -2,
+    -184,
+    2,
+    -180
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  },
+  {
+   "id": "d7",
+   "between": [
+    "g7",
+    "g8"
+   ],
+   "rect": [
+    -2,
+    -220,
+    2,
+    -216
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  },
+  {
+   "id": "d8",
+   "between": [
+    "g8",
+    "gr"
+   ],
+   "rect": [
+    -2,
+    -254,
+    2,
+    -250
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  },
+  {
+   "id": "d9",
+   "between": [
+    "gr",
+    "x9"
+   ],
+   "rect": [
+    -2,
+    -268,
+    2,
+    -264
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  }
+ ],
+ "boxes": [
+  {
+   "zone": "g1",
+   "kind": "wall",
+   "min": [
+    -8.6,
+    0,
+    -18
+   ],
+   "max": [
+    -8,
+    5,
+    -5
+   ],
+   "job": "line",
+   "why": "ride panel W (5 m tall, 13 m, face east): the line round the tank if the swing is misjudged; room to circle a slow body",
+   "note": "ride panel W (5 m tall, 13 m, face east): the line round the tank if the swing is misjudged; room to circle a slow body",
+   "ride": true,
+   "ride36": {
+    "face": "E",
+    "planeX": -8,
+    "lz": [
+     5,
+     18
+    ]
+   }
+  },
+  {
+   "zone": "g1",
+   "kind": "wall",
+   "min": [
+    8,
+    0,
+    -18
+   ],
+   "max": [
+    8.6,
+    5,
+    -5
+   ],
+   "job": "line",
+   "why": "ride panel E (face west), 16 m from W plane to plane: no chain, each its own line past the tank",
+   "note": "ride panel E (face west), 16 m from W plane to plane: no chain, each its own line past the tank",
+   "ride": true,
+   "ride36": {
+    "face": "W",
+    "planeX": 8,
+    "lz": [
+     5,
+     18
+    ]
+   }
+  },
+  {
+   "zone": "g2",
+   "kind": "wall",
+   "min": [
+    -9.6,
+    0,
+    -53
+   ],
+   "max": [
+    -9,
+    10,
+    -35
+   ],
+   "job": "line",
+   "why": "the WEST RIDE PANEL (cyan, 18 m, to the roof): ride past the warden on its left; behind it the west flank lane (2.4 m) runs to the gantry ramp",
+   "note": "the WEST RIDE PANEL (cyan, 18 m, to the roof): ride past the warden on its left; behind it the west flank lane (2.4 m) runs to the gantry ramp",
+   "ride": true,
+   "ride36": {
+    "face": "E",
+    "planeX": -9,
+    "lz": [
+     5,
+     23
+    ]
+   }
+  },
+  {
+   "zone": "g2",
+   "kind": "deck",
+   "min": [
+    -7,
+    0,
+    -58
+   ],
+   "max": [
+    -2,
+    1.5,
+    -53
+   ],
+   "job": "line",
+   "why": "the north deck's west half (1.5 m): wave 2's husks come down its ramp; the west spring lands you on it behind the warden",
+   "note": "the north deck's west half (1.5 m): wave 2's husks come down its ramp; the west spring lands you on it behind the warden"
+  },
+  {
+   "zone": "g2",
+   "kind": "deck",
+   "min": [
+    -12,
+    0,
+    -58
+   ],
+   "max": [
+    -7,
+    4,
+    -53
+   ],
+   "job": "line",
+   "why": "THE WEST GANTRY (4 m, the third tier, the north-west corner): the end of the west flank lane (its ramp, its spring); the high ground over the warden's back; the health",
+   "note": "THE WEST GANTRY (4 m, the third tier, the north-west corner): the end of the west flank lane (its ramp, its spring); the high ground over the warden's back; the health"
+  },
+  {
+   "zone": "g2",
+   "kind": "deck",
+   "min": [
+    5,
+    0,
+    -58
+   ],
+   "max": [
+    9,
+    4,
+    -53
+   ],
+   "job": "line",
+   "why": "THE EAST GANTRY (4 m, 4 x 5 m against the east wall; EXT53 e53-m-g2.cjs: narrowed with the wall 3 m in): the husks' perch over the face side; they file down its ramp at you while the warden holds the yard; drop off it behind the warden (EXT53 e53-fix-g2.cjs: the deck ends at the moved east wall, x 5..9; it ran 3 m into it)",
+   "note": "THE EAST GANTRY (4 m, 4 x 5 m against the east wall; EXT53 e53-m-g2.cjs: narrowed with the wall 3 m in): the husks' perch over the face side; they file down its ramp at you while the warden holds the yard; drop off it behind the warden (EXT53 e53-fix-g2.cjs: the deck ends at the moved east wall, x 5..9; it ran 3 m into it)"
+  },
+  {
+   "zone": "g2",
+   "kind": "hull",
+   "min": [
+    -1.5,
+    0,
+    -46
+   ],
+   "max": [
+    1.5,
+    10,
+    -43
+   ],
+   "job": "line",
+   "why": "THE ANVIL (3 x 3 m, to the roof, mid-room): the mass the warden turns on: loop round it to its back (the flank), or let it come round and punch the shield",
+   "note": "THE ANVIL (3 x 3 m, to the roof, mid-room): the mass the warden turns on: loop round it to its back (the flank), or let it come round and punch the shield"
+  },
+  {
+   "zone": "g2",
+   "kind": "hull",
+   "min": [
+    2.5,
+    0,
+    -39
+   ],
+   "max": [
+    6,
+    1.2,
+    -36.5
+   ],
+   "job": "cover",
+   "why": "THE QUENCH TANK (1.2 m, 3.5 x 2.5 m, the east door half; EXT53): the face side's vault cover: the warden comes round it at you and you punch the shield over its lip; the charger (wave 3) breaks its charge on it (the east pillar's job, NIGHT47 B G25)",
+   "note": "THE QUENCH TANK (1.2 m, 3.5 x 2.5 m, the east door half; EXT53): the face side's vault cover: the warden comes round it at you and you punch the shield over its lip; the charger (wave 3) breaks its charge on it (the east pillar's job, NIGHT47 B G25)"
+  },
+  {
+   "zone": "g2",
+   "kind": "hull",
+   "min": [
+    -9,
+    0,
+    -34
+   ],
+   "max": [
+    -7.6,
+    0.8,
+    -31.5
+   ],
+   "job": "line",
+   "why": "THE RUN-UP STEP (0.8 m, 1.4 x 2.5 m, the west door half; EXT53): hop it and jump into the west panel's ride: the fast flank starts at the door",
+   "note": "THE RUN-UP STEP (0.8 m, 1.4 x 2.5 m, the west door half; EXT53): hop it and jump into the west panel's ride: the fast flank starts at the door"
+  },
+  {
+   "zone": "g3",
+   "kind": "hull",
+   "min": [
+    -6,
+    0,
+    -81
+   ],
+   "max": [
+    -2,
+    10,
+    -75
+   ],
+   "job": "cover",
+   "why": "THE HOPPER (card: Landmark): the tipple's coal bin, 4 x 6 m floor to roof (NIGHT53 n53-loop-g3.cjs: from 6 x 8 m, the review's giant box), its chute on the west face: the swarm's source and the cover the lanes turn round",
+   "note": "THE HOPPER (card: Landmark): the tipple's coal bin, 4 x 6 m floor to roof (NIGHT53 n53-loop-g3.cjs: from 6 x 8 m, the review's giant box), its chute on the west face: the swarm's source and the cover the lanes turn round"
+  },
+  {
+   "zone": "g3",
+   "kind": "wall",
+   "min": [
+    -11.6,
+    0,
+    -84
+   ],
+   "max": [
+    -11,
+    5,
+    -66
+   ],
+   "job": "line",
+   "why": "the WEST RIDE PANEL RW (kept from n43; THE TIPPLE's card: Molecule's earned shortcut): from the SW coal car up its east face and north over the 4 m west lane, the funnel: a rider is over the pack as it fills the lane, and blasts down into it (VERBS.md 28) (NIGHT52 loop: 18 m, z -66..-84, from the run-up block past the whole west lane: the ride over the packed swarm)",
+   "note": "the WEST RIDE PANEL RW (kept from n43; THE TIPPLE's card: Molecule's earned shortcut): from the SW coal car up its east face and north over the 4 m west lane, the funnel: a rider is over the pack as it fills the lane, and blasts down into it (VERBS.md 28) (NIGHT52 loop: 18 m, z -66..-84, from the run-up block past the whole west lane: the ride over the packed swarm)",
+   "ride": true,
+   "ride36": {
+    "face": "E",
+    "planeX": -11,
+    "lz": [
+     4,
+     22
+    ]
+   }
+  },
+  {
+   "zone": "g3",
+   "kind": "deck",
+   "min": [
+    9,
+    0,
+    -86
+   ],
+   "max": [
+    12,
+    2,
+    -70
+   ],
+   "job": "line",
+   "why": "THE TRESTLE (2 m deck, x 10..13, z -86..-70; card: Molecule's T, flow plan 3-4): the coal cars' track on the east wall: the air line off the floor, the health's perch at its north end, and the room's one one-way drop (2 m, onto the exit floor); climbed only by its ramp at the door end (NIGHT52 loop: 1 m in with the narrower room, x 9..12)",
+   "note": "THE TRESTLE (2 m deck, x 10..13, z -86..-70; card: Molecule's T, flow plan 3-4): the coal cars' track on the east wall: the air line off the floor, the health's perch at its north end, and the room's one one-way drop (2 m, onto the exit floor); climbed only by its ramp at the door end (NIGHT52 loop: 1 m in with the narrower room, x 9..12)"
+  },
+  {
+   "zone": "g3",
+   "kind": "deck",
+   "min": [
+    -6.25,
+    0,
+    -69.75
+   ],
+   "max": [
+    -3.75,
+    0.9,
+    -68.25
+   ],
+   "job": "cover",
+   "why": "the SW COAL CAR (0.9 m, 2.5 x 1.5 m; card: Every-solid rule, flow plan 5: jump-height cover, one per quadrant, one jump clears it): the first foothold 7.1 m in, by the west lane's mouth and RW's foot",
+   "note": "the SW COAL CAR (0.9 m, 2.5 x 1.5 m; card: Every-solid rule, flow plan 5: jump-height cover, one per quadrant, one jump clears it): the first foothold 7.1 m in, by the west lane's mouth and RW's foot"
+  },
+  {
+   "zone": "g3",
+   "kind": "deck",
+   "min": [
+    7.5,
+    0,
+    -80
+   ],
+   "max": [
+    10,
+    0.9,
+    -78.5
+   ],
+   "job": "cover",
+   "why": "the SE COAL CAR (0.9 m, 2.5 x 1.5 m; card: Every-solid rule, flow plan 5: jump-height cover, one per quadrant, one jump clears it): the first foothold on the east side, 7.8 m in, by the trestle's ramp (NIGHT52 loop: moved off the loft ramp's foot to the east lane, flush with the trestle: no slot)",
+   "note": "the SE COAL CAR (0.9 m, 2.5 x 1.5 m; card: Every-solid rule, flow plan 5: jump-height cover, one per quadrant, one jump clears it): the first foothold on the east side, 7.8 m in, by the trestle's ramp (NIGHT52 loop: moved off the loft ramp's foot to the east lane, flush with the trestle: no slot)"
+  },
+  {
+   "zone": "g3",
+   "kind": "deck",
+   "min": [
+    -10.25,
+    0,
+    -86.75
+   ],
+   "max": [
+    -7.75,
+    0.9,
+    -85.25
+   ],
+   "job": "cover",
+   "why": "the NW COAL CAR (0.9 m, 2.5 x 1.5 m; card: Every-solid rule, flow plan 5: jump-height cover, one per quadrant, one jump clears it): the west lane's north end: cover where the funnel opens onto the exit floor",
+   "note": "the NW COAL CAR (0.9 m, 2.5 x 1.5 m; card: Every-solid rule, flow plan 5: jump-height cover, one per quadrant, one jump clears it): the west lane's north end: cover where the funnel opens onto the exit floor"
+  },
+  {
+   "zone": "g3",
+   "kind": "deck",
+   "min": [
+    3.75,
+    0,
+    -84.75
+   ],
+   "max": [
+    6.25,
+    0.9,
+    -83.25
+   ],
+   "job": "cover",
+   "why": "the NE COAL CAR (0.9 m, 2.5 x 1.5 m; card: Every-solid rule, flow plan 5: jump-height cover, one per quadrant, one jump clears it): the exit floor's east side, under the trestle's drop",
+   "note": "the NE COAL CAR (0.9 m, 2.5 x 1.5 m; card: Every-solid rule, flow plan 5: jump-height cover, one per quadrant, one jump clears it): the exit floor's east side, under the trestle's drop"
+  },
+  {
+   "zone": "g3",
+   "kind": "deck",
+   "min": [
+    4,
+    0,
+    -66
+   ],
+   "max": [
+    9,
+    4,
+    -62
+   ],
+   "job": "line",
+   "why": "THE LOFT (4 m, 5 x 4 m on the door wall; the third tier): the tipple's weigh loft over the door landing: hold it and drop on the crew, or blast down into the swarm as it rounds the hopper; the walkers follow you up its ramp (no safe ledge, A12)",
+   "note": "THE LOFT (4 m, 5 x 4 m on the door wall; the third tier): the tipple's weigh loft over the door landing: hold it and drop on the crew, or blast down into the swarm as it rounds the hopper; the walkers follow you up its ramp (no safe ledge, A12)"
+  },
+  {
+   "zone": "g3",
+   "kind": "hull",
+   "min": [
+    4,
+    4,
+    -64
+   ],
+   "max": [
+    6,
+    6.5,
+    -62
+   ],
+   "job": "cover",
+   "why": "the LOFT's WEIGH HOUSE (2 x 2 m on its back corner): breaks the line from the far floor to the loft's west half: the loft is a stand you hold by moving, not a nest",
+   "note": "the LOFT's WEIGH HOUSE (2 x 2 m on its back corner): breaks the line from the far floor to the loft's west half: the loft is a stand you hold by moving, not a nest"
+  },
+  {
+   "zone": "g3",
+   "kind": "deck",
+   "min": [
+    6.5,
+    0,
+    -90
+   ],
+   "max": [
+    12,
+    2,
+    -86
+   ],
+   "job": "line",
+   "why": "THE TIPPLE HEAD (2 m, 5.5 x 4 m): the trestle runs on to the exit wall: the second wave's NE spawn stands on it, you drop off it onto the exit floor or blast down from it",
+   "note": "THE TIPPLE HEAD (2 m, 5.5 x 4 m): the trestle runs on to the exit wall: the second wave's NE spawn stands on it, you drop off it onto the exit floor or blast down from it"
+  },
+  {
+   "zone": "g3",
+   "kind": "hull",
+   "min": [
+    -8,
+    0,
+    -81
+   ],
+   "max": [
+    -6,
+    10,
+    -80.5
+   ],
+   "job": "line",
+   "why": "the CHUTE's NORTH CHEEK (2 x 0.5 m, floor to roof, off the hopper's west face; NIGHT53: the west spill wall moved): the chute opens west into the lane, so the swarm packs there for the blast (the lane ride runs over it)",
+   "note": "the CHUTE's NORTH CHEEK (2 x 0.5 m, floor to roof, off the hopper's west face; NIGHT53: the west spill wall moved): the chute opens west into the lane, so the swarm packs there for the blast (the lane ride runs over it)"
+  },
+  {
+   "zone": "g3",
+   "kind": "hull",
+   "min": [
+    -8,
+    0,
+    -75.5
+   ],
+   "max": [
+    -6,
+    10,
+    -75
+   ],
+   "job": "line",
+   "why": "the CHUTE's SOUTH CHEEK (2 x 0.5 m, floor to roof; NIGHT53: the east spill wall moved, its door-side pocket gone): the chute's other cheek, the west lane's door-end corner to round",
+   "note": "the CHUTE's SOUTH CHEEK (2 x 0.5 m, floor to roof; NIGHT53: the east spill wall moved, its door-side pocket gone): the chute's other cheek, the west lane's door-end corner to round"
+  },
+  {
+   "zone": "g3",
+   "kind": "hull",
+   "min": [
+    -11,
+    0,
+    -66
+   ],
+   "max": [
+    -9,
+    1.2,
+    -63
+   ],
+   "job": "line",
+   "why": "the WEST RUN-UP BLOCK (1.2 m, 2 x 3 m at the ride panel's door end; a solid block, not a stand): hop on, jump onto the panel, ride north past the packed swarm",
+   "note": "the WEST RUN-UP BLOCK (1.2 m, 2 x 3 m at the ride panel's door end; a solid block, not a stand): hop on, jump onto the panel, ride north past the packed swarm"
+  },
+  {
+   "zone": "g4",
+   "kind": "deck",
+   "min": [
+    -2,
+    -1,
+    -112
+   ],
+   "max": [
+    2,
+    0,
+    -106
+   ],
+   "job": "line",
+   "why": "the BRIDGE (4 m wide) over the canal: the one walk across, under the drone's orbs (the parry's place); the health sits on it (n47's)",
+   "note": "the BRIDGE (4 m wide) over the canal: the one walk across, under the drone's orbs (the parry's place); the health sits on it (n47's)"
+  },
+  {
+   "zone": "g4",
+   "kind": "deck",
+   "min": [
+    6,
+    -1,
+    -112
+   ],
+   "max": [
+    9,
+    0,
+    -106
+   ],
+   "job": "line",
+   "why": "the EAST BRIDGE (3 m wide; NIGHT46 A3 I-1): the canal's second crossing, a loop with the centre bridge; it lands at the hoist pad",
+   "note": "the EAST BRIDGE (3 m wide; NIGHT46 A3 I-1): the canal's second crossing, a loop with the centre bridge; it lands at the hoist pad"
+  },
+  {
+   "zone": "g4",
+   "kind": "deck",
+   "min": [
+    -11,
+    -1,
+    -109
+   ],
+   "max": [
+    -9,
+    -0.5,
+    -106
+   ],
+   "job": "climb",
+   "why": "the canal's west step (0.5 m under the floor, 2 m wide beside the west lock wall): the way back up from a fall",
+   "note": "the canal's west step (0.5 m under the floor, 2 m wide beside the west lock wall): the way back up from a fall"
+  },
+  {
+   "zone": "g4",
+   "kind": "deck",
+   "min": [
+    9,
+    -1,
+    -109
+   ],
+   "max": [
+    11,
+    -0.5,
+    -106
+   ],
+   "job": "climb",
+   "why": "the canal's east step (the west's mirror, beside the east lock wall): the way back up from a fall",
+   "note": "the canal's east step (the west's mirror, beside the east lock wall): the way back up from a fall"
+  },
+  {
+   "zone": "g4",
+   "kind": "deck",
+   "min": [
+    -12,
+    0,
+    -124
+   ],
+   "max": [
+    -6,
+    2,
+    -118
+   ],
+   "job": "line",
+   "why": "the NW LEDGE (2 m; NIGHT52: from n47's 1.5 m): the far side's high ground under the drones (their orbs come from over it); the west lock wall's ride ends at its ramp",
+   "note": "the NW LEDGE (2 m; NIGHT52: from n47's 1.5 m): the far side's high ground under the drones (their orbs come from over it); the west lock wall's ride ends at its ramp"
+  },
+  {
+   "zone": "g4",
+   "kind": "hull",
+   "min": [
+    -12,
+    0,
+    -101
+   ],
+   "max": [
+    -9,
+    1.2,
+    -98.5
+   ],
+   "job": "cover",
+   "why": "the WEST SLUICE HEAD (1.2 m, 3 x 2.5 m, on the door floor's west side): cover from the west drone's orbs over the canal and a vault step to see the far lip (NIGHT53: where the run-up stood; the west has no ride now)",
+   "note": "the WEST SLUICE HEAD (1.2 m, 3 x 2.5 m, on the door floor's west side): cover from the west drone's orbs over the canal and a vault step to see the far lip (NIGHT53: where the run-up stood; the west has no ride now)"
+  },
+  {
+   "zone": "g4",
+   "kind": "deck",
+   "min": [
+    -8,
+    -1,
+    -110
+   ],
+   "max": [
+    -5,
+    -0.4,
+    -108
+   ],
+   "job": "climb",
+   "why": "the CANAL STONE (3 x 2 m, 0.4 m under the floor, mid-canal west of the bridge): the jump's middle stone across the west canal, under the west drone (NIGHT53: the west crossing is a jump, not a ride)",
+   "note": "the CANAL STONE (3 x 2 m, 0.4 m under the floor, mid-canal west of the bridge): the jump's middle stone across the west canal, under the west drone (NIGHT53: the west crossing is a jump, not a ride)"
+  },
+  {
+   "zone": "g4",
+   "kind": "wall",
+   "min": [
+    11,
+    -1,
+    -119
+   ],
+   "max": [
+    12,
+    5,
+    -95
+   ],
+   "job": "line",
+   "why": "the EAST LOCK WALL (ride, cyan, 24 m x 5 m): from the door floor over the canal's east end on to the NE gallery, its top 1 m over the gallery's: the east side's way up is the ride (NIGHT53 n53-loop-g4.cjs: run on 6.5 m to the gallery, the mirror broken; the gallery ramp stays the walkers' route)",
+   "note": "the EAST LOCK WALL (ride, cyan, 24 m x 5 m): from the door floor over the canal's east end on to the NE gallery, its top 1 m over the gallery's: the east side's way up is the ride (NIGHT53 n53-loop-g4.cjs: run on 6.5 m to the gallery, the mirror broken; the gallery ramp stays the walkers' route)",
+   "ride": true,
+   "ride36": {
+    "face": "W",
+    "planeX": 11,
+    "lz": [
+     1,
+     25
+    ]
+   }
+  },
+  {
+   "zone": "g4",
+   "kind": "deck",
+   "min": [
+    6,
+    0,
+    -124
+   ],
+   "max": [
+    12,
+    4,
+    -119
+   ],
+   "job": "line",
+   "why": "the NE GALLERY (4 m, 6 x 5 m; the third tier): the drones' high side: the canal hoist puts you on it to parry an orb from above or punch a drone at its own height; the exit is below you",
+   "note": "the NE GALLERY (4 m, 6 x 5 m; the third tier): the drones' high side: the canal hoist puts you on it to parry an orb from above or punch a drone at its own height; the exit is below you"
+  },
+  {
+   "zone": "g4",
+   "kind": "hull",
+   "min": [
+    10,
+    4,
+    -124
+   ],
+   "max": [
+    12,
+    6.5,
+    -122
+   ],
+   "job": "cover",
+   "why": "the GALLERY's WINCH HOUSE (2 x 2 m on its back corner): your shield from the far drone's orb on the gallery (a stand you must move to break)",
+   "note": "the GALLERY's WINCH HOUSE (2 x 2 m on its back corner): your shield from the far drone's orb on the gallery (a stand you must move to break)"
+  },
+  {
+   "zone": "g4",
+   "kind": "hull",
+   "min": [
+    -12,
+    2,
+    -124
+   ],
+   "max": [
+    -10,
+    4.5,
+    -122
+   ],
+   "job": "cover",
+   "why": "the NW LEDGE's ICE HOPPER (2 x 2 m on its back corner): the ledge's shield from the orbs over the canal",
+   "note": "the NW LEDGE's ICE HOPPER (2 x 2 m on its back corner): the ledge's shield from the orbs over the canal"
+  },
+  {
+   "zone": "g4",
+   "kind": "hull",
+   "min": [
+    -8.6,
+    0,
+    -101.6
+   ],
+   "max": [
+    -7.4,
+    4,
+    -100.4
+   ],
+   "job": "cover",
+   "why": "the WEST ICE POST (1.2 m x 4 m) on the door floor, west of the ledge hoist: breaks the west drone's orb line to the hoist and the sluice head (NIGHT53: 3 m west, off the east post's mirror)",
+   "note": "the WEST ICE POST (1.2 m x 4 m) on the door floor, west of the ledge hoist: breaks the west drone's orb line to the hoist and the sluice head (NIGHT53: 3 m west, off the east post's mirror)"
+  },
+  {
+   "zone": "g4",
+   "kind": "hull",
+   "min": [
+    4.4,
+    0,
+    -101.6
+   ],
+   "max": [
+    5.6,
+    4,
+    -100.4
+   ],
+   "job": "cover",
+   "why": "the EAST ICE POST (the west's mirror): breaks the orb line to the landing's east half",
+   "note": "the EAST ICE POST (the west's mirror): breaks the orb line to the landing's east half"
+  },
+  {
+   "zone": "g4",
+   "kind": "hull",
+   "min": [
+    8,
+    0,
+    -99
+   ],
+   "max": [
+    11,
+    1.2,
+    -96
+   ],
+   "job": "line",
+   "why": "the EAST RUN-UP BLOCK (the west's mirror): onto the east lock wall; the return hoist lands on it",
+   "note": "the EAST RUN-UP BLOCK (the west's mirror): onto the east lock wall; the return hoist lands on it"
+  },
+  {
+   "zone": "g5",
+   "kind": "hull",
+   "min": [
+    -2,
+    0,
+    -145
+   ],
+   "max": [
+    2,
+    12,
+    -141
+   ],
+   "job": "cover",
+   "why": "THE ICE STACK (4 x 4 m, floor to roof; the landmark dead ahead of the door): the cut blocks waiting for the barges; the pillar the room's ring runs round (circle it while the blast cools) and the block that hides the far floor's bait from the door until you commit",
+   "note": "THE ICE STACK (4 x 4 m, floor to roof; the landmark dead ahead of the door): the cut blocks waiting for the barges; the pillar the room's ring runs round (circle it while the blast cools) and the block that hides the far floor's bait from the door until you commit"
+  },
+  {
+   "zone": "g5",
+   "kind": "deck",
+   "min": [
+    -11,
+    0,
+    -158
+   ],
+   "max": [
+    -5,
+    2,
+    -146
+   ],
+   "job": "line",
+   "why": "the WEST SHELF (2 m, 6 x 12 m): the second pack pours off it at once (the blast's target: stand off its ramp and blast the pour); the west ride lands on it",
+   "note": "the WEST SHELF (2 m, 6 x 12 m): the second pack pours off it at once (the blast's target: stand off its ramp and blast the pour); the west ride lands on it"
+  },
+  {
+   "zone": "g5",
+   "kind": "deck",
+   "min": [
+    6.5,
+    0,
+    -148
+   ],
+   "max": [
+    10,
+    4.5,
+    -138
+   ],
+   "job": "line",
+   "why": "THE CRANE RUNWAY (4.5 m, 3.5 x 10 m along the east wall over the ring's east side; the third tier; NIGHT55 n55-r-g5.cjs: the crane deck moved out of the SE corner, where it was the west shelf's twin): the drones' perch over the warden's ring in wave 3; reached off the east ride's end, by the ice hoist, or up its ramp from the far corner (no safe ledge: the walkers follow up the ramp)",
+   "note": "THE CRANE RUNWAY (4.5 m, 3.5 x 10 m along the east wall over the ring's east side; the third tier; NIGHT55 n55-r-g5.cjs: the crane deck moved out of the SE corner, where it was the west shelf's twin): the drones' perch over the warden's ring in wave 3; reached off the east ride's end, by the ice hoist, or up its ramp from the far corner (no safe ledge: the walkers follow up the ramp)"
+  },
+  {
+   "zone": "g5",
+   "kind": "wall",
+   "min": [
+    -11,
+    0,
+    -146.5
+   ],
+   "max": [
+    -10,
+    6,
+    -128.5
+   ],
+   "job": "line",
+   "why": "the WEST RIDE WALL (cyan, 18 m x 6 m along the side wall): ride it from the door end past the stack and drop onto the shelf: the fast line onto the pour, over the bait's heads (17.3 m = the 1.48 s ride at 11.7 m/s)",
+   "note": "the WEST RIDE WALL (cyan, 18 m x 6 m along the side wall): ride it from the door end past the stack and drop onto the shelf: the fast line onto the pour, over the bait's heads (17.3 m = the 1.48 s ride at 11.7 m/s)",
+   "ride": true,
+   "ride36": {
+    "face": "E",
+    "planeX": -10,
+    "lz": [
+     0.5,
+     18.5
+    ]
+   }
+  },
+  {
+   "zone": "g5",
+   "kind": "wall",
+   "min": [
+    9,
+    0,
+    -138
+   ],
+   "max": [
+    10,
+    6,
+    -128.5
+   ],
+   "job": "line",
+   "why": "the EAST RIDE WALL (cyan, 9.5 m x 6 m along the side wall from the door end into the crane runway; NIGHT55: ends at the runway's face): ride it and step off its end onto the runway (4.5 m): on foot the runway is the long way round the ring to its ramp in the far corner (the ride is the shortcut onto the drones' perch)",
+   "note": "the EAST RIDE WALL (cyan, 9.5 m x 6 m along the side wall from the door end into the crane runway; NIGHT55: ends at the runway's face): ride it and step off its end onto the runway (4.5 m): on foot the runway is the long way round the ring to its ramp in the far corner (the ride is the shortcut onto the drones' perch)",
+   "ride": true,
+   "ride36": {
+    "face": "W",
+    "planeX": 9,
+    "lz": [
+     0.5,
+     18.5
+    ]
+   }
+  },
+  {
+   "zone": "g5",
+   "kind": "wall",
+   "min": [
+    -5.3,
+    0,
+    -139
+   ],
+   "max": [
+    -4.7,
+    4,
+    -135
+   ],
+   "job": "line",
+   "why": "the WEST ICE WALL (cyan, 4 m x 4 m, 7-11 m in): the short ride off the door's diagonal into the west lane; it splits the bait into lanes for the punch (cut to its north 4 m: the door chute opens onto the west ride wall)",
+   "note": "the WEST ICE WALL (cyan, 4 m x 4 m, 7-11 m in): the short ride off the door's diagonal into the west lane; it splits the bait into lanes for the punch (cut to its north 4 m: the door chute opens onto the west ride wall)",
+   "ride": true,
+   "ride36": {
+    "face": "W",
+    "planeX": -5.3,
+    "lz": [
+     7,
+     11
+    ]
+   }
+  },
+  {
+   "zone": "g5",
+   "kind": "wall",
+   "min": [
+    4.7,
+    0,
+    -139
+   ],
+   "max": [
+    5.3,
+    4,
+    -135
+   ],
+   "job": "line",
+   "why": "the EAST ICE WALL (cyan, 4 m, the west's mirror): the short ride into the east lane toward the crane's ramp",
+   "note": "the EAST ICE WALL (cyan, 4 m, the west's mirror): the short ride into the east lane toward the crane's ramp",
+   "ride": true,
+   "ride36": {
+    "face": "E",
+    "planeX": 5.3,
+    "lz": [
+     7,
+     11
+    ]
+   }
+  },
+  {
+   "zone": "g5",
+   "kind": "hull",
+   "min": [
+    -5,
+    0,
+    -151.6
+   ],
+   "max": [
+    -3.8,
+    3.5,
+    -150.4
+   ],
+   "job": "cover",
+   "why": "the FAR WEST POST (1.2 m x 3.5 m) on the far floor: the pack pouring off the shelf rounds it into the blast's cone; it breaks the crane's line onto the shelf's foot (NIGHT52 fix K1 (n52-loop-fix-k1.cjs, the QA sweep): flush to the west shelf's inner face (x -5): it stood 0.9 m off it, a slot)",
+   "note": "the FAR WEST POST (1.2 m x 3.5 m) on the far floor: the pack pouring off the shelf rounds it into the blast's cone; it breaks the crane's line onto the shelf's foot (NIGHT52 fix K1 (n52-loop-fix-k1.cjs, the QA sweep): flush to the west shelf's inner face (x -5): it stood 0.9 m off it, a slot)"
+  },
+  {
+   "zone": "g5",
+   "kind": "hull",
+   "min": [
+    3.4,
+    0,
+    -156.6
+   ],
+   "max": [
+    4.6,
+    3.5,
+    -155.4
+   ],
+   "job": "cover",
+   "why": "THE CRANE HOOK (1.2 m x 3.5 m, the crane's block lowered to the far floor at the runway ramp's foot; NIGHT55: the far east post moved off the old ramp's foot): the corner the warden circles to reach you, and the break on the runway's line down to the exit: duck behind it while the drones are up",
+   "note": "THE CRANE HOOK (1.2 m x 3.5 m, the crane's block lowered to the far floor at the runway ramp's foot; NIGHT55: the far east post moved off the old ramp's foot): the corner the warden circles to reach you, and the break on the runway's line down to the exit: duck behind it while the drones are up"
+  },
+  {
+   "zone": "g5",
+   "kind": "hull",
+   "min": [
+    -11,
+    2,
+    -158
+   ],
+   "max": [
+    -9,
+    4.5,
+    -155
+   ],
+   "job": "cover",
+   "why": "THE ICE SAW (2 x 3 m on the shelf's back corner): the shelf's one shield; a spitter-free corner the pack bunches in (the blast's best target), flanked off the west ride",
+   "note": "THE ICE SAW (2 x 3 m on the shelf's back corner): the shelf's one shield; a spitter-free corner the pack bunches in (the blast's best target), flanked off the west ride"
+  },
+  {
+   "zone": "g5",
+   "kind": "hull",
+   "min": [
+    9,
+    4.5,
+    -144
+   ],
+   "max": [
+    10,
+    6.5,
+    -142
+   ],
+   "job": "cover",
+   "why": "THE CRANE CAB (1 x 2 m against the east wall at the runway's middle; NIGHT55: moved with the runway, off its ramp's top): the drones' cover from the door; the ice hoist lands you beside it",
+   "note": "THE CRANE CAB (1 x 2 m against the east wall at the runway's middle; NIGHT55: moved with the runway, off its ramp's top): the drones' cover from the door; the ice hoist lands you beside it"
+  },
+  {
+   "zone": "g7",
+   "kind": "hull",
+   "min": [
+    -1.5,
+    -0.8,
+    -200.5
+   ],
+   "max": [
+    1.5,
+    10,
+    -197.5
+   ],
+   "job": "cover",
+   "why": "THE BOILER (the landmark, A-6): the stack in the middle of the grate on the door's axis, fire to roof; the pillar you circle (the room's loop: quay, a bridge, the far floor, the other bridge) and the block that cuts the far stands' line to the door landing",
+   "note": "THE BOILER (the landmark, A-6): the stack in the middle of the grate on the door's axis, fire to roof; the pillar you circle (the room's loop: quay, a bridge, the far floor, the other bridge) and the block that cuts the far stands' line to the door landing"
+  },
+  {
+   "zone": "g7",
+   "kind": "deck",
+   "min": [
+    -12,
+    0,
+    -216
+   ],
+   "max": [
+    -4,
+    2,
+    -210
+   ],
+   "job": "line",
+   "why": "the WEST COAL GANTRY (2 m, 8 x 6 m): the spitters' stand across the fire: the KESTREL's range from the quay, the glove's only up its ramp or off the west ride's end (R-4)",
+   "note": "the WEST COAL GANTRY (2 m, 8 x 6 m): the spitters' stand across the fire: the KESTREL's range from the quay, the glove's only up its ramp or off the west ride's end (R-4)"
+  },
+  {
+   "zone": "g7",
+   "kind": "deck",
+   "min": [
+    8.5,
+    0,
+    -211
+   ],
+   "max": [
+    12,
+    4,
+    -204.5
+   ],
+   "job": "line",
+   "why": "THE KEEPER'S TOWER (4 m, 3.5 x 6.5 m against the east wall at the firebox's far edge; the third tier; NIGHT55: moved from the SE corner, where it was the west gantry's twin): the spitter's stand over the fire and the quay; you reach it off the east ride's end (2 m on), by the coal hoist over the firebox, or up the coal conveyor; the walkers follow you up the conveyor (no safe ledge, A12)",
+   "note": "THE KEEPER'S TOWER (4 m, 3.5 x 6.5 m against the east wall at the firebox's far edge; the third tier; NIGHT55: moved from the SE corner, where it was the west gantry's twin): the spitter's stand over the fire and the quay; you reach it off the east ride's end (2 m on), by the coal hoist over the firebox, or up the coal conveyor; the walkers follow you up the conveyor (no safe ledge, A12)"
+  },
+  {
+   "zone": "g7",
+   "kind": "wall",
+   "min": [
+    -12,
+    -0.8,
+    -205.5
+   ],
+   "max": [
+    -11,
+    5,
+    -187.5
+   ],
+   "job": "line",
+   "why": "the WEST SLUICE WALL (ride, cyan, 18 m x 5 m standing in the west fire): ride it from the bunker over the grate to the gantry's foot: the crossing for a player who rides, not dashes (17.3 m = the 1.48 s ride at 11.7 m/s)",
+   "note": "the WEST SLUICE WALL (ride, cyan, 18 m x 5 m standing in the west fire): ride it from the bunker over the grate to the gantry's foot: the crossing for a player who rides, not dashes (17.3 m = the 1.48 s ride at 11.7 m/s)",
+   "ride": true,
+   "ride36": {
+    "face": "E",
+    "planeX": -11,
+    "lz": [
+     3.5,
+     21.5
+    ]
+   }
+  },
+  {
+   "zone": "g7",
+   "kind": "wall",
+   "min": [
+    11,
+    -0.8,
+    -202.5
+   ],
+   "max": [
+    12,
+    5,
+    -191
+   ],
+   "job": "line",
+   "why": "the EAST SLUICE WALL (ride, cyan, 11.5 m x 5 m from the coal stage's end over the firebox; NIGHT55: off the stage, to the firebox's far edge): the quick way over 7.5 m of fire (on foot it is the stoker's bridge round the boiler: the ride's detour); jump off its end onto the keeper's tower 2 m on (4 m), or wall-jump back",
+   "note": "the EAST SLUICE WALL (ride, cyan, 11.5 m x 5 m from the coal stage's end over the firebox; NIGHT55: off the stage, to the firebox's far edge): the quick way over 7.5 m of fire (on foot it is the stoker's bridge round the boiler: the ride's detour); jump off its end onto the keeper's tower 2 m on (4 m), or wall-jump back",
+   "ride": true,
+   "ride36": {
+    "face": "W",
+    "planeX": 11,
+    "lz": [
+     3.5,
+     21.5
+    ]
+   }
+  },
+  {
+   "zone": "g7",
+   "kind": "hull",
+   "min": [
+    -6.6,
+    0,
+    -191.6
+   ],
+   "max": [
+    -5.4,
+    3.5,
+    -190.4
+   ],
+   "job": "cover",
+   "why": "the WEST MOORING POST (1.2 m x 3.5 m): breaks the gantry spitters' line to the quay's west half; the pivot you circle while the pack comes off the west bridge into your glove (no waist-high crate: a full-height post)",
+   "note": "the WEST MOORING POST (1.2 m x 3.5 m): breaks the gantry spitters' line to the quay's west half; the pivot you circle while the pack comes off the west bridge into your glove (no waist-high crate: a full-height post)"
+  },
+  {
+   "zone": "g7",
+   "kind": "hull",
+   "min": [
+    3.9,
+    0,
+    -192.6
+   ],
+   "max": [
+    5.1,
+    3.5,
+    -191.4
+   ],
+   "job": "cover",
+   "why": "the EAST MOORING POST (1.2 m x 3.5 m; NIGHT55: 1.5 m west and 1 m south, onto the keeper's tower's line): breaks the tower spitter's line to the quay's east half; the pack off the stoker's bridge rounds it into the glove",
+   "note": "the EAST MOORING POST (1.2 m x 3.5 m; NIGHT55: 1.5 m west and 1 m south, onto the keeper's tower's line): breaks the tower spitter's line to the quay's east half; the pack off the stoker's bridge rounds it into the glove"
+  },
+  {
+   "zone": "g7",
+   "kind": "deck",
+   "min": [
+    -12,
+    0,
+    -188
+   ],
+   "max": [
+    -7,
+    2,
+    -184
+   ],
+   "job": "line",
+   "why": "the WEST COAL BUNKER (2 m, 4 x 4 m): wave 3 comes out on it (the fight turns around); the run-up for the west ride (the sluice wall's face starts at the bunker's edge) (NIGHT52 fix 2: run to the side wall, flush with the sluice wall's end: no pocket behind it)",
+   "note": "the WEST COAL BUNKER (2 m, 4 x 4 m): wave 3 comes out on it (the fight turns around); the run-up for the west ride (the sluice wall's face starts at the bunker's edge) (NIGHT52 fix 2: run to the side wall, flush with the sluice wall's end: no pocket behind it)"
+  },
+  {
+   "zone": "g7",
+   "kind": "deck",
+   "min": [
+    7,
+    0,
+    -188
+   ],
+   "max": [
+    12,
+    2,
+    -184
+   ],
+   "job": "line",
+   "why": "the EAST COAL BUNKER (2 m, the west's mirror): wave 3's other spawn; the run-up onto the east ride; the return hoist lands here (NIGHT52 fix 2: run to the side wall, flush with the sluice wall's end: no pocket behind it)",
+   "note": "the EAST COAL BUNKER (2 m, the west's mirror): wave 3's other spawn; the run-up onto the east ride; the return hoist lands here (NIGHT52 fix 2: run to the side wall, flush with the sluice wall's end: no pocket behind it)"
+  },
+  {
+   "zone": "g7",
+   "kind": "deck",
+   "min": [
+    8,
+    0,
+    -191
+   ],
+   "max": [
+    12,
+    2,
+    -188
+   ],
+   "job": "line",
+   "why": "THE COAL STAGE (2 m, 4 x 3 m: the east bunker run 3 m south along the east wall; NIGHT55, added): the riders' run-up: run the stage's length south and step onto the east sluice wall at 2 m, no turn, straight over the firebox; wave 3's pack comes off its lip at you",
+   "note": "THE COAL STAGE (2 m, 4 x 3 m: the east bunker run 3 m south along the east wall; NIGHT55, added): the riders' run-up: run the stage's length south and step onto the east sluice wall at 2 m, no turn, straight over the firebox; wave 3's pack comes off its lip at you"
+  },
+  {
+   "zone": "g7",
+   "kind": "hull",
+   "min": [
+    -3.6,
+    0,
+    -207.1
+   ],
+   "max": [
+    -2.4,
+    4,
+    -205.9
+   ],
+   "job": "cover",
+   "why": "the WEST SLUICE POST (1.2 m x 4 m) on the far floor: breaks the gantry's line down onto the far floor, the corner the pack rounds to reach the west bridge",
+   "note": "the WEST SLUICE POST (1.2 m x 4 m) on the far floor: breaks the gantry's line down onto the far floor, the corner the pack rounds to reach the west bridge"
+  },
+  {
+   "zone": "g7",
+   "kind": "hull",
+   "min": [
+    4.4,
+    0,
+    -204.6
+   ],
+   "max": [
+    5.6,
+    4,
+    -203.4
+   ],
+   "job": "cover",
+   "why": "THE STOKER'S POST (1.2 m x 4 m at the stoker's bridge's south mouth; NIGHT55: the east sluice post moved where the walkers now cross): the corner the pack rounds off the bridge into your glove, and the break on the tower spitter's line down onto the bridge: stand behind it and the tower cannot see you",
+   "note": "THE STOKER'S POST (1.2 m x 4 m at the stoker's bridge's south mouth; NIGHT55: the east sluice post moved where the walkers now cross): the corner the pack rounds off the bridge into your glove, and the break on the tower spitter's line down onto the bridge: stand behind it and the tower cannot see you"
+  },
+  {
+   "zone": "g7",
+   "kind": "deck",
+   "min": [
+    -4.5,
+    -0.8,
+    -200
+   ],
+   "max": [
+    -3,
+    0.6,
+    -198
+   ],
+   "job": "line",
+   "why": "the WEST COAL ISLAND (1.5 x 2 m, 0.6 m over the floor, in the middle fire): a hop line over the grate for a player without the dash (jump, island, jump); the bodies you punch off it burn",
+   "note": "the WEST COAL ISLAND (1.5 x 2 m, 0.6 m over the floor, in the middle fire): a hop line over the grate for a player without the dash (jump, island, jump); the bodies you punch off it burn"
+  },
+  {
+   "zone": "g7",
+   "kind": "hull",
+   "min": [
+    -12,
+    2,
+    -216
+   ],
+   "max": [
+    -10,
+    4.5,
+    -213.5
+   ],
+   "job": "cover",
+   "why": "the WEST GANTRY's COAL HOPPER (2 x 2.5 m on the gantry's back corner): the spitter's shield from the quay: you flank it off the west ride or up the ramp (a stand you must move to break)",
+   "note": "the WEST GANTRY's COAL HOPPER (2 x 2.5 m on the gantry's back corner): the spitter's shield from the quay: you flank it off the west ride or up the ramp (a stand you must move to break)"
+  },
+  {
+   "zone": "g7",
+   "kind": "hull",
+   "min": [
+    10.5,
+    4,
+    -211
+   ],
+   "max": [
+    12,
+    6,
+    -209
+   ],
+   "job": "cover",
+   "why": "the KEEPER'S HUT (1.5 x 2 m on the tower's back corner; NIGHT55: moved with the tower): the tower spitter's shield from the quay: the hoist or the east ride's jump puts you beside it",
+   "note": "the KEEPER'S HUT (1.5 x 2 m on the tower's back corner; NIGHT55: moved with the tower): the tower spitter's shield from the quay: the hoist or the east ride's jump puts you beside it"
+  },
+  {
+   "zone": "g8",
+   "kind": "deck",
+   "min": [
+    -8,
+    0,
+    -250
+   ],
+   "max": [
+    -3,
+    3,
+    -246
+   ],
+   "job": "line",
+   "why": "THE GALLERY (west, 3 m, 5 x 4 m; EXT53: over its ramp at its east end, out of the stampede's start; its far west end was a camping spot, cut): the coaling gallery, a spitter stand 25 m from the door (the KESTREL's range); the walkers' ramp climbs to it from the pit's far end (no safe ledge)",
+   "note": "THE GALLERY (west, 3 m, 5 x 4 m; EXT53: over its ramp at its east end, out of the stampede's start; its far west end was a camping spot, cut): the coaling gallery, a spitter stand 25 m from the door (the KESTREL's range); the walkers' ramp climbs to it from the pit's far end (no safe ledge)"
+  },
+  {
+   "zone": "g8",
+   "kind": "deck",
+   "min": [
+    3,
+    0,
+    -250
+   ],
+   "max": [
+    11,
+    5.5,
+    -246
+   ],
+   "job": "line",
+   "why": "THE SIGNAL BOX (east, 5.5 m, 8 x 4 m; the third tier): the roundhouse's signal box over the exit, the second spitter stand and your high ground over the stampede: its ramp, the cross hoist, or a jump off the east ride's end",
+   "note": "THE SIGNAL BOX (east, 5.5 m, 8 x 4 m; the third tier): the roundhouse's signal box over the exit, the second spitter stand and your high ground over the stampede: its ramp, the cross hoist, or a jump off the east ride's end"
+  },
+  {
+   "zone": "g8",
+   "kind": "wall",
+   "min": [
+    -10,
+    0,
+    -246
+   ],
+   "max": [
+    -9.4,
+    12,
+    -223
+   ],
+   "job": "line",
+   "why": "the WEST LANE WALL (ride, cyan, 23 m; EXT53 e53-m-g8.cjs: 1 m in with the wall): ride lane W past the charging pack (a charge that misses you ends in the wall: the stun) and off its end into the hoist bay, onto the cross hoist",
+   "note": "the WEST LANE WALL (ride, cyan, 23 m; EXT53 e53-m-g8.cjs: 1 m in with the wall): ride lane W past the charging pack (a charge that misses you ends in the wall: the stun) and off its end into the hoist bay, onto the cross hoist",
+   "ride": true,
+   "ride36": {
+    "face": "E",
+    "planeX": -9.4,
+    "lz": [
+     3,
+     26
+    ]
+   }
+  },
+  {
+   "zone": "g8",
+   "kind": "wall",
+   "min": [
+    10.4,
+    0,
+    -246
+   ],
+   "max": [
+    11,
+    12,
+    -223
+   ],
+   "job": "line",
+   "why": "the EAST LANE WALL (ride, cyan, 23 m x 5 m, run on to the deck (NIGHT52 fix 2: no slot beside the ramp); NIGHT47's east panel, now with its mirror): ride lane E and jump off its end onto the signal box's ramp (NIGHT52 fix K1 (n52-loop-fix-k1.cjs, the QA sweep): to the roof: its 5 m top was a 0-hit perch against wave 1's charger)",
+   "note": "the EAST LANE WALL (ride, cyan, 23 m x 5 m, run on to the deck (NIGHT52 fix 2: no slot beside the ramp); NIGHT47's east panel, now with its mirror): ride lane E and jump off its end onto the signal box's ramp (NIGHT52 fix K1 (n52-loop-fix-k1.cjs, the QA sweep): to the roof: its 5 m top was a 0-hit perch against wave 1's charger)",
+   "ride": true,
+   "ride36": {
+    "face": "W",
+    "planeX": 10.4,
+    "lz": [
+     3,
+     26
+    ]
+   }
+  },
+  {
+   "zone": "g8",
+   "kind": "hull",
+   "min": [
+    -8.825,
+    0,
+    -232.75
+   ],
+   "max": [
+    -7.825,
+    12,
+    -231.25
+   ],
+   "job": "cover",
+   "why": "the WEST SAND TOWER (1.5 x 1.5 x 4 m, full height, replacing the waist-high coal cart): a column in lane W a charge ends in (the stun: hit its back), the lane's pivot (NIGHT52 fix K1 (n52-loop-fix-k1.cjs, the QA sweep): to the roof (its 4 m top was a 0-hit perch) and 1.0 m wide, centred between the lane wall's face (x -10.4) and the columns' line (x -6.25): 1.575 m both sides (it stood 1.35 m off the wall: a slot))",
+   "note": "the WEST SAND TOWER (1.5 x 1.5 x 4 m, full height, replacing the waist-high coal cart): a column in lane W a charge ends in (the stun: hit its back), the lane's pivot (NIGHT52 fix K1 (n52-loop-fix-k1.cjs, the QA sweep): to the roof (its 4 m top was a 0-hit perch) and 1.0 m wide, centred between the lane wall's face (x -10.4) and the columns' line (x -6.25): 1.575 m both sides (it stood 1.35 m off the wall: a slot))"
+  },
+  {
+   "zone": "g8",
+   "kind": "hull",
+   "min": [
+    7.825,
+    0,
+    -228
+   ],
+   "max": [
+    8.825,
+    12,
+    -226.5
+   ],
+   "job": "cover",
+   "why": "the EAST SAND TOWER (offset from the west one: asymmetric lanes): the charge's end in lane E, the pivot you dodge round, at lane E's door end (NIGHT52 fix 1: out of the signal box ramp's run-out) (NIGHT52 fix K1 (n52-loop-fix-k1.cjs, the QA sweep): to the roof (its 4 m top was a 0-hit perch) and 1.0 m wide, centred between the SE column (x 6.25) and the lane wall's face (x 10.4): 1.575 m both sides (it stood 1.3 m / 1.35 m off them: two slots))",
+   "note": "the EAST SAND TOWER (offset from the west one: asymmetric lanes): the charge's end in lane E, the pivot you dodge round, at lane E's door end (NIGHT52 fix 1: out of the signal box ramp's run-out) (NIGHT52 fix K1 (n52-loop-fix-k1.cjs, the QA sweep): to the roof (its 4 m top was a 0-hit perch) and 1.0 m wide, centred between the SE column (x 6.25) and the lane wall's face (x 10.4): 1.575 m both sides (it stood 1.3 m / 1.35 m off them: two slots))"
+  },
+  {
+   "zone": "g8",
+   "kind": "hull",
+   "min": [
+    -8,
+    3,
+    -250
+   ],
+   "max": [
+    -6,
+    12,
+    -248
+   ],
+   "job": "cover",
+   "why": "the GALLERY's SAND HOPPER (2 x 2 m on its back corner): the gallery spitter's shield from the door; flank it off the west ride or up the ramp (NIGHT52 fix K1 (n52-loop-fix-k1.cjs, the QA sweep): to the roof: its top was a 0-hit perch)",
+   "note": "the GALLERY's SAND HOPPER (2 x 2 m on its back corner): the gallery spitter's shield from the door; flank it off the west ride or up the ramp (NIGHT52 fix K1 (n52-loop-fix-k1.cjs, the QA sweep): to the roof: its top was a 0-hit perch)"
+  },
+  {
+   "zone": "g8",
+   "kind": "hull",
+   "min": [
+    9,
+    5.5,
+    -250
+   ],
+   "max": [
+    11,
+    12,
+    -248
+   ],
+   "job": "cover",
+   "why": "the SIGNAL BOX's LEVER FRAME (2 x 2 m on its back corner): the signal box spitter's shield; the cross hoist lands you round it (NIGHT52 fix K1 (n52-loop-fix-k1.cjs, the QA sweep): to the roof: its top was a 0-hit perch)",
+   "note": "the SIGNAL BOX's LEVER FRAME (2 x 2 m on its back corner): the signal box spitter's shield; the cross hoist lands you round it (NIGHT52 fix K1 (n52-loop-fix-k1.cjs, the QA sweep): to the roof: its top was a 0-hit perch)"
+  }
+ ],
+ "ramps": [
+  {
+   "zone": "g2",
+   "from": [
+    -4.5,
+    -48
+   ],
+   "to": [
+    -4.5,
+    -53
+   ],
+   "width": 3,
+   "rise": 1.5,
+   "job": "climb",
+   "why": "the west half's ramp (1.5 m over 5 m): the husks' way down to you",
+   "note": "the west half's ramp (1.5 m over 5 m): the husks' way down to you"
+  },
+  {
+   "zone": "g2",
+   "from": [
+    -10.8,
+    -44
+   ],
+   "to": [
+    -10.8,
+    -53
+   ],
+   "width": 2.4,
+   "rise": 4,
+   "job": "climb",
+   "why": "the WEST GANTRY RAMP (4 m over 9 m, up the west flank lane behind the panel): the walkers' climb to the third tier (no safe ledge); the flank route to the warden's back",
+   "note": "the WEST GANTRY RAMP (4 m over 9 m, up the west flank lane behind the panel): the walkers' climb to the third tier (no safe ledge); the flank route to the warden's back"
+  },
+  {
+   "zone": "g2",
+   "from": [
+    7.8,
+    -44
+   ],
+   "to": [
+    7.8,
+    -53
+   ],
+   "width": 2.4,
+   "rise": 4,
+   "job": "climb",
+   "why": "the EAST GANTRY RAMP (4 m over 9 m, along the east wall; EXT53: moved 3 m in with the wall): the husks' climb and file down the face side, the walkers' way to the east gantry",
+   "note": "the EAST GANTRY RAMP (4 m over 9 m, along the east wall; EXT53: moved 3 m in with the wall): the husks' climb and file down the face side, the walkers' way to the east gantry"
+  },
+  {
+   "zone": "g4",
+   "from": [
+    -10.5,
+    -113
+   ],
+   "to": [
+    -10.5,
+    -118
+   ],
+   "width": 3,
+   "rise": 2,
+   "job": "climb",
+   "why": "the NW ledge's ramp (2 m over 5 m): your way up, and the west lock wall's landing (NIGHT52 fix 6: 1.5 m west, flush to the west wall: the west ride lands on it, no slot beside it)",
+   "note": "the NW ledge's ramp (2 m over 5 m): your way up, and the west lock wall's landing (NIGHT52 fix 6: 1.5 m west, flush to the west wall: the west ride lands on it, no slot beside it)"
+  },
+  {
+   "zone": "g4",
+   "from": [
+    7.5,
+    -112
+   ],
+   "to": [
+    7.5,
+    -119
+   ],
+   "width": 3,
+   "rise": 4,
+   "job": "climb",
+   "why": "the NE GALLERY's ramp (4 m over 7 m) straight off the east bridge: the walkers' route onto the third tier (GG NIGHT20: a route enemies can climb), and yours without the hoist",
+   "note": "the NE GALLERY's ramp (4 m over 7 m) straight off the east bridge: the walkers' route onto the third tier (GG NIGHT20: a route enemies can climb), and yours without the hoist"
+  },
+  {
+   "zone": "g5",
+   "from": [
+    -1,
+    -155
+   ],
+   "to": [
+    -5,
+    -155
+   ],
+   "width": 3,
+   "rise": 2,
+   "job": "climb",
+   "why": "THE POUR CHUTE (the west shelf's walkers' ramp, 2 m over 4 m, rising west from the far floor into the shelf's east face; NIGHT55: moved off the west lane, where it ran beside the west ride): the second pack pours down it into the ring behind the stack, past the far west post: stand off its foot and blast the pour (the room's verb); yours up onto the shelf; the west lane is the ride's alone",
+   "note": "THE POUR CHUTE (the west shelf's walkers' ramp, 2 m over 4 m, rising west from the far floor into the shelf's east face; NIGHT55: moved off the west lane, where it ran beside the west ride): the second pack pours down it into the ring behind the stack, past the far west post: stand off its foot and blast the pour (the room's verb); yours up onto the shelf; the west lane is the ride's alone"
+  },
+  {
+   "zone": "g5",
+   "from": [
+    8.25,
+    -157
+   ],
+   "to": [
+    8.25,
+    -148
+   ],
+   "width": 3.5,
+   "rise": 4.5,
+   "job": "climb",
+   "why": "THE RUNWAY RAMP (4.5 m over 9 m from 1 m off the far SE corner north up to the crane runway; NIGHT55: moved with the runway): the warden walks up after you (no safe ledge, A12); the climb route enemies use (GG NIGHT20)",
+   "note": "THE RUNWAY RAMP (4.5 m over 9 m from 1 m off the far SE corner north up to the crane runway; NIGHT55: moved with the runway): the warden walks up after you (no safe ledge, A12); the climb route enemies use (GG NIGHT20)"
+  },
+  {
+   "zone": "g7",
+   "from": [
+    -2.5,
+    -186
+   ],
+   "to": [
+    -7,
+    -186
+   ],
+   "width": 4,
+   "rise": 2,
+   "job": "climb",
+   "why": "the west bunker's walkers' ramp (2 m over 4.5 m): wave 3's way down to you, yours up to the ride's run-up (NIGHT52 fix 5: turned to rise from beside the door outward onto the bunker, 4 m wide flush with the door wall: the first climb from the door faces the room, not the wall)",
+   "note": "the west bunker's walkers' ramp (2 m over 4.5 m): wave 3's way down to you, yours up to the ride's run-up (NIGHT52 fix 5: turned to rise from beside the door outward onto the bunker, 4 m wide flush with the door wall: the first climb from the door faces the room, not the wall)"
+  },
+  {
+   "zone": "g7",
+   "from": [
+    2.5,
+    -185.25
+   ],
+   "to": [
+    7,
+    -185.25
+   ],
+   "width": 2.5,
+   "rise": 2,
+   "job": "climb",
+   "why": "the east bunker's walkers' ramp (2 m over 4.5 m, single file 2.5 m wide; NIGHT55: narrowed from 4 m): wave 3 comes down it one at a time into your glove, yours up to the coal stage's run-up (NIGHT52 fix 5: it rises from beside the door outward onto the bunker, flush with the door wall)",
+   "note": "the east bunker's walkers' ramp (2 m over 4.5 m, single file 2.5 m wide; NIGHT55: narrowed from 4 m): wave 3 comes down it one at a time into your glove, yours up to the coal stage's run-up (NIGHT52 fix 5: it rises from beside the door outward onto the bunker, flush with the door wall)"
+  },
+  {
+   "zone": "g7",
+   "from": [
+    -7,
+    -202.5
+   ],
+   "to": [
+    -7,
+    -210
+   ],
+   "width": 3,
+   "rise": 2,
+   "job": "climb",
+   "why": "the west gantry's walkers' ramp (2 m over 7.5 m) straight off the west bridge: the spitters' way down and yours up; the climb the pack takes when you hold the gantry",
+   "note": "the west gantry's walkers' ramp (2 m over 7.5 m) straight off the west bridge: the spitters' way down and yours up; the climb the pack takes when you hold the gantry"
+  },
+  {
+   "zone": "g7",
+   "from": [
+    0.5,
+    -208.5
+   ],
+   "to": [
+    8.5,
+    -208.5
+   ],
+   "width": 3,
+   "rise": 4,
+   "job": "climb",
+   "why": "THE COAL CONVEYOR (the tower's walkers' ramp, 4 m over 8 m, rising east along the far floor from the exit lane to the tower's west face; NIGHT55: moved with the tower): the pack's climb off the stoker's bridge onto the third tier, yours too; the climb route enemies use (GG NIGHT20)",
+   "note": "THE COAL CONVEYOR (the tower's walkers' ramp, 4 m over 8 m, rising east along the far floor from the exit lane to the tower's west face; NIGHT55: moved with the tower): the pack's climb off the stoker's bridge onto the third tier, yours too; the climb route enemies use (GG NIGHT20)"
+  },
+  {
+   "zone": "g3",
+   "from": [
+    10.5,
+    -64
+   ],
+   "to": [
+    10.5,
+    -70
+   ],
+   "width": 3,
+   "rise": 2,
+   "job": "climb",
+   "why": "the TRESTLE's RAMP (2 m over 6 m, at the door end): the walkers' way up (NIGHT52 loop: 1 m in with the trestle)",
+   "note": "the TRESTLE's RAMP (2 m over 6 m, at the door end): the walkers' way up (NIGHT52 loop: 1 m in with the trestle)"
+  },
+  {
+   "zone": "g3",
+   "from": [
+    5.5,
+    -74
+   ],
+   "to": [
+    5.5,
+    -66
+   ],
+   "width": 3,
+   "rise": 4,
+   "job": "climb",
+   "why": "THE LOFT's RAMP (4 m over 8 m, its foot at the hopper's east lane): your way up and the walkers' (GG NIGHT20: a route enemies can climb)",
+   "note": "THE LOFT's RAMP (4 m over 8 m, its foot at the hopper's east lane): your way up and the walkers' (GG NIGHT20: a route enemies can climb)"
+  },
+  {
+   "zone": "g8",
+   "from": [
+    -4.5,
+    -239
+   ],
+   "to": [
+    -4.5,
+    -246
+   ],
+   "width": 3,
+   "rise": 3,
+   "job": "climb",
+   "why": "the GALLERY's walkers' ramp (3 m over 7 m; EXT53: moved to the gallery's east end, in the NW column's place): the walkers' and spitters' climb out of the stampede's start beside the pit's far end (GG NIGHT20), yours to the spitters' stand; its high side walls the hoist bay",
+   "note": "the GALLERY's walkers' ramp (3 m over 7 m; EXT53: moved to the gallery's east end, in the NW column's place): the walkers' and spitters' climb out of the stampede's start beside the pit's far end (GG NIGHT20), yours to the spitters' stand; its high side walls the hoist bay"
+  },
+  {
+   "zone": "g8",
+   "from": [
+    8.9,
+    -235
+   ],
+   "to": [
+    8.9,
+    -246
+   ],
+   "width": 3,
+   "rise": 5.5,
+   "job": "climb",
+   "why": "THE SIGNAL BOX's walkers' ramp (5.5 m over 11 m) against the east lane wall: the climb route enemies use to the third tier (no safe ledge, A12)",
+   "note": "THE SIGNAL BOX's walkers' ramp (5.5 m over 11 m) against the east lane wall: the climb route enemies use to the third tier (no safe ledge, A12)"
+  }
+ ],
+ "pads": [
+  {
+   "zone": "g7",
+   "at": [
+    7,
+    0,
+    -193.5
+   ],
+   "target": [
+    10,
+    4,
+    -206.5
+   ],
+   "apexAbove": 3,
+   "job": "line",
+   "why": "THE COAL HOIST (a jump pad, the upward line, A5; NIGHT55: moved off the stoker's bridge's mouth, a walkers' line): from the quay in front of the firebox over the fire onto the keeper's tower (4 m): the fast way to the spitter's stand, the KESTREL on the gantry from above",
+   "note": "the coal hoist"
+  },
+  {
+   "zone": "g7",
+   "at": [
+    7,
+    0,
+    -205.2
+   ],
+   "target": [
+    9,
+    2,
+    -186
+   ],
+   "apexAbove": 4,
+   "job": "line",
+   "why": "THE RETURN HOIST (a jump pad on the firebox's far lip between the stoker's post and the keeper's tower; NIGHT55: moved off the conveyor's foot; in the keeper's yard its arc hit the conveyor, pad probe 24.2 m miss): over the firebox back onto the east coal bunker (2 m): when wave 3 comes out of the bunkers, the pad takes you to them (the fight turns around)",
+   "note": "THE RETURN HOIST (a jump pad between the sluice posts): from the far floor back over the fire onto the east coal bunker (2 m): when wave 3 comes out of the bunkers, the pad takes you to them (the fight turns around) (NIGHT53 n53-loop-i4.cjs, I4: moved off the walk line, [0,0,-208] -> [1.3,0,-208])"
+  },
+  {
+   "zone": "g5",
+   "at": [
+    2.5,
+    0,
+    -136
+   ],
+   "target": [
+    8,
+    4.5,
+    -141.5
+   ],
+   "apexAbove": 3,
+   "job": "line",
+   "why": "THE ICE HOIST (a jump pad, the upward line, A5): from the floor past the east ice wall onto the crane runway (4.5 m; NIGHT55: re-aimed at the runway): the way up when the drones come, over the pack's heads",
+   "note": "the ice hoist"
+  },
+  {
+   "zone": "g5",
+   "at": [
+    7.75,
+    4.5,
+    -145.5
+   ],
+   "target": [
+    -7.5,
+    2,
+    -153
+   ],
+   "apexAbove": 2,
+   "job": "line",
+   "why": "THE CRANE HOIST (a jump pad on the crane runway; NIGHT55: moved with the runway): runway -> shelf over the ring: the high circuit (the ride or the ice hoist up, the crane hoist across, the shelf ramp down, the west lane, the door) so no tier is a dead end",
+   "note": "the crane hoist"
+  },
+  {
+   "zone": "g8",
+   "at": [
+    -8,
+    0,
+    -243
+   ],
+   "target": [
+    7,
+    5.5,
+    -247
+   ],
+   "apexAbove": 3,
+   "job": "line",
+   "why": "THE CROSS HOIST (a jump pad in THE HOIST BAY, the west lane's north end behind the gallery's ramp; EXT53 e53-m-g8.cjs, off the walk line): over the ramp, lane C and the exit onto the signal box (5.5 m): out of the stampede onto the spitters' high stand from cover; the west ride's end drops you beside it",
+   "note": "the cross hoist (EXT53: in the hoist bay)"
+  },
+  {
+   "zone": "g5",
+   "at": [
+    -7.5,
+    0,
+    -131.5
+   ],
+   "target": [
+    -8,
+    2,
+    -154
+   ],
+   "apexAbove": 3,
+   "job": "line",
+   "why": "THE WEST HOIST (a jump pad at the west lane's door end): floor -> the west shelf over the lane, so the shelf (the second pack's pour) has an upward line from the door too",
+   "note": "the west hoist"
+  },
+  {
+   "zone": "g4",
+   "at": [
+    10.5,
+    0,
+    -115.5
+   ],
+   "target": [
+    8.5,
+    4,
+    -121.5
+   ],
+   "apexAbove": 3,
+   "job": "line",
+   "why": "THE CANAL HOIST (a jump pad, the upward line, A5): from the far floor off the east bridge onto the NE gallery (4 m): meet the drones at their height (NIGHT52 fix 6: moved into the east ride's end pocket, x 9..12: the ride lands on it, the pocket's exit)",
+   "note": "the canal hoist"
+  },
+  {
+   "zone": "g4",
+   "at": [
+    -4,
+    0,
+    -116
+   ],
+   "target": [
+    9.5,
+    1.2,
+    -97.5
+   ],
+   "apexAbove": 4,
+   "job": "line",
+   "why": "THE RETURN HOIST (a jump pad on the far floor): back over the canal onto the east run-up block (1.2 m) when the second wave's drones come over the door floor",
+   "note": "the return hoist"
+  },
+  {
+   "zone": "g4",
+   "at": [
+    -7,
+    0,
+    -103
+   ],
+   "target": [
+    -9,
+    2,
+    -121
+   ],
+   "apexAbove": 3,
+   "job": "line",
+   "why": "THE LEDGE HOIST (a jump pad on the door floor, off the walk line): over the canal onto the NW ledge (2 m), the drones' near side",
+   "note": "the ledge hoist"
+  },
+  {
+   "zone": "g3",
+   "at": [
+    -10.5,
+    0,
+    -88.5
+   ],
+   "target": [
+    10.5,
+    2,
+    -83
+   ],
+   "apexAbove": 4,
+   "job": "line",
+   "why": "THE TIPPLE HOIST (a jump pad in the NW corner, the upward line, A5): out of the packed west lane over the far floor onto the trestle's north end and its health",
+   "note": "the tipple hoist"
+  },
+  {
+   "zone": "g3",
+   "at": [
+    -8,
+    0,
+    -66.5
+   ],
+   "target": [
+    6.5,
+    4,
+    -64.5
+   ],
+   "apexAbove": 3,
+   "job": "line",
+   "why": "THE LOFT HOIST (a jump pad at the west lane's door end): over the door landing onto the loft (4 m): the high ground before the swarm pours",
+   "note": "the loft hoist"
+  },
+  {
+   "zone": "g2",
+   "at": [
+    -6.5,
+    0,
+    -37
+   ],
+   "target": [
+    -4.5,
+    1.5,
+    -55.5
+   ],
+   "apexAbove": 3,
+   "job": "line",
+   "why": "the WEST SPRING (a jump pad by the west pillar): over the warden's shield onto the north deck behind it: the flank by air",
+   "note": "the west spring"
+  },
+  {
+   "zone": "g2",
+   "at": [
+    -10.8,
+    0,
+    -36.5
+   ],
+   "target": [
+    -9.5,
+    4,
+    -55.5
+   ],
+   "apexAbove": 3,
+   "job": "line",
+   "why": "the WEST LANE SPRING (a jump pad at the west flank lane's mouth): up the lane onto the west gantry: the fast flank",
+   "note": "the west lane spring"
+  },
+  {
+   "zone": "g2",
+   "at": [
+    7.8,
+    0,
+    -36.5
+   ],
+   "target": [
+    7,
+    4,
+    -55.5
+   ],
+   "apexAbove": 3,
+   "job": "line",
+   "why": "the EAST LANE SPRING (a jump pad at the east lane's mouth, beside the quench tank): up onto the east gantry over the husks' ramp: the face side's way to the height (EXT53: 3 m in with the wall)",
+   "note": "the east lane spring"
+  },
+  {
+   "zone": "g2",
+   "at": [
+    3.5,
+    0,
+    -55.5
+   ],
+   "target": [
+    -9.5,
+    4,
+    -55.5
+   ],
+   "apexAbove": 3,
+   "job": "loop",
+   "why": "THE YARD SPRING (a jump pad in the warden's back yard, east of the exit; EXT53): over the exit onto the west gantry and its health: the loop over the warden for whoever got behind it (the P-rank's loop, by air)",
+   "note": "the yard spring"
+  }
+ ],
+ "grapple": [],
+ "pits": [
+  {
+   "zone": "g4",
+   "rect": [
+    -12,
+    -112,
+    12,
+    -106
+   ],
+   "floorY": -1,
+   "job": "hazard",
+   "why": "THE CANAL (6 m across, a dry channel 1 m deep, its floor ice): the line between you and the drone; a fall costs a jump out, never health",
+   "note": "THE CANAL (6 m across, a dry channel 1 m deep, its floor ice): the line between you and the drone; a fall costs a jump out, never health"
+  },
+  {
+   "zone": "g7",
+   "rect": [
+    -12,
+    -202.5,
+    -8.5,
+    -195.5
+   ],
+   "floorY": -0.8,
+   "lava": true,
+   "job": "hazard",
+   "why": "THE GRATE, west pit (3.5 x 7 m, lava 0.8 m down, under the west ride): both ways (A-5): you lose health and are knocked up; a body punched off the west bridge burns",
+   "note": "the grate, west pit"
+  },
+  {
+   "zone": "g7",
+   "rect": [
+    -5.5,
+    -202.5,
+    1.5,
+    -195.5
+   ],
+   "floorY": -0.8,
+   "lava": true,
+   "job": "hazard",
+   "why": "THE GRATE, middle pit (7 x 7 m, the boiler and the west coal island in it; NIGHT55 n55-r-g7.cjs: narrowed to the boiler's east face, x 5.5 -> 1.5): crossed by the island hops or the dash-jump; the stoker's bridge runs along its east edge, fire on that side too",
+   "note": "THE GRATE, middle pit (7 x 7 m, the boiler and the west coal island in it; NIGHT55 n55-r-g7.cjs: narrowed to the boiler's east face, x 5.5 -> 1.5): crossed by the island hops or the dash-jump; the stoker's bridge runs along its east edge, fire on that side too"
+  },
+  {
+   "zone": "g7",
+   "rect": [
+    4.5,
+    -202.5,
+    12,
+    -195.5
+   ],
+   "floorY": -0.8,
+   "lava": true,
+   "job": "hazard",
+   "why": "THE FIREBOX (the east pit widened 3.5 -> 7.5 m; NIGHT55 n55-r-g7.cjs): no walker crosses it; the east sluice wall's ride is the quick way over, the coal hoist the high one; the pack on the stoker's bridge has the firebox at its east side: punch them in",
+   "note": "THE FIREBOX (the east pit widened 3.5 -> 7.5 m; NIGHT55 n55-r-g7.cjs): no walker crosses it; the east sluice wall's ride is the quick way over, the coal hoist the high one; the pack on the stoker's bridge has the firebox at its east side: punch them in"
+  },
+  {
+   "zone": "g8",
+   "rect": [
+    -1.5,
+    -240,
+    1.5,
+    -229
+   ],
+   "floorY": -1.5,
+   "job": "hazard",
+   "why": "THE PIT (3 x 11 m, 1.5 m deep, along lane C; card: Hero prop, Hazard both ways): the shed's inspection pit. A charger whose charge crosses it falls in and cannot climb out (ai.jumps.charger.jumps false: it stands dazed): the free punish from above; a player who falls in jumps or double-jumps out (a jump reaches 1.58 m, a double 2.88 m: n47b reach). It cuts lane C only: the strafe ring round it stays whole",
+   "note": "THE PIT (3 x 11 m, 1.5 m deep, along lane C; card: Hero prop, Hazard both ways): the shed's inspection pit. A charger whose charge crosses it falls in and cannot climb out (ai.jumps.charger.jumps false: it stands dazed): the free punish from above; a player who falls in jumps or double-jumps out (a jump reaches 1.58 m, a double 2.88 m: n47b reach). It cuts lane C only: the strafe ring round it stays whole"
+  },
+  {
+   "zone": "g8",
+   "rect": [
+    -9.4,
+    -230.5,
+    -1.5,
+    -226.5
+   ],
+   "floorY": -0.8,
+   "lava": true,
+   "job": "hazard",
+   "why": "NIGHT56 L (n56-l-l3.py, L3): THE ASH PIT (the roundhouse's firebox dump: hot ash, lava rules 0.8 m down as g7's GRATE; 7.9 x 4 m across the west lane from the west lane wall's face to THE PIT, between the door floor and the west sand tower): the west lane wall is the way over it (n53-identity I2 was 1.08 / 1.10: both lanes walked flat beside their walls); on foot the lane is through the inspection pit's corner or round its east side; a charger that misses you at its rim goes in",
+   "note": "NIGHT56 L (n56-l-l3.py, L3): THE ASH PIT (the roundhouse's firebox dump: hot ash, lava rules 0.8 m down as g7's GRATE; 7.9 x 4 m across the west lane from the west lane wall's face to THE PIT, between the door floor and the west sand tower): the west lane wall is the way over it (n53-identity I2 was 1.08 / 1.10: both lanes walked flat beside their walls); on foot the lane is through the inspection pit's corner or round its east side; a charger that misses you at its rim goes in"
+  }
+ ],
+ "tunnels": [],
+ "lights": [
+  {
+   "id": "g1-L1",
+   "room": "g1",
+   "kind": "ceiling",
+   "at": [
+    0,
+    8.95,
+    -3
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 9,
+   "intensity": 1
+  },
+  {
+   "id": "g1-L2",
+   "room": "g1",
+   "kind": "ceiling",
+   "at": [
+    0,
+    8.95,
+    -14
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    4,
+    0.1
+   ],
+   "color": "amber",
+   "range": 10,
+   "intensity": 1.1
+  },
+  {
+   "id": "g1-L3",
+   "room": "g1",
+   "kind": "pool",
+   "at": [
+    0,
+    0.025,
+    -24.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.5,
+    2.5,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.6
+  },
+  {
+   "id": "g1-L56a",
+   "room": "g1",
+   "kind": "wall",
+   "at": [
+    10.95,
+    2.4,
+    -22
+   ],
+   "normal": [
+    -1,
+    0,
+    0
+   ],
+   "size": [
+    2.5,
+    0.3,
+    0.1
+   ],
+   "color": "white",
+   "range": 8,
+   "intensity": 1.2,
+   "why": "NIGHT56 L (n56-l-doors.py, S1-doors: the flat frames of r1 verbs37): the EAST WALL LAMP (south): verbs37's wall steps on g1's east wall (r1 vi f0900 at (9.8, 1.8, -22.0), luma std 0.0181: one flat panel); g1's ceiling panels stand on x 0 NIGHT56 L (n56-l-doors3.py, S1-doors slice 3): moved into r3 vi f0900's frame (1.2 m off the wall: ~0.9-2.7 m of its height in view; 0.0238 at 3.5 m)",
+   "job": "light"
+  },
+  {
+   "id": "g1-L56b",
+   "room": "g1",
+   "kind": "wall",
+   "at": [
+    10.95,
+    3.5,
+    -10
+   ],
+   "normal": [
+    -1,
+    0,
+    0
+   ],
+   "size": [
+    2.5,
+    0.3,
+    0.1
+   ],
+   "color": "white",
+   "range": 8,
+   "intensity": 1.2,
+   "why": "NIGHT56 L (n56-l-doors.py, S1-doors: the flat frames of r1 verbs37): the EAST WALL LAMP (north): the slot between the east ride panel and the east wall (r1 vi f1350 at (10.7, 1.6, -9.8), luma std 0.0219)",
+   "job": "light"
+  },
+  {
+   "id": "g1-L56c",
+   "room": "g1",
+   "kind": "wall",
+   "at": [
+    7,
+    4,
+    -0.05
+   ],
+   "normal": [
+    0,
+    0,
+    -1
+   ],
+   "size": [
+    2.5,
+    0.3,
+    0.1
+   ],
+   "color": "white",
+   "range": 8,
+   "intensity": 1.1,
+   "why": "NIGHT56 L (n56-l-doors.py, S1-doors: the flat frames of r1 verbs37): the SOUTH WALL LAMP: the start wall's east half (r1 vi f0850 at (8.5, 3.6, -0.3), luma std 0.0149)",
+   "job": "light"
+  },
+  {
+   "id": "g2-L1",
+   "room": "g2",
+   "kind": "ceiling",
+   "at": [
+    0,
+    9.95,
+    -33
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 9,
+   "intensity": 1
+  },
+  {
+   "id": "g2-L2",
+   "room": "g2",
+   "kind": "ceiling",
+   "at": [
+    0,
+    9.95,
+    -50
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    4,
+    0.1
+   ],
+   "color": "amber",
+   "range": 10,
+   "intensity": 1.1
+  },
+  {
+   "id": "g2-L3",
+   "room": "g2",
+   "kind": "ceiling",
+   "at": [
+    -7,
+    9.95,
+    -55.5
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 9,
+   "intensity": 1
+  },
+  {
+   "id": "g2-L4",
+   "room": "g2",
+   "kind": "ceiling",
+   "at": [
+    7,
+    9.95,
+    -55.5
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 9,
+   "intensity": 1
+  },
+  {
+   "id": "g2-L5",
+   "room": "g2",
+   "kind": "pool",
+   "at": [
+    0,
+    0.025,
+    -56
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.5,
+    2.5,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.6
+  },
+  {
+   "id": "g3-L1",
+   "room": "g3",
+   "kind": "ceiling",
+   "at": [
+    0,
+    9.95,
+    -65
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 9,
+   "intensity": 0.7,
+   "why": "the door landing's one dim panel (card: Light / colour story: the entry tight and dim)"
+  },
+  {
+   "id": "g3-L2",
+   "room": "g3",
+   "kind": "wall",
+   "at": [
+    -6.05,
+    4,
+    -78
+   ],
+   "normal": [
+    -1,
+    0,
+    0
+   ],
+   "size": [
+    1.6,
+    0.6,
+    0.1
+   ],
+   "color": "amber",
+   "range": 10,
+   "intensity": 1.4,
+   "why": "THE HOPPER's amber lamp over the chute (card: Landmark; the room's one accent, LevelValidate29): the brightest point, seen from the door; shift46's fixture (amber -> red-orange as the swarm comes) (EXT53: on the 4 x 6 m hopper's west face, over the chute; it hung where the old hopper's door face was)"
+  },
+  {
+   "id": "g3-L3",
+   "room": "g3",
+   "kind": "ceiling",
+   "at": [
+    10.5,
+    9.95,
+    -78
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    4,
+    0.1
+   ],
+   "color": "white",
+   "range": 9,
+   "intensity": 1,
+   "why": "the trestle's one white lamp: the air line reads"
+  },
+  {
+   "id": "g3-L4",
+   "room": "g3",
+   "kind": "ceiling",
+   "at": [
+    3,
+    9.95,
+    -84
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 9,
+   "intensity": 1,
+   "why": "the far floor's white panel (the exit floor, where the lanes meet)"
+  },
+  {
+   "id": "g3-L6",
+   "room": "g3",
+   "kind": "ceiling",
+   "at": [
+    -8.5,
+    9.95,
+    -75
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    4,
+    0.1
+   ],
+   "color": "white",
+   "range": 9,
+   "intensity": 1,
+   "why": "the west lane's white panel: the funnel reads"
+  },
+  {
+   "id": "g3-L5",
+   "room": "g3",
+   "kind": "pool",
+   "at": [
+    0,
+    0.025,
+    -88
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.5,
+    2.5,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.6,
+   "why": "the exit's cyan pool (A-6: the exit is lit; seen past the hopper's east face from the door)"
+  },
+  {
+   "id": "g3-L7",
+   "room": "g3",
+   "kind": "ceiling",
+   "at": [
+    6.5,
+    9.95,
+    -64
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 9,
+   "intensity": 1,
+   "why": "the loft's lamp: the third tier reads from the far floor"
+  },
+  {
+   "id": "g4-L1",
+   "room": "g4",
+   "kind": "ceiling",
+   "at": [
+    0,
+    9.95,
+    -97
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 9,
+   "intensity": 1
+  },
+  {
+   "id": "g4-L2",
+   "room": "g4",
+   "kind": "ceiling",
+   "at": [
+    0,
+    9.95,
+    -109
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    6,
+    0.1
+   ],
+   "color": "white",
+   "range": 10,
+   "intensity": 1.1
+  },
+  {
+   "id": "g4-L3",
+   "room": "g4",
+   "kind": "ceiling",
+   "at": [
+    0,
+    9.95,
+    -119
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    8,
+    4,
+    0.1
+   ],
+   "color": "amber",
+   "range": 10,
+   "intensity": 1
+  },
+  {
+   "id": "g4-L4",
+   "room": "g4",
+   "kind": "pool",
+   "at": [
+    0,
+    0.025,
+    -122
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.5,
+    2.5,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.6
+  },
+  {
+   "id": "g4-L5",
+   "room": "g4",
+   "kind": "ceiling",
+   "at": [
+    9,
+    9.95,
+    -121.5
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 9,
+   "intensity": 1,
+   "why": "the NE gallery's lamp: the third tier reads from the door"
+  },
+  {
+   "id": "g4-L6",
+   "room": "g4",
+   "kind": "pool",
+   "at": [
+    -6,
+    -0.975,
+    -109
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    5,
+    4,
+    0.05
+   ],
+   "color": "white",
+   "range": 6,
+   "intensity": 1.3,
+   "why": "NIGHT53: the canal's west floor lit from below: the canal reads as a drop from the door"
+  },
+  {
+   "id": "g4-L7",
+   "room": "g4",
+   "kind": "pool",
+   "at": [
+    5,
+    -0.975,
+    -109
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    4,
+    4,
+    0.05
+   ],
+   "color": "white",
+   "range": 6,
+   "intensity": 1.1,
+   "why": "NIGHT53: the canal's east floor lit from below (dimmer than the west: the west is the jump)"
+  },
+  {
+   "id": "g5-L1",
+   "room": "g5",
+   "kind": "ceiling",
+   "at": [
+    0,
+    11.95,
+    -132
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 12,
+   "intensity": 1,
+   "why": "the door end's panel: the lanes and the ice walls read"
+  },
+  {
+   "id": "g5-frost",
+   "room": "g5",
+   "kind": "wall",
+   "at": [
+    0,
+    5,
+    -140.95
+   ],
+   "normal": [
+    0,
+    0,
+    1
+   ],
+   "size": [
+    3,
+    0.6,
+    0.1
+   ],
+   "color": "white",
+   "range": 9,
+   "intensity": 1.3,
+   "why": "the ICE STACK's frost lamp on its door face (GG's review: the centrepiece names the room): the landmark lit from the door"
+  },
+  {
+   "id": "g5-L2",
+   "room": "g5",
+   "kind": "ceiling",
+   "at": [
+    0,
+    11.95,
+    -147.5
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    4,
+    0.1
+   ],
+   "color": "amber",
+   "range": 12,
+   "intensity": 1.1,
+   "why": "the far floor behind the stack: the bait's ground (the room's one warm accent)"
+  },
+  {
+   "id": "g5-L3",
+   "room": "g5",
+   "kind": "ceiling",
+   "at": [
+    -8,
+    11.95,
+    -152
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    6,
+    0.1
+   ],
+   "color": "white",
+   "range": 12,
+   "intensity": 1,
+   "why": "the west shelf's lamp: the pour reads from the door"
+  },
+  {
+   "id": "g5-L4",
+   "room": "g5",
+   "kind": "ceiling",
+   "at": [
+    7.5,
+    11.95,
+    -153.5
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    6,
+    0.1
+   ],
+   "color": "white",
+   "range": 12,
+   "intensity": 1,
+   "why": "the crane deck's lamp: the third tier reads"
+  },
+  {
+   "id": "g5-L5",
+   "room": "g5",
+   "kind": "pool",
+   "at": [
+    0,
+    0.025,
+    -156
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.5,
+    2.5,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.6,
+   "why": "the exit's cyan pool (A-6)"
+  },
+  {
+   "id": "g6-L1",
+   "room": "g6",
+   "kind": "ceiling",
+   "at": [
+    0,
+    5.95,
+    -167
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.1
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.2
+  },
+  {
+   "id": "g6-L2",
+   "room": "g6",
+   "kind": "ceiling",
+   "at": [
+    0,
+    5.95,
+    -176
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    6,
+    2,
+    0.1
+   ],
+   "color": "white",
+   "range": 8,
+   "intensity": 1
+  },
+  {
+   "id": "g6-L3",
+   "room": "g6",
+   "kind": "pool",
+   "at": [
+    0,
+    0.025,
+    -178.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2,
+    2,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 6,
+   "intensity": 1.4
+  },
+  {
+   "id": "g7-L1",
+   "room": "g7",
+   "kind": "ceiling",
+   "at": [
+    0,
+    9.95,
+    -191.75
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    4,
+    0.1
+   ],
+   "color": "white",
+   "range": 10,
+   "intensity": 0.7,
+   "why": "the quay's one dim panel: the run-up reads, the fire ahead is the brighter light"
+  },
+  {
+   "id": "g7-L2",
+   "room": "g7",
+   "kind": "pool",
+   "at": [
+    -2,
+    -0.775,
+    -196.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    5,
+    1.6,
+    0.05
+   ],
+   "color": "orange",
+   "range": 10,
+   "intensity": 1.4,
+   "danger": true,
+   "why": "the grate's fire from below (danger: the room's one orange accent) (NIGHT55: 2 m west, inside the narrowed middle pit)"
+  },
+  {
+   "id": "g7-L3",
+   "room": "g7",
+   "kind": "wall",
+   "at": [
+    0,
+    4,
+    -197.45
+   ],
+   "normal": [
+    0,
+    0,
+    1
+   ],
+   "size": [
+    1.6,
+    0.6,
+    0.1
+   ],
+   "color": "white",
+   "range": 8,
+   "intensity": 1,
+   "why": "the BOILER's gauge lamp (on its door-side face at 4 m): the landmark lit"
+  },
+  {
+   "id": "g7-L4",
+   "room": "g7",
+   "kind": "ceiling",
+   "at": [
+    -8,
+    9.95,
+    -213
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    5,
+    4,
+    0.1
+   ],
+   "color": "white",
+   "range": 10,
+   "intensity": 1,
+   "why": "the west gantry's coal lamp: the spitters' high ground reads"
+  },
+  {
+   "id": "g7-L5",
+   "room": "g7",
+   "kind": "ceiling",
+   "at": [
+    8,
+    9.95,
+    -213
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    5,
+    4,
+    0.1
+   ],
+   "color": "white",
+   "range": 10,
+   "intensity": 1,
+   "why": "the keeper's house lamp: the third tier reads from the quay"
+  },
+  {
+   "id": "g7-L6",
+   "room": "g7",
+   "kind": "pool",
+   "at": [
+    0,
+    0.025,
+    -214
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.5,
+    2.5,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 8,
+   "intensity": 1.6,
+   "why": "the exit's cyan pool (A-6: the exit is lit)"
+  },
+  {
+   "id": "g8-L1",
+   "room": "g8",
+   "kind": "ceiling",
+   "at": [
+    0,
+    11.95,
+    -223
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 12,
+   "intensity": 1,
+   "why": "the door end's panel"
+  },
+  {
+   "id": "g8-L2",
+   "room": "g8",
+   "kind": "ceiling",
+   "at": [
+    0,
+    11.95,
+    -234
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    10,
+    0.1
+   ],
+   "color": "white",
+   "range": 12,
+   "intensity": 1,
+   "why": "the lanes and the pit read"
+  },
+  {
+   "id": "g8-L3",
+   "room": "g8",
+   "kind": "ceiling",
+   "at": [
+    0,
+    11.95,
+    -243
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    6,
+    3,
+    0.1
+   ],
+   "color": "amber",
+   "range": 12,
+   "intensity": 1.1,
+   "why": "the far end's warm panel: the stampede's start"
+  },
+  {
+   "id": "g8-L5",
+   "room": "g8",
+   "kind": "wall",
+   "at": [
+    -4.5,
+    5,
+    -249.95
+   ],
+   "normal": [
+    0,
+    0,
+    1
+   ],
+   "size": [
+    1.2,
+    0.5,
+    0.1
+   ],
+   "color": "white",
+   "range": 9,
+   "intensity": 1.2,
+   "why": "the gallery's lamp (white): the spitters' stand reads"
+  },
+  {
+   "id": "g8-L6",
+   "room": "g8",
+   "kind": "wall",
+   "at": [
+    7.5,
+    8,
+    -249.95
+   ],
+   "normal": [
+    0,
+    0,
+    1
+   ],
+   "size": [
+    1.2,
+    0.5,
+    0.1
+   ],
+   "color": "white",
+   "range": 9,
+   "intensity": 1.2,
+   "why": "the signal box's lamp, above its deck"
+  },
+  {
+   "id": "g8-L4",
+   "room": "g8",
+   "kind": "pool",
+   "at": [
+    0,
+    0.025,
+    -248
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.5,
+    2.5,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.6,
+   "why": "the exit's cyan pool (A-6)"
+  },
+  {
+   "id": "gr-L1",
+   "room": "gr",
+   "kind": "ceiling",
+   "at": [
+    0,
+    4.95,
+    -259
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 8,
+   "intensity": 1
+  },
+  {
+   "id": "gr-L2",
+   "room": "gr",
+   "kind": "pool",
+   "at": [
+    0,
+    0.025,
+    -262.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2,
+    2,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 6,
+   "intensity": 1.4
+  },
+  {
+   "id": "x9-L1",
+   "room": "x9",
+   "kind": "ceiling",
+   "at": [
+    0,
+    13.95,
+    -287
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    6,
+    6,
+    0.1
+   ],
+   "color": "white",
+   "range": 16,
+   "intensity": 1.2
+  },
+  {
+   "id": "x9-L2",
+   "room": "x9",
+   "kind": "pool",
+   "at": [
+    0,
+    0.025,
+    -287
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 8,
+   "intensity": 1.2
+  }
+ ],
+ "props": [
+  {
+   "id": "g2-P1",
+   "room": "g2",
+   "kind": "pillar",
+   "at": [
+    -4,
+    2,
+    -40
+   ],
+   "size": [
+    2,
+    4,
+    2
+   ],
+   "yawDeg": 0,
+   "collider": true,
+   "job": "cover",
+   "why": "the west PILLAR (2 x 2 x 4 m) 6 m short of the warden: step round it to its flank (the shield covers only its front 120 deg)"
+  },
+  {
+   "id": "g2-P3",
+   "room": "g2",
+   "kind": "healthPickup",
+   "at": [
+    -9.5,
+    4.9,
+    -55.5
+   ],
+   "size": [
+    0.6,
+    0.6,
+    0.6
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "pickup": true,
+   "job": "reward",
+   "why": "the high ground pays health: on the west gantry (4 m) at the flank lane's end (NIGHT52 fix K2 (n52-loop-fix-k2.cjs))"
+  },
+  {
+   "id": "g5-P1",
+   "room": "g5",
+   "kind": "healthPickup",
+   "at": [
+    0,
+    0.9,
+    -147.5
+   ],
+   "size": [
+    0.6,
+    0.6,
+    0.6
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "pickup": true,
+   "job": "reward",
+   "why": "the health right behind the stack on the far floor, under the shelf's pour and the crane's drones (A20: the best at the riskiest spot): the ring's far side pays"
+  },
+  {
+   "id": "g6-P1",
+   "room": "g6",
+   "kind": "plinth",
+   "at": [
+    0,
+    0.3,
+    -167
+   ],
+   "size": [
+    1.2,
+    0.6,
+    1.2
+   ],
+   "yawDeg": 0,
+   "collider": true,
+   "job": "reward",
+   "why": "the KESTREL's plinth, 3.5 m from the door on the axis: the gun is the first thing in the room (design.n40.iceline40.awards gives it on entry)"
+  },
+  {
+   "id": "g6-P2",
+   "room": "g6",
+   "kind": "weaponPickup",
+   "at": [
+    0,
+    1,
+    -167
+   ],
+   "size": [
+    0.6,
+    0.6,
+    0.6
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "pickup": true,
+   "job": "reward",
+   "why": "the KESTREL on its plinth, in view from the door (the row's award gives it on entry anyway)",
+   "weapon": "revolver"
+  },
+  {
+   "id": "g7-P1",
+   "room": "g7",
+   "kind": "healthPickup",
+   "at": [
+    0,
+    0.9,
+    -204.5
+   ],
+   "size": [
+    0.6,
+    0.6,
+    0.6
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "pickup": true,
+   "job": "reward",
+   "why": "the health right behind the boiler on the far floor, under both stands' fire (A20: the best at the riskiest spot): the dash-jump or an island hop lands on it"
+  },
+  {
+   "id": "g7-P2",
+   "room": "g7",
+   "kind": "hero",
+   "at": [
+    0,
+    9.2,
+    -199
+   ],
+   "size": [
+    3.6,
+    1.2,
+    3.6
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "job": "landmark",
+   "why": "the BOILER's collar under the roof (decor, no collider: out of reach): the stack reads as a stack from the door"
+  },
+  {
+   "id": "g8-P1",
+   "room": "g8",
+   "kind": "pillar",
+   "at": [
+    -5,
+    6,
+    -228
+   ],
+   "size": [
+    2.5,
+    12,
+    2.5
+   ],
+   "yawDeg": 0,
+   "collider": true,
+   "job": "cover",
+   "why": "the SW COLUMN (2.5 x 2.5 x 5 m; card: Every-solid rule): a charge breaks on it (stunned 2.0 s, its back open); cover from the gallery's spitters; with its pair it makes the three lanes (NIGHT52 loop fix 1: floor to the 12 m roof: at 5 m its top was a perch no walker reaches, hold52 0 hits)"
+  },
+  {
+   "id": "g8-P2",
+   "room": "g8",
+   "kind": "pillar",
+   "at": [
+    5,
+    6,
+    -228
+   ],
+   "size": [
+    2.5,
+    12,
+    2.5
+   ],
+   "yawDeg": 0,
+   "collider": true,
+   "job": "cover",
+   "why": "the SE COLUMN (2.5 x 2.5 x 5 m; card: Every-solid rule): a charge breaks on it (stunned 2.0 s, its back open); cover from the gallery's spitters; with its pair it makes the three lanes (NIGHT52 loop fix 1: floor to the 12 m roof: at 5 m its top was a perch no walker reaches, hold52 0 hits)"
+  },
+  {
+   "id": "g8-P3",
+   "room": "g8",
+   "kind": "pillar",
+   "at": [
+    -5,
+    6,
+    -235
+   ],
+   "size": [
+    2.5,
+    12,
+    2.5
+   ],
+   "yawDeg": 0,
+   "collider": true,
+   "job": "cover",
+   "why": "the W COLUMN (2.5 x 2.5 x 5 m; card: Every-solid rule): a charge breaks on it (stunned 2.0 s, its back open); cover from the gallery's spitters; with its pair it makes the three lanes (NIGHT52 loop fix 1: floor to the 12 m roof: at 5 m its top was a perch no walker reaches, hold52 0 hits)"
+  },
+  {
+   "id": "g8-P4",
+   "room": "g8",
+   "kind": "pillar",
+   "at": [
+    6,
+    6,
+    -235
+   ],
+   "size": [
+    2.5,
+    12,
+    2.5
+   ],
+   "yawDeg": 0,
+   "collider": true,
+   "job": "cover",
+   "why": "the E COLUMN (2.5 x 2.5 x 5 m; card: Every-solid rule): a charge breaks on it (stunned 2.0 s, its back open); cover from the gallery's spitters; with its pair it makes the three lanes (NIGHT52 loop fix 1: floor to the 12 m roof: at 5 m its top was a perch no walker reaches, hold52 0 hits) (NIGHT52 fix 5: 1 m out, x 6: the east inner lane beside THE PIT 3.25 m, the outer 3.15 m)"
+  },
+  {
+   "id": "g8-P6",
+   "room": "g8",
+   "kind": "pillar",
+   "at": [
+    6,
+    6,
+    -242
+   ],
+   "size": [
+    2.5,
+    12,
+    2.5
+   ],
+   "yawDeg": 0,
+   "collider": true,
+   "job": "cover",
+   "why": "the NE COLUMN (2.5 x 2.5 x 5 m; card: Every-solid rule): a charge breaks on it (stunned 2.0 s, its back open); cover from the gallery's spitters; with its pair it makes the three lanes (NIGHT52 loop fix 1: floor to the 12 m roof: at 5 m its top was a perch no walker reaches, hold52 0 hits) (NIGHT52 fix 5: 1 m out, x 6: the east inner lane beside THE PIT 3.25 m, the outer 3.15 m)"
+  },
+  {
+   "id": "g8-P7",
+   "room": "g8",
+   "kind": "hero",
+   "at": [
+    0,
+    6,
+    -249.8
+   ],
+   "size": [
+    7,
+    5,
+    0.3
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "job": "marker",
+   "why": "THE TURNTABLE GATE (card: Landmark): the engine shed's round door over the exit, its plough-blade frame red-orange, lit from behind: seen from the door, the only round shape in the room"
+  },
+  {
+   "id": "g8-P8",
+   "room": "g8",
+   "kind": "healthPickup",
+   "at": [
+    0,
+    0.9,
+    -242
+   ],
+   "size": [
+    0.6,
+    0.6,
+    0.6
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "pickup": true,
+   "job": "reward",
+   "why": "the health at THE PIT's far end in lane C, where the centre charger runs (A20: the best at the riskiest spot): cross the pit's lane under the stands to take it"
+  },
+  {
+   "id": "gr-P1",
+   "room": "gr",
+   "kind": "healthPickup",
+   "at": [
+    0,
+    0.9,
+    -259
+   ],
+   "size": [
+    0.6,
+    0.6,
+    0.6
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "pickup": true,
+   "job": "reward",
+   "why": "the rest before THE BRAWL: full health"
+  },
+  {
+   "id": "g3-P1",
+   "room": "g3",
+   "kind": "hero",
+   "at": [
+    -4,
+    1.5,
+    -73.85
+   ],
+   "size": [
+    2.5,
+    1.5,
+    0.3
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "job": "hero",
+   "why": "THE CHUTE (card: Hero prop): the hopper's dark mouth on its door-side face: where the swarm nests (in the coal); wave 2's spawn tells stand at it"
+  },
+  {
+   "id": "g3-P2",
+   "room": "g3",
+   "kind": "healthPickup",
+   "at": [
+    10.5,
+    2.9,
+    -84.5
+   ],
+   "size": [
+    0.6,
+    0.6,
+    0.6
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "pickup": true,
+   "job": "reward",
+   "why": "the room's one health (flow plan 9; arena-flow-web F23): on the trestle's north end, the far end from the door, exposed above the one-way drop (NIGHT52 loop: 1 m in with the trestle)"
+  },
+  {
+   "id": "g4-P1",
+   "room": "g4",
+   "kind": "healthPickup",
+   "at": [
+    0,
+    0.9,
+    -109
+   ],
+   "size": [
+    0.6,
+    0.6,
+    0.6
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "pickup": true,
+   "job": "reward",
+   "why": "the health on the centre bridge over the canal, under both drones' orbs (A20: the best at the riskiest spot)"
+  }
+ ],
+ "surfaces": [
+  {
+   "kind": "ice",
+   "rect": [
+    -12,
+    -112,
+    12,
+    -106
+   ],
+   "minY": -1.5,
+   "maxY": -0.5,
+   "room": "g4",
+   "note": "THE CANAL's frozen floor (the level's name; design.n30.glide): a fall skates"
+  }
+ ],
+ "owns38": [
+  "jump",
+  "double",
+  "dash",
+  "slide",
+  "ride",
+  "walljump"
+ ],
+ "owns38_why": "Builder E's gate checker (Design/levels/n38/GATES38.md), as n38-iceline: level 2 owns the movement verbs, the KESTREL and the PULSE gauntlet; the THUNDERCLAP boost is level 3's, the grapple level 4's. n40-iceline has no `gate` tag (no traversal gate: every crossing is a walk, a bridge or a ramp)."
+}

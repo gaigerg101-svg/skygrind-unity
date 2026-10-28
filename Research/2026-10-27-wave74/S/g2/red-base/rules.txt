@@ -1,0 +1,16 @@
+# command: python -I Tools/night/n74-room-rules.py room Design/levels/n67/iceline/rooms-base/g2.json
+# sha: 291d40fad; time: 2026-10-28 00:24:56
+iceline/g2  rect [-12.0, -58.0, 9.0, -30.0]  spawn [0.0, 0.0, -34.5] yaw 0  floor 0.0
+  PLANES  PASS  planes 3 (0.0 m: 433 cells, 1.5 m: 25 cells, 4.0 m: 45 cells)
+  COVER   PASS  cover: free-standing high 1, low 1, between 1 (0 without a job), none 0
+  LOOPS   PASS  loops 5 (floor holes 1 + closed pad / ride routes 4 of 4)
+  REAR    PASS  rear arc: 0 of 4 wave-1 usable nodes behind the entry facing (all waves: 0 node uses behind)
+  VIEW    PASS  view: enemy in view at 0.00 s (4 of 4 wave-1 nodes seen at entry)
+  CROSS   PASS  cross: chord 35.0 m, dash 1.46 s, walk 4.4 s (bar 2.0 s at dash)
+  EXPOSE  RED  exposure: 73 % of 1485 floor-sample pairs see each other (bar 60 %); longest clear line 30.9 m (medium band 19.5 m)
+  CLIMB   PASS  climb: 3 tier group(s), 0 not reached by walker links
+    between-height piece: hull [-9.0, 0.0, -34.0]-[-7.6, 0.8, -31.5] h 0.80 job "line"
+    free-standing high piece: hull [-1.5, 0.0, -46.0]-[1.5, 10.0, -43.0] h 10.00 job "line"
+    free-standing low piece: hull [2.5, 0.0, -39.0]-[6.0, 1.2, -36.5] h 1.20 job "cover"
+    walkers reach every tier: climb: 3 tier group(s), 0 not reached by walker links
+  core 5/5 PASS, extra 2/3 PASS

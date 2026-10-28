@@ -1,0 +1,8 @@
+# commands: python -I Tools/night/n72-wyrmpx.py --hue <label> <frame> 858,590,912,760   and   --changed <label> <on.png> <off.png> 858,590,912,760   (the lead's n72-t2 f0100 frames: Logs/n72/pairs/body72-t2/{on,off}.png; ON = body72:1 alone [Body72Hex 0x7a3626, the seams through Hot], OFF = plain)
+# builder B, worktree n72-B, 2026-10-27 13:40:22 USMST. The box holds the arena's own yellow pillar beam (x 882-905), bright yellow in both frames; --changed (added now, before any round-3 frame) reads only the pixels body72 changed.
+t2-ON	on.png	box 858,590,912,760	bright px 8182	median hue 43.9 deg (bar <= 35)	yellow-band share 47.6% (bar <= 42%)	FAIL
+t2-OFF	off.png	box 858,590,912,760	bright px 7814	median hue 30.9 deg (bar <= 35)	yellow-band share 41.0% (bar <= 42%)	PASS
+t2-changed	box 858,590,912,760	changed bright px 4341 (bar >= 800)	median hue 27.8 deg (bar <= 35)	yellow-band share 17.5% (bar <= 15%)	FAIL
+# the same on the t1 pair (the neutral ash):
+t1-changed	box 858,590,912,760	changed bright px 4702 (bar >= 800)	median hue 35.9 deg (bar <= 35)	yellow-band share 22.3% (bar <= 15%)	FAIL
+t2-changed-wholecolumn	box 800,470,1060,800	changed bright px 5903 (bar >= 800)	median hue 29.8 deg (bar <= 35)	yellow-band share 23.5% (bar <= 15%)	FAIL

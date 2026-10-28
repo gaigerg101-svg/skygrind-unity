@@ -1,0 +1,21 @@
+# command: python -I Tools/night/n74-room-rules.py room Design/levels/n67/iceline/rooms-base/g3.json
+# sha: 716e3003a; time: 2026-10-28 00:49:13
+iceline/g3  rect [-12.0, -90.0, 12.0, -62.0]  spawn [0.0, 0.0, -64.0] yaw 0  floor 0.0
+  PLANES  PASS  planes 3 (0.0 m: 474 cells, 2.0 m: 72 cells, 4.0 m: 20 cells)
+  COVER   RED  cover: free-standing high 3, low 1, between 4 (4 without a job), none 0
+  LOOPS   PASS  loops 3 (floor holes 1 + closed pad / ride routes 2 of 2)
+  REAR    PASS  rear arc: 0 of 3 wave-1 usable nodes behind the entry facing (all waves: 0 node uses behind) [no node 12 m out: every node taken]
+  VIEW    PASS  view: enemy in view at 0.00 s (2 of 3 wave-1 nodes seen at entry)
+  CROSS   PASS  cross: chord 36.9 m, dash 1.54 s, walk 4.6 s (bar 2.0 s at dash)
+  EXPOSE  RED  exposure: 67 % of 1485 floor-sample pairs see each other (bar 60 %); longest clear line 28.5 m (medium band 19.5 m)
+  CLIMB   PASS  climb: 2 tier group(s), 0 not reached by walker links
+    between-height piece: deck [-6.25, 0.0, -69.75]-[-3.75, 0.9, -68.25] h 0.90 job "cover"  <- no job
+    between-height piece: deck [7.5, 0.0, -80.0]-[10.0, 0.9, -78.5] h 0.90 job "cover"  <- no job
+    between-height piece: deck [-10.25, 0.0, -86.75]-[-7.75, 0.9, -85.25] h 0.90 job "cover"  <- no job
+    between-height piece: deck [3.75, 0.0, -84.75]-[6.25, 0.9, -83.25] h 0.90 job "cover"  <- no job
+    free-standing high piece: hull [-6.0, 0.0, -81.0]-[-2.0, 10.0, -75.0] h 10.00 job "cover"
+    free-standing high piece: hull [-8.0, 0.0, -81.0]-[-6.0, 10.0, -80.5] h 10.00 job "line"
+    free-standing high piece: hull [-8.0, 0.0, -75.5]-[-6.0, 10.0, -75.0] h 10.00 job "line"
+    free-standing low piece: hull [-11.0, 0.0, -66.0]-[-9.0, 1.2, -63.0] h 1.20 job "line"
+    walkers reach every tier: climb: 2 tier group(s), 0 not reached by walker links
+  core 4/5 PASS, extra 2/3 PASS

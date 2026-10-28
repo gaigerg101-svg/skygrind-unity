@@ -1,0 +1,11 @@
+# command: node Tools/night/n70-area.cjs --level iceline --dir C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/ice/g3/base --touches Research/2026-10-27-wave74/R/evidence/g3/base/g3/skip.txt g3
+# sha: f360cf025 (+ the room file as in the tree); time: 2026-10-28 00:19:24
+n70-area: room g3; plan C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/ice/g3/base/iceline.plan.json, level C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/ice/g3/base/n67-iceline.json (the round's folder C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/ice/g3/base); touches Research/2026-10-27-wave74/R/evidence/g3/base/g3/skip.txt (0 touch rows, 0 launch kills); card none
+OPEN  PASS largest open square 9.5 m (x -2.0..7.5, z -83.5..-74.0; 17 pieces on a 24.0 x 28.0 m rect; 12 m or less passes)
+P1    N/A  the last wave (swarmer swarmer swarmer swarmer swarmer swarmer swarmer swarmer) has no ranged enemy (spitter / drone)
+P4    FAIL 0 / 6 standing solids >= 1.75 m do a job ((a) touched 0, (b) sight 0, (c) launch kill 0); no job: box(-6,0,-81..-2,10,-75) cover: THE HOPPER; box(-11.6,0,-84..-11,5,-66) line: the WEST RIDE PANEL RW; box(4,0,-66..9,4,-62) line: THE LOFT; box(6.5,0,-90..12,2,-86) line: THE TIPPLE HEAD (+2)
+P5    N/A  no line65 in the row
+P9    N/A  no plane 1 m or more up with a short side of 6 m or more
+P11   N/A  the card names no TOWER / GALLERY / SPLIT LEVEL (no card)
+P17   PASS 1 / 1 ride walls 4 m tall and 8 m long; 0 non-ride wall(s) in that band; the strip = ride: true (ride36 faces 1)
+n70-area: FAIL g3 (2/3)

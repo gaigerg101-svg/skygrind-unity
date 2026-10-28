@@ -1,0 +1,4 @@
+# command: dotnet Temp/SimHarness/bin/Release/net10.0/SimHarness.dll hold52 --level n65-foundry --room a2 --pads --file C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/a2/base/n65-foundry.json
+# sha: e4ed8b901; time: 2026-10-27 22:35:19
+hold52: level n65-foundry (C:\Users\gaige\AppData\Local\Temp\claude\C--Users-gaige-dev-SKYGRIND-unity\07ef7707-bc3a-4541-8901-f98169a14875\scratchpad\a2\base\n65-foundry.json), room a2 "1.2 KESTREL" rect [-7,-55,7,-35], off switch none
+pad52 a2: no jump pad inside the room's rect (the map's pads: 8)

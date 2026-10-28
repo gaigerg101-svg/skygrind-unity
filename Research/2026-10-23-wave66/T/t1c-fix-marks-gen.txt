@@ -1,0 +1,8 @@
+# command: t1c-marks-file.cjs b1 'P15 THE LADLE' <scratch>, then gen-n65-foundry.cjs --slots=latest --room-file=b1:<it> --run --out=<scratch>, then the marks key in the level's campaign.lights
+# sha: 6b501872 + uncommitted deco / iso / round edits, 2026-10-24 02:31:37
+t1c-marks-file: b1's light b1-rail marks 'P15 THE LADLE' -> C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/b545c660-8250-4a8f-9419-f29ef22d3556/scratchpad/marks/b1-marks.json
+gen-n65-foundry: --room-file: slot b1 reads C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/b545c660-8250-4a8f-9419-f29ef22d3556/scratchpad/marks/b1-marks.json
+levelgen --walk: 0 ERROR
+shipped after:  Design/levels/n65-foundry.json 5f3eba53c34b84b6a3a4548281865c6cc5691539745636b9ed88215ab296cd85, Assets/StreamingAssets/Design/levels/n65-foundry.json 5f3eba53c34b84b6a3a4548281865c6cc
+the key in the level: "marks":"P15 THE LADLE" 
+tracked: []

@@ -1,0 +1,97 @@
+{
+ "_why": "NIGHT64's slate, seeded by the forge FORGE64 (2026-10-23 ~08:35-09:45, GG: 'create handoff and use that, resrecah, follow best methods and create next prompt that will go for 3 hours'). Three hours, so three small view-only slices that finish what GG asked on 2026-10-22 and NIGHT63 left undone ('effect colores everything doenst feel alligned'; the bosses), all three in one build (b1), each pinned to file:line (Research/2026-10-23-forge64/code-scout.md), plus a kit for GG's own blind A / B. Re-scoped by the forge's red team (redteam.md: U2 cut, its premise wrong; B3 narrowed to the wyrm and moved into b1; every red from the lead's red set on rc0). Every doneWhen is written before any measurement and never loosened. A PASS binds to the sha its critic judged (passSha, the full 40-character sha) and the slice's own files (passFiles: the union of `git show --name-only --format=` over its own picked shas): Tools/night/n64-freeze-rows.cjs refuses a flip when those files, or the row's own config block, changed since. NIGHT64 copies this file to Logs/n64/slate.json in its bearings; only the lead edits that copy.",
+ "slices": [
+  {
+   "id": "C4",
+   "owner": "D",
+   "state": "todo",
+   "passes": false,
+   "verdict": null,
+   "spot": null,
+   "passSha": null,
+   "passFiles": null,
+   "title": "The exit that reads danger: THE CROWN's goal column stops painting a red-orange line down every spire exit",
+   "why": "gg-proxy (Logs/n63/gg-proxy.md #4): 'a red-orange vertical line drops from a ceiling lamp down the cyan door' on 5 of 5 spire frames, named since at least NIGHT60; rule 8: red-orange is enemies and danger only. The code scout: Route47View's goal column (Route47View.cs:113-135, colour CLook47RedGoldHex 0xff8a3a, UnityTuning.Crown47.cs:50; a through-walls pass, Column47.shader:98-106) stands at x -10, the centre of every spire door; colours63's table gives goal47 the boundary role (Design/unity-config.json:10115-10116). The red team: Route47View.cs:58 uses one colour for the column and the window shafts, so the two must be split; read the role with Colours63Math.From(cfg) (it reads the table whatever colours63's enabled), never Colours63.Route (it returns its input while colours63 is off, Colours63.N63D.cs:91)",
+   "row": "design.n64.goal64 (new, OFF; -skygrindNoGoal64)",
+   "red": "the lead's red set on rc0 (Builds/n63-freeze): `a157 n52-spire -skygrindClearShots60` (side cr), its clear shots with each exit door in view: the danger-band pixels inside each door's screen box (gg-proxy: the line on 5 of 5 verbs37 spire frames)",
+   "doneWhen": [
+    "the red measured first from the lead's red set: the danger-band pixels inside each spire door's screen box on a157 n52-spire's clear shots, row off (the number and its command in the builder's notes)",
+    "with design.n64.goal64 on, the goal column and its through-wall pass draw in the colour table's goal role (read with Colours63Math.From(cfg), never typed); on the GATE build's same-run pairs the column's danger-band pixels inside every door box are 0 while the column is still drawn (its pixels in the boundary band > 0)",
+    "the window shafts over the doors (Route47View.cs:101-106) keep their red-gold: their role is GG's call (DECIDE64)",
+    "the same-run SPOT pair at a spire exit (a157 n52-spire clear shot) names the line's colour change",
+    "verbs37 n52-spire x1 on the GATE build 31 / 31; verbs37 x5 on rc1 unchanged; fingerprints plain and --off57..--off64 EQUAL (view only)"
+   ],
+   "visible": "the long red line down every spire exit turns pale; the short red-gold bar over each door stays (GG's call)",
+   "spotPose": "a157 n52-spire clear shot with the exit door in view (same-run, -skygrindSameRun63 n64.goal64)"
+  },
+  {
+   "id": "U1",
+   "owner": "G",
+   "state": "todo",
+   "passes": false,
+   "verdict": null,
+   "spot": null,
+   "passSha": null,
+   "passFiles": null,
+   "title": "One order at a time: a boss order is printed once, never under the bar and in the centre together",
+   "why": "gg-proxy #3: 4 of 18 boss shots print the same order twice at once ('STAGGERED: HOLD LEFT CLICK, SLUG IT' small under the bar and large in the centre); GG: 'way too much instruction' (2026-10-14). The code scout: one string feeds the bar's hint b43Hint (UiBossBar43.cs:105) and hud47's fight line fight47 (UiHud47.Boss.cs:36-56), both set at UiBossBar43.cs:209-215; hud47 hides the bar's label once but Text33.Set turns it back on for every new text (UiStyle33.cs:77-78). The red team: UiBossRule61.cs:120-150 writes b43Hint every frame, so U1's write must come after it, or the rule line's release shows a one-frame duplicate",
+   "row": "design.n64.order64 (new, OFF; -skygrindNoOrder64)",
+   "red": "the row-off half of U1's own first build: its proof counter prints, per boss, the frames where the fight line is up and the bar's hint holds the same text (would-duplicate) and the frames where both are drawn (shown); gg-proxy: 4 of 18 boss shots",
+   "doneWhen": [
+    "the counter prints both numbers per boss in one same-run run (would-duplicate frames and duplicate frames shown); the row-off numbers are the red, written down first",
+    "with design.n64.order64 on, on THE KILN WYRM and THE LOOM (the bosses whose shots showed it): duplicate frames shown 0 while would-duplicate frames > 0; the bar's hint shows the order after the fight line fades, so the count of orders shown is the same on and off",
+    "bossRule61's rule line still holds the bar's hint while it stands (N61BossRule and N63BossRule tests GREEN; no one-frame duplicate at its release)",
+    "the same-run SPOT pair at THE KILN WYRM's stagger shot names the duplicate gone",
+    "verbs37 n57-kiln x1 on the GATE build 31 / 31; verbs37 x5 on rc1 unchanged; fingerprints EQUAL; the HUD's look untouched (GG 2026-10-20: 'the UI looks good as it is')"
+   ],
+   "visible": "in a boss fight each order is printed once, not twice",
+   "spotPose": "boss63 THE KILN WYRM stagger shot (same-run, -skygrindSameRun63 n64.order64)"
+  },
+  {
+   "id": "B3",
+   "owner": "D",
+   "state": "todo",
+   "passes": false,
+   "verdict": null,
+   "spot": null,
+   "passSha": null,
+   "passFiles": null,
+   "title": "THE KILN WYRM's weak point in the player's cyan, and bossColours63 turned on for all five (NIGHT63's B3, finished)",
+   "why": "NIGHT63 B3 SHORT (Logs/n63/verdict-B3.md, round 2): the wyrm's OPEN head is spring green, median hue 158.5 (RGB 9, 238, 155), against the wick's and crown's 180; the crown's meter FAIL was the role meter's own rule (c) on pale-pink streak edges. The code scout: the sulphur split toning pulls a bright cyan from ~185 to ~158 (D-B3c.md:166-172) and the punch-window shell is not routed at all (Boss30View.cs:482). The red team: the stagger shot is in phase 1, whose filter RimAt already undoes, so the fix that moves it is the weak point's own rim colour aimed bluer (code-scout option 1), measured in a Player, not guessed: a tuning loop with the lead (a build and one kiln reel per try). The grade's own numbers are GG's (NIGHT54)",
+   "row": "design.n63.bossColours63 (NIGHT63's row, OFF; -skygrindOff63 / -skygrindNoBossColours63)",
+   "red": "n63-b11's same-run pair b3k stagger (Logs/feel/n63-b11/b3k-on|off/boss63/shot-N30-B63-wyrm-stagger.png): the head median hue 158.5; the role meter's classes player 36,491 / fringe 24,737 / green 27,240 px (Logs/n63/b3-roles-b11.txt)",
+   "doneWhen": [
+    "`python -I Tools/night/n63-b3-roles.py --hue <x0,y0,x1,y1> <on> <off>` (a mode the builder writes, with planted cases: a cyan patch at 185 reads 185, a lime patch at 158 reads 158) prints the median hue of the changed saturated pixels inside the head's rect; on b11's pair it reads 158 +/- 2 (the red reproduced)",
+    "on the GATE build's same-run pair at THE KILN WYRM's stagger, row on: the head's median hue 175-200",
+    "the role meter's rule (c) counts only the parts the shot's proof line names (or a 2 % floor); its planted cases PASS with the crown's pale-pink streak edges as a new case",
+    "the other four bosses' same-run pairs on the GATE build (row on vs off) still read as NIGHT63's round-2 verdict found them: the wick and the loom PASS by the role meter, the crown PASS with its tell red (amber at most 1 % of its changed pixels), the Icebreaker unchanged (its fists cyan on and off)",
+    "grade54's own numbers unchanged (GG's NIGHT54 design); the punch-window shell (Boss30View.cs:482) routed with the head",
+    "the same-run SPOT pair at THE KILN WYRM's stagger names the head's colour change",
+    "verbs37 n57-kiln x1 on the GATE build 31 / 31; verbs37 x5 on rc1 unchanged; fingerprints EQUAL"
+   ],
+   "visible": "THE KILN WYRM's open head reads the same cyan as every other boss's weak point, no longer lime",
+   "spotPose": "boss63 THE KILN WYRM stagger (same-run, -skygrindSameRun63 n63.bossColours63)"
+  },
+  {
+   "id": "L1",
+   "owner": "lead",
+   "state": "todo",
+   "passes": false,
+   "verdict": null,
+   "spot": null,
+   "passSha": null,
+   "passFiles": null,
+   "title": "eye63's blind A / B kit for GG: two builds, a sealed coin flip, a one-page play card",
+   "why": "EYE63 is BLOCKED (NIGHT63 slate): its measure is MET (64 of 64 slide and landing events halved, view only 1.00 mm) but a camera ease has no still frame to SPOT, so only GG's blind A / B can judge it (DECIDE63 D-10, L-001); GG's #2 complaint is the choppy movement (7 asks)",
+   "row": "design.n63.eye63 (NIGHT63's row, OFF; the kit flips it only in one build's copy)",
+   "red": "no kit exists: GG cannot judge eye63 without knowing which build has it, and he must not know until he answers",
+   "doneWhen": [
+    "two Players from A1's sha (Builds/n64-abx and Builds/n64-aby), design.n63.eye63 on in exactly one copy chosen by a coin flip; the mapping written to Logs/n64/eye63-ab.mapping.txt before either reel runs",
+    "verbs37 n52-foundry once on each: 27 / 27 both; `node Tools/night/n63-m1-chop.cjs --pair n64-abx n64-aby` says view only (feet / x / z within 1.1 mm); which side halved stays out of the report and the play card (the lead knows the mapping; GG does not)",
+    "a play card in NIGHT64-REPORT.md section 2: which builds, level 1's slides and landings, about three minutes each, 'which one feels smoother, X or Y?'"
+   ],
+   "visible": "n/a (a kit for GG's own blind judgement; exempt from the SPOT rule)",
+   "spotPose": "n/a"
+  }
+ ]
+}

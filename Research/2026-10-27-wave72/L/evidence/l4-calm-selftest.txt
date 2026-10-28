@@ -1,0 +1,5 @@
+command: python -I Tools/night/n72-calm.py --selftest   (worktree n72-L, base b80afc2fa, 2026-10-27 11:16:24 USMST)
+ok   planted band 0 px: measured 0 (L 0 R 0 T 0 B 0)
+ok   planted band 60 px: measured 56 (L 54 R 56 T 56 B 56)
+ok   planted band 200 px: measured 188 (L 185 R 188 T 185 B 185)
+SELFTEST n72-calm: PASS

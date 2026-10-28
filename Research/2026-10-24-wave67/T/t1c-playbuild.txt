@@ -1,0 +1,24 @@
+# sha a80093a6 + uncommitted n65-play-build.sh; the fake source C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/4ec22190-70cd-45bd-bf05-90e7159adc38/scratchpad/t1c-play-258866/src (config + n52-iceline, n57-kiln, n67-iceline); 2026-10-24 12:09:25
+## source before: config b9f3083a5b19a09c, n67-iceline 57139ce98a8bdce9, files n52-iceline.json n57-kiln.json n67-iceline.json 
+
+## (1) two levels in one call: n67-iceline (the build ships it: replaced) + n67-kiln (added)
+n65-play-build: C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/4ec22190-70cd-45bd-bf05-90e7159adc38/scratchpad/t1c-play-258866/play from C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/4ec22190-70cd-45bd-bf05-90e7159adc38/scratchpad/t1c-play-258866/src (hard links; the source's config b9f3083a5b19a09c n67-iceline 57139ce98a8bdce9 unchanged); levels: n67-iceline = 57139ce98a8bdce9 from Design/levels/n67-iceline.json; n67-kiln = 79d29b5a8f834a0d from Design/levels/n67-kiln.json (added); its config b9f3083a5b19a09c from Design/unity-config.json; rows on: none
+# exit 0
+# play: n52-iceline.json n57-kiln.json n67-iceline.json n67-kiln.json 
+
+## (2) --update: n67-spire added to the same play build
+n65-play-build: C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/4ec22190-70cd-45bd-bf05-90e7159adc38/scratchpad/t1c-play-258866/play updated from C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/4ec22190-70cd-45bd-bf05-90e7159adc38/scratchpad/t1c-play-258866/src (hard links; the source's config b9f3083a5b19a09c unchanged); levels: n67-spire = 3f08271dc99d58c4 from Design/levels/n67-spire.json (added); its config b9f3083a5b19a09c from the play build's own (unchanged); rows on: none
+# exit 0
+# play: n52-iceline.json n57-kiln.json n67-iceline.json n67-kiln.json n67-spire.json ; n67-spire 3f08271dc99d58c4 = the tracked 3f08271dc99d58c4
+## source after: config b9f3083a5b19a09c, n67-iceline 57139ce98a8bdce9, files n52-iceline.json n57-kiln.json n67-iceline.json 
+
+## (3) refusals
+n65-play-build: C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/4ec22190-70cd-45bd-bf05-90e7159adc38/scratchpad/t1c-play-258866/play exists (refused: never overwrite a build; --update adds levels to a play build)
+# exit 1 (dst exists, no --update)
+n65-play-build: --update: no C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/4ec22190-70cd-45bd-bf05-90e7159adc38/scratchpad/t1c-play-258866/nothere/SKYGRIND.exe (make the play build first, without --update)
+# exit 1 (--update, no dst)
+n65-play-build: C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/4ec22190-70cd-45bd-bf05-90e7159adc38/scratchpad/t1c-play-258866/src has no SKYGRIND_Data/StreamingAssets/Design/levels/n67-spire.json (the level must be one the build ships, or pass --add-level)
+# exit 1 (a level the build does not ship, no --add-level)
+n65-play-build: unknown option --bogus
+# exit 1 (an unknown option)
+# done 12:09:52

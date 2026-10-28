@@ -1,0 +1,20 @@
+{
+  "_why": "NIGHT31's player-facing features, each with its switch and its Player proof (RED once, GREEN once). The lead updates `state` at each integration.",
+  "features": [
+    { "id": "P0a", "name": "charge-shot smoke failure fixed", "switch": "design.n27.chargeShots27 / design.n31.charge", "proof": "Player smoke with the charge row ON passes every step", "owner": "W", "state": "left" },
+    { "id": "P0b", "name": "Arcline21View cubes hidden, node ring visible", "switch": "design.n31.arcRing", "proof": "reel ring31: a Player frame aimed at a node", "owner": "G", "state": "left" },
+    { "id": "P0c", "name": "wave spawn 6 m from the entry, out of the first view cone", "switch": "validator rule", "proof": "reel spawn31: f9 frame, nearest spawn distance", "owner": "G", "state": "left" },
+    { "id": "P0d", "name": "low-health red at the screen edges", "switch": "design.n31.lowHealthEdge", "proof": "reel edge31: centre luminance vs edge at 20 % health", "owner": "G", "state": "left" },
+    { "id": "P0e", "name": "reel on the pad", "switch": "binding", "proof": "pad scenario shortens the rope", "owner": "G", "state": "left" },
+    { "id": "1", "name": "pull-in grapple (tap pulls, hold swings, target mark)", "switch": "design.n31.grapplePull + grappleMark", "proof": "reel grapple31: speed toward the node 0.3 s after a hook (RED today), three nodes in a row on pad, frames", "owner": "G", "state": "left" },
+    { "id": "2a", "name": "charge shot back (KESTREL pierce, THUNDERCLAP slug)", "switch": "design.n31.charge", "proof": "harness charge31 + reel charge31 frames of the ring", "owner": "W", "state": "left" },
+    { "id": "2b", "name": "LT always does something", "switch": "design.n31.ltAlways", "proof": "harness ltalways31 + reel lt31 per weapon", "owner": "W", "state": "left" },
+    { "id": "3", "name": "level 1 pistol only, one weapon per level", "switch": "design.n31.unlocks", "proof": "reel unlocks31: owned weapons at room 1 and after the award per level; LevelSelect29", "owner": "W", "state": "left" },
+    { "id": "4", "name": "camp test", "switch": "harness / reel camp31", "proof": "camp table in NIGHT31-PROOF.md (NIGHT30 bosses RED, rebuilt bosses PASS)", "owner": "B", "state": "left" },
+    { "id": "6a", "name": "Lantern: charged-shot shield, sinking platforms", "switch": "design.n31.lantern31", "proof": "reel lantern31 + camp31 lantern", "owner": "B", "state": "left" },
+    { "id": "6b", "name": "THE STAG (level 2 boss)", "switch": "design.n31.stag31", "proof": "reel stag31 + camp31 stag", "owner": "B", "state": "left" },
+    { "id": "6c", "name": "Wyrm: feints, stagger-only gun damage, stillness spit", "switch": "design.n31.wyrm31", "proof": "reel wyrm31 + camp31 wyrm", "owner": "B", "state": "left" },
+    { "id": "6d", "name": "Loom: pull-in joints, hang, deck strike", "switch": "design.n31.loom31", "proof": "reel loom31 + camp31 loom", "owner": "B", "state": "left" },
+    { "id": "7", "name": "arenas and weapon rooms", "switch": "plan rows", "proof": "levelgen 0 errors, walk30 10/10, reel arenas31 frames", "owner": "L", "state": "left" }
+  ]
+}

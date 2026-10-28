@@ -1,0 +1,7 @@
+# command: dotnet Temp/SimHarness/bin/Release/net10.0/SimHarness.dll n53ridekill ride --level C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/ice/g5/cand0/n67-iceline.json --room g5
+# sha: f360cf025; time: 2026-10-28 00:30:17
+wall in room g5: start (-10.08, 0.00, -146.08), along (-0.00, 1.00), normal (1.00, 0.00); row on True
+foot: grounded True, kill True, bar after 0.150, rideKill53 no, missed +1
+ride: yes after 1 steps (WallRideStart 1), feet (-10.05, 1.20, -145.99), speed 11.0 m/s
+  rideKill53 #1: on the wall True, steps since the ride 0, bar 0.150 -> 0.650, weapon revolver
+n53ridekill ride: GREEN | level n67-iceline, room g5, rideKill53 on True | ride yes (WallRideStart 1), kill on the wall yes, rideKill53 events 1, bar after 0.650 vs the foot kill's 0.150 (+0.500, one boost = 0.500) | foot kill yes, paid no

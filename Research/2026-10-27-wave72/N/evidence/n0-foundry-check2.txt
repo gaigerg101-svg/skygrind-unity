@@ -1,0 +1,41 @@
+11:00:32
+b80afc2fa
+PASS Design/levels/n65/rooms-n52/a2.json is n52's a2 exactly (re-exported from Design/levels/n52/foundry.plan.json)
+     Design/levels/n65/rooms/a2.json: REBUILT (differs from n52's room)
+PASS Design/levels/n65/rooms-n52/a3.json is n52's a3 exactly (re-exported from Design/levels/n52/foundry.plan.json)
+     Design/levels/n65/rooms/a3.json: REBUILT (differs from n52's room)
+PASS Design/levels/n65/rooms-n52/a4.json is n52's a4 exactly (re-exported from Design/levels/n52/foundry.plan.json)
+     Design/levels/n65/rooms/a4.json: REBUILT (differs from n52's room)
+PASS Design/levels/n65/rooms-n52/a5.json is n52's a5 exactly (re-exported from Design/levels/n52/foundry.plan.json)
+     Design/levels/n65/rooms/a5.json: REBUILT (differs from n52's room)
+PASS Design/levels/n65/rooms-n52/b1.json is n52's b1 exactly (re-exported from Design/levels/n52/foundry.plan.json)
+     Design/levels/n65/rooms/b1.json: REBUILT (differs from n52's room)
+PASS Design/levels/n65/rooms-n52/b2.json is n52's b2 exactly (re-exported from Design/levels/n52/foundry.plan.json)
+     Design/levels/n65/rooms/b2.json: n52's room (not rebuilt yet)
+PASS Design/levels/n65/rooms-n52/a8.json is n52's a8 exactly (re-exported from Design/levels/n52/foundry.plan.json)
+     Design/levels/n65/rooms/a8.json: REBUILT (differs from n52's room)
+PASS every slot old: the assembled plan equals Design/levels/n52/foundry.plan.json apart from id / _why
+PASS every slot old: levelgen --walk (2 ERROR) + the finish: the level equals Design/levels/n52-foundry.json apart from its names (name, _why, generatedBy)
+PASS every slot old: with n52's name / _why / generatedBy the bytes ARE Design/levels/n52-foundry.json (2376150 chars)
+PASS PLANTED one a2 box moved 1 m east (levelgen --walk 2 ERROR): the difference prints (4 item(s)):
+       top: collision
+       top: navGrid
+       top: data
+       campaign.boxes: 1 row(s) only in n52, 1 only in the new (n52 {"zone":"a2","kind":"deck","min":[-7,0,-55],"max":[-1,2,-50],"job":"line","why":"the north deck (2 m): where the first husks switch on, seen; new {"zone":"a2","kind":"deck","min":[-6,0,-55],"max":[0,2,-50],"job":"line","why":"the north deck (2 m): where the first husks switch on, seen )
+PASS PLANTED an unknown row key a5.row.spinners65: refused (Design/levels/n65/rooms-n52/a5.json: unlisted row key 'spinners65' (refused: name its reader in gen-n65-foundry.cjs KNOWN first))
+PASS PLANTED a8 drops its lessons with no reason: refused (Design/levels/n65/rooms-n52/a8.json: row key 'lessons' dropped with no reason (add drop.lessons: "<reason>"; nothing lost, PRINCIPLES 1))
+PASS PLANTED an unknown file key b1.extras: refused (Design/levels/n65/rooms-n52/b1.json: unlisted file key 'extras' (a room file holds _why, room, row, boxes, ramps, pads, grapple, pits, tunnels, lights, props, teach35, drop, opening, opening_why))
+PASS PLANTED a3's box keyed to zone a4: refused (Design/levels/n65/rooms-n52/a3.json: boxes: a row keyed to 'a4', not a3: {"zone":"a4","kind":"hull","min":[-5,0,-61],"max":[-2,10,-59],"job":"lane","why":"the pit's west CHEEK (card: Molecule node E; NIGHT52 contract ite)
+PASS PLANTED a4's rect widened: refused (Design/levels/n65/rooms-n52/a4.json: row.rect [-5,-108,5,-89] is the slot's ([-4,-108,4,-89]): the doors fix it)
+PASS PLANTED a rebuilt a2 box with no job / why: refused (Design/levels/n65/rooms-n52/a2.json: boxes: a new piece without job / why (R8): {"zone":"a2","kind":"hull","min":[0,0,-45],"max":[1,2,-44]})
+PASS PLANTED a2's opening 'sideways': refused (Design/levels/n65/rooms-n52/a2.json: opening 'sideways' (one of vista, ambushed, ambusher, held; leave it out to keep n52's))
+PASS PLANTED a2.opening vista: from an old slot openings65.json gets nothing (n52's kept), from a latest / new slot it gets {"a2": "vista"}
+PASS PLANTED a5 rebuilt (one pillar added, bot43 false): only a5's slot changed (every other room row, piece, light, prop and teach35 entry bit-equal)
+  slot a5: old Design/levels/n65/rooms-n52/a5.json: REBUILT; boxes 12 -> 13*, ramps 3, pads 3, grapple 0, pits 1, tunnels 0, lights 8, props 3, teach35 0; note = why filled on 1
+    row keys: keep 23, replace 0, add 1, drop 0
+    add     bot43
+FAIL PLANTED a5 rebuilt, levelgen --walk 2 ERROR + the finish: every campaign row that differs from Design/levels/n52-foundry.json is a5's (none foreign); the difference: top: collision; top: navGrid; top: data; campaign.boxes: 0 row(s) only in n52, 1 only in the new (new {"zone":"a5","kind":"hull","min":[-0.5,0,-125.5],"max":[0.5,10,-124.5],"job":"cover: planted","why":"the --check's planted pillar","note":"t); campaign.rooms a5: bot43
+     Design/levels/n65-foundry.json now: copies identical; against Design/levels/n52-foundry.json apart from names: 12 item(s): top: collision; top: spawns; top: pads; top: navGrid; top: data; top: lava; campaign.pits: 2 row(s) only in n52, 0 only in the new (n52 {"zone":"a8","rect":[-7,-360,7,-345],"floorY":-4,"job":"hazard","why":"the PIERCE pit (4 m deep, dry; NIGHT43 L1: z -360..-345): crossed by ; n52 {"zone":"b1","rect":[-9.4,-165,9.4,-159],"floorY":-0.8,"lava":true,"job":"hazard","why":"THE SPILL (card: Hazard both ways): the slag river ); campaign.lights: 11 row(s) only in n52, 13 only in the new; campaign.props: 3 row(s) only in n52, 13 only in the new; campaign.boxes: 18 row(s) only in n52, 20 only in the new (Tools/night/gen-n65-foundry.cjs (slots b1,a8: a2 old, a3 old, a4 old, a5 old, b1 latest rebuilt, b2 old, a8 latest rebuilt)
+gen-n65-foundry --check: 1 FAIL (levelgen runs: 3)
+exit 1
+11:01:17

@@ -1,0 +1,54 @@
+# sha fdb4911c (+ uncommitted: ); 2026-10-24 12:54:01
+## (1) PLANTED Design/levels/n67/iceline/rooms/g8.json verb65 ride; L67=iceline ROOMS=g8 SLATE=Research/2026-10-24-wave67/T/t1b-dry-slate.json bash Tools/night/n67-round.sh dry-rec-iceline
+t1b-plant-verb65: Design/levels/n67/iceline/rooms/g8.json row.verb65 = ride (PLANTED; restore with git checkout -- Design/levels/n67/iceline/rooms/g8.json)
+n67-round dry-rec-iceline: level iceline (n67-iceline), rooms g8, the slate snapshot Logs/n67/dry-rec-iceline/slate-at-start.json (from Research/2026-10-24-wave67/T/t1b-dry-slate.json, sha256 53c34bb734a27a7f)
+n67-round dry-rec-iceline: latest assembled into Logs/n67/dry-rec-iceline (23 s): levelgen --walk: 0 ERROR (none; 9 s)
+n67-round dry-rec-iceline: verb65 g8 ride (slate ride): row
+n67-round dry-rec-iceline: iso pictures 1 / 1
+n67-round-verbs dry-rec-iceline: 5 verdicts in 84 s (Logs/n67/dry-rec-iceline/verbs.md)
+n67-round dry-rec-iceline: n67-area: FAIL g8 (2/4)
+n67-round dry-rec-iceline: n67-deco: PASS | room g8, base 350a1474: 0 piece(s) added or moved, 0 pass, 0 FAIL; dressing 0 not judged
+n67-round dry-rec-iceline: done in 210 s; table Logs/n67/dry-rec-iceline/table.md; the round's level is Logs/n67/dry-rec-iceline/n67-iceline.json (never the tracked files); tracked status before / after (Logs/n67/dry-rec-iceline/tracked-status.txt):
+# exit 0
+# the record: # the room files this round ran (n67-round.sh dry-rec-iceline, sha fdb4911c, 2026-10-24 12:54:04): sha256 <file> 9e20b02982d790c250ce0e696b81bd131eb765a27b1c4d53459486dea2a9d0fd Design/levels/n67/iceline/rooms/g8.json 
+# restored Design/levels/n67/iceline/rooms/g8.json (the working tree now differs from the round's record)
+
+## (2) PLANTED change: the pack with the room file restored (not the file the round ran)
+n67-gate-pack g8: verb65 g8 ride (slate ride, C:/Users/gaige/dev/SKYGRIND-unity/.claude/worktrees/agent-af48e888c59fa3626/Research/2026-10-24-wave67/T/t1b-dry-slate.json): equal
+n67-gate-pack: REFUSED: the room file Design/levels/n67/iceline/rooms/g8.json: the round's 9e20b02982d790c2 (dry-rec-iceline/room-files/g8.json (the round's own record)), now 9e8442b85c91e621: the room file changed since the round (a GATE judges the round's file: run a new round, or restore the file)
+# exit 1
+# pack folder left: none
+
+## (3) the room file as the round ran it (re-planted, the same bytes): the pack runs (no --slate: the round's snapshot gives the bar)
+n67-gate-pack g8: verb65 g8 ride (slate ride, C:/Users/gaige/dev/SKYGRIND-unity/Logs/n67/slate.json): equal
+n67-gate-pack g8: the room file Design/levels/n67/iceline/rooms/g8.json: the round's 9e20b02982d790c2 (dry-rec-iceline/room-files/g8.json (the round's own record)), now 9e20b02982d790c2: UNCHANGED
+n67-gate-pack g8 dry-rec-iceline: MISSING 7: verbs: the red's lines (Logs/n67/red-iceline); card: Research/2026-10-24-wave67/cards/g8.md at fdb4911c; checks: Logs/n67/red-iceline/g8/room-check.txt; checks: Logs/n67/red-iceline/g8/flow-A.txt; checks: Logs/n67/red-iceline/g8/flow-B.txt; checks: Logs/n67/red-iceline/g8/flow-V.txt; checks: Logs/n67/red-iceline/g8/pads.txt
+n67-gate-pack g8 dry-rec-iceline: Logs/n67/gate/g8-rec (15 files: README.md, air.md, area.txt, card.md, checks.txt, deco.txt, levelgen-report.md, open-findings.md, room-diff.txt, room-unchanged.txt, spot-A.png, spot-B.png, table.md, verbs.md, verbs65-skip.txt); key Logs/n67/gate/keys/g8-rec.txt; sha fdb4911c
+# exit 3
+# README first line: MISSING: 7 piece(s) the GATE needs came back not found: verbs: the red's lines (Logs/n67/red-iceline); card: Research/2026-10-24-wave67/cards/g8.md at fdb4911c; checks: Logs/n67/red-iceline/g8/room-check.txt; checks: Logs/n67/red-iceline/g8/flow-A.txt; checks: Logs/n67/red-iceline/g8/flow-B.txt; checks: Logs/n67/red-iceline/g8/flow-V.txt; checks: Logs/n67/red-iceline/g8/pads.txt
+# room-unchanged.txt: the room file Design/levels/n67/iceline/rooms/g8.json: the round's 9e20b02982d790c2 (dry-rec-iceline/room-files/g8.json (the round's own record)), now 9e20b02982d790c2: UNCHANGED
+# verbs65-skip.txt head:
+    # command: dotnet Temp/SimHarness/bin/Release/net10.0/SimHarness.dll n65verb skip --level <C:\Users\gaige\dev\SKYGRIND-unity\.claude\worktrees\agent-af48e888c59fa3626\Logs\n67\dry-rec-iceline\n67-iceline.json> --room g8 --seed 11 --seeds 10 (seeds 11-20, t
+    # sha: fdb4911c; the level: Tools/night/gen-slots.cjs --level iceline (slots latest: g1 latest, g2 latest, g3 latest, g4 latest, g5 latest, g6 latest, g7 latest, g8 latest rebuilt
+    # bars: the round's slate snapshot (C:/Users/gaige/dev/SKYGRIND-unity/.claude/worktrees/agent-af48e888c59fa3626/Logs/n67/dry-rec-iceline/slate-at-start.json), mainBar 1.25
+    # build: the harness DLL mtime 2026-10-24 19:54:12 UTC, HEAD fdb4911c (the DLL is run as built: no build here)
+    # exit: 1 (0 M1 PASS, 1 FAIL, 3 UNSURE, 2 refused)
+    
+# deco.txt head: # command: node Tools/night/n67-deco.cjs g8 --file <the round's room file: Logs/n67/dry-rec-iceline/room-files/g8.json> --touches Logs/n67/dry-rec-iceline/verbs-skip.txt --level iceline
+n67-deco: PASS | room g8, base 350a1474: 0 piece(s) added or moved, 0 pass, 0 FAIL; dressing 0 not judged
+# open-findings.md: no level review: the GATE critic writes it (no Logs/n67/r*/review-*.md exists)
+# levelgen-report.md first line: # the guard: ERROR rows no more than the base level's own. n52-iceline's own (Tools/night/levels67.json baseErrors, proven by gen-slots.cjs --check): 0; this round's: 0; beyond the base's: 0
+
+## (4) FALLBACK: the pack on dry-pack2-iceline (a round with no room-files record), --no-skip
+n67-gate-pack g8: verb65 g8 ride (slate ride, C:/Users/gaige/dev/SKYGRIND-unity/.claude/worktrees/agent-af48e888c59fa3626/Research/2026-10-24-wave67/T/t1b-dry-slate.json): equal
+n67-gate-pack g8: the room file Design/levels/n67/iceline/rooms/g8.json: the round's 9e8442b85c91e621 (git show a80093a6:Design/levels/n67/iceline/rooms/g8.json (FALLBACK: dry-pack2-iceline kept no room-files record; the round's sha from dry-pack2-iceline/gen-latest.txt's header)), now 9e8442b85c91e621: UNCHANGED
+n67-gate-pack g8 dry-pack2-iceline: MISSING 7: verbs: the red's lines (Logs/n67/red-iceline); card: Research/2026-10-24-wave67/cards/g8.md at a80093a6; checks: Logs/n67/red-iceline/g8/room-check.txt; checks: Logs/n67/red-iceline/g8/flow-A.txt; checks: Logs/n67/red-iceline/g8/flow-B.txt; checks: Logs/n67/red-iceline/g8/flow-V.txt; checks: Logs/n67/red-iceline/g8/pads.txt
+n67-gate-pack g8 dry-pack2-iceline: Logs/n67/gate/g8-fallback (14 files: README.md, air.md, area.txt, card.md, checks.txt, deco.txt, levelgen-report.md, open-findings.md, room-diff.txt, room-unchanged.txt, spot-A.png, spot-B.png, table.md, verbs.md); key Logs/n67/gate/keys/g8-fallback.txt; sha a80093a6
+# exit 3
+# room-unchanged.txt: the room file Design/levels/n67/iceline/rooms/g8.json: the round's 9e8442b85c91e621 (git show a80093a6:Design/levels/n67/iceline/rooms/g8.json (FALLBACK: dry-pack2-iceline kept no room-files record; the round's sha from dry-pack2-iceline/gen-latest.txt's header)), now 9e8442b85c91e621: UNCHANGED
+
+## (5) the launch M3 tally: bash Tools/night/n65-verbs.sh launch Design/levels/n57-kiln.json kb3
+n65verb launch: GREEN | room kb3 | launch36 1, flight end wall thrown 3.7 m (max 3.6 m), bursts 1 (hits 3, kills 3) | landed (-5.6, 1.5, -212.8), in a pit no, in lava no, target dead (launch36) | pose the room's spawn (no line65)
+n65-verbs launch M3: kb3 FAIL (the slate's launch test: 'in a pit yes' or 'in lava yes' on the launched body; the pilot said: in a pit no, in lava no)
+n65-verbs launch on Design/levels/n57-kiln.json (kb3): GREEN 0, RED 1, UNSURE 0 (launch: GREEN = the pilot's GREEN AND the slate's M3, in a pit or in lava yes)
+# done 12:59:03

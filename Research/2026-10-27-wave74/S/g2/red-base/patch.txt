@@ -1,0 +1,22 @@
+# command: node Tools/night/n70-patch-share.cjs --level iceline --room Design/levels/n67/iceline/rooms-base/g2.json g2
+# sha: 291d40fad; time: 2026-10-28 00:24:56
+n70-patch-share: room g2 | shipped Design/levels/n67/iceline/rooms-base/g2.json vs rebuilt Design/levels/n67/iceline/rooms-base/g2.json
+| room | shipped pieces kept | by kind (kept / shipped) | rect / spawn / exit | waves |
+|---|---|---|---|---|
+| g2 | 14 / 14 (100 %) | boxes 7 / 7, ramps 3 / 3, pads 4 / 4, pits 0 / 0 | rect same, spawn same, exit same | waves same |
+  kept: box (-9.6, 0, -53)..(-9, 10, -35) (shipped job: line)
+  kept: box (-7, 0, -58)..(-2, 1.5, -53) (shipped job: line)
+  kept: box (-12, 0, -58)..(-7, 4, -53) (shipped job: line)
+  kept: box (5, 0, -58)..(9, 4, -53) (shipped job: line)
+  kept: box (-1.5, 0, -46)..(1.5, 10, -43) (shipped job: line)
+  kept: box (2.5, 0, -39)..(6, 1.2, -36.5) (shipped job: cover)
+  kept: box (-9, 0, -34)..(-7.6, 0.8, -31.5) (shipped job: line)
+  kept: ramp (-4.5, -48)->(-4.5, -53) w 3 rise 1.5 (shipped job: climb)
+  kept: ramp (-10.8, -44)->(-10.8, -53) w 2.4 rise 4 (shipped job: climb)
+  kept: ramp (7.8, -44)->(7.8, -53) w 2.4 rise 4 (shipped job: climb)
+  kept: pad (-6.5, 0, -37)->(-4.5, 1.5, -55.5) (shipped job: line)
+  kept: pad (-10.8, 0, -36.5)->(-9.5, 4, -55.5) (shipped job: line)
+  kept: pad (7.8, 0, -36.5)->(7, 4, -55.5) (shipped job: line)
+  kept: pad (3.5, 0, -55.5)->(-9.5, 4, -55.5) (shipped job: loop)
+  rebuilt room pieces: boxes 7, ramps 3, pads 4, pits 0 | the rule: PASS at <= 25 % of the shipped room's pieces kept (geometry-equal; job / why text ignored)
+n70-patch-share: PATCH g2 (100 % kept)

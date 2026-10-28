@@ -1,0 +1,3056 @@
+{
+ "_why": "NIGHT38 builder F (design.n38.finale38 swaps n35-finale for this file): Tools/night/gen-n38-finale.cjs from the beat sheet Design/levels/n38/finale.beats.md. The exam rebuilt for flight: a threshold, THE FLOOR (open arena), four gates one per verb (THE RIDE, THE STEP, THE VOID, THE LEAP) around THE SPINE (open arena), a rest, and THE STAG's room as n35-finale's (boss glacier) until THE RIVAL. Spacing from PortExport/config.json (ground.walkSpeed, jump.height, dash.speed x dash.duration, slide.colliderHeight) + Design/levels/n35-ride-distances.json (rideSpeed, jumpOff.pitch0, facingGapsThatWork) and PLAN.md's envelope guesses until E's envelopes38.json.",
+ "id": "n38-finale",
+ "name": "LEVEL 6 THE LAST LINE",
+ "n29": true,
+ "n30": true,
+ "n36": true,
+ "floorSize": 714,
+ "killPlaneY": -30,
+ "wallHeight": 14,
+ "rank": {
+  "time": [
+   210,
+   320,
+   480,
+   720
+  ],
+  "kills": [
+   100,
+   85,
+   65,
+   40
+  ],
+  "style": [
+   2500,
+   1500,
+   700,
+   250
+  ],
+  "_why": "Unity-only (builder F, NIGHT38): S/A/B/C cuts: time = the beat sheet's summed room times up to the boss (about 160 s) x [1.3, 2, 3, 4.5]; kills and style as n35-finale (NOT calibrated: the walk bot's medians replace them)."
+ },
+ "owns38": [
+  "jump",
+  "double",
+  "dash",
+  "slide",
+  "boost",
+  "ride",
+  "walljump",
+  "grapple"
+ ],
+ "rooms": [
+  {
+   "id": "x1",
+   "name": "6.1 THRESHOLD",
+   "kind": "link",
+   "rect": [
+    -5,
+    -12,
+    5,
+    0
+   ],
+   "height": 6,
+   "roof": true,
+   "par": 4,
+   "job36": "link",
+   "verb36": "walk",
+   "spawn": {
+    "at": [
+     0,
+     0,
+     -2
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    0,
+    0,
+    -9.5
+   ],
+   "lessons": [
+    {
+     "promptPad": "THE LAST LINE. EVERYTHING YOU LEARNED.",
+     "kind": "reached",
+     "rect": [
+      -5,
+      -12,
+      5,
+      -7
+     ],
+     "minY": -0.5,
+     "prompt": "THE LAST LINE. EVERYTHING YOU LEARNED."
+    }
+   ],
+   "lessons31": [
+    {
+     "promptPad": "THE LAST LINE. EVERYTHING YOU LEARNED.",
+     "kind": "reached",
+     "rect": [
+      -5,
+      -12,
+      5,
+      -7
+     ],
+     "minY": -0.5,
+     "prompt": "THE LAST LINE. EVERYTHING YOU LEARNED."
+    }
+   ],
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       0,
+       -2
+      ],
+      [
+       0,
+       0,
+       -9.5
+      ]
+     ]
+    }
+   ],
+   "frames36": {
+    "mid": [
+     0,
+     0,
+     -2,
+     0,
+     -0.06
+    ],
+    "exit": [
+     0,
+     0,
+     -8,
+     0,
+     -0.017
+    ]
+   }
+  },
+  {
+   "id": "x2",
+   "name": "6.2 THE FLOOR",
+   "kind": "room",
+   "rect": [
+    -18,
+    -56,
+    18,
+    -16
+   ],
+   "height": 14,
+   "roof": true,
+   "par": 50,
+   "job36": "combine",
+   "verb36": "ride the zig-zag, shoot and hook on the move",
+   "spawn": {
+    "at": [
+     0,
+     0,
+     -18
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    0,
+    0,
+    -54
+   ],
+   "arena36": true,
+   "grappleNodes": [
+    [
+     -11,
+     9,
+     -32
+    ],
+    [
+     11,
+     9,
+     -42
+    ]
+   ],
+   "waves": [
+    [
+     "husk",
+     "husk",
+     "husk",
+     "husk",
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "swarmer"
+    ],
+    [
+     "spitter",
+     "spitter",
+     "husk",
+     "husk",
+     "husk",
+     "husk"
+    ],
+    [
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "spitter",
+     "spitter"
+    ]
+   ],
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       0,
+       -18
+      ],
+      [
+       0,
+       0,
+       -26
+      ],
+      [
+       0,
+       0,
+       -46
+      ],
+      [
+       0,
+       0,
+       -54
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -12,
+       0,
+       -38
+      ],
+      [
+       -12,
+       3,
+       -49
+      ],
+      [
+       -12,
+       3,
+       -54
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       12,
+       0,
+       -38
+      ],
+      [
+       12,
+       3,
+       -49
+      ],
+      [
+       12,
+       3,
+       -54
+      ]
+     ]
+    }
+   ],
+   "frames36": {
+    "mid": [
+     -14,
+     0,
+     -20,
+     -32.471,
+     0.054
+    ],
+    "exit": [
+     0,
+     0.5,
+     -50,
+     0,
+     -0.086
+    ]
+   },
+   "nodes": [
+    [
+     0,
+     0,
+     -30
+    ],
+    [
+     -2,
+     0,
+     -34
+    ],
+    [
+     2,
+     0,
+     -34
+    ],
+    [
+     0,
+     0,
+     -40
+    ],
+    [
+     -9,
+     0,
+     -36
+    ],
+    [
+     9,
+     0,
+     -36
+    ],
+    [
+     -14,
+     0,
+     -40
+    ],
+    [
+     14,
+     0,
+     -40
+    ],
+    [
+     0,
+     0,
+     -46
+    ],
+    [
+     -3,
+     0,
+     -44
+    ],
+    [
+     3,
+     0,
+     -44
+    ]
+   ],
+   "highNodes": [
+    [
+     -12,
+     3,
+     -52
+    ],
+    [
+     12,
+     3,
+     -52
+    ],
+    [
+     -15,
+     3,
+     -50
+    ],
+    [
+     15,
+     3,
+     -50
+    ]
+   ]
+  },
+  {
+   "id": "x3",
+   "name": "6.3 THE RIDE",
+   "kind": "link",
+   "rect": [
+    -10,
+    -104,
+    10,
+    -60
+   ],
+   "height": 14,
+   "roof": true,
+   "par": 12,
+   "job36": "test",
+   "verb36": "ride (the chain)",
+   "spawn": {
+    "at": [
+     0,
+     0,
+     -62
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    0,
+    0,
+    -102
+   ],
+   "routeVia": [
+    [
+     [
+      0,
+      0,
+      -67
+     ],
+     [
+      0,
+      0,
+      -100
+     ]
+    ]
+   ],
+   "flight38": true,
+   "flight38Why": "NIGHT38 F: level 6's ride gate (PLAN.md section 2: mixed gates, one per verb)",
+   "lessons": [
+    {
+     "promptPad": "",
+     "kind": "reached",
+     "rect": [
+      -10,
+      -104,
+      10,
+      -98
+     ],
+     "minY": -0.2,
+     "prompt": ""
+    }
+   ],
+   "lessons31": [
+    {
+     "promptPad": "",
+     "kind": "reached",
+     "rect": [
+      -10,
+      -104,
+      10,
+      -98
+     ],
+     "minY": -0.2,
+     "prompt": ""
+    }
+   ],
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       0,
+       -61
+      ],
+      [
+       0,
+       0,
+       -67
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       0,
+       -99
+      ],
+      [
+       0,
+       0,
+       -102
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       9,
+       -4,
+       -76
+      ],
+      [
+       9,
+       0,
+       -66
+      ]
+     ],
+     "jump": true,
+     "maxSeconds": 8
+    }
+   ],
+   "frames36": {
+    "mid": [
+     3,
+     0,
+     -62,
+     4.399,
+     0.061
+    ],
+    "exit": [
+     0,
+     0.5,
+     -99,
+     0,
+     -0.181
+    ]
+   }
+  },
+  {
+   "id": "x4",
+   "name": "6.4 THE STEP",
+   "kind": "link",
+   "rect": [
+    -8,
+    -132,
+    8,
+    -108
+   ],
+   "height": 10,
+   "roof": true,
+   "par": 8,
+   "job36": "test",
+   "verb36": "boost (jump, double jump, fire the THUNDERCLAP down)",
+   "spawn": {
+    "at": [
+     0,
+     0,
+     -110
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    0,
+    0,
+    -130
+   ],
+   "noride38": "THE STEP's walls: a held ride (ride38) would drift up any wall onto the step; only the boost may lift you there",
+   "routeVia": [
+    [
+     [
+      0,
+      0,
+      -119
+     ],
+     [
+      0,
+      3.6,
+      -122
+     ]
+    ]
+   ],
+   "flight38": true,
+   "flight38Why": "NIGHT38 F: level 6's boost gate (PLAN.md section 2)",
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       0,
+       -109
+      ],
+      [
+       0,
+       0,
+       -119
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       3.6,
+       -121
+      ],
+      [
+       0,
+       0,
+       -130
+      ]
+     ]
+    }
+   ],
+   "frames36": {
+    "mid": [
+     3,
+     0,
+     -111,
+     12.995,
+     0.221
+    ],
+    "exit": [
+     0,
+     3.6,
+     -122,
+     0,
+     -0.337
+    ]
+   }
+  },
+  {
+   "id": "x5",
+   "name": "6.5 THE SPINE",
+   "kind": "room",
+   "rect": [
+    -20,
+    -176,
+    20,
+    -136
+   ],
+   "height": 16,
+   "roof": true,
+   "par": 60,
+   "job36": "combine",
+   "verb36": "everything, on the move; one heavy",
+   "spawn": {
+    "at": [
+     0,
+     0,
+     -138
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    0,
+    0,
+    -174
+   ],
+   "arena36": true,
+   "grappleNodes": [
+    [
+     -10,
+     10,
+     -154
+    ],
+    [
+     10,
+     10,
+     -158
+    ]
+   ],
+   "waves": [
+    [
+     "husk",
+     "husk",
+     "husk",
+     "husk",
+     "spitter",
+     "spitter"
+    ],
+    [
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "husk",
+     "husk"
+    ],
+    [
+     "heavy",
+     "husk",
+     "husk",
+     "husk",
+     "husk"
+    ]
+   ],
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       0,
+       -138
+      ],
+      [
+       -6,
+       0,
+       -142
+      ],
+      [
+       -6,
+       0,
+       -167
+      ],
+      [
+       0,
+       0,
+       -170
+      ],
+      [
+       0,
+       0,
+       -174
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -14,
+       0,
+       -158
+      ],
+      [
+       -14,
+       2.5,
+       -169
+      ],
+      [
+       -14,
+       2.5,
+       -174
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       14,
+       0,
+       -158
+      ],
+      [
+       14,
+       2.5,
+       -169
+      ],
+      [
+       14,
+       2.5,
+       -174
+      ]
+     ]
+    }
+   ],
+   "frames36": {
+    "mid": [
+     -16,
+     0,
+     -140,
+     -41.634,
+     0.058
+    ],
+    "exit": [
+     0,
+     0.5,
+     -170,
+     0,
+     -0.086
+    ]
+   },
+   "nodes": [
+    [
+     -8,
+     0,
+     -150
+    ],
+    [
+     8,
+     0,
+     -150
+    ],
+    [
+     -6,
+     0,
+     -156
+    ],
+    [
+     6,
+     0,
+     -156
+    ],
+    [
+     -10,
+     0,
+     -160
+    ],
+    [
+     10,
+     0,
+     -160
+    ],
+    [
+     -5,
+     0,
+     -164
+    ],
+    [
+     5,
+     0,
+     -164
+    ],
+    [
+     0,
+     0,
+     -169
+    ],
+    [
+     -3,
+     0,
+     -171
+    ],
+    [
+     3,
+     0,
+     -171
+    ]
+   ],
+   "highNodes": [
+    [
+     -14,
+     2.5,
+     -172
+    ],
+    [
+     14,
+     2.5,
+     -172
+    ],
+    [
+     -17,
+     2.5,
+     -170
+    ],
+    [
+     17,
+     2.5,
+     -170
+    ]
+   ]
+  },
+  {
+   "id": "x6",
+   "name": "6.6 THE VOID",
+   "kind": "link",
+   "rect": [
+    -10,
+    -239,
+    10,
+    -180
+   ],
+   "height": 16,
+   "roof": true,
+   "par": 12,
+   "job36": "test",
+   "verb36": "grapple (hook the rings over the void)",
+   "spawn": {
+    "at": [
+     0,
+     0,
+     -182
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    0,
+    0,
+    -237
+   ],
+   "noride38": "THE VOID's walls: a held ride (ride38) along a side wall would carry you over the void; only the hook may",
+   "grappleNodes": [
+    [
+     0,
+     8,
+     -201
+    ],
+    [
+     0,
+     8,
+     -217
+    ]
+   ],
+   "routeVia": [
+    [
+     [
+      0,
+      0,
+      -187
+     ],
+     [
+      0,
+      0,
+      -234
+     ]
+    ]
+   ],
+   "flight38": true,
+   "flight38Why": "NIGHT38 F: level 6's grapple gate (PLAN.md section 2)",
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       0,
+       -181
+      ],
+      [
+       0,
+       0,
+       -187
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       0,
+       -233
+      ],
+      [
+       0,
+       0,
+       -237
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -9,
+       -6,
+       -198
+      ],
+      [
+       -9,
+       0,
+       -186
+      ]
+     ],
+     "jump": true,
+     "maxSeconds": 10
+    }
+   ],
+   "frames36": {
+    "mid": [
+     3,
+     0,
+     -182,
+     8.973,
+     0.321
+    ],
+    "exit": [
+     0,
+     0.5,
+     -233,
+     0,
+     -0.156
+    ]
+   }
+  },
+  {
+   "id": "x7",
+   "name": "6.7 THE LEAP",
+   "kind": "link",
+   "rect": [
+    -7,
+    -274.5,
+    7,
+    -243
+   ],
+   "height": 3.6,
+   "roof": true,
+   "par": 8,
+   "job36": "test",
+   "verb36": "dash jump (jump, then dash, under a low roof)",
+   "spawn": {
+    "at": [
+     0,
+     0,
+     -245
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    0,
+    0,
+    -272.5
+   ],
+   "noride38": "THE LEAP's walls: a held ride along a side wall would carry you over the gap; only the dash jump may",
+   "routeVia": [
+    [
+     [
+      0,
+      0,
+      -250
+     ],
+     [
+      0,
+      0,
+      -266.5
+     ]
+    ]
+   ],
+   "flight38": true,
+   "flight38Why": "NIGHT38 F: level 6's dash-jump gate (PLAN.md section 2: the 3.6 m roof is the ceiling under the double jump's apex)",
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       0,
+       -244
+      ],
+      [
+       0,
+       0,
+       -250
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       0,
+       -265.5
+      ],
+      [
+       0,
+       0,
+       -272.5
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -6,
+       -3,
+       -257
+      ],
+      [
+       -6,
+       0,
+       -249
+      ]
+     ],
+     "jump": true,
+     "maxSeconds": 8
+    }
+   ],
+   "frames36": {
+    "mid": [
+     3,
+     0,
+     -245,
+     7.943,
+     -0.005
+    ],
+    "exit": [
+     0,
+     0.5,
+     -265.5,
+     0,
+     -0.11
+    ]
+   }
+  },
+  {
+   "id": "x8",
+   "name": "6.8 REST",
+   "kind": "link",
+   "rect": [
+    -3,
+    -288.5,
+    3,
+    -278.5
+   ],
+   "height": 4,
+   "roof": true,
+   "par": 4,
+   "job36": "rest",
+   "verb36": "none",
+   "spawn": {
+    "at": [
+     0,
+     0,
+     -280
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    0,
+    0,
+    -287
+   ],
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       0,
+       -280
+      ],
+      [
+       0,
+       0,
+       -287
+      ]
+     ]
+    }
+   ],
+   "frames36": {
+    "mid": [
+     0,
+     0,
+     -280,
+     0,
+     -0.07
+    ],
+    "exit": [
+     0,
+     0,
+     -285.5,
+     0,
+     -0.02
+    ]
+   }
+  },
+  {
+   "id": "x9",
+   "name": "6.9 THE STAG",
+   "kind": "boss",
+   "rect": [
+    -14,
+    -344.5,
+    14,
+    -292.5
+   ],
+   "height": 12,
+   "roof": true,
+   "par": 120,
+   "job36": "boss",
+   "verb36": "everything (the exam's end)",
+   "spawn": {
+    "at": [
+     0,
+     0,
+     -296.5
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    0,
+    0,
+    -342
+   ],
+   "boss": "glacier",
+   "limitReason": "",
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       0,
+       -296.5
+      ],
+      [
+       0,
+       0,
+       -342
+      ]
+     ]
+    }
+   ]
+  }
+ ],
+ "doors": [
+  {
+   "id": "d1",
+   "between": [
+    "x1",
+    "x2"
+   ],
+   "rect": [
+    -2,
+    -16,
+    2,
+    -12
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  },
+  {
+   "id": "d2",
+   "between": [
+    "x2",
+    "x3"
+   ],
+   "rect": [
+    -2,
+    -60,
+    2,
+    -56
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  },
+  {
+   "id": "d3",
+   "between": [
+    "x3",
+    "x4"
+   ],
+   "rect": [
+    -2,
+    -108,
+    2,
+    -104
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  },
+  {
+   "id": "d4",
+   "between": [
+    "x4",
+    "x5"
+   ],
+   "rect": [
+    -2,
+    -136,
+    2,
+    -132
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  },
+  {
+   "id": "d5",
+   "between": [
+    "x5",
+    "x6"
+   ],
+   "rect": [
+    -2,
+    -180,
+    2,
+    -176
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  },
+  {
+   "id": "d6",
+   "between": [
+    "x6",
+    "x7"
+   ],
+   "rect": [
+    -2,
+    -243,
+    2,
+    -239
+   ],
+   "height": 3.6,
+   "checkpoint": true
+  },
+  {
+   "id": "d7",
+   "between": [
+    "x7",
+    "x8"
+   ],
+   "rect": [
+    -2,
+    -278.5,
+    2,
+    -274.5
+   ],
+   "height": 3.6,
+   "checkpoint": true
+  },
+  {
+   "id": "d8",
+   "between": [
+    "x8",
+    "x9"
+   ],
+   "rect": [
+    -2,
+    -292.5,
+    2,
+    -288.5
+   ],
+   "height": 4,
+   "checkpoint": true
+  }
+ ],
+ "boxes": [
+  {
+   "zone": "x2",
+   "kind": "wall",
+   "min": [
+    -5.6,
+    0,
+    -38
+   ],
+   "max": [
+    -5,
+    7,
+    -24
+   ],
+   "job": "line",
+   "why": "ride wall A (its east face) up the floor: the line's first half; fire from it at the husks running at you",
+   "note": "ride wall A (its east face) up the floor: the line's first half; fire from it at the husks running at you",
+   "ride": true,
+   "ride36": {
+    "face": "E",
+    "planeX": -5,
+    "lz": [
+     8,
+     22
+    ]
+   }
+  },
+  {
+   "zone": "x2",
+   "kind": "wall",
+   "min": [
+    5,
+    0,
+    -48
+   ],
+   "max": [
+    5.6,
+    7,
+    -34
+   ],
+   "job": "line",
+   "why": "ride wall B (its west face), 10 m from A plane to plane: jump off A across onto it, on to the catwalks",
+   "note": "ride wall B (its west face), 10 m from A plane to plane: jump off A across onto it, on to the catwalks",
+   "ride": true,
+   "ride36": {
+    "face": "W",
+    "planeX": 5,
+    "lz": [
+     18,
+     32
+    ]
+   }
+  },
+  {
+   "zone": "x2",
+   "kind": "deck",
+   "min": [
+    -18,
+    0,
+    -56
+   ],
+   "max": [
+    -7,
+    3,
+    -48
+   ],
+   "job": "line",
+   "why": "the west CATWALK wing (3 m): the spitters' stand, seen from the door; the ride's landing; the health pickup",
+   "note": "the west CATWALK wing (3 m): the spitters' stand, seen from the door; the ride's landing; the health pickup"
+  },
+  {
+   "zone": "x2",
+   "kind": "deck",
+   "min": [
+    7,
+    0,
+    -56
+   ],
+   "max": [
+    18,
+    3,
+    -48
+   ],
+   "job": "line",
+   "why": "the east CATWALK wing (3 m): spitters across from the west one; the other landing",
+   "note": "the east CATWALK wing (3 m): spitters across from the west one; the other landing"
+  },
+  {
+   "zone": "x3",
+   "kind": "deck",
+   "min": [
+    -10,
+    -4,
+    -104
+   ],
+   "max": [
+    10,
+    0,
+    -98
+   ],
+   "job": "line",
+   "why": "the ride gate's LANDING: flush with the floor, the pit's far wall; level 6's ride gate: 2 walls, faces alternating, over 30 m",
+   "note": "the ride gate's LANDING: flush with the floor, the pit's far wall; level 6's ride gate: 2 walls, faces alternating, over 30 m",
+   "gate": {
+    "verb": "ride",
+    "from": [
+     -3.2,
+     0,
+     -67.5
+    ],
+    "to": [
+     -3.2,
+     0,
+     -100
+    ],
+    "runUp": 6,
+    "id": "x3-g1",
+    "why": "level 6's ride gate: 2 walls, faces alternating, over 30 m"
+   }
+  },
+  {
+   "zone": "x3",
+   "kind": "wall",
+   "min": [
+    -4.6,
+    -4,
+    -87
+   ],
+   "max": [
+    -4,
+    14,
+    -62
+   ],
+   "job": "line",
+   "why": "the ride gate's wall 1 of 2 (west, its east face, 25 m): faces alternate, pit floor to roof (no top)",
+   "note": "the ride gate's wall 1 of 2 (west, its east face, 25 m): faces alternate, pit floor to roof (no top)",
+   "ride": true,
+   "ride36": {
+    "face": "E",
+    "planeX": -4,
+    "lz": [
+     2,
+     27
+    ]
+   }
+  },
+  {
+   "zone": "x3",
+   "kind": "wall",
+   "min": [
+    4,
+    -4,
+    -97.5
+   ],
+   "max": [
+    4.6,
+    14,
+    -81
+   ],
+   "job": "line",
+   "why": "the ride gate's wall 2 of 2 (east, its west face, 16.5 m): faces alternate, pit floor to roof (no top)",
+   "note": "the ride gate's wall 2 of 2 (east, its west face, 16.5 m): faces alternate, pit floor to roof (no top)",
+   "ride": true,
+   "ride36": {
+    "face": "W",
+    "planeX": 4,
+    "lz": [
+     21,
+     37.5
+    ]
+   }
+  },
+  {
+   "zone": "x3",
+   "kind": "deck",
+   "min": [
+    7.8,
+    -4,
+    -69.5
+   ],
+   "max": [
+    10,
+    -0.4,
+    -68
+   ],
+   "job": "climb",
+   "why": "THE RIDE's pit's way back, step 3 (top -0.4 m): a fall costs a climb back to the gate, never health",
+   "note": "THE RIDE's pit's way back, step 3 (top -0.4 m): a fall costs a climb back to the gate, never health"
+  },
+  {
+   "zone": "x3",
+   "kind": "deck",
+   "min": [
+    7.8,
+    -4,
+    -71
+   ],
+   "max": [
+    10,
+    -1.6,
+    -69.5
+   ],
+   "job": "climb",
+   "why": "THE RIDE's pit's way back, step 2 (top -1.6 m): a fall costs a climb back to the gate, never health",
+   "note": "THE RIDE's pit's way back, step 2 (top -1.6 m): a fall costs a climb back to the gate, never health"
+  },
+  {
+   "zone": "x3",
+   "kind": "deck",
+   "min": [
+    7.8,
+    -4,
+    -72.5
+   ],
+   "max": [
+    10,
+    -2.8,
+    -71
+   ],
+   "job": "climb",
+   "why": "THE RIDE's pit's way back, step 1 (top -2.8 m): a fall costs a climb back to the gate, never health",
+   "note": "THE RIDE's pit's way back, step 1 (top -2.8 m): a fall costs a climb back to the gate, never health"
+  },
+  {
+   "zone": "x4",
+   "kind": "wall",
+   "min": [
+    -8,
+    0,
+    -132
+   ],
+   "max": [
+    -7.8,
+    10,
+    -108
+   ],
+   "job": "line",
+   "why": "the west wall's noride (builder M's flag: a dull, ridged wall with no cyan trim the held ride cannot use) liner: THE STEP's walls: a held ride (ride38) would drift up any wall onto the step; only the boost may lift you there",
+   "note": "the west wall's noride (builder M's flag: a dull, ridged wall with no cyan trim the held ride cannot use) liner: THE STEP's walls: a held ride (ride38) would drift up any wall onto the step; only the boost may lift you there",
+   "noride": true
+  },
+  {
+   "zone": "x4",
+   "kind": "wall",
+   "min": [
+    7.8,
+    0,
+    -132
+   ],
+   "max": [
+    8,
+    10,
+    -108
+   ],
+   "job": "line",
+   "why": "the east wall's noride (builder M's flag: a dull, ridged wall with no cyan trim the held ride cannot use) liner: THE STEP's walls: a held ride (ride38) would drift up any wall onto the step; only the boost may lift you there",
+   "note": "the east wall's noride (builder M's flag: a dull, ridged wall with no cyan trim the held ride cannot use) liner: THE STEP's walls: a held ride (ride38) would drift up any wall onto the step; only the boost may lift you there",
+   "noride": true
+  },
+  {
+   "zone": "x4",
+   "kind": "deck",
+   "min": [
+    -8,
+    0,
+    -126
+   ],
+   "max": [
+    8,
+    3.6,
+    -120
+   ],
+   "job": "line",
+   "why": "THE STEP (3.6 m, 6 m deep) wall to wall: over the jump + double jump's apex, under it + one THUNDERCLAP shot fired down in the air (the boost gate); its face noride (builder M's flag: a dull, ridged wall with no cyan trim the held ride cannot use); past it a drop to the door",
+   "note": "THE STEP (3.6 m, 6 m deep) wall to wall: over the jump + double jump's apex, under it + one THUNDERCLAP shot fired down in the air (the boost gate); its face noride (builder M's flag: a dull, ridged wall with no cyan trim the held ride cannot use); past it a drop to the door",
+   "noride": true,
+   "gate": {
+    "verb": "boost",
+    "from": [
+     0,
+     0,
+     -118.8
+    ],
+    "to": [
+     0,
+     3.6,
+     -123
+    ],
+    "runUp": 6,
+    "id": "x4-g1",
+    "why": "level 6's boost gate: only the mid-air shotgun boost lifts you onto the step"
+   }
+  },
+  {
+   "zone": "x5",
+   "kind": "wall",
+   "min": [
+    -0.3,
+    0,
+    -166
+   ],
+   "max": [
+    0.3,
+    7,
+    -144
+   ],
+   "job": "line",
+   "why": "THE SPINE: one long wall (22 m, about 2 s held) down the arena's middle, both faces ridden: it splits the floor into two lanes; fire from it into either lane",
+   "note": "THE SPINE: one long wall (22 m, about 2 s held) down the arena's middle, both faces ridden: it splits the floor into two lanes; fire from it into either lane",
+   "ride": true,
+   "ride36": {
+    "face": "E",
+    "planeX": 0.3,
+    "lz": [
+     8,
+     30
+    ],
+    "both": true
+   }
+  },
+  {
+   "zone": "x5",
+   "kind": "deck",
+   "min": [
+    -20,
+    0,
+    -176
+   ],
+   "max": [
+    -8,
+    2.5,
+    -168
+   ],
+   "job": "line",
+   "why": "the north-west DECK (2.5 m): spitters' stand, the spine's west landing, the health pickup",
+   "note": "the north-west DECK (2.5 m): spitters' stand, the spine's west landing, the health pickup"
+  },
+  {
+   "zone": "x5",
+   "kind": "deck",
+   "min": [
+    8,
+    0,
+    -176
+   ],
+   "max": [
+    20,
+    2.5,
+    -168
+   ],
+   "job": "line",
+   "why": "the north-east DECK (2.5 m): spitters' stand, the spine's east landing",
+   "note": "the north-east DECK (2.5 m): spitters' stand, the spine's east landing"
+  },
+  {
+   "zone": "x6",
+   "kind": "wall",
+   "min": [
+    -10,
+    -6,
+    -239
+   ],
+   "max": [
+    -9.8,
+    16,
+    -180
+   ],
+   "job": "line",
+   "why": "the west wall's noride (builder M's flag: a dull, ridged wall with no cyan trim the held ride cannot use) liner: THE VOID's walls: a held ride (ride38) along a side wall would carry you over the void; only the hook may",
+   "note": "the west wall's noride (builder M's flag: a dull, ridged wall with no cyan trim the held ride cannot use) liner: THE VOID's walls: a held ride (ride38) along a side wall would carry you over the void; only the hook may",
+   "noride": true
+  },
+  {
+   "zone": "x6",
+   "kind": "wall",
+   "min": [
+    9.8,
+    -6,
+    -239
+   ],
+   "max": [
+    10,
+    16,
+    -180
+   ],
+   "job": "line",
+   "why": "the east wall's noride (builder M's flag: a dull, ridged wall with no cyan trim the held ride cannot use) liner: THE VOID's walls: a held ride (ride38) along a side wall would carry you over the void; only the hook may",
+   "note": "the east wall's noride (builder M's flag: a dull, ridged wall with no cyan trim the held ride cannot use) liner: THE VOID's walls: a held ride (ride38) along a side wall would carry you over the void; only the hook may",
+   "noride": true
+  },
+  {
+   "zone": "x6",
+   "kind": "deck",
+   "min": [
+    -10,
+    -6,
+    -239
+   ],
+   "max": [
+    10,
+    0,
+    -232
+   ],
+   "job": "line",
+   "why": "the grapple gate's LANDING: flush with the floor, the pit's far wall; its face noride (builder M's flag: a dull, ridged wall with no cyan trim the held ride cannot use); level 6's grapple gate: 44 m, two rings over it",
+   "note": "the grapple gate's LANDING: flush with the floor, the pit's far wall; its face noride (builder M's flag: a dull, ridged wall with no cyan trim the held ride cannot use); level 6's grapple gate: 44 m, two rings over it",
+   "gate": {
+    "verb": "grapple",
+    "from": [
+     0,
+     0,
+     -187.5
+    ],
+    "to": [
+     0,
+     0,
+     -234
+    ],
+    "runUp": 6,
+    "id": "x6-g1",
+    "why": "level 6's grapple gate: 44 m, two rings over it"
+   },
+   "noride": true
+  },
+  {
+   "zone": "x6",
+   "kind": "deck",
+   "min": [
+    -10,
+    -6,
+    -189.5
+   ],
+   "max": [
+    -7.8,
+    -0.4,
+    -188
+   ],
+   "job": "climb",
+   "why": "THE VOID's pit's way back, step 5 (top -0.4 m): a fall costs a climb back to the gate, never health",
+   "note": "THE VOID's pit's way back, step 5 (top -0.4 m): a fall costs a climb back to the gate, never health"
+  },
+  {
+   "zone": "x6",
+   "kind": "deck",
+   "min": [
+    -10,
+    -6,
+    -191
+   ],
+   "max": [
+    -7.8,
+    -1.6,
+    -189.5
+   ],
+   "job": "climb",
+   "why": "THE VOID's pit's way back, step 4 (top -1.6 m): a fall costs a climb back to the gate, never health",
+   "note": "THE VOID's pit's way back, step 4 (top -1.6 m): a fall costs a climb back to the gate, never health"
+  },
+  {
+   "zone": "x6",
+   "kind": "deck",
+   "min": [
+    -10,
+    -6,
+    -192.5
+   ],
+   "max": [
+    -7.8,
+    -2.8,
+    -191
+   ],
+   "job": "climb",
+   "why": "THE VOID's pit's way back, step 3 (top -2.8 m): a fall costs a climb back to the gate, never health",
+   "note": "THE VOID's pit's way back, step 3 (top -2.8 m): a fall costs a climb back to the gate, never health"
+  },
+  {
+   "zone": "x6",
+   "kind": "deck",
+   "min": [
+    -10,
+    -6,
+    -194
+   ],
+   "max": [
+    -7.8,
+    -4,
+    -192.5
+   ],
+   "job": "climb",
+   "why": "THE VOID's pit's way back, step 2 (top -4 m): a fall costs a climb back to the gate, never health",
+   "note": "THE VOID's pit's way back, step 2 (top -4 m): a fall costs a climb back to the gate, never health"
+  },
+  {
+   "zone": "x6",
+   "kind": "deck",
+   "min": [
+    -10,
+    -6,
+    -195.5
+   ],
+   "max": [
+    -7.8,
+    -5.2,
+    -194
+   ],
+   "job": "climb",
+   "why": "THE VOID's pit's way back, step 1 (top -5.2 m): a fall costs a climb back to the gate, never health",
+   "note": "THE VOID's pit's way back, step 1 (top -5.2 m): a fall costs a climb back to the gate, never health"
+  },
+  {
+   "zone": "x7",
+   "kind": "wall",
+   "min": [
+    -7,
+    -3,
+    -274.5
+   ],
+   "max": [
+    -6.8,
+    3.6,
+    -243
+   ],
+   "job": "line",
+   "why": "the west wall's noride (builder M's flag: a dull, ridged wall with no cyan trim the held ride cannot use) liner: THE LEAP's walls: a held ride along a side wall would carry you over the gap; only the dash jump may",
+   "note": "the west wall's noride (builder M's flag: a dull, ridged wall with no cyan trim the held ride cannot use) liner: THE LEAP's walls: a held ride along a side wall would carry you over the gap; only the dash jump may",
+   "noride": true
+  },
+  {
+   "zone": "x7",
+   "kind": "wall",
+   "min": [
+    6.8,
+    -3,
+    -274.5
+   ],
+   "max": [
+    7,
+    3.6,
+    -243
+   ],
+   "job": "line",
+   "why": "the east wall's noride (builder M's flag: a dull, ridged wall with no cyan trim the held ride cannot use) liner: THE LEAP's walls: a held ride along a side wall would carry you over the gap; only the dash jump may",
+   "note": "the east wall's noride (builder M's flag: a dull, ridged wall with no cyan trim the held ride cannot use) liner: THE LEAP's walls: a held ride along a side wall would carry you over the gap; only the dash jump may",
+   "noride": true
+  },
+  {
+   "zone": "x7",
+   "kind": "deck",
+   "min": [
+    -7,
+    -3,
+    -274.5
+   ],
+   "max": [
+    7,
+    0,
+    -264.5
+   ],
+   "job": "line",
+   "why": "the dash gate's LANDING: flush with the floor, the pit's far wall; its face noride (builder M's flag: a dull, ridged wall with no cyan trim the held ride cannot use); level 6's dash-jump gate: 13.5 m under a 3.6 m roof",
+   "note": "the dash gate's LANDING: flush with the floor, the pit's far wall; its face noride (builder M's flag: a dull, ridged wall with no cyan trim the held ride cannot use); level 6's dash-jump gate: 13.5 m under a 3.6 m roof",
+   "gate": {
+    "verb": "dash",
+    "from": [
+     0,
+     0,
+     -250.5
+    ],
+    "to": [
+     0,
+     0,
+     -266.5
+    ],
+    "runUp": 6,
+    "id": "x7-g1",
+    "why": "level 6's dash-jump gate: 13.5 m under a 3.6 m roof"
+   },
+   "noride": true
+  },
+  {
+   "zone": "x7",
+   "kind": "deck",
+   "min": [
+    -7,
+    -3,
+    -252.5
+   ],
+   "max": [
+    -4.8,
+    -0.4,
+    -251
+   ],
+   "job": "climb",
+   "why": "THE LEAP's pit's way back, step 2 (top -0.4 m): a fall costs a climb back to the gate, never health",
+   "note": "THE LEAP's pit's way back, step 2 (top -0.4 m): a fall costs a climb back to the gate, never health"
+  },
+  {
+   "zone": "x7",
+   "kind": "deck",
+   "min": [
+    -7,
+    -3,
+    -254
+   ],
+   "max": [
+    -4.8,
+    -1.6,
+    -252.5
+   ],
+   "job": "climb",
+   "why": "THE LEAP's pit's way back, step 1 (top -1.6 m): a fall costs a climb back to the gate, never health",
+   "note": "THE LEAP's pit's way back, step 1 (top -1.6 m): a fall costs a climb back to the gate, never health"
+  }
+ ],
+ "ramps": [
+  {
+   "zone": "x2",
+   "from": [
+    -12,
+    -42
+   ],
+   "to": [
+    -12,
+    -48
+   ],
+   "width": 3,
+   "rise": 3,
+   "job": "climb",
+   "why": "the west wing's ramp (3 m over 6 m): the walkers' way up and down, and the player's",
+   "note": "the west wing's ramp (3 m over 6 m): the walkers' way up and down, and the player's"
+  },
+  {
+   "zone": "x2",
+   "from": [
+    12,
+    -42
+   ],
+   "to": [
+    12,
+    -48
+   ],
+   "width": 3,
+   "rise": 3,
+   "job": "climb",
+   "why": "the east wing's ramp (3 m over 6 m)",
+   "note": "the east wing's ramp (3 m over 6 m)"
+  },
+  {
+   "zone": "x5",
+   "from": [
+    -14,
+    -162
+   ],
+   "to": [
+    -14,
+    -168
+   ],
+   "width": 3,
+   "rise": 2.5,
+   "job": "climb",
+   "why": "the north-west deck's ramp (2.5 m over 6 m): the walkers' way up, and the player's",
+   "note": "the north-west deck's ramp (2.5 m over 6 m): the walkers' way up, and the player's"
+  },
+  {
+   "zone": "x5",
+   "from": [
+    14,
+    -162
+   ],
+   "to": [
+    14,
+    -168
+   ],
+   "width": 3,
+   "rise": 2.5,
+   "job": "climb",
+   "why": "the north-east deck's ramp (2.5 m over 6 m)",
+   "note": "the north-east deck's ramp (2.5 m over 6 m)"
+  }
+ ],
+ "pads": [],
+ "grapple": [],
+ "pits": [
+  {
+   "zone": "x3",
+   "rect": [
+    -10,
+    -98,
+    10,
+    -68
+   ],
+   "floorY": -4,
+   "job": "hazard",
+   "why": "THE RIDE's gap: 30 m, a dry pit 4 m deep wall to wall: only the ride crosses (E's checker)",
+   "note": "THE RIDE's gap: 30 m, a dry pit 4 m deep wall to wall: only the ride crosses (E's checker)"
+  },
+  {
+   "zone": "x6",
+   "rect": [
+    -10,
+    -232,
+    10,
+    -188
+   ],
+   "floorY": -6,
+   "job": "hazard",
+   "why": "THE VOID: 44 m, a dry pit 6 m deep wall to wall: longer than any jump; no wall to ride (the walls are noride)",
+   "note": "THE VOID: 44 m, a dry pit 6 m deep wall to wall: longer than any jump; no wall to ride (the walls are noride)"
+  },
+  {
+   "zone": "x7",
+   "rect": [
+    -7,
+    -264.5,
+    7,
+    -251
+   ],
+   "floorY": -3,
+   "job": "hazard",
+   "why": "THE LEAP: 13.5 m, a dry pit 3 m deep, under the room's 3.6 m roof (the ceiling under the double jump's apex): beyond the slide-hop, inside the jump-dash",
+   "note": "THE LEAP: 13.5 m, a dry pit 3 m deep, under the room's 3.6 m roof (the ceiling under the double jump's apex): beyond the slide-hop, inside the jump-dash"
+  }
+ ],
+ "tunnels": [],
+ "lights": [
+  {
+   "id": "x1-L1",
+   "room": "x1",
+   "kind": "wall",
+   "at": [
+    -4.95,
+    0.4,
+    -6
+   ],
+   "normal": [
+    1,
+    0,
+    0
+   ],
+   "size": [
+    4,
+    0.2,
+    0.1
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.1
+  },
+  {
+   "id": "x1-L2",
+   "room": "x1",
+   "kind": "wall",
+   "at": [
+    4.95,
+    0.4,
+    -6
+   ],
+   "normal": [
+    -1,
+    0,
+    0
+   ],
+   "size": [
+    4,
+    0.2,
+    0.1
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.1
+  },
+  {
+   "id": "x1-L3",
+   "room": "x1",
+   "kind": "ceiling",
+   "at": [
+    0,
+    5.95,
+    -6
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 8,
+   "intensity": 0.9
+  },
+  {
+   "id": "x1-L4",
+   "room": "x1",
+   "kind": "pool",
+   "at": [
+    0,
+    0.025,
+    -9.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 6,
+   "intensity": 1.6
+  },
+  {
+   "id": "x2-L1",
+   "room": "x2",
+   "kind": "ceiling",
+   "at": [
+    0,
+    13.95,
+    -22
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 12,
+   "intensity": 1.1
+  },
+  {
+   "id": "x2-L2",
+   "room": "x2",
+   "kind": "ceiling",
+   "at": [
+    0,
+    13.95,
+    -36
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    4,
+    0.1
+   ],
+   "color": "white",
+   "range": 12,
+   "intensity": 1.1
+  },
+  {
+   "id": "x2-L3",
+   "room": "x2",
+   "kind": "ceiling",
+   "at": [
+    -12,
+    13.95,
+    -52
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    6,
+    4,
+    0.1
+   ],
+   "color": "amber",
+   "range": 11,
+   "intensity": 1
+  },
+  {
+   "id": "x2-L4",
+   "room": "x2",
+   "kind": "ceiling",
+   "at": [
+    12,
+    13.95,
+    -52
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    6,
+    4,
+    0.1
+   ],
+   "color": "white",
+   "range": 11,
+   "intensity": 1
+  },
+  {
+   "id": "x2-L5",
+   "room": "x2",
+   "kind": "wall",
+   "at": [
+    -17.95,
+    3.6,
+    -32
+   ],
+   "normal": [
+    1,
+    0,
+    0
+   ],
+   "size": [
+    8,
+    0.2,
+    0.1
+   ],
+   "color": "white",
+   "range": 9,
+   "intensity": 0.9
+  },
+  {
+   "id": "x2-L6",
+   "room": "x2",
+   "kind": "wall",
+   "at": [
+    17.95,
+    3.6,
+    -32
+   ],
+   "normal": [
+    -1,
+    0,
+    0
+   ],
+   "size": [
+    8,
+    0.2,
+    0.1
+   ],
+   "color": "white",
+   "range": 9,
+   "intensity": 0.9
+  },
+  {
+   "id": "x2-L7",
+   "room": "x2",
+   "kind": "pool",
+   "at": [
+    0,
+    0.025,
+    -54
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.5,
+    2.5,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 8,
+   "intensity": 1.6
+  },
+  {
+   "id": "x3-L1",
+   "room": "x3",
+   "kind": "ceiling",
+   "at": [
+    0,
+    13.95,
+    -62.5
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    2,
+    0.1
+   ],
+   "color": "white",
+   "range": 10,
+   "intensity": 1
+  },
+  {
+   "id": "x3-L2",
+   "room": "x3",
+   "kind": "ceiling",
+   "at": [
+    0,
+    13.95,
+    -83
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    8,
+    0.1
+   ],
+   "color": "white",
+   "range": 12,
+   "intensity": 0.8
+  },
+  {
+   "id": "x3-L3",
+   "room": "x3",
+   "kind": "ceiling",
+   "at": [
+    0,
+    13.95,
+    -101
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    2,
+    0.1
+   ],
+   "color": "white",
+   "range": 10,
+   "intensity": 1
+  },
+  {
+   "id": "x3-L4",
+   "room": "x3",
+   "kind": "pool",
+   "at": [
+    0,
+    0.025,
+    -102
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.5,
+    2.5,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 8,
+   "intensity": 1.6
+  },
+  {
+   "id": "x4-L1",
+   "room": "x4",
+   "kind": "ceiling",
+   "at": [
+    0,
+    9.95,
+    -113
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 10,
+   "intensity": 1
+  },
+  {
+   "id": "x4-L2",
+   "room": "x4",
+   "kind": "ceiling",
+   "at": [
+    0,
+    9.95,
+    -123
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 10,
+   "intensity": 1
+  },
+  {
+   "id": "x4-L3",
+   "room": "x4",
+   "kind": "ceiling",
+   "at": [
+    0,
+    9.95,
+    -129
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    2,
+    0.1
+   ],
+   "color": "white",
+   "range": 8,
+   "intensity": 0.9
+  },
+  {
+   "id": "x4-L4",
+   "room": "x4",
+   "kind": "pool",
+   "at": [
+    0,
+    3.625,
+    -123
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2,
+    2,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.4
+  },
+  {
+   "id": "x4-L5",
+   "room": "x4",
+   "kind": "pool",
+   "at": [
+    0,
+    0.025,
+    -130
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.5,
+    2.5,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 8,
+   "intensity": 1.6
+  },
+  {
+   "id": "x5-L1",
+   "room": "x5",
+   "kind": "ceiling",
+   "at": [
+    -10,
+    15.95,
+    -146
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    4,
+    0.1
+   ],
+   "color": "white",
+   "range": 13,
+   "intensity": 1.1
+  },
+  {
+   "id": "x5-L2",
+   "room": "x5",
+   "kind": "ceiling",
+   "at": [
+    10,
+    15.95,
+    -146
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    4,
+    0.1
+   ],
+   "color": "white",
+   "range": 13,
+   "intensity": 1.1
+  },
+  {
+   "id": "x5-L3",
+   "room": "x5",
+   "kind": "ceiling",
+   "at": [
+    0,
+    15.95,
+    -156
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    8,
+    0.1
+   ],
+   "color": "white",
+   "range": 13,
+   "intensity": 1
+  },
+  {
+   "id": "x5-L4",
+   "room": "x5",
+   "kind": "ceiling",
+   "at": [
+    -14,
+    15.95,
+    -172
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    6,
+    4,
+    0.1
+   ],
+   "color": "amber",
+   "range": 12,
+   "intensity": 1
+  },
+  {
+   "id": "x5-L5",
+   "room": "x5",
+   "kind": "ceiling",
+   "at": [
+    14,
+    15.95,
+    -172
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    6,
+    4,
+    0.1
+   ],
+   "color": "white",
+   "range": 12,
+   "intensity": 1
+  },
+  {
+   "id": "x5-L6",
+   "room": "x5",
+   "kind": "pool",
+   "at": [
+    0,
+    0.025,
+    -174
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.5,
+    2.5,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 8,
+   "intensity": 1.6
+  },
+  {
+   "id": "x6-L1",
+   "room": "x6",
+   "kind": "ceiling",
+   "at": [
+    0,
+    15.95,
+    -182.5
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    2,
+    0.1
+   ],
+   "color": "white",
+   "range": 10,
+   "intensity": 1
+  },
+  {
+   "id": "x6-L2",
+   "room": "x6",
+   "kind": "ceiling",
+   "at": [
+    0,
+    15.95,
+    -235
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    2,
+    0.1
+   ],
+   "color": "white",
+   "range": 10,
+   "intensity": 1
+  },
+  {
+   "id": "x6-L3",
+   "room": "x6",
+   "kind": "ceiling",
+   "at": [
+    0,
+    15.95,
+    -201
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    2,
+    2,
+    0.1
+   ],
+   "color": "cyan",
+   "range": 10,
+   "intensity": 0.9
+  },
+  {
+   "id": "x6-L4",
+   "room": "x6",
+   "kind": "pool",
+   "at": [
+    0,
+    0.025,
+    -237
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.5,
+    2.5,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 8,
+   "intensity": 1.6
+  },
+  {
+   "id": "x7-L1",
+   "room": "x7",
+   "kind": "ceiling",
+   "at": [
+    0,
+    3.55,
+    -246
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    2,
+    0.1
+   ],
+   "color": "white",
+   "range": 7,
+   "intensity": 0.9
+  },
+  {
+   "id": "x7-L2",
+   "room": "x7",
+   "kind": "ceiling",
+   "at": [
+    0,
+    3.55,
+    -257.75
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    2,
+    6,
+    0.1
+   ],
+   "color": "white",
+   "range": 8,
+   "intensity": 0.7
+  },
+  {
+   "id": "x7-L3",
+   "room": "x7",
+   "kind": "ceiling",
+   "at": [
+    0,
+    3.55,
+    -268.5
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    2,
+    0.1
+   ],
+   "color": "white",
+   "range": 7,
+   "intensity": 0.9
+  },
+  {
+   "id": "x7-L4",
+   "room": "x7",
+   "kind": "pool",
+   "at": [
+    0,
+    0.025,
+    -272.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.5,
+    2.5,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.6
+  },
+  {
+   "id": "x8-L1",
+   "room": "x8",
+   "kind": "wall",
+   "at": [
+    -2.95,
+    0.4,
+    -282.5
+   ],
+   "normal": [
+    1,
+    0,
+    0
+   ],
+   "size": [
+    3,
+    0.2,
+    0.1
+   ],
+   "color": "amber",
+   "range": 5,
+   "intensity": 1.1
+  },
+  {
+   "id": "x8-L2",
+   "room": "x8",
+   "kind": "wall",
+   "at": [
+    2.95,
+    0.4,
+    -282.5
+   ],
+   "normal": [
+    -1,
+    0,
+    0
+   ],
+   "size": [
+    3,
+    0.2,
+    0.1
+   ],
+   "color": "white",
+   "range": 5,
+   "intensity": 1
+  },
+  {
+   "id": "x8-L3",
+   "room": "x8",
+   "kind": "ceiling",
+   "at": [
+    0,
+    3.95,
+    -282.5
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    2,
+    2,
+    0.1
+   ],
+   "color": "white",
+   "range": 6,
+   "intensity": 0.9
+  },
+  {
+   "id": "x8-L4",
+   "room": "x8",
+   "kind": "pool",
+   "at": [
+    0,
+    0.025,
+    -287
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 5,
+   "intensity": 1.4
+  },
+  {
+   "id": "x9-L1",
+   "room": "x9",
+   "kind": "wall",
+   "at": [
+    -13.95,
+    1.5,
+    -302.5
+   ],
+   "normal": [
+    1,
+    0,
+    0
+   ],
+   "size": [
+    6,
+    0.2,
+    0.1
+   ],
+   "color": "cyan",
+   "range": 9,
+   "intensity": 1.2
+  },
+  {
+   "id": "x9-L2",
+   "room": "x9",
+   "kind": "wall",
+   "at": [
+    13.95,
+    1.5,
+    -302.5
+   ],
+   "normal": [
+    -1,
+    0,
+    0
+   ],
+   "size": [
+    6,
+    0.2,
+    0.1
+   ],
+   "color": "cyan",
+   "range": 9,
+   "intensity": 1.2
+  },
+  {
+   "id": "x9-L3",
+   "room": "x9",
+   "kind": "ceiling",
+   "at": [
+    0,
+    11.95,
+    -312.5
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    6,
+    6,
+    0.1
+   ],
+   "color": "cyan",
+   "range": 14,
+   "intensity": 1
+  },
+  {
+   "id": "x9-L4",
+   "room": "x9",
+   "kind": "pool",
+   "at": [
+    0,
+    0.025,
+    -340.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    6,
+    6,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 10,
+   "intensity": 1.4
+  }
+ ],
+ "props": [
+  {
+   "id": "x2-P1",
+   "room": "x2",
+   "kind": "healthPickup",
+   "at": [
+    -12,
+    3.9,
+    -54
+   ],
+   "size": [
+    0.6,
+    0.6,
+    0.6
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "pickup": true,
+   "job": "reward",
+   "why": "the west catwalk pays health: the high ground the ride lands you on"
+  },
+  {
+   "id": "x5-P1",
+   "room": "x5",
+   "kind": "healthPickup",
+   "at": [
+    -14,
+    3.4,
+    -174
+   ],
+   "size": [
+    0.6,
+    0.6,
+    0.6
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "pickup": true,
+   "job": "reward",
+   "why": "the north-west deck pays health before the last wave's heavy"
+  },
+  {
+   "id": "x8-P1",
+   "room": "x8",
+   "kind": "healthPickup",
+   "at": [
+    0,
+    0.9,
+    -282.5
+   ],
+   "size": [
+    0.6,
+    0.6,
+    0.6
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "pickup": true,
+   "job": "reward",
+   "why": "the last rest before THE STAG: full health for the exam's end"
+  }
+ ]
+}

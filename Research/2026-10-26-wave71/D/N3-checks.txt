@@ -1,0 +1,12 @@
+cmd: bash Tools/night/dn-check-wt.sh <scratch>/dn
+base sha: 8893ca10e + the uncommitted N3 diff
+ Assets/Scripts/Game/UnityTuning.Crown37.cs | 4 ++--
+ Assets/Scripts/Game/UnityTuning.Hud17.cs   | 2 --
+ 2 files changed, 2 insertions(+), 4 deletions(-)
+start: 11:45:57
+== Skygrind.Game.csproj: 0 error(s)
+== Skygrind.Game.Tests.csproj: 0 error(s)
+== Skygrind.Core.Tests.csproj: 0 error(s)
+== Assembly-CSharp-Editor.csproj: 0 error(s)
+dn-check total errors: 0
+end: 11:47:37

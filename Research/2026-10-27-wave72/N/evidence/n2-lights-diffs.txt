@@ -1,0 +1,17 @@
+n2 lights diffs 12:41:45
+== n52-foundry: HEAD (A) vs now (B)
+campaign.lights: only in A 3, only in B 0 {"A":["{\"id\":\"a3-L1\",\"room\":\"a3\",\"kind\":\"ceiling\",\"at\":[1,9.95,-64],\"normal\":[0,-1,0],\"size\":[3,3,0.1],\"color\":\"white","{\"id\":\"a3-L2\",\"room\":\"a3\",\"kind\":\"ceiling\",\"at\":[0,9.95,-82.5],\"normal\":[0,-1,0],\"size\":[4,3,0.1],\
+campaign.rooms a3: lights_why
+== n65-foundry: HEAD (A) vs now (B)
+campaign.rooms a3: lights_why
+== n72-reach
+n72-reach n52-foundry: 11 rooms, 2 roofless, ESCAPE 0; floor jump bonks 3 (a1, a4, a6), floor double jump bonks 6 (a1, a2, a4, a5, a6, a8); ride lanes that bonk: a5 0J/1D of 1 (jump 5.07, double 9.18, head 1.8, adjacent 2 m)
+n72-reach n52-iceline: 10 rooms, 0 roofless, ESCAPE 0; floor jump bonks 2 (g6, gr), floor double jump bonks 7 (g1, g2, g3, g4, g6, g7, gr); ride lanes that bonk: g1 0J/2D of 2, g2 0J/1D of 1, g3 0J/1D of 1, g7 0J/2D of 2 (jump 5.07, double 9.18, head 1.8, adjacent 2 m)
+n72-reach n57-kiln: 10 rooms, 0 roofless, ESCAPE 0; floor jump bonks 1 (kb4), floor double jump bonks 1 (kb4); ride lanes that bonk: none (jump 5.07, double 9.18, head 1.8, adjacent 2 m)
+n72-reach n52-span: 8 rooms, 0 roofless, ESCAPE 0; floor jump bonks 0, floor double jump bonks 0; ride lanes that bonk: none (jump 5.07, double 9.18, head 1.8, adjacent 2 m)
+n72-reach n52-spire: 11 rooms, 1 roofless, ESCAPE 0; floor jump bonks 1 (v8), floor double jump bonks 7 (v1, v3, v4, v7, v8, v9, v10); ride lanes that bonk: none (jump 5.07, double 9.18, head 1.8, adjacent 2 m)
+n72-reach n65-foundry: 11 rooms, 2 roofless, ESCAPE 0; floor jump bonks 3 (a1, a4, a6), floor double jump bonks 6 (a1, a2, a4, a5, a6, a8); ride lanes that bonk: a5 0J/1D of 1, a8 0J/3D of 3 (jump 5.07, double 9.18, head 1.8, adjacent 2 m)
+n72-reach n67-iceline: 10 rooms, 0 roofless, ESCAPE 0; floor jump bonks 2 (g6, gr), floor double jump bonks 7 (g1, g2, g3, g4, g6, g7, gr); ride lanes that bonk: g1 0J/2D of 2, g2 0J/1D of 1, g3 0J/1D of 1, g4 0J/1D of 1, g7 0J/2D of 2 (jump 5.07, double 9.18, head 1.8, adjacent 2 m)
+n72-reach n67-kiln: 10 rooms, 0 roofless, ESCAPE 0; floor jump bonks 1 (kb4), floor double jump bonks 1 (kb4); ride lanes that bonk: none (jump 5.07, double 9.18, head 1.8, adjacent 2 m)
+n72-reach n67-spire: 11 rooms, 1 roofless, ESCAPE 0; floor jump bonks 1 (v8), floor double jump bonks 7 (v1, v3, v4, v7, v8, v9, v10); ride lanes that bonk: v6 0J/1D of 3 (jump 5.07, double 9.18, head 1.8, adjacent 2 m)
+n72-reach: 0 of 9 levels with an ESCAPE

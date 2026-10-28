@@ -1,0 +1,8 @@
+# command: dotnet run --project Tools/SimHarness -c Release --no-build -- n65verb ride --level Design/levels/n52-foundry.json --room b1 --plant-target auto
+# sha: 415b388d (tree 5 dirty paths), 2026-10-24 01:10:09 USMST, /c/Users/gaige/dev/SKYGRIND-unity/.claude/worktrees/agent-af48e888c59fa3626
+
+n65verb ride: level n52-foundry (Design/levels/n52-foundry.json), room b1 "1.6 THE YARD", seed 1; pose (0.0, 0.0, -153.5) yaw 0.0 from the room's spawn (no line65); off switch none
+  face 0 of 2: x = -9.4, -180.0..-148.0 (32.0 m), top 12.0, normal (1.0, 0.0), ride along (0.0, -1.0) from (-9.0, 0.0, -149.0); the room's wave live, alive 3; weapon revolver
+  planted target: husk #4 held at (-6.4, 0.0, -159.0), hp 40.0
+n65verb ride: GREEN | room b1 | ride yes (4.9 s on the wall, 19.0 m along it, WallRideStart 1) | look off the wall at most 0.0 deg | shots from the wall 0 (off it 0) | kills from the wall 0 (other kills 0) | the planted target #4 ALIVE | pose the room's spawn (no line65)
+# exit 0, 01:10:12

@@ -1,0 +1,23 @@
+# command: python -I Tools/night/n72-wyrmpx.py n71-polish8-OFF shot-N30-B63-wyrm-idle.png 915,503,1015,572 shot-N30-B63-wyrm-windup.png 0,500,1015,566   (frames Logs/feel/n71-forge72/bk/boss63/, the lead's)
+# builder B, worktree n72-B at 9f181a35e + uncommitted body72, 2026-10-27 11:04:45 USMST; the OFF half (body72 does not exist in that build)
+# bars fixed BEFORE any body72 frame existed: median luma of the worm's box vs the wall bands above and below it >= 25 (idle frame: the visible head; windup frame: the body band); tell glow = danger-hue px of the same box, windup >= 600 and >= 3x idle
+n71-polish8-OFF	shot-N30-B63-wyrm-idle.png	box 915,503,1015,572	worm median luma  121.5	wall   33.2	diff  88.4 (bar >= 25) PASS	danger px 40
+n71-polish8-OFF	shot-N30-B63-wyrm-windup.png	box 0,500,1015,566	worm median luma   55.9	wall   47.6	diff   8.3 (bar >= 25) FAIL	danger px 11946
+n71-polish8-OFF	TELL GLOW in the first box (idle frame, windup frame)	idle 40 px, windup 0 px (bar: windup >= 600 and >= 3 x idle) FAIL
+n71-polish8-OFF-sameHeadBox	shot-N30-B63-wyrm-idle.png	box 915,503,1015,572	worm median luma  121.5	wall   33.2	diff  88.4 (bar >= 25) PASS	danger px 40
+n71-polish8-OFF-sameHeadBox	shot-N30-B63-wyrm-windup.png	box 915,503,1015,572	worm median luma  126.5	wall   44.2	diff  82.3 (bar >= 25) PASS	danger px 0
+n71-polish8-OFF-sameHeadBox	TELL GLOW in the first box (idle frame, windup frame)	idle 40 px, windup 0 px (bar: windup >= 600 and >= 3 x idle) FAIL
+# planted case:
+planted lit   : {'worm': 98.54320526123047, 'wall': 30.118000030517578, 'diff': 68.42520523071289, 'danger': 0}
+planted blend : {'worm': 30.118000030517578, 'wall': 30.118000030517578, 'diff': 0.0, 'danger': 0}
+planted glow  : {'worm': 95.37999725341797, 'wall': 30.118000030517578, 'diff': 65.26199722290039, 'danger': 48000}
+planted case PASS
+# addendum 11:06:40: the same body-band box in both frames (the tell glow's reading for the BODY: the aggro charge is the reel's one windup, its head stays the punch window's yellow)
+n71-polish8-OFF-sameBodyBox	shot-N30-B63-wyrm-idle.png	box 0,500,1015,566	worm median luma   33.7	wall   39.1	diff   5.4 (bar >= 25) FAIL	danger px 1703
+n71-polish8-OFF-sameBodyBox	shot-N30-B63-wyrm-windup.png	box 0,500,1015,566	worm median luma   55.9	wall   47.6	diff   8.3 (bar >= 25) FAIL	danger px 11946
+n71-polish8-OFF-sameBodyBox	TELL GLOW in the first box (idle frame, windup frame)	idle 1703 px, windup 11946 px (bar: windup >= 600 and >= 3 x idle) PASS
+# addendum 11:07:14: the pair mode's planted no-change case (the OFF frames against themselves must read FAIL on the glow delta):
+selfpair-OFFvsOFF	box 0,500,1015,566	idle: danger px ON 1703 OFF 1703 delta 0 (bar <= 300) PASS
+selfpair-OFFvsOFF	box 0,500,1015,566	windup: danger px ON 11946 OFF 11946 delta 0 (bar >= 600) FAIL
+selfpair-OFFvsOFF	windup body vs wall: ON median 55.9 wall 47.6 diff 8.3 (bar >= 25) FAIL; OFF diff 8.3
+selfpair-OFFvsOFF	idle body vs wall: ON median 33.7 wall 39.1 diff 5.4; OFF diff 5.4

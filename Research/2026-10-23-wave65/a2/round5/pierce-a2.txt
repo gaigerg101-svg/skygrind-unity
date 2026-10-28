@@ -1,0 +1,3 @@
+n65verb pierce: level n65-foundry (Design/levels/n65-foundry.json), room a2 "1.2 KESTREL", seed 1; pose (-3.8, 2.2, -41.3) yaw -36.7 from line65[0]; off switch none
+  aim line65's first segment: yaw -36.7 deg, pitch 0.0 deg at the release; held 110 steps (0.9 s), charge35Full 1, charged shots 1; bodies in the room before 3 (stand-ins 3)
+n65verb pierce: GREEN | room a2 | the charged shot hit 3 bodies, kills 3, stand-ins killed 3/3 | aim line65's first segment | pose line65[0]

@@ -1,0 +1,114 @@
+{
+  "schema": "night25-features-1",
+  "about": "The 12 contracts of NIGHT25 (the master prompt). The lead sets passes / evidence only from this night's printed lines. owner = the builder queue in NIGHT25.md (C combat, W the worm, L levels and the campaign, F feel / HUD / prompts, lead = the lead). A number in a check is a threshold the run must print; where a number is our inference (RESEARCH.md), the run tunes the config to meet it and prints both the first and the final value.",
+  "features": [
+    {
+      "id": "bug-void",
+      "owner": "W",
+      "switch": "design.n25.wyrmAim",
+      "scenario": "wyrmvoid",
+      "check": "no Player boot path (TITLE > PLAY in SURVIVAL with the worm on; MODE > CAMPAIGN; -skygrindMap layer1) shows the worm over an empty sky: the arena has floor, walls and light on every path and no SURVIVAL banner ('ROUND 1 . 0 LEFT') is up during a campaign boss; one Player line per path prints what was on screen (floor present, banner text)",
+      "passes": false,
+      "evidence": null
+    },
+    {
+      "id": "boss-bar",
+      "owner": "W",
+      "switch": "design.n25.wyrmAim",
+      "scenario": "wyrmbar",
+      "check": "the worm's HUD bar shows its name, HP fraction and phase pips from the intro to the death, text 18 px or more, no pop-in (M9 0), through BossKit.BossBar and HudReads20; the result line prints the bar's fraction at 100 %, 66 %, 33 % and 0 % of the pool",
+      "passes": false,
+      "evidence": null
+    },
+    {
+      "id": "boss-dies",
+      "owner": "W",
+      "switch": "design.n25.wyrmAim",
+      "scenario": "wyrmdies",
+      "check": "on a Player the worm dies: the HP pool reaches 0, the finisher plays, bossDown fires once, and the run moves on (the next door opens or RESULTS); proven from the reel AND a human-like composed-sim run; the result line prints the time to death",
+      "passes": false,
+      "evidence": null
+    },
+    {
+      "id": "boss-aimed",
+      "owner": "W",
+      "switch": "design.n25.wyrmAim",
+      "scenario": "wyrmaim",
+      "check": "spit leads the player's velocity, the lunge locks at its tell and re-aims once, the safe window shrinks 10-15 % per phase, phase 3 overlaps two compatible attacks; every tell >= 0.5 s and no two lethal attacks resolve inside 0.5 s (the harness reads the table); player hits per minute printed before and after; the composed-sim human bot kills it in 3:30-4:30; attack count unchanged (47 told)",
+      "passes": false,
+      "evidence": null
+    },
+    {
+      "id": "melee-fire",
+      "owner": "C",
+      "switch": "design.n25.meleeFire",
+      "scenario": "meleefire",
+      "check": "with the row on a held fire button and the quick melee in the same frame both resolve: a harness holds both for 3 s and prints shots and punches (before: one blocks the other; after: both counts rise by their own cooldowns, each within 10 % of the alone rate); --off25 restores the serialised rules; golden exact",
+      "passes": false,
+      "evidence": null
+    },
+    {
+      "id": "shockwave-off",
+      "owner": "C",
+      "switch": "design.n25.shockwaveOff",
+      "scenario": "shockwave",
+      "check": "the THUNDERCLAP has no shockwave / LT shove (its LT zooms); a grep of Core/Guns and config finds no shotgun shockwave row in either config copy; a Player line shows LT on the shotgun zooms and no shockwave event fires; --off25 restores it; the tests that asserted the shockwave are changed and listed",
+      "passes": false,
+      "evidence": null
+    },
+    {
+      "id": "pulse-charge",
+      "owner": "C",
+      "switch": "design.n25.pulseCharge",
+      "scenario": "pulse",
+      "check": "the PULSE GAUNTLET's left click builds charge by its own hits (about 6-8 hits per tier, printed), never by time (idle 60 s = +0) and no longer by other guns' kills; a charged release launches along the aim 0.5 / 1.0 / 2.25 of a jump distance (measured on the Mover, printed) with a little damage (printed); 3 s lockout, one air flick, clamped on the collider; the long-cooldown rule (CORE.md) is met by the charge cost; the reel prints before and after",
+      "passes": false,
+      "evidence": null
+    },
+    {
+      "id": "tutorial",
+      "owner": "L",
+      "switch": "design.n25.tutorial",
+      "scenario": "tutorial",
+      "check": "layer 1 is six stages (look and walk; jump and slide; wall and air; the pistol; the fist; a first fight), each Exposition / Validation / Challenge with a lesson-clear condition that opens its door, a respawn at the stage's start, no enemy in stages 1-3, ONE enemy kind (husk) in the first fight; a bot clears all six, the validate report proves no soft-lock (every pit has a recovery path), prompts 18 px or more with the pad glyph on a pad; a Player line per stage",
+      "passes": false,
+      "evidence": null
+    },
+    {
+      "id": "curriculum",
+      "owner": "L",
+      "switch": "design.n25.curriculum",
+      "scenario": "curriculum",
+      "check": "Design/levels/CURRICULUM.md lists levels 2-10 (the new thing, the world's lesson, LIMIT flags, enemies, par, pass check); each level is one plan file + a config row + a validate report with 0 errors (every tier reachable by enemies); the bot's per-room clear rate is 60-90 % (first and final numbers printed); each level's first room is a breath; levels 2-5 pass on a Player, 6-10 headless at minimum; the number of levels that play door to door is printed",
+      "passes": false,
+      "evidence": null
+    },
+    {
+      "id": "first-play-hitch",
+      "owner": "F",
+      "switch": "none (a fix)",
+      "scenario": "hitch25",
+      "check": "on a Development Player on a quiet machine the first PLAY after boot costs under 100 ms at its worst frame (NIGHT24: 346.1 ms), or the dominant cause is named with its before and after and the row is SHORT; Hitch24's markers name the cause",
+      "passes": false,
+      "evidence": null
+    },
+    {
+      "id": "m9-popins",
+      "owner": "F",
+      "switch": "none (fixes)",
+      "scenario": "lesson",
+      "check": "Tools/night/m9-list.py on the final reel lists the pop-ins before and after; the Buy prompt, Down menu, Markers, vignettes and prompt wheel get entrances of 0.12 s or less; the lesson prompts (UiLesson25) enter and leave without a pop-in; M9 0 on every NEW element",
+      "passes": false,
+      "evidence": null
+    },
+    {
+      "id": "fingerprint",
+      "owner": "lead",
+      "switch": "FingerprintBaseline.N25OnPath",
+      "scenario": "none",
+      "check": "at the freeze: if meleeFire, pulseCharge or shockwaveOff is on by default the composed fingerprint is re-recorded ONCE in its own commit with the reason (N25OnPath true); --off25 EQUAL to the NIGHT24 baseline; --off24 / --off22 / --off21 / --off19 EQUAL to theirs",
+      "passes": false,
+      "evidence": null
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+ "night": "n65",
+ "freezeMin": 375,
+ "capMin": 420,
+ "staleMin": 600,
+ "closeTags": [
+  "n65-freeze"
+ ],
+ "t0": 1792789082,
+ "t0Text": "Fri Oct 23 2026 13:58:02 GMT-0700 (Mountain Standard Time)",
+ "stopped": true,
+ "stoppedText": "Fri Oct 23 2026 20:34:13 GMT-0700 (Mountain Standard Time)"
+}

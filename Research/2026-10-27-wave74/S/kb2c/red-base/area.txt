@@ -1,0 +1,11 @@
+# command: node Tools/night/n70-area.cjs --level kiln --dir C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/kiln-play  kb2c
+# sha: 9783f7f80; time: 2026-10-27 23:11:45
+n70-area: room kb2c; plan C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/kiln-play/kiln.plan.json, level C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/kiln-play/n67-kiln.json (the round's folder C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/kiln-play); touches none (P4's (a) / (c) not read); card none
+OPEN  PASS largest open square 9.0 m (x -9.0..0.0, z -193.5..-184.5; 15 pieces on a 18.0 x 30.0 m rect; 12 m or less passes)
+P1    N/A  the last wave (burrower husk husk husk) has no ranged enemy (spitter / drone)
+P4    FAIL 0 / 4 standing solids >= 1.75 m do a job ((a) touched NOT READ, (b) sight 0, (c) launch kill NOT READ); no job: box(7,0,-184.5..9,4.5,-181.5) spatial law: THE FAR BRIDGE's ; box(3,0,-168.5..5,12,-165.15) hero prop: THE CRANE MAST (the; box(-6,0,-164.5..-2,12,-163.5) molecule: the entrance gated (; box(2,0,-164.5..6,12,-163.5) molecule: the entrance gated (; no --touches: (a) / (c) not read
+P5    N/A  no line65 in the row
+P9    N/A  no plane 1 m or more up with a short side of 6 m or more
+P11   N/A  the card names no TOWER / GALLERY / SPLIT LEVEL (no card)
+P17   PASS 1 / 1 ride walls 4 m tall and 8 m long; 0 non-ride wall(s) in that band; the strip = ride: true (ride36 faces 1)
+n70-area: FAIL kb2c (2/3)

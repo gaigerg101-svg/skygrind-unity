@@ -1,0 +1,9 @@
+ok   n72-rows writes 11 rows -> n72-rows: design.n72 (11 rows, all OFF) in both config copies (byte-identical); FrameRows + "calm72" "lit72" "fix72" "palette72" "decor72" "body72" "spring72" "bossfx72" "btext72" "goal72" "cam72"
+ok   the rows parse, all OFF, multi-line
+ok   n72-off-row turns a planted ON row OFF -> OFF in both config copies: n72.calm72 (commit the two copies alone)
+ok   the copies stay identical
+ok   n72-off-row refuses a row that is already OFF -> n72-off-row: design.n72.calm72 is not ON now (refused)
+ok   n72-pair refuses byte-identical frames -> n72-pair: forge-test: the ON and OFF frames are byte-identical (the toggle changed nothing)
+ok   n72-pair writes on / off / key / sheet and the spotter copies -> n72-pair forge-test: Logs/n72/pairs/forge-test/ (on, off, sheet.jpg, numbers.txt, key.txt); spotter: Logs/n72/spot/forge-test/A.png and B.png |   on	mean  42.2	dark<30  47.1%	blown>235  0.0%   |   off	mean  65.0	dark<30   8.7%	blown>235  0.0%  
+ok   n72-caps prints its line -> caps n72: builds 0/10, reel sides 0/220, smokes 0/10, spotter runs 0/50; C: 35.7 GB free
+TOOLS TEST PASS

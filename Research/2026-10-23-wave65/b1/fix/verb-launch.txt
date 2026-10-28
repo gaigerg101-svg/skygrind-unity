@@ -1,0 +1,7 @@
+# command: bash Tools/night/n65-verbs.sh launch Design/levels/n65-foundry.json b1
+# sha: 57a7d41a; time: 2026-10-23 18:03:55
+n65verb launch: level n65-foundry (Design/levels/n65-foundry.json), room b1 "1.6 THE KNOCKOUT YARD", seed 1; pose (-7.9, 1.0, -158.5) yaw -0.0 from line65[0]; off switch none
+  burst at (-5.1, 2.0, -165.9) hits 1 kills 1 (a wall)
+  target husk #1 at (-7.5, 1.0, -159.7) (from (-7.9, 1.0, -158.5)), dash at step 0, punch at step 0 in state Ground
+n65verb launch: GREEN | room b1 | launch36 1, flight end wall thrown 6.8 m (max 6.7 m), bursts 1 (hits 1, kills 1) | landed (-5.1, 2.0, -165.9), in a pit no, in lava no, target dead (launch36) | pose line65[0]
+n65-verbs launch on Design/levels/n65-foundry.json (b1): GREEN 1, RED 0

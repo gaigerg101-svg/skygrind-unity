@@ -1,0 +1,25 @@
+openings: Design/levels/n67/openings67.json iceline g2 held, g3 ambushed, g4 held, g5 ambushed, g7 held, g8 ambushed (seed Design/levels/n52/openings53.json)
+gen-slots --level iceline: Design/levels/n52/iceline.plan.json -> Design/levels/n67/iceline.plan.json (slots g4; rebuilt: g4); every other room, door, piece and key n52-iceline's bit for bit
+  slot g1: old Design/levels/n67/iceline/rooms-base/g1.json: n52-iceline's room exactly; boxes 2, ramps 0, pads 0, grapple 0, pits 0, tunnels 0, lights 6, props 0, surfaces 0
+  slot g2: old Design/levels/n67/iceline/rooms-base/g2.json: n52-iceline's room exactly; boxes 7, ramps 3, pads 4, grapple 0, pits 0, tunnels 0, lights 5, props 2, surfaces 0
+  slot g3: old Design/levels/n67/iceline/rooms-base/g3.json: n52-iceline's room exactly; boxes 13, ramps 2, pads 2, grapple 0, pits 0, tunnels 0, lights 7, props 2, surfaces 0
+  slot g4: latest Design/levels/n67/iceline/rooms/g4.json: REBUILT; boxes 14 -> 9*, ramps 2 -> 2*, pads 3 -> 3*, grapple 0, pits 1 -> 0*, tunnels 0, lights 7 -> 8*, props 1 -> 1*, surfaces 1 -> 1*; verb65 parry
+    row keys: keep 15, replace 9, add 5, drop 0
+    replace name
+    replace verb36
+    replace proofs
+    replace frames36
+    replace nodes
+    replace nodes_why
+    replace highNodes
+    replace highNodes_why
+    replace frames52
+    add     bot43
+    add     verb65
+    add     line65
+    add     line65_why
+    add     card65
+  slot g5: old Design/levels/n67/iceline/rooms-base/g5.json: n52-iceline's room exactly; boxes 11, ramps 2, pads 3, grapple 0, pits 0, tunnels 0, lights 6, props 1, surfaces 0
+  slot g6: old Design/levels/n67/iceline/rooms-base/g6.json: n52-iceline's room exactly; boxes 0, ramps 0, pads 0, grapple 0, pits 0, tunnels 0, lights 3, props 2, surfaces 0
+  slot g7: old Design/levels/n67/iceline/rooms-base/g7.json: n52-iceline's room exactly; boxes 15, ramps 4, pads 2, grapple 0, pits 3, tunnels 0, lights 6, props 2, surfaces 0
+  slot g8: old Design/levels/n67/iceline/rooms-base/g8.json: n52-iceline's room exactly; boxes 8, ramps 2, pads 1, grapple 0, pits 2, tunnels 0, lights 6, props 7, surfaces 0

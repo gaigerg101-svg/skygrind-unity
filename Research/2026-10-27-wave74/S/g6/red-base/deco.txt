@@ -1,0 +1,4 @@
+# command: L67=iceline node Tools/night/n70-deco.cjs g6  --file Design/levels/n67/iceline/rooms-base/g6.json
+# sha: bf5edde7e; time: 2026-10-28 00:09:55
+n70-deco: room g6 (level iceline), Design/levels/n67/iceline/rooms-base/g6.json against Design/levels/n67/iceline/rooms/g6.json at 16116dead (the file's first commit): 5 items now (5 at the base); new or moved: 0 (0 pieces judged, 0 dressing not judged) | touches: none given (test a not run); launch kills 0; ranged spots 0 (no ranged enemy in the waves: test b cannot pass); walk-line samples 16; cyan markers in the room 2
+n70-deco: PASS | room g6, base 16116dead: 0 piece(s) added or moved, 0 pass, 0 FAIL; dressing 0 not judged

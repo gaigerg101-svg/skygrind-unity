@@ -1,0 +1,42 @@
+# command: planted (Research/2026-10-25-wave70/T/z1-make-planted.cjs), room P6
+## seed 1
+n65verb launch: GREEN | room P6 | launch36 1, flight end body thrown 1 m (max 1 m), bursts 1 (hits 2, kills 2) | launched body husk #1 (the target: yes), landed (0.0, 0.0, 0.0), in a pit no, in lava no, target dead (planted) | pose line65[0] (planted)
+## seed 2
+n65verb launch: GREEN | room P6 | launch36 1, flight end body thrown 1 m (max 1 m), bursts 1 (hits 2, kills 2) | launched body husk #1 (the target: yes), landed (0.0, 0.0, 0.0), in a pit no, in lava no, target dead (planted) | pose line65[0] (planted)
+## seed 3
+n65verb launch: GREEN | room P6 | launch36 1, flight end body thrown 1 m (max 1 m), bursts 1 (hits 2, kills 2) | launched body husk #1 (the target: yes), landed (0.0, 0.0, 0.0), in a pit no, in lava no, target dead (planted) | pose line65[0] (planted)
+## seed 4
+n65verb launch: GREEN | room P6 | launch36 1, flight end body thrown 1 m (max 1 m), bursts 1 (hits 2, kills 2) | launched body husk #1 (the target: yes), landed (0.0, 0.0, 0.0), in a pit no, in lava no, target dead (planted) | pose line65[0] (planted)
+## seed 5
+n65verb launch: GREEN | room P6 | launch36 1, flight end body thrown 1 m (max 1 m), bursts 1 (hits 2, kills 2) | launched body husk #1 (the target: yes), landed (0.0, 0.0, 0.0), in a pit no, in lava no, target dead (planted) | pose line65[0] (planted)
+## seed 6
+n65verb launch: GREEN | room P6 | launch36 1, flight end body thrown 1 m (max 1 m), bursts 1 (hits 2, kills 2) | launched body husk #1 (the target: yes), landed (0.0, 0.0, 0.0), in a pit no, in lava no, target dead (planted) | pose line65[0] (planted)
+## seed 7
+n65verb launch: GREEN | room P6 | launch36 1, flight end body thrown 1 m (max 1 m), bursts 1 (hits 2, kills 2) | launched body husk #1 (the target: yes), landed (0.0, 0.0, 0.0), in a pit no, in lava no, target dead (planted) | pose line65[0] (planted)
+## seed 8
+n65verb launch: GREEN | room P6 | launch36 1, flight end body thrown 1 m (max 1 m), bursts 1 (hits 2, kills 2) | launched body husk #1 (the target: yes), landed (0.0, 0.0, 0.0), in a pit no, in lava no, target dead (planted) | pose line65[0] (planted)
+## seed 9
+n65verb launch: GREEN | room P6 | launch36 1, flight end body thrown 1 m (max 1 m), bursts 1 (hits 2, kills 2) | launched body husk #1 (the target: yes), landed (0.0, 0.0, 0.0), in a pit no, in lava no, target dead (planted) | pose line65[0] (planted)
+## seed 10
+n65verb launch: RED | room P6 | launch36 1, flight end body thrown 1 m (max 1 m), bursts 1 (hits 3, kills 3) | launched body husk #1 (the target: yes), landed (0.0, 0.0, 0.0), in a pit no, in lava no, target dead (planted) | pose line65[0] (planted)
+## seed 11
+n65verb launch: RED | room P6 | launch36 1, flight end body thrown 1 m (max 1 m), bursts 1 (hits 3, kills 3) | launched body husk #1 (the target: yes), landed (0.0, 0.0, 0.0), in a pit no, in lava no, target dead (planted) | pose line65[0] (planted)
+## seed 12
+n65verb launch: RED | room P6 | launch36 1, flight end body thrown 1 m (max 1 m), bursts 1 (hits 3, kills 3) | launched body husk #1 (the target: yes), landed (0.0, 0.0, 0.0), in a pit no, in lava no, target dead (planted) | pose line65[0] (planted)
+## seed 13
+n65verb launch: RED | room P6 | launch36 1, flight end body thrown 1 m (max 1 m), bursts 1 (hits 3, kills 3) | launched body husk #1 (the target: yes), landed (0.0, 0.0, 0.0), in a pit no, in lava no, target dead (planted) | pose line65[0] (planted)
+## seed 14
+n65verb launch: RED | room P6 | launch36 1, flight end body thrown 1 m (max 1 m), bursts 1 (hits 3, kills 3) | launched body husk #1 (the target: yes), landed (0.0, 0.0, 0.0), in a pit no, in lava no, target dead (planted) | pose line65[0] (planted)
+## seed 15
+n65verb launch: RED | room P6 | launch36 1, flight end body thrown 1 m (max 1 m), bursts 1 (hits 3, kills 3) | launched body husk #1 (the target: yes), landed (0.0, 0.0, 0.0), in a pit no, in lava no, target dead (planted) | pose line65[0] (planted)
+## seed 16
+n65verb launch: RED | room P6 | launch36 1, flight end body thrown 1 m (max 1 m), bursts 1 (hits 3, kills 3) | launched body husk #1 (the target: yes), landed (0.0, 0.0, 0.0), in a pit no, in lava no, target dead (planted) | pose line65[0] (planted)
+## seed 17
+n65verb launch: RED | room P6 | launch36 1, flight end body thrown 1 m (max 1 m), bursts 1 (hits 3, kills 3) | launched body husk #1 (the target: yes), landed (0.0, 0.0, 0.0), in a pit no, in lava no, target dead (planted) | pose line65[0] (planted)
+## seed 18
+n65verb launch: RED | room P6 | launch36 1, flight end body thrown 1 m (max 1 m), bursts 1 (hits 3, kills 3) | launched body husk #1 (the target: yes), landed (0.0, 0.0, 0.0), in a pit no, in lava no, target dead (planted) | pose line65[0] (planted)
+## seed 19
+n65verb launch: RED | room P6 | launch36 1, flight end body thrown 1 m (max 1 m), bursts 1 (hits 3, kills 3) | launched body husk #1 (the target: yes), landed (0.0, 0.0, 0.0), in a pit no, in lava no, target dead (planted) | pose line65[0] (planted)
+## seed 20
+n65verb launch: RED | room P6 | launch36 1, flight end body thrown 1 m (max 1 m), bursts 1 (hits 3, kills 3) | launched body husk #1 (the target: yes), landed (0.0, 0.0, 0.0), in a pit no, in lava no, target dead (planted) | pose line65[0] (planted)
+n70-throws: 20 probes | GREEN 9 | thrown median 1.0 m (min 1, max 1) | ends body 20 | in a pit 0, in lava 0, bursts killing >= 2: 20 | M3 candidates (D-3) 9 / 20

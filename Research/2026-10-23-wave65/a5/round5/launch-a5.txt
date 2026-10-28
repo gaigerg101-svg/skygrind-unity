@@ -1,0 +1,4 @@
+n65verb launch: level n65-foundry (Design/levels/n65-foundry.json), room a5 "1.5 CRUCIBLE", seed 1; pose (0.0, 0.0, -114.0) yaw 14.0 from line65[0]; off switch none
+  burst at (0.0, 1.5, -123.9) hits 2 kills 2 (a wall)
+  target husk #2 at (0.8, 0.0, -120.8) (from (0.0, -0.0, -114.0)), slide at step 34, punch at step 68 in state Slide (grace 18)
+n65verb launch: GREEN | room a5 | launch36 1, flight end wall thrown 3.3 m (max 3.2 m), bursts 1 (hits 2, kills 2) | landed (0.0, 1.5, -123.9), in a pit no, in lava no, target dead (launch36) | pose line65[0]

@@ -1,0 +1,143 @@
+# command: bash Tools/night/n70-throws.sh C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/ice-g6/n67-iceline.json g6 C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/ice-g6/throws-g6.txt 20
+# sha: bf5edde7e; time: 2026-10-28 00:06:49
+## seed 1
+n65verb launch: level n67-iceline (C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/ice-g6/n67-iceline.json), room g6 "2.6 THE ARMOURY", seed 1; pose (0.0, 0.0, -164.5) yaw -0.0 from line65[0]; off switch none
+  target chosen: husk #2 hp 40.0 > the launch bound 30.0 (max(punch.damage 10.0 x momentum.meleeMax 3.0 = 30.0, the largest non-parry punch in this run 0.0)) (the nearest husk-shaped body the punch leaves alive, so launch36 can throw it), 7.3 m off
+  punch: dealt 16.0 vs hp 40.0: survived | target husk hp 40.0 | the punch not a parry | held 107 steps while it would be a parry (another body in the punch's reach (husk #1) winding up), dashes re-made 2
+  burst at (2.2, 1.0, -162.6) hits 1 kills 1 (a wall)
+  target husk #2 at (1.4, 0.0, -168.1) (from (0.0, 0.0, -164.5)), dash at step 194, punch at step 195 in state Dash (grace 18), 0.9 m off (reach 2.0), launch36 wants it yes, its hp 40.0 vs the punch's 10.0, in hand revolver, after 2 spent dash(es)
+n65verb launch: GREEN | room g6 | launch36 1, flight end wall thrown 5.7 m (max 5.6 m), bursts 1 (hits 1, kills 1) | launched body husk #2 (the target: yes), landed (2.2, 1.0, -162.6), in a pit no, in lava no, target dead (launch36) | pose line65[0]
+## seed 2
+n65verb launch: level n67-iceline (C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/ice-g6/n67-iceline.json), room g6 "2.6 THE ARMOURY", seed 2; pose (0.0, 0.0, -164.5) yaw -0.0 from line65[0]; off switch none
+  target chosen: husk #2 hp 40.0 > the launch bound 30.0 (max(punch.damage 10.0 x momentum.meleeMax 3.0 = 30.0, the largest non-parry punch in this run 0.0)) (the nearest husk-shaped body the punch leaves alive, so launch36 can throw it), 7.3 m off
+  punch: dealt 16.0 vs hp 40.0: survived | target husk hp 40.0 | the punch not a parry | held 187 steps while it would be a parry (the target winding up), dashes re-made 49
+  burst at (-5.6, 1.0, -162.6) hits 1 kills 1 (a wall)
+  target husk #2 at (-1.7, 0.0, -168.0) (from (0.0, 0.0, -164.5)), dash at step 453, punch at step 454 in state Dash (grace 18), 0.1 m off (reach 2.0), launch36 wants it yes, its hp 40.0 vs the punch's 10.0, in hand revolver, after 49 spent dash(es)
+n65verb launch: GREEN | room g6 | launch36 1, flight end wall thrown 6.8 m (max 6.7 m), bursts 1 (hits 1, kills 1) | launched body husk #2 (the target: yes), landed (-5.6, 1.0, -162.6), in a pit no, in lava no, target dead (launch36) | pose line65[0]
+## seed 3
+n65verb launch: level n67-iceline (C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/ice-g6/n67-iceline.json), room g6 "2.6 THE ARMOURY", seed 3; pose (0.0, 0.0, -164.5) yaw -0.0 from line65[0]; off switch none
+  target chosen: husk #2 hp 40.0 > the launch bound 30.0 (max(punch.damage 10.0 x momentum.meleeMax 3.0 = 30.0, the largest non-parry punch in this run 0.0)) (the nearest husk-shaped body the punch leaves alive, so launch36 can throw it), 6.9 m off
+  punch: dealt 16.0 vs hp 40.0: survived | target husk hp 40.0 | the punch not a parry | held 177 steps while it would be a parry (the target winding up), dashes re-made 51
+  burst at (1.4, 1.5, -170.7) hits 1 kills 1 (a wall)
+  target husk #2 at (-1.4, 0.0, -168.2) (from (0.0, 0.0, -164.5)), dash at step 448, punch at step 449 in state Dash (grace 18), 0.2 m off (reach 2.0), launch36 wants it yes, its hp 40.0 vs the punch's 10.0, in hand revolver, after 51 spent dash(es)
+n65verb launch: GREEN | room g6 | launch36 1, flight end wall thrown 3.9 m (max 3.7 m), bursts 1 (hits 1, kills 1) | launched body husk #2 (the target: yes), landed (1.4, 1.5, -170.7), in a pit no, in lava no, target dead (launch36) | pose line65[0]
+## seed 4
+n65verb launch: level n67-iceline (C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/ice-g6/n67-iceline.json), room g6 "2.6 THE ARMOURY", seed 4; pose (0.0, 0.0, -164.5) yaw -0.0 from line65[0]; off switch none
+  target chosen: husk #2 hp 40.0 > the launch bound 30.0 (max(punch.damage 10.0 x momentum.meleeMax 3.0 = 30.0, the largest non-parry punch in this run 0.0)) (the nearest husk-shaped body the punch leaves alive, so launch36 can throw it), 6.9 m off
+  punch: dealt 16.0 vs hp 40.0: survived | target husk hp 40.0 | the punch not a parry | held 177 steps while it would be a parry (the target winding up), dashes re-made 51
+  burst at (1.4, 1.5, -170.7) hits 1 kills 1 (a wall)
+  target husk #2 at (-1.4, 0.0, -168.2) (from (0.0, 0.0, -164.5)), dash at step 448, punch at step 449 in state Dash (grace 18), 0.2 m off (reach 2.0), launch36 wants it yes, its hp 40.0 vs the punch's 10.0, in hand revolver, after 51 spent dash(es)
+n65verb launch: GREEN | room g6 | launch36 1, flight end wall thrown 3.9 m (max 3.7 m), bursts 1 (hits 1, kills 1) | launched body husk #2 (the target: yes), landed (1.4, 1.5, -170.7), in a pit no, in lava no, target dead (launch36) | pose line65[0]
+## seed 5
+n65verb launch: level n67-iceline (C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/ice-g6/n67-iceline.json), room g6 "2.6 THE ARMOURY", seed 5; pose (0.0, 0.0, -164.5) yaw -0.0 from line65[0]; off switch none
+  target chosen: husk #1 hp 40.0 > the launch bound 30.0 (max(punch.damage 10.0 x momentum.meleeMax 3.0 = 30.0, the largest non-parry punch in this run 0.0)) (the nearest husk-shaped body the punch leaves alive, so launch36 can throw it), 7.5 m off
+  punch: dealt 16.0 vs hp 40.0: survived | target husk hp 40.0 | the punch not a parry | held 190 steps while it would be a parry (the target winding up), dashes re-made 48
+  burst at (0.1, 1.3, -171.8) hits 2 kills 2
+  target husk #1 at (-1.5, 0.0, -168.3) (from (0.0, 0.0, -164.5)), dash at step 456, punch at step 457 in state Dash (grace 18), 0.2 m off (reach 2.0), launch36 wants it yes, its hp 40.0 vs the punch's 10.0, in hand revolver, after 48 spent dash(es)
+n65verb launch: GREEN | room g6 | launch36 1, flight end body thrown 3.7 m (max 3.6 m), bursts 1 (hits 2, kills 2) | launched body husk #1 (the target: yes), landed (0.3, 1.5, -171.4), in a pit no, in lava no, target dead (launch36) | pose line65[0]
+## seed 6
+n65verb launch: level n67-iceline (C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/ice-g6/n67-iceline.json), room g6 "2.6 THE ARMOURY", seed 6; pose (0.0, 0.0, -164.5) yaw -0.0 from line65[0]; off switch none
+  target chosen: husk #2 hp 40.0 > the launch bound 30.0 (max(punch.damage 10.0 x momentum.meleeMax 3.0 = 30.0, the largest non-parry punch in this run 0.0)) (the nearest husk-shaped body the punch leaves alive, so launch36 can throw it), 7.3 m off
+  punch: dealt 16.0 vs hp 40.0: survived | target husk hp 40.0 | the punch not a parry | held 187 steps while it would be a parry (the target winding up), dashes re-made 49
+  burst at (-5.6, 1.0, -162.6) hits 1 kills 1 (a wall)
+  target husk #2 at (-1.7, 0.0, -168.0) (from (0.0, 0.0, -164.5)), dash at step 453, punch at step 454 in state Dash (grace 18), 0.1 m off (reach 2.0), launch36 wants it yes, its hp 40.0 vs the punch's 10.0, in hand revolver, after 49 spent dash(es)
+n65verb launch: GREEN | room g6 | launch36 1, flight end wall thrown 6.8 m (max 6.7 m), bursts 1 (hits 1, kills 1) | launched body husk #2 (the target: yes), landed (-5.6, 1.0, -162.6), in a pit no, in lava no, target dead (launch36) | pose line65[0]
+## seed 7
+n65verb launch: level n67-iceline (C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/ice-g6/n67-iceline.json), room g6 "2.6 THE ARMOURY", seed 7; pose (0.0, 0.0, -164.5) yaw -0.0 from line65[0]; off switch none
+  target chosen: husk #2 hp 40.0 > the launch bound 30.0 (max(punch.damage 10.0 x momentum.meleeMax 3.0 = 30.0, the largest non-parry punch in this run 0.0)) (the nearest husk-shaped body the punch leaves alive, so launch36 can throw it), 6.9 m off
+  punch: dealt 16.0 vs hp 40.0: survived | target husk hp 40.0 | the punch not a parry | held 177 steps while it would be a parry (the target winding up), dashes re-made 51
+  burst at (1.4, 1.5, -170.7) hits 1 kills 1 (a wall)
+  target husk #2 at (-1.4, 0.0, -168.2) (from (0.0, 0.0, -164.5)), dash at step 448, punch at step 449 in state Dash (grace 18), 0.2 m off (reach 2.0), launch36 wants it yes, its hp 40.0 vs the punch's 10.0, in hand revolver, after 51 spent dash(es)
+n65verb launch: GREEN | room g6 | launch36 1, flight end wall thrown 3.9 m (max 3.7 m), bursts 1 (hits 1, kills 1) | launched body husk #2 (the target: yes), landed (1.4, 1.5, -170.7), in a pit no, in lava no, target dead (launch36) | pose line65[0]
+## seed 8
+n65verb launch: level n67-iceline (C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/ice-g6/n67-iceline.json), room g6 "2.6 THE ARMOURY", seed 8; pose (0.0, 0.0, -164.5) yaw -0.0 from line65[0]; off switch none
+  target chosen: husk #2 hp 40.0 > the launch bound 30.0 (max(punch.damage 10.0 x momentum.meleeMax 3.0 = 30.0, the largest non-parry punch in this run 0.0)) (the nearest husk-shaped body the punch leaves alive, so launch36 can throw it), 6.9 m off
+  punch: dealt 16.0 vs hp 40.0: survived | target husk hp 40.0 | the punch not a parry | held 177 steps while it would be a parry (the target winding up), dashes re-made 51
+  burst at (1.4, 1.5, -170.7) hits 1 kills 1 (a wall)
+  target husk #2 at (-1.4, 0.0, -168.2) (from (0.0, 0.0, -164.5)), dash at step 448, punch at step 449 in state Dash (grace 18), 0.2 m off (reach 2.0), launch36 wants it yes, its hp 40.0 vs the punch's 10.0, in hand revolver, after 51 spent dash(es)
+n65verb launch: GREEN | room g6 | launch36 1, flight end wall thrown 3.9 m (max 3.7 m), bursts 1 (hits 1, kills 1) | launched body husk #2 (the target: yes), landed (1.4, 1.5, -170.7), in a pit no, in lava no, target dead (launch36) | pose line65[0]
+## seed 9
+n65verb launch: level n67-iceline (C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/ice-g6/n67-iceline.json), room g6 "2.6 THE ARMOURY", seed 9; pose (0.0, 0.0, -164.5) yaw -0.0 from line65[0]; off switch none
+  target chosen: husk #2 hp 40.0 > the launch bound 30.0 (max(punch.damage 10.0 x momentum.meleeMax 3.0 = 30.0, the largest non-parry punch in this run 0.0)) (the nearest husk-shaped body the punch leaves alive, so launch36 can throw it), 7.3 m off
+  punch: dealt 16.0 vs hp 40.0: survived | target husk hp 40.0 | the punch not a parry | held 187 steps while it would be a parry (the target winding up), dashes re-made 49
+  burst at (3.7, 1.0, -179.3) hits 1 kills 1 (a wall)
+  target husk #2 at (-1.5, 0.0, -168.2) (from (0.0, 0.0, -164.5)), dash at step 453, punch at step 454 in state Dash (grace 18), 0.2 m off (reach 2.0), launch36 wants it yes, its hp 40.0 vs the punch's 10.0, in hand revolver, after 49 spent dash(es)
+n65verb launch: GREEN | room g6 | launch36 1, flight end wall thrown 12.4 m (max 12.3 m), bursts 1 (hits 1, kills 1) | launched body husk #2 (the target: yes), landed (3.7, 1.0, -179.3), in a pit no, in lava no, target dead (launch36) | pose line65[0]
+## seed 10
+n65verb launch: level n67-iceline (C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/ice-g6/n67-iceline.json), room g6 "2.6 THE ARMOURY", seed 10; pose (0.0, 0.0, -164.5) yaw -0.0 from line65[0]; off switch none
+  target chosen: husk #2 hp 40.0 > the launch bound 30.0 (max(punch.damage 10.0 x momentum.meleeMax 3.0 = 30.0, the largest non-parry punch in this run 0.0)) (the nearest husk-shaped body the punch leaves alive, so launch36 can throw it), 7.3 m off
+  punch: dealt 16.0 vs hp 40.0: survived | target husk hp 40.0 | the punch not a parry | held 107 steps while it would be a parry (another body in the punch's reach (husk #1) winding up), dashes re-made 2
+  burst at (2.2, 1.0, -162.6) hits 1 kills 1 (a wall)
+  target husk #2 at (1.4, 0.0, -168.1) (from (0.0, 0.0, -164.5)), dash at step 194, punch at step 195 in state Dash (grace 18), 0.9 m off (reach 2.0), launch36 wants it yes, its hp 40.0 vs the punch's 10.0, in hand revolver, after 2 spent dash(es)
+n65verb launch: GREEN | room g6 | launch36 1, flight end wall thrown 5.7 m (max 5.6 m), bursts 1 (hits 1, kills 1) | launched body husk #2 (the target: yes), landed (2.2, 1.0, -162.6), in a pit no, in lava no, target dead (launch36) | pose line65[0]
+## seed 11
+n65verb launch: level n67-iceline (C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/ice-g6/n67-iceline.json), room g6 "2.6 THE ARMOURY", seed 11; pose (0.0, 0.0, -164.5) yaw -0.0 from line65[0]; off switch none
+  target chosen: husk #2 hp 40.0 > the launch bound 30.0 (max(punch.damage 10.0 x momentum.meleeMax 3.0 = 30.0, the largest non-parry punch in this run 0.0)) (the nearest husk-shaped body the punch leaves alive, so launch36 can throw it), 7.3 m off
+  punch: dealt 16.0 vs hp 40.0: survived | target husk hp 40.0 | the punch not a parry | held 107 steps while it would be a parry (another body in the punch's reach (husk #1) winding up), dashes re-made 2
+  burst at (2.2, 1.0, -162.6) hits 1 kills 1 (a wall)
+  target husk #2 at (1.4, 0.0, -168.1) (from (0.0, 0.0, -164.5)), dash at step 194, punch at step 195 in state Dash (grace 18), 0.9 m off (reach 2.0), launch36 wants it yes, its hp 40.0 vs the punch's 10.0, in hand revolver, after 2 spent dash(es)
+n65verb launch: GREEN | room g6 | launch36 1, flight end wall thrown 5.7 m (max 5.6 m), bursts 1 (hits 1, kills 1) | launched body husk #2 (the target: yes), landed (2.2, 1.0, -162.6), in a pit no, in lava no, target dead (launch36) | pose line65[0]
+## seed 12
+n65verb launch: level n67-iceline (C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/ice-g6/n67-iceline.json), room g6 "2.6 THE ARMOURY", seed 12; pose (0.0, 0.0, -164.5) yaw -0.0 from line65[0]; off switch none
+  target chosen: husk #1 hp 40.0 > the launch bound 30.0 (max(punch.damage 10.0 x momentum.meleeMax 3.0 = 30.0, the largest non-parry punch in this run 0.0)) (the nearest husk-shaped body the punch leaves alive, so launch36 can throw it), 7.5 m off
+  punch: dealt 16.0 vs hp 40.0: survived | target husk hp 40.0 | the punch not a parry | held 190 steps while it would be a parry (the target winding up), dashes re-made 48
+  burst at (0.1, 1.3, -171.8) hits 2 kills 2
+  target husk #1 at (-1.5, 0.0, -168.3) (from (0.0, 0.0, -164.5)), dash at step 456, punch at step 457 in state Dash (grace 18), 0.2 m off (reach 2.0), launch36 wants it yes, its hp 40.0 vs the punch's 10.0, in hand revolver, after 48 spent dash(es)
+n65verb launch: GREEN | room g6 | launch36 1, flight end body thrown 3.7 m (max 3.6 m), bursts 1 (hits 2, kills 2) | launched body husk #1 (the target: yes), landed (0.3, 1.5, -171.4), in a pit no, in lava no, target dead (launch36) | pose line65[0]
+## seed 13
+n65verb launch: level n67-iceline (C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/ice-g6/n67-iceline.json), room g6 "2.6 THE ARMOURY", seed 13; pose (0.0, 0.0, -164.5) yaw -0.0 from line65[0]; off switch none
+  target chosen: husk #1 hp 40.0 > the launch bound 30.0 (max(punch.damage 10.0 x momentum.meleeMax 3.0 = 30.0, the largest non-parry punch in this run 0.0)) (the nearest husk-shaped body the punch leaves alive, so launch36 can throw it), 7.5 m off
+  punch: dealt 16.0 vs hp 40.0: survived | target husk hp 40.0 | the punch not a parry | held 225 steps while it would be a parry (the target winding up), dashes re-made 39
+  burst at (-1.1, 1.3, -162.6) hits 1 kills 1 (a wall)
+  target husk #1 at (-1.5, 0.0, -168.1) (from (0.0, 0.0, -164.5)), dash at step 456, punch at step 457 in state Dash (grace 18), 0.2 m off (reach 2.0), launch36 wants it yes, its hp 40.0 vs the punch's 10.0, in hand revolver, after 39 spent dash(es)
+n65verb launch: GREEN | room g6 | launch36 1, flight end wall thrown 5.6 m (max 5.5 m), bursts 1 (hits 1, kills 1) | launched body husk #1 (the target: yes), landed (-1.1, 1.3, -162.6), in a pit no, in lava no, target dead (launch36) | pose line65[0]
+## seed 14
+n65verb launch: level n67-iceline (C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/ice-g6/n67-iceline.json), room g6 "2.6 THE ARMOURY", seed 14; pose (0.0, 0.0, -164.5) yaw -0.0 from line65[0]; off switch none
+  target chosen: husk #2 hp 40.0 > the launch bound 30.0 (max(punch.damage 10.0 x momentum.meleeMax 3.0 = 30.0, the largest non-parry punch in this run 0.0)) (the nearest husk-shaped body the punch leaves alive, so launch36 can throw it), 7.3 m off
+  punch: dealt 16.0 vs hp 40.0: survived | target husk hp 40.0 | the punch not a parry | held 187 steps while it would be a parry (the target winding up), dashes re-made 49
+  burst at (0.0, 1.3, -172.6) hits 2 kills 2
+  target husk #2 at (-1.4, 0.0, -168.3) (from (0.0, 0.0, -164.5)), dash at step 453, punch at step 454 in state Dash (grace 18), 0.0 m off (reach 2.0), launch36 wants it yes, its hp 40.0 vs the punch's 10.0, in hand revolver, after 49 spent dash(es)
+n65verb launch: GREEN | room g6 | launch36 1, flight end body thrown 4.1 m (max 4.0 m), bursts 1 (hits 2, kills 2) | launched body husk #2 (the target: yes), landed (0.0, 1.5, -172.1), in a pit no, in lava no, target dead (launch36) | pose line65[0]
+## seed 15
+n65verb launch: level n67-iceline (C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/ice-g6/n67-iceline.json), room g6 "2.6 THE ARMOURY", seed 15; pose (0.0, 0.0, -164.5) yaw -0.0 from line65[0]; off switch none
+  target chosen: husk #2 hp 40.0 > the launch bound 30.0 (max(punch.damage 10.0 x momentum.meleeMax 3.0 = 30.0, the largest non-parry punch in this run 0.0)) (the nearest husk-shaped body the punch leaves alive, so launch36 can throw it), 7.3 m off
+  punch: dealt 10.0 vs hp 40.0: survived | target husk hp 40.0 | the punch not a parry | held 227 steps while it would be a parry (the target winding up), dashes re-made 39
+  burst at (-1.3, 1.1, -168.3) hits 2 kills 2
+  target husk #2 at (-1.8, 0.0, -168.0) (from (0.0, 0.0, -164.5)), dash at step 453, punch at step 454 in state Dash (grace 18), 0.1 m off (reach 2.0), launch36 wants it yes, its hp 40.0 vs the punch's 10.0, in hand revolver, after 39 spent dash(es)
+n65verb launch: GREEN | room g6 | launch36 1, flight end body thrown 0.0 m (max 0.0 m), bursts 1 (hits 2, kills 2) | launched body husk #2 (the target: yes), landed (-1.8, 1.1, -168.1), in a pit no, in lava no, target dead (launch36) | pose line65[0]
+## seed 16
+n65verb launch: level n67-iceline (C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/ice-g6/n67-iceline.json), room g6 "2.6 THE ARMOURY", seed 16; pose (0.0, 0.0, -164.5) yaw -0.0 from line65[0]; off switch none
+  target chosen: husk #2 hp 40.0 > the launch bound 30.0 (max(punch.damage 10.0 x momentum.meleeMax 3.0 = 30.0, the largest non-parry punch in this run 0.0)) (the nearest husk-shaped body the punch leaves alive, so launch36 can throw it), 7.3 m off
+  punch: dealt 16.0 vs hp 40.0: survived | target husk hp 40.0 | the punch not a parry | held 187 steps while it would be a parry (the target winding up), dashes re-made 49
+  burst at (-0.2, 1.3, -171.4) hits 2 kills 2
+  target husk #2 at (-1.5, 0.0, -168.2) (from (0.0, 0.0, -164.5)), dash at step 453, punch at step 454 in state Dash (grace 18), 0.2 m off (reach 2.0), launch36 wants it yes, its hp 40.0 vs the punch's 10.0, in hand revolver, after 49 spent dash(es)
+n65verb launch: GREEN | room g6 | launch36 1, flight end body thrown 3.1 m (max 2.9 m), bursts 1 (hits 2, kills 2) | launched body husk #2 (the target: yes), landed (-0.2, 1.5, -170.9), in a pit no, in lava no, target dead (launch36) | pose line65[0]
+## seed 17
+n65verb launch: level n67-iceline (C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/ice-g6/n67-iceline.json), room g6 "2.6 THE ARMOURY", seed 17; pose (0.0, 0.0, -164.5) yaw -0.0 from line65[0]; off switch none
+  target chosen: husk #2 hp 40.0 > the launch bound 30.0 (max(punch.damage 10.0 x momentum.meleeMax 3.0 = 30.0, the largest non-parry punch in this run 0.0)) (the nearest husk-shaped body the punch leaves alive, so launch36 can throw it), 6.9 m off
+  punch: dealt 16.0 vs hp 40.0: survived | target husk hp 40.0 | the punch not a parry | held 177 steps while it would be a parry (the target winding up), dashes re-made 51
+  burst at (1.4, 1.5, -170.7) hits 1 kills 1 (a wall)
+  target husk #2 at (-1.4, 0.0, -168.2) (from (0.0, 0.0, -164.5)), dash at step 448, punch at step 449 in state Dash (grace 18), 0.2 m off (reach 2.0), launch36 wants it yes, its hp 40.0 vs the punch's 10.0, in hand revolver, after 51 spent dash(es)
+n65verb launch: GREEN | room g6 | launch36 1, flight end wall thrown 3.9 m (max 3.7 m), bursts 1 (hits 1, kills 1) | launched body husk #2 (the target: yes), landed (1.4, 1.5, -170.7), in a pit no, in lava no, target dead (launch36) | pose line65[0]
+## seed 18
+n65verb launch: level n67-iceline (C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/ice-g6/n67-iceline.json), room g6 "2.6 THE ARMOURY", seed 18; pose (0.0, 0.0, -164.5) yaw -0.0 from line65[0]; off switch none
+  target chosen: husk #2 hp 40.0 > the launch bound 30.0 (max(punch.damage 10.0 x momentum.meleeMax 3.0 = 30.0, the largest non-parry punch in this run 0.0)) (the nearest husk-shaped body the punch leaves alive, so launch36 can throw it), 7.3 m off
+  punch: dealt 16.0 vs hp 40.0: survived | target husk hp 40.0 | the punch not a parry | held 187 steps while it would be a parry (the target winding up), dashes re-made 49
+  burst at (0.1, 1.3, -172.1) hits 2 kills 2
+  target husk #2 at (-1.4, 0.0, -168.3) (from (0.0, 0.0, -164.5)), dash at step 453, punch at step 454 in state Dash (grace 18), 0.0 m off (reach 2.0), launch36 wants it yes, its hp 40.0 vs the punch's 10.0, in hand revolver, after 49 spent dash(es)
+n65verb launch: GREEN | room g6 | launch36 1, flight end body thrown 3.7 m (max 3.6 m), bursts 1 (hits 2, kills 2) | launched body husk #2 (the target: yes), landed (-0.1, 1.5, -171.7), in a pit no, in lava no, target dead (launch36) | pose line65[0]
+## seed 19
+n65verb launch: level n67-iceline (C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/ice-g6/n67-iceline.json), room g6 "2.6 THE ARMOURY", seed 19; pose (0.0, 0.0, -164.5) yaw -0.0 from line65[0]; off switch none
+  target chosen: husk #1 hp 40.0 > the launch bound 30.0 (max(punch.damage 10.0 x momentum.meleeMax 3.0 = 30.0, the largest non-parry punch in this run 0.0)) (the nearest husk-shaped body the punch leaves alive, so launch36 can throw it), 7.5 m off
+  punch: dealt 16.0 vs hp 40.0: survived | target husk hp 40.0 | the punch not a parry | held 190 steps while it would be a parry (the target winding up), dashes re-made 48
+  burst at (-1.0, 1.0, -168.3) hits 2 kills 2
+  target husk #1 at (-1.5, 0.0, -168.3) (from (0.0, 0.0, -164.5)), dash at step 456, punch at step 457 in state Dash (grace 18), 0.1 m off (reach 2.0), launch36 wants it yes, its hp 40.0 vs the punch's 10.0, in hand revolver, after 48 spent dash(es)
+n65verb launch: GREEN | room g6 | launch36 1, flight end body thrown 0.1 m (max 0.0 m), bursts 1 (hits 2, kills 2) | launched body husk #1 (the target: yes), landed (-1.5, 1.0, -168.3), in a pit no, in lava no, target dead (launch36) | pose line65[0]
+## seed 20
+n65verb launch: level n67-iceline (C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/ice-g6/n67-iceline.json), room g6 "2.6 THE ARMOURY", seed 20; pose (0.0, 0.0, -164.5) yaw -0.0 from line65[0]; off switch none
+  target chosen: husk #2 hp 40.0 > the launch bound 30.0 (max(punch.damage 10.0 x momentum.meleeMax 3.0 = 30.0, the largest non-parry punch in this run 0.0)) (the nearest husk-shaped body the punch leaves alive, so launch36 can throw it), 6.9 m off
+  punch: dealt 16.0 vs hp 40.0: survived | target husk hp 40.0 | the punch not a parry | held 177 steps while it would be a parry (the target winding up), dashes re-made 51
+  burst at (1.4, 1.5, -170.7) hits 1 kills 1 (a wall)
+  target husk #2 at (-1.4, 0.0, -168.2) (from (0.0, 0.0, -164.5)), dash at step 448, punch at step 449 in state Dash (grace 18), 0.2 m off (reach 2.0), launch36 wants it yes, its hp 40.0 vs the punch's 10.0, in hand revolver, after 51 spent dash(es)
+n65verb launch: GREEN | room g6 | launch36 1, flight end wall thrown 3.9 m (max 3.7 m), bursts 1 (hits 1, kills 1) | launched body husk #2 (the target: yes), landed (1.4, 1.5, -170.7), in a pit no, in lava no, target dead (launch36) | pose line65[0]
+n70-throws: 20 probes | GREEN 20 | thrown median 3.9 m (min 0, max 12.4) | ends wall 13, body 7 | in a pit 0, in lava 0, bursts killing >= 2: 7 | M3 candidates (D-3) 7 / 20

@@ -1,0 +1,474 @@
+{
+ "_why": "NIGHT26 builder M: THE ICE LINE's course for builder B's glacier chase (Tools/night/gen-platforming-kits.py icecourse): a standalone plan (levelgen builds and validates it) with a top-level `surfaces` list that LevelPlan24 copies into the `campaign` block (SurvivalSim.Surface26 reads it).",
+ "id": "icecourse",
+ "name": "THE ICE LINE (course)",
+ "floorSize": 800,
+ "killPlaneY": -30,
+ "wallHeight": 14,
+ "rooms": [
+  {
+   "id": "course",
+   "name": "THE ICE LINE",
+   "kind": "link",
+   "rect": [
+    -14,
+    -320,
+    14,
+    0
+   ],
+   "par": 40,
+   "spawn": {
+    "at": [
+     0,
+     0,
+     -2
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    0,
+    0,
+    -318
+   ]
+  }
+ ],
+ "doors": [],
+ "boxes": [
+  {
+   "zone": "course",
+   "kind": "hull",
+   "min": [
+    -4.8,
+    0,
+    -38
+   ],
+   "max": [
+    -4.2,
+    1,
+    -4
+   ],
+   "note": "lane rail (1 m), tile 1"
+  },
+  {
+   "zone": "course",
+   "kind": "hull",
+   "min": [
+    4.2,
+    0,
+    -38
+   ],
+   "max": [
+    4.8,
+    1,
+    -4
+   ],
+   "note": "lane rail (1 m), tile 1"
+  },
+  {
+   "zone": "course",
+   "kind": "hull",
+   "min": [
+    -4.8,
+    0,
+    -78
+   ],
+   "max": [
+    -4.2,
+    1,
+    -42
+   ],
+   "note": "lane rail (1 m), tile 2"
+  },
+  {
+   "zone": "course",
+   "kind": "hull",
+   "min": [
+    4.2,
+    0,
+    -78
+   ],
+   "max": [
+    4.8,
+    1,
+    -42
+   ],
+   "note": "lane rail (1 m), tile 2"
+  },
+  {
+   "zone": "course",
+   "kind": "hull",
+   "min": [
+    -4.8,
+    0,
+    -118
+   ],
+   "max": [
+    -4.2,
+    1,
+    -82
+   ],
+   "note": "lane rail (1 m), tile 3"
+  },
+  {
+   "zone": "course",
+   "kind": "hull",
+   "min": [
+    4.2,
+    0,
+    -118
+   ],
+   "max": [
+    4.8,
+    1,
+    -82
+   ],
+   "note": "lane rail (1 m), tile 3"
+  },
+  {
+   "zone": "course",
+   "kind": "hull",
+   "min": [
+    -4.8,
+    0,
+    -158
+   ],
+   "max": [
+    -4.2,
+    1,
+    -122
+   ],
+   "note": "lane rail (1 m), tile 4"
+  },
+  {
+   "zone": "course",
+   "kind": "hull",
+   "min": [
+    4.2,
+    0,
+    -158
+   ],
+   "max": [
+    4.8,
+    1,
+    -122
+   ],
+   "note": "lane rail (1 m), tile 4"
+  },
+  {
+   "zone": "course",
+   "kind": "hull",
+   "min": [
+    -4.8,
+    0,
+    -198
+   ],
+   "max": [
+    -4.2,
+    1,
+    -162
+   ],
+   "note": "lane rail (1 m), tile 5"
+  },
+  {
+   "zone": "course",
+   "kind": "hull",
+   "min": [
+    4.2,
+    0,
+    -198
+   ],
+   "max": [
+    4.8,
+    1,
+    -162
+   ],
+   "note": "lane rail (1 m), tile 5"
+  },
+  {
+   "zone": "course",
+   "kind": "hull",
+   "min": [
+    -4.8,
+    0,
+    -238
+   ],
+   "max": [
+    -4.2,
+    1,
+    -202
+   ],
+   "note": "lane rail (1 m), tile 6"
+  },
+  {
+   "zone": "course",
+   "kind": "hull",
+   "min": [
+    4.2,
+    0,
+    -238
+   ],
+   "max": [
+    4.8,
+    1,
+    -202
+   ],
+   "note": "lane rail (1 m), tile 6"
+  },
+  {
+   "zone": "course",
+   "kind": "hull",
+   "min": [
+    -4.8,
+    0,
+    -278
+   ],
+   "max": [
+    -4.2,
+    1,
+    -242
+   ],
+   "note": "lane rail (1 m), tile 7"
+  },
+  {
+   "zone": "course",
+   "kind": "hull",
+   "min": [
+    4.2,
+    0,
+    -278
+   ],
+   "max": [
+    4.8,
+    1,
+    -242
+   ],
+   "note": "lane rail (1 m), tile 7"
+  },
+  {
+   "zone": "course",
+   "kind": "hull",
+   "min": [
+    -4.8,
+    0,
+    -318
+   ],
+   "max": [
+    -4.2,
+    1,
+    -282
+   ],
+   "note": "lane rail (1 m), tile 8"
+  },
+  {
+   "zone": "course",
+   "kind": "hull",
+   "min": [
+    4.2,
+    0,
+    -318
+   ],
+   "max": [
+    4.8,
+    1,
+    -282
+   ],
+   "note": "lane rail (1 m), tile 8"
+  },
+  {
+   "zone": "course",
+   "kind": "slab",
+   "min": [
+    7.5,
+    0,
+    -210
+   ],
+   "max": [
+    9.5,
+    8,
+    -174
+   ],
+   "note": "the wall line: 40 m of rideable wall (tile 5), light strips come with design.n26.wallRide"
+  },
+  {
+   "zone": "course",
+   "kind": "deck",
+   "min": [
+    10,
+    -4.5,
+    -102
+   ],
+   "max": [
+    14,
+    -2.4,
+    -100
+   ],
+   "note": "recovery stair, step 1 (from the pit floor)"
+  },
+  {
+   "zone": "course",
+   "kind": "deck",
+   "min": [
+    6,
+    -4.5,
+    -102
+   ],
+   "max": [
+    10,
+    -1.2,
+    -100
+   ],
+   "note": "recovery stair, step 2 (then up to the floor)"
+  },
+  {
+   "zone": "course",
+   "kind": "deck",
+   "min": [
+    10,
+    -4.5,
+    -252
+   ],
+   "max": [
+    14,
+    -2.4,
+    -250
+   ],
+   "note": "recovery stair, step 1 (from the pit floor)"
+  },
+  {
+   "zone": "course",
+   "kind": "deck",
+   "min": [
+    6,
+    -4.5,
+    -252
+   ],
+   "max": [
+    10,
+    -1.2,
+    -250
+   ],
+   "note": "recovery stair, step 2 (then up to the floor)"
+  }
+ ],
+ "ramps": [],
+ "pads": [],
+ "grapple": [],
+ "pits": [
+  {
+   "zone": "course",
+   "rect": [
+    -14,
+    -106,
+    14,
+    -100
+   ],
+   "floorY": -3.5,
+   "note": "dash gap (6 m: a dash alone crosses)"
+  },
+  {
+   "zone": "course",
+   "rect": [
+    -14,
+    -257,
+    14,
+    -250
+   ],
+   "floorY": -3.5,
+   "note": "boost gap (7 m: a jump off a boost strip)"
+  }
+ ],
+ "tunnels": [],
+ "surfaces": [
+  {
+   "kind": "ice",
+   "rect": [
+    -14,
+    -318,
+    14,
+    -12
+   ],
+   "note": "the whole course past the start pad"
+  },
+  {
+   "kind": "mud",
+   "rect": [
+    4.8,
+    -214,
+    14,
+    -194
+   ],
+   "note": "a 20 m mud patch in the right lane: the slow lane (tile 5), for contrast"
+  },
+  {
+   "kind": "boost",
+   "rect": [
+    -3,
+    -64,
+    3,
+    -60
+   ],
+   "dir": [
+    0,
+    -1
+   ],
+   "note": "boost strip 1 (every 60 m, lanes alternate)"
+  },
+  {
+   "kind": "boost",
+   "rect": [
+    -12.4,
+    -124,
+    -6.4,
+    -120
+   ],
+   "dir": [
+    0,
+    -1
+   ],
+   "note": "boost strip 2 (every 60 m, lanes alternate)"
+  },
+  {
+   "kind": "boost",
+   "rect": [
+    6.4,
+    -184,
+    12.4,
+    -180
+   ],
+   "dir": [
+    0,
+    -1
+   ],
+   "note": "boost strip 3 (every 60 m, lanes alternate)"
+  },
+  {
+   "kind": "boost",
+   "rect": [
+    -3,
+    -244,
+    3,
+    -240
+   ],
+   "dir": [
+    0,
+    -1
+   ],
+   "note": "boost strip 4 (every 60 m, lanes alternate)"
+  },
+  {
+   "kind": "boost",
+   "rect": [
+    -12.4,
+    -304,
+    -6.4,
+    -300
+   ],
+   "dir": [
+    0,
+    -1
+   ],
+   "note": "boost strip 5 (every 60 m, lanes alternate)"
+  }
+ ],
+ "len": 320
+}

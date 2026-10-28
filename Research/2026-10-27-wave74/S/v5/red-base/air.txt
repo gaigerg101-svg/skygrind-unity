@@ -1,0 +1,41 @@
+# command: node Tools/night/n65-air.cjs C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/spire-play/spire.plan.json v5
+# sha: d3bf2c47e; time: 2026-10-27 23:33:36
+n65-air n67-spire v5 "5.5 THE RINGERS' STAIR" (C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/spire-play/spire.plan.json):
+  numbers: jump v0 8.33 m/s, g 23.15 m/s2 (fall x1.35), double v0 7.50, dash 24 m/s x 0.25 s = 6.0 m, dash-jump v0 6.67 with g x0.5 for 0.5 s at 24 m/s, run-up 8 m/s, wall jump out 5 up 8.33 (wallfling42 on), ride 9.20 m/s, jump-off out 8 +1 up 7.30 (ride39 on), capsule 0.35 m; a ride held 2.5 m over its base
+  air pieces 7:
+    L1   ledge top 2.5 m over [-16.0, -43.0, -12.0, -39.0] | line: the stair hall's west CHEEK (card: Molec
+    L2   ledge top 2.5 m over [-8.0, -43.0, -4.0, -39.0] | line: the stair hall's east CHEEK (card: Molec
+    R3   ride  face x = -21.4 (+x), -58.0..-40.0 (18.0 m), band 0.0..7.0, held at 2.5 | line: THE STAIR WALL (cyan, 18 m x 7 m on the 
+    D4   deck  top 5.0 m over [-22.0, -65.0, -15.0, -58.0] | line: THE RINGING CHAMBER (deck 5 m, card: Mol
+    D5   deck  top 2.5 m over [-8.0, -57.0, 2.0, -47.0] | line: THE ROPE GALLERY (deck 2.5 m, 10 x 10 m:
+    P6   pad   at (-12.2, 0.0, -57.7) -> (-18.5, 5.0, -61.5) (on the floor) | line
+    P7   pad   at (-2.2, 2.5, -55.2) -> (-18.5, 5.0, -62.5) | line
+  hand-offs 22 (piece -> piece without touching the floor, the easiest move first):
+    L1 -> L2  jump, margin 0.92 m (gap 4.4 m); also jump + double 4.38, dash 6.32, dash-jump 16.65, dash-jump + double 26.85
+    L1 -> R3  jump, margin 2.28 m of height (gap 5.0 m); also jump + double 1.60, dash 2.00, dash-jump 3.04, dash-jump + double 3.04
+    L1 -> D4  dash-jump + double, margin 9.65 m (gap 15.4 m)
+    L1 -> D5  jump + double, margin 2.73 m (gap 6.0 m); also dash 4.66, dash-jump 14.99, dash-jump + double 25.19
+    L2 -> L1  jump, margin 0.92 m (gap 4.4 m); also jump + double 4.38, dash 6.32, dash-jump 16.65, dash-jump + double 26.85
+    L2 -> R3  dash-jump, margin 2.33 m of height (gap 13.1 m); also dash-jump + double 2.26
+    L2 -> D4  dash-jump + double, margin 8.10 m (gap 16.9 m)
+    L2 -> D5  jump, margin 0.92 m (gap 4.4 m); also jump + double 4.38, dash 6.32, dash-jump 16.65, dash-jump + double 26.85
+    L2 -> P7  dash-jump, margin 8.83 m (gap 12.2 m); also dash-jump + double 19.03
+    R3 -> L1  jump-off + double, margin 3.05 m (gap 5.7 m); also dash 4.92
+    R3 -> D4  wall jump + double, margin 3.48 m (gap 0.4 m)
+    D4 -> L1  dash-jump, margin 10.05 m (gap 15.4 m); also dash-jump + double 19.45
+    D4 -> L2  dash-jump, margin 8.50 m (gap 16.9 m); also dash-jump + double 17.90
+    D4 -> D5  jump + double, margin 2.58 m (gap 7.4 m); also dash 4.98, dash-jump 17.98, dash-jump + double 27.38
+    D4 -> P7  dash-jump, margin 12.60 m (gap 12.8 m); also dash-jump + double 22.00
+    D5 -> L1  jump + double, margin 2.73 m (gap 6.0 m); also dash 4.66, dash-jump 14.99, dash-jump + double 25.19
+    D5 -> L2  jump, margin 0.92 m (gap 4.4 m); also jump + double 4.38, dash 6.32, dash-jump 16.65, dash-jump + double 26.85
+    D5 -> R3  dash-jump, margin 2.33 m of height (gap 13.1 m); also dash-jump + double 2.26
+    D5 -> D4  dash-jump + double, margin 17.58 m (gap 7.4 m)
+    D5 -> P7  jump, margin 3.67 m (gap 1.6 m); also jump + double 7.13, dash 9.07, dash-jump 19.40, dash-jump + double 29.60
+    P6 -> D4  pad (gap 7.3 m)
+    P7 -> D4  pad (gap 17.8 m)
+    D5 -> P7  walk onto the pad (gap 0.0 m)
+  longest floor-free chain: 7 piece(s): P6 -> D4 -> L2 -> R3 -> L1 -> D5 -> P7 (opened by a floor pad)
+  note: a dash-jump keeps the dash's 24 m/s for its whole flight (Mover.cs:1080; air accel never slows a body: MovementMath.Accelerate), so its reach is long; no obstacle, line-of-sight or air-control test
+  flight pieces (rides + pads) on one floor-free path: 3 of 3: P6 -> D4 -> L2 -> R3 -> L1 -> D5 -> P7; without the dash-jump: 2: L2 -> L1 -> R3 -> D4 -> D5 -> P7
+  without the dash-jump: hand-offs 13, longest chain 6: L2 -> L1 -> R3 -> D4 -> D5 -> P7, dead ends 0/5
+n65-air v5: air pieces 7 (rides 1, decks 2, ledges 2, pads 2), hand-offs 22, longest floor-free chain 7, dead ends 0/5 | without the dash-jump: hand-offs 13, chain 6, dead ends 0/5 | flights handed on: 3 of 3 on one path (2 without the dash-jump)

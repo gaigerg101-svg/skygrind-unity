@@ -1,0 +1,20 @@
+# command: dotnet Temp/SimHarness/bin/Release/net10.0/SimHarness.dll n46flow --level n67-iceline --rooms g7 --seeds 10 --first 1 --file C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/ice-g7/n67-iceline.json
+# sha: f1c885137; time: 2026-10-28 00:41:55
+n46flow: seeds 1..10, cap 240 s per room, rows forced on: none, off switch: none; pilot: Walk38Pilot + the ported autopilot (normal)
+n46flow n67-iceline: --file C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/ice-g7/n67-iceline.json
+  put-in loadout (g7, BEFORE entering it: the room's own award, if any, comes on entry): awards of the rooms before it given: revolver (g6's award); owned gauntlet revolver
+  entry loadout (n46flow, g7, 0.5 s after entering): owned gauntlet revolver, in hand revolver
+n46flow n67-iceline (loaded n67-iceline; BaseId n45-iceline): 10/10 walks through g7..g7; level time median 53.7 s; the pilot's lava rule: out of lava 0 steps, held at an edge 0 steps, chases round it 0, detours 0; put at the next room (a link not crossed in max(30 s, 3 x par) or a cleared room not left in 15 s) 0; stuck46 burrowers ended 0
+  room       kind | stall%  maxStall  air% | kgap med/max | near med/p10/p90 | dwell  dead | deaths falls | clear (k/n)    | geometry
+  g7         room |   21.1      2.8  53.6 |  1.9 / 15.9  |  7.0 /  1.8 / 12.2  |   2.6   4.2 |      0     0 |   53.7 (10/10) | floor 659 m2, tiers 5, loop y (58.1 m2), pockets 3, sight 36.9 m, w1 in view 2/6
+  LEVEL           |   21.1      2.8  53.6 |  1.9 / 15.9  |  7.0 /  1.8 / 12.2  |   2.6   4.2 |      0     0 |   53.7 sum of medians
+n46flow n67-iceline SUMMARY: GREEN 10/10; stall 21.1 %, longest stall 2.8 s, air 53.6 %, kill gap 1.9 / 15.9 s, nearest 7.0 m, dwell 2.6 s, dead 4.2 s, deaths 0, falls 0, clear 53.7 s
+  style      kind |  DULL  COOL  BOLD  AIRB  SAVA  SKYG (% of fight steps) | top rank med / max (seeds)
+  g7         room |  73.5  15.9   4.9   1.0   3.9   0.9                    | BOLD / SKYGRIND (10)
+  LEVEL           |  73.5  15.9   4.9   1.0   3.9   0.9                    | top SKYGRIND
+n46flow n67-iceline STYLE: DULL 73.5 % of 521 s of fight; above DULL 26.5 %; rooms reaching SAVAGE 1/1; top rank SKYGRIND
+n46flow n67-iceline PAYOFFS: heal36 HP per close kill by rank: DULL 9.70 (45), COOL 8.67 (12), BOLD - (0), AIRBORNE - (0), SAVAGE - (0), SKYGRIND - (0); RIDE KILL refund per ride kill by rank: DULL 0.00 (20), COOL 0.00 (3), BOLD - (0), AIRBORNE 0.00 (3), SAVAGE - (0), SKYGRIND - (0)
+n46flow n67-iceline TOKENS: attack starts inside the sim cone (camera.fovDeg 74 / 2) 169/197 = 85.8 % (by kind: spitter 136/155, swarmer 19/28, husk 14/14); tokens56 thinks waited out of view 4275, advances 2
+n46flow n67-iceline RANGED: hit rate by the player's speed at the shot: stand 4/27 = 14.8 %, run 30/112 = 26.8 %, fast 1/8 = 12.5 %, dash 0/0 = - %; dash / stand NaN %, fast+dash / stand 84 %
+n46flow n67-iceline IDLE: idle in place 6.5 % of enemy-alive steps; per enemy (alive >= 2 s, 149): median 3.7 %, p90 14.6 %, over 20 %: 8 (5.4 %); by kind: swarmer 6.9 %, spitter 5.6 %, husk 7.3 %
+n46flow n67-iceline: wall time 54 s

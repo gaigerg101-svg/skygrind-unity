@@ -1,0 +1,4 @@
+# git diff --no-index of a80093a6:Design/levels/n67/iceline/rooms-base/g8.json (the base's export) against a80093a6:Design/levels/n67/iceline/rooms/g8.json (the round's)
+
+warning: in the working copy of 'rooms-n52-g8.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'rooms-g8-dry-pack2-iceline.json', LF will be replaced by CRLF the next time Git touches it

@@ -1,0 +1,34 @@
+# command: bash Research/2026-10-23-wave66/T/t1c-gen-out.sh C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/b545c660-8250-4a8f-9419-f29ef22d3556/scratchpad/genout
+# sha: 348d5377 (tree 2 dirty paths), 2026-10-24 01:05:12 USMST, /c/Users/gaige/dev/SKYGRIND-unity/.claude/worktrees/agent-af48e888c59fa3626
+
+== 1. the refusals (no file written)
+gen-n65-foundry: REFUSED: --plant-error needs --run and --out=<a scratch dir> (the planted plan and level are written only there)
+gen-n65-foundry: REFUSED: --plant-error needs --run and --out=<a scratch dir> (the planted plan and level are written only there)
+gen-n65-foundry: REFUSED: --plant-error: --out=Design/levels/n65/x is inside a tracked level folder
+  git status --short Design/levels Assets/StreamingAssets/Design/levels Reports: []
+== 2. the planted error into a scratch --out: refused before the finish; the tracked copies byte-identical
+gen-n65-foundry: --plant-error: PLANTED a2 spawn at [0,40,-37] (40 m over its floor: off the nav grid)
+shipped before: Design/levels/n65-foundry.json 5f3eba53c34b84b6a3a4548281865c6cc5691539745636b9ed88215ab296cd85, Assets/StreamingAssets/Design/levels/n65-foundry.json 5f3eba53c34b84b6a3a4548281865c6cc5691539745636b9ed88215ab296cd85
+  levelgen n65-foundry: 2488168 chars -> C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/b545c660-8250-4a8f-9419-f29ef22d3556/scratchpad/genout/plant/foundry.json; 200 boxes + the floor, 5 barriers, 12 wedges, 7 pads, 0 grapple nodes, 21 zones (a1, a2, a3, a4, a5, b1, b2, a6
+      | spots on the nav grid | ERROR | no grid node under: a2 spawn |
+      | player route, doors open | ERROR | a1 2.48 s (drop climb; 1 crossing(s) by the real Mover, proved below); a1 exit to a2 spawn has NO route |
+levelgen --walk: 2 ERROR (RED): REFUSED, the shipped files NOT written
+shipped after:  Design/levels/n65-foundry.json 5f3eba53c34b84b6a3a4548281865c6cc5691539745636b9ed88215ab296cd85, Assets/StreamingAssets/Design/levels/n65-foundry.json 5f3eba53c34b84b6a3a4548281865c6cc5691539745636b9ed88215ab296cd85 (byte-identical)
+  exit 1
+  git status --short Design/levels Assets/StreamingAssets/Design/levels Reports: []
+  in C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/b545c660-8250-4a8f-9419-f29ef22d3556/scratchpad/genout/plant: LEVEL-n65-foundry-validate.md foundry.assembly.json foundry.json foundry.plan.json openings65.json 
+== 3. a standalone --finish of that planted level refuses (its report lists ERROR rows)
+gen-n65-foundry: REFUSED: --finish: the levelgen report C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/b545c660-8250-4a8f-9419-f29ef22d3556/scratchpad/genout/plant/LEVEL-n65-foundry-validate.md lists 2 ERROR row(s) (| spots on the nav grid | ERROR | no grid node under: a2 spawn |): the level is not shipped
+  exit 1; the level n65-foundry.json in C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/b545c660-8250-4a8f-9419-f29ef22d3556/scratchpad/genout/plant: absent (never finished)
+  git status --short Design/levels Assets/StreamingAssets/Design/levels Reports: []
+== 4. the latest assembly into a scratch --out: 0 ERROR, the round's level there, no tracked file touched
+shipped before: Design/levels/n65-foundry.json 5f3eba53c34b84b6a3a4548281865c6cc5691539745636b9ed88215ab296cd85, Assets/StreamingAssets/Design/levels/n65-foundry.json 5f3eba53c34b84b6a3a4548281865c6cc5691539745636b9ed88215ab296cd85
+  levelgen n65-foundry: 2488167 chars -> C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/b545c660-8250-4a8f-9419-f29ef22d3556/scratchpad/genout/latest/foundry.json; 200 boxes + the floor, 5 barriers, 12 wedges, 7 pads, 0 grapple nodes, 21 zones (a1, a2, a3, a4, a5, b1, b2, a
+n65-foundry --finish: C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/b545c660-8250-4a8f-9419-f29ef22d3556/scratchpad/genout/latest/foundry.json -> C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/b545c660-8250-4a8f-9419-f29ef22d3556/scratchpad/genout/latest/n65-foundry.json (2492137 chars, both copies identical); a9 bit-equal to n52-foundry's; kept rooms a1 b2 a6 a7 a9 bit-equal; slots latest: a2 latest rebuilt, a3 latest rebuilt, a4 latest rebuilt, a5 latest rebuilt, b1 latest rebuilt, a8 latest rebuilt
+levelgen --walk: 0 ERROR
+shipped after:  Design/levels/n65-foundry.json 5f3eba53c34b84b6a3a4548281865c6cc5691539745636b9ed88215ab296cd85, Assets/StreamingAssets/Design/levels/n65-foundry.json 5f3eba53c34b84b6a3a4548281865c6cc5691539745636b9ed88215ab296cd85 (byte-identical: --out writes only C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/b545c660-8250-4a8f-9419-f29ef22d3556/scratchpad/genout/latest)
+the round's level: C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/b545c660-8250-4a8f-9419-f29ef22d3556/scratchpad/genout/latest/n65-foundry.json 9404f13e8d8aa962e3c0fd6a706aa3acdb15e64ec8801484338e239b5dec0454; plan C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/b545c660-8250-4a8f-9419-f29ef22d3556/scratchpad/genout/latest/foundry.plan.json, report C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/b545c660-8250-4a8f-9419-f29ef22d3556/scratchpad/genout/latest/LEVEL-n65-foundry-validate.md, openings C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/b545c660-8250-4a8f-9419-f29ef22d3556/scratchpad/genout/latest/openings65.json
+  exit 0
+  git status --short Design/levels Assets/StreamingAssets/Design/levels Reports: []
+  in C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/b545c660-8250-4a8f-9419-f29ef22d3556/scratchpad/genout/latest: LEVEL-n65-foundry-validate.md foundry.assembly.json foundry.json foundry.plan.json n65-foundry.json openings65.json 
+# exit 0, 01:05:58

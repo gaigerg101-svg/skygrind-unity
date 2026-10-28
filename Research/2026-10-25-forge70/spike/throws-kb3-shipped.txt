@@ -1,0 +1,137 @@
+# command: bash Tools/night/n70-throws.sh Design/levels/n57-kiln.json kb3 Research/2026-10-25-forge70/spike/throws-kb3-shipped.txt 20
+# sha: 89c7a5e8; time: 2026-10-25 22:12:20
+## seed 1
+n65verb launch: level n57-kiln (Design/levels/n57-kiln.json), room kb3 "3.3 THE PRESS HALL", seed 1; pose (-8.5, 0.0, -203.0) yaw 0.0 from the room's spawn (no line65); off switch none
+  target chosen: husk #4 hp 40.0 > the launch bound 30.0 (max(punch.damage 10.0 x momentum.meleeMax 3.0 = 30.0, the largest non-parry punch in this run 0.0)) (the nearest husk-shaped body the punch leaves alive, so launch36 can throw it), 9.5 m off
+  punch: dealt 24.4 vs hp 40.0: survived | target husk hp 40.0 | the punch not a parry | held 0 steps while it would be a parry, dashes re-made 0
+  burst at (-5.6, 1.5, -212.8) hits 3 kills 3 (a wall)
+  target husk #4 at (-5.8, 0.0, -209.2) (from (-8.5, 0.0, -203.0)), dash at step 40, punch at step 59 in state Dash (grace 18), 1.6 m off (reach 2.0), launch36 wants it yes, its hp 40.0 vs the punch's 10.0, in hand revolver
+n65verb launch: GREEN | room kb3 | launch36 1, flight end wall thrown 3.7 m (max 3.6 m), bursts 1 (hits 3, kills 3) | launched body husk #4 (the target: yes), landed (-5.6, 1.5, -212.8), in a pit no, in lava no, target dead (launch36) | pose the room's spawn (no line65)
+## seed 2
+n65verb launch: level n57-kiln (Design/levels/n57-kiln.json), room kb3 "3.3 THE PRESS HALL", seed 2; pose (-8.5, 0.0, -203.0) yaw 0.0 from the room's spawn (no line65); off switch none
+  target chosen: husk #2 hp 40.0 > the launch bound 30.0 (max(punch.damage 10.0 x momentum.meleeMax 3.0 = 30.0, the largest non-parry punch in this run 0.0)) (the nearest husk-shaped body the punch leaves alive, so launch36 can throw it), 9.5 m off
+  punch: dealt 16.0 vs hp 40.0: survived | target husk hp 40.0 | the punch not a parry | held 219 steps while it would be a parry (the target winding up), dashes re-made 39
+  burst at (-5.9, 1.4, -206.7) hits 1 kills 1 (a wall)
+  target husk #2 at (-6.2, 0.0, -208.0) (from (-8.5, 0.0, -203.0)), dash at step 445, punch at step 446 in state Dash (grace 18), 0.0 m off (reach 2.0), launch36 wants it yes, its hp 40.0 vs the punch's 10.0, in hand revolver, after 39 spent dash(es)
+n65verb launch: GREEN | room kb3 | launch36 1, flight end wall thrown 1.5 m (max 1.3 m), bursts 1 (hits 1, kills 1) | launched body husk #2 (the target: yes), landed (-5.9, 1.4, -206.7), in a pit no, in lava no, target dead (launch36) | pose the room's spawn (no line65)
+## seed 3
+n65verb launch: level n57-kiln (Design/levels/n57-kiln.json), room kb3 "3.3 THE PRESS HALL", seed 3; pose (-8.5, 0.0, -203.0) yaw 0.0 from the room's spawn (no line65); off switch none
+  target chosen: husk #1 hp 40.0 > the launch bound 30.0 (max(punch.damage 10.0 x momentum.meleeMax 3.0 = 30.0, the largest non-parry punch in this run 0.0)) (the nearest husk-shaped body the punch leaves alive, so launch36 can throw it), 8.3 m off
+  punch: no punch landed on the target | target husk hp 40.0 | the punch not a parry | held 129 steps while it would be a parry (another body in the punch's reach (husk #2) winding up), dashes re-made 1
+  burst at (-5.8, 1.0, -208.9) hits 2 kills 2
+  target husk #1 at (-6.0, -0.0, -208.5) (from (-8.5, 0.0, -203.0)), dash at step 181, punch at step 182 in state Dash (grace 18), 1.4 m off (reach 2.0), launch36 wants it yes, its hp 40.0 vs the punch's 10.0, in hand revolver, after 1 spent dash(es)
+n65verb launch: GREEN | room kb3 | launch36 1, flight end body thrown 0.1 m (max 0.0 m), bursts 1 (hits 2, kills 2) | launched body husk #2 (the target: no), landed (-5.5, 1.0, -209.3), in a pit no, in lava no, target dead (launch36) | pose the room's spawn (no line65)
+## seed 4
+n65verb launch: level n57-kiln (Design/levels/n57-kiln.json), room kb3 "3.3 THE PRESS HALL", seed 4; pose (-8.5, 0.0, -203.0) yaw 0.0 from the room's spawn (no line65); off switch none
+  target chosen: husk #1 hp 40.0 > the launch bound 30.0 (max(punch.damage 10.0 x momentum.meleeMax 3.0 = 30.0, the largest non-parry punch in this run 0.0)) (the nearest husk-shaped body the punch leaves alive, so launch36 can throw it), 8.9 m off
+  punch: no punch landed on the target | target husk hp 40.0 | the punch not a parry | held 118 steps while it would be a parry (the target winding up), dashes re-made 1
+  burst at (-5.6, 1.0, -209.4) hits 2 kills 2
+  target husk #1 at (-5.8, -0.0, -208.9) (from (-8.5, 0.0, -203.0)), dash at step 173, punch at step 174 in state Dash (grace 18), 1.3 m off (reach 2.0), launch36 wants it yes, its hp 40.0 vs the punch's 10.0, in hand revolver, after 1 spent dash(es)
+n65verb launch: GREEN | room kb3 | launch36 1, flight end body thrown 0.3 m (max 0.1 m), bursts 1 (hits 2, kills 2) | launched body husk #4 (the target: no), landed (-5.3, 1.1, -209.8), in a pit no, in lava no, target dead (launch36) | pose the room's spawn (no line65)
+## seed 5
+n65verb launch: level n57-kiln (Design/levels/n57-kiln.json), room kb3 "3.3 THE PRESS HALL", seed 5; pose (-8.5, 0.0, -203.0) yaw 0.0 from the room's spawn (no line65); off switch none
+  target chosen: husk #1 hp 40.0 > the launch bound 30.0 (max(punch.damage 10.0 x momentum.meleeMax 3.0 = 30.0, the largest non-parry punch in this run 0.0)) (the nearest husk-shaped body the punch leaves alive, so launch36 can throw it), 8.9 m off
+  punch: no punch landed on the target | target husk hp 40.0 | the punch a PARRY (no launch: the body was winding up or about to) | held 145 steps while it would be a parry (another body in the punch's reach (husk #5) winding up), dashes re-made 1
+  target husk #1 at (-5.3, 0.0, -208.9) (from (-8.5, 0.0, -203.0)), dash at step 200, punch at step 201 in state Dash (grace 18), 1.0 m off (reach 2.0), launch36 wants it yes, its hp 40.0 vs the punch's 10.0, in hand revolver, after 1 spent dash(es)
+n65verb launch: RED | room kb3 | launch36 0, flight end  thrown 0.0 m (max 1.5 m), bursts 0 (hits 0, kills 0) | launched body none, landed (-4.8, 0.0, -209.9) (the target: nothing launched), in a pit n/a (nothing launched), in lava n/a (nothing launched), target alive | pose the room's spawn (no line65) | the punch launched nothing far
+## seed 6
+n65verb launch: level n57-kiln (Design/levels/n57-kiln.json), room kb3 "3.3 THE PRESS HALL", seed 6; pose (-8.5, 0.0, -203.0) yaw 0.0 from the room's spawn (no line65); off switch none
+  target chosen: husk #2 hp 40.0 > the launch bound 30.0 (max(punch.damage 10.0 x momentum.meleeMax 3.0 = 30.0, the largest non-parry punch in this run 0.0)) (the nearest husk-shaped body the punch leaves alive, so launch36 can throw it), 9.4 m off
+  punch: dealt 16.0 vs hp 40.0: survived | target husk hp 40.0 | the punch not a parry | held 233 steps while it would be a parry (the target winding up), dashes re-made 36
+  burst at (-5.9, 1.4, -206.6) hits 1 kills 1 (a wall)
+  target husk #2 at (-6.1, 0.0, -208.3) (from (-8.5, 0.0, -203.0)), dash at step 445, punch at step 446 in state Dash (grace 18), 0.2 m off (reach 2.0), launch36 wants it yes, its hp 40.0 vs the punch's 10.0, in hand revolver, after 36 spent dash(es)
+n65verb launch: GREEN | room kb3 | launch36 1, flight end wall thrown 1.9 m (max 1.7 m), bursts 1 (hits 1, kills 1) | launched body husk #2 (the target: yes), landed (-5.9, 1.4, -206.6), in a pit no, in lava no, target dead (launch36) | pose the room's spawn (no line65)
+## seed 7
+n65verb launch: level n57-kiln (Design/levels/n57-kiln.json), room kb3 "3.3 THE PRESS HALL", seed 7; pose (-8.5, 0.0, -203.0) yaw 0.0 from the room's spawn (no line65); off switch none
+  target chosen: husk #2 hp 40.0 > the launch bound 30.0 (max(punch.damage 10.0 x momentum.meleeMax 3.0 = 30.0, the largest non-parry punch in this run 0.0)) (the nearest husk-shaped body the punch leaves alive, so launch36 can throw it), 8.7 m off
+  punch: dealt 16.0 vs hp 40.0: survived | target husk hp 40.0 | the punch not a parry | held 111 steps while it would be a parry (another body in the punch's reach (husk #3) winding up), dashes re-made 8
+  burst at (-5.8, 1.0, -208.9) hits 2 kills 2
+  target husk #2 at (-6.2, 0.0, -208.6) (from (-8.5, 0.0, -203.0)), dash at step 207, punch at step 208 in state Dash (grace 18), 0.5 m off (reach 2.0), launch36 wants it yes, its hp 40.0 vs the punch's 10.0, in hand revolver, after 8 spent dash(es)
+n65verb launch: GREEN | room kb3 | launch36 1, flight end body thrown 0.1 m (max 0.0 m), bursts 1 (hits 2, kills 2) | launched body husk #2 (the target: yes), landed (-6.2, 1.0, -208.6), in a pit no, in lava no, target dead (launch36) | pose the room's spawn (no line65)
+## seed 8
+n65verb launch: level n57-kiln (Design/levels/n57-kiln.json), room kb3 "3.3 THE PRESS HALL", seed 8; pose (-8.5, 0.0, -203.0) yaw 0.0 from the room's spawn (no line65); off switch none
+  target chosen: husk #1 hp 40.0 > the launch bound 30.0 (max(punch.damage 10.0 x momentum.meleeMax 3.0 = 30.0, the largest non-parry punch in this run 0.0)) (the nearest husk-shaped body the punch leaves alive, so launch36 can throw it), 8.4 m off
+  punch: no punch landed on the target | target husk hp 40.0 | the punch not a parry | held 129 steps while it would be a parry (another body in the punch's reach (husk #2) winding up), dashes re-made 1
+  burst at (-5.7, 1.0, -209.0) hits 2 kills 2
+  target husk #1 at (-5.8, -0.0, -208.5) (from (-8.5, 0.0, -203.0)), dash at step 181, punch at step 182 in state Dash (grace 18), 1.3 m off (reach 2.0), launch36 wants it yes, its hp 40.0 vs the punch's 10.0, in hand revolver, after 1 spent dash(es)
+n65verb launch: GREEN | room kb3 | launch36 1, flight end body thrown 0.1 m (max 0.0 m), bursts 1 (hits 2, kills 2) | launched body husk #2 (the target: no), landed (-5.5, 1.0, -209.4), in a pit no, in lava no, target dead (launch36) | pose the room's spawn (no line65)
+## seed 9
+n65verb launch: level n57-kiln (Design/levels/n57-kiln.json), room kb3 "3.3 THE PRESS HALL", seed 9; pose (-8.5, 0.0, -203.0) yaw 0.0 from the room's spawn (no line65); off switch none
+  target chosen: husk #2 hp 40.0 > the launch bound 30.0 (max(punch.damage 10.0 x momentum.meleeMax 3.0 = 30.0, the largest non-parry punch in this run 0.0)) (the nearest husk-shaped body the punch leaves alive, so launch36 can throw it), 9.5 m off
+  punch: dealt 16.0 vs hp 40.0: survived | target husk hp 40.0 | the punch not a parry | held 206 steps while it would be a parry (the target winding up), dashes re-made 42
+  target husk #2 at (-5.8, 0.0, -209.1) (from (-8.5, 0.0, -203.0)), dash at step 445, punch at step 446 in state Dash (grace 18), 0.2 m off (reach 2.0), launch36 wants it yes, its hp 40.0 vs the punch's 10.0, in hand revolver, after 42 spent dash(es)
+n65verb launch: GREEN | room kb3 | launch36 1, flight end timeout thrown 12.8 m (max 14.6 m), bursts 0 (hits 0, kills 0) | launched body husk #2 (the target: yes), landed (-6.4, 0.1, -217.2), in a pit no, in lava no, target alive | pose the room's spawn (no line65)
+## seed 10
+n65verb launch: level n57-kiln (Design/levels/n57-kiln.json), room kb3 "3.3 THE PRESS HALL", seed 10; pose (-8.5, 0.0, -203.0) yaw 0.0 from the room's spawn (no line65); off switch none
+  target chosen: husk #3 hp 40.0 > the launch bound 30.0 (max(punch.damage 10.0 x momentum.meleeMax 3.0 = 30.0, the largest non-parry punch in this run 0.0)) (the nearest husk-shaped body the punch leaves alive, so launch36 can throw it), 10.0 m off
+  punch: dealt 16.0 vs hp 40.0: survived | target husk hp 40.0 | the punch not a parry | held 215 steps while it would be a parry (the target winding up), dashes re-made 42
+  burst at (-6.5, 1.5, -206.1) hits 1 kills 1 (a wall)
+  target husk #3 at (-5.7, 0.0, -209.1) (from (-8.5, 0.0, -203.0)), dash at step 457, punch at step 458 in state Dash (grace 18), 0.2 m off (reach 2.0), launch36 wants it yes, its hp 40.0 vs the punch's 10.0, in hand revolver, after 42 spent dash(es)
+n65verb launch: GREEN | room kb3 | launch36 1, flight end wall thrown 3.2 m (max 3.1 m), bursts 1 (hits 1, kills 1) | launched body husk #3 (the target: yes), landed (-6.5, 1.5, -206.1), in a pit no, in lava no, target dead (launch36) | pose the room's spawn (no line65)
+## seed 11
+n65verb launch: level n57-kiln (Design/levels/n57-kiln.json), room kb3 "3.3 THE PRESS HALL", seed 11; pose (-8.5, 0.0, -203.0) yaw 0.0 from the room's spawn (no line65); off switch none
+  target chosen: husk #3 hp 40.0 > the launch bound 30.0 (max(punch.damage 10.0 x momentum.meleeMax 3.0 = 30.0, the largest non-parry punch in this run 0.0)) (the nearest husk-shaped body the punch leaves alive, so launch36 can throw it), 9.2 m off
+  punch: dealt 24.0 vs hp 40.0: survived | target husk hp 40.0 | the punch not a parry | held 0 steps while it would be a parry, dashes re-made 0
+  target husk #3 at (-5.9, 0.0, -209.0) (from (-8.5, 0.0, -203.0)), dash at step 37, punch at step 57 in state Dash (grace 18), 1.6 m off (reach 2.0), launch36 wants it yes, its hp 40.0 vs the punch's 10.0, in hand revolver
+n65verb launch: GREEN | room kb3 | launch36 1, flight end timeout thrown 12.8 m (max 12.9 m), bursts 0 (hits 0, kills 0) | launched body husk #3 (the target: yes), landed (-6.2, 0.0, -215.4), in a pit no, in lava no, target alive | pose the room's spawn (no line65)
+## seed 12
+n65verb launch: level n57-kiln (Design/levels/n57-kiln.json), room kb3 "3.3 THE PRESS HALL", seed 12; pose (-8.5, 0.0, -203.0) yaw 0.0 from the room's spawn (no line65); off switch none
+  target chosen: husk #3 hp 40.0 > the launch bound 30.0 (max(punch.damage 10.0 x momentum.meleeMax 3.0 = 30.0, the largest non-parry punch in this run 0.0)) (the nearest husk-shaped body the punch leaves alive, so launch36 can throw it), 10.1 m off
+  punch: dealt 16.0 vs hp 40.0: survived | target husk hp 40.0 | the punch not a parry | held 212 steps while it would be a parry (the target winding up), dashes re-made 43
+  burst at (-5.0, 1.5, -212.8) hits 1 kills 1 (a wall)
+  target husk #3 at (-5.6, 0.0, -209.4) (from (-8.5, 0.0, -203.0)), dash at step 457, punch at step 458 in state Dash (grace 18), 0.2 m off (reach 2.0), launch36 wants it yes, its hp 40.0 vs the punch's 10.0, in hand revolver, after 43 spent dash(es)
+n65verb launch: GREEN | room kb3 | launch36 1, flight end wall thrown 3.6 m (max 3.5 m), bursts 1 (hits 1, kills 1) | launched body husk #3 (the target: yes), landed (-5.0, 1.5, -212.8), in a pit no, in lava no, target dead (launch36) | pose the room's spawn (no line65)
+## seed 13
+n65verb launch: level n57-kiln (Design/levels/n57-kiln.json), room kb3 "3.3 THE PRESS HALL", seed 13; pose (-8.5, 0.0, -203.0) yaw 0.0 from the room's spawn (no line65); off switch none
+  target chosen: husk #3 hp 40.0 > the launch bound 30.0 (max(punch.damage 10.0 x momentum.meleeMax 3.0 = 30.0, the largest non-parry punch in this run 0.0)) (the nearest husk-shaped body the punch leaves alive, so launch36 can throw it), 8.9 m off
+  punch: dealt 23.3 vs hp 40.0: survived | target husk hp 40.0 | the punch not a parry | held 0 steps while it would be a parry, dashes re-made 0
+  target husk #3 at (-5.9, 0.0, -208.9) (from (-8.5, 0.0, -203.0)), dash at step 34, punch at step 54 in state Dash (grace 18), 1.6 m off (reach 2.0), launch36 wants it yes, its hp 40.0 vs the punch's 10.0, in hand revolver
+n65verb launch: GREEN | room kb3 | launch36 1, flight end timeout thrown 12.8 m (max 13.0 m), bursts 0 (hits 0, kills 0) | launched body husk #3 (the target: yes), landed (-3.4, -0.0, -214.1), in a pit no, in lava no, target alive | pose the room's spawn (no line65)
+## seed 14
+n65verb launch: level n57-kiln (Design/levels/n57-kiln.json), room kb3 "3.3 THE PRESS HALL", seed 14; pose (-8.5, 0.0, -203.0) yaw 0.0 from the room's spawn (no line65); off switch none
+  target chosen: husk #2 hp 40.0 > the launch bound 30.0 (max(punch.damage 10.0 x momentum.meleeMax 3.0 = 30.0, the largest non-parry punch in this run 0.0)) (the nearest husk-shaped body the punch leaves alive, so launch36 can throw it), 9.5 m off
+  punch: dealt 16.0 vs hp 40.0: survived | target husk hp 40.0 | the punch not a parry | held 206 steps while it would be a parry (the target winding up), dashes re-made 42
+  burst at (-6.5, 1.5, -206.5) hits 1 kills 1 (a wall)
+  target husk #2 at (-5.7, 0.0, -208.8) (from (-8.5, 0.0, -203.0)), dash at step 445, punch at step 446 in state Dash (grace 18), 0.2 m off (reach 2.0), launch36 wants it yes, its hp 40.0 vs the punch's 10.0, in hand revolver, after 42 spent dash(es)
+n65verb launch: GREEN | room kb3 | launch36 1, flight end wall thrown 2.5 m (max 2.4 m), bursts 1 (hits 1, kills 1) | launched body husk #2 (the target: yes), landed (-6.5, 1.5, -206.5), in a pit no, in lava no, target dead (launch36) | pose the room's spawn (no line65)
+## seed 15
+n65verb launch: level n57-kiln (Design/levels/n57-kiln.json), room kb3 "3.3 THE PRESS HALL", seed 15; pose (-8.5, 0.0, -203.0) yaw 0.0 from the room's spawn (no line65); off switch none
+  target chosen: husk #2 hp 40.0 > the launch bound 30.0 (max(punch.damage 10.0 x momentum.meleeMax 3.0 = 30.0, the largest non-parry punch in this run 0.0)) (the nearest husk-shaped body the punch leaves alive, so launch36 can throw it), 8.9 m off
+  punch: dealt 16.0 vs hp 40.0: survived | target husk hp 40.0 | the punch not a parry | held 187 steps while it would be a parry (another body in the punch's reach (husk #5) winding up), dashes re-made 7
+  burst at (-5.9, 1.0, -208.8) hits 2 kills 2
+  target husk #2 at (-6.4, 0.0, -208.6) (from (-8.5, 0.0, -203.0)), dash at step 283, punch at step 284 in state Dash (grace 18), 0.4 m off (reach 2.0), launch36 wants it yes, its hp 40.0 vs the punch's 10.0, in hand revolver, after 7 spent dash(es)
+n65verb launch: GREEN | room kb3 | launch36 1, flight end body thrown 0.1 m (max 0.0 m), bursts 1 (hits 2, kills 2) | launched body husk #2 (the target: yes), landed (-6.4, 1.0, -208.6), in a pit no, in lava no, target dead (launch36) | pose the room's spawn (no line65)
+## seed 16
+n65verb launch: level n57-kiln (Design/levels/n57-kiln.json), room kb3 "3.3 THE PRESS HALL", seed 16; pose (-8.5, 0.0, -203.0) yaw 0.0 from the room's spawn (no line65); off switch none
+  target chosen: husk #2 hp 40.0 > the launch bound 30.0 (max(punch.damage 10.0 x momentum.meleeMax 3.0 = 30.0, the largest non-parry punch in this run 0.0)) (the nearest husk-shaped body the punch leaves alive, so launch36 can throw it), 9.5 m off
+  punch: dealt 16.0 vs hp 40.0: survived | target husk hp 40.0 | the punch not a parry | held 206 steps while it would be a parry (the target winding up), dashes re-made 42
+  target husk #2 at (-5.8, 0.0, -209.1) (from (-8.5, 0.0, -203.0)), dash at step 445, punch at step 446 in state Dash (grace 18), 0.2 m off (reach 2.0), launch36 wants it yes, its hp 40.0 vs the punch's 10.0, in hand revolver, after 42 spent dash(es)
+n65verb launch: GREEN | room kb3 | launch36 1, flight end timeout thrown 12.8 m (max 15.0 m), bursts 0 (hits 0, kills 0) | launched body husk #2 (the target: yes), landed (-5.6, -0.0, -217.9), in a pit no, in lava no, target alive | pose the room's spawn (no line65)
+## seed 17
+n65verb launch: level n57-kiln (Design/levels/n57-kiln.json), room kb3 "3.3 THE PRESS HALL", seed 17; pose (-8.5, 0.0, -203.0) yaw 0.0 from the room's spawn (no line65); off switch none
+  target chosen: husk #1 hp 40.0 > the launch bound 30.0 (max(punch.damage 10.0 x momentum.meleeMax 3.0 = 30.0, the largest non-parry punch in this run 0.0)) (the nearest husk-shaped body the punch leaves alive, so launch36 can throw it), 7.6 m off
+  punch: dealt 16.0 vs hp 40.0: survived | target husk hp 40.0 | the punch not a parry | held 124 steps while it would be a parry (the target winding up), dashes re-made 1
+  burst at (-6.6, 1.3, -207.5) hits 1 kills 1 (a wall)
+  target husk #1 at (-6.6, 0.0, -208.0) (from (-8.5, 0.0, -203.0)), dash at step 169, punch at step 170 in state Dash (grace 18), 1.4 m off (reach 2.0), launch36 wants it yes, its hp 40.0 vs the punch's 10.0, in hand revolver, after 1 spent dash(es)
+n65verb launch: GREEN | room kb3 | launch36 1, flight end wall thrown 0.6 m (max 0.5 m), bursts 1 (hits 1, kills 1) | launched body husk #1 (the target: yes), landed (-6.6, 1.3, -207.5), in a pit no, in lava no, target dead (launch36) | pose the room's spawn (no line65)
+## seed 18
+n65verb launch: level n57-kiln (Design/levels/n57-kiln.json), room kb3 "3.3 THE PRESS HALL", seed 18; pose (-8.5, 0.0, -203.0) yaw 0.0 from the room's spawn (no line65); off switch none
+  target chosen: husk #2 hp 40.0 > the launch bound 30.0 (max(punch.damage 10.0 x momentum.meleeMax 3.0 = 30.0, the largest non-parry punch in this run 0.0)) (the nearest husk-shaped body the punch leaves alive, so launch36 can throw it), 8.2 m off
+  punch: dealt 16.0 vs hp 40.0: survived | target husk hp 40.0 | the punch not a parry | held 120 steps while it would be a parry (another body in the punch's reach (husk #3) winding up), dashes re-made 6
+  burst at (-6.0, 1.0, -208.7) hits 2 kills 2
+  target husk #2 at (-6.4, 0.0, -208.4) (from (-8.5, 0.0, -203.0)), dash at step 207, punch at step 208 in state Dash (grace 18), 0.4 m off (reach 2.0), launch36 wants it yes, its hp 40.0 vs the punch's 10.0, in hand revolver, after 6 spent dash(es)
+n65verb launch: GREEN | room kb3 | launch36 1, flight end body thrown 0.1 m (max 0.0 m), bursts 1 (hits 2, kills 2) | launched body husk #2 (the target: yes), landed (-6.4, 1.0, -208.4), in a pit no, in lava no, target dead (launch36) | pose the room's spawn (no line65)
+## seed 19
+n65verb launch: level n57-kiln (Design/levels/n57-kiln.json), room kb3 "3.3 THE PRESS HALL", seed 19; pose (-8.5, 0.0, -203.0) yaw 0.0 from the room's spawn (no line65); off switch none
+  target chosen: husk #3 hp 40.0 > the launch bound 30.0 (max(punch.damage 10.0 x momentum.meleeMax 3.0 = 30.0, the largest non-parry punch in this run 0.0)) (the nearest husk-shaped body the punch leaves alive, so launch36 can throw it), 9.5 m off
+  punch: dealt 16.0 vs hp 40.0: survived | target husk hp 40.0 | the punch not a parry | held 221 steps while it would be a parry (the target winding up), dashes re-made 42
+  burst at (-5.9, 1.3, -208.0) hits 1 kills 1 (a wall)
+  target husk #3 at (-6.0, 0.0, -208.8) (from (-8.5, 0.0, -203.0)), dash at step 457, punch at step 458 in state Dash (grace 18), 0.2 m off (reach 2.0), launch36 wants it yes, its hp 40.0 vs the punch's 10.0, in hand revolver, after 42 spent dash(es)
+n65verb launch: GREEN | room kb3 | launch36 1, flight end wall thrown 0.9 m (max 0.8 m), bursts 1 (hits 1, kills 1) | launched body husk #3 (the target: yes), landed (-5.9, 1.3, -208.0), in a pit no, in lava no, target dead (launch36) | pose the room's spawn (no line65)
+## seed 20
+n65verb launch: level n57-kiln (Design/levels/n57-kiln.json), room kb3 "3.3 THE PRESS HALL", seed 20; pose (-8.5, 0.0, -203.0) yaw 0.0 from the room's spawn (no line65); off switch none
+  target chosen: husk #1 hp 40.0 > the launch bound 30.0 (max(punch.damage 10.0 x momentum.meleeMax 3.0 = 30.0, the largest non-parry punch in this run 0.0)) (the nearest husk-shaped body the punch leaves alive, so launch36 can throw it), 8.1 m off
+  punch: no punch landed on the target | target husk hp 40.0 | the punch a PARRY (no launch: the body was winding up or about to) | held 150 steps while it would be a parry (another body in the punch's reach (husk #3) winding up), dashes re-made 1
+  target husk #1 at (-6.1, -0.0, -208.9) (from (-8.5, 0.0, -203.0)), dash at step 199, punch at step 200 in state Dash (grace 18), 1.0 m off (reach 2.0), launch36 wants it yes, its hp 40.0 vs the punch's 10.0, in hand revolver, after 1 spent dash(es)
+n65verb launch: RED | room kb3 | launch36 0, flight end  thrown 0.0 m (max 1.0 m), bursts 0 (hits 0, kills 0) | launched body none, landed (-6.5, -0.0, -207.9) (the target: nothing launched), in a pit n/a (nothing launched), in lava n/a (nothing launched), target alive | pose the room's spawn (no line65) | the punch launched nothing far
+n70-throws: 20 probes | GREEN 18 | thrown median 1.2 m (min 0, max 12.8) | ends wall 8, body 6, - 2, timeout 4 | in a pit 0, in lava 0, bursts killing >= 2: 7 | M3 candidates (D-3) 7 / 20

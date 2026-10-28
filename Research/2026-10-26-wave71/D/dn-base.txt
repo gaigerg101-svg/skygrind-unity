@@ -1,0 +1,9 @@
+cmd: bash Tools/night/dn-check-wt.sh <scratch>/dn
+sha: 106dd56e7821855da5e032f72727ca717374a217
+start: 11:08:28
+== Skygrind.Game.csproj: 0 error(s)
+== Skygrind.Game.Tests.csproj: 0 error(s)
+== Skygrind.Core.Tests.csproj: 0 error(s)
+== Assembly-CSharp-Editor.csproj: 0 error(s)
+dn-check total errors: 0
+end: 11:10:01

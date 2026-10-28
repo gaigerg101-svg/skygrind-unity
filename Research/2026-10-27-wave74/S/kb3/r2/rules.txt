@@ -1,0 +1,17 @@
+# command: python -I Tools/night/n74-room-rules.py room Design/levels/n67/kiln/rooms/kb3.json
+# sha: b879f5ddc; time: 2026-10-28 01:47:43
+kiln/kb3  rect [-10.0, -225.5, 10.0, -197.5]  spawn [-8.5, 0.0, -203.0] yaw 0  floor 0.0
+  PLANES  PASS  planes 2 (0.0 m: 460 cells, 4.5 m: 49 cells)
+  COVER   PASS  cover: free-standing high 4, low 0, between 0 (0 without a job), none 0
+  LOOPS   PASS  loops 7 (floor holes 5 + closed pad / ride routes 2 of 2)
+  REAR    PASS  rear arc: 0 of 3 wave-1 usable nodes behind the entry facing (all waves: 0 node uses behind)
+  VIEW    PASS  view: enemy in view at 0.00 s (3 of 3 wave-1 nodes seen at entry)
+  CROSS   PASS  cross: chord 34.4 m, dash 1.43 s, walk 4.3 s (bar 2.0 s at dash)
+  EXPOSE  RED  exposure: 68 % of 1711 floor-sample pairs see each other (bar 60 %); longest clear line 30.9 m (medium band 19.5 m)
+  CLIMB   PASS  climb: 1 tier group(s), 0 not reached by walker links
+    free-standing high piece: hull [3.5, 0.0, -204.5]-[5.0, 14.0, -202.5] h 14.00 job "hero prop: THE FOOTHOLD PRESS (the entry's foothol"
+    free-standing high piece: hull [5.5, 0.0, -211.0]-[7.5, 14.0, -209.0] h 14.00 job "spatial law: THE PRESS LINE, east press (the sight"
+    free-standing high piece: hull [2.0, 0.0, -215.0]-[6.5, 14.0, -213.0] h 14.00 job "30 s problem: THE EAST BAFFLE (the corner every bo"
+    free-standing high piece: hull [-7.5, 0.0, -214.0]-[-5.5, 14.0, -212.0] h 14.00 job "30 s problem: THE WEST PRESS (2 x 2 m, floor to ro"
+    walkers reach every tier: climb: 1 tier group(s), 0 not reached by walker links
+  core 5/5 PASS, extra 2/3 PASS

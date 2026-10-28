@@ -1,0 +1,24 @@
+# command: bash Tools/night/n65-verbs.sh pierce Design/levels/n52-foundry.json
+# sha: 1f00d1d4 (branch n65-T; clean tracked tree)
+# time: 2026-10-23 15:15:00 -> 2026-10-23 15:15:29 (local)
+# exit: 0
+
+n65verb pierce: level n52-foundry (Design/levels/n52-foundry.json), room a2 "1.2 KESTREL", seed 1; pose (0.0, 0.0, -37.0) yaw 0.0 from the room's spawn (no line65); off switch none
+  aim the nearest body, tracked (husk, a stand-in #1 at (0.0, 0.1, -44.0)): yaw -0.0 deg, pitch -4.5 deg at the release; held 110 steps (0.9 s), charge35Full 1, charged shots 1; bodies in the room before 3 (stand-ins 3)
+n65verb pierce: GREEN | room a2 | the charged shot hit 3 bodies, kills 3, stand-ins killed 3/3 | aim the nearest body, tracked (husk, a stand-in #1 at (0.0, 0.1, -44.0)) | pose the room's spawn (no line65)
+n65verb pierce: level n52-foundry (Design/levels/n52-foundry.json), room a3 "1.3 RIDE", seed 1; pose (0.0, 0.0, -68.0) yaw 0.0 from the room's spawn (no line65); off switch none
+  aim the nearest body, tracked (husk #2 at (3.0, -0.0, -65.3)): yaw -136.3 deg, pitch -30.2 deg at the release; held 110 steps (0.9 s), charge35Full 1, charged shots 1; bodies in the room before 4 (stand-ins 0)
+n65verb pierce: RED | room a3 | the charged shot hit 1 bodies, kills 1, stand-ins killed 0/0 | aim the nearest body, tracked (husk #2 at (3.0, -0.0, -65.3)) | pose the room's spawn (no line65) | one body or none: no pierce
+n65verb pierce: level n52-foundry (Design/levels/n52-foundry.json), room a4 "1.4 PARRY", seed 1; pose (0.0, 0.0, -91.0) yaw 0.0 from the room's spawn (no line65); off switch none
+  aim the nearest body, tracked (spitter #1 at (-2.5, 1.3, -101.4)): yaw 13.9 deg, pitch 1.6 deg at the release; held 110 steps (0.9 s), charge35Full 1, charged shots 1; bodies in the room before 1 (stand-ins 0)
+n65verb pierce: RED | room a4 | the charged shot hit 1 bodies, kills 1, stand-ins killed 0/0 | aim the nearest body, tracked (spitter #1 at (-2.5, 1.3, -101.4)) | pose the room's spawn (no line65) | one body or none: no pierce
+n65verb pierce: level n52-foundry (Design/levels/n52-foundry.json), room a5 "1.5 CRUCIBLE", seed 1; pose (0.0, 0.0, -117.0) yaw 0.0 from the room's spawn (no line65); off switch none
+  aim the nearest body, tracked (husk #2 at (-0.5, 0.0, -125.3)): yaw -10.4 deg, pitch -11.2 deg at the release; held 110 steps (0.9 s), charge35Full 1, charged shots 1; bodies in the room before 5 (stand-ins 0)
+n65verb pierce: GREEN | room a5 | the charged shot hit 2 bodies, kills 2, stand-ins killed 0/0 | aim the nearest body, tracked (husk #2 at (-0.5, 0.0, -125.3)) | pose the room's spawn (no line65)
+n65verb pierce: level n52-foundry (Design/levels/n52-foundry.json), room b1 "1.6 THE YARD", seed 1; pose (0.0, 0.0, -153.5) yaw 0.0 from the room's spawn (no line65); off switch none
+  aim the nearest body, tracked (husk #1 at (-5.6, -0.0, -157.3)): yaw 35.6 deg, pitch -14.6 deg at the release; held 110 steps (0.9 s), charge35Full 1, charged shots 1; bodies in the room before 3 (stand-ins 0)
+n65verb pierce: RED | room b1 | the charged shot hit 1 bodies, kills 1, stand-ins killed 0/0 | aim the nearest body, tracked (husk #1 at (-5.6, -0.0, -157.3)) | pose the room's spawn (no line65) | one body or none: no pierce
+n65verb pierce: level n52-foundry (Design/levels/n52-foundry.json), room a8 "1.10 PIERCE", seed 1; pose (0.0, 0.0, -343.5) yaw 0.0 from the room's spawn (no line65); off switch none
+  aim the nearest body, tracked (husk #2 at (2.5, 1.0, -358.1)): yaw -15.5 deg, pitch -4.2 deg at the release; held 110 steps (0.9 s), charge35Full 1, charged shots 1; bodies in the room before 3 (stand-ins 0)
+n65verb pierce: GREEN | room a8 | the charged shot hit 2 bodies, kills 2, stand-ins killed 0/0 | aim the nearest body, tracked (husk #2 at (2.5, 1.0, -358.1)) | pose the room's spawn (no line65)
+n65-verbs pierce on Design/levels/n52-foundry.json (a2,a3,a4,a5,b1,a8): GREEN 3, RED 3

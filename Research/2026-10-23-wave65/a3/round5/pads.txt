@@ -1,0 +1,4 @@
+# command: dotnet Temp/SimHarness/bin/Release/net10.0/SimHarness.dll hold52 --level n65-foundry --room a3 --pads
+# sha: fbfc7b33; time: 2026-10-23 18:34:42
+hold52: level n65-foundry (C:\Users\gaige\dev\SKYGRIND-unity\.claude\worktrees\agent-aeb9fc116ba05ef4d\Design\levels\n65-foundry.json), room a3 "1.3 RIDE" rect [-10,-85,10,-59], off switch none
+pad52 a3 pad 0 at [9,2.5,-84] target [-0.5,0,-61.5] launched yes apex 7 landed [-0.55,0,-61.38] miss 0.13 m PASS

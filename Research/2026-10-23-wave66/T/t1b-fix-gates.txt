@@ -1,0 +1,18 @@
+# command: bash Tools/night/n66-gates.sh --no-editor
+# sha: fe586cd3 (tree 2 dirty paths), 2026-10-24 01:44:54 USMST, /c/Users/gaige/dev/SKYGRIND-unity/.claude/worktrees/agent-af48e888c59fa3626
+
+gate config: the two copies identical
+gate golden: golden total: 39 vector sets (48094 records), 22 replays (22 exact); 0 failing, 0 mismatches
+gate fingerprint : fingerprint seed 1: 12 hashes in 1.78 s: EQUAL to the baseline; run Fight round 3, kills 35, shots 80, earned 4808, alive 1, owned 2, flow Playing
+gate fingerprint --off57: fingerprint seed 1: 12 hashes in 0.77 s: EQUAL to the baseline; run Fight round 3, kills 35, shots 80, earned 4808, alive 1, owned 2, flow Playing
+gate fingerprint --off58: fingerprint seed 1: 12 hashes in 0.75 s: EQUAL to the baseline; run Fight round 3, kills 35, shots 80, earned 4808, alive 1, owned 2, flow Playing
+gate fingerprint --off59: fingerprint seed 1: 12 hashes in 0.76 s: EQUAL to the baseline; run Fight round 3, kills 35, shots 80, earned 4808, alive 1, owned 2, flow Playing
+gate fingerprint --off60: fingerprint seed 1: 12 hashes in 0.75 s: EQUAL to the baseline; run Fight round 3, kills 35, shots 80, earned 4808, alive 1, owned 2, flow Playing
+gate fingerprint --off61: fingerprint seed 1: 12 hashes in 0.75 s: EQUAL to the baseline; run Fight round 3, kills 35, shots 80, earned 4808, alive 1, owned 2, flow Playing
+gate fingerprint --off62: fingerprint seed 1: 12 hashes in 0.77 s: EQUAL to the baseline; run Fight round 3, kills 35, shots 80, earned 4808, alive 1, owned 2, flow Playing
+gate fingerprint --off63: fingerprint seed 1: 12 hashes in 0.76 s: EQUAL to the baseline; run Fight round 3, kills 35, shots 80, earned 4808, alive 1, owned 2, flow Playing
+gate fingerprint --off64: fingerprint seed 1: 12 hashes in 0.79 s: EQUAL to the baseline; run Fight round 3, kills 35, shots 80, earned 4808, alive 1, owned 2, flow Playing
+gate fingerprint --off65: fingerprint seed 1: 12 hashes in 0.75 s: EQUAL to the baseline; run Fight round 3, kills 35, shots 80, earned 4808, alive 1, owned 2, flow Playing
+gate fingerprint --off66: fingerprint seed 1: 12 hashes in 0.76 s: EQUAL to the baseline; run Fight round 3, kills 35, shots 80, earned 4808, alive 1, owned 2, flow Playing
+gates: all GREEN 01:46:12
+# exit 0, 01:46:12

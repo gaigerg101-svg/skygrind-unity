@@ -1,0 +1,128 @@
+{
+  "_why": "NIGHT65 builder R round 1 (card Research/2026-10-23-wave65/cards/a3.md, fixed d8972994): a3 rebuilt from scratch as THE RUNNER: the held wall ride, flat at 2.5 m from the top of THE RUN-UP RAMP to THE LANDING, 16.3 m over a swarm floor (no lava, no pad up, no ranged enemy). Wave 1's swarmers rise behind THE MOULD WALL and rush the floor; wave 2's husks hold THE LANDING. Every piece has a job and a why.",
+  "room": "a3",
+  "row": {
+    "id": "a3",
+    "name": "1.3 RIDE",
+    "kind": "room",
+    "rect": [-10, -85, 10, -59],
+    "height": 15,
+    "roof": false,
+    "height_why": "NIGHT74 R: roofless as n52's a3 is (GG 2026-10-26 'the mini roof ... remove it', commit 0e3f95ea5) and its ring 15 m (NIGHT72 N2's reach audit: no ESCAPE left at 15, 10 m let a rider out over the rim); the rebuilt file had roof true, height 10: regenerating it would have put the roof slab back",
+    "lights_why": "NIGHT74 R: a roofless a3 keeps no ceiling light and nothing hangs from a roof that is not there (the lead's N0c / N0d call, GG 2026-10-11 'lights placed and floating'): this room's three ceiling lights are wall lights now (a3-WL1, a3-WL2, a3-WL3), the two crane trusses and the hook's chain and lamp are gone",
+    "par": 22,
+    "job36": "practise",
+    "verb36": "the ride (hold jump on a wall): THE RUNNER from the top of THE RUN-UP RAMP to THE LANDING, flat at 2.5 m over the swarm floor; RIDE KILL on the wall; the zoom and the slow on the wall (NIGHT65 R)",
+    "spawn": { "at": [2.5, 1.45, -61.8], "yawDeg": -30 },
+    "spawn66_why": "NIGHT66 R round 3: the spawn 1.4 m back down THE RUN-UP RAMP (z -61.8, the ramp's 1.45 m), just short of the ride's start (a ride starts beside THE RUNNER only past z -62): the first ride is a step toward THE PICKET, which is in sight from here, and a return home no longer starts another ride (skip v2 fix 2 at round 2: 9 rides a seed cleared in 33-41 s, 3-6 rides in 14-28 s). NIGHT66 R round 2 (the lead's round-1 finding: the verb-aware pilot waited out the 8 s hold and the 8 s lesson cap, so the lever must reward the verb's FIRST use on the entry line): the room's spawn and retry point is THE RUN-UP RAMP's top, 1.5 m from THE RUNNER's west face, facing north along it: you start (and retry) on the ride's start, with THE PICKET dead ahead on THE LANDING; the first move is the ride and its shot, which frees wave 1 and does the lesson. A walker comes off the ramp to the floor and waits out both holds",
+    "exit": [0, 0, -84],
+    "arena36": true,
+    "waves": [["swarmer", "swarmer", "swarmer", "swarmer"], ["husk", "husk", "husk", "swarmer", "swarmer"]],
+    "lessons_why": "NIGHT66 R round 3 (the r1 level-design review's BLOCKING: a lesson that only a wall shot finishes forces the ride, GG's open call DECIDE65 D-5): the ride's lesson is THE LANDING reached (minY 2.0: the ride's end, or the stair the long way, or a dash-jump), not a wall shot; the ride is the fast line, not the only way to finish it. A first `shots` lesson (one shot) keeps THE PICKET standing under rooms43 (stand-ins stand only where a shots / targetsHit / wallRiddenAndFired lesson is: Campaign24.cs:986-991); the picket still dies only to a shot from the wall (Combat.cs:1464) and holds wave 1 for at most 8 s, a cost, never a lock. Round 1-2's lesson was wallRiddenAndFired n 1",
+    "lessons": [
+      { "promptPad": "", "kind": "shots", "n": 1, "prompt": "" },
+      { "promptPad": "HOLD {jump} ON A WALL: RIDE", "kind": "reached", "rect": [2.5, -85, 10, -80], "minY": 2.0, "prompt": "HOLD {jump} ON A WALL: RIDE" }
+    ],
+    "lessons31": [
+      { "promptPad": "", "kind": "shots", "n": 1, "prompt": "" },
+      { "promptPad": "HOLD {jump} ON A WALL: RIDE", "kind": "reached", "rect": [2.5, -85, 10, -80], "minY": 2.0, "prompt": "HOLD {jump} ON A WALL: RIDE" }
+    ],
+    "standIns": [
+      { "at": [3.4, 2.5, -80.9], "mode": "static" }
+    ],
+    "standIns36": [
+      { "at": [3.4, 2.5, -80.9], "job": "marker", "why": "THE PICKET (NIGHT66 R round 1, plan a3, the verb-plan critic's CHANGE: one picket, at the wall's end, so 2 taps (40 hp, 25 a tap) fit in one ride): one stand-in on THE LANDING on the ride's own line (x about 3.4), 0.9 m past THE RUNNER's end, dead ahead of a northbound rider for the ride's whole 16 m: a stand-in dies only to a shot fired from a wall ride (Combat.cs:1464; no standIns31 here, so a charged shot from the floor does not); while it stands it holds wave 1 (the swarm) for up to 8 s (teach46 standInHoldS). The tell: the room's lesson line on entry, HOLD {jump}: RIDE AND SHOOT" }
+    ],
+    "proofs": [
+      { "kind": "walk", "points": [[0, 0, -60], [-0.5, 0, -66], [-1.5, 0, -72.5], [-3.5, 0, -76], [-2, 0, -80], [0, 0, -84]] },
+      { "kind": "walk", "points": [[0, 0, -60], [2.5, 0, -59.6], [2.5, 2.3, -63.4]] },
+      { "kind": "walk", "points": [[0, 0, -60], [2.5, 0.4, -59.9], [4.3, 0, -60], [7.3, 0, -66], [7.3, 0, -71.5], [7.3, 2.5, -79.6], [5, 2.5, -82.5]] },
+      { "kind": "walk", "points": [[5.5, 2.5, -82.5], [5, 2.5, -84.5], [3.2, 2.5, -84.5], [1.5, 0, -84.5], [0, 0, -84]] },
+      { "kind": "ride", "from": [3.3, 2.2, -63.0], "runUp": 0.05, "lean": -0.25, "hazardZ": [-80, -64], "toZ": -80.6, "toY": 2.5, "why": "NIGHT66 R round 1: the lesson wallRiddenAndFired needs a ride proof (LevelValidate24.cs:513-515): the real Mover from THE RUN-UP RAMP's top, a jump leaning east into THE RUNNER's west face, held to THE LANDING (toY 2.5) with at most 0.1 s on the swarm floor (LevelValidate29.cs:279-304)" }
+    ],
+    "frames36": { "mid": [2.5, 2.3, -63.4, 0, 0], "exit": [7, 2.5, -83, 164, -0.25] },
+    "frames52": {
+      "_why": "NIGHT65 R: a157's poses for THE RUNNER (feet x, y, z, yaw deg, pitch rad): entry = just inside d2, the ramp and the runner's cyan strip right, the swarm floor and the mould wall ahead-left; mid = the ramp's top, along the runner; high = on THE LANDING back over the floor to the door",
+      "entry": [0, 0, -60, -10, 0.05],
+      "mid": [2.5, 2.3, -63.4, 0, 0],
+      "high": [7, 2.5, -83, 164, -0.25]
+    },
+    "frames65": {
+      "entry": [0, 0, -60, -10, 0.05],
+      "mid": [2.5, 2.3, -63.4, 0, 0],
+      "verb": [3.35, 2.7, -72, 0, -0.15],
+      "high": [7, 2.5, -83, 164, -0.25]
+    },
+    "line65": [[0, 0, -60], [2.5, 0.3, -59.8], [2.5, 2.0, -62.8], [3.35, 2.7, -64.5], [3.35, 2.7, -69], [3.35, 2.7, -74], [3.35, 2.8, -79], [5, 2.5, -82]],
+    "nodes": [[-5.6, 0, -70.5], [-4.8, 0, -71], [-4.2, 0, -71], [-3.6, 0, -71.2], [-1, 0, -83.5], [-3, 0, -84], [-6, 0, -80.5], [-4.5, 0, -78], [-1.5, 0, -79.5]],
+    "highNodes": [[5.8, 2.5, -80.7], [5, 2.5, -81.6], [3.2, 2.5, -84.3]],
+    "waveNodes43": [
+      [[-5.6, 0, -70.5], [-4.8, 0, -71], [-4.2, 0, -71], [-3.6, 0, -71.2]],
+      [[-1, 0, -83.5], [-3, 0, -84], [-6, 0, -80.5], [-4.5, 0, -78], [-1.5, 0, -79.5]]
+    ],
+    "waveNodes66_why": "NIGHT66 R round 2: wave 2's five bodies spawn on the swarm floor's north end and the exit apron (16-21 m from THE RUN-UP RAMP's top, the spawn), not on THE LANDING: with the room starting on the ride, a wave on the landing walked the long way round (the stair, the floor, the ramp) while the verb-aware pilot looped home and rode again (skip v2 r2a: 5-16 rides a seed, the clear rising with the rides: 13.2 s on 2 rides, 48-59 s on 7-16)",
+    "waveNodes43_why": "NIGHT65 R (card a3, the card gate's IN VIEW fix): wave 1's four swarmers rise behind THE MOULD WALL (1.8 m), 14.1-14.8 m from the door's centre (0, -57), 12.2-12.9 m from the commit feet (0, -59), hidden from the door corridor, and pour round its ends at you (ambushed); wave 2 (overlap46; round 2, DECIDE65 D-5: placed for the rider): three husks on THE LANDING's south edge straight ahead of the runner's end, so a rider meets them from the wall (RIDE KILL; a punch from the ride launches one into the others), and two swarmers on the exit apron, where a dash-jump from the ramp's top comes down: the skilled skip lands among them, the ride arrives above them",
+    "bot43": false,
+    "verb65": "ride",
+    "card65": "Research/2026-10-23-wave65/cards/a3.md"
+  },
+  "boxes": [
+    { "zone": "a3", "kind": "wall", "min": [4, 0, -80], "max": [4.6, 6, -61], "job": "ride", "ride": true, "ride36": { "face": "W", "planeX": 4, "lz": [2, 21] }, "why": "THE RUNNER (NIGHT65 R; the room's one verb): a 19 m ride wall, 6 m tall; ride its west face from the top of THE RUN-UP RAMP (z -63.7, 2.5 m) to THE LANDING (z -80, 2.5 m): 16.3 m held flat over the swarm floor (ride40 holds the attach height); the gap is past a run + jump + double jump + dash at one height; it splits the room into the swarm floor and the east lane" },
+    { "zone": "a3", "kind": "deck", "min": [2.5, 0, -85], "max": [10, 2.5, -80], "job": "line", "why": "THE LANDING (deck 2.5 m, NIGHT65 R): where the ride ends (its south edge is the runner's north end): wave 2's husks, the drop to the exit apron; a dash-jump from the ramp's top comes down here, under THE HOOK SHELF" },
+    { "zone": "a3", "kind": "hull", "min": [2.5, 2.5, -84], "max": [2.9, 3.7, -81.6], "job": "cover", "why": "THE LADLE RAIL (hull 1.2 m on THE LANDING's west edge, z -84..-81.6, NIGHT65 R round 3, the lead's 'cover that faces the floor but not the rider'; its south end held back to z -81.6 for THE RIDE'S END strip): wave 2's husks on the landing are screened from the swarm floor and cannot drop off its west edge (the stair is their way down, the long way); a rider at 2.5-3 m comes in over it at the runner's end (the rail starts 0.6 m north of it). A 1 m gap at its north end (z -85..-84) is the drop to the exit apron. It replaces THE HOOK SHELF (round 2): air.txt (Logs/n65/r2) read the shelf reached from the deck, not the ride, and its pickup moved onto the ride's own line (gg-proxy r2)" },
+    { "zone": "a3", "kind": "hull", "min": [-10, 0, -70], "max": [-2.5, 1.8, -69], "job": "cover", "why": "THE MOULD WALL (hull 1.8 m, NIGHT65 R; the card gate's fix; round 2: run out to the west wall): wave 1's den screen: the swarmers rise behind it hidden from the door corridor and pour round its one open (east) end at you, toward the runner's line (IN VIEW ambushed); a line-of-sight break (rule 8); it also cuts the west wall's 14 m clear run, so the ride pilot's search finds THE RUNNER, the room's own ride wall (r1 rode the west perimeter wall)" },
+    { "zone": "a3", "kind": "hull", "min": [-2, 0, -76.5], "max": [1, 1.2, -75.5], "job": "cover", "why": "INGOT B (low cover 1.2 m, NIGHT65 R): the floor fighter's cover from the landing's husks; the swarm floor's second turn" },
+    { "zone": "a3", "kind": "hull", "min": [1.4, 0, -67], "max": [4, 1.2, -63.7], "job": "ride", "why": "THE SLAG CRUST (hull 1.2 m, NIGHT66 R round 4): the slag's cooled south end, flush with THE RUN-UP RAMP's top and THE RUNNER's west face: a walker who steps off the ramp's top lands on rock, not in THE SLAG RUN (r4a without it: n46flow deaths 4 / 8, the walk pilot falling off its spawn on the ramp's top into the slag); a ride from it starts at 2.2 m or more and is held over the slag to THE LANDING" },
+    { "zone": "a3", "kind": "hull", "min": [-6.5, 0, -63], "max": [-5, 1.2, -61.5], "job": "cover", "why": "THE SLAG PIG, door west (hull 1.2 m, NIGHT74 R): cover for the floor fighter against the swarm and a stepping stone on the air route (n65-air counts a hull top of 1 m or more as an air piece: the room read 6 pieces and 19 hand-offs against the old a3's 14 and 101)" },
+    { "zone": "a3", "kind": "hull", "min": [-10, 0, -66], "max": [-8.2, 1.2, -64.2], "job": "cover", "why": "THE SLAG PIG, west south (hull 1.2 m, NIGHT74 R): cover for the floor fighter against the swarm and a stepping stone on the air route; against the west wall it also ends the wall's long clear run (the Player's verbs37 pick takes the longest)" },
+    { "zone": "a3", "kind": "hull", "min": [-10, 0, -76], "max": [-8.5, 1.2, -74.5], "job": "cover", "why": "THE SLAG PIG, west mid (hull 1.2 m, NIGHT74 R): cover for the floor fighter against the swarm and a stepping stone on the air route" },
+    { "zone": "a3", "kind": "hull", "min": [-10, 0, -82], "max": [-8.2, 1.2, -80.3], "job": "cover", "why": "THE SLAG PIG, west north (hull 1.2 m, NIGHT74 R): cover for the floor fighter against the swarm and a stepping stone on the air route, by the exit apron" },
+    { "zone": "a3", "kind": "hull", "min": [-7, 0, -76], "max": [-5, 1.2, -74.6], "job": "cover", "why": "THE SLAG PIG, floor (hull 1.2 m, NIGHT74 R): cover for the floor fighter against the swarm on the walk bot's line and a stepping stone on the air route" },
+    { "zone": "a3", "kind": "hull", "min": [8.2, 0, -68], "max": [10, 1.2, -66], "job": "cover", "why": "THE SLAG PIG, east lane (hull 1.2 m, NIGHT74 R): cover for the floor fighter in the east lane against the swarm and a stepping stone on the air route to THE LANDING" },
+    { "zone": "a3", "kind": "hull", "min": [8.2, 0, -64], "max": [10, 2.4, -62.2], "job": "cover", "why": "THE MOULD PILLAR, east lane (hull 2.4 m, NIGHT74 R): high cover beside the door's east side against the swarm, and the east lane's first step on the air route" }
+  ],
+  "ramps": [
+    { "zone": "a3", "from": [2.5, -59.2], "to": [2.5, -63.7], "width": 3, "rise": 2.5, "job": "climb", "why": "THE RUN-UP RAMP (NIGHT65 R): 2.5 m over 4.5 m north along the runner's west face from beside the door: the entry flows into the ride with no stop (rule 15); its top is the ride's start; the walkers' way up" },
+    { "zone": "a3", "from": [7.3, -71], "to": [7.3, -80], "width": 5.4, "rise": 2.5, "job": "climb", "why": "THE CRANE STAIR (NIGHT65 R): 2.5 m over 9 m, the whole east lane (no pocket): the enemies' and the walkers' way onto THE LANDING, the long way round the runner's south end" }
+  ],
+  "pads": [
+    { "zone": "a3", "at": [9, 2.5, -84], "target": [-0.5, 0, -61.5], "apexAbove": 4.5, "job": "pad", "why": "THE RETURN PAD (NIGHT65 R round 2, the level-design review's hand-off): in THE LANDING's north-east corner, off the stair's arrival line (round 2d had it at (8.5, -82.5), where the walk bot stepped on it coming up the stair): it throws you back over the runner (apex about 7 m, the runner 6 m) and the swarm floor to THE RUN-UP RAMP's foot, so the ride is a circuit (ramp -> ride -> landing -> pad -> ramp) and a skilled line rides again over wave 1 without walking the stair; a way back, never a way up (the ride stays the line onto the landing)" },
+    { "zone": "a3", "at": [-6, 1.8, -69.5], "target": [5.5, 2.5, -83], "apexAbove": 2, "job": "pad", "why": "THE DEN HOIST (NIGHT74 R): on THE MOULD WALL's top (1.8 m, a jump and a double jump up from the floor): across the swarm floor onto THE LANDING's middle, 16 m (the first target, (3.4, -82.8), hold52 FAIL 1.92 m: the flight met THE LADLE RAIL's end; (6.5, -82.5) and (7.5, -82.5) FAIL too, landing at x 3.65; (5.5, -83) and (6.5, -83.5) land within 0.02 m): the room keeps the old a3's two pads (it had one); a way over the swarm that is not the ride and not the line the ride pays for (RIDE KILL, the picket)" }
+  ],
+  "grapple": [],
+  "pits": [
+    { "zone": "a3", "rect": [1.4, -76, 4, -69], "floorY": -0.8, "lava": true, "job": "hazard", "why": "THE SLAG RUN (NIGHT74 R: shortened from z -79.5..-67 (12.5 m) to z -76..-69 (7 m): the walk bot died 7 times in 10 seeds (the bar, the red's 4 + 1, is 5), with the 7 m run 2 (B 1), with no run 0; it still lies under the ride's middle;lava, NIGHT66 R round 4; the lead: one more try at the walker's line): the runoff along THE RUNNER's west foot, 2.6 m wide, from THE RUN-UP RAMP's top to just short of THE LANDING. On the swarm floor a fighter now stands more than 2.6 m from the face, so no ride starts low at mid-wall (skip v2 fix 2 r3b: 6-11 rides a seed from the floor beside the face, the clear rising with them; the r1 level-design review: 'every first ride started from the floor at mid-wall'); every ride starts at THE RUN-UP RAMP's top, held over the slag to THE LANDING, its picket dead ahead. A fall is a 2.5 m drop into 0.8 m of slag: a burn and a knock-up back onto the swarm floor (Lava30), never a death on its own; the walker's line is the swarm floor west of it, the stair the long way" }
+  ],
+  "tunnels": [],
+  "lights": [
+    { "id": "a3-WL1", "room": "a3", "kind": "wall", "at": [-9.95, 4.5, -64], "normal": [1, 0, 0], "size": [2.5, 0.4, 0.1], "color": "white", "range": 9, "intensity": 0.9, "job": "light", "why": "NIGHT74 R: lights the entry and the ramp's foot from the west wall (NIGHT65's ceiling light a3-L1 hung from the roof the room no longer has)" },
+    { "id": "a3-WL2", "room": "a3", "kind": "wall", "at": [-9.95, 4.5, -76], "normal": [1, 0, 0], "size": [3, 0.4, 0.1], "color": "white", "range": 9, "intensity": 1, "job": "light", "why": "NIGHT74 R: lights the swarm floor and the mould wall from the west wall (a3-L2 hung from the roof)" },
+    { "id": "a3-WL3", "room": "a3", "kind": "wall", "at": [9.95, 5, -82.5], "normal": [-1, 0, 0], "size": [3, 0.4, 0.1], "color": "amber", "range": 10, "intensity": 1.2, "job": "landmark", "why": "NIGHT74 R: the ride's goal and the room's one landmark light, read from the door, now on the east wall over THE LANDING (a3-L3 hung from the roof, with THE HOOK's chain and lamp)" },
+    { "id": "a3-L5", "room": "a3", "kind": "pool", "at": [0, 0.025, -84], "normal": [0, 1, 0], "size": [2.5, 1.6, 0.05], "color": "cyan", "range": 7, "intensity": 1.6, "job": "exit", "why": "NIGHT65 R: the lit exit: the room's one cyan floor pool" },
+    { "id": "a3-RW", "room": "a3", "kind": "wall", "at": [3.95, 3.2, -71.85], "normal": [-1, 0, 0], "size": [16.3, 0.2, 0.1], "color": "cyan", "range": 6, "intensity": 1.1, "job": "ride", "why": "NIGHT65 R: THE RIDE STRIP on the runner's west face over the ride's 16.3 m (z -63.7..-80): ride here (cyan, player-usable)" },
+    { "id": "a3-JM", "room": "a3", "kind": "wall", "at": [3.95, 3.4, -63.5], "normal": [-1, 0, 0], "size": [0.3, 1.6, 0.1], "color": "cyan", "range": 4, "intensity": 1.3, "job": "line", "why": "THE JUMP MARK (NIGHT65 R round 2, gg-proxy r1's 'no jump mark' BLOCKING): a cyan upright bar on the runner's face where THE RUN-UP RAMP tops out: jump right onto the wall here. The flat 1.5 m jump deck gg-proxy asked for was built (3e54d36d) and measured: the ride pilot (the lead's MAIN) went RED, its clear-line rays run 16 m along the wall from a start by the runner's north end and meet any 2.5 m deck south of z -64" },
+    { "id": "a3-L56d", "room": "a3", "kind": "wall", "at": [-3, 3.5, -59.05], "normal": [0, 0, -1], "size": [1.5, 0.3, 0.1], "color": "white", "range": 7, "intensity": 1.3, "job": "light", "why": "NIGHT56 L's door lamp, kept (NIGHT65 R re-mounted it on the south wall west of d2: the old east cheek is gone): the doorway's mouth lit, seen through the door from a2" }
+  ],
+  "props": [
+    { "id": "a3-RE", "room": "a3", "kind": "padMarker", "at": [3.3, 2.52, -80.75], "size": [1.6, 0.02, 1.5], "yawDeg": 0, "collider": false, "job": "line", "why": "THE RIDE'S END (NIGHT74 R: kind padMarker, not floorStrip: Decor54.DecorKind recolours every cyan 'flat floorStrip' to the level accent, Decor54.cs:251; NIGHT65 R round 3, the level-design review r2; cyan, player-usable): on THE LANDING where the runner ends, 2.1-2.3 m from wave 2's husks at (5, 2.5, -81.6) / (5.8, 2.5, -80.7): the ride ends here, in a launch (a punch from the ride) into the pair" },
+    { "id": "a3-P1", "room": "a3", "kind": "healthPickup", "at": [3.4, 3.4, -80.4], "size": [0.6, 0.6, 0.6], "yawDeg": 0, "collider": false, "pickup": true, "job": "reward", "why": "NIGHT65 R (round 3, gg-proxy r2; D-5: the ride the better line): the ride's reward on the ride's own line at rider height, 0.4 m past the runner's end over THE LANDING's south edge (gg-proxy asked for (3.4, 3.4, -78), beside the runner: levelgen's props row refuses a pickup with no floor within 1.5 m, and a post under it would cut the ride pilot's clear line): the rider takes it as the ride ends; a walker from the stair reaches it later; a dash-jump from the ramp's top passes over it at about 4.3 m (the r65dashjump probe)" },
+    { "id": "a3-P6", "room": "a3", "kind": "grate", "at": [-4.75, 0.02, -72], "size": [4.5, 0.04, 3], "yawDeg": 0, "collider": false, "decor": true, "job": "hazard", "why": "THE SWARM DEN (NIGHT65 R): the floor grate behind the mould wall where wave 1 comes up" },
+    { "id": "a3-P7", "room": "a3", "kind": "hazardStripe", "at": [-4.75, 0.03, -72], "size": [4.9, 0.03, 3.4], "yawDeg": 0, "collider": false, "decor": true, "job": "hazard", "why": "THE SWARM DEN's rim (NIGHT65 R; red-orange: enemies): where they come from" },
+    { "id": "a3-P8", "room": "a3", "kind": "wallPipe", "at": [-9.9, 3, -72], "size": [0.2, 1.2, 20], "yawDeg": 0, "collider": false, "decor": true, "job": "landmark", "why": "THE MOULD RACK (NIGHT65 R): the west boundary framed, not a blank box" },
+    { "id": "a3-P9", "room": "a3", "kind": "lintelLight", "at": [0, 4.7, -84.95], "size": [4, 0.2, 0.1], "yawDeg": 0, "collider": false, "decor": true, "job": "exit", "why": "NIGHT65 R: the exit's lintel lamp over d3 (warm white)" },
+    { "id": "a3-P10", "room": "a3", "kind": "lamp", "at": [-2.9, 3.8, -84.9], "size": [0.5, 0.5, 0.2], "yawDeg": 0, "collider": false, "decor": true, "job": "exit", "why": "the exit's west wall lamp (NIGHT65 R density pass; warm white): the lit exit's fixture" },
+    { "id": "a3-P11", "room": "a3", "kind": "pilaster", "at": [-9.9, 5, -64], "size": [0.2, 10, 0.8], "yawDeg": 0, "collider": false, "decor": true, "job": "landmark", "why": "THE MOULD PILASTERS, south (NIGHT65 R density pass): ribs on the west wall at the swarm floor's two ends, framing the floor the ride crosses: the room's scale read from the door (structure: stone)" },
+    { "id": "a3-P12", "room": "a3", "kind": "pilaster", "at": [-9.9, 5, -82], "size": [0.2, 10, 0.8], "yawDeg": 0, "collider": false, "decor": true, "job": "landmark", "why": "THE MOULD PILASTERS, north (NIGHT65 R density pass): the second rib, by the exit apron" }
+  ],
+  "teach35": [
+    { "id": "l1.zoom", "room": "a3", "rect": [2.8, -78, 4, -64], "minY": 2.0 },
+    { "id": "l1.wallrun", "room": "a3", "rect": [1, -64, 4, -59], "minY": 0.3 }
+  ],
+  "drop": {
+    "card52_why": "NIGHT52 F's card note for the old casting-pit room: a doc key nothing reads; the room is rebuilt from the NIGHT65 card (card65)",
+    "spawn_why": "NIGHT53 K's note for the old retry point 9 m in: a doc key; the new spawn's reason is in the NIGHT65 card",
+    "n53_why": "NIGHT53 K's second-pass note on the old pouring platform: a doc key nothing reads; every piece it named is gone with the rebuild"
+  },
+  "opening": "ambushed",
+  "opening_why": "card a3: wave 1's swarmers rise behind THE MOULD WALL and rush the entry floor past midfield (ambushed, as the red)"
+}

@@ -1,0 +1,12 @@
+# command: node Tools/night/n70-patch-share.cjs --level iceline --room Design/levels/n67/iceline/rooms/g5.json g5
+# sha: f360cf025 (+ the room file as in the tree); time: 2026-10-28 00:30:01
+n70-patch-share: room g5 | shipped Design/levels/n67/iceline/rooms-base/g5.json vs rebuilt Design/levels/n67/iceline/rooms/g5.json
+| room | shipped pieces kept | by kind (kept / shipped) | rect / spawn / exit | waves |
+|---|---|---|---|---|
+| g5 | 4 / 16 (25 %) | boxes 4 / 11, ramps 0 / 2, pads 0 / 3, pits 0 / 0 | rect same, spawn same, exit same | waves same |
+  kept: box (-5.3, 0, -139)..(-4.7, 4, -135) (shipped job: line)
+  kept: box (4.7, 0, -139)..(5.3, 4, -135) (shipped job: line)
+  kept: box (-5, 0, -151.6)..(-3.8, 3.5, -150.4) (shipped job: cover)
+  kept: box (3.4, 0, -156.6)..(4.6, 3.5, -155.4) (shipped job: cover)
+  rebuilt room pieces: boxes 12, ramps 2, pads 3, pits 0 | the rule: PASS at <= 25 % of the shipped room's pieces kept (geometry-equal; job / why text ignored)
+n70-patch-share: PASS g5 (25 % kept)

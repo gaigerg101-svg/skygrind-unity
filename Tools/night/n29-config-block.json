@@ -1,0 +1,81 @@
+    "n29": {
+      "_why": "NIGHT29 (GG 2026-10-09, after his playtest of NIGHT28: a complete overhaul of levels 1-3, two bosses that take damage, a fire / melee lockout, a slower shotgun, a CRT overlay, door-free dev toggle): every row is off in the shared commit and turned on only when its contract passes. Off (--off29 / -skygrindOff29, and every older off switch): NIGHT28's game bit for bit. Unity-only numbers each carry a _why (the web never had these systems).",
+      "lockout": {
+        "_why": "GG: 'you can't fire and melee at the same time ... you have to wait for the shot to finish'; reverses NIGHT25's meleeFire. Policy only: the cycle lengths are read from each weapon's own fire interval and the swing's cycle (nothing typed here). The second input is DROPPED (D-1: GG wants to wait).",
+        "enabled": false,
+        "bufferSeconds": 0
+      },
+      "shotgun": {
+        "_why": "GG: the shotgun 'fires a little too fast'. The web has one fixed interval (weapons.shotgun.fireInterval); this multiplies it. 1.3 is the starting pick (NIGHT29.md: 1.25-1.4); the lead sets the final value after one harness read.",
+        "enabled": false,
+        "fireIntervalMult": 1.3
+      },
+      "tank": {
+        "_why": "Level 2's coloured TANK (GG: 'a tank enemy that can be one shot by the fists'): the web's heavy box recoloured, hp high; the vulnerability table (design.n26.vulnerability.tank) says the gauntlet x10, the pistol x0.15. The web has no tank.",
+        "enabled": false,
+        "hp": 600
+      },
+      "boss1": {
+        "_why": "THE LANTERN reworked (GG: 'I'm not able to attack the first boss ... floor is lava ... exposed ... slow motion barrier'). Diagnosis: Lantern27.Filter returned 0 unless the shot hit the face looking at the ridden wall. lightDamage = the share of a normal hit any gun does anywhere; full damage only while the core is exposed (the floor live) and the shooter is wall riding. The cycle: tell (the glow shifts, the core opens), live floor, rest. slowScale / slowEaseS: the world slows while the floor is live (D-7: 0.55, 0.2 s; not a time stop). The web has no boss.",
+        "enabled": false,
+        "lightDamage": 0.2,
+        "cycleSeconds": 11,
+        "tellSeconds": 0.9,
+        "liveSeconds": 7,
+        "damagePerSecond": 8,
+        "slowScale": 0.55,
+        "slowEaseS": 0.2
+      },
+      "boss2": {
+        "_why": "THE GLACIER reworked (GG: 'for some reason I still can't damage it ... speed skating ... both of you trying not to be caught'). Diagnosis: Glacier28.Filter let only a PULSE hit in a window land. otherGunFraction = the share of the gauntlet's hit any other gun does at any time (D-8: 0.12); otherGunFloor = the bar share other guns cannot take it below (the last quarter needs the exposed window, so a camper never finishes it); exposedSeconds / catchUpMetres: the window a catch-up opens; frostSlow: the slow of a frost trail; patience*: V2's rule (R1): staying farther than patienceMetres for patienceSeconds speeds the volleys by patienceVolleyMult until the gap closes under patienceCloseMetres. The skate lane's own numbers are added by builder B with their _why.",
+        "enabled": false,
+        "otherGunFraction": 0.12,
+        "otherGunFloor": 0.25,
+        "exposedSeconds": 2.5,
+        "catchUpMetres": 10,
+        "frostSlow": 0.35,
+        "patienceSeconds": 12,
+        "patienceMetres": 25,
+        "patienceCloseMetres": 15,
+        "patienceVolleyMult": 1.5
+      },
+      "bossHp": {
+        "_why": "Boss pools cut to the kill bands (D-5: Lantern 45-70 s, Glacier 80-120 s, worm 3:00-4:00 for a human-lag bot). The cuts are measured by the harness and written here with the before / after line; 1.0 = unchanged until measured.",
+        "enabled": false,
+        "lanternMult": 1.0,
+        "glacierMult": 1.0,
+        "wormMult": 1.0
+      },
+      "doorFree": {
+        "_why": "GG's own dev tool: hold RB 3 s (F8 on the keyboard) and every door of the level stands open; enemies still spawn when a room is entered; the run is UNRANKED and writes no record (D-6). The web has no doors.",
+        "enabled": false,
+        "holdSeconds": 3.0
+      },
+      "crt": {
+        "_why": "View only. The retro-TV overlay (GG: 'pixel like ... retro TV vibe with the static ... not too intense ... a little warped'). Starting numbers from Research/2026-10-09-wave29/R4b-crt-lights.md (scaled down from open CRT shader defaults); the final values are looked at on a still. Strength 0-1 scales every effect; the setting's default is 35 %.",
+        "enabled": false,
+        "defaultStrength": 0.35,
+        "warp": 0.02,
+        "scanlineCount": 720,
+        "scanlineIntensity": 0.12,
+        "chromaUv": 0.0015,
+        "grain": 0.045,
+        "grainHz": 24,
+        "vignette": 0.25,
+        "pixelStep": 0
+      },
+      "lights": {
+        "_why": "View / validator row: every light fixture is a socket in the plan (wall, ceiling or pool), flush to a surface or with a collider; none floats in the playable space (GG: lights 'aren't properly placed and you can run through them').",
+        "enabled": false,
+        "maxWallDepth": 0.15
+      },
+      "props": {
+        "_why": "View row: props are authored rows in the plan; no random scatter (GG: 'objects are randomly placed and it just looks ugly').",
+        "enabled": false
+      },
+      "doors": {
+        "_why": "View row: a door is a frame built from the wall opening; the gap between a door and its room is 0 (GG: 'gaps in between the major doors').",
+        "enabled": false,
+        "fitTolerance": 0.01
+      }
+    }

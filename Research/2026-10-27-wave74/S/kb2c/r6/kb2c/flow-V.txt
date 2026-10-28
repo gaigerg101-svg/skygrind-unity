@@ -1,0 +1,23 @@
+# command: dotnet Temp/SimHarness/bin/Release/net10.0/SimHarness.dll n46flow --level n67-kiln --rooms kb2c --seeds 10 --first 1 --verbs65 --file C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/kiln-kb2c-r6/n67-kiln.json 
+# sha: 9514f7bd8; time: 2026-10-27 23:26:03
+n46flow: seeds 1..10, cap 240 s per room, rows forced on: none, off switch: none; pilot: Walk38Pilot + the ported autopilot (normal)
+n46flow n67-kiln: --file C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/kiln-kb2c-r6/n67-kiln.json
+  put-in loadout (kb2c, BEFORE entering it: the room's own award, if any, comes on entry): awards of the rooms before it given: revolver (kb2b's award); owned shotgun revolver
+  ride pilot kb2c: line65's face kb2c W x 8.4 (-184..-164.5), from -168.5 toward -182
+  entry loadout (n46flow, kb2c, 0.5 s after entering): owned shotgun revolver, in hand revolver
+n46flow n67-kiln (loaded n67-kiln; BaseId n45-kiln): 10/10 walks through kb2c..kb2c; level time median 40.9 s; the pilot's lava rule: out of lava 0 steps, held at an edge 0 steps, chases round it 0, detours 0; put at the next room (a link not crossed in max(30 s, 3 x par) or a cleared room not left in 15 s) 0; stuck46 burrowers ended 11
+  room       kind | stall%  maxStall  air% | kgap med/max | near med/p10/p90 | dwell  dead | deaths falls | clear (k/n)    | geometry
+  kb2c       room |   27.2      4.3  57.3 |  1.7 / 12.6  |  4.5 /  1.1 / 10.0  |   2.1   4.2 |      0     0 |   40.9 (10/10) | floor 517 m2, tiers 5, loop n (10.2 m2), pockets 2, sight 33.6 m, w1 in view 4/4
+  LEVEL           |   27.2      4.3  57.3 |  1.7 / 12.6  |  4.5 /  1.1 / 10.0  |   2.1   4.2 |      0     0 |   40.9 sum of medians
+n46flow n67-kiln SUMMARY: GREEN 10/10; stall 27.2 %, longest stall 4.3 s, air 57.3 %, kill gap 1.7 / 12.6 s, nearest 4.5 m, dwell 2.1 s, dead 4.2 s, deaths 0, falls 0, clear 40.9 s
+  style      kind |  DULL  COOL  BOLD  AIRB  SAVA  SKYG (% of fight steps) | top rank med / max (seeds)
+  kb2c       room |  32.5  26.0  28.9  12.5   0.0   0.0                    | AIRBORNE / AIRBORNE (10)
+  LEVEL           |  32.5  26.0  28.9  12.5   0.0   0.0                    | top AIRBORNE
+n46flow n67-kiln STYLE: DULL 32.5 % of 388 s of fight; above DULL 67.5 %; rooms reaching SAVAGE 0/1; top rank AIRBORNE
+n46flow n67-kiln PAYOFFS: heal36 HP per close kill by rank: DULL 9.38 (1), COOL 10.00 (1), BOLD - (0), AIRBORNE 10.00 (1), SAVAGE - (0), SKYGRIND - (0); RIDE KILL refund per ride kill by rank: DULL 0.00 (1), COOL 0.00 (1), BOLD 0.00 (2), AIRBORNE - (0), SAVAGE - (0), SKYGRIND - (0)
+n46flow n67-kiln TOKENS: attack starts inside the sim cone (camera.fovDeg 74 / 2) 38/41 = 92.7 % (by kind: swarmer 19/22, husk 19/19); tokens56 thinks waited out of view 4789, advances 56
+n46flow n67-kiln RANGED: hit rate by the player's speed at the shot: stand 0/0 = - %, run 0/0 = - %, fast 0/0 = - %, dash 0/0 = - %; dash / stand -, fast+dash / stand -
+n46flow n67-kiln IDLE: idle in place 6.1 % of enemy-alive steps; per enemy (alive >= 2 s, 120): median 4.7 %, p90 11.5 %, over 20 %: 2 (1.7 %); by kind: husk 6.1 %, swarmer 6.1 %
+n46flow n67-kiln VERBS65 (--verbs65: the verb-aware pilot in rooms with verb65):
+  kb2c   verb65 ride         | trigger held 2886 of 46597 fight steps (6.2 %), episodes 20, performed: wall rides 18 (the face: kb2c W x 8.4 (-184..-164.5); off-line ride starts cut 265 wall contacts)
+n46flow n67-kiln: wall time 53 s

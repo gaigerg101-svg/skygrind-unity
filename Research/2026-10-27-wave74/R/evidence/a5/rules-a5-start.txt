@@ -1,0 +1,20 @@
+== Design/levels/n65/rooms/a5.json
+  PLANES  PASS  planes 2 (-0.8 m: 512 cells, 2.5 m: 48 cells)
+  COVER   PASS  cover: free-standing high 3, low 4, between 0 (0 without a job), none 0
+  LOOPS   PASS  loops 6 (floor holes 5 + closed pad / ride routes 1 of 1)
+  REAR    PASS  rear arc: 0 of 4 wave-1 usable nodes behind the entry facing (all waves: 0 node uses behind)
+  VIEW    PASS  view: enemy in view at 0.00 s (4 of 4 wave-1 nodes seen at entry)
+  CROSS   PASS  cross: chord 37.7 m, dash 1.57 s, walk 4.7 s (bar 2.0 s at dash)
+  EXPOSE  PASS  exposure: 50 % of 1326 floor-sample pairs see each other (bar 60 %); longest clear line 33.5 m (medium band 19.5 m)
+  CLIMB   PASS  climb: 1 tier group(s), 0 not reached by walker links
+  core 5/5 PASS, extra 3/3 PASS
+== Design/levels/n65/rooms-n52/a5.json
+  PLANES  PASS  planes 3 (-0.8 m: 394 cells, 2.5 m: 39 cells, 5.0 m: 105 cells)
+  COVER   PASS  cover: free-standing high 2, low 0, between 0 (0 without a job), none 1
+  LOOPS   PASS  loops 5 (floor holes 2 + closed pad / ride routes 3 of 3)
+  REAR    PASS  rear arc: 0 of 6 wave-1 usable nodes behind the entry facing (all waves: 0 node uses behind)
+  VIEW    PASS  view: enemy in view at 0.00 s (6 of 6 wave-1 nodes seen at entry)
+  CROSS   PASS  cross: chord 37.7 m, dash 1.57 s, walk 4.7 s (bar 2.0 s at dash)
+  EXPOSE  RED  exposure: 82 % of 861 floor-sample pairs see each other (bar 60 %); longest clear line 33.5 m (medium band 19.5 m)
+  CLIMB   PASS  climb: 2 tier group(s), 0 not reached by walker links
+  core 5/5 PASS, extra 2/3 PASS

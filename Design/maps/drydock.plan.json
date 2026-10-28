@@ -1,0 +1,187 @@
+{
+  "_why": "DRYDOCK's plan (NIGHT15 U3-28.2, MAP-DESIGN.md section 4): the one source of numbers for the plan SVG (Tools/map-plan-svg.cjs -> Logs/shots/n15-plan.png) and the greybox build script (Assets/Editor/Maps/Build_drydock.cs -> Design/maps/drydock.json). Web coordinates: x east, y up, z SOUTH (north is -z; a yaw of 0 faces north, -z); metres. Every distance is sized from the movement numbers in MAP-DESIGN.md section 1 (config keys cited there). New design (GG, 2026-10-05: a map overhaul), so Unity-side (CLAUDE.md rule 5); D-59 (the map's identity) stays GG's.",
+  "id": "drydock",
+  "name": "DRYDOCK",
+  "floorSize": 128,
+  "killPlaneY": -30,
+  "startZone": "gangway",
+  "built": ["gangway", "cradle", "ribs", "slipway"],
+  "notes": [
+    "built: the zones the NIGHT15 greybox builds; the rest are drawn on the plan only (night 2).",
+    "Unbuilt areas have NO floor tonight (no nav nodes); walls close the built footprint (wall height 14, barrier 14..40 above).",
+    "ramps: from = the low end's centre (x, z), to = the high end's centre, width across, rise = the high end's height; the build script turns each into a WedgeSpec.",
+    "zone rects are [x0, z0, x1, z1] at y 0..40 (data.zones[i].boxes); boundary walls straddle the zone lines (2 m thick).",
+    "U3-28.6 (the greybox build's plan checks, DrydockPlan.Check): three numbers fixed: the high spawn [-57, 10, 16] is now [-57, 8, 16] (the south-row slab at x -58..-56 is 8 m tall: it floated 2 m); THE CROW'S NEST [0, 30, 0] is now [0, 30, -2] (it stood inside the mast); the BOUNCER's facing [-1, 0] is now [1, 0] (its buy point stood inside the hull).",
+    "U3-28.6 (the lead's design call): the wall guns and perks are ported ones (Loadout.Fires, Perks.Ported), so each zone has a working wall buy and perk tonight: gangway shotgun (THUNDERCLAP 750) and mend, cradle rocket (COMET 2000), ribs nailgun (STITCHER 1250), slipway rail (LONGWAVE 3000); the design's RATTLER, BOUNCER, DISCUS and STEADY were not ported.",
+    "U3-28.6 (the lead's calls on the greybox's findings): the exfil radio's yaw 0 -> pi (it faced the cliff wall 2 m away); the slipway deck's west face x 24 -> 23 (it meets the cradle | slipway wall; the 2 m pocket in front of it is gone); LAUNCH RAIL: the kicker's rise 1.5 -> 2.0 and the platform (and its relay) 2.5 -> 3.0 m, over a well-timed standing double jump (~2.7 m by formula, which RIVAL's graph flew onto the 2.5 m platform) and under a slide-jump off the 2.0 m lip (~3.41 m)."
+  ],
+  "zones": [
+    { "id": "gangway", "name": "THE GANGWAY", "cost": 0, "priority": 3, "rect": [-14, 36, 14, 62], "built": true,
+      "verbs": { "favoured": ["run", "jump"], "restricted": [], "identity": "the arrival deck: small, four spawn points, one cheap door; the mast in view from the spawn" } },
+    { "id": "cradle", "name": "THE CRADLE", "cost": 750, "priority": 2, "rect": [-22, -34, 22, 36], "built": true,
+      "verbs": { "favoured": ["slide", "dash", "pad"], "restricted": [], "identity": "the hub: a training ring around the unfinished hull (the landmark), cut by the keel corridor into two smaller loops; pads up to the hull deck" } },
+    { "id": "ribs", "name": "THE RIBS", "cost": 1000, "priority": 2, "rect": [-62, -34, -22, 36], "built": true,
+      "verbs": { "favoured": ["wallRide", "wallJump", "bunnyHop"], "restricted": ["arcline (no anchors)", "pads (none)"], "identity": "a canyon of parallel hull ribs 7 m apart: ride, kick, ride; the rib tops are a high road" } },
+    { "id": "slipway", "name": "THE SLIPWAY", "cost": 1000, "priority": 2, "rect": [22, -34, 62, 36], "built": true,
+      "verbs": { "favoured": ["slide", "slideJump", "dashJump"], "restricted": ["wallRide (no long walls in the lanes)"], "identity": "two 40 m launch ramps down from the deck, a pad back up: a speed loop, Kino's open Theater for training" } },
+    { "id": "boilerworks", "name": "THE BOILERWORKS", "cost": 1250, "priority": 2, "rect": [-22, -62, 22, -34], "built": false,
+      "verbs": { "favoured": ["slam", "slide", "punch"], "restricted": ["pads, arcline and high jumps (a 4.5 m ceiling)"], "identity": "close quarters under a low roof; the power switch; an open furnace yard behind a 1.5 m grate you slide under" } },
+    { "id": "drafting", "name": "THE DRAFTING OFFICE", "cost": 1500, "priority": 2, "rect": [-62, -62, -22, -34], "built": false,
+      "verbs": { "favoured": ["run", "punch"], "restricted": ["dash lines (tight rooms)"], "identity": "the armory: a tight, gated office with the wall of guns (the web's ARMORY wall)" } },
+    { "id": "gantry", "name": "THE GANTRY", "cost": 2000, "priority": 2, "rect": [22, -62, 62, -34], "built": false,
+      "verbs": { "favoured": ["arcline", "pad", "dashJump"], "restricted": ["ground (the floor is 12 m below the platforms)"], "identity": "crane platforms at 10-14 m crossed by ARCLINE swings from the crane hooks or by aimed pads; the ARCLINE is bought here" } },
+    { "id": "pier", "name": "THE PIER", "cost": 1500, "priority": 2, "rect": [14, 36, 62, 62], "built": false,
+      "verbs": { "favoured": ["slide", "dash"], "restricted": [], "identity": "the exfil pier at the cliff edge, at the foot of the slipway" } }
+  ],
+  "floor": [
+    { "min": [-62, -0.5, -34], "max": [62, 0, 36], "kind": "floor", "note": "the built footprint (cradle, ribs, slipway)" },
+    { "min": [-14, -0.5, 36], "max": [14, 0, 62], "kind": "deck", "note": "the gangway's floor (drawn and collided as a box)" }
+  ],
+  "walls": [
+    { "min": [-64, 0, -36], "max": [64, 14, -34], "note": "north edge of the built footprint (to the unbuilt north row): solid tonight, doorways on night 2" },
+    { "min": [-64, 0, -34], "max": [-62, 14, 36], "note": "west perimeter" },
+    { "min": [62, 0, -34], "max": [64, 14, 36], "note": "east perimeter" },
+    { "min": [-64, 0, 36], "max": [-14, 14, 38], "note": "south edge west of the gangway (to the cliff)" },
+    { "min": [14, 0, 36], "max": [64, 14, 38], "note": "south edge east of the gangway (to the pier, night 2)" },
+    { "min": [-16, 0, 38], "max": [-14, 14, 64], "note": "gangway west wall" },
+    { "min": [14, 0, 38], "max": [16, 14, 64], "note": "gangway east wall" },
+    { "min": [-16, 0, 62], "max": [16, 14, 64], "note": "gangway south wall (the cliff edge)" },
+    { "min": [-23, 0, -34], "max": [-21, 8, -14], "note": "cradle | ribs, north of the north doorway" },
+    { "min": [-23, 0, -8], "max": [-21, 8, 14], "note": "cradle | ribs, between the doorways" },
+    { "min": [-23, 0, 20], "max": [-21, 8, 36], "note": "cradle | ribs, south of the south doorway" },
+    { "min": [21, 0, -22], "max": [23, 8, -14], "note": "cradle | slipway, north (the deck block covers z < -22)" },
+    { "min": [21, 0, -8], "max": [23, 8, 14], "note": "cradle | slipway, between the doorways" },
+    { "min": [21, 0, 20], "max": [23, 8, 36], "note": "cradle | slipway, south" },
+    { "min": [-14, 0, 35], "max": [-4, 6, 37], "note": "gangway | cradle, west of the door" },
+    { "min": [4, 0, 35], "max": [14, 6, 37], "note": "gangway | cradle, east of the door" }
+  ],
+  "doorways": [
+    { "between": ["gangway", "cradle"], "at": [0, 36], "width": 8, "face": [0, -1], "buyFrom": "gangway", "buyAt": [0, 39] },
+    { "between": ["cradle", "ribs"], "at": [-22, -11], "width": 6, "face": [-1, 0], "buyFrom": "cradle", "buyAt": [-19, -11] },
+    { "between": ["cradle", "ribs"], "at": [-22, 17], "width": 6, "face": [-1, 0], "buyFrom": "cradle", "buyAt": [-19, 17] },
+    { "between": ["cradle", "slipway"], "at": [22, -11], "width": 6, "face": [1, 0], "buyFrom": "cradle", "buyAt": [19, -11] },
+    { "between": ["cradle", "slipway"], "at": [22, 17], "width": 6, "face": [1, 0], "buyFrom": "cradle", "buyAt": [19, 17] }
+  ],
+  "boxes": [
+    { "zone": "cradle", "kind": "hull", "min": [-7, 0, -20], "max": [-3, 10, -12], "note": "hull west side, segment 1 (the rib doorways into the keel corridor are the gaps)" },
+    { "zone": "cradle", "kind": "hull", "min": [-7, 0, -8], "max": [-3, 10, -2] },
+    { "zone": "cradle", "kind": "hull", "min": [-7, 0, 2], "max": [-3, 10, 8] },
+    { "zone": "cradle", "kind": "hull", "min": [-7, 0, 12], "max": [-3, 10, 20] },
+    { "zone": "cradle", "kind": "hull", "min": [3, 0, -20], "max": [7, 10, -12], "note": "hull east side" },
+    { "zone": "cradle", "kind": "hull", "min": [3, 0, -8], "max": [7, 10, -2] },
+    { "zone": "cradle", "kind": "hull", "min": [3, 0, 2], "max": [7, 10, 8] },
+    { "zone": "cradle", "kind": "hull", "min": [3, 0, 12], "max": [7, 10, 20] },
+    { "zone": "cradle", "kind": "deck", "min": [-7, 10, -20], "max": [7, 11, 20], "note": "the hull deck: a 14 x 40 m high deck over the 6 m keel corridor (clearance 10 m)" },
+    { "zone": "cradle", "kind": "landmark", "min": [-1, 11, -1], "max": [1, 64, 1], "note": "THE MAST: 64 m, seen from every zone (not walkable: above ai.grid.scanTop 39.5)" },
+    { "zone": "cradle", "kind": "deck", "min": [-3, 29.5, -3], "max": [3, 30, 3], "note": "the crow's nest (the secret relay)" },
+    { "zone": "cradle", "kind": "rib", "min": [-9, 0, -18.5], "max": [-7, 24, -17.5], "note": "rib posts: the hull's silhouette, 24 m; cover in the ring lanes" },
+    { "zone": "cradle", "kind": "rib", "min": [7, 0, -18.5], "max": [9, 24, -17.5] },
+    { "zone": "cradle", "kind": "rib", "min": [-9, 0, -9.5], "max": [-7, 24, -8.5] },
+    { "zone": "cradle", "kind": "rib", "min": [7, 0, -9.5], "max": [9, 24, -8.5] },
+    { "zone": "cradle", "kind": "rib", "min": [-9, 0, 8.5], "max": [-7, 24, 9.5] },
+    { "zone": "cradle", "kind": "rib", "min": [7, 0, 8.5], "max": [9, 24, 9.5] },
+    { "zone": "cradle", "kind": "rib", "min": [-9, 0, 17.5], "max": [-7, 24, 18.5] },
+    { "zone": "cradle", "kind": "rib", "min": [7, 0, 17.5], "max": [9, 24, 18.5] },
+    { "zone": "cradle", "kind": "rib", "min": [-9, 22, -18.5], "max": [9, 24, -17.5], "note": "rib crossbars at 22-24 m (the grapple nodes hang under them)" },
+    { "zone": "cradle", "kind": "rib", "min": [-9, 22, -9.5], "max": [9, 24, -8.5] },
+    { "zone": "cradle", "kind": "rib", "min": [-9, 22, 8.5], "max": [9, 24, 9.5] },
+    { "zone": "cradle", "kind": "rib", "min": [-9, 22, 17.5], "max": [9, 24, 18.5] },
+    { "zone": "ribs", "kind": "slab", "min": [-31, 0, -30], "max": [-29, 8, -3], "note": "the rib canyon, north row: 27 m long slabs 7 m apart; heights 8 / 10 / 12 / 10 (the 12 m one holds KEEL TOP)" },
+    { "zone": "ribs", "kind": "slab", "min": [-40, 0, -30], "max": [-38, 10, -3] },
+    { "zone": "ribs", "kind": "slab", "min": [-49, 0, -30], "max": [-47, 12, -3] },
+    { "zone": "ribs", "kind": "slab", "min": [-58, 0, -30], "max": [-56, 10, -3] },
+    { "zone": "ribs", "kind": "slab", "min": [-31, 0, 3], "max": [-29, 10, 32], "note": "south row: 29 m long; heights 10 / 8 / 10 / 8" },
+    { "zone": "ribs", "kind": "slab", "min": [-40, 0, 3], "max": [-38, 8, 32] },
+    { "zone": "ribs", "kind": "slab", "min": [-49, 0, 3], "max": [-47, 10, 32] },
+    { "zone": "ribs", "kind": "slab", "min": [-58, 0, 3], "max": [-56, 8, 32] },
+    { "zone": "slipway", "kind": "deck", "min": [23, 0, -34], "max": [62, 10, -22], "note": "the launch deck: 39 x 12 m at 10 m; its west face meets the cradle | slipway wall at x 23 (U3-28.6, the lead's call: was x 24, which left a 2 m pocket of slipway floor in front of it)" },
+    { "zone": "slipway", "kind": "deck", "min": [26, 0, 30], "max": [34, 3, 34], "note": "LAUNCH RAIL's platform: 3.0 m (above a walker's 2.2 m jumpUp and a well-timed standing double jump's ~2.7 m by formula), reached by a slide-jump off the 2.0 m kicker (~1.41 m over its lip: ~3.41 m) (U3-28.6, the lead's call: was 2.5 m, which RIVAL's graph climbed with a standing double jump)" }
+  ],
+  "ramps": [
+    { "zone": "slipway", "from": [30, 18], "to": [30, -22], "width": 8, "rise": 10, "note": "lane A: 40 m at 14 deg (slope boost: ramp_slide_down peaks at 17.35 m/s)" },
+    { "zone": "slipway", "from": [54, 18], "to": [54, -22], "width": 8, "rise": 10, "note": "lane B: the walk-up for walkers and players" },
+    { "zone": "slipway", "from": [30, 21], "to": [30, 25], "width": 8, "rise": 2, "note": "the kicker at lane A's foot; its lip at z 25 faces LAUNCH RAIL's platform 5 m on (U3-28.6, the lead's call: rise 1.5 -> 2.0 with the platform at 3.0 m)" }
+  ],
+  "pads": [
+    { "zone": "cradle", "at": [0, 0, 28], "target": [0, 11, 14], "apexAbove": 2, "note": "south pad to the hull deck (the gangway's view line)" },
+    { "zone": "cradle", "at": [0, 0, -28], "target": [0, 11, -14], "apexAbove": 2, "note": "north pad to the hull deck" },
+    { "zone": "cradle", "at": [0, 11, -18.5], "target": [0, 30, -1.5], "apexAbove": 1.5, "note": "the bow pad to the crow's nest (the secret relay's way up)" },
+    { "zone": "slipway", "at": [42, 0, 24], "target": [42, 10, -27], "apexAbove": 3, "note": "the return pad: the slipway loop's way back up to the deck" }
+  ],
+  "loops": [
+    { "name": "THE RING", "zone": "cradle", "path": [[-15.5, -27], [15.5, -27], [15.5, 28], [-15.5, 28]], "closed": true, "note": "the training ring around the hull: 31 x 55 m on its centre line, 172 m a lap (21.5 s at ground.walkSpeed 8; a husk at husk.speed 6 loses 2 m/s, so you lap the horde every 86 s)" },
+    { "name": "THE KEEL", "zone": "cradle", "path": [[-15.5, -11], [0, -11], [0, 17], [15.5, 17]], "closed": false, "note": "the keel corridor's rib doors cut the ring into two loops of ~120 m" },
+    { "name": "THE SLIP", "zone": "slipway", "path": [[30, -21], [30, 18], [30, 25], [42, 24], [42, -27], [34, -27]], "closed": true, "note": "slide down lane A (40 m), run to the return pad, ride it back to the deck: ~110 m a lap" },
+    { "name": "THE ALLEYS", "zone": "ribs", "path": [[-26, -31], [-26, 31], [-60, 31], [-60, -31]], "closed": true, "note": "the canyon's outer loop (34 x 62 m, 192 m) with the cross alley at z 0 as the short cut" }
+  ],
+  "shortcuts": [
+    { "zone": "ribs", "from": [-30, -16], "to": [-12, -16], "note": "from the 8 m rib top: a dash-jump (21.2 m measured, dash_jump.json) over the 8 m boundary wall into the ring's west lane" },
+    { "zone": "cradle", "from": [0, 28], "to": [0, 14], "note": "the south pad: onto the hull deck over the ring" },
+    { "zone": "slipway", "from": [23, -24], "to": [7, -18], "note": "off the deck's west lip (10 m) a dash-jump (17 m since U3-28.6 moved the lip from x 24 to x 23; rise needed 1 m: dash_jump.json measured 21.2 m and 1.85 m) over the 8 m wall onto the hull deck (11 m)" },
+    { "zone": "gangway", "from": [0, 40], "to": [0, 28], "note": "straight through the door into the south pad's lane" }
+  ],
+  "grapple": [
+    { "zone": "cradle", "at": [-8, 21, -9], "note": "under the rib crossbars: ARCLINE swings across the hull" },
+    { "zone": "cradle", "at": [8, 21, 9] },
+    { "zone": "slipway", "at": [42, 20, -4], "note": "over the return lane between the ramps" }
+  ],
+  "spots": {
+    "player": { "at": [0, 0, 54], "yawDeg": 0, "note": "faces north: the hull and the mast fill the view through the door" },
+    "perks": [
+      { "zone": "gangway", "perk": "mend", "at": [11.5, 0, 50], "yaw": -1.5707963267948966, "note": "U3-28.6, the lead's call: was steady, not ported (Perks.Ported)" },
+      { "zone": "cradle", "perk": "flip", "at": [-19.5, 0, 3], "yaw": 1.5707963267948966 },
+      { "zone": "cradle", "perk": "vigor", "at": [19.5, 0, 3], "yaw": -1.5707963267948966 },
+      { "zone": "ribs", "perk": "slipstream", "at": [-60.5, 0, 0], "yaw": 1.5707963267948966 },
+      { "zone": "slipway", "perk": "quick", "at": [58, 10, -30], "yaw": 0 }
+    ],
+    "wallBuys": [
+      { "zone": "gangway", "weapon": "shotgun", "at": [-13.9, 1.7, 46], "facing": [1, 0], "note": "THUNDERCLAP (750): the cheap first buy, on the gangway's west wall (U3-28.6, the lead's call: was RATTLER, not ported)" },
+      { "zone": "cradle", "weapon": "rocket", "at": [-3, 1.7, -5], "facing": [1, 0], "note": "COMET (2000): splash for the ring's horde, inside the keel corridor on the west hull side's inner face (U3-28.6, the lead's call: was BOUNCER, not ported; its facing was [-1, 0], into the hull: its buy point stood inside it)" },
+      { "zone": "ribs", "weapon": "nailgun", "at": [-23, 1.7, 3], "facing": [-1, 0], "note": "STITCHER (1250): close, fast, for the canyon" },
+      { "zone": "slipway", "weapon": "rail", "at": [42, 1.7, -22], "facing": [0, 1], "note": "LONGWAVE (3000): for the 40 m lanes, on the deck's south face between the lanes (U3-28.6, the lead's call: was DISCUS, not ported)" }
+    ],
+    "box": [
+      { "zone": "cradle", "at": [-16, 0, -6], "yaw": 1.5707963267948966 },
+      { "zone": "cradle", "at": [16, 0, 6], "yaw": -1.5707963267948966 },
+      { "zone": "ribs", "at": [-60, 0, -26], "yaw": 1.5707963267948966 },
+      { "zone": "slipway", "at": [52, 10, -28], "yaw": 3.141592653589793 }
+    ],
+    "hold": [
+      { "zone": "cradle", "at": [0, 0, -27] },
+      { "zone": "cradle", "at": [0, 0, 27] },
+      { "zone": "ribs", "at": [-43.5, 0, 0] },
+      { "zone": "slipway", "at": [42, 0, 6] }
+    ],
+    "relays": [
+      { "zone": "ribs", "id": "keel", "name": "KEEL TOP", "at": [-48, 12, -16], "verb": "wall-ride up the 12 m rib" },
+      { "zone": "slipway", "id": "rail", "name": "LAUNCH RAIL", "at": [30, 3, 32], "verb": "slide down lane A, slide-jump off the kicker" },
+      { "zone": "cradle", "id": "bridge", "name": "THE BRIDGE", "at": [0, 11, -16], "verb": "the north pad (night 2: moves to the boilerworks' FIREBOX, the slide-under)" },
+      { "zone": "cradle", "id": "stern", "name": "THE STERN", "at": [0, 11, 16], "verb": "the south pad (night 2: moves to the gantry's HOOK, the swing)" }
+    ],
+    "secretRelay": { "zone": "cradle", "id": "nest", "name": "THE CROW'S NEST", "at": [0, 30, -2], "verb": "the bow pad from the hull deck", "note": "on the nest's north walk where the bow pad lands (U3-28.6: was [0, 30, 0], inside the mast)" },
+    "power": { "zone": "ribs", "at": [-60.5, 0, 24], "yaw": 1.5707963267948966, "note": "tonight two doors deep (750 + 1000); night 2: the boilerworks" },
+    "forge": { "zone": "cradle", "at": [0, 11, -7], "yaw": 0, "note": "on the hull deck, in front of the mast (the web's rule: open from round 1)" },
+    "gadget": { "zone": "slipway", "gadget": "arcline", "at": [34, 10, -30], "yaw": 0, "note": "tonight on the deck; night 2: the gantry" },
+    "exfil": {
+      "radio": { "zone": "gangway", "at": [0, 0, 60], "yaw": 3.141592653589793, "note": "its front faces north, into the gangway (a spot's front is (sin yaw, cos yaw); U3-28.6, the lead's call: yaw was 0, facing the cliff wall 2 m away)" },
+      "sites": [
+        { "zone": "slipway", "at": [44, 10, -28], "yaw": 0 },
+        { "zone": "ribs", "at": [-52, 0, 0], "yaw": 0 },
+        { "zone": "cradle", "at": [0, 11, 10], "yaw": 0 }
+      ]
+    },
+    "spawns": {
+      "ground": [
+        [-12, 0, 42], [12, 0, 42], [-12, 0, 58], [12, 0, 58],
+        [-18, 0, -30], [18, 0, -30], [-18, 0, 32], [18, 0, 32], [-16, 0, 0], [16, 0, 0],
+        [-60, 0, -32], [-60, 0, 33], [-26, 0, -32], [-26, 0, 33], [-43.5, 0, -32], [-43.5, 0, 33],
+        [60, 0, 33], [25, 0, 33], [42, 0, 33], [25, 0, -18], [60, 0, -18], [46, 0, -18]
+      ],
+      "high": [
+        [0, 11, -12], [0, 11, 12],
+        [-39, 10, -16], [-57, 8, 16], [-30, 10, 20],
+        [30, 10, -30], [56, 10, -30]
+      ]
+    }
+  }
+}

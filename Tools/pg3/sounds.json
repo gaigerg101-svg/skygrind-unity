@@ -1,0 +1,33 @@
+{
+  "note": "PG3 sound list: one ElevenLabs sound-generation request per entry (Tools/pg3/sfx-gen.cjs). `event` is the game's EventBus name the clip plays on (Pg3Audio.cs); `triad` is the assignment's Reward / Damage / End line. These prompts are logged in docs/pg3/PROMPT_LOG.md section 5.",
+  "sounds": [
+    { "id": "fire-kestrel", "event": "fire:revolver", "triad": "feel", "seconds": 0.8, "prompt": "Punchy sci-fi revolver gunshot, tight low-end thump with a bright metallic crack and a short electric zap tail, close mic, game sound effect" },
+    { "id": "fire-thunderclap", "event": "fire:shotgun", "triad": "feel", "seconds": 1.0, "prompt": "Heavy pump shotgun blast, huge boomy low end, crunchy distortion, quick reverb tail in a large concrete hall, game sound effect" },
+    { "id": "fire-gauntlet", "event": "punch", "triad": "feel", "seconds": 0.6, "prompt": "Powered metal gauntlet punch, a whoosh into a hard meaty impact with an electric crackle, game sound effect" },
+    { "id": "fire-torch", "event": "fire:torch", "triad": "feel", "seconds": 1.0, "prompt": "Short roaring burst from a flamethrower, gas whoosh and crackling fire, game sound effect" },
+    { "id": "pump", "event": "shotgunPump", "triad": "feel", "seconds": 0.5, "prompt": "Shotgun pump action, two crisp mechanical clacks, metal on metal, close mic" },
+    { "id": "hit", "event": "hit", "triad": "reward", "seconds": 0.3, "prompt": "Satisfying hitmarker tick, a crisp short high click with a soft fleshy thud underneath, game UI feedback" },
+    { "id": "kill", "event": "kill", "triad": "reward", "seconds": 0.7, "prompt": "Crunchy enemy kill confirm, a stone body shattering with a bright rising chime on top, very satisfying, game sound effect" },
+    { "id": "points", "event": "points", "triad": "reward", "seconds": 0.4, "prompt": "Quick coin-like digital points blip, two rising bright notes, arcade game reward" },
+    { "id": "buy", "event": "buy", "triad": "reward", "seconds": 0.8, "prompt": "Sci-fi vending purchase, a mechanical register clunk followed by a bright confirming chime" },
+    { "id": "powerup", "event": "powerUpGrab", "triad": "reward", "seconds": 1.2, "prompt": "Power-up pickup, a shimmering rising synth sweep with sparkles, energizing, game reward sound" },
+    { "id": "pickup", "event": "pickup29", "triad": "reward", "seconds": 0.6, "prompt": "Small item pickup, a soft glassy chime with a short whoosh, game sound effect" },
+    { "id": "weapon-earned", "event": "weaponEarned", "triad": "reward", "seconds": 2.0, "prompt": "New weapon unlocked fanfare, heavy metallic latch then a triumphant short synth brass stab, game reward" },
+    { "id": "room-clear", "event": "roomClear", "triad": "reward", "seconds": 1.5, "prompt": "Arena cleared stinger, a deep boom then a rising bright synth chord, victorious, short" },
+    { "id": "parry", "event": "parry", "triad": "reward", "seconds": 0.7, "prompt": "Perfect parry, a sharp metallic clang with a time-slowing reverse whoosh, crystalline ring, game sound effect" },
+    { "id": "hurt", "event": "hurt:player", "triad": "damage", "seconds": 0.5, "prompt": "Player takes damage, a muffled heavy body impact with a short distorted crunch and a grunt-free low thud, game sound effect" },
+    { "id": "enemy-windup", "event": "huskWindup", "triad": "damage", "seconds": 0.6, "prompt": "Monster attack wind-up, a raspy growl rising in pitch, warning cue, game sound effect" },
+    { "id": "boss-intro", "event": "bossIntro", "triad": "damage", "seconds": 3.0, "prompt": "Giant boss monster entrance, a deep earth-shaking roar with metal grinding and a huge low drum hit, cinematic" },
+    { "id": "boss-hit", "event": "bossHit", "triad": "reward", "seconds": 0.5, "prompt": "Bullet hitting a giant armored boss, heavy metallic clank with a deep resonant ring, game sound effect" },
+    { "id": "boss-down", "event": "bossDown", "triad": "end", "seconds": 3.0, "prompt": "Giant boss defeated, a massive collapsing explosion, metal groaning, then a deep triumphant boom, cinematic" },
+    { "id": "win", "event": "exfilDone", "triad": "end", "seconds": 3.5, "prompt": "Victory stinger, a bright rising synth arpeggio into a big warm major chord, triumphant, video game level complete" },
+    { "id": "lose", "event": "death:player", "triad": "end", "seconds": 3.0, "prompt": "Game over stinger, a heavy low hit then a slow descending detuned synth tone fading into silence, defeat, video game" },
+    { "id": "retry", "event": "roomRetry", "triad": "end", "seconds": 1.0, "prompt": "Respawn whoosh, a reversed swell into a soft digital materialize shimmer, game sound effect" },
+    { "id": "jump", "event": "mover:jump", "triad": "feel", "seconds": 0.3, "prompt": "Light athletic jump, a quick cloth whoosh with a soft boot push-off, game sound effect" },
+    { "id": "dash", "event": "mover:dash", "triad": "feel", "seconds": 0.5, "prompt": "Fast air dash, a sharp sci-fi whoosh with a jet burst, game sound effect" },
+    { "id": "land", "event": "mover:land", "triad": "feel", "seconds": 0.3, "prompt": "Boots landing on concrete, a short solid thud, game sound effect" },
+    { "id": "slam", "event": "mover:slam", "triad": "feel", "seconds": 0.8, "prompt": "Ground slam, a heavy body hitting the floor from height with a concussive boom and debris, game sound effect" },
+    { "id": "grapple", "event": "mover:ropeFire", "triad": "feel", "seconds": 0.6, "prompt": "Grappling hook firing, a pneumatic thunk and a cable zipping out fast, game sound effect" },
+    { "id": "music-loop", "event": "music", "triad": "bed", "seconds": 22.0, "loop": true, "prompt": "Dark driving synthwave combat loop at dusk, pulsing bass, punchy drums, tense arpeggios, 128 bpm, seamless loop, instrumental" }
+  ]
+}

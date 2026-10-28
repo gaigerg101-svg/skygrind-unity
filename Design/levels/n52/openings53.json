@@ -1,0 +1,28 @@
+{
+  "_why": "NIGHT53 I7 (NIGHT53.md section 2; RESEARCH A-5 / A-8; DECIDE53 D-2): each NIGHT52-rebuilt room's opening, one of vista (a look over the arena from a one-way entrance), ambushed (the enemies come at you past a midfield line), ambusher (you come on them unseen), held (ground the enemies hold that you take). A sidecar beside the plans, not a plan field: builder K edits the kiln / span / foundry plans in place tonight, and a field in every room row would collide with K's edits at every pick. Read from each room's identity card in docs/ROOMS.md (the lead, P0); a room's change that changes its opening updates this file in the same commit.",
+  "foundry": { "a3": "ambushed", "a5": "held", "b1": "ambushed" },
+  "iceline": { "g2": "held", "g3": "ambushed", "g4": "held", "g5": "ambushed", "g7": "held", "g8": "ambushed" },
+  "kiln": { "kb2": "vista", "kb2c": "ambushed", "kb3": "held" },
+  "span": { "p1": "vista", "p3": "ambushed", "p5": "held" },
+  "spire": { "v2": "ambushed", "v5": "vista", "v6": "held" },
+  "_cards": {
+    "a3": "swarmers rush the entry floor while husks file round the pit (ambushed)",
+    "a5": "a spitter lobs from the gantry over a floor its husks hold (held)",
+    "b1": "the first file comes out from behind the tipped ladle, round both its ends and over the bridges at you: past the river, the midfield line (ambushed; EXT53 e53-m-b1.cjs, was held: spitters held the rim and the cabs)",
+    "g2": "the warden's shield faces you across the pillars (held)",
+    "g3": "eight swarmers at once out of the chute (ambushed)",
+    "g4": "the drones hold the far side of the canal (held)",
+    "g5": "the first pack rushes; the warden and drones come while the blast cools (ambushed)",
+    "g7": "spitters on the perch while the tank and the pack close (held)",
+    "g8": "the chargers run at you (ambushed)",
+    "kb2": "JUMP IN: the drop into the pour hall over the pack (vista)",
+    "kb2c": "the burrower surfaces under you (ambushed)",
+    "kb3": "spitters hold the ladle over the pour (held)",
+    "p1": "the yard seen from the door, the ring over the terrace (vista)",
+    "p3": "three waves fill the floor (ambushed)",
+    "p5": "enemies on the perches; whip them in (held)",
+    "v2": "husks and swarmers come round both sides of the fallen bell at you (ambushed)",
+    "v5": "one wave in view from the door, 20-28 m off, coming down the stair (vista)",
+    "v6": "the file comes down the island; the drones hold the loft's height (held)"
+  }
+}

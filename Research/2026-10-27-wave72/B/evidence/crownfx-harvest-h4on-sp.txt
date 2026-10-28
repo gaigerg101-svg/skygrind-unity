@@ -1,0 +1,8 @@
+# command: python -I Tools/night/n72-crownfx.py n72-h0-h4on-sp <the five frames Logs/feel/n72-h0/h4on-sp/boss63/shot-N30-B63-crown37-*.png>   (the lead's n72-h0 build, wyrm71 + voice71 + words71 + cyan71 + bossText55 ON, no n72 row: the state bossfx72 builds on)
+# builder B, worktree n72-B at 52eac37c2, 2026-10-27 11:36:41 USMST
+n72-h0-h4on-sp	shot-N30-B63-crown37-idle.png	cover   1.0%	danger-hue share   0.1%	cyan body  18339 mass       0	danger body      0 mass       0	visible yes
+n72-h0-h4on-sp	shot-N30-B63-crown37-flinch.png	cover  13.2%	danger-hue share   4.6%	cyan body   3256 mass       0	danger body  40684 mass   42163	visible NO
+n72-h0-h4on-sp	shot-N30-B63-crown37-tell.png	cover  24.9%	danger-hue share  26.8%	cyan body      0 mass       0	danger body 114526 mass  227516	visible NO
+n72-h0-h4on-sp	shot-N30-B63-crown37-windup.png	cover  13.4%	danger-hue share   5.6%	cyan body   2907 mass       0	danger body  87766 mass    4225	visible NO
+n72-h0-h4on-sp	shot-N30-B63-crown37-stagger.png	cover  16.5%	danger-hue share   1.5%	cyan body  29134 mass   83972	danger body  16892 mass    4720	visible NO
+n72-h0-h4on-sp	TOTAL	visible 1 of 5	worst coverage 24.9% (bar 15%)	coverage FAIL	body FAIL (bar 4 of 5)	tell frames' danger-hue share max 26.8% (bar 20%) FAIL

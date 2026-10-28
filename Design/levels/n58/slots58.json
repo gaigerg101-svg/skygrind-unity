@@ -1,0 +1,7 @@
+{
+  "_why": "NIGHT59 L (L1): n58-span's combat-room slots (Tools/night/gen-n58-span.cjs SLOTS; docs/ROOMS.md 'Level 4 as n58-span') and, per new room, the n52-span room whose n46flow on n52-span (--off58) is the room's 'before' in Tools/night/n59-l-contract.sh (THE ROOM CONTRACT's dwell item). Slot P2 held n52's link p2 4.2 FIRST GAP (no fight), so, as NIGHT57's slot DE (Design/levels/n57/slots57.json: a link's slot takes the fight it follows), its base is n52's p1 4.1 THE HOOK YARD II, the fight before it.",
+  "slots": { "P2": ["p2"] },
+  "rooms": {
+    "p2": { "slot": "P2", "base": "p1" }
+  }
+}

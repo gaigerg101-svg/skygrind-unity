@@ -1,0 +1,7 @@
+{
+  "_why": "NIGHT59 L (L1; NIGHT53 I7's sidecar for the n58 levels: Tools/night/n59-l-room.py overlays this on Design/levels/n52/openings53.json): each NEW n58-span combat room's opening, one of vista / ambushed / ambusher / held, read from its identity card in docs/ROOMS.md 'Level 4 as n58-span'. A slot that still holds n52's room keeps n52's opening (p1 vista, p3 ambushed, p5 held).",
+  "span": { "p2": "held" },
+  "_cards": {
+    "p2": "THE GAP NEST: the far deck and its gantry head held by wave 1 across THE GAP: ground you take with the pull (held; the card's heading said vista: NIGHT59 L cut 1, I7 FAILED 'p1 and p2 both vista' with p1 n52's vista room before it; p3 is ambushed, so held or ambusher clash with neither; held reads the room: wave 1 holds the far deck 39-45 m off, nobody is ambushed; the same >= 4-seen meter as vista, as kiln's kb2)"
+  }
+}

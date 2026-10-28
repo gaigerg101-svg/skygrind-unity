@@ -1,0 +1,172 @@
+{
+ "_why": "THE ICEBREAKER's arena (NIGHT40 builder B2; Tools/night/gen-n40-brawl-arena.cjs; design.n40.brawl40.arena). Arena-local: the floor's centre at 0, 0, 0. Built as world layer brawl40Arena at n40-iceline x9's brawl40.centre (SurvivalSim.Brawl40.cs). 36 x 36 m of ice, 8 m ride walls on the rim, the entry gap (x -2..2) on +z closed by the slab after the walk-in, four 7 m pillars at +-8 m on the diagonals.",
+ "half": 18,
+ "height": 8,
+ "playerSpawn": {
+  "x": 0,
+  "y": 0,
+  "z": 16,
+  "yawDeg": 0
+ },
+ "bossSpawn": {
+  "x": 0,
+  "y": 0,
+  "z": -6
+ },
+ "slab": {
+  "min": [
+   -2,
+   0,
+   18
+  ],
+  "max": [
+   2,
+   8,
+   19
+  ]
+ },
+ "collision": {
+  "boxes": [
+   {
+    "min": [
+     -18,
+     -1,
+     -18
+    ],
+    "max": [
+     18,
+     0,
+     18
+    ],
+    "kind": "floor",
+    "job": "the ice: the whole fight on one level"
+   },
+   {
+    "min": [
+     -19,
+     0,
+     -19
+    ],
+    "max": [
+     19,
+     8,
+     -18
+    ],
+    "kind": "wall",
+    "job": "rim north: a ride wall (8 m)"
+   },
+   {
+    "min": [
+     -19,
+     0,
+     -18
+    ],
+    "max": [
+     -18,
+     8,
+     18
+    ],
+    "kind": "wall",
+    "job": "rim west: a ride wall (8 m)"
+   },
+   {
+    "min": [
+     18,
+     0,
+     -18
+    ],
+    "max": [
+     19,
+     8,
+     18
+    ],
+    "kind": "wall",
+    "job": "rim east: a ride wall (8 m)"
+   },
+   {
+    "min": [
+     -19,
+     0,
+     18
+    ],
+    "max": [
+     -2,
+     8,
+     19
+    ],
+    "kind": "wall",
+    "job": "rim south, west of the entry gap: a ride wall (8 m)"
+   },
+   {
+    "min": [
+     2,
+     0,
+     18
+    ],
+    "max": [
+     19,
+     8,
+     19
+    ],
+    "kind": "wall",
+    "job": "rim south, east of the entry gap: a ride wall (8 m)"
+   },
+   {
+    "min": [
+     -9.2,
+     0,
+     -9.2
+    ],
+    "max": [
+     -6.8,
+     7,
+     -6.8
+    ],
+    "kind": "pillar",
+    "job": "a pillar: breaks the line of a gun from range; the haymaker's lunge stops on it"
+   },
+   {
+    "min": [
+     -9.2,
+     0,
+     6.8
+    ],
+    "max": [
+     -6.8,
+     7,
+     9.2
+    ],
+    "kind": "pillar",
+    "job": "a pillar: breaks the line of a gun from range; the haymaker's lunge stops on it"
+   },
+   {
+    "min": [
+     6.8,
+     0,
+     -9.2
+    ],
+    "max": [
+     9.2,
+     7,
+     -6.8
+    ],
+    "kind": "pillar",
+    "job": "a pillar: breaks the line of a gun from range; the haymaker's lunge stops on it"
+   },
+   {
+    "min": [
+     6.8,
+     0,
+     6.8
+    ],
+    "max": [
+     9.2,
+     7,
+     9.2
+    ],
+    "kind": "pillar",
+    "job": "a pillar: breaks the line of a gun from range; the haymaker's lunge stops on it"
+   }
+  ]
+ }
+}

@@ -1,0 +1,22 @@
+# command: node Tools/night/n66-deco.cjs --selftest b1
+# sha: 6b501872 (tree 5 dirty paths), 2026-10-24 02:30:55 USMST, /c/Users/gaige/dev/SKYGRIND-unity/.claude/worktrees/agent-af48e888c59fa3626
+
+n66-deco --selftest: room b1 (its cyan markers stripped), touches Research/2026-10-23-wave66/T/t1c-deco-plant-touch.txt: 49 items now (43 at the base); new or moved: 6 (6 pieces judged, 0 dressing not judged) | touches: 23 pieces from Research/2026-10-23-wave66/T/t1c-deco-plant-touch.txt; launch kills 8; ranged spots 4; walk-line samples 31; cyan markers in the room 2
+  PASS added box(3.5,0,-157.5..4.5,3.9,-156.5) | cover: PLANTED: PLANTED B+ cover on a clear spitter sight | a touched no (not in the touch table); b sight YES (cuts 3 of the 66 sights clear without it (124 spot-to-walk-line sights)); c launch no (no launch36 kill on it); d marker no (n/a (not a cyan marker))
+  FAIL added box(-9.85,0.1,-164.4..-9.55,11.9,-163.6) | cover: PLANTED: PLANTED B- a box inside ride | a touched no (not in the touch table); b sight no (cuts 0 of the 63 sights clear without it (124 spot-to-walk-line sights)); c launch no (no launch36 kill on it); d marker no (n/a (not a cyan marker))
+  PASS added box(8.9,0,-163.1..9.9,5.3,-162.1) | anvil: PLANTED: PLANTED C+ a block under a launch36 kill burst | a touched no (not in the touch table); b sight no (cuts 0 of the 63 sights clear without it (124 spot-to-walk-line sights)); c launch YES (2 launch36 kill burst(s) within 1 m (seeds 1, 3)); d marker no (n/a (not a cyan marker))
+  FAIL added box(-9.3,0,-149.7..-8.3,1,-148.7) | cover: PLANTED: PLANTED A- a 1 m crate in a corner | a touched no (not in the touch table); b sight no (cuts 0 of the 63 sights clear without it (124 spot-to-walk-line sights)); c launch no (no launch36 kill on it); d marker no (n/a (not a cyan marker))
+  FAIL added light(b1-plantD-@-9.5,6,-148.5) | light b1-plantD- cyan | a touched no (n/a (light)); b sight no (n/a (no solid)); c launch no (n/a); d marker no (cyan marker 1 of 2 in the room (at most 2); the exit 31.0 m off (6 m); no marks (only the exit counts))
+  PASS added light(b1-plantD+@1,0.03,-178) | light b1-plantD+ cyan | a touched no (n/a (light)); b sight no (n/a (no solid)); c launch no (n/a); d marker YES (cyan marker 2 of 2 in the room (at most 2); the exit 1.0 m off (6 m); no marks (only the exit counts))
+  PASS added light(b1-plantDm+@-9.7,12.5,-164) | light b1-plantDm+ cyan | a touched no (n/a (light)); b sight no (n/a (no solid)); c launch no (n/a); d marker YES (cyan marker 1 of 2 in the room (at most 2); the exit 17.0 m off (6 m); marks 'P1 THE WEST RAIL': box(-10,0,-180..-9.4,12,-148) 0.5 m off, its job a)   (second judge: the marks cases)
+  FAIL added light(b1-plantDm-@-8.8,2,-149.2) | light b1-plantDm- cyan | a touched no (n/a (light)); b sight no (n/a (no solid)); c launch no (n/a); d marker no (cyan marker 2 of 2 in the room (at most 2); the exit 30.1 m off (6 m); marks 'PLANTED A- a 1 m crate in a corner': box(-9.3,0,-149.7..-8.3,1,-148.7) 1.0 m off, its job none (it passes no test a-c))   (second judge: the marks cases)
+  PASS B+ test b reads YES on a clear sight
+  PASS B- test b reads no inside a wall
+  PASS C+ test c reads YES under a launch kill
+  PASS A- every test no, the piece FAILs
+  PASS D- a corner light with no marks FAILs
+  PASS D+ a light beside the exit PASSes
+  PASS D+m a light marking a working piece beside it PASSes
+  PASS D-m a light marking a piece with no job FAILs
+n66-deco --selftest: PASS (8 / 8 planted cases; test a's planted pair is t1c-deco-plant.sh's, on a skip v2 run)
+# exit 0, 02:30:56

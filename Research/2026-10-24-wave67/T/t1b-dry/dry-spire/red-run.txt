@@ -1,0 +1,3 @@
+  verb65 v6 - (slate ride): plant
+n67-red: 5 jobs on n67-spire in 74 s; outputs under Logs/n67/dry-spire/<room>/ (11:23:25)
+  v6: flow-A.txt flow-B.txt flow-V.txt pads.txt plan.png plan.svg ride.txt room-check.txt 

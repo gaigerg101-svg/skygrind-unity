@@ -1,0 +1,11 @@
+# command: node Tools/night/n70-area.cjs --level foundry --dir C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/a3/cand2 --touches Research/2026-10-27-wave74/R/evidence/a3/cand2/a3/skip.txt a3
+# sha: 36ea82efd (+ the room file as in the tree); time: 2026-10-28 01:28:31
+n70-area: room a3; plan C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/a3/cand2/foundry.plan.json, level C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/a3/cand2/n65-foundry.json (the round's folder C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/a3/cand2); touches Research/2026-10-27-wave74/R/evidence/a3/cand2/a3/skip.txt (17 touch rows, 0 launch kills); card none
+OPEN  PASS largest open square 8.5 m (x -8.0..0.5, z -85.0..-76.5; 18 pieces on a 20.0 x 26.0 m rect; 12 m or less passes)
+P1    N/A  the last wave (husk husk husk swarmer swarmer) has no ranged enemy (spitter / drone)
+P4    PASS 1 / 1 standing solids >= 1.75 m do a job ((a) touched 1, (b) sight 0, (c) launch kill 0)
+P5    PASS walk line in a ranged spawn's sight at 6-24 m 0.0 % (>= 50 %), line65 0.0 % (<= walk - 30 points: no); line65's nearest enemy spawn 4.9 m (<= 6: yes); 0 ranged spawns
+P9    N/A  no plane 1 m or more up with a short side of 6 m or more
+P11   N/A  the card names no TOWER / GALLERY / SPLIT LEVEL (no card)
+P17   PASS 1 / 1 ride walls 4 m tall and 8 m long; 0 non-ride wall(s) in that band; the strip = ride: true (ride36 faces 1)
+n70-area: PASS a3 (4/4)

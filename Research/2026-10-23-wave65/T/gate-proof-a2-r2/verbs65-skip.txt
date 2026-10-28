@@ -1,0 +1,11 @@
+# command: dotnet run --project Tools/SimHarness -c Release -- n65verb skip --level <the scratch level of the round's assembly at d602157a> --room a2 --seeds 5 --verbs65
+# sha: d602157a; the level: Tools/night/gen-n65-foundry.cjs (slots latest: a2 latest rebuilt, a3 latest rebuilt, a4 latest rebuilt, a5 latest rebuilt, b1 latest rebuilt, a8 latest rebuilt
+# exit: 1
+
+n65verb skip: level Design/levels/n65-foundry.json, room a2, verb65 pierce, refuse pierce, seeds 1..5, cap 120.0 s; pilot Walk38Pilot + n46flow's lava rule + the ported autopilot (normal) + the verb-aware layer (--verbs65) in the allowed run, not invulnerable
+  seed 1: verb-aware: cleared yes in 23.7 s, deaths 0, falls 0, charged shots 7, STYLE above DULL 62.0 %, top AIRBORNE, trigger held 1871 steps | pierce refused: cleared yes in 19.9 s, deaths 0, falls 0, charged shots 0, STYLE above DULL 39.6 %, top COOL (presses refused 1044)
+  seed 2: verb-aware: cleared yes in 13.5 s, deaths 0, falls 0, charged shots 4, STYLE above DULL 93.1 %, top BOLD, trigger held 984 steps | pierce refused: cleared yes in 24.6 s, deaths 0, falls 0, charged shots 0, STYLE above DULL 27.7 %, top COOL (presses refused 1064)
+  seed 3: verb-aware: cleared yes in 20.0 s, deaths 0, falls 0, charged shots 6, STYLE above DULL 39.4 %, top AIRBORNE, trigger held 1459 steps | pierce refused: cleared yes in 20.7 s, deaths 0, falls 0, charged shots 0, STYLE above DULL 46.7 %, top BOLD (presses refused 980)
+  seed 4: verb-aware: cleared yes in 22.9 s, deaths 0, falls 0, charged shots 7, STYLE above DULL 63.3 %, top BOLD, trigger held 1315 steps | pierce refused: cleared yes in 18.3 s, deaths 0, falls 0, charged shots 0, STYLE above DULL 36.5 %, top COOL (presses refused 958)
+  seed 5: verb-aware: cleared yes in 12.8 s, deaths 0, falls 0, charged shots 3, STYLE above DULL 92.8 %, top BOLD, trigger held 663 steps | pierce refused: cleared yes in 22.7 s, deaths 0, falls 0, charged shots 0, STYLE above DULL 40.3 %, top COOL (presses refused 1161)
+n65verb skip: RED | room a2, verb65 pierce, refuse pierce | verb-aware: cleared 5/5, median 20.0 s, deaths 0, the verb used 27 time(s), STYLE above DULL 66.2 %, trigger held 6292 steps | refused: cleared 5/5, median 20.7 s, deaths 0, STYLE above DULL 37.8 % | the room clears as well without the verb: it can be skipped (by this pilot)

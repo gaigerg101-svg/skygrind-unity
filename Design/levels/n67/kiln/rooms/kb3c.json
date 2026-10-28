@@ -1,0 +1,874 @@
+{
+ "_why": "NIGHT68 S r3a applied (THE TAP RUN drained to a dry 2 m pit with fallReturn43 to the apron: a failed ride costs a return, not a death). NIGHT68 S r1g applied (kb3c: THE SPOUT cut (no job: 3 / 20 touches); the last wave two spitters). NIGHT68 S r1f applied (the hold: the last wave's two spitters on the tower behind THE SPOUT PARAPET (1.5 m, added); THE SKIM WALL out). NIGHT68 S r1 applied (THE RUN CURB 0.9 m on the tap run's west rim: the deaths guard; M2's change waits for I1's red). NIGHT67 S r3c applied (the blow pipe back to its shipped spot; the slag ramp's proof stops on the ramp: I4). NIGHT67 S r3b applied (the slag ramp's proof to its top; the blow pipe 1 m in: I4). NIGHT67 S r3a applied (THE CHARGING RAMP out, THE SLAG RAMP in (P9 away from the spawn), the tap vent back). NIGHT67 S r2d applied (the furnace 6 x 9 m + THE CHARGING RAMP: P9; the tap vent out; proofs and a node follow). NIGHT67 S r2c applied (the door's east liner removed: P4, no job by touch, sight or launch; it stood behind the tap hood). NIGHT67 S r2b applied (the tower's walk proof to 3.5 m; the run wall's base 0: the ride pilot's start on the apron). NIGHT67 S r2a applied (THE SPOUT TOWER 3.5 m: the ride's landing and the last wave's roost; its ramp 7 m). NIGHT67 S r1d applied (the tap run back to 4 m wide, 3.5 m north: the deaths guard, corner 16). NIGHT67 S r1c applied (wave 1 back to the far end in view: the IN VIEW guard). NIGHT67 S r1 applied (pit edited (THE TAP RUN 48 -> 100 m2, its south end 3.5 m north: THE TAP APRON freed); pad moved (the tap vent); boxes +1 (THE SKIM WALL, ride); prop moved (the health onto the ledge); light moved (the run's glow); row: bot43 false, verb65 ride, line65 4 points, card65, nodes / waveNodes43 (wave 1 by the apron, wave 2 at the far end), rims36, proofs off the lava (+1: the apron)). NIGHT67 T1a (Tools/night/gen-slots.cjs --level kiln --export): n57-kiln's room kb3c (3.3c THE TAP RUN) exactly as Design/levels/n57/kiln.plan.json has it: the row (every key), its zone-keyed pieces (boxes, ramps, pads, grapple, pits, tunnels), its room-keyed pieces (lights, props). The slot's starting point: rebuild it here (every new piece with a job and a why), give the row bot43: false, verb65 (the slate's verb) and line65 (the verb's line, 3+ waypoints); never an area67 block (refused). A key the row drops needs a reason in drop{}. The room's opening: top-level \"opening\": \"vista\" | \"ambushed\" | \"ambusher\" | \"held\" (and \"opening_why\"); left out, the room keeps n57-kiln's.",
+ "room": "kb3c",
+ "row": {
+  "id": "kb3c",
+  "name": "3.3c THE TAP RUN",
+  "kind": "room",
+  "rect": [
+   -11,
+   -253.5,
+   11,
+   -229.5
+  ],
+  "height": 12,
+  "roof": true,
+  "par": 60,
+  "job36": "test",
+  "card57": "THE TAP RUN",
+  "verb36": "the ride: the run wall over the tap run up to the drones' height and onto the spout ledge; the tap vent onto the furnace, the blow pipe onto the fettlers' walk",
+  "spawn": {
+   "at": [
+    -6.5,
+    0,
+    -234
+   ],
+   "yawDeg": 0
+  },
+  "spawn_why": "NIGHT57 L (card kb3c, Molecule: the apron's west side): 4.5 m in and 6.5 m off the door's axis: a back-step ends at the west liner, 4.5 m from the door (T-119), not in the doorway",
+  "exit": [
+   -6,
+   0,
+   -251.5
+  ],
+  "arena36": true,
+  "waves": [
+   [
+    "drone",
+    "drone",
+    "husk",
+    "husk",
+    "husk",
+    "husk"
+   ],
+   [
+    "drone",
+    "drone",
+    "spitter",
+    "spitter"
+   ]
+  ],
+  "waves_why": "NIGHT68 S r1g (card kb3c): the last wave two drones and two spitters on the tower (r1f's three spitters raised the walk bot's stall A to 33.8 % against the ceiling 33); the spitters hold 6-24 m and lob from the tower, so the last kills stay at the ride's end",
+  "roles43": [
+   "flyer + fodder (the drones over the tap run, the husks round the ring)",
+   "flyer + ranged (the drones and two spitters hold the spout tower behind its parapet: the ride lands among the spitters)"
+  ],
+  "roles43_why": "NIGHT57 L (card kb3c; R-2 / R-3): the flyer (level 2's drone) comes to level 3 with a known fodder role; the ride is the verb that reaches it over the lava",
+  "nodes": [
+   [
+    2.5,
+    0,
+    -247.5
+   ],
+   [
+    0,
+    0,
+    -249.5
+   ],
+   [
+    -6.5,
+    0,
+    -248
+   ],
+   [
+    -6.5,
+    0,
+    -252
+   ]
+  ],
+  "highNodes": [
+   [
+    7.5,
+    3.5,
+    -249
+   ],
+   [
+    9.5,
+    3.5,
+    -249
+   ],
+   [
+    7,
+    3.5,
+    -252.5
+   ],
+   [
+    8,
+    3.5,
+    -250.5
+   ]
+  ],
+  "nodes_why": "NIGHT67 S r1c (card kb3c): wave 1 at the far end in view of the tap hood's flanks (IN VIEW: r1's apron nodes stood behind the flank eyes and inside minSpawnDist 12 m of the door) - the far floor beside the run's north rim and THE SPOUT LEDGE (highNodes); wave 2 also the west lane's far end. The apron stays the ride's start on the floor",
+  "waveNodes43": [
+   [
+    [
+     2.5,
+     0,
+     -247.5
+    ],
+    [
+     0,
+     0,
+     -249.5
+    ],
+    [
+     7.5,
+     3.5,
+     -249
+    ],
+    [
+     9.5,
+     3.5,
+     -249
+    ]
+   ],
+   [
+    [
+     7.5,
+     3.5,
+     -249
+    ],
+    [
+     9.5,
+     3.5,
+     -249
+    ],
+    [
+     7,
+     3.5,
+     -252.5
+    ],
+    [
+     8,
+     3.5,
+     -250.5
+    ]
+   ]
+  ],
+  "waveNodes43_why": "NIGHT67 S r2a: wave 1 on the far floor and the tower's front (in view of the tap hood's flanks: IN VIEW); wave 2 (the last: 2 drones + 4 swarmers) only on THE SPOUT TOWER (3.5 m: P1)",
+  "rims36": {
+   "rects": [
+    [
+     6.5,
+     -247,
+     7,
+     -237
+    ]
+   ],
+   "why": "NIGHT68 S r1: the run's west rim is THE RUN CURB now (0.9 m): a blast still lifts a walker over it; as NIGHT67 r1d otherwise"
+  },
+  "proofs": [
+   {
+    "kind": "walk",
+    "points": [
+     [
+      -6.5,
+      0,
+      -234
+     ],
+     [
+      -6.5,
+      0,
+      -249
+     ],
+     [
+      -6,
+      0,
+      -251.5
+     ]
+    ]
+   },
+   {
+    "kind": "walk",
+    "points": [
+     [
+      -2.5,
+      0,
+      -252
+     ],
+     [
+      -2.5,
+      2.5,
+      -246
+     ],
+     [
+      -2,
+      2.5,
+      -239
+     ]
+    ]
+   },
+   {
+    "kind": "walk",
+    "points": [
+     [
+      -1.5,
+      0,
+      -252
+     ],
+     [
+      6,
+      3.5,
+      -252
+     ],
+     [
+      7.5,
+      3.5,
+      -249.5
+     ]
+    ]
+   },
+   {
+    "kind": "walk",
+    "points": [
+     [
+      -9.5,
+      0,
+      -252
+     ],
+     [
+      -9.5,
+      4.5,
+      -242
+     ],
+     [
+      -9.5,
+      4.5,
+      -234
+     ]
+    ]
+   },
+   {
+    "kind": "walk",
+    "points": [
+     [
+      -6.5,
+      0,
+      -234
+     ],
+     [
+      -6.5,
+      0,
+      -231
+     ],
+     [
+      -2,
+      0,
+      -231
+     ],
+     [
+      1,
+      0,
+      -235.5
+     ],
+     [
+      8.5,
+      0,
+      -234.5
+     ]
+    ]
+   },
+   {
+    "kind": "walk",
+    "points": [
+     [
+      6.5,
+      0,
+      -238.5
+     ],
+     [
+      2.5,
+      2,
+      -238.5
+     ]
+    ]
+   }
+  ],
+  "frames36": {
+   "mid": [
+    0,
+    0,
+    -231.5,
+    0,
+    0.1
+   ],
+   "exit": [
+    7.5,
+    3.5,
+    -250,
+    0,
+    -0.3
+   ]
+  },
+  "frames52": {
+   "_why": "NIGHT57 L the room frames (a452 / a157): the door just crossed (the furnace ahead, the tap run's glow and the run wall to the east), the fight from the east floor, the fettlers' walk looking over the room to the run",
+   "entry": [
+    0,
+    0,
+    -231,
+    0,
+    0.04
+   ],
+   "mid": [
+    3,
+    0,
+    -236,
+    10,
+    0.05
+   ],
+   "high": [
+    -9.5,
+    4.5,
+    -236,
+    -45,
+    -0.2
+   ]
+  },
+  "kiln57_why": "NIGHT57 L (Tools/night/gen-n57-kiln.cjs; docs/ROOMS.md, Level 3 as n57-kiln, kb3c THE TAP RUN): built from scratch in the slot DE (n52's link kb3b removed): 22 x 24 x 12 m, three planes (0 / 2.5 / 4.5 m), the run wall (an 18 m ride over the tap run, the foothold), the furnace (the ring's mass), two pads",
+  "bot43": false,
+  "verb65": "ride",
+  "line65": [
+   [
+    5.5,
+    0,
+    -233.5
+   ],
+   [
+    9.6,
+    1.7,
+    -236.5
+   ],
+   [
+    9.6,
+    1.7,
+    -246
+   ],
+   [
+    8.5,
+    3.5,
+    -249.5
+   ]
+  ],
+  "card65": "Research/2026-10-24-wave67/cards/kb3c.md",
+  "fallReturn43": {
+   "belowY": -0.3,
+   "to": [
+    9,
+    0,
+    -234.5
+   ],
+   "yawDeg": 0,
+   "damage": 10,
+   "_why": "NIGHT68 S r3a (card kb3c; DECIDE43 D-5's rule, as THE GANTRY): feet under -0.3 m in the room (the drained tap run) -> back on THE TAP APRON at the ride's start, facing the run, 10 health (never a death)"
+  }
+ },
+ "boxes": [
+  {
+   "zone": "kb3c",
+   "kind": "wall",
+   "min": [
+    10.4,
+    0,
+    -249.5
+   ],
+   "max": [
+    11,
+    12,
+    -231.5
+   ],
+   "job": "verb it celebrates: the run wall's ride over the tap run",
+   "why": "NIGHT67 S r2b: THE RUN WALL (ride, cyan, 18 m on the east wall; its base raised from the lava's floor to the floor, so its south end stands on THE TAP APRON where the ride starts, and the run flows under its foot): ride it over the tap run and off its end onto THE SPOUT TOWER",
+   "note": "THE RUN WALL (ride, cyan, 18 m on the east wall standing in the tap run's lava, to the roof): ride it over the molten run up to the drones' height and off its end onto the spout ledge (the walk round is the ledge ramp's long way)",
+   "ride": true,
+   "ride36": {
+    "face": "W",
+    "planeX": 10.4,
+    "lz": [
+     2,
+     20
+    ]
+   }
+  },
+  {
+   "zone": "kb3c",
+   "kind": "hull",
+   "min": [
+    2,
+    0,
+    -234.5
+   ],
+   "max": [
+    5,
+    12,
+    -230.5
+   ],
+   "job": "hero prop: THE TAP HOOD (the run's head; the foothold)",
+   "why": "THE TAP HOOD (3 x 4 m, floor to roof, 1-5 m in, flush to the door's east jamb, at the head of the tap run; round 2: the ring's north crossing goes south of it, 5-8 m from the door, out of the dwell band; NIGHT60 L B14: 2 m narrower on its east side (x 7 -> 5), so the corner between it, the run wall's north end and the run's head (x 7..10.4, z -233.5..-229.5) opens on foot onto the east floor: it was a closed 3.4 x 4 m pocket, reached only out of the lava's knock-up or off the ride and left only through the lava (n46flow's pilot: NO PATH, put at the next room)): where the iron came out of the furnace's tap into the run: the entry's foothold of cover (R5) beside the door; you step out round it to fight down the run",
+   "note": "THE TAP HOOD (3 x 4 m, floor to roof, 1-5 m in, flush to the door's east jamb, at the head of the tap run; round 2: the ring's north crossing goes south of it, 5-8 m from the door, out of the dwell band; NIGHT60 L B14: 2 m narrower on its east side (x 7 -> 5), so the corner between it, the run wall's north end and the run's head (x 7..10.4, z -233.5..-229.5) opens on foot onto the east floor: it was a closed 3.4 x 4 m pocket, reached only out of the lava's knock-up or off the ride and left only through the lava (n46flow's pilot: NO PATH, put at the next room)): where the iron came out of the furnace's tap into the run: the entry's foothold of cover (R5) beside the door; you step out round it to fight down the run"
+  },
+  {
+   "zone": "kb3c",
+   "kind": "deck",
+   "min": [
+    6,
+    0,
+    -253.5
+   ],
+   "max": [
+    11,
+    3.5,
+    -247.5
+   ],
+   "job": "30 s problem: THE SPOUT TOWER (the ride's landing, the last wave's roost)",
+   "why": "NIGHT67 S r2a: THE SPOUT TOWER (the spout ledge raised 2.5 -> 3.5 m; the card critic's CHANGE): the run wall's landing and the last wave's roost (its 2 drones and 4 swarmers spawn only here: P1), reached on foot only the long way (the far floor's ramp from the west), by the ride over the tap run the short way",
+   "note": "THE SPOUT LEDGE (2.5 m, the far east corner where the run poured into the spout): the run wall's landing (jump off the ride's end); a stand level with the drones over the run; the walkers come up its ramp (no safe ledge)"
+  },
+  {
+   "zone": "kb3c",
+   "kind": "deck",
+   "min": [
+    4,
+    0,
+    -250.5
+   ],
+   "max": [
+    6,
+    0.9,
+    -248
+   ],
+   "job": "molecule: the small boost (T-5)",
+   "why": "THE INGOT PILE (0.9 m at the ledge's west face): the small boost (jump, look down, fire) from it onto the ledge; a step out of the pack on the east floor",
+   "note": "THE INGOT PILE (0.9 m at the ledge's west face): the small boost (jump, look down, fire) from it onto the ledge; a step out of the pack on the east floor"
+  },
+  {
+   "zone": "kb3c",
+   "kind": "deck",
+   "min": [
+    -5,
+    0,
+    -246.5
+   ],
+   "max": [
+    1,
+    2.5,
+    -237.5
+   ],
+   "job": "hero prop: THE TAPPING FURNACE (the ring's mass, a mid-tier stand)",
+   "why": "NIGHT67 S r2d: THE TAPPING FURNACE (2.5 m, 6 x 6 -> 6 x 9 m, z -237.5..-246.5; P9: two climbs 8 m apart need the length): the ring's mass, a mid-tier stand over the west lane; climbed by its north ramp from the far floor and THE CHARGING RAMP from the entry side",
+   "note": "THE TAPPING FURNACE (2.5 m, 6 x 6 m, 8-14 m in): the ring's mass the loop runs round (its north crossing 8 m from the door); a stand over the ring (the tap vent throws you on it, the walkers take its ramp)"
+  },
+  {
+   "zone": "kb3c",
+   "kind": "hull",
+   "min": [
+    -5,
+    2.5,
+    -241.5
+   ],
+   "max": [
+    -3.5,
+    12,
+    -239.5
+   ],
+   "job": "every-solid: the furnace's stack (cover on the furnace)",
+   "why": "THE FURNACE STACK (on the furnace top, to the roof): the cover on the furnace you come round; it cuts the furnace top's line to the fettlers' walk",
+   "note": "THE FURNACE STACK (on the furnace top, to the roof): the cover on the furnace you come round; it cuts the furnace top's line to the fettlers' walk"
+  },
+  {
+   "zone": "kb3c",
+   "kind": "deck",
+   "min": [
+    -11,
+    0,
+    -242.5
+   ],
+   "max": [
+    -8,
+    4.5,
+    -229.5
+   ],
+   "job": "spatial law: the fettlers' walk (the high tier on the west wall)",
+   "why": "THE FETTLERS' WALK (4.5 m, 3 x 13 m on the west wall from the entry wall): the walk the fettlers skimmed from: the high ground over the ring, level with the drones; the blow pipe throws you up, the walkers come up its long ramp (no safe ledge)",
+   "note": "THE FETTLERS' WALK (4.5 m, 3 x 13 m on the west wall from the entry wall): the walk the fettlers skimmed from: the high ground over the ring, level with the drones; the blow pipe throws you up, the walkers come up its long ramp (no safe ledge)"
+  },
+  {
+   "zone": "kb3c",
+   "kind": "hull",
+   "min": [
+    -8,
+    0,
+    -230.5
+   ],
+   "max": [
+    -2,
+    12,
+    -229.5
+   ],
+   "job": "molecule: the entrance gated (the door's west liner)",
+   "why": "the DOOR's west LINER (1 m thick, noride, to the fettlers' walk): no ride across the doorway: the fight goes into the room",
+   "note": "the DOOR's west LINER (1 m thick, noride, to the fettlers' walk): no ride across the doorway: the fight goes into the room",
+   "noride": true
+  },
+  {
+   "zone": "kb3c",
+   "kind": "hull",
+   "min": [
+    6.5,
+    0,
+    -247
+   ],
+   "max": [
+    7,
+    0.9,
+    -237
+   ],
+   "note": "THE RUN CURB (0.9 m, the tap run's west rim, 10 m): the iron's kerb along the molten run: the fighting floor's east strip ends at it; the run is crossed only by the ride",
+   "job": "molecule: THE RUN CURB (the fighting floor kept out of the ride's lava: the deaths guard)",
+   "why": "NIGHT68 S r1 (card kb3c): added: NIGHT67 r3c's set A death was the walk bot in the tap run (flow-A: out of lava 204 steps); the curb keeps the east strip's fight out of the lava the ride crosses (NIGHT68.md: a hazard on the verb's line, never beside the walk); 0.9 m, under P4's 1.75 m"
+  },
+  {
+   "zone": "kb3c",
+   "kind": "hull",
+   "min": [
+    6,
+    3.5,
+    -250.5
+   ],
+   "max": [
+    6.5,
+    5,
+    -247.5
+   ],
+   "note": "THE SPOUT PARAPET (1.5 m on THE SPOUT TOWER's west edge, north of the tower ramp's landing): the spout's iron lip: the far floor's line to the tower's spitters is cut; the run's line (the ride's way in) stays open",
+   "job": "every-solid: THE SPOUT PARAPET (the far floor's sight to the tower's spitters cut: the hold at the ride's end)",
+   "why": "NIGHT68 S r1f (card kb3c; the card critic: 'name the hold ... and build that piece'): added: the last wave's spitters lob from the tower; from the far floor the KESTREL cannot see them past it, so the refusal walks round to the tower ramp or waits, while the ride lands among them"
+  }
+ ],
+ "ramps": [
+  {
+   "zone": "kb3c",
+   "from": [
+    -1,
+    -252
+   ],
+   "to": [
+    6,
+    -252
+   ],
+   "width": 3,
+   "rise": 3.5,
+   "job": "molecule: the walkers' climb to the spout ledge",
+   "why": "NIGHT67 S r2a: THE TOWER RAMP (3.5 m over 7 m along the far wall east onto the spout tower; was 2.5 m over 5 m): the walkers' climb to the last wave's roost, the long way round for a player",
+   "note": "THE LEDGE RAMP (2.5 m over 5 m, along the far wall east onto the ledge): the walkers' climb to the ride's landing (no safe ledge); the long way round for a player"
+  },
+  {
+   "zone": "kb3c",
+   "from": [
+    -2.5,
+    -251.5
+   ],
+   "to": [
+    -2.5,
+    -246.5
+   ],
+   "width": 3,
+   "rise": 2.5,
+   "job": "molecule: the walkers' climb to the furnace",
+   "why": "NIGHT67 S r2d: THE FURNACE RAMP (2.5 m over 5 m, up the furnace's far face, moved 3 m north with it): the walkers' climb from the far floor",
+   "note": "THE FURNACE RAMP (2.5 m over 5 m, up the furnace's far face): the walkers' climb onto the furnace (GG: a route enemies can climb)"
+  },
+  {
+   "zone": "kb3c",
+   "from": [
+    -9.5,
+    -251.5
+   ],
+   "to": [
+    -9.5,
+    -242.5
+   ],
+   "width": 3,
+   "rise": 4.5,
+   "job": "molecule: the walkers' climb to the fettlers' walk",
+   "why": "THE WALK RAMP (4.5 m over 9 m along the west wall): the walkers' climb onto the high tier (no safe ledge); the slow way up for a player",
+   "note": "THE WALK RAMP (4.5 m over 9 m along the west wall): the walkers' climb onto the high tier (no safe ledge); the slow way up for a player"
+  },
+  {
+   "zone": "kb3c",
+   "from": [
+    6,
+    -238.5
+   ],
+   "to": [
+    1,
+    -238.5
+   ],
+   "width": 2,
+   "rise": 2.5,
+   "job": "climb",
+   "why": "NIGHT67 S r3a: THE SLAG RAMP (added; 2.5 m over 5 m up the furnace's east face at its south end, from the east floor strip beside the tap run): the furnace's second climb (P9: its top 8.7 m from the furnace ramp's), away from the spawn (r2d's CHARGING RAMP at the spawn's side gave the refusals the entry side's way up: skip v2 1.08 -> 0.92)"
+  }
+ ],
+ "pads": [
+  {
+   "zone": "kb3c",
+   "at": [
+    0,
+    2.5,
+    -238.5
+   ],
+   "target": [
+    -9.5,
+    4.5,
+    -236
+   ],
+   "apexAbove": 2.5,
+   "job": "molecule: the upward line, the blow pipe",
+   "why": "THE BLOW PIPE (a jump pad on the tapping furnace's top, its north-east corner): the furnace's blow pipe launches you from the furnace (2.5 m) over the west lane onto the fettlers' walk (4.5 m), the high ground level with the drones: the ring's mass turned into the climb to the high tier (the walk ramp is the lane's slow way up). NIGHT60 L B15: it stood on the far west lane's floor at (-6.5, -251), 2.5 m in front of d6b's mouth, on every line out of the room (L-087: a pad on a walk line): n46flow's bot leaving for kb3d was thrown onto the walk past its path and stood at d6b's west jamb (put at the next room, seeds 14 / 17 / 20 / 27 over two levels); on the furnace it is off every floor line, 2 m from the furnace ramp's top and from the tap vent's landing",
+   "note": "the blow pipe"
+  },
+  {
+   "zone": "kb3c",
+   "at": [
+    -4,
+    0,
+    -236.3
+   ],
+   "target": [
+    -1.5,
+    2.5,
+    -240.5
+   ],
+   "apexAbove": 2,
+   "job": "molecule: the upward line, the tap vent",
+   "why": "NIGHT67 S r3a: THE TAP VENT back (as r1-r2: the floor at the furnace's south face, 2.3 m off the walk proofs): it throws you onto the furnace top over the west lane"
+  }
+ ],
+ "grapple": [],
+ "pits": [
+  {
+   "zone": "kb3c",
+   "rect": [
+    7,
+    -247,
+    11,
+    -237
+   ],
+   "floorY": -2,
+   "job": "hazard: THE TAP RUN (the gap the ride crosses: a dry run 2 m deep)",
+   "why": "NIGHT68 S r3a (card kb3c): drained, lava at -0.8 -> a dry pit 2 m deep: r1g's verb-aware deaths (seeds 7, 9) and its slow seeds were rides that dropped the rider into the lava; a fall now returns the rider to the apron (fallReturn43), a body in it is ended after 2 s (rooms43); the walkers still go round. NIGHT67 S r1d: THE TAP RUN back to its shipped 4 m (x 7..11; r1's 10 m widening killed the walk bot, deaths 3 on r1c's set A, and is history.md corner 16), kept 3.5 m north of shipped (z -237..-247) so THE TAP APRON (x 7.9..10.4, z -232.5..-237) stays the run wall's start on the floor; the run wall stands in it, the east floor strip x 5..7 walks beside it",
+   "note": "the tap run"
+  }
+ ],
+ "tunnels": [],
+ "lights": [
+  {
+   "id": "kb3c-L1",
+   "room": "kb3c",
+   "kind": "ceiling",
+   "at": [
+    0,
+    11.95,
+    -232.5
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 11,
+   "intensity": 0.9
+  },
+  {
+   "id": "kb3c-L2",
+   "room": "kb3c",
+   "kind": "ceiling",
+   "at": [
+    2,
+    11.95,
+    -241.5
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    4,
+    0.1
+   ],
+   "color": "white",
+   "range": 11,
+   "intensity": 1.1
+  },
+  {
+   "id": "kb3c-L3",
+   "room": "kb3c",
+   "kind": "ceiling",
+   "at": [
+    -2,
+    11.95,
+    -250
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    4,
+    0.1
+   ],
+   "color": "white",
+   "range": 11,
+   "intensity": 1
+  },
+  {
+   "id": "kb3c-L4",
+   "room": "kb3c",
+   "kind": "pool",
+   "at": [
+    -1,
+    2.525,
+    -240.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.5,
+    2.5,
+    0.05
+   ],
+   "color": "white",
+   "range": 8,
+   "intensity": 1
+  },
+  {
+   "id": "kb3c-L5",
+   "room": "kb3c",
+   "kind": "pool",
+   "at": [
+    8,
+    3.525,
+    -250.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2,
+    2,
+    0.05
+   ],
+   "color": "white",
+   "range": 7,
+   "intensity": 0.9
+  },
+  {
+   "id": "kb3c-L6",
+   "room": "kb3c",
+   "kind": "pool",
+   "at": [
+    -9.5,
+    4.525,
+    -236
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2,
+    2,
+    0.05
+   ],
+   "color": "white",
+   "range": 7,
+   "intensity": 0.9
+  },
+  {
+   "id": "kb3c-L7",
+   "room": "kb3c",
+   "kind": "pool",
+   "at": [
+    9,
+    -1.975,
+    -242
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2,
+    9,
+    0.05
+   ],
+   "color": "white",
+   "range": 9,
+   "intensity": 1.1
+  },
+  {
+   "id": "kb3c-L8",
+   "room": "kb3c",
+   "kind": "pool",
+   "at": [
+    -6,
+    0.025,
+    -251.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.5,
+    2.5,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 8,
+   "intensity": 1.7
+  }
+ ],
+ "props": [
+  {
+   "id": "kb3c-P1",
+   "room": "kb3c",
+   "kind": "healthPickup",
+   "at": [
+    7.5,
+    4.4,
+    -250
+   ],
+   "size": [
+    0.6,
+    0.6,
+    0.6
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "pickup": true,
+   "job": "reward",
+   "card57": "30 s problem: the reward on the risky leg",
+   "why": "NIGHT67 S r1 (card kb3c, RACETRACK THE TAP RING, verb ride): the health on THE SPOUT LEDGE (the run wall's landing): the ride pays (its shipped spot on the run's west rim is lava now)"
+  }
+ ],
+ "drop": {}
+}

@@ -1,0 +1,4 @@
+# command: L67=spire node Tools/night/n70-deco.cjs v5  --file Design/levels/n67/spire/rooms-base/v5.json
+# sha: d3bf2c47e; time: 2026-10-27 23:33:36
+n70-deco: room v5 (level spire), Design/levels/n67/spire/rooms-base/v5.json against Design/levels/n67/spire/rooms/v5.json at 16116dead (the file's first commit): 21 items now (21 at the base); new or moved: 0 (0 pieces judged, 0 dressing not judged) | touches: none given (test a not run); launch kills 0; ranged spots 5; walk-line samples 20; cyan markers in the room 4
+n70-deco: PASS | room v5, base 16116dead: 0 piece(s) added or moved, 0 pass, 0 FAIL; dressing 0 not judged

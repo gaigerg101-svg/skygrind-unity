@@ -1,0 +1,76 @@
+{
+ "_why": "NIGHT67 T1a (Tools/night/gen-slots.cjs --level iceline --export): n52-iceline's room g4 (2.4 THE REACH) exactly as Design/levels/n52/iceline.plan.json has it: the row (every key), its zone-keyed pieces (boxes, ramps, pads, grapple, pits, tunnels), its room-keyed pieces (lights, props, surfaces). The slot's starting point: rebuild it here (every new piece with a job and a why), give the row bot43: false, verb65 (the slate's verb) and line65 (the verb's line, 3+ waypoints); never an area67 block (refused). A key the row drops needs a reason in drop{}. The room's opening: top-level \"opening\": \"vista\" | \"ambushed\" | \"ambusher\" | \"held\" (and \"opening_why\"); left out, the room keeps n52-iceline's.",
+ "room": "g4",
+ "row": {
+  "id": "g4",
+  "name": "2.4 THE REACH",
+  "kind": "room",
+  "rect": [-12,-124,12,-94],
+  "height": 10,
+  "roof": true,
+  "par": 30,
+  "job36": "twist",
+  "verb36": "the glove cannot reach a flyer: punch its orb back at it; ride the lock walls over the canal, take the hoist to the gallery and meet the drones at their height",
+  "spawn": {"at":[0,0,-96],"yawDeg":0},
+  "exit": [0,0,-122],
+  "arena36": true,
+  "waves": [["drone"],["drone","drone"]],
+  "lessons": [{"promptPad":"{fire} AS THE YELLOW ORB ARRIVES","kind":"husksDead","n":1,"prompt":"{fire} AS THE YELLOW ORB ARRIVES"}],
+  "lessons31": [{"promptPad":"{fire} AS THE YELLOW ORB ARRIVES","kind":"husksDead","n":1,"prompt":"{fire} AS THE YELLOW ORB ARRIVES"}],
+  "proofs": [{"kind":"walk","points":[[0,0,-96],[0,0,-104],[0,0,-114],[0,0,-122]]},{"kind":"walk","points":[[-10,-1,-110.5],[-10,-0.5,-107.5],[-10,0,-104]],"jump":true,"maxSeconds":8}],
+  "frames36": {"mid":[4,0,-97,10.784,0.112],"exit":[0,0,-114,0,-0.06]},
+  "nodes": [[-6,0,-113.5],[-3,0,-119],[4.5,0,-120],[3,0,-121]],
+  "iceline46_why": "NIGHT46 A3 I-1: the east bridge x 6..9 over the canal (2 crossings, a loop); the drones, their nodes, the lesson and the NW ledge unchanged",
+  "nodes_why": "n47's four drone nodes over the far floor; NIGHT52 loop: the east one 1.5 m off the NE gallery's corner (it was on it); NIGHT53: the first drone off the door's axis, west, on the canal's far lip (the review: the drone parked on the axis)",
+  "highNodes": [[-9,2,-121],[8,4,-121.5]],
+  "highNodes_why": "NIGHT52 loop: the NW ledge (2 m) and the NE gallery (4 m): the drones' high side across the canal",
+  "frames52": {"_why":"NIGHT52 the room frames reel a452 (FeelReel.N52.Rooms.cs): entry, the fight live, the highest tier","entry":[0,0,-96,0,0.02],"mid":[-3.5,0,-101,10,0.06],"high":[9,4,-121.5,160,-0.12]},
+  "loop52_why": "NIGHT52 the room loop (Tools/night/n52-loop-g4.cjs; THE ROOM CONTRACT's spirit, a teach room: the enemy-types item exempt): n47's THE REACH rebuilt as THE REACH II: 24 x 30 x 10 m; 19 pieces; three tiers (floor, the 2 m NW ledge, the 4 m NE gallery, each on a walkers' ramp); two 17.5 m lock walls over the canal; the canal hoist and the return hoist (pads); the lesson and the waves kept. Fix 6 (n52-loop-fix6.cjs): the canal hoist in the east ride's pocket, the NW ramp flush to the wall. NIGHT53 (n53-loop-g4.cjs): the mirror broken: the east lock wall runs on to the gallery (24 m), the west wall and run-up cut, a sluice head and a canal stone in the west, the west post 3 m west, the first drone off-axis west, the canal lit from below."
+ },
+ "boxes": [
+  {"zone":"g4","kind":"deck","min":[-2,-1,-112],"max":[2,0,-106],"job":"line","why":"the BRIDGE (4 m wide) over the canal: the one walk across, under the drone's orbs (the parry's place); the health sits on it (n47's)","note":"the BRIDGE (4 m wide) over the canal: the one walk across, under the drone's orbs (the parry's place); the health sits on it (n47's)"},
+  {"zone":"g4","kind":"deck","min":[6,-1,-112],"max":[9,0,-106],"job":"line","why":"the EAST BRIDGE (3 m wide; NIGHT46 A3 I-1): the canal's second crossing, a loop with the centre bridge; it lands at the hoist pad","note":"the EAST BRIDGE (3 m wide; NIGHT46 A3 I-1): the canal's second crossing, a loop with the centre bridge; it lands at the hoist pad"},
+  {"zone":"g4","kind":"deck","min":[-11,-1,-109],"max":[-9,-0.5,-106],"job":"climb","why":"the canal's west step (0.5 m under the floor, 2 m wide beside the west lock wall): the way back up from a fall","note":"the canal's west step (0.5 m under the floor, 2 m wide beside the west lock wall): the way back up from a fall"},
+  {"zone":"g4","kind":"deck","min":[9,-1,-109],"max":[11,-0.5,-106],"job":"climb","why":"the canal's east step (the west's mirror, beside the east lock wall): the way back up from a fall","note":"the canal's east step (the west's mirror, beside the east lock wall): the way back up from a fall"},
+  {"zone":"g4","kind":"deck","min":[-12,0,-124],"max":[-6,2,-118],"job":"line","why":"the NW LEDGE (2 m; NIGHT52: from n47's 1.5 m): the far side's high ground under the drones (their orbs come from over it); the west lock wall's ride ends at its ramp","note":"the NW LEDGE (2 m; NIGHT52: from n47's 1.5 m): the far side's high ground under the drones (their orbs come from over it); the west lock wall's ride ends at its ramp"},
+  {"zone":"g4","kind":"hull","min":[-12,0,-101],"max":[-9,1.2,-98.5],"job":"cover","why":"the WEST SLUICE HEAD (1.2 m, 3 x 2.5 m, on the door floor's west side): cover from the west drone's orbs over the canal and a vault step to see the far lip (NIGHT53: where the run-up stood; the west has no ride now)","note":"the WEST SLUICE HEAD (1.2 m, 3 x 2.5 m, on the door floor's west side): cover from the west drone's orbs over the canal and a vault step to see the far lip (NIGHT53: where the run-up stood; the west has no ride now)"},
+  {"zone":"g4","kind":"deck","min":[-8,-1,-110],"max":[-5,-0.4,-108],"job":"climb","why":"the CANAL STONE (3 x 2 m, 0.4 m under the floor, mid-canal west of the bridge): the jump's middle stone across the west canal, under the west drone (NIGHT53: the west crossing is a jump, not a ride)","note":"the CANAL STONE (3 x 2 m, 0.4 m under the floor, mid-canal west of the bridge): the jump's middle stone across the west canal, under the west drone (NIGHT53: the west crossing is a jump, not a ride)"},
+  {"zone":"g4","kind":"wall","min":[11,-1,-119],"max":[12,5,-95],"job":"line","why":"the EAST LOCK WALL (ride, cyan, 24 m x 5 m): from the door floor over the canal's east end on to the NE gallery, its top 1 m over the gallery's: the east side's way up is the ride (NIGHT53 n53-loop-g4.cjs: run on 6.5 m to the gallery, the mirror broken; the gallery ramp stays the walkers' route)","note":"the EAST LOCK WALL (ride, cyan, 24 m x 5 m): from the door floor over the canal's east end on to the NE gallery, its top 1 m over the gallery's: the east side's way up is the ride (NIGHT53 n53-loop-g4.cjs: run on 6.5 m to the gallery, the mirror broken; the gallery ramp stays the walkers' route)","ride":true,"ride36":{"face":"W","planeX":11,"lz":[1,25]}},
+  {"zone":"g4","kind":"deck","min":[6,0,-124],"max":[12,4,-119],"job":"line","why":"the NE GALLERY (4 m, 6 x 5 m; the third tier): the drones' high side: the canal hoist puts you on it to parry an orb from above or punch a drone at its own height; the exit is below you","note":"the NE GALLERY (4 m, 6 x 5 m; the third tier): the drones' high side: the canal hoist puts you on it to parry an orb from above or punch a drone at its own height; the exit is below you"},
+  {"zone":"g4","kind":"hull","min":[10,4,-124],"max":[12,6.5,-122],"job":"cover","why":"the GALLERY's WINCH HOUSE (2 x 2 m on its back corner): your shield from the far drone's orb on the gallery (a stand you must move to break)","note":"the GALLERY's WINCH HOUSE (2 x 2 m on its back corner): your shield from the far drone's orb on the gallery (a stand you must move to break)"},
+  {"zone":"g4","kind":"hull","min":[-12,2,-124],"max":[-10,4.5,-122],"job":"cover","why":"the NW LEDGE's ICE HOPPER (2 x 2 m on its back corner): the ledge's shield from the orbs over the canal","note":"the NW LEDGE's ICE HOPPER (2 x 2 m on its back corner): the ledge's shield from the orbs over the canal"},
+  {"zone":"g4","kind":"hull","min":[-8.6,0,-101.6],"max":[-7.4,4,-100.4],"job":"cover","why":"the WEST ICE POST (1.2 m x 4 m) on the door floor, west of the ledge hoist: breaks the west drone's orb line to the hoist and the sluice head (NIGHT53: 3 m west, off the east post's mirror)","note":"the WEST ICE POST (1.2 m x 4 m) on the door floor, west of the ledge hoist: breaks the west drone's orb line to the hoist and the sluice head (NIGHT53: 3 m west, off the east post's mirror)"},
+  {"zone":"g4","kind":"hull","min":[4.4,0,-101.6],"max":[5.6,4,-100.4],"job":"cover","why":"the EAST ICE POST (the west's mirror): breaks the orb line to the landing's east half","note":"the EAST ICE POST (the west's mirror): breaks the orb line to the landing's east half"},
+  {"zone":"g4","kind":"hull","min":[8,0,-99],"max":[11,1.2,-96],"job":"line","why":"the EAST RUN-UP BLOCK (the west's mirror): onto the east lock wall; the return hoist lands on it","note":"the EAST RUN-UP BLOCK (the west's mirror): onto the east lock wall; the return hoist lands on it"}
+ ],
+ "ramps": [
+  {"zone":"g4","from":[-10.5,-113],"to":[-10.5,-118],"width":3,"rise":2,"job":"climb","why":"the NW ledge's ramp (2 m over 5 m): your way up, and the west lock wall's landing (NIGHT52 fix 6: 1.5 m west, flush to the west wall: the west ride lands on it, no slot beside it)","note":"the NW ledge's ramp (2 m over 5 m): your way up, and the west lock wall's landing (NIGHT52 fix 6: 1.5 m west, flush to the west wall: the west ride lands on it, no slot beside it)"},
+  {"zone":"g4","from":[7.5,-112],"to":[7.5,-119],"width":3,"rise":4,"job":"climb","why":"the NE GALLERY's ramp (4 m over 7 m) straight off the east bridge: the walkers' route onto the third tier (GG NIGHT20: a route enemies can climb), and yours without the hoist","note":"the NE GALLERY's ramp (4 m over 7 m) straight off the east bridge: the walkers' route onto the third tier (GG NIGHT20: a route enemies can climb), and yours without the hoist"}
+ ],
+ "pads": [
+  {"zone":"g4","at":[10.5,0,-115.5],"target":[8.5,4,-121.5],"apexAbove":3,"job":"line","why":"THE CANAL HOIST (a jump pad, the upward line, A5): from the far floor off the east bridge onto the NE gallery (4 m): meet the drones at their height (NIGHT52 fix 6: moved into the east ride's end pocket, x 9..12: the ride lands on it, the pocket's exit)","note":"the canal hoist"},
+  {"zone":"g4","at":[-4,0,-116],"target":[9.5,1.2,-97.5],"apexAbove":4,"job":"line","why":"THE RETURN HOIST (a jump pad on the far floor): back over the canal onto the east run-up block (1.2 m) when the second wave's drones come over the door floor","note":"the return hoist"},
+  {"zone":"g4","at":[-7,0,-103],"target":[-9,2,-121],"apexAbove":3,"job":"line","why":"THE LEDGE HOIST (a jump pad on the door floor, off the walk line): over the canal onto the NW ledge (2 m), the drones' near side","note":"the ledge hoist"}
+ ],
+ "grapple": [],
+ "pits": [
+  {"zone":"g4","rect":[-12,-112,12,-106],"floorY":-1,"job":"hazard","why":"THE CANAL (6 m across, a dry channel 1 m deep, its floor ice): the line between you and the drone; a fall costs a jump out, never health","note":"THE CANAL (6 m across, a dry channel 1 m deep, its floor ice): the line between you and the drone; a fall costs a jump out, never health"}
+ ],
+ "tunnels": [],
+ "lights": [
+  {"id":"g4-L1","room":"g4","kind":"ceiling","at":[0,9.95,-97],"normal":[0,-1,0],"size":[3,3,0.1],"color":"white","range":9,"intensity":1},
+  {"id":"g4-L2","room":"g4","kind":"ceiling","at":[0,9.95,-109],"normal":[0,-1,0],"size":[4,6,0.1],"color":"white","range":10,"intensity":1.1},
+  {"id":"g4-L3","room":"g4","kind":"ceiling","at":[0,9.95,-119],"normal":[0,-1,0],"size":[8,4,0.1],"color":"amber","range":10,"intensity":1},
+  {"id":"g4-L4","room":"g4","kind":"pool","at":[0,0.025,-122],"normal":[0,1,0],"size":[2.5,2.5,0.05],"color":"cyan","range":7,"intensity":1.6},
+  {"id":"g4-L5","room":"g4","kind":"ceiling","at":[9,9.95,-121.5],"normal":[0,-1,0],"size":[4,3,0.1],"color":"white","range":9,"intensity":1,"why":"the NE gallery's lamp: the third tier reads from the door"},
+  {"id":"g4-L6","room":"g4","kind":"pool","at":[-6,-0.975,-109],"normal":[0,1,0],"size":[5,4,0.05],"color":"white","range":6,"intensity":1.3,"why":"NIGHT53: the canal's west floor lit from below: the canal reads as a drop from the door"},
+  {"id":"g4-L7","room":"g4","kind":"pool","at":[5,-0.975,-109],"normal":[0,1,0],"size":[4,4,0.05],"color":"white","range":6,"intensity":1.1,"why":"NIGHT53: the canal's east floor lit from below (dimmer than the west: the west is the jump)"}
+ ],
+ "props": [
+  {"id":"g4-P1","room":"g4","kind":"healthPickup","at":[0,0.9,-109],"size":[0.6,0.6,0.6],"yawDeg":0,"collider":false,"pickup":true,"job":"reward","why":"the health on the centre bridge over the canal, under both drones' orbs (A20: the best at the riskiest spot)"}
+ ],
+ "surfaces": [
+  {"kind":"ice","rect":[-12,-112,12,-106],"minY":-1.5,"maxY":-0.5,"room":"g4","note":"THE CANAL's frozen floor (the level's name; design.n30.glide): a fall skates"}
+ ],
+ "drop": {}
+}

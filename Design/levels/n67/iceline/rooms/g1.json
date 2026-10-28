@@ -1,0 +1,574 @@
+{
+ "_why": "NIGHT74 S g1 r1 (Research/2026-10-27-wave74/S/card-g1.md): THE WEST WALL + THE PEN GALLERY + THE GALLERY STAIR, two charge posts, THE EAST STEP and two pen rails; the rect, the waves, the lessons, the east panel and the lights are the shipped room's. NIGHT67 T1a (Tools/night/gen-slots.cjs --level iceline --export): n52-iceline's room g1 (2.1 TANK ALONE) exactly as Design/levels/n52/iceline.plan.json has it: the row (every key), its zone-keyed pieces (boxes, ramps, pads, grapple, pits, tunnels), its room-keyed pieces (lights, props, surfaces). The slot's starting point: rebuild it here (every new piece with a job and a why), give the row bot43: false, verb65 (the slate's verb) and line65 (the verb's line, 3+ waypoints); never an area67 block (refused). A key the row drops needs a reason in drop{}. The room's opening: top-level \"opening\": \"vista\" | \"ambushed\" | \"ambusher\" | \"held\" (and \"opening_why\"); left out, the room keeps n52-iceline's.",
+ "room": "g1",
+ "row": {
+  "id": "g1",
+  "name": "2.1 TANK ALONE",
+  "kind": "room",
+  "rect": [
+   -11,
+   -26,
+   11,
+   0
+  ],
+  "height": 9,
+  "roof": true,
+  "par": 12,
+  "job36": "teach",
+  "verb36": "the punch: a tank dies to one swing of the gauntlet",
+  "spawn": {
+   "at": [
+    0,
+    0,
+    -2
+   ],
+   "yawDeg": 0
+  },
+  "exit": [
+   0,
+   0,
+   -24.5
+  ],
+  "arena36": true,
+  "waves": [
+   [
+    "tank"
+   ],
+   [
+    "charger"
+   ]
+  ],
+  "lessons": [
+   {
+    "promptPad": "{fire}: ONE SWING FELLS A TANK",
+    "kind": "husksDead",
+    "n": 1,
+    "prompt": "{fire}: ONE SWING FELLS A TANK"
+   },
+   {
+    "promptPad": "Dodge late. It can't turn.",
+    "kind": "husksDead",
+    "n": 2,
+    "prompt": "Dodge late. It can't turn."
+   }
+  ],
+  "lessons31": [
+   {
+    "promptPad": "{fire}: ONE SWING FELLS A TANK",
+    "kind": "husksDead",
+    "n": 1,
+    "prompt": "{fire}: ONE SWING FELLS A TANK"
+   },
+   {
+    "promptPad": "Dodge late. It can't turn.",
+    "kind": "husksDead",
+    "n": 2,
+    "prompt": "Dodge late. It can't turn."
+   }
+  ],
+  "proofs": [
+   {
+    "kind": "walk",
+    "points": [
+     [
+      0,
+      0,
+      -2
+     ],
+     [
+      0,
+      0,
+      -8
+     ],
+     [
+      0,
+      0,
+      -20
+     ],
+     [
+      0,
+      0,
+      -24.5
+     ]
+    ]
+   },
+   {
+    "kind": "walk",
+    "points": [
+     [
+      -6.5,
+      0,
+      -9
+     ],
+     [
+      -6.5,
+      3,
+      -17
+     ],
+     [
+      -8,
+      3,
+      -21
+     ]
+    ]
+   },
+   {
+    "kind": "walk",
+    "jump": true,
+    "points": [
+     [
+      3,
+      0,
+      -4
+     ],
+     [
+      5,
+      0.9,
+      -12
+     ],
+     [
+      5,
+      0,
+      -18
+     ]
+    ]
+   }
+  ],
+  "frames36": {
+   "mid": [
+    5,
+    0,
+    -3,
+    24.444,
+    -0.05
+   ],
+   "exit": [
+    0,
+    0,
+    -18,
+    0,
+    -0.075
+   ]
+  },
+  "nodes": [
+   [
+    0,
+    0,
+    -14
+   ]
+  ],
+  "waveNodes43": [
+   null,
+   [
+    [
+     0,
+     0,
+     -22
+    ]
+   ]
+  ],
+  "waveNodes43_why": "NIGHT47 B (G25): wave 2's CHARGER comes in at the exit door's mouth (0, -22), 20 m down the room's axis from the spawn and in view, alone; its first charge runs at you down the axis: sidestep late and it breaks on the entry wall or a ride panel (x +-8), its back open",
+  "iceline47_why": "NIGHT47 B G25 (DECIDE47 D-10): a second wave, the level's first CHARGER alone after the tank (R-3 broken on purpose: GG's \"appear earlier\"); its lesson (copy for F) after the tank's",
+  "bot43": false,
+  "verb65": "ride",
+  "line65": [
+   [
+    -9.7,
+    0,
+    -3
+   ],
+   [
+    -9.7,
+    1.5,
+    -9
+   ],
+   [
+    -9.7,
+    3,
+    -16
+   ],
+   [
+    -8,
+    3,
+    -21
+   ]
+  ],
+  "line65_why": "NIGHT74 S g1 r1 (Research/2026-10-27-wave74/S/card-g1.md): THE WEST WALL's ride: along its east face 0.7 m out from the door end to the gallery's top",
+  "card65": "Research/2026-10-27-wave74/S/card-g1.md",
+  "frames52": {
+   "_why": "NIGHT74 S g1 r1 (Research/2026-10-27-wave74/S/card-g1.md): the room frames: the door just crossed (the tank, the gallery, the step), the fight from the gallery",
+   "entry": [
+    0,
+    0,
+    -2,
+    0,
+    0.04
+   ],
+   "mid": [
+    -8,
+    3,
+    -20,
+    160,
+    -0.1
+   ],
+   "high": [
+    -8,
+    3,
+    -20,
+    160,
+    -0.1
+   ]
+  }
+ },
+ "boxes": [
+  {
+   "zone": "g1",
+   "kind": "wall",
+   "min": [
+    8,
+    0,
+    -19.5
+   ],
+   "max": [
+    8.6,
+    5,
+    -4
+   ],
+   "job": "line",
+   "why": "NIGHT74 S g1 r1 (Research/2026-10-27-wave74/S/card-g1.md): z -18..-5 -> -19.5..-4 (13 -> 15.5 m): the east ride face runs on, the west wall's twin. ride panel E (face west), 16 m from W plane to plane: no chain, each its own line past the tank",
+   "note": "ride panel E (5 m tall, 15.5 m, face west): the line round the tank on the east side",
+   "ride": true,
+   "ride36": {
+    "face": "W",
+    "planeX": 8,
+    "lz": [
+     6.5,
+     22
+    ]
+   }
+  },
+  {
+   "zone": "g1",
+   "kind": "wall",
+   "min": [
+    -11,
+    0,
+    -17.5
+   ],
+   "max": [
+    -10.4,
+    9,
+    -2.5
+   ],
+   "job": "ride: THE WEST WALL (ride north along the west wall onto THE PEN GALLERY, round the tank)",
+   "why": "NIGHT74 S g1 r1 (Research/2026-10-27-wave74/S/card-g1.md): the shipped free-standing west panel (13 m, x -8.6..-8) becomes a 15 m ride face ON the west wall, its landing the gallery at its north end: the west half of the room is a line, not a field.",
+   "note": "THE WEST WALL (ride, cyan, 15 m x 9 m on the west wall)",
+   "ride": true,
+   "ride36": {
+    "face": "E",
+    "planeX": -10.4,
+    "lz": [
+     8.5,
+     23.5
+    ]
+   }
+  },
+  {
+   "zone": "g1",
+   "kind": "deck",
+   "min": [
+    -11,
+    0,
+    -24
+   ],
+   "max": [
+    -5.5,
+    3,
+    -17.5
+   ],
+   "job": "line: THE PEN GALLERY (3 m: the west wall's landing, the high ground over the charger's lane)",
+   "why": "NIGHT74 S g1 r1 (Research/2026-10-27-wave74/S/card-g1.md): a 3 m tier in the north-west corner (5.5 x 6.5 m, rimmed): the second floor plane; the ride and the stair both end on it.",
+   "note": "THE PEN GALLERY (3 m, 5.5 x 6.5 m, north-west)"
+  },
+  {
+   "zone": "g1",
+   "kind": "hull",
+   "min": [
+    -3.5,
+    0,
+    -19
+   ],
+   "max": [
+    -2,
+    9,
+    -17.5
+   ],
+   "job": "30 s problem: THE WEST CHARGE POST (to the roof: the charger's stun post, a circuit round the tank)",
+   "why": "NIGHT74 S g1 r1 (Research/2026-10-27-wave74/S/card-g1.md): a 1.5 x 1.5 m post to the roof on the charger's side of the tank: dodge late into it and the charger stuns; R's NIGHT71 positions.",
+   "note": "THE WEST CHARGE POST (to the roof, 1.5 x 1.5 m)"
+  },
+  {
+   "zone": "g1",
+   "kind": "hull",
+   "min": [
+    2,
+    0,
+    -19
+   ],
+   "max": [
+    3.5,
+    9,
+    -17.5
+   ],
+   "job": "30 s problem: THE EAST CHARGE POST (to the roof: the west post's mirror across the lane)",
+   "why": "NIGHT74 S g1 r1 (Research/2026-10-27-wave74/S/card-g1.md): the west post's mirror: the charger's lane between the posts is 4 m wide.",
+   "note": "THE EAST CHARGE POST (to the roof, 1.5 x 1.5 m)"
+  },
+  {
+   "zone": "g1",
+   "kind": "deck",
+   "min": [
+    3.5,
+    0,
+    -16
+   ],
+   "max": [
+    6.5,
+    0.9,
+    -9
+   ],
+   "job": "line: THE EAST STEP (0.9 m, rimmed: a walkers' tier and a hop for the tank's far side, the east panel's lane runs beside it)",
+   "why": "NIGHT74 S g1 r1 (Research/2026-10-27-wave74/S/card-g1.md): a 3 x 7 m low tier on the east side of the tank's room (0.9 m: levelgen's walkers' tier is 0.9 m, a 1.25 m first try was 'not reached by walkers'): raised, rimmed ground in the door's view; 0.45 m clear of the east panel's lane (x 7.3).",
+   "note": "THE EAST STEP (0.9 m, 3 x 7 m)"
+  },
+  {
+   "zone": "g1",
+   "kind": "hull",
+   "min": [
+    -6,
+    0,
+    -8
+   ],
+   "max": [
+    -4,
+    1.2,
+    -6
+   ],
+   "job": "cover: THE WEST PEN RAIL (1.2 m low cover in the door's view: shelter from the tank, hop it)",
+   "why": "NIGHT74 S g1 r1 (Research/2026-10-27-wave74/S/card-g1.md): 2 x 2 x 1.2 m low cover (1.0-1.25 m) 6 m ahead of the spawn, west of the axis.",
+   "note": "THE WEST PEN RAIL (1.2 m, 2 x 2 m)"
+  },
+  {
+   "zone": "g1",
+   "kind": "hull",
+   "min": [
+    4,
+    0,
+    -5
+   ],
+   "max": [
+    6,
+    1.2,
+    -3
+   ],
+   "job": "cover: THE EAST PEN RAIL (1.2 m low cover by the door: the first thing to hop)",
+   "why": "NIGHT74 S g1 r1 (Research/2026-10-27-wave74/S/card-g1.md): 2 x 2 x 1.2 m low cover 4 m east of the spawn; it keeps clear of the east panel's lane (x 7.3) by 1.3 m.",
+   "note": "THE EAST PEN RAIL (1.2 m, 2 x 2 m)"
+  }
+ ],
+ "ramps": [
+  {
+   "zone": "g1",
+   "from": [
+    -6.5,
+    -10
+   ],
+   "to": [
+    -6.5,
+    -17.5
+   ],
+   "width": 3,
+   "rise": 3,
+   "job": "climb: THE GALLERY STAIR (the walkers' way onto the pen gallery: 3 m over 7.5 m)",
+   "why": "NIGHT74 S g1 r1 (Research/2026-10-27-wave74/S/card-g1.md): a route enemies can climb to every floor (GG, NIGHT20): east of the west wall's ride lane (x -9.7) by 1.7 m.",
+   "note": "THE GALLERY STAIR"
+  }
+ ],
+ "pads": [],
+ "grapple": [],
+ "pits": [],
+ "tunnels": [],
+ "lights": [
+  {
+   "id": "g1-L1",
+   "room": "g1",
+   "kind": "ceiling",
+   "at": [
+    0,
+    8.95,
+    -3
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 9,
+   "intensity": 1
+  },
+  {
+   "id": "g1-L2",
+   "room": "g1",
+   "kind": "ceiling",
+   "at": [
+    0,
+    8.95,
+    -14
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    4,
+    0.1
+   ],
+   "color": "amber",
+   "range": 10,
+   "intensity": 1.1
+  },
+  {
+   "id": "g1-L3",
+   "room": "g1",
+   "kind": "pool",
+   "at": [
+    0,
+    0.025,
+    -24.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.5,
+    2.5,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.6
+  },
+  {
+   "id": "g1-L56a",
+   "room": "g1",
+   "kind": "wall",
+   "at": [
+    10.95,
+    2.4,
+    -22
+   ],
+   "normal": [
+    -1,
+    0,
+    0
+   ],
+   "size": [
+    2.5,
+    0.3,
+    0.1
+   ],
+   "color": "white",
+   "range": 8,
+   "intensity": 1.2,
+   "why": "NIGHT56 L (n56-l-doors.py, S1-doors: the flat frames of r1 verbs37): the EAST WALL LAMP (south): verbs37's wall steps on g1's east wall (r1 vi f0900 at (9.8, 1.8, -22.0), luma std 0.0181: one flat panel); g1's ceiling panels stand on x 0 NIGHT56 L (n56-l-doors3.py, S1-doors slice 3): moved into r3 vi f0900's frame (1.2 m off the wall: ~0.9-2.7 m of its height in view; 0.0238 at 3.5 m)",
+   "job": "light"
+  },
+  {
+   "id": "g1-L56b",
+   "room": "g1",
+   "kind": "wall",
+   "at": [
+    10.95,
+    3.5,
+    -10
+   ],
+   "normal": [
+    -1,
+    0,
+    0
+   ],
+   "size": [
+    2.5,
+    0.3,
+    0.1
+   ],
+   "color": "white",
+   "range": 8,
+   "intensity": 1.2,
+   "why": "NIGHT56 L (n56-l-doors.py, S1-doors: the flat frames of r1 verbs37): the EAST WALL LAMP (north): the slot between the east ride panel and the east wall (r1 vi f1350 at (10.7, 1.6, -9.8), luma std 0.0219)",
+   "job": "light"
+  },
+  {
+   "id": "g1-L56c",
+   "room": "g1",
+   "kind": "wall",
+   "at": [
+    7,
+    4,
+    -0.05
+   ],
+   "normal": [
+    0,
+    0,
+    -1
+   ],
+   "size": [
+    2.5,
+    0.3,
+    0.1
+   ],
+   "color": "white",
+   "range": 8,
+   "intensity": 1.1,
+   "why": "NIGHT56 L (n56-l-doors.py, S1-doors: the flat frames of r1 verbs37): the SOUTH WALL LAMP: the start wall's east half (r1 vi f0850 at (8.5, 3.6, -0.3), luma std 0.0149)",
+   "job": "light"
+  },
+  {
+   "id": "g1-RW",
+   "room": "g1",
+   "kind": "wall",
+   "at": [
+    -10.35,
+    1.2,
+    -10
+   ],
+   "normal": [
+    1,
+    0,
+    0
+   ],
+   "size": [
+    15,
+    0.2,
+    0.1
+   ],
+   "color": "cyan",
+   "range": 6,
+   "intensity": 1.1,
+   "why": "NIGHT74 S g1 r1 (Research/2026-10-27-wave74/S/card-g1.md): THE WEST WALL's cyan ride strip (player-usable: cyan)"
+  }
+ ],
+ "props": [],
+ "surfaces": [],
+ "drop": {}
+}

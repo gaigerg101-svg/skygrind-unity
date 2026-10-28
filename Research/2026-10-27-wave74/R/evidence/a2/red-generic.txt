@@ -1,0 +1,15 @@
+== a2 red-generic
+  PASS R2 no dead ends      0 dead-end cells of 75 (2 m x 0.5 m cells; 0 bridges)
+  FAIL R5 foothold          no box above the eye (1.6 m) reaching 4-8 m inside the entry
+  PASS R8 every job         0 untagged of 2 solids
+  PASS I1 no mirror         mirror overlap 0 % across the door axis x = 0 (d1; 2 solids, 45 m2 footprint; < 60 % PASS)
+  PASS I4 pads clear        no pads
+ROOM a2: FAIL R5 foothold
+  a2         room |   12.2      0.8  73.3 |  2.8 / 9.8   |  8.0 /  3.0 / 14.7  |   1.4   8.2 |      0     0 |   14.7 (10/10) | floor 280 m2, tiers 2, loop n (0 m2), pockets 0, sight 23.1 m, w1 in view 2/2
+n46flow n65-foundry SUMMARY: GREEN 10/10; stall 12.2 %, longest stall 0.8 s, air 73.3 %, kill gap 2.8 / 9.8 s, nearest 8.0 m, dwell 1.4 s, dead 8.2 s, deaths 0, falls 0, clear 14.7 s
+  a2         room |  21.1  46.1  29.8   3.0   0.0   0.0                    | BOLD / AIRBORNE (10)
+n46flow n65-foundry STYLE: DULL 21.1 % of 124 s of fight; above DULL 78.9 %; rooms reaching SAVAGE 0/1; top rank AIRBORNE
+  a2         room |   11.9      0.6  78.8 |  3.7 / 10.2  |  7.1 /  2.8 / 15.2  |   0.8   8.2 |      0     0 |   13.0 (10/10) | -
+n46flow n65-foundry SUMMARY: GREEN 10/10; stall 11.9 %, longest stall 0.6 s, air 78.8 %, kill gap 3.7 / 10.2 s, nearest 7.1 m, dwell 0.8 s, dead 8.2 s, deaths 0, falls 0, clear 13.0 s
+  a2         room |  23.6  48.6  26.3   1.5   0.0   0.0                    | BOLD / AIRBORNE (10)
+n46flow n65-foundry STYLE: DULL 23.6 % of 134 s of fight; above DULL 76.4 %; rooms reaching SAVAGE 0/1; top rank AIRBORNE

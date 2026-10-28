@@ -1,0 +1,11 @@
+command: (cd grow72check && dotnet run -- <worktree> <zscan.json> <maps>)  GrowPlan72.cs compiled with Skygrind.Core and run on the level files, against n72-zscan.cjs --json's classes and counts (2026-10-27 11:47:57 USMST)
+[grow72] n52-foundry: 201 drawn boxes, coplanar overlapping pairs raw 75, after the NIGHT71 growth 26, after the plan 0 | classes equal to the node tool's: yes | counts equal: yes
+[grow72] n52-iceline: 192 drawn boxes, coplanar overlapping pairs raw 33, after the NIGHT71 growth 10, after the plan 0 | classes equal to the node tool's: yes | counts equal: yes
+[grow72] n57-kiln: 179 drawn boxes, coplanar overlapping pairs raw 55, after the NIGHT71 growth 16, after the plan 0 | classes equal to the node tool's: yes | counts equal: yes
+[grow72] n58-span: 180 drawn boxes, coplanar overlapping pairs raw 28, after the NIGHT71 growth 10, after the plan 0 | classes equal to the node tool's: yes | counts equal: yes
+[grow72] n52-spire: 199 drawn boxes, coplanar overlapping pairs raw 65, after the NIGHT71 growth 20, after the plan 0 | classes equal to the node tool's: yes | counts equal: yes
+[grow72] n65-foundry: 201 drawn boxes, coplanar overlapping pairs raw 75, after the NIGHT71 growth 26, after the plan 0 | classes equal to the node tool's: yes | counts equal: yes
+[grow72] n67-iceline: 192 drawn boxes, coplanar overlapping pairs raw 33, after the NIGHT71 growth 10, after the plan 0 | classes equal to the node tool's: yes | counts equal: yes
+[grow72] n67-kiln: 179 drawn boxes, coplanar overlapping pairs raw 55, after the NIGHT71 growth 16, after the plan 0 | classes equal to the node tool's: yes | counts equal: yes
+[grow72] n67-spire: 199 drawn boxes, coplanar overlapping pairs raw 65, after the NIGHT71 growth 20, after the plan 0 | classes equal to the node tool's: yes | counts equal: yes
+CROSS-CHECK PASS

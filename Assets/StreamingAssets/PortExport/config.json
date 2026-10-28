@@ -1,0 +1,8006 @@
+{
+  "loop": {
+    "simHz": 120,
+    "maxFrameDelta": 0.05,
+    "maxSubstepMove": 0.3
+  },
+  "mouse": {
+    "sensitivity": 0.0014,
+    "oldDefault": 0.0022,
+    "fineStep": 0.0001,
+    "pitchLimitDeg": 89
+  },
+  "collision": {
+    "maxResolveIterations": 4,
+    "groundProbe": 0.05,
+    "groundSnap": 0.35,
+    "headroomSkin": 0.02,
+    "cornerCorrect": 0.25,
+    "cornerSkin": 0.005
+  },
+  "body": {
+    "capsuleRadius": 0.35,
+    "capsuleHeight": 1.8,
+    "eyeHeight": 1.6
+  },
+  "surface": {
+    "floorMinNormalY": 0.7,
+    "wallMaxAbsNormalY": 0.3
+  },
+  "speed": {
+    "maxHorizontal": 40
+  },
+  "ground": {
+    "walkSpeed": 8,
+    "accel": 10,
+    "friction": 6,
+    "stopSpeed": 2.5
+  },
+  "air": {
+    "accel": 1.5
+  },
+  "jump": {
+    "height": 1.5,
+    "apexTime": 0.36,
+    "fallGravityMult": 1.35,
+    "apexHangMult": 0.5,
+    "apexHangSpeed": 2,
+    "coyoteTime": 0.1,
+    "bufferTime": 0.1,
+    "releaseMult": 0.5,
+    "doubleJumps": 1,
+    "doubleJumpMult": 0.9
+  },
+  "dash": {
+    "speed": 24,
+    "duration": 0.25,
+    "pipCost": 1,
+    "maxPips": 3,
+    "regenPerSec": 0.7
+  },
+  "slide": {
+    "cameraDrop": 0.7,
+    "colliderHeight": 1,
+    "floorSpeed": 11.6,
+    "friction": 1.5,
+    "jumpHorizontalMult": 1.2,
+    "jumpBoostMaxSpeed": 24,
+    "slopeBoost": 1.6,
+    "slopeRampLength": 8
+  },
+  "dashJump": {
+    "v0Mult": 0.8,
+    "gravityMult": 0.5,
+    "windowTime": 0.5,
+    "extraPipCost": 1
+  },
+  "slam": {
+    "speed": 48,
+    "shockwaveRadius": 5,
+    "shockwaveDamage": 30,
+    "slidePredictTime": 0.1
+  },
+  "boostJump": {
+    "window": 0.15,
+    "v0Mult": 1.8
+  },
+  "wallRide": {
+    "entrySpeed": 4,
+    "minSpeed": 8,
+    "gravityMult": 0.15,
+    "maxTime": 1.2,
+    "rollDeg": 10,
+    "leadTime": 0.15,
+    "leadHeight": 1,
+    "probeDistance": 0.12,
+    "awayDot": 0.5,
+    "cornerAngleDeg": 30,
+    "rejoinLockTime": 0.15
+  },
+  "wallJump": {
+    "outSpeed": 8,
+    "v0Mult": 0.9,
+    "maxPerAirtime": 3
+  },
+  "style": {
+    "thresholds": [
+      0,
+      90,
+      240,
+      470,
+      800,
+      1300
+    ],
+    "topBand": 500,
+    "drainBase": 17,
+    "drainPerRank": 4.8,
+    "diminish": {
+      "window": 4,
+      "repeat": 0.6,
+      "floor": 0.15
+    },
+    "hitCap": {
+      "perSecond": 12,
+      "burst": 12
+    },
+    "hitShotGroup": 0.25,
+    "damagePenalty": 30,
+    "rankDownDelay": 1,
+    "stateMult": 1.2,
+    "base": {
+      "huskKill": 30,
+      "droneKill": 40,
+      "rivalKill": 100,
+      "hit": 5,
+      "meleeHit": 8,
+      "parry": 40,
+      "fistful": 15,
+      "returnToSender": 60,
+      "swarmerKill": 15,
+      "spitterKill": 40,
+      "chargerKill": 60,
+      "lancerKill": 45,
+      "wardenKill": 70
+    },
+    "bonus": {
+      "airshot": 12,
+      "wallkill": 20,
+      "ricoshot": 40,
+      "slamdown": 25,
+      "multikill": 25,
+      "closeCall": 15,
+      "headshot": 15,
+      "cross": 8,
+      "swap": 10,
+      "collapse": 40,
+      "overload": 40,
+      "impact": 50,
+      "trapped": 30
+    },
+    "multikillWindow": 0.5,
+    "closeCallDistance": 2,
+    "tricks": {
+      "wallJump": 10,
+      "dashJump": 10,
+      "boostJump": 15,
+      "slideJump": 5,
+      "padLaunch": 5,
+      "rocketJump": 15,
+      "grenadeJump": 15,
+      "slingshot": 15
+    },
+    "slingshotSpeed": 20,
+    "trickEnemyRange": 25,
+    "trickRepeatWindow": 3,
+    "freshness": {
+      "max": 10,
+      "start": 10,
+      "useCost": 0.7,
+      "otherGain": 0.5,
+      "regen": 0.1,
+      "freshAt": 7.5,
+      "usedAt": 5,
+      "freshMult": 1.1,
+      "usedMult": 1,
+      "staleMult": 0.5,
+      "nailgunUseScale": 0.1
+    },
+    "rankRewardPerRank": 0.08,
+    "pulseBase": 0.8,
+    "pulsePerRank": 0.5,
+    "warmRank": 4,
+    "popTime": 0.26,
+    "popScale": 1.4,
+    "glowTime": 0.3,
+    "glowOpacity": 0.55,
+    "kickDeg": 0.8,
+    "kickAttack": 0.04,
+    "kickRecover": 0.22,
+    "feedSlide": 40,
+    "feedSlideTime": 0.16,
+    "energyEase": 3,
+    "neonBoost": 0.55,
+    "skyWarmColor": 16742981,
+    "skyWarmMax": 0.35,
+    "ranks": [
+      {
+        "letter": "D",
+        "name": "DULL",
+        "color": 9407104
+      },
+      {
+        "letter": "C",
+        "name": "COOL",
+        "color": 1692646
+      },
+      {
+        "letter": "B",
+        "name": "BOLD",
+        "color": 4054148
+      },
+      {
+        "letter": "A",
+        "name": "AIRBORNE",
+        "color": 16761405
+      },
+      {
+        "letter": "S",
+        "name": "SAVAGE",
+        "color": 16730652
+      },
+      {
+        "letter": "SS",
+        "name": "SKYGRIND",
+        "color": 16723592
+      }
+    ]
+  },
+  "jumpPad": {
+    "apexHeight": 8,
+    "radius": 1,
+    "triggerHeight": 0.3,
+    "ringWidth": 0.12,
+    "discThickness": 0.04,
+    "segments": 32
+  },
+  "camera": {
+    "fovDeg": 74,
+    "fovBoostDeg": 8,
+    "fovBoostStartSpeed": 8,
+    "fovBoostFullSpeed": 24,
+    "fovEaseRate": 8,
+    "dashFovKickDeg": 10,
+    "dashFovInTime": 0.05,
+    "dashFovOutTime": 0.25,
+    "maxFovBoostDeg": 18,
+    "speedFovCapDeg": 10,
+    "near": 0.05,
+    "far": 450,
+    "eyeEaseTime": 0.1
+  },
+  "feel": {
+    "landingDipPerSpeed": 0.01,
+    "landingDipMax": 0.25,
+    "landingDipReturnTime": 0.2,
+    "landingDipAttack": 0.06,
+    "strafeRollDeg": 1.5,
+    "rollEaseRate": 10,
+    "hitstopTime": 0.04,
+    "momentumHitstop": 0.045,
+    "momentumHitstopAt": 0.6,
+    "trauma": {
+      "maxPitchDeg": 2,
+      "maxYawDeg": 2,
+      "maxRollDeg": 1.5,
+      "exponent": 2,
+      "noiseHz": 25,
+      "decay": 2.5,
+      "cap": 1,
+      "vmShare": 0.1,
+      "fire": {
+        "light": 0.06,
+        "medium": 0.15,
+        "heavy": 0.3
+      },
+      "kill": 0.15,
+      "slam": 0.35,
+      "boss": 0.5,
+      "bossEvents": [
+        "bossSlam",
+        "bossPhase",
+        "bossDown"
+      ]
+    },
+    "fovPunch": {
+      "deg": 1.5,
+      "attack": 0.02,
+      "recover": 0.08
+    },
+    "meleeLunge": {
+      "deg": 1.6,
+      "attack": 0.025,
+      "recover": 0.12
+    },
+    "catchTrauma": 0.12,
+    "speedLinesMinSpeed": 20,
+    "speedLinesFullSpeed": 40,
+    "speedLinesMaxOpacity": 0.55,
+    "speedLinesJitterDeg": 3,
+    "effectsIntensityMax": 2,
+    "kickSlots": 8,
+    "punch": {
+      "slots": 12,
+      "snapDeg": 0.002,
+      "patternReset": 0.3,
+      "jitter": 0.1,
+      "adsMult": 0.6,
+      "classes": {
+        "light": {
+          "freqHz": 7.5,
+          "zeta": 0.6,
+          "capDeg": 2
+        },
+        "medium": {
+          "freqHz": 6,
+          "zeta": 0.57,
+          "capDeg": 3.5
+        },
+        "heavy": {
+          "freqHz": 4.8,
+          "zeta": 0.54,
+          "capDeg": 6
+        }
+      },
+      "weapons": {
+        "nailgun": {
+          "cls": "light",
+          "pitchDeg": 0.4,
+          "pattern": [
+            [
+              1,
+              0.12
+            ],
+            [
+              0.85,
+              -0.08
+            ],
+            [
+              1.1,
+              0.16
+            ],
+            [
+              0.9,
+              -0.14
+            ]
+          ]
+        },
+        "choir": {
+          "cls": "light",
+          "pitchDeg": 0.36,
+          "pattern": [
+            [
+              1,
+              0.1
+            ],
+            [
+              0.9,
+              -0.12
+            ],
+            [
+              1.05,
+              0.08
+            ],
+            [
+              0.95,
+              -0.06
+            ]
+          ]
+        },
+        "rattler": {
+          "cls": "light",
+          "pitchDeg": 0.55,
+          "pattern": [
+            [
+              1,
+              0.14
+            ],
+            [
+              1.1,
+              -0.1
+            ],
+            [
+              1.2,
+              0.18
+            ]
+          ]
+        },
+        "torch": {
+          "cls": "light",
+          "pitchDeg": 0.34,
+          "pattern": [
+            [
+              1,
+              0.05
+            ],
+            [
+              0.9,
+              -0.05
+            ]
+          ]
+        },
+        "zapper": {
+          "cls": "light",
+          "pitchDeg": 0.62,
+          "pattern": [
+            [
+              1,
+              0.1
+            ],
+            [
+              0.9,
+              -0.1
+            ]
+          ]
+        },
+        "revolver": {
+          "cls": "medium",
+          "pitchDeg": 1.8,
+          "pattern": [
+            [
+              1,
+              0.22
+            ],
+            [
+              1,
+              -0.18
+            ]
+          ]
+        },
+        "prism": {
+          "cls": "medium",
+          "pitchDeg": 1.9,
+          "pattern": [
+            [
+              1,
+              0.15
+            ]
+          ]
+        },
+        "discus": {
+          "cls": "medium",
+          "pitchDeg": 1.7,
+          "pattern": [
+            [
+              1,
+              -0.2
+            ]
+          ]
+        },
+        "bouncer": {
+          "cls": "medium",
+          "pitchDeg": 2,
+          "pattern": [
+            [
+              1,
+              0.2
+            ],
+            [
+              1,
+              -0.2
+            ]
+          ]
+        },
+        "vortex": {
+          "cls": "medium",
+          "pitchDeg": 2.2,
+          "pattern": [
+            [
+              1,
+              0
+            ]
+          ]
+        },
+        "shotgun": {
+          "cls": "heavy",
+          "pitchDeg": 4.2,
+          "pattern": [
+            [
+              1,
+              0.4
+            ],
+            [
+              1,
+              -0.35
+            ]
+          ]
+        },
+        "rocket": {
+          "cls": "heavy",
+          "pitchDeg": 3.6,
+          "pattern": [
+            [
+              1,
+              0.2
+            ]
+          ]
+        },
+        "rail": {
+          "cls": "heavy",
+          "pitchDeg": 4.6,
+          "pattern": [
+            [
+              1,
+              -0.25
+            ]
+          ]
+        }
+      }
+    },
+    "jumpKickDeg": 1,
+    "jumpKickAttack": 0.03,
+    "jumpKickRecover": 0.2,
+    "slamPunchDeg": 2,
+    "slamPunchAttack": 0.02,
+    "slamPunchRecover": 0.2,
+    "slideTiltDeg": 3,
+    "slideFovDeg": 3,
+    "speedLinesFadeTime": 0.15,
+    "dashTintOpacity": 0.6,
+    "dashTintWidth": 60,
+    "dashTintOffset": 8
+  },
+  "hud": {
+    "speedMid": 12,
+    "speedHigh": 24,
+    "calloutFadeTime": 0.6,
+    "pipFlashTime": 0.18,
+    "failFlashTime": 0.3,
+    "crosshairDashSpread": 2,
+    "hitMarkerTime": 0.15,
+    "hitMarkerSize": 8,
+    "hitMarkerGap": 5,
+    "headshotScale": 1.5,
+    "killScale": 1.9,
+    "hurtVignetteTime": 0.35,
+    "hurtVignetteOpacity": 0.6,
+    "styles": [
+      "classic",
+      "attached"
+    ],
+    "edgeMargin": 22,
+    "panelSkewDeg": -8,
+    "panelOpacity": 0.55,
+    "hpBarWidth": 190,
+    "staminaSegmentWidth": 58,
+    "shotgunSpread": 6,
+    "spreadRecoverTime": 0.2,
+    "feedSize": 5,
+    "feedFadeTime": 1.6,
+    "attachPxPerMeter": 1500,
+    "lowHpBlinkTime": 0.25,
+    "markerCount": 34,
+    "chargeEdgeOpacity": 0.55,
+    "momentumArc": {
+      "radius": 20,
+      "width": 2,
+      "idleColor": "rgba(236,232,223,0.75)"
+    },
+    "threatTop": 170,
+    "killFlashTime": 0.09,
+    "killFlashColor": 16765498,
+    "tooltip": {
+      "perkRange": 8,
+      "offsetX": 46,
+      "offsetY": 18
+    }
+  },
+  "weapons": {
+    "revolver": {
+      "damage": 25,
+      "fireInterval": 0.4,
+      "headshotMult": 2,
+      "range": 200
+    },
+    "shotgun": {
+      "pellets": 8,
+      "pelletDamage": 8,
+      "fireInterval": 0.9,
+      "coneHalfAngleDeg": 8,
+      "range": 60,
+      "jumpSpeed": 10,
+      "pumpDelay": 0.45
+    },
+    "nailgun": {
+      "rate": 12,
+      "pool": 160,
+      "stuckPool": 140,
+      "speed": 60,
+      "damage": 9,
+      "spreadDeg": 1.1,
+      "heatTime": 3,
+      "lockTime": 1.5,
+      "coolRate": 0.8,
+      "range": 110,
+      "stickTime": 6,
+      "radius": 0.05
+    },
+    "rocket": {
+      "fireInterval": 0.9,
+      "pool": 16,
+      "speed": 30,
+      "damage": 70,
+      "edgeDamage": 0.3,
+      "splashRadius": 4,
+      "knockback": 16,
+      "knockbackMinUp": 0.55,
+      "lifetime": 4,
+      "radius": 0.2,
+      "spawnForward": 0.6
+    },
+    "rail": {
+      "charge": 0.6,
+      "damage": 150,
+      "headshotMult": 1.5,
+      "cooldown": 3,
+      "range": 250,
+      "pierce": 24
+    },
+    "rattler": {
+      "damage": 9,
+      "headshotMult": 1.5,
+      "rounds": 3,
+      "roundInterval": 0.06,
+      "burstInterval": 0.36,
+      "spreadDeg": 0.8,
+      "range": 90,
+      "dashSpreadDeg": 0.35,
+      "dashCadence": 0.75,
+      "dashWindow": 0.35
+    },
+    "torch": {
+      "range": 7,
+      "coneDeg": 18,
+      "tick": 0.1,
+      "damage": 6.5,
+      "pointScale": 0.3,
+      "heatTime": 4,
+      "lockTime": 1.5,
+      "coolRate": 0.7,
+      "slideConeMult": 1.5,
+      "slideDamageMult": 1.25
+    },
+    "bouncer": {
+      "speed": 22,
+      "gravityMult": 0.8,
+      "bounce": 0.55,
+      "friction": 0.7,
+      "fuse": 1.6,
+      "radius": 0.16,
+      "fireInterval": 0.8,
+      "damage": 68,
+      "edgeDamage": 0.3,
+      "splashRadius": 3.5,
+      "knockback": 13,
+      "knockbackMinUp": 0.55,
+      "pool": 12,
+      "upward": 2.5,
+      "spawnForward": 0.5,
+      "restSpeed": 2,
+      "spikeDirY": 0.8,
+      "spikeFuse": 0.12
+    },
+    "zapper": {
+      "damage": 26,
+      "fireInterval": 0.3,
+      "range": 32,
+      "headshotMult": 1.5,
+      "chains": 3,
+      "chainRange": 7,
+      "chainFalloff": 0.7,
+      "airChains": 1,
+      "heatTime": 3.5,
+      "lockTime": 1.5,
+      "coolRate": 0.8
+    },
+    "discus": {
+      "speed": 34,
+      "damage": 52,
+      "fireInterval": 0.65,
+      "bounces": 4,
+      "lifetime": 2.5,
+      "radius": 0.28,
+      "pierceHp": 60,
+      "pool": 8,
+      "bounceBonus": 0.15,
+      "spawnForward": 0.6,
+      "rehitTime": 0.3,
+      "slideBounces": 1
+    },
+    "vortex": {
+      "speed": 14,
+      "radius": 0.35,
+      "lifetime": 1.2,
+      "pullRadius": 7,
+      "pullTime": 1.5,
+      "pullSpeed": 9,
+      "burstDamage": 95,
+      "burstRadius": 5,
+      "edgeDamage": 0.3,
+      "fireInterval": 2.4,
+      "pool": 3,
+      "pullCore": 1.5,
+      "pullHold": 0.05,
+      "pullGrace": 0.5,
+      "spawnForward": 0.6,
+      "ringRadius": 1.4,
+      "moteInterval": 0.03,
+      "dashWindow": 0.35,
+      "dashSpeedMult": 1.6
+    },
+    "choir": {
+      "damage": 6,
+      "headshotMult": 1.5,
+      "rateMin": 5,
+      "rateMax": 18,
+      "spinUp": 0.8,
+      "spinDown": 0.5,
+      "spreadDeg": 2.2,
+      "range": 80,
+      "heatTime": 5,
+      "lockTime": 2,
+      "coolRate": 0.6
+    },
+    "prism": {
+      "damage": 34,
+      "headshotMult": 1.5,
+      "fireInterval": 0.55,
+      "range": 60,
+      "bounces": 3,
+      "splitCount": 3,
+      "splitDeg": 14,
+      "splitDamage": 0.6
+    },
+    "specials": {
+      "revolver": {
+        "pierce": 1
+      },
+      "rattler": {
+        "paintCone": 12,
+        "paintEvery": 0.2,
+        "paintMax": 4,
+        "paintRange": 60,
+        "dartSpeed": 40,
+        "dartDamage": 18,
+        "dartTurn": 540,
+        "cooldown": 1.6,
+        "variantRounds": 5
+      },
+      "shotgun": {
+        "compressTime": 0.6,
+        "pellets": 16,
+        "coneDeg": 10,
+        "selfPush": 22,
+        "push": 16,
+        "pushTime": 0.3,
+        "cooldown": 1.4,
+        "variantCone": 0.6,
+        "shock": {
+          "coneDeg": 30,
+          "range": 8,
+          "push": 12,
+          "stagger": 1
+        }
+      },
+      "torch": {
+        "length": 7,
+        "ahead": 2.5,
+        "width": 1.2,
+        "life": 3,
+        "dps": 20,
+        "tick": 0.25,
+        "cooldown": 4,
+        "heat": 0.35,
+        "variantReach": 1.4
+      },
+      "nailgun": {
+        "detonateDamage": 14,
+        "radius": 1.2,
+        "cooldown": 1,
+        "variantPierce": 1
+      },
+      "bouncer": {
+        "variantRadius": 1.3
+      },
+      "zapper": {
+        "stun": 1.5,
+        "damage": 10,
+        "range": 32,
+        "cooldown": 3,
+        "variantChains": 2
+      },
+      "rocket": {
+        "steerTurn": 240,
+        "variantFragments": 5,
+        "fragmentRadius": 1.8,
+        "fragmentDamage": 22,
+        "fragmentSpread": 3,
+        "fragmentDelay": 0.12
+      },
+      "discus": {
+        "recallSpeed": 40,
+        "catchRadius": 1.4,
+        "variantBounces": 2
+      },
+      "vortex": {
+        "repelHold": 0.25,
+        "repelSpeed": 12,
+        "variantPull": 1.4
+      },
+      "rail": {
+        "overchargeTime": 1.2,
+        "damageMult": 2,
+        "selfPush": 12,
+        "cooldownMult": 1.5,
+        "variantWalls": 2
+      },
+      "choir": {
+        "burstRounds": 12,
+        "burstInterval": 0.03,
+        "burstSpreadDeg": 3.5,
+        "cooldown": 2.5,
+        "variantConeDeg": 3
+      },
+      "prism": {
+        "variantBounces": 1
+      }
+    },
+    "gauntlet": {
+      "damage": 32,
+      "cycle": 0.42,
+      "range": 2.4,
+      "coneDeg": 35,
+      "knockback": 7,
+      "knockbackTime": 0.2,
+      "parryPeek": 1
+    },
+    "sunder": {
+      "damage": [
+        38,
+        38,
+        58
+      ],
+      "cycle": [
+        0.38,
+        0.38,
+        0.5
+      ],
+      "range": 2.8,
+      "coneDeg": [
+        45,
+        45,
+        80
+      ],
+      "comboWindow": 0.7,
+      "lunge": 6,
+      "lungeCone": 25,
+      "lungeWindow": 0.3,
+      "lungeTime": 0.18
+    },
+    "flicker": {
+      "damage": 10,
+      "cycle": 0.18,
+      "range": 2.2,
+      "coneDeg": 30,
+      "quickReach": 1
+    },
+    "thumper": {
+      "damage": 90,
+      "windup": 0.35,
+      "cycle": 1,
+      "range": 3,
+      "coneDeg": 40,
+      "ringRadius": 4.5,
+      "ringDamage": 35,
+      "bigRingRadius": 7,
+      "bigRingDamage": 60,
+      "stagger": 1.5,
+      "ringForward": 1.2,
+      "ringHeight": 2.5,
+      "ringPush": 5,
+      "ringPushTime": 0.2,
+      "slamWindow": 0.3,
+      "maxWait": 1.5
+    },
+    "tether": {
+      "damage": 22,
+      "cycle": 0.55,
+      "range": 6,
+      "coneDeg": 10,
+      "pull": 14,
+      "pullTime": 0.25,
+      "pulls": [
+        "husk",
+        "swarmer"
+      ]
+    },
+    "all": [
+      "revolver",
+      "gauntlet",
+      "shotgun",
+      "rattler",
+      "torch",
+      "nailgun",
+      "bouncer",
+      "zapper",
+      "rocket",
+      "discus",
+      "vortex",
+      "rail",
+      "sunder",
+      "flicker",
+      "thumper",
+      "tether",
+      "prism",
+      "choir"
+    ],
+    "names": {
+      "revolver": "KESTREL",
+      "shotgun": "THUNDERCLAP",
+      "nailgun": "STITCHER",
+      "rocket": "COMET",
+      "rail": "LONGWAVE",
+      "rattler": "RATTLER",
+      "torch": "TORCH",
+      "bouncer": "BOUNCER",
+      "zapper": "ZAPPER",
+      "discus": "DISCUS",
+      "vortex": "VORTEX",
+      "gauntlet": "PULSE GAUNTLET",
+      "sunder": "SUNDER BLADE",
+      "flicker": "FLICKER DAGGERS",
+      "thumper": "THUMPER HAMMER",
+      "tether": "TETHER WHIP",
+      "choir": "CHOIR",
+      "prism": "PRISM"
+    },
+    "catalog": {
+      "revolver": {
+        "name": "KESTREL",
+        "family": "kinetic",
+        "kind": "gun",
+        "freshCost": 0.08
+      },
+      "gauntlet": {
+        "name": "PULSE GAUNTLET",
+        "family": "kinetic",
+        "kind": "melee",
+        "freshCost": 0.05
+      },
+      "shotgun": {
+        "name": "THUNDERCLAP",
+        "family": "edge",
+        "kind": "gun",
+        "freshCost": 0.14
+      },
+      "nailgun": {
+        "name": "STITCHER",
+        "family": "volt",
+        "kind": "gun",
+        "freshCost": 0.012
+      },
+      "rocket": {
+        "name": "COMET",
+        "family": "gravity",
+        "kind": "gun",
+        "freshCost": 0.16
+      },
+      "rail": {
+        "name": "LONGWAVE",
+        "family": "pierce",
+        "kind": "gun",
+        "freshCost": 0.3
+      },
+      "rattler": {
+        "name": "RATTLER",
+        "family": "kinetic",
+        "kind": "gun",
+        "freshCost": 0.02
+      },
+      "torch": {
+        "name": "TORCH",
+        "family": "fire",
+        "kind": "gun",
+        "freshCost": 0.012
+      },
+      "bouncer": {
+        "name": "BOUNCER",
+        "family": "blast",
+        "kind": "gun",
+        "freshCost": 0.14
+      },
+      "zapper": {
+        "name": "ZAPPER",
+        "family": "volt",
+        "kind": "gun",
+        "freshCost": 0.07
+      },
+      "discus": {
+        "name": "DISCUS",
+        "family": "edge",
+        "kind": "gun",
+        "freshCost": 0.12
+      },
+      "vortex": {
+        "name": "VORTEX",
+        "family": "gravity",
+        "kind": "gun",
+        "freshCost": 0.3
+      },
+      "sunder": {
+        "name": "SUNDER BLADE",
+        "family": "edge",
+        "kind": "melee",
+        "freshCost": 0.06
+      },
+      "flicker": {
+        "name": "FLICKER DAGGERS",
+        "family": "volt",
+        "kind": "melee",
+        "freshCost": 0.03
+      },
+      "thumper": {
+        "name": "THUMPER HAMMER",
+        "family": "impact",
+        "kind": "melee",
+        "freshCost": 0.14
+      },
+      "tether": {
+        "name": "TETHER WHIP",
+        "family": "gravity",
+        "kind": "melee",
+        "freshCost": 0.07
+      },
+      "choir": {
+        "name": "CHOIR",
+        "family": "kinetic",
+        "kind": "gun",
+        "freshCost": 0.01
+      },
+      "prism": {
+        "name": "PRISM",
+        "family": "pierce",
+        "kind": "gun",
+        "freshCost": 0.12
+      }
+    },
+    "families": {
+      "kinetic": 1692646,
+      "edge": 16756736,
+      "volt": 12123948,
+      "gravity": 9395199,
+      "impact": 4029439,
+      "pierce": 15399167,
+      "fire": 16747546,
+      "blast": 16769354
+    },
+    "arsenal": {
+      "freshMin": 0.65,
+      "freshMax": 1.25,
+      "recover": 0.25,
+      "recoverDelay": 0.5,
+      "staleAt": 0.4,
+      "primedWindow": 1,
+      "primedBonus": 0.35,
+      "swapKillWindow": 2,
+      "crossWindow": 3,
+      "crossMult": 1.5,
+      "collapseMult": 2,
+      "collapseRadius": 4,
+      "overloadMult": 1.75,
+      "overloadRadius": 5,
+      "overloadDamage": 20,
+      "overloadTargets": 3,
+      "statusTime": {
+        "burn": 3,
+        "shock": 2.5,
+        "pull": 1.5,
+        "stuck": 6,
+        "stagger": 1.5
+      },
+      "memory": 8,
+      "burnDps": 8,
+      "burnTick": 0.25
+    },
+    "prices": {
+      "shotgun": 750,
+      "rattler": 1000,
+      "torch": 1250,
+      "nailgun": 1250,
+      "bouncer": 1500,
+      "zapper": 1750,
+      "rocket": 2000,
+      "discus": 2250,
+      "vortex": 2500,
+      "rail": 3000,
+      "sunder": 300,
+      "flicker": 600,
+      "thumper": 1000,
+      "tether": 1500,
+      "prism": 2750,
+      "choir": 3500
+    },
+    "finishes": {
+      "order": [
+        "factory",
+        "graphite",
+        "arctic",
+        "brass",
+        "mirror",
+        "protocol",
+        "skylight"
+      ],
+      "list": {
+        "factory": {
+          "name": "FACTORY"
+        },
+        "graphite": {
+          "name": "GRAPHITE",
+          "unlock": {
+            "medal": "bronze",
+            "count": 1
+          },
+          "palette": {
+            "bone": 9278107,
+            "gunmetal": 2829877,
+            "dark": 1447707,
+            "grip": 1908258
+          }
+        },
+        "arctic": {
+          "name": "ARCTIC",
+          "unlock": {
+            "medal": "silver",
+            "count": 3
+          },
+          "palette": {
+            "bone": 15133165,
+            "gunmetal": 9344930,
+            "dark": 5199713,
+            "grip": 6185835
+          }
+        },
+        "brass": {
+          "name": "DUSK BRASS",
+          "unlock": {
+            "medal": "gold",
+            "count": 3
+          },
+          "palette": {
+            "bone": 13149294,
+            "gunmetal": 4076870,
+            "dark": 2432812,
+            "grip": 2892593
+          }
+        },
+        "mirror": {
+          "name": "MIRROR",
+          "unlock": {
+            "medal": "ace",
+            "count": 1
+          },
+          "palette": {
+            "bone": 16054009,
+            "gunmetal": 5988973,
+            "dark": 2895928,
+            "grip": 3422271
+          }
+        },
+        "protocol": {
+          "name": "PROTOCOL",
+          "unlock": {
+            "flag": "protocol",
+            "label": "COMPLETE THE PROTOCOL"
+          },
+          "palette": {
+            "bone": 14087416,
+            "gunmetal": 2376010,
+            "dark": 990498,
+            "grip": 1517613
+          }
+        },
+        "skylight": {
+          "name": "SKYLIGHT",
+          "unlock": {
+            "flag": "secretRelay",
+            "label": "FIND THE HIDDEN RELAY"
+          },
+          "palette": {
+            "bone": 15919576,
+            "gunmetal": 3882844,
+            "dark": 1908528,
+            "grip": 2500672
+          }
+        }
+      }
+    },
+    "survivalStart": [
+      "revolver",
+      "gauntlet"
+    ],
+    "slots": [
+      "revolver",
+      "shotgun"
+    ],
+    "swapTime": 0.25,
+    "swapLowerFraction": 0.5,
+    "swapFireFraction": 0.7,
+    "losSlack": 0.05,
+    "wheelCooldown": 0.08,
+    "radial": {
+      "deadZone": 40,
+      "maxOffset": 160,
+      "radius": 170
+    },
+    "hotbarShown": 12
+  },
+  "mods": {
+    "enabled": true,
+    "offers": 3,
+    "rerolls": 1,
+    "rerollCost": 1500,
+    "seedSalt": 446677,
+    "rollSalt": 388821,
+    "draftRounds": [
+      2,
+      4,
+      5,
+      7,
+      9,
+      10,
+      12,
+      14,
+      15,
+      17,
+      19,
+      20,
+      22,
+      24,
+      25
+    ],
+    "listUntil": 25,
+    "everyAfter": 3,
+    "tierWeight": {
+      "common": 3,
+      "rare": 1
+    },
+    "styleTags": {
+      "AIR": 1692646,
+      "WALL": 1692646,
+      "SLIDE": 1692646,
+      "MELEE": 4029439,
+      "STYLE": 16761405,
+      "ECONOMY": 16765498,
+      "HEALTH": 4054148
+    },
+    "list": {
+      "skydancer": {
+        "name": "SKYDANCER",
+        "tag": "AIR",
+        "tier": "common",
+        "max": 3,
+        "per": 0.2,
+        "desc": "Hits while airborne deal +{p}% damage"
+      },
+      "wallbanger": {
+        "name": "WALLBANGER",
+        "tag": "WALL",
+        "tier": "common",
+        "locked": {
+          "flag": "protocol",
+          "label": "COMPLETE THE PROTOCOL"
+        },
+        "max": 2,
+        "per": 60,
+        "desc": "Kills during a wall ride pay +{n} points"
+      },
+      "railgrinder": {
+        "name": "RAILGRINDER",
+        "tag": "SLIDE",
+        "tier": "common",
+        "max": 2,
+        "per": 3,
+        "base": 2,
+        "desc": "A slide kill SHOCKS every enemy within {r} m"
+      },
+      "conductor": {
+        "name": "CONDUCTOR",
+        "tag": "volt",
+        "tier": "rare",
+        "locked": {
+          "flag": "forge3",
+          "label": "FORGE 3 GUNS IN ONE RUN"
+        },
+        "max": 2,
+        "per": 0.25,
+        "desc": "SHOCKED enemies take +{p}% damage"
+      },
+      "pyre": {
+        "name": "PYRE",
+        "tag": "fire",
+        "tier": "common",
+        "max": 2,
+        "per": 1.5,
+        "base": 1.5,
+        "desc": "A BURNING enemy that dies sets everything within {r} m alight"
+      },
+      "keenEdge": {
+        "name": "KEEN EDGE",
+        "tag": "edge",
+        "tier": "common",
+        "max": 2,
+        "per": 0.3,
+        "desc": "Headshots STAGGER ({p}% of the time)"
+      },
+      "gravityWell": {
+        "name": "GRAVITY WELL",
+        "tag": "gravity",
+        "tier": "common",
+        "max": 2,
+        "per": 0.2,
+        "desc": "PULLED enemies take +{p}% damage"
+      },
+      "shrapnel": {
+        "name": "SHRAPNEL",
+        "tag": "blast",
+        "tier": "rare",
+        "locked": {
+          "flag": "monolith",
+          "label": "BEAT MONOLITH"
+        },
+        "max": 2,
+        "per": 25,
+        "radius": 3.5,
+        "desc": "Blast kills burst for {n} damage within 3.5 m"
+      },
+      "lance": {
+        "name": "LANCE",
+        "tag": "pierce",
+        "tier": "common",
+        "max": 2,
+        "per": 0.25,
+        "range": 20,
+        "desc": "Hits on enemies over 20 m away deal +{p}%"
+      },
+      "styleTax": {
+        "name": "STYLE TAX",
+        "tag": "STYLE",
+        "tier": "rare",
+        "locked": {
+          "flag": "round10",
+          "label": "REACH ROUND 10"
+        },
+        "max": 2,
+        "per": 0.06,
+        "fromRank": 2,
+        "desc": "+{p}% damage per style rank above BOLD"
+      },
+      "variety": {
+        "name": "VARIETY",
+        "tag": "STYLE",
+        "tier": "common",
+        "max": 3,
+        "per": 15,
+        "desc": "A kill with another family than your last pays +{n} points"
+      },
+      "bloodPrice": {
+        "name": "BLOOD PRICE",
+        "tag": "HEALTH",
+        "tier": "common",
+        "max": 2,
+        "per": 3,
+        "desc": "Kills heal {n} HP"
+      },
+      "interest": {
+        "name": "INTEREST",
+        "tag": "ECONOMY",
+        "tier": "rare",
+        "locked": {
+          "flag": "daily",
+          "label": "FINISH A DAILY RUN"
+        },
+        "max": 2,
+        "per": 0.05,
+        "cap": 600,
+        "desc": "+{p}% of your bank at each round clear (up to {c})"
+      },
+      "scavenger": {
+        "name": "SCAVENGER",
+        "tag": "ECONOMY",
+        "tier": "common",
+        "max": 2,
+        "per": 0.5,
+        "desc": "Power-ups drop +{p}% more often"
+      },
+      "adrenaline": {
+        "name": "ADRENALINE",
+        "tag": "HEALTH",
+        "tier": "common",
+        "max": 2,
+        "per": 0.2,
+        "below": 0.4,
+        "desc": "+{p}% damage while under 40% HP"
+      },
+      "momentumRounds": {
+        "name": "MOMENTUM ROUNDS",
+        "tag": "MELEE",
+        "tier": "common",
+        "max": 2,
+        "per": 0.25,
+        "desc": "Melee hits with momentum deal +{p}%"
+      },
+      "freshStart": {
+        "name": "FRESH START",
+        "tag": "STYLE",
+        "tier": "common",
+        "max": 2,
+        "per": 0.4,
+        "desc": "A PRIMED shot (the first after a swap) deals +{p}%"
+      },
+      "bountyHunter": {
+        "name": "BOUNTY HUNTER",
+        "tag": "ECONOMY",
+        "tier": "common",
+        "max": 2,
+        "per": 100,
+        "desc": "Elite and affixed kills pay +{n} points"
+      },
+      "crossfire": {
+        "name": "CROSSFIRE",
+        "tag": "STYLE",
+        "tier": "rare",
+        "locked": {
+          "flag": "trialGold",
+          "label": "WIN A TRIAL GOLD"
+        },
+        "max": 2,
+        "per": 0.15,
+        "desc": "CROSS hits (a new family on a target) deal +{p}%"
+      }
+    }
+  },
+  "objectives": {
+    "enabled": true,
+    "holdTime": 30,
+    "radius": 4,
+    "pointsMult": 1.5,
+    "bonus": 50,
+    "goldMult": 2,
+    "chainWindow": 3,
+    "chainAt": 3,
+    "chainBonus": 25,
+    "color": 1692646
+  },
+  "tips": {
+    "enabled": true,
+    "times": 3,
+    "list": {
+      "break": "BETWEEN ROUNDS: HOLD {interact} AT A GLOWING GATE TO OPEN A NEW ZONE",
+      "wallBuy": "HOLD {interact} TO BUY A GUN: IT GOES STRAIGHT TO YOUR HAND",
+      "forge": "THE FORGE: HOLD {interact} WITH A GUN IN HAND TO FORGE IT (x1.8 DAMAGE FOR THE RUN)",
+      "relay": "A RELAY: HOLD {interact} TO LIGHT IT. LIGHT ALL FOUR TO COMPLETE THE PROTOCOL",
+      "ready": "READY EARLY? HOLD {interact} AWAY FROM ANYTHING FOR SALE TO START THE ROUND NOW",
+      "powerUp": "A POWER-UP DROPPED: RUN THROUGH IT BEFORE IT FADES",
+      "perk": "PERK MACHINES: HOLD {interact} TO BUY ONE (EACH ONCE A RUN; THE PRICE RISES WITH EVERY PERK)"
+    }
+  },
+  "daily": {
+    "salt": 55825,
+    "mutators": [
+      "glassCannon",
+      "speedDemon",
+      "noRegen"
+    ]
+  },
+  "protocol": {
+    "enabled": true,
+    "wakeRound": 6,
+    "bonus": 2500,
+    "reach": 2.4,
+    "pylonHeight": 2.2,
+    "beamHeight": 60,
+    "guideHeight": 120,
+    "color": 1692646,
+    "litColor": 15399167,
+    "surge": [
+      [
+        "charger",
+        "lancer",
+        "warden"
+      ],
+      [
+        "spitter",
+        "charger",
+        "lancer"
+      ],
+      [
+        "warden",
+        "spitter",
+        "charger"
+      ],
+      [
+        "lancer",
+        "warden",
+        "spitter"
+      ]
+    ]
+  },
+  "forge": {
+    "enabled": true,
+    "cost": 5000,
+    "damage": 1.8,
+    "color": 15399167,
+    "gem": 1.9,
+    "glow": 1.6,
+    "seedSalt": 61598,
+    "flourish": [
+      -10,
+      -0.03,
+      0.01,
+      8
+    ],
+    "toughKinds": [
+      "spitter",
+      "charger",
+      "lancer",
+      "warden"
+    ],
+    "icon": [
+      "........",
+      ".######.",
+      "########",
+      ".######.",
+      "...##...",
+      "..####..",
+      ".######.",
+      "........"
+    ],
+    "families": {
+      "kinetic": {
+        "headshot": 1.25
+      },
+      "edge": {
+        "status": "stagger",
+        "chance": 0.25
+      },
+      "volt": {
+        "status": "shock",
+        "chance": 0.3
+      },
+      "gravity": {
+        "status": "pull",
+        "chance": 0.3
+      },
+      "impact": {
+        "damage": 1.2
+      },
+      "pierce": {
+        "tough": 1.3
+      },
+      "fire": {
+        "status": "burn",
+        "chance": 0.5
+      },
+      "blast": {
+        "blast": 1.25
+      }
+    }
+  },
+  "perks": {
+    "order": [
+      "steady",
+      "flip",
+      "bounty",
+      "vigor",
+      "slipstream",
+      "mend",
+      "anvil",
+      "deadeye",
+      "plate",
+      "quick",
+      "flow",
+      "grip",
+      "static",
+      "phoenix"
+    ],
+    "steady": {
+      "price": 750,
+      "cone": 1.5,
+      "lockRange": 1.5,
+      "recoil": 0.7,
+      "color": 5097983,
+      "text": "STEADIER AIM",
+      "icon": [
+        "...##...",
+        "...##...",
+        ".######.",
+        "##.##.##",
+        "##.##.##",
+        ".######.",
+        "...##...",
+        "...##..."
+      ]
+    },
+    "flip": {
+      "price": 1000,
+      "swapTime": 0.08,
+      "primedBonus": 0.6,
+      "recover": 2,
+      "color": 12123948,
+      "text": "INSTANT SWAPS",
+      "icon": [
+        "..####..",
+        ".#....#.",
+        "#..##..#",
+        "#.#..#.#",
+        "#.#..#.#",
+        "#..##..#",
+        ".#....##",
+        "..####.#"
+      ]
+    },
+    "bounty": {
+      "price": 2250,
+      "points": 1.25,
+      "color": 16765501,
+      "text": "+25% POINTS",
+      "icon": [
+        "...##...",
+        ".######.",
+        "##.##...",
+        ".#####..",
+        "...##.#.",
+        ".######.",
+        "...##...",
+        "........"
+      ]
+    },
+    "vigor": {
+      "price": 1500,
+      "pips": 1,
+      "color": 4054148,
+      "text": "+1 STAMINA PIP",
+      "icon": [
+        "....##..",
+        "...##...",
+        "..##....",
+        ".######.",
+        "....##..",
+        "...##...",
+        "..##....",
+        ".##....."
+      ]
+    },
+    "slipstream": {
+      "price": 1250,
+      "slideSpeed": 1.25,
+      "slideFriction": 0.75,
+      "slideJumpCap": 1.25,
+      "color": 2946528,
+      "text": "FASTER SLIDES",
+      "icon": [
+        "........",
+        "##......",
+        ".###....",
+        "..####..",
+        "...#####",
+        "########",
+        "........",
+        "........"
+      ]
+    },
+    "mend": {
+      "price": 2000,
+      "delayMult": 0.6,
+      "rateMult": 1.5,
+      "color": 10354632,
+      "text": "FASTER REGEN",
+      "icon": [
+        "...##...",
+        "...##...",
+        "...##...",
+        "########",
+        "########",
+        "...##...",
+        "...##...",
+        "...##..."
+      ]
+    },
+    "anvil": {
+      "price": 1250,
+      "slamDamage": 2,
+      "slamRadius": 1.5,
+      "color": 8359167,
+      "text": "HEAVY SLAMS",
+      "icon": [
+        "########",
+        "########",
+        ".######.",
+        "...##...",
+        "...##...",
+        "..####..",
+        ".######.",
+        "########"
+      ]
+    },
+    "deadeye": {
+      "price": 1750,
+      "headshotMult": 1.5,
+      "headshotPoints": 50,
+      "color": 16773754,
+      "text": "DEADLY HEADSHOTS",
+      "icon": [
+        "..####..",
+        ".#....#.",
+        "#..##..#",
+        "#.####.#",
+        "#.####.#",
+        "#..##..#",
+        ".#....#.",
+        "..####.."
+      ]
+    },
+    "plate": {
+      "price": 2500,
+      "maxHp": 150,
+      "color": 14214384,
+      "text": "150 MAX HP",
+      "icon": [
+        "########",
+        "#......#",
+        "#.####.#",
+        "#.####.#",
+        "#.####.#",
+        ".#....#.",
+        "..#..#..",
+        "...##..."
+      ]
+    },
+    "quick": {
+      "price": 2000,
+      "fireRateMult": 1.15,
+      "swapMult": 2,
+      "chargeMult": 0.75,
+      "color": 10906623,
+      "text": "FAST SWAP + FIRE",
+      "icon": [
+        "#...#...",
+        "##..##..",
+        "###.###.",
+        "########",
+        "###.###.",
+        "##..##..",
+        "#...#...",
+        "........"
+      ]
+    },
+    "flow": {
+      "price": 3000,
+      "drain": 0.6,
+      "gain": 1.2,
+      "color": 5078015,
+      "text": "STYLE HOLDS",
+      "icon": [
+        "........",
+        ".##..##.",
+        "#..##..#",
+        "........",
+        ".##..##.",
+        "#..##..#",
+        "........",
+        "........"
+      ]
+    },
+    "grip": {
+      "price": 1500,
+      "rideTime": 0.6,
+      "wallJumps": 1,
+      "color": 13667327,
+      "text": "LONGER WALL RIDES",
+      "icon": [
+        "#.......",
+        "#.####..",
+        "#.......",
+        "#.####..",
+        "#.......",
+        "#.####..",
+        "#.......",
+        "#......."
+      ]
+    },
+    "static": {
+      "price": 3500,
+      "color": 9103615,
+      "text": "THE AURA BITES",
+      "icon": [
+        "...###..",
+        "..###...",
+        ".###....",
+        "#######.",
+        "...###..",
+        "..###...",
+        ".###....",
+        "###....."
+      ]
+    },
+    "phoenix": {
+      "price": 4000,
+      "reviveHp": 0.6,
+      "radius": 12,
+      "weakHp": 70,
+      "invulnerable": 3,
+      "color": 16771496,
+      "text": "ONE MORE LIFE",
+      "icon": [
+        "#......#",
+        "##....##",
+        ".##..##.",
+        "..####..",
+        "...##...",
+        "..####..",
+        ".#.##.#.",
+        "...##..."
+      ]
+    },
+    "stackTax": 0.1,
+    "machineHeight": 2.6,
+    "machineWidth": 1.2,
+    "machineDepth": 0.9,
+    "reach": 2.4,
+    "glow": 2.2,
+    "ringRadius": 1.3,
+    "screenRefresh": 0.25,
+    "pulseRate": 2.2
+  },
+  "wallBuy": {
+    "plateWidth": 1.8,
+    "plateHeight": 1.1,
+    "holoSize": 1.25,
+    "signWidth": 1.9,
+    "holoSpin": 0.9,
+    "holoBob": 0.05,
+    "holoOut": 0.45,
+    "buyOut": 1.2,
+    "labelHeight": 1.05
+  },
+  "aim": {
+    "homingTurn": 120,
+    "lockHomingMult": 2,
+    "homingAssistAngle": 0.0087,
+    "lunge": 1.5,
+    "lungeTime": 0.12,
+    "payout": 0.8,
+    "lockCone": 15,
+    "lockRange": 45,
+    "lock": {
+      "strengthRef": 60,
+      "kMax": 1.5,
+      "modes": {
+        "assist": {
+          "cone": 6,
+          "acquire": 120,
+          "pull": 90,
+          "omega": 22,
+          "follow": 150,
+          "friction": 0.55,
+          "breakaway": 300,
+          "track": false,
+          "pulse": 0
+        },
+        "snap": {
+          "cone": 12,
+          "acquire": 50,
+          "pull": 240,
+          "omega": 50,
+          "follow": 360,
+          "friction": 1,
+          "breakaway": 450,
+          "track": false,
+          "pulse": 1.5
+        },
+        "lock": {
+          "cone": 24,
+          "acquire": 0,
+          "pull": 720,
+          "omega": 60,
+          "follow": 720,
+          "friction": 1,
+          "breakaway": 700,
+          "track": true,
+          "pulse": 1.5
+        }
+      },
+      "scanEvery": 2,
+      "losRays": 3,
+      "losSlack": 0.3,
+      "range": 90,
+      "meleeReach": 2.5,
+      "releaseCone": 1.6,
+      "losLost": 0.25,
+      "manualLosLost": 1,
+      "hysteresis": {
+        "margin": 0.3,
+        "hold": 0.12
+      },
+      "settleError": 1.5,
+      "center": 6,
+      "fire": {
+        "onTarget": 1,
+        "holdBelow": 6,
+        "maxHold": 0.04,
+        "boost": 2
+      },
+      "reacquireDelay": 0.4,
+      "acquireMaxTurn": 200,
+      "assistedPull": 0.5,
+      "assistedWindow": 0.5,
+      "targetRadius": 0.55,
+      "elite": [
+        "spitter",
+        "charger",
+        "lancer",
+        "warden",
+        "rival"
+      ],
+      "eliteScale": 1.3,
+      "weights": {
+        "angle": 1,
+        "distance": 0.35,
+        "threat": 0.3,
+        "head": 0.1,
+        "weak": 0.5
+      },
+      "threat": {
+        "husk": 0.2,
+        "swarmer": 0.3,
+        "drone": 0.7,
+        "spitter": 0.9,
+        "charger": 0.5,
+        "lancer": 1,
+        "warden": 0.8,
+        "boss": 1,
+        "rival": 1
+      },
+      "payoutMin": 0.65,
+      "payoutFloor": 0.65,
+      "pinchDeg": 0.8,
+      "pinchTime": 0.08,
+      "bracketTime": 0.06,
+      "bracketFrom": 1.6,
+      "flashTime": 0.1,
+      "hintTime": 1.2,
+      "ads": {
+        "cone": 0.7,
+        "pull": 1.4
+      }
+    },
+    "xray": {
+      "color": 16730652,
+      "alpha": 0.35,
+      "edge": 1.4,
+      "fadeStart": 45,
+      "fadeEnd": 60,
+      "eliteBoost": 1.9,
+      "machineAlpha": 0.16
+    }
+  },
+  "momentum": {
+    "smoothTime": 0.06,
+    "closingMin": 8,
+    "closingMax": 32,
+    "surgeWindow": 0.35,
+    "surgeMin": 10,
+    "surgeBonus": 0.3,
+    "meleeMax": 3,
+    "gunMax": 1.35,
+    "blastRadius": 0.25,
+    "arcAt": 0.5,
+    "impactBonusAt": 0.5,
+    "variantAt": 0.6,
+    "shock": {
+      "at": 0.55,
+      "cooldown": 0.25,
+      "shareMin": 0.35,
+      "shareMax": 0.6,
+      "pushMin": 6,
+      "pushMax": 14,
+      "stagger": 0.8,
+      "ring": {
+        "radiusMin": 2.5,
+        "radiusMax": 5,
+        "time": 0.35
+      },
+      "crescent": {
+        "range": 10,
+        "speed": 40,
+        "width": 2.2,
+        "height": 1.6,
+        "color": 16761405
+      },
+      "echo": {
+        "targets": 3,
+        "radius": 5,
+        "color": 12123948
+      },
+      "quake": {
+        "coneDeg": 70,
+        "length": 8,
+        "launch": 10,
+        "fissureTime": 1.4
+      },
+      "crack": {
+        "radius": 5,
+        "pull": 9,
+        "pullKinds": [
+          "husk",
+          "swarmer",
+          "drone"
+        ]
+      }
+    }
+  },
+  "arcline": {
+    "price": 5500,
+    "range": 60,
+    "coneDeg": 15,
+    "probeRadius": 1.5,
+    "maxLen": 55,
+    "minLen": 4,
+    "hookSpeed": 600,
+    "hookMin": 0.06,
+    "hookMax": 0.1,
+    "pullTime": 0.18,
+    "pullAccel": 22,
+    "stretch": 0.03,
+    "springOmega": 30,
+    "gravityMult": 0.85,
+    "drag": 0.00008,
+    "pumpAccel": 12,
+    "softCap": 42,
+    "reelSpeed": 18,
+    "risingBoost": 1.08,
+    "jumpUp": 4,
+    "cooldown": 0.4,
+    "rehook": 0.25,
+    "losBreak": 0.25,
+    "losSlack": 0.4,
+    "substeps": 4,
+    "ropeHeight": 1.2,
+    "fovLiftDeg": 4,
+    "zip": {
+      "reelSpeed": 34,
+      "arrive": 2.6,
+      "maxTime": 1.2
+    },
+    "groundLift": 6,
+    "pullKinds": [
+      "husk",
+      "swarmer",
+      "drone"
+    ],
+    "enemyPull": 22,
+    "enemyPullTime": 0.35,
+    "nodeGlow": 2.4,
+    "nodeRadius": 1.1,
+    "nodeColor": 8384767,
+    "ropeColor": 1692646,
+    "ropeWidth": 0.035,
+    "ropeSegments": 14,
+    "sag": 0.35
+  },
+  "punch": {
+    "cycleTime": 0.35,
+    "range": 2,
+    "coneHalfAngleDeg": 35,
+    "damage": 10,
+    "knockbackSpeed": 6,
+    "knockbackTime": 0.2,
+    "staggerTime": 1,
+    "parryHeal": 15,
+    "parryHitstop": 0.06,
+    "parryFlashTime": 0.08,
+    "parryFlashOpacity": 0.45
+  },
+  "ads": {
+    "weapons": {
+      "revolver": {
+        "zoom": 1.5,
+        "reticle": "ring"
+      },
+      "rattler": {
+        "zoom": 1.4,
+        "reticle": "ring",
+        "spreadMult": 0.3
+      },
+      "zapper": {
+        "zoom": 1.3,
+        "reticle": "ring",
+        "chainRange": 1.15
+      },
+      "prism": {
+        "zoom": 1.4,
+        "reticle": "ring",
+        "preview": true
+      },
+      "rail": {
+        "zoom": 3.5,
+        "reticle": "scope",
+        "scope": true
+      }
+    },
+    "easeTime": 0.12,
+    "classEase": {
+      "light": 0.13,
+      "medium": 0.18,
+      "heavy": 0.25
+    },
+    "walkMult": 0.85,
+    "headshotMult": 1.2,
+    "hipSpreadDeg": {
+      "revolver": 0.8
+    },
+    "auraMult": 0.5,
+    "vmSwayMult": 0.25,
+    "suspendStates": [
+      "DASH",
+      "SWING"
+    ],
+    "ricochet": {
+      "range": 12,
+      "damageMult": 1,
+      "lineTime": 0.12
+    },
+    "preview": {
+      "bounces": 3,
+      "opacity": 0.35
+    },
+    "scopeVignette": 0.92
+  },
+  "husk": {
+    "hp": 40,
+    "speed": 6,
+    "stopDistance": 1,
+    "meleeRange": 2.2,
+    "meleeHitRange": 2.5,
+    "windupTime": 0.5,
+    "meleeDamage": 15,
+    "meleeCooldown": 1.2,
+    "leapMinHeight": 1.5,
+    "leapMaxHorizontal": 10,
+    "leapApexAbove": 1,
+    "leapCooldown": 3,
+    "radius": 0.4,
+    "height": 1.8,
+    "headRadius": 0.28,
+    "headHeight": 1.5,
+    "headForward": 0.2,
+    "headTiltDeg": 20,
+    "headBox": [
+      0.62,
+      0.45,
+      0.56
+    ],
+    "bodyCapSegments": 4,
+    "bodyRadialSegments": 10,
+    "aimHeight": 1,
+    "spawnLift": 0.05,
+    "separationRadius": 1.2,
+    "separationSpeed": 3,
+    "windupPulseScale": 1.15,
+    "windupPulseRate": 24,
+    "windupColor": 16761370,
+    "headShade": 0.72,
+    "hitFlashTime": 0.08,
+    "staggerLeanDeg": 22,
+    "staggerPale": 0.45,
+    "staggerLeanEaseRate": 14,
+    "maxCount": 32,
+    "spawnCount": 3,
+    "spawnEdgeInset": 3,
+    "spawnTries": 16,
+    "autoSpawn": false,
+    "autoSpawnInterval": 10
+  },
+  "swarmer": {
+    "hp": 10,
+    "radius": 0.3,
+    "height": 0.75,
+    "speed": 10,
+    "shade": 1,
+    "maxCount": 40,
+    "aimHeight": 0.45,
+    "pounceRange": 4.5,
+    "tellTime": 0.3,
+    "pounceApex": 0.9,
+    "biteRange": 1.2,
+    "damage": 8,
+    "recoverTime": 0.6,
+    "cooldown": 1.6,
+    "frontConeDeg": 70
+  },
+  "spitter": {
+    "hp": 60,
+    "radius": 0.45,
+    "height": 2,
+    "speed": 4.5,
+    "shade": 0.85,
+    "maxCount": 10,
+    "minRange": 6,
+    "maxRange": 24,
+    "retreatRange": 5,
+    "globTimeMin": 0.5,
+    "globTimeMax": 1.3,
+    "tellTime": 0.6,
+    "cooldown": 2.6,
+    "globSpeed": 16,
+    "spread": 1.6,
+    "globRadius": 0.28,
+    "globDamage": 12,
+    "puddleRadius": 3,
+    "puddleTime": 4,
+    "puddleDps": 10,
+    "puddleTick": 0.25,
+    "acidColor": 16756768,
+    "globPool": 36,
+    "puddlePool": 18
+  },
+  "charger": {
+    "hp": 150,
+    "radius": 0.7,
+    "height": 2.2,
+    "speed": 4.5,
+    "shade": 0.8,
+    "maxCount": 6,
+    "knockbackScale": 0.3,
+    "minRange": 6,
+    "maxRange": 26,
+    "tellTime": 0.8,
+    "chargeSpeed": 22,
+    "chargeDistance": 30,
+    "damage": 25,
+    "hitRange": 1.5,
+    "knockback": 14,
+    "knockbackUp": 6,
+    "stunTime": 1.5,
+    "weakMult": 3,
+    "recoverTime": 0.8,
+    "cooldown": 3,
+    "lineWidth": 1.6
+  },
+  "lancer": {
+    "hp": 70,
+    "radius": 0.4,
+    "height": 2,
+    "shade": 0.9,
+    "maxCount": 6,
+    "aimHeight": 1.8,
+    "perchTries": 8,
+    "aimTime": 1.2,
+    "trackLag": 0.45,
+    "damage": 25,
+    "hitRadius": 0.55,
+    "range": 70,
+    "cooldown": 2.5,
+    "blinkTime": 0.35,
+    "relocateMin": 15,
+    "blindBlink": 3
+  },
+  "warden": {
+    "hp": 200,
+    "radius": 0.6,
+    "height": 2.3,
+    "speed": 3,
+    "shade": 0.75,
+    "maxCount": 6,
+    "knockbackScale": 0.2,
+    "shieldArcDeg": 120,
+    "aboveHeight": 1.5,
+    "shieldStun": 1,
+    "swingStart": 2.4,
+    "swingRange": 2.8,
+    "damage": 20,
+    "tellTime": 0.8,
+    "recoverTime": 0.5,
+    "cooldown": 1.8,
+    "shoveRadius": 1.8,
+    "shoveSpeed": 3
+  },
+  "bossKit": {
+    "schedule": [
+      {
+        "round": 5,
+        "boss": "bulwark"
+      },
+      {
+        "round": 10,
+        "boss": "monolith"
+      },
+      {
+        "round": 15,
+        "boss": "rivalPrime"
+      },
+      {
+        "round": 20,
+        "boss": "orbiter"
+      },
+      {
+        "round": 25,
+        "boss": "hive"
+      }
+    ],
+    "rotationFrom": 30,
+    "names": {
+      "bulwark": "BULWARK",
+      "monolith": "MONOLITH",
+      "rivalPrime": "RIVAL PRIME",
+      "orbiter": "ORBITER",
+      "hive": "HIVE"
+    },
+    "subtitles": {
+      "bulwark": "ARMORED WALKER",
+      "monolith": "THE GRINDER WAKES",
+      "rivalPrime": "MIRROR DUEL",
+      "orbiter": "AERIAL STATION",
+      "hive": "THE NEST"
+    },
+    "mutators": [
+      {
+        "id": "armored",
+        "name": "ARMORED",
+        "hp": 1.3
+      },
+      {
+        "id": "swift",
+        "name": "SWIFT",
+        "speed": 1.2
+      },
+      {
+        "id": "escorted",
+        "name": "ESCORTED",
+        "adds": 2
+      },
+      {
+        "id": "furious",
+        "name": "FURIOUS",
+        "damage": 1.25,
+        "speed": 1.1
+      }
+    ],
+    "hpPerRound": 0.03,
+    "hpPerCycle": 0.35,
+    "damagePerCycle": 0.15,
+    "coop": 1,
+    "introTime": 1.5,
+    "beatTime": 1.2,
+    "beatPush": 12,
+    "beatPushUp": 5,
+    "killTime": 0.6,
+    "killSlowMo": 0.3,
+    "pixel": 7,
+    "rewards": {
+      "bulwark": {
+        "points": 1500,
+        "token": true,
+        "powerUp": true
+      },
+      "monolith": {
+        "points": 2000,
+        "token": true,
+        "powerUp": true
+      },
+      "rivalPrime": {
+        "points": 2500,
+        "token": true,
+        "powerUp": true
+      },
+      "orbiter": {
+        "points": 3000,
+        "token": true,
+        "powerUp": true
+      },
+      "hive": {
+        "points": 3500,
+        "token": true,
+        "powerUp": true
+      }
+    },
+    "arena": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "arenas": {
+      "bulwark": "pen",
+      "monolith": "flat",
+      "rivalPrime": "pillars",
+      "orbiter": "flat",
+      "hive": "towers"
+    }
+  },
+  "bulwark": {
+    "hp": 3200,
+    "speed": 3.2,
+    "turnRate": 1.6,
+    "height": 7.6,
+    "radius": 2.1,
+    "parts": [
+      [
+        "legL",
+        1.3,
+        3.2,
+        1.4,
+        -1.1,
+        1.6,
+        0
+      ],
+      [
+        "legR",
+        1.3,
+        3.2,
+        1.4,
+        1.1,
+        1.6,
+        0
+      ],
+      [
+        "torso",
+        3.6,
+        3,
+        2.4,
+        0,
+        4.7,
+        0
+      ],
+      [
+        "head",
+        1.5,
+        1.2,
+        1.4,
+        0,
+        6.8,
+        -0.3
+      ],
+      [
+        "armL",
+        1,
+        2.8,
+        1,
+        -2.35,
+        4.3,
+        0
+      ],
+      [
+        "armR",
+        1,
+        2.8,
+        1,
+        2.35,
+        4.3,
+        0
+      ]
+    ],
+    "plates": [
+      [
+        "frontL",
+        1.6,
+        2,
+        0.4,
+        -0.85,
+        4.9,
+        -1.4
+      ],
+      [
+        "frontR",
+        1.6,
+        2,
+        0.4,
+        0.85,
+        4.9,
+        -1.4
+      ],
+      [
+        "shoulderL",
+        1.5,
+        0.5,
+        1.8,
+        -2.35,
+        5.95,
+        0
+      ],
+      [
+        "shoulderR",
+        1.5,
+        0.5,
+        1.8,
+        2.35,
+        5.95,
+        0
+      ],
+      [
+        "back",
+        2.6,
+        2,
+        0.4,
+        0,
+        4.7,
+        1.4
+      ]
+    ],
+    "xrayEnvelope": [
+      [
+        1.4,
+        3.3,
+        1.5,
+        -1.1,
+        1.65,
+        0
+      ],
+      [
+        1.4,
+        3.3,
+        1.5,
+        1.1,
+        1.65,
+        0
+      ],
+      [
+        3.7,
+        3.1,
+        3.3,
+        0,
+        4.75,
+        0
+      ],
+      [
+        1.6,
+        1.3,
+        1.5,
+        0,
+        6.8,
+        -0.3
+      ],
+      [
+        1.6,
+        3.4,
+        1.9,
+        -2.35,
+        4.5,
+        0
+      ],
+      [
+        1.6,
+        3.4,
+        1.9,
+        2.35,
+        4.5,
+        0
+      ]
+    ],
+    "core": {
+      "x": 0,
+      "y": 4.6,
+      "z": 0.95,
+      "r": 0.55
+    },
+    "plateHp": 260,
+    "plateMult": 0.1,
+    "apMult": 3,
+    "apWeapons": [
+      "rocket",
+      "rail",
+      "thumper"
+    ],
+    "apMomentum": 0.6,
+    "hullMult": 0.35,
+    "exposedMult": 1,
+    "coreMult": 2,
+    "coreOpenMult": 3,
+    "platePoints": 150,
+    "actionGap": 1.1,
+    "ram": {
+      "tell": 1.2,
+      "speed": 22,
+      "maxLength": 34,
+      "width": 3.6,
+      "damage": 35,
+      "push": 16,
+      "pushUp": 6,
+      "stun": 3,
+      "wallProbe": 2.6
+    },
+    "stomp": {
+      "tell": 0.9,
+      "speed": 13,
+      "width": 0.9,
+      "height": 0.8,
+      "damage": 25,
+      "maxRadius": 28
+    },
+    "beam": {
+      "tell": 1,
+      "time": 3,
+      "arc": 5.5,
+      "height": 0.9,
+      "range": 24,
+      "damage": 30,
+      "hitCooldown": 0.35
+    },
+    "p2At": 0.5,
+    "hatches": [
+      [
+        -12,
+        -12
+      ],
+      [
+        12,
+        -12
+      ],
+      [
+        -12,
+        12
+      ],
+      [
+        12,
+        12
+      ],
+      [
+        0,
+        -16
+      ],
+      [
+        0,
+        16
+      ]
+    ],
+    "hatchKind": "husk",
+    "hatchTell": 1.2,
+    "weights": {
+      "p1": {
+        "ram": 0.45,
+        "stomp": 0.35,
+        "beam": 0.2
+      },
+      "p2": {
+        "ram": 0.5,
+        "stomp": 0.25,
+        "beam": 0.25
+      }
+    },
+    "passive": {
+      "time": 4,
+      "radius": 5
+    },
+    "arenaHalf": 18
+  },
+  "rivalPrime": {
+    "hp": 3000,
+    "loadout": [
+      "revolver",
+      "shotgun",
+      "rocket"
+    ],
+    "difficulty": "hard",
+    "introFrom": 14,
+    "p2At": 0.5,
+    "copyMult": 1.15,
+    "copyFresh": 0.55,
+    "closeRange": 7,
+    "rocketMax": 24,
+    "swapHold": 0.8,
+    "rageRange": 30,
+    "rageStill": 4,
+    "stillSpeed": 1.5,
+    "rageBuild": 1.2,
+    "rageTime": 6,
+    "rageDashEvery": 0.6,
+    "shapeTime": 0.45,
+    "shapeHeight": 2.6,
+    "actionEvery": [
+      1.4,
+      2.4
+    ],
+    "dashRange": 18,
+    "dashStrike": 0.45,
+    "dashHitRange": 2.6,
+    "dashDamage": 18,
+    "slamRange": 9,
+    "slamRadius": 4,
+    "slamAir": 0.55,
+    "slamDamage": 25,
+    "slamLaunch": 9,
+    "volleyRange": 26,
+    "volleyCount": 5,
+    "volleyFan": 0.9,
+    "orbSpeed": 14,
+    "retreatTime": 0.8,
+    "weights": {
+      "close": {
+        "slam": 0.4,
+        "retreat": 0.3,
+        "volley": 0.3
+      },
+      "mid": {
+        "volley": 0.5,
+        "dash": 0.35,
+        "retreat": 0.15
+      },
+      "far": {
+        "dash": 0.55,
+        "volley": 0.45
+      }
+    },
+    "pillars": [
+      [
+        -8,
+        -8
+      ],
+      [
+        8,
+        -8
+      ],
+      [
+        -8,
+        8
+      ],
+      [
+        8,
+        8
+      ]
+    ],
+    "pillarHp": 400,
+    "coverShootAfter": 1.6,
+    "arcline": {
+      "every": 5,
+      "range": 30,
+      "minRange": 12,
+      "lift": 14,
+      "hold": 1.1
+    }
+  },
+  "orbiter": {
+    "hp": 5200,
+    "orbitRadius": 16,
+    "orbitHeight": [
+      32,
+      38
+    ],
+    "orbitSpeed": 0.12,
+    "p2OrbitMult": 1.5,
+    "spin": 0.35,
+    "ringRadius": 7,
+    "ringTube": 1.1,
+    "pods": 6,
+    "podHp": 280,
+    "podRadius": 1.3,
+    "podRespawn": 14,
+    "podPoints": 100,
+    "exposeTime": 6,
+    "coreRadius": 2.2,
+    "coreMult": 2.5,
+    "shellMult": 0.2,
+    "actionGap": 1.4,
+    "p2At": 0.66,
+    "p3At": 0.33,
+    "weights": {
+      "p1": {
+        "curtain": 0.55,
+        "mines": 0.45
+      },
+      "p2": {
+        "curtain": 0.35,
+        "mines": 0.3,
+        "sweep": 0.35
+      },
+      "p3": {
+        "curtain": 0.25,
+        "mines": 0.2,
+        "sweep": 0.25,
+        "dive": 0.3
+      }
+    },
+    "curtain": {
+      "tell": 1.2,
+      "lanes": 7,
+      "speed": 16,
+      "length": 44,
+      "width": 44,
+      "damage": 20,
+      "height": 3
+    },
+    "mines": {
+      "tell": 0.4,
+      "count": 6,
+      "fuse": 3,
+      "radius": 4,
+      "damage": 30,
+      "bossDamage": 180,
+      "underBoss": 9,
+      "speed": 18
+    },
+    "sweep": {
+      "tell": 1,
+      "speed": 9,
+      "length": 44,
+      "width": 1.6,
+      "damage": 30,
+      "low": [
+        0,
+        0.8
+      ],
+      "high": [
+        1.1,
+        2.2
+      ]
+    },
+    "dive": {
+      "tell": 1.6,
+      "fall": 0.4,
+      "radius": 12,
+      "damage": 50,
+      "stun": 8,
+      "rise": 2,
+      "restHeight": 2.5
+    },
+    "pads": [
+      [
+        -14,
+        0
+      ],
+      [
+        14,
+        0
+      ],
+      [
+        0,
+        -14
+      ],
+      [
+        0,
+        14
+      ]
+    ],
+    "padTarget": 18,
+    "padBelow": 12,
+    "turretEvery": 0.9,
+    "turretSpeed": 16
+  },
+  "hive": {
+    "sacs": [
+      [
+        -18,
+        8.2,
+        -18
+      ],
+      [
+        14,
+        8.2,
+        -2
+      ],
+      [
+        -2,
+        8.2,
+        14
+      ]
+    ],
+    "sacHp": 900,
+    "sacRadius": 2.2,
+    "sacPoints": 200,
+    "bulletMult": 0.2,
+    "blastMult": 3,
+    "blastWeapons": [
+      "bouncer",
+      "rocket",
+      "vortex"
+    ],
+    "spawnEvery": 7,
+    "spawnKinds": [
+      [
+        "swarmer",
+        "swarmer",
+        "swarmer"
+      ],
+      [
+        "spitter"
+      ]
+    ],
+    "maxAdds": 12,
+    "hatchOffset": 3.5,
+    "acid": {
+      "every": 3.2,
+      "warn": 1,
+      "life": 4,
+      "radius": 2.8,
+      "dps": 14,
+      "count": 3,
+      "tickEvery": 0.25
+    },
+    "queen": {
+      "hp": 2600,
+      "radius": 1.3,
+      "height": 2.4,
+      "dropTime": 1.2,
+      "dropFrom": 30,
+      "impactMult": 2
+    },
+    "queenAt": [
+      6,
+      6
+    ],
+    "leap": {
+      "tell": 0.9,
+      "radius": 4,
+      "damage": 30,
+      "gap": 1.6,
+      "height": 7,
+      "time": 0.8
+    }
+  },
+  "powerUps": {
+    "eliteKinds": [
+      "spitter",
+      "charger",
+      "lancer",
+      "warden"
+    ],
+    "eliteChance": 0.02,
+    "styleDrop": {
+      "chainKills": 6,
+      "chainWindow": 4,
+      "airKills": 3,
+      "airWindow": 2,
+      "cooldown": 90
+    },
+    "killDrop": {
+      "enabled": true,
+      "chance": 0.015,
+      "eliteMult": 2,
+      "rise": 30,
+      "rise2": 60,
+      "minGap": 15,
+      "maxChance": 0.25,
+      "seedSalt": 54281
+    },
+    "life": 12,
+    "blinkFrom": 3,
+    "grabRadius": 1.6,
+    "grabHeight": 2.5,
+    "pool": 4,
+    "hover": 1.3,
+    "beamHeight": 7,
+    "wallGlow": 0.35,
+    "types": {
+      "double": {
+        "name": "DOUBLE POINTS",
+        "color": 16765498,
+        "time": 30,
+        "mult": 2
+      },
+      "overclock": {
+        "name": "OVERCLOCK",
+        "color": 1692646,
+        "time": 20
+      },
+      "shockwave": {
+        "name": "SHOCKWAVE",
+        "color": 16777215,
+        "damage": 99999
+      },
+      "stasis": {
+        "name": "STASIS",
+        "color": 9418495,
+        "time": 6
+      },
+      "refund": {
+        "name": "REFUND",
+        "color": 8257354,
+        "mult": 0.5
+      }
+    },
+    "icons": {
+      "double": [
+        "#####..",
+        "....#..",
+        "#####..",
+        "#......",
+        "#####..",
+        "...#.#.",
+        "....#.."
+      ],
+      "overclock": [
+        "...##..",
+        "..##...",
+        ".##....",
+        "######.",
+        "...##..",
+        "..##...",
+        ".##...."
+      ],
+      "shockwave": [
+        "..###..",
+        ".#...#.",
+        "#..#..#",
+        "#.###.#",
+        "#..#..#",
+        ".#...#.",
+        "..###.."
+      ],
+      "stasis": [
+        "...#...",
+        ".#.#.#.",
+        "..###..",
+        "#######",
+        "..###..",
+        ".#.#.#.",
+        "...#..."
+      ],
+      "refund": [
+        "..###..",
+        ".#.#.#.",
+        ".#.#...",
+        "..###..",
+        "...#.#.",
+        ".#.#.#.",
+        "..###.."
+      ]
+    }
+  },
+  "traps": {
+    "kill": 99999,
+    "switchScale": 0.8,
+    "kinds": {
+      "plate": {
+        "name": "SHOCK PLATE",
+        "price": 750,
+        "time": 8,
+        "cooldown": 30,
+        "every": 0.25,
+        "elite": 12,
+        "boss": 4,
+        "half": 2.2,
+        "reachUp": 0.6,
+        "color": 1692646,
+        "icon": [
+          "..####..",
+          ".#....#.",
+          "#..##..#",
+          "#.#..#.#",
+          "#.#..#.#",
+          "#..##..#",
+          ".#....#.",
+          "..####.."
+        ]
+      },
+      "crusher": {
+        "name": "CRUSHER",
+        "price": 1000,
+        "time": 4.8,
+        "cooldown": 35,
+        "every": 1.2,
+        "drop": 0.12,
+        "hold": 0.25,
+        "rise": 0.6,
+        "elite": 90,
+        "boss": 40,
+        "half": 2,
+        "rest": 5.5,
+        "color": 16742960,
+        "icon": [
+          "########",
+          "########",
+          "...##...",
+          "...##...",
+          "...##...",
+          ".######.",
+          "..####..",
+          "...##..."
+        ]
+      },
+      "fan": {
+        "name": "GRAVITY FAN",
+        "price": 900,
+        "time": 6,
+        "cooldown": 30,
+        "launch": 16,
+        "killAfter": 0.7,
+        "elite": 60,
+        "boss": 0,
+        "radius": 2.4,
+        "color": 9418495,
+        "icon": [
+          "...##...",
+          "..####..",
+          ".#.##.#.",
+          "...##...",
+          "...##...",
+          ".######.",
+          "#.#..#.#",
+          ".#....#."
+        ]
+      },
+      "pylon": {
+        "name": "ARC PYLON",
+        "price": 1250,
+        "time": 8,
+        "cooldown": 40,
+        "every": 0.5,
+        "targets": 4,
+        "elite": 30,
+        "boss": 20,
+        "range": 8,
+        "height": 4,
+        "reachUp": 5,
+        "color": 14217471,
+        "icon": [
+          "...##...",
+          "..#..#..",
+          "...##...",
+          ".#.##.#.",
+          "#..##..#",
+          "...##...",
+          "...##...",
+          "..####.."
+        ]
+      }
+    }
+  },
+  "affixes": {
+    "from": 8,
+    "chance": 0.2,
+    "perRound": 0.02,
+    "maxChance": 0.5,
+    "twoFrom": 16,
+    "twoChance": 0.35,
+    "bonusPoints": 40,
+    "iconSize": 0.5,
+    "iconHeight": 2.6,
+    "maxIcons": 24,
+    "kinds": {
+      "shielded": {
+        "color": 10134448,
+        "halfDeg": 70,
+        "icon": [
+          ".######.",
+          "#......#",
+          "#.####.#",
+          "#.####.#",
+          "#.####.#",
+          ".#.##.#.",
+          "..#..#..",
+          "...##..."
+        ]
+      },
+      "volatile": {
+        "color": 16730652,
+        "radius": 3.5,
+        "damage": 25,
+        "delay": 0.4,
+        "icon": [
+          "...#....",
+          "..###...",
+          ".#####..",
+          "#######.",
+          "#######.",
+          ".#####..",
+          "..###...",
+          "........"
+        ]
+      },
+      "blinker": {
+        "color": 13732863,
+        "every": 3.5,
+        "distance": 5,
+        "icon": [
+          "#......#",
+          ".#....#.",
+          "..#..#..",
+          "...##...",
+          "...##...",
+          "..#..#..",
+          ".#....#.",
+          "#......#"
+        ]
+      },
+      "regenerating": {
+        "color": 8257354,
+        "perSecond": 0.08,
+        "delay": 1.5,
+        "icon": [
+          "...##...",
+          "...##...",
+          "...##...",
+          "########",
+          "########",
+          "...##...",
+          "...##...",
+          "...##..."
+        ]
+      },
+      "swift": {
+        "color": 16765498,
+        "mult": 1.35,
+        "icon": [
+          "#...#...",
+          ".#...#..",
+          "..#...#.",
+          "...#...#",
+          "..#...#.",
+          ".#...#..",
+          "#...#...",
+          "........"
+        ]
+      }
+    }
+  },
+  "challenges": {
+    "saveEvery": 2,
+    "list": [
+      {
+        "id": "quakeCrowd",
+        "name": "QUAKE CROWD",
+        "desc": "Kill 5 enemies with one Thumper quake",
+        "target": 5
+      },
+      {
+        "id": "skyWalker",
+        "name": "SKY WALKER",
+        "desc": "Swing 300 m on the ARCLINE without touching the ground",
+        "target": 300
+      },
+      {
+        "id": "unbroken",
+        "name": "UNBROKEN",
+        "desc": "Reach SKYGRIND without dying",
+        "target": 5
+      },
+      {
+        "id": "returnToSender",
+        "name": "RETURN TO SENDER",
+        "desc": "Parry a boss orb back into it",
+        "target": 1
+      },
+      {
+        "id": "bulwarkDown",
+        "name": "PLATE BREAKER",
+        "desc": "Defeat BULWARK",
+        "target": 1
+      },
+      {
+        "id": "monolithDown",
+        "name": "STONE COLD",
+        "desc": "Defeat MONOLITH",
+        "target": 1
+      },
+      {
+        "id": "rivalPrimeDown",
+        "name": "MIRROR MATCH",
+        "desc": "Defeat RIVAL PRIME",
+        "target": 1
+      },
+      {
+        "id": "orbiterDown",
+        "name": "GROUNDED",
+        "desc": "Defeat ORBITER",
+        "target": 1
+      },
+      {
+        "id": "hiveDown",
+        "name": "EXTERMINATOR",
+        "desc": "Defeat HIVE",
+        "target": 1
+      },
+      {
+        "id": "round10",
+        "name": "TEN DOWN",
+        "desc": "Reach round 10",
+        "target": 10
+      },
+      {
+        "id": "round20",
+        "name": "TWENTY DEEP",
+        "desc": "Reach round 20",
+        "target": 20
+      },
+      {
+        "id": "round30",
+        "name": "THE LONG HAUL",
+        "desc": "Reach round 30",
+        "target": 30
+      },
+      {
+        "id": "headhunter",
+        "name": "HEADHUNTER",
+        "desc": "100 headshot kills",
+        "target": 100
+      },
+      {
+        "id": "impacts",
+        "name": "IMPACT",
+        "desc": "Land 25 IMPACT melee hits",
+        "target": 25
+      },
+      {
+        "id": "slingshots",
+        "name": "SLINGSHOT",
+        "desc": "10 SLINGSHOT releases",
+        "target": 10
+      },
+      {
+        "id": "trapper",
+        "name": "TRAPPER",
+        "desc": "25 trap kills",
+        "target": 25
+      },
+      {
+        "id": "lucky",
+        "name": "LUCKY",
+        "desc": "Grab 10 power-ups",
+        "target": 10
+      },
+      {
+        "id": "shieldBreaker",
+        "name": "SHIELD BREAKER",
+        "desc": "Break 10 SHIELDED plates",
+        "target": 10
+      },
+      {
+        "id": "arsenal",
+        "name": "ARSENAL",
+        "desc": "Buy 10 weapons in one run",
+        "target": 10
+      },
+      {
+        "id": "perkHoarder",
+        "name": "PERK HOARDER",
+        "desc": "Own 6 perks in one run",
+        "target": 6
+      },
+      {
+        "id": "speed",
+        "name": "SOUND BARRIER",
+        "desc": "Hit 30 m/s",
+        "target": 30
+      },
+      {
+        "id": "wallRider",
+        "name": "WALL RIDER",
+        "desc": "20 wall jumps in one run",
+        "target": 20
+      },
+      {
+        "id": "mutated",
+        "name": "MUTATED",
+        "desc": "Reach round 5 with 2 mutators on",
+        "target": 5
+      },
+      {
+        "id": "bossRush",
+        "name": "RUSHED",
+        "desc": "Finish BOSS RUSH",
+        "target": 1
+      }
+    ]
+  },
+  "kiosk": {
+    "idleReset": 60,
+    "orbitSpeed": 0.12,
+    "orbitRadius": 16,
+    "orbitHeight": 9,
+    "lookHeight": 2
+  },
+  "bossRush": {
+    "order": [
+      "bulwark",
+      "monolith",
+      "rivalPrime",
+      "orbiter",
+      "hive"
+    ],
+    "firstBreak": 3,
+    "breakTime": 5,
+    "boardSize": 10
+  },
+  "tutorial": {
+    "moveDistance": 6,
+    "targetDistance": 12,
+    "orbDistance": 10,
+    "orbEvery": 1.8,
+    "steps": [
+      {
+        "id": "move",
+        "text": "MOVE: {forward} {left} {back} {right}",
+        "sub": "LOOK WITH THE MOUSE"
+      },
+      {
+        "id": "jump",
+        "text": "JUMP: {jump}",
+        "sub": "PRESS IT AGAIN IN THE AIR TO DOUBLE JUMP"
+      },
+      {
+        "id": "dash",
+        "text": "DASH: {dash}",
+        "sub": "IT HAS 3 PIPS (BOTTOM LEFT): THEY REFILL"
+      },
+      {
+        "id": "slide",
+        "text": "SLIDE: {slide} WHILE RUNNING",
+        "sub": "JUMP OUT OF A SLIDE TO KEEP THE SPEED"
+      },
+      {
+        "id": "wallRide",
+        "text": "WALL RIDE: JUMP AT A WALL, HOLD {forward}",
+        "sub": "JUMP OFF IT TO WALL JUMP"
+      },
+      {
+        "id": "snap",
+        "text": "AIM NEAR THE TARGET: THE BRACKETS LOCK ON",
+        "sub": "FIRE WHILE LOCKED · YOUR MOUSE BREAKS AWAY (SETTINGS: AIM MODE / STRENGTH)"
+      },
+      {
+        "id": "lock",
+        "text": "LOCK-ON: {lockOn}",
+        "sub": "AGAIN FOR THE NEXT TARGET"
+      },
+      {
+        "id": "zoom",
+        "text": "ZOOM: HOLD RIGHT MOUSE",
+        "sub": "KESTREL, RATTLER, ZAPPER, PRISM, LONGWAVE · THEIR SPECIAL IS {special}"
+      },
+      {
+        "id": "parry",
+        "text": "PARRY: {punch} AS A CYAN ORB REACHES YOU",
+        "sub": "CYAN MEANS YOU CAN PUNCH IT BACK"
+      },
+      {
+        "id": "arcline",
+        "text": "ARCLINE: {grapple} TO HOOK, {reel} TO REEL, {jump} TO LET GO",
+        "sub": "BUY IT IN SURVIVAL (ISLANDS, 5500)",
+        "time": 6
+      }
+    ]
+  },
+  "results": {
+    "multiWindow": 1.2,
+    "grade": {
+      "round": 0.5,
+      "rank": 0.3,
+      "accuracy": 0.2,
+      "roundFull": 25,
+      "bands": [
+        [
+          "S",
+          0.85
+        ],
+        [
+          "A",
+          0.7
+        ],
+        [
+          "B",
+          0.55
+        ],
+        [
+          "C",
+          0.4
+        ]
+      ]
+    },
+    "gradeColors": {
+      "S": 16765498,
+      "A": 1692646,
+      "B": 8257354,
+      "C": 16777215,
+      "D": 10134448
+    }
+  },
+  "input": {
+    "bindings": {
+      "forward": "KeyW",
+      "back": "KeyS",
+      "left": "KeyA",
+      "right": "KeyD",
+      "jump": "Space",
+      "dash": "ShiftLeft",
+      "slide": "KeyC",
+      "punch": "KeyF",
+      "interact": "KeyE",
+      "grapple": "KeyG",
+      "reel": "KeyZ",
+      "quickSwap": "KeyQ",
+      "radial": "Tab",
+      "lockOn": "KeyV",
+      "xray": "KeyX",
+      "perkList": "KeyI",
+      "special": "KeyB",
+      "restart": "KeyR"
+    },
+    "labels": {
+      "forward": "FORWARD",
+      "back": "BACK",
+      "left": "LEFT",
+      "right": "RIGHT",
+      "jump": "JUMP",
+      "dash": "DASH",
+      "slide": "SLIDE / SLAM",
+      "punch": "PUNCH / PARRY",
+      "interact": "BUY (HOLD)",
+      "grapple": "ARCLINE",
+      "reel": "REEL IN",
+      "quickSwap": "LAST WEAPON",
+      "radial": "WEAPON WHEEL (HOLD)",
+      "lockOn": "LOCK-ON",
+      "xray": "X-RAY",
+      "perkList": "PERK LIST (HOLD)",
+      "special": "SPECIAL",
+      "restart": "RESTART"
+    }
+  },
+  "trials": {
+    "version": 1,
+    "gateRadius": 2.2,
+    "chest": 1,
+    "settleSteps": 30,
+    "ghost": {
+      "maxBytes": 120000,
+      "maxSteps": 10800,
+      "maxSettle": 240,
+      "opacity": 0.32,
+      "color": 1692646,
+      "notes": {
+        "stale": "GHOST FROM AN OLDER BUILD: DROPPED",
+        "big": "RUN TOO LONG TO KEEP AS A GHOST",
+        "full": "STORAGE FULL: THE GHOST LASTS THIS VISIT"
+      }
+    },
+    "targetRadius": 0.9,
+    "targetRange": 70,
+    "medals": {
+      "ace": 1,
+      "gold": 1.1,
+      "silver": 1.3,
+      "bronze": 1.6
+    },
+    "medalColors": {
+      "ace": 16765498,
+      "gold": 16765498,
+      "silver": 13226716,
+      "bronze": 13666898
+    },
+    "look": {
+      "ringTube": 0.045,
+      "targetSize": 0.55,
+      "pulse": 0.07,
+      "pulseRate": 6,
+      "nextBright": 2.4,
+      "afterBright": 0.9,
+      "restBright": 0.3,
+      "targetBright": 1.7,
+      "bob": 0.15,
+      "spin": 1.3,
+      "burstCount": 26,
+      "burstSpeed": 8,
+      "burstLife": 0.5,
+      "burstSize": 1.6
+    },
+    "list": [
+      {
+        "id": "slideLine",
+        "name": "SLIDE LINE",
+        "skill": "Slide-hop the lane, slide under the tunnel roof. Three laps.",
+        "map": "training",
+        "start": {
+          "x": 0,
+          "y": 0,
+          "z": 30,
+          "yawDeg": 0
+        },
+        "par": 27.608,
+        "gates": [
+          [
+            0,
+            1,
+            22
+          ],
+          [
+            -14.2,
+            1,
+            11.5
+          ],
+          [
+            -13,
+            0.8,
+            3,
+            1.6
+          ],
+          [
+            -8.7,
+            1,
+            -3.9
+          ],
+          [
+            -6.8,
+            1,
+            11.3
+          ],
+          [
+            -6,
+            1,
+            29.4
+          ],
+          [
+            0,
+            1,
+            22
+          ],
+          [
+            -14.2,
+            1,
+            11.5
+          ],
+          [
+            -13,
+            0.8,
+            3,
+            1.6
+          ],
+          [
+            -8.7,
+            1,
+            -3.9
+          ],
+          [
+            -6.8,
+            1,
+            11.3
+          ],
+          [
+            -6,
+            1,
+            29.4
+          ],
+          [
+            0,
+            1,
+            22
+          ],
+          [
+            -14.2,
+            1,
+            11.5
+          ],
+          [
+            -13,
+            0.8,
+            3,
+            1.6
+          ],
+          [
+            -8.7,
+            1,
+            -3.9
+          ],
+          [
+            -6.8,
+            1,
+            11.3
+          ],
+          [
+            -6,
+            1,
+            29.4
+          ]
+        ]
+      },
+      {
+        "id": "gapRunner",
+        "name": "GAP RUNNER",
+        "skill": "Double jump the ledges and the 10 m gap, there and back. Twice.",
+        "map": "training",
+        "start": {
+          "x": -28,
+          "y": 0,
+          "z": 20.5,
+          "yawDeg": -90
+        },
+        "par": 27.717,
+        "gates": [
+          [
+            -19.5,
+            2.8,
+            20.5
+          ],
+          [
+            -10.5,
+            2.5,
+            20.5
+          ],
+          [
+            11.5,
+            2,
+            20.5
+          ],
+          [
+            20.5,
+            4.4,
+            20.5,
+            2.5
+          ],
+          [
+            30,
+            1,
+            21
+          ],
+          [
+            18.5,
+            4.2,
+            19.5,
+            2.5
+          ],
+          [
+            -9.5,
+            2.5,
+            20.5
+          ],
+          [
+            -20.5,
+            3.3,
+            20.5
+          ],
+          [
+            -26.5,
+            1,
+            19.5
+          ],
+          [
+            -19.5,
+            2.8,
+            20.5
+          ],
+          [
+            -10.5,
+            2.5,
+            20.5
+          ],
+          [
+            11.5,
+            2,
+            20.5
+          ],
+          [
+            20.5,
+            4.4,
+            20.5,
+            2.5
+          ],
+          [
+            30,
+            1,
+            21
+          ],
+          [
+            18.5,
+            4.2,
+            19.5,
+            2.5
+          ],
+          [
+            -9.5,
+            2.5,
+            20.5
+          ],
+          [
+            -20.5,
+            3.3,
+            20.5
+          ],
+          [
+            -26.5,
+            1,
+            19.5
+          ]
+        ]
+      },
+      {
+        "id": "wallRider",
+        "name": "WALL RIDER",
+        "skill": "Ride a wall, jump to the other, slam out. Eight passes.",
+        "map": "training",
+        "start": {
+          "x": -27.5,
+          "y": 0,
+          "z": 5,
+          "yawDeg": 0
+        },
+        "par": 28.067,
+        "gates": [
+          [
+            -29.3,
+            2.9,
+            -8.8,
+            1.8
+          ],
+          [
+            -25.7,
+            3.6,
+            -17,
+            1.8
+          ],
+          [
+            -27.4,
+            1,
+            -23
+          ],
+          [
+            -29.3,
+            3.1,
+            -22.4,
+            1.8
+          ],
+          [
+            -25.7,
+            3.7,
+            -14.5,
+            1.8
+          ],
+          [
+            -27.5,
+            1,
+            -3
+          ],
+          [
+            -29.3,
+            2.9,
+            -8.8,
+            1.8
+          ],
+          [
+            -25.7,
+            3.6,
+            -17,
+            1.8
+          ],
+          [
+            -27.4,
+            1,
+            -23
+          ],
+          [
+            -29.3,
+            3.1,
+            -22.4,
+            1.8
+          ],
+          [
+            -25.7,
+            3.7,
+            -14.5,
+            1.8
+          ],
+          [
+            -27.5,
+            1,
+            -3
+          ],
+          [
+            -29.3,
+            2.9,
+            -8.8,
+            1.8
+          ],
+          [
+            -25.7,
+            3.6,
+            -17,
+            1.8
+          ],
+          [
+            -27.4,
+            1,
+            -23
+          ],
+          [
+            -29.3,
+            3.1,
+            -22.4,
+            1.8
+          ],
+          [
+            -25.7,
+            3.7,
+            -14.5,
+            1.8
+          ],
+          [
+            -27.5,
+            1,
+            -3
+          ],
+          [
+            -29.3,
+            2.9,
+            -8.8,
+            1.8
+          ],
+          [
+            -25.7,
+            3.6,
+            -17,
+            1.8
+          ],
+          [
+            -27.4,
+            1,
+            -23
+          ],
+          [
+            -29.3,
+            3.1,
+            -22.4,
+            1.8
+          ],
+          [
+            -25.7,
+            3.7,
+            -14.5,
+            1.8
+          ],
+          [
+            -27.5,
+            1,
+            -3
+          ]
+        ]
+      },
+      {
+        "id": "slamDeck",
+        "name": "SLAM DECK",
+        "skill": "Pad up to the deck, slam off it, boost jump as you land. Six laps.",
+        "map": "training",
+        "start": {
+          "x": 25.5,
+          "y": 0,
+          "z": -10,
+          "yawDeg": 0
+        },
+        "par": 31.167,
+        "gates": [
+          [
+            25.5,
+            8.3,
+            -23.5,
+            2.5
+          ],
+          [
+            26,
+            5,
+            -28,
+            2.4
+          ],
+          [
+            24.7,
+            5.8,
+            -22.6,
+            2.4
+          ],
+          [
+            22.8,
+            1,
+            -12
+          ],
+          [
+            25.5,
+            8.3,
+            -23.5,
+            2.5
+          ],
+          [
+            26,
+            5,
+            -28,
+            2.4
+          ],
+          [
+            24.7,
+            5.8,
+            -22.6,
+            2.4
+          ],
+          [
+            22.8,
+            1,
+            -12
+          ],
+          [
+            25.5,
+            8.3,
+            -23.5,
+            2.5
+          ],
+          [
+            26,
+            5,
+            -28,
+            2.4
+          ],
+          [
+            24.7,
+            5.8,
+            -22.6,
+            2.4
+          ],
+          [
+            22.8,
+            1,
+            -12
+          ],
+          [
+            25.5,
+            8.3,
+            -23.5,
+            2.5
+          ],
+          [
+            26,
+            5,
+            -28,
+            2.4
+          ],
+          [
+            24.7,
+            5.8,
+            -22.6,
+            2.4
+          ],
+          [
+            22.8,
+            1,
+            -12
+          ],
+          [
+            25.5,
+            8.3,
+            -23.5,
+            2.5
+          ],
+          [
+            26,
+            5,
+            -28,
+            2.4
+          ],
+          [
+            24.7,
+            5.8,
+            -22.6,
+            2.4
+          ],
+          [
+            22.8,
+            1,
+            -12
+          ],
+          [
+            25.5,
+            8.3,
+            -23.5,
+            2.5
+          ],
+          [
+            26,
+            5,
+            -28,
+            2.4
+          ],
+          [
+            24.7,
+            5.8,
+            -22.6,
+            2.4
+          ],
+          [
+            22.8,
+            1,
+            -12
+          ]
+        ]
+      },
+      {
+        "id": "targetRun",
+        "name": "TARGET RUN",
+        "skill": "Thirteen targets round the course. Shoot them on the move.",
+        "map": "training",
+        "start": {
+          "x": 0,
+          "y": 0,
+          "z": 30,
+          "yawDeg": 0
+        },
+        "par": 31.292,
+        "gates": [
+          [
+            0,
+            1,
+            22.5
+          ],
+          [
+            0,
+            1,
+            -13
+          ],
+          [
+            -6,
+            1,
+            -7
+          ],
+          [
+            -19,
+            1,
+            0.5
+          ],
+          [
+            -7,
+            1,
+            15.2
+          ],
+          [
+            18,
+            1,
+            7.5
+          ],
+          [
+            18.4,
+            1,
+            -8.5
+          ],
+          [
+            25,
+            5,
+            -27.5,
+            2.4
+          ],
+          [
+            21.3,
+            1,
+            -14.9
+          ],
+          [
+            10.7,
+            1,
+            6.3
+          ],
+          [
+            3.2,
+            1,
+            29.6
+          ]
+        ],
+        "targets": [
+          [
+            5,
+            1.5,
+            19
+          ],
+          [
+            -6,
+            2,
+            11
+          ],
+          [
+            6,
+            2.5,
+            1
+          ],
+          [
+            -10,
+            5,
+            -10
+          ],
+          [
+            -22,
+            4,
+            10
+          ],
+          [
+            -11,
+            2.5,
+            20
+          ],
+          [
+            11,
+            2.2,
+            21
+          ],
+          [
+            22,
+            7.8,
+            10
+          ],
+          [
+            14,
+            8.3,
+            -2
+          ],
+          [
+            18,
+            8.6,
+            -18
+          ],
+          [
+            12,
+            4.5,
+            9
+          ],
+          [
+            -2,
+            5,
+            5
+          ],
+          [
+            8,
+            3,
+            26
+          ]
+        ]
+      },
+      {
+        "id": "skybridge",
+        "name": "SKYBRIDGE",
+        "skill": "Two laps of the Spire: slab ride, pad, dash jump, the top, the dive.",
+        "map": "spire",
+        "core": "flat",
+        "start": {
+          "x": -24.4,
+          "y": 0,
+          "z": -28.45,
+          "yawDeg": -90
+        },
+        "par": 33.767,
+        "gates": [
+          [
+            -16.8,
+            4.3,
+            -28.6
+          ],
+          [
+            -0.3,
+            12.1,
+            -33.8,
+            2.6
+          ],
+          [
+            18.3,
+            11.9,
+            -40.1,
+            2.6
+          ],
+          [
+            36.5,
+            13.5,
+            -30
+          ],
+          [
+            11.4,
+            15.4,
+            -12.4,
+            2.8
+          ],
+          [
+            -21.4,
+            1,
+            -7.6
+          ],
+          [
+            -23.2,
+            1,
+            -28.6
+          ],
+          [
+            -16.8,
+            4.3,
+            -28.6
+          ],
+          [
+            -0.3,
+            12.1,
+            -33.8,
+            2.6
+          ],
+          [
+            18.3,
+            11.9,
+            -40.1,
+            2.6
+          ],
+          [
+            36.5,
+            13.5,
+            -30
+          ],
+          [
+            11.4,
+            15.4,
+            -12.4,
+            2.8
+          ],
+          [
+            -21.4,
+            1,
+            -7.6
+          ],
+          [
+            -23.2,
+            1,
+            -28.6
+          ]
+        ]
+      }
+    ]
+  },
+  "gamepad": {
+    "yawRate": 220,
+    "pitchRate": 150,
+    "menuDelay": 0.35,
+    "menuEvery": 0.12,
+    "menuStick": 0.6,
+    "activity": 0.5,
+    "breakawayShare": 0.8,
+    "vibration": {
+      "hurt": [
+        0.3,
+        0.5,
+        90
+      ],
+      "kill": [
+        0,
+        0.25,
+        45
+      ],
+      "parry": [
+        0.45,
+        0.2,
+        70
+      ]
+    }
+  },
+  "mutators": {
+    "kinds": {
+      "lowGravity": {
+        "name": "LOW GRAVITY",
+        "unlockRound": 3,
+        "gravity": 0.6,
+        "desc": "x0.6 gravity: longer jumps, floatier swings"
+      },
+      "glassCannon": {
+        "name": "GLASS CANNON",
+        "unlockRound": 6,
+        "dealt": 2,
+        "taken": 2,
+        "desc": "x2 damage dealt and taken"
+      },
+      "speedDemon": {
+        "name": "SPEED DEMON",
+        "unlockRound": 10,
+        "enemySpeed": 1.2,
+        "points": 1.25,
+        "desc": "enemies 20% faster, points +25%"
+      },
+      "noRegen": {
+        "name": "NO REGEN",
+        "unlockRound": 15,
+        "desc": "health never comes back"
+      }
+    }
+  },
+  "telegraph": {
+    "max": 48,
+    "maxFlashes": 12,
+    "maxThreats": 8,
+    "hold": 0.12,
+    "lift": 0.04,
+    "glow": 2.2,
+    "fillGlow": 0.9,
+    "flashTime": 0.15,
+    "arrowTime": 1.2,
+    "wideAt": 4,
+    "wideFill": 0.4,
+    "laneFill": 0.3
+  },
+  "boss": {
+    "hp": 6000,
+    "hpPerBoss": 0.4,
+    "height": 12,
+    "bodyHalf": 2.4,
+    "coreRadius": 1.1,
+    "coreHeight": 7,
+    "coreForward": 1.3,
+    "kneelDrop": 3.5,
+    "body": [
+      [
+        4.6,
+        3.2,
+        4.2,
+        0,
+        1.6,
+        0,
+        0
+      ],
+      [
+        3.8,
+        3,
+        3.6,
+        0.2,
+        4.6,
+        0,
+        0.3
+      ],
+      [
+        4.2,
+        2.6,
+        3.4,
+        -0.1,
+        7.4,
+        0.3,
+        -0.2
+      ],
+      [
+        3,
+        2.4,
+        3,
+        0,
+        9.9,
+        0,
+        0.5
+      ],
+      [
+        1.8,
+        1.6,
+        1.8,
+        0.2,
+        11.6,
+        0,
+        0.1
+      ]
+    ],
+    "bodyMult": 0.5,
+    "coreMult": 1.6,
+    "coreVulnerableMult": 3,
+    "parryDamage": 200,
+    "momentumCoreMult": 1.5,
+    "introTime": 2,
+    "midAt": 0.66,
+    "p3At": 0.33,
+    "midTime": 2.5,
+    "actionGap": 0.9,
+    "slamTell": 1,
+    "slamTellFast": 0.55,
+    "slamWarnRadius": 9,
+    "slamRings": 2,
+    "ringGap": 0.8,
+    "ringSpeed": 11,
+    "ringSpeedFast": 15,
+    "ringWidth": 0.9,
+    "ringHeight": 0.7,
+    "ringDamage": 25,
+    "ringMaxRadius": 34,
+    "kneelTime": 3,
+    "p3Window": 4,
+    "volleyTell": 0.7,
+    "volleyCount": 8,
+    "volleyFanRad": 1.4,
+    "orbSpeed": 7,
+    "surgeTell": 0.8,
+    "surgeCount": 3,
+    "surgeLead": 0.45,
+    "surgeRadius": 2,
+    "surgeDamage": 30,
+    "surgeLaunch": 13,
+    "surgeHeight": 5,
+    "surgeHitHeight": 2,
+    "surgeErupt": 0.5,
+    "surgeRecover": 0.6,
+    "sweepTell": 1.2,
+    "sweepSpeed": 18,
+    "sweepDistance": 34,
+    "sweepDamage": 30,
+    "sweepOvershoot": 12,
+    "sweepPush": 14,
+    "sweepPushUp": 7,
+    "laserTell": 1,
+    "laserTime": 3.2,
+    "laserArc": 6.5,
+    "laserHeight": 1.2,
+    "laserRange": 26,
+    "laserDamage": 40,
+    "laserHitCooldown": 0.3,
+    "addsEvery": 20,
+    "maxAdds": 10,
+    "addSquads": [
+      [
+        "swarmer",
+        "swarmer",
+        "swarmer",
+        "swarmer",
+        "swarmer"
+      ],
+      [
+        "spitter",
+        "spitter"
+      ]
+    ],
+    "midSquads": [
+      [
+        "husk",
+        "husk",
+        "husk"
+      ],
+      [
+        "husk",
+        "husk",
+        "husk"
+      ]
+    ],
+    "roundReshape": 0.6,
+    "sinkTime": 1,
+    "pulsePush": 16,
+    "pulseUp": 6,
+    "killTime": 0.5,
+    "killSlowMo": 0.3,
+    "points": 2000,
+    "arenaHalf": 18,
+    "fallDamage": 20,
+    "abyssY": 0.5,
+    "abyssHalf": 24,
+    "platformCells": 3,
+    "fallGrace": 1
+  },
+  "drone": {
+    "hp": 30,
+    "radius": 0.6,
+    "speed": 7,
+    "accel": 6,
+    "hoverMin": 4,
+    "hoverMax": 8,
+    "rangeMin": 12,
+    "rangeMax": 18,
+    "orbitSpeed": 3,
+    "probeDistance": 2.5,
+    "climbAbove": 2,
+    "climbProbeHeight": 40,
+    "fireInterval": 2,
+    "chargeTime": 0.4,
+    "losSlack": 0.1,
+    "maxCount": 20,
+    "coreScale": 0.45,
+    "corePulseRate": 5,
+    "corePulseChargeRate": 30,
+    "bodyShade": 0.85,
+    "hitFlashTime": 0.08,
+    "spawnRise": 1.5,
+    "separation": 2.4,
+    "fireStagger": 0.5,
+    "spinRate": 1.5,
+    "spinChargeRate": 6,
+    "shellStretch": 1.35,
+    "coreSwell": 0.25,
+    "coreChargeSwell": 0.6,
+    "chargeTint": 0.6,
+    "rayEvery": 12,
+    "rayLength": 3.5,
+    "sideAngle": 0.7,
+    "sidePush": 0.8,
+    "sideDecay": 2.5
+  },
+  "orb": {
+    "speed": 12,
+    "damage": 10,
+    "radius": 0.35,
+    "lifetime": 4,
+    "reflectRange": 2,
+    "reflectSpeedMult": 2,
+    "reflectDamageMult": 2,
+    "poolSize": 40,
+    "segments": 10,
+    "hostileColor": 1692646,
+    "reflectedColor": 16774096,
+    "ring": {
+      "scale": 1.7,
+      "tube": 0.06,
+      "spin": 0.06
+    }
+  },
+  "spawner": {
+    "budgetBase": 5,
+    "budgetPerWave": 2,
+    "huskCost": 1,
+    "droneCost": 2,
+    "dronesFromWave": 3,
+    "droneMaxShare": 0.4,
+    "droneMinFill": 0.5,
+    "groupMin": 3,
+    "groupMax": 5,
+    "startGroupsMin": 2,
+    "startGroupsMax": 4,
+    "maxAlive": 20,
+    "telegraphTime": 1,
+    "minPlayerDistance": 25,
+    "groupSpread": 2.5,
+    "droneHighChance": 0.5,
+    "stuckMove": 1,
+    "stuckTime": 12,
+    "markersAfter": 45,
+    "seedStride": 7919,
+    "beamRadius": 0.5,
+    "beamHeight": 30,
+    "beamOpacity": 0.35,
+    "beamPulseRate": 4,
+    "beamGrow": 1
+  },
+  "core": {
+    "maxHeight": 6,
+    "heightStep": 1.5,
+    "minHeight": 0.02,
+    "carryTolerance": 0.15,
+    "floorThickness": 2,
+    "duelPreset": "towers"
+  },
+  "nav": {
+    "floorSpacing": 6,
+    "floorInset": 3,
+    "topSpacing": 4,
+    "topInset": 0.7,
+    "probeUp": 2.2,
+    "stepHeight": 0.4,
+    "walkMax": 8.5,
+    "maxEdge": 26,
+    "downEdgeMax": 12,
+    "reachMargin": 1,
+    "groundSample": 1,
+    "lineHeight": 1,
+    "flightSphere": 0.45,
+    "flightSteps": 300,
+    "flightCheckEvery": 1,
+    "landTolerance": 0.15,
+    "fallLimit": 3,
+    "flightsPerTop": 2,
+    "floorGroup": 12,
+    "runup": 1.6,
+    "settleRadius": 0.2,
+    "settleSpeed": 0.5,
+    "standingBacks": [
+      0,
+      0.9,
+      1.8
+    ],
+    "dashMin": 5,
+    "dashJumpDelay": 3,
+    "dropOverhead": 0.2,
+    "padCost": 1.5,
+    "walkWalkers": [
+      "floor",
+      "cover",
+      "ledge",
+      "bridge",
+      "island",
+      "spire"
+    ],
+    "jumpOverhead": 0.3,
+    "dashPipCost": 1.5,
+    "arriveRadius": 1.3,
+    "airBrakeSlack": 0.3,
+    "arriveHeight": 1.4,
+    "stuckTime": 2.5,
+    "stuckProgress": 0.6,
+    "gridSnap": 1.5,
+    "gridLinkSpacing": 5
+  },
+  "bot": {
+    "hp": 100,
+    "color": 16723592,
+    "visorColor": 1692646,
+    "eyeHeight": 1.6,
+    "losInterval": 0.1,
+    "reaction": {
+      "easy": 0.4,
+      "normal": 0.25,
+      "hard": 0.15
+    },
+    "aimErrorMult": {
+      "easy": 2,
+      "normal": 1,
+      "hard": 0.5
+    },
+    "aimErrorBase": 3,
+    "aimErrorPerSpeed": 0.2,
+    "aimTolerance": 1.5,
+    "errorReroll": 0.35,
+    "preferredRange": {
+      "revolver": 12,
+      "shotgun": 5
+    },
+    "shotgunRange": 8,
+    "rangeSlack": 2,
+    "strafeSwitch": [
+      0.8,
+      1.8
+    ],
+    "jumpChance": 0.5,
+    "evadeCooldown": 2,
+    "evadeRadius": 2.5,
+    "recoverHp": 30,
+    "recoverTime": 4,
+    "wallJumpRate": 6,
+    "slideStraight": 10,
+    "chestHeight": 1.2,
+    "crouchChest": 0.6,
+    "headRadius": 0.24,
+    "headHeight": 1.55,
+    "turnRate": 540,
+    "replanInterval": 1,
+    "replanDistance": 4,
+    "searchAfter": 3,
+    "approachHopSpeed": 1.5,
+    "hideRadius": 30,
+    "hideCandidates": 40,
+    "recoverCooldown": 8,
+    "slideJumpGap": 6,
+    "slideJumpChance": 1.5,
+    "gunScale": 2,
+    "gunOffset": [
+      0.32,
+      1.25,
+      0.25
+    ],
+    "muzzleForward": {
+      "revolver": 0.55,
+      "shotgun": 1.4
+    },
+    "visorBox": [
+      0.42,
+      0.12,
+      0.2
+    ],
+    "visorOffset": [
+      0,
+      1.55,
+      -0.2
+    ],
+    "tagPx": 110,
+    "nameTag": "RIVAL",
+    "tagHeight": 2.3
+  },
+  "duel": {
+    "roundsToWin": 3,
+    "countdown": 3,
+    "roundBreak": 2.2,
+    "orbHeal": 25,
+    "orbRespawn": 20,
+    "orbRadius": 0.45,
+    "orbPickup": 1.6,
+    "orbSpots": [
+      [
+        0,
+        0.7,
+        10
+      ],
+      [
+        0,
+        0.7,
+        -10
+      ]
+    ],
+    "orbBob": 0.25
+  },
+  "endless": {
+    "breakTime": 4,
+    "bannerTime": 1.6,
+    "reshapeTime": 1.5,
+    "pointsPerWave": 100
+  },
+  "regen": {
+    "delay": 4,
+    "rate": 25,
+    "fastSpeed": 8,
+    "fastMult": 2,
+    "dealtWindow": 1,
+    "rankPerRank": 0.08,
+    "vignetteMax": 0.5,
+    "vignetteEase": 6
+  },
+  "points": {
+    "start": 500,
+    "hit": 10,
+    "kill": 60,
+    "headshotKill": 100,
+    "punchKill": 130,
+    "parry": 50,
+    "roundClear": 100,
+    "rankMult": [
+      1,
+      1.1,
+      1.25,
+      1.5,
+      1.75,
+      2
+    ],
+    "campMult": 0.5,
+    "popTime": 0.8,
+    "popRise": 46,
+    "popSpread": 40,
+    "popPool": 10
+  },
+  "buy": {
+    "holdTime": 0.35,
+    "reach": 3,
+    "reachHeight": 3,
+    "coneDeg": 70,
+    "deniedFlashTime": 0.4
+  },
+  "zones": {
+    "costs": {
+      "armory": 750,
+      "slabs": 1000,
+      "grinder": 1250,
+      "heights": 1500,
+      "islands": 2000
+    },
+    "dimAmount": 0.8,
+    "dimEase": 2.5,
+    "dissolveTime": 1.1,
+    "accents": {
+      "landing": 3006664,
+      "armory": 16757053,
+      "slabs": 10940986,
+      "grinder": 8154111,
+      "heights": 12576511,
+      "islands": 16762731
+    },
+    "banner": {
+      "time": 2.4,
+      "fadeIn": 0.25,
+      "fadeOut": 0.6
+    },
+    "accentsAlt": {
+      "islands": 16761564
+    },
+    "gateCell": 2,
+    "labelHeight": 2.8,
+    "labelForward": 1.1,
+    "buyForward": 1.7,
+    "buyReach": 3.4,
+    "labelScale": 3.4,
+    "nodeSpacing": 4,
+    "highNodeMin": 2.5,
+    "grinderReshapeEvery": 3
+  },
+  "barrier": {
+    "boundaryColor": 13221119,
+    "gateColor": 16734758,
+    "hazardColor": 16758077,
+    "skirtColor": 8019199,
+    "opacity": 1,
+    "strongWithin": 3,
+    "clearWithin": 14,
+    "farAlpha": 0.07,
+    "gateFarAlpha": 0.5,
+    "fadeTop": 40,
+    "fadeLength": 20,
+    "gateFadeTop": 30,
+    "gateFadeLength": 24,
+    "rippleLife": 0.7,
+    "rippleSpeed": 7,
+    "touchReach": 0.12,
+    "probeHeights": [
+      0.4,
+      0.9,
+      1.5
+    ],
+    "minPush": 0.2,
+    "touchRelease": 0.2,
+    "flashTime": 0.18,
+    "touchPinchDeg": 0.5,
+    "touchPinchTime": 0.1,
+    "curtainHeight": 4,
+    "skirtDepth": 22,
+    "stripeWidth": 0.7
+  },
+  "skyline": {
+    "count": 34,
+    "seed": 7,
+    "radiusMin": 270,
+    "radiusMax": 345,
+    "base": -70,
+    "widthMin": 12,
+    "widthMax": 30,
+    "heightMin": 55,
+    "heightMax": 115,
+    "tallMin": 105,
+    "tallShare": 0.2,
+    "bodyColor": 1051424,
+    "windowColor": 16763274,
+    "windowGlow": 0.9,
+    "windowShare": 0.18,
+    "air": 0.58,
+    "hazeTop": 10,
+    "hazeBottom": -40
+  },
+  "ai": {
+    "thinkHz": 12,
+    "losPerStep": 3,
+    "losMaxAge": 0.3,
+    "tokens": {
+      "base": {
+        "melee": 2,
+        "ranged": 3,
+        "heavy": 1,
+        "swarm": 3
+      },
+      "roundSteps": [
+        10,
+        20
+      ],
+      "campBonus": 1,
+      "stealMargin": 0.25,
+      "losBonus": 4,
+      "flankBonus": 2
+    },
+    "rings": [
+      {
+        "radius": 2.5,
+        "count": 8
+      },
+      {
+        "radius": 10,
+        "count": 14
+      },
+      {
+        "radius": 24,
+        "count": 18
+      }
+    ],
+    "aim": {
+      "baseHit": 0.7,
+      "minHit": 0.25,
+      "fullSpeed": 24,
+      "maxLead": 1.2,
+      "missBy": 2.4
+    },
+    "steer": {
+      "forcePerSpeed": 3,
+      "arriveDecel": 2,
+      "wander": 0.25,
+      "gain": 5
+    },
+    "strafeAngle": 0.35,
+    "strafeRate": 0.5,
+    "strafeFlipTime": 3,
+    "directRange": 12,
+    "carrotAhead": 8,
+    "approachSlack": 3,
+    "formationRange": 18,
+    "formationSpacing": 2.2,
+    "neighborRadius": 3,
+    "holdSpeed": 0.55,
+    "flankReplan": 1.5,
+    "maxFlankers": 2,
+    "kinds": {
+      "husk": {
+        "token": "melee",
+        "ring": 0,
+        "waitRing": 1,
+        "speed": 6,
+        "radius": 0.4,
+        "separation": 1.4,
+        "engageRange": 14,
+        "canFlank": true
+      },
+      "drone": {
+        "token": "ranged",
+        "ring": 2,
+        "waitRing": 2,
+        "speed": 7,
+        "radius": 0.6,
+        "separation": 1,
+        "engageRange": 32,
+        "flies": true,
+        "canFlank": false
+      },
+      "swarmer": {
+        "token": "swarm",
+        "ring": 0,
+        "waitRing": 1,
+        "speed": 10,
+        "radius": 0.3,
+        "separation": 2.2,
+        "engageRange": 12,
+        "canFlank": true,
+        "flankOnly": true
+      },
+      "spitter": {
+        "token": "ranged",
+        "ring": 1,
+        "waitRing": 1,
+        "speed": 4.5,
+        "radius": 0.45,
+        "separation": 1.2,
+        "engageRange": 24,
+        "canFlank": false
+      },
+      "charger": {
+        "token": "heavy",
+        "ring": 1,
+        "waitRing": 1,
+        "speed": 4.5,
+        "radius": 0.7,
+        "separation": 1.2,
+        "engageRange": 26,
+        "canFlank": true
+      },
+      "lancer": {
+        "token": "ranged",
+        "ring": 2,
+        "waitRing": 2,
+        "speed": 0,
+        "radius": 0.4,
+        "separation": 0,
+        "engageRange": 70,
+        "canFlank": false,
+        "stationary": true
+      },
+      "warden": {
+        "token": "heavy",
+        "ring": 0,
+        "waitRing": 1,
+        "speed": 3,
+        "radius": 0.6,
+        "separation": 0.5,
+        "engageRange": 30,
+        "canFlank": false
+      }
+    },
+    "crowd": {
+      "gap": 0.35,
+      "stiffness": 0.35,
+      "maxPush": 0.05,
+      "height": 1.4,
+      "max": 64,
+      "touch": 1,
+      "mass": {
+        "husk": 1,
+        "swarmer": 0.6,
+        "spitter": 1,
+        "charger": 3,
+        "warden": 4,
+        "lancer": 40
+      }
+    },
+    "grid": {
+      "cell": 1,
+      "probeRadius": 0.45,
+      "probeLift": 0.1,
+      "probeHeight": 1.9,
+      "minClear": 1.9,
+      "bodyHeight": 1.9,
+      "scanTop": 39.5,
+      "scanBottom": -5,
+      "maxLayers": 12,
+      "step": 0.6,
+      "jumpUp": 2.2,
+      "drop": 5,
+      "stepSmooth": 0.2,
+      "riserLift": 0.08,
+      "gapCells": 4,
+      "gapDiagCells": 3,
+      "gapUp": 1,
+      "gapDown": 2.5,
+      "gapLiftHigh": 1.1,
+      "gapLiftLow": 0.4,
+      "jumpCost": 1.5,
+      "dropCost": 0.5,
+      "gapCost": 2,
+      "edgeCost": 2.5,
+      "lookBelow": 2.5,
+      "lookAbove": 0.6,
+      "budgetMs": 1.5
+    },
+    "flow": {
+      "every": 0.25,
+      "goalBelow": 8,
+      "seedRadius": 4,
+      "seedHeight": 2,
+      "seedBase": 12,
+      "lookahead": 2.5,
+      "lookTurn": 0.5,
+      "popsPerStep": 2500
+    },
+    "jumpLandIn": 0.7,
+    "edgeNormalY": 0.25,
+    "edgeRiseSpeed": 0.5,
+    "supportedDrop": 0.002,
+    "avoid": {
+      "length": 1.6,
+      "sideLength": 1.2,
+      "sideAngle": 0.6,
+      "height": 0.8,
+      "push": 0.9,
+      "every": 2
+    },
+    "watchdog": {
+      "minMove": 0.75,
+      "minGain": 0.5,
+      "ladder": [
+        0.5,
+        1,
+        1.5
+      ],
+      "actions": [
+        "jump",
+        "sidestep",
+        "repath"
+      ],
+      "relocateAt": 3,
+      "relocateMin": 12,
+      "relocateCone": 60,
+      "sideTime": 0.45,
+      "repathTime": 3,
+      "hopDistance": 1.5,
+      "hopApex": 1.2
+    },
+    "jumps": {
+      "husk": {
+        "jumps": true,
+        "tell": 0.12,
+        "apex": 1.1
+      },
+      "swarmer": {
+        "jumps": true,
+        "tell": 0.05,
+        "apex": 1
+      },
+      "spitter": {
+        "jumps": true,
+        "tell": 0.2,
+        "apex": 1.1
+      },
+      "warden": {
+        "jumps": true,
+        "tell": 0.3,
+        "apex": 1.2
+      },
+      "charger": {
+        "jumps": false,
+        "blockedStun": 1
+      }
+    }
+  },
+  "director": {
+    "maxAlive": 24,
+    "squadInterval": 2.2,
+    "openingSquads": 2,
+    "spawnMin": 15,
+    "spawnMax": 40,
+    "spawnFallbackMin": 10,
+    "viewHalfAngle": 55,
+    "highKinds": [
+      "drone",
+      "lancer"
+    ],
+    "intensityPerHp": 0.012,
+    "intensityPerKill": 0.06,
+    "nearbyKillRange": 10,
+    "intensityDecay": 0.05,
+    "peakAt": 0.95,
+    "peakTime": 3,
+    "relaxMin": 8,
+    "relaxMax": 12,
+    "relaxSpawnMult": 0.4,
+    "relaxAggressionSpeedup": 1.5,
+    "aggressiveSpeed": 14,
+    "hunterSquad": [
+      "swarmer",
+      "swarmer",
+      "swarmer",
+      "swarmer",
+      "swarmer",
+      "swarmer",
+      "charger"
+    ],
+    "markersAt": 3,
+    "camp": {
+      "radius": 10,
+      "lingerTime": 8,
+      "lowDamage": 60,
+      "dealtWindow": 5,
+      "riseTime": 6,
+      "decayTime": 2.5,
+      "relocate": 15,
+      "relocateDrop": 0.6,
+      "killChain": 3,
+      "killChainTime": 4,
+      "killChainDrop": 0.4,
+      "exposedAt": 0.5,
+      "styleDrainMult": 2
+    },
+    "rounds": {
+      "base": 6,
+      "perRound": 3,
+      "hpFromRound": 10,
+      "hpPerRound": 0.08,
+      "bossEvery": 5,
+      "bossFrom": 5,
+      "swarmEvery": 5,
+      "swarmOffset": 3,
+      "swarmFrom": 8,
+      "objectiveFrom": 6,
+      "objectiveEvery": 4,
+      "holdOffset": 2,
+      "goldOffset": 3,
+      "seedStride": 7919,
+      "paceSeedOffset": 104729,
+      "introduce": {
+        "husk": 1,
+        "swarmer": 3,
+        "drone": 4,
+        "spitter": 6,
+        "charger": 7,
+        "lancer": 8,
+        "warden": 9
+      },
+      "weights": {
+        "husk": 3,
+        "swarmer": 2,
+        "drone": 1.5,
+        "spitter": 1.2,
+        "charger": 0.8,
+        "lancer": 0.8,
+        "warden": 0.6
+      },
+      "squads": [
+        [
+          "husk",
+          "husk",
+          "husk"
+        ],
+        [
+          "husk",
+          "husk",
+          "husk",
+          "husk"
+        ],
+        [
+          "husk",
+          "husk",
+          "husk",
+          "spitter"
+        ],
+        [
+          "swarmer",
+          "swarmer",
+          "swarmer",
+          "swarmer",
+          "swarmer",
+          "swarmer"
+        ],
+        [
+          "swarmer",
+          "swarmer",
+          "swarmer",
+          "swarmer",
+          "swarmer",
+          "swarmer",
+          "swarmer",
+          "swarmer",
+          "drone"
+        ],
+        [
+          "swarmer",
+          "swarmer",
+          "swarmer",
+          "swarmer",
+          "swarmer",
+          "swarmer",
+          "swarmer",
+          "swarmer",
+          "swarmer",
+          "swarmer"
+        ],
+        [
+          "drone",
+          "drone"
+        ],
+        [
+          "husk",
+          "husk",
+          "drone"
+        ],
+        [
+          "spitter",
+          "husk",
+          "husk"
+        ],
+        [
+          "charger",
+          "husk",
+          "husk"
+        ],
+        [
+          "lancer"
+        ],
+        [
+          "lancer",
+          "swarmer",
+          "swarmer",
+          "swarmer"
+        ],
+        [
+          "warden",
+          "husk",
+          "husk"
+        ],
+        [
+          "warden",
+          "spitter"
+        ]
+      ]
+    }
+  },
+  "survival": {
+    "breakTime": 10,
+    "readyFrom": 3,
+    "readyHold": 0.6,
+    "bannerTime": 2.2,
+    "firstBreakTime": 3
+  },
+  "health": {
+    "max": 100,
+    "downTime": 1.5,
+    "lowHpFraction": 0.3
+  },
+  "aura": {
+    "rankArcs": [
+      0,
+      0,
+      1,
+      2,
+      4,
+      6
+    ],
+    "rankRim": [
+      0.35,
+      0.8,
+      1,
+      1.2,
+      1.6,
+      1.9
+    ],
+    "rankMotes": [
+      0,
+      0,
+      0,
+      6,
+      9,
+      12
+    ],
+    "rankSparks": [
+      0,
+      0,
+      3,
+      3,
+      4,
+      5
+    ],
+    "edgeRate": [
+      0,
+      0,
+      0,
+      0,
+      8,
+      14
+    ],
+    "skyA": 16723592,
+    "skyB": 1692646,
+    "skyRate": 2.2,
+    "prism": 0.65,
+    "blendTime": 0.3,
+    "rimPower": 1.2,
+    "inflate": 0.005,
+    "freshFloor": 0.2,
+    "arcPool": 16,
+    "arcSegments": 8,
+    "arcWidth": 0.0035,
+    "arcLifeMin": 0.12,
+    "arcLifeMax": 0.24,
+    "arcJag": 0.18,
+    "arcIntensity": 3,
+    "airReach": 0.12,
+    "pulseSize": 0.05,
+    "pulseRate": 6,
+    "pulseIntensity": 2.2,
+    "moteSize": 0.006,
+    "moteRadius": 1.2,
+    "moteSpeed": 2.4,
+    "edgeDepth": 0.25,
+    "edgeWidth": 0.0012,
+    "edgeLength": 0.05,
+    "leapRange": 25,
+    "leapInterval": 0.15,
+    "leapTargets": 3,
+    "materializeTime": 0.22,
+    "edgeGlow": 3,
+    "static": {
+      "savageRank": 4,
+      "skygrindRank": 5,
+      "savage": {
+        "dps": 12,
+        "radius": 6
+      },
+      "skygrind": {
+        "dps": 25,
+        "radius": 10
+      },
+      "targets": 3,
+      "tick": 0.25,
+      "pointScale": 0.2
+    }
+  },
+  "weaponFx": {
+    "flameCount": 6,
+    "flameSpeed": 15,
+    "flameLife": 0.4,
+    "flameSpread": 0.2,
+    "flameRise": 1.4,
+    "flameScale": 1.7,
+    "flameColors": [
+      16761405,
+      16747546,
+      16773312
+    ],
+    "arcPool": 32,
+    "arcSegments": 10,
+    "arcWidth": 0.05,
+    "arcLife": 0.14,
+    "arcJag": 0.09,
+    "arcIntensity": 3,
+    "ringCount": 6,
+    "ringTime": 0.4,
+    "ringWidth": 0.5,
+    "ringOpacity": 0.85,
+    "ringLift": 0.1,
+    "bigRingColor": 16773312,
+    "lashLife": 0.16,
+    "lashWidth": 0.035,
+    "lashJag": 0.02,
+    "prismLife": 0.16,
+    "prismWidth": 0.06,
+    "fireWallRate": 60,
+    "sparkCount": 6,
+    "sparkSpeed": 5,
+    "sparkLife": 0.2,
+    "sparkScale": 0.7
+  },
+  "fx": {
+    "impact": {
+      "rings": 8,
+      "crescents": 4,
+      "afterimages": 3,
+      "ghostGap": 0.9,
+      "fans": 3,
+      "fanTime": 0.3,
+      "fissures": 3,
+      "fissureSegments": 6,
+      "fissureColor": 16742960,
+      "glow": 2.4
+    },
+    "enemyRimColor": 16751186,
+    "popTime": 0.12,
+    "popIntensity": 60,
+    "popDistance": 9,
+    "landPuffSpeed": 12,
+    "landPuffSpread": 0.25,
+    "landPuffCount": 10,
+    "landPuffLife": 0.35,
+    "landPuffSize": 1.4,
+    "ghostCount": 4,
+    "ghostInterval": 0.05,
+    "ghostLife": 0.25,
+    "ghostOpacity": 0.35,
+    "enemyRimPower": 2.2,
+    "enemyRimStrength": 1.6,
+    "rivalRimStrength": 1.4,
+    "poolSize": 400,
+    "size": 0.12,
+    "gravity": 18,
+    "deathCount": 26,
+    "deathSpeed": 7,
+    "deathLife": 0.6,
+    "healCount": 14,
+    "healSpeed": 9,
+    "healLife": 0.45,
+    "hitCount": 5,
+    "hitSpeed": 4,
+    "hitLife": 0.22,
+    "speedJitter": 0.5,
+    "lifeJitter": 0.3,
+    "homingStartSpeed": 0.4,
+    "homingSteer": 10,
+    "sparkCount": 6,
+    "sparkSpeed": 5,
+    "sparkLife": 0.18,
+    "sparkSize": 0.4,
+    "flashTime": 0.05,
+    "flashSize": 0.28,
+    "flashForward": 0.04,
+    "flashLightIntensity": 6,
+    "flashLightDistance": 7,
+    "lineCapacity": 64,
+    "tracerTime": 0.06,
+    "decalCount": 64,
+    "decalSize": 0.13,
+    "decalLift": 0.004,
+    "surfaceOffset": 0.02,
+    "streakRate": 40,
+    "streakLife": 0.25,
+    "streakLength": 0.7,
+    "streakBrightness": 0.4,
+    "streakHeightMin": 0.8,
+    "streakHeightMax": 2.2,
+    "streakAheadMin": 0.5,
+    "streakAheadMax": 3,
+    "slamRingCount": 3,
+    "slamRingTime": 0.4,
+    "slamRingStart": 0.5,
+    "slamRingWidth": 0.45,
+    "slamRingOpacity": 0.6,
+    "slamRingLift": 0.02,
+    "slamRingSegments": 40,
+    "flashShapes": {
+      "default": [
+        6,
+        8,
+        0,
+        1
+      ],
+      "revolver": [
+        6,
+        8,
+        0,
+        1
+      ],
+      "shotgun": [
+        8,
+        5,
+        0,
+        1.5
+      ],
+      "rattler": [
+        4,
+        10,
+        0,
+        0.8
+      ],
+      "nailgun": [
+        3,
+        12,
+        0,
+        0.6
+      ],
+      "torch": [
+        0,
+        1,
+        0.3,
+        1.2
+      ],
+      "bouncer": [
+        0,
+        1,
+        0.8,
+        1.2
+      ],
+      "zapper": [
+        5,
+        16,
+        0,
+        1
+      ],
+      "rocket": [
+        4,
+        6,
+        0.9,
+        1.4
+      ],
+      "discus": [
+        2,
+        10,
+        0,
+        1.1
+      ],
+      "vortex": [
+        0,
+        1,
+        1,
+        1.2
+      ],
+      "rail": [
+        4,
+        24,
+        0.6,
+        1.5
+      ],
+      "choir": [
+        6,
+        10,
+        0,
+        0.7
+      ],
+      "prism": [
+        6,
+        4,
+        0.7,
+        1
+      ]
+    },
+    "impactFlare": {
+      "life": 0.09,
+      "scale": 3.2,
+      "sizes": {
+        "shotgun": 0.6,
+        "choir": 0.6,
+        "rattler": 0.8,
+        "rail": 1.6,
+        "prism": 1.3
+      }
+    },
+    "killConfirm": {
+      "pool": 8,
+      "segments": 40,
+      "width": 0.12,
+      "size": 0.9,
+      "start": 0.3,
+      "life": 0.26,
+      "lift": 1,
+      "glow": 1.6,
+      "maxAlpha": 0.85,
+      "headshot": 1.25,
+      "melee": 1.2,
+      "multikill": 1.5
+    },
+    "flashFrames": 2,
+    "flashSecondFrame": 0.5
+  },
+  "viewmodel": {
+    "fovDeg": 54,
+    "near": 0.02,
+    "far": 10,
+    "hemiIntensity": 2.4,
+    "dirIntensity": 2,
+    "dirX": -0.4,
+    "dirY": 1,
+    "dirZ": 0.7,
+    "holdX": 0.135,
+    "holdY": -0.147,
+    "holdZ": -0.36,
+    "holdYawDeg": 5,
+    "holdPitchDeg": 1,
+    "ads": {
+      "default": {
+        "x": 0.02,
+        "y": -0.11,
+        "z": -0.3,
+        "yawDeg": 0,
+        "pitchDeg": 0,
+        "rollDeg": -4
+      },
+      "revolver": {
+        "x": 0.015,
+        "y": -0.111,
+        "z": -0.28,
+        "yawDeg": 0,
+        "pitchDeg": 0.5,
+        "rollDeg": -5
+      },
+      "rail": {
+        "x": 0.04,
+        "y": -0.13,
+        "z": -0.24,
+        "yawDeg": 1,
+        "pitchDeg": 0,
+        "rollDeg": -2
+      }
+    },
+    "breathAmp": 0.004,
+    "breathPeriod": 3.5,
+    "bobAmpX": 0.008,
+    "bobAmpY": 0.01,
+    "bobCycleDistance": 4.4,
+    "bobMaxScale": 1.5,
+    "bobEaseRate": 8,
+    "swayGain": 1.2,
+    "swayVelDamp": 9,
+    "swayReturnRate": 12,
+    "swayMaxX": 0.04,
+    "swayMaxY": 0.03,
+    "swayRollDegPerM": 90,
+    "strafeRollDeg": 3,
+    "poseEaseRate": 10,
+    "slideDipY": -0.04,
+    "slideRollDeg": 8,
+    "wallTiltDeg": 7,
+    "airLiftY": 0.012,
+    "dashPullZ": 0.06,
+    "dashPullAttack": 0.04,
+    "dashPullRecover": 0.2,
+    "landDipScale": 0.35,
+    "recoil": {
+      "revolver": {
+        "kickDeg": 9,
+        "backZ": 0.07,
+        "dropY": 0.012,
+        "rollDeg": 2
+      },
+      "shotgun": {
+        "kickDeg": 14,
+        "backZ": 0.13,
+        "dropY": 0.03,
+        "rollDeg": 4
+      },
+      "nailgun": {
+        "kickDeg": 1.6,
+        "backZ": 0.012,
+        "dropY": 0.003,
+        "rollDeg": 0.4
+      },
+      "rocket": {
+        "kickDeg": 9,
+        "backZ": 0.17,
+        "dropY": 0.035,
+        "rollDeg": 2.5
+      },
+      "rail": {
+        "kickDeg": 12,
+        "backZ": 0.16,
+        "dropY": 0.03,
+        "rollDeg": -3
+      },
+      "rattler": {
+        "kickDeg": 3,
+        "backZ": 0.02,
+        "dropY": 0.004,
+        "rollDeg": 0.8
+      },
+      "torch": {
+        "kickDeg": 0.6,
+        "backZ": 0.006,
+        "dropY": 0.002,
+        "rollDeg": 0.2
+      },
+      "bouncer": {
+        "kickDeg": 10,
+        "backZ": 0.08,
+        "dropY": 0.016,
+        "rollDeg": 2
+      },
+      "zapper": {
+        "kickDeg": 4,
+        "backZ": 0.03,
+        "dropY": 0.006,
+        "rollDeg": -1
+      },
+      "discus": {
+        "kickDeg": 7,
+        "backZ": 0.05,
+        "dropY": 0.01,
+        "rollDeg": -1.5
+      },
+      "vortex": {
+        "kickDeg": 8,
+        "backZ": 0.09,
+        "dropY": 0.02,
+        "rollDeg": 1.5
+      },
+      "choir": {
+        "kickDeg": 1.2,
+        "backZ": 0.01,
+        "dropY": 0.003,
+        "rollDeg": 0.3
+      },
+      "prism": {
+        "kickDeg": 6,
+        "backZ": 0.05,
+        "dropY": 0.01,
+        "rollDeg": 1
+      }
+    },
+    "recoilSprings": {
+      "light": {
+        "freqHz": 8,
+        "zeta": 0.5,
+        "swayGain": 0.9,
+        "swayReturn": 1.15,
+        "settleDeg": 1.2,
+        "settleY": 0.004
+      },
+      "medium": {
+        "freqHz": 6,
+        "zeta": 0.45,
+        "swayGain": 1,
+        "swayReturn": 1,
+        "settleDeg": 2.2,
+        "settleY": 0.007
+      },
+      "heavy": {
+        "freqHz": 4.5,
+        "zeta": 0.42,
+        "swayGain": 1.25,
+        "swayReturn": 0.72,
+        "settleDeg": 3.5,
+        "settleY": 0.012
+      }
+    },
+    "recoilSnap": [
+      0.01,
+      0.0001,
+      0.0001,
+      0.01
+    ],
+    "catchKick": [
+      -5,
+      0.035,
+      0.012,
+      4
+    ],
+    "impactHold": {
+      "freqHz": 5,
+      "zeta": 0.5,
+      "peaks": [
+        -9,
+        -0.04,
+        0.015,
+        -3
+      ]
+    },
+    "meleeClass": {
+      "gauntlet": "light",
+      "flicker": "light",
+      "sunder": "medium",
+      "tether": "medium",
+      "thumper": "heavy"
+    },
+    "kitOffsets": {
+      "shotgun": {
+        "x": 0.04,
+        "y": -0.02,
+        "z": -0.06,
+        "scale": 0.86
+      },
+      "rattler": {
+        "x": 0.03,
+        "y": -0.015,
+        "z": -0.04,
+        "scale": 0.9
+      },
+      "torch": {
+        "x": 0.035,
+        "y": -0.03,
+        "z": -0.05,
+        "scale": 0.8
+      },
+      "nailgun": {
+        "x": 0.03,
+        "y": -0.02,
+        "z": -0.04,
+        "scale": 0.8
+      },
+      "bouncer": {
+        "x": 0.035,
+        "y": -0.03,
+        "z": -0.05,
+        "scale": 0.82
+      },
+      "zapper": {
+        "x": 0.035,
+        "y": -0.02,
+        "z": -0.05,
+        "scale": 0.8
+      },
+      "rocket": {
+        "x": 0.055,
+        "y": -0.04,
+        "z": -0.08,
+        "scale": 0.73
+      },
+      "discus": {
+        "x": 0.04,
+        "y": -0.035,
+        "z": -0.06,
+        "scale": 0.75
+      },
+      "vortex": {
+        "x": 0.04,
+        "y": -0.035,
+        "z": -0.06,
+        "scale": 0.78
+      },
+      "rail": {
+        "x": 0.055,
+        "y": -0.035,
+        "z": -0.09,
+        "scale": 0.71
+      },
+      "choir": {
+        "x": 0.05,
+        "y": -0.04,
+        "z": -0.07,
+        "scale": 0.77
+      },
+      "prism": {
+        "x": 0.04,
+        "y": -0.03,
+        "z": -0.06,
+        "scale": 0.8
+      },
+      "gauntlet": {
+        "x": 0.06,
+        "y": -0.07,
+        "z": -0.06,
+        "scale": 0.8,
+        "pitchDeg": 6,
+        "yawDeg": -6
+      },
+      "sunder": {
+        "x": 0.08,
+        "y": -0.12,
+        "z": -0.02,
+        "scale": 0.8,
+        "pitchDeg": -40,
+        "rollDeg": -18,
+        "yawDeg": 4
+      },
+      "flicker": {
+        "x": 0.07,
+        "y": -0.08,
+        "z": -0.02,
+        "scale": 0.9,
+        "pitchDeg": 10
+      },
+      "thumper": {
+        "x": 0.09,
+        "y": -0.2,
+        "z": -0.04,
+        "scale": 0.62,
+        "pitchDeg": -35,
+        "rollDeg": -14
+      },
+      "tether": {
+        "x": 0.06,
+        "y": -0.08,
+        "z": -0.02,
+        "scale": 0.9,
+        "pitchDeg": -20
+      }
+    },
+    "swing": {
+      "gauntlet": {
+        "out": 0.05,
+        "hold": 0.04,
+        "time": 0.3,
+        "z": -0.23,
+        "pitchDeg": 8
+      },
+      "sunder": {
+        "time": 0.26,
+        "yawDeg": 92,
+        "rollDeg": 36,
+        "pitchDeg": 14,
+        "sweepYawDeg": 148,
+        "sweepLift": 0.05,
+        "z": -0.08
+      },
+      "flicker": {
+        "out": 0.04,
+        "time": 0.14,
+        "z": -0.16
+      },
+      "thumper": {
+        "raiseRate": 14,
+        "windupPitchDeg": -38,
+        "windupLift": 0.07,
+        "slamTime": 0.06,
+        "slamHold": 0.06,
+        "impactTime": 0.4,
+        "impactPitchDeg": 58,
+        "impactDrop": 0.075,
+        "bigMult": 1.25
+      },
+      "tether": {
+        "out": 0.06,
+        "hold": 0.06,
+        "time": 0.3,
+        "lashTime": 0.35,
+        "pitchDeg": 32,
+        "z": -0.07,
+        "reach": 0.9
+      }
+    },
+    "glbRigs": [],
+    "revolverGem": {
+      "r": 0.011,
+      "x": 0,
+      "y": 0.075,
+      "z": -0.06
+    },
+    "gemFreshMin": 0.3,
+    "gemFlash": 1.5,
+    "gemFlashTime": 0.12,
+    "drumTurnRate": 18,
+    "states": {
+      "glintTime": 0.22,
+      "glintGain": 2.2,
+      "glintMinCooldown": 0.6,
+      "pipOff": 0.12,
+      "drumStepDeg": 30,
+      "drumTurnRate": 30,
+      "torchHeatGlow": 2.5,
+      "prismReadyMin": 0.35
+    },
+    "wallPull": {
+      "start": 0.6,
+      "full": 0.35,
+      "dropY": 0.05,
+      "backZ": 0.07,
+      "pitchDeg": 22,
+      "rate": 14
+    },
+    "heatColor": 16767120,
+    "heatGlow": 3,
+    "chargeGlow": 4,
+    "recoilSlots": 4,
+    "cylinderStepDeg": 60,
+    "cylinderTurnTime": 0.1,
+    "pumpTravel": 0.06,
+    "pumpDuration": 0.3,
+    "pumpTiltDeg": 5,
+    "swapDropY": 0.3,
+    "swapPitchDeg": 35,
+    "respawnRaiseTime": 0.3,
+    "hudAttach": 0.3,
+    "armRest": {
+      "x": -0.24,
+      "y": -0.42,
+      "z": -0.32,
+      "pitchDeg": 40,
+      "yawDeg": -25,
+      "rollDeg": 0
+    },
+    "armPunch": {
+      "x": -0.05,
+      "y": -0.09,
+      "z": -0.5,
+      "pitchDeg": 22,
+      "yawDeg": -18,
+      "rollDeg": -20
+    },
+    "punchOutTime": 0.06,
+    "punchHoldTime": 0.04,
+    "guns": {
+      "revolver": {
+        "url": "models/revolver.glb",
+        "length": 0.28,
+        "offset": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "grip": {
+          "x": 0.5,
+          "y": 0.36,
+          "z": 0.86
+        },
+        "muzzle": {
+          "x": 0.5,
+          "y": 0.77,
+          "z": 0
+        },
+        "materials": {
+          "Metal": "body",
+          "Grey": "body",
+          "DarkWood": "trim",
+          "LightMetal": "trim"
+        },
+        "part": {
+          "name": "cylinder",
+          "material": "LightMetal",
+          "role": "accent",
+          "box": [
+            -0.16,
+            0.18,
+            -0.74,
+            0.16,
+            0.51,
+            -0.37
+          ]
+        }
+      },
+      "shotgun": {
+        "url": "models/shotgun.glb",
+        "length": 0.9,
+        "offset": {
+          "x": 0.03,
+          "y": -0.01,
+          "z": -0.08
+        },
+        "grip": {
+          "x": 0.5,
+          "y": 0.44,
+          "z": 0.7
+        },
+        "muzzle": {
+          "x": 0.5,
+          "y": 0.83,
+          "z": 0
+        },
+        "materials": {
+          "Wood": "trim",
+          "Metal": "body",
+          "DarkMetal": "body",
+          "Black": "body"
+        },
+        "part": {
+          "name": "pump",
+          "material": "Wood",
+          "role": "trim",
+          "box": [
+            -0.13,
+            -0.15,
+            -2.55,
+            0.13,
+            0.14,
+            -1.67
+          ]
+        }
+      }
+    },
+    "cylinderSegments": 12,
+    "afterimages": {
+      "opacity": [
+        0.34,
+        0.2,
+        0.1
+      ],
+      "spacing": 2,
+      "every": 0.016,
+      "life": 0.28,
+      "glow": 1.6
+    },
+    "fallback": {
+      "revolver": [
+        [
+          "body",
+          "box",
+          0.034,
+          0.05,
+          0.1,
+          0,
+          0.03,
+          -0.05
+        ],
+        [
+          "body",
+          "box",
+          0.024,
+          0.026,
+          0.16,
+          0,
+          0.047,
+          -0.17
+        ],
+        [
+          "trim",
+          "box",
+          0.028,
+          0.085,
+          0.036,
+          0,
+          -0.02,
+          0.01
+        ],
+        [
+          "accent",
+          "cyl",
+          0.05,
+          0.05,
+          0.045,
+          0,
+          0.03,
+          -0.075,
+          "cylinder"
+        ]
+      ],
+      "shotgun": [
+        [
+          "body",
+          "box",
+          0.045,
+          0.06,
+          0.2,
+          0,
+          0.02,
+          -0.08
+        ],
+        [
+          "body",
+          "cyl",
+          0.026,
+          0.026,
+          0.55,
+          0,
+          0.045,
+          -0.45
+        ],
+        [
+          "body",
+          "cyl",
+          0.022,
+          0.022,
+          0.45,
+          0,
+          0.012,
+          -0.4
+        ],
+        [
+          "trim",
+          "box",
+          0.042,
+          0.036,
+          0.14,
+          0,
+          0.012,
+          -0.36,
+          "pump"
+        ],
+        [
+          "trim",
+          "box",
+          0.035,
+          0.07,
+          0.25,
+          0,
+          -0.01,
+          0.12
+        ]
+      ],
+      "nailgun": [
+        [
+          "body",
+          "box",
+          0.052,
+          0.07,
+          0.24,
+          0,
+          0.02,
+          -0.09
+        ],
+        [
+          "body",
+          "cyl",
+          0.02,
+          0.02,
+          0.26,
+          0,
+          0.045,
+          -0.33
+        ],
+        [
+          "heat",
+          "cyl",
+          0.03,
+          0.03,
+          0.13,
+          0,
+          0.045,
+          -0.3,
+          "heat"
+        ],
+        [
+          "trim",
+          "cyl",
+          0.058,
+          0.058,
+          0.06,
+          0,
+          -0.025,
+          -0.13
+        ],
+        [
+          "trim",
+          "box",
+          0.034,
+          0.08,
+          0.04,
+          0,
+          -0.035,
+          0.02
+        ]
+      ],
+      "rocket": [
+        [
+          "body",
+          "cyl",
+          0.056,
+          0.056,
+          0.78,
+          0,
+          0.05,
+          -0.23
+        ],
+        [
+          "trim",
+          "cyl",
+          0.068,
+          0.068,
+          0.07,
+          0,
+          0.05,
+          -0.6
+        ],
+        [
+          "accent",
+          "box",
+          0.022,
+          0.034,
+          0.1,
+          0.055,
+          0.105,
+          -0.22
+        ],
+        [
+          "trim",
+          "box",
+          0.035,
+          0.085,
+          0.05,
+          0,
+          -0.035,
+          -0.05
+        ],
+        [
+          "body",
+          "cyl",
+          0.06,
+          0.06,
+          0.06,
+          0,
+          0.05,
+          0.15
+        ]
+      ],
+      "rail": [
+        [
+          "body",
+          "box",
+          0.056,
+          0.085,
+          0.3,
+          0,
+          0.02,
+          -0.1
+        ],
+        [
+          "body",
+          "box",
+          0.022,
+          0.03,
+          0.62,
+          0,
+          0.062,
+          -0.47
+        ],
+        [
+          "body",
+          "box",
+          0.022,
+          0.03,
+          0.62,
+          0,
+          -0.018,
+          -0.47
+        ],
+        [
+          "charge",
+          "box",
+          0.012,
+          0.034,
+          0.58,
+          0,
+          0.022,
+          -0.46,
+          "charge"
+        ],
+        [
+          "trim",
+          "box",
+          0.036,
+          0.085,
+          0.05,
+          0,
+          -0.045,
+          0.02
+        ]
+      ],
+      "muzzle": {
+        "revolver": [
+          0,
+          0.047,
+          -0.25
+        ],
+        "shotgun": [
+          0,
+          0.045,
+          -0.73
+        ],
+        "nailgun": [
+          0,
+          0.045,
+          -0.47
+        ],
+        "rocket": [
+          0,
+          0.05,
+          -0.63
+        ],
+        "rail": [
+          0,
+          0.022,
+          -0.78
+        ]
+      }
+    },
+    "arm": [
+      [
+        "trim",
+        "box",
+        0.075,
+        0.07,
+        0.085,
+        0,
+        0,
+        0
+      ],
+      [
+        "trim",
+        "box",
+        0.024,
+        0.026,
+        0.05,
+        0.042,
+        0.018,
+        -0.01
+      ],
+      [
+        "accent",
+        "box",
+        0.079,
+        0.074,
+        0.02,
+        0,
+        0,
+        0.055
+      ],
+      [
+        "body",
+        "box",
+        0.078,
+        0.072,
+        0.32,
+        0,
+        -0.004,
+        0.225
+      ]
+    ]
+  },
+  "settings": {
+    "fovDeg": 74,
+    "cameraRoll": true,
+    "effectsIntensity": 1,
+    "hudStyle": "attached",
+    "sensitivity": 0.0014,
+    "invertY": false,
+    "reducedMotion": false,
+    "filmGrain": true,
+    "uiScale": 100,
+    "hurtVignette": true,
+    "crosshairColor": "cyan",
+    "quality": "auto",
+    "renderScale": 1,
+    "showFps": false,
+    "duelRounds": 3,
+    "damageNumbers": false,
+    "showPrices": true,
+    "aimAssist": "snap",
+    "snapStrength": 60,
+    "xray": true,
+    "auraIntensity": 1,
+    "toneMapping": "aces",
+    "adsMode": "hold",
+    "adsSensitivity": 1,
+    "slideMode": "hold",
+    "arclineMode": "hold",
+    "gunFinish": "factory",
+    "flashIntensity": 1,
+    "fpsCap": 0,
+    "fullscreen": false,
+    "shapeCues": true,
+    "damageDirection": true,
+    "showGhost": true,
+    "padDeadzoneInner": 0.15,
+    "padDeadzoneOuter": 0.95,
+    "padCurve": "linear",
+    "padSensX": 1,
+    "padSensY": 1,
+    "padInvertY": false,
+    "padVibration": false,
+    "padAimAssist": "snap"
+  },
+  "ui": {
+    "theme": {
+      "text": 16052714,
+      "gold": 16761405,
+      "panel": 789270,
+      "panelOpacity": 0.78,
+      "panelStrongOpacity": 0.9,
+      "edgeWidth": 3,
+      "scaleBaseHeight": 1080,
+      "type": {
+        "small": 16,
+        "body": 17,
+        "label": 16,
+        "h3": 20,
+        "h2": 34,
+        "h1": 52,
+        "num": 44
+      }
+    },
+    "tagline": "A MOVEMENT SHOOTER AT DUSK",
+    "modes": {
+      "survival": {
+        "name": "SURVIVAL",
+        "desc": "Rounds, zones, perks and bosses. Buy your way deeper."
+      },
+      "bossRush": {
+        "name": "BOSS RUSH",
+        "desc": "Every boss back to back, against the clock."
+      },
+      "duel": {
+        "name": "DUEL",
+        "desc": "1v1 against RIVAL, a bot that moves like you."
+      },
+      "training": {
+        "name": "TRAINING",
+        "desc": "Every weapon, free, on the practice floor."
+      },
+      "tutorial": {
+        "name": "TUTORIAL",
+        "desc": "One minute: move, shoot, zoom, buy."
+      },
+      "endless": {
+        "name": "CLASSIC ARENA",
+        "desc": "The original waves on the spire."
+      },
+      "trials": {
+        "name": "TRIALS",
+        "desc": "Beat the clock on a short course. Six courses, four medals."
+      }
+    },
+    "settingsTabs": [
+      {
+        "id": "aim",
+        "label": "MOUSE + AIM"
+      },
+      {
+        "id": "video",
+        "label": "VIDEO"
+      },
+      {
+        "id": "hud",
+        "label": "HUD"
+      },
+      {
+        "id": "access",
+        "label": "ACCESSIBILITY"
+      },
+      {
+        "id": "game",
+        "label": "GAME"
+      },
+      {
+        "id": "pad",
+        "label": "GAMEPAD"
+      }
+    ],
+    "controlGroups": [
+      [
+        "MOVE",
+        [
+          "forward",
+          "back",
+          "left",
+          "right",
+          "jump",
+          "dash",
+          "slide"
+        ]
+      ],
+      [
+        "FIGHT",
+        [
+          "punch",
+          "special",
+          "lockOn",
+          "quickSwap",
+          "radial",
+          "xray"
+        ]
+      ],
+      [
+        "SURVIVAL",
+        [
+          "interact",
+          "perkList"
+        ]
+      ],
+      [
+        "ARCLINE",
+        [
+          "grapple",
+          "reel"
+        ]
+      ],
+      [
+        "RUN",
+        [
+          "restart"
+        ]
+      ]
+    ],
+    "mouseControls": [
+      [
+        "FIRE (HOLD: BURSTS, FLAME, CHARGE)",
+        "LEFT MOUSE"
+      ],
+      [
+        "ZOOM (KESTREL, RATTLER, ZAPPER, PRISM, LONGWAVE); THE SPECIAL ON THE REST",
+        "RIGHT MOUSE"
+      ],
+      [
+        "NEXT / PREVIOUS WEAPON",
+        "WHEEL"
+      ],
+      [
+        "WEAPONS IN THE ORDER YOU BUY THEM",
+        "1-9, 0"
+      ],
+      [
+        "AIM LOCK: AIM NEAR AN ENEMY (SETTINGS: SNAP MODE)",
+        "MOUSE"
+      ],
+      [
+        "PAUSE",
+        "ESC"
+      ],
+      [
+        "PHOTO MODE (NO HUD, NO GUN)",
+        "F2"
+      ]
+    ],
+    "techniques": [
+      [
+        "WALL JUMP",
+        "{jump} against a wall in the air"
+      ],
+      [
+        "DASH JUMP",
+        "{jump} during a {dash}"
+      ],
+      [
+        "SLAM",
+        "{slide} in the air"
+      ],
+      [
+        "BOOST JUMP",
+        "{slide} in the air, then {jump} as you land"
+      ],
+      [
+        "GRENADE JUMP",
+        "BOUNCER aimed at your feet"
+      ],
+      [
+        "SWING",
+        "hold {grapple} at a lit node, {reel} to reel in"
+      ]
+    ],
+    "hudLegend": [
+      [
+        "DOT + FOUR TICKS",
+        "your aim; the ticks close in and turn white while the aim lock holds a target"
+      ],
+      [
+        "THIN RING ROUND THE CROSSHAIR",
+        "momentum along your aim; past half it takes your style colour (a melee hit becomes an IMPACT)"
+      ],
+      [
+        "WHITE CORNER BRACKETS",
+        "the target the aim lock holds (LOCK when you locked it with the lock-on key)"
+      ],
+      [
+        "X AFTER A SHOT",
+        "a hit; bigger on a headshot, red-orange on a kill"
+      ],
+      [
+        "FINE CIRCLE",
+        "zoomed in (right mouse)"
+      ],
+      [
+        "BOTTOM LEFT",
+        "health (the bar turns red-orange when low), stamina, speed, wall jumps left"
+      ],
+      [
+        "BOTTOM RIGHT",
+        "points, your weapons, what right mouse and SPECIAL do with the one in hand"
+      ]
+    ],
+    "howToPlay": "SURVIVAL: hold the BUY key to buy. Gates open new zones; the ARMORY sells weapons; perks sit in the zones. Style multiplies points. Standing still gets you EXPOSED. Parry boss orbs into the core. Health comes back when you stop taking damage.",
+    "specialHints": {
+      "shotgun": "COMPRESS",
+      "rattler": "PAINT + VOLLEY",
+      "torch": "FIRE WALL",
+      "nailgun": "DETONATE",
+      "bouncer": "AIRBURST",
+      "zapper": "DISCHARGE",
+      "rocket": "STEER",
+      "discus": "RECALL",
+      "vortex": "COLLAPSE",
+      "rail": "OVERCHARGE",
+      "choir": "BURST"
+    },
+    "loadingFrames": 3,
+    "loadingFade": 0.4,
+    "firstRunTrial": "slideLine",
+    "notices": {
+      "firstRunTrial": "NEXT: SLIDE LINE · SLIDE, THEN JUMP OUT OF THE SLIDE: YOU KEEP THE SPEED",
+      "webgl": [
+        "SKYGRIND needs WebGL 2, and this browser did not give it.",
+        "Try the latest Chrome, Edge or Firefox, turn on hardware acceleration in the browser settings, or update your graphics driver."
+      ],
+      "mouse": "THE BROWSER KEPT THE MOUSE: CLICK THE GAME AGAIN (WAIT A MOMENT AFTER ESC)",
+      "mouseEvery": 4,
+      "fullscreen": "THE BROWSER REFUSED FULLSCREEN: TRY F11",
+      "padOn": "GAMEPAD CONNECTED · SETTINGS > GAMEPAD",
+      "padOdd": "THIS GAMEPAD DOES NOT REPORT THE STANDARD LAYOUT: BUTTONS MAY BE SWAPPED · SEE SETTINGS > GAMEPAD",
+      "contextLost": [
+        "The graphics card reset and took the game's picture with it (a driver update, too many tabs, the laptop sleeping).",
+        "Reload to carry on from the title."
+      ],
+      "reload": "RELOAD"
+    },
+    "fadeTime": 0.3,
+    "recap": {
+      "window": 3,
+      "names": {
+        "husk": "HUSK",
+        "swarmer": "SWARMER",
+        "spitter": "SPITTER GLOB",
+        "acid": "ACID",
+        "charger": "CHARGER",
+        "lancer": "LANCER",
+        "warden": "WARDEN",
+        "drone": "DRONE ORB",
+        "rival": "RIVAL",
+        "fall": "THE FALL",
+        "boss": "BOSS",
+        "affix:volatile": "VOLATILE BLAST",
+        "affix": "AN AFFIX",
+        "debug": "DEBUG",
+        "unknown": "SOMETHING"
+      }
+    },
+    "hitDirection": {
+      "max": 4,
+      "life": 0.7,
+      "radius": 150,
+      "width": 5,
+      "arcDeg": 50,
+      "fadeFrom": 0.35
+    },
+    "hintTime": 3.5,
+    "hintDelay": 1.5,
+    "boardSize": 10,
+    "breakdownParts": 6,
+    "breakdownColors": [
+      1692646,
+      16730652,
+      16761405,
+      4054148,
+      16723592,
+      9407104
+    ],
+    "crosshairColors": {
+      "cyan": 1692646,
+      "white": 16777215,
+      "yellow": 16761405,
+      "magenta": 16723592
+    },
+    "fpsRefresh": 0.25,
+    "damageNumberPool": 24,
+    "damageNumberTime": 0.7,
+    "damageNumberRise": 0.9,
+    "lockGraceTime": 0.5,
+    "titleOrbitRadius": 78,
+    "titleOrbitHeight": 34,
+    "titleOrbitSpeed": 0.06,
+    "titleTargetHeight": 6,
+    "titleDrones": 4,
+    "signRange": 40,
+    "settings": [
+      {
+        "key": "sensitivity",
+        "tab": "aim",
+        "label": "MOUSE SENSITIVITY",
+        "type": "range",
+        "min": 0.0004,
+        "max": 0.006,
+        "step": 0.0001,
+        "digits": 4,
+        "fine": 0.0001,
+        "show": "degPer1000"
+      },
+      {
+        "key": "invertY",
+        "tab": "aim",
+        "label": "INVERT Y",
+        "type": "toggle"
+      },
+      {
+        "key": "fovDeg",
+        "tab": "video",
+        "label": "FIELD OF VIEW",
+        "type": "range",
+        "min": 60,
+        "max": 100,
+        "step": 1,
+        "digits": 0
+      },
+      {
+        "key": "effectsIntensity",
+        "tab": "access",
+        "label": "EFFECTS INTENSITY",
+        "type": "range",
+        "min": 0,
+        "max": 2,
+        "step": 0.05
+      },
+      {
+        "key": "reducedMotion",
+        "tab": "access",
+        "label": "REDUCED MOTION",
+        "type": "toggle",
+        "desc": "No camera roll, shake, colour fringing or speed lines"
+      },
+      {
+        "key": "filmGrain",
+        "tab": "access",
+        "label": "FILM GRAIN",
+        "type": "toggle"
+      },
+      {
+        "key": "hurtVignette",
+        "tab": "access",
+        "label": "LOW HEALTH VIGNETTE",
+        "type": "toggle",
+        "desc": "The screen edges darken and the colour drains under 45% health"
+      },
+      {
+        "key": "cameraRoll",
+        "tab": "access",
+        "label": "CAMERA ROLL",
+        "type": "toggle"
+      },
+      {
+        "key": "slideMode",
+        "tab": "access",
+        "label": "SLIDE",
+        "type": "select",
+        "options": [
+          "hold",
+          "toggle"
+        ],
+        "desc": "TOGGLE: a press slides until the next press or a jump"
+      },
+      {
+        "key": "arclineMode",
+        "tab": "access",
+        "label": "ARCLINE SWING",
+        "type": "select",
+        "options": [
+          "hold",
+          "toggle"
+        ],
+        "desc": "TOGGLE: a press hooks, the next press lets go"
+      },
+      {
+        "key": "uiScale",
+        "tab": "hud",
+        "label": "UI SCALE",
+        "type": "range",
+        "min": 80,
+        "max": 140,
+        "step": 5,
+        "digits": 0,
+        "desc": "Every HUD cluster and menu, in %"
+      },
+      {
+        "key": "gunFinish",
+        "tab": "hud",
+        "label": "GUN FINISH",
+        "type": "select",
+        "options": [
+          "factory",
+          "graphite",
+          "arctic",
+          "brass",
+          "mirror",
+          "protocol",
+          "skylight"
+        ],
+        "labels": {
+          "factory": "FACTORY",
+          "graphite": "GRAPHITE",
+          "arctic": "ARCTIC",
+          "brass": "DUSK BRASS",
+          "mirror": "MIRROR",
+          "protocol": "PROTOCOL",
+          "skylight": "SKYLIGHT"
+        },
+        "desc": "Cosmetic. Trial medals unlock them: GRAPHITE 1 BRONZE, ARCTIC 3 SILVER, DUSK BRASS 3 GOLD, MIRROR 1 ACE"
+      },
+      {
+        "key": "hudStyle",
+        "tab": "hud",
+        "label": "HUD STYLE",
+        "type": "select",
+        "options": [
+          "attached",
+          "classic"
+        ],
+        "desc": "ATTACHED: the weapon block rides the gun's sway"
+      },
+      {
+        "key": "crosshairColor",
+        "tab": "hud",
+        "label": "CROSSHAIR COLOR",
+        "type": "select",
+        "options": [
+          "cyan",
+          "white",
+          "yellow",
+          "magenta"
+        ]
+      },
+      {
+        "key": "quality",
+        "tab": "video",
+        "label": "QUALITY",
+        "type": "select",
+        "options": [
+          "auto",
+          "low",
+          "medium",
+          "high"
+        ]
+      },
+      {
+        "key": "toneMapping",
+        "tab": "video",
+        "label": "TONE MAPPING",
+        "type": "select",
+        "options": [
+          "aces",
+          "agx",
+          "neutral"
+        ],
+        "labels": {
+          "aces": "ACES (DEFAULT)",
+          "agx": "AGX (SOFT)",
+          "neutral": "NEUTRAL (VIVID)"
+        }
+      },
+      {
+        "key": "damageNumbers",
+        "tab": "hud",
+        "label": "DAMAGE NUMBERS",
+        "type": "toggle"
+      },
+      {
+        "key": "damageDirection",
+        "tab": "hud",
+        "label": "DAMAGE DIRECTION",
+        "type": "toggle",
+        "desc": "A red-orange arc round the crosshair points at whatever hit you"
+      },
+      {
+        "key": "showPrices",
+        "tab": "hud",
+        "label": "SHOW BUY PRICES",
+        "type": "toggle"
+      },
+      {
+        "key": "aimAssist",
+        "tab": "aim",
+        "label": "SNAP MODE",
+        "type": "select",
+        "options": [
+          "off",
+          "assist",
+          "snap",
+          "lock"
+        ],
+        "labels": {
+          "lock": "HARD LOCK"
+        }
+      },
+      {
+        "key": "snapStrength",
+        "tab": "aim",
+        "label": "SNAP STRENGTH",
+        "type": "range",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "digits": 0
+      },
+      {
+        "key": "xray",
+        "tab": "hud",
+        "label": "ENEMY X-RAY",
+        "type": "toggle",
+        "desc": "Enemies show through walls (X toggles it in play)"
+      },
+      {
+        "key": "adsMode",
+        "tab": "aim",
+        "label": "ZOOM (RIGHT MOUSE)",
+        "type": "select",
+        "options": [
+          "hold",
+          "toggle"
+        ]
+      },
+      {
+        "key": "adsSensitivity",
+        "tab": "aim",
+        "label": "ZOOM SENSITIVITY",
+        "type": "range",
+        "min": 0.5,
+        "max": 1.5,
+        "step": 0.05
+      },
+      {
+        "key": "shapeCues",
+        "tab": "access",
+        "label": "SHAPE CUES",
+        "type": "toggle",
+        "desc": "A spinning ring marks every orb you can parry, not only its cyan colour"
+      },
+      {
+        "key": "flashIntensity",
+        "tab": "access",
+        "label": "FLASH INTENSITY",
+        "type": "range",
+        "min": 0,
+        "max": 1,
+        "step": 0.05,
+        "desc": "The white parry flash, the rank-up edge glow and the gun gem glint (0 = none)"
+      },
+      {
+        "key": "auraIntensity",
+        "tab": "access",
+        "label": "STYLE AURA (0 = OFF)",
+        "type": "range",
+        "min": 0,
+        "max": 1,
+        "step": 0.05
+      },
+      {
+        "key": "renderScale",
+        "tab": "video",
+        "label": "RENDER SCALE",
+        "type": "range",
+        "min": 0.5,
+        "max": 1,
+        "step": 0.05
+      },
+      {
+        "key": "showFps",
+        "tab": "video",
+        "label": "SHOW FPS",
+        "type": "toggle"
+      },
+      {
+        "key": "fpsCap",
+        "tab": "video",
+        "label": "FPS CAP",
+        "type": "select",
+        "options": [
+          0,
+          30,
+          60,
+          120,
+          144
+        ],
+        "labels": {
+          "0": "OFF"
+        },
+        "desc": "A lower cap saves battery; the simulation runs at 120 Hz either way"
+      },
+      {
+        "key": "fullscreen",
+        "tab": "video",
+        "label": "FULLSCREEN",
+        "type": "toggle"
+      },
+      {
+        "key": "padAimAssist",
+        "tab": "pad",
+        "label": "SNAP MODE (PAD)",
+        "type": "select",
+        "options": [
+          "off",
+          "assist",
+          "snap",
+          "lock"
+        ],
+        "labels": {
+          "lock": "HARD LOCK"
+        },
+        "desc": "The aim lock while you play on the pad (SNAP STRENGTH is shared)"
+      },
+      {
+        "key": "padSensX",
+        "tab": "pad",
+        "label": "LOOK SPEED: HORIZONTAL",
+        "type": "range",
+        "min": 0.3,
+        "max": 2.5,
+        "step": 0.05
+      },
+      {
+        "key": "padSensY",
+        "tab": "pad",
+        "label": "LOOK SPEED: VERTICAL",
+        "type": "range",
+        "min": 0.3,
+        "max": 2.5,
+        "step": 0.05
+      },
+      {
+        "key": "padCurve",
+        "tab": "pad",
+        "label": "RESPONSE CURVE",
+        "type": "select",
+        "options": [
+          "linear",
+          "precise"
+        ],
+        "desc": "PRECISE: finer aim near the centre, full speed at the edge"
+      },
+      {
+        "key": "padDeadzoneInner",
+        "tab": "pad",
+        "label": "INNER DEAD ZONE",
+        "type": "range",
+        "min": 0,
+        "max": 0.4,
+        "step": 0.01,
+        "desc": "Raise it if the view drifts with the stick at rest"
+      },
+      {
+        "key": "padDeadzoneOuter",
+        "tab": "pad",
+        "label": "OUTER DEAD ZONE",
+        "type": "range",
+        "min": 0.6,
+        "max": 1,
+        "step": 0.01,
+        "desc": "Lower it if the stick never reaches full speed"
+      },
+      {
+        "key": "padInvertY",
+        "tab": "pad",
+        "label": "INVERT Y",
+        "type": "toggle"
+      },
+      {
+        "key": "padVibration",
+        "tab": "pad",
+        "label": "VIBRATION",
+        "type": "toggle",
+        "desc": "A light rumble on a hit taken, a kill and a parry"
+      },
+      {
+        "key": "showGhost",
+        "tab": "game",
+        "label": "TRIALS: SHOW GHOST",
+        "type": "toggle",
+        "desc": "Your best run of a trial plays alongside you"
+      },
+      {
+        "key": "duelRounds",
+        "tab": "game",
+        "label": "DUEL: KILLS TO WIN",
+        "type": "select",
+        "options": [
+          3,
+          5
+        ]
+      }
+    ]
+  },
+  "sound": {
+    "windMinSpeed": 8,
+    "windMaxSpeed": 24,
+    "landMedSpeed": 12,
+    "landHardSpeed": 24,
+    "footstepDistance": 2.2
+  },
+  "colors": {
+    "sky": 12568268,
+    "skyZenith": 1051180,
+    "skyMid": 4858216,
+    "skyHorizon": 16743240,
+    "sun": 16766630,
+    "fog": 13199439,
+    "cloudLight": 14846316,
+    "cloudShade": 3414598,
+    "pillarTop": 8879506,
+    "pillarSide": 5393018,
+    "enemy": 16730652,
+    "usable": 1692646,
+    "lightSky": 10133734,
+    "lightGround": 10775650,
+    "lightSun": 16760458,
+    "lightRim": 10514687,
+    "vmBody": 3816000,
+    "vmTrim": 9407104,
+    "vmLightSky": 16777215,
+    "vmLightGround": 5921376,
+    "vmLightSun": 16774890,
+    "muzzleFlash": 16771000,
+    "tracer": 14089215,
+    "spark": 16765562,
+    "decal": 2039587,
+    "slamDust": 9407104
+  },
+  "fog": {
+    "near": 45,
+    "far": 190,
+    "heightFade": 30,
+    "heightMin": 0.55
+  },
+  "world": {
+    "gridMinor": 0.05,
+    "gridMajor": 0.11,
+    "sideLow": 0.8,
+    "sideSpan": 20,
+    "neonBase": 1.25,
+    "neonPeak": 3.4,
+    "padDisc": 0.9,
+    "rimWidth": 0.09,
+    "rimLift": 0.012,
+    "rimKinds": [
+      "spire",
+      "ledge",
+      "bridge",
+      "island",
+      "cover",
+      "slab",
+      "wall"
+    ],
+    "ringPulse": 0.12,
+    "ringRate": 3,
+    "trim": {
+      "seam": 0.22,
+      "grime": 0.14,
+      "edge": 0.22,
+      "edgeWidth": 0.1,
+      "plate": 4,
+      "plateJitter": 0.05,
+      "lane": 0.1,
+      "laneAccent": 0.5
+    },
+    "sheen": 0.32,
+    "sheenPower": 3.2,
+    "wallSky": 0.38
+  },
+  "sky": {
+    "domeRadius": 380,
+    "sunElevationDeg": 7,
+    "sunAzimuthDeg": 35,
+    "sunSize": 1.4,
+    "stars": 0.9,
+    "bands": 0.35,
+    "warmGlow": 0.5,
+    "cloudHeight": -26,
+    "cloudSize": 900,
+    "cloudScale": 0.018,
+    "cloudWindX": 0.05,
+    "cloudWindZ": 0.02,
+    "cloudFadeStart": 160,
+    "cloudFadeEnd": 400
+  },
+  "quality": {
+    "presets": {
+      "low": {
+        "pixelRatio": 1,
+        "particleCap": 160,
+        "aura": {
+          "arcs": 0.5,
+          "shell": false,
+          "motes": 0.5,
+          "edge": 0.5
+        },
+        "impact": 0.5,
+        "telegraph": 0.5,
+        "ao": 0,
+        "motes": 0.35,
+        "sheen": 0,
+        "lights": 0,
+        "grain": 0
+      },
+      "medium": {
+        "pixelRatio": 1.25,
+        "particleCap": 400,
+        "aura": {
+          "arcs": 0.75,
+          "shell": true,
+          "motes": 1,
+          "edge": 1
+        },
+        "impact": 1,
+        "telegraph": 1,
+        "ao": 0.55,
+        "motes": 0.7,
+        "sheen": 1,
+        "lights": 1,
+        "grain": 0.035
+      },
+      "high": {
+        "pixelRatio": "device",
+        "particleCap": 400,
+        "aura": {
+          "arcs": 1,
+          "shell": true,
+          "motes": 1,
+          "edge": 1
+        },
+        "impact": 1,
+        "telegraph": 1,
+        "ao": 0.6,
+        "motes": 1,
+        "sheen": 1,
+        "lights": 3,
+        "grain": 0.045
+      }
+    },
+    "maxDeviceRatio": 2,
+    "benchWarmup": 0.6,
+    "benchTime": 3,
+    "autoHighMs": 12.5,
+    "autoMediumMs": 25,
+    "maxVsyncMs": 17.5,
+    "vsyncSlack": 1.12,
+    "windowSize": 240,
+    "dynamic": {
+      "highMs": 18,
+      "lowMs": 13,
+      "holdTime": 2,
+      "holdUpTime": 4,
+      "helpRatio": 0.92,
+      "lockoutTime": 20,
+      "step": 0.1,
+      "minScale": 0.6,
+      "checkEvery": 0.25
+    }
+  },
+  "post": {
+    "bloomThreshold": 1,
+    "bloomSmoothing": 0.08,
+    "bloomIntensity": 1.1,
+    "bloomRadius": 0.7,
+    "bloomEnergy": 0.9,
+    "vignetteOffset": 0.32,
+    "vignetteDarkness": 0.42,
+    "chromaModulation": 0.2,
+    "chromaHurt": 0.006,
+    "chromaDash": 0.003,
+    "chromaRank": 0.004,
+    "chromaDecay": 0.03,
+    "exposure": 1,
+    "grade": {
+      "shadowTint": [
+        0.92,
+        0.86,
+        1.06
+      ],
+      "highlightTint": [
+        1,
+        0.72,
+        0.42
+      ],
+      "split": 0.55,
+      "saturation": 1.1
+    },
+    "godRays": {
+      "distance": 360,
+      "size": 22,
+      "samples": 48,
+      "density": 0.92,
+      "decay": 0.93,
+      "weight": 0.45,
+      "exposure": 0.32,
+      "clampMax": 0.9,
+      "resolutionScale": 0.5
+    },
+    "lowHpAt": 0.45,
+    "lowHpDarkness": 0.45,
+    "chromaSpeedMin": 14,
+    "chromaSpeedMax": 32,
+    "chromaSpeed": 0.0022,
+    "quality": {
+      "low": {
+        "bloom": false,
+        "bloomScale": 0.5,
+        "smaa": false,
+        "godRays": false
+      },
+      "medium": {
+        "bloom": true,
+        "bloomScale": 0.5,
+        "smaa": false,
+        "godRays": false
+      },
+      "high": {
+        "bloom": true,
+        "bloomScale": 1,
+        "smaa": true,
+        "godRays": true
+      }
+    }
+  },
+  "lights": {
+    "hemiIntensity": 1.15,
+    "dirIntensity": 3,
+    "keyLiftDeg": 26,
+    "rimIntensity": 0.35,
+    "rimElevationDeg": 18,
+    "dirX": 0.55,
+    "dirY": 0.7,
+    "dirZ": -0.6,
+    "shadows": {
+      "high": {
+        "enabled": true,
+        "mapSize": 2048,
+        "range": 42,
+        "radius": 2
+      },
+      "medium": {
+        "enabled": true,
+        "mapSize": 1024,
+        "range": 26,
+        "radius": 1.5
+      },
+      "low": {
+        "enabled": false,
+        "mapSize": 512,
+        "range": 20,
+        "radius": 1
+      },
+      "bias": -0.0004,
+      "normalBias": 0.04,
+      "distance": 120
+    }
+  },
+  "ao": {
+    "cell": 1,
+    "margin": 2,
+    "bottom": -2,
+    "top": 42,
+    "range": [
+      0.34,
+      0.72
+    ]
+  },
+  "motes": {
+    "max": 900,
+    "box": [
+      60,
+      26,
+      60
+    ],
+    "wind": [
+      0.25,
+      0.04,
+      0.12
+    ],
+    "size": 1.6,
+    "dustColor": 16762010,
+    "fleckColor": 13615871,
+    "opacity": 0.55,
+    "seed": 11
+  },
+  "blobShadows": {
+    "max": 64,
+    "color": 722708,
+    "opacity": 0.55,
+    "scale": 3.2,
+    "lift": 0.03,
+    "airAlpha": 0.35
+  },
+  "lightPool": {
+    "max": 3,
+    "steadyNear": 8,
+    "steadyFar": 28,
+    "blast": {
+      "intensity": 22,
+      "distance": 16,
+      "life": 0.28,
+      "color": 16752704
+    },
+    "boss": {
+      "intensity": 18,
+      "distance": 22,
+      "life": 0.3,
+      "color": 16742970
+    },
+    "machine": {
+      "intensity": 5,
+      "distance": 7,
+      "height": 1.6
+    }
+  },
+  "render": {
+    "maxPixelRatio": 2,
+    "antialias": true
+  },
+  "arena": {
+    "cellSize": 4,
+    "gridSize": 16,
+    "floorSize": 64,
+    "killPlaneY": -20,
+    "spawnSpacing": 8,
+    "pillars": [
+      [
+        4,
+        0,
+        12
+      ],
+      [
+        5,
+        0,
+        12
+      ],
+      [
+        6,
+        0,
+        12
+      ],
+      [
+        9,
+        0,
+        12
+      ],
+      [
+        10,
+        0,
+        12
+      ],
+      [
+        11,
+        0,
+        12
+      ],
+      [
+        15,
+        1,
+        12
+      ],
+      [
+        15,
+        2,
+        12
+      ],
+      [
+        15,
+        3,
+        12
+      ],
+      [
+        15,
+        4,
+        12
+      ],
+      [
+        15,
+        5,
+        12
+      ],
+      [
+        2,
+        5,
+        1
+      ],
+      [
+        3,
+        5,
+        2
+      ],
+      [
+        4,
+        5,
+        3
+      ],
+      [
+        5,
+        5,
+        4
+      ],
+      [
+        10,
+        7,
+        2
+      ],
+      [
+        11,
+        7,
+        6
+      ],
+      [
+        10,
+        8,
+        1
+      ],
+      [
+        11,
+        8,
+        4
+      ],
+      [
+        12,
+        3,
+        6
+      ],
+      [
+        13,
+        10,
+        5
+      ],
+      [
+        2,
+        10,
+        3
+      ]
+    ],
+    "features": [
+      [
+        -3.65,
+        0,
+        27.85,
+        -3.35,
+        1,
+        28.15
+      ],
+      [
+        3.35,
+        0,
+        27.85,
+        3.65,
+        1,
+        28.15
+      ],
+      [
+        -3.65,
+        0,
+        22.85,
+        -3.35,
+        1,
+        23.15
+      ],
+      [
+        3.35,
+        0,
+        22.85,
+        3.65,
+        1,
+        23.15
+      ],
+      [
+        -3.65,
+        0,
+        17.85,
+        -3.35,
+        1,
+        18.15
+      ],
+      [
+        3.35,
+        0,
+        17.85,
+        3.65,
+        1,
+        18.15
+      ],
+      [
+        -3.65,
+        0,
+        12.85,
+        -3.35,
+        1,
+        13.15
+      ],
+      [
+        3.35,
+        0,
+        12.85,
+        3.65,
+        1,
+        13.15
+      ],
+      [
+        -3.65,
+        0,
+        7.85,
+        -3.35,
+        1,
+        8.15
+      ],
+      [
+        3.35,
+        0,
+        7.85,
+        3.65,
+        1,
+        8.15
+      ],
+      [
+        -14,
+        0,
+        18,
+        -8,
+        1.5,
+        22
+      ],
+      [
+        -22,
+        0,
+        18,
+        -16,
+        1.8,
+        22
+      ],
+      [
+        8,
+        0,
+        18,
+        14,
+        1,
+        24
+      ],
+      [
+        24,
+        0,
+        18,
+        28,
+        1,
+        24
+      ],
+      [
+        -16.5,
+        0,
+        0,
+        -16,
+        1.6,
+        8
+      ],
+      [
+        -12,
+        0,
+        0,
+        -11.5,
+        1.6,
+        8
+      ],
+      [
+        -16.5,
+        1.2,
+        0,
+        -11.5,
+        1.6,
+        8
+      ],
+      [
+        -30.5,
+        0,
+        -26,
+        -30,
+        10,
+        -6
+      ],
+      [
+        -25,
+        0,
+        -26,
+        -24.5,
+        10,
+        -6
+      ],
+      [
+        20,
+        0,
+        -32,
+        28,
+        4,
+        -26
+      ],
+      [
+        -15.5,
+        0,
+        24,
+        -15,
+        2.5,
+        30
+      ]
+    ],
+    "pads": [
+      [
+        2.2,
+        0,
+        15.5
+      ],
+      [
+        26,
+        0,
+        -19.5
+      ]
+    ],
+    "spawn": {
+      "x": 0,
+      "y": 0,
+      "z": 28,
+      "yawDeg": 0
+    },
+    "testSpots": {
+      "lane": {
+        "x": 0,
+        "y": 0,
+        "z": 28,
+        "yawDeg": 0
+      },
+      "ledgeEdge": {
+        "x": -11,
+        "y": 1.5,
+        "z": 19,
+        "yawDeg": 0
+      },
+      "gapStart": {
+        "x": 9,
+        "y": 1,
+        "z": 21,
+        "yawDeg": -90
+      },
+      "tunnelApproach": {
+        "x": -14,
+        "y": 0,
+        "z": 14,
+        "yawDeg": 0
+      },
+      "tunnelInside": {
+        "x": -14,
+        "y": 0,
+        "z": 4,
+        "yawDeg": 0
+      },
+      "pillarEdge": {
+        "x": -7.85,
+        "y": 4,
+        "z": -10,
+        "yawDeg": 90
+      },
+      "wall": {
+        "x": 27.3,
+        "y": 0,
+        "z": -9,
+        "yawDeg": 0
+      },
+      "corridorWallA": {
+        "x": -29.64,
+        "y": 4,
+        "z": -6.4,
+        "yawDeg": 0
+      },
+      "corridorApproach": {
+        "x": -27.5,
+        "y": 0,
+        "z": 2,
+        "yawDeg": 15
+      },
+      "deckEdge": {
+        "x": 24,
+        "y": 4,
+        "z": -27,
+        "yawDeg": 180
+      },
+      "padApproach": {
+        "x": 2.2,
+        "y": 0,
+        "z": 18.5,
+        "yawDeg": 0
+      },
+      "ledgeTop": {
+        "x": -11,
+        "y": 1.5,
+        "z": 20,
+        "yawDeg": 180
+      },
+      "ledgeHusk": {
+        "x": -11,
+        "y": 0,
+        "z": 26,
+        "yawDeg": 0
+      },
+      "wallFace": {
+        "x": 27.6,
+        "y": 0,
+        "z": -18,
+        "yawDeg": -90
+      }
+    }
+  },
+  "debug": {
+    "overlayRefresh": 0.25,
+    "presetTimeout": 120,
+    "presetTimeoutSlowMult": 3,
+    "settleTime": 0.25,
+    "botNavTimeout": 40,
+    "botAccuracyTime": 10,
+    "perfRunTime": 6,
+    "slowMo": 0.25,
+    "flySpeed": 12,
+    "flyFastMult": 3,
+    "runUpTime": 0.5,
+    "jumpHoldTime": 0.5,
+    "coyoteTestDelay": 0.08,
+    "bufferTestLead": 0.08,
+    "slideJumpCount": 5,
+    "scriptMaxWait": 3,
+    "staminaDashGap": 0.25,
+    "staminaSampleInterval": 0.5,
+    "staminaSampleTime": 5,
+    "edgeTestTime": 2,
+    "wallTestTime": 1.2,
+    "wallRideEntrySpeed": 12,
+    "wallRidePush": 0.5,
+    "wallJumpDelay": 0.01,
+    "slamVsSlideLeads": [
+      0.05,
+      0.3
+    ],
+    "dashAllStatesAirDelay": 0.3,
+    "slamDropDelay": 0.1,
+    "fullChainRideTime": 0.2,
+    "fullChainWallJumpFly": 0.1,
+    "fullChainDashJumpDelay": 0.05,
+    "fullChainSlamDelay": 0.15,
+    "headshotDistance": 15,
+    "meleeStartDistance": 4,
+    "healNear": 5,
+    "healFar": 8,
+    "healStartHp": 50,
+    "perfCount": 15,
+    "perfSampleTime": 3,
+    "aimSettleTime": 0.1,
+    "meleeDashLead": 0.1,
+    "combatWait": 3,
+    "swapWaitTime": 1,
+    "punchHuskDistance": 1.6,
+    "parryStartHp": 50,
+    "recoilShots": 10,
+    "recoilSettleTime": 0.5,
+    "noClipTargetWidth": 320,
+    "perfCombatTime": 3,
+    "snapMaxRecordFrames": 600
+  }
+}

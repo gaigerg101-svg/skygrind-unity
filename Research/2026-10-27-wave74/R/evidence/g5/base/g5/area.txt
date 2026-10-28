@@ -1,0 +1,11 @@
+# command: node Tools/night/n70-area.cjs --level iceline --dir C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/ice/g5/base --touches Research/2026-10-27-wave74/R/evidence/g5/base/g5/skip.txt g5
+# sha: f360cf025 (+ the room file as in the tree); time: 2026-10-28 00:30:00
+n70-area: room g5; plan C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/ice/g5/base/iceline.plan.json, level C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/ice/g5/base/n67-iceline.json (the round's folder C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/ice/g5/base); touches Research/2026-10-27-wave74/R/evidence/g5/base/g5/skip.txt (0 touch rows, 0 launch kills); card none
+OPEN  PASS largest open square 8.5 m (x -4.0..4.5, z -153.5..-145.0; 16 pieces on a 21.0 x 30.0 m rect; 12 m or less passes)
+P1    FAIL the last wave's 2 ranged of 3; its spawn set (nodes + highNodes) 2 / 9 nodes 3.5 m or more over the floor (y 0.0; each enemy takes a random node: all must be high)
+P4    FAIL 2 / 8 standing solids >= 1.75 m do a job ((a) touched 0, (b) sight 2, (c) launch kill 0); no job: box(-11,0,-158..-5,2,-146) line: the WEST SHELF; box(6.5,0,-148..10,4.5,-138) line: THE CRANE RUNWAY; box(9,0,-138..10,6,-128.5) line: the EAST RIDE WALL; box(-5.3,0,-139..-4.7,4,-135) line: the WEST ICE WALL (+2)
+P5    N/A  no line65 in the row
+P9    PASS 1 / 1 planes with 2 climb tops >= 8 m apart: box(-11,0,-158..-5,2,-146) 6.0 x 12.0 m at 2.0 m: 18 climb top(s), farthest apart 11.7 m
+P11   N/A  the card names no TOWER / GALLERY / SPLIT LEVEL (no card)
+P17   FAIL 2 / 4 ride walls 4 m tall and 8 m long (short: box(-5.3,0,-139..-4.7,4,-135) 4.0 x 4.0 m; box(4.7,0,-139..5.3,4,-135) 4.0 x 4.0 m); 0 non-ride wall(s) in that band; the strip = ride: true (ride36 faces 4)
+n70-area: FAIL g5 (2/5)

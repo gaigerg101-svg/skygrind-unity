@@ -1,0 +1,41 @@
+# command: python -I Research/2026-10-26-wave71/B/L3/orders.py Logs/feel/n64-b1/uioff/boss63/telemetry.jsonl 'Boss bar 43/Hint/Text' 'Fight line 47/Text' 'Teach card 43/Verb/Text'  (main tree's n64-b1 uioff reel: order64 OFF)
+# plus: grep -a '\[boss61\]\|\[boss63\] stagger\|\[order64\] THE ICEBREAKER |' Logs/player/n47-reel-n64-b1-uioff.log
+# sha: main tree at port/stage3 (read only; the logs are NIGHT64's, unchanged since); run 2026-10-26 12:32:42
+f0000 t  0.00   Teach card 43/ 'One LEFT CLICK swing drops a tank' a=1.00 (UI/HUD 33/Teach card 43/Verb/Text)
+f0018 t  0.30   Teach card 43/ -
+f0046 t  0.77   Fight line 47/ 'Get close and swing the gauntlet LEFT CLICK.' a=0.14 (UI/HUD 33/Fight line 47/Text)
+f0314 t  5.23   Fight line 47/ 'FISTS STUCK: HIT IT NOW' a=0.14 (UI/HUD 33/Fight line 47/Text)
+f0315 t  5.25 H Boss bar 43/Hi 'FISTS STUCK: HIT IT NOW' a=1.00 (UI/HUD 33/Boss bar 43/Hint/Text)
+f0369 t  6.15   Boss bar 43/Hi 'PARRY THE BLOCK. PUNISH STUCK FISTS' a=0.70 (UI/HUD 33/Boss bar 43/Hint/Text)
+f0374 t  6.23   Fight line 47/ 'PARRY THE BLOCK. PUNISH STUCK FISTS' a=0.14 (UI/HUD 33/Fight line 47/Text)
+f0405 t  6.75 H Boss bar 43/Hi 'STAGGERED: EVERY HIT COUNTS' a=1.00 (UI/HUD 33/Boss bar 43/Hint/Text)
+f0434 t  7.23   Fight line 47/ 'STAGGERED: EVERY HIT COUNTS' a=0.14 (UI/HUD 33/Fight line 47/Text)
+f0583 t  9.72   Fight line 47/ 'PARRY THE BLOCK. PUNISH STUCK FISTS' a=0.14 (UI/HUD 33/Fight line 47/Text)
+f0584 t  9.73   Boss bar 43/Hi 'PARRY THE BLOCK. PUNISH STUCK FISTS' a=0.70 (UI/HUD 33/Boss bar 43/Hint/Text)
+f0764 t 12.73   Fight line 47/ 'STAGGERED: EVERY HIT COUNTS' a=0.14 (UI/HUD 33/Fight line 47/Text)
+f0765 t 12.75 H Boss bar 43/Hi 'STAGGERED: EVERY HIT COUNTS' a=1.00 (UI/HUD 33/Boss bar 43/Hint/Text)
+f0943 t 15.72   Fight line 47/ 'PARRY THE BLOCK. PUNISH STUCK FISTS' a=0.14 (UI/HUD 33/Fight line 47/Text)
+f0944 t 15.73   Boss bar 43/Hi 'PARRY THE BLOCK. PUNISH STUCK FISTS' a=0.70 (UI/HUD 33/Boss bar 43/Hint/Text)
+f1124 t 18.73   Fight line 47/ 'STAGGERED: EVERY HIT COUNTS' a=0.14 (UI/HUD 33/Fight line 47/Text)
+f1125 t 18.75 H Boss bar 43/Hi 'STAGGERED: EVERY HIT COUNTS' a=1.00 (UI/HUD 33/Boss bar 43/Hint/Text)
+f1303 t 21.72   Fight line 47/ 'PARRY THE BLOCK. PUNISH STUCK FISTS' a=0.14 (UI/HUD 33/Fight line 47/Text)
+f1304 t 21.73   Boss bar 43/Hi 'PARRY THE BLOCK. PUNISH STUCK FISTS' a=0.70 (UI/HUD 33/Boss bar 43/Hint/Text)
+f1453 t 24.22   Fight line 47/ 'L-SHIFT ASIDE, THEN HIT IT' a=0.14 (UI/HUD 33/Fight line 47/Text)
+f1454 t 24.23   Boss bar 43/Hi 'L-SHIFT ASIDE, THEN HIT IT' a=0.70 (UI/HUD 33/Boss bar 43/Hint/Text)
+f1522 t 25.37   Fight line 47/ 'PARRY THE BLOCK. PUNISH STUCK FISTS' a=0.14 (UI/HUD 33/Fight line 47/Text)
+f1523 t 25.38   Boss bar 43/Hi 'PARRY THE BLOCK. PUNISH STUCK FISTS' a=0.70 (UI/HUD 33/Boss bar 43/Hint/Text)
+---- the log ----
+[boss61] bar hint held: "PARRY THE BLOCK. PUNISH STUCK FISTS" (the rule line holds the place)
+[boss61] line: brawl40 "Get close and swing the gauntlet {fire}." -> "Get close and swing the gauntlet LEFT CLICK." | 7 words, on screen 4.47 s (max 5.0), em 40.0 px at 1920x1080 (canvas x1.000), glyph yes, text objects 1, raw tag no | in 0.47 s after the rise, boss bar up, name card up
+[boss63] stagger 4583 stuck
+[boss61] bar hint back: "FISTS STUCK: HIT IT NOW"
+[order64] THE ICEBREAKER | row order64 on 0 of 351 frames (off now) | would-duplicate 54 frames (the fight line draws the bar's order while the game without the row draws the bar's hint) | duplicate shown 54 frames (both drawn) | held 0 frames: would-duplicate 0, duplicate shown 0 (the same-run pairs' on and off halves) | orders 5: shown 2 (by the fight line 1, in the bar 2, in the bar after the f
+[boss63] stagger end 5833 after 1250
+[order64] THE ICEBREAKER | row order64 on 0 of 387 frames (off now) | would-duplicate 84 frames (the fight line draws the bar's order while the game without the row draws the bar's hint) | duplicate shown 84 frames (both drawn) | held 0 frames: would-duplicate 0, duplicate shown 0 (the same-run pairs' on and off halves) | orders 6: shown 3 (by the fight line 2, in the bar 3, in the bar after the f
+[boss63] stagger 6433 window
+[boss63] stagger end 9417 after 2983
+[boss63] stagger 12433 window
+[boss63] stagger end 15417 after 2983
+[boss63] stagger 18433 window
+[boss63] stagger end 21417 after 2983
+[order64] THE ICEBREAKER | row order64 on 0 of 1516 frames (off now) | would-duplicate 1184 frames (the fight line draws the bar's order while the game without the row draws the bar's hint) | duplicate shown 1184 frames (both drawn) | held 0 frames: would-duplicate 0, duplicate shown 0 (the same-run pairs' on and off halves) | orders 13: shown 10 (by the fight line 10, in the bar 10, in the bar af

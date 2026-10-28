@@ -1,0 +1,34 @@
+# command: node Tools/night/n65-air.cjs --selftest
+# sha: 54a802ac (branch n65-T; clean tracked tree)
+# time: 2026-10-23 16:18:07 -> 2026-10-23 16:18:07 (local)
+# exit: 0
+
+n65-air air65-selftest t "PLANTED PAIR 4.8 m" (planted):
+  numbers: jump v0 8.33 m/s, g 23.15 m/s2 (fall x1.35), double v0 7.50, dash 24 m/s x 0.25 s = 6.0 m, dash-jump v0 6.67 with g x0.5 for 0.5 s at 24 m/s, run-up 8 m/s, wall jump out 5 up 8.33 (wallfling42 on), ride 9.20 m/s, jump-off out 8 +1 up 7.30 (ride39 on), capsule 0.35 m; a ride held 2.5 m over its base
+  air pieces 2:
+    R1   ride  face x = -2.4 (+x), -18.0..-2.0 (16.0 m), band 0.0..8.0, held at 2.5 | ride: west wall
+    R2   ride  face x = 2.4 (-x), -18.0..-2.0 (16.0 m), band 0.0..8.0, held at 2.5 | ride: east wall
+  hand-offs 2 (piece -> piece without touching the floor, the easiest move first):
+    R1 -> R2  jump-off, margin 2.46 m of height (gap 4.5 m); also jump-off + double 3.08, wall jump + double 3.24, dash 2.00
+    R2 -> R1  jump-off, margin 2.46 m of height (gap 4.5 m); also jump-off + double 3.08, wall jump + double 3.24, dash 2.00
+  longest floor-free chain: 2 piece(s): R1 -> R2
+  note: a dash-jump keeps the dash's 24 m/s for its whole flight (Mover.cs:1080; air accel never slows a body: MovementMath.Accelerate), so its reach is long; no obstacle, line-of-sight or air-control test
+  flight pieces (rides + pads) on one floor-free path: 2 of 2: R1 -> R2; without the dash-jump: 2: R1 -> R2
+  without the dash-jump: hand-offs 2, longest chain 2: R1 -> R2, dead ends 0/2
+n65-air t: air pieces 2 (rides 2, decks 0, ledges 0, pads 0), hand-offs 2, longest floor-free chain 2, dead ends 0/2 | without the dash-jump: hand-offs 2, chain 2, dead ends 0/2 | flights handed on: 2 of 2 on one path (2 without the dash-jump)
+PASS planted: two ride walls 4.8 m apart: a wall-jump edge both ways yes (want yes)
+n65-air air65-selftest t "PLANTED PAIR 9.6 m" (planted):
+  numbers: jump v0 8.33 m/s, g 23.15 m/s2 (fall x1.35), double v0 7.50, dash 24 m/s x 0.25 s = 6.0 m, dash-jump v0 6.67 with g x0.5 for 0.5 s at 24 m/s, run-up 8 m/s, wall jump out 5 up 8.33 (wallfling42 on), ride 9.20 m/s, jump-off out 8 +1 up 7.30 (ride39 on), capsule 0.35 m; a ride held 2.5 m over its base
+  air pieces 2:
+    R1   ride  face x = -4.8 (+x), -18.0..-2.0 (16.0 m), band 0.0..8.0, held at 2.5 | ride: west wall
+    R2   ride  face x = 4.8 (-x), -18.0..-2.0 (16.0 m), band 0.0..8.0, held at 2.5 | ride: east wall
+  hand-offs 2 (piece -> piece without touching the floor, the easiest move first):
+    R1 -> R2  jump-off + double, margin 1.25 m of height (gap 9.3 m); also dash 3.03
+    R2 -> R1  jump-off + double, margin 1.25 m of height (gap 9.3 m); also dash 3.03
+  longest floor-free chain: 2 piece(s): R1 -> R2
+  note: a dash-jump keeps the dash's 24 m/s for its whole flight (Mover.cs:1080; air accel never slows a body: MovementMath.Accelerate), so its reach is long; no obstacle, line-of-sight or air-control test
+  flight pieces (rides + pads) on one floor-free path: 2 of 2: R1 -> R2; without the dash-jump: 2: R1 -> R2
+  without the dash-jump: hand-offs 2, longest chain 2: R1 -> R2, dead ends 0/2
+n65-air t: air pieces 2 (rides 2, decks 0, ledges 0, pads 0), hand-offs 2, longest floor-free chain 2, dead ends 0/2 | without the dash-jump: hand-offs 2, chain 2, dead ends 0/2 | flights handed on: 2 of 2 on one path (2 without the dash-jump)
+PASS planted: two ride walls 9.6 m apart: a wall-jump edge both ways no (want no)
+n65-air selftest: PLANTED GREEN

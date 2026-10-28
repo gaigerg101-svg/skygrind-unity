@@ -1,0 +1,15 @@
+# steps (2) and (3) of t1c-pack.sh again, on the round dry-pack2-iceline (its step (1) in t1c-pack.txt: verb65 g8 ride = the slate's, area and deco written, g8.json restored); the pack's regex fixed; sha 11b8c42d + uncommitted n67-gate-pack.cjs; 2026-10-24 12:12:26
+## (2) L67=iceline node Tools/night/n67-gate-pack.cjs g8 dry-pack2-iceline --slate Research/2026-10-24-wave67/T/t1b-dry-slate.json --out Logs/n67/gate/g8-dry --key Logs/n67/gate/keys/g8-dry-spot-key.txt
+n67-gate-pack g8: verb65 g8 ride (slate ride, C:/Users/gaige/dev/SKYGRIND-unity/.claude/worktrees/agent-af48e888c59fa3626/Research/2026-10-24-wave67/T/t1b-dry-slate.json): equal
+fatal: path 'Research/2026-10-24-wave67/cards/g8.md' does not exist in 'a80093a6'
+n67-gate-pack g8 dry-pack2-iceline: Logs/n67/gate/g8-dry (14 files: README.md, air.md, area.txt, card.md, checks.txt, deco.txt, levelgen-report.md, open-findings.md, room-diff.txt, spot-A.png, spot-B.png, table.md, verbs.md, verbs65-skip.txt); key Logs/n67/gate/keys/g8-dry-spot-key.txt; sha a80093a6
+# exit 0
+# the pack: README.md air.md area.txt card.md checks.txt deco.txt levelgen-report.md open-findings.md room-diff.txt spot-A.png spot-B.png table.md verbs.md verbs65-skip.txt 
+n65verb skip: M1 FAIL | room g8, ratio 0.75 vs bar 1.25 (mainBar), exercised 10/10
+n65verb skip: M2 FAIL | room g8, STYLE above DULL verb-aware 26.2 % vs the faster refusal 30.2 % (+15 needed), over the 10 exercised seed(s)
+    n65verb ride --shoot: RED | room g8 | ride yes (0.8 s on the wall, 6.6 m along it, WallRideStart 2) | look off the w
+
+## (3) PLANTED mismatch: the same pack, the slate's g8 verb pierce (Research/2026-10-24-wave67/T/t1c-pack-slate-pierce.json)
+n67-gate-pack: REFUSED: verb65 g8 ride (slate pierce, C:/Users/gaige/dev/SKYGRIND-unity/.claude/worktrees/agent-af48e888c59fa3626/Research/2026-10-24-wave67/T/t1c-pack-slate-pierce.json): the room file's verb65 differs from the slate's verb (a GATE judges the slate's verb; a verb change re-runs the red first)
+# exit 1 (1 expected: refused); pack folder: none
+# done 12:13:56

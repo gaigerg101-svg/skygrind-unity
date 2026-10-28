@@ -1,0 +1,5 @@
+# command: dotnet Temp/SimHarness/bin/Release/net10.0/SimHarness.dll hold52 --level n65-foundry --room b1 --pads
+# sha: 295319c8; time: 2026-10-23 15:11:03
+hold52: level n65-foundry (C:\Users\gaige\dev\SKYGRIND-unity\.claude\worktrees\agent-a9d0ffb6d0dfdb2be\Design\levels\n65-foundry.json), room b1 "1.6 THE KNOCKOUT YARD" rect [-10,-180,10,-148], off switch none
+pad52 b1 pad 5 at [3,0,-153] target [8,4,-163] launched yes apex 6 landed [8.03,4,-163.05] miss 0.06 m PASS
+pad52 b1 pad 6 at [-5.5,0,-171] target [8,4,-174] launched yes apex 6 landed [8.07,4,-174.02] miss 0.07 m PASS

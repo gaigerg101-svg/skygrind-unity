@@ -1,0 +1,6 @@
+{
+  "_why": "NIGHT43 K1: `n43kiln steps --write` (Tools/SimHarness/Harness.N43.Kiln.cs): the apexes over a standing take-off on n43-kiln's floor, boost43 off and forced on (the ON side measured on port/stage3 with M1's boost43 code: K1's scratch copy; the real sim: jump held 1.0 s (no jump cut), the THUNDERCLAP tapped straight down at -0.15..+0.45 s from the jump press, the best of them; the double jump at the apex). Tools/night/gen-n43-kiln.cjs cuts THE STEPS from both (a lower bound takes the larger, an upper bound the smaller); climb = shot, the double jump at the apex, then the gun again as soon as it fires.",
+  "measured": "2026-10-16 18:51",
+  "off": { "jump": 1.584, "double": 3.167, "oneBoost": 7.256, "boostDouble": 8.549, "climb": 17.435, "twoShots": 13.222 },
+  "on": { "jump": 1.584, "double": 3.167, "oneBoost": 8.068, "boostDouble": 9.361, "climb": 22.798, "twoShots": 22.086 }
+}

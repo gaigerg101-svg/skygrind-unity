@@ -1,0 +1,3 @@
+  verb65 g8 - (slate ride): plant
+n67-red: 5 jobs on n67-iceline in 78 s; outputs under Logs/n67/dry-iceline/<room>/ (11:13:22)
+  g8: flow-A.txt flow-B.txt flow-V.txt pads.txt plan.png plan.svg ride.txt room-check.txt 

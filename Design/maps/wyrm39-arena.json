@@ -1,0 +1,544 @@
+{
+ "_why": "THE KILN WYRM's arena for the rebuilt level 3 (NIGHT39 builder K4; Tools/night/gen-n39-wyrm-arena.cjs; GG 2026-10-13: 'a new arena, and keep the worm AI the same'). The SHELL of wyrm26-arena.json (boxes 0-17: floor, walls, ceiling, stepped corners; half 30, height 30: Wyrm.cs's arenaHalf clamp unchanged) and its spawn nook; the worm's paths are wyrm26.json's, untouched. New inside: 6 BOOST PERCHES (6 m: one shot; 9.5 m: the climb; 13 m: the climb from a 6 m perch or a ride), 3 RIDE SLABS tangent to the ring at R 26.5, 2 CRUCIBLE STACKS; every piece 2.9 m clear of every densified worm route (a route point at or under a piece's top + 1 m counts). Perch angles by height: {\"6\":[70],\"13\":[70,160],\"9.5\":[210,280,90]}; slab angles: [45,115,265]; stacks: [[25.84,9.41],[-21.07,17.68]].",
+ "name": "wyrm39-arena",
+ "half": 30,
+ "height": 30,
+ "floorSize": 64,
+ "killPlaneY": -30,
+ "center": [
+  0,
+  0,
+  0
+ ],
+ "playerSpawn": {
+  "x": 0,
+  "y": 0,
+  "z": 27.5,
+  "yawDeg": 0
+ },
+ "collision": {
+  "boxes": [
+   {
+    "min": [
+     -32,
+     -0.5,
+     -32
+    ],
+    "max": [
+     32,
+     0,
+     32
+    ],
+    "kind": "floor"
+   },
+   {
+    "min": [
+     -32,
+     0,
+     -32
+    ],
+    "max": [
+     32,
+     30,
+     -30
+    ],
+    "kind": "wall"
+   },
+   {
+    "min": [
+     -32,
+     0,
+     30
+    ],
+    "max": [
+     32,
+     30,
+     32
+    ],
+    "kind": "wall"
+   },
+   {
+    "min": [
+     -32,
+     0,
+     -30
+    ],
+    "max": [
+     -30,
+     30,
+     30
+    ],
+    "kind": "wall"
+   },
+   {
+    "min": [
+     30,
+     0,
+     -30
+    ],
+    "max": [
+     32,
+     30,
+     30
+    ],
+    "kind": "wall"
+   },
+   {
+    "min": [
+     -32,
+     30,
+     -32
+    ],
+    "max": [
+     32,
+     32,
+     32
+    ],
+    "kind": "ceiling"
+   },
+   {
+    "min": [
+     -30,
+     0,
+     -30
+    ],
+    "max": [
+     -18,
+     30,
+     -26
+    ],
+    "kind": "wall"
+   },
+   {
+    "min": [
+     -30,
+     0,
+     -30
+    ],
+    "max": [
+     -22,
+     30,
+     -22
+    ],
+    "kind": "wall"
+   },
+   {
+    "min": [
+     -30,
+     0,
+     -30
+    ],
+    "max": [
+     -26,
+     30,
+     -18
+    ],
+    "kind": "wall"
+   },
+   {
+    "min": [
+     -30,
+     0,
+     26
+    ],
+    "max": [
+     -18,
+     30,
+     30
+    ],
+    "kind": "wall"
+   },
+   {
+    "min": [
+     -30,
+     0,
+     22
+    ],
+    "max": [
+     -22,
+     30,
+     30
+    ],
+    "kind": "wall"
+   },
+   {
+    "min": [
+     -30,
+     0,
+     18
+    ],
+    "max": [
+     -26,
+     30,
+     30
+    ],
+    "kind": "wall"
+   },
+   {
+    "min": [
+     18,
+     0,
+     -30
+    ],
+    "max": [
+     30,
+     30,
+     -26
+    ],
+    "kind": "wall"
+   },
+   {
+    "min": [
+     22,
+     0,
+     -30
+    ],
+    "max": [
+     30,
+     30,
+     -22
+    ],
+    "kind": "wall"
+   },
+   {
+    "min": [
+     26,
+     0,
+     -30
+    ],
+    "max": [
+     30,
+     30,
+     -18
+    ],
+    "kind": "wall"
+   },
+   {
+    "min": [
+     18,
+     0,
+     26
+    ],
+    "max": [
+     30,
+     30,
+     30
+    ],
+    "kind": "wall"
+   },
+   {
+    "min": [
+     22,
+     0,
+     22
+    ],
+    "max": [
+     30,
+     30,
+     30
+    ],
+    "kind": "wall"
+   },
+   {
+    "min": [
+     26,
+     0,
+     18
+    ],
+    "max": [
+     30,
+     30,
+     30
+    ],
+    "kind": "wall"
+   },
+   {
+    "min": [
+     15.09,
+     0,
+     18.34
+    ],
+    "max": [
+     23.09,
+     12,
+     19.84
+    ],
+    "kind": "wall"
+   },
+   {
+    "min": [
+     -15.41,
+     0,
+     23.72
+    ],
+    "max": [
+     -7.41,
+     12,
+     25.22
+    ],
+    "kind": "wall"
+   },
+   {
+    "min": [
+     -6.35,
+     0,
+     -27.65
+    ],
+    "max": [
+     1.65,
+     12,
+     -26.15
+    ],
+    "kind": "wall"
+   },
+   {
+    "min": [
+     24.34,
+     0,
+     7.91
+    ],
+    "max": [
+     27.34,
+     18,
+     10.91
+    ],
+    "kind": "pillar"
+   },
+   {
+    "min": [
+     -22.57,
+     0,
+     16.18
+    ],
+    "max": [
+     -19.57,
+     18,
+     19.18
+    ],
+    "kind": "pillar"
+   },
+   {
+    "min": [
+     6.23,
+     5,
+     22.37
+    ],
+    "max": [
+     12.23,
+     6,
+     28.37
+    ],
+    "kind": "platform"
+   },
+   {
+    "min": [
+     -25.12,
+     8.5,
+     -18.49
+    ],
+    "max": [
+     -19.12,
+     9.5,
+     -12.49
+    ],
+    "kind": "platform"
+   },
+   {
+    "min": [
+     3.99,
+     8.5,
+     -29.08
+    ],
+    "max": [
+     9.99,
+     9.5,
+     -23.08
+    ],
+    "kind": "platform"
+   },
+   {
+    "min": [
+     -5.18,
+     8.5,
+     21.9
+    ],
+    "max": [
+     0.82,
+     9.5,
+     27.9
+    ],
+    "kind": "platform"
+   },
+   {
+    "min": [
+     6.23,
+     12,
+     22.37
+    ],
+    "max": [
+     12.23,
+     13,
+     28.37
+    ],
+    "kind": "platform"
+   },
+   {
+    "min": [
+     -28.37,
+     12,
+     6.23
+    ],
+    "max": [
+     -22.37,
+     13,
+     12.23
+    ],
+    "kind": "platform"
+   }
+  ]
+ },
+ "crumble39": {
+  "_why": "the two highest perches (indices 27, 28) crumble at half health, the highest 6 m perch (23) stays: NIGHT31's camp test on the new perches",
+  "boxes": [
+   27,
+   28
+  ],
+  "keep": [
+   23
+  ],
+  "draw": [
+   {
+    "index": 18,
+    "kind": "wall",
+    "top": 12,
+    "crumble": false,
+    "rect": [
+     15.09,
+     18.34,
+     23.09,
+     19.84
+    ]
+   },
+   {
+    "index": 19,
+    "kind": "wall",
+    "top": 12,
+    "crumble": false,
+    "rect": [
+     -15.41,
+     23.72,
+     -7.41,
+     25.22
+    ]
+   },
+   {
+    "index": 20,
+    "kind": "wall",
+    "top": 12,
+    "crumble": false,
+    "rect": [
+     -6.35,
+     -27.65,
+     1.65,
+     -26.15
+    ]
+   },
+   {
+    "index": 21,
+    "kind": "pillar",
+    "top": 18,
+    "crumble": false,
+    "rect": [
+     24.34,
+     7.91,
+     27.34,
+     10.91
+    ]
+   },
+   {
+    "index": 22,
+    "kind": "pillar",
+    "top": 18,
+    "crumble": false,
+    "rect": [
+     -22.57,
+     16.18,
+     -19.57,
+     19.18
+    ]
+   },
+   {
+    "index": 23,
+    "kind": "platform",
+    "top": 6,
+    "crumble": false,
+    "rect": [
+     6.23,
+     22.37,
+     12.23,
+     28.37
+    ]
+   },
+   {
+    "index": 24,
+    "kind": "platform",
+    "top": 9.5,
+    "crumble": false,
+    "rect": [
+     -25.12,
+     -18.49,
+     -19.12,
+     -12.49
+    ]
+   },
+   {
+    "index": 25,
+    "kind": "platform",
+    "top": 9.5,
+    "crumble": false,
+    "rect": [
+     3.99,
+     -29.08,
+     9.99,
+     -23.08
+    ]
+   },
+   {
+    "index": 26,
+    "kind": "platform",
+    "top": 9.5,
+    "crumble": false,
+    "rect": [
+     -5.18,
+     21.9,
+     0.82,
+     27.9
+    ]
+   },
+   {
+    "index": 27,
+    "kind": "platform",
+    "top": 13,
+    "crumble": true,
+    "rect": [
+     6.23,
+     22.37,
+     12.23,
+     28.37
+    ]
+   },
+   {
+    "index": 28,
+    "kind": "platform",
+    "top": 13,
+    "crumble": true,
+    "rect": [
+     -28.37,
+     6.23,
+     -22.37,
+     12.23
+    ]
+   }
+  ]
+ }
+}

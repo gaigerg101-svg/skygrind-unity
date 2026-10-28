@@ -1,0 +1,3278 @@
+{
+ "_why": "NIGHT41 builder L6 (design.n41.finale41, OFF: DECIDE41 D-3): Tools/night/gen-n41-finale.cjs from the beat sheet Design/levels/n41/finale.beats.md: the exam of levels 1-5's verbs in small combine rooms, one job per room: 6.1 RETURN (parry + launch + the gauntlet), 6.2 THE GALLERY (ride + zoom + the pierce), 6.3 THE STEP (the boost up, the slam down), 6.4 THE HOOK (whip + bend + swap), 6.5 THE CHANNEL (the one lava, a launch target), 6.6 THE WINDOW (ride jump-off + jump dash to the wardens' backs), 6.7 EVERYTHING, 6.8 REST, 6.9 THE MIRROR (THE RIVAL's arena, reserved empty). A GREYBOX: GG reacts before it is built further.",
+ "id": "n41-finale",
+ "name": "LEVEL 6 THE MIRROR",
+ "n29": true,
+ "n30": true,
+ "n36": true,
+ "floorSize": 580,
+ "killPlaneY": -30,
+ "wallHeight": 14,
+ "rank": {
+  "time": [
+   460,
+   710,
+   1060,
+   1595
+  ],
+  "kills": [
+   100,
+   85,
+   65,
+   40
+  ],
+  "style": [
+   2500,
+   1500,
+   700,
+   250
+  ],
+  "_why": "Unity-only (builder L6, NIGHT41): S/A/B/C cuts: time = the beat sheet's room times (264 s) + THE RIVAL's place 90 s (GG: bosses \"one to two minutes\"), x [1.3, 2, 3, 4.5] as NIGHT36's; kills and style as n38-finale's (NOT calibrated)."
+ },
+ "rooms": [
+  {
+   "id": "m1",
+   "name": "6.1 RETURN",
+   "kind": "room",
+   "rect": [
+    -11,
+    -24,
+    11,
+    0
+   ],
+   "height": 9,
+   "roof": true,
+   "par": 30,
+   "job36": "combine",
+   "verb36": "parry the yellow shots back, launch a husk into the others, the gauntlet on the tank",
+   "spawn": {
+    "at": [
+     0,
+     0,
+     -2
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    0,
+    0,
+    -22
+   ],
+   "arena36": true,
+   "waves": [
+    [
+     "spitter",
+     "spitter",
+     "husk",
+     "husk",
+     "husk"
+    ],
+    [
+     "tank",
+     "drone"
+    ]
+   ],
+   "lessons": [
+    {
+     "promptPad": "{punch} THE YELLOW BACK",
+     "kind": "husksDead",
+     "n": 1,
+     "prompt": "{punch} THE YELLOW BACK"
+    }
+   ],
+   "lessons31": [
+    {
+     "promptPad": "{punch} THE YELLOW BACK",
+     "kind": "husksDead",
+     "n": 1,
+     "prompt": "{punch} THE YELLOW BACK"
+    }
+   ],
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       0,
+       -2
+      ],
+      [
+       0,
+       0,
+       -8
+      ],
+      [
+       0,
+       0,
+       -18
+      ],
+      [
+       0,
+       0,
+       -22
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -6.5,
+       0,
+       -8
+      ],
+      [
+       -6.5,
+       3,
+       -19
+      ],
+      [
+       -7,
+       3,
+       -21
+      ]
+     ]
+    }
+   ],
+   "frames36": {
+    "mid": [
+     5,
+     0,
+     -4,
+     16.39,
+     0.079
+    ],
+    "exit": [
+     0,
+     0,
+     -16,
+     0,
+     -0.075
+    ]
+   },
+   "nodes": [
+    [
+     -3,
+     0,
+     -15
+    ],
+    [
+     0,
+     0,
+     -15
+    ],
+    [
+     3,
+     0,
+     -15
+    ],
+    [
+     0,
+     0,
+     -17
+    ]
+   ],
+   "highNodes": [
+    [
+     -7,
+     3,
+     -21
+    ],
+    [
+     7,
+     3,
+     -21
+    ],
+    [
+     -9,
+     3,
+     -22.5
+    ],
+    [
+     9,
+     3,
+     -22.5
+    ]
+   ]
+  },
+  {
+   "id": "m2",
+   "name": "6.2 THE GALLERY",
+   "kind": "room",
+   "rect": [
+    -10,
+    -60,
+    10,
+    -28
+   ],
+   "height": 10,
+   "roof": true,
+   "par": 35,
+   "job36": "combine",
+   "verb36": "ride the wall above the charger, zoom (slow39) and pierce the husks filing down the ramp",
+   "spawn": {
+    "at": [
+     0,
+     0,
+     -30
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    0,
+    0,
+    -58
+   ],
+   "arena36": true,
+   "waves": [
+    [
+     "charger",
+     "husk",
+     "husk",
+     "husk",
+     "husk"
+    ],
+    [
+     "spitter",
+     "spitter",
+     "husk",
+     "husk",
+     "husk",
+     "husk"
+    ]
+   ],
+   "lessons": [
+    {
+     "promptPad": "RIDE, {altFire}, HOLD {fire}",
+     "kind": "husksDead",
+     "n": 1,
+     "prompt": "RIDE, {altFire}, HOLD {fire}"
+    }
+   ],
+   "lessons31": [
+    {
+     "promptPad": "RIDE, {altFire}, HOLD {fire}",
+     "kind": "husksDead",
+     "n": 1,
+     "prompt": "RIDE, {altFire}, HOLD {fire}"
+    }
+   ],
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       0,
+       -30
+      ],
+      [
+       0,
+       0,
+       -36
+      ],
+      [
+       1,
+       0,
+       -48
+      ],
+      [
+       0,
+       0,
+       -58
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       5,
+       0,
+       -43
+      ],
+      [
+       5,
+       4,
+       -56
+      ],
+      [
+       6,
+       4,
+       -57.5
+      ]
+     ]
+    }
+   ],
+   "frames36": {
+    "mid": [
+     -6,
+     0,
+     -32,
+     -28.811,
+     0.061
+    ],
+    "exit": [
+     0,
+     0,
+     -50,
+     0,
+     -0.06
+    ]
+   },
+   "nodes": [
+    [
+     0,
+     0,
+     -46
+    ],
+    [
+     -2,
+     0,
+     -50
+    ],
+    [
+     2,
+     0,
+     -50
+    ]
+   ],
+   "highNodes": [
+    [
+     4,
+     4,
+     -57.5
+    ],
+    [
+     7,
+     4,
+     -57.5
+    ],
+    [
+     -5,
+     4,
+     -57.5
+    ],
+    [
+     -8,
+     4,
+     -57.5
+    ]
+   ]
+  },
+  {
+   "id": "m3",
+   "name": "6.3 THE STEP",
+   "kind": "room",
+   "rect": [
+    -11,
+    -96,
+    11,
+    -64
+   ],
+   "height": 10,
+   "roof": true,
+   "par": 35,
+   "job36": "combine",
+   "verb36": "the THUNDERCLAP's mid-air boost up THE STEP (3.6 m), the slam and the blast back down",
+   "spawn": {
+    "at": [
+     0,
+     0,
+     -66
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    0,
+    0,
+    -94
+   ],
+   "arena36": true,
+   "waves": [
+    [
+     "spitter",
+     "spitter",
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "swarmer"
+    ],
+    [
+     "tank",
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "swarmer"
+    ]
+   ],
+   "lessons": [
+    {
+     "promptPad": "{jump}, {jump}, {fire} DOWN: UP",
+     "kind": "husksDead",
+     "n": 1,
+     "prompt": "{jump}, {jump}, {fire} DOWN: UP"
+    }
+   ],
+   "lessons31": [
+    {
+     "promptPad": "{jump}, {jump}, {fire} DOWN: UP",
+     "kind": "husksDead",
+     "n": 1,
+     "prompt": "{jump}, {jump}, {fire} DOWN: UP"
+    }
+   ],
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       0,
+       -66
+      ],
+      [
+       -8,
+       0,
+       -64.6
+      ],
+      [
+       -8,
+       3.6,
+       -77
+      ],
+      [
+       0,
+       3.6,
+       -80
+      ],
+      [
+       8,
+       3.6,
+       -83
+      ],
+      [
+       8,
+       0,
+       -94.5
+      ],
+      [
+       0,
+       0,
+       -94
+      ]
+     ]
+    }
+   ],
+   "frames36": {
+    "mid": [
+     4,
+     0,
+     -68,
+     21.801,
+     0.184
+    ],
+    "exit": [
+     0,
+     3.6,
+     -80,
+     0,
+     -0.257
+    ]
+   },
+   "highNodes": [
+    [
+     -6,
+     3.6,
+     -76.8
+    ],
+    [
+     -2,
+     3.6,
+     -78.2
+    ],
+    [
+     2,
+     3.6,
+     -78.2
+    ],
+    [
+     6,
+     3.6,
+     -76.8
+    ],
+    [
+     -4,
+     3.6,
+     -79.5
+    ],
+    [
+     4,
+     3.6,
+     -79.5
+    ],
+    [
+     0,
+     3.6,
+     -81
+    ],
+    [
+     -7,
+     3.6,
+     -82
+    ],
+    [
+     7,
+     3.6,
+     -82
+    ]
+   ]
+  },
+  {
+   "id": "m4",
+   "name": "6.4 THE HOOK",
+   "kind": "room",
+   "rect": [
+    -12,
+    -128,
+    12,
+    -100
+   ],
+   "height": 12,
+   "roof": true,
+   "par": 35,
+   "job36": "combine",
+   "verb36": "whip a drone in, swap inside the bend, slug it; hook over the warden to its back",
+   "spawn": {
+    "at": [
+     0,
+     0,
+     -102
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    0,
+    0,
+    -126
+   ],
+   "arena36": true,
+   "grappleNodes": [
+    [
+     -6,
+     9.5,
+     -118
+    ],
+    [
+     6,
+     9.5,
+     -118
+    ]
+   ],
+   "grapple": "two nodes on posts at 9.5 m either side of the middle: a pull over the warden lands you behind it",
+   "waves": [
+    [
+     "drone",
+     "drone",
+     "husk",
+     "husk"
+    ],
+    [
+     "warden",
+     "drone",
+     "drone"
+    ]
+   ],
+   "lessons": [
+    {
+     "promptPad": "WHIP IT, {quickSwap}, SLUG IT",
+     "kind": "husksDead",
+     "n": 1,
+     "prompt": "WHIP IT, {quickSwap}, SLUG IT"
+    }
+   ],
+   "lessons31": [
+    {
+     "promptPad": "WHIP IT, {quickSwap}, SLUG IT",
+     "kind": "husksDead",
+     "n": 1,
+     "prompt": "WHIP IT, {quickSwap}, SLUG IT"
+    }
+   ],
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       0,
+       -102
+      ],
+      [
+       0,
+       0,
+       -110
+      ],
+      [
+       0,
+       0,
+       -122
+      ],
+      [
+       0,
+       0,
+       -126
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -8,
+       0,
+       -108
+      ],
+      [
+       -8,
+       3,
+       -119
+      ],
+      [
+       -8,
+       3,
+       -122
+      ]
+     ]
+    }
+   ],
+   "frames36": {
+    "mid": [
+     5,
+     0,
+     -104,
+     22.62,
+     0.4
+    ],
+    "exit": [
+     0,
+     0,
+     -122,
+     0,
+     -0.1
+    ]
+   },
+   "nodes": [
+    [
+     -5,
+     0,
+     -116
+    ],
+    [
+     5,
+     0,
+     -116
+    ],
+    [
+     0,
+     0,
+     -120
+    ],
+    [
+     3,
+     0,
+     -122
+    ],
+    [
+     -2,
+     0,
+     -123
+    ]
+   ],
+   "highNodes": [
+    [
+     -8,
+     3,
+     -122
+    ],
+    [
+     -8,
+     3,
+     -125
+    ]
+   ]
+  },
+  {
+   "id": "m5",
+   "name": "6.5 THE CHANNEL",
+   "kind": "room",
+   "rect": [
+    -12,
+    -160,
+    12,
+    -132
+   ],
+   "height": 9,
+   "roof": true,
+   "par": 30,
+   "job36": "combine",
+   "verb36": "launch the husks off the bridge into the lava; cross by the jump dash, the ride, the hook or the bridge",
+   "spawn": {
+    "at": [
+     0,
+     0,
+     -134
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    0,
+    0,
+    -158
+   ],
+   "arena36": true,
+   "grappleNodes": [
+    [
+     -6,
+     8,
+     -147
+    ]
+   ],
+   "grapple": "one node 8 m over the channel's west half: a hook across",
+   "waves": [
+    [
+     "husk",
+     "husk",
+     "husk",
+     "husk",
+     "husk",
+     "husk"
+    ],
+    [
+     "charger",
+     "husk",
+     "husk",
+     "husk",
+     "husk"
+    ]
+   ],
+   "lessons": [
+    {
+     "promptPad": "{punch} THEM INTO THE LAVA",
+     "kind": "husksDead",
+     "n": 2,
+     "prompt": "{punch} THEM INTO THE LAVA"
+    }
+   ],
+   "lessons31": [
+    {
+     "promptPad": "{punch} THEM INTO THE LAVA",
+     "kind": "husksDead",
+     "n": 2,
+     "prompt": "{punch} THEM INTO THE LAVA"
+    }
+   ],
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       0,
+       -134
+      ],
+      [
+       0,
+       0,
+       -142
+      ],
+      [
+       0,
+       0,
+       -152
+      ],
+      [
+       0,
+       0,
+       -158
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -11,
+       -0.5,
+       -147
+      ],
+      [
+       -11,
+       0,
+       -141
+      ]
+     ],
+     "jump": true,
+     "maxSeconds": 8
+    }
+   ],
+   "frames36": {
+    "mid": [
+     5,
+     0,
+     -136,
+     24.444,
+     -0.212
+    ],
+    "exit": [
+     0,
+     0,
+     -152,
+     0,
+     -0.075
+    ]
+   },
+   "nodes": [
+    [
+     -1,
+     0,
+     -153
+    ],
+    [
+     1,
+     0,
+     -153
+    ],
+    [
+     0,
+     0,
+     -155
+    ],
+    [
+     -4,
+     0,
+     -156
+    ],
+    [
+     4,
+     0,
+     -156
+    ],
+    [
+     -6,
+     0,
+     -154
+    ],
+    [
+     6,
+     0,
+     -154
+    ]
+   ]
+  },
+  {
+   "id": "m6",
+   "name": "6.6 THE WINDOW",
+   "kind": "room",
+   "rect": [
+    -12,
+    -190,
+    12,
+    -164
+   ],
+   "height": 10,
+   "roof": true,
+   "par": 35,
+   "job36": "combine",
+   "verb36": "ride, jump off with the look up, jump-dash through the window: land behind the wardens",
+   "spawn": {
+    "at": [
+     0,
+     0,
+     -166
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    0,
+    0,
+    -188
+   ],
+   "arena36": true,
+   "grappleNodes": [
+    [
+     0,
+     7,
+     -180
+    ]
+   ],
+   "grapple": "one node 7 m up just past the window: a hook through it from the south half",
+   "waves": [
+    [
+     "warden",
+     "warden",
+     "spitter"
+    ],
+    [
+     "warden",
+     "warden",
+     "charger"
+    ]
+   ],
+   "lessons": [
+    {
+     "promptPad": "THROUGH THE WINDOW, THEN BEHIND",
+     "kind": "husksDead",
+     "n": 1,
+     "prompt": "THROUGH THE WINDOW, THEN BEHIND"
+    }
+   ],
+   "lessons31": [
+    {
+     "promptPad": "THROUGH THE WINDOW, THEN BEHIND",
+     "kind": "husksDead",
+     "n": 1,
+     "prompt": "THROUGH THE WINDOW, THEN BEHIND"
+    }
+   ],
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       0,
+       -166
+      ],
+      [
+       -10,
+       0,
+       -172
+      ],
+      [
+       -10,
+       0,
+       -180
+      ],
+      [
+       0,
+       0,
+       -184
+      ],
+      [
+       0,
+       0,
+       -188
+      ]
+     ]
+    }
+   ],
+   "frames36": {
+    "mid": [
+     6,
+     0,
+     -170,
+     38.66,
+     0.195
+    ],
+    "exit": [
+     0,
+     0,
+     -182,
+     0,
+     -0.075
+    ]
+   },
+   "nodes": [
+    [
+     -2,
+     0,
+     -181
+    ],
+    [
+     2,
+     0,
+     -181
+    ],
+    [
+     -5,
+     0,
+     -185
+    ],
+    [
+     0,
+     0,
+     -186
+    ],
+    [
+     4,
+     0,
+     -182
+    ]
+   ],
+   "highNodes": [
+    [
+     8,
+     2.5,
+     -188
+    ],
+    [
+     10.5,
+     2.5,
+     -188.5
+    ]
+   ]
+  },
+  {
+   "id": "m7",
+   "name": "6.7 EVERYTHING",
+   "kind": "room",
+   "rect": [
+    -15,
+    -226,
+    15,
+    -194
+   ],
+   "height": 10,
+   "roof": true,
+   "par": 60,
+   "job36": "test",
+   "verb36": "every verb of levels 1-5 on three floors: the floor, the decks (2.5 m), the catwalk (5 m)",
+   "spawn": {
+    "at": [
+     0,
+     0,
+     -196
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    0,
+    0,
+    -224
+   ],
+   "arena36": true,
+   "grappleNodes": [
+    [
+     -12,
+     8.5,
+     -222
+    ],
+    [
+     12,
+     8.5,
+     -222
+    ]
+   ],
+   "grapple": "two nodes over the catwalk's ends at 8.5 m (round 3: the roof 10 m, was 12: a drone kept at 11.4 m out of the walk bot's reach 1 / 10): a pull from a deck to the top floor",
+   "waves": [
+    [
+     "husk",
+     "husk",
+     "husk",
+     "husk",
+     "spitter",
+     "spitter"
+    ],
+    [
+     "tank",
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "swarmer"
+    ],
+    [
+     "warden",
+     "drone",
+     "drone"
+    ],
+    [
+     "charger",
+     "charger",
+     "husk",
+     "husk"
+    ]
+   ],
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       0,
+       -196
+      ],
+      [
+       0,
+       0,
+       -216
+      ],
+      [
+       0,
+       0,
+       -224
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -12,
+       0,
+       -196
+      ],
+      [
+       -12,
+       2.5,
+       -205
+      ],
+      [
+       -12,
+       2.5,
+       -212
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -7,
+       0,
+       -209
+      ],
+      [
+       -7,
+       5,
+       -221
+      ],
+      [
+       -8,
+       5,
+       -223
+      ]
+     ]
+    }
+   ],
+   "frames36": {
+    "mid": [
+     8,
+     0,
+     -198,
+     23.962,
+     0.071
+    ],
+    "exit": [
+     0,
+     0,
+     -218,
+     0,
+     -0.075
+    ]
+   },
+   "nodes": [
+    [
+     0,
+     0,
+     -209
+    ],
+    [
+     -3,
+     0,
+     -214
+    ],
+    [
+     3,
+     0,
+     -214
+    ],
+    [
+     0,
+     0,
+     -216
+    ],
+    [
+     -2,
+     0,
+     -218
+    ],
+    [
+     2,
+     0,
+     -218
+    ]
+   ],
+   "highNodes": [
+    [
+     -12,
+     2.5,
+     -212
+    ],
+    [
+     12,
+     2.5,
+     -212
+    ],
+    [
+     -10,
+     5,
+     -223
+    ],
+    [
+     10,
+     5,
+     -223
+    ]
+   ]
+  },
+  {
+   "id": "mr",
+   "name": "6.8 REST",
+   "kind": "link",
+   "rect": [
+    -5,
+    -240,
+    5,
+    -230
+   ],
+   "height": 5,
+   "roof": true,
+   "par": 4,
+   "job36": "rest",
+   "verb36": "none",
+   "spawn": {
+    "at": [
+     0,
+     0,
+     -231.5
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    0,
+    0,
+    -238.5
+   ],
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       0,
+       -231.5
+      ],
+      [
+       0,
+       0,
+       -238.5
+      ]
+     ]
+    }
+   ],
+   "frames36": {
+    "mid": [
+     0,
+     0,
+     -232,
+     0,
+     -0.268
+    ],
+    "exit": [
+     2,
+     0,
+     -235,
+     21.801,
+     -0.111
+    ]
+   }
+  },
+  {
+   "id": "mx",
+   "name": "6.9 THE MIRROR",
+   "kind": "boss",
+   "rect": [
+    -17,
+    -278,
+    17,
+    -244
+   ],
+   "height": 14,
+   "roof": true,
+   "par": 90,
+   "job36": "boss",
+   "verb36": "THE RIVAL (a proposal: Research/2026-10-14-wave41/RIVAL.md); reserved empty",
+   "spawn": {
+    "at": [
+     0,
+     0,
+     -247
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    0,
+    0,
+    -261
+   ],
+   "boss": "rival41",
+   "frames36": {
+    "mid": [
+     0,
+     0,
+     -247,
+     0,
+     -0.043
+    ],
+    "exit": [
+     10,
+     0,
+     -254,
+     24.444,
+     -0.025
+    ]
+   }
+  }
+ ],
+ "doors": [
+  {
+   "id": "d1",
+   "between": [
+    "m1",
+    "m2"
+   ],
+   "rect": [
+    -2,
+    -28,
+    2,
+    -24
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  },
+  {
+   "id": "d2",
+   "between": [
+    "m2",
+    "m3"
+   ],
+   "rect": [
+    -2,
+    -64,
+    2,
+    -60
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  },
+  {
+   "id": "d3",
+   "between": [
+    "m3",
+    "m4"
+   ],
+   "rect": [
+    -2,
+    -100,
+    2,
+    -96
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  },
+  {
+   "id": "d4",
+   "between": [
+    "m4",
+    "m5"
+   ],
+   "rect": [
+    -2,
+    -132,
+    2,
+    -128
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  },
+  {
+   "id": "d5",
+   "between": [
+    "m5",
+    "m6"
+   ],
+   "rect": [
+    -2,
+    -164,
+    2,
+    -160
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  },
+  {
+   "id": "d6",
+   "between": [
+    "m6",
+    "m7"
+   ],
+   "rect": [
+    -2,
+    -194,
+    2,
+    -190
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  },
+  {
+   "id": "d7",
+   "between": [
+    "m7",
+    "mr"
+   ],
+   "rect": [
+    -2,
+    -230,
+    2,
+    -226
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  },
+  {
+   "id": "d8",
+   "between": [
+    "mr",
+    "mx"
+   ],
+   "rect": [
+    -2,
+    -244,
+    2,
+    -240
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  }
+ ],
+ "boxes": [
+  {
+   "zone": "m1",
+   "kind": "deck",
+   "min": [
+    -11,
+    0,
+    -24
+   ],
+   "max": [
+    -2,
+    3,
+    -18
+   ],
+   "job": "line",
+   "why": "the PERCH's west half (3 m): the spitters' stand; their yellow shots come down at the door, the parry's targets",
+   "note": "the PERCH's west half (3 m): the spitters' stand; their yellow shots come down at the door, the parry's targets"
+  },
+  {
+   "zone": "m1",
+   "kind": "deck",
+   "min": [
+    2,
+    0,
+    -24
+   ],
+   "max": [
+    11,
+    3,
+    -18
+   ],
+   "job": "line",
+   "why": "the PERCH's east half (3 m); the exit runs between the halves at floor level",
+   "note": "the PERCH's east half (3 m); the exit runs between the halves at floor level"
+  },
+  {
+   "zone": "m1",
+   "kind": "wall",
+   "min": [
+    -10.6,
+    0,
+    -14
+   ],
+   "max": [
+    -10,
+    5,
+    -3
+   ],
+   "job": "line",
+   "why": "ride panel W (face east, 11 m): the dodge line while the shots fly; no cover in the middle (the parry is the cover)",
+   "note": "ride panel W (face east, 11 m): the dodge line while the shots fly; no cover in the middle (the parry is the cover)",
+   "ride": true,
+   "ride36": {
+    "face": "E",
+    "planeX": -10,
+    "lz": [
+     3,
+     14
+    ]
+   }
+  },
+  {
+   "zone": "m1",
+   "kind": "wall",
+   "min": [
+    10,
+    0,
+    -14
+   ],
+   "max": [
+    10.6,
+    5,
+    -3
+   ],
+   "job": "line",
+   "why": "ride panel E (face west)",
+   "note": "ride panel E (face west)",
+   "ride": true,
+   "ride36": {
+    "face": "W",
+    "planeX": 10,
+    "lz": [
+     3,
+     14
+    ]
+   }
+  },
+  {
+   "zone": "m2",
+   "kind": "wall",
+   "min": [
+    -9.6,
+    0,
+    -54
+   ],
+   "max": [
+    -9,
+    5,
+    -32
+   ],
+   "job": "line",
+   "why": "ride panel W (face east, 22 m: two seconds of held ride): the gallery's line above the charger's floor; zoom and charge from it",
+   "note": "ride panel W (face east, 22 m: two seconds of held ride): the gallery's line above the charger's floor; zoom and charge from it",
+   "ride": true,
+   "ride36": {
+    "face": "E",
+    "planeX": -9,
+    "lz": [
+     4,
+     26
+    ]
+   }
+  },
+  {
+   "zone": "m2",
+   "kind": "wall",
+   "min": [
+    9,
+    0,
+    -43
+   ],
+   "max": [
+    9.6,
+    5,
+    -32
+   ],
+   "job": "line",
+   "why": "ride panel E (face west, 11 m): the line mirrored on the short side",
+   "note": "ride panel E (face west, 11 m): the line mirrored on the short side",
+   "ride": true,
+   "ride36": {
+    "face": "W",
+    "planeX": 9,
+    "lz": [
+     4,
+     15
+    ]
+   }
+  },
+  {
+   "zone": "m2",
+   "kind": "deck",
+   "min": [
+    -10,
+    0,
+    -60
+   ],
+   "max": [
+    -2,
+    4,
+    -55
+   ],
+   "job": "line",
+   "why": "the BALCONY's west half (4 m): wave 2's spitters stand on it; the W panel's ride ends under it (the jump-off lands on it)",
+   "note": "the BALCONY's west half (4 m): wave 2's spitters stand on it; the W panel's ride ends under it (the jump-off lands on it)"
+  },
+  {
+   "zone": "m2",
+   "kind": "deck",
+   "min": [
+    2,
+    0,
+    -60
+   ],
+   "max": [
+    10,
+    4,
+    -55
+   ],
+   "job": "line",
+   "why": "the BALCONY's east half (4 m), its ramp's top; the exit runs between the halves at floor level",
+   "note": "the BALCONY's east half (4 m), its ramp's top; the exit runs between the halves at floor level"
+  },
+  {
+   "zone": "m3",
+   "kind": "deck",
+   "min": [
+    -11,
+    0,
+    -84
+   ],
+   "max": [
+    11,
+    3.6,
+    -76
+   ],
+   "job": "line",
+   "why": "THE STEP (3.6 m) across the room: over the jump + double jump (1.5 m x 1.9 = 2.85 m), under it + one THUNDERCLAP boost (about +2 m); its spitters shoot down; NORIDE (the ride must not climb it)",
+   "note": "THE STEP (3.6 m) across the room: over the jump + double jump (1.5 m x 1.9 = 2.85 m), under it + one THUNDERCLAP boost (about +2 m); its spitters shoot down; NORIDE (the ride must not climb it)",
+   "noride": true
+  },
+  {
+   "zone": "m3",
+   "kind": "hull",
+   "min": [
+    -5.5,
+    0,
+    -73.5
+   ],
+   "max": [
+    -2.5,
+    1.2,
+    -71
+   ],
+   "job": "climb",
+   "why": "THE HOPS, the low block (1.2 m, 3 x 2.5 m): three hops up THE STEP for a player without the boost (the boost is one), and the route graph's way up",
+   "note": "THE HOPS, the low block (1.2 m, 3 x 2.5 m): three hops up THE STEP for a player without the boost (the boost is one), and the route graph's way up"
+  },
+  {
+   "zone": "m3",
+   "kind": "hull",
+   "min": [
+    -5.5,
+    0,
+    -76
+   ],
+   "max": [
+    -2.5,
+    2.4,
+    -73.5
+   ],
+   "job": "climb",
+   "why": "THE HOPS, the high block (2.4 m) against THE STEP's face: the last hop onto the deck",
+   "note": "THE HOPS, the high block (2.4 m) against THE STEP's face: the last hop onto the deck"
+  },
+  {
+   "zone": "m4",
+   "kind": "deck",
+   "min": [
+    -12,
+    0,
+    -128
+   ],
+   "max": [
+    -4,
+    3,
+    -118
+   ],
+   "job": "line",
+   "why": "the MEZZANINE (3 m) on the west side: the husks and wave 2 come off it",
+   "note": "the MEZZANINE (3 m) on the west side: the husks and wave 2 come off it"
+  },
+  {
+   "zone": "m5",
+   "kind": "deck",
+   "min": [
+    -2,
+    -1,
+    -150
+   ],
+   "max": [
+    2,
+    0,
+    -144
+   ],
+   "job": "line",
+   "why": "the BRIDGE (4 m wide) over the channel: the husks' file at you, the launch's stage, the walkers' crossing",
+   "note": "the BRIDGE (4 m wide) over the channel: the husks' file at you, the launch's stage, the walkers' crossing"
+  },
+  {
+   "zone": "m5",
+   "kind": "deck",
+   "min": [
+    -12,
+    -1,
+    -150
+   ],
+   "max": [
+    -10,
+    -0.5,
+    -144
+   ],
+   "job": "climb",
+   "why": "the channel's west step (0.5 m under the floor): out of the lava for anything that falls in",
+   "note": "the channel's west step (0.5 m under the floor): out of the lava for anything that falls in"
+  },
+  {
+   "zone": "m5",
+   "kind": "deck",
+   "min": [
+    10,
+    -1,
+    -150
+   ],
+   "max": [
+    12,
+    -0.5,
+    -144
+   ],
+   "job": "climb",
+   "why": "the channel's east step",
+   "note": "the channel's east step"
+  },
+  {
+   "zone": "m5",
+   "kind": "wall",
+   "min": [
+    11,
+    -1,
+    -154
+   ],
+   "max": [
+    11.6,
+    5,
+    -140
+   ],
+   "job": "line",
+   "why": "ride panel E (face west, 14 m, standing in the lava): the ride over the channel",
+   "note": "ride panel E (face west, 14 m, standing in the lava): the ride over the channel",
+   "ride": true,
+   "ride36": {
+    "face": "W",
+    "planeX": 11,
+    "lz": [
+     8,
+     22
+    ]
+   }
+  },
+  {
+   "zone": "m6",
+   "kind": "hull",
+   "min": [
+    -8,
+    0,
+    -178
+   ],
+   "max": [
+    -2,
+    10,
+    -177
+   ],
+   "job": "line",
+   "why": "THE WALL's west part (floor to roof): the wardens' shields face the door beside it; only the window and the west door go through",
+   "note": "THE WALL's west part (floor to roof): the wardens' shields face the door beside it; only the window and the west door go through"
+  },
+  {
+   "zone": "m6",
+   "kind": "hull",
+   "min": [
+    2,
+    0,
+    -178
+   ],
+   "max": [
+    12,
+    10,
+    -177
+   ],
+   "job": "line",
+   "why": "THE WALL's east part (floor to roof)",
+   "note": "THE WALL's east part (floor to roof)"
+  },
+  {
+   "zone": "m6",
+   "kind": "hull",
+   "min": [
+    -2,
+    0,
+    -178
+   ],
+   "max": [
+    2,
+    2.5,
+    -177
+   ],
+   "job": "line",
+   "why": "the WINDOW's sill (2.5 m): the window is 4 m wide, 2.5..5 m up: the ride's jump-off and the jump dash go through it",
+   "note": "the WINDOW's sill (2.5 m): the window is 4 m wide, 2.5..5 m up: the ride's jump-off and the jump dash go through it"
+  },
+  {
+   "zone": "m6",
+   "kind": "hull",
+   "min": [
+    -2,
+    5,
+    -178
+   ],
+   "max": [
+    2,
+    10,
+    -177
+   ],
+   "job": "line",
+   "why": "the WINDOW's lintel (5 m to the roof)",
+   "note": "the WINDOW's lintel (5 m to the roof)"
+  },
+  {
+   "zone": "m6",
+   "kind": "hull",
+   "min": [
+    -12,
+    4.5,
+    -178
+   ],
+   "max": [
+    -8,
+    10,
+    -177
+   ],
+   "job": "line",
+   "why": "the WEST DOOR's lintel: the door (4 m wide, on the floor) is the walkers' way, through the wardens' shields",
+   "note": "the WEST DOOR's lintel: the door (4 m wide, on the floor) is the walkers' way, through the wardens' shields"
+  },
+  {
+   "zone": "m6",
+   "kind": "wall",
+   "min": [
+    10,
+    0,
+    -175
+   ],
+   "max": [
+    10.6,
+    5,
+    -166
+   ],
+   "job": "line",
+   "why": "ride panel S (face west, 9 m): the run-up; jump off north with the look up toward the window",
+   "note": "ride panel S (face west, 9 m): the run-up; jump off north with the look up toward the window",
+   "ride": true,
+   "ride36": {
+    "face": "W",
+    "planeX": 10,
+    "lz": [
+     2,
+     11
+    ]
+   }
+  },
+  {
+   "zone": "m6",
+   "kind": "deck",
+   "min": [
+    6,
+    0,
+    -190
+   ],
+   "max": [
+    12,
+    2.5,
+    -186
+   ],
+   "job": "line",
+   "why": "the far LEDGE (2.5 m): the spitter's stand behind the wall",
+   "note": "the far LEDGE (2.5 m): the spitter's stand behind the wall"
+  },
+  {
+   "zone": "m7",
+   "kind": "deck",
+   "min": [
+    -15,
+    0,
+    -218
+   ],
+   "max": [
+    -9,
+    2.5,
+    -204
+   ],
+   "job": "line",
+   "why": "the WEST DECK (2.5 m): spitters, then a slam down into the pack",
+   "note": "the WEST DECK (2.5 m): spitters, then a slam down into the pack"
+  },
+  {
+   "zone": "m7",
+   "kind": "deck",
+   "min": [
+    9,
+    0,
+    -218
+   ],
+   "max": [
+    15,
+    2.5,
+    -204
+   ],
+   "job": "line",
+   "why": "the EAST DECK (2.5 m)",
+   "note": "the EAST DECK (2.5 m)"
+  },
+  {
+   "zone": "m7",
+   "kind": "hull",
+   "min": [
+    -9.5,
+    0,
+    -204
+   ],
+   "max": [
+    -6.5,
+    1.25,
+    -201.5
+   ],
+   "job": "climb",
+   "why": "the west deck's HOP block (1.25 m) at its front: half the deck's 2.5 m, one hop each way (the route graph's way up; the ramp is the walkers')",
+   "note": "the west deck's HOP block (1.25 m) at its front: half the deck's 2.5 m, one hop each way (the route graph's way up; the ramp is the walkers')"
+  },
+  {
+   "zone": "m7",
+   "kind": "hull",
+   "min": [
+    -15,
+    0,
+    -220
+   ],
+   "max": [
+    -9,
+    3.75,
+    -218
+   ],
+   "job": "climb",
+   "why": "the west deck-to-catwalk HOP block (3.75 m) in the 2 m gap: deck (2.5) -> block -> catwalk (5), a hop each",
+   "note": "the west deck-to-catwalk HOP block (3.75 m) in the 2 m gap: deck (2.5) -> block -> catwalk (5), a hop each"
+  },
+  {
+   "zone": "m7",
+   "kind": "hull",
+   "min": [
+    6.5,
+    0,
+    -204
+   ],
+   "max": [
+    9.5,
+    1.25,
+    -201.5
+   ],
+   "job": "climb",
+   "why": "the east deck's HOP block (1.25 m) at its front: half the deck's 2.5 m, one hop each way (the route graph's way up; the ramp is the walkers')",
+   "note": "the east deck's HOP block (1.25 m) at its front: half the deck's 2.5 m, one hop each way (the route graph's way up; the ramp is the walkers')"
+  },
+  {
+   "zone": "m7",
+   "kind": "hull",
+   "min": [
+    9,
+    0,
+    -220
+   ],
+   "max": [
+    15,
+    3.75,
+    -218
+   ],
+   "job": "climb",
+   "why": "the east deck-to-catwalk HOP block (3.75 m) in the 2 m gap: deck (2.5) -> block -> catwalk (5), a hop each",
+   "note": "the east deck-to-catwalk HOP block (3.75 m) in the 2 m gap: deck (2.5) -> block -> catwalk (5), a hop each"
+  },
+  {
+   "zone": "m7",
+   "kind": "deck",
+   "min": [
+    -15,
+    0,
+    -226
+   ],
+   "max": [
+    -2,
+    5,
+    -220
+   ],
+   "job": "line",
+   "why": "the CATWALK's west half (5 m): the top floor; a deck's boost (2.5 -> 5 m) or a node reaches it",
+   "note": "the CATWALK's west half (5 m): the top floor; a deck's boost (2.5 -> 5 m) or a node reaches it"
+  },
+  {
+   "zone": "m7",
+   "kind": "deck",
+   "min": [
+    2,
+    0,
+    -226
+   ],
+   "max": [
+    15,
+    5,
+    -220
+   ],
+   "job": "line",
+   "why": "the CATWALK's east half; the exit runs between the halves at floor level",
+   "note": "the CATWALK's east half; the exit runs between the halves at floor level"
+  },
+  {
+   "zone": "m7",
+   "kind": "wall",
+   "min": [
+    -4.6,
+    0,
+    -208
+   ],
+   "max": [
+    -4,
+    5,
+    -199
+   ],
+   "job": "line",
+   "why": "ride panel (face east, 9 m; round 3: ends at lz 14 so the lane between it and the deck opens north of it, before the catwalk ramp: the walk bot stuck 1 / 10 in that lane) facing its pair 8 m away: the middle's ride chain from deck side to deck side",
+   "note": "ride panel (face east, 9 m; round 3: ends at lz 14 so the lane between it and the deck opens north of it, before the catwalk ramp: the walk bot stuck 1 / 10 in that lane) facing its pair 8 m away: the middle's ride chain from deck side to deck side",
+   "ride": true,
+   "ride36": {
+    "face": "E",
+    "planeX": -4,
+    "lz": [
+     5,
+     14
+    ]
+   }
+  },
+  {
+   "zone": "m7",
+   "kind": "wall",
+   "min": [
+    4,
+    0,
+    -208
+   ],
+   "max": [
+    4.6,
+    5,
+    -199
+   ],
+   "job": "line",
+   "why": "ride panel (face west, 9 m): the pair's other wall",
+   "note": "ride panel (face west, 9 m): the pair's other wall",
+   "ride": true,
+   "ride36": {
+    "face": "W",
+    "planeX": 4,
+    "lz": [
+     5,
+     14
+    ]
+   }
+  }
+ ],
+ "ramps": [
+  {
+   "zone": "m1",
+   "from": [
+    -6.5,
+    -10
+   ],
+   "to": [
+    -6.5,
+    -18
+   ],
+   "width": 3,
+   "rise": 3,
+   "job": "climb",
+   "why": "the west perch's ramp (3 m over 8 m): the husks walk down it at you (the launch's line), you walk up it",
+   "note": "the west perch's ramp (3 m over 8 m): the husks walk down it at you (the launch's line), you walk up it"
+  },
+  {
+   "zone": "m1",
+   "from": [
+    6.5,
+    -10
+   ],
+   "to": [
+    6.5,
+    -18
+   ],
+   "width": 3,
+   "rise": 3,
+   "job": "climb",
+   "why": "the east perch's ramp",
+   "note": "the east perch's ramp"
+  },
+  {
+   "zone": "m2",
+   "from": [
+    5,
+    -45
+   ],
+   "to": [
+    5,
+    -55
+   ],
+   "width": 3,
+   "rise": 4,
+   "job": "climb",
+   "why": "the east balcony's long ramp (4 m over 10 m): the husks file down it in a single line (the charged pierce's target), the walkers' way up",
+   "note": "the east balcony's long ramp (4 m over 10 m): the husks file down it in a single line (the charged pierce's target), the walkers' way up"
+  },
+  {
+   "zone": "m2",
+   "from": [
+    -5.5,
+    -45
+   ],
+   "to": [
+    -5.5,
+    -55
+   ],
+   "width": 3,
+   "rise": 4,
+   "job": "climb",
+   "why": "the west balcony's ramp (round 2: levelgen found the west half unreachable by walkers): the spitters' way down, the second file",
+   "note": "the west balcony's ramp (round 2: levelgen found the west half unreachable by walkers): the spitters' way down, the second file"
+  },
+  {
+   "zone": "m3",
+   "from": [
+    -8,
+    -65
+   ],
+   "to": [
+    -8,
+    -76
+   ],
+   "width": 3,
+   "rise": 3.6,
+   "job": "climb",
+   "why": "the WALKER's ramp up (3.6 m over 11 m; its foot 1 m off the south wall, 1.5 m off the west wall): the long way round under fire, the enemies' climb route; the boost saves it",
+   "note": "the WALKER's ramp up (3.6 m over 11 m; its foot 1 m off the south wall, 1.5 m off the west wall): the long way round under fire, the enemies' climb route; the boost saves it"
+  },
+  {
+   "zone": "m3",
+   "from": [
+    8,
+    -94
+   ],
+   "to": [
+    8,
+    -84
+   ],
+   "width": 3,
+   "rise": 3.6,
+   "job": "climb",
+   "why": "the down-ramp north of THE STEP (3.6 m over 10 m, 1.5 m off the east wall): the walkers' way down to the exit (a boosted player drops off the lip)",
+   "note": "the down-ramp north of THE STEP (3.6 m over 10 m, 1.5 m off the east wall): the walkers' way down to the exit (a boosted player drops off the lip)"
+  },
+  {
+   "zone": "m4",
+   "from": [
+    -8,
+    -110
+   ],
+   "to": [
+    -8,
+    -118
+   ],
+   "width": 3,
+   "rise": 3,
+   "job": "climb",
+   "why": "the mezzanine's ramp (3 m over 8 m): the husks' and the warden's way down, yours up",
+   "note": "the mezzanine's ramp (3 m over 8 m): the husks' and the warden's way down, yours up"
+  },
+  {
+   "zone": "m6",
+   "from": [
+    9,
+    -180
+   ],
+   "to": [
+    9,
+    -186
+   ],
+   "width": 3,
+   "rise": 2.5,
+   "job": "climb",
+   "why": "the ledge's ramp (2.5 m over 6 m; its foot 2 m clear of THE WALL, round 2: levelgen found the old foot against the wall unreachable): the chasers' way up",
+   "note": "the ledge's ramp (2.5 m over 6 m; its foot 2 m clear of THE WALL, round 2: levelgen found the old foot against the wall unreachable): the chasers' way up"
+  },
+  {
+   "zone": "m7",
+   "from": [
+    -12,
+    -197
+   ],
+   "to": [
+    -12,
+    -204
+   ],
+   "width": 3,
+   "rise": 2.5,
+   "job": "climb",
+   "why": "the west deck's ramp (2.5 m over 7 m)",
+   "note": "the west deck's ramp (2.5 m over 7 m)"
+  },
+  {
+   "zone": "m7",
+   "from": [
+    12,
+    -197
+   ],
+   "to": [
+    12,
+    -204
+   ],
+   "width": 3,
+   "rise": 2.5,
+   "job": "climb",
+   "why": "the east deck's ramp",
+   "note": "the east deck's ramp"
+  },
+  {
+   "zone": "m7",
+   "from": [
+    -7,
+    -210
+   ],
+   "to": [
+    -7,
+    -220
+   ],
+   "width": 3,
+   "rise": 5,
+   "job": "climb",
+   "why": "the west catwalk's ramp (5 m over 10 m): the enemies' way up and down",
+   "note": "the west catwalk's ramp (5 m over 10 m): the enemies' way up and down"
+  },
+  {
+   "zone": "m7",
+   "from": [
+    7,
+    -210
+   ],
+   "to": [
+    7,
+    -220
+   ],
+   "width": 3,
+   "rise": 5,
+   "job": "climb",
+   "why": "the east catwalk's ramp",
+   "note": "the east catwalk's ramp"
+  }
+ ],
+ "pads": [],
+ "grapple": [],
+ "pits": [
+  {
+   "zone": "m5",
+   "rect": [
+    -12,
+    -150,
+    12,
+    -144
+   ],
+   "floorY": -1,
+   "lava": true,
+   "job": "hazard",
+   "why": "THE CHANNEL (6 m across, lava 1 m under the floor; the level's ONLY lava): the husks cross the bridge beside it, so a launched husk goes in (it kills an enemy, it burns the player: Core/Lava30.cs)",
+   "note": "THE CHANNEL (6 m across, lava 1 m under the floor; the level's ONLY lava): the husks cross the bridge beside it, so a launched husk goes in (it kills an enemy, it burns the player: Core/Lava30.cs)"
+  }
+ ],
+ "tunnels": [],
+ "lights": [
+  {
+   "id": "m1-L1",
+   "room": "m1",
+   "kind": "ceiling",
+   "at": [
+    0,
+    8.95,
+    -3
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 9,
+   "intensity": 1
+  },
+  {
+   "id": "m1-L2",
+   "room": "m1",
+   "kind": "ceiling",
+   "at": [
+    0,
+    8.95,
+    -13
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    4,
+    0.1
+   ],
+   "color": "white",
+   "range": 9,
+   "intensity": 1
+  },
+  {
+   "id": "m1-L3",
+   "room": "m1",
+   "kind": "ceiling",
+   "at": [
+    -7,
+    8.95,
+    -21
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    4,
+    0.1
+   ],
+   "color": "amber",
+   "range": 9,
+   "intensity": 1.1
+  },
+  {
+   "id": "m1-L4",
+   "room": "m1",
+   "kind": "ceiling",
+   "at": [
+    7,
+    8.95,
+    -21
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    4,
+    0.1
+   ],
+   "color": "white",
+   "range": 9,
+   "intensity": 1
+  },
+  {
+   "id": "m1-L5",
+   "room": "m1",
+   "kind": "pool",
+   "at": [
+    0,
+    0.025,
+    -22
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.5,
+    2.5,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.6
+  },
+  {
+   "id": "m2-L1",
+   "room": "m2",
+   "kind": "ceiling",
+   "at": [
+    0,
+    9.95,
+    -31
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 10,
+   "intensity": 1
+  },
+  {
+   "id": "m2-L2",
+   "room": "m2",
+   "kind": "ceiling",
+   "at": [
+    0,
+    9.95,
+    -42
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    6,
+    0.1
+   ],
+   "color": "white",
+   "range": 10,
+   "intensity": 1
+  },
+  {
+   "id": "m2-L3",
+   "room": "m2",
+   "kind": "ceiling",
+   "at": [
+    5,
+    9.95,
+    -50
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    6,
+    0.1
+   ],
+   "color": "amber",
+   "range": 10,
+   "intensity": 1.1
+  },
+  {
+   "id": "m2-L4",
+   "room": "m2",
+   "kind": "ceiling",
+   "at": [
+    -6,
+    9.95,
+    -57.5
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 10,
+   "intensity": 1
+  },
+  {
+   "id": "m2-L5",
+   "room": "m2",
+   "kind": "pool",
+   "at": [
+    0,
+    0.025,
+    -58
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.5,
+    2.5,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.6
+  },
+  {
+   "id": "m3-L1",
+   "room": "m3",
+   "kind": "ceiling",
+   "at": [
+    0,
+    9.95,
+    -67
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 10,
+   "intensity": 1
+  },
+  {
+   "id": "m3-L2",
+   "room": "m3",
+   "kind": "ceiling",
+   "at": [
+    0,
+    9.95,
+    -72
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    4,
+    0.1
+   ],
+   "color": "white",
+   "range": 10,
+   "intensity": 1
+  },
+  {
+   "id": "m3-L3",
+   "room": "m3",
+   "kind": "ceiling",
+   "at": [
+    0,
+    9.95,
+    -80
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    6,
+    4,
+    0.1
+   ],
+   "color": "amber",
+   "range": 10,
+   "intensity": 1.1
+  },
+  {
+   "id": "m3-L4",
+   "room": "m3",
+   "kind": "ceiling",
+   "at": [
+    0,
+    9.95,
+    -90
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    6,
+    4,
+    0.1
+   ],
+   "color": "white",
+   "range": 10,
+   "intensity": 1
+  },
+  {
+   "id": "m3-L5",
+   "room": "m3",
+   "kind": "pool",
+   "at": [
+    0,
+    0.025,
+    -94
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2,
+    2,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.6
+  },
+  {
+   "id": "m4-L1",
+   "room": "m4",
+   "kind": "ceiling",
+   "at": [
+    0,
+    11.95,
+    -103
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 12,
+   "intensity": 1
+  },
+  {
+   "id": "m4-L2",
+   "room": "m4",
+   "kind": "ceiling",
+   "at": [
+    0,
+    11.95,
+    -116
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    6,
+    6,
+    0.1
+   ],
+   "color": "amber",
+   "range": 12,
+   "intensity": 1.1
+  },
+  {
+   "id": "m4-L3",
+   "room": "m4",
+   "kind": "ceiling",
+   "at": [
+    -8,
+    11.95,
+    -123
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    4,
+    0.1
+   ],
+   "color": "white",
+   "range": 12,
+   "intensity": 1
+  },
+  {
+   "id": "m4-L4",
+   "room": "m4",
+   "kind": "pool",
+   "at": [
+    0,
+    0.025,
+    -126
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.5,
+    2.5,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.6
+  },
+  {
+   "id": "m5-L1",
+   "room": "m5",
+   "kind": "ceiling",
+   "at": [
+    0,
+    8.95,
+    -135
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 9,
+   "intensity": 1
+  },
+  {
+   "id": "m5-L2",
+   "room": "m5",
+   "kind": "ceiling",
+   "at": [
+    0,
+    8.95,
+    -147
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    6,
+    4,
+    0.1
+   ],
+   "color": "white",
+   "range": 9,
+   "intensity": 1
+  },
+  {
+   "id": "m5-L3",
+   "room": "m5",
+   "kind": "ceiling",
+   "at": [
+    0,
+    8.95,
+    -155
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    6,
+    3,
+    0.1
+   ],
+   "color": "amber",
+   "range": 9,
+   "intensity": 1.1
+  },
+  {
+   "id": "m5-L4",
+   "room": "m5",
+   "kind": "pool",
+   "at": [
+    0,
+    0.025,
+    -158
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.5,
+    2.5,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.6
+  },
+  {
+   "id": "m6-L1",
+   "room": "m6",
+   "kind": "ceiling",
+   "at": [
+    0,
+    9.95,
+    -167
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 10,
+   "intensity": 1
+  },
+  {
+   "id": "m6-L2",
+   "room": "m6",
+   "kind": "ceiling",
+   "at": [
+    0,
+    9.95,
+    -175
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    2,
+    0.1
+   ],
+   "color": "amber",
+   "range": 10,
+   "intensity": 1.1
+  },
+  {
+   "id": "m6-L3",
+   "room": "m6",
+   "kind": "ceiling",
+   "at": [
+    0,
+    9.95,
+    -184
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    6,
+    4,
+    0.1
+   ],
+   "color": "white",
+   "range": 10,
+   "intensity": 1
+  },
+  {
+   "id": "m6-L4",
+   "room": "m6",
+   "kind": "pool",
+   "at": [
+    0,
+    0.025,
+    -188
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.5,
+    2.5,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.6
+  },
+  {
+   "id": "m7-L1",
+   "room": "m7",
+   "kind": "ceiling",
+   "at": [
+    0,
+    9.95,
+    -197
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 12,
+   "intensity": 1
+  },
+  {
+   "id": "m7-L2",
+   "room": "m7",
+   "kind": "ceiling",
+   "at": [
+    0,
+    9.95,
+    -206
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    6,
+    6,
+    0.1
+   ],
+   "color": "white",
+   "range": 12,
+   "intensity": 1
+  },
+  {
+   "id": "m7-L3",
+   "room": "m7",
+   "kind": "ceiling",
+   "at": [
+    -12,
+    9.95,
+    -211
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    6,
+    0.1
+   ],
+   "color": "white",
+   "range": 12,
+   "intensity": 1
+  },
+  {
+   "id": "m7-L4",
+   "room": "m7",
+   "kind": "ceiling",
+   "at": [
+    12,
+    9.95,
+    -211
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    6,
+    0.1
+   ],
+   "color": "white",
+   "range": 12,
+   "intensity": 1
+  },
+  {
+   "id": "m7-L5",
+   "room": "m7",
+   "kind": "ceiling",
+   "at": [
+    0,
+    9.95,
+    -222
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    6,
+    3,
+    0.1
+   ],
+   "color": "amber",
+   "range": 12,
+   "intensity": 1.1
+  },
+  {
+   "id": "m7-L6",
+   "room": "m7",
+   "kind": "pool",
+   "at": [
+    0,
+    0.025,
+    -224
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.5,
+    2.5,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 8,
+   "intensity": 1.6
+  },
+  {
+   "id": "mr-L1",
+   "room": "mr",
+   "kind": "ceiling",
+   "at": [
+    0,
+    4.95,
+    -235
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 8,
+   "intensity": 1
+  },
+  {
+   "id": "mr-L2",
+   "room": "mr",
+   "kind": "pool",
+   "at": [
+    0,
+    0.025,
+    -238.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2,
+    2,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 6,
+   "intensity": 1.4
+  },
+  {
+   "id": "mx-L1",
+   "room": "mx",
+   "kind": "ceiling",
+   "at": [
+    0,
+    13.95,
+    -261
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    6,
+    6,
+    0.1
+   ],
+   "color": "white",
+   "range": 16,
+   "intensity": 1.2
+  },
+  {
+   "id": "mx-L2",
+   "room": "mx",
+   "kind": "pool",
+   "at": [
+    0,
+    0.025,
+    -261
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 8,
+   "intensity": 1.2
+  }
+ ],
+ "props": [
+  {
+   "id": "m2-P1",
+   "room": "m2",
+   "kind": "pillar",
+   "at": [
+    -3.5,
+    2.5,
+    -41
+   ],
+   "size": [
+    2.5,
+    5,
+    2.5
+   ],
+   "yawDeg": 0,
+   "collider": true,
+   "job": "cover",
+   "why": "the PILLAR (2.5 x 2.5 x 5 m) on the charger's line from the north: step aside so it hits this, stunned, its back x3 (Charger.cs); the room's one cover"
+  },
+  {
+   "id": "m4-P1",
+   "room": "m4",
+   "kind": "post",
+   "at": [
+    -6,
+    4.5,
+    -118
+   ],
+   "size": [
+    1,
+    9,
+    1
+   ],
+   "yawDeg": 0,
+   "collider": true,
+   "job": "line",
+   "why": "the west POST (1 x 9 x 1 m): it carries the west grapple node at 9.5 m, nothing else (a hook over the warden's head)"
+  },
+  {
+   "id": "m4-P2",
+   "room": "m4",
+   "kind": "post",
+   "at": [
+    6,
+    4.5,
+    -118
+   ],
+   "size": [
+    1,
+    9,
+    1
+   ],
+   "yawDeg": 0,
+   "collider": true,
+   "job": "line",
+   "why": "the east POST: the east node"
+  },
+  {
+   "id": "m7-P1",
+   "room": "m7",
+   "kind": "healthPickup",
+   "at": [
+    -12,
+    3.4,
+    -214
+   ],
+   "size": [
+    0.6,
+    0.6,
+    0.6
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "pickup": true,
+   "job": "reward",
+   "why": "the west deck pays health between the waves: the high ground, not the floor"
+  },
+  {
+   "id": "mr-P1",
+   "room": "mr",
+   "kind": "healthPickup",
+   "at": [
+    0,
+    0.9,
+    -235
+   ],
+   "size": [
+    0.6,
+    0.6,
+    0.6
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "pickup": true,
+   "job": "reward",
+   "why": "the rest before THE RIVAL: full health"
+  }
+ ],
+ "owns38": [
+  "jump",
+  "double",
+  "dash",
+  "slide",
+  "ride",
+  "walljump",
+  "boost",
+  "grapple",
+  "dashjump"
+ ],
+ "owns38_why": "Builder E's gate checker (Design/levels/n38/GATES38.md): level 6 owns every verb of levels 1-5. n41-finale has no `gate` tag (no traversal gate: every crossing has a walker's line), so `n38 gates` has nothing to judge."
+}

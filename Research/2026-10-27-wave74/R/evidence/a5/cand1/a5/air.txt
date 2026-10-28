@@ -1,0 +1,62 @@
+# command: node Tools/night/n65-air.cjs C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/a5/cand1/foundry.plan.json a5
+# sha: e9837ffc2 (+ the room file as in the tree); time: 2026-10-27 23:41:18
+n65-air n65-foundry a5 "1.5 CRUCIBLE" (C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/a5/cand1/foundry.plan.json):
+  numbers: jump v0 8.33 m/s, g 23.15 m/s2 (fall x1.35), double v0 7.50, dash 24 m/s x 0.25 s = 6.0 m, dash-jump v0 6.67 with g x0.5 for 0.5 s at 24 m/s, run-up 8 m/s, wall jump out 5 up 8.33 (wallfling42 on), ride 9.20 m/s, jump-off out 8 +1 up 7.30 (ride39 on), capsule 0.35 m; a ride held 2.5 m over its base
+  air pieces 10:
+    L1   ledge top 7.0 m over [-7.0, -129.5, -3.0, -126.5] | hero: THE CRUCIBLE (hull 7 m, NIGHT65 R): the 
+    L2   ledge top 3.0 m over [-1.0, -129.5, 6.0, -126.5] | lane: THE TAP BLOCK (hull 3 m, NIGHT65 R; roun
+    D3   deck  top 2.5 m over [2.5, -144.0, 10.0, -138.0] | perch: THE GANTRY (deck 2.5 m, NIGHT65 R): the 
+    R4   ride  face x = 9.4 (-x), -138.0..-124.0 (14.0 m), band 0.0..7.0, held at 2.5 | ride: THE CRANE RAIL (NIGHT65 R; round 2: 20 -
+    L5   ledge top 2.2 m over [-5.0, -119.0, -2.0, -117.0] | cover: THE CHARGE BIN (hull 2.2 m, NIGHT65 R): 
+    L6   ledge top 1.2 m over [3.0, -123.0, 6.0, -122.0] | cover: INGOT S (low cover 1.2 m, NIGHT65 R): th
+    L7   ledge top 1.2 m over [-6.0, -123.5, -4.3, -121.8] | cover: THE MOULD CRATES (low cover 1.2 m, NIGHT
+    P8   pad   at (-6.0, 0.0, -131.5) -> (5.5, 2.5, -141.5) (on the floor) | pad
+    P9   pad   at (8.0, 2.5, -141.8) -> (-3.0, 0.0, -132.4) | pad
+    P10  pad   at (0.5, 0.0, -131.3) -> (2.5, 3.0, -128.0) (on the floor) | pad
+  hand-offs 40 (piece -> piece without touching the floor, the easiest move first):
+    L1 -> L2  jump, margin 5.18 m (gap 2.4 m); also jump + double 8.32, dash 10.78, dash-jump 25.05, dash-jump + double 34.25
+    L1 -> D3  jump + double, margin 0.39 m (gap 10.5 m); also dash 2.86, dash-jump 17.53, dash-jump + double 26.73
+    L1 -> R4  dash, margin 1.57 m of height (gap 12.1 m)
+    L1 -> L5  jump, margin 0.02 m (gap 7.9 m); also jump + double 3.08, dash 5.62, dash-jump 20.55, dash-jump + double 29.75
+    L1 -> L6  jump, margin 0.97 m (gap 7.3 m); also jump + double 4.04, dash 6.57, dash-jump 22.30, dash-jump + double 31.30
+    L1 -> L7  jump, margin 4.92 m (gap 3.4 m); also jump + double 7.98, dash 10.52, dash-jump 26.25, dash-jump + double 35.25
+    L1 -> P9  dash-jump, margin 11.85 m (gap 16.1 m); also dash-jump + double 21.05
+    L2 -> D3  jump + double, margin 0.15 m (gap 8.9 m); also dash 2.28, dash-jump 13.15, dash-jump + double 23.15
+    L2 -> R4  jump, margin 2.24 m of height (gap 3.1 m); also jump + double 2.12, dash 2.50, dash-jump 2.92, dash-jump + double 2.92
+    L2 -> L5  jump + double, margin 1.28 m (gap 7.9 m); also dash 3.42, dash-jump 14.68, dash-jump + double 24.48
+    L2 -> L6  jump, margin 2.62 m (gap 3.9 m); also jump + double 5.88, dash 8.15, dash-jump 20.55, dash-jump + double 29.95
+    L2 -> L7  jump, margin 1.66 m (gap 4.8 m); also jump + double 4.92, dash 7.19, dash-jump 19.59, dash-jump + double 28.99
+    L2 -> P9  dash-jump, margin 9.76 m (gap 12.2 m); also dash-jump + double 19.76
+    D3 -> L2  dash, margin 1.28 m (gap 8.9 m); also dash-jump 10.95, dash-jump + double 21.35
+    D3 -> L5  dash-jump, margin 1.72 m (gap 19.9 m); also dash-jump + double 11.72
+    D3 -> L6  dash-jump, margin 8.25 m (gap 15.4 m); also dash-jump + double 17.85
+    D3 -> L7  dash-jump, margin 7.23 m (gap 16.4 m); also dash-jump + double 16.83
+    D3 -> P9  jump, margin 3.42 m (gap 1.9 m); also jump + double 6.88, dash 8.82, dash-jump 19.15, dash-jump + double 29.35
+    R4 -> L2  jump-off, margin 0.65 m (gap 3.8 m); also jump-off + double 4.62, wall jump + double 1.50, dash 6.38
+    R4 -> D3  jump-off, margin 4.63 m (gap 0.4 m); also jump-off + double 8.45, wall jump 2.94, wall jump + double 5.11, dash 10.32
+    R4 -> L6  jump-off, margin 3.89 m (gap 3.9 m); also jump-off + double 8.42, wall jump 1.84, wall jump + double 4.85, dash 7.77
+    R4 -> P9  jump-off, margin 3.06 m (gap 3.8 m); also jump-off + double 8.31, wall jump 2.94, wall jump + double 7.36, dash 6.90
+    L5 -> L2  jump + double, margin 0.28 m (gap 7.9 m); also dash 1.82, dash-jump 11.08, dash-jump + double 21.68
+    L5 -> D3  dash-jump, margin 0.52 m (gap 19.9 m); also dash-jump + double 10.72
+    L5 -> R4  dash-jump, margin 2.63 m of height (gap 12.1 m); also dash-jump + double 2.63
+    L5 -> L6  jump + double, margin 3.09 m (gap 6.2 m); also dash 5.29, dash-jump 16.82, dash-jump + double 26.62
+    L5 -> L7  jump, margin 2.85 m (gap 3.1 m); also jump + double 6.12, dash 8.32, dash-jump 19.85, dash-jump + double 29.65
+    L5 -> P9  dash-jump + double, margin 6.01 m (gap 24.6 m)
+    L6 -> L2  jump + double, margin 3.42 m (gap 3.9 m); also dash-jump 10.55, dash-jump + double 23.35
+    L6 -> R4  jump, margin 2.14 m of height (gap 3.2 m); also jump + double 2.40, dash 0.70, dash-jump 1.48, dash-jump + double 1.48
+    L6 -> L5  jump + double, margin 1.82 m (gap 6.2 m); also dash 3.15, dash-jump 12.22, dash-jump + double 23.02
+    L6 -> L7  jump + double, margin 1.08 m (gap 7.7 m); also dash 3.02, dash-jump 13.35, dash-jump + double 23.55
+    L6 -> P9  dash-jump + double, margin 9.89 m (gap 18.7 m)
+    L7 -> L2  jump + double, margin 2.46 m (gap 4.8 m); also dash-jump 9.59, dash-jump + double 22.39
+    L7 -> D3  dash-jump, margin 1.03 m (gap 16.4 m); also dash-jump + double 12.23
+    L7 -> R4  dash-jump, margin 2.57 m of height (gap 13.4 m); also dash-jump + double 2.69
+    L7 -> L5  jump, margin 1.05 m (gap 3.1 m); also jump + double 4.85, dash 6.18, dash-jump 15.25, dash-jump + double 26.05
+    L7 -> L6  jump + double, margin 1.08 m (gap 7.7 m); also dash 3.02, dash-jump 13.35, dash-jump + double 23.55
+    P8 -> D3  pad (gap 15.2 m)
+    D3 -> P9  walk onto the pad (gap 0.0 m)
+    P10 -> L2  pad (gap 3.9 m)
+  longest floor-free chain: 8 piece(s): L1 -> L2 -> D3 -> L5 -> L6 -> L7 -> R4 -> P9
+  note: a dash-jump keeps the dash's 24 m/s for its whole flight (Mover.cs:1080; air accel never slows a body: MovementMath.Accelerate), so its reach is long; no obstacle, line-of-sight or air-control test
+  flight pieces (rides + pads) on one floor-free path: 3 of 4: P8 -> D3 -> L2 -> R4 -> L6 -> L7 -> L5 -> P9; without the dash-jump: 3: P8 -> D3 -> L2 -> L5 -> L7 -> L6 -> R4 -> P9
+  without the dash-jump: hand-offs 29, longest chain 8: L1 -> L2 -> L5 -> L7 -> L6 -> R4 -> D3 -> P9, dead ends 0/7
+n65-air a5: air pieces 10 (rides 1, decks 1, ledges 5, pads 3), hand-offs 40, longest floor-free chain 8, dead ends 0/7 | without the dash-jump: hand-offs 29, chain 8, dead ends 0/7 | flights handed on: 3 of 4 on one path (3 without the dash-jump)

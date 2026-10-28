@@ -1,0 +1,15 @@
+Windows power plan during the enemy bench (powercfg; times local, 2026-09-30). The web runs were on "Silent".
+Every Player run also stores the plans polled every 2-4 s while it ran ("powerPlans" in its record).
+
+before 19:10  Silent   (checked before any Player run)
+19:14:42      Balanced (found after the first Player runs; those runs were stopped and discarded)
+~19:16        set Silent (powercfg -setactive 64a64f24-65b9-4b56-befd-5ec1eaced9b3); a probe run stayed Silent
+19:46:0x      switched to Balanced during pass3 closer-unity N=100 (6 pass-3 runs set aside in not-silent/)
+19:52:04      set Silent; the 6 runs rerun, Silent throughout
+~20:00        found Balanced after the profile Player build
+20:03:52      set Silent
+~20:08        switched to Balanced during profile plain N=200 (set aside in profile/not-silent/)
+20:09:41      set Silent; that run rerun, Silent throughout; Silent at the end of the bench
+
+Cause not found: Windows' power diagnostic log is disabled. The machine is an ASUS ProArt P16 (H7606WP) running
+Armoury Crate ProArt and ASUS Optimization, which manage their own operating modes and can apply Windows plans.

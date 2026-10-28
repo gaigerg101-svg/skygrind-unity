@@ -1,0 +1,41 @@
+levelgen --walk: 1 ERROR row(s), all the roofless a3's own (allowed, NIGHT72 N0)
+shipped after:  Design/levels/n65-foundry.json 4ecf438a86b060f5d62bbbd79e32d153b1cffb40766b792c09f6a4b7cab6ea13, Assets/StreamingAssets/Design/levels/n65-foundry.json 4ecf438a86b060f5d62bbbd79e32d153b
+the round's level: C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/a2/cand1/n65-foundry.json 7fdded7900b795316389890c20095bce
+== a2 cand1 (b1,a8,a2)
+  PASS R2 no dead ends      0 dead-end cells of 75 (2 m x 0.5 m cells; 0 bridges)
+  PASS R5 foothold          box [-5, 0, -46]..[-2.5, 2.2, -40.5] (hull, job line): top 2.2 m over the floor, 7.5-13.0 m inside
+  PASS R8 every job         0 untagged of 5 solids
+  PASS IN VIEW held         held: 4.0 of wave 1's 4 expected seen from the foothold's flanks (>= 4 PASS); 6 nodes, 6 in use
+  PASS I1 no mirror         mirror overlap 16 % across the door axis x = 0 (d1; 5 solids, 58 m2 footprint; < 60 % PASS)
+  n/c  I2 ride shortcut     no ride wall
+  n/c  I3 teach verb needed not a grapple-pull teach room (ride lessons: I2; whip, pad and slide lessons: not computed)
+  PASS I4 pads clear        1 pads, 3 walk lines; all clear (nearest line distances 6.7 m)
+ROOM a2: PASS
+-- flow-A
+n46flow n65-foundry SUMMARY: GREEN 10/10; stall 19.7 %, longest stall 1.2 s, air 59.5 %, kill gap 1.4 / 9.2 s, nearest 6.2 m, dwell 3.0 s, dead 6.9 s, deaths 0, falls 0, clear 16.1 s
+n46flow n65-foundry STYLE: DULL 49.0 % of 175 s of fight; above DULL 51.0 %; rooms reaching SAVAGE 0/1; top rank AIRBORNE
+-- flow-B
+n46flow n65-foundry SUMMARY: GREEN 10/10; stall 25.3 %, longest stall 1.8 s, air 65.5 %, kill gap 1.5 / 8.2 s, nearest 5.7 m, dwell 2.0 s, dead 6.9 s, deaths 0, falls 0, clear 17.4 s
+n46flow n65-foundry STYLE: DULL 41.6 % of 160 s of fight; above DULL 58.4 %; rooms reaching SAVAGE 0/1; top rank AIRBORNE
+-- flow-V
+n46flow n65-foundry SUMMARY: GREEN 10/10; stall 24.4 %, longest stall 2.2 s, air 63.7 %, kill gap 1.5 / 9.1 s, nearest 5.7 m, dwell 2.4 s, dead 6.9 s, deaths 0, falls 0, clear 20.4 s
+n46flow n65-foundry STYLE: DULL 49.2 % of 188 s of fight; above DULL 50.8 %; rooms reaching SAVAGE 0/1; top rank AIRBORNE
+  a2     verb65 pierce       | trigger held 7877 of 22562 fight steps (34.9 %), episodes 28, performed: charged shots 27
+n65-air n65-foundry a2 "1.2 KESTREL" (C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/a2/cand1/foundry.plan.json):
+n65-air a2: air pieces 5 (rides 0, decks 2, ledges 2, pads 1), hand-offs 17, longest floor-free chain 5, dead ends 0/4 | without the dash-jump: hand-offs 17, chain 5, dead ends 0/4 | flights handed on: 1 of 1 on one path (1 without the dash-jump)
+pad52 a2 pad 7 at [-3.75,2.2,-45] target [6.3,2.5,-51.2] launched yes apex 4.5 landed [6.36,2.5,-51.24] miss 0.07 m PASS
+n65verb pierce: level n65-foundry (C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/a2/cand1/n65-foundry.json), room a2 "1.2 KESTREL", seed 1; pose (0.0, 0.0, -38.0) yaw -19.4 from line6
+n65verb pierce: RED | room a2 | the charged shot hit 1 bodies, kills 1, stand-ins killed 1/1 | aim line65's first segment | pose line65[0] | one body or none: no pierce
+n65verb skip: M1 UNSURE | room a2, ratio 1.49 vs bar 1.25 (default: no --bars), exercised 9/20 | too few seeds exercised (9 < 14): the comparison does not test the verb
+n65verb skip: M2 VERB UNSURE | room a2, verb pierce, pooled ratio 1.49 vs mainBar 1.25 (default: no --bars), sets 1-10 0.92 (3/10), 11-20 1.65 (6/10), exercised 9 / 20 (need 14), median of all 20 seeds 1.06, refusal fired on 9 of 9 exercised seeds (by construction: an exercised seed refused a press), the refused run used the ver
+n70-area: room a2; plan C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/a2/cand1/foundry.plan.json, level C:/Users/gaige/AppD
+OPEN  PASS largest open square 9.5 m (x -2.5..7.0, z -44.5..-35.0; 6 pieces on a 14.0 x 20.0 m rect; 12 m or less passes)
+P1    N/A  the last wave (husk husk) has no ranged enemy (spitter / drone)
+P4    PASS 4 / 4 standing solids >= 1.75 m do a job ((a) touched 4, (b) sight 0, (c) launch kill 0)
+P5    PASS walk line in a ranged spawn's sight at 6-24 m 0.0 % (>= 50 %), line65 0.0 % (<= walk - 30 points: no); line65's nearest enemy spawn 0.4 m (<= 6: yes); 0 ranged spawns
+P9    N/A  no plane 1 m or more up with a short side of 6 m or more
+P11   N/A  the card names no TOWER / GALLERY / SPLIT LEVEL (no card)
+P17   N/A  no ride wall and no wall-like box 4 m x 8 m
+n70-area: PASS a2 (3/3)
+n70-deco: FAIL | room a2, base 73b88cbd4: 7 piece(s) added or moved, 6 pass, 1 FAIL; dressing 13 not judged
+finished

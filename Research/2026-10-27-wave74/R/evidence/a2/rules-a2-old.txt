@@ -1,0 +1,13 @@
+# command: python -I Tools/night/n74-room-rules.py room Design/levels/n65/rooms-n52/a2.json
+# sha: f084bc4ea; time: 2026-10-27 23:27:29
+n65/a2  rect [-7.0, -55.0, 7.0, -35.0]  spawn [0.0, 0.0, -37.0] yaw 0  floor 0.0
+  PLANES  PASS  planes 2 (0.0 m: 235 cells, 2.0 m: 30 cells)
+  COVER   RED  cover: free-standing high 0, low 0, between 0 (0 without a job), none 0 [no free-standing cover]
+  LOOPS   RED  loops 0 (floor holes 0 + closed pad / ride routes 0 of 0)
+  REAR    PASS  rear arc: 0 of 2 wave-1 usable nodes behind the entry facing (all waves: 0 node uses behind)
+  VIEW    PASS  view: enemy in view at 0.00 s (2 of 2 wave-1 nodes seen at entry)
+  CROSS   PASS  cross: chord 24.4 m, dash 1.02 s, walk 3.1 s (bar 2.0 s at dash)
+  EXPOSE  RED  exposure: 96 % of 406 floor-sample pairs see each other (bar 60 %); longest clear line 21.6 m (medium band 19.5 m)
+  CLIMB   PASS  climb: 1 tier group(s), 0 not reached by walker links
+    walkers reach every tier: climb: 1 tier group(s), 0 not reached by walker links
+  core 3/5 PASS, extra 2/3 PASS

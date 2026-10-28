@@ -1,0 +1,25 @@
+# command: node Tools/night/n65-iso-proof.cjs
+# sha: b1c6d4f6 (branch n65-T; clean tracked tree)
+# time: 2026-10-23 14:49:16 -> 2026-10-23 14:49:41 (local)
+# exit: 0
+
+  n65-iso: Research/2026-10-23-wave65/T/iso-red-a2.png (1600x1100, png sha256 a85bee27d6a5b353, svg sha256 c9815bfbff50a9c2) n52-foundry a2: slot rect 14 x 20 m, entry d1; views A 30 deg (0 = north), B 215 deg (0 = north) 
+  n65-iso: Research/2026-10-23-wave65/T/iso-red-a3.png (1600x1100, png sha256 c3b3403efd171ff9, svg sha256 ce195be52dcc1e4c) n52-foundry a3: slot rect 20 x 26 m, entry d2; views A 30 deg (0 = north), B 218 deg (0 = north) 
+  n65-iso: Research/2026-10-23-wave65/T/iso-red-a4.png (1600x1100, png sha256 dbd68f9834c1184e, svg sha256 905cdd7d4ff5b899) n52-foundry a4: slot rect 8 x 19 m, entry d3; views A 30 deg (0 = north), B 203 deg (0 = north) f
+  n65-iso: Research/2026-10-23-wave65/T/iso-red-a5.png (1600x1100, png sha256 fc40fddcab42ebe4, svg sha256 58193c9f62ace355) n52-foundry a5: slot rect 20 x 32 m, entry d4; views A 30 deg (0 = north), B 212 deg (0 = north) 
+  n65-iso: Research/2026-10-23-wave65/T/iso-red-b1.png (1600x1100, png sha256 ed1973ff953574f6, svg sha256 05d5fe9b13a72936) n52-foundry b1: slot rect 20 x 32 m, entry d5; views A 30 deg (0 = north), B 212 deg (0 = north) 
+  n65-iso: Research/2026-10-23-wave65/T/iso-red-a8.png (1600x1100, png sha256 d37bb79387ee2175, svg sha256 4701c9e3e0d44a67) n52-foundry a8: slot rect 14 x 22 m, entry d9; views A 30 deg (0 = north), B 212 deg (0 = north) 
+PASS the same input three times (the red's run and two more): the same PNG bytes (sha256 fc40fddcab42ebe4) and the same SVG
+  n65-iso: Research/2026-10-23-wave65/T/iso-planted-box-a2.png (1600x1100, png sha256 ff9b8b534b1e07d0, svg sha256 50a9e23e7c868c54) n52-foundry a2: slot rect 14 x 20 m, entry d1; views A 30 deg (0 = no
+PASS PLANTED a hull box (x -1..1, y 0..3, z -46..-44) in a2: the PNG differs from the red's (Research/2026-10-23-wave65/T/iso-planted-box-a2.png: the white box in both views and both sections)
+  n65-iso: Research/2026-10-23-wave65/T/iso-planted-line-a2.png (1600x1100, png sha256 73f402a71236ac75, svg sha256 fa36563b2045b3a1) n52-foundry a2: slot rect 14 x 20 m, entry d1; views A 30 deg (0 = north), B 215 deg (0 = north) from corner (7, -55); planes 0.
+PASS PLANTED a2 line65 (5 points), frames65 (2 poses), one grapple anchor on a scratch plan: drawn (Research/2026-10-23-wave65/T/iso-planted-line-a2.png)
+  n65-iso: C:\Users\gaige\AppData\Local\Temp\n65isoproof-QuH6U4\n65-a2.png (1600x1100, png sha256 3abdb72a022e5807, svg sha256 0d3dde8797f26e2b) n65-foundry a2: s
+  n65-iso: C:\Users\gaige\AppData\Local\Temp\n65isoproof-QuH6U4\n65-a3.png (1600x1100, png sha256 7a893c521f3cafba, svg sha256 9d7856a97c9a2550) n65-foundry a3: s
+  n65-iso: C:\Users\gaige\AppData\Local\Temp\n65isoproof-QuH6U4\n65-a4.png (1600x1100, png sha256 52b0ee5e2d3ae67e, svg sha256 17edb210106ea3f8) n65-foundry a4: s
+  n65-iso: C:\Users\gaige\AppData\Local\Temp\n65isoproof-QuH6U4\n65-a5.png (1600x1100, png sha256 08c04efc867ca4a5, svg sha256 24a231f3514c9785) n65-foundry a5: s
+  n65-iso: C:\Users\gaige\AppData\Local\Temp\n65isoproof-QuH6U4\n65-b1.png (1600x1100, png sha256 bfd1f8c63f743249, svg sha256 6e1fccf462db6e7e) n65-foundry b1: s
+  n65-iso: C:\Users\gaige\AppData\Local\Temp\n65isoproof-QuH6U4\n65-a8.png (1600x1100, png sha256 410db560c861a32a, svg sha256 d4c92df3064865a5) n65-foundry a8: s
+PASS n65-foundry --slots=latest (rebuilt: none) renders all six slots; 6 / 6 draw exactly the red's pieces (labels aside) (every slot is n52's room now: 6 expected)
+PASS a level file (Design/levels/n52-foundry.json) is drawn from its plan (Design/levels/n52/foundry.plan.json)
+n65-iso proof: all PASS

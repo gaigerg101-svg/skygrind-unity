@@ -1,0 +1,17 @@
+# command: python -I Tools/night/n72-crownfx.py n71-polish6-<boss> <idle, flinch, windup, stagger frames of Logs/feel/n71-polish6/{bwk,bbr,blo}/boss63>   (the lead's frames of THE WICK, THE ICEBREAKER, THE LOOM at n71-polish6, none under the n72 rows)
+# builder B, worktree n72-B at 52eac37c2, 2026-10-27 11:36:21 USMST. Only the coverage (bar <= 15 % of the 300 px disc) and the tell frames' danger-hue share (bar <= 20 %) apply to these three bosses: the 'cyan body' column is the Crown's ring band, not theirs.
+n71-polish6-wick	shot-N30-B63-wick-idle.png	cover   3.1%	danger-hue share   0.0%	cyan body  52119 mass       0	danger body      0 mass       0	visible yes
+n71-polish6-wick	shot-N30-B63-wick-flinch.png	cover   2.7%	danger-hue share   0.0%	cyan body  43258 mass       0	danger body    517 mass       0	visible yes
+n71-polish6-wick	shot-N30-B63-wick-windup.png	cover   3.9%	danger-hue share   0.9%	cyan body  28130 mass       0	danger body  15802 mass       0	visible yes
+n71-polish6-wick	shot-N30-B63-wick-stagger.png	cover   1.6%	danger-hue share   0.0%	cyan body  84359 mass       0	danger body      0 mass       0	visible yes
+n71-polish6-wick	TOTAL	visible 4 of 4	worst coverage 3.9% (bar 15%)	coverage PASS	body FAIL (bar 4 of 5)	tell frames' danger-hue share max 0.9% (bar 20%) PASS
+n71-polish6-brawl40	shot-N30-B63-brawl40-idle.png	cover   0.4%	danger-hue share   0.0%	cyan body    360 mass       0	danger body      0 mass       0	visible NO
+n71-polish6-brawl40	shot-N30-B63-brawl40-flinch.png	cover   0.3%	danger-hue share   0.0%	cyan body      0 mass       0	danger body      0 mass       0	visible NO
+n71-polish6-brawl40	shot-N30-B63-brawl40-windup.png	cover   0.6%	danger-hue share   0.5%	cyan body      0 mass       0	danger body   9828 mass       0	visible NO
+n71-polish6-brawl40	shot-N30-B63-brawl40-stagger.png	cover   0.1%	danger-hue share   0.0%	cyan body      0 mass       0	danger body      0 mass       0	visible NO
+n71-polish6-brawl40	TOTAL	visible 0 of 4	worst coverage 0.6% (bar 15%)	coverage PASS	body FAIL (bar 4 of 5)	tell frames' danger-hue share max 0.5% (bar 20%) PASS
+n71-polish6-loom37	shot-N30-B63-loom37-idle.png	cover   1.8%	danger-hue share   0.2%	cyan body   8183 mass       0	danger body      0 mass       0	visible NO
+n71-polish6-loom37	shot-N30-B63-loom37-flinch.png	cover   1.6%	danger-hue share   0.0%	cyan body  11120 mass       0	danger body      0 mass       0	visible NO
+n71-polish6-loom37	shot-N30-B63-loom37-windup.png	cover   2.5%	danger-hue share   0.1%	cyan body   6867 mass    4542	danger body      0 mass       0	visible NO
+n71-polish6-loom37	shot-N30-B63-loom37-stagger.png	cover  30.6%	danger-hue share   0.1%	cyan body  52778 mass   37616	danger body      0 mass       0	visible NO
+n71-polish6-loom37	TOTAL	visible 0 of 4	worst coverage 30.6% (bar 15%)	coverage FAIL	body FAIL (bar 4 of 5)	tell frames' danger-hue share max 0.1% (bar 20%) PASS

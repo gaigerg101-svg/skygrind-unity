@@ -1,0 +1,110 @@
+# command: python -I Tools/night/n74-room-rules.py table
+# sha: a354c0e94; time: 2026-10-27 22:39:46
+# thresholds: planes 2-3, loops >= 2, rear 0, view <= 2.0 s, cross <= 2.0 s at dash, exposure <= 60 %, cover: >= 1 free high or low piece, no between-height piece without a job
+# cover hi/lo/btw = free-standing pieces; loops = floor holes + closed pad / ride routes; view = the first second an enemy is seen; cross = dash seconds across the diagonal
+# the table is a base, never a verdict (NIGHT74 D-3, D-8)
+
+## every fight room of the level plans (n52 / n57 / n58 / n65 / n67), 53 rooms
+room                                   WxD m   m2 | planes | cover hi/lo/btw | loops | rear | view | cross | exposure | climb | verdicts
+n52-foundry/a2                       14x20    280 | 2 PASS | 0/0/0 RED | 0 RED | 0 PASS | 0.00s PASS | 1.02 PASS |  96% 21.6m RED | PASS | core 3/5 extra 2/3 RED: COVER,LOOPS,EXPOSE
+n52-foundry/a3                       20x26    520 | 3 PASS | 2/0/0 PASS | 3 PASS | 3 RED | none RED | 1.37 PASS |  47% 21.8m PASS | PASS | core 3/5 extra 3/3 RED: REAR,VIEW
+n52-foundry/a4                        8x19    152 | 2 PASS | 0/0/0 RED | 0 RED | 0 PASS | 0.00s PASS | 0.86 PASS | 100% 19.0m RED | PASS | core 3/5 extra 2/3 RED: COVER,LOOPS,EXPOSE
+n52-foundry/a5                       20x32    640 | 3 PASS | 2/0/0 PASS | 5 PASS | 0 PASS | 0.00s PASS | 1.57 PASS |  82% 33.5m RED | PASS | core 5/5 extra 2/3 RED: EXPOSE
+n52-foundry/b1                       20x32    640 | 2 PASS | 4/0/0 PASS | 5 PASS | 0 PASS | 0.00s PASS | 1.57 PASS |  71% 32.3m RED | PASS | core 5/5 extra 2/3 RED: EXPOSE
+n52-foundry/a8                       14x22    308 | 2 PASS | 1/0/0 PASS | 0 RED | 0 PASS | 0.00s PASS | 1.09 PASS |  88% 24.2m RED | RED | core 4/5 extra 1/3 RED: LOOPS,EXPOSE,CLIMB
+n52-iceline/g1                       22x26    572 | 1 RED | 0/0/0 RED | 2 PASS | 0 PASS | 0.00s PASS | 1.42 PASS |  73% 31.9m RED | PASS | core 3/5 extra 2/3 RED: PLANES,COVER,EXPOSE
+n52-iceline/g2                       21x28    588 | 3 PASS | 1/1/1 PASS | 5 PASS | 0 PASS | 0.00s PASS | 1.46 PASS |  73% 30.9m RED | PASS | core 5/5 extra 2/3 RED: EXPOSE
+n52-iceline/g3                       24x28    672 | 3 PASS | 3/1/4 RED | 3 PASS | 0 PASS | 0.00s PASS | 1.54 PASS |  67% 28.5m RED | PASS | core 4/5 extra 2/3 RED: COVER,EXPOSE
+n52-iceline/g4                       24x30    720 | 3 PASS | 2/3/3 PASS | 5 PASS | 0 PASS | 0.00s PASS | 1.60 PASS |  87% 30.9m RED | PASS | core 5/5 extra 2/3 RED: EXPOSE
+n52-iceline/g5                       21x30    630 | 3 PASS | 3/0/0 PASS | 5 PASS | 0 PASS | 0.00s PASS | 1.53 PASS |  58% 28.5m PASS | PASS | core 5/5 extra 3/3 RED: -
+n52-iceline/g6                       14x18    252 | 1 RED | 0/0/0 RED | 0 RED | 0 PASS | 0.00s PASS | 0.95 PASS | 100% 19.2m RED | PASS | core 2/5 extra 2/3 RED: PLANES,COVER,LOOPS,EXPOSE
+n52-iceline/g7                       24x32    768 | 3 PASS | 5/0/1 PASS | 5 PASS | 0 PASS | 0.00s PASS | 1.67 PASS |  59% 30.9m PASS | PASS | core 5/5 extra 3/3 RED: -
+n52-iceline/g8                       21x30    630 | 4 RED | 2/0/0 PASS | 2 PASS | 1 RED | 0.00s PASS | 1.53 PASS |  89% 30.0m RED | PASS | core 3/5 extra 2/3 RED: PLANES,REAR,EXPOSE
+n52-kiln/kb2                         24x28    672 | 3 PASS | 2/0/2 PASS | 4 PASS | 0 PASS | 0.00s PASS | 1.54 PASS |  51% 28.5m PASS | PASS | core 5/5 extra 3/3 RED: -
+n52-kiln/kb2c                        20x30    600 | 3 PASS | 2/0/1 PASS | 2 PASS | 0 PASS | 0.00s PASS | 1.50 PASS |  61% 29.5m RED | PASS | core 5/5 extra 2/3 RED: EXPOSE
+n52-kiln/kb3                         22x28    616 | 3 PASS | 4/0/1 PASS | 3 PASS | 0 PASS | 0.00s PASS | 1.48 PASS |  50% 28.5m PASS | PASS | core 5/5 extra 3/3 RED: -
+n52-span/p1                          24x32    768 | 4 RED | 1/2/0 PASS | 2 PASS | 0 PASS | 0.00s PASS | 1.67 PASS |  64% 29.5m RED | PASS | core 4/5 extra 2/3 RED: PLANES,EXPOSE
+n52-span/p3                          24x30    720 | 4 RED | 4/0/0 PASS | 3 PASS | 0 PASS | none RED | 1.60 PASS |  63% 32.4m RED | PASS | core 3/5 extra 2/3 RED: PLANES,VIEW,EXPOSE
+n52-span/p5                          26x28    728 | 4 RED | 3/0/0 PASS | 1 RED | 0 PASS | none RED | 1.59 PASS |  44% 27.2m PASS | PASS | core 2/5 extra 3/3 RED: PLANES,LOOPS,VIEW
+n52-spire/v2                         24x32    768 | 3 PASS | 2/0/0 PASS | 3 PASS | 2 RED | none RED | 1.67 PASS |  64% 32.3m RED | PASS | core 3/5 extra 2/3 RED: REAR,VIEW,EXPOSE
+n52-spire/v5                         24x26    624 | 3 PASS | 0/0/0 RED | 2 PASS | 0 PASS | 0.00s PASS | 1.47 PASS |  67% 28.3m RED | PASS | core 4/5 extra 2/3 RED: COVER,EXPOSE
+n52-spire/v6                         24x32    768 | 3 PASS | 2/0/0 PASS | 4 PASS | 0 PASS | 0.00s PASS | 1.67 PASS |  55% 32.3m PASS | PASS | core 5/5 extra 3/3 RED: -
+n57-kiln/kb2                         20x28    560 | 3 PASS | 1/0/1 PASS | 2 PASS | 0 PASS | 0.00s PASS | 1.43 PASS |  50% 27.7m PASS | PASS | core 5/5 extra 3/3 RED: -
+n57-kiln/kb2c                        18x30    540 | 3 PASS | 1/0/1 PASS | 3 PASS | 0 PASS | 0.00s PASS | 1.46 PASS |  75% 29.5m RED | PASS | core 5/5 extra 2/3 RED: EXPOSE
+n57-kiln/kb3                         20x28    560 | 3 PASS | 4/0/1 PASS | 7 PASS | 0 PASS | 0.00s PASS | 1.43 PASS |  66% 30.0m RED | PASS | core 5/5 extra 2/3 RED: EXPOSE
+n57-kiln/kb3c                        22x24    528 | 3 PASS | 2/0/1 PASS | 3 PASS | 0 PASS | 1.25s PASS | 1.36 PASS |  57% 24.2m PASS | PASS | core 5/5 extra 3/3 RED: -
+n57-kiln/kb3d                        24x20    480 | 3 PASS | 2/0/0 PASS | 3 PASS | 0 PASS | 0.00s PASS | 1.30 PASS |  71% 22.8m RED | PASS | core 5/5 extra 2/3 RED: EXPOSE
+n58-span/p1                          24x32    768 | 4 RED | 1/2/0 PASS | 2 PASS | 0 PASS | 0.00s PASS | 1.67 PASS |  64% 29.5m RED | PASS | core 4/5 extra 2/3 RED: PLANES,EXPOSE
+n58-span/p3                          24x30    720 | 4 RED | 4/0/0 PASS | 3 PASS | 0 PASS | none RED | 1.60 PASS |  63% 32.4m RED | PASS | core 3/5 extra 2/3 RED: PLANES,VIEW,EXPOSE
+n58-span/p5                          26x28    728 | 4 RED | 3/0/0 PASS | 1 RED | 0 PASS | none RED | 1.59 PASS |  44% 27.2m PASS | PASS | core 2/5 extra 3/3 RED: PLANES,LOOPS,VIEW
+n65-foundry/a2                       14x20    280 | 2 PASS | 0/0/0 RED | 0 RED | 0 PASS | 0.00s PASS | 1.02 PASS |  96% 21.6m RED | PASS | core 3/5 extra 2/3 RED: COVER,LOOPS,EXPOSE
+n65-foundry/a3                       20x26    520 | 3 PASS | 2/0/0 PASS | 3 PASS | 3 RED | none RED | 1.37 PASS |  47% 21.8m PASS | PASS | core 3/5 extra 3/3 RED: REAR,VIEW
+n65-foundry/a4                        8x19    152 | 2 PASS | 0/0/0 RED | 0 RED | 0 PASS | 0.00s PASS | 0.86 PASS | 100% 19.0m RED | PASS | core 3/5 extra 2/3 RED: COVER,LOOPS,EXPOSE
+n65-foundry/a5                       20x32    640 | 3 PASS | 2/0/0 PASS | 5 PASS | 0 PASS | 0.00s PASS | 1.57 PASS |  82% 33.5m RED | PASS | core 5/5 extra 2/3 RED: EXPOSE
+n65-foundry/b1                       20x32    640 | 2 PASS | 9/1/0 PASS | 7 PASS | 0 PASS | none RED | 1.57 PASS |  32% 23.4m PASS | PASS | core 4/5 extra 3/3 RED: VIEW
+n65-foundry/a8                       14x22    308 | 2 PASS | 1/0/0 PASS | 2 PASS | 0 PASS | 0.00s PASS | 1.09 PASS |  71% 22.8m RED | PASS | core 5/5 extra 2/3 RED: EXPOSE
+n67-iceline/g1                       22x26    572 | 1 RED | 0/0/0 RED | 2 PASS | 0 PASS | 0.00s PASS | 1.42 PASS |  73% 31.9m RED | PASS | core 3/5 extra 2/3 RED: PLANES,COVER,EXPOSE
+n67-iceline/g2                       21x28    588 | 3 PASS | 1/1/1 PASS | 5 PASS | 0 PASS | 0.00s PASS | 1.46 PASS |  73% 30.9m RED | PASS | core 5/5 extra 2/3 RED: EXPOSE
+n67-iceline/g3                       24x28    672 | 3 PASS | 3/1/4 RED | 3 PASS | 0 PASS | 0.00s PASS | 1.54 PASS |  67% 28.5m RED | PASS | core 4/5 extra 2/3 RED: COVER,EXPOSE
+n67-iceline/g4                       24x30    720 | 3 PASS | 2/1/0 PASS | 5 PASS | 0 PASS | 0.00s PASS | 1.60 PASS |  74% 32.4m RED | PASS | core 5/5 extra 2/3 RED: EXPOSE
+n67-iceline/g5                       21x30    630 | 3 PASS | 3/0/0 PASS | 5 PASS | 0 PASS | 0.00s PASS | 1.53 PASS |  58% 28.5m PASS | PASS | core 5/5 extra 3/3 RED: -
+n67-iceline/g6                       14x18    252 | 1 RED | 0/0/0 RED | 0 RED | 0 PASS | 0.00s PASS | 0.95 PASS | 100% 19.2m RED | PASS | core 2/5 extra 2/3 RED: PLANES,COVER,LOOPS,EXPOSE
+n67-iceline/g7                       24x32    768 | 3 PASS | 5/0/1 PASS | 5 PASS | 0 PASS | 0.00s PASS | 1.67 PASS |  59% 30.9m PASS | PASS | core 5/5 extra 3/3 RED: -
+n67-iceline/g8                       21x30    630 | 4 RED | 2/0/0 PASS | 2 PASS | 1 RED | 0.00s PASS | 1.53 PASS |  89% 30.0m RED | PASS | core 3/5 extra 2/3 RED: PLANES,REAR,EXPOSE
+n67-kiln/kb2                         20x28    560 | 2 PASS | 0/0/2 RED | 2 PASS | 0 PASS | 0.00s PASS | 1.43 PASS |  64% 28.5m RED | PASS | core 4/5 extra 2/3 RED: COVER,EXPOSE
+n67-kiln/kb2c                        18x30    540 | 3 PASS | 1/0/1 PASS | 3 PASS | 0 PASS | 0.00s PASS | 1.46 PASS |  75% 29.5m RED | PASS | core 5/5 extra 2/3 RED: EXPOSE
+n67-kiln/kb3                         20x28    560 | 2 PASS | 5/0/0 PASS | 8 PASS | 0 PASS | none RED | 1.43 PASS |  39% 25.8m PASS | PASS | core 4/5 extra 3/3 RED: VIEW
+n67-kiln/kb3c                        22x24    528 | 4 RED | 2/0/2 PASS | 4 PASS | 0 PASS | none RED | 1.36 PASS |  46% 22.8m PASS | PASS | core 3/5 extra 3/3 RED: PLANES,VIEW
+n67-kiln/kb3d                        24x20    480 | 4 RED | 2/0/2 PASS | 2 PASS | 0 PASS | 0.00s PASS | 1.30 PASS |  68% 21.6m RED | PASS | core 4/5 extra 2/3 RED: PLANES,EXPOSE
+n67-spire/v2                         24x32    768 | 3 PASS | 2/0/0 PASS | 3 PASS | 2 RED | none RED | 1.67 PASS |  64% 32.3m RED | PASS | core 3/5 extra 2/3 RED: REAR,VIEW,EXPOSE
+n67-spire/v5                         24x26    624 | 3 PASS | 0/0/0 RED | 2 PASS | 0 PASS | 0.00s PASS | 1.47 PASS |  67% 28.3m RED | PASS | core 4/5 extra 2/3 RED: COVER,EXPOSE
+n67-spire/v6                         24x32    768 | 3 PASS | 2/0/0 PASS | 4 PASS | 0 PASS | 0.00s PASS | 1.67 PASS |  55% 32.3m PASS | PASS | core 5/5 extra 3/3 RED: -
+
+PASS counts over 53 plan rooms: PLANES 39, COVER 40, LOOPS 44, REAR 47, VIEW 42, CROSS 53, EXPOSE 17, CLIMB 52
+
+## the room files (rebuilds and bases under Design/levels/n65/rooms*, n67/<level>/rooms*), 44 files
+room                                   WxD m   m2 | planes | cover hi/lo/btw | loops | rear | view | cross | exposure | climb | verdicts
+file:n65/rooms/a2                    14x20    280 | 2 PASS | 2/0/0 PASS | 1 RED | 0 PASS | 0.00s PASS | 1.02 PASS |  62% 21.6m RED | RED | core 4/5 extra 1/3 RED: LOOPS,EXPOSE,CLIMB
+file:n65/rooms/a3                    20x26    520 | 2 PASS | 0/2/0 PASS | 1 RED | 0 PASS | none RED | 1.37 PASS |  70% 28.3m RED | RED | core 3/5 extra 1/3 RED: LOOPS,VIEW,EXPOSE,CLIMB
+file:n65/rooms/a4                     8x19    152 | 2 PASS | 1/0/0 PASS | 1 RED | 0 PASS | none RED | 0.86 PASS |  48% 18.0m PASS | PASS | core 3/5 extra 3/3 RED: LOOPS,VIEW
+file:n65/rooms/a5                    20x32    640 | 2 PASS | 3/4/0 PASS | 6 PASS | 0 PASS | 0.00s PASS | 1.57 PASS |  50% 33.5m PASS | PASS | core 5/5 extra 3/3 RED: -
+file:n65/rooms/a8                    14x22    308 | 2 PASS | 1/0/0 PASS | 2 PASS | 0 PASS | 0.00s PASS | 1.09 PASS |  71% 22.8m RED | PASS | core 5/5 extra 2/3 RED: EXPOSE
+file:n65/rooms/b1                    20x32    640 | 2 PASS | 9/1/0 PASS | 7 PASS | 0 PASS | none RED | 1.57 PASS |  32% 23.4m PASS | PASS | core 4/5 extra 3/3 RED: VIEW
+file:n65/rooms-n52/a2                14x20    280 | 2 PASS | 0/0/0 RED | 0 RED | 0 PASS | 0.00s PASS | 1.02 PASS |  96% 21.6m RED | PASS | core 3/5 extra 2/3 RED: COVER,LOOPS,EXPOSE
+file:n65/rooms-n52/a3                20x26    520 | 3 PASS | 2/0/0 PASS | 3 PASS | 3 RED | none RED | 1.37 PASS |  47% 21.8m PASS | PASS | core 3/5 extra 3/3 RED: REAR,VIEW
+file:n65/rooms-n52/a4                 8x19    152 | 2 PASS | 0/0/0 RED | 0 RED | 0 PASS | 0.00s PASS | 0.86 PASS | 100% 19.0m RED | PASS | core 3/5 extra 2/3 RED: COVER,LOOPS,EXPOSE
+file:n65/rooms-n52/a5                20x32    640 | 3 PASS | 2/0/0 PASS | 5 PASS | 0 PASS | 0.00s PASS | 1.57 PASS |  82% 33.5m RED | PASS | core 5/5 extra 2/3 RED: EXPOSE
+file:n65/rooms-n52/a8                14x22    308 | 2 PASS | 1/0/0 PASS | 0 RED | 0 PASS | 0.00s PASS | 1.09 PASS |  88% 24.2m RED | RED | core 4/5 extra 1/3 RED: LOOPS,EXPOSE,CLIMB
+file:n65/rooms-n52/b1                20x32    640 | 2 PASS | 4/0/0 PASS | 5 PASS | 0 PASS | 0.00s PASS | 1.57 PASS |  71% 32.3m RED | PASS | core 5/5 extra 2/3 RED: EXPOSE
+file:n67/iceline/rooms/g1            22x26    572 | 1 RED | 0/0/0 RED | 2 PASS | 0 PASS | 0.00s PASS | 1.42 PASS |  73% 31.9m RED | PASS | core 3/5 extra 2/3 RED: PLANES,COVER,EXPOSE
+file:n67/iceline/rooms/g2            21x28    588 | 3 PASS | 1/1/1 PASS | 5 PASS | 0 PASS | 0.00s PASS | 1.46 PASS |  73% 30.9m RED | PASS | core 5/5 extra 2/3 RED: EXPOSE
+file:n67/iceline/rooms/g3            24x28    672 | 2 PASS | 2/0/0 PASS | 5 PASS | 0 PASS | 0.00s PASS | 1.54 PASS |  56% 29.7m PASS | PASS | core 5/5 extra 3/3 RED: -
+file:n67/iceline/rooms/g4            24x30    720 | 3 PASS | 2/1/0 PASS | 5 PASS | 0 PASS | 0.00s PASS | 1.60 PASS |  74% 32.4m RED | PASS | core 5/5 extra 2/3 RED: EXPOSE
+file:n67/iceline/rooms/g5            21x30    630 | 3 PASS | 3/0/0 PASS | 5 PASS | 0 PASS | 0.00s PASS | 1.53 PASS |  58% 28.5m PASS | PASS | core 5/5 extra 3/3 RED: -
+file:n67/iceline/rooms/g6            14x18    252 | 1 RED | 0/0/0 RED | 0 RED | 0 PASS | 0.00s PASS | 0.95 PASS | 100% 19.2m RED | PASS | core 2/5 extra 2/3 RED: PLANES,COVER,LOOPS,EXPOSE
+file:n67/iceline/rooms/g7            24x32    768 | 2 PASS | 1/0/0 PASS | 1 RED | 0 PASS | 0.00s PASS | 1.67 PASS |  42% 31.9m PASS | PASS | core 4/5 extra 3/3 RED: LOOPS
+file:n67/iceline/rooms/g8            21x30    630 | 3 PASS | 0/0/2 RED | 1 RED | 0 PASS | 0.00s PASS | 1.53 PASS |  68% 28.5m RED | PASS | core 3/5 extra 2/3 RED: COVER,LOOPS,EXPOSE
+file:n67/kiln/rooms/kb2              20x28    560 | 2 PASS | 0/0/2 RED | 2 PASS | 0 PASS | 0.00s PASS | 1.43 PASS |  64% 28.5m RED | PASS | core 4/5 extra 2/3 RED: COVER,EXPOSE
+file:n67/kiln/rooms/kb2c             18x30    540 | 3 PASS | 1/0/0 PASS | 5 PASS | 0 PASS | 0.00s PASS | 1.46 PASS |  62% 30.9m RED | PASS | core 5/5 extra 2/3 RED: EXPOSE
+file:n67/kiln/rooms/kb3              20x28    560 | 2 PASS | 5/0/0 PASS | 8 PASS | 0 PASS | none RED | 1.43 PASS |  39% 25.8m PASS | PASS | core 4/5 extra 3/3 RED: VIEW
+file:n67/kiln/rooms/kb3c             22x24    528 | 4 RED | 2/0/2 PASS | 4 PASS | 0 PASS | none RED | 1.36 PASS |  46% 22.8m PASS | PASS | core 3/5 extra 3/3 RED: PLANES,VIEW
+file:n67/kiln/rooms/kb3d             24x20    480 | 4 RED | 2/0/2 PASS | 2 PASS | 0 PASS | 0.00s PASS | 1.30 PASS |  68% 21.6m RED | PASS | core 4/5 extra 2/3 RED: PLANES,EXPOSE
+file:n67/spire/rooms/v2              24x32    768 | 4 RED | 0/0/0 RED | 4 PASS | 1 RED | none RED | 1.67 PASS |  56% 32.3m PASS | PASS | core 1/5 extra 3/3 RED: PLANES,COVER,REAR,VIEW
+file:n67/spire/rooms/v5              24x26    624 | 2 PASS | 0/0/0 RED | 3 PASS | 0 PASS | 0.00s PASS | 1.47 PASS |  53% 30.0m PASS | PASS | core 4/5 extra 3/3 RED: COVER
+file:n67/spire/rooms/v6              24x32    768 | 3 PASS | 2/0/0 PASS | 4 PASS | 0 PASS | 0.00s PASS | 1.67 PASS |  55% 32.3m PASS | PASS | core 5/5 extra 3/3 RED: -
+file:n67/iceline/rooms-base/g1       22x26    572 | 1 RED | 0/0/0 RED | 2 PASS | 0 PASS | 0.00s PASS | 1.42 PASS |  73% 31.9m RED | PASS | core 3/5 extra 2/3 RED: PLANES,COVER,EXPOSE
+file:n67/iceline/rooms-base/g2       21x28    588 | 3 PASS | 1/1/1 PASS | 5 PASS | 0 PASS | 0.00s PASS | 1.46 PASS |  73% 30.9m RED | PASS | core 5/5 extra 2/3 RED: EXPOSE
+file:n67/iceline/rooms-base/g3       24x28    672 | 3 PASS | 3/1/4 RED | 3 PASS | 0 PASS | 0.00s PASS | 1.54 PASS |  67% 28.5m RED | PASS | core 4/5 extra 2/3 RED: COVER,EXPOSE
+file:n67/iceline/rooms-base/g4       24x30    720 | 3 PASS | 2/3/3 PASS | 5 PASS | 0 PASS | 0.00s PASS | 1.60 PASS |  87% 30.9m RED | PASS | core 5/5 extra 2/3 RED: EXPOSE
+file:n67/iceline/rooms-base/g5       21x30    630 | 3 PASS | 3/0/0 PASS | 5 PASS | 0 PASS | 0.00s PASS | 1.53 PASS |  58% 28.5m PASS | PASS | core 5/5 extra 3/3 RED: -
+file:n67/iceline/rooms-base/g6       14x18    252 | 1 RED | 0/0/0 RED | 0 RED | 0 PASS | 0.00s PASS | 0.95 PASS | 100% 19.2m RED | PASS | core 2/5 extra 2/3 RED: PLANES,COVER,LOOPS,EXPOSE
+file:n67/iceline/rooms-base/g7       24x32    768 | 3 PASS | 5/0/1 PASS | 5 PASS | 0 PASS | 0.00s PASS | 1.67 PASS |  59% 30.9m PASS | PASS | core 5/5 extra 3/3 RED: -
+file:n67/iceline/rooms-base/g8       21x30    630 | 4 RED | 2/0/0 PASS | 2 PASS | 1 RED | 0.00s PASS | 1.53 PASS |  89% 30.0m RED | PASS | core 3/5 extra 2/3 RED: PLANES,REAR,EXPOSE
+file:n67/kiln/rooms-base/kb2         20x28    560 | 3 PASS | 1/0/1 PASS | 2 PASS | 0 PASS | 0.00s PASS | 1.43 PASS |  50% 27.7m PASS | PASS | core 5/5 extra 3/3 RED: -
+file:n67/kiln/rooms-base/kb2c        18x30    540 | 3 PASS | 1/0/1 PASS | 3 PASS | 0 PASS | 0.00s PASS | 1.46 PASS |  75% 29.5m RED | PASS | core 5/5 extra 2/3 RED: EXPOSE
+file:n67/kiln/rooms-base/kb3         20x28    560 | 3 PASS | 4/0/1 PASS | 7 PASS | 0 PASS | 0.00s PASS | 1.43 PASS |  66% 30.0m RED | PASS | core 5/5 extra 2/3 RED: EXPOSE
+file:n67/kiln/rooms-base/kb3c        22x24    528 | 3 PASS | 2/0/1 PASS | 3 PASS | 0 PASS | 1.25s PASS | 1.36 PASS |  57% 24.2m PASS | PASS | core 5/5 extra 3/3 RED: -
+file:n67/kiln/rooms-base/kb3d        24x20    480 | 3 PASS | 2/0/0 PASS | 3 PASS | 0 PASS | 0.00s PASS | 1.30 PASS |  71% 22.8m RED | PASS | core 5/5 extra 2/3 RED: EXPOSE
+file:n67/spire/rooms-base/v2         24x32    768 | 3 PASS | 2/0/0 PASS | 3 PASS | 2 RED | none RED | 1.67 PASS |  64% 32.3m RED | PASS | core 3/5 extra 2/3 RED: REAR,VIEW,EXPOSE
+file:n67/spire/rooms-base/v5         24x26    624 | 3 PASS | 0/0/0 RED | 2 PASS | 0 PASS | 0.00s PASS | 1.47 PASS |  67% 28.3m RED | PASS | core 4/5 extra 2/3 RED: COVER,EXPOSE
+file:n67/spire/rooms-base/v6         24x32    768 | 3 PASS | 2/0/0 PASS | 4 PASS | 0 PASS | 0.00s PASS | 1.67 PASS |  55% 32.3m PASS | PASS | core 5/5 extra 3/3 RED: -

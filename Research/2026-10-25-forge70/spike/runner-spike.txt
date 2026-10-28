@@ -1,0 +1,16 @@
+# FORGE70 runner spike 22:16-22:18 (two dummy jobs, a hold, a double start refused, a stop file); Logs/n70 was the forge's scratch, removed after
+2026-10-25 22:16:57 start pid 382175
+2026-10-25 22:17:14 run 001-one: echo hello-one; sleep 2
+2026-10-25 22:17:17 done 001-one rc 0
+2026-10-25 22:17:19 run 002-two: echo two; exit 3
+2026-10-25 22:17:20 done 002-two rc 3
+2026-10-25 22:17:51 stop file: exit
+2026-10-25 22:17:51 exit
+--- 001-one.out
+# command: echo hello-one; sleep 2
+# sha: 89c7a5e8; start: 2026-10-25 22:17:14
+hello-one
+# exit 0
+--- done files
+rc 0 22:17:13 22:17:17
+rc 3 22:17:18 22:17:20

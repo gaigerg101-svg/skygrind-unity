@@ -1,0 +1,10 @@
+# command: bash Tools/night/dn-check-wt.sh C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/b545c660-8250-4a8f-9419-f29ef22d3556/scratchpad/dncheck2
+# sha: 9ab20b1a (branch n65-T; clean tracked tree)
+# time: 2026-10-23 14:58:55 -> 2026-10-23 14:59:18 (local)
+# exit: 0
+
+== Skygrind.Game.csproj: 0 error(s)
+== Skygrind.Game.Tests.csproj: 0 error(s)
+== Skygrind.Core.Tests.csproj: 0 error(s)
+== Assembly-CSharp-Editor.csproj: 0 error(s)
+dn-check total errors: 0

@@ -1,0 +1,9 @@
+command: (cd fix61s3 && FIX61_LEVELDIR=Design/levels dotnet run -- <scratch root>) over port/stage3 (9390ddc9c) files exported with git archive: Core, LightPlan33, Fixture61Math, Rods40, the UnityTuning files, PortExport/config.json, Design/unity-config.json and Design/levels/{n52-foundry,n52-iceline,n57-kiln,n52-span,n52-spire}.json (the five levels N61FixtureTests reads)
+the code is port/stage3's; UnityTuning.N61V4.cs is stage3's too (it carries L6's RimW 0.22, so the counts below are with the wider housing): run 2026-10-27 11:44:27 USMST; the scratch program is evidence/fix61-meter/Program.cs
+why n52-foundry reads 9: its a3 is roof false on port/stage3 (n72-L base: roof true), the old a3 key panel was at y 9.95-10.00 (light 38), the new level has none
+[fixture61] mounts on n52-foundry: ceiling lights 9, housed 9, held by a beam 9, by a wall 0, unmounted 0 | red (no mounts) unmounted 9 | mount boxes 54
+[fixture61] mounts on n52-iceline: ceiling lights 10, housed 10, held by a beam 10, by a wall 0, unmounted 0 | red (no mounts) unmounted 10 | mount boxes 60
+[fixture61] mounts on n57-kiln: ceiling lights 11, housed 11, held by a beam 11, by a wall 0, unmounted 0 | red (no mounts) unmounted 11 | mount boxes 66
+[fixture61] mounts on n52-span: ceiling lights 8, housed 8, held by a beam 8, by a wall 0, unmounted 0 | red (no mounts) unmounted 8 | mount boxes 48
+[fixture61] mounts on n52-spire: ceiling lights 10, housed 10, held by a beam 10, by a wall 0, unmounted 0 | red (no mounts) unmounted 10 | mount boxes 60
+TOTAL unmounted 0

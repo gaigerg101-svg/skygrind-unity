@@ -1,0 +1,21 @@
+# command: dotnet Temp/wallprobe/bin/Release/net10.0/wallprobe.dll <level> open   (S's wallprobe from n74-S, zones OPENED first: the Player's verbs37 wall pick, rows 9 / 11); levels generated with gen-n65-foundry.cjs --run --out
+# sha: f360cf025 (+ rooms/a5.json as in the tree); time: 2026-10-28 00:39:35; row 9 PASS needs a ride over 1.2 s
+## b1,a8,a2
+pick: 18 m in a7 at (1.1, 0.2, -326.2) along (0, 1) normal (-1, 0)
+ride: rode True, rides 1 [0.23-1.55], longest 1.32 s, ends [jump], end pos (-1.7, 0.0, -297.2); row 9 PASS, row 11 PASS (16.6 vs 11.7 m/s)
+## b1,a8,a2,a5-as-committed-e30d386df
+pick: 25 m in a5 at (-8.7, 0.2, -137.4) along (-0, 1) normal (1, 0)
+ride: rode True, rides 1 [0.38-2.28], longest 1.89 s, ends [jump], end pos (1.5, -0.0, -115.1); row 9 PASS, row 11 PASS (16.4 vs 11.7 m/s)
+## b1,a8,a2,a5-with-the-west-crate
+pick: 18 m in a7 at (1.1, 0.2, -326.2) along (0, 1) normal (-1, 0)
+ride: rode True, rides 1 [0.23-1.55], longest 1.32 s, ends [jump], end pos (-1.7, 0.0, -297.2); row 9 PASS, row 11 PASS (16.6 vs 11.7 m/s)
+## a5's candidate runs of 12 m or more, before (l4) and after (l5):
+-- l4
+  a5: k 3 dir + start (8.7, -124.1) along (-0, -1) normal (-1, 0) run 13 m
+  a5: k 6 dir - start (8.7, -137.4) along (0, 1) normal (-1, 0) run 13 m
+  a5: k 10 dir + start (-8.7, -137.4) along (-0, 1) normal (1, 0) run 25 m
+room a5: longest run 25 m k 10 dir + start (-8.7, -137.4) along (-0, 1) normal (1, 0) run 25 m
+-- l5
+  a5: k 3 dir + start (8.7, -124.1) along (-0, -1) normal (-1, 0) run 13 m
+  a5: k 6 dir - start (8.7, -137.4) along (0, 1) normal (-1, 0) run 13 m
+room a5: longest run 13 m k 3 dir + start (8.7, -124.1) along (-0, -1) normal (-1, 0) run 13 m

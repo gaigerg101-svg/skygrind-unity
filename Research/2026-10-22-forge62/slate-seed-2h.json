@@ -1,0 +1,154 @@
+{
+ "_why": "NIGHT62's 2-hour slate (FORGE62b, 2026-10-22 evening, GG: \"create a 2 hour build prompt hard cap\"). The entries are FORGE62's, verbatim (their doneWhen lines are NIGHT61's, written before any measurement, unchanged); only the set and the order changed: P5, P1, P3, P2, P4 in the order their reels run (cheapest first, so their GATEs start early), then P6 and P7 (the Editor debt, run while the Players run), P8 (a leftover). No builder tonight (FORGE62b D-15): S6 is dropped because the speed FOV it asked for already exists and works (NIGHT60's verbs37 telemetry: 74 deg standing, median 82-83 deg at 20-26 m/s, max 85.8), and T1, R1 as code, D2, S7, C2 wait for a longer night (NIGHT62-6h.md keeps them). NIGHT62 copies this file to Logs/n62/slate.json in its bearings; only the lead edits that copy.",
+ "slices": [
+  {
+   "id": "P5",
+   "owner": "lead",
+   "state": "todo",
+   "passes": false,
+   "verdict": null,
+   "spot": null,
+   "title": "No yellow on the guns (NIGHT61 C3) turns ON by the visible rule",
+   "why": "GG 2026-10-19 'the colors and stuff are way too bland ... it all needs to be unified' (OWNER.md:119); NIGHT61 built it OFF (38324938..9c82dbcd)",
+   "row": "design.n61.gunYellow61 (OFF; -skygrindNoGunYellow61; Research/2026-10-22-wave61/V-C3.md)",
+   "red": "gold-yellow plates and gems on THUNDERCLAP and TORCH (kb2c-entry, vs/verbs37 f0600, vp/verbs37 f0300 / f0900); the yellow pixel count is the slice's first measurement",
+   "doneWhen": [
+    "yellow-hue pixels on the viewmodel (yellow56's tell band) = 0 in the four poses, on vs off in one build; the on logs print one '[gunyellow61]' line per moved gun, the off logs none",
+    "the guns' shapes unchanged; the tells' yellow untouched (no enemy or tell material changed)",
+    "SPOT on the THUNDERCLAP pair names the gun's colour; verbs37 x5 unchanged"
+   ],
+   "visible": "with the THUNDERCLAP or TORCH out, the gun no longer carries a yellow slab, so yellow on screen means a parry tell"
+  },
+  {
+   "id": "P1",
+   "owner": "lead",
+   "state": "todo",
+   "passes": false,
+   "verdict": null,
+   "spot": null,
+   "title": "The exit frame (NIGHT61 S1) turns ON by the visible rule",
+   "why": "GG 2026-10-13 doors 'not visible now and you just run through it and it's like dark' (OWNER.md:108); NIGHT61 built it OFF (port/stage3 bd57853c..f439652c), never seen",
+   "row": "design.n61.exitFrame61 (OFF; -skygrindNoExitFrame61, also off under -skygrindNoExit58; Research/2026-10-22-wave61/V.md has the reels and the proof line)",
+   "red": "lamp60's own gain on the door 1.02-1.14x in 5 / 5 rooms (Logs/n60/b8a2-lamp.txt); exitFrame61 never on a frame",
+   "doneWhen": [
+    "the lamp's own gain on the door (n60-v-lamp.py: door luma on / off) >= 1.5x in >= 4 of n57-kiln's 5 rooms, on vs -skygrindNoExit58 in the same build",
+    "GUARD: the room's p95 luma outside the door's mask within 0.02 of off in 5 / 5 rooms (n60-v-lamp.py)",
+    "every clear shot's a157 line reads 'room cleared yes'; the on log has 8 '[exit61] door lit: room' lines, the off log 0",
+    "SPOT on the kb3 clear pair names the door or the exit",
+    "verbs37 x5: 27 / 29 / 31 / 31 / 31, RED rows none, 0 NREs"
+   ],
+   "visible": "when a room clears, its exit door lights up cyan and you see where to go next (shot-N29-L57-n57-kiln-kb3-clear.png, on vs off)"
+  },
+  {
+   "id": "P3",
+   "owner": "lead",
+   "state": "todo",
+   "passes": false,
+   "verdict": null,
+   "spot": null,
+   "title": "One line of text at a time (NIGHT61 C1) turns ON by the visible rule",
+   "why": "GG 2026-10-14 'way too much instruction at the tsrat of the level' (OWNER.md:110); NIGHT61 built it OFF (46319e05..dfa5982a)",
+   "row": "design.n61.text61 (OFF; -skygrindNoText61; Research/2026-10-22-wave61/G.md)",
+   "red": "two or more centre text blocks on 4 of 5 n60-b8 a157 kiln entry frames; the last room's ROOM CLEAR on 2 of 5 (builder G's count)",
+   "doneWhen": [
+    "on the a157 n57-kiln entry frames (5 rooms): frames with two or more centre text blocks at once <= 1 of 5",
+    "the previous room's ROOM CLEAR line never shows once the next room's name shows (0 of 5 entry frames)",
+    "outside level 1 an instruction line shows at most once per verb per run (a reel log line per showing; repeats 0); level 1's a357 entry frames still show their instruction line",
+    "the HUD's look unchanged: no font, colour or layout change, only when a line shows",
+    "SPOT on the kb2c entry pair names less text or the room; verbs37 x5 unchanged"
+   ],
+   "visible": "walking into THE CLINKER BRIDGES you see the room and the three enemies, not three lines of text over them"
+  },
+  {
+   "id": "P2",
+   "owner": "lead",
+   "state": "todo",
+   "passes": false,
+   "verdict": null,
+   "spot": null,
+   "title": "Every boss says what it wants (NIGHT61 S3) turns ON by the visible rule",
+   "why": "GG 2026-10-12 bosses 'you just teleport into these random rooms ... hard to understand what to do' (CORE.md); NIGHT61 built it OFF (842b600c..e39148fd, the reel fixed in 545e9fbc)",
+   "row": "design.n61.bossRule61 (OFF; -skygrindNoBossRule61; Research/2026-10-22-wave61/G.md has the five rules with file:line and the boss61 reel)",
+   "red": "no campaign boss shows a rule line in its first seconds (builder G's read of the existing frames, G.md); bossRule61 never on a frame",
+   "doneWhen": [
+    "each of the five campaign bosses shows one rule line at the fight start: <= 8 words, the bound button glyph when it names a verb, em >= 36 px at 1080p and >= 24 px at 720p, on screen <= 5 s, once per fight start (the boss61 reel GREEN for each boss, on the reel's fixed clock)",
+    "each line says what the boss's code rewards (the critic reads the boss code and quotes the rule it found)",
+    "SPOT on THE KILN WYRM's fight-start pair names the text",
+    "verbs37 x5 unchanged"
+   ],
+   "visible": "at each boss's start a short line tells you what to do, with the button for it"
+  },
+  {
+   "id": "P4",
+   "owner": "lead",
+   "state": "todo",
+   "passes": false,
+   "verdict": null,
+   "spot": null,
+   "title": "Lights hang from real fixtures (NIGHT61 S4) turns ON by the visible rule",
+   "why": "GG 2026-10-11 lights look 'placed and floating' (OWNER.md:85); NIGHT61 built it OFF (3dca4adb..3441f356)",
+   "row": "design.n61.fixture61 (OFF; -skygrindNoFixture61; Research/2026-10-22-wave61/V-S4.md)",
+   "red": "49 ceiling lights unmounted over five levels on the light plan (builder V's meter); whether the dark housings read at 1080p: not checked",
+   "doneWhen": [
+    "unmounted light sources on the a357 entry frames <= 10 % of red; the on logs print '[fixture61] mounts on' once per level (10 / 10 / 11 / 8 / 10, unmounted 0), the off logs none",
+    "no light moves, dims or flickers more: the a154 flicker count on = off (foundry, iceline, kiln) and a still pose's frame-to-frame luma within 0.01",
+    "SPOT on two a357 entry pairs names the lamps or fixtures",
+    "verbs37 x5 unchanged"
+   ],
+   "visible": "lamps sit in housings held from the beams instead of floating in the air"
+  },
+  {
+   "id": "P6",
+   "owner": "lead",
+   "state": "todo",
+   "passes": false,
+   "verdict": null,
+   "spot": null,
+   "title": "B1 proven: focus60 never pauses an automation run",
+   "why": "NIGHT61 B1 built (f84ee2e7 test first, 9fa1c72d change); only a scratch harness ran it",
+   "row": "inside design.n60.focus60 (ON); no row of its own",
+   "red": "FocusAutomation61Tests never run in the Editor; the focus probe never run on the change",
+   "doneWhen": [
+    "FocusAutomation61Tests GREEN on HEAD in the Editor (its RED stands as builder D's scratch run on f84ee2e7's stub, Research/2026-10-22-wave61/D.md: 33 fail; re-running it would mean checking an old commit out under the live Editor)",
+    "the focus probe (n60-focus-probe.sh): row on True, -skygrindNoFocus60 False, planted False",
+    "the smoke with planted steals 'DONE: all steps passed' with focus changes >= 1"
+   ],
+   "visible": "n/a (bug): listed under Bugs in the report"
+  },
+  {
+   "id": "P7",
+   "owner": "lead",
+   "state": "todo",
+   "passes": false,
+   "verdict": null,
+   "spot": null,
+   "title": "D1 proven: the 35 dead-code batches break nothing",
+   "why": "NIGHT61 D1 (Logs/n61/DEADCODE.md, 370 lines net): compiled and gated, its test classes never run",
+   "row": "n/a",
+   "red": "Ui43Tests, Hud30Tests, FirstFifteenVerbsTests, Arcline22Tests, Health42Tests, Style42Tests, Stamp22Tests, RunSnapshotTests, FingerprintTests, MenusTests, MenuMotion18Tests never run after the deletions",
+   "doneWhen": [
+    "the eleven classes GREEN in the Editor (by name, one class per call)",
+    "verbs37 x5 27 / 29 / 31 / 31 / 31 on the first n62 build; the smoke's TITLE step passes",
+    "a class that fails: the batch behind it is reverted with git revert and its entry goes back on the list"
+   ],
+   "visible": "n/a (dead code)"
+  },
+  {
+   "id": "P8",
+   "owner": "lead",
+   "state": "todo",
+   "passes": false,
+   "verdict": null,
+   "spot": null,
+   "title": "B2: Game M reports, MapChoiceTests first and alone",
+   "why": "THREADS T-147 (since w41); NIGHT61's reading (Research/2026-10-22-wave61/B2.md); the guard now refuses a synchronous run (game-m-sync); a leftover tonight (FORGE62b D-15): it holds the Editor up to 40 min, so it starts only if no build, reel set or test run is due before the 1:30 freeze",
+   "row": "n/a (tests)",
+   "red": "MapChoiceTests TIMEOUT 606 s (w60); 9 Game M classes never reached since NIGHT41",
+   "doneWhen": [
+    "MapChoiceTests runs alone in async mode (`unity command run_tests --mode EditMode --filter Skygrind.Game.Tests.MapChoiceTests. --async_tests true --timeout 2400`, polled with test_status) and reports per-case seconds, or in batch mode on the batch copy",
+    "the other Game M classes report by name; failures listed, never skipped to make them pass"
+   ],
+   "visible": "n/a (tests)"
+  }
+ ]
+}

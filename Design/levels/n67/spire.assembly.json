@@ -1,0 +1,33 @@
+{
+ "_why": "NIGHT67: what the last gen-slots.cjs --level spire plan step assembled (read by --finish for generatedBy; the lead's, never committed by a builder)",
+ "level": "spire",
+ "slots": "v6,v2,v5",
+ "plan": "Design/levels/n67/spire.plan.json",
+ "at": "2026-10-28T06:54:29.617Z",
+ "rooms": [
+  {
+   "id": "v2",
+   "use": "latest",
+   "file": "Design/levels/n67/spire/rooms/v2.json",
+   "rebuilt": true,
+   "passSha": null,
+   "verb65": "launch"
+  },
+  {
+   "id": "v5",
+   "use": "latest",
+   "file": "Design/levels/n67/spire/rooms/v5.json",
+   "rebuilt": true,
+   "passSha": null,
+   "verb65": "ride"
+  },
+  {
+   "id": "v6",
+   "use": "latest",
+   "file": "Design/levels/n67/spire/rooms/v6.json",
+   "rebuilt": true,
+   "passSha": null,
+   "verb65": "launch"
+  }
+ ]
+}

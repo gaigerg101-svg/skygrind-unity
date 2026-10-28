@@ -1,0 +1,18 @@
+# command: python -I Tools/night/n74-room-rules.py room Design/levels/n67/iceline/rooms/g8.json
+# sha: 5a2b04ff9; time: 2026-10-28 01:08:37
+iceline/g8  rect [-10.0, -250.0, 11.0, -220.0]  spawn [0.0, 0.0, -227.5] yaw 0  floor 0.0
+  PLANES  RED  planes 4 (-1.5 m: 40 cells, 0.0 m: 410 cells, 2.5 m: 28 cells, 5.0 m: 39 cells)
+  COVER   PASS  cover: free-standing high 4, low 1, between 0 (0 without a job), none 0
+  LOOPS   PASS  loops 8 (floor holes 5 + closed pad / ride routes 3 of 3)
+  REAR    PASS  rear arc: 0 of 2 wave-1 usable nodes behind the entry facing (all waves: 0 node uses behind) [no node 12 m out: every node taken]
+  VIEW    PASS  view: enemy in view at 0.00 s (2 of 2 wave-1 nodes seen at entry)
+  CROSS   PASS  cross: chord 36.6 m, dash 1.53 s, walk 4.6 s (bar 2.0 s at dash)
+  EXPOSE  RED  exposure: 65 % of 903 floor-sample pairs see each other (bar 60 %); longest clear line 29.5 m (medium band 19.5 m)
+  CLIMB   PASS  climb: 2 tier group(s), 0 not reached by walker links
+    free-standing high piece: hull [-6.75, 0.0, -237.0]-[-5.25, 12.0, -235.5] h 12.00 job "30 s problem: THE WEST COLUMN (floor to roof: a ch"
+    free-standing high piece: hull [3.0, 0.0, -237.0]-[4.5, 12.0, -235.5] h 12.00 job "30 s problem: THE EAST COLUMN (the west column's t"
+    free-standing high piece: hull [-4.5, 0.0, -229.0]-[-3.0, 12.0, -227.5] h 12.00 job "30 s problem: THE WEST DOOR COLUMN (the west lane'"
+    free-standing high piece: hull [3.0, 0.0, -229.0]-[4.5, 12.0, -227.5] h 12.00 job "30 s problem: THE EAST DOOR COLUMN (the east lane'"
+    free-standing low piece: hull [-9.0, 0.0, -241.0]-[-7.5, 1.2, -239.5] h 1.20 job "cover: THE WEST RAIL (1.2 m low cover on the west "
+    walkers reach every tier: climb: 2 tier group(s), 0 not reached by walker links
+  core 4/5 PASS, extra 2/3 PASS

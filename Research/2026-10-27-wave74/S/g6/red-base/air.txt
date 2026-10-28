@@ -1,0 +1,11 @@
+# command: node Tools/night/n65-air.cjs C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/ice-base/iceline.plan.json g6
+# sha: bf5edde7e; time: 2026-10-28 00:09:54
+n65-air n67-iceline g6 "2.6 THE ARMOURY" (C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/ice-base/iceline.plan.json):
+  numbers: jump v0 8.33 m/s, g 23.15 m/s2 (fall x1.35), double v0 7.50, dash 24 m/s x 0.25 s = 6.0 m, dash-jump v0 6.67 with g x0.5 for 0.5 s at 24 m/s, run-up 8 m/s, wall jump out 5 up 8.33 (wallfling42 on), ride 9.20 m/s, jump-off out 8 +1 up 7.30 (ride39 on), capsule 0.35 m; a ride held 2.5 m over its base
+  air pieces 0:
+  hand-offs 0 (piece -> piece without touching the floor, the easiest move first):
+  longest floor-free chain: 0 piece(s): -
+  note: a dash-jump keeps the dash's 24 m/s for its whole flight (Mover.cs:1080; air accel never slows a body: MovementMath.Accelerate), so its reach is long; no obstacle, line-of-sight or air-control test
+  flight pieces (rides + pads) on one floor-free path: 0 of 0: -; without the dash-jump: 0: -
+  without the dash-jump: hand-offs 0, longest chain 0: -, dead ends 0/0
+n65-air g6: air pieces 0 (rides 0, decks 0, ledges 0, pads 0), hand-offs 0, longest floor-free chain 0, dead ends 0/0 | without the dash-jump: hand-offs 0, chain 0, dead ends 0/0 | flights handed on: 0 of 0 on one path (0 without the dash-jump)

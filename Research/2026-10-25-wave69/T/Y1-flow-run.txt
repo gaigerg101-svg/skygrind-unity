@@ -1,0 +1,2 @@
+# Y1 five-level walk: n46flow on n52-foundry,n52-iceline,n57-kiln,n52-span,n52-spire seeds 10 --off67 (n69-gates.sh --flow's command) on the Y1 fix DLL; started 2026-10-25 10:02:42
+exit 0 done 10:06:44

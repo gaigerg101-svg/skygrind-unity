@@ -1,0 +1,3 @@
+  verb65 kb3 - (slate launch): plant
+n69-red: 4 jobs on n57-kiln in 100 s; outputs under Research/2026-10-25-wave69/T/Y2-red-kiln/<room>/ (10:27:34)
+  kb3: flow-A.txt flow-B.txt flow-V.txt pads.txt plan.png plan.svg room-check.txt 

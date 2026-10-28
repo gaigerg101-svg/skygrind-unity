@@ -1,0 +1,778 @@
+{
+  "_why": "LEVEL 6, THE BULWARK (NIGHT25, builder C; Design/levels/CURRICULUM.md, authored geometry in Tools/night/levels67-kits.py): the ONE new thing is opening a shield (the web's WARDEN is the shield kind, config.warden: headshot over a low wall, flank round it, or punch it from a pedestal). Room 1, SCRAP YARD, is a breath: cover lanes, husks and swarmers. Room 2, THE SHIELD WALL: a low wall across the room, 6 m flank gaps at both ends, a pedestal in front of the wall; one warden at a time behind husks. Room 3, BULWARK ANTE: a long approach, pillars and a raised catwalk, wardens with chargers, leading to the boss door. Room 4: THE BULWARK (kind boss: Core/Enemies/Bulwark.cs through Campaign24's BeginBoss).",
+  "id": "level06",
+  "name": "LEVEL 6 THE BULWARK",
+  "floorSize": 242,
+  "killPlaneY": -30,
+  "wallHeight": 14,
+  "rooms": [
+    {
+      "id": "b1",
+      "name": "SCRAP YARD",
+      "kind": "room",
+      "rect": [
+        -26,
+        57.0,
+        26,
+        105.0
+      ],
+      "par": 26.2,
+      "botMedian": 26.2,
+      "parCap": 75.2,
+      "spawn": {
+        "at": [
+          0,
+          0,
+          99.0
+        ],
+        "yawDeg": 0
+      },
+      "exit": [
+        0,
+        0,
+        61.0
+      ],
+      "nodes": [
+        [
+          -21,
+          0,
+          65.0
+        ],
+        [
+          -21,
+          0,
+          93.0
+        ],
+        [
+          -8,
+          0,
+          63.0
+        ],
+        [
+          0,
+          0,
+          71.0
+        ],
+        [
+          8,
+          0,
+          63.0
+        ],
+        [
+          21,
+          0,
+          65.0
+        ],
+        [
+          21,
+          0,
+          93.0
+        ],
+        [
+          0,
+          0,
+          87.0
+        ],
+        [
+          -10,
+          0,
+          95.0
+        ],
+        [
+          10,
+          0,
+          95.0
+        ]
+      ],
+      "highNodes": [],
+      "waves": [
+        [
+          "husk",
+          "husk",
+          "husk",
+          "husk",
+          "husk",
+          "swarmer",
+          "swarmer"
+        ],
+        [
+          "husk",
+          "husk",
+          "husk",
+          "husk",
+          "husk",
+          "husk",
+          "swarmer",
+          "swarmer",
+          "swarmer",
+          "swarmer"
+        ]
+      ]
+    },
+    {
+      "id": "b2",
+      "name": "THE SHIELD WALL",
+      "kind": "room",
+      "rect": [
+        -26,
+        3.0,
+        26,
+        51.0
+      ],
+      "par": 173.5,
+      "botMedian": 232.3,
+      "parCap": 173.5,
+      "spawn": {
+        "at": [
+          0,
+          0,
+          45.0
+        ],
+        "yawDeg": 0
+      },
+      "exit": [
+        0,
+        0,
+        7.0
+      ],
+      "nodes": [
+        [
+          -12,
+          0,
+          9.0
+        ],
+        [
+          12,
+          0,
+          9.0
+        ],
+        [
+          0,
+          0,
+          11.0
+        ],
+        [
+          -20,
+          0,
+          15.0
+        ],
+        [
+          20,
+          0,
+          15.0
+        ],
+        [
+          -23,
+          0,
+          25.0
+        ],
+        [
+          23,
+          0,
+          25.0
+        ],
+        [
+          -14,
+          0,
+          37.0
+        ],
+        [
+          14,
+          0,
+          37.0
+        ]
+      ],
+      "highNodes": [],
+      "waves": [
+        [
+          "husk",
+          "husk",
+          "husk",
+          "husk",
+          "husk",
+          "husk",
+          "swarmer",
+          "swarmer",
+          "warden"
+        ],
+        [
+          "husk",
+          "husk",
+          "husk",
+          "husk",
+          "husk",
+          "husk",
+          "swarmer",
+          "swarmer",
+          "swarmer",
+          "swarmer",
+          "warden"
+        ],
+        [
+          "husk",
+          "husk",
+          "husk",
+          "husk",
+          "husk",
+          "husk",
+          "swarmer",
+          "swarmer",
+          "swarmer",
+          "swarmer",
+          "swarmer",
+          "warden",
+          "warden"
+        ]
+      ]
+    },
+    {
+      "id": "b3",
+      "name": "BULWARK ANTE",
+      "kind": "room",
+      "rect": [
+        -26,
+        -51.0,
+        26,
+        -3.0
+      ],
+      "par": 199.0,
+      "botMedian": 205.0,
+      "parCap": 199.0,
+      "spawn": {
+        "at": [
+          0,
+          0,
+          -9.0
+        ],
+        "yawDeg": 0
+      },
+      "exit": [
+        0,
+        0,
+        -47.0
+      ],
+      "nodes": [
+        [
+          -9,
+          0,
+          -35.0
+        ],
+        [
+          9,
+          0,
+          -35.0
+        ],
+        [
+          0,
+          0,
+          -33.0
+        ],
+        [
+          -18,
+          0,
+          -21.0
+        ],
+        [
+          18,
+          0,
+          -21.0
+        ],
+        [
+          0,
+          0,
+          -25.0
+        ],
+        [
+          -6,
+          0,
+          -13.0
+        ],
+        [
+          6,
+          0,
+          -13.0
+        ]
+      ],
+      "highNodes": [
+        [
+          -12,
+          3,
+          -43.0
+        ],
+        [
+          12,
+          3,
+          -43.0
+        ],
+        [
+          -18,
+          3,
+          -43.0
+        ],
+        [
+          18,
+          3,
+          -43.0
+        ]
+      ],
+      "waves": [
+        [
+          "husk",
+          "husk",
+          "husk",
+          "husk",
+          "husk",
+          "husk",
+          "warden",
+          "charger"
+        ],
+        [
+          "husk",
+          "husk",
+          "husk",
+          "husk",
+          "husk",
+          "husk",
+          "charger",
+          "charger",
+          "warden"
+        ],
+        [
+          "husk",
+          "husk",
+          "husk",
+          "husk",
+          "husk",
+          "husk",
+          "husk",
+          "husk",
+          "warden",
+          "warden",
+          "charger"
+        ]
+      ]
+    },
+    {
+      "id": "boss",
+      "name": "THE BULWARK",
+      "kind": "boss",
+      "rect": [
+        -26,
+        -105.0,
+        26,
+        -57.0
+      ],
+      "par": 60,
+      "spawn": {
+        "at": [
+          0,
+          0,
+          -63.0
+        ],
+        "yawDeg": 0
+      },
+      "exit": [
+        0,
+        0,
+        -101.0
+      ],
+      "boss": "bulwark",
+      "nodes": [],
+      "highNodes": []
+    }
+  ],
+  "doors": [
+    {
+      "id": "d1",
+      "between": [
+        "b1",
+        "b2"
+      ],
+      "rect": [
+        -4,
+        51.0,
+        4,
+        57.0
+      ],
+      "checkpoint": true
+    },
+    {
+      "id": "d2",
+      "between": [
+        "b2",
+        "b3"
+      ],
+      "rect": [
+        -4,
+        -3.0,
+        4,
+        3.0
+      ],
+      "checkpoint": true
+    },
+    {
+      "id": "d3",
+      "between": [
+        "b3",
+        "boss"
+      ],
+      "rect": [
+        -4,
+        -57.0,
+        4,
+        -51.0
+      ],
+      "checkpoint": true
+    }
+  ],
+  "boxes": [
+    {
+      "zone": "b1",
+      "kind": "hull",
+      "min": [
+        -16,
+        0,
+        67.0
+      ],
+      "max": [
+        -14,
+        3.0,
+        87.0
+      ],
+      "note": "yard"
+    },
+    {
+      "zone": "b1",
+      "kind": "hull",
+      "min": [
+        14,
+        0,
+        67.0
+      ],
+      "max": [
+        16,
+        3.0,
+        87.0
+      ],
+      "note": "yard"
+    },
+    {
+      "zone": "b1",
+      "kind": "hull",
+      "min": [
+        -8,
+        0,
+        75.0
+      ],
+      "max": [
+        -5,
+        3.0,
+        78.0
+      ],
+      "note": "yard"
+    },
+    {
+      "zone": "b1",
+      "kind": "hull",
+      "min": [
+        5,
+        0,
+        81.0
+      ],
+      "max": [
+        8,
+        3.0,
+        84.0
+      ],
+      "note": "yard"
+    },
+    {
+      "zone": "b1",
+      "kind": "hull",
+      "min": [
+        -2,
+        0,
+        65.0
+      ],
+      "max": [
+        2,
+        3.0,
+        68.0
+      ],
+      "note": "yard"
+    },
+    {
+      "zone": "b1",
+      "kind": "hull",
+      "min": [
+        -26,
+        0,
+        77.0
+      ],
+      "max": [
+        -18,
+        1.3,
+        79.0
+      ],
+      "note": "yard"
+    },
+    {
+      "zone": "b1",
+      "kind": "hull",
+      "min": [
+        18,
+        0,
+        77.0
+      ],
+      "max": [
+        26,
+        1.3,
+        79.0
+      ],
+      "note": "yard"
+    },
+    {
+      "zone": "b2",
+      "kind": "hull",
+      "min": [
+        -20,
+        0,
+        21.0
+      ],
+      "max": [
+        20,
+        1.3,
+        23.0
+      ],
+      "note": "shieldwall"
+    },
+    {
+      "zone": "b2",
+      "kind": "deck",
+      "min": [
+        -3,
+        0,
+        25.0
+      ],
+      "max": [
+        3,
+        1.0,
+        29.0
+      ],
+      "note": "shieldwall"
+    },
+    {
+      "zone": "b2",
+      "kind": "hull",
+      "min": [
+        -8,
+        0,
+        13.0
+      ],
+      "max": [
+        -5,
+        3.0,
+        16.0
+      ],
+      "note": "shieldwall"
+    },
+    {
+      "zone": "b2",
+      "kind": "hull",
+      "min": [
+        5,
+        0,
+        13.0
+      ],
+      "max": [
+        8,
+        3.0,
+        16.0
+      ],
+      "note": "shieldwall"
+    },
+    {
+      "zone": "b3",
+      "kind": "hull",
+      "min": [
+        -10,
+        0,
+        -29.0
+      ],
+      "max": [
+        -7,
+        3.0,
+        -26.0
+      ],
+      "note": "ante"
+    },
+    {
+      "zone": "b3",
+      "kind": "hull",
+      "min": [
+        7,
+        0,
+        -29.0
+      ],
+      "max": [
+        10,
+        3.0,
+        -26.0
+      ],
+      "note": "ante"
+    },
+    {
+      "zone": "b3",
+      "kind": "hull",
+      "min": [
+        -3,
+        0,
+        -21.0
+      ],
+      "max": [
+        3,
+        3.0,
+        -18.0
+      ],
+      "note": "ante"
+    },
+    {
+      "zone": "b3",
+      "kind": "deck",
+      "min": [
+        -22,
+        0,
+        -47.0
+      ],
+      "max": [
+        -9,
+        3.0,
+        -39.0
+      ],
+      "note": "ante"
+    },
+    {
+      "zone": "b3",
+      "kind": "deck",
+      "min": [
+        9,
+        0,
+        -47.0
+      ],
+      "max": [
+        22,
+        3.0,
+        -39.0
+      ],
+      "note": "ante"
+    },
+    {
+      "zone": "boss",
+      "kind": "hull",
+      "min": [
+        -20,
+        0,
+        -93.0
+      ],
+      "max": [
+        -16,
+        6,
+        -89.0
+      ],
+      "note": "pillar"
+    },
+    {
+      "zone": "boss",
+      "kind": "hull",
+      "min": [
+        16,
+        0,
+        -93.0
+      ],
+      "max": [
+        20,
+        6,
+        -89.0
+      ],
+      "note": "pillar"
+    },
+    {
+      "zone": "boss",
+      "kind": "hull",
+      "min": [
+        -20,
+        0,
+        -73.0
+      ],
+      "max": [
+        -16,
+        6,
+        -69.0
+      ],
+      "note": "pillar"
+    },
+    {
+      "zone": "boss",
+      "kind": "hull",
+      "min": [
+        16,
+        0,
+        -73.0
+      ],
+      "max": [
+        20,
+        6,
+        -69.0
+      ],
+      "note": "pillar"
+    }
+  ],
+  "ramps": [
+    {
+      "zone": "b2",
+      "from": [
+        0,
+        33.0
+      ],
+      "to": [
+        0,
+        29.0
+      ],
+      "width": 4,
+      "rise": 1.0,
+      "note": "shieldwall"
+    },
+    {
+      "zone": "b3",
+      "from": [
+        -15,
+        -33.0
+      ],
+      "to": [
+        -15,
+        -39.0
+      ],
+      "width": 6,
+      "rise": 3.0,
+      "note": "ante"
+    },
+    {
+      "zone": "b3",
+      "from": [
+        15,
+        -33.0
+      ],
+      "to": [
+        15,
+        -39.0
+      ],
+      "width": 6,
+      "rise": 3.0,
+      "note": "ante"
+    }
+  ],
+  "pads": [],
+  "grapple": [],
+  "pits": [],
+  "tunnels": []
+}

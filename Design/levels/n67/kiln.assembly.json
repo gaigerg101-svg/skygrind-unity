@@ -1,0 +1,49 @@
+{
+ "_why": "NIGHT67: what the last gen-slots.cjs --level kiln plan step assembled (read by --finish for generatedBy; the lead's, never committed by a builder)",
+ "level": "kiln",
+ "slots": "kb2,kb2c,kb3,kb3c,kb3d",
+ "plan": "Design/levels/n67/kiln.plan.json",
+ "at": "2026-10-28T08:58:19.463Z",
+ "rooms": [
+  {
+   "id": "kb2",
+   "use": "latest",
+   "file": "Design/levels/n67/kiln/rooms/kb2.json",
+   "rebuilt": true,
+   "passSha": null,
+   "verb65": "parry"
+  },
+  {
+   "id": "kb2c",
+   "use": "latest",
+   "file": "Design/levels/n67/kiln/rooms/kb2c.json",
+   "rebuilt": true,
+   "passSha": null,
+   "verb65": "ride"
+  },
+  {
+   "id": "kb3",
+   "use": "latest",
+   "file": "Design/levels/n67/kiln/rooms/kb3.json",
+   "rebuilt": true,
+   "passSha": null,
+   "verb65": "launch"
+  },
+  {
+   "id": "kb3c",
+   "use": "latest",
+   "file": "Design/levels/n67/kiln/rooms/kb3c.json",
+   "rebuilt": true,
+   "passSha": null,
+   "verb65": "ride"
+  },
+  {
+   "id": "kb3d",
+   "use": "latest",
+   "file": "Design/levels/n67/kiln/rooms/kb3d.json",
+   "rebuilt": true,
+   "passSha": null,
+   "verb65": "launch"
+  }
+ ]
+}

@@ -1,0 +1,80 @@
+{
+  "_why": "NIGHT67's slate (FORGE67b, 2026-10-24, its red team applied; GG: 'area deisgn need t be better in alot of levels thats the mian focus'). Eleven slices: T1a / T1b / T1c (the multi-level pipeline and the area lint), six rooms on three levels (level 2 THE ICE LINE g7 g8 and level 5 v2: builder R; level 3 THE KILN kb3 kb3c and level 5 v6: builder S; each room measurable by a verb the pilot performs and the room's loadout holds), LV (the level rows: branch A / A-lean only) and PC (GG's play card). A doneWhen is written before any measurement and never loosened; only the lead edits this file. Each room's verb (from its card and the bearings' probe), mainBar and guard ceilings are written by the lead from its red before its first round is judged.",
+  "ROOM": [
+    "an area card first (Research/2026-10-24-wave67/cards/<id>.md, <= 40 lines): the archetype (research.md section 2, one per room), the room's verb (one the verb pilot performs AND fires in this room with its loadout: the card cites the bearings' probe line), the lever that makes refusing the verb cost time, health or score, each piece and its job, the lint rules the shipped room fails and how the card fixes each, the aims for M1-M4; one card critic pass, its open items round 1's list",
+    "the rebuilt room file carries `verb65` (equal to the slate's verb) and `line65` (the verb's line from the entry), never an `area67` block (the assembler refuses unknown fields)",
+    "a GATE needs M1-M4 and every GUARD held on one main-tree round on the passed tools, skip v2 also on seeds 11-20 (the GATE pack's fresh skip), the room file unchanged since that round, and that round read by a level review (the GATE critic writes it when none did); a room without such a round is SHORT",
+    "M1 AREA: `node Tools/night/n67-area.cjs --level <L> --dir <the round's folder> --touches <the round's verbs-skip.txt> <room>` passes every rule that applies (a rule with nothing to judge prints N/A): OPEN no open floor square larger than 12 x 12 m with no piece in it (gg-proxy's 'empty boxes'); P1 a plane 3.5 m or higher holds the last wave's ranged enemies (N/A with no ranged enemy); P4 every solid 1.75 m or taller does a job by the decoration checker; P5 at least half the walk line's samples in a ranged spawn's sight at 6-24 m and line65's share at least 0.3 lower, or line65 within 6 m of an enemy; P9 every plane 6 m or wider has at least 2 enemy climb routes with tops 8 m or more apart; P11 for a TOWER, GALLERY or SPLIT LEVEL card, every ranged spawn on a high node 2.5 m or more up and 12-24 m from the walk lane; P17 every ride wall 4 m or taller and 8 m or longer with the cyan strip, no non-ride wall in that band",
+    "M2 VERB: skip v2 on the room's verb prints `M1 PASS` against the room's mainBar = max(1.25, its red's ratio + 0.20), >= 7 of 10 seeds exercised, on seeds 1-10 and on seeds 11-20; STYLE above DULL on the verb-aware run >= the faster refusal's + 15 points; a ride room within 0.10 of its bar reads UNSURE; a pierce room only after T1b's critic PASS (d25ea7d8 judged)",
+    "M3: the room's verb pilot GREEN on line65 (ride: a kill from the wall, `n65verb ride --shoot`; launch: 'in a pit yes' or 'in lava yes' on the launched body; parry: a returned glob kills a spitter; slide: the slide line's kill; pierce: >= 2 bodies)",
+    "M4: every piece of the rebuilt room passes the decoration checker (its base the room file's first commit), and at least one collider piece was added with a job; a round's change counts only by a double-or-half (a piece added or removed, or one geometry number x2 / x0.5)",
+    "GUARDS, no worse than the shipped room (its red; the ceilings in this slate: deathsAMax, deathsBMax, stallAMax): the walk bot (n46flow seeds 1-10 and 11-20) clears 10 / 10, deaths A / B and stall A at or under the ceilings; no room-check item fails that passed in the shipped room; air65's flights handed on; levelgen ERROR rows no more than the base level's own; the room's spawn never moved toward the verb's line",
+    "the blind SPOT (a fresh skygrind-spotter on the GATE pack's spot-A / spot-B) names the piece that serves the verb; a skygrind-critic PASS on the GATE round"
+  ],
+  "slices": [
+    { "id": "T1a", "owner": "T", "state": "todo", "passes": false, "verdict": null, "spot": null, "passSha": null, "passFiles": null,
+      "title": "The slot assembler for any level and the shared commit's script (by 0:50)",
+      "why": "Level 1's pipeline is hard-coded (code-scout.md section 2); levels 2 and 5 have no generator and their plans ship when edited.",
+      "row": "none (tools)", "red": "gen-n65-foundry.cjs (level 1 only)",
+      "doneWhen": [
+        "`Tools/night/levels67.json` and `node Tools/night/gen-slots.cjs --level <iceline|kiln|spire>` export every fight room of the base level (Design/levels/n67/<level>/rooms-base/<id>.json and rooms/<id>.json); `--check` with every slot old reproduces the shipped level (n52-iceline, n57-kiln, n52-spire) apart from names; levelgen ERROR rows refused only beyond the base level's own; the openings from the base level; the surfaces list carried; unknown room fields refused by name; a planted changed room appears in the assembled plan; on level 1 it reproduces gen-n65-foundry.cjs's plan byte for byte",
+        "`node Tools/night/n67-a1.cjs` (the shared commit, run by the lead): design.n67.iceline67 / kiln67 / spire67 OFF in both config copies (each with levelFrom n52-iceline / n57-kiln / n52-spire and levelTo n67-iceline / n67-kiln / n67-spire), the placeholder level files in both copies, every level's Design/levels/n67/<level>/slots67.json with every slot old, the map list, look49's level list and UnityTuning.N53's Polish53IcelineLevels gaining n67-iceline; after it the Editor compile is clean and the fingerprints EQUAL plain and --off67"
+      ],
+      "visible": "n/a (tools)", "spotPose": null },
+    { "id": "T1b", "owner": "T", "state": "todo", "passes": false, "verdict": null, "spot": null, "passSha": null, "passFiles": null,
+      "title": "The round tools taking a level, and the area lint (by 1:45)",
+      "why": "A round must run on any level with each room's verb; area design is geometry the walk bot cannot see (research.md section 1).",
+      "row": "none (tools)", "red": "n67-round.sh and friends (level 1 only); no area lint",
+      "doneWhen": [
+        "n67-round.sh, n67-red.sh, n67-round-verbs.sh and n67-table.cjs take the level as `L67=<iceline|kiln|spire>` (never `LEVEL`, which n67-red.sh already uses for the level name), assemble through gen-slots into the round folder, run each room's verb from a slate snapshot copied into the round folder at its start (`--bars` reads it, so a slate write during a round changes nothing), and plant the verb on base rooms for a red; n65-slot-set.cjs takes `--slots=<file>` and refuses an unknown option or a room not in that file; `L67=<L> ROOMS=<rooms> bash Tools/night/n67-round.sh dry-<L>` runs end to end on all three levels with the tracked status unchanged",
+        "`node Tools/night/n67-area.cjs --level <L> --dir <folder> --touches <skip output> <room>` prints one line per rule of the ROOM list's M1 (OPEN, P1, P4, P5, P9, P11, P17) with its numbers and PASS / FAIL / N/A and a last line `n67-area: PASS|FAIL <room> (<passed>/<applicable>)`; each rule has a planted PASS and a planted FAIL; the baseline on all 25 shipped fight rooms saved as Logs/n67/area-baseline.txt, a rule every shipped room passes or fails named as not discriminating",
+        "builder T's NIGHT66 after-runs of the charge rule (d25ea7d8) re-run on main's DLL into Logs/n67/t1b-charge/ and diffed against T's (identical = the code T measured), for T1b's critic"
+      ],
+      "visible": "n/a (tools)", "spotPose": null },
+    { "id": "T1c", "owner": "T", "state": "todo", "passes": false, "verdict": null, "spot": null, "passSha": null, "passFiles": null,
+      "title": "The GATE tools on any level and the multi-level play build (by the first GATE, about 5:15)",
+      "why": "The GATE pack, the decoration checker and the play build are level 1's.",
+      "row": "none (tools)", "red": "n67-gate-pack.cjs, n67-deco.cjs, n65-play-build.sh (level 1 only)",
+      "doneWhen": [
+        "n67-gate-pack.cjs and n67-deco.cjs take `L67=<L>`; the pack refuses a room whose `verb65` differs from the slate's verb; a planted pack on a dry round holds every file the ROOM list's GATE names",
+        "n65-play-build.sh takes several levels into one play build (or `--update`), so a play build holds every PASSed room"
+      ],
+      "visible": "n/a (tools)", "spotPose": null },
+    { "id": "g7", "owner": "R", "state": "todo", "passes": false, "verdict": null, "spot": null, "passSha": null, "passFiles": null, "level": "iceline", "verb": null, "mainBar": null,
+      "title": "2.7 THE MIX (BIG FALLS R5)", "why": "Level 2 is the weakest level (levels-data.md section 3; GG 2026-10-13 'Nearly all rooms ... randomly placed'); g7 is the first room after the KESTREL, so the verb pilot can measure it.",
+      "row": "slot g7 of n67.iceline67", "red": "the shipped g7 (Logs/n67/red-iceline/g7)", "doneWhen": ["the ROOM list"], "visible": "the room's verb piece and its high plane read at a glance", "spotPose": "the GATE pack's iso pair" },
+    { "id": "g8", "owner": "R", "state": "todo", "passes": false, "verdict": null, "spot": null, "passSha": null, "passFiles": null, "level": "iceline", "verb": null, "mainBar": null,
+      "title": "2.8 THE STAMPEDE: 5 deaths and a dead end (BIG DULL SLOW DEATHS R5 R2)", "why": "One of the campaign's six weakest rooms; its lava strip called 'a random lava pit' by the critic playing GG (history.md).",
+      "row": "slot g8 of n67.iceline67", "red": "Logs/n67/red-iceline/g8", "doneWhen": ["the ROOM list", "every hazard has a job the decoration checker sees (a launch kill on it, or it blocks a route the verb crosses)"], "visible": "the room's verb piece and its high plane read at a glance", "spotPose": "the GATE pack's iso pair" },
+    { "id": "v2", "owner": "R", "state": "todo", "passes": false, "verdict": null, "spot": null, "passSha": null, "passFiles": null, "level": "spire", "verb": null, "mainBar": null,
+      "title": "5.2 THE NAVE: a 30.8 s kill gap, a ride that is no shortcut (BIG GAP R5 I2)", "why": "GG 2026-10-18: level 5 'the level doesn't make sense'; v2 is one of its two flagged rooms.",
+      "row": "slot v2 of n67.spire67", "red": "Logs/n67/red-spire/v2", "doneWhen": ["the ROOM list"], "visible": "the room's verb piece and its high plane read at a glance", "spotPose": "the GATE pack's iso pair" },
+    { "id": "kb3", "owner": "S", "state": "todo", "passes": false, "verdict": null, "spot": null, "passSha": null, "passFiles": null, "level": "kiln", "verb": null, "mainBar": null,
+      "title": "3.3 THE PRESS HALL: gg-proxy's worst frames", "why": "gg-proxy's 'the rooms are empty boxes' #1 four nights running, worst on THE PRESS HALL (history.md section 2). GG's level-3 words were said of the kiln before NIGHT57 rebuilt it; n57-kiln itself has never been played.",
+      "row": "slot kb3 of n67.kiln67", "red": "Logs/n67/red-kiln/kb3", "doneWhen": ["the ROOM list"], "visible": "the room's verb piece and its high plane read at a glance", "spotPose": "the GATE pack's iso pair" },
+    { "id": "kb3c", "owner": "S", "state": "todo", "passes": false, "verdict": null, "spot": null, "passSha": null, "passFiles": null, "level": "kiln", "verb": null, "mainBar": null,
+      "title": "3.3c THE TAP RUN: its carded ride is skippable (refused 0.81, 5 / 5 seeds)", "why": "The kiln's one measured fault (levels-data.md section 3: the planted ride, refused, clears faster).",
+      "row": "slot kb3c of n67.kiln67", "red": "Logs/n67/red-kiln/kb3c", "doneWhen": ["the ROOM list"], "visible": "the ride and what it reaches read at a glance", "spotPose": "the GATE pack's iso pair" },
+    { "id": "v6", "owner": "S", "state": "todo", "passes": false, "verdict": null, "spot": null, "passSha": null, "passFiles": null, "level": "spire", "verb": null, "mainBar": null,
+      "title": "5.6 THE CHOIR: 79.6 s, a 41.8 s kill gap (BIG GAP SLOW R5)", "why": "GG 2026-10-18: level 5 'the level doesn't make sense'.",
+      "row": "slot v6 of n67.spire67", "red": "Logs/n67/red-spire/v6", "doneWhen": ["the ROOM list"], "visible": "the room's verb piece and its high plane read at a glance", "spotPose": "the GATE pack's iso pair" },
+    { "id": "LV", "owner": "lead", "state": "todo", "passes": false, "verdict": null, "spot": null, "passSha": null, "passFiles": null,
+      "title": "The level rows ON for every level with a PASSed room (branch A and A-lean only)", "why": "The rooms reach the shipped game only by their level's row; the Player items live here.",
+      "row": "design.n67.iceline67 (levelFrom n52-iceline, levelTo n67-iceline), design.n67.kiln67 (n57-kiln -> n67-kiln), design.n67.spire67 (n52-spire -> n67-spire); -skygrindOff67", "red": "rc0 = Builds/n66-freeze",
+      "doneWhen": [
+        "LV starts at the first room PASS, no later than 6:00; each flipped level's slots67.json holds at least one room set new by n65-slot-set.cjs; every other slot equals the shipped room (gen-slots --check on the old slots)",
+        "rc1, a real build of HEAD with the passed rows ON in a config copy (not yet flipped), named n67-freeze: tour65 frames every new room with wave 1 live; verbs37 on all five levels at their campaign places (27 / 29 / 31 / 31 / 31 as rc0, a flipped level through its row: the reel line names the level it loaded); NRE 0; `-skygrindOff67` boots the shipped levels; the smoke DONE; LV's own critic PASS on that build",
+        "the sim: n46flow on each flipped level, seeds 1-10 and 11-20, clears 10 / 10 with deaths and stall within the shipped level's bands",
+        "then the flip by n67-freeze-rows.cjs (passFiles naming each level's files and slots67.json) before 6:30; its commit re-makes the flow base (said in the commit); after it, n46flow on every level with `--off67` equals Logs/n67/flow-base-a0.txt"
+      ],
+      "visible": "the rebuilt rooms are in the game", "spotPose": "tour65's entry pose of a PASSed room, rc0 vs rc1" },
+    { "id": "PC", "owner": "lead", "state": "todo", "passes": false, "verdict": null, "spot": null, "passSha": null, "passFiles": null,
+      "title": "GG's play card: a play build with every PASSed room against the old levels",
+      "why": "No person has judged any room built after EXT53 (history.md).", "row": "none (the report's section 2)", "red": "none",
+      "doneWhen": [
+        "NIGHT67-REPORT.md section 2: the play builds that exist (branch A / A-lean: Builds/n67-freeze with the rows; branch C with a PASS: a data swap holding each rebuilt level's slots67.json set on Builds/n67-freeze when the close built it, else on Builds/n66-freeze with 'level 2's colour grade missing: its level list is code' said on the card), each boot run or not run, what to try in each room, the one question per level, about five minutes",
+        "DECIDE67.md holds the questions for his answers"
+      ],
+      "visible": "n/a (a card)", "spotPose": null }
+  ]
+}

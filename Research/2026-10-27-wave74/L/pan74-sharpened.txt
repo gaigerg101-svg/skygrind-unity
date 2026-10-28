@@ -1,0 +1,24 @@
+pan74 sharpened (NIGHT74 builder L, meter-only commit), 2026-10-28 00:25. Tree: n74-L at bdb3a4c30 + this commit's files (uncommitted when written).
+What changed: (1) the Player's calibration reads the WORLD core (x 240-1520, y 160-640 of 1920 x 1080: no HUD, no gun) and scans the vertical fov in 2 % steps (x0.90 .. x1.10) after choosing the signs (Pan74.Calibrate, Pan74.EnergyRect; the log line now says
+"over the world core mean |residual| X against the plain frame difference Y" and, for comparison with n74-t1 / t2's lines, the whole-picture figures); (2) n74-flick.py --world leaves the screen-fixed HUD and gun rectangles out of the share, the denominators and the compensation figure.
+Not changed: the file format, the detection (TAU, STEP_MIN, 2 flips in 6 frames), the reel, anything the game draws. A Player run is needed to see (1); (2) works on any existing .p74.
+
+## The old calibration and why (n74-t2, python -I -B Tools/night/n74-warp-quality.py Logs/feel/n74-t2/pp2/pan74; flick74-short.txt has the table)
+It picked x0.92 (vertical fov 68.1 deg) because its energy included the gun and the HUD; the real shift of the sweeps (a brute-force registration of each sweep's first and middle frame, 90 frames apart) is 2.56 - 2.60 px a frame at the centre, i.e. fov about 72.8 (x0.984).
+Over the world core the old warp left 0.37 - 0.44 of the plain difference (v2 / v5 / v6); a calibration at the real fov should leave less.
+
+## (2) on the n74-t2 plain spire sweeps (python -I -B Tools/night/n74-flick.py measure Logs/feel/n74-t2/pp2/pan74 [--world])
+                         share (block-windows)            compensation figure
+v2  whole picture        1.5124 % (86498 of 5719140)      mean |r| 2.037 vs plain 1.628 (x0.8: worse than none, the gun / HUD)
+v2  --world              1.9155 % (74237 of 3875594)      mean |r| 0.875 vs plain 1.798 (x2.1 less)
+v5  whole picture        2.6512 % (151627 of 5719140)     mean |r| 2.080 vs plain 1.880 (x0.9)
+v5  --world              2.9737 % (115249 of 3875594)     mean |r| 0.995 vs plain 2.203 (x2.2 less)
+v6  whole picture        1.6159 % (92413 of 5719140)      mean |r| 2.038 vs plain 1.497 (x0.7)
+v6  --world              2.1483 % (83259 of 3875594)      mean |r| 0.780 vs plain 1.714 (x2.2 less)
+level n52-spire pooled   1.9265 %  ->  2.3458 % with --world
+The mask takes 32 % of the blocks (the gun, the HUD corners, the boss bar's strip) and 14 - 23 % of the flags: the gun's and HUD's flips were counted as the level's flicker; the world's own share is higher (2.35 %) than the whole-picture figure said (1.93 %).
+Use --world on BOTH sides of a compare / floor / rank; the n74-t1 / t2 baselines (whole picture) stay valid against each other.
+
+## Tests (stub-run in a console, 20 passed; the Editor runs them for real): Pan74Tests.Calibrate_OnTheWorldCore_FindsTheRealFov_DespiteAScreenFixedOverlay (two cases: a camera told 62 and 58 degrees for a picture made at 60, a screen-fixed overlay in the lower right, both yaw conventions, a pitched camera: the chosen fov is within 1.5 deg
+of 60 and the world core is compensated to under a third), Pan74Tests.EnergyRect_ReadsOnlyItsRectangle; n74-flick.py selftest: the --world case (a block planted in the lower right fires 100 % without the mask, 0 blocks with it; the denominator 98648 -> 63130).
+Not checked: a Player sweep with the new calibration (the log's world-core line, the chosen fov near x0.98); whether the lower compensation residual changes the level shares (it should lower the flags that came from thin edges the old warp mis-aligned).

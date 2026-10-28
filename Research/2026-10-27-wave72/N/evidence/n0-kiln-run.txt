@@ -1,0 +1,86 @@
+10:55:17
+b80afc2fa
+openings: Logs/n71/play/kiln3/openings67.json kiln kb2 held, kb2c vista, kb3 held, kb3c vista, kb3d held (seed Design/levels/n57/openings57.json)
+gen-slots --level kiln: Design/levels/n57/kiln.plan.json -> Logs/n71/play/kiln3/kiln.plan.json (slots kb2,kb3,kb3c,kb3d; rebuilt: kb2, kb3, kb3c, kb3d); every other room, door, piece and key n57-kiln's bit for bit
+  slot kb2: latest Design/levels/n67/kiln/rooms/kb2.json: REBUILT; boxes 10 -> 8*, ramps 2 -> 2*, pads 2 -> 2*, grapple 0, pits 0, tunnels 0, lights 7 -> 6*, props 1; verb65 parry
+    row keys: keep 17, replace 11, add 5, drop 0
+    replace roles43
+    replace nodes
+    replace highNodes
+    replace nodes_why
+    replace waveNodes43
+    replace waveNodes43_why
+    replace lessons
+    replace lessons31
+    replace proofs
+    replace frames36
+    replace frames52
+    add     bot43
+    add     verb65
+    add     line65
+    add     card65
+    add     waves_why
+  slot kb2c: old Design/levels/n67/kiln/rooms-base/kb2c.json: n57-kiln's room exactly; boxes 12, ramps 2, pads 1, grapple 0, pits 0, tunnels 0, lights 8, props 1
+  slot kb3: latest Design/levels/n67/kiln/rooms/kb3.json: REBUILT; boxes 12 -> 9*, ramps 2 -> 1*, pads 2 -> 2*, grapple 0, pits 0, tunnels 0, lights 7 -> 5*, props 1 -> 1*; verb65 launch
+    row keys: keep 21, replace 9, add 6, drop 0
+    replace verb36
+    replace nodes
+    replace highNodes
+    replace nodes_why
+    replace waveNodes43
+    replace waveNodes43_why
+    replace proofs
+    replace frames36
+    replace frames52
+    add     bot43
+    add     verb65
+    add     line65
+    add     line65_why
+    add     card65
+    add     kiln70_why
+  slot kb3c: latest Design/levels/n67/kiln/rooms/kb3c.json: REBUILT; boxes 10 -> 10*, ramps 3 -> 4*, pads 2 -> 2*, grapple 0, pits 1 -> 1*, tunnels 0, lights 8 -> 8*, props 1 -> 1*; note = why filled on 2; verb65 ride
+    row keys: keep 17, replace 11, add 5, drop 0
+    replace waves
+    replace waves_why
+    replace roles43
+    replace nodes
+    replace highNodes
+    replace nodes_why
+    replace waveNodes43
+    replace waveNodes43_why
+    replace rims36
+    replace proofs
+    replace frames36
+    add     bot43
+    add     verb65
+    add     line65
+    add     card65
+    add     fallReturn43
+  slot kb3d: latest Design/levels/n67/kiln/rooms/kb3d.json: REBUILT; boxes 11 -> 13*, ramps 2, pads 1 -> 1*, grapple 0, pits 1 -> 3*, tunnels 0, lights 9 -> 9*, props 1; verb65 launch
+    row keys: keep 18, replace 9, add 6, drop 0
+    replace waves
+    replace roles43
+    replace nodes
+    replace highNodes
+    replace nodes_why
+    replace waveNodes43
+    replace waveNodes43_why
+    replace rims36
+    replace proofs
+    add     waves_why
+    add     bot43
+    add     verb65
+    add     line65
+    add     card65
+    add     fallReturn43
+shipped before: Design/levels/n67-kiln.json 79d29b5a8f834a0daba04584bed7b53afa7cbc04f7eb50caa1e355751135fee2, Assets/StreamingAssets/Design/levels/n67-kiln.json 79d29b5a8f834a0daba04584bed7b53afa7cbc04f7eb50caa1e355751135fee2
+  levelgen n67-kiln: 3438048 chars -> Logs/n71/play/kiln3/kiln.json; 181 boxes + the floor, 17 barriers, 11 wedges, 8 pads, 0 grapple nodes, 19 zones (kb1, kb1b, kb2, kb2b, kb2c, kb3, kb3c, kb3d, kb4, k5, d1, d2, d3, d4, d5, d6, d6b, d7, d8) (1.2 s)
+    plan checks: 0 problems
+    level report: 0 errors -> Logs/n71/play/kiln3/LEVEL-n67-kiln-validate.md (2.3 s)
+    bot walk: ; DID NOT reach the last exit; zone at the end kb1
+n67-kiln --finish: Logs/n71/play/kiln3/kiln.json -> Logs/n71/play/kiln3/n67-kiln.json (3438787 chars); kept rooms bit-equal to n57-kiln's; ERROR rows 0 (none); slots kb2,kb3,kb3c,kb3d: kb2 latest rebuilt, kb2c old, kb3 latest rebuilt, kb3c latest rebuilt, kb3d latest rebuilt
+levelgen --walk: 0 ERROR (none; 9 s)
+shipped after:  Design/levels/n67-kiln.json 79d29b5a8f834a0daba04584bed7b53afa7cbc04f7eb50caa1e355751135fee2, Assets/StreamingAssets/Design/levels/n67-kiln.json 79d29b5a8f834a0daba04584bed7b53afa7cbc04f7eb50caa1e355751135fee2 (byte-identical: --out writes only Logs/n71/play/kiln3)
+the round's level: Logs/n71/play/kiln3/n67-kiln.json 6a857b6c0710145110484886ba56c53d2ee132ce452b5c83bf2f3b8d7252fec0; plan Logs/n71/play/kiln3/kiln.plan.json, report Logs/n71/play/kiln3/LEVEL-n67-kiln-validate.md, openings Logs/n71/play/kiln3/openings67.json
+exit 0
+10:55:29

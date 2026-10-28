@@ -1,0 +1,28 @@
+n72lab 2026-10-27 11:28:50: the real Mover (120 Hz) on a flat floor and one wall; ULTRAKILL targets x0.5143 (movement.md); the sim's design rows NOT applied
+profiles: web = PortExport/config.json; now = web + design.ultra71.set; 
+| measure | unit | target | web | now |
+|---|---|---|---|---|
+| jump apex | m | 5.07 (9.86 u x0.5143) | 1.584 (-69%) | 5.070 (-0%) |
+| jump time to apex | s | 0.702 (0.702 s) | 0.442 (-37%) | 0.700 (-0%) |
+| jump air time (flat) | s | 1.404 (1.40 s) | 0.867 (-38%) | 1.408 (+0%) |
+| double jump: apex above the floor | m | none (ULTRAKILL has none; kept (GG: keep double jump)) | 2.877 | 9.176 |
+| dash distance | m | 5.09 (9.9 u x0.5143) | 5.800 (+14%) | 4.880 (-4%) |
+| dash speed | m/s | 25.46 (49.5 u/s) | 24.000 (-6%) | 25.460 (+0%) |
+| dash duration | s | 0.2 (25 ticks) | 0.242 (+21%) | 0.192 (-4%) |
+| slide speed, first step from walk | m/s | 12.34 (24 u/s) | 11.600 (-6%) | 11.600 (-6%) |
+| slide speed after 1 s | m/s | 12.34 (decays to 24 u/s) | 11.600 (-6%) | 11.600 (-6%) |
+| slam speed | m/s | 51.43 (100 u/s) | 48.000 (-7%) | 51.430 (+0%) |
+| wall jump: speed away from the wall | m/s | 12.34 (24 u/s) | 7.900 (-36%) | 12.234 (-1%) |
+| wall jump: upward speed | m/s | 12.34 (24 u/s) | 7.307 (-41%) | 12.179 (-1%) |
+| stop: time to half of walk speed | s | 0.024 (3 ticks x 8 ms (continuous 0.019)) | 0.117 (+386%) | 0.025 (+4%) |
+| stop: time to 5 % of walk speed | s | 0.088 (11 ticks (continuous 0.083)) | 0.333 (+279%) | 0.067 (-24%) |
+| ground accel: time to 50 % of walk speed | s | 0.024 (3 ticks x 8 ms (continuous 0.019)) | 0.067 (+178%) | 0.025 (+4%) |
+| ground accel: time to 95 % of walk speed | s | 0.088 (11 ticks (continuous 0.083)) | 0.142 (+61%) | 0.092 (+4%) |
+| air accel from rest: time to 95 % of walk speed | s | 0.261 (0.275 s to the cap, x0.95) | 0.642 (+146%) | 0.642 (+146%) |
+| air turn 90 deg at walk speed: time to 95 % across | s | 0.261 (per-axis: same as from rest) | 0.642 (+146%) | 0.642 (+146%) |
+| air turn 90 deg: speed kept along the old axis | % | 100 (no input adds nothing) | 100.0 (+0%) | 100.0 (+0%) |
+| bunny hop: speed kept per hop (worst of 3) | % | 100 (reel bar: >= 99) | 100.0 (+0%) | 100.0 (+0%) |
+| bunny hop: time between hops | s | 1.404 (flat air time) | 0.867 (-38%) | 1.408 (+0%) |
+| air strafe, optimal turn: speed gained over one flat jump | m/s | 3.5 (G: the per-axis cap's diagonal, 12.0 - 8.49) | 7.092 (+103%) | 9.861 (+182%) |
+
+toward the target against "now" (a row with a target and a value in both; |deviation| smaller = toward; equal within 0.5 % = same):

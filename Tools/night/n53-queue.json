@@ -1,0 +1,119 @@
+{
+  "_why": "NIGHT53 the loop's queue (NIGHT53.md section 5, then section 8's leftovers). The lead takes the top item whose state is open and whose owner is lead; K's items are builder K's queue (kiln, span, foundry plans). A cycle marks its item done / reverted / short with the commit and the log line's time. Extend it, never run out.",
+  "items": [
+    {
+      "id": "q1",
+      "owner": "lead",
+      "state": "done",
+      "what": "I2 / I3 computed: path lengths from the bot's nav grid (else DotRecast in a 45-minute box, else 'not computed'); their planted cases a3 (I2) and p1 (I3) FAIL",
+      "note": "08:20 cycle 1: I2 / I3 on the nav grid (Logs/n53/identity-q1.md); planted a3 I2 1.08 FAIL, p1 I3 1.22 FAIL"
+    },
+    {
+      "id": "q2",
+      "owner": "lead",
+      "state": "done",
+      "what": "iceline g2 THE SHIELD: frames52 spots + its two reviews (P-rank, GG persona); findings become queue items",
+      "note": "08:48: g2 framed (a452 GREEN on n53-r1) and reviewed by both; its mirror is NIGHT54's (D-14)"
+    },
+    {
+      "id": "q2b",
+      "owner": "lead",
+      "state": "open",
+      "what": "iceline g2: break the mirror (both reviews: cut the east ride panel, the west panel onto the pillar's west face as the flank; cut the east pillar) + the south floor 5 m shorter (GG)"
+    },
+    {
+      "id": "q3",
+      "owner": "lead",
+      "state": "done",
+      "what": "iceline g4: break the mirror (keep the east lock wall running north to the gallery as its way up; cut the west wall + run-up; the first drone off-axis west over the canal); the canal reads as a drop (pale violet-white lips, a glow from below)",
+      "note": "08:24 cycle 2: g4 I1 77 -> 59 % PASS; I2 1.18 (unchanged FAIL); contract 13/14 (exempt types item); frames at the next build"
+    },
+    {
+      "id": "q4",
+      "owner": "lead",
+      "state": "done",
+      "what": "iceline g3: the hopper stops at ~6 m with a funnel top (a walkers' ramp to it, or a 0-hit perch); the chute opens west into the lane; wave 2's nodes at the west lane's north end",
+      "note": "08:27 cycle 3: g3 contract 14/14; I1 21 % PASS; iceline I5 3 -> 2 rings PASS; I2 1.28 (unchanged FAIL)"
+    },
+    {
+      "id": "q3b",
+      "owner": "lead",
+      "state": "open",
+      "what": "iceline g4 I2: the 24 m east ride vs a 28.4 m walk (1.18): make the gallery's walk longer or the ride the only way (the gallery ramp's foot needs the east bridge)"
+    },
+    {
+      "id": "q4b",
+      "owner": "lead",
+      "state": "done",
+      "what": "I4 on iceline / spire: pads off the walk lines (g7 [0,0,-208] 1.62 m, g8 [-8.5,0,-236] 1.50, v2 [-4.5,0,61] 0.07 + [-20,2.4,72] 0.00, v5 [-13.5,0,-56] 1.12 + [-1,2.5,-55] 0.87, v6 [-0.5,0,-94.5] 1.02)",
+      "note": "09:05 cycle 4: g7's return hoist off line 0 (I4 PASS, pads 2/2, contract 14/14); g8's move reverted (pads 0/1); spire's pads answered (D-12)"
+    },
+    {
+      "id": "q5",
+      "owner": "lead",
+      "state": "done",
+      "what": "I5 on iceline and spire: vary one ring-round-a-mass room per level (the centre mass a place to fight on, or off-centre)",
+      "note": "08:50: iceline I5 PASS after g3 (cycle 3); spire I5 PASS at P0 (0 rings): nothing to vary"
+    },
+    {
+      "id": "q6",
+      "owner": "lead",
+      "state": "open",
+      "what": "the flow table's crosses (T-124): iceline's clear time (one cause, from the per-room flow files)"
+    },
+    {
+      "id": "q7",
+      "owner": "lead",
+      "state": "open",
+      "what": "iceline g1 / g6, the links"
+    },
+    {
+      "id": "k1",
+      "owner": "K",
+      "state": "open",
+      "what": "kiln kb3: the west bank cut by a 4 m lava inlet (the ride is the west side's way north); the posts stop at the gantry top +1 m; the north crossing 2 m roomier (the mould line 2 m south)"
+    },
+    {
+      "id": "k2",
+      "owner": "K",
+      "state": "open",
+      "what": "span p1: the south ramp cut; walkers keep the back ramp; density re-earned with pieces that serve the hook"
+    },
+    {
+      "id": "k3",
+      "owner": "K",
+      "state": "open",
+      "what": "foundry a3: the far floor +1.5 m, its only walk-ups the shelf ramp and the crane stair (the ride is the flat way on)"
+    },
+    {
+      "id": "k4",
+      "owner": "K",
+      "state": "open",
+      "what": "I5 on kiln / span / foundry: vary one ring-round-a-mass room per level; foundry's door dwell (T-124); foundry a8 with Walk43Foundry.cs's targets moved in step (DECIDE52 D-26)"
+    },
+    {
+      "id": "L1",
+      "owner": "lead",
+      "state": "open",
+      "what": "T-125 a152's THUNDERCLAP that never fires on the reel's taps"
+    },
+    {
+      "id": "L2",
+      "owner": "lead",
+      "state": "open",
+      "what": "kiln's teach line that ended before 8 s in a252 (the queue rule?)"
+    },
+    {
+      "id": "L3",
+      "owner": "lead",
+      "state": "open",
+      "what": "T-121 spire's tiers"
+    },
+    {
+      "id": "L5",
+      "owner": "lead",
+      "state": "open",
+      "what": "THREADS.md consolidate (over its 60-line cap)"
+    }
+  ]
+}

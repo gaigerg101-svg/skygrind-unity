@@ -1,0 +1,14 @@
+n72-fp-update 13:34:44 751463c6b; the lead's message: build n72-t2 at ba47bb280, Logs/player/n72-t2-fp-1.log and -2.log equal (only wall time differs); the twelve hashes as sent
+Ultra71Hashes re-recorded from two equal runs (n72-t2-fp-lead.txt, n72-t2-fp-lead.txt):
+  step 600 hash dfdd05762df49c52
+  step 1200 hash 66593a513b073a85
+  step 1800 hash e6f4baade691903f
+  step 2400 hash 8385df3a777362a6
+  step 3000 hash 56aff577da384163
+  step 3600 hash 8c86b054fb55f4d8
+  step 4200 hash 0fb6df20c66ae457
+  step 4800 hash ff1f9e21b80d1090
+  step 5400 hash 742c0a6d6bfd5db0
+  step 6000 hash f16cbbc486f72835
+  step 6600 hash 21f7e178e3281112
+  step 7200 hash 3e3796b62d40accb

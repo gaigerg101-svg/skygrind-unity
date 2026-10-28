@@ -1,0 +1,23 @@
+# command: dotnet Temp/SimHarness/bin/Release/net10.0/SimHarness.dll n46flow --level n67-iceline --rooms g5 --seeds 10 --first 1 --verbs65 --file C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/ice/g5/base/n67-iceline.json --plant-verb65 g5:ride
+# sha: f360cf025; time: 2026-10-28 00:29:01
+n46flow: seeds 1..10, cap 240 s per room, rows forced on: none, off switch: none; pilot: Walk38Pilot + the ported autopilot (normal)
+n46flow n67-iceline: --file C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/ice/g5/base/n67-iceline.json
+  put-in loadout (g5, BEFORE entering it: the room's own award, if any, comes on entry): awards of the rooms before it given: none; owned gauntlet
+  ride pilot g5: no line65 on g5's row: the ride pilot takes any ride36 face of the room, once per pass (the fallback)
+  entry loadout (n46flow, g5, 0.5 s after entering): owned gauntlet, in hand gauntlet
+n46flow n67-iceline (loaded n67-iceline; BaseId n45-iceline): 10/10 walks through g5..g5; level time median 48.1 s; the pilot's lava rule: out of lava 0 steps, held at an edge 0 steps, chases round it 0, detours 0; put at the next room (a link not crossed in max(30 s, 3 x par) or a cleared room not left in 15 s) 0; stuck46 burrowers ended 0
+  room       kind | stall%  maxStall  air% | kgap med/max | near med/p10/p90 | dwell  dead | deaths falls | clear (k/n)    | geometry
+  g5         room |   50.6      4.7  25.6 |  1.3 / 41.5  |  3.6 /  0.5 / 10.0  |   0.9   3.2 |      0     0 |   48.1 (10/10) | floor 614 m2, tiers 5, loop n (21.4 m2), pockets 1, sight 31.4 m, w1 in view 4/4
+  LEVEL           |   50.6      4.7  25.6 |  1.3 / 41.5  |  3.6 /  0.5 / 10.0  |   0.9   3.2 |      0     0 |   48.1 sum of medians
+n46flow n67-iceline SUMMARY: GREEN 10/10; stall 50.6 %, longest stall 4.7 s, air 25.6 %, kill gap 1.3 / 41.5 s, nearest 3.6 m, dwell 0.9 s, dead 3.2 s, deaths 0, falls 0, clear 48.1 s
+  style      kind |  DULL  COOL  BOLD  AIRB  SAVA  SKYG (% of fight steps) | top rank med / max (seeds)
+  g5         room |  90.0   8.8   1.2   0.0   0.0   0.0                    | COOL / BOLD (10)
+  LEVEL           |  90.0   8.8   1.2   0.0   0.0   0.0                    | top BOLD
+n46flow n67-iceline STYLE: DULL 90.0 % of 465 s of fight; above DULL 10.0 %; rooms reaching SAVAGE 0/1; top rank BOLD
+n46flow n67-iceline PAYOFFS: heal36 HP per close kill by rank: DULL 5.17 (6), COOL - (0), BOLD - (0), AIRBORNE - (0), SAVAGE - (0), SKYGRIND - (0); RIDE KILL refund per ride kill by rank: DULL - (0), COOL 0.00 (1), BOLD - (0), AIRBORNE - (0), SAVAGE - (0), SKYGRIND - (0)
+n46flow n67-iceline TOKENS: attack starts inside the sim cone (camera.fovDeg 74 / 2) 118/207 = 57.0 % (by kind: drone 77/92, swarmer 1/67, charger 19/27, warden 21/21); tokens56 thinks waited out of view 6346, advances 29
+n46flow n67-iceline RANGED: hit rate by the player's speed at the shot: stand 1/22 = 4.5 %, run 1/50 = 2.0 %, fast 0/1 = 0.0 %, dash 0/0 = - %; dash / stand NaN %, fast+dash / stand 0 %
+n46flow n67-iceline IDLE: idle in place 18.3 % of enemy-alive steps; per enemy (alive >= 2 s, 127): median 14.2 %, p90 34.8 %, over 20 %: 41 (32.3 %); by kind: swarmer 12.4 %, drone 33.8 %, charger 10.5 %, warden 18.3 %
+n46flow n67-iceline VERBS65 (--verbs65: the verb-aware pilot in rooms with verb65; planted g5:ride with bot43 false):
+  g5     verb65 ride         | trigger held 3657 of 55785 fight steps (6.6 %), episodes 21, performed: wall rides 17 (the face: any face (no line65); off-line ride starts cut 148 wall contacts)
+n46flow n67-iceline: wall time 50 s

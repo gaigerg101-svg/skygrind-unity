@@ -1,0 +1,7 @@
+# command: bash Tools/night/dn-check-wt.sh C:/Users/gaige/AppData/Local/Temp/claude/n71-B/dn (worktree n71-B, N71RoomTests setup fix on top of 03065bcb1)
+# time: 2026-10-26 13:32:40
+== Skygrind.Game.csproj: 0 error(s)
+== Skygrind.Game.Tests.csproj: 0 error(s)
+== Skygrind.Core.Tests.csproj: 0 error(s)
+== Assembly-CSharp-Editor.csproj: 0 error(s)
+dn-check total errors: 0

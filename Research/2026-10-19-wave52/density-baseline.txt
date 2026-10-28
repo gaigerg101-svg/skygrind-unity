@@ -1,0 +1,33 @@
+== iceline.plan.json boxes 30 ramps 10 pads 0 grapple 0 pits 5
+   g1 room 22x26 m boxes 2 ramps/pads/grapple 0 pieces per 100 m2 0.35 height 9
+   g2 room 24x28 m boxes 4 ramps/pads/grapple 2 pieces per 100 m2 0.89 height 9
+   g3 room 26x28 m boxes 7 ramps/pads/grapple 1 pieces per 100 m2 1.10 height 9
+   g4 room 24x30 m boxes 5 ramps/pads/grapple 1 pieces per 100 m2 0.83 height 10
+   g5 room 26x30 m boxes 4 ramps/pads/grapple 2 pieces per 100 m2 0.77 height 9
+   g6 room 14x18 m boxes 0 ramps/pads/grapple 0 pieces per 100 m2 0.00 height 6
+   g7 room 30x32 m boxes 3 ramps/pads/grapple 2 pieces per 100 m2 0.52 height 10
+   g8 room 24x30 m boxes 5 ramps/pads/grapple 2 pieces per 100 m2 0.97 height 9
+   x9 boss 38x38 m boxes 0 ramps/pads/grapple 0 pieces per 100 m2 0.00 height 14
+== kiln.plan.json boxes 39 ramps 5 pads 0 grapple 0 pits 5
+   kb2 room 36x44 m boxes 4 ramps/pads/grapple 3 pieces per 100 m2 0.44 height 16
+   kb2c room 28x30 m boxes 5 ramps/pads/grapple 0 pieces per 100 m2 0.60 height 12
+   kb3 room 40x46 m boxes 4 ramps/pads/grapple 2 pieces per 100 m2 0.33 height 18
+   k5 boss 64x64 m boxes 0 ramps/pads/grapple 0 pieces per 100 m2 0.00 height 32
+== span.plan.json boxes 60 ramps 8 pads 0 grapple 0 pits 25
+   p1 room 32x36 m boxes 13 ramps/pads/grapple 3 pieces per 100 m2 1.39 height 12
+   p3 room 40x40 m boxes 19 ramps/pads/grapple 6 pieces per 100 m2 1.56 height 14
+   p5 room 36x36 m boxes 15 ramps/pads/grapple 7 pieces per 100 m2 1.70 height 14
+   o3 boss 44x56 m boxes 4 ramps/pads/grapple 6 pieces per 100 m2 0.41 height 30
+== spire.plan.json boxes 62 ramps 5 pads 0 grapple 0 pits 6
+   v2 room 30x38 m boxes 14 ramps/pads/grapple 5 pieces per 100 m2 1.67 height 14
+   v5 room 12x35 m boxes 4 ramps/pads/grapple 0 pieces per 100 m2 0.95 height 9
+   v6 room 28x42 m boxes 7 ramps/pads/grapple 5 pieces per 100 m2 1.02 height 16
+   v11 boss 68x68 m boxes 8 ramps/pads/grapple 0 pieces per 100 m2 0.17 height 12
+== foundry.plan.json boxes 41 ramps 7 pads 0 grapple 0 pits 11
+   a2 room 14x20 m boxes 1 ramps/pads/grapple 1 pieces per 100 m2 0.71 height 7
+   a3 room 16x26 m boxes 2 ramps/pads/grapple 0 pieces per 100 m2 0.48 height 9
+   a4 room 8x19 m boxes 1 ramps/pads/grapple 2 pieces per 100 m2 1.97 height 6
+   a5 room 20x24 m boxes 3 ramps/pads/grapple 2 pieces per 100 m2 1.04 height 10
+   b1 room 36x40 m boxes 4 ramps/pads/grapple 2 pieces per 100 m2 0.42 height 12
+   a8 room 14x22 m boxes 6 ramps/pads/grapple 0 pieces per 100 m2 1.95 height 9
+   a9 boss 28x28 m boxes 0 ramps/pads/grapple 0 pieces per 100 m2 0.00 height 50

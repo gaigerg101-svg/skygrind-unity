@@ -1,0 +1,8 @@
+# command: bash Research/2026-10-23-wave66/T/t1c-paths-eq.sh C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/b545c660-8250-4a8f-9419-f29ef22d3556/scratchpad/paths
+# sha: b4c0f5c8 (tree 7 dirty paths), 2026-10-24 01:56:01 USMST, /c/Users/gaige/dev/SKYGRIND-unity/.claude/worktrees/agent-af48e888c59fa3626
+
+n59-l-room room b1: --dir EQUAL to the tracked paths (11 lines; last: ROOM b1: FAIL R5 foothold)
+n59-l-room room a3: --dir EQUAL to the tracked paths (11 lines; last: ROOM a3: PASS)
+n46flow --rooms b1 --seeds 3: --file EQUAL to --level n65-foundry (16 lines; n46flow n65-foundry SUMMARY: GREEN 3/3; stall 32.1 %, longest stall 4.3 s, air 55.4 %, kill gap 2.9 / 12.7 s, nearest 7.5 m, dwell 8.3 s, de)
+n46flow n65-foundry: --file C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/b545c660-8250-4a8f-9419-f29ef22d3556/scratchpad/paths/eq/n65-foundry.json
+# exit 0, 01:57:05

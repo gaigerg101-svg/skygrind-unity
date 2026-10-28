@@ -1,0 +1,8 @@
+# command: bash Tools/night/n65-verbs.sh launch Design/levels/n52-foundry.json a1
+# sha: 1f00d1d4 (branch n65-T; tracked changes uncommitted: 1 file(s))
+# time: 2026-10-23 15:25:33 -> 2026-10-23 15:25:38 (local)
+# exit: 0
+
+n65verb launch: level n52-foundry (Design/levels/n52-foundry.json), room a1 "1.1 INTAKE", seed 1; pose (0.0, 0.0, -2.0) yaw 0.0 from the room's spawn (no line65); off switch none
+n65verb launch: RED | no target: no live enemy in a1 within 15 s of the pose
+n65-verbs launch on Design/levels/n52-foundry.json (a1): GREEN 0, RED 1

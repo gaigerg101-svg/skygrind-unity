@@ -1,0 +1,10 @@
+# PLANTED: Design/levels/n67/iceline/rooms/g8.json row.verb65 = pierce (the dry slate says ride); L67=iceline ROOMS=g8 SLATE=Research/2026-10-24-wave67/T/t1b-dry-slate.json bash Tools/night/n67-round.sh dry-iceline-mismatch
+# sha e4fae1a2; 2026-10-24 11:26:03
+t1b-plant-verb65: Design/levels/n67/iceline/rooms/g8.json row.verb65 = pierce (PLANTED; restore with git checkout -- Design/levels/n67/iceline/rooms/g8.json)
+n67-round dry-iceline-mismatch: level iceline (n67-iceline), rooms g8, the slate snapshot Logs/n67/dry-iceline-mismatch/slate-at-start.json (from Research/2026-10-24-wave67/T/t1b-dry-slate.json, sha256 4217ea8aaac3c30b)
+n67-round dry-iceline-mismatch: latest assembled into Logs/n67/dry-iceline-mismatch (12 s): levelgen --walk: 0 ERROR (none; 8 s)
+n67-round dry-iceline-mismatch: REFUSED: a room's verb65 differs from the slate's verb (Logs/n67/dry-iceline-mismatch/verbs65.txt): fix the room file or the slate (a verb change re-runs its red first)
+verb65 g8 pierce (slate ride): MISMATCH (the room file's verb65 differs from the slate's verb)
+# exit 1 (1 expected: refused)
+# restored Design/levels/n67/iceline/rooms/g8.json: git status '' (empty = restored)
+# the round folder holds: LEVEL-n67-iceline-validate.md gen-latest.txt iceline.assembly.json iceline.json iceline.plan.json levelgen-report.md n67-iceline.json openings67.json slate-at-start.json tracked-status.txt verbs65.txt 

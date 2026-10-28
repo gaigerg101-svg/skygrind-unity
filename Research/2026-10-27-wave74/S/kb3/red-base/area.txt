@@ -1,0 +1,11 @@
+# command: node Tools/night/n70-area.cjs --level kiln --dir C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/kiln-base --touches Research/2026-10-27-wave74/S/kb3/red-base/skip.txt kb3
+# sha: b879f5ddc; time: 2026-10-28 01:56:39
+n70-area: room kb3; plan C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/kiln-base/kiln.plan.json, level C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/kiln-base/n67-kiln.json (the round's folder C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/kiln-base); touches Research/2026-10-27-wave74/S/kb3/red-base/skip.txt (12 touch rows, 51 launch kills); card Research/2026-10-24-wave67/cards/kb3.md (Archetype: CHUTE) (no TOWER / GALLERY / SPLIT LEVEL)
+OPEN  PASS largest open square 11.5 m (x -10.0..1.5, z -209.0..-197.5; 12 pieces on a 20.0 x 28.0 m rect; 12 m or less passes)
+P1    N/A  the last wave (husk husk husk husk swarmer swarmer swarmer swarmer) has no ranged enemy (spitter / drone)
+P4    PASS 7 / 7 standing solids >= 1.75 m do a job ((a) touched 7, (b) sight 4, (c) launch kill 5)
+P5    PASS walk line in a ranged spawn's sight at 6-24 m 25.0 % (>= 50 %), line65 18.8 % (<= walk - 30 points: no); line65's nearest enemy spawn 0.6 m (<= 6: yes); 8 ranged spawns
+P9    N/A  no plane 1 m or more up with a short side of 6 m or more
+P11   N/A  the card names no TOWER / GALLERY / SPLIT LEVEL (Research/2026-10-24-wave67/cards/kb3.md (Archetype: CHUTE))
+P17   PASS 1 / 1 ride walls 4 m tall and 8 m long; 0 non-ride wall(s) in that band; the strip = ride: true (ride36 faces 1)
+n70-area: PASS kb3 (4/4)

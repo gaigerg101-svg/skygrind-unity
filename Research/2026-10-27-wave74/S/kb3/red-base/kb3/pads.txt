@@ -1,0 +1,5 @@
+# command: dotnet Temp/SimHarness/bin/Release/net10.0/SimHarness.dll hold52 --level n67-kiln --room kb3 --pads --file C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/kiln-base/n67-kiln.json
+# sha: 251189c2b; time: 2026-10-28 01:31:19
+hold52: level n67-kiln (C:\Users\gaige\AppData\Local\Temp\claude\C--Users-gaige-dev-SKYGRIND-unity\07ef7707-bc3a-4541-8901-f98169a14875\scratchpad\n74S\kiln-base\n67-kiln.json), room kb3 "3.3 THE PRESS HALL" rect [-10,-225.5,10,-197.5], off switch none
+pad52 kb3 pad 5 at [7.25,0,-212] target [8,4.5,-221] launched yes apex 6.5 landed [8,4.5,-221.01] miss 0.01 m PASS
+pad52 kb3 pad 6 at [-8.5,0,-224.5] target [5,4.5,-224] launched yes apex 7 landed [5.06,4.5,-224] miss 0.06 m PASS

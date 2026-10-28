@@ -1,0 +1,11 @@
+# command: node Tools/night/n70-area.cjs --level iceline --dir C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/ice-g4-r6 --touches Research/2026-10-27-wave74/S/g4/r6/skip.txt g4
+# sha: 2a0e6c103; time: 2026-10-27 23:01:26
+n70-area: room g4; plan C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/ice-g4-r6/iceline.plan.json, level C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/ice-g4-r6/n67-iceline.json (the round's folder C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/ice-g4-r6); touches Research/2026-10-27-wave74/S/g4/r6/skip.txt (18 touch rows, 0 launch kills); card none
+OPEN  PASS largest open square 9.5 m (x -6.0..3.5, z -103.5..-94.0; 18 pieces on a 24.0 x 30.0 m rect; 12 m or less passes)
+P1    FAIL the last wave's 2 ranged of 2; its spawn set (nodes + highNodes) 1 / 7 nodes 3.5 m or more over the floor (y 0.0; each enemy takes a random node: all must be high)
+P4    PASS 4 / 4 standing solids >= 1.75 m do a job ((a) touched 4, (b) sight 1, (c) launch kill 0)
+P5    PASS walk line in a ranged spawn's sight at 6-24 m 100.0 % (>= 50 %), line65 100.0 % (<= walk - 30 points: no); line65's nearest enemy spawn 3.0 m (<= 6: yes); 7 ranged spawns
+P9    FAIL 0 / 2 planes with 2 climb tops >= 8 m apart: box(6,0,-124..12,4,-117) 6.0 x 7.0 m at 4.0 m: 4 climb top(s), farthest apart 1.0 m (NO); box(-12,0,-108..-6,2.5,-102) 6.0 x 6.0 m at 2.5 m: 15 climb top(s), farthest apart 5.0 m (NO)
+P11   N/A  the card names no TOWER / GALLERY / SPLIT LEVEL (no card)
+P17   PASS 1 / 1 ride walls 4 m tall and 8 m long; 0 non-ride wall(s) in that band; the strip = ride: true (ride36 faces 1)
+n70-area: FAIL g4 (4/6)

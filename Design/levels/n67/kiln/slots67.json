@@ -1,0 +1,25 @@
+{
+ "_why": "NIGHT67 (the lead's; written by Tools/night/n67-a1.cjs with every slot old, then only by Tools/night/n65-slot-set.cjs --level=kiln --slots=Design/levels/n67/kiln/slots67.json): which of n67-kiln's fight-room slots ship their rebuilt room file (new, bound to its GATE PASS's sha and the file's blob there) and which keep n57-kiln's room (old). gen-slots.cjs --level kiln --slots=Design/levels/n67/kiln/slots67.json assembles the shipped level from it.",
+ "slots": {
+  "kb2": {
+   "use": "old",
+   "why": "the night's initial slot set (n67-a1.cjs): n57-kiln's room until the rebuilt room PASSes its GATE"
+  },
+  "kb2c": {
+   "use": "old",
+   "why": "the night's initial slot set (n67-a1.cjs): n57-kiln's room until the rebuilt room PASSes its GATE"
+  },
+  "kb3": {
+   "use": "old",
+   "why": "the night's initial slot set (n67-a1.cjs): n57-kiln's room until the rebuilt room PASSes its GATE"
+  },
+  "kb3c": {
+   "use": "old",
+   "why": "the night's initial slot set (n67-a1.cjs): n57-kiln's room until the rebuilt room PASSes its GATE"
+  },
+  "kb3d": {
+   "use": "old",
+   "why": "the night's initial slot set (n67-a1.cjs): n57-kiln's room until the rebuilt room PASSes its GATE"
+  }
+ }
+}

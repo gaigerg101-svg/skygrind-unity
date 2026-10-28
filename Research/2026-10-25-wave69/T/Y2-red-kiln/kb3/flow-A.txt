@@ -1,0 +1,19 @@
+# command: dotnet Temp/SimHarness/bin/Release/net10.0/SimHarness.dll n46flow --level n57-kiln --rooms kb3 --seeds 10 --first 1 
+# sha: 27e0bfc4; time: 2026-10-25 10:26:07
+n46flow: seeds 1..10, cap 240 s per room, rows forced on: none, off switch: none; pilot: Walk38Pilot + the ported autopilot (normal)
+  put-in loadout (kb3, BEFORE entering it: the room's own award, if any, comes on entry): awards of the rooms before it given: revolver (kb2b's award); owned shotgun revolver
+  entry loadout (n46flow, kb3, 0.5 s after entering): owned shotgun revolver gauntlet, in hand gauntlet
+n46flow n57-kiln (loaded n57-kiln; BaseId n45-kiln): 10/10 walks through kb3..kb3; level time median 46.6 s; the pilot's lava rule: out of lava 0 steps, held at an edge 0 steps, chases round it 0, detours 0; put at the next room (a link not crossed in max(30 s, 3 x par) or a cleared room not left in 15 s) 0; stuck46 burrowers ended 0
+  room       kind | stall%  maxStall  air% | kgap med/max | near med/p10/p90 | dwell  dead | deaths falls | clear (k/n)    | geometry
+  kb3        room |   22.7      4.3  58.2 |  1.4 / 10.0  |  6.3 /  2.2 / 11.2  |   5.3   5.2 |      0     0 |   46.6 (10/10) | floor 518 m2, tiers 4, loop n (7.2 m2), pockets 2, sight 32.2 m, w1 in view 0/6
+  LEVEL           |   22.7      4.3  58.2 |  1.4 / 10.0  |  6.3 /  2.2 / 11.2  |   5.3   5.2 |      0     0 |   46.6 sum of medians
+n46flow n57-kiln SUMMARY: GREEN 10/10; stall 22.7 %, longest stall 4.3 s, air 58.2 %, kill gap 1.4 / 10.0 s, nearest 6.3 m, dwell 5.3 s, dead 5.2 s, deaths 0, falls 0, clear 46.6 s
+  style      kind |  DULL  COOL  BOLD  AIRB  SAVA  SKYG (% of fight steps) | top rank med / max (seeds)
+  kb3        room |  24.8  17.7  27.5  19.5   9.1   1.4                    | AIRBORNE / SKYGRIND (10)
+  LEVEL           |  24.8  17.7  27.5  19.5   9.1   1.4                    | top SKYGRIND
+n46flow n57-kiln STYLE: DULL 24.8 % of 466 s of fight; above DULL 75.2 %; rooms reaching SAVAGE 1/1; top rank SKYGRIND
+n46flow n57-kiln PAYOFFS: heal36 HP per close kill by rank: DULL 10.00 (2), COOL 8.50 (4), BOLD 9.01 (10), AIRBORNE 7.14 (6), SAVAGE 7.91 (6), SKYGRIND - (0); RIDE KILL refund per ride kill by rank: DULL 0.00 (2), COOL 0.00 (1), BOLD 0.00 (10), AIRBORNE 0.00 (6), SAVAGE 0.00 (1), SKYGRIND - (0)
+n46flow n57-kiln TOKENS: attack starts inside the sim cone (camera.fovDeg 74 / 2) 150/167 = 89.8 % (by kind: spitter 89/98, husk 29/30, charger 22/24, swarmer 10/15); tokens56 thinks waited out of view 4036, advances 8
+n46flow n57-kiln RANGED: hit rate by the player's speed at the shot: stand 6/18 = 33.3 %, run 16/56 = 28.6 %, fast 0/8 = 0.0 %, dash 0/2 = 0.0 %; dash / stand 0 %, fast+dash / stand 0 %
+n46flow n57-kiln IDLE: idle in place 8.8 % of enemy-alive steps; per enemy (alive >= 2 s, 200): median 5.1 %, p90 13.6 %, over 20 %: 10 (5.0 %); by kind: husk 8.1 %, spitter 5.2 %, swarmer 13.5 %, charger 15.2 %
+n46flow n57-kiln: wall time 69 s

@@ -1,0 +1,35 @@
+# sha 6fe10f5d + the uncommitted V65Start put-in (Harness.N65.Verb.cs); DLL 12:21:17; 2026-10-24 12:21:25
+
+## dotnet Temp/SimHarness/bin/Release/net10.0/SimHarness.dll n65verb parry --level Design/levels/n52-iceline.json --room g7 --no-put-in-awards
+  spitter #3 at (1.3, -0.0, -194.3), 5.0 m off; its volleys 3, the closest glob 1.7 m (reach 2.0 m), punches 1, parry36 events 0, parry36 on
+n65verb parry: RED | room g7 | parried no (0 glob(s)), the return's hits 0 (bodies 0), spitter alive | parry36 return bursts 0 (hits 0, kills 0; a second victim no) | pose the room's spawn (no line65)
+
+## dotnet Temp/SimHarness/bin/Release/net10.0/SimHarness.dll n65verb parry --level Design/levels/n52-iceline.json --room g7 
+  put-in loadout (g7): awards of the rooms before it given: revolver (g6's award); owned gauntlet revolver
+  spitter #3 at (1.3, -0.0, -194.3), 5.0 m off; its volleys 3, the closest glob 1.7 m (reach 2.0 m), punches 1, parry36 events 1, parry36 on
+n65verb parry: GREEN | room g7 | parried yes (1 glob(s)), the return's hits 3 (bodies 2), spitter alive | parry36 return bursts 1 (hits 2, kills 0; a second victim yes) | pose the room's spawn (no line65)
+
+## dotnet Temp/SimHarness/bin/Release/net10.0/SimHarness.dll n65verb launch --level Design/levels/n57-kiln.json --room kb3 --no-put-in-awards
+  target husk #4 at (-5.4, 0.0, -209.6) (from (-8.5, 0.0, -203.0)), dash at step 53, punch at step 69 in state Dash (grace 18)
+n65verb launch: RED | room kb3 | launch36 0, flight end  thrown 0.0 m (max 1.1 m), bursts 0 (hits 0, kills 0) | landed (-5.0, 0.0, -210.0), in a pit no, in lava no, target alive | pose the room's spawn (no line65) | the punch launched nothing far
+
+## dotnet Temp/SimHarness/bin/Release/net10.0/SimHarness.dll n65verb launch --level Design/levels/n57-kiln.json --room kb3 
+  put-in loadout (kb3): awards of the rooms before it given: revolver (kb2b's award); owned shotgun revolver
+  target husk #4 at (-5.4, 0.0, -209.6) (from (-8.5, 0.0, -203.0)), dash at step 53, punch at step 69 in state Dash (grace 18)
+n65verb launch: RED | room kb3 | launch36 0, flight end  thrown 0.0 m (max 1.1 m), bursts 0 (hits 0, kills 0) | landed (-5.0, 0.0, -210.0), in a pit no, in lava no, target alive | pose the room's spawn (no line65) | the punch launched nothing far
+
+## dotnet Temp/SimHarness/bin/Release/net10.0/SimHarness.dll n65verb pierce --level Design/levels/n57-kiln.json --room kb3c --no-put-in-awards
+n65verb pierce: RED | room kb3c | the charged shot hit 0 bodies, kills 0, stand-ins killed 0/0 | aim the nearest body, tracked (husk #3 at (2.5, -0.0, -243.7)) | pose the room's spawn (no line65) | one body or none: no pierce
+
+## dotnet Temp/SimHarness/bin/Release/net10.0/SimHarness.dll n65verb pierce --level Design/levels/n57-kiln.json --room kb3c 
+  put-in loadout (kb3c): awards of the rooms before it given: revolver (kb2b's award), gauntlet (kb3's award); owned shotgun revolver gauntlet
+n65verb pierce: RED | room kb3c | the charged shot hit 0 bodies, kills 0, stand-ins killed 0/0 | aim the nearest body, tracked (husk #3 at (2.5, -0.0, -243.7)) | pose the room's spawn (no line65) | one body or none: no pierce
+
+## level 1 unchanged: n52-foundry a4 parry / a5 launch / a8 pierce, the old put-in against the fix (the put-in line and wall time aside)
+IDENTICAL a4 parry (5 lines): n65verb parry: level n52-foundry (Design/levels/n52-foundry.json), room a4 "1.4 PARRY", seed 1; pose (0.0, 0.0, -91.0) yaw 0.0 from the room
+n65verb parry: GREEN | room a4 | parried yes (1 glob(s)), the return's hits 2 (bodies 1), spitter killed (orb) | parry36 return bursts 1 (hi
+IDENTICAL a5 launch (6 lines): n65verb launch: level n52-foundry (Design/levels/n52-foundry.json), room a5 "1.5 CRUCIBLE", seed 1; pose (0.0, 0.0, -117.0) yaw 0.0 from the
+n65verb launch: GREEN | room a5 | launch36 1, flight end body thrown 1.3 m (max 1.2 m), bursts 1 (hits 2, kills 2) | landed (-0.4, 1.3, -124
+IDENTICAL a8 pierce (5 lines): n65verb pierce: level n52-foundry (Design/levels/n52-foundry.json), room a8 "1.10 PIERCE", seed 1; pose (0.0, 0.0, -343.5) yaw 0.0 from the 
+n65verb pierce: GREEN | room a8 | the charged shot hit 2 bodies, kills 2, stand-ins killed 0/0 | aim the nearest body, tracked (husk #2 at (
+# done 12:22:00

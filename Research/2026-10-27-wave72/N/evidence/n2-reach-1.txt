@@ -1,0 +1,123 @@
+n72-reach 11:59:45 13898e790
+PASS planted low wall (ring 6 m): found from the floor
+PASS planted deck beside a 10 m ring: found
+PASS a 16 m ring with the same deck: not found
+PASS a roofed 7 m room: the double jump bonks, the single jump clears (margin +0.13)
+PASS its ride lane (base 2 m): the single jump bonks (7 < 2 + 5.07 + 1.8 = 8.87) and the double jump too
+PASS escapes counted once per room
+n72-reach selftest: all PASS
+n72-reach n52-foundry: 11 rooms, 2 roofless, ESCAPE 1 (a3); floor jump bonks 3 (a1, a4, a6), floor double jump bonks 6 (a1, a2, a4, a5, a6, a8); ride lanes that bonk: a5 0J/1D of 1 (jump 5.07, double 9.18, head 1.8, adjacent 2 m)
+  a1 link h 6 roof; floor margin jump -0.87 m, double -4.98 m
+  a2 room h 7 roof; floor margin jump 0.13 m, double -3.98 m
+  a3 room h 10 ROOFLESS
+    ESCAPE from the ledge at 2.5 m (-7,-85 to -2,-80), 0.0 m off the ring: 2.5 + 9.18 = 11.68 >= 10
+    ESCAPE from the ledge at 2.5 m (-2,-83 to 2,-80), 2.0 m off the ring: 2.5 + 9.18 = 11.68 >= 10
+    ESCAPE from the ledge at 2.5 m (2,-85 to 4,-83), 0.0 m off the ring: 2.5 + 9.18 = 11.68 >= 10
+    ESCAPE from the ledge at 2.5 m (-10,-85 to -7,-67), 0.0 m off the ring: 2.5 + 9.18 = 11.68 >= 10
+    ESCAPE from the ledge at 5 m (6.5,-85 to 10,-81.5), 0.0 m off the ring: 5 + 9.18 = 14.18 >= 10
+    ESCAPE from the ledge at 2.5 m (4,-85 to 6.5,-83), 0.0 m off the ring: 2.5 + 9.18 = 11.68 >= 10
+  a4 room h 6 roof; floor margin jump -0.87 m, double -4.98 m
+  a5 room h 10 roof; floor margin jump 3.13 m, double -0.98 m; ride lanes 1: bonk 0 jump / 1 double
+  b1 room h 12 roof; floor margin jump 5.13 m, double 1.02 m; ride lanes 2: bonk 0 jump / 0 double
+  b2 link h 14 roof; floor margin jump 7.13 m, double 3.02 m; ride lanes 5: bonk 0 jump / 0 double
+  a6 link h 5 roof; floor margin jump -1.87 m, double -5.98 m
+  a7 link h 13 roof; floor margin jump 6.13 m, double 2.02 m; ride lanes 2: bonk 0 jump / 0 double
+  a8 room h 9 roof; floor margin jump 2.13 m, double -1.98 m; ride lanes 2: bonk 0 jump / 0 double
+  a9 boss h 50 ROOFLESS
+n72-reach n52-iceline: 10 rooms, 0 roofless, ESCAPE 0; floor jump bonks 2 (g6, gr), floor double jump bonks 7 (g1, g2, g3, g4, g6, g7, gr); ride lanes that bonk: g1 0J/2D of 2, g2 0J/1D of 1, g3 0J/1D of 1, g7 0J/2D of 2 (jump 5.07, double 9.18, head 1.8, adjacent 2 m)
+  g1 room h 9 roof; floor margin jump 2.13 m, double -1.98 m; ride lanes 2: bonk 0 jump / 2 double
+  g2 room h 10 roof; floor margin jump 3.13 m, double -0.98 m; ride lanes 1: bonk 0 jump / 1 double
+  g3 room h 10 roof; floor margin jump 3.13 m, double -0.98 m; ride lanes 1: bonk 0 jump / 1 double
+  g4 room h 10 roof; floor margin jump 3.13 m, double -0.98 m; ride lanes 1: bonk 0 jump / 0 double
+  g5 room h 12 roof; floor margin jump 5.13 m, double 1.02 m; ride lanes 4: bonk 0 jump / 0 double
+  g6 room h 6 roof; floor margin jump -0.87 m, double -4.98 m
+  g7 room h 10 roof; floor margin jump 3.13 m, double -0.98 m; ride lanes 2: bonk 0 jump / 2 double
+  g8 room h 12 roof; floor margin jump 5.13 m, double 1.02 m; ride lanes 2: bonk 0 jump / 0 double
+  gr link h 5 roof; floor margin jump -1.87 m, double -5.98 m
+  x9 boss h 14 roof; floor margin jump 7.13 m, double 3.02 m
+n72-reach n57-kiln: 10 rooms, 0 roofless, ESCAPE 0; floor jump bonks 1 (kb4), floor double jump bonks 1 (kb4); ride lanes that bonk: none (jump 5.07, double 9.18, head 1.8, adjacent 2 m)
+  kb1 link h 26 roof; floor margin jump 19.13 m, double 15.02 m
+  kb1b link h 32 roof; floor margin jump 25.13 m, double 21.02 m; ride lanes 1: bonk 0 jump / 0 double
+  kb2 room h 14 roof; floor margin jump 7.13 m, double 3.02 m; ride lanes 1: bonk 0 jump / 0 double
+  kb2b link h 32 roof; floor margin jump 25.13 m, double 21.02 m; ride lanes 1: bonk 0 jump / 0 double
+  kb2c room h 12 roof; floor margin jump 5.13 m, double 1.02 m; ride lanes 1: bonk 0 jump / 0 double
+  kb3 room h 14 roof; floor margin jump 7.13 m, double 3.02 m; ride lanes 1: bonk 0 jump / 0 double
+  kb3c room h 12 roof; floor margin jump 5.13 m, double 1.02 m; ride lanes 1: bonk 0 jump / 0 double
+  kb3d room h 12 roof; floor margin jump 5.13 m, double 1.02 m; ride lanes 1: bonk 0 jump / 0 double
+  kb4 link h 5 roof; floor margin jump -1.87 m, double -5.98 m
+  k5 boss h 32 roof; floor margin jump 25.13 m, double 21.02 m
+n72-reach n52-span: 8 rooms, 0 roofless, ESCAPE 0; floor jump bonks 0, floor double jump bonks 0; ride lanes that bonk: none (jump 5.07, double 9.18, head 1.8, adjacent 2 m)
+  p1 room h 12 roof; floor margin jump 5.13 m, double 1.02 m; ride lanes 2: bonk 0 jump / 0 double
+  p2 link h 22 roof; floor margin jump 15.13 m, double 11.02 m
+  p3 room h 14 roof; floor margin jump 7.13 m, double 3.02 m; ride lanes 2: bonk 0 jump / 0 double
+  p4 link h 32 roof; floor margin jump 25.13 m, double 21.02 m
+  p5 room h 14 roof; floor margin jump 7.13 m, double 3.02 m; ride lanes 4: bonk 0 jump / 0 double
+  o1 link h 20 roof; floor margin jump 13.13 m, double 9.02 m; ride lanes 1: bonk 0 jump / 0 double
+  o2 link h 20 roof; floor margin jump 13.13 m, double 9.02 m
+  o3 boss h 30 roof; floor margin jump 23.13 m, double 19.02 m; ride lanes 4: bonk 0 jump / 0 double
+n72-reach n52-spire: 11 rooms, 1 roofless, ESCAPE 0; floor jump bonks 1 (v8), floor double jump bonks 7 (v1, v3, v4, v7, v8, v9, v10); ride lanes that bonk: none (jump 5.07, double 9.18, head 1.8, adjacent 2 m)
+  v1 link h 9 roof; floor margin jump 2.13 m, double -1.98 m
+  v2 room h 14 roof; floor margin jump 7.13 m, double 3.02 m; ride lanes 1: bonk 0 jump / 0 double
+  v3 link h 9 roof; floor margin jump 2.13 m, double -1.98 m
+  v4 link h 9 roof; floor margin jump 2.13 m, double -1.98 m
+  v5 room h 12 roof; floor margin jump 5.13 m, double 1.02 m; ride lanes 2: bonk 0 jump / 0 double
+  v6 room h 16 roof; floor margin jump 9.13 m, double 5.02 m; ride lanes 2: bonk 0 jump / 0 double
+  v7 link h 9 roof; floor margin jump 2.13 m, double -1.98 m
+  v8 link h 6 roof; floor margin jump -0.87 m, double -4.98 m
+  v9 link h 10 roof; floor margin jump 3.13 m, double -0.98 m
+  v10 link h 10 roof; floor margin jump 3.13 m, double -0.98 m
+  v11 boss h 12 ROOFLESS
+n72-reach n65-foundry: 11 rooms, 2 roofless, ESCAPE 1 (a3); floor jump bonks 3 (a1, a4, a6), floor double jump bonks 6 (a1, a2, a4, a5, a6, a8); ride lanes that bonk: a5 0J/1D of 1, a8 0J/3D of 3 (jump 5.07, double 9.18, head 1.8, adjacent 2 m)
+  a1 link h 6 roof; floor margin jump -0.87 m, double -4.98 m
+  a2 room h 7 roof; floor margin jump 0.13 m, double -3.98 m
+  a3 room h 10 ROOFLESS
+    ESCAPE from the ledge at 2.5 m (-7,-85 to -2,-80), 0.0 m off the ring: 2.5 + 9.18 = 11.68 >= 10
+    ESCAPE from the ledge at 2.5 m (-2,-83 to 2,-80), 2.0 m off the ring: 2.5 + 9.18 = 11.68 >= 10
+    ESCAPE from the ledge at 2.5 m (2,-85 to 4,-83), 0.0 m off the ring: 2.5 + 9.18 = 11.68 >= 10
+    ESCAPE from the ledge at 2.5 m (-10,-85 to -7,-67), 0.0 m off the ring: 2.5 + 9.18 = 11.68 >= 10
+    ESCAPE from the ledge at 5 m (6.5,-85 to 10,-81.5), 0.0 m off the ring: 5 + 9.18 = 14.18 >= 10
+    ESCAPE from the ledge at 2.5 m (4,-85 to 6.5,-83), 0.0 m off the ring: 2.5 + 9.18 = 11.68 >= 10
+  a4 room h 6 roof; floor margin jump -0.87 m, double -4.98 m
+  a5 room h 10 roof; floor margin jump 3.13 m, double -0.98 m; ride lanes 1: bonk 0 jump / 1 double
+  b1 room h 12 roof; floor margin jump 5.13 m, double 1.02 m; ride lanes 2: bonk 0 jump / 0 double
+  b2 link h 14 roof; floor margin jump 7.13 m, double 3.02 m; ride lanes 5: bonk 0 jump / 0 double
+  a6 link h 5 roof; floor margin jump -1.87 m, double -5.98 m
+  a7 link h 13 roof; floor margin jump 6.13 m, double 2.02 m; ride lanes 2: bonk 0 jump / 0 double
+  a8 room h 9 roof; floor margin jump 2.13 m, double -1.98 m; ride lanes 3: bonk 0 jump / 3 double
+  a9 boss h 50 ROOFLESS
+n72-reach n67-iceline: 10 rooms, 0 roofless, ESCAPE 0; floor jump bonks 2 (g6, gr), floor double jump bonks 7 (g1, g2, g3, g4, g6, g7, gr); ride lanes that bonk: g1 0J/2D of 2, g2 0J/1D of 1, g3 0J/1D of 1, g4 0J/1D of 1, g7 0J/2D of 2 (jump 5.07, double 9.18, head 1.8, adjacent 2 m)
+  g1 room h 9 roof; floor margin jump 2.13 m, double -1.98 m; ride lanes 2: bonk 0 jump / 2 double
+  g2 room h 10 roof; floor margin jump 3.13 m, double -0.98 m; ride lanes 1: bonk 0 jump / 1 double
+  g3 room h 10 roof; floor margin jump 3.13 m, double -0.98 m; ride lanes 1: bonk 0 jump / 1 double
+  g4 room h 10 roof; floor margin jump 3.13 m, double -0.98 m; ride lanes 1: bonk 0 jump / 1 double
+  g5 room h 12 roof; floor margin jump 5.13 m, double 1.02 m; ride lanes 4: bonk 0 jump / 0 double
+  g6 room h 6 roof; floor margin jump -0.87 m, double -4.98 m
+  g7 room h 10 roof; floor margin jump 3.13 m, double -0.98 m; ride lanes 2: bonk 0 jump / 2 double
+  g8 room h 12 roof; floor margin jump 5.13 m, double 1.02 m; ride lanes 2: bonk 0 jump / 0 double
+  gr link h 5 roof; floor margin jump -1.87 m, double -5.98 m
+  x9 boss h 14 roof; floor margin jump 7.13 m, double 3.02 m
+n72-reach n67-kiln: 10 rooms, 0 roofless, ESCAPE 0; floor jump bonks 1 (kb4), floor double jump bonks 1 (kb4); ride lanes that bonk: none (jump 5.07, double 9.18, head 1.8, adjacent 2 m)
+  kb1 link h 26 roof; floor margin jump 19.13 m, double 15.02 m
+  kb1b link h 32 roof; floor margin jump 25.13 m, double 21.02 m; ride lanes 1: bonk 0 jump / 0 double
+  kb2 room h 14 roof; floor margin jump 7.13 m, double 3.02 m; ride lanes 1: bonk 0 jump / 0 double
+  kb2b link h 32 roof; floor margin jump 25.13 m, double 21.02 m; ride lanes 1: bonk 0 jump / 0 double
+  kb2c room h 12 roof; floor margin jump 5.13 m, double 1.02 m; ride lanes 1: bonk 0 jump / 0 double
+  kb3 room h 14 roof; floor margin jump 7.13 m, double 3.02 m; ride lanes 1: bonk 0 jump / 0 double
+  kb3c room h 12 roof; floor margin jump 5.13 m, double 1.02 m; ride lanes 1: bonk 0 jump / 0 double
+  kb3d room h 12 roof; floor margin jump 5.13 m, double 1.02 m; ride lanes 1: bonk 0 jump / 0 double
+  kb4 link h 5 roof; floor margin jump -1.87 m, double -5.98 m
+  k5 boss h 32 roof; floor margin jump 25.13 m, double 21.02 m
+n72-reach n67-spire: 11 rooms, 1 roofless, ESCAPE 0; floor jump bonks 1 (v8), floor double jump bonks 7 (v1, v3, v4, v7, v8, v9, v10); ride lanes that bonk: v6 0J/1D of 3 (jump 5.07, double 9.18, head 1.8, adjacent 2 m)
+  v1 link h 9 roof; floor margin jump 2.13 m, double -1.98 m
+  v2 room h 14 roof; floor margin jump 7.13 m, double 3.02 m; ride lanes 1: bonk 0 jump / 0 double
+  v3 link h 9 roof; floor margin jump 2.13 m, double -1.98 m
+  v4 link h 9 roof; floor margin jump 2.13 m, double -1.98 m
+  v5 room h 12 roof; floor margin jump 5.13 m, double 1.02 m; ride lanes 2: bonk 0 jump / 0 double
+  v6 room h 16 roof; floor margin jump 9.13 m, double 5.02 m; ride lanes 3: bonk 0 jump / 1 double
+  v7 link h 9 roof; floor margin jump 2.13 m, double -1.98 m
+  v8 link h 6 roof; floor margin jump -0.87 m, double -4.98 m
+  v9 link h 10 roof; floor margin jump 3.13 m, double -0.98 m
+  v10 link h 10 roof; floor margin jump 3.13 m, double -0.98 m
+  v11 boss h 12 ROOFLESS
+n72-reach: 2 of 9 levels with an ESCAPE
+exit 1

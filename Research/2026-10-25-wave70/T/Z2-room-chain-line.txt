@@ -1,0 +1,5 @@
+# command: room-chain.sh's 'launch ends' line (Research/2026-10-25-forge70/room-chain.sh, NIGHT70 Z2) run on the saved Z2 AFTER skips (D = their folder)
+# sha: 140b0241d + the Z2 working copy; time: 2026-10-26 00:03:03
+kb3: launch ends kb3: median 5 charted launches per run over the 3 seeds that launched; ends body 7, timeout 2, dead 3, wall 2; in pit 0, in lava 0; falls (verb-aware seeds): 0
+v2: launch ends v2: median 2 charted launches per run over the 3 seeds that launched; ends wall 3, body 3; in pit 0, in lava 0; falls (verb-aware seeds): 0
+kb3r1d: launch ends kb3: median 3 charted launches per run over the 3 seeds that launched; ends body 2, dead 3, wall 3, timeout 1; in pit 1, in lava 0; falls (verb-aware seeds): 14

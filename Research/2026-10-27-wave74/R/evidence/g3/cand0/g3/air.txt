@@ -1,0 +1,48 @@
+# command: node Tools/night/n65-air.cjs C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/ice/g3/cand0/iceline.plan.json g3
+# sha: f360cf025 (+ the room file as in the tree); time: 2026-10-28 00:20:25
+n65-air n67-iceline g3 "2.3 THE TIPPLE RIDES" (C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/ice/g3/cand0/iceline.plan.json):
+  numbers: jump v0 8.33 m/s, g 23.15 m/s2 (fall x1.35), double v0 7.50, dash 24 m/s x 0.25 s = 6.0 m, dash-jump v0 6.67 with g x0.5 for 0.5 s at 24 m/s, run-up 8 m/s, wall jump out 5 up 8.33 (wallfling42 on), ride 9.20 m/s, jump-off out 8 +1 up 7.30 (ride39 on), capsule 0.35 m; a ride held 2.5 m over its base
+  air pieces 8:
+    R1   ride  face x = 11.4 (-x), -79.0..-64.0 (15.0 m), band 0.0..8.0, held at 2.5 | line: THE COAL RIDE (ride over the east floor onto the tipple head): NIGHT71 R r1 (Research/2026-10-26-wave71
+    D2   deck  top 4.0 m over [5.0, -86.0, 12.0, -79.0] | line: THE TIPPLE HEAD (the high tier, the coal ride's landing): NIGHT71 R r1 (Research/2026-10-26-wave71
+    R3   ride  face x = -11.4 (+x), -82.0..-66.0 (16.0 m), band 0.0..8.0, held at 2.5 | line: THE PANEL (ride up the west side onto the weigh loft): NIGHT71 R r1 (Research/2026-10-26-wave71
+    D4   deck  top 4.0 m over [-12.0, -66.0, -6.0, -62.0] | line: THE WEIGH LOFT (the high tier on the door wall, the panel's landing): NIGHT71 R r1 (Research/2026-10-26-wave71
+    L5   ledge top 3.0 m over [-1.0, -77.0, 3.0, -73.0] | 30 s problem: THE HOPPER (mid-floor cover, the step between the decks): NIGHT71 R r1 (Research/2026-10-26-wave71
+    L6   ledge top 2.0 m over [-7.5, -83.0, -4.5, -81.0] | 30 s problem: THE COAL CAR (far-floor cover, a step up): NIGHT71 R r2 (Research/2026-10-26-wave71
+    P7   pad   at (-9.0, 0.0, -87.0) -> (8.5, 4.0, -82.5) (on the floor) | line: THE TIPPLE HOIST (the far west floor onto the tipple head)
+    P8   pad   at (10.0, 4.0, -85.0) -> (-9.0, 4.0, -64.5) | line: THE LOFT HOIST (the tipple head over the room onto the weigh loft)
+  hand-offs 28 (piece -> piece without touching the floor, the easiest move first):
+    R1 -> D2  jump-off + double, margin 7.08 m (gap 0.4 m); also wall jump + double 4.40
+    R1 -> L5  dash, margin 1.38 m (gap 8.8 m)
+    D2 -> R3  dash-jump, margin 2.13 m of height (gap 16.0 m); also dash-jump + double 1.05
+    D2 -> D4  dash-jump, margin 3.62 m (gap 17.4 m); also dash-jump + double 13.82
+    D2 -> L5  jump, margin 2.82 m (gap 3.2 m); also jump + double 6.09, dash 8.29, dash-jump 19.82, dash-jump + double 29.62
+    D2 -> L6  dash, margin 2.28 m (gap 9.9 m); also dash-jump 14.75, dash-jump + double 24.35
+    D2 -> P8  jump, margin 4.42 m (gap 0.9 m); also jump + double 7.88, dash 9.82, dash-jump 20.15, dash-jump + double 30.35
+    R3 -> D4  jump-off + double, margin 7.08 m (gap 0.4 m); also wall jump + double 4.40
+    R3 -> L6  jump-off, margin 1.23 m (gap 4.3 m); also jump-off + double 4.84, wall jump + double 1.38, dash 6.88
+    D4 -> R1  dash-jump, margin 2.34 m of height (gap 17.0 m); also dash-jump + double 0.90
+    D4 -> D2  dash-jump, margin 3.62 m (gap 17.4 m); also dash-jump + double 13.82
+    D4 -> L5  jump + double, margin 0.31 m (gap 9.0 m); also dash 2.51, dash-jump 14.05, dash-jump + double 23.85
+    D4 -> L6  dash-jump, margin 9.25 m (gap 15.4 m); also dash-jump + double 18.85
+    D4 -> P8  dash-jump + double, margin 6.71 m (gap 24.5 m)
+    L5 -> R1  jump + double, margin 3.49 m of height (gap 8.1 m); also dash 3.58, dash-jump 3.11, dash-jump + double 3.11
+    L5 -> D2  jump, margin 1.02 m (gap 3.2 m); also jump + double 4.82, dash 6.15, dash-jump 15.22, dash-jump + double 26.02
+    L5 -> R3  dash, margin 3.10 m of height (gap 10.1 m); also dash-jump 2.93, dash-jump + double 2.93
+    L5 -> D4  dash, margin 0.38 m (gap 9.0 m); also dash-jump 9.45, dash-jump + double 20.25
+    L5 -> L6  jump, margin 0.33 m (gap 5.7 m); also jump + double 3.60, dash 5.80, dash-jump 17.33, dash-jump + double 27.13
+    L5 -> P8  dash-jump, margin 8.13 m (gap 10.3 m); also dash-jump + double 18.93
+    L6 -> R1  dash-jump, margin 3.14 m of height (gap 15.7 m); also dash-jump + double 3.13
+    L6 -> D2  dash-jump + double, margin 16.95 m (gap 9.9 m)
+    L6 -> R3  jump, margin 2.83 m of height (gap 3.6 m); also jump + double 3.50, dash 1.50, dash-jump 2.36, dash-jump + double 2.36
+    L6 -> D4  dash-jump + double, margin 11.45 m (gap 15.4 m)
+    L6 -> L5  jump + double, margin 2.33 m (gap 5.7 m); also dash 3.67, dash-jump 12.73, dash-jump + double 23.53
+    L6 -> P8  dash-jump + double, margin 12.37 m (gap 14.4 m)
+    P7 -> D2  pad (gap 18.1 m)
+    P8 -> D4  pad (gap 28.0 m)
+    D2 -> P8  walk onto the pad (gap 0.0 m)
+  longest floor-free chain: 8 piece(s): P7 -> D2 -> R3 -> D4 -> R1 -> L5 -> L6 -> P8 (opened by a floor pad)
+  note: a dash-jump keeps the dash's 24 m/s for its whole flight (Mover.cs:1080; air accel never slows a body: MovementMath.Accelerate), so its reach is long; no obstacle, line-of-sight or air-control test
+  flight pieces (rides + pads) on one floor-free path: 4 of 4: P7 -> D2 -> R3 -> D4 -> R1 -> L5 -> L6 -> P8; without the dash-jump: 3: R1 -> D2 -> P8 -> D4 -> L5 -> R3 -> L6
+  without the dash-jump: hand-offs 17, longest chain 7: R1 -> D2 -> P8 -> D4 -> L5 -> R3 -> L6, dead ends 0/6
+n65-air g3: air pieces 8 (rides 2, decks 2, ledges 2, pads 2), hand-offs 28, longest floor-free chain 8, dead ends 0/6 | without the dash-jump: hand-offs 17, chain 7, dead ends 0/6 | flights handed on: 4 of 4 on one path (3 without the dash-jump)

@@ -1,0 +1,99 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- NIGHT14 (the shared types): the sim composition (SurvivalSim, no UnityEngine) compiled outside Unity with
+       Skygrind.Core, so headless runs (the fingerprint, two runs on one composition, the AUTOPILOT's table, a tape's
+       replay) take seconds without the Editor. A fast loop beside the Editor, not the gate: the gate is Unity's EditMode
+       run (Mono) and the Player. Every Game file it compiles must stay free of UnityEngine (Shim.cs stands in for the
+       two Unity-side names the sim reads: Flow and UnityTuning.BoxDepth). Each agent's commands live in its own file
+       here (Harness.<Topic>.cs). C# 9, as Unity. -->
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <LangVersion>9.0</LangVersion>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <NoWarn>$(NoWarn);CS0162;CS0168;CS0219;CS0414;CS0649;CS0169;CS8632;CS0108;CS0618;CS0067</NoWarn>
+    <InvariantGlobalization>true</InvariantGlobalization>
+    <BaseOutputPath>../../Temp/SimHarness/bin/</BaseOutputPath>
+    <BaseIntermediateOutputPath>../../Temp/SimHarness/obj/</BaseIntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../../Assets/Scripts/Core/**/*.cs" />
+    <Compile Include="../../Assets/Scripts/Game/SurvivalSim*.cs" />
+    <Compile Include="../../Assets/Scripts/Game/SimFingerprint.cs" />
+    <Compile Include="../../Assets/Scripts/Game/FingerprintBaseline.cs" />
+    <Compile Include="../../Assets/Scripts/Game/FingerprintBaselineN18.cs" />
+    <Compile Include="../../Assets/Scripts/Game/FingerprintBaselineN20.cs" />
+    <Compile Include="../../Assets/Scripts/Game/Input/IPlayerInput.cs" />
+    <Compile Include="../../Assets/Scripts/Game/Input/ScriptedInput.cs" />
+    <Compile Include="../../Assets/Scripts/Game/Bot/*.cs" />
+    <Compile Include="../../Assets/Scripts/Game/Tape/*.cs" />
+    <!-- NIGHT15 U3-28.6 (builder G): builder P's UnityEngine-free map pipeline and DRYDOCK's plan conversion (its
+         Editor half is under #if UNITY_EDITOR), for mapgen / mapvalidate (Harness.MapGen.cs). -->
+    <Compile Include="../../Assets/Scripts/Game/MapAuthoring/MapModel.cs" />
+    <Compile Include="../../Assets/Scripts/Game/MapAuthoring/MapModelJson.cs" />
+    <Compile Include="../../Assets/Scripts/Game/MapAuthoring/MapJsonWriter.cs" />
+    <Compile Include="../../Assets/Scripts/Game/MapAuthoring/MapRoundTrip.cs" />
+    <Compile Include="../../Assets/Scripts/Game/MapAuthoring/MapValidate.cs" />
+    <Compile Include="../../Assets/Scripts/Game/UnityTuning.MapAuthoring.cs" />
+    <Compile Include="../../Assets/Scripts/Game/UnityTuning.Kit33.cs" />
+    <!-- NIGHT65 T2: tour65's pure parts and numbers (`n65tour`, Harness.N65.Tour.cs) -->
+    <Compile Include="../../Assets/Scripts/Game/Tour65.cs" />
+    <Compile Include="../../Assets/Scripts/Game/UnityTuning.N65T.cs" />
+    <!-- NIGHT71 L10: press71's delivery rule (taps71h with its press71 option, Harness.N71.Taps.cs) -->
+    <Compile Include="../../Assets/Scripts/Game/Press71.cs" />
+    <Compile Include="../../Assets/Editor/Maps/Build_drydock.cs" />
+    <Compile Include="../../Assets/Editor/Maps/LevelPlan24.cs" />
+    <Compile Include="../../Assets/Scripts/Game/MapAuthoring/LevelValidate24.cs" />
+    <Compile Include="../../Assets/Scripts/Game/MapAuthoring/LevelValidate27.cs" />
+    <Compile Include="../../Assets/Editor/Maps/LevelPlan29.cs" />
+    <Compile Include="../../Assets/Scripts/Game/MapAuthoring/LevelValidate29.cs" />
+    <Compile Include="../../Assets/Scripts/Game/MapAuthoring/PlatformRoutes26.cs" />
+    <Compile Include="*.cs" />
+    <!-- NIGHT55 (the lead, r1): builder C's `n55look` self-test compiles only with -p:Extra (Move54 / Move55 / UnityTuning.N55C):
+         left out of the default build so the fingerprint gate builds; run it as C's notes say -->
+    <Compile Remove="Harness.N55.Look.cs" Condition="'$(Extra)' == ''" />
+    <Compile Include="../../Assets/Scripts/Game/UnityTuning.Grind21.cs" />
+    <!-- NIGHT33 L: the Unity-free light placement (light33, Harness.N33.Look.cs) and its numbers -->
+    <Compile Include="../../Assets/Scripts/Game/LightPlan33.cs" />
+    <!-- NIGHT34 A: the calm34 filter (Unity-free; calm34 / lines34 in Harness.N34.Lines.cs) -->
+    <Compile Include="../../Assets/Scripts/Game/Calm34.cs" />
+    <Compile Include="../../Assets/Scripts/Game/UnityTuning.Look33.cs" />
+    <!-- NIGHT35 V: lights35's numbers (LightPlan33.SkyFixtures / Green with lights35; light35 in Harness.N35.Look.cs) -->
+    <Compile Include="../../Assets/Scripts/Game/UnityTuning.Look35.cs" />
+    <!-- NIGHT40 S1: rods40's play-volume test (Unity-free; `n40start rods` in Harness.N40.Start.cs) and its numbers -->
+    <Compile Include="../../Assets/Scripts/Game/Rods40.cs" />
+    <Compile Include="../../Assets/Scripts/Game/UnityTuning.Rods40.cs" />
+    <!-- NIGHT40 S1: cut40's level-select numbers (`n40start cut`) -->
+    <Compile Include="../../Assets/Scripts/Game/UnityTuning.Cut40.cs" />
+    <!-- NIGHT48 F: foes48's shield numbers (Unity-free; `n48feel shield` in Harness.N48.Feel.cs) -->
+    <Compile Include="../../Assets/Scripts/Game/UnityTuning.F48.cs" />
+    <!-- NIGHT72 N1: the hop row's place and window (Unity-free; `n72lane` in Harness.N72.Lane.cs) and builder N's numbers -->
+    <Compile Include="../../Assets/Scripts/Game/HopSite72.cs" />
+    <Compile Include="../../Assets/Scripts/Game/Goal72Math.cs" />
+    <Compile Include="../../Assets/Scripts/Game/Cam72Math.cs" />
+    <Compile Include="../../Assets/Scripts/Game/UnityTuning.N72N.cs" />
+    <Compile Include="../../Assets/Tests/EditMode/Endless21Tests.cs" />
+    <Compile Include="../../Assets/Tests/EditMode/Grind22Tests.cs" />
+    <Compile Include="../../Assets/Tests/EditMode/Code22Tests.cs" />
+    <Compile Include="../../Assets/Tests/EditMode/Challenge21Tests.cs" />
+    <Compile Include="../../Assets/Tests/EditMode/Arcline22Tests.cs" />
+    <Compile Include="../../Assets/Tests/EditMode/Directed22Tests.cs" />
+    <Compile Include="../../Assets/Tests/EditMode/Trick22Tests.cs" />
+    <Compile Include="../../Assets/Tests/EditMode/Campaign24Tests.cs" />
+    <Compile Include="../../Assets/Tests/EditMode/Campaign24LimitRankTests.cs" />
+    <Compile Include="../../Assets/Tests/EditMode/Lesson25Tests.cs" />
+    <Compile Include="../../Assets/Tests/EditMode/WyrmTests.cs" />
+    <!-- NIGHT39 V: juice38's burst-or-tick rule (Unity-free) and its numbers, for `n39views hurt` (Harness.N39.Views.cs) -->
+    <Compile Include="../../Assets/Scripts/Game/Juice39Hurt.cs" />
+    <Compile Include="../../Assets/Scripts/Game/UnityTuning.Juice38.cs" />
+    <!-- NIGHT40 W1: the KESTREL's rhythm and pump40's numbers (Unity-free consts) for `n40weapons rhythm` (Harness.N40.Weapons.cs) -->
+    <Compile Include="../../Assets/Scripts/Game/UnityTuning.Pistol40.cs" />
+    <Compile Include="../../Assets/Scripts/Game/UnityTuning.Pump40.cs" />
+    <Compile Include="../../Assets/Scripts/Game/UnityTuning.Pistol39.cs" />
+    <Compile Include="../../Assets/Scripts/Game/UnityTuning.Hud38.cs" />
+    <Compile Include="../../Assets/Scripts/Game/UnityTuning.Hands.cs" />
+    <Compile Include="Hitch24Stub.cs" />
+    <Compile Include="$(Extra)" Condition="'$(Extra)' != ''" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,9 @@
+command: dotnet Temp/SimHarness/bin/Release/net10.0/SimHarness.dll n72goal | tree: n72-N at 4cfc037d1 plus the stuck72 working tree | run 14:21
+PASS an approach (0.7 m a second, 40 s): stage 1 at most, lines 1, hints 0 / 0
+PASS a stuck player (30 m away, still): stage 2 at 10.0 s, stage 3 at 20.0 s, counted once each: lines 1, 10 s 1, 20 s 1
+PASS a scripted player idle 25 s: max stage 1, hints 0; then planted: stage 2 at 10.0 s, stage 3 at 20.0 s
+PASS progress retires a hint: stage 2 -> 1, retired 1, 30 s still afterwards: stage 1 (the hint is spent for the room)
+PASS a verb used is not taught again: '[DOUBLE JUMP]: press {jump} twice' / double jump used '[RIDE] a wall: hold {jump}' / both used '[KEEP GOING] up to the exit' / an exit past a double jump '[RIDE] a wall: hold {jump}'
+PASS 13 distinct lines, at most 6 words (the bar: 6): [GO] to the exit | The exit is [AHEAD] | [FOLLOW] the arrow to the exit | [TURN AROUND]: the exit is behind | [TURN AROUND] and follow the arrow | [GO UP] to the exit | The exit is [UP THERE] | [DOUBLE JUMP]: press {jump} twice | [RIDE] a wall: hold {jump} | [KEEP GOING] up to the exit | [DROP DOWN] to the exit | The exit is [BELOW] you | [WALK OFF] the ledge and drop
+PASS a new room: stage 1 (the clock restarts); inside the hide radius: stage 0
+n72goal: all PASS

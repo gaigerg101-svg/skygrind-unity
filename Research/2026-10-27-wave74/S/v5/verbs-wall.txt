@@ -1,0 +1,26 @@
+# command: dotnet Temp/wallprobe/bin/Release/net10.0/wallprobe.dll <level> open|locked   and   dotnet Temp/SimHarness/bin/Release/net10.0/SimHarness.dll n39views wall <level>
+# sha: d3bf2c47e; time: 2026-10-27 23:40:40; row 9 PASS needs a ride over 1.2 s; the OPEN reading is the Player's, the locked ones are not
+## spire-v6-only-old-v5  (C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/spire-play/n67-spire.json)
+-- open (the Player's pick):
+pick: 17 m in v5 at (-20.7, 0.2, -40.6) along (0, -1) normal (1, 0)
+ride: rode True, rides 1 [0.23-1.55], longest 1.32 s, ends [jump], end pos (-19.2, 0.0, -56.0); row 9 PASS, row 11 PASS (16.4 vs 11.7 m/s)
+-- locked (n39views wall, not the Player's pick):
+  NIGHT39 pick: 19 m in v10 at (-2.5, 0.2, -215.7) along (-1, -0) (CHANGED)
+  row 9 PASS: rides 2 [0.23-1.62, 1.68-on], longest 1.38 s, ends [jump], rose 0.17 m
+  row 11 PASS: 16.20 m/s after letting go vs 11.17 m/s before
+## spire-v6-v5-r5  (C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/spire-v5r5/n67-spire.json)
+-- open (the Player's pick):
+pick: 17 m in v5 at (-20.7, 0.2, -40.6) along (0, -1) normal (1, 0)
+ride: rode True, rides 1 [0.23-1.55], longest 1.32 s, ends [jump], end pos (-18.1, 0.0, -56.0); row 9 PASS, row 11 PASS (16.4 vs 11.7 m/s)
+-- locked (n39views wall, not the Player's pick):
+  NIGHT39 pick: 19 m in v10 at (-2.5, 0.2, -215.7) along (-1, -0) (CHANGED)
+  row 9 PASS: rides 2 [0.23-1.62, 1.68-on], longest 1.38 s, ends [jump], rose 0.17 m
+  row 11 PASS: 16.20 m/s after letting go vs 11.17 m/s before
+## spire-n71-v2v5-new-pb1b  (C:/Users/gaige/dev/SKYGRIND-unity/Builds/n71-play-pb1b/SKYGRIND_Data/StreamingAssets/Design/levels/n67-spire.json)
+-- open (the Player's pick):
+pick: 17 m in v5 at (-21.3, 0.2, -40.0) along (0, -1) normal (1, 0)
+ride: rode False, rides 0 [], longest 0.00 s, ends [], end pos (-21.7, 0.0, -41.7); row 9 RED, row 11 RED (0.0 vs 0.0 m/s)
+-- locked (n39views wall, not the Player's pick):
+  NIGHT39 pick: 24 m in v5 at (-22.7, 0.2, -40.0) along (0, -1) (CHANGED)
+  row 9 PASS: rides 2 [0.23-2.04, 2.13-2.30], longest 1.81 s, ends [jump, lost], rose 0.11 m
+  row 11 PASS: 16.51 m/s after letting go vs 11.59 m/s before

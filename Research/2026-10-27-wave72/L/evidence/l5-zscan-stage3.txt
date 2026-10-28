@@ -1,0 +1,11 @@
+command: node Tools/night/n72-zscan.cjs <the nine level files of port/stage3 e27aa160f, git archive>   (2026-10-27 11:47:55 USMST); N0b's roofless foundry and the n67 rebuilds are in
+n52-foundry (n52-foundry.json): 200 drawn boxes | coplanar overlapping pairs: raw 75 (2686 m2), after mod 3 27 (993 m2), after the plan 0 (0 m2) | classes {"0":176,"2":24}
+n52-iceline (n52-iceline.json): 192 drawn boxes | coplanar overlapping pairs: raw 33 (236 m2), after mod 3 10 (80 m2), after the plan 0 (0 m2) | classes {"0":179,"2":13}
+n57-kiln (n57-kiln.json): 179 drawn boxes | coplanar overlapping pairs: raw 55 (1455 m2), after mod 3 16 (227 m2), after the plan 0 (0 m2) | classes {"0":163,"2":16}
+n58-span (n58-span.json): 180 drawn boxes | coplanar overlapping pairs: raw 28 (1584 m2), after mod 3 10 (1088 m2), after the plan 0 (0 m2) | classes {"0":169,"2":11}
+n52-spire (n52-spire.json): 199 drawn boxes | coplanar overlapping pairs: raw 65 (791 m2), after mod 3 20 (188 m2), after the plan 0 (0 m2) | classes {"0":175,"2":24}
+n65-foundry (n65-foundry.json): 194 drawn boxes | coplanar overlapping pairs: raw 79 (2718 m2), after mod 3 24 (954 m2), after the plan 0 (0 m2) | classes {"0":170,"2":24}
+n67-iceline (n67-iceline.json): 183 drawn boxes | coplanar overlapping pairs: raw 35 (252 m2), after mod 3 5 (40 m2), after the plan 0 (0 m2) | classes {"0":170,"2":13}
+n67-kiln (n67-kiln.json): 181 drawn boxes | coplanar overlapping pairs: raw 56 (1458 m2), after mod 3 16 (227 m2), after the plan 0 (0 m2) | classes {"0":165,"2":16}
+n67-spire (n67-spire.json): 204 drawn boxes | coplanar overlapping pairs: raw 65 (791 m2), after mod 3 23 (202 m2), after the plan 0 (0 m2) | classes {"0":180,"2":24}
+TOTAL pairs left after the plan: 0 (tol 0.001 m, min overlap 0.01 m2, K 6, step 0.002 m)

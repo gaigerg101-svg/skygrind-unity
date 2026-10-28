@@ -1,0 +1,27 @@
+# sha: db967997b
+# start: 2026-10-26 12:23:01
+## 1. bash Tools/night/n71-gates.sh --no-editor (the rows OFF, as committed)
+gate config: the two copies identical
+gate golden: golden total: 39 vector sets (48094 records), 22 replays (22 exact); 0 failing, 0 mismatches
+gate fingerprint : fingerprint seed 1: 12 hashes in 1.13 s: EQUAL to the baseline; run Fight round 3, kills 35, shots 80, earned 4808, alive 1, owned 2, flow Playing
+gate fingerprint --off57: fingerprint seed 1: 12 hashes in 1.18 s: EQUAL to the baseline; run Fight round 3, kills 35, shots 80, earned 4808, alive 1, owned 2, flow Playing
+gate fingerprint --off58: fingerprint seed 1: 12 hashes in 1.63 s: EQUAL to the baseline; run Fight round 3, kills 35, shots 80, earned 4808, alive 1, owned 2, flow Playing
+gate fingerprint --off59: fingerprint seed 1: 12 hashes in 1.54 s: EQUAL to the baseline; run Fight round 3, kills 35, shots 80, earned 4808, alive 1, owned 2, flow Playing
+gate fingerprint --off60: fingerprint seed 1: 12 hashes in 1.15 s: EQUAL to the baseline; run Fight round 3, kills 35, shots 80, earned 4808, alive 1, owned 2, flow Playing
+gate fingerprint --off61: fingerprint seed 1: 12 hashes in 0.78 s: EQUAL to the baseline; run Fight round 3, kills 35, shots 80, earned 4808, alive 1, owned 2, flow Playing
+gate fingerprint --off62: fingerprint seed 1: 12 hashes in 0.79 s: EQUAL to the baseline; run Fight round 3, kills 35, shots 80, earned 4808, alive 1, owned 2, flow Playing
+gate fingerprint --off63: fingerprint seed 1: 12 hashes in 1.37 s: EQUAL to the baseline; run Fight round 3, kills 35, shots 80, earned 4808, alive 1, owned 2, flow Playing
+gate fingerprint --off64: fingerprint seed 1: 12 hashes in 0.82 s: EQUAL to the baseline; run Fight round 3, kills 35, shots 80, earned 4808, alive 1, owned 2, flow Playing
+gate fingerprint --off65: fingerprint seed 1: 12 hashes in 0.82 s: EQUAL to the baseline; run Fight round 3, kills 35, shots 80, earned 4808, alive 1, owned 2, flow Playing
+gate fingerprint --off66: fingerprint seed 1: 12 hashes in 0.75 s: EQUAL to the baseline; run Fight round 3, kills 35, shots 80, earned 4808, alive 1, owned 2, flow Playing
+gate fingerprint --off67: fingerprint seed 1: 12 hashes in 0.70 s: EQUAL to the baseline; run Fight round 3, kills 35, shots 80, earned 4808, alive 1, owned 2, flow Playing
+gates: all GREEN 12:25:40
+## 2. the rows voice71, words71, wyrm71, cyan71 ON in both config copies (node flip-rows.cjs), then the fingerprints
+flip-rows: Design/unity-config.json: voice71, words71, wyrm71, cyan71 ON
+flip-rows: Assets/StreamingAssets/Design/unity-config.json: voice71, words71, wyrm71, cyan71 ON
+copies identical (rows ON)
+fingerprint (rows ON) : fingerprint seed 1: 12 hashes in 0.70 s: EQUAL to the baseline; run Fight round 3, kills 35, shots 80, earned 4808, alive 1, owned 2, flow Playing
+fingerprint (rows ON) --off67: fingerprint seed 1: 12 hashes in 0.71 s: EQUAL to the baseline; run Fight round 3, kills 35, shots 80, earned 4808, alive 1, owned 2, flow Playing
+## 3. restore: git checkout -- the two config copies
+restored: 0 changed files (want 0)
+# end: 2026-10-26 12:25:56

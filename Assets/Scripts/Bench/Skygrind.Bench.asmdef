@@ -1,0 +1,21 @@
+{
+    "name": "Skygrind.Bench",
+    "rootNamespace": "Skygrind.Bench",
+    "references": [
+        "Skygrind.Core",
+        "Skygrind.Game",
+        "Unity.Burst",
+        "Unity.Collections",
+        "Unity.Mathematics",
+        "Unity.InputSystem"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

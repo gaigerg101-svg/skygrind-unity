@@ -1,0 +1,11 @@
+# command: node Tools/night/n70-area.cjs --level spire --dir C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/spire-play  v2
+# sha: 70e86859c; time: 2026-10-27 23:49:26
+n70-area: room v2; plan C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/spire-play/spire.plan.json, level C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/spire-play/n67-spire.json (the round's folder C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/spire-play); touches none (P4's (a) / (c) not read); card Research/2026-10-24-wave67/cards/v2.md (Archetype: CHUTE) (no TOWER / GALLERY / SPLIT LEVEL)
+OPEN  PASS largest open square 12.0 m (x -16.0..-4.0, z 67.0..79.0; 17 pieces on a 24.0 x 32.0 m rect; 12 m or less passes)
+P1    N/A  the last wave (heavy swarmer swarmer swarmer) has no ranged enemy (spitter / drone)
+P4    FAIL 2 / 10 standing solids >= 1.75 m do a job ((a) touched NOT READ, (b) sight 2, (c) launch kill NOT READ); no job: box(-16,0,79..-12,14,83) line: the narthex's west CHEEK; box(-8,0,79..-4,14,83) line: the narthex's east CHEEK; box(-22,0,75..-16,2.4,83) line: THE NARTHEX's west wing; box(-22,0,70..-18,2.4,75) line: the WEST AISLE's south p (+4); no --touches: (a) / (c) not read
+P5    N/A  no line65 in the row
+P9    FAIL 0 / 1 planes with 2 climb tops >= 8 m apart: box(-22,0,75..-16,2.4,83) 6.0 x 8.0 m at 2.4 m: 0 climb top(s), farthest apart 0.0 m (NO)
+P11   N/A  the card names no TOWER / GALLERY / SPLIT LEVEL (Research/2026-10-24-wave67/cards/v2.md (Archetype: CHUTE))
+P17   PASS 1 / 1 ride walls 4 m tall and 8 m long; 0 non-ride wall(s) in that band; the strip = ride: true (ride36 faces 1)
+n70-area: FAIL v2 (2/4)

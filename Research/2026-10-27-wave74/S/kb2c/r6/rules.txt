@@ -1,0 +1,18 @@
+# command: python -I Tools/night/n74-room-rules.py room Design/levels/n67/kiln/rooms/kb2c.json
+# sha: 9514f7bd8; time: 2026-10-27 23:26:57
+kiln/kb2c  rect [-9.0, -193.5, 9.0, -163.5]  spawn [-2.0, 0.0, -168.0] yaw -10  floor 0.0
+  PLANES  PASS  planes 3 (0.0 m: 382 cells, 2.5 m: 21 cells, 4.0 m: 28 cells)
+  COVER   PASS  cover: free-standing high 2, low 0, between 3 (0 without a job), none 0
+  LOOPS   PASS  loops 6 (floor holes 2 + closed pad / ride routes 4 of 4)
+  REAR    PASS  rear arc: 0 of 4 wave-1 usable nodes behind the entry facing (all waves: 0 node uses behind)
+  VIEW    PASS  view: enemy in view at 0.00 s (4 of 4 wave-1 nodes seen at entry)
+  CROSS   PASS  cross: chord 35.0 m, dash 1.46 s, walk 4.4 s (bar 2.0 s at dash)
+  EXPOSE  PASS  exposure: 53 % of 990 floor-sample pairs see each other (bar 60 %); longest clear line 29.5 m (medium band 19.5 m)
+  CLIMB   PASS  climb: 2 tier group(s), 0 not reached by walker links
+    between-height piece: deck [-8.5, 0.0, -190.0]-[-6.0, 0.9, -187.5] h 0.90 job "spatial law: an iron plate on the ash (burrow-safe)"
+    between-height piece: deck [-3.0, 0.0, -183.5]-[-0.5, 0.9, -181.0] h 0.90 job "spatial law: an iron plate on the ash (burrow-safe)"
+    between-height piece: deck [3.5, 0.0, -175.0]-[6.0, 0.9, -172.5] h 0.90 job "spatial law: an iron plate on the ash (burrow-safe)"
+    free-standing high piece: hull [-5.5, 0.0, -171.0]-[-3.0, 12.0, -168.5] h 12.00 job "30 s problem: THE BELLOWS HOUSING (the entry's foo"
+    free-standing high piece: hull [0.5, 0.0, -176.0]-[2.5, 2.2, -174.0] h 2.20 job "cover: THE KILN HOOD (a 2.2 m stack mid-room: the "
+    walkers reach every tier: climb: 2 tier group(s), 0 not reached by walker links
+  core 5/5 PASS, extra 3/3 PASS

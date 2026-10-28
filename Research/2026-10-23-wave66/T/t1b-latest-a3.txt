@@ -1,0 +1,67 @@
+# command: dotnet run --project Tools/SimHarness -c Release --no-build -- n65verb skip --level /c/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/b545c660-8250-4a8f-9419-f29ef22d3556/scratchpad/latest/n65-foundry-latest.json --room a3 --seeds 10 --bars C:/Users/gaige/dev/SKYGRIND-unity/Logs/n66/slate.json
+# sha: 5aee475e (tree 4 dirty paths), 2026-10-24 00:56:55 USMST, /c/Users/gaige/dev/SKYGRIND-unity/.claude/worktrees/agent-af48e888c59fa3626
+
+n65verb skip v2: level C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/b545c660-8250-4a8f-9419-f29ef22d3556/scratchpad/latest/n65-foundry-latest.json, room a3, verb65 ride, refuse ride, seeds 1..10 (--seeds 10), cap 120.0 s, bar 1.25 from the default 1.25 (C:/Users/gaige/dev/SKYGRIND-unity/Logs/n66/slate.json a3.mainBar is null), need 7 exercised
+  runs: verb-aware = Walk38Pilot + n46flow's lava rule + the ported autopilot (normal) + the verb-aware layer; refused-in = the same with the verb refused inside the layer (episodes declined, holds and approach released) and the inner pilot's verb presses dropped; walker = the plain pilot with the verb's presses dropped. Not invulnerable. A run that does not clear counts the cap.
+  seed 1 verb-aware: cleared yes in 29.8 s | deaths 0, falls 0 | wall rides 3 | STYLE above DULL 55.7 %, top BOLD | walked 164.7 m, shots 36 (charged 1, bodies hit per charged shot 1) | first ride 5.5 s at (3.7, 1.4, -67.8) | trigger held 636 steps
+  seed 1 refused-in: cleared yes in 21.6 s | deaths 0, falls 0 | wall rides 0 | STYLE above DULL 0.2 %, top COOL | walked 101.9 m, shots 32 (charged 1, bodies hit per charged shot 0) | first ride none | presses refused 928 (episodes declined 1, the inner pilot's presses dropped 927)
+  seed 1 walker:     cleared yes in 21.6 s | deaths 0, falls 0 | wall rides 0 | STYLE above DULL 0.2 %, top COOL | walked 101.9 m, shots 32 (charged 1, bodies hit per charged shot 0) | first ride none | presses refused 927
+  seed 1 => ratio 0.73 (the faster refusal: refused-in 21.6 s / verb-aware 29.8 s) | exercised
+  seed 1 touches (verb-aware, steps): box(4,0,-80..4.6,6,-61) 599; box(2.5,0,-85..10,2.5,-80) 96; box(2.5,2.5,-84..2.9,3.7,-81.6) 4; box(-10,0,-70..-2.5,1.8,-69) 325; box(-2,0,-76.5..1,1.2,-75.5) 38
+  seed 2 verb-aware: cleared yes in 20.1 s | deaths 0, falls 0 | wall rides 4 | STYLE above DULL 66.8 %, top BOLD | walked 99.0 m, shots 23 (charged 2, bodies hit per charged shot 0/1) | first ride 6.5 s at (-9.7, 1.3, -67.6) | trigger held 207 steps
+  seed 2 refused-in: cleared yes in 30.0 s | deaths 0, falls 0 | wall rides 0 | STYLE above DULL 0.0 %, top DULL | walked 117.9 m, shots 29 (charged 2, bodies hit per charged shot 0/0) | first ride none | presses refused 891 (episodes declined 3, the inner pilot's presses dropped 888)
+  seed 2 walker:     cleared yes in 30.0 s | deaths 0, falls 0 | wall rides 0 | STYLE above DULL 0.0 %, top DULL | walked 117.9 m, shots 29 (charged 2, bodies hit per charged shot 0/0) | first ride none | presses refused 888
+  seed 2 => ratio 1.49 (the faster refusal: refused-in 30.0 s / verb-aware 20.1 s) | exercised
+  seed 2 touches (verb-aware, steps): box(4,0,-80..4.6,6,-61) 197; box(-10,0,-70..-2.5,1.8,-69) 399; ramp(2.5,-59.2,4.5,3,2.5) 16
+  seed 3 verb-aware: cleared yes in 38.0 s | deaths 0, falls 0 | wall rides 7 | STYLE above DULL 6.3 %, top COOL | walked 228.4 m, shots 45 (charged 3, bodies hit per charged shot 0/0/1) | first ride 11.5 s at (4.9, 2.3, -72.8) | trigger held 178 steps
+  seed 3 refused-in: cleared yes in 27.4 s | deaths 0, falls 0 | wall rides 0 | STYLE above DULL 34.1 %, top COOL | walked 83.4 m, shots 24 (charged 3, bodies hit per charged shot 0/0/0) | first ride none | presses refused 1050 (episodes declined 0, the inner pilot's presses dropped 1050)
+  seed 3 walker:     cleared yes in 27.4 s | deaths 0, falls 0 | wall rides 0 | STYLE above DULL 34.1 %, top COOL | walked 83.4 m, shots 24 (charged 3, bodies hit per charged shot 0/0/0) | first ride none | presses refused 1050
+  seed 3 => ratio 0.72 (the faster refusal: refused-in 27.4 s / verb-aware 38.0 s) | exercised
+  seed 3 touches (verb-aware, steps): box(4,0,-80..4.6,6,-61) 612; box(2.5,0,-85..10,2.5,-80) 168; box(-10,0,-70..-2.5,1.8,-69) 262; ramp(2.5,-59.2,4.5,3,2.5) 74; ramp(7.3,-71,9,5.4,2.5) 478
+  seed 4 verb-aware: cleared yes in 52.5 s | deaths 0, falls 0 | wall rides 12 | STYLE above DULL 39.0 %, top BOLD | walked 320.2 m, shots 60 (charged 4, bodies hit per charged shot 0/0/0/0) | first ride 11.5 s at (3.7, 1.5, -67.7) | trigger held 1167 steps
+  seed 4 refused-in: cleared yes in 16.8 s | deaths 0, falls 0 | wall rides 0 | STYLE above DULL 62.2 %, top BOLD | walked 19.4 m, shots 9 (charged 0) | first ride none | presses refused 424 (episodes declined 4, the inner pilot's presses dropped 420)
+  seed 4 walker:     cleared yes in 16.8 s | deaths 0, falls 0 | wall rides 0 | STYLE above DULL 62.2 %, top BOLD | walked 19.4 m, shots 9 (charged 0) | first ride none | presses refused 420
+  seed 4 => ratio 0.32 (the faster refusal: refused-in 16.8 s / verb-aware 52.5 s) | exercised
+  seed 4 touches (verb-aware, steps): box(4,0,-80..4.6,6,-61) 1181; box(2.5,0,-85..10,2.5,-80) 501; box(2.5,2.5,-84..2.9,3.7,-81.6) 43; box(-10,0,-70..-2.5,1.8,-69) 477; box(-2,0,-76.5..1,1.2,-75.5) 45; ramp(2.5,-59.2,4.5,3,2.5) 10; ramp(7.3,-71,9,5.4,2.5) 34
+  seed 5 verb-aware: cleared yes in 33.7 s | deaths 0, falls 0 | wall rides 10 | STYLE above DULL 27.2 %, top BOLD | walked 221.4 m, shots 36 (charged 2, bodies hit per charged shot 0/1) | first ride 5.1 s at (3.7, 1.6, -65.5) | trigger held 733 steps
+  seed 5 refused-in: cleared yes in 24.2 s | deaths 0, falls 0 | wall rides 0 | STYLE above DULL 0.0 %, top DULL | walked 99.0 m, shots 24 (charged 0) | first ride none | presses refused 341 (episodes declined 5, the inner pilot's presses dropped 336)
+  seed 5 walker:     cleared yes in 24.2 s | deaths 0, falls 0 | wall rides 0 | STYLE above DULL 0.0 %, top DULL | walked 99.0 m, shots 24 (charged 0) | first ride none | presses refused 336
+  seed 5 => ratio 0.72 (the faster refusal: refused-in 24.2 s / verb-aware 33.7 s) | exercised
+  seed 5 touches (verb-aware, steps): box(4,0,-80..4.6,6,-61) 1004; box(2.5,0,-85..10,2.5,-80) 472; box(2.5,2.5,-84..2.9,3.7,-81.6) 1; ramp(2.5,-59.2,4.5,3,2.5) 88; ramp(7.3,-71,9,5.4,2.5) 300; pad(9,2.5,-84) 12
+  seed 6 verb-aware: cleared yes in 42.2 s | deaths 0, falls 0 | wall rides 8 | STYLE above DULL 0.0 %, top DULL | walked 290.3 m, shots 36 (charged 6, bodies hit per charged shot 0/0/0/1/1/1) | first ride 5.3 s at (3.7, 1.5, -66.7) | trigger held 993 steps
+  seed 6 refused-in: cleared yes in 27.3 s | deaths 0, falls 0 | wall rides 0 | STYLE above DULL 42.4 %, top BOLD | walked 72.1 m, shots 26 (charged 1, bodies hit per charged shot 0) | first ride none | presses refused 1130 (episodes declined 3, the inner pilot's presses dropped 1127)
+  seed 6 walker:     cleared yes in 27.3 s | deaths 0, falls 0 | wall rides 0 | STYLE above DULL 42.4 %, top BOLD | walked 72.1 m, shots 26 (charged 1, bodies hit per charged shot 0) | first ride none | presses refused 1127
+  seed 6 => ratio 0.65 (the faster refusal: refused-in 27.3 s / verb-aware 42.2 s) | exercised
+  seed 6 touches (verb-aware, steps): box(4,0,-80..4.6,6,-61) 1084; box(2.5,0,-85..10,2.5,-80) 166; box(2.5,2.5,-84..2.9,3.7,-81.6) 45; ramp(2.5,-59.2,4.5,3,2.5) 16; ramp(7.3,-71,9,5.4,2.5) 132
+  seed 7 verb-aware: cleared yes in 19.9 s | deaths 0, falls 0 | wall rides 3 | STYLE above DULL 20.6 %, top COOL | walked 101.5 m, shots 23 (charged 1, bodies hit per charged shot 1) | first ride 8.5 s at (-9.5, 1.6, -59.4) | trigger held 202 steps
+  seed 7 refused-in: cleared yes in 28.0 s | deaths 0, falls 0 | wall rides 1 | STYLE above DULL 28.5 %, top COOL | walked 114.8 m, shots 25 (charged 2, bodies hit per charged shot 0/1) | first ride 15.6 s at (3.7, 1.4, -64.6) | presses refused 836 (episodes declined 3, the inner pilot's presses dropped 833) | WARN the refused run used the verb 1 time(s)
+  seed 7 walker:     cleared yes in 28.0 s | deaths 0, falls 0 | wall rides 1 | STYLE above DULL 28.5 %, top COOL | walked 114.8 m, shots 25 (charged 2, bodies hit per charged shot 0/1) | first ride 15.6 s at (3.7, 1.4, -64.6) | presses refused 833 | NOTE the walker used the verb 1 time(s) past the filter
+  seed 7 => ratio 1.41 (the faster refusal: refused-in 28.0 s / verb-aware 19.9 s) | exercised
+  seed 7 touches (verb-aware, steps): box(4,0,-80..4.6,6,-61) 176; box(2.5,0,-85..10,2.5,-80) 44; box(2.5,2.5,-84..2.9,3.7,-81.6) 35; box(-10,0,-70..-2.5,1.8,-69) 78; ramp(2.5,-59.2,4.5,3,2.5) 33
+  seed 8 verb-aware: cleared yes in 54.7 s | deaths 0, falls 0 | wall rides 9 | STYLE above DULL 8.9 %, top COOL | walked 325.0 m, shots 34 (charged 5, bodies hit per charged shot 0/0/0/0/0) | first ride 6.0 s at (-9.7, 1.0, -68.6) | trigger held 2473 steps
+  seed 8 refused-in: cleared yes in 31.3 s | deaths 0, falls 0 | wall rides 0 | STYLE above DULL 77.1 %, top BOLD | walked 127.4 m, shots 36 (charged 1, bodies hit per charged shot 0) | first ride none | presses refused 995 (episodes declined 3, the inner pilot's presses dropped 992)
+  seed 8 walker:     cleared yes in 31.3 s | deaths 0, falls 0 | wall rides 0 | STYLE above DULL 77.1 %, top BOLD | walked 127.4 m, shots 36 (charged 1, bodies hit per charged shot 0) | first ride none | presses refused 992
+  seed 8 => ratio 0.57 (the faster refusal: refused-in 31.3 s / verb-aware 54.7 s) | exercised
+  seed 8 touches (verb-aware, steps): box(4,0,-80..4.6,6,-61) 2643; box(2.5,0,-85..10,2.5,-80) 429; box(2.5,2.5,-84..2.9,3.7,-81.6) 45; box(-10,0,-70..-2.5,1.8,-69) 455; box(-2,0,-76.5..1,1.2,-75.5) 83; ramp(2.5,-59.2,4.5,3,2.5) 65
+  seed 9 verb-aware: cleared yes in 31.0 s | deaths 0, falls 0 | wall rides 8 | STYLE above DULL 63.8 %, top COOL | walked 202.9 m, shots 33 (charged 4, bodies hit per charged shot 0/0/0/0) | first ride 6.3 s at (-9.7, 1.6, -65.5) | trigger held 638 steps
+  seed 9 refused-in: cleared yes in 40.4 s | deaths 0, falls 0 | wall rides 0 | STYLE above DULL 31.5 %, top COOL | walked 170.6 m, shots 28 (charged 4, bodies hit per charged shot 0/0/1/0) | first ride none | presses refused 1264 (episodes declined 9, the inner pilot's presses dropped 1255)
+  seed 9 walker:     cleared yes in 40.4 s | deaths 0, falls 0 | wall rides 0 | STYLE above DULL 31.5 %, top COOL | walked 170.6 m, shots 28 (charged 4, bodies hit per charged shot 0/0/1/0) | first ride none | presses refused 1255
+  seed 9 => ratio 1.31 (the faster refusal: refused-in 40.4 s / verb-aware 31.0 s) | exercised
+  seed 9 touches (verb-aware, steps): box(4,0,-80..4.6,6,-61) 649; box(2.5,0,-85..10,2.5,-80) 140; box(-10,0,-70..-2.5,1.8,-69) 224; ramp(2.5,-59.2,4.5,3,2.5) 65
+  seed 10 verb-aware: cleared yes in 35.3 s | deaths 0, falls 0 | wall rides 5 | STYLE above DULL 51.4 %, top COOL | walked 179.7 m, shots 33 (charged 2, bodies hit per charged shot 0/0) | first ride 15.0 s at (-9.7, 1.6, -76.8) | trigger held 1197 steps
+  seed 10 refused-in: cleared yes in 27.3 s | deaths 0, falls 0 | wall rides 0 | STYLE above DULL 7.1 %, top COOL | walked 141.3 m, shots 36 (charged 2, bodies hit per charged shot 1/1) | first ride none | presses refused 1178 (episodes declined 5, the inner pilot's presses dropped 1173)
+  seed 10 walker:     cleared yes in 27.3 s | deaths 0, falls 0 | wall rides 0 | STYLE above DULL 7.1 %, top COOL | walked 141.3 m, shots 36 (charged 2, bodies hit per charged shot 1/1) | first ride none | presses refused 1173
+  seed 10 => ratio 0.77 (the faster refusal: refused-in 27.3 s / verb-aware 35.3 s) | exercised
+  seed 10 touches (verb-aware, steps): box(4,0,-80..4.6,6,-61) 1114; box(2.5,0,-85..10,2.5,-80) 560; box(2.5,2.5,-84..2.9,3.7,-81.6) 128; box(-10,0,-70..-2.5,1.8,-69) 266
+n65verb skip: M1 FAIL | room a3, ratio 0.72 vs bar 1.25, exercised 10/10
+n65verb skip: M2 FAIL | room a3, STYLE above DULL verb-aware 30.5 % vs the faster refusal 28.5 % (+15 needed), over the 10 exercised seed(s)
+n65verb skip: totals | room a3 | median clear (all seeds; the cap for a non-clear): verb-aware 34.5 s, refused-in 27.3 s, walker 27.3 s | cleared 10 / 10 / 10 of 10 | deaths 0 / 0 / 0 | wall rides 69 / 1 / 1 | presses refused (refused-in) 9037, (walker) 9001 | walked (median m) 212.1 / 108.3 / 108.3 | shots (median) 35.0 / 27.0 / 27.0 | wall time 82 s
+n65verb skip touch: room a3 | box(4,0,-80..4.6,6,-61) | seeds 10/10 | steps 9259 | ride: THE RUNNER
+n65verb skip touch: room a3 | box(2.5,0,-85..10,2.5,-80) | seeds 9/10 | steps 2576 | line: THE LANDING
+n65verb skip touch: room a3 | box(2.5,2.5,-84..2.9,3.7,-81.6) | seeds 7/10 | steps 301 | cover: THE LADLE RAIL
+n65verb skip touch: room a3 | box(-10,0,-70..-2.5,1.8,-69) | seeds 8/10 | steps 2486 | cover: THE MOULD WALL
+n65verb skip touch: room a3 | box(-2,0,-76.5..1,1.2,-75.5) | seeds 3/10 | steps 166 | cover: INGOT B
+n65verb skip touch: room a3 | ramp(2.5,-59.2,4.5,3,2.5) | seeds 8/10 | steps 367 | ramp
+n65verb skip touch: room a3 | ramp(7.3,-71,9,5.4,2.5) | seeds 4/10 | steps 944 | ramp
+n65verb skip touch: room a3 | pad(9,2.5,-84) | seeds 1/10 | steps 12 | pad
+# exit 1, 00:58:19

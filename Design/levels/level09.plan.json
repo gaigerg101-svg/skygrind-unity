@@ -1,0 +1,665 @@
+{
+  "_why": "LEVEL 9, THE MONOLITH (NIGHT25; forked by builder L from builder C's generated level09 to give each room its own GEOMETRY). C's ids, enemies (waves) and par semantics are kept. THE APPROACH is a plaza of seven tall pillars (7 m: cover from the spitters and the drones, sightlines that open one lane at a time). THE STACKS is a container yard: seven stacks of 8 m with 6 m alleys (the corners are where fights turn). THE MONOLITH GATE is the boss gate: a 12 m monolith in the middle of a ring of four pillars, two gate posts either side of the exit. The boss room (kind boss, boss monolith) takes the player to the MONOLITH own arena by the boss hook; the map room is a stub. Web coordinates: x east, y up, z SOUTH; metres.",
+  "id": "level09",
+  "name": "LEVEL 9 THE MONOLITH",
+  "floorSize": 300,
+  "killPlaneY": -30,
+  "wallHeight": 14,
+  "rooms": [
+    {
+      "id": "m1",
+      "name": "THE APPROACH",
+      "kind": "room",
+      "par": 32,
+      "botMedian": 32,
+      "parCap": 94,
+      "spawn": {
+        "at": [
+          0,
+          0,
+          72
+        ],
+        "yawDeg": 0
+      },
+      "exit": [
+        0,
+        0,
+        34
+      ],
+      "waves": [
+        [
+          "husk",
+          "husk",
+          "husk",
+          "husk",
+          "husk",
+          "husk",
+          "swarmer",
+          "swarmer",
+          "swarmer"
+        ],
+        [
+          "husk",
+          "husk",
+          "husk",
+          "husk",
+          "husk",
+          "husk",
+          "spitter",
+          "spitter",
+          "swarmer",
+          "swarmer",
+          "swarmer"
+        ]
+      ],
+      "rect": [
+        -26,
+        30,
+        26,
+        78
+      ],
+      "nodes": [
+        [
+          -22,
+          0,
+          70
+        ],
+        [
+          -8,
+          0,
+          68
+        ],
+        [
+          10,
+          0,
+          70
+        ],
+        [
+          22,
+          0,
+          66
+        ],
+        [
+          -8,
+          0,
+          54
+        ],
+        [
+          10,
+          0,
+          54
+        ],
+        [
+          -22,
+          0,
+          40
+        ],
+        [
+          22,
+          0,
+          40
+        ]
+      ]
+    },
+    {
+      "id": "m2",
+      "name": "THE STACKS",
+      "kind": "room",
+      "par": 36,
+      "botMedian": 36,
+      "parCap": 116,
+      "spawn": {
+        "at": [
+          0,
+          0,
+          18
+        ],
+        "yawDeg": 0
+      },
+      "exit": [
+        0,
+        0,
+        -20
+      ],
+      "waves": [
+        [
+          "husk",
+          "husk",
+          "husk",
+          "husk",
+          "husk",
+          "drone",
+          "drone",
+          "spitter"
+        ],
+        [
+          "husk",
+          "husk",
+          "husk",
+          "husk",
+          "husk",
+          "drone",
+          "drone",
+          "spitter",
+          "spitter",
+          "swarmer",
+          "swarmer",
+          "husk",
+          "husk",
+          "husk",
+          "drone"
+        ]
+      ],
+      "rect": [
+        -26,
+        -24,
+        26,
+        24
+      ],
+      "nodes": [
+        [
+          -22,
+          0,
+          18
+        ],
+        [
+          22,
+          0,
+          18
+        ],
+        [
+          0,
+          0,
+          12
+        ],
+        [
+          -22,
+          0,
+          6
+        ],
+        [
+          22,
+          0,
+          6
+        ],
+        [
+          -14,
+          0,
+          -4
+        ],
+        [
+          14,
+          0,
+          -4
+        ],
+        [
+          0,
+          0,
+          -14
+        ]
+      ]
+    },
+    {
+      "id": "m3",
+      "name": "THE MONOLITH GATE",
+      "kind": "room",
+      "par": 34,
+      "botMedian": 34,
+      "parCap": 108.5,
+      "spawn": {
+        "at": [
+          0,
+          0,
+          -36
+        ],
+        "yawDeg": 0
+      },
+      "exit": [
+        0,
+        0,
+        -74
+      ],
+      "waves": [
+        [
+          "husk",
+          "husk",
+          "husk",
+          "husk",
+          "drone"
+        ],
+        [
+          "husk",
+          "husk",
+          "husk",
+          "husk",
+          "spitter",
+          "drone"
+        ],
+        [
+          "husk",
+          "husk",
+          "husk",
+          "husk",
+          "spitter",
+          "drone",
+          "swarmer"
+        ]
+      ],
+      "rect": [
+        -26,
+        -78,
+        26,
+        -30
+      ],
+      "nodes": [
+        [
+          -20,
+          0,
+          -40
+        ],
+        [
+          20,
+          0,
+          -40
+        ],
+        [
+          -20,
+          0,
+          -56
+        ],
+        [
+          20,
+          0,
+          -56
+        ],
+        [
+          -10,
+          0,
+          -66
+        ],
+        [
+          10,
+          0,
+          -66
+        ],
+        [
+          -20,
+          0,
+          -72
+        ],
+        [
+          20,
+          0,
+          -72
+        ]
+      ],
+      "_note": "SHORT monolith: no Campaign24 hook for the MONOLITH; the boss room is this gauntlet"
+    },
+    {
+      "id": "boss",
+      "name": "THE MONOLITH",
+      "kind": "boss",
+      "boss": "monolith",
+      "rect": [
+        -26,
+        -132,
+        26,
+        -84
+      ],
+      "par": 73,
+      "botMedian": 61,
+      "parCap": 73,
+      "spawn": {
+        "at": [
+          0,
+          0,
+          -90
+        ],
+        "yawDeg": 0
+      },
+      "exit": [
+        0,
+        0,
+        -128
+      ],
+      "nodes": [],
+      "highNodes": []
+    }
+  ],
+  "doors": [
+    {
+      "id": "d1",
+      "between": [
+        "m1",
+        "m2"
+      ],
+      "rect": [
+        -4,
+        24,
+        4,
+        30
+      ],
+      "checkpoint": true
+    },
+    {
+      "id": "d2",
+      "between": [
+        "m2",
+        "m3"
+      ],
+      "rect": [
+        -4,
+        -30,
+        4,
+        -24
+      ],
+      "checkpoint": true
+    },
+    {
+      "id": "d3",
+      "between": [
+        "m3",
+        "boss"
+      ],
+      "rect": [
+        -4,
+        -84,
+        4,
+        -78
+      ],
+      "checkpoint": true
+    }
+  ],
+  "boxes": [
+    {
+      "zone": "m1",
+      "kind": "hull",
+      "min": [
+        -18,
+        0,
+        60
+      ],
+      "max": [
+        -14,
+        7,
+        64
+      ],
+      "note": "pillar"
+    },
+    {
+      "zone": "m1",
+      "kind": "hull",
+      "min": [
+        -2,
+        0,
+        60
+      ],
+      "max": [
+        2,
+        7,
+        64
+      ],
+      "note": "pillar"
+    },
+    {
+      "zone": "m1",
+      "kind": "hull",
+      "min": [
+        14,
+        0,
+        60
+      ],
+      "max": [
+        18,
+        7,
+        64
+      ],
+      "note": "pillar"
+    },
+    {
+      "zone": "m1",
+      "kind": "hull",
+      "min": [
+        -10,
+        0,
+        46
+      ],
+      "max": [
+        -6,
+        7,
+        50
+      ],
+      "note": "pillar"
+    },
+    {
+      "zone": "m1",
+      "kind": "hull",
+      "min": [
+        6,
+        0,
+        46
+      ],
+      "max": [
+        10,
+        7,
+        50
+      ],
+      "note": "pillar"
+    },
+    {
+      "zone": "m1",
+      "kind": "hull",
+      "min": [
+        -20,
+        0,
+        52
+      ],
+      "max": [
+        -16,
+        7,
+        56
+      ],
+      "note": "pillar"
+    },
+    {
+      "zone": "m1",
+      "kind": "hull",
+      "min": [
+        16,
+        0,
+        52
+      ],
+      "max": [
+        20,
+        7,
+        56
+      ],
+      "note": "pillar"
+    },
+    {
+      "zone": "m2",
+      "kind": "hull",
+      "min": [
+        -18,
+        0,
+        8
+      ],
+      "max": [
+        -10,
+        8,
+        14
+      ],
+      "note": "stack"
+    },
+    {
+      "zone": "m2",
+      "kind": "hull",
+      "min": [
+        10,
+        0,
+        8
+      ],
+      "max": [
+        18,
+        8,
+        14
+      ],
+      "note": "stack"
+    },
+    {
+      "zone": "m2",
+      "kind": "hull",
+      "min": [
+        -6,
+        0,
+        -4
+      ],
+      "max": [
+        6,
+        8,
+        2
+      ],
+      "note": "stack"
+    },
+    {
+      "zone": "m2",
+      "kind": "hull",
+      "min": [
+        -18,
+        0,
+        -14
+      ],
+      "max": [
+        -10,
+        8,
+        -8
+      ],
+      "note": "stack"
+    },
+    {
+      "zone": "m2",
+      "kind": "hull",
+      "min": [
+        10,
+        0,
+        -14
+      ],
+      "max": [
+        18,
+        8,
+        -8
+      ],
+      "note": "stack"
+    },
+    {
+      "zone": "m3",
+      "kind": "hull",
+      "min": [
+        -4,
+        0,
+        -56
+      ],
+      "max": [
+        4,
+        12,
+        -48
+      ],
+      "note": "the monolith (a stand-in block: the boss room is the SHORT marker)"
+    },
+    {
+      "zone": "m3",
+      "kind": "hull",
+      "min": [
+        -14,
+        0,
+        -44
+      ],
+      "max": [
+        -10,
+        6,
+        -40
+      ],
+      "note": "ring pillar"
+    },
+    {
+      "zone": "m3",
+      "kind": "hull",
+      "min": [
+        10,
+        0,
+        -44
+      ],
+      "max": [
+        14,
+        6,
+        -40
+      ],
+      "note": "ring pillar"
+    },
+    {
+      "zone": "m3",
+      "kind": "hull",
+      "min": [
+        -14,
+        0,
+        -64
+      ],
+      "max": [
+        -10,
+        6,
+        -60
+      ],
+      "note": "ring pillar"
+    },
+    {
+      "zone": "m3",
+      "kind": "hull",
+      "min": [
+        10,
+        0,
+        -64
+      ],
+      "max": [
+        14,
+        6,
+        -60
+      ],
+      "note": "ring pillar"
+    },
+    {
+      "zone": "m3",
+      "kind": "hull",
+      "min": [
+        -10,
+        0,
+        -76
+      ],
+      "max": [
+        -6,
+        10,
+        -72
+      ],
+      "note": "gate post"
+    },
+    {
+      "zone": "m3",
+      "kind": "hull",
+      "min": [
+        6,
+        0,
+        -76
+      ],
+      "max": [
+        10,
+        10,
+        -72
+      ],
+      "note": "gate post"
+    }
+  ],
+  "ramps": [],
+  "pads": [],
+  "grapple": [],
+  "pits": [],
+  "tunnels": []
+}

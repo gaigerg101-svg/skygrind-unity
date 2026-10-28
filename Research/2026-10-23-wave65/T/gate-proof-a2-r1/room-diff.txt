@@ -1,0 +1,157 @@
+# git diff --no-index of 0d163c65:Design/levels/n65/rooms-n52/a2.json (n52's export) against 0d163c65:Design/levels/n65/rooms/a2.json (the round's)
+
+diff --git a/rooms-n52-a2.json b/rooms-a2-r1.json
+index 369712f..007ec46 100644
+--- a/rooms-n52-a2.json
++++ b/rooms-a2-r1.json
+@@ -1,48 +1,102 @@
+ {
+- "_why": "NIGHT65 T1 (Tools/night/gen-n65-foundry.cjs --export): n52-foundry's room a2 (1.2 KESTREL) exactly as Design/levels/n52/foundry.plan.json has it: the row (every key), its zone-keyed pieces, its room-keyed lights / props, its teach35 entries. The slot's starting point: rebuild it here (every piece with a job and a why), give the row bot43: false (the walk bot's old id scripts drive the old geometry), add frames65 / line65 for tour65. A key the row drops needs a reason in drop{}. The room's opening for the checker: add top-level \"opening\": \"vista\" | \"ambushed\" | \"ambusher\" | \"held\" (and \"opening_why\": its card line); left out, the room keeps n52's (openings53.json).",
+- "room": "a2",
+- "row": {
+-  "id": "a2",
+-  "name": "1.2 KESTREL",
+-  "kind": "room",
+-  "rect": [-7,-55,7,-35],
+-  "height": 7,
+-  "roof": true,
+-  "par": 18,
+-  "job36": "teach",
+-  "verb36": "fire (tap), charge (hold: pierces)",
+-  "spawn": {"at":[0,0,-37],"yawDeg":0},
+-  "exit": [0,0,-53],
+-  "arena36": true,
+-  "standIns": [{"at":[0,0,-44],"mode":"static"},{"at":[0,0,-46],"mode":"static"},{"at":[0,0,-48],"mode":"static"}],
+-  "standIns31": [{"at":[0,0,-44],"mode":"static"},{"at":[0,0,-46],"mode":"static"},{"at":[0,0,-48],"mode":"static"}],
+-  "standIns36": [{"at":[0,0,-44],"job":"marker","why":"the stand-in LINE on the axis: one charged shot from the door pierces all three"},{"at":[0,0,-46],"job":"marker","why":"the stand-in LINE on the axis: one charged shot from the door pierces all three"},{"at":[0,0,-48],"job":"marker","why":"the stand-in LINE on the axis: one charged shot from the door pierces all three"}],
+-  "waves": [["husk","husk"]],
+-  "lessons": [{"promptPad":"","kind":"shots","n":3,"prompt":""},{"promptPad":"","kind":"husksDead","n":2,"prompt":""}],
+-  "lessons31": [{"promptPad":"","kind":"shots","n":3,"prompt":""},{"promptPad":"","kind":"husksDead","n":2,"prompt":""}],
+-  "proofs": [{"kind":"walk","points":[[0,0,-37],[2,0,-44],[2,0,-51],[0,0,-53]]},{"kind":"walk","points":[[-4,0,-44],[-4,2,-51],[-5,2,-53]]}],
+-  "frames36": {"mid":[5,0,-39,37.875,-0.053],"exit":[-5,2,-53,-86.424,-0.245]},
+-  "highNodes": [[-5,2,-53],[-3,2,-53.5]]
+- },
+- "boxes": [
+-  {"zone":"a2","kind":"deck","min":[-7,0,-55],"max":[-1,2,-50],"job":"line","why":"the north deck (2 m): where the first husks switch on, seen from the door; the high ground after","note":"the north deck (2 m): where the first husks switch on, seen from the door; the high ground after"}
+- ],
+- "ramps": [
+-  {"zone":"a2","from":[-4,-45],"to":[-4,-50],"width":3,"rise":2,"job":"climb","why":"the husks' way down from the deck toward you (2 m over 5 m), and the player's way up","note":"the husks' way down from the deck toward you (2 m over 5 m), and the player's way up"}
+- ],
+- "pads": [],
+- "grapple": [],
+- "pits": [],
+- "tunnels": [],
+- "lights": [
+-  {"id":"a2-L1","room":"a2","kind":"ceiling","at":[0,6.95,-46],"normal":[0,-1,0],"size":[2,6,0.1],"color":"white","range":9,"intensity":1.2},
+-  {"id":"a2-L2","room":"a2","kind":"ceiling","at":[-4,6.95,-52.5],"normal":[0,-1,0],"size":[4,3,0.1],"color":"amber","range":8,"intensity":1},
+-  {"id":"a2-L3","room":"a2","kind":"pool","at":[0,0.025,-53],"normal":[0,1,0],"size":[2.5,2.5,0.05],"color":"cyan","range":7,"intensity":1.6}
+- ],
+- "props": [],
+- "teach35": [
+-  {"id":"l1.fire","room":"a2","rect":[-7,-39,7,-35],"minY":-1},
+-  {"id":"l1.charge","room":"a2","rect":[-7,-42,7,-39],"minY":-1}
+- ],
+- "drop": {}
++  "_why": "NIGHT65 builder R round 1 (card Research/2026-10-23-wave65/cards/a2.md, fixed d8972994): a2 rebuilt from scratch as THE RANGE: the KESTREL's charged pierce. THE RACK's three stand-ins stand on a diagonal: spread from the door, one line from THE MARK (a cyan square in l1.charge's strip); wave 1's four husks hold THE BREECH (2.5 m) and come down THE FEED RAMP, which points at the mark; wave 2 steps out from behind THE CARTRIDGE STACK on the west. Every piece has a job and a why.",
++  "room": "a2",
++  "row": {
++    "id": "a2",
++    "name": "1.2 KESTREL",
++    "kind": "room",
++    "rect": [-7, -55, 7, -35],
++    "height": 7,
++    "roof": true,
++    "par": 20,
++    "job36": "teach",
++    "verb36": "fire (tap), charge (hold: pierces): stand on THE MARK and the rack is one line; then THE FEED RAMP's file of husks walks at the mark (NIGHT65 R, THE RANGE)",
++    "spawn": { "at": [0, 0, -37], "yawDeg": 0 },
++    "exit": [0, 0, -53],
++    "arena36": true,
++    "standIns": [
++      { "at": [2.9, 0, -44], "mode": "static" },
++      { "at": [0.9, 0, -46.5], "mode": "static" },
++      { "at": [-1.1, 0, -49], "mode": "static" }
++    ],
++    "standIns31": [
++      { "at": [2.9, 0, -44], "mode": "static" },
++      { "at": [0.9, 0, -46.5], "mode": "static" },
++      { "at": [-1.1, 0, -49], "mode": "static" }
++    ],
++    "standIns36": [
++      { "at": [2.9, 0, -44], "job": "marker", "why": "THE RACK (NIGHT65 R): the first of three stand-ins on one diagonal (bearing 38.7 deg west of north from THE MARK, 3.2 m): spread from the door, one line from the mark; a stand-in dies only to a charged KESTREL shot or a shot from a wall ride (Combat.cs Damage)" },
++      { "at": [0.9, 0, -46.5], "job": "marker", "why": "THE RACK (NIGHT65 R): the second stand-in, 6.4 m down the mark's line" },
++      { "at": [-1.1, 0, -49], "job": "marker", "why": "THE RACK (NIGHT65 R): the third stand-in, 9.6 m down the mark's line" }
++    ],
++    "waves": [["husk", "husk", "husk", "husk"], ["husk", "husk"]],
++    "lessons": [
++      { "promptPad": "", "kind": "shots", "n": 3, "prompt": "" },
++      { "promptPad": "", "kind": "husksDead", "n": 2, "prompt": "" }
++    ],
++    "lessons31": [
++      { "promptPad": "", "kind": "shots", "n": 3, "prompt": "" },
++      { "promptPad": "", "kind": "husksDead", "n": 2, "prompt": "" }
++    ],
++    "proofs": [
++      { "kind": "walk", "points": [[0, 0, -37], [4.9, 0, -41.5], [1.5, 0, -45.5], [0, 0, -53]] },
++      { "kind": "walk", "points": [[4.9, 0, -41.5], [5.25, 0, -43], [5.25, 2.5, -50], [5, 2.5, -52.5]] },
++      { "kind": "walk", "points": [[0, 0, -37], [-1.5, 0, -45], [-6, 0, -46.5], [-3.5, 0, -47.5], [-3, 0, -52], [0, 0, -53]] }
++    ],
++    "frames36": { "mid": [4.9, 0, -41.5, 38.7, 0], "exit": [5, 2.5, -53, 165, -0.2] },
++    "frames52": {
++      "_why": "NIGHT65 R: a157's poses for THE RANGE (feet x, y, z, yaw deg, pitch rad): entry = just inside d1, the rack spread, the press left, the breech and its ramp right; mid = on THE MARK looking up THE FEED RAMP; high = on THE BREECH back over the room to the door",
++      "entry": [0, 0, -36, 0, 0],
++      "mid": [4.9, 0, -41.5, 0, 0.12],
++      "high": [5, 2.5, -53, 165, -0.2]
++    },
++    "frames65": {
++      "entry": [0, 0, -36, 0, 0],
++      "verb": [4.9, 0, -41.5, 38.7, 0],
++      "mid": [4.9, 0, -41.5, 0, 0.12],
++      "high": [5, 2.5, -53, 165, -0.2]
++    },
++    "line65": [[0, 0, -36], [1.5, 0, -38], [3.5, 0, -40], [4.9, 0, -41.5], [4.9, 0, -41.5], [4.9, 0, -42], [2.5, 0, -46], [0, 0, -53]],
++    "nodes": [[-6.5, 0, -50.5], [-6.5, 0, -51.6]],
++    "highNodes": [[3.5, 2.5, -54], [5, 2.5, -54], [6.5, 2.5, -54], [5, 2.5, -51.5]],
++    "waveNodes43": [
++      [[3.5, 2.5, -54], [5, 2.5, -54], [6.5, 2.5, -54], [5, 2.5, -51.5]],
++      [[-6.5, 0, -50.5], [-6.5, 0, -51.6]]
++    ],
++    "waveNodes43_why": "NIGHT65 R (card a2): wave 1's four husks hold THE BREECH (2.5 m, north-east), in view from THE PRESS's east flank (opening held), and come down THE FEED RAMP at THE MARK; wave 2's two step out from behind THE CARTRIDGE STACK on the west (both nodes in the stack's shadow from the mark: the card gate's fix)",
++    "bot43": false,
++    "card65": "Research/2026-10-23-wave65/cards/a2.md"
++  },
++  "boxes": [
++    { "zone": "a2", "kind": "deck", "min": [2.5, 0, -55], "max": [7, 2.5, -49.5], "job": "line", "why": "THE BREECH (deck 2.5 m, NIGHT65 R): wave 1's ledge in the north-east corner, in view from the press's flank (opening held); the husks come off it down THE FEED RAMP (or its 2.5 m edges); the high ground after (a double jump reaches it)" },
++    { "zone": "a2", "kind": "hull", "min": [-5, 0, -44], "max": [-2.5, 2.2, -40.5], "job": "cover", "why": "THE PRESS (hull 2.2 m, NIGHT65 R): the foothold (R5: 7.5-11 m from the door's centre, free-standing) and the gun room's landmark (the cartridge press, its die on the south face); the cover you step behind when wave 2 comes from the west" },
++    { "zone": "a2", "kind": "hull", "min": [-7, 0, -50], "max": [-4.5, 1.8, -48.5], "job": "cover", "why": "THE CARTRIDGE STACK (hull 1.8 m, NIGHT65 R): hides wave 2's two nodes from THE MARK (the line from the mark's eye meets its east face inside z -50..-48.5, under its top), so wave 2 steps out from the west side: a front shift, not a spawn behind" }
++  ],
++  "ramps": [
++    { "zone": "a2", "from": [5.25, -43.5], "to": [5.25, -49.5], "width": 3.5, "rise": 2.5, "job": "climb", "why": "THE FEED RAMP (NIGHT65 R): 2.5 m over 6 m onto THE BREECH, flush with the east wall (no slot beside it): the walkers' climb route and the husks' likely way down, pointing at THE MARK 2 m south of its foot: the second pierce line" }
++  ],
++  "pads": [],
++  "grapple": [],
++  "pits": [],
++  "tunnels": [],
++  "lights": [
++    { "id": "a2-L1", "room": "a2", "kind": "ceiling", "at": [0.9, 6.95, -46.5], "normal": [0, -1, 0], "size": [2, 4, 0.1], "color": "white", "range": 9, "intensity": 1.2, "job": "light", "why": "NIGHT65 R: lights THE RACK, the lesson's targets" },
++    { "id": "a2-L2", "room": "a2", "kind": "ceiling", "at": [5, 6.95, -52.5], "normal": [0, -1, 0], "size": [3, 3, 0.1], "color": "amber", "range": 8, "intensity": 1, "job": "landmark", "why": "NIGHT65 R: THE BREECH's lamp, the room's one landmark light: wave 1's ledge lit warm from the door" },
++    { "id": "a2-L3", "room": "a2", "kind": "pool", "at": [0, 0.025, -53], "normal": [0, 1, 0], "size": [2.5, 2.5, 0.05], "color": "cyan", "range": 7, "intensity": 1.6, "job": "exit", "why": "NIGHT65 R: the lit exit (cyan: the way on)" },
++    { "id": "a2-L4", "room": "a2", "kind": "ceiling", "at": [-3, 6.95, -40], "normal": [0, -1, 0], "size": [3, 3, 0.1], "color": "white", "range": 9, "intensity": 0.9, "job": "light", "why": "NIGHT65 R: lights the entry strip and THE PRESS's die" }
++  ],
++  "props": [
++    { "id": "a2-P1", "room": "a2", "kind": "floorStrip", "at": [4.9, 0.02, -41.5], "size": [1, 0.02, 1], "yawDeg": 0, "collider": false, "job": "line", "why": "THE MARK (NIGHT65 R; cyan, player-usable): stand here and THE RACK is one line (3.2, 6.4, 9.6 m along it); THE FEED RAMP's file walks at it; inside l1.charge's strip" },
++    { "id": "a2-P2", "room": "a2", "kind": "truss", "at": [0.9, 6.3, -46.5], "size": [0.4, 0.4, 8.5], "yawDeg": 38.7, "collider": false, "decor": true, "job": "landmark", "why": "THE RACK RAIL (NIGHT65 R): the rack's line drawn overhead so it reads as a line from the door (the yaw sign: checked on the plan picture)" },
++    { "id": "a2-P3", "room": "a2", "kind": "hazardStripe", "at": [4.75, 2.52, -49.7], "size": [4.5, 0.03, 0.4], "yawDeg": 0, "collider": false, "decor": true, "job": "hazard", "why": "THE BREECH LIP (NIGHT65 R; red-orange: enemies): the edge the husks come over and down from" },
++    { "id": "a2-P4", "room": "a2", "kind": "hero", "at": [-3.75, 1.4, -40.45], "size": [2.2, 1.6, 0.2], "yawDeg": 0, "collider": false, "decor": true, "job": "hero", "why": "THE PRESS DIE (NIGHT65 R; pale brass): the gun room's landmark on the press's south face, toward the entry" },
++    { "id": "a2-P5", "room": "a2", "kind": "lintelLight", "at": [0, 4.7, -54.95], "size": [4, 0.2, 0.1], "yawDeg": 0, "collider": false, "decor": true, "job": "exit", "why": "NIGHT65 R: the exit's lintel lamp over d2 (warm white): the way on, lit" }
++  ],
++  "teach35": [
++    { "id": "l1.fire", "room": "a2", "rect": [-7, -39, 7, -35], "minY": -1 },
++    { "id": "l1.charge", "room": "a2", "rect": [-7, -42, 7, -39], "minY": -1 }
++  ],
++  "drop": {},
++  "opening": "held",
++  "opening_why": "card a2: wave 1's four husks hold THE BREECH, in view from THE PRESS's east flank; you take the rack from THE MARK first (held)"
+ }
+warning: in the working copy of 'rooms-n52-a2.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'rooms-a2-r1.json', LF will be replaced by CRLF the next time Git touches it

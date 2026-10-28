@@ -1,0 +1,14 @@
+# command: node Tools/night/n65-slot-set.cjs --selftest
+# sha: 1cfbc786 (branch n65-T; clean tracked tree)
+# time: 2026-10-23 14:21:49 -> 2026-10-23 14:21:50 (local)
+# exit: 0
+
+PASS a PASS with the room file unchanged since passSha sets a2 new
+PASS PLANTED a2.json changed after its PASS: refused (a2: Design/levels/n65/rooms/a2.json changed since its PASS at 1cfbc786febc85f5082e311fd06c15bd60aab1f4 (refused: GATE it again, or set passS)
+PASS a slice with passes false: refused (a2: the slate slice has passes false: a slot goes new only after its GATE PASS)
+PASS PLANTED gen-n65-foundry --slots=<that slots65.json> with a2.json changed: refused
+PASS gen-n65-foundry --slots=<that slots65.json> with a2.json as judged: assembles (a2 new)
+n65-slot-set selftest: PLANTED GREEN (5 cases; Design/levels/n65/rooms/a2.json restored, unchanged since HEAD)
+
+warning: in the working copy of 'Design/levels/n65/rooms/a2.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Design/levels/n65/rooms/a2.json', LF will be replaced by CRLF the next time Git touches it

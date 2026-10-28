@@ -1,0 +1,14 @@
+openings: Design/levels/n67/openings67.json spire v2 ambushed, v5 vista, v6 held (seed Design/levels/n52/openings53.json)
+gen-slots --level spire: Design/levels/n52/spire.plan.json -> Design/levels/n67/spire.plan.json (slots v6; rebuilt: v6); every other room, door, piece and key n52-spire's bit for bit
+  slot v2: old Design/levels/n67/spire/rooms-base/v2.json: n52-spire's room exactly; boxes 11, ramps 4, pads 2, grapple 0, pits 0, tunnels 0, lights 10, props 4, surfaces 0
+  slot v5: old Design/levels/n67/spire/rooms-base/v5.json: n52-spire's room exactly; boxes 8, ramps 3, pads 2, grapple 0, pits 0, tunnels 0, lights 7, props 1, surfaces 0
+  slot v6: latest Design/levels/n67/spire/rooms/v6.json: REBUILT; boxes 11 -> 11*, ramps 3 -> 4*, pads 2, grapple 0, pits 1 -> 3*, tunnels 0, lights 5, props 1, surfaces 0; note = why filled on 3; verb65 launch
+    row keys: keep 28, replace 3, add 5, drop 0
+    replace proofs
+    replace nodes
+    replace waveNodes43
+    add     bot43
+    add     verb65
+    add     line65
+    add     card65
+    add     nodes_why

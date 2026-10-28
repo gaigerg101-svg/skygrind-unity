@@ -1,0 +1,12 @@
+# command: node Tools/night/gen-n65-foundry.cjs --slots=Design/levels/n65/slots65.json --dry-plan
+# sha: 1cfbc786 (branch n65-T; tracked changes uncommitted: 1 file(s))
+# time: 2026-10-23 14:22:15 -> 2026-10-23 14:22:15 (local)
+# exit: 0
+
+gen-n65-foundry: Design/levels/n52/foundry.plan.json -> (--dry-plan: not written) (slots Design/levels/n65/slots65.json; rebuilt: none); every other room, door, piece and key n52's bit for bit
+  slot a2: old Design/levels/n65/rooms-n52/a2.json: n52's room exactly; boxes 1, ramps 1, pads 0, grapple 0, pits 0, tunnels 0, lights 3, props 0, teach35 2
+  slot a3: old Design/levels/n65/rooms-n52/a3.json: n52's room exactly; boxes 12, ramps 2, pads 2, grapple 0, pits 1, tunnels 0, lights 8, props 1, teach35 1
+  slot a4: old Design/levels/n65/rooms-n52/a4.json: n52's room exactly; boxes 1, ramps 2, pads 0, grapple 0, pits 0, tunnels 0, lights 3, props 0, teach35 0
+  slot a5: old Design/levels/n65/rooms-n52/a5.json: n52's room exactly; boxes 12, ramps 3, pads 3, grapple 0, pits 1, tunnels 0, lights 8, props 3, teach35 0
+  slot b1: old Design/levels/n65/rooms-n52/b1.json: n52's room exactly; boxes 12, ramps 2, pads 2, grapple 0, pits 1, tunnels 0, lights 6, props 3, teach35 0
+  slot a8: old Design/levels/n65/rooms-n52/a8.json: n52's room exactly; boxes 6, ramps 0, pads 0, grapple 0, pits 1, tunnels 0, lights 5, props 0, teach35 0

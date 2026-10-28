@@ -1,0 +1,113 @@
+{
+  "_why": "NIGHT74 R (card Research/2026-10-27-wave74/R/card-a5.md, guards a5-guards.md): two pads added (THE LADLE RETURN on the gantry, THE APRON LIFT onto the tap block) so the room keeps the old a5's three pads (the guard 'nothing lost: pads'); nothing else changed. NIGHT65 builder R round 1 (card Research/2026-10-23-wave65/cards/a5.md, fixed d8972994; DECIDE65 D-3): a5 rebuilt from scratch as THE POUR: the slide-launch. THE TAP WALL (the crucible and its tap block) crosses the middle; its one gap is THE TAP BEAM, a 1.2 m slide-only slot (the tunnel kit; the validator's row 7 proves it); you slide out onto THE APRON among wave 2's husks with THE POUR (lava) 3.5 m ahead and punch them in (a punch while sliding launches). THE GANTRY holds the spitters; THE CRANE RAIL and THE POUR PAD are the fast ways onto it. Every piece has a job and a why.",
+  "room": "a5",
+  "row": {
+    "id": "a5",
+    "name": "1.5 CRUCIBLE",
+    "kind": "room",
+    "rect": [-10, -144, 10, -112],
+    "height": 10,
+    "roof": true,
+    "par": 30,
+    "job36": "combine",
+    "verb36": "the slide-launch: slide under THE TAP BEAM, punch the apron's husks into THE POUR (a punch while sliding launches); the parry (a4) answers the spitters' globs (NIGHT65 R, DECIDE65 D-3)",
+    "spawn": { "at": [0, 0, -115], "yawDeg": 0 },
+    "exit": [0, 0, -142.5],
+    "arena36": true,
+    "waves": [["swarmer", "swarmer", "swarmer", "husk", "husk", "husk"], ["husk", "husk", "spitter"]],
+    "pour66_why": "NIGHT66 R round 3 (the lead: give THE POUR a body): a launched body flies about 0.43 s (lift 5 m/s) and lands about 6.9 m out, then slides on at the knockback's 16 m/s to about 12.8 m (launch36: 16 m/s for 0.8 s); a grounded body that crosses a pit falls in. So a slide-punch 2-6 m south of THE POUR, facing north, drops the body in the lava; wave 2's two apron bodies are swarmers (a punch launches them: no wind-up, Swarmer.cs; a husk there parries, Parry36.cs:106-114), met at THE TAP BEAM's north mouth by the slide through it",
+    "waves66_why": "NIGHT66 R round 2 (the lead's ask: why the slide punch does not launch, read in the code before re-aiming): a punch on a plain husk inside its 2.2 m melee reach (punch.range is 2.0) that is grounded, free, holds its attack token and is off cooldown is an imminent wind-up, so it resolves as a parry, never a launch (Combat.cs:1397-1401, Parry36.cs:106-114); the husk that walks at you is exactly that body. A swarmer runs its own crouch / pounce / recover states and never sets a wind-up (Swarmer.cs:2-4, :61-95), and Parry36's imminent rule takes only the plain Husk type, so a moving punch always launches it. Round 2b made wave 2's apron pair swarmers: the slide launch fired on one (launch36 1, thrown 12.7 m) but it landed alive in the open, launches came on 4 of 10 skip seeds and set A's deaths went to 2 (r2/r2b). Round 2c / 2d: two of wave 1's six husks are swarmers (a kind level 1 already has, a3): they run ahead of the husks, and a slide-punch launches a swarmer back into the husks behind it or into a wall (the burst: 60 in 3.5 m over a husk's 40 hp; r2d's slide launch from line65[0]: bursts 1, hits 4, kills 4); wave 2 is two husks and two spitters",
+    "proofs": [
+      { "kind": "walk", "points": [[0, 0, -114], [-6.5, 0, -116], [-8.5, 0, -122.5], [-7.2, 0, -125], [-8.5, 0, -127.5], [-8.5, 0, -142.8], [0, 0, -142.8]] },
+      { "kind": "walk", "points": [[0, 0, -114], [5, 0, -120], [6.6, 0, -121.5], [6.6, 0, -124.5], [7.5, 0, -128], [4, 0, -131.5], [3.75, 0, -132.6], [3.75, 2.5, -138.4], [6, 2.5, -141]] },
+      { "kind": "walk", "points": [[6, 2.5, -141], [3.5, 2.5, -142.5], [1.5, 0, -142.5], [0, 0, -142.5]] }
+    ],
+    "frames36": { "mid": [-2, 0, -130, 0, 0], "exit": [5.5, 2.5, -141, 160, -0.25] },
+    "frames52": {
+      "_why": "NIGHT65 R: a157's poses for THE POUR (feet x, y, z, yaw deg, pitch rad): entry = just inside d4, the bin left, THE TAP WALL across the middle with its slot, the crucible's face, the gantry right; mid = at the slot's mouth, through it at the apron and the pour; high = on THE GANTRY back over the pour to the door",
+      "entry": [0, 0, -113, 0, 0.05],
+      "mid": [-2, 0, -126, 0, -0.05],
+      "high": [5.5, 2.5, -141, 160, -0.25]
+    },
+    "frames65": {
+      "entry": [0, 0, -113, 0, 0.05],
+      "verb": [-2, 0, -126, 0, -0.05],
+      "mid": [-2, 0, -130, 0, 0],
+      "high": [5.5, 2.5, -141, 160, -0.25]
+    },
+    "line65_why": "NIGHT66 R round 1 (plan a5): the slide line, then THE APRON's west end, THE POUR PAD's arc over the pour onto THE GANTRY (the hand-off chain: slide, apron, pad, gantry). The slot's south mouth sits 10.25 m along a 32.9 m line, so tour65's eight frames fall 0.85 m either side of THE TAP BEAM's slab (by 3D or flat arc length): its round-1 WARN, frame 4 at (-2, 0, -127.3) with the eye in the beam, is gone",
+    "line65": [[0, 0, -116.6], [-1.5, 0, -120], [-2, 0, -124], [-2, 0, -126.5], [-2, 0, -129.5], [-2, 0, -131.5], [-5.4, 0, -131.6], [0, 4.5, -137], [5.5, 2.5, -141.5]],
+    "nodes": [[5.5, 0, -125.8], [6.6, 0, -125.4], [7.5, 0, -126], [7.8, 0, -127.6], [-2, 0, -131.5], [-1.5, 0, -132.5]],
+    "highNodes": [[6, 2.5, -141], [8, 2.5, -142.5]],
+    "waveNodes43": [
+      [[5.5, 0, -125.8], [6.6, 0, -125.4], [7.5, 0, -126], [7.8, 0, -127.6]],
+      [[-2, 0, -131.5], [-1.5, 0, -132.5], [6, 2.5, -141], [8, 2.5, -142.5]]
+    ],
+    "waveNodes43_why": "NIGHT65 R (card a5): wave 1 spawns in the east lane, in view from THE CHARGE BIN's east flank (opening held). NIGHT66 R round 2: wave 1 is two swarmers and four husks on the east lane's four nodes; wave 2 is two husks on THE APRON and two spitters on THE GANTRY (the validator's budget row: at most 2 kinds a wave, so wave 1's gantry spitter moved to wave 2). Round 1's THE SPRUE GATE is gone: every build with it read M1 0.91-0.95 under skip v2 (r2/r2b, r2c), below NIGHT65's own 1.11; without it (r2d) 1.25 on 7 of 10 seeds exercised. The plan's lip-spitter hold was dropped before building (spitters keep about 10 m and back off inside 5 m, Spitter.cs:185-196)",
+    "bot43": false,
+    "verb65": "launch+slide",
+    "card65": "Research/2026-10-23-wave65/cards/a5.md"
+  },
+  "boxes": [
+    { "zone": "a5", "kind": "hull", "min": [-7, 0, -129.5], "max": [-3, 7, -126.5], "job": "hero", "why": "THE CRUCIBLE (hull 7 m, NIGHT65 R): the west half of THE TAP WALL and the room's landmark (its cast face south, toward the door; its spout north, pouring into THE POUR): why the lava is there" },
+    { "zone": "a5", "kind": "hull", "min": [-1, 0, -129.5], "max": [6, 3, -126.5], "job": "lane", "why": "THE TAP BLOCK (hull 3 m, NIGHT65 R; round 2: carried east from x 2 to x 6, gg-proxy r1 and the r1 report's open item, the rail's lane x 6..9.4 left clear): the east half of THE TAP WALL: with the crucible it closes the middle, so THE TAP BEAM's slot is the short direct line to the lip and both walks round (the west end x -7, the east end x 6) start 5-8 m from wave 2's apron husks" },
+    { "zone": "a5", "kind": "hull", "min": [-3.6, 0, -125.5], "max": [-3.2, 1, -123.5], "job": "lane", "why": "THE SLIDE LANE's west kerb (low 1 m, NIGHT65 R round 2): with its east twin it marks the slide's 2.4 m run-up into THE TAP BEAM from the south floor, read from the door (the south half had no piece on the verb's line)" },
+    { "zone": "a5", "kind": "hull", "min": [-0.8, 0, -125.5], "max": [-0.4, 1, -123.5], "job": "lane", "why": "THE SLIDE LANE's east kerb (low 1 m, NIGHT65 R round 2): the run-up's other side; low cover on the south floor's middle from the gantry's spitter" },
+    { "zone": "a5", "kind": "deck", "min": [2.5, 0, -144], "max": [10, 2.5, -138], "job": "perch", "why": "THE GANTRY (deck 2.5 m, NIGHT65 R): the spitters' perch over the exit apron and THE POUR; the rail's landing; THE POUR PAD's landing" },
+    { "zone": "a5", "kind": "wall", "min": [9.4, 0, -138], "max": [10, 7, -124], "job": "ride", "ride": true, "ride36": { "face": "W", "planeX": 9.4, "lz": [12, 26] }, "why": "THE CRANE RAIL (NIGHT65 R; round 2: 20 -> 14 m, its south end moved north to z -124, the r1 room check's I2 1.27 FAIL): a 14 m ride along the east wall past INGOT S to THE GANTRY (a jump-off at its end onto 2.5 m, VERBS row 11): the fast way; the walk round by the gantry ramp is the long one" },
+    { "zone": "a5", "kind": "hull", "min": [-5, 0, -119], "max": [-2, 2.2, -117], "job": "cover", "why": "THE CHARGE BIN (hull 2.2 m, NIGHT65 R): the foothold (R5: 7-9 m from the door's centre, free-standing); from its east flank wave 1 is in view past the tap block (opening held)" },
+    { "zone": "a5", "kind": "hull", "min": [3, 0, -123], "max": [6, 1.2, -122], "job": "cover", "why": "INGOT S (low cover 1.2 m, NIGHT65 R): the south floor's cover from the gantry's spitter; keeps the rail's lane (x 6..9.4) clear" },
+    { "zone": "a5", "kind": "hull", "min": [9.4, 2.5, -140], "max": [10, 10, -139], "job": "landmark", "why": "THE CRANE'S EAST COLUMN (NIGHT65 R density pass; the lead's 'something above 2.5 m with a job'): gantry deck to roof against the east wall, north of THE CRANE RAIL's end: it carries THE OVERHEAD CRANE's bridge over THE POUR, so the crane reads as one machine from the door; on the gantry it is cover for a rider who has just landed, from the apron's fire" },
+    { "zone": "a5", "kind": "hull", "min": [-10, 0, -137.5], "max": [-9.4, 10, -136.5], "job": "landmark", "why": "THE CRANE'S WEST COLUMN (NIGHT65 R density pass): floor to roof against the west wall beside THE WEST RIM, the bridge's other end (the rim's walk keeps 2.4 m)" },
+    { "zone": "a5", "kind": "hull", "min": [-10, 0, -125.8], "max": [-8.4, 1.2, -124.2], "job": "cover", "why": "THE WEST CRATE (low cover 1.2 m, NIGHT74 R, the lead's a5 RED): a crate against the west wall half way along it: cover on the south floor's west edge from the gantry's spitter across the pour, and it breaks the west wall's 25 m clear run (the pick's lane is 1.3 m off the wall and 0.2 m over the floor, so any box across it ends the run) into two of 12 m, so the Player's verbs37 wall pick (VerbsWall39.Pick, rows 9-11: the longest straight clear wall) stays on a7's 18 m ride and not on a5's rim, where row 10 read RED 'WallJump events 0' (n74-t5 vn, b1,a8,a2,a5); the probe (Research/2026-10-27-wave74/S/wallprobe, zones opened) read a5's 25 m at (-8.7, -137.4) with the room as it was. A 0.6 m rib at the wall did not break it: the lane is off its face" },
+    { "zone": "a5", "kind": "hull", "min": [-6, 0, -123.5], "max": [-4.3, 1.2, -121.8], "job": "cover", "why": "THE MOULD CRATES (low cover 1.2 m, NIGHT65 R density pass; cover that faces the floor, not the rider or the slider): on the south floor between THE CHARGE BIN and THE CRUCIBLE, west of THE SLIDE LANE: a floor fighter's cover from the gantry's spitter; the empty south half's second piece" }
+  ],
+  "ramps": [
+    { "zone": "a5", "from": [3.75, -133], "to": [3.75, -138], "width": 2.5, "rise": 2.5, "job": "climb", "why": "THE GANTRY RAMP (NIGHT65 R): 2.5 m over 5 m, end-on into THE GANTRY's south face: the enemies' way up and the walk the rail beats" }
+  ],
+  "pads": [
+    { "zone": "a5", "at": [-6, 0, -131.5], "target": [5.5, 2.5, -141.5], "apexAbove": 2, "job": "pad", "why": "THE POUR PAD (NIGHT65 R): from THE APRON's west end over THE POUR (about 15.6 m) onto THE GANTRY behind its spitter, 3.6 m from THE CRANE RAIL's north end: the level-design review's hand-off is slide -> apron -> pad -> gantry -> a step off its south edge into the rail and a ride south over wave 1's lane (round 2d moved the target to the rail's corner, and the walk bot's DULL on seeds 1-10 went 58.1 -> 64.5 %, over the card's 60: reverted)" },
+    { "zone": "a5", "at": [8, 2.5, -141.8], "target": [-3, 0, -132.4], "apexAbove": 2, "job": "pad", "why": "THE LADLE RETURN (NIGHT74 R): from THE GANTRY's east end back over THE POUR onto THE APRON, 3 m north of THE TAP BEAM's mouth: the way off the high ground that is not the drop into the rail lane, a second pass at wave 2's apron holders, and it closes the pad route (apron, pour pad, gantry, return pad, apron); 2.15 m from the proof walk's gantry leg (I4 wants 2.0)" },
+    { "zone": "a5", "at": [0.5, 0, -131.3], "target": [2.5, 3, -128], "apexAbove": 1.5, "job": "pad", "why": "THE APRON LIFT (NIGHT74 R): from THE APRON onto THE TAP BLOCK's 3 m top: after the slide-launch a short way up to a player-only high ground over THE APRON and THE POUR's lip (walkers cannot climb 3 m), 2.7 m east of the slide's axis so a slide out of the slot never rides it" }
+  ],
+  "grapple": [],
+  "pits": [
+    { "zone": "a5", "rect": [-7, -141, 2, -134.5], "floorY": -0.8, "lava": true, "job": "hazard", "why": "THE POUR (lava, NIGHT65 R; round 2: 1.5 m north, so THE APRON is 5 m deep and the room's core holds almost none of it, I5): the slide-launch's target, 5 m north of THE TAP BEAM's mouth, 7 m deep in z: an enemy in it dies (Lava30); to the player a burn and a knock-up onto walkable floor on every side (the apron, the west rim, the exit apron, the gantry ramp's foot); nothing you must cross is lava" },
+    { "zone": "a5", "rect": [7.2, -123.5, 9.4, -113.5], "floorY": -0.8, "lava": true, "job": "hazard", "why": "THE SPILL (lava, NIGHT66 R round 4, the lead's DECIDE66 D-2: a pour where the launches land): the crucible's runoff along the east wall's foot, south of THE CRANE RAIL, at the east lane's mouth. Wave 1 comes out of the east lane at a slider on the south floor, so the slide-launch throws its bodies east and north-east (skip v2's launch kills at r2d-r3d: (9.0, -123.5), (7.5, -122.8), (6.7, -121.5), (8.9, -130.3), (9.4, -118.8)); a launched body flies about 6.9 m, then slides on to about 12.8 m, and one grounded over the channel falls in (Lava30). To the player a burn and a knock-up back onto the south floor; nothing you must cross is lava: the east lane's way south runs between INGOT S and the channel (x 6..7.2)" }
+  ],
+  "tunnels": [
+    { "zone": "a5", "rect": [-3, -129.5, -1, -126.5], "ceiling": 1.2, "job": "lane", "why": "THE TAP BEAM (NIGHT65 R, DECIDE65 D-3): a 3 m slot under a 1.2 m beam between THE CRUCIBLE and THE TAP BLOCK: only a slide clears it (slide collider 1.0 m); a swarmer walks through, a husk goes round; it puts you on THE APRON heading north at slide speed, the husks between you and THE POUR" }
+  ],
+  "lights": [
+    { "id": "a5-TB", "room": "a5", "kind": "wall", "at": [-2, 1.35, -126.45], "normal": [0, 0, 1], "size": [2, 0.15, 0.1], "color": "cyan", "range": 4, "intensity": 1.3, "job": "line", "why": "THE BEAM'S EDGE (NIGHT65 R, the GATE's FIX: THE TAP BEAM read by the eye): a cyan line along the beam's south face just over the slot's 1.2 m ceiling, toward the door: the gap you slide under" },
+    { "id": "a5-L1", "room": "a5", "kind": "ceiling", "at": [0, 9.95, -117], "normal": [0, -1, 0], "size": [4, 3, 0.1], "color": "white", "range": 9, "intensity": 0.9, "job": "light", "why": "NIGHT65 R: lights the entry and the bin" },
+    { "id": "a5-L2", "room": "a5", "kind": "ceiling", "at": [6, 9.95, -134], "normal": [0, -1, 0], "size": [4, 4, 0.1], "color": "white", "range": 9, "intensity": 1, "job": "light", "why": "NIGHT65 R: lights the east side and the gantry ramp" },
+    { "id": "a5-L3", "room": "a5", "kind": "ceiling", "at": [-2, 9.95, -131], "normal": [0, -1, 0], "size": [3, 3, 0.1], "color": "white", "range": 10, "intensity": 1.2, "job": "light", "why": "NIGHT65 R: lights the slot's line, THE APRON and the lip (white: the room's one accent is THE POUR's orange, the validator's one-accent rule)" },
+    { "id": "a5-L4", "room": "a5", "kind": "pool", "at": [-2.5, -0.775, -137.75], "normal": [0, 1, 0], "size": [9, 6.5, 0.05], "color": "orange", "range": 9, "intensity": 1.3, "danger": true, "job": "hazard", "why": "NIGHT65 R: THE POUR's glow (red-orange: danger)" },
+    { "id": "a5-L5", "room": "a5", "kind": "pool", "at": [0, 0.025, -143], "normal": [0, 1, 0], "size": [2.5, 1.6, 0.05], "color": "cyan", "range": 7, "intensity": 1.6, "job": "exit", "why": "NIGHT65 R: the lit exit (cyan)" },
+    { "id": "a5-RW", "room": "a5", "kind": "wall", "at": [9.35, 1.2, -131], "normal": [-1, 0, 0], "size": [14, 0.2, 0.1], "color": "cyan", "range": 6, "intensity": 1.1, "job": "ride", "why": "NIGHT65 R: THE RAIL STRIP: ride here (cyan, player-usable)" }
+  ],
+  "props": [
+    { "id": "a5-P1", "room": "a5", "kind": "healthPickup", "at": [-2, 0.9, -131], "size": [0.6, 0.6, 0.6], "yawDeg": 0, "collider": false, "pickup": true, "job": "reward", "why": "NIGHT65 R: the riskiest spot pays: on THE APRON where the slide stops, among wave 2 (NIGHT66 R round 1: 1 m south, off THE LIP's nodes)" },
+    { "id": "a5-hero", "room": "a5", "kind": "hero", "at": [-5, 4, -126.35], "size": [3.5, 3, 0.3], "yawDeg": 0, "collider": false, "decor": true, "job": "hero", "why": "THE CAST FACE (NIGHT65 R; pale brass): THE CRUCIBLE's south face, toward the door: the room's landmark" },
+    { "id": "a5-lip", "room": "a5", "kind": "lavaChannel", "at": [-5, 3, -129.65], "size": [1.5, 3, 0.2], "yawDeg": 0, "collider": false, "decor": true, "job": "landmark", "why": "THE SPOUT (NIGHT65 R; red-orange: danger): the crucible's north face pouring into THE POUR, seen from the apron and the gantry" },
+    { "id": "a5-P2", "room": "a5", "kind": "padMarker", "at": [-2, 0.02, -127.2], "size": [1.6, 0.02, 7.8], "yawDeg": 0, "collider": false, "job": "line", "why": "THE SLIDE LINE (NIGHT74 R: kind padMarker, not floorStrip: same flat quad, but Decor54.DecorKind (Decor54.cs:251) recolours every cyan 'flat floorStrip' renderer to the level's accent, which drew a2's usable mark dark purple; NIGHT65 R; cyan, player-usable; the GATE's FIX, verdict-a5.md: one strip from between THE SLIDE LANE's kerbs (z -123.3) through THE TAP BEAM's slot and out onto THE APRON to z -131.1, at wave 2's husks on the slot's exit line, as THE MARK and THE RIDE'S END do in a2 and a3): slide here, the direct line to the lip and the pour" },
+    { "id": "a5-P3", "room": "a5", "kind": "hazardStripe", "at": [-2.5, 0.02, -134.3], "size": [9, 0.03, 0.3], "yawDeg": 0, "collider": false, "decor": true, "job": "hazard", "why": "THE LIP LINE (NIGHT65 R; red-orange: danger): THE APRON's north edge, the edge you launch them past" },
+    { "id": "a5-P4", "room": "a5", "kind": "edgeLight", "at": [6.25, 2.55, -137.95], "size": [7.5, 0.1, 0.1], "yawDeg": 0, "collider": false, "decor": true, "job": "landmark", "why": "THE GANTRY LIP (NIGHT65 R; warm white): the spitters' perch edge read from the floor" },
+    { "id": "a5-P5", "room": "a5", "kind": "lintelLight", "at": [0, 4.7, -143.95], "size": [4, 0.2, 0.1], "yawDeg": 0, "collider": false, "decor": true, "job": "exit", "why": "NIGHT65 R: the exit's lintel lamp over d5 (warm white)" },
+    { "id": "a5-P6", "room": "a5", "kind": "truss", "at": [-0.2, 9.6, -137], "size": [18.4, 0.8, 1.2], "yawDeg": 0, "collider": false, "decor": true, "job": "landmark", "why": "THE OVERHEAD CRANE's bridge (NIGHT65 R density pass): a truss under the roof from THE CRANE'S WEST COLUMN to its EAST COLUMN, across the room over THE POUR: the room's tall landmark line, read from the door (structure: metal)" },
+    { "id": "a5-P7", "room": "a5", "kind": "chain", "at": [-2.5, 7.9, -137.5], "size": [0.2, 4, 0.2], "yawDeg": 0, "collider": false, "decor": true, "job": "landmark", "why": "THE LADLE HOOK's chain (NIGHT65 R density pass): from the crane's bridge down over THE POUR's middle: the crane that fills the pour, over the place the slide-launch throws them" },
+    { "id": "a5-P8", "room": "a5", "kind": "lamp", "at": [-2.5, 5.6, -137.5], "size": [0.8, 0.4, 0.8], "yawDeg": 0, "collider": false, "decor": true, "job": "light", "why": "THE LADLE HOOK's lamp (NIGHT65 R density pass; warm white): the fixture the room's white ceiling light over the slot's line hangs from (rule 7: lights hang from real fixtures)" },
+    { "id": "a5-P9", "room": "a5", "kind": "hazardStripe", "at": [-7.2, 0.02, -137.75], "size": [0.3, 0.03, 6.5], "yawDeg": 0, "collider": false, "decor": true, "job": "hazard", "why": "THE WEST RIM's edge (NIGHT65 R density pass; red-orange: danger): the walkway's edge beside the melt" },
+    { "id": "a5-P10", "room": "a5", "kind": "lamp", "at": [-2.9, 3.8, -143.9], "size": [0.5, 0.5, 0.2], "yawDeg": 0, "collider": false, "decor": true, "job": "exit", "why": "the exit's west wall lamp (NIGHT65 R density pass; warm white): the lit exit's fixture" },
+    { "id": "a5-P11", "room": "a5", "kind": "wallPipe", "at": [-9.9, 3, -120], "size": [0.2, 1.2, 12], "yawDeg": 0, "collider": false, "decor": true, "job": "landmark", "why": "THE COOLING PIPES (NIGHT65 R density pass): along the west wall from the door toward THE CRUCIBLE: the south half's wall is not a blank box, and the pipes lead the eye to the crucible (structure: metal)" }
+  ],
+  "teach35": [],
+  "drop": {
+    "card52_why": "NIGHT52 F's card note for the old pouring floor: a doc key nothing reads; the room is rebuilt from the NIGHT65 card (card65)",
+    "ext53_why": "EXT53 A5's note on the old mirror break (skim step, charging bridge): a doc key; every piece it named is gone with the rebuild",
+    "waves56_why": "NIGHT56 L's note on the old merged waves: a doc key; the new waves' reasons are in waveNodes43_why and the card"
+  },
+  "opening": "held",
+  "opening_why": "card a5: wave 1 holds the east side and THE GANTRY, in view from THE CHARGE BIN's east flank (held, as the red)"
+}

@@ -1,0 +1,22 @@
+# command: node Tools/night/n65-air.cjs C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/kiln-base/kiln.plan.json kb3
+# sha: b879f5ddc; time: 2026-10-28 01:52:09
+n65-air n67-kiln kb3 "3.3 THE PRESS HALL" (C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/kiln-base/kiln.plan.json):
+  numbers: jump v0 8.33 m/s, g 23.15 m/s2 (fall x1.35), double v0 7.50, dash 24 m/s x 0.25 s = 6.0 m, dash-jump v0 6.67 with g x0.5 for 0.5 s at 24 m/s, run-up 8 m/s, wall jump out 5 up 8.33 (wallfling42 on), ride 9.20 m/s, jump-off out 8 +1 up 7.30 (ride39 on), capsule 0.35 m; a ride held 2.5 m over its base
+  air pieces 5:
+    R1   ride  face x = 9.4 (-x), -217.5..-200.5 (17.0 m), band 0.0..14.0, held at 2.5 | verb it celebrates: the forge wall's ride over the charge: THE FORGE WALL (ride, cyan, 17 m on the 
+    D2   deck  top 4.5 m over [5.0, -225.5, 10.0, -218.5] | 30 s problem: THE FAR GALLERY (the spitters' roost, the high tier): THE FAR GALLERY (4.5 m, 7 x 7 m across t
+    D3   deck  top 4.5 m over [3.0, -225.5, 5.0, -218.5] | spatial law: THE FAR GALLERY's west span (the exit lane under it): NIGHT71 R (Research/2026-10-26-wave71/R/
+    P4   pad   at (7.3, 0.0, -212.0) -> (8.0, 4.5, -221.0) (on the floor) | molecule: the upward line, the hammer vent
+    P5   pad   at (-8.5, 0.0, -224.5) -> (5.0, 4.5, -224.0) (on the floor) | molecule: the upward line, the quench vent
+  hand-offs 6 (piece -> piece without touching the floor, the easiest move first):
+    R1 -> D3  jump-off + double, margin 3.30 m (gap 4.9 m); also wall jump + double 1.25
+    D2 -> D3  jump, margin 4.92 m (gap 0.4 m); also jump + double 8.38, dash 10.32, dash-jump 20.65, dash-jump + double 30.85
+    D3 -> R1  jump, margin 5.03 m of height (gap 4.2 m); also jump + double 6.34, dash 4.00, dash-jump 4.98, dash-jump + double 4.98
+    D3 -> D2  jump, margin 4.92 m (gap 0.4 m); also jump + double 8.38, dash 10.32, dash-jump 20.65, dash-jump + double 30.85
+    P4 -> D2  pad (gap 9.0 m)
+    P5 -> D2  pad (gap 13.5 m)
+  longest floor-free chain: 4 piece(s): P4 -> D2 -> D3 -> R1 (opened by a floor pad)
+  note: a dash-jump keeps the dash's 24 m/s for its whole flight (Mover.cs:1080; air accel never slows a body: MovementMath.Accelerate), so its reach is long; no obstacle, line-of-sight or air-control test
+  flight pieces (rides + pads) on one floor-free path: 2 of 3: P4 -> D2 -> D3 -> R1; without the dash-jump: 2: P4 -> D2 -> D3 -> R1
+  without the dash-jump: hand-offs 6, longest chain 4: P4 -> D2 -> D3 -> R1, dead ends 0/3
+n65-air kb3: air pieces 5 (rides 1, decks 2, ledges 0, pads 2), hand-offs 6, longest floor-free chain 4, dead ends 0/3 | without the dash-jump: hand-offs 6, chain 4, dead ends 0/3 | flights handed on: 2 of 3 on one path (2 without the dash-jump)

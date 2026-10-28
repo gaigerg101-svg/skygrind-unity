@@ -1,0 +1,749 @@
+{
+ "_why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/g3/card.md, THE TIPPLE RIDES, ride; rebuilt from the blank rect): two ride walls, each onto a 4 m deck walked to only the long way: THE COAL RIDE (east) onto THE TIPPLE HEAD, THE PANEL (west) onto THE WEIGH LOFT; THE HOPPER (3 m) mid-room the cover and the step between them; two hoists; the blast lesson kept. NIGHT67 T1a (Tools/night/gen-slots.cjs --level iceline --export): n52-iceline's room g3 (2.3 THE SWARM) exactly as Design/levels/n52/iceline.plan.json has it: the row (every key), its zone-keyed pieces (boxes, ramps, pads, grapple, pits, tunnels), its room-keyed pieces (lights, props, surfaces). The slot's starting point: rebuild it here (every new piece with a job and a why), give the row bot43: false, verb65 (the slate's verb) and line65 (the verb's line, 3+ waypoints); never an area67 block (refused). A key the row drops needs a reason in drop{}. The room's opening: top-level \"opening\": \"vista\" | \"ambushed\" | \"ambusher\" | \"held\" (and \"opening_why\"); left out, the room keeps n52-iceline's.",
+ "room": "g3",
+ "row": {
+  "id": "g3",
+  "name": "2.3 THE TIPPLE RIDES",
+  "kind": "room",
+  "rect": [
+   -12,
+   -90,
+   12,
+   -62
+  ],
+  "height": 10,
+  "roof": true,
+  "par": 25,
+  "job36": "teach",
+  "verb36": "the wall ride onto the high ground, then the LT blast: ride THE COAL RIDE over the floor onto THE TIPPLE HEAD (on foot the long way round), THE PANEL onto THE WEIGH LOFT; blast the swarm as it climbs to you",
+  "spawn": {
+   "at": [
+    0,
+    0,
+    -64
+   ],
+   "yawDeg": 0
+  },
+  "exit": [
+   0,
+   0,
+   -88
+  ],
+  "arena36": true,
+  "waves": [
+   [
+    "husk",
+    "husk",
+    "husk"
+   ],
+   [
+    "swarmer",
+    "swarmer",
+    "swarmer",
+    "swarmer",
+    "swarmer",
+    "swarmer",
+    "swarmer",
+    "swarmer"
+   ]
+  ],
+  "lessons": [
+   {
+    "promptPad": "FIVE KILLS: {altFire} BLASTS THE PACK",
+    "kind": "husksDead",
+    "n": 3,
+    "prompt": "FIVE KILLS: {altFire} BLASTS THE PACK"
+   }
+  ],
+  "lessons31": [
+   {
+    "promptPad": "FIVE KILLS: {altFire} BLASTS THE PACK",
+    "kind": "husksDead",
+    "n": 3,
+    "prompt": "FIVE KILLS: {altFire} BLASTS THE PACK"
+   }
+  ],
+  "proofs": [
+   {
+    "kind": "walk",
+    "points": [
+     [
+      0,
+      0,
+      -64
+     ],
+     [
+      -3,
+      0,
+      -72
+     ],
+     [
+      -3,
+      0,
+      -81
+     ],
+     [
+      -3,
+      0,
+      -88
+     ],
+     [
+      0,
+      0,
+      -88
+     ]
+    ]
+   },
+   {
+    "kind": "walk",
+    "points": [
+     [
+      -3,
+      0,
+      -84.5
+     ],
+     [
+      5,
+      4,
+      -84.5
+     ],
+     [
+      8,
+      4,
+      -83
+     ]
+    ]
+   },
+   {
+    "kind": "walk",
+    "points": [
+     [
+      -8,
+      0,
+      -75
+     ],
+     [
+      -8,
+      4,
+      -66
+     ],
+     [
+      -10,
+      4,
+      -64
+     ]
+    ]
+   },
+   {
+    "kind": "walk",
+    "points": [
+     [
+      6,
+      0,
+      -66
+     ],
+     [
+      6,
+      0,
+      -76
+     ]
+    ]
+   }
+  ],
+  "frames36": {
+   "mid": [
+    0,
+    0,
+    -67,
+    0,
+    0.05
+   ],
+   "exit": [
+    8.5,
+    4,
+    -81,
+    160,
+    -0.25
+   ]
+  },
+  "nodes": [
+   [
+    -4.5,
+    0,
+    -75.5
+   ],
+   [
+    -6,
+    0,
+    -75
+   ],
+   [
+    -3,
+    0,
+    -76.5
+   ],
+   [
+    -8,
+    0,
+    -77
+   ],
+   [
+    -9,
+    0,
+    -80
+   ],
+   [
+    -4,
+    0,
+    -80.5
+   ],
+   [
+    5,
+    0,
+    -75
+   ],
+   [
+    -6,
+    0,
+    -88
+   ],
+   [
+    3.5,
+    0,
+    -88.5
+   ]
+  ],
+  "nodes_why": "NIGHT71 R r2 (Research/2026-10-26-wave71/R/g3/card.md): wave 1 (the three husks) 12 m or more from the spawn (spawn31), beside the hopper's west face. NIGHT71 R r1 (Research/2026-10-26-wave71/R/g3/card.md, THE TIPPLE RIDES, ride; rebuilt from the blank rect): wave 1 (the three husks, the ambush) off the door's view cone beside the loft stair; wave 2 (the swarm) the far floor and both decks, so it climbs to you",
+  "waveNodes43": [
+   [
+    [
+     -4.5,
+     0,
+     -75.5
+    ],
+    [
+     -6,
+     0,
+     -75
+    ],
+    [
+     -3,
+     0,
+     -76.5
+    ]
+   ],
+   [
+    [
+     -8,
+     0,
+     -77
+    ],
+    [
+     -9,
+     0,
+     -80
+    ],
+    [
+     -4,
+     0,
+     -80.5
+    ],
+    [
+     5,
+     0,
+     -75
+    ],
+    [
+     -6,
+     0,
+     -88
+    ],
+    [
+     3.5,
+     0,
+     -88.5
+    ],
+    [
+     8.5,
+     4,
+     -84
+    ],
+    [
+     -9,
+     4,
+     -64
+    ]
+   ]
+  ],
+  "waveNodes43_why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/g3/card.md, THE TIPPLE RIDES, ride; rebuilt from the blank rect): wave 1 (the three husks, the ambush) off the door's view cone beside the loft stair; wave 2 (the swarm) the far floor and both decks, so it climbs to you",
+  "iceline46_why": "NIGHT46 A3 I-3 (docs/ROOMS.md THE TIPPLE): n43's PEN and east ride panel cut; THE HOPPER (6 x 8 m to the roof, off the door's axis), THE TRESTLE (2 m deck + ramp, one-way drop north), four 0.9 m coal cars, the west ride panel kept; wave 1 in view either side of the hopper, wave 2 from the chute; rect, doors, waves and lesson unchanged",
+  "frames52": {
+   "_why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/g3/card.md, THE TIPPLE RIDES, ride; rebuilt from the blank rect): the room frames: the door just crossed (the floor, both ride walls, the hopper), the fight from the loft, the tipple's top",
+   "entry": [
+    0,
+    0,
+    -63,
+    0,
+    0.04
+   ],
+   "mid": [
+    -9,
+    4,
+    -64.5,
+    -150,
+    -0.2
+   ],
+   "high": [
+    8.5,
+    4,
+    -81,
+    160,
+    -0.25
+   ]
+  },
+  "loop52_why": "NIGHT52 the room loop (Tools/night/n52-loop-g3.cjs; THE ROOM CONTRACT's spirit, a teach room): NIGHT46's THE TIPPLE rebuilt as THE TIPPLE II: 24 x 28 x 10 m; 17 pieces; three tiers (floor, the 2 m trestle and tipple head, the 4 m SE loft), each on a walkers' ramp; the 18 m ride panel; the tipple and loft hoists (pads); two spill walls pack the swarm into the west lane; the lesson and waves kept. NIGHT53 (n53-loop-g3.cjs): the hopper 4 x 6 m, the chute's cheeks on its west face, wave 2's nodes in the west lane's north end.",
+  "highNodes": [
+   [
+    8.5,
+    4,
+    -84
+   ],
+   [
+    -9,
+    4,
+    -64
+   ]
+  ],
+  "bot43": false,
+  "verb65": "ride",
+  "line65": [
+   [
+    10.8,
+    0,
+    -65
+   ],
+   [
+    10.8,
+    2,
+    -70
+   ],
+   [
+    10.8,
+    2,
+    -76
+   ],
+   [
+    10,
+    4,
+    -80.5
+   ]
+  ],
+  "line65_why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/g3/card.md, THE TIPPLE RIDES, ride; rebuilt from the blank rect): THE COAL RIDE: along its west face 0.6 m out from the door wall's corner to its end over the tipple head",
+  "card65": "Research/2026-10-26-wave71/R/g3/card.md"
+ },
+ "boxes": [
+  {
+   "zone": "g3",
+   "kind": "wall",
+   "min": [
+    11.4,
+    0,
+    -79
+   ],
+   "max": [
+    12,
+    8,
+    -64
+   ],
+   "job": "line: THE COAL RIDE (ride over the east floor onto the tipple head)",
+   "why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/g3/card.md, THE TIPPLE RIDES, ride; rebuilt from the blank rect): THE COAL RIDE (ride, cyan, 15 m x 8 m on the east wall): from the door wall's corner over the east floor and off its end onto THE TIPPLE HEAD; on foot the head is the long way round (its stair starts west of the exit)",
+   "note": "THE COAL RIDE (ride, cyan, 15 m x 8 m on the east wall)",
+   "ride": true,
+   "ride36": {
+    "face": "W",
+    "planeX": 11.4,
+    "lz": [
+     11,
+     26
+    ]
+   }
+  },
+  {
+   "zone": "g3",
+   "kind": "deck",
+   "min": [
+    5,
+    0,
+    -86
+   ],
+   "max": [
+    12,
+    4,
+    -79
+   ],
+   "job": "line: THE TIPPLE HEAD (the high tier, the coal ride's landing)",
+   "why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/g3/card.md, THE TIPPLE RIDES, ride; rebuilt from the blank rect): THE TIPPLE HEAD (4 m, 7 x 7 m on the east side by the exit): the coal ride's landing, the swarm's climb target, the health on it; the walkers come up its stair (no safe ledge)",
+   "note": "THE TIPPLE HEAD (4 m, 7 x 7 m on the east side by the exit)"
+  },
+  {
+   "zone": "g3",
+   "kind": "wall",
+   "min": [
+    -12,
+    0,
+    -82
+   ],
+   "max": [
+    -11.4,
+    8,
+    -66
+   ],
+   "job": "line: THE PANEL (ride up the west side onto the weigh loft)",
+   "why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/g3/card.md, THE TIPPLE RIDES, ride; rebuilt from the blank rect): THE PANEL (ride, cyan, 16 m x 8 m on the west wall): from the far west floor north along the wall and off its end onto THE WEIGH LOFT",
+   "note": "THE PANEL (ride, cyan, 16 m x 8 m on the west wall)",
+   "ride": true,
+   "ride36": {
+    "face": "E",
+    "planeX": -11.4,
+    "lz": [
+     8,
+     24
+    ]
+   }
+  },
+  {
+   "zone": "g3",
+   "kind": "deck",
+   "min": [
+    -12,
+    0,
+    -66
+   ],
+   "max": [
+    -6,
+    4,
+    -62
+   ],
+   "job": "line: THE WEIGH LOFT (the high tier on the door wall, the panel's landing)",
+   "why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/g3/card.md, THE TIPPLE RIDES, ride; rebuilt from the blank rect): THE WEIGH LOFT (4 m, 6 x 4 m on the door wall's west half): the panel's landing, the stand over the floor; the walkers come up its stair",
+   "note": "THE WEIGH LOFT (4 m, 6 x 4 m on the door wall's west half)"
+  },
+  {
+   "zone": "g3",
+   "kind": "hull",
+   "min": [
+    -1,
+    0,
+    -77
+   ],
+   "max": [
+    3,
+    3,
+    -73
+   ],
+   "job": "30 s problem: THE HOPPER (mid-floor cover, the step between the decks)",
+   "why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/g3/card.md, THE TIPPLE RIDES, ride; rebuilt from the blank rect): THE HOPPER (3 m, 4 x 4 m mid-floor): the cover the husks and the swarm come round, and a 3 m step a jump or a dash links to both decks and both walls",
+   "note": "THE HOPPER (3 m, 4 x 4 m mid-floor)"
+  },
+  {
+   "zone": "g3",
+   "kind": "hull",
+   "min": [
+    -7.5,
+    0,
+    -83
+   ],
+   "max": [
+    -4.5,
+    2,
+    -81
+   ],
+   "job": "30 s problem: THE COAL CAR (far-floor cover, a step up)",
+   "why": "NIGHT71 R r2 (Research/2026-10-26-wave71/R/g3/card.md): THE COAL CAR (2 m, 3 x 2 m on the far west floor): the cover the swarm comes round on its way to the decks, and a 2 m step a jump links to the panel, the hopper and the tipple head",
+   "note": "THE COAL CAR (2 m)"
+  }
+ ],
+ "ramps": [
+  {
+   "zone": "g3",
+   "from": [
+    -2,
+    -84.5
+   ],
+   "to": [
+    5,
+    -84.5
+   ],
+   "width": 3,
+   "rise": 4,
+   "job": "climb: the walkers' climb to the tipple head",
+   "why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/g3/card.md, THE TIPPLE RIDES, ride; rebuilt from the blank rect): THE TIPPLE STAIR (4 m over 7 m, from west of the exit east onto the tipple head's west edge): the walkers' climb (GG: a route enemies can climb); the long way for a player, the ride the short one",
+   "note": "THE TIPPLE STAIR"
+  },
+  {
+   "zone": "g3",
+   "from": [
+    -8,
+    -74
+   ],
+   "to": [
+    -8,
+    -66
+   ],
+   "width": 3,
+   "rise": 4,
+   "job": "climb: the walkers' climb to the weigh loft",
+   "why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/g3/card.md, THE TIPPLE RIDES, ride; rebuilt from the blank rect): THE LOFT STAIR (4 m over 8 m, 2 m off the panel, from the west floor north onto the loft): the walkers' climb (GG: a route enemies can climb)",
+   "note": "THE LOFT STAIR"
+  }
+ ],
+ "pads": [
+  {
+   "zone": "g3",
+   "at": [
+    -9,
+    0,
+    -87
+   ],
+   "target": [
+    8.5,
+    4,
+    -82.5
+   ],
+   "apexAbove": 2,
+   "job": "line: THE TIPPLE HOIST (the far west floor onto the tipple head)",
+   "why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/g3/card.md, THE TIPPLE RIDES, ride; rebuilt from the blank rect): THE TIPPLE HOIST (a jump pad in the far west corner, the shipped room's): over the floor onto THE TIPPLE HEAD",
+   "note": "THE TIPPLE HOIST"
+  },
+  {
+   "zone": "g3",
+   "at": [
+    10,
+    4,
+    -85
+   ],
+   "target": [
+    -9,
+    4,
+    -64.5
+   ],
+   "apexAbove": 2,
+   "job": "line: THE LOFT HOIST (the tipple head over the room onto the weigh loft)",
+   "why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/g3/card.md, THE TIPPLE RIDES, ride; rebuilt from the blank rect): THE LOFT HOIST (a jump pad on the tipple head's back corner, the shipped room's second): one high deck to the other over the swarm",
+   "note": "THE LOFT HOIST"
+  }
+ ],
+ "grapple": [],
+ "pits": [],
+ "tunnels": [],
+ "lights": [
+  {
+   "id": "g3-L1",
+   "room": "g3",
+   "kind": "ceiling",
+   "at": [
+    0,
+    9.95,
+    -65
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 10,
+   "intensity": 0.9
+  },
+  {
+   "id": "g3-L2",
+   "room": "g3",
+   "kind": "ceiling",
+   "at": [
+    -5,
+    9.95,
+    -78
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    6,
+    4,
+    0.1
+   ],
+   "color": "white",
+   "range": 11,
+   "intensity": 1.1
+  },
+  {
+   "id": "g3-L3",
+   "room": "g3",
+   "kind": "ceiling",
+   "at": [
+    6,
+    9.95,
+    -80
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    4,
+    0.1
+   ],
+   "color": "white",
+   "range": 10,
+   "intensity": 1
+  },
+  {
+   "id": "g3-L5",
+   "room": "g3",
+   "kind": "pool",
+   "at": [
+    0,
+    0.025,
+    -88
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    1.8,
+    1.8,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 8,
+   "intensity": 1.7
+  },
+  {
+   "id": "g3-L6",
+   "room": "g3",
+   "kind": "pool",
+   "at": [
+    8.5,
+    4.025,
+    -82.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2,
+    2,
+    0.05
+   ],
+   "color": "white",
+   "range": 8,
+   "intensity": 1
+  },
+  {
+   "id": "g3-L7",
+   "room": "g3",
+   "kind": "pool",
+   "at": [
+    -9,
+    4.025,
+    -64
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2,
+    2,
+    0.05
+   ],
+   "color": "white",
+   "range": 7,
+   "intensity": 0.9
+  },
+  {
+   "id": "g3-RE",
+   "room": "g3",
+   "kind": "wall",
+   "at": [
+    11.35,
+    1.2,
+    -71.5
+   ],
+   "normal": [
+    -1,
+    0,
+    0
+   ],
+   "size": [
+    15,
+    0.2,
+    0.1
+   ],
+   "color": "cyan",
+   "range": 6,
+   "intensity": 1.1
+  },
+  {
+   "id": "g3-RW",
+   "room": "g3",
+   "kind": "wall",
+   "at": [
+    -11.35,
+    1.2,
+    -74
+   ],
+   "normal": [
+    1,
+    0,
+    0
+   ],
+   "size": [
+    16,
+    0.2,
+    0.1
+   ],
+   "color": "cyan",
+   "range": 6,
+   "intensity": 1.1
+  }
+ ],
+ "props": [
+  {
+   "id": "g3-P2",
+   "room": "g3",
+   "kind": "healthPickup",
+   "at": [
+    10.5,
+    4.9,
+    -81
+   ],
+   "size": [
+    0.6,
+    0.6,
+    0.6
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "pickup": true,
+   "job": "reward",
+   "why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/g3/card.md, THE TIPPLE RIDES, ride; rebuilt from the blank rect): the health on THE TIPPLE HEAD: the coal ride pays"
+  }
+ ],
+ "surfaces": [],
+ "drop": {}
+}

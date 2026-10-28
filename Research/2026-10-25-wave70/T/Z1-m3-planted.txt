@@ -1,0 +1,16 @@
+# NIGHT70 Z1 planted probe blocks (z1-make-planted.cjs): one saved `n65verb launch` run per room, replayed by n70-m3-dotnet.sh
+n65verb launch: level planted (Z1 planted), room kb3 "planted", seed 1; pose (0.0, 0.0, 0.0) yaw 0.0 from line65[0]; off switch none
+n65verb launch: GREEN | room kb3 | launch36 1, flight end timeout thrown 9 m (max 9 m), bursts 0 (hits 0, kills 0) | launched body husk #1 (the target: yes), landed (0.0, -2.1, 0.0), in a pit YES, in lava no, target dead (planted) | pose line65[0] (planted)
+n65verb: exit 0
+n65verb launch: level planted (Z1 planted), room P6 "planted", seed 1; pose (0.0, 0.0, 0.0) yaw 0.0 from line65[0]; off switch none
+n65verb launch: GREEN | room P6 | launch36 1, flight end body thrown 1 m (max 1 m), bursts 1 (hits 3, kills 3) | launched body husk #1 (the target: yes), landed (0.0, 0.0, 0.0), in a pit no, in lava no, target dead (planted) | pose line65[0] (planted)
+n65verb: exit 0
+n65verb launch: level planted (Z1 planted), room P7 "planted", seed 1; pose (0.0, 0.0, 0.0) yaw 0.0 from line65[0]; off switch none
+n65verb launch: GREEN | room P7 | launch36 1, flight end timeout thrown 8 m (max 8 m), bursts 0 (hits 0, kills 0) | launched body husk #1 (the target: yes), landed (0.0, 0.0, 0.0), in a pit no, in lava YES, target dead (planted) | pose line65[0] (planted)
+n65verb: exit 0
+n65verb launch: level planted (Z1 planted), room P8 "planted", seed 1; pose (0.0, 0.0, 0.0) yaw 0.0 from line65[0]; off switch none
+n65verb launch: GREEN | room P8 | launch36 1, flight end timeout thrown 12.8 m (max 12.8 m), bursts 0 (hits 0, kills 0) | launched body husk #1 (the target: yes), landed (0.0, -2.1, 0.0), in a pit YES, in lava no, target dead (planted) | pose line65[0] (planted)
+n65verb: exit 0
+n65verb launch: level planted (Z1 planted), room P9 "planted", seed 1; pose (0.0, 0.0, 0.0) yaw 0.0 from line65[0]; off switch none
+n65verb launch: GREEN | room P9 | launch36 1, flight end timeout thrown 12.8 m (max 12.8 m), bursts 0 (hits 0, kills 0) | launched body husk #1 (the target: yes), landed (0.0, -2.1, 0.0), in a pit YES, in lava no, target dead (planted) | pose line65[0] (planted)
+n65verb: exit 0

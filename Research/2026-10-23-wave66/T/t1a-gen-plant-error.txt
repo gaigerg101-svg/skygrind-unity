@@ -1,0 +1,138 @@
+# command: node Tools/night/gen-n65-foundry.cjs --slots=latest --run --plant-error
+# sha: 1b1f98ad (tree 1 dirty paths), 2026-10-23 22:35:08 USMST, /c/Users/gaige/dev/SKYGRIND-unity/.claude/worktrees/agent-af48e888c59fa3626
+
+gen-n65-foundry: --plant-error: PLANTED a2 spawn at [0,40,-37] (40 m over its floor: off the nav grid)
+openings: Design/levels/n65/openings65.json a2 held, a3 ambushed, a4 held, a5 held, b1 ambushed, a8 held
+gen-n65-foundry: Design/levels/n52/foundry.plan.json -> Design/levels/n65/foundry.plan.json (slots latest; rebuilt: a2, a3, a4, a5, b1, a8); every other room, door, piece and key n52's bit for bit
+  slot a2: latest Design/levels/n65/rooms/a2.json: REBUILT; boxes 1 -> 4*, ramps 1 -> 1*, pads 0 -> 1*, grapple 0, pits 0, tunnels 0, lights 3 -> 4*, props 0 -> 10*, teach35 2; note = why filled on 6
+    row keys: keep 12, replace 9, add 9, drop 0
+    replace par
+    replace verb36
+    replace standIns
+    replace standIns31
+    replace standIns36
+    replace waves
+    replace proofs
+    replace frames36
+    add     frames52
+    add     frames65
+    add     line65
+    add     nodes
+    replace highNodes
+    add     waveNodes43
+    add     waveNodes43_why
+    add     bot43
+    add     verb65
+    add     card65
+  slot a3: latest Design/levels/n65/rooms/a3.json: REBUILT; boxes 12 -> 5*, ramps 2 -> 2*, pads 2 -> 1*, grapple 0, pits 1 -> 0*, tunnels 0, lights 8 -> 7*, props 1 -> 13*, teach35 1 -> 1*; note = why filled on 8
+    row keys: keep 12, replace 10, add 5, drop 3
+    drop    card52_why: NIGHT52 F's card note for the old casting-pit room: a doc key nothing reads; the room is rebuilt from the NIGHT65 card (card65)
+    drop    spawn_why: NIGHT53 K's note for the old retry point 9 m in: a doc key; the new spawn's reason is in the NIGHT65 card
+    drop    n53_why: NIGHT53 K's second-pass note on the old pouring platform: a doc key nothing reads; every piece it named is gone with the rebuild
+    replace verb36
+    replace spawn
+    replace waves
+    replace proofs
+    replace frames36
+    replace frames52
+    add     frames65
+    add     line65
+    replace nodes
+    replace highNodes
+    replace waveNodes43
+    replace waveNodes43_why
+    add     bot43
+    add     verb65
+    add     card65
+  slot a4: latest Design/levels/n65/rooms/a4.json: REBUILT; boxes 1 -> 3*, ramps 2 -> 1*, pads 0 -> 1*, grapple 0, pits 0, tunnels 0, lights 3 -> 3*, props 0 -> 11*, teach35 0; note = why filled on 5
+    row keys: keep 13, replace 5, add 8, drop 0
+    replace name
+    replace exit
+    replace proofs
+    replace frames36
+    add     frames65
+    add     line65
+    add     card65
+    add     bot43
+    add     verb65
+    add     nodes
+    replace highNodes
+    add     waveNodes43
+    add     waveNodes43_why
+  slot a5: latest Design/levels/n65/rooms/a5.json: REBUILT; boxes 12 -> 11*, ramps 3 -> 1*, pads 3 -> 1*, grapple 0, pits 1 -> 1*, tunnels 0 -> 1*, lights 8 -> 7*, props 3 -> 13*, teach35 0; note = why filled on 15
+    row keys: keep 9, replace 11, add 5, drop 3
+    drop    card52_why: NIGHT52 F's card note for the old pouring floor: a doc key nothing reads; the room is rebuilt from the NIGHT65 card (card65)
+    drop    ext53_why: EXT53 A5's note on the old mirror break (skim step, charging bridge): a doc key; every piece it named is gone with the rebuild
+    drop    waves56_why: NIGHT56 L's note on the old merged waves: a doc key; the new waves' reasons are in waveNodes43_why and the card
+    replace par
+    replace verb36
+    replace spawn
+    replace waves
+    replace proofs
+    replace frames36
+    replace frames52
+    add     frames65
+    add     line65
+    replace nodes
+    replace highNodes
+    replace waveNodes43
+    replace waveNodes43_why
+    add     bot43
+    add     verb65
+    add     card65
+  slot b1: latest Design/levels/n65/rooms/b1.json: REBUILT; boxes 12 -> 14*, ramps 2 -> 5*, pads 2 -> 2*, grapple 0, pits 1 -> 0*, tunnels 0, lights 6 -> 8*, props 3 -> 18*, teach35 0; note = why filled on 21
+    row keys: keep 10, replace 10, add 5, drop 4
+    drop    bridges45: read only by Tools/SimHarness/Harness.N45.Yard.cs (n45yard's bridge probe on the old yard); the river and its two bridges are gone in the rebuilt room (card b1 section 3)
+    drop    bridges45_why: the doc line of bridges45, dropped with it (the bridges are gone)
+    drop    card52_why: doc only (nothing reads it): NIGHT52's card history of the old yard; the rebuilt room's card is card65 (Research/2026-10-23-wave65/cards/b1.md)
+    drop    ext53_why: doc only (nothing reads it): EXT53's mirror fix of the old yard (the tipped ladle); the ladle is gone in the rebuild
+    replace name
+    replace verb36
+    replace spawn
+    replace proofs
+    replace frames36
+    replace frames52
+    add     frames65
+    add     line65
+    add     card65
+    add     bot43
+    add     verb65
+    replace nodes
+    replace highNodes
+    replace waveNodes43
+    replace waveNodes43_why
+  slot a8: latest Design/levels/n65/rooms/a8.json: REBUILT; boxes 6 -> 13*, ramps 0 -> 2*, pads 0 -> 1*, grapple 0, pits 1 -> 1*, tunnels 0, lights 5 -> 5*, props 0 -> 16*, teach35 0; note = why filled on 17
+    row keys: keep 10, replace 12, add 8, drop 2
+    drop    foundry43_why: doc only (nothing reads it): NIGHT43 L1's note on the old pit, panels and perch; all gone in the rebuild (card a8 section 3)
+    drop    foundry46_why: doc only (nothing reads it): NIGHT46 F-3's note on lesson 0's old rect; the rect is rewritten for P1's foot and afterLesson43_why says why
+    replace name
+    replace verb36
+    replace exit
+    replace lessons
+    replace lessons31
+    replace routeVia
+    replace proofs
+    replace frames36
+    add     frames65
+    add     line65
+    add     card65
+    add     bot43
+    add     verb65
+    replace nodes
+    add     highNodes
+    add     waveNodes43
+    add     waveNodes43_why
+    replace reachFrom
+    replace waves
+    replace afterLesson43_why
+shipped before: Design/levels/n65-foundry.json 5f3eba53c34b84b6a3a4548281865c6cc5691539745636b9ed88215ab296cd85, Assets/StreamingAssets/Design/levels/n65-foundry.json 5f3eba53c34b84b6a3a4548281865c6cc5691539745636b9ed88215ab296cd85
+  levelgen n65-foundry: 2488168 chars -> Design/levels/n65/foundry.json; 200 boxes + the floor, 5 barriers, 12 wedges, 7 pads, 0 grapple nodes, 21 zones (a1, a2, a3, a4, a5, b1, b2, a6, a7, a8, a9, d1, d2, d3, d4, d5, d6, d7, d8, d9, d10) (0.9 s)
+    plan checks: 2 problems
+      ground spawn 27 (-9.8, 0, -240.6): a player's capsule there overlaps collision box 80 (wall)
+    level report: 2 errors -> Reports/LEVEL-n65-foundry-validate.md (1.7 s)
+      | spots on the nav grid | ERROR | no grid node under: a2 spawn |
+      | player route, doors open | ERROR | a1 2.48 s (drop climb; 1 crossing(s) by the real Mover, proved below); a1 exit to a2 spawn has NO route |
+    bot walk: ; DID NOT reach the last exit; zone at the end a1
+levelgen --walk: 2 ERROR (RED): REFUSED, the shipped files NOT written
+shipped after:  Design/levels/n65-foundry.json 5f3eba53c34b84b6a3a4548281865c6cc5691539745636b9ed88215ab296cd85, Assets/StreamingAssets/Design/levels/n65-foundry.json 5f3eba53c34b84b6a3a4548281865c6cc5691539745636b9ed88215ab296cd85 (byte-identical)
+# exit 1, 22:35:26

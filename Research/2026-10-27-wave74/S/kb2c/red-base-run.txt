@@ -1,0 +1,4 @@
+  verb65 kb2c - (slate ride): plant
+n70-red: 5 jobs on n67-kiln in 80 s; outputs under Research/2026-10-27-wave74/S/kb2c/red-base/<room>/ (23:00:06)
+  kb2c: flow-A.txt flow-B.txt flow-V.txt pads.txt plan.png plan.svg ride.txt room-check.txt 
+run-red: n67-kiln kb2c C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/kiln-play -> Research/2026-10-27-wave74/S/kb2c/red-base rc=0 (23:00:06)

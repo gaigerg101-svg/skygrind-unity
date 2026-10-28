@@ -1,0 +1,14 @@
+<!--
+  NIGHT8 U2-14: keep the collider classes in stripped builds (the Web build's IL2CPP + engine code stripping). The
+  views build their meshes with GameObject.CreatePrimitive, which adds a collider (then destroyed: no gameplay uses
+  PhysX); with no collider referenced by a scene, the Web build stripped the classes and logged "Can't add component
+  because class 'SphereCollider' doesn't exist!" for every primitive (39 lines on the first load).
+-->
+<linker>
+  <assembly fullname="UnityEngine.PhysicsModule">
+    <type fullname="UnityEngine.BoxCollider" preserve="all" />
+    <type fullname="UnityEngine.SphereCollider" preserve="all" />
+    <type fullname="UnityEngine.CapsuleCollider" preserve="all" />
+    <type fullname="UnityEngine.MeshCollider" preserve="all" />
+  </assembly>
+</linker>

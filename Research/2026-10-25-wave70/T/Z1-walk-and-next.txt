@@ -1,0 +1,5 @@
+# command: node Tools/night/n70-next.cjs --selftest; git diff --stat 08455efa -- Tools/SimHarness Assets; the walk compare
+# sha: 08455efa + the Z1 working copy; time: 2026-10-25 23:04:26
+SELFTEST PASS (3 cases: every piece missing named; a FAILed fresh set read as missing, a complete room read as complete; Z1: a launch room's M3 from its throw chart, 14 / 20 ok, 7 / 20 and none missing)
+C# / Assets changed by Z1 (git diff --stat 08455efa -- Tools/SimHarness Assets): [] (empty: the harness DLL is the t0 one)
+the five-level walk (n46flow n52-foundry,n52-iceline,n57-kiln,n52-span,n52-spire seeds 1-10, this tree, 22:51-22:55, Research/2026-10-25-wave70/T/flow-base-t0.txt): EQUAL to the main tree's Logs/n70/flow-base.txt, wall-time and seeds lines aside

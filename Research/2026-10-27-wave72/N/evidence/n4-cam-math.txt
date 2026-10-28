@@ -1,0 +1,8 @@
+12:25:13
+a6a3a3148
+PASS strafe: peak 1.000 deg, reached at 0.12 s, back under 0.05 deg 1.18 s after the release, undershoot 0.0000
+PASS dashing / sliding left: roll -5.000 deg (+-5.0), 4.95 reached at 0.000 s (100 deg/s x (error + 0.01): a frame or two)
+PASS fov at 105: forward 99.75 (x0.95), back 115.50 (x1.1), sideways 105.00, not dashing 105.00; the change takes 2 frames in and 2 out at 60 fps (300 deg/s)
+PASS slide drop 0.32 m in 3 frames and back in 3; the eye 1.28 m with no ceiling, 1.28 m under a 4 m roof, 1.08 m under a 1.2 m roof (the slide capsule is 1.0 m)
+n72cam: all PASS
+exit 0

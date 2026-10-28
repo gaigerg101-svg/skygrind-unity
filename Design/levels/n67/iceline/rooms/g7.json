@@ -1,0 +1,729 @@
+{
+ "_why": "NIGHT74 S g7 r1 (Research/2026-10-27-wave74/S/card-g7.md): every piece new and dry: THE WEST SLUICE WALL (ride) + THE WEST GANTRY + THE WEST STAIR, THE KEEPER'S TOWER + THE EAST STAIR, THE BOILER STAGE + its step, two mooring posts and two rails, two hoists; the rect, the waves, the lesson and the verb are the shipped room's. NIGHT67 T1a (Tools/night/gen-slots.cjs --level iceline --export): n52-iceline's room g7 (2.7 THE MIX) exactly as Design/levels/n52/iceline.plan.json has it: the row (every key), its zone-keyed pieces (boxes, ramps, pads, grapple, pits, tunnels), its room-keyed pieces (lights, props, surfaces). The slot's starting point: rebuild it here (every new piece with a job and a why), give the row bot43: false, verb65 (the slate's verb) and line65 (the verb's line, 3+ waypoints); never an area67 block (refused). A key the row drops needs a reason in drop{}. The room's opening: top-level \"opening\": \"vista\" | \"ambushed\" | \"ambusher\" | \"held\" (and \"opening_why\"); left out, the room keeps n52-iceline's.",
+ "room": "g7",
+ "row": {
+  "id": "g7",
+  "name": "2.7 THE MIX",
+  "kind": "room",
+  "rect": [
+   -12,
+   -216,
+   12,
+   -184
+  ],
+  "height": 10,
+  "roof": true,
+  "par": 50,
+  "job36": "combine",
+  "verb36": "switch: the KESTREL for the far gantry and the keeper's house, the glove for the bridge; ride the side walls over the fire or take the coal hoist up, punch a body off a bridge into the grate",
+  "spawn": {
+   "at": [
+    0,
+    0,
+    -189.5
+   ],
+   "yawDeg": 0
+  },
+  "exit": [
+   2,
+   0,
+   -214
+  ],
+  "arena36": true,
+  "waves": [
+   [
+    "tank",
+    "spitter",
+    "spitter"
+   ],
+   [
+    "swarmer",
+    "swarmer",
+    "swarmer",
+    "swarmer",
+    "swarmer",
+    "swarmer",
+    "spitter"
+   ],
+   [
+    "tank",
+    "spitter",
+    "swarmer",
+    "swarmer",
+    "swarmer",
+    "swarmer"
+   ]
+  ],
+  "lessons": [
+   {
+    "promptPad": "{quickSwap}: KESTREL FAR, GLOVE CLOSE",
+    "kind": "husksDead",
+    "n": 3,
+    "prompt": "{quickSwap}: KESTREL FAR, GLOVE CLOSE"
+   }
+  ],
+  "lessons31": [
+   {
+    "promptPad": "{quickSwap}: KESTREL FAR, GLOVE CLOSE",
+    "kind": "husksDead",
+    "n": 3,
+    "prompt": "{quickSwap}: KESTREL FAR, GLOVE CLOSE"
+   }
+  ],
+  "proofs": [
+   {
+    "kind": "walk",
+    "points": [
+     [
+      0,
+      0,
+      -186
+     ],
+     [
+      -1,
+      0,
+      -190
+     ],
+     [
+      -4.5,
+      0,
+      -196
+     ],
+     [
+      -4.5,
+      0,
+      -205
+     ],
+     [
+      -1,
+      0,
+      -209
+     ],
+     [
+      1,
+      0,
+      -211
+     ],
+     [
+      2,
+      0,
+      -214
+     ]
+    ]
+   },
+   {
+    "kind": "walk",
+    "points": [
+     [
+      1,
+      0,
+      -212.5
+     ],
+     [
+      -3.5,
+      2,
+      -213
+     ],
+     [
+      -7,
+      3.5,
+      -213
+     ],
+     [
+      -10,
+      3.5,
+      -213.5
+     ]
+    ]
+   },
+   {
+    "kind": "walk",
+    "points": [
+     [
+      9.5,
+      0,
+      -193
+     ],
+     [
+      9.5,
+      4,
+      -209.5
+     ],
+     [
+      9.5,
+      4,
+      -212.5
+     ]
+    ]
+   },
+   {
+    "kind": "walk",
+    "points": [
+     [
+      0,
+      0,
+      -192
+     ],
+     [
+      0,
+      2,
+      -198.5
+     ],
+     [
+      0,
+      2,
+      -202
+     ]
+    ]
+   }
+  ],
+  "frames36": {
+   "mid": [
+    5,
+    0,
+    -189,
+    20,
+    -0.03
+   ],
+   "exit": [
+    -2.5,
+    0,
+    -205,
+    0,
+    -0.06
+   ]
+  },
+  "nodes": [
+   [
+    -2,
+    0,
+    -209
+   ],
+   [
+    2.5,
+    0,
+    -209
+   ],
+   [
+    -5,
+    0,
+    -210.5
+   ],
+   [
+    5.5,
+    0,
+    -211
+   ],
+   [
+    2,
+    0,
+    -212.5
+   ]
+  ],
+  "highNodes": [
+   [
+    -10,
+    3.5,
+    -213
+   ],
+   [
+    9.5,
+    4,
+    -212.5
+   ]
+  ],
+  "iceline43_why": "NIGHT43 E1 round 2 (DESIGN-RULES R-3, at most three roles before level 4; n40 had five: tank, spitter, warden, drone, swarmer): introduce (tank + 2 spitters: KESTREL far, glove close), combine (6 swarmers + a spitter: the pack under fire from the perch), escalate (tank + spitter + 4 swarmers: the three at once). The warden and the drones moved to g5; n40's lesson ('{quickSwap}: KESTREL FAR, GLOVE CLOSE', 3 kills) kept.",
+  "nodes_why": "NIGHT74 S g7 r1 (Research/2026-10-27-wave74/S/card-g7.md): the ground nodes on the far floor, 14-21 m from the commit feet, clear of the new pieces.",
+  "highNodes_why": "NIGHT52 loop (R-4: ranged on high ground): the west coal gantry (2 m) and THE KEEPER'S HOUSE (4 m), ~27 m from the door across the fire",
+  "waveNodes43": [
+   [
+    [
+     -10,
+     3.5,
+     -213
+    ],
+    [
+     9.5,
+     4,
+     -212.5
+    ],
+    [
+     -2,
+     0,
+     -209
+    ]
+   ],
+   null,
+   [
+    [
+     -2,
+     0,
+     -209
+    ],
+    [
+     2.5,
+     0,
+     -209
+    ],
+    [
+     -5,
+     0,
+     -210.5
+    ],
+    [
+     5.5,
+     0,
+     -211
+    ],
+    [
+     -10,
+     3.5,
+     -213
+    ],
+    [
+     2,
+     0,
+     -212.5
+    ]
+   ]
+  ],
+  "waveNodes43_why": "NIGHT74 S g7 r1 (Research/2026-10-27-wave74/S/card-g7.md): wave 1: the spitters on the two gantries, the tank on the far floor; wave 3's six on the far floor and the west gantry (the shipped wave 3 came out of the bunkers behind the spawn: a spawn in the entry's rear arc).",
+  "iceline45_why": "NIGHT45 A2 (DESIGN-RULES A-9; docs/ROOMS.md's card THE THAW LOCK): rebuilt from its identity card: the quay, the grate (three lava pits, two 3 m bridges), THE BOILER in the fire, the two coal gantries with ramps; nodes across the fire, the spitters on the gantries, wave 2 from the door side. n43's rect, doors, waves and lesson kept.",
+  "frames52": {
+   "_why": "NIGHT74 S g7 r1 (Research/2026-10-27-wave74/S/card-g7.md): the room frames: the door just crossed (the stage, the gantries, the wall), the fight from the stage",
+   "entry": [
+    0,
+    0,
+    -186,
+    0,
+    0.04
+   ],
+   "mid": [
+    0,
+    2,
+    -201,
+    0,
+    0.05
+   ],
+   "high": [
+    9.5,
+    4,
+    -212.5,
+    150,
+    -0.12
+   ]
+  },
+  "loop52_why": "NIGHT52 the room loop, cycle 1 (Tools/night/n52-loop-g7.cjs; THE ROOM CONTRACT): n47's THE THAW LOCK rebuilt as THE THAW LOCK II: 24 x 32 x 10 m; 21 pieces; three tiers (floor, 2 m gantry and bunkers, 4 m keeper's house), every perch on a walkers' ramp; two 18 m ride walls over the fire; the coal hoist and the return hoist (pads); a circuit round the boiler over both bridges; the waves, lesson and lights' roles kept. Fix 2 (n52-loop-fix2.cjs): the pockets the isolated walk found closed. Fix 3 (n52-loop-fix3.cjs): two quay nodes. Fix 4 (n52-loop-fix4.cjs): the retry spawn 3.5 m in. Fix 5 (n52-loop-fix5.cjs): the bunker ramps face the door. NIGHT55 (n55-r-g7.cjs, builder R; O-14): the mirror broken by giving each half a job: the west is the walkers' lock (kept), the east the riders' firebox: the east pit 7.5 m wide, the walkers' east crossing the stoker's bridge against the boiler, the east sluice wall 15 m to the firebox's far edge, the keeper's house moved to the keeper's tower over the fire with the coal conveyor, the stoker's post added at the bridge's mouth, the coal and return hoists re-sited, the east coal island cut.",
+  "spawn_why": "NIGHT52 fix 4: the retry point on the quay's middle, 5.5 m from the door wall (outside the door's 4 m band): a death never restarts the fight camped at the door",
+  "bot43": false,
+  "verb65": "ride",
+  "line65": [
+   [
+    -10.7,
+    0,
+    -195
+   ],
+   [
+    -10.7,
+    2,
+    -201
+   ],
+   [
+    -10.7,
+    3,
+    -207
+   ],
+   [
+    -10,
+    3.5,
+    -211
+   ]
+  ],
+  "line65_why": "NIGHT74 S g7 r1 (Research/2026-10-27-wave74/S/card-g7.md): THE WEST SLUICE WALL's ride: along its east face 0.7 m out from the door end to the west gantry",
+  "card65": "Research/2026-10-27-wave74/S/card-g7.md"
+ },
+ "boxes": [
+  {
+   "zone": "g7",
+   "kind": "wall",
+   "min": [
+    -12,
+    0,
+    -210
+   ],
+   "max": [
+    -11.4,
+    10,
+    -194
+   ],
+   "job": "ride: THE WEST SLUICE WALL (ride north along the west wall onto THE WEST GANTRY, over the yard)",
+   "why": "NIGHT74 S g7 r1 (Research/2026-10-27-wave74/S/card-g7.md): the shipped west sluice wall (18 m, standing in a lava trench) is a 16 m ride face ON the west wall, dry: its landing is the gantry at its north end.",
+   "note": "THE WEST SLUICE WALL (ride, cyan, 16 m x 10 m on the west wall)",
+   "ride": true,
+   "ride36": {
+    "face": "E",
+    "planeX": -11.4,
+    "lz": [
+     6,
+     22
+    ]
+   }
+  },
+  {
+   "zone": "g7",
+   "kind": "deck",
+   "min": [
+    -12,
+    0,
+    -216
+   ],
+   "max": [
+    -7,
+    3.5,
+    -210
+   ],
+   "job": "line: THE WEST GANTRY (3.5 m: wave 1's west spitter, the ride's landing)",
+   "why": "NIGHT74 S g7 r1 (Research/2026-10-27-wave74/S/card-g7.md): a 5 x 6 m tier in the north-west corner (rimmed): the shipped west coal gantry was 2 m; 3.5 m, not 4, because the stair (6.5 m long, the exit lane's limit) was 'not reached by walkers' at 4 m (0.615 per metre).",
+   "note": "THE WEST GANTRY (3.5 m, 5 x 6 m, north-west)"
+  },
+  {
+   "zone": "g7",
+   "kind": "deck",
+   "min": [
+    7.5,
+    0,
+    -216
+   ],
+   "max": [
+    12,
+    4,
+    -209
+   ],
+   "job": "line: THE KEEPER'S TOWER (4 m: wave 1's east spitter, the east stair's landing, the health)",
+   "why": "NIGHT74 S g7 r1 (Research/2026-10-27-wave74/S/card-g7.md): a 4.5 x 7 m tier in the north-east corner (rimmed), as the shipped tower, with a stair along the east wall.",
+   "note": "THE KEEPER'S TOWER (4 m, 4.5 x 7 m, north-east)"
+  },
+  {
+   "zone": "g7",
+   "kind": "deck",
+   "min": [
+    -3,
+    0,
+    -204
+   ],
+   "max": [
+    3,
+    2,
+    -198
+   ],
+   "job": "line: THE BOILER STAGE (2 m: the middle tier; a circuit round it, a step between the floor and the gantries)",
+   "why": "NIGHT74 S g7 r1 (Research/2026-10-27-wave74/S/card-g7.md): the shipped boiler was a full-height 3 x 3 m stack in a lava trench; this is a walkable 6 x 6 m tier (2 m, rimmed) in the middle of the yard, dry, with a ramp from the door side.",
+   "note": "THE BOILER STAGE (2 m, 6 x 6 m, mid-yard)"
+  },
+  {
+   "zone": "g7",
+   "kind": "hull",
+   "min": [
+    -7.2,
+    0,
+    -193.5
+   ],
+   "max": [
+    -5.7,
+    3.5,
+    -192
+   ],
+   "job": "cover: THE WEST MOORING POST (a 3.5 m post by the door half's west: high cover from the far spitters)",
+   "why": "NIGHT74 S g7 r1 (Research/2026-10-27-wave74/S/card-g7.md): a 1.5 x 1.5 x 3.5 m free-standing post (high cover), 3.7 m west of the ramp's foot, off the entry's sight lines to the gantries.",
+   "note": "THE WEST MOORING POST (3.5 m, 1.5 x 1.5 m)"
+  },
+  {
+   "zone": "g7",
+   "kind": "hull",
+   "min": [
+    5.7,
+    0,
+    -193.5
+   ],
+   "max": [
+    7.2,
+    3.5,
+    -192
+   ],
+   "job": "cover: THE EAST MOORING POST (the west post's mirror across the axis)",
+   "why": "NIGHT74 S g7 r1 (Research/2026-10-27-wave74/S/card-g7.md): the west post's mirror: the entry yard between them is 11.4 m wide.",
+   "note": "THE EAST MOORING POST (3.5 m, 1.5 x 1.5 m)"
+  },
+  {
+   "zone": "g7",
+   "kind": "hull",
+   "min": [
+    3.5,
+    0,
+    -207.5
+   ],
+   "max": [
+    5.5,
+    1.2,
+    -206
+   ],
+   "job": "cover: THE EAST RAIL (1.2 m low cover on the far floor: hop it, shelter behind it from the spitters)",
+   "why": "NIGHT74 S g7 r1 (Research/2026-10-27-wave74/S/card-g7.md): 2 x 1.5 x 1.2 m low cover (1.0-1.25 m) on the far floor's east half.",
+   "note": "THE EAST RAIL (1.2 m, 2 x 1.5 m)"
+  },
+  {
+   "zone": "g7",
+   "kind": "hull",
+   "min": [
+    -5.5,
+    0,
+    -207.5
+   ],
+   "max": [
+    -3.5,
+    1.2,
+    -206
+   ],
+   "job": "cover: THE WEST RAIL (1.2 m low cover: the east rail's twin across the far floor)",
+   "why": "NIGHT74 S g7 r1 (Research/2026-10-27-wave74/S/card-g7.md): 2 x 1.5 x 1.2 m low cover on the far floor's west half.",
+   "note": "THE WEST RAIL (1.2 m, 2 x 1.5 m)"
+  }
+ ],
+ "ramps": [
+  {
+   "zone": "g7",
+   "from": [
+    -0.5,
+    -213
+   ],
+   "to": [
+    -7,
+    -213
+   ],
+   "width": 3,
+   "rise": 3.5,
+   "job": "climb: THE WEST STAIR (the walkers' way onto the west gantry from the far floor: 3.5 m over 6.5 m: the long way round the sluice wall's ride)",
+   "why": "NIGHT74 S g7 r1 (Research/2026-10-27-wave74/S/card-g7.md): a route enemies can climb to every floor (GG, NIGHT20): along the north wall, so the walk to the gantry is longer than the ride (I2) and the ride pilot's target line (x -9.6, 10 m along the wall) stays clear.",
+   "note": "THE WEST STAIR"
+  },
+  {
+   "zone": "g7",
+   "from": [
+    9.5,
+    -194
+   ],
+   "to": [
+    9.5,
+    -209
+   ],
+   "width": 3,
+   "rise": 4,
+   "job": "climb: THE EAST STAIR (the walkers' way onto the keeper's tower: 4 m over 15 m along the east wall)",
+   "why": "NIGHT74 S g7 r1 (Research/2026-10-27-wave74/S/card-g7.md): the shipped east stair's job (the climb onto the tower): along the east wall, x 8..11.",
+   "note": "THE EAST STAIR"
+  },
+  {
+   "zone": "g7",
+   "from": [
+    0,
+    -193
+   ],
+   "to": [
+    0,
+    -198
+   ],
+   "width": 3,
+   "rise": 2,
+   "job": "climb: THE STAGE STEP (the door half's ramp onto the boiler stage: 2 m over 5 m, 3.5 m ahead of the spawn)",
+   "why": "NIGHT74 S g7 r1 (Research/2026-10-27-wave74/S/card-g7.md): the stage's walkers' route; the exit's lane (x 0) runs over it or round it.",
+   "note": "THE STAGE STEP"
+  }
+ ],
+ "pads": [
+  {
+   "zone": "g7",
+   "at": [
+    6,
+    0,
+    -203
+   ],
+   "target": [
+    9.5,
+    4,
+    -212
+   ],
+   "apexAbove": 3,
+   "job": "line: THE COAL HOIST (the yard's east side onto the keeper's tower: the east way up without the stair)",
+   "why": "NIGHT74 S g7 r1 (Research/2026-10-27-wave74/S/card-g7.md): the shipped coal hoist's job (the floor onto the tower), 10 m from the tower.",
+   "note": "THE COAL HOIST"
+  },
+  {
+   "zone": "g7",
+   "at": [
+    -7.8,
+    0,
+    -203
+   ],
+   "target": [
+    -10.5,
+    3.5,
+    -212
+   ],
+   "apexAbove": 3,
+   "job": "line: THE WEST HOIST (the yard's west side onto the west gantry: the west way up without the wall)",
+   "why": "NIGHT74 S g7 r1 (Research/2026-10-27-wave74/S/card-g7.md): the shipped return hoist's job (a way up from the floor), the west mirror of the coal hoist: 3.3 m from the walk line, 1.9 m from the ride lane.",
+   "note": "THE WEST HOIST"
+  }
+ ],
+ "grapple": [],
+ "pits": [],
+ "tunnels": [],
+ "lights": [
+  {
+   "id": "g7-L1",
+   "room": "g7",
+   "kind": "ceiling",
+   "at": [
+    0,
+    9.95,
+    -191.75
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    4,
+    0.1
+   ],
+   "color": "white",
+   "range": 10,
+   "intensity": 0.7,
+   "why": "the quay's one dim panel: the run-up reads, the fire ahead is the brighter light"
+  },
+  {
+   "id": "g7-L4",
+   "room": "g7",
+   "kind": "ceiling",
+   "at": [
+    -8,
+    9.95,
+    -213
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    5,
+    4,
+    0.1
+   ],
+   "color": "white",
+   "range": 10,
+   "intensity": 1,
+   "why": "the west gantry's coal lamp: the spitters' high ground reads"
+  },
+  {
+   "id": "g7-L5",
+   "room": "g7",
+   "kind": "ceiling",
+   "at": [
+    8,
+    9.95,
+    -213
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    5,
+    4,
+    0.1
+   ],
+   "color": "white",
+   "range": 10,
+   "intensity": 1,
+   "why": "the keeper's house lamp: the third tier reads from the quay"
+  },
+  {
+   "id": "g7-L6",
+   "room": "g7",
+   "kind": "pool",
+   "at": [
+    2,
+    0.025,
+    -214
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.5,
+    2.5,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 8,
+   "intensity": 1.6,
+   "why": "the exit's cyan pool (A-6: the exit is lit)"
+  },
+  {
+   "id": "g7-RW",
+   "room": "g7",
+   "kind": "wall",
+   "at": [
+    -11.35,
+    1.2,
+    -202
+   ],
+   "normal": [
+    1,
+    0,
+    0
+   ],
+   "size": [
+    16,
+    0.2,
+    0.1
+   ],
+   "color": "cyan",
+   "range": 6,
+   "intensity": 1.1,
+   "why": "NIGHT74 S g7 r1 (Research/2026-10-27-wave74/S/card-g7.md): THE WEST SLUICE WALL's cyan ride strip (player-usable: cyan)"
+  }
+ ],
+ "props": [
+  {
+   "id": "g7-P1",
+   "room": "g7",
+   "kind": "healthPickup",
+   "at": [
+    0,
+    2.9,
+    -201
+   ],
+   "size": [
+    0.6,
+    0.6,
+    0.6
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "pickup": true,
+   "job": "reward",
+   "why": "the health right behind the boiler on the far floor, under both stands' fire (A20: the best at the riskiest spot): the dash-jump or an island hop lands on it"
+  }
+ ],
+ "surfaces": [],
+ "drop": {
+  "fallReturn43": "NIGHT74 S g7 r1 (Research/2026-10-27-wave74/S/card-g7.md): fallReturn43 (a fallen player is returned for 10 health) belongs to the shipped room's lava trenches; the rebuilt room is dry and has no pit."
+ }
+}

@@ -1,0 +1,20 @@
+# command: python -I Tools/night/n74-room-rules.py room Design/levels/n65/rooms/a5.json
+# sha: e9837ffc2; time: 2026-10-27 23:48:19
+n65/a5  rect [-10.0, -144.0, 10.0, -112.0]  spawn [0.0, 0.0, -115.0] yaw 0  floor 0.0
+  PLANES  PASS  planes 2 (-0.8 m: 512 cells, 2.5 m: 48 cells)
+  COVER   PASS  cover: free-standing high 3, low 4, between 0 (0 without a job), none 0
+  LOOPS   PASS  loops 7 (floor holes 5 + closed pad / ride routes 2 of 2)
+  REAR    PASS  rear arc: 0 of 4 wave-1 usable nodes behind the entry facing (all waves: 0 node uses behind)
+  VIEW    PASS  view: enemy in view at 0.00 s (4 of 4 wave-1 nodes seen at entry)
+  CROSS   PASS  cross: chord 37.7 m, dash 1.57 s, walk 4.7 s (bar 2.0 s at dash)
+  EXPOSE  PASS  exposure: 50 % of 1326 floor-sample pairs see each other (bar 60 %); longest clear line 33.5 m (medium band 19.5 m)
+  CLIMB   PASS  climb: 1 tier group(s), 0 not reached by walker links
+    free-standing high piece: hull [-7.0, 0.0, -129.5]-[-3.0, 7.0, -126.5] h 7.00 job "hero"
+    free-standing high piece: hull [-1.0, 0.0, -129.5]-[6.0, 3.0, -126.5] h 3.00 job "lane"
+    free-standing high piece: hull [-5.0, 0.0, -119.0]-[-2.0, 2.2, -117.0] h 2.20 job "cover"
+    free-standing low piece: hull [-3.6, 0.0, -125.5]-[-3.2, 1.0, -123.5] h 1.00 job "lane"
+    free-standing low piece: hull [-0.8, 0.0, -125.5]-[-0.4, 1.0, -123.5] h 1.00 job "lane"
+    free-standing low piece: hull [3.0, 0.0, -123.0]-[6.0, 1.2, -122.0] h 1.20 job "cover"
+    free-standing low piece: hull [-6.0, 0.0, -123.5]-[-4.3, 1.2, -121.8] h 1.20 job "cover"
+    walkers reach every tier: climb: 1 tier group(s), 0 not reached by walker links
+  core 5/5 PASS, extra 3/3 PASS

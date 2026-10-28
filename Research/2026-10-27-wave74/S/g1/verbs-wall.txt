@@ -1,0 +1,18 @@
+# command: dotnet Temp/wallprobe/bin/Release/net10.0/wallprobe.dll <level> open|locked   and   dotnet Temp/SimHarness/bin/Release/net10.0/SimHarness.dll n39views wall <level>
+# sha: efa8df54e; time: 2026-10-28 00:05:00; row 9 PASS needs a ride over 1.2 s; the OPEN reading is the Player's, the locked ones are not
+## iceline-g4-r6-only  (C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/ice-g4-r6/n67-iceline.json)
+-- open (the Player's pick):
+pick: 23 m in g1 at (10.3, 0.2, -24.0) along (0, 1) normal (-1, 0)
+ride: rode True, rides 2 [0.23-1.96, 2.03-on], longest 1.73 s, ends [jump], end pos (-3.3, 2.0, -0.4); row 9 PASS, row 11 PASS (16.6 vs 11.7 m/s)
+-- locked (n39views wall, not the Player's pick):
+  NIGHT39 pick: 23 m in g1 at (10.3, 0.2, -24.0) along (0, 1) (unchanged)
+  row 9 PASS: rides 2 [0.23-1.96, 2.03-on], longest 1.73 s, ends [jump], rose 0.16 m
+  row 11 PASS: 16.60 m/s after letting go vs 11.70 m/s before
+## iceline-g4-g1-r1  (C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/ice-g1/n67-iceline.json)
+-- open (the Player's pick):
+pick: 23 m in g1 at (10.3, 0.2, -24.0) along (0, 1) normal (-1, 0)
+ride: rode True, rides 2 [0.23-1.96, 2.03-on], longest 1.73 s, ends [jump], end pos (-3.3, 2.0, -0.4); row 9 PASS, row 11 PASS (16.6 vs 11.7 m/s)
+-- locked (n39views wall, not the Player's pick):
+  NIGHT39 pick: 23 m in g1 at (10.3, 0.2, -24.0) along (0, 1) (unchanged)
+  row 9 PASS: rides 2 [0.23-1.96, 2.03-on], longest 1.73 s, ends [jump], rose 0.16 m
+  row 11 PASS: 16.60 m/s after letting go vs 11.70 m/s before

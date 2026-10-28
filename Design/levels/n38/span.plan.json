@@ -1,0 +1,3522 @@
+{
+ "_why": "NIGHT38 builder O2 (design.n38.span38 swaps n37-span for this file): Tools/night/gen-n38-span.cjs from the beat sheet Design/levels/n38/span.beats.md. Five new rooms (p1 STITCH YARD, p2 FIRST GAP, p3 KNOT YARD, p4 PULL LINE, p5 SPOOL HALL), then NIGHT37's o1 THREAD LINE, o2 SWING ANCHOR and o3 THE CANYON (THE LOOM) copied as they are. Spacing from PortExport/config.json (ground.walkSpeed, jump.height, dash.speed x dash.duration, slide.colliderHeight) + Design/levels/n35-ride-distances.json (rideSpeed, jumpOff.pitch0, facingGapsThatWork) and design.n32.grapple32.",
+ "id": "n38-span",
+ "name": "LEVEL 4 THE SPAN",
+ "owns38": [
+  "jump",
+  "double",
+  "dash",
+  "slide",
+  "boost",
+  "ride",
+  "walljump",
+  "grapple"
+ ],
+ "owns38_why": "the verbs level 4 owns (builder E's checker, Design/levels/n38/GATES38.md): the movement kit, the THUNDERCLAP's boost (level 3's weapon carries in), the grapple (design.n35.grapple35.fromLevel 4); the shockwave is not live (design.n25.shockwaveOff)",
+ "n29": true,
+ "n30": true,
+ "n36": true,
+ "n37": true,
+ "n38": true,
+ "floorSize": 806,
+ "killPlaneY": -40,
+ "killPlaneY_why": "under THE CANYON's void floor (-24) and the flight rooms' void floor (-14): a fall is caught by the room's respawnY / THE LOOM's ledge rule first",
+ "wallHeight": 14,
+ "rank": {
+  "time": [
+   240,
+   360,
+   540,
+   780
+  ],
+  "kills": [
+   100,
+   85,
+   65,
+   40
+  ],
+  "style": [
+   2500,
+   1500,
+   700,
+   250
+  ],
+  "_why": "Unity-only (builder O2, NIGHT38): NIGHT30's S/A/B/C cuts kept for level 4 (n37-span's); NOT calibrated on the n38 rooms (the walk bot's times come first)."
+ },
+ "n32": true,
+ "rooms": [
+  {
+   "id": "p1",
+   "name": "4.1 STITCH YARD",
+   "kind": "room",
+   "rect": [
+    -16,
+    91.5,
+    16,
+    127.5
+   ],
+   "height": 12,
+   "roof": true,
+   "par": 20,
+   "job36": "teach",
+   "verb36": "the STITCHER (hold to stream) + the first pull",
+   "spawn": {
+    "at": [
+     0,
+     0,
+     125.5
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    0,
+    0,
+    93.5
+   ],
+   "arena36": true,
+   "award": "nailgun",
+   "pickup": {
+    "weapon": "nailgun",
+    "at": [
+     0,
+     1.1,
+     122.5
+    ]
+   },
+   "grappleNodes": [
+    [
+     -8,
+     9,
+     103.5
+    ]
+   ],
+   "grapple": "ONE ring over the terrace's front edge at 9 m: a pull from the floor lands you on the terrace among the spitters",
+   "waves": [
+    [
+     "husk",
+     "husk",
+     "husk"
+    ],
+    [
+     "spitter",
+     "spitter",
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "swarmer"
+    ]
+   ],
+   "lessons": [
+    {
+     "promptPad": "STITCHER: HOLD TO STREAM.",
+     "kind": "husksDead",
+     "n": 3,
+     "prompt": "STITCHER: HOLD TO STREAM."
+    },
+    {
+     "promptPad": "{grapple} PULL TO THE RING.",
+     "kind": "husksDead",
+     "n": 9,
+     "prompt": "{grapple} PULL TO THE RING."
+    }
+   ],
+   "lessons31": [
+    {
+     "promptPad": "STITCHER: HOLD TO STREAM.",
+     "kind": "husksDead",
+     "n": 3,
+     "prompt": "STITCHER: HOLD TO STREAM."
+    },
+    {
+     "promptPad": "{grapple} PULL TO THE RING.",
+     "kind": "husksDead",
+     "n": 9,
+     "prompt": "{grapple} PULL TO THE RING."
+    }
+   ],
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       0,
+       125.5
+      ],
+      [
+       0,
+       0,
+       119.5
+      ],
+      [
+       2,
+       0,
+       109.5
+      ],
+      [
+       2,
+       0,
+       97.5
+      ],
+      [
+       0,
+       0,
+       93.5
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -11,
+       0,
+       119.5
+      ],
+      [
+       -11,
+       4,
+       106.5
+      ],
+      [
+       -11,
+       4,
+       97.5
+      ]
+     ]
+    }
+   ],
+   "frames36": {
+    "mid": [
+     0,
+     0,
+     121.5,
+     21.801,
+     0.111
+    ],
+    "exit": [
+     6,
+     0,
+     99.5,
+     36.87,
+     -0.06
+    ]
+   },
+   "nodes": [
+    [
+     0,
+     0,
+     111.5
+    ],
+    [
+     4,
+     0,
+     108.5
+    ],
+    [
+     -3,
+     0,
+     107.5
+    ],
+    [
+     8,
+     0,
+     97.5
+    ],
+    [
+     12,
+     0,
+     95.5
+    ],
+    [
+     4,
+     0,
+     94.5
+    ],
+    [
+     12,
+     0,
+     101.5
+    ]
+   ],
+   "highNodes": [
+    [
+     -12,
+     4,
+     97.5
+    ],
+    [
+     -9,
+     4,
+     93.5
+    ]
+   ]
+  },
+  {
+   "id": "p2",
+   "name": "4.2 FIRST GAP",
+   "kind": "link",
+   "rect": [
+    -18,
+    37.5,
+    18,
+    87.5
+   ],
+   "height": 22,
+   "roof": true,
+   "par": 3,
+   "job36": "teach",
+   "verb36": "look up and pull: one gate",
+   "spawn": {
+    "at": [
+     0,
+     0,
+     85.5
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    0,
+    0,
+    39.5
+   ],
+   "loomRoom37": true,
+   "respawnY": -3,
+   "respawnY_why": "a fall into the void is back at the room's start (Campaign24's respawnY, a share of health: design.n29.roomRules.fallCostFraction): 1 m of drop under the take-off is already a miss, so no move but the pull lives long enough over the void to cross it",
+   "noride38": true,
+   "limit": [
+    "pistolOnly"
+   ],
+   "limitReason": "PULL ACROSS",
+   "pull38": {
+    "_why": "the flight room's gates for the walk pilot (Bot/Walk38Span.cs): each gate's lip (the take-off edge), its ring and the landing point (world metres)",
+    "gates": [
+     {
+      "name": "gate A",
+      "lip": [
+       0,
+       0,
+       79.5
+      ],
+      "ring": [
+       0,
+       15,
+       46.5
+      ],
+      "land": [
+       0,
+       10,
+       47.5
+      ]
+     }
+    ]
+   },
+   "grappleNodes": [
+    [
+     0,
+     15,
+     46.5
+    ]
+   ],
+   "grapple": "ONE ring 5 m over the landing, 3 m past its lip: from the pier's lip, look up and PULL",
+   "routeVia": [
+    [
+     [
+      0,
+      0,
+      80.5
+     ],
+     [
+      0,
+      10,
+      46.5
+     ]
+    ]
+   ],
+   "lessons": [
+    {
+     "promptPad": "LOOK UP. {grapple} PULL.",
+     "kind": "reached",
+     "rect": [
+      -6,
+      41.5,
+      6,
+      49.5
+     ],
+     "minY": 9.5,
+     "prompt": "LOOK UP. {grapple} PULL."
+    }
+   ],
+   "lessons31": [
+    {
+     "promptPad": "LOOK UP. {grapple} PULL.",
+     "kind": "reached",
+     "rect": [
+      -6,
+      41.5,
+      6,
+      49.5
+     ],
+     "minY": 9.5,
+     "prompt": "LOOK UP. {grapple} PULL."
+    }
+   ],
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       0,
+       85.5
+      ],
+      [
+       0,
+       0,
+       80.5
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       10,
+       46.5
+      ],
+      [
+       0,
+       0,
+       39.5
+      ]
+     ],
+     "maxSeconds": 6
+    }
+   ],
+   "frames36": {
+    "mid": [
+     0,
+     0,
+     80.5,
+     0,
+     0.305
+    ],
+    "exit": [
+     0,
+     10,
+     46.5,
+     0,
+     -0.4
+    ]
+   }
+  },
+  {
+   "id": "p3",
+   "name": "4.3 KNOT YARD",
+   "kind": "room",
+   "rect": [
+    -20,
+    -6.5,
+    20,
+    33.5
+   ],
+   "height": 14,
+   "roof": true,
+   "par": 35,
+   "job36": "practise",
+   "verb36": "pulls between balconies in a fight; kills give pulls",
+   "spawn": {
+    "at": [
+     0,
+     0,
+     31.5
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    0,
+    0,
+    -4.5
+   ],
+   "arena36": true,
+   "grappleNodes": [
+    [
+     0,
+     10,
+     21.5
+    ],
+    [
+     -8,
+     10,
+     11.5
+    ],
+    [
+     8,
+     10,
+     11.5
+    ],
+    [
+     0,
+     10,
+     1.5
+    ]
+   ],
+   "grapple": "FOUR rings in a diamond at 10 m over the floor: ring to balcony to ring, while the swarmers chase (a kill gives a pull back)",
+   "waves": [
+    [
+     "husk",
+     "husk",
+     "husk",
+     "husk"
+    ],
+    [
+     "spitter",
+     "spitter",
+     "husk",
+     "husk",
+     "husk"
+    ],
+    [
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "husk",
+     "husk"
+    ]
+   ],
+   "lessons": [
+    {
+     "promptPad": "KILLS GIVE PULLS.",
+     "kind": "husksDead",
+     "n": 6,
+     "prompt": "KILLS GIVE PULLS."
+    }
+   ],
+   "lessons31": [
+    {
+     "promptPad": "KILLS GIVE PULLS.",
+     "kind": "husksDead",
+     "n": 6,
+     "prompt": "KILLS GIVE PULLS."
+    }
+   ],
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       0,
+       31.5
+      ],
+      [
+       6,
+       0,
+       23.5
+      ],
+      [
+       6,
+       0,
+       3.5
+      ],
+      [
+       0,
+       0,
+       -4.5
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -16,
+       0,
+       32.7
+      ],
+      [
+       -16,
+       5,
+       17.5
+      ],
+      [
+       -16,
+       5,
+       5.5
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       16,
+       0,
+       32.7
+      ],
+      [
+       16,
+       5,
+       17.5
+      ],
+      [
+       16,
+       5,
+       5.5
+      ]
+     ]
+    }
+   ],
+   "frames36": {
+    "mid": [
+     0,
+     0,
+     29.5,
+     0,
+     0.4
+    ],
+    "exit": [
+     10,
+     0,
+     -0.5,
+     59.036,
+     -0.051
+    ]
+   },
+   "nodes": [
+    [
+     0,
+     0,
+     18.5
+    ],
+    [
+     -5,
+     0,
+     15.5
+    ],
+    [
+     5,
+     0,
+     15.5
+    ],
+    [
+     0,
+     0,
+     7.5
+    ],
+    [
+     -6,
+     0,
+     -0.5
+    ],
+    [
+     6,
+     0,
+     -0.5
+    ],
+    [
+     0,
+     0,
+     3.5
+    ],
+    [
+     -8,
+     0,
+     19.5
+    ],
+    [
+     8,
+     0,
+     19.5
+    ]
+   ],
+   "highNodes": [
+    [
+     -16,
+     5,
+     9.5
+    ],
+    [
+     16,
+     5,
+     9.5
+    ]
+   ]
+  },
+  {
+   "id": "p4",
+   "name": "4.4 PULL LINE",
+   "kind": "link",
+   "rect": [
+    -20,
+    -102.5,
+    20,
+    -10.5
+   ],
+   "height": 32,
+   "roof": true,
+   "par": 5,
+   "job36": "test",
+   "verb36": "two rising gates, one charge each",
+   "spawn": {
+    "at": [
+     0,
+     0,
+     -12.5
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    0,
+    0,
+    -100.5
+   ],
+   "loomRoom37": true,
+   "respawnY": -3,
+   "respawnY_why": "a fall into the void is back at the room's start (Campaign24's respawnY, a share of health: design.n29.roomRules.fallCostFraction): 1 m of drop under the take-off is already a miss, so no move but the pull lives long enough over the void to cross it",
+   "noride38": true,
+   "limit": [
+    "pistolOnly"
+   ],
+   "limitReason": "PULL ACROSS",
+   "pull38": {
+    "_why": "the flight room's gates for the walk pilot (Bot/Walk38Span.cs): each gate's lip (the take-off edge), its ring and the landing point (world metres)",
+    "gates": [
+     {
+      "name": "gate A",
+      "lip": [
+       0,
+       0,
+       -18.5
+      ],
+      "ring": [
+       0,
+       15,
+       -51.5
+      ],
+      "land": [
+       0,
+       10,
+       -50.5
+      ]
+     },
+     {
+      "name": "gate B",
+      "lip": [
+       0,
+       10,
+       -60.5
+      ],
+      "ring": [
+       0,
+       25,
+       -93.5
+      ],
+      "land": [
+       0,
+       20,
+       -92.5
+      ]
+     }
+    ]
+   },
+   "grappleNodes": [
+    [
+     0,
+     15,
+     -51.5
+    ],
+    [
+     0,
+     25,
+     -93.5
+    ]
+   ],
+   "grapple": "TWO rings, one over each landing: pull up to pier B, run its 12 m, pull up to pier C (one charge each: the second gate spends the last one)",
+   "routeVia": [
+    [
+     [
+      0,
+      0,
+      -17.5
+     ],
+     [
+      0,
+      10,
+      -51.5
+     ]
+    ],
+    [
+     [
+      0,
+      10,
+      -59.5
+     ],
+     [
+      0,
+      20,
+      -93.5
+     ]
+    ]
+   ],
+   "lessons": [
+    {
+     "promptPad": "",
+     "kind": "reached",
+     "rect": [
+      -6,
+      -60.5,
+      6,
+      -48.5
+     ],
+     "minY": 9.5,
+     "prompt": ""
+    },
+    {
+     "promptPad": "TWO CHARGES. TWO PULLS.",
+     "kind": "reached",
+     "rect": [
+      -6,
+      -98.5,
+      6,
+      -90.5
+     ],
+     "minY": 19.5,
+     "prompt": "TWO CHARGES. TWO PULLS."
+    }
+   ],
+   "lessons31": [
+    {
+     "promptPad": "",
+     "kind": "reached",
+     "rect": [
+      -6,
+      -60.5,
+      6,
+      -48.5
+     ],
+     "minY": 9.5,
+     "prompt": ""
+    },
+    {
+     "promptPad": "TWO CHARGES. TWO PULLS.",
+     "kind": "reached",
+     "rect": [
+      -6,
+      -98.5,
+      6,
+      -90.5
+     ],
+     "minY": 19.5,
+     "prompt": "TWO CHARGES. TWO PULLS."
+    }
+   ],
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       0,
+       -12.5
+      ],
+      [
+       0,
+       0,
+       -17.5
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       10,
+       -50.5
+      ],
+      [
+       0,
+       10,
+       -59.5
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       20,
+       -93.5
+      ],
+      [
+       0,
+       0,
+       -100.5
+      ]
+     ],
+     "maxSeconds": 8
+    }
+   ],
+   "frames36": {
+    "mid": [
+     0,
+     0,
+     -17.5,
+     0,
+     0.305
+    ],
+    "exit": [
+     0,
+     10,
+     -59.5,
+     0,
+     0.305
+    ]
+   }
+  },
+  {
+   "id": "p5",
+   "name": "4.5 SPOOL HALL",
+   "kind": "room",
+   "rect": [
+    -28,
+    -142.5,
+    8,
+    -106.5
+   ],
+   "height": 14,
+   "roof": true,
+   "par": 36,
+   "job36": "combine",
+   "verb36": "the STITCHER, the whip, pulls",
+   "spawn": {
+    "at": [
+     0,
+     0,
+     -108.5
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    -17,
+    0,
+    -140.5
+   ],
+   "arena36": true,
+   "grappleNodes": [
+    [
+     -4,
+     10,
+     -122.5
+    ],
+    [
+     -16,
+     10,
+     -128.5
+    ]
+   ],
+   "grapple": "TWO rings at 10 m: one in front of the gallery (pull up level with the spitters, whip one off), one over the west lane toward the exit",
+   "waves": [
+    [
+     "husk",
+     "husk",
+     "husk",
+     "husk",
+     "swarmer",
+     "swarmer"
+    ],
+    [
+     "spitter",
+     "spitter",
+     "husk",
+     "husk",
+     "husk"
+    ],
+    [
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "spitter",
+     "spitter"
+    ]
+   ],
+   "lessons": [
+    {
+     "promptPad": "{grapple} AT AN ENEMY: WHIP.",
+     "kind": "husksDead",
+     "n": 4,
+     "prompt": "{grapple} AT AN ENEMY: WHIP."
+    }
+   ],
+   "lessons31": [
+    {
+     "promptPad": "{grapple} AT AN ENEMY: WHIP.",
+     "kind": "husksDead",
+     "n": 4,
+     "prompt": "{grapple} AT AN ENEMY: WHIP."
+    }
+   ],
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       0,
+       -108.5
+      ],
+      [
+       -6,
+       0,
+       -116.5
+      ],
+      [
+       -17,
+       0,
+       -126.5
+      ],
+      [
+       -17,
+       0,
+       -140.5
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       5,
+       0,
+       -114.5
+      ],
+      [
+       5,
+       4,
+       -129.5
+      ],
+      [
+       -1,
+       4,
+       -133.5
+      ]
+     ]
+    }
+   ],
+   "frames36": {
+    "mid": [
+     0,
+     0,
+     -110.5,
+     2.603,
+     0.109
+    ],
+    "exit": [
+     -16,
+     0,
+     -130.5,
+     4.764,
+     -0.05
+    ]
+   },
+   "nodes": [
+    [
+     -8,
+     0,
+     -118.5
+    ],
+    [
+     -6,
+     0,
+     -122.5
+    ],
+    [
+     -14,
+     0,
+     -125
+    ],
+    [
+     -18,
+     0,
+     -126.5
+    ],
+    [
+     -22,
+     0,
+     -132.5
+    ],
+    [
+     -24,
+     0,
+     -136.5
+    ],
+    [
+     -14,
+     0,
+     -136.5
+    ]
+   ],
+   "highNodes": [
+    [
+     -6,
+     4,
+     -132.5
+    ],
+    [
+     0,
+     4,
+     -133.5
+    ],
+    [
+     5,
+     4,
+     -132.5
+    ]
+   ]
+  },
+  {
+   "id": "o1",
+   "name": "4.8 THREAD LINE",
+   "kind": "link",
+   "rect": [
+    -29,
+    -196.5,
+    -5,
+    -146.5
+   ],
+   "height": 20,
+   "roof": true,
+   "par": 20,
+   "job36": "rehearse",
+   "verb36": "grapple pull + tower ride + pull",
+   "spawn": {
+    "at": [
+     -17,
+     0,
+     -148.5
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    -17,
+    0,
+    -194.5
+   ],
+   "loomRoom37": true,
+   "respawnY": -5,
+   "respawnY_why": "a fall into the void is back at the room's start (Campaign24's respawnY, the share of health design.n29.roomRules.fallCostFraction): rehearsal, not punishment",
+   "grappleNodes": [
+    [
+     -17,
+     9,
+     -161.5
+    ],
+    [
+     -18,
+     9,
+     -193.5
+    ]
+   ],
+   "grapple": "two threads: one over the void before the tower (pull 1), one over the far ledge (pull 2, from the tower's ride or its top)",
+   "lessons": [
+    {
+     "promptPad": "{grapple} PULL. RIDE. PULL.",
+     "kind": "reached",
+     "prompt": "{grapple} PULL. RIDE. PULL.",
+     "rect": [
+      -29,
+      -196.5,
+      -5,
+      -190.5
+     ],
+     "minY": -0.2
+    }
+   ],
+   "lessons31": [
+    {
+     "promptPad": "{grapple} PULL. RIDE. PULL.",
+     "kind": "reached",
+     "prompt": "{grapple} PULL. RIDE. PULL.",
+     "rect": [
+      -29,
+      -196.5,
+      -5,
+      -190.5
+     ],
+     "minY": -0.2
+    }
+   ],
+   "frames36": {
+    "mid": [
+     -17,
+     0,
+     -149.5,
+     0,
+     0.4
+    ],
+    "exit": [
+     -12,
+     6,
+     -182.5,
+     28.61,
+     0.111
+    ]
+   }
+  },
+  {
+   "id": "o2",
+   "name": "4.9 SWING ANCHOR",
+   "kind": "link",
+   "rect": [
+    -31,
+    -246.5,
+    -3,
+    -200.5
+   ],
+   "height": 20,
+   "roof": true,
+   "par": 20,
+   "job36": "rehearse",
+   "verb36": "pull to a moving anchor + nail a knee and pull away (the tear)",
+   "spawn": {
+    "at": [
+     -17,
+     0,
+     -202.5
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    -17,
+    0,
+    -244.5
+   ],
+   "loomRoom37": true,
+   "respawnY": -5,
+   "respawnY_why": "a fall into the void is back at the room's start (Campaign24's respawnY, the share of health design.n29.roomRules.fallCostFraction): rehearsal, not punishment",
+   "grappleNodes": [
+    [
+     -17,
+     11,
+     -217.5
+    ],
+    [
+     -17,
+     8,
+     -227.5
+    ],
+    [
+     -19,
+     9,
+     -242.5
+    ]
+   ],
+   "grapple": "the SWING ANCHOR (node 1: Game/SurvivalSim.Loom37.cs moves it east-west), a thread over the post (node 2), the far thread over the exit ledge (node 3)",
+   "loomSwing37": {
+    "node": 0,
+    "rest": [
+     -17,
+     11,
+     -217.5
+    ],
+    "ampX": 7,
+    "periodS": 3.2,
+    "_why": "the anchor's swing: +- ampX m east-west about its rest, one period in periodS (design.n37.loom37.swingAmpM / swingPeriodS win when present)"
+   },
+   "kneeTarget37": {
+    "at": [
+     -13,
+     7,
+     -228.5
+    ],
+    "why": "the practice knee: nail it from the post, then pull away to the far thread (node 3): the nails tear it (a cyan burst)"
+   },
+   "lessons": [
+    {
+     "promptPad": "NAIL THE KNEE. {grapple} PULL AWAY.",
+     "kind": "reached",
+     "prompt": "NAIL THE KNEE. {grapple} PULL AWAY.",
+     "rect": [
+      -31,
+      -246.5,
+      -3,
+      -238.5
+     ],
+     "minY": -0.2
+    }
+   ],
+   "lessons31": [
+    {
+     "promptPad": "NAIL THE KNEE. {grapple} PULL AWAY.",
+     "kind": "reached",
+     "prompt": "NAIL THE KNEE. {grapple} PULL AWAY.",
+     "rect": [
+      -31,
+      -246.5,
+      -3,
+      -238.5
+     ],
+     "minY": -0.2
+    }
+   ],
+   "frames36": {
+    "mid": [
+     -17,
+     0,
+     -203.5,
+     0,
+     0.4
+    ],
+    "exit": [
+     -17,
+     4,
+     -229.5,
+     -104.036,
+     0.327
+    ]
+   }
+  },
+  {
+   "id": "o3",
+   "name": "4.10 THE CANYON",
+   "kind": "boss",
+   "rect": [
+    -39,
+    -390.5,
+    5,
+    -250.5
+   ],
+   "height": 30,
+   "roof": false,
+   "par": 60,
+   "job36": "boss",
+   "verb36": "grapple crossing + nail and tear (the exam)",
+   "spawn": {
+    "at": [
+     -17,
+     0,
+     -252.5
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    -17,
+    0,
+    -388.5
+   ],
+   "loomRoom37": true,
+   "boss": "loom37",
+   "respawnY": -12,
+   "respawnY_why": "the campaign's fallback only: with design.n37.loom37 on, Game/SurvivalSim.Loom37.cs catches a fall first (feet under design.n37.loom37.fallY) and puts the player on the last anchor ledge for -20 HP",
+   "grappleNodes": [
+    [
+     -23,
+     10,
+     -268.5
+    ],
+    [
+     -11,
+     10,
+     -268.5
+    ],
+    [
+     -28.5,
+     13,
+     -284.5
+    ],
+    [
+     -5.5,
+     13,
+     -284.5
+    ],
+    [
+     -21,
+     15,
+     -305.5
+    ],
+    [
+     -13,
+     15,
+     -305.5
+    ],
+    [
+     -28.5,
+     13,
+     -320.5
+    ],
+    [
+     -5.5,
+     13,
+     -320.5
+    ],
+    [
+     -21,
+     15,
+     -341.5
+    ],
+    [
+     -13,
+     15,
+     -341.5
+    ],
+    [
+     -28.5,
+     13,
+     -356.5
+    ],
+    [
+     -5.5,
+     13,
+     -356.5
+    ],
+    [
+     -17,
+     8,
+     -384.5
+    ]
+   ],
+   "grapple": "THREAD ANCHORS (BOSSES.md L4): one pair before each tower pair and one pair over each tower top (the anchor ledges), one over the end ledge; THE LOOM's six knees join them as moving nodes for the fight (Game/SurvivalSim.Loom37.cs) and it cuts the ones behind it",
+   "loom37": {
+    "_why": "THE CANYON's data for Game/SurvivalSim.Loom37.cs (builder O): anchors = the room's grappleNodes in order (id, pair, the ledge under it); ledges = the anchor ledges (a fall comes back to the last one stood on); stations = where THE LOOM hangs for each leg (leg 3 = the nest); webWalls = the sheet each leg can weave between a tower pair (a layer swap); all world metres",
+    "anchors": [
+     {
+      "id": "a0w",
+      "node": 0,
+      "at": [
+       -23,
+       10,
+       -268.5
+      ],
+      "pair": 1,
+      "ledge": null
+     },
+     {
+      "id": "a0e",
+      "node": 1,
+      "at": [
+       -11,
+       10,
+       -268.5
+      ],
+      "pair": 1,
+      "ledge": null
+     },
+     {
+      "id": "t1w",
+      "node": 2,
+      "at": [
+       -28.5,
+       13,
+       -284.5
+      ],
+      "pair": 1,
+      "ledge": "t1w"
+     },
+     {
+      "id": "t1e",
+      "node": 3,
+      "at": [
+       -5.5,
+       13,
+       -284.5
+      ],
+      "pair": 1,
+      "ledge": "t1e"
+     },
+     {
+      "id": "m1w",
+      "node": 4,
+      "at": [
+       -21,
+       15,
+       -305.5
+      ],
+      "pair": 2,
+      "ledge": null
+     },
+     {
+      "id": "m1e",
+      "node": 5,
+      "at": [
+       -13,
+       15,
+       -305.5
+      ],
+      "pair": 2,
+      "ledge": null
+     },
+     {
+      "id": "t2w",
+      "node": 6,
+      "at": [
+       -28.5,
+       13,
+       -320.5
+      ],
+      "pair": 2,
+      "ledge": "t2w"
+     },
+     {
+      "id": "t2e",
+      "node": 7,
+      "at": [
+       -5.5,
+       13,
+       -320.5
+      ],
+      "pair": 2,
+      "ledge": "t2e"
+     },
+     {
+      "id": "m2w",
+      "node": 8,
+      "at": [
+       -21,
+       15,
+       -341.5
+      ],
+      "pair": 3,
+      "ledge": null
+     },
+     {
+      "id": "m2e",
+      "node": 9,
+      "at": [
+       -13,
+       15,
+       -341.5
+      ],
+      "pair": 3,
+      "ledge": null
+     },
+     {
+      "id": "t3w",
+      "node": 10,
+      "at": [
+       -28.5,
+       13,
+       -356.5
+      ],
+      "pair": 3,
+      "ledge": "t3w"
+     },
+     {
+      "id": "t3e",
+      "node": 11,
+      "at": [
+       -5.5,
+       13,
+       -356.5
+      ],
+      "pair": 3,
+      "ledge": "t3e"
+     },
+     {
+      "id": "end",
+      "node": 12,
+      "at": [
+       -17,
+       8,
+       -384.5
+      ],
+      "pair": 4,
+      "ledge": "end"
+     }
+    ],
+    "ledges": [
+     {
+      "id": "start",
+      "at": [
+       -17,
+       0,
+       -254.5
+      ],
+      "rect": [
+       -39,
+       -258.5,
+       5,
+       -250.5
+      ],
+      "y": 0,
+      "pair": 0
+     },
+     {
+      "id": "t1w",
+      "at": [
+       -28.5,
+       8,
+       -287.5
+      ],
+      "rect": [
+       -31,
+       -294.5,
+       -26,
+       -280.5
+      ],
+      "y": 8,
+      "pair": 1
+     },
+     {
+      "id": "t1e",
+      "at": [
+       -5.5,
+       8,
+       -287.5
+      ],
+      "rect": [
+       -8,
+       -294.5,
+       -3,
+       -280.5
+      ],
+      "y": 8,
+      "pair": 1
+     },
+     {
+      "id": "t2w",
+      "at": [
+       -28.5,
+       8,
+       -323.5
+      ],
+      "rect": [
+       -31,
+       -330.5,
+       -26,
+       -316.5
+      ],
+      "y": 8,
+      "pair": 2
+     },
+     {
+      "id": "t2e",
+      "at": [
+       -5.5,
+       8,
+       -323.5
+      ],
+      "rect": [
+       -8,
+       -330.5,
+       -3,
+       -316.5
+      ],
+      "y": 8,
+      "pair": 2
+     },
+     {
+      "id": "t3w",
+      "at": [
+       -28.5,
+       8,
+       -359.5
+      ],
+      "rect": [
+       -31,
+       -366.5,
+       -26,
+       -352.5
+      ],
+      "y": 8,
+      "pair": 3
+     },
+     {
+      "id": "t3e",
+      "at": [
+       -5.5,
+       8,
+       -359.5
+      ],
+      "rect": [
+       -8,
+       -366.5,
+       -3,
+       -352.5
+      ],
+      "y": 8,
+      "pair": 3
+     },
+     {
+      "id": "end",
+      "at": [
+       -17,
+       0,
+       -385.5
+      ],
+      "rect": [
+       -39,
+       -390.5,
+       5,
+       -380.5
+      ],
+      "y": 0,
+      "pair": 4
+     }
+    ],
+    "stations": [
+     [
+      -17,
+      20,
+      -302.5
+     ],
+     [
+      -17,
+      20,
+      -338.5
+     ],
+     [
+      -17,
+      18,
+      -359.5
+     ]
+    ],
+    "webWalls": [
+     {
+      "min": [
+       -26,
+       -24,
+       -287.8
+      ],
+      "max": [
+       -8,
+       16,
+       -287.2
+      ]
+     },
+     {
+      "min": [
+       -26,
+       -24,
+       -323.8
+      ],
+      "max": [
+       -8,
+       16,
+       -323.2
+      ]
+     },
+     {
+      "min": [
+       -26,
+       -24,
+       -359.8
+      ],
+      "max": [
+       -8,
+       16,
+       -359.2
+      ]
+     }
+    ],
+    "towers": [
+     {
+      "pair": 1,
+      "rectW": [
+       -31,
+       -294.5,
+       -26,
+       -280.5
+      ],
+      "rectE": [
+       -8,
+       -294.5,
+       -3,
+       -280.5
+      ],
+      "top": 8
+     },
+     {
+      "pair": 2,
+      "rectW": [
+       -31,
+       -330.5,
+       -26,
+       -316.5
+      ],
+      "rectE": [
+       -8,
+       -330.5,
+       -3,
+       -316.5
+      ],
+      "top": 8
+     },
+     {
+      "pair": 3,
+      "rectW": [
+       -31,
+       -366.5,
+       -26,
+       -352.5
+      ],
+      "rectE": [
+       -8,
+       -366.5,
+       -3,
+       -352.5
+      ],
+      "top": 8
+     }
+    ]
+   },
+   "frames36": {
+    "mid": [
+     -17,
+     0,
+     -254.5,
+     0,
+     0.218
+    ],
+    "exit": [
+     -28.5,
+     8,
+     -322.5,
+     -17.266,
+     0.164
+    ]
+   }
+  }
+ ],
+ "doors": [
+  {
+   "id": "d1",
+   "between": [
+    "p1",
+    "p2"
+   ],
+   "rect": [
+    -2,
+    87.5,
+    2,
+    91.5
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  },
+  {
+   "id": "d2",
+   "between": [
+    "p2",
+    "p3"
+   ],
+   "rect": [
+    -2,
+    33.5,
+    2,
+    37.5
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  },
+  {
+   "id": "d3",
+   "between": [
+    "p3",
+    "p4"
+   ],
+   "rect": [
+    -2,
+    -10.5,
+    2,
+    -6.5
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  },
+  {
+   "id": "d4",
+   "between": [
+    "p4",
+    "p5"
+   ],
+   "rect": [
+    -2,
+    -106.5,
+    2,
+    -102.5
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  },
+  {
+   "id": "d5",
+   "between": [
+    "p5",
+    "o1"
+   ],
+   "rect": [
+    -19,
+    -146.5,
+    -15,
+    -142.5
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  },
+  {
+   "id": "d6",
+   "between": [
+    "o1",
+    "o2"
+   ],
+   "rect": [
+    -19,
+    -200.5,
+    -15,
+    -196.5
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  },
+  {
+   "id": "d7",
+   "between": [
+    "o2",
+    "o3"
+   ],
+   "rect": [
+    -19,
+    -250.5,
+    -15,
+    -246.5
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  }
+ ],
+ "boxes": [
+  {
+   "zone": "p1",
+   "kind": "deck",
+   "min": [
+    -16,
+    0,
+    91.5
+   ],
+   "max": [
+    -6,
+    4,
+    107.5
+   ],
+   "job": "line",
+   "why": "the WEST TERRACE (4 m): the second wave's spitters stand on it; the ring over its front pulls you up onto it",
+   "note": "the WEST TERRACE (4 m): the second wave's spitters stand on it; the ring over its front pulls you up onto it"
+  },
+  {
+   "zone": "p1",
+   "kind": "hull",
+   "min": [
+    4,
+    0,
+    113.5
+   ],
+   "max": [
+    6,
+    3,
+    115.5
+   ],
+   "job": "cover",
+   "why": "a 2 x 2 x 3 m block on the husks' line: their rush bends round it; a stream from behind it",
+   "note": "a 2 x 2 x 3 m block on the husks' line: their rush bends round it; a stream from behind it"
+  },
+  {
+   "zone": "p1",
+   "kind": "hull",
+   "min": [
+    8,
+    0,
+    103.5
+   ],
+   "max": [
+    10,
+    3,
+    105.5
+   ],
+   "job": "cover",
+   "why": "a second block on the swarmers' side: cover from the terrace's spitters on the way to the exit",
+   "note": "a second block on the swarmers' side: cover from the terrace's spitters on the way to the exit"
+  },
+  {
+   "zone": "p2",
+   "kind": "deck",
+   "min": [
+    -6,
+    -14,
+    41.5
+   ],
+   "max": [
+    6,
+    10,
+    49.5
+   ],
+   "job": "line",
+   "why": "gate A's LANDING (12 m wide, 10 m above the take-off, 30 m of void before it; its faces noride): only the grapple's pull reaches it (the gate)",
+   "note": "gate A's LANDING (12 m wide, 10 m above the take-off, 30 m of void before it; its faces noride): only the grapple's pull reaches it (the gate)",
+   "noride": true,
+   "gate": {
+    "verb": "grapple",
+    "from": [
+     0,
+     0,
+     80
+    ],
+    "to": [
+     0,
+     10,
+     47.5
+    ],
+    "id": "p2-gateA",
+    "runUp": 6,
+    "why": "30 m of void and 10 m up: one pull (the ring over the landing, or its front face), under 0.9 x the 40 m range; the room is LIMIT pistolOnly (no THUNDERCLAP boost, no PULSE blast), the best apex left (3.41 m) is under the rise, no ride wall in reach (builder E's envelopes)"
+   }
+  },
+  {
+   "zone": "p2",
+   "kind": "hull",
+   "min": [
+    -18,
+    -14,
+    37.5
+   ],
+   "max": [
+    -17.8,
+    22,
+    87.5
+   ],
+   "job": "line",
+   "why": "the west wall's NORIDE liner over the void (dull, ridged, no cyan): a ride along the room's wall would skip every gate (D-6); only the grapple crosses",
+   "note": "the west wall's NORIDE liner over the void (dull, ridged, no cyan): a ride along the room's wall would skip every gate (D-6); only the grapple crosses",
+   "noride": true
+  },
+  {
+   "zone": "p2",
+   "kind": "hull",
+   "min": [
+    17.8,
+    -14,
+    37.5
+   ],
+   "max": [
+    18,
+    22,
+    87.5
+   ],
+   "job": "line",
+   "why": "the east wall's NORIDE liner over the void (dull, ridged, no cyan): a ride along the room's wall would skip every gate (D-6); only the grapple crosses",
+   "note": "the east wall's NORIDE liner over the void (dull, ridged, no cyan): a ride along the room's wall would skip every gate (D-6); only the grapple crosses",
+   "noride": true
+  },
+  {
+   "zone": "p3",
+   "kind": "deck",
+   "min": [
+    -20,
+    0,
+    3.5
+   ],
+   "max": [
+    -12,
+    5,
+    19.5
+   ],
+   "job": "line",
+   "why": "the WEST BALCONY (5 m): a spitter's stand; a ring pull lands on it",
+   "note": "the WEST BALCONY (5 m): a spitter's stand; a ring pull lands on it"
+  },
+  {
+   "zone": "p3",
+   "kind": "deck",
+   "min": [
+    12,
+    0,
+    3.5
+   ],
+   "max": [
+    20,
+    5,
+    19.5
+   ],
+   "job": "line",
+   "why": "the EAST BALCONY (5 m): a spitter's stand; a ring pull lands on it",
+   "note": "the EAST BALCONY (5 m): a spitter's stand; a ring pull lands on it"
+  },
+  {
+   "zone": "p3",
+   "kind": "hull",
+   "min": [
+    -2,
+    0,
+    11.5
+   ],
+   "max": [
+    2,
+    1.2,
+    15.5
+   ],
+   "job": "cover",
+   "why": "a 1.2 m block in the middle: the husks' rush splits round it; a jump onto it, a stream over it",
+   "note": "a 1.2 m block in the middle: the husks' rush splits round it; a jump onto it, a stream over it"
+  },
+  {
+   "zone": "p4",
+   "kind": "deck",
+   "min": [
+    -6,
+    -14,
+    -60.5
+   ],
+   "max": [
+    6,
+    10,
+    -48.5
+   ],
+   "job": "line",
+   "why": "gate A's LANDING (12 m wide, 10 m above the take-off, 30 m of void before it; its faces noride): only the grapple's pull reaches it (the gate)",
+   "note": "gate A's LANDING (12 m wide, 10 m above the take-off, 30 m of void before it; its faces noride): only the grapple's pull reaches it (the gate)",
+   "noride": true,
+   "gate": {
+    "verb": "grapple",
+    "from": [
+     0,
+     0,
+     -18
+    ],
+    "to": [
+     0,
+     10,
+     -50.5
+    ],
+    "id": "p4-gateA",
+    "runUp": 6,
+    "why": "30 m of void and 10 m up: one pull (the ring over the landing, or its front face), under 0.9 x the 40 m range; the room is LIMIT pistolOnly (no THUNDERCLAP boost, no PULSE blast), the best apex left (3.41 m) is under the rise, no ride wall in reach (builder E's envelopes)"
+   }
+  },
+  {
+   "zone": "p4",
+   "kind": "deck",
+   "min": [
+    -6,
+    -14,
+    -98.5
+   ],
+   "max": [
+    6,
+    20,
+    -90.5
+   ],
+   "job": "line",
+   "why": "gate B's LANDING (12 m wide, 10 m above the take-off, 30 m of void before it; its faces noride): only the grapple's pull reaches it (the gate)",
+   "note": "gate B's LANDING (12 m wide, 10 m above the take-off, 30 m of void before it; its faces noride): only the grapple's pull reaches it (the gate)",
+   "noride": true,
+   "gate": {
+    "verb": "grapple",
+    "from": [
+     0,
+     10,
+     -60
+    ],
+    "to": [
+     0,
+     20,
+     -92.5
+    ],
+    "id": "p4-gateB",
+    "runUp": 6,
+    "why": "30 m of void and 10 m up: one pull (the ring over the landing, or its front face), under 0.9 x the 40 m range; the room is LIMIT pistolOnly (no THUNDERCLAP boost, no PULSE blast), the best apex left (3.41 m) is under the rise, no ride wall in reach (builder E's envelopes)"
+   }
+  },
+  {
+   "zone": "p4",
+   "kind": "hull",
+   "min": [
+    -20,
+    -14,
+    -102.5
+   ],
+   "max": [
+    -19.8,
+    32,
+    -10.5
+   ],
+   "job": "line",
+   "why": "the west wall's NORIDE liner over the void (dull, ridged, no cyan): a ride along the room's wall would skip every gate (D-6); only the grapple crosses",
+   "note": "the west wall's NORIDE liner over the void (dull, ridged, no cyan): a ride along the room's wall would skip every gate (D-6); only the grapple crosses",
+   "noride": true
+  },
+  {
+   "zone": "p4",
+   "kind": "hull",
+   "min": [
+    19.8,
+    -14,
+    -102.5
+   ],
+   "max": [
+    20,
+    32,
+    -10.5
+   ],
+   "job": "line",
+   "why": "the east wall's NORIDE liner over the void (dull, ridged, no cyan): a ride along the room's wall would skip every gate (D-6); only the grapple crosses",
+   "note": "the east wall's NORIDE liner over the void (dull, ridged, no cyan): a ride along the room's wall would skip every gate (D-6); only the grapple crosses",
+   "noride": true
+  },
+  {
+   "zone": "p5",
+   "kind": "deck",
+   "min": [
+    -10,
+    0,
+    -136.5
+   ],
+   "max": [
+    8,
+    4,
+    -128.5
+   ],
+   "job": "line",
+   "why": "the EAST GALLERY (4 m): the spitters' stand over the line to the exit; a ring in front of it pulls you level with them",
+   "note": "the EAST GALLERY (4 m): the spitters' stand over the line to the exit; a ring in front of it pulls you level with them"
+  },
+  {
+   "zone": "p5",
+   "kind": "hull",
+   "min": [
+    -20,
+    0,
+    -122.5
+   ],
+   "max": [
+    -12,
+    2,
+    -120.5
+   ],
+   "job": "cover",
+   "why": "a 2 m wall across the west lane: the husks' line splits round it, the spitters' globs break on it",
+   "note": "a 2 m wall across the west lane: the husks' line splits round it, the spitters' globs break on it"
+  },
+  {
+   "zone": "o1",
+   "kind": "wall",
+   "min": [
+    -14,
+    -14,
+    -183.5
+   ],
+   "max": [
+    -10,
+    6,
+    -165.5
+   ],
+   "job": "line",
+   "why": "TOWER: the ride wall between two threads (its west face is ridden north, 18 m = ~1.7 s of ride); its top (y 6) is a ledge to land on",
+   "note": "TOWER: the ride wall between two threads (its west face is ridden north, 18 m = ~1.7 s of ride); its top (y 6) is a ledge to land on",
+   "ride": true
+  },
+  {
+   "zone": "o2",
+   "kind": "deck",
+   "min": [
+    -20,
+    -14,
+    -231.5
+   ],
+   "max": [
+    -14,
+    4,
+    -224.5
+   ],
+   "job": "line",
+   "why": "THE POST: a 6 x 7 m stone top at y 4 to land on after the swing; the practice knee hangs off its east side",
+   "note": "THE POST: a 6 x 7 m stone top at y 4 to land on after the swing; the practice knee hangs off its east side"
+  },
+  {
+   "zone": "o3",
+   "kind": "wall",
+   "min": [
+    -31,
+    -24,
+    -294.5
+   ],
+   "max": [
+    -26,
+    8,
+    -280.5
+   ],
+   "job": "line",
+   "why": "TOWER 1W: a stone tower out of the void (5 x 14 m); its faces are ride walls (north-south, ~1.3 s a face), its top (y 8) an ANCHOR LEDGE (a fall comes back here)",
+   "note": "TOWER 1W: a stone tower out of the void (5 x 14 m); its faces are ride walls (north-south, ~1.3 s a face), its top (y 8) an ANCHOR LEDGE (a fall comes back here)",
+   "ride": true
+  },
+  {
+   "zone": "o3",
+   "kind": "wall",
+   "min": [
+    -8,
+    -24,
+    -294.5
+   ],
+   "max": [
+    -3,
+    8,
+    -280.5
+   ],
+   "job": "line",
+   "why": "TOWER 1E: a stone tower out of the void (5 x 14 m); its faces are ride walls (north-south, ~1.3 s a face), its top (y 8) an ANCHOR LEDGE (a fall comes back here)",
+   "note": "TOWER 1E: a stone tower out of the void (5 x 14 m); its faces are ride walls (north-south, ~1.3 s a face), its top (y 8) an ANCHOR LEDGE (a fall comes back here)",
+   "ride": true
+  },
+  {
+   "zone": "o3",
+   "kind": "wall",
+   "min": [
+    -31,
+    -24,
+    -330.5
+   ],
+   "max": [
+    -26,
+    8,
+    -316.5
+   ],
+   "job": "line",
+   "why": "TOWER 2W: a stone tower out of the void (5 x 14 m); its faces are ride walls (north-south, ~1.3 s a face), its top (y 8) an ANCHOR LEDGE (a fall comes back here)",
+   "note": "TOWER 2W: a stone tower out of the void (5 x 14 m); its faces are ride walls (north-south, ~1.3 s a face), its top (y 8) an ANCHOR LEDGE (a fall comes back here)",
+   "ride": true
+  },
+  {
+   "zone": "o3",
+   "kind": "wall",
+   "min": [
+    -8,
+    -24,
+    -330.5
+   ],
+   "max": [
+    -3,
+    8,
+    -316.5
+   ],
+   "job": "line",
+   "why": "TOWER 2E: a stone tower out of the void (5 x 14 m); its faces are ride walls (north-south, ~1.3 s a face), its top (y 8) an ANCHOR LEDGE (a fall comes back here)",
+   "note": "TOWER 2E: a stone tower out of the void (5 x 14 m); its faces are ride walls (north-south, ~1.3 s a face), its top (y 8) an ANCHOR LEDGE (a fall comes back here)",
+   "ride": true
+  },
+  {
+   "zone": "o3",
+   "kind": "wall",
+   "min": [
+    -31,
+    -24,
+    -366.5
+   ],
+   "max": [
+    -26,
+    8,
+    -352.5
+   ],
+   "job": "line",
+   "why": "TOWER 3W: a stone tower out of the void (5 x 14 m); its faces are ride walls (north-south, ~1.3 s a face), its top (y 8) an ANCHOR LEDGE (a fall comes back here)",
+   "note": "TOWER 3W: a stone tower out of the void (5 x 14 m); its faces are ride walls (north-south, ~1.3 s a face), its top (y 8) an ANCHOR LEDGE (a fall comes back here)",
+   "ride": true
+  },
+  {
+   "zone": "o3",
+   "kind": "wall",
+   "min": [
+    -8,
+    -24,
+    -366.5
+   ],
+   "max": [
+    -3,
+    8,
+    -352.5
+   ],
+   "job": "line",
+   "why": "TOWER 3E: a stone tower out of the void (5 x 14 m); its faces are ride walls (north-south, ~1.3 s a face), its top (y 8) an ANCHOR LEDGE (a fall comes back here)",
+   "note": "TOWER 3E: a stone tower out of the void (5 x 14 m); its faces are ride walls (north-south, ~1.3 s a face), its top (y 8) an ANCHOR LEDGE (a fall comes back here)",
+   "ride": true
+  }
+ ],
+ "ramps": [
+  {
+   "zone": "p1",
+   "from": [
+    -11,
+    117.5
+   ],
+   "to": [
+    -11,
+    107.5
+   ],
+   "width": 3,
+   "rise": 4,
+   "job": "climb",
+   "why": "the terrace's ramp (4 m over 10 m): the walkers' way up and down, and the player's long way",
+   "note": "the terrace's ramp (4 m over 10 m): the walkers' way up and down, and the player's long way"
+  },
+  {
+   "zone": "p3",
+   "from": [
+    -16,
+    31.5
+   ],
+   "to": [
+    -16,
+    19.5
+   ],
+   "width": 3,
+   "rise": 5,
+   "job": "climb",
+   "why": "the west balcony's ramp (5 m over 12 m): the walkers' and the player's way up",
+   "note": "the west balcony's ramp (5 m over 12 m): the walkers' and the player's way up"
+  },
+  {
+   "zone": "p3",
+   "from": [
+    16,
+    31.5
+   ],
+   "to": [
+    16,
+    19.5
+   ],
+   "width": 3,
+   "rise": 5,
+   "job": "climb",
+   "why": "the east balcony's ramp (5 m over 12 m)",
+   "note": "the east balcony's ramp (5 m over 12 m)"
+  },
+  {
+   "zone": "p5",
+   "from": [
+    5,
+    -118.5
+   ],
+   "to": [
+    5,
+    -128.5
+   ],
+   "width": 3,
+   "rise": 4,
+   "job": "climb",
+   "why": "the gallery's ramp (4 m over 10 m): the walkers' and the player's way up",
+   "note": "the gallery's ramp (4 m over 10 m): the walkers' and the player's way up"
+  }
+ ],
+ "pads": [],
+ "grapple": [],
+ "pits": [
+  {
+   "zone": "p2",
+   "rect": [
+    -18,
+    79.5,
+    -4,
+    87.5
+   ],
+   "floorY": -14,
+   "job": "hazard",
+   "why": "the void beside the entry pier (west): the pier is the only floor at the door",
+   "note": "the void beside the entry pier (west): the pier is the only floor at the door"
+  },
+  {
+   "zone": "p2",
+   "rect": [
+    4,
+    79.5,
+    18,
+    87.5
+   ],
+   "floorY": -14,
+   "job": "hazard",
+   "why": "the void beside the entry pier (east)",
+   "note": "the void beside the entry pier (east)"
+  },
+  {
+   "zone": "p2",
+   "rect": [
+    -18,
+    49.5,
+    18,
+    79.5
+   ],
+   "floorY": -14,
+   "job": "hazard",
+   "why": "THE GAP: 30 m of void wall to wall, no floor (a fall is back at the door)",
+   "note": "THE GAP: 30 m of void wall to wall, no floor (a fall is back at the door)"
+  },
+  {
+   "zone": "p2",
+   "rect": [
+    -18,
+    37.5,
+    -6,
+    49.5
+   ],
+   "floorY": -14,
+   "job": "hazard",
+   "why": "the void beside the landing (west): the landing is a pier",
+   "note": "the void beside the landing (west): the landing is a pier"
+  },
+  {
+   "zone": "p2",
+   "rect": [
+    6,
+    37.5,
+    18,
+    49.5
+   ],
+   "floorY": -14,
+   "job": "hazard",
+   "why": "the void beside the landing (east)",
+   "note": "the void beside the landing (east)"
+  },
+  {
+   "zone": "p4",
+   "rect": [
+    -20,
+    -18.5,
+    -4,
+    -10.5
+   ],
+   "floorY": -14,
+   "job": "hazard",
+   "why": "the void beside the entry pier (west)",
+   "note": "the void beside the entry pier (west)"
+  },
+  {
+   "zone": "p4",
+   "rect": [
+    4,
+    -18.5,
+    20,
+    -10.5
+   ],
+   "floorY": -14,
+   "job": "hazard",
+   "why": "the void beside the entry pier (east)",
+   "note": "the void beside the entry pier (east)"
+  },
+  {
+   "zone": "p4",
+   "rect": [
+    -20,
+    -48.5,
+    20,
+    -18.5
+   ],
+   "floorY": -14,
+   "job": "hazard",
+   "why": "GAP A: 30 m of void wall to wall",
+   "note": "GAP A: 30 m of void wall to wall"
+  },
+  {
+   "zone": "p4",
+   "rect": [
+    -20,
+    -60.5,
+    -6,
+    -48.5
+   ],
+   "floorY": -14,
+   "job": "hazard",
+   "why": "the void beside pier B (west)",
+   "note": "the void beside pier B (west)"
+  },
+  {
+   "zone": "p4",
+   "rect": [
+    6,
+    -60.5,
+    20,
+    -48.5
+   ],
+   "floorY": -14,
+   "job": "hazard",
+   "why": "the void beside pier B (east)",
+   "note": "the void beside pier B (east)"
+  },
+  {
+   "zone": "p4",
+   "rect": [
+    -20,
+    -90.5,
+    20,
+    -60.5
+   ],
+   "floorY": -14,
+   "job": "hazard",
+   "why": "GAP B: 30 m of void wall to wall",
+   "note": "GAP B: 30 m of void wall to wall"
+  },
+  {
+   "zone": "p4",
+   "rect": [
+    -20,
+    -102.5,
+    -6,
+    -90.5
+   ],
+   "floorY": -14,
+   "job": "hazard",
+   "why": "the void beside pier C (west)",
+   "note": "the void beside pier C (west)"
+  },
+  {
+   "zone": "p4",
+   "rect": [
+    6,
+    -102.5,
+    20,
+    -90.5
+   ],
+   "floorY": -14,
+   "job": "hazard",
+   "why": "the void beside pier C (east)",
+   "note": "the void beside pier C (east)"
+  },
+  {
+   "zone": "o1",
+   "rect": [
+    -29,
+    -190.5,
+    -5,
+    -152.5
+   ],
+   "floorY": -14,
+   "job": "hazard",
+   "why": "the void the thread line crosses: no floor between the ledges (a fall lands 14 m down and is taken back to the start)",
+   "note": "the void the thread line crosses: no floor between the ledges (a fall lands 14 m down and is taken back to the start)"
+  },
+  {
+   "zone": "o2",
+   "rect": [
+    -31,
+    -238.5,
+    -3,
+    -206.5
+   ],
+   "floorY": -14,
+   "job": "hazard",
+   "why": "the void under the swinging anchor: no floor between the ledges and the post",
+   "note": "the void under the swinging anchor: no floor between the ledges and the post"
+  },
+  {
+   "zone": "o3",
+   "rect": [
+    -39,
+    -380.5,
+    5,
+    -258.5
+   ],
+   "floorY": -24,
+   "job": "hazard",
+   "why": "THE VOID: the canyon has no floor between its start ledge and its end ledge (BOSSES.md: the grapple is your footing)",
+   "note": "THE VOID: the canyon has no floor between its start ledge and its end ledge (BOSSES.md: the grapple is your footing)"
+  }
+ ],
+ "tunnels": [],
+ "lights": [
+  {
+   "id": "p1-L1",
+   "room": "p1",
+   "kind": "ceiling",
+   "at": [
+    0,
+    11.95,
+    122.5
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 9,
+   "intensity": 1
+  },
+  {
+   "id": "p1-L2",
+   "room": "p1",
+   "kind": "ceiling",
+   "at": [
+    0,
+    11.95,
+    109.5
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    4,
+    0.1
+   ],
+   "color": "white",
+   "range": 10,
+   "intensity": 1
+  },
+  {
+   "id": "p1-L3",
+   "room": "p1",
+   "kind": "ceiling",
+   "at": [
+    -11,
+    11.95,
+    97.5
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    4,
+    0.1
+   ],
+   "color": "amber",
+   "range": 9,
+   "intensity": 1
+  },
+  {
+   "id": "p1-L4",
+   "room": "p1",
+   "kind": "ceiling",
+   "at": [
+    10,
+    11.95,
+    97.5
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    4,
+    0.1
+   ],
+   "color": "white",
+   "range": 9,
+   "intensity": 1
+  },
+  {
+   "id": "p1-L5",
+   "room": "p1",
+   "kind": "pool",
+   "at": [
+    0,
+    0.025,
+    122.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2,
+    2,
+    0.05
+   ],
+   "color": "white",
+   "range": 5,
+   "intensity": 1.2
+  },
+  {
+   "id": "p1-L6",
+   "room": "p1",
+   "kind": "pool",
+   "at": [
+    -8,
+    4.025,
+    103.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.5,
+    2.5,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 6,
+   "intensity": 1.2
+  },
+  {
+   "id": "p1-L7",
+   "room": "p1",
+   "kind": "pool",
+   "at": [
+    0,
+    0.025,
+    93.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.5,
+    2.5,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.6
+  },
+  {
+   "id": "p2-L1",
+   "room": "p2",
+   "kind": "ceiling",
+   "at": [
+    0,
+    21.95,
+    83.5
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 8,
+   "intensity": 1
+  },
+  {
+   "id": "p2-L2",
+   "room": "p2",
+   "kind": "ceiling",
+   "at": [
+    0,
+    21.95,
+    45.5
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    4,
+    0.1
+   ],
+   "color": "white",
+   "range": 14,
+   "intensity": 1
+  },
+  {
+   "id": "p2-L3",
+   "room": "p2",
+   "kind": "pool",
+   "at": [
+    0,
+    0.025,
+    81.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2,
+    2,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 5,
+   "intensity": 1
+  },
+  {
+   "id": "p2-L4",
+   "room": "p2",
+   "kind": "pool",
+   "at": [
+    0,
+    10.025,
+    45.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 9,
+   "intensity": 1.8
+  },
+  {
+   "id": "p3-L1",
+   "room": "p3",
+   "kind": "ceiling",
+   "at": [
+    0,
+    13.95,
+    21.5
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 10,
+   "intensity": 1
+  },
+  {
+   "id": "p3-L2",
+   "room": "p3",
+   "kind": "ceiling",
+   "at": [
+    0,
+    13.95,
+    1.5
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 10,
+   "intensity": 1
+  },
+  {
+   "id": "p3-L3",
+   "room": "p3",
+   "kind": "ceiling",
+   "at": [
+    -16,
+    13.95,
+    11.5
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    6,
+    0.1
+   ],
+   "color": "white",
+   "range": 9,
+   "intensity": 1
+  },
+  {
+   "id": "p3-L4",
+   "room": "p3",
+   "kind": "ceiling",
+   "at": [
+    16,
+    13.95,
+    11.5
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    6,
+    0.1
+   ],
+   "color": "white",
+   "range": 9,
+   "intensity": 1
+  },
+  {
+   "id": "p3-L5",
+   "room": "p3",
+   "kind": "ceiling",
+   "at": [
+    0,
+    13.95,
+    13.5
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.1
+   ],
+   "color": "amber",
+   "range": 9,
+   "intensity": 1
+  },
+  {
+   "id": "p3-L6",
+   "room": "p3",
+   "kind": "pool",
+   "at": [
+    0,
+    0.025,
+    -4
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.5,
+    2.5,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.6
+  },
+  {
+   "id": "p4-L1",
+   "room": "p4",
+   "kind": "ceiling",
+   "at": [
+    0,
+    31.95,
+    -14.5
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 8,
+   "intensity": 1
+  },
+  {
+   "id": "p4-L2",
+   "room": "p4",
+   "kind": "ceiling",
+   "at": [
+    0,
+    31.95,
+    -54.5
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    4,
+    0.1
+   ],
+   "color": "white",
+   "range": 14,
+   "intensity": 1
+  },
+  {
+   "id": "p4-L3",
+   "room": "p4",
+   "kind": "ceiling",
+   "at": [
+    0,
+    31.95,
+    -94.5
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    4,
+    0.1
+   ],
+   "color": "white",
+   "range": 14,
+   "intensity": 1
+  },
+  {
+   "id": "p4-L4",
+   "room": "p4",
+   "kind": "pool",
+   "at": [
+    0,
+    0.025,
+    -16.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2,
+    2,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 5,
+   "intensity": 1
+  },
+  {
+   "id": "p4-L5",
+   "room": "p4",
+   "kind": "pool",
+   "at": [
+    0,
+    10.025,
+    -54.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 9,
+   "intensity": 1.6
+  },
+  {
+   "id": "p4-L6",
+   "room": "p4",
+   "kind": "pool",
+   "at": [
+    0,
+    20.025,
+    -94.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 9,
+   "intensity": 1.8
+  },
+  {
+   "id": "p5-L1",
+   "room": "p5",
+   "kind": "ceiling",
+   "at": [
+    -6,
+    13.95,
+    -114.5
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 9,
+   "intensity": 1
+  },
+  {
+   "id": "p5-L2",
+   "room": "p5",
+   "kind": "ceiling",
+   "at": [
+    -1,
+    13.95,
+    -132.5
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    6,
+    2,
+    0.1
+   ],
+   "color": "amber",
+   "range": 9,
+   "intensity": 1
+  },
+  {
+   "id": "p5-L3",
+   "room": "p5",
+   "kind": "ceiling",
+   "at": [
+    -18,
+    13.95,
+    -130.5
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 9,
+   "intensity": 1
+  },
+  {
+   "id": "p5-L4",
+   "room": "p5",
+   "kind": "pool",
+   "at": [
+    -17,
+    0.025,
+    -140.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.5,
+    2.5,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.6
+  },
+  {
+   "id": "o1-L1",
+   "room": "o1",
+   "kind": "pool",
+   "at": [
+    -17,
+    0.025,
+    -193.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.05
+   ],
+   "color": "amber",
+   "range": 6,
+   "intensity": 1.2
+  },
+  {
+   "id": "o2-L1",
+   "room": "o2",
+   "kind": "pool",
+   "at": [
+    -17,
+    0.025,
+    -242.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.05
+   ],
+   "color": "amber",
+   "range": 6,
+   "intensity": 1.2
+  },
+  {
+   "id": "o3-L1",
+   "room": "o3",
+   "kind": "pool",
+   "at": [
+    -28.5,
+    8.025,
+    -287.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.05
+   ],
+   "color": "amber",
+   "range": 7,
+   "intensity": 1.3
+  },
+  {
+   "id": "o3-L2",
+   "room": "o3",
+   "kind": "pool",
+   "at": [
+    -5.5,
+    8.025,
+    -287.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.05
+   ],
+   "color": "amber",
+   "range": 7,
+   "intensity": 1.3
+  },
+  {
+   "id": "o3-L3",
+   "room": "o3",
+   "kind": "pool",
+   "at": [
+    -28.5,
+    8.025,
+    -323.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.05
+   ],
+   "color": "amber",
+   "range": 7,
+   "intensity": 1.3
+  },
+  {
+   "id": "o3-L4",
+   "room": "o3",
+   "kind": "pool",
+   "at": [
+    -5.5,
+    8.025,
+    -323.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.05
+   ],
+   "color": "amber",
+   "range": 7,
+   "intensity": 1.3
+  },
+  {
+   "id": "o3-L5",
+   "room": "o3",
+   "kind": "pool",
+   "at": [
+    -28.5,
+    8.025,
+    -359.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.05
+   ],
+   "color": "amber",
+   "range": 7,
+   "intensity": 1.3
+  },
+  {
+   "id": "o3-L6",
+   "room": "o3",
+   "kind": "pool",
+   "at": [
+    -5.5,
+    8.025,
+    -359.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.05
+   ],
+   "color": "amber",
+   "range": 7,
+   "intensity": 1.3
+  },
+  {
+   "id": "o3-L7",
+   "room": "o3",
+   "kind": "pool",
+   "at": [
+    -17,
+    0.025,
+    -254.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    4,
+    4,
+    0.05
+   ],
+   "color": "amber",
+   "range": 8,
+   "intensity": 1.3
+  },
+  {
+   "id": "o3-L8",
+   "room": "o3",
+   "kind": "pool",
+   "at": [
+    -17,
+    0.025,
+    -385.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    4,
+    4,
+    0.05
+   ],
+   "color": "amber",
+   "range": 8,
+   "intensity": 1.3
+  }
+ ],
+ "props": [
+  {
+   "id": "p1-P1",
+   "room": "p1",
+   "kind": "weaponPickup",
+   "at": [
+    0,
+    1.1,
+    122.5
+   ],
+   "size": [
+    0.6,
+    0.6,
+    0.6
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "pickup": true,
+   "job": "reward",
+   "why": "the STITCHER on the axis 3 m from the door: you run over it (the room's award is the fallback)",
+   "weapon": "nailgun"
+  },
+  {
+   "id": "p5-P1",
+   "room": "p5",
+   "kind": "healthPickup",
+   "at": [
+    -1,
+    4.9,
+    -132.5
+   ],
+   "size": [
+    0.6,
+    0.6,
+    0.6
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "pickup": true,
+   "job": "reward",
+   "why": "health on the gallery's middle: the last before the rehearsals and THE LOOM"
+  }
+ ]
+}

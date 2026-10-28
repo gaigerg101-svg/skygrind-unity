@@ -1,0 +1,170 @@
+{
+ "_why": "NIGHT63's slate, seeded by the forge FORGE63 (2026-10-22 ~22:11-22:45, GG: 'i would lead towards bosses, effect colores everything doenst feel alligned, boss animations are too rigid to start'). Debt first (NIGHT62's P1 and P2 owed a fair judgement; P3 is a leftover after the red team: its off state is a history the same-run toggle cannot recreate), then the bosses (motion, tells, colours), then the colour language, then one movement measurement. Every doneWhen is written before any measurement and never loosened. A visible slice names its SPOT pose, and that pose's same-run pair must change at least 41,472 px (2 % of 1920 x 1080) for tonight's new visible slices (NIGHT63.md rule 8; P1 and P2 exempt). NIGHT63 copies this file to Logs/n63/slate.json in its bearings; only the lead edits that copy.",
+ "slices": [
+  {
+   "id": "D1",
+   "owner": "D",
+   "state": "todo",
+   "passes": false,
+   "verdict": null,
+   "spot": null,
+   "title": "Same-run SPOT pairs: one reel run captures the shot with the night's view row on, then off",
+   "why": "NIGHT62 P1 died on a pair from two runs that drift (an enemy 15.3 m vs 15.2 m away; a hint line differed and the spotter named it; L-129)",
+   "row": "n/a (tooling: a reel option; the view rows it toggles stay as they are)",
+   "red": "two runs of n62-p0's a157 on n57-kiln differ at kb3 (nearest enemy 15.3 vs 15.2 m) and in the hint line at the kb3 clear shot",
+   "doneWhen": [
+    "NightRows.ViewOn consults a live reel override that the reel sets; exitFrame61, bossMotion63, bossTell63, bossColours63 and colours63 re-read it every frame; bossRule61 is judged OFF as the same frame with its UI root hidden",
+    "a planted no-op row: 0 changed px between the two captures of one shot; a planted 10 x 10 px view change: exactly 100 changed px; one planted case per row it claims changes that row's frame",
+    "the off captures land in <side>-off/ with the same file names (n60-v-lamp.py, n62-gun-yellow.py --pair and n63-spot-pair.cjs run unchanged)",
+    "the reel holds the sim and every unscaled-time clock across the two captures and prints one 'toggle fired' line per shot",
+    "the sim never sees the toggle: the reel's sim lines and every fingerprint identical with the option on and off; gates GREEN"
+   ],
+   "visible": "n/a (tooling)",
+   "spotPose": "n/a"
+  },
+  {
+   "id": "P1",
+   "owner": "lead",
+   "state": "todo",
+   "passes": false,
+   "verdict": null,
+   "spot": null,
+   "title": "The exit frame (NIGHT61 S1) re-judged on a same-run pair",
+   "why": "GG 2026-10-13 doors 'not visible now and you just run through it and it's like dark'; NIGHT62's pair was dirty, not the row (Logs/n62/spot/P1.txt)",
+   "row": "design.n61.exitFrame61 (OFF; -skygrindNoExitFrame61)",
+   "red": "NIGHT62: the door's cyan frame brighter on by eye; 8 '[exit61] door lit: room' lines on, 0 off; own gain not measured",
+   "doneWhen": [
+    "the lamp's own gain on the door (n60-v-lamp.py's OWN GAIN line: door luma on / off) >= 1.5x in >= 4 of n57-kiln's 5 rooms",
+    "GUARD: the room's p95 luma outside the door's mask within 0.02 of off in 5 / 5 rooms",
+    "the on log has 8 '[exit61] door lit: room' lines, the off log 0",
+    "SPOT on the kb3 clear same-run pair names the door or the exit",
+    "verbs37 x5: 27 / 29 / 31 / 31 / 31, RED rows none, 0 NREs"
+   ],
+   "visible": "when a room clears, its exit door lights up cyan and you see where to go next",
+   "spotPose": "a157 n57-kiln kb3 clear shot"
+  },
+  {
+   "id": "P2",
+   "owner": "G",
+   "state": "todo",
+   "passes": false,
+   "verdict": null,
+   "spot": null,
+   "title": "The boss rule line rises with the name card, at or before 1.0 s (NIGHT61 S3, fixed)",
+   "why": "GG 2026-10-12 'you just teleport into these random rooms ... hard to understand what to do'; NIGHT62 P2: the line works but rises at 2.45 s",
+   "row": "design.n61.bossRule61 (OFF; -skygrindNoBossRule61)",
+   "red": "NIGHT62 boss61 on THE KILN WYRM: 'no line at 1.0 s (alpha 0.00)'; the line rose at 2.45 s and stood 4.77 s (Logs/feel/n62-p0/summary47.txt)",
+   "doneWhen": [
+    "each of the five campaign bosses shows one rule line at the fight start: <= 8 words, the bound button glyph when it names a verb, em >= 36 px at 1080p and >= 24 px at 720p, visible (alpha >= 0.5) at 1.0 s, on screen <= 5 s, once per fight start: the boss61 reel GREEN for each boss",
+    "the off reel shows no line",
+    "SPOT on the wyrm's 1.0 s same-run pair (OFF = the line's UI root hidden) names a line of text or the rule",
+    "verbs37 x5 unchanged"
+   ],
+   "visible": "when a boss fight starts, one short line tells you what the boss wants you to do",
+   "spotPose": "boss61 n57-kiln shot-N30-B61-wyrm-1000"
+  },
+  {
+   "id": "B1",
+   "owner": "V",
+   "state": "todo",
+   "passes": false,
+   "verdict": null,
+   "spot": null,
+   "title": "Bosses that move like they mean it: springs, wind-ups, flinches and idle life on all five bosses (view only)",
+   "why": "GG 2026-10-22 'boss animations are too rigid to start'; the boss views copy the sim rigidly (0-9 spring / anticipation / flinch uses per view file, 0 in Boss37Kit.View.cs)",
+   "row": "design.n63.bossMotion63 (new, OFF; -skygrindNoBossMotion63)",
+   "red": "measured first by the builder: each boss part's offset from its rigid pose = 0 in every frame (to confirm), no pose change before an attack",
+   "doneWhen": [
+    "first, BossAttackClock63 (read-only: each boss's attack id, phase and steps to the hit, from the sim) and a boss63 reel (boss61 extended: 20-30 s after the rise, fire at the weak point, print '[boss63] attack <id> windup <ms> hit <ms>', 'flinch' and 'stagger' lines on the fixed clock)",
+    "a boss reel prints, per boss, each part's rms offset from its rigid pose per second: on > 0 on every boss, off = 0",
+    "before every attack the boss shows a wind-up that starts >= 250 ms before the hit frame (the reel prints the lead per attack)",
+    "a damage event shows a flinch within 2 frames; a stagger shows a slump; idle shows breathing",
+    "GUARD: no part farther from its rigid pose than its config limit; the hit frames and every fingerprint unchanged (the sim untouched)",
+    "the same-run SPOT pair at a flinch or the stagger slump names the boss's pose or motion; >= 41,472 px (2 % of 1920 x 1080) change on it",
+    "verbs37 x5 unchanged"
+   ],
+   "visible": "a boss leans back before it strikes, recoils when you hit it and never stands frozen like a statue",
+   "spotPose": "a boss63 frame at a flinch or the stagger slump (never the cue frame B2 uses)"
+  },
+  {
+   "id": "B2",
+   "owner": "G",
+   "state": "todo",
+   "passes": false,
+   "verdict": null,
+   "spot": null,
+   "title": "Boss attacks read in time: the attacks whose cue lead is under 300 ms or whose cue is off the danger hue get fixed (view only)",
+   "why": "GG 2026-10-12 bosses 'hard to understand what to do'; 'an understanding of parry mechanics'",
+   "row": "design.n63.bossTell63 (new, OFF; -skygrindNoBossTell63)",
+   "red": "measured first on V's boss63 reel: each attack's visible cue-to-hit lead in ms and its cue hue (config's own tells run 0.55-1.5 s)",
+   "doneWhen": [
+    "the boss63 reel lists every attack of the five bosses with its cue lead and cue hue, before and after",
+    "every attack whose cue lead was under 300 ms, or whose cue was not in the danger hue, now shows a danger-hue cue >= 300 ms before its damage frame; attacks already fine are untouched",
+    "a parryable attack's parry tell is untouched, whether its row is on or off",
+    "GUARD: no damage frame moves; fingerprints unchanged",
+    "the same-run SPOT pair inside a fixed cue names it; >= 41,472 px change; with bossMotion63 off in that build",
+    "verbs37 x5 unchanged"
+   ],
+   "visible": "you see a boss's attack coming early enough to dodge or parry it",
+   "spotPose": "a boss63 frame inside a fixed cue"
+  },
+  {
+   "id": "B3",
+   "owner": "D",
+   "state": "todo",
+   "passes": false,
+   "verdict": null,
+   "spot": null,
+   "title": "Boss colours follow the role table",
+   "why": "GG 2026-10-22 'effect colores everything doenst feel alligned'; CLAUDE.md rule 8",
+   "row": "design.n63.bossColours63 (new, OFF; -skygrindNoBossColours63; reads C1's role table, so it starts after C1's table is picked)",
+   "red": "measured first: per boss frame, the share of the boss rect and its effects in each role band and the off-role pixels",
+   "doneWhen": [
+    "every boss's attack effects in the danger band, its weak points in one colour, no boss effect in cyan or magenta (the meter with planted cases)",
+    "the same-run SPOT pair names a colour change; >= 41,472 px change",
+    "verbs37 x5 unchanged"
+   ],
+   "visible": "a boss's attacks are red-orange and its weak point always the same colour, on every boss",
+   "spotPose": "a boss frame with its attack and weak point in view (the builder names it)"
+  },
+  {
+   "id": "C1",
+   "owner": "D",
+   "state": "todo",
+   "passes": false,
+   "verdict": null,
+   "spot": null,
+   "title": "One colour table: every effect colour read from the role table",
+   "why": "GG 2026-10-19 'The effects are inconsistent it all needs to be unified'; 2026-10-22 'everything doenst feel alligned'; gg-proxy #10",
+   "row": "design.n63.colours63 (new, OFF; -skygrindNoColours63)",
+   "red": "measured first: the audit tool's count of effect colours in Assets/Scripts/Game not read from config's role colours (file:line), and the frame meter's off-palette pixel share per level on n62-freeze's verbs37 frames",
+   "doneWhen": [
+    "the audit tool lists every literal effect colour with file:line and its role; the top offenders (incl. the lime floor stripes, the danger-red line on spire's exit, the yellow edge lines) read the role table behind the row",
+    "off-palette pixel share per level on verbs37 frames falls by >= 50 % on vs off in the same build (the meter with planted cases)",
+    "the same-run SPOT pair with the biggest change names a colour change; >= 41,472 px change on it",
+    "verbs37 x5 unchanged"
+   ],
+   "visible": "every glow, line and effect on screen belongs to one palette: cyan yours, red-orange danger",
+   "spotPose": "the verbs37 frame with the most off-palette pixels (the builder names it)"
+  },
+  {
+   "id": "M1",
+   "owner": "lead",
+   "state": "todo",
+   "passes": false,
+   "verdict": null,
+   "spot": null,
+   "title": "The camera's chop, measured",
+   "why": "GG 2026-10-20 'the movement needs to feel cleaner, more fluid, and less choppy'; gg-proxy #2 (7 asks)",
+   "row": "n/a (measurement)",
+   "red": "unknown: never measured in a Player",
+   "doneWhen": [
+    "from n62-freeze's verbs37 telemetry (fixed clock, no yaw in it): the camera's position, pitch and heading (from the x / z path), frame to frame against a smoothed path, a number per level and the worst 10 frames with their cause read from the telemetry, labelled 'fixed-clock camera path; real frame pacing not checked'",
+    "from one -skygrindBench 60 Player run (no FeelClock): the frame-time spread (p50, p95, p99, the longest frames), the pacing half",
+    "a cause or 'none found', and a proposal in DECIDE63 (no sim change tonight)"
+   ],
+   "visible": "n/a (measurement)",
+   "spotPose": "n/a"
+  }
+ ]
+}

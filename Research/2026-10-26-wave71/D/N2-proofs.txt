@@ -1,0 +1,16 @@
+proofs at 28ef8cbf9 11:38:07: PointsPopBigSize PointsPopY PointsPopBigY PointsPopScaleRate PointsPopFadeRate GlacierSpikeWidth
+== PointsPopBigSize: (a1) worktree hits 1
+   Assets/Scripts/Game/UnityTuning.FeelPolish.cs:61:        public const float PointsPopBigSize = 30;
+== PointsPopY: (a1) worktree hits 1
+   Assets/Scripts/Game/UnityTuning.FeelPolish.cs:62:        public const double PointsPopY = 34, PointsPopBigY = 70;
+== PointsPopBigY: (a1) worktree hits 1
+   Assets/Scripts/Game/UnityTuning.FeelPolish.cs:62:        public const double PointsPopY = 34, PointsPopBigY = 70;
+== PointsPopScaleRate: (a1) worktree hits 1
+   Assets/Scripts/Game/UnityTuning.FeelPolish.cs:63:        public const double PointsPopScaleRate = 6, PointsPopFadeRate = 3;
+== PointsPopFadeRate: (a1) worktree hits 1
+   Assets/Scripts/Game/UnityTuning.FeelPolish.cs:63:        public const double PointsPopScaleRate = 6, PointsPopFadeRate = 3;
+== GlacierSpikeWidth: (a1) worktree hits 1
+   Assets/Scripts/Game/UnityTuning.Glacier26.cs:12:        public const float GlacierSpikeWidth = 0.5f;
+(a2) main-tree untracked hits (7 files): none
+(a3) main-tree Logs/n71 + Research/2026-10-26* script hits: none
+(a4) UnityEvent m_MethodName hits: 0

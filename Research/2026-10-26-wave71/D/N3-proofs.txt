@@ -1,0 +1,13 @@
+proofs at 28ef8cbf9 11:39:30: Hud17SwapNameH Hud17CardSwapFrom Crown37BeamGain Crown37ShardSize
+== Hud17SwapNameH: (a1) worktree hits 1
+   Assets/Scripts/Game/UnityTuning.Hud17.cs:130:        public const float Hud17SwapNameH = 40; // round 5: its INK plate (BODY-BOLD S24 on it), px each side and tall
+== Hud17CardSwapFrom: (a1) worktree hits 1
+   Assets/Scripts/Game/UnityTuning.Hud17.cs:131:        public const float Hud17CardSwapFrom = 1.35f;
+== Crown37BeamGain: (a1) worktree hits 1
+   Assets/Scripts/Game/UnityTuning.Crown37.cs:26:        public const float Crown37BeamGain = 1.2f, Crown37ShardSize = 0.5f;
+== Crown37ShardSize: (a1) worktree hits 2
+   Assets/Scripts/Game/Crown37View.Crown.cs:166:                float s = UnityTuning.Crown37ShardSize;
+   Assets/Scripts/Game/UnityTuning.Crown37.cs:26:        public const float Crown37BeamGain = 1.2f, Crown37ShardSize = 0.5f;
+(a2) main-tree untracked hits (7 files): none
+(a3) main-tree Logs/n71 + Research/2026-10-26* script hits: none
+(a4) UnityEvent m_MethodName hits: 0

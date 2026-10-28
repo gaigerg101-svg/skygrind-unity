@@ -1,0 +1,4 @@
+# command: dotnet Temp/SimHarness/bin/Release/net10.0/SimHarness.dll hold52 --level n65-foundry --room a3 --pads
+# sha: cbe2f2ca; time: 2026-10-23 15:07:02
+hold52: level n65-foundry (C:\Users\gaige\dev\SKYGRIND-unity\.claude\worktrees\agent-aeb9fc116ba05ef4d\Design\levels\n65-foundry.json), room a3 "1.3 RIDE" rect [-10,-85,10,-59], off switch none
+pad52 a3: no jump pad inside the room's rect (the map's pads: 3)

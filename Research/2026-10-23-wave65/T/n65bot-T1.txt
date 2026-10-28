@@ -1,0 +1,12 @@
+# command: dotnet run --project Tools/SimHarness -c Release -- n65bot --level n52-foundry --rooms a8,b2,a7,a3 --seconds 12
+# sha: 7d6a2e5c (branch n65-T; tracked changes uncommitted: 13 file(s))
+# time: 2026-10-23 14:29:37 -> 2026-10-23 14:30:32 (local)
+# exit: 0
+
+C:\Program Files\dotnet\sdk\10.0.401\Microsoft.Common.CurrentVersion.targets(887,5): warning MSB3539: The value of the property "BaseIntermediateOutputPath" was modified after it was used by MSBuild which can lead to unexpected build results. Tools such as NuGet will write outputs to the path specified by the "MSBuildProjectExtensionsPath" instead. To set this property, you must do so before Microsoft.Common.props is imported, for example by using Directory.Build.props.  For more information, please visit https://go.microsoft.com/fwlink/?linkid=869650" [C:\Users\gaige\dev\SKYGRIND-unity\.claude\worktrees\agent-af48e888c59fa3626\Tools\SimHarness\SimHarness.csproj]
+n65bot: level n52-foundry (C:\Users\gaige\dev\SKYGRIND-unity\.claude\worktrees\agent-af48e888c59fa3626\Design\levels\n52-foundry.json), rooms a8,b2,a7,a3, 12 s each, seed 1; pilot Walk38Pilot + the ported autopilot (normal)
+n65bot n52-foundry a8: row as filed: id-script steps 1393, entered True, BotRows65 []; with bot43 false: id-script steps 0, entered True, BotRows65 [a8]
+n65bot n52-foundry b2: row as filed: id-script steps 1438, entered True, BotRows65 []; with bot43 false: id-script steps 0, entered True, BotRows65 [b2]
+n65bot n52-foundry a7: row as filed: id-script steps 645, entered True, BotRows65 []; with bot43 false: id-script steps 0, entered True, BotRows65 [a7]
+n65bot n52-foundry a3: row as filed: id-script steps 0, entered True, BotRows65 []; with bot43 false: id-script steps 0, entered True, BotRows65 [a3]
+n65bot: every opted-out room ran 0 id-script steps (entered in both runs)

@@ -1,0 +1,20 @@
+command: python -I Tools/night/n72-lit-sim.py <the 12 n71-forge72 frames: bk/boss63 (4 wyrm), bp/boss63 (5 crown), tp/tour65 (3 spire)> --out Research/2026-10-27-wave72/L/evidence/lit72-sim   (defaults: UnityTuning.L72LitA 0.12, L0 0.12, L1 0.42, KMax 9)
+frames: /c/Users/gaige/dev/SKYGRIND-unity/Logs/feel/n71-forge72 (build n71-polish8 = HEAD 646ccc818 code; Bright71 ON); worktree n72-L; run 2026-10-27 11:53:23 USMST; kmax 9 replaces the first run's 4.5 (11:02) after the other bosses' frames showed near-black arenas
+the model lifts the frames AFTER the CRT pass and the HUD (the shader lifts before scanlines / vignette and not the HUD or the gun): the HUD and gun boxes are left unlifted (conservative); the vignette makes the real lift up to a quarter of A shy in the corners, which the margin to the bars covers
+MODEL A 0.120 l0 0.120 l1 0.420 kmax 9.00 mask HUD + gun rects
+shot-N30-B63-wyrm-flinch.png | mean 54.6 -> 74.0 | dark<30 23.8% -> 6.1% | blown>235 0.15% -> 0.15% | hue 25.9 -> 19.3 (shift 6.6 deg)
+shot-N30-B63-wyrm-idle.png | mean 42.2 -> 64.0 | dark<30 47.9% -> 7.5% | blown>235 0.00% -> 0.00% | hue 16.9 -> 12.3 (shift 4.6 deg)
+shot-N30-B63-wyrm-stagger.png | mean 66.1 -> 81.6 | dark<30 12.5% -> 3.0% | blown>235 0.06% -> 0.06% | hue 20.6 -> 17.3 (shift 3.4 deg)
+shot-N30-B63-wyrm-windup.png | mean 65.0 -> 81.0 | dark<30 9.0% -> 1.7% | blown>235 0.01% -> 0.01% | hue 19.8 -> 17.1 (shift 2.7 deg)
+shot-N30-B63-crown37-flinch.png | mean 52.2 -> 71.2 | dark<30 43.9% -> 7.6% | blown>235 0.57% -> 0.57% | hue 28.1 -> 26.3 (shift 1.7 deg)
+shot-N30-B63-crown37-idle.png | mean 57.2 -> 75.0 | dark<30 40.4% -> 7.8% | blown>235 0.26% -> 0.26% | hue 167.1 -> 162.4 (shift 4.7 deg)
+shot-N30-B63-crown37-stagger.png | mean 58.2 -> 75.9 | dark<30 40.3% -> 8.9% | blown>235 0.64% -> 0.64% | hue 164.7 -> 160.7 (shift 4.0 deg)
+shot-N30-B63-crown37-tell.png | mean 66.1 -> 82.3 | dark<30 23.1% -> 4.5% | blown>235 0.55% -> 0.55% | hue 17.9 -> 13.2 (shift 4.6 deg)
+shot-N30-B63-crown37-windup.png | mean 56.9 -> 74.8 | dark<30 35.7% -> 6.9% | blown>235 0.38% -> 0.38% | hue 31.5 -> 24.7 (shift 6.8 deg)
+shot-N29-T65-n52-spire-v2-mid36.png | mean 61.0 -> 77.5 | dark<30 30.8% -> 5.9% | blown>235 0.10% -> 0.10% | hue 62.7 -> 64.9 (shift 2.1 deg)
+shot-N29-T65-n52-spire-v5-mid36.png | mean 66.3 -> 82.3 | dark<30 23.5% -> 3.5% | blown>235 0.25% -> 0.25% | hue 110.9 -> 110.0 (shift 0.9 deg)
+shot-N29-T65-n52-spire-v6-mid36.png | mean 57.7 -> 74.3 | dark<30 29.4% -> 6.2% | blown>235 0.03% -> 0.03% | hue 97.0 -> 99.4 (shift 2.4 deg)
+SUMMARY lit-sim | frames 12 | worst dark after 8.9% | worst hue shift 6.8 deg | worst blown after 0.64%
+
+unmasked (the whole frame lifted, the HUD too):
+SUMMARY lit-sim | frames 12 | worst dark after 3.2% | worst hue shift 7.1 deg | worst blown after 0.64%

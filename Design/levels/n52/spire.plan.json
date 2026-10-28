@@ -1,0 +1,6217 @@
+{
+ "_why": "NIGHT52 the room loop (design.n52.spire52 swaps n47-spire for n52-spire while the row is on; NIGHT52.md section 5): n47's plan with the loop's rebuilt rooms (THE ROOM CONTRACT, section 2). Before it: NIGHT47 builder L (design.n47.spire47 swaps n46-spire for this file while the row is on): Tools/night/gen-n47-spire.cjs copies n46-spire's plan whole and adds THE CROWN'S WINDOWS (one lit window over every room's exit door: the way on, toward the CROWN's light; L-cards.md section 4). n46-spire's _why: NIGHT46 builder A2 (design.n46.spire46 swaps n41-spire for this file while the row is on): Tools/night/gen-n46-spire.cjs copies n41-spire's plan whole and rebuilds only the rooms its CHANGED list names, each from its identity card + flow plan (docs/ROOMS.md, NIGHT46 identity cards). n41-spire's _why: NIGHT41 builder R5 (design.n41.spire41 swaps n40-spire for this file while the row is on): Tools/night/gen-n41-spire.cjs copies n40-spire's plan whole and adds only: grapple nodes in THE NAVE (v2) and THE CHOIR (v6), the descent's two arenas (VERBS rows 17 / 19 / 22 / 23 on level 5). n40-spire's _why: NIGHT40 builder B5 (design.n40.crown40 swaps n38-spire for this file while the row is on): Tools/night/gen-n40-spire.cjs copies n38-spire's plan whole and changes only: v10 THE RING's lesson prompt (the pass taught with the CROWN's buttons). n38-spire's _why: NIGHT38 builder C2 (design.n38.spire38 swaps n37-spire for this file while the row is on): Tools/night/gen-n38-spire.cjs from the beat sheet Design/levels/n38/spire.beats.md. Eight new rooms (v1 THE LANDING: the TORCH; v2 THE NAVE and v6 THE CHOIR: open roofed arenas; v3-v5 BELFRY I-III and v7 THE LONG BELL: one jump-dash gate each under a ceiling, a gate meter on each pad; v8 THE VESTRY: a rest), then NIGHT37's v9 FALLING STONES, v10 THE RING and v11 THE SPIRE (THE CROWN), unchanged. Spacing from PortExport/config.json (ground.walkSpeed, jump.height, dash.speed x dash.duration, slide.colliderHeight) + Design/levels/n35-ride-distances.json (rideSpeed, jumpOff.pitch0, facingGapsThatWork) and the real sim's jumps (Harness crown37 jumps).",
+ "id": "n52-spire",
+ "name": "LEVEL 5 THE SPIRE",
+ "n29": true,
+ "n30": true,
+ "n36": true,
+ "floorSize": 670,
+ "killPlaneY": -95,
+ "wallHeight": 14,
+ "rank": {
+  "time": [
+   209,
+   322,
+   483,
+   725
+  ],
+  "kills": [
+   100,
+   85,
+   65,
+   40
+  ],
+  "style": [
+   2500,
+   1500,
+   700,
+   250
+  ],
+  "_why": "Unity-only (builder F): S/A/B/C cuts: time in seconds = (the spire32 pilot's summed room medians + the boss band 60 s) x [1.3, 2, 3, 4.5] (Tools/night/n32-spire-pars.json); kills = percent of the waves' enemies, style = points (NOT calibrated)."
+ },
+ "rooms": [
+  {
+   "id": "v1",
+   "name": "5.1 THE LANDING",
+   "kind": "link",
+   "rect": [
+    -17,
+    87,
+    -3,
+    115
+   ],
+   "height": 9,
+   "roof": true,
+   "par": 12,
+   "job36": "teach",
+   "verb36": "the TORCH (pick up, burn close)",
+   "spawn": {
+    "at": [
+     -10,
+     0,
+     113
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    -10,
+    0,
+    95
+   ],
+   "standIns": [
+    {
+     "at": [
+      -11.5,
+      0,
+      104
+     ],
+     "mode": "static"
+    },
+    {
+     "at": [
+      -10,
+      0,
+      103
+     ],
+     "mode": "static"
+    },
+    {
+     "at": [
+      -8.5,
+      0,
+      104
+     ],
+     "mode": "static"
+    }
+   ],
+   "standIns31": [
+    {
+     "at": [
+      -11.5,
+      0,
+      104
+     ],
+     "mode": "static"
+    },
+    {
+     "at": [
+      -10,
+      0,
+      103
+     ],
+     "mode": "static"
+    },
+    {
+     "at": [
+      -8.5,
+      0,
+      104
+     ],
+     "mode": "static"
+    }
+   ],
+   "standIns36": [
+    {
+     "at": [
+      -11.5,
+      0,
+      104
+     ],
+     "job": "marker",
+     "why": "a stand-in in a tight row, 5 m past the TORCH: burn it up close"
+    },
+    {
+     "at": [
+      -10,
+      0,
+      103
+     ],
+     "job": "marker",
+     "why": "a stand-in in a tight row, 5 m past the TORCH: burn it up close"
+    },
+    {
+     "at": [
+      -8.5,
+      0,
+      104
+     ],
+     "job": "marker",
+     "why": "a stand-in in a tight row, 5 m past the TORCH: burn it up close"
+    }
+   ],
+   "lessons": [
+    {
+     "promptPad": "THE TORCH: HOLD {fire} CLOSE",
+     "kind": "reached",
+     "rect": [
+      -17,
+      93,
+      -3,
+      99
+     ],
+     "minY": -0.2,
+     "prompt": "THE TORCH: HOLD {fire} CLOSE"
+    }
+   ],
+   "lessons31": [
+    {
+     "promptPad": "THE TORCH: HOLD {fire} CLOSE",
+     "kind": "reached",
+     "rect": [
+      -17,
+      93,
+      -3,
+      99
+     ],
+     "minY": -0.2,
+     "prompt": "THE TORCH: HOLD {fire} CLOSE"
+    }
+   ],
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -10,
+       0,
+       113
+      ],
+      [
+       -10,
+       0,
+       107
+      ],
+      [
+       -10,
+       0,
+       99
+      ],
+      [
+       -10,
+       0,
+       95
+      ]
+     ]
+    }
+   ],
+   "frames36": {
+    "mid": [
+     -10,
+     0,
+     112,
+     0,
+     -0.067
+    ],
+    "exit": [
+     -10,
+     0,
+     99,
+     0,
+     -0.075
+    ]
+   },
+   "loop52_why": "NIGHT52 loop F (v2's re-cut): the link's rect gains 6 m of plain floor past its exit at its far end (z0 93 -> 87) to meet v2's moved edge; the TORCH's pick-up, its stand-ins, its cover blocks and z1 untouched; its CROWN'S WINDOW on the moved wall"
+  },
+  {
+   "id": "v2",
+   "name": "5.2 THE NAVE",
+   "kind": "room",
+   "rect": [
+    -22,
+    51,
+    2,
+    83
+   ],
+   "height": 14,
+   "roof": true,
+   "par": 45,
+   "job36": "practise",
+   "verb36": "the TORCH round the fallen bell, the clerestory ride onto it, the pads and rings between the aisles and the bell's crown",
+   "spawn": {
+    "at": [
+     -10,
+     0,
+     75
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    -10,
+    0,
+    52
+   ],
+   "arena36": true,
+   "waves": [
+    [
+     "husk",
+     "husk",
+     "husk",
+     "swarmer",
+     "swarmer"
+    ],
+    [
+     "spitter",
+     "spitter",
+     "husk",
+     "husk"
+    ],
+    [
+     "heavy",
+     "swarmer",
+     "swarmer",
+     "swarmer"
+    ]
+   ],
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -10,
+       0,
+       82.5
+      ],
+      [
+       -10,
+       0,
+       77.5
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -16.5,
+       0,
+       74
+      ],
+      [
+       -16.5,
+       0,
+       62
+      ],
+      [
+       -15.5,
+       0,
+       55
+      ],
+      [
+       -10,
+       0,
+       52.5
+      ],
+      [
+       -5,
+       0,
+       55
+      ],
+      [
+       -4.5,
+       0,
+       62
+      ],
+      [
+       -4.5,
+       0,
+       74
+      ],
+      [
+       -10,
+       0,
+       73.5
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -16,
+       0,
+       52.5
+      ],
+      [
+       -20,
+       0,
+       52.5
+      ],
+      [
+       -20,
+       2.4,
+       59.4
+      ],
+      [
+       -20,
+       2.4,
+       73
+      ],
+      [
+       -19,
+       2.4,
+       79
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -12,
+       0,
+       52.5
+      ],
+      [
+       -12,
+       0,
+       53.5
+      ],
+      [
+       -12,
+       5,
+       63.7
+      ],
+      [
+       -10.5,
+       5,
+       65.8
+      ]
+     ]
+    }
+   ],
+   "frames36": {
+    "mid": [
+     -10,
+     0,
+     77.5,
+     0,
+     0.06
+    ],
+    "exit": [
+     -6,
+     0,
+     58,
+     20,
+     -0.05
+    ]
+   },
+   "nodes": [
+    [
+     -16.5,
+     0,
+     63.5
+    ],
+    [
+     -4.5,
+     0,
+     63.5
+    ],
+    [
+     -15.5,
+     0,
+     59
+    ],
+    [
+     -4.5,
+     0,
+     58
+    ],
+    [
+     -14.5,
+     0,
+     55
+    ],
+    [
+     -1,
+     0,
+     79
+    ],
+    [
+     -1,
+     0,
+     76.5
+    ]
+   ],
+   "highNodes": [
+    [
+     -20,
+     2.4,
+     61.5
+    ],
+    [
+     0,
+     2.4,
+     61.5
+    ],
+    [
+     -20.5,
+     2.4,
+     63
+    ],
+    [
+     0.5,
+     2.4,
+     65.5
+    ],
+    [
+     -19,
+     2.4,
+     79
+    ],
+    [
+     -19,
+     2.4,
+     76.5
+    ],
+    [
+     1,
+     2.4,
+     63.5
+    ],
+    [
+     -1,
+     2.4,
+     60
+    ]
+   ],
+   "grappleNodes": [
+    [
+     -12,
+     8.5,
+     69.5
+    ],
+    [
+     0,
+     5.5,
+     69.5
+    ],
+    [
+     -15.5,
+     6.5,
+     62
+    ]
+   ],
+   "grapple": "THREE rings (card: the grapple side east, the rings over the bell and the east aisle; >= 2 where the grapple is owned): the BELL RING 8.5 m up (EXT53: 2 m west with the bell), 2.5 m south of the bell's cut face (round 4) (floor -> the crown: a swing up and over onto it), the EAST AISLE RING 2.5 m south of the east aisle's broken end (EXT53: the east lane -> up the broken end onto the aisle's spitters), the WEST LANE RING over the west lane's north end (floor -> the west aisle or the bell's beam)",
+   "grapple41_why": "R5 (spire41, INVENTORY A10): level 5 had no grapple node (VERBS rows 17 / 19 / 22 / 23 RED since NIGHT39); THE NAVE is the descent's first arena and its aisles are the spitters' stand",
+   "waveNodes43": [
+    [
+     [
+      -15.5,
+      0,
+      72.5
+     ],
+     [
+      -4.5,
+      0,
+      72.5
+     ],
+     [
+      -14.5,
+      0,
+      75.5
+     ],
+     [
+      -5.5,
+      0,
+      75.5
+     ]
+    ],
+    [
+     [
+      0,
+      2.4,
+      61.5
+     ],
+     [
+      0.5,
+      2.4,
+      65.5
+     ],
+     [
+      1,
+      2.4,
+      63.5
+     ],
+     [
+      -1,
+      2.4,
+      60
+     ]
+    ],
+    [
+     [
+      -19,
+      2.4,
+      79
+     ],
+     [
+      -1,
+      0,
+      79
+     ],
+     [
+      -19,
+      2.4,
+      76.5
+     ],
+     [
+      -1,
+      0,
+      76.5
+     ]
+    ]
+   ],
+   "waveNodes43_why": "NIGHT52 loop F (NIGHT46's card flow plan 9-10, re-placed): wave 1 on the nave floor round the bell's north half (12+ m from the spawn: spawn31), they come round both lanes into the TORCH; wave 2 the aisles (the spitters in the open, the husks off the aisles); wave 3 on the narthex wings, the side you came in (the TANK and its swarmers drop off the porch behind you: the nave turns round; round 3 measured the apse: the walk pilot backed into the entry mouth, isolated dwell 1.0 -> 1.75 s); EXT53 (e53-m-v2.cjs): the east porch's two wave-3 nodes on the floor where it stood, the east aisle's two south nodes onto its standing north half, the west lane's node 1 m west of the moved bell NIGHT56 L (n56-l-wave1.py, L2 spawns in view): wave 1 (husk, husk, husk, swarmer, swarmer) spawns where the entry sees it (ambushed, 32 passing floor spots, 24 in the minSpawnDist band): [-15.5, 0, 72.5]; [-4.5, 0, 72.5]; [-14.5, 0, 75.5]; [-5.5, -0, 75.5]",
+   "frames52": {
+    "_why": "NIGHT52 F: reel a452's spots (feet x, y, z, yaw deg, pitch rad): entry = just inside d1 in the mouth looking down the nave at the bell; mid = the west lane at the bell's south-west corner, the fight round the bell; high = on the bell's crown looking south-east at the aisles and the narthex",
+    "entry": [
+     -10,
+     0,
+     81.5,
+     0,
+     0.08
+    ],
+    "mid": [
+     -15.5,
+     0,
+     72,
+     -15,
+     0.1
+    ],
+    "high": [
+     -11.5,
+     5,
+     65,
+     -150,
+     -0.2
+    ]
+   },
+   "loop52_why": "NIGHT52 the room loop, builder F (Tools/night/n52-loop-f-v2.cjs; THE ROOM CONTRACT): NIGHT46's THE FALLEN BELL kept and recast as THE FALLEN BELL II: 24 x 32 x 14 m from 30 x 38 m; three planes (the floor, the narthex / aisles U at 2.4 m, the bell's crown at 5 m up its fallen beam); the clerestory ride 17 m; two pads; three rings; the pews (waist-high) cut; v1's rect and d1 re-cut to meet the moved edge (v1's TORCH lesson untouched)",
+   "f52b_why": "NIGHT52 F round 4 (Tools/night/n52-loop-f-v2b.cjs): the west aisle split by a 5 m gap under the clerestory ride (a walkers' ramp in it to the south part), the west arcade pier cut, the bell's lip drawn",
+   "f52c_why": "NIGHT52 F round 4 (Tools/night/n52-loop-f-v2c.cjs; the P-rank review): the apse posts 0.5 m deep, the bell's south 3 m cut (the health and the aisle hoist's landing on what is left; the bell ring a swing onto it)",
+   "f52d_why": "NIGHT52 F round 6 (Tools/night/n52-loop-f-v2d.cjs; the lead's midpoint review item 2): the health off the bell onto the floor under the bell ring",
+   "ext53_why": "EXT53 builder M (Tools/night/e53-m-v2.cjs; row M, THE MIRRORS): the mirror broken (I1 98 %): the bell 2 m west under its vault hole, the east porch cut, the east aisle broken at the arcade pier (its south half cut): the west keeps the air loop and the ride, the east is the grapple side"
+  },
+  {
+   "id": "v3",
+   "name": "5.3 BELFRY I",
+   "kind": "link",
+   "rect": [
+    -16,
+    13,
+    -4,
+    47
+   ],
+   "height": 9,
+   "roof": true,
+   "par": 8,
+   "job36": "test",
+   "verb36": "the jump-dash gate, taught: dash, then jump inside the dash, under the ceiling",
+   "spawn": {
+    "at": [
+     -10,
+     0,
+     45
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    -10,
+    0,
+    15
+   ],
+   "flight38": true,
+   "limit": [
+    "pistolOnly"
+   ],
+   "limitReason": "ONE JUMP-DASH PER PAD",
+   "meter38": [
+    {
+     "gate": "v3.G",
+     "rect": [
+      -16,
+      37,
+      -4,
+      47
+     ],
+     "y": 0,
+     "dashJumps": 1,
+     "why": "the PAD: the bar set to one jump-dash (spire38's meter)"
+    }
+   ],
+   "routeVia": [
+    [
+     [
+      -10,
+      0,
+      37.5
+     ],
+     [
+      -10,
+      0,
+      19
+     ]
+    ]
+   ],
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -10,
+       0,
+       45
+      ],
+      [
+       -10,
+       0,
+       38
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -10,
+       0,
+       18.5
+      ],
+      [
+       -10,
+       0,
+       15
+      ]
+     ]
+    }
+   ],
+   "frames36": {
+    "mid": [
+     -10,
+     0,
+     45,
+     0,
+     -0.024
+    ],
+    "exit": [
+     -10,
+     0,
+     18,
+     0,
+     -0.086
+    ]
+   },
+   "lessons": [
+    {
+     "promptPad": "{dash} DASH, THEN {jump}: FLY",
+     "kind": "reached",
+     "rect": [
+      -16,
+      13,
+      -4,
+      20
+     ],
+     "minY": -0.2,
+     "prompt": "{dash} DASH, THEN {jump}: FLY"
+    }
+   ],
+   "lessons31": [
+    {
+     "promptPad": "{dash} DASH, THEN {jump}: FLY",
+     "kind": "reached",
+     "rect": [
+      -16,
+      13,
+      -4,
+      20
+     ],
+     "minY": -0.2,
+     "prompt": "{dash} DASH, THEN {jump}: FLY"
+    }
+   ]
+  },
+  {
+   "id": "v4",
+   "name": "5.4 THE STEP UP",
+   "kind": "link",
+   "rect": [
+    -16,
+    -35,
+    -4,
+    9
+   ],
+   "height": 9,
+   "roof": true,
+   "par": 6,
+   "job36": "test",
+   "verb36": "the jump-dash UP: an 18 m gap onto a landing 1 m higher (the arc's apex, v6's rehearsal)",
+   "spawn": {
+    "at": [
+     -10,
+     0,
+     7
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    -10,
+    1,
+    -23
+   ],
+   "flight38": true,
+   "limit": [
+    "pistolOnly"
+   ],
+   "limitReason": "ONE JUMP-DASH PER PAD",
+   "meter38": [
+    {
+     "gate": "v4.G",
+     "rect": [
+      -16,
+      -1,
+      -4,
+      9
+     ],
+     "y": 0,
+     "dashJumps": 1,
+     "why": "the PAD: the bar set to one jump-dash (spire38's meter)"
+    }
+   ],
+   "routeVia": [
+    [
+     [
+      -10,
+      0,
+      -0.5
+     ],
+     [
+      -10,
+      0,
+      -20
+     ]
+    ]
+   ],
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -10,
+       0,
+       7
+      ],
+      [
+       -10,
+       0,
+       0
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -10,
+       1,
+       -20.5
+      ],
+      [
+       -10,
+       1,
+       -24
+      ]
+     ]
+    }
+   ],
+   "frames36": {
+    "mid": [
+     -10,
+     0,
+     7,
+     0,
+     -0.023
+    ],
+    "exit": [
+     -10,
+     1,
+     -21,
+     0,
+     -0.086
+    ]
+   },
+   "spire46_why": "A2 (the belfry gates plan): v4's job is the jump-dash up a step (the card's ride gate does not fit a 35 m room: n38 gates' reach, logged in ROOMS.md)",
+   "loop52_why": "NIGHT52 loop F (v5's re-cut): the link's rect gains 9 m of plain floor past its landing at its far end (z0 -26 -> -35) to meet v5's moved edge; the exam (the gap, the ceiling, the liners, the recovery stair, the landing, the meter rect) and z1 untouched; its two CROWN'S WINDOW lights moved with its exit wall"
+  },
+  {
+   "id": "v5",
+   "name": "5.5 THE RINGERS' STAIR",
+   "kind": "room",
+   "rect": [
+    -22,
+    -65,
+    2,
+    -39
+   ],
+   "height": 12,
+   "roof": true,
+   "par": 10,
+   "job36": "practise",
+   "verb36": "the grapple's pull UP the bell ropes: from the hall floor ring to ring onto the ringing chamber over the stair's file; the TORCH at the newel and the stair's foot",
+   "spawn": {
+    "at": [
+     -10,
+     0,
+     -44.5
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    -10,
+    0,
+    -63.5
+   ],
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -10,
+       0,
+       -40
+      ],
+      [
+       -10,
+       0,
+       -43.6
+      ],
+      [
+       -14.5,
+       0,
+       -44.5
+      ],
+      [
+       -14.5,
+       0,
+       -52
+      ],
+      [
+       -13,
+       0,
+       -55
+      ],
+      [
+       -7,
+       0,
+       -58.3
+      ],
+      [
+       -2,
+       0,
+       -60
+      ],
+      [
+       0.75,
+       0,
+       -63.4
+      ],
+      [
+       0.75,
+       2.5,
+       -56.6
+      ],
+      [
+       -2,
+       2.5,
+       -51
+      ],
+      [
+       0.75,
+       2.5,
+       -47.4
+      ],
+      [
+       0.75,
+       0,
+       -40.6
+      ],
+      [
+       -3,
+       0,
+       -44
+      ],
+      [
+       -10,
+       0,
+       -44.2
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -15,
+       0,
+       -46
+      ],
+      [
+       -17.65,
+       0,
+       -47.6
+      ],
+      [
+       -17.65,
+       2.5,
+       -53
+      ],
+      [
+       -17.65,
+       4.9,
+       -58.3
+      ],
+      [
+       -18,
+       5,
+       -61
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -2,
+       0,
+       -40.5
+      ],
+      [
+       0.75,
+       0,
+       -40.6
+      ],
+      [
+       0.75,
+       2.5,
+       -47.4
+      ],
+      [
+       -2,
+       2.5,
+       -50
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -3,
+       0,
+       -63.5
+      ],
+      [
+       0.75,
+       0,
+       -63.4
+      ],
+      [
+       0.75,
+       2.5,
+       -56.6
+      ],
+      [
+       -2,
+       2.5,
+       -54
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -6,
+       0,
+       -55
+      ],
+      [
+       -10,
+       0,
+       -59
+      ],
+      [
+       -10,
+       0,
+       -63.5
+      ]
+     ]
+    }
+   ],
+   "frames36": {
+    "mid": [
+     -14,
+     0,
+     -44.5,
+     10,
+     0.08
+    ],
+    "exit": [
+     -10,
+     0,
+     -61,
+     0,
+     -0.05
+    ]
+   },
+   "waves": [
+    [
+     "husk",
+     "husk",
+     "husk",
+     "spitter"
+    ],
+    [
+     "swarmer",
+     "swarmer",
+     "husk",
+     "husk"
+    ]
+   ],
+   "nodes": [
+    [
+     -11,
+     0,
+     -59
+    ],
+    [
+     -7,
+     0,
+     -61
+    ],
+    [
+     -11.5,
+     0,
+     -56.8
+    ],
+    [
+     -7.5,
+     0,
+     -58.2
+    ]
+   ],
+   "waves52_why": "NIGHT52 loop F (the card's 30 s problem): one wave still (the breather between the nave and the choir), a spitter on the chamber so the hall has its height problem; the report's budget allows 2 kinds a wave (no heavy here): n47's two swarmers -> a husk (5 points: husks 3, the spitter 2); round 4 (GG review): a second wave, two from the ringing chamber and two from behind the newel (overlap46 releases it as wave 1 thins)",
+   "highNodes": [
+    [
+     -17.5,
+     5,
+     -60
+    ],
+    [
+     -2,
+     2.5,
+     -55
+    ],
+    [
+     -19,
+     5,
+     -62.5
+    ]
+   ],
+   "waveNodes43": [
+    [
+     [
+      -17.5,
+      5,
+      -60
+     ],
+     [
+      -19.5,
+      5,
+      -62.5
+     ],
+     [
+      -11,
+      0,
+      -59
+     ],
+     [
+      -7.5,
+      0,
+      -61.5
+     ],
+     [
+      -0.5,
+      2.5,
+      -55.5
+     ]
+    ],
+    [
+     [
+      -17.5,
+      5,
+      -60
+     ],
+     [
+      -19,
+      5,
+      -62.5
+     ],
+     [
+      -11.5,
+      0,
+      -56.8
+     ],
+     [
+      -7.5,
+      0,
+      -58.2
+     ]
+    ]
+   ],
+   "waveNodes43_why": "NIGHT52 loop F: the chamber (2), the north floor (2), the gallery's north end (1): the file comes down the stair and round the newel, the spitter (where it lands) holds a height NIGHT56 L (n56-l-wave1.py, L2 spawns in view): wave 1 (husk, husk, husk, spitter) spawns where the entry sees it (vista, 232 passing floor spots, 144 in the minSpawnDist band): [-17.5, 5, -60]; [-19.5, 5, -62.5]; [-11, 0, -59]; [-7.5, 0, -61.5]; [-0.5, 2.5, -55.5]",
+   "grappleNodes": [
+    [
+     -14,
+     7.5,
+     -45
+    ],
+    [
+     -13,
+     9,
+     -59.5
+    ],
+    [
+     -6,
+     7.5,
+     -58.5
+    ]
+   ],
+   "grapple": "THREE bell-rope rings (the card's Verb it celebrates, the ropes' iron grips; >= 2 where the grapple is owned): the SOUTH RING over the west lane by the mouth (the first pull, off the floor toward the stair), the NORTH RING over the north floor beside the chamber's east edge (the pull UP onto the chamber), the EAST RING over the gallery's north end (floor -> gallery, the gallery's way back to the chamber's line)",
+   "frames52": {
+    "_why": "NIGHT52 F: reel a452's spots (feet x, y, z, yaw deg, pitch rad): entry = just inside d4 in the mouth looking down the hall past the thinned newel, the stair and chamber up left, the gallery right; mid = the west lane at the stair's foot looking up the stair at the chamber; high = on the ringing chamber looking south-east over the hall",
+    "entry": [
+     -10,
+     0,
+     -40.5,
+     0,
+     0.1
+    ],
+    "mid": [
+     -16,
+     0,
+     -45,
+     15,
+     0.2
+    ],
+    "high": [
+     -19,
+     5,
+     -62,
+     -135,
+     -0.25
+    ]
+   },
+   "loop52_why": "NIGHT52 the room loop, builder F (Tools/night/n52-loop-f-v5.cjs; THE ROOM CONTRACT): THE RINGERS' STAIR II, 24 x 26 x 12 m from the corridor (12 x 35 x 9 m, 0.95): the newel's loop, the rope gallery (2.5 m) and the ringing chamber (5 m) each on walkers' ramps, the stair wall's 17 m ride, three bell-rope rings, two hoist pads, the cheeks; the half walls and liners cut; v4's rect and d4 re-cut to meet the moved edge (v4's exam untouched).",
+   "f52b_why": "NIGHT52 F round 4 (Tools/night/n52-loop-f-v5b.cjs): the stair wall on to the chamber (the notch that held chained seed 17 closed), the newel a ride wall, a second wave",
+   "f52c_why": "NIGHT52 F round 4 (Tools/night/n52-loop-f-v5c.cjs; the P-rank review): the cheeks 2.5 m tall, the stair 2.5 m east (the ride clear), the gallery 4 m west to the newel (the loop over it)",
+   "f52d_why": "NIGHT52 F round 6 (Tools/night/n52-loop-f-v5d.cjs; the lead's midpoint review item 1): the newel a 1 m wall on the gallery's west edge (the door opens north), the health on the floor at the stair's foot"
+  },
+  {
+   "id": "v6",
+   "name": "5.6 THE CHOIR",
+   "kind": "room",
+   "rect": [
+    -23,
+    -101,
+    1,
+    -69
+   ],
+   "height": 16,
+   "roof": true,
+   "par": 60,
+   "job36": "combine",
+   "verb36": "a roofed choir in three heights: torch the file coming up the island, parry the drones' orbs, jump-dash or hoist to the organ loft, grapple the bell ropes between the tiers",
+   "spawn": {
+    "at": [
+     -10,
+     0,
+     -71
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    -10,
+    0,
+    -99
+   ],
+   "arena36": true,
+   "waves": [
+    [
+     "husk",
+     "husk",
+     "husk",
+     "husk",
+     "swarmer",
+     "swarmer"
+    ],
+    [
+     "heavy",
+     "husk",
+     "drone",
+     "drone"
+    ],
+    [
+     "heavy",
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "husk",
+     "husk"
+    ]
+   ],
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -10,
+       0,
+       -71
+      ],
+      [
+       -10,
+       0,
+       -75
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -2,
+       0,
+       -78
+      ],
+      [
+       -2,
+       0,
+       -82
+      ],
+      [
+       -2,
+       0,
+       -90
+      ],
+      [
+       -2,
+       0,
+       -93.5
+      ],
+      [
+       -1,
+       0,
+       -96
+      ],
+      [
+       -10,
+       0,
+       -97
+      ],
+      [
+       -10,
+       0,
+       -99
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -21.5,
+       0,
+       -70
+      ],
+      [
+       -21.5,
+       3.2,
+       -77
+      ],
+      [
+       -20,
+       3.2,
+       -90
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -15.5,
+       0,
+       -82.5
+      ],
+      [
+       -15.5,
+       6,
+       -95
+      ],
+      [
+       -17,
+       6,
+       -98
+      ]
+     ]
+    }
+   ],
+   "frames36": {
+    "mid": [
+     -10,
+     0,
+     -72,
+     0,
+     0.06
+    ],
+    "exit": [
+     -4,
+     0,
+     -95,
+     -20,
+     -0.05
+    ]
+   },
+   "nodes": [
+    [
+     -9,
+     2.4,
+     -84
+    ],
+    [
+     -4,
+     2.4,
+     -84
+    ],
+    [
+     -9,
+     2.4,
+     -89
+    ],
+    [
+     -3.5,
+     2.4,
+     -85.5
+    ],
+    [
+     -6.5,
+     2.4,
+     -86.5
+    ],
+    [
+     -6.5,
+     2.4,
+     -90
+    ],
+    [
+     -1,
+     0,
+     -93
+    ],
+    [
+     -3,
+     0,
+     -97
+    ],
+    [
+     -12,
+     0,
+     -97.5
+    ]
+   ],
+   "highNodes": [
+    [
+     -20,
+     3.2,
+     -92
+    ],
+    [
+     -20,
+     3.2,
+     -88
+    ],
+    [
+     -19,
+     6,
+     -98
+    ],
+    [
+     -21,
+     6,
+     -97.5
+    ],
+    [
+     -16,
+     6,
+     -97
+    ]
+   ],
+   "grappleNodes": [
+    [
+     -20,
+     6.2,
+     -86
+    ],
+    [
+     -0.5,
+     8,
+     -81
+    ],
+    [
+     -11.5,
+     8,
+     -93
+    ],
+    [
+     -0.75,
+     6,
+     -86
+    ]
+   ],
+   "grapple": "FOUR rings (the card's BELL ROPES' iron grips; round 6, the lead's midpoint review: the ones on the loop round the island kept, the ring over the island's middle and the one over the organ loft cut): one 3 m over the high stalls (the west lane -> the stalls), one 8 m over the east lane's door end (the pull onto the east ride's line from the door), (NIGHT52 F, D-16) one over the island -> loft gap (the rope the short way up from the north floor) and one over the lava strip (the rope over the bell-metal beside the ride)",
+   "grapple41_why": "R5 (spire41, INVENTORY A10): THE CHOIR is the descent's second arena (combine: jump-dash between three heights); the rings add the pull between them",
+   "drone41_why": "R5 for E6 (the level-5 DRONE room, E6's placement through the lead): wave 2 is heavy + spitter + two drones (was spitter x2, husk x2, heavy: the same 12 budget points); the drone's answer is the parry (owned)",
+   "waves46_why": "A2 (card: one captain per wave, Part D 8): wave 3's second heavy cut for two husks: heavy + swarmer x4 + husk x2 = 10 of wave 3's 16 points (design.n27.budget), two roles",
+   "waveNodes43": [
+    [
+     [
+      -9,
+      2.4,
+      -84
+     ],
+     [
+      -4,
+      2.4,
+      -84
+     ],
+     [
+      -9,
+      2.4,
+      -89
+     ],
+     [
+      -3.5,
+      2.4,
+      -85.5
+     ],
+     [
+      -6.5,
+      2.4,
+      -86.5
+     ],
+     [
+      -6.5,
+      2.4,
+      -90
+     ]
+    ],
+    [
+     [
+      -20,
+      3.2,
+      -92
+     ],
+     [
+      -1,
+      0,
+      -93
+     ],
+     [
+      -20,
+      3.2,
+      -88
+     ],
+     [
+      -3,
+      0,
+      -97
+     ]
+    ],
+    [
+     [
+      -19,
+      6,
+      -98
+     ],
+     [
+      -21,
+      6,
+      -97.5
+     ],
+     [
+      -16,
+      6,
+      -97
+     ],
+     [
+      -12,
+      0,
+      -97.5
+     ],
+     [
+      -3,
+      0,
+      -97
+     ],
+     [
+      -1,
+      0,
+      -93
+     ]
+    ]
+   ],
+   "waveNodes43_why": "NIGHT52 loop (the card's flow plan, re-placed): wave 1 on the island's top in view from the door (the file comes down its south ramp into the TORCH); wave 2 on the stalls' north end and the east lane's far floor (the spitter / the heavy across from the door; the drones rise there); wave 3 from the organ loft (6 m) and the apse: the island is attacked from above and the way out is past them",
+   "grapple46_why": "A2 (card: Hero prop 'the BELL ROPES'): the n41 rings over the dais / galleries moved with the islands; the first ring's Node35 spot 10 m south is the east lane's open floor",
+   "spire46_why": "A2 (NIGHT46, design.n46.spire46): v6 rebuilt as THE ROPE CHOIR from its identity card + flow plan (docs/ROOMS.md, NIGHT46 identity cards, level 5)",
+   "waves52_why": "NIGHT52 loop (A15: 2-4 roles in a room; the room had five): wave 2's spitter -> a husk; the drones are wave 2's ranged threat (their orbs are parried), the heavy its captain",
+   "frames52": {
+    "_why": "NIGHT52 the room frames reel a452 (FeelReel.N52.Rooms.cs): entry, the fight live, the highest tier",
+    "entry": [
+     -10,
+     0,
+     -71,
+     0,
+     0.04
+    ],
+    "mid": [
+     -13,
+     0,
+     -79,
+     -43,
+     0.1
+    ],
+    "high": [
+     -17,
+     6,
+     -98,
+     160,
+     -0.15
+    ]
+   },
+   "loop52_why": "NIGHT52 the room loop, cycle 4 (Tools/night/n52-loop-v6.cjs; THE ROOM CONTRACT): NIGHT46's THE ROPE CHOIR kept and finished as THE ROPE CHOIR II: 24 x 32 x 16 m; 20 pieces; three planes (floor, island 2.4 / stalls 3.2, organ loft 6 m) each on a walkers' ramp; a 24 m ride wall; two pads; three rings; the half walls (waist-high) cut for full-height rood screens; v7's rect and d6 re-cut to meet the moved edge (v7's exam untouched).",
+   "f52_why": "NIGHT52 F round 4 (Tools/night/n52-loop-f-v6.cjs; DECIDE52 D-16): the rood screens and the island's north ramp cut; the lava strip with its two curbs and ring, the island -> loft ring; the health on the rider's curb; proof 2 and frames52.mid fixed; the east ride wall 10 m tall",
+   "f52r6_why": "NIGHT52 F round 6 (Tools/night/n52-loop-f-v6b.cjs; the lead's midpoint review item 5): the rings on the loop kept (4), the two off it cut, the west lane pier added (density)"
+  },
+  {
+   "id": "v7",
+   "name": "5.7 THE LONG BELL",
+   "kind": "link",
+   "rect": [
+    -16,
+    -150,
+    -4,
+    -105
+   ],
+   "height": 9,
+   "roof": true,
+   "par": 8,
+   "job36": "test",
+   "verb36": "the last jump-dash gate (the exam before the rehearsals)",
+   "spawn": {
+    "at": [
+     -10,
+     0,
+     -117
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    -10,
+    0,
+    -148
+   ],
+   "flight38": true,
+   "limit": [
+    "pistolOnly"
+   ],
+   "limitReason": "ONE JUMP-DASH PER PAD",
+   "meter38": [
+    {
+     "gate": "v7.G",
+     "rect": [
+      -16,
+      -125,
+      -4,
+      -115
+     ],
+     "y": 0,
+     "dashJumps": 1,
+     "why": "the PAD: the bar set to one jump-dash (spire38's meter)"
+    }
+   ],
+   "routeVia": [
+    [
+     [
+      -10,
+      0,
+      -124.5
+     ],
+     [
+      -10,
+      0,
+      -146
+     ]
+    ]
+   ],
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -10,
+       0,
+       -117
+      ],
+      [
+       -10,
+       0,
+       -124
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -10,
+       0,
+       -146.5
+      ],
+      [
+       -10,
+       0,
+       -148
+      ]
+     ]
+    }
+   ],
+   "frames36": {
+    "mid": [
+     -10,
+     0,
+     -117,
+     0,
+     -0.023
+    ],
+    "exit": [
+     -10,
+     0,
+     -147,
+     0,
+     -0.086
+    ]
+   },
+   "spire46_why": "A2 (the belfry gates plan): v7's gap 18 -> 20 m",
+   "loop52_why": "NIGHT52 loop cycle 4: the link's rect gains 10 m of plain floor before its takeoff (z1 -115 -> -105) to meet v6's moved edge; the exam (the gap, the ceiling, the liners, the stair, the meter rect) untouched"
+  },
+  {
+   "id": "v8",
+   "name": "5.8 THE VESTRY",
+   "kind": "link",
+   "rect": [
+    -16,
+    -166,
+    -4,
+    -154
+   ],
+   "height": 6,
+   "roof": true,
+   "par": 4,
+   "job36": "rest",
+   "verb36": "none",
+   "spawn": {
+    "at": [
+     -10,
+     0,
+     -155.5
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    -10,
+    0,
+    -164.5
+   ],
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -10,
+       0,
+       -155.5
+      ],
+      [
+       -10,
+       0,
+       -164.5
+      ]
+     ]
+    }
+   ],
+   "frames36": {
+    "mid": [
+     -10,
+     0,
+     -156,
+     0,
+     -0.181
+    ],
+    "exit": [
+     -8,
+     0,
+     -160,
+     18.435,
+     -0.095
+    ]
+   }
+  },
+  {
+   "id": "v9",
+   "name": "5.9 FALLING STONES",
+   "kind": "link",
+   "rect": [
+    -22,
+    -211,
+    2,
+    -170
+   ],
+   "height": 10,
+   "roof": true,
+   "par": 12,
+   "spawn": {
+    "at": [
+     -10,
+     0,
+     -171.5
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    -10,
+    0,
+    -209.5
+   ],
+   "job36": "teach",
+   "verb36": "jump-dash (dash, then jump inside the dash) across stones that drop 2 s after you land",
+   "lessons": [
+    {
+     "kind": "reached",
+     "rect": [
+      -22,
+      -211,
+      2,
+      -208
+     ],
+     "minY": -0.5,
+     "prompt": "",
+     "promptPad": ""
+    }
+   ],
+   "lessons31": [
+    {
+     "kind": "reached",
+     "rect": [
+      -22,
+      -211,
+      2,
+      -208
+     ],
+     "minY": -0.5,
+     "prompt": "",
+     "promptPad": ""
+    }
+   ],
+   "fall37": [
+    {
+     "at": [
+      -13,
+      0,
+      -184
+     ],
+     "size": [
+      4,
+      1,
+      4
+     ],
+     "why": "stone 1: 9 m past the entry edge (a run jump falls short at 7.1 m; a jump-dash clears it): it drops 2 s after you land"
+    },
+    {
+     "at": [
+      -7,
+      0,
+      -197
+     ],
+     "size": [
+      4,
+      1,
+      4
+     ],
+     "why": "stone 2: 9 m on, 6 m east: the jump-dash's line bends, then 9 m to the exit floor"
+    }
+   ],
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -10,
+       0,
+       -171.5
+      ],
+      [
+       -10,
+       0,
+       -172.5
+      ]
+     ]
+    }
+   ],
+   "routeVia": [
+    [
+     [
+      -10,
+      0,
+      -172.5
+     ],
+     [
+      -10,
+      0,
+      -208.5
+     ]
+    ]
+   ],
+   "frames36": {
+    "mid": [
+     -10,
+     0,
+     -172,
+     0,
+     -0.064
+    ],
+    "exit": [
+     -10,
+     0,
+     -209,
+     0,
+     -0.381
+    ]
+   }
+  },
+  {
+   "id": "v10",
+   "name": "5.10 THE RING",
+   "kind": "link",
+   "rect": [
+    -22,
+    -251,
+    2,
+    -215
+   ],
+   "height": 10,
+   "roof": true,
+   "par": 10,
+   "spawn": {
+    "at": [
+     -10,
+     0,
+     -217
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    -10,
+    0,
+    -248
+   ],
+   "job36": "teach",
+   "verb36": "jump-dash THROUGH a spinning ring (the pass: a cyan flash), as the Crown's ring will be passed",
+   "lessons": [
+    {
+     "kind": "reached",
+     "rect": [
+      -22,
+      -237,
+      2,
+      -231
+     ],
+     "minY": -0.5,
+     "prompt": "{dash} + {jump}: THROUGH THE RING",
+     "promptPad": "{dash} + {jump}: THROUGH THE RING"
+    }
+   ],
+   "lessons31": [
+    {
+     "kind": "reached",
+     "rect": [
+      -22,
+      -237,
+      2,
+      -231
+     ],
+     "minY": -0.5,
+     "prompt": "{dash} + {jump}: THROUGH THE RING",
+     "promptPad": "{dash} + {jump}: THROUGH THE RING"
+    }
+   ],
+   "hoop37": [
+    {
+     "at": [
+      -10,
+      1.6,
+      -226
+     ],
+     "normal": [
+      0,
+      0,
+      1
+     ],
+     "why": "the RING over the 10 m gap: the jump-dash from the edge passes through its centre (a cyan flash); the Crown's damage rule rehearsed"
+    }
+   ],
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -10,
+       0,
+       -217
+      ],
+      [
+       -10,
+       0,
+       -220
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -10,
+       0,
+       -233
+      ],
+      [
+       -10,
+       0,
+       -248
+      ]
+     ]
+    }
+   ],
+   "frames36": {
+    "mid": [
+     -10,
+     0,
+     -219,
+     0,
+     0
+    ],
+    "exit": [
+     -10,
+     0,
+     -247,
+     0,
+     -0.31
+    ]
+   },
+   "lesson40_why": "B5: v10's prompt was empty since NIGHT37 (nothing on screen said what the ring is for); now the pass with the same two buttons as the CROWN's entry line (design.n40.crown40.line.ringPrompt, six words: the room-lesson limit), so the fight's rule is rehearsed here first."
+  },
+  {
+   "id": "v11",
+   "name": "5.11 THE SPIRE",
+   "kind": "boss",
+   "rect": [
+    -44,
+    -323,
+    24,
+    -255
+   ],
+   "height": 12,
+   "roof": false,
+   "par": 40,
+   "spawn": {
+    "at": [
+     -10,
+     0,
+     -258
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    -10,
+    0,
+    -258
+   ],
+   "boss": "crown37",
+   "job36": "boss",
+   "verb36": "the descent: drop onto orbiting platforms, jump-dash through the Crown's ring, down the broken gallery to the plaza",
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -10,
+       0,
+       -258
+      ],
+      [
+       -10,
+       0,
+       -263
+      ]
+     ]
+    }
+   ],
+   "spire37": {
+    "axis": [
+     -10,
+     0,
+     -289
+    ],
+    "coreHalf": 4,
+    "checkpoints": [
+     [
+      -10,
+      0,
+      -258,
+      0
+     ],
+     [
+      -22,
+      -27,
+      -279,
+      270
+     ],
+     [
+      -10,
+      -60,
+      -281,
+      0
+     ]
+    ],
+    "legFloors": [
+     -26,
+     -56,
+     -66
+    ],
+    "pieces": [
+     {
+      "id": "sumN",
+      "kind": "summit",
+      "leg": 1,
+      "at": [
+       -10,
+       0,
+       -296
+      ],
+      "size": [
+       20,
+       1,
+       6
+      ],
+      "why": "the summit's north slab"
+     },
+     {
+      "id": "sumS",
+      "kind": "summit",
+      "leg": 1,
+      "at": [
+       -10,
+       0,
+       -282
+      ],
+      "size": [
+       20,
+       1,
+       6
+      ],
+      "why": "the summit's south slab (the bridge lands here)"
+     },
+     {
+      "id": "sumW",
+      "kind": "summit",
+      "leg": 1,
+      "at": [
+       -17,
+       0,
+       -289
+      ],
+      "size": [
+       6,
+       1,
+       8
+      ],
+      "why": "the summit's west slab"
+     },
+     {
+      "id": "sumE",
+      "kind": "summit",
+      "leg": 1,
+      "at": [
+       -3,
+       0,
+       -289
+      ],
+      "size": [
+       6,
+       1,
+       8
+      ],
+      "why": "the summit's east slab"
+     },
+     {
+      "id": "bridge",
+      "kind": "summit",
+      "leg": 1,
+      "at": [
+       -10,
+       0,
+       -272
+      ],
+      "size": [
+       4,
+       1,
+       14
+      ],
+      "why": "the bridge's far half (z -279..-265): it falls with the summit"
+     },
+     {
+      "id": "orb00",
+      "kind": "orbit",
+      "leg": 1,
+      "size": [
+       5,
+       1,
+       5
+      ],
+      "orbit": {
+       "centre": [
+        -10,
+        -8,
+        -289
+       ],
+       "radius": 13,
+       "phase": 0,
+       "dir": 1
+      },
+      "why": "leg 1 orbit ring 1 (top -8): a summit fragment circling the spire; stand on it and it carries you"
+     },
+     {
+      "id": "orb01",
+      "kind": "orbit",
+      "leg": 1,
+      "size": [
+       5,
+       1,
+       5
+      ],
+      "orbit": {
+       "centre": [
+        -10,
+        -8,
+        -289
+       ],
+       "radius": 13,
+       "phase": 0.25,
+       "dir": 1
+      },
+      "why": "leg 1 orbit ring 1 (top -8): a summit fragment circling the spire; stand on it and it carries you"
+     },
+     {
+      "id": "orb02",
+      "kind": "orbit",
+      "leg": 1,
+      "size": [
+       5,
+       1,
+       5
+      ],
+      "orbit": {
+       "centre": [
+        -10,
+        -8,
+        -289
+       ],
+       "radius": 13,
+       "phase": 0.5,
+       "dir": 1
+      },
+      "why": "leg 1 orbit ring 1 (top -8): a summit fragment circling the spire; stand on it and it carries you"
+     },
+     {
+      "id": "orb03",
+      "kind": "orbit",
+      "leg": 1,
+      "size": [
+       5,
+       1,
+       5
+      ],
+      "orbit": {
+       "centre": [
+        -10,
+        -8,
+        -289
+       ],
+       "radius": 13,
+       "phase": 0.75,
+       "dir": 1
+      },
+      "why": "leg 1 orbit ring 1 (top -8): a summit fragment circling the spire; stand on it and it carries you"
+     },
+     {
+      "id": "orb10",
+      "kind": "orbit",
+      "leg": 1,
+      "size": [
+       5,
+       1,
+       5
+      ],
+      "orbit": {
+       "centre": [
+        -10,
+        -15,
+        -289
+       ],
+       "radius": 13,
+       "phase": 0.125,
+       "dir": -1
+      },
+      "why": "leg 1 orbit ring 2 (top -15): a summit fragment circling the spire; stand on it and it carries you"
+     },
+     {
+      "id": "orb11",
+      "kind": "orbit",
+      "leg": 1,
+      "size": [
+       5,
+       1,
+       5
+      ],
+      "orbit": {
+       "centre": [
+        -10,
+        -15,
+        -289
+       ],
+       "radius": 13,
+       "phase": 0.375,
+       "dir": -1
+      },
+      "why": "leg 1 orbit ring 2 (top -15): a summit fragment circling the spire; stand on it and it carries you"
+     },
+     {
+      "id": "orb12",
+      "kind": "orbit",
+      "leg": 1,
+      "size": [
+       5,
+       1,
+       5
+      ],
+      "orbit": {
+       "centre": [
+        -10,
+        -15,
+        -289
+       ],
+       "radius": 13,
+       "phase": 0.625,
+       "dir": -1
+      },
+      "why": "leg 1 orbit ring 2 (top -15): a summit fragment circling the spire; stand on it and it carries you"
+     },
+     {
+      "id": "orb13",
+      "kind": "orbit",
+      "leg": 1,
+      "size": [
+       5,
+       1,
+       5
+      ],
+      "orbit": {
+       "centre": [
+        -10,
+        -15,
+        -289
+       ],
+       "radius": 13,
+       "phase": 0.875,
+       "dir": -1
+      },
+      "why": "leg 1 orbit ring 2 (top -15): a summit fragment circling the spire; stand on it and it carries you"
+     },
+     {
+      "id": "orb20",
+      "kind": "orbit",
+      "leg": 1,
+      "size": [
+       5,
+       1,
+       5
+      ],
+      "orbit": {
+       "centre": [
+        -10,
+        -22,
+        -289
+       ],
+       "radius": 13,
+       "phase": 0.25,
+       "dir": 1
+      },
+      "why": "leg 1 orbit ring 3 (top -22): a summit fragment circling the spire; stand on it and it carries you"
+     },
+     {
+      "id": "orb21",
+      "kind": "orbit",
+      "leg": 1,
+      "size": [
+       5,
+       1,
+       5
+      ],
+      "orbit": {
+       "centre": [
+        -10,
+        -22,
+        -289
+       ],
+       "radius": 13,
+       "phase": 0.5,
+       "dir": 1
+      },
+      "why": "leg 1 orbit ring 3 (top -22): a summit fragment circling the spire; stand on it and it carries you"
+     },
+     {
+      "id": "orb22",
+      "kind": "orbit",
+      "leg": 1,
+      "size": [
+       5,
+       1,
+       5
+      ],
+      "orbit": {
+       "centre": [
+        -10,
+        -22,
+        -289
+       ],
+       "radius": 13,
+       "phase": 0.75,
+       "dir": 1
+      },
+      "why": "leg 1 orbit ring 3 (top -22): a summit fragment circling the spire; stand on it and it carries you"
+     },
+     {
+      "id": "orb23",
+      "kind": "orbit",
+      "leg": 1,
+      "size": [
+       5,
+       1,
+       5
+      ],
+      "orbit": {
+       "centre": [
+        -10,
+        -22,
+        -289
+       ],
+       "radius": 13,
+       "phase": 1,
+       "dir": 1
+      },
+      "why": "leg 1 orbit ring 3 (top -22): a summit fragment circling the spire; stand on it and it carries you"
+     },
+     {
+      "id": "gal0",
+      "kind": "gallery",
+      "leg": 2,
+      "at": [
+       -10,
+       -30,
+       -279
+      ],
+      "size": [
+       6,
+       1,
+       4
+      ],
+      "why": "leg 2 gallery slab 1 (top -30): the broken spiral; the Crown's beam drops the one you head for"
+     },
+     {
+      "id": "gal1",
+      "kind": "gallery",
+      "leg": 2,
+      "at": [
+       0,
+       -33,
+       -289
+      ],
+      "size": [
+       4,
+       1,
+       6
+      ],
+      "why": "leg 2 gallery slab 2 (top -33): the broken spiral; the Crown's beam drops the one you head for"
+     },
+     {
+      "id": "gal2",
+      "kind": "gallery",
+      "leg": 2,
+      "at": [
+       -10,
+       -36,
+       -299
+      ],
+      "size": [
+       6,
+       1,
+       4
+      ],
+      "why": "leg 2 gallery slab 3 (top -36): the broken spiral; the Crown's beam drops the one you head for"
+     },
+     {
+      "id": "gal3",
+      "kind": "gallery",
+      "leg": 2,
+      "at": [
+       -20,
+       -39,
+       -289
+      ],
+      "size": [
+       4,
+       1,
+       6
+      ],
+      "why": "leg 2 gallery slab 4 (top -39): the broken spiral; the Crown's beam drops the one you head for"
+     },
+     {
+      "id": "gal4",
+      "kind": "gallery",
+      "leg": 2,
+      "at": [
+       -10,
+       -42,
+       -279
+      ],
+      "size": [
+       6,
+       1,
+       4
+      ],
+      "why": "leg 2 gallery slab 5 (top -42): the broken spiral; the Crown's beam drops the one you head for"
+     },
+     {
+      "id": "gal5",
+      "kind": "gallery",
+      "leg": 2,
+      "at": [
+       0,
+       -45,
+       -289
+      ],
+      "size": [
+       4,
+       1,
+       6
+      ],
+      "why": "leg 2 gallery slab 6 (top -45): the broken spiral; the Crown's beam drops the one you head for"
+     },
+     {
+      "id": "gal6",
+      "kind": "gallery",
+      "leg": 2,
+      "at": [
+       -10,
+       -48,
+       -299
+      ],
+      "size": [
+       6,
+       1,
+       4
+      ],
+      "why": "leg 2 gallery slab 7 (top -48): the broken spiral; the Crown's beam drops the one you head for"
+     },
+     {
+      "id": "gal7",
+      "kind": "gallery",
+      "leg": 2,
+      "at": [
+       -20,
+       -51,
+       -289
+      ],
+      "size": [
+       4,
+       1,
+       6
+      ],
+      "why": "leg 2 gallery slab 8 (top -51): the broken spiral; the Crown's beam drops the one you head for"
+     },
+     {
+      "id": "plN1",
+      "kind": "plaza",
+      "leg": 3,
+      "at": [
+       -19,
+       -60,
+       -303
+      ],
+      "size": [
+       18,
+       1,
+       8
+      ],
+      "why": "leg 3 plaza sector: drops into the chasm one by one"
+     },
+     {
+      "id": "plN2",
+      "kind": "plaza",
+      "leg": 3,
+      "at": [
+       -1,
+       -60,
+       -303
+      ],
+      "size": [
+       18,
+       1,
+       8
+      ],
+      "why": "leg 3 plaza sector: drops into the chasm one by one"
+     },
+     {
+      "id": "plS1",
+      "kind": "plaza",
+      "leg": 3,
+      "at": [
+       -19,
+       -60,
+       -275
+      ],
+      "size": [
+       18,
+       1,
+       8
+      ],
+      "why": "leg 3 plaza sector: drops into the chasm one by one"
+     },
+     {
+      "id": "plS2",
+      "kind": "plaza",
+      "leg": 3,
+      "at": [
+       -1,
+       -60,
+       -275
+      ],
+      "size": [
+       18,
+       1,
+       8
+      ],
+      "why": "leg 3 plaza sector: drops into the chasm one by one"
+     },
+     {
+      "id": "plW1",
+      "kind": "plaza",
+      "leg": 3,
+      "at": [
+       -24,
+       -60,
+       -294
+      ],
+      "size": [
+       8,
+       1,
+       10
+      ],
+      "why": "leg 3 plaza sector: drops into the chasm one by one"
+     },
+     {
+      "id": "plW2",
+      "kind": "plaza",
+      "leg": 3,
+      "at": [
+       -24,
+       -60,
+       -284
+      ],
+      "size": [
+       8,
+       1,
+       10
+      ],
+      "why": "leg 3 plaza sector: drops into the chasm one by one"
+     },
+     {
+      "id": "plE1",
+      "kind": "plaza",
+      "leg": 3,
+      "at": [
+       4,
+       -60,
+       -294
+      ],
+      "size": [
+       8,
+       1,
+       10
+      ],
+      "why": "leg 3 plaza sector: drops into the chasm one by one"
+     },
+     {
+      "id": "plE2",
+      "kind": "plaza",
+      "leg": 3,
+      "at": [
+       4,
+       -60,
+       -284
+      ],
+      "size": [
+       8,
+       1,
+       10
+      ],
+      "why": "leg 3 plaza sector: drops into the chasm one by one"
+     }
+    ],
+    "_why": "builder C: the descent's places (Core/Orbit37.cs builds them as the world layer crown37Spire); timings and speeds are design.n37.crown37's"
+   },
+   "frames36": {
+    "mid": [
+     -10,
+     0,
+     -262,
+     0,
+     -0.406
+    ],
+    "exit": [
+     -22,
+     -27,
+     -279,
+     -50.194,
+     -0.6
+    ]
+   }
+  }
+ ],
+ "doors": [
+  {
+   "id": "d1",
+   "between": [
+    "v1",
+    "v2"
+   ],
+   "rect": [
+    -12,
+    83,
+    -8,
+    87
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  },
+  {
+   "id": "d2",
+   "between": [
+    "v2",
+    "v3"
+   ],
+   "rect": [
+    -12,
+    47,
+    -8,
+    51
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  },
+  {
+   "id": "d3",
+   "between": [
+    "v3",
+    "v4"
+   ],
+   "rect": [
+    -12,
+    9,
+    -8,
+    13
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  },
+  {
+   "id": "d4",
+   "between": [
+    "v4",
+    "v5"
+   ],
+   "rect": [
+    -12,
+    -39,
+    -8,
+    -35
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  },
+  {
+   "id": "d5",
+   "between": [
+    "v5",
+    "v6"
+   ],
+   "rect": [
+    -12,
+    -69,
+    -8,
+    -65
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  },
+  {
+   "id": "d6",
+   "between": [
+    "v6",
+    "v7"
+   ],
+   "rect": [
+    -12,
+    -105,
+    -8,
+    -101
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  },
+  {
+   "id": "d7",
+   "between": [
+    "v7",
+    "v8"
+   ],
+   "rect": [
+    -12,
+    -154,
+    -8,
+    -150
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  },
+  {
+   "id": "d8",
+   "between": [
+    "v8",
+    "v9"
+   ],
+   "rect": [
+    -12,
+    -170,
+    -8,
+    -166
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  },
+  {
+   "id": "d9",
+   "between": [
+    "v9",
+    "v10"
+   ],
+   "rect": [
+    -12,
+    -215,
+    -8,
+    -211
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  },
+  {
+   "id": "d10",
+   "between": [
+    "v10",
+    "v11"
+   ],
+   "rect": [
+    -12,
+    -255,
+    -8,
+    -251
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  }
+ ],
+ "boxes": [
+  {
+   "zone": "v1",
+   "kind": "hull",
+   "min": [
+    -17,
+    0,
+    101
+   ],
+   "max": [
+    -13,
+    9,
+    106
+   ],
+   "job": "cover",
+   "why": "the alcove's west wall: the stand-ins are met up close, as the TORCH wants",
+   "note": "the alcove's west wall: the stand-ins are met up close, as the TORCH wants"
+  },
+  {
+   "zone": "v1",
+   "kind": "hull",
+   "min": [
+    -7,
+    0,
+    101
+   ],
+   "max": [
+    -3,
+    9,
+    106
+   ],
+   "job": "cover",
+   "why": "the alcove's east wall",
+   "note": "the alcove's east wall"
+  },
+  {
+   "zone": "v2",
+   "kind": "hull",
+   "min": [
+    -16,
+    0,
+    79
+   ],
+   "max": [
+    -12,
+    14,
+    83
+   ],
+   "job": "line",
+   "why": "the narthex's west CHEEK (card: Molecule node D; contract item 4, the entrance gated), floor to roof: d1 opens into a 4 m mouth, the entry lane onto the nave floor, so the fight is not pulled back along the south wall to the door (round 3: with n46's channel and lip the walk pilot kited back down the channel into d1's band)",
+   "note": "the narthex's west CHEEK (card: Molecule node D; contract item 4, the entrance gated), floor to roof: d1 opens into a 4 m mouth, the entry lane onto the nave floor, so the fight is not pulled back along the south wall to the door (round 3: with n46's channel and lip the walk pilot kited back down the channel into d1's band)"
+  },
+  {
+   "zone": "v2",
+   "kind": "hull",
+   "min": [
+    -8,
+    0,
+    79
+   ],
+   "max": [
+    -4,
+    14,
+    83
+   ],
+   "job": "line",
+   "why": "the narthex's east CHEEK (card: Molecule node D), floor to roof: the entry lane's other side",
+   "note": "the narthex's east CHEEK (card: Molecule node D), floor to roof: the entry lane's other side"
+  },
+  {
+   "zone": "v2",
+   "kind": "deck",
+   "min": [
+    -22,
+    0,
+    75
+   ],
+   "max": [
+    -16,
+    2.4,
+    83
+   ],
+   "job": "line",
+   "why": "THE NARTHEX's west wing (2.4 m, card: Molecule node L): the raised porch beside the mouth, the U's south-west corner joined to the west aisle: the clerestory ride's take-off and the air loop's south leg",
+   "note": "THE NARTHEX's west wing (2.4 m, card: Molecule node L): the raised porch beside the mouth, the U's south-west corner joined to the west aisle: the clerestory ride's take-off and the air loop's south leg"
+  },
+  {
+   "zone": "v2",
+   "kind": "deck",
+   "min": [
+    -22,
+    0,
+    70
+   ],
+   "max": [
+    -18,
+    2.4,
+    75
+   ],
+   "job": "line",
+   "why": "the WEST AISLE's south part (2.4 m, card: Molecule node AW): joined to the narthex wing, the clerestory ride's take-off; (round 4, GG review) a 5 m gap under the ride's middle splits the aisle, so riding is the way along it",
+   "note": "the WEST AISLE's south part (2.4 m, card: Molecule node AW): joined to the narthex wing, the clerestory ride's take-off; (round 4, GG review) a 5 m gap under the ride's middle splits the aisle, so riding is the way along it"
+  },
+  {
+   "zone": "v2",
+   "kind": "deck",
+   "min": [
+    -22,
+    0,
+    59
+   ],
+   "max": [
+    -18,
+    2.4,
+    65
+   ],
+   "job": "line",
+   "why": "the WEST AISLE's north part (2.4 m, card: Molecule node AW): the spitters' stand under the ride's far end, reached by its north ramp; the ride lands you on it over the gap",
+   "note": "the WEST AISLE's north part (2.4 m, card: Molecule node AW): the spitters' stand under the ride's far end, reached by its north ramp; the ride lands you on it over the gap"
+  },
+  {
+   "zone": "v2",
+   "kind": "deck",
+   "min": [
+    -2,
+    0,
+    59
+   ],
+   "max": [
+    2,
+    2.4,
+    67
+   ],
+   "job": "line",
+   "why": "the EAST AISLE (2.4 m, card: Molecule node AE; EXT53 e53-m-v2.cjs: broken at the arcade pier, its south half and the east porch gone): the spitters' stand along the east wall's north half, the grapple side: its north ramp the walkers' climb, its ring the way up its broken end",
+   "note": "the EAST AISLE (2.4 m, card: Molecule node AE; EXT53 e53-m-v2.cjs: broken at the arcade pier, its south half and the east porch gone): the spitters' stand along the east wall's north half, the grapple side: its north ramp the walkers' climb, its ring the way up its broken end"
+  },
+  {
+   "zone": "v2",
+   "kind": "deck",
+   "min": [
+    -15,
+    0,
+    64
+   ],
+   "max": [
+    -9,
+    5,
+    67
+   ],
+   "job": "line",
+   "why": "THE BELL (deck 5 m, 6 x 3 m; EXT53 e53-m-v2.cjs: 2 m west, under the hole in the vault it fell through, the east floor the wide side: round 4, P-rank review: its south 3 m cut, so wave 1 shows past it from the door and it is less of a camp; card: Landmark, Hero prop): the great bell fallen mouth-down in the middle of the nave, its crown the room's top tier and exposed perch (the health): the ground loop's centre; reached by its beam (walkers), the pads, the bell ring, the clerestory ride's jump-off",
+   "note": "THE BELL (deck 5 m, 6 x 3 m; EXT53 e53-m-v2.cjs: 2 m west, under the hole in the vault it fell through, the east floor the wide side: round 4, P-rank review: its south 3 m cut, so wave 1 shows past it from the door and it is less of a camp; card: Landmark, Hero prop): the great bell fallen mouth-down in the middle of the nave, its crown the room's top tier and exposed perch (the health): the ground loop's centre; reached by its beam (walkers), the pads, the bell ring, the clerestory ride's jump-off"
+  },
+  {
+   "zone": "v2",
+   "kind": "wall",
+   "min": [
+    -22,
+    0,
+    59
+   ],
+   "max": [
+    -21.4,
+    9,
+    76
+   ],
+   "job": "line",
+   "why": "THE CLERESTORY WALL (cyan, 17 m x 9 m on the west wall over the west aisle; contract item 5): ride it from the narthex over the aisle's spitters and jump off east onto the bell (the card's arcade ride, made 17 m)",
+   "note": "THE CLERESTORY WALL (cyan, 17 m x 9 m on the west wall over the west aisle; contract item 5): ride it from the narthex over the aisle's spitters and jump off east onto the bell (the card's arcade ride, made 17 m)",
+   "ride": true,
+   "ride36": {
+    "face": "E",
+    "planeX": -21.4,
+    "lz": [
+     7,
+     24
+    ]
+   }
+  },
+  {
+   "zone": "v2",
+   "kind": "hull",
+   "min": [
+    -2,
+    0,
+    67
+   ],
+   "max": [
+    -1,
+    14,
+    68
+   ],
+   "job": "cover",
+   "why": "the east ARCADE PIER (card: Every-solid rule): the same on the east aisle; the drones' and spitters' line along the aisle broken",
+   "note": "the east ARCADE PIER (card: Every-solid rule): the same on the east aisle; the drones' and spitters' line along the aisle broken"
+  },
+  {
+   "zone": "v2",
+   "kind": "hull",
+   "min": [
+    -14,
+    0,
+    51
+   ],
+   "max": [
+    -12,
+    14,
+    51.5
+   ],
+   "job": "cover",
+   "why": "the APSE's west POST (card: State change), floor to roof beside d2: frames the lit way on (A-6), breaks the bell's line onto the exit, so wave 3's TANK comes out round it (round 4, P-rank review: 0.5 m deep, door jambs: at 2 m the crossing round the beam's north end was 1 m wide)",
+   "note": "the APSE's west POST (card: State change), floor to roof beside d2: frames the lit way on (A-6), breaks the bell's line onto the exit, so wave 3's TANK comes out round it (round 4, P-rank review: 0.5 m deep, door jambs: at 2 m the crossing round the beam's north end was 1 m wide)"
+  },
+  {
+   "zone": "v2",
+   "kind": "hull",
+   "min": [
+    -8,
+    0,
+    51
+   ],
+   "max": [
+    -6,
+    14,
+    51.5
+   ],
+   "job": "cover",
+   "why": "the APSE's east POST (card: State change): the apse's other side; the swarmers come round it (round 4, P-rank review: 0.5 m deep, door jambs: at 2 m the crossing round the beam's north end was 1 m wide)",
+   "note": "the APSE's east POST (card: State change): the apse's other side; the swarmers come round it (round 4, P-rank review: 0.5 m deep, door jambs: at 2 m the crossing round the beam's north end was 1 m wide)"
+  },
+  {
+   "zone": "v5",
+   "kind": "hull",
+   "min": [
+    -16,
+    0,
+    -43
+   ],
+   "max": [
+    -12,
+    2.5,
+    -39
+   ],
+   "job": "line",
+   "why": "the stair hall's west CHEEK (card: Molecule node E; contract item 4, the entrance gated), floor to roof: d4 opens into a 4 m mouth, so the fight is not pulled back along the south wall to the door (foundry a5 / b1: the walk pilot kited that wall through the door's band) (round 4, P-rank review: 2.5 m tall, was roof-high: the roof-high pair made a 4 m slot 5 m from the newel and pocketed the gallery ramp's foot; now two steps up beside the mouth)",
+   "note": "the stair hall's west CHEEK (card: Molecule node E; contract item 4, the entrance gated), floor to roof: d4 opens into a 4 m mouth, so the fight is not pulled back along the south wall to the door (foundry a5 / b1: the walk pilot kited that wall through the door's band) (round 4, P-rank review: 2.5 m tall, was roof-high: the roof-high pair made a 4 m slot 5 m from the newel and pocketed the gallery ramp's foot; now two steps up beside the mouth)"
+  },
+  {
+   "zone": "v5",
+   "kind": "hull",
+   "min": [
+    -8,
+    0,
+    -43
+   ],
+   "max": [
+    -4,
+    2.5,
+    -39
+   ],
+   "job": "line",
+   "why": "the stair hall's east CHEEK (card: Molecule node E): the mouth's other side; the corner beyond it is the rope gallery's south ramp (round 4, P-rank review: 2.5 m tall, was roof-high: the roof-high pair made a 4 m slot 5 m from the newel and pocketed the gallery ramp's foot; now two steps up beside the mouth)",
+   "note": "the stair hall's east CHEEK (card: Molecule node E): the mouth's other side; the corner beyond it is the rope gallery's south ramp (round 4, P-rank review: 2.5 m tall, was roof-high: the roof-high pair made a 4 m slot 5 m from the newel and pocketed the gallery ramp's foot; now two steps up beside the mouth)"
+  },
+  {
+   "zone": "v5",
+   "kind": "wall",
+   "min": [
+    -22,
+    0,
+    -58
+   ],
+   "max": [
+    -21.4,
+    7,
+    -40
+   ],
+   "job": "line",
+   "why": "THE STAIR WALL (cyan, 18 m x 7 m on the west wall, on to the ringing chamber's face (round 4: at 17 m a 0.6 x 1 m notch between its end, the wall and the stair held the walk pilot 240 s, chained seed 17); contract item 5): ride it up beside THE RINGERS' STAIR and over the file coming down it, and step off its end onto the ringing chamber (5 m) or onto the stair",
+   "note": "THE STAIR WALL (cyan, 18 m x 7 m on the west wall, on to the ringing chamber's face (round 4: at 17 m a 0.6 x 1 m notch between its end, the wall and the stair held the walk pilot 240 s, chained seed 17); contract item 5): ride it up beside THE RINGERS' STAIR and over the file coming down it, and step off its end onto the ringing chamber (5 m) or onto the stair",
+   "ride": true,
+   "ride36": {
+    "face": "E",
+    "planeX": -21.4,
+    "lz": [
+     1,
+     19
+    ]
+   }
+  },
+  {
+   "zone": "v5",
+   "kind": "deck",
+   "min": [
+    -22,
+    0,
+    -65
+   ],
+   "max": [
+    -15,
+    5,
+    -58
+   ],
+   "job": "line",
+   "why": "THE RINGING CHAMBER (deck 5 m, card: Molecule node C, the 30 s problem): the ringers' floor where the ropes came down, the spitter's perch over the hall; reached by the stair, the hoist pads, the north ring or the stair wall's ride",
+   "note": "THE RINGING CHAMBER (deck 5 m, card: Molecule node C, the 30 s problem): the ringers' floor where the ropes came down, the spitter's perch over the hall; reached by the stair, the hoist pads, the north ring or the stair wall's ride"
+  },
+  {
+   "zone": "v5",
+   "kind": "hull",
+   "min": [
+    -22,
+    5,
+    -65
+   ],
+   "max": [
+    -20,
+    12,
+    -63
+   ],
+   "job": "cover",
+   "why": "the chamber's BELL FRAME (card: Place fantasy), chamber to roof in its north-west corner: a corner to circle on the chamber (a pad landing is not a dead stand) and cover from the gallery",
+   "note": "the chamber's BELL FRAME (card: Place fantasy), chamber to roof in its north-west corner: a corner to circle on the chamber (a pad landing is not a dead stand) and cover from the gallery"
+  },
+  {
+   "zone": "v5",
+   "kind": "wall",
+   "min": [
+    -8,
+    0,
+    -53
+   ],
+   "max": [
+    -7,
+    12,
+    -48
+   ],
+   "job": "line",
+   "why": "THE NEWEL (card: Spatial law; contract item 4; round 4, GG review: 'circling the newel is a ride'; round 6, the lead's midpoint review: thinned from a 4 x 5 m block on the door's line to a 1 m wall on the rope gallery's west edge, so the door opens north down the hall), floor to roof, 5 m long: its west face from the floor and its east face from the gallery are cyan ride faces (a wall jump off its ends onto the gallery or the floor) and a grapple surface; it cuts the chamber's line of sight onto the gallery's west half",
+   "note": "THE NEWEL (card: Spatial law; contract item 4; round 4, GG review: 'circling the newel is a ride'; round 6, the lead's midpoint review: thinned from a 4 x 5 m block on the door's line to a 1 m wall on the rope gallery's west edge, so the door opens north down the hall), floor to roof, 5 m long: its west face from the floor and its east face from the gallery are cyan ride faces (a wall jump off its ends onto the gallery or the floor) and a grapple surface; it cuts the chamber's line of sight onto the gallery's west half",
+   "ride": true
+  },
+  {
+   "zone": "v5",
+   "kind": "deck",
+   "min": [
+    -8,
+    0,
+    -57
+   ],
+   "max": [
+    2,
+    2.5,
+    -47
+   ],
+   "job": "line",
+   "why": "THE ROPE GALLERY (deck 2.5 m, 10 x 10 m: round 4, P-rank review: 4 m west to meet the newel, so the loop runs over it round the newel and the gallery together;  card: Molecule node G): the ringers' east gallery along the ropes' line, the middle tier: the husks' high lane, a double jump from the east lane, two walkers' ramps (no safe ledge); its pad throws you over the hall to the chamber",
+   "note": "THE ROPE GALLERY (deck 2.5 m, 10 x 10 m: round 4, P-rank review: 4 m west to meet the newel, so the loop runs over it round the newel and the gallery together;  card: Molecule node G): the ringers' east gallery along the ropes' line, the middle tier: the husks' high lane, a double jump from the east lane, two walkers' ramps (no safe ledge); its pad throws you over the hall to the chamber"
+  },
+  {
+   "zone": "v5",
+   "kind": "hull",
+   "min": [
+    0.5,
+    2.5,
+    -52.5
+   ],
+   "max": [
+    2,
+    12,
+    -51
+   ],
+   "job": "cover",
+   "why": "the gallery's PIER (card: Every-solid rule), gallery to roof against the east wall: breaks the line along the gallery (a corner to circle up there), so the gallery is not one long firing step",
+   "note": "the gallery's PIER (card: Every-solid rule), gallery to roof against the east wall: breaks the line along the gallery (a corner to circle up there), so the gallery is not one long firing step"
+  },
+  {
+   "zone": "v6",
+   "kind": "deck",
+   "min": [
+    -10.5,
+    0,
+    -91
+   ],
+   "max": [
+    -2.5,
+    2.4,
+    -81
+   ],
+   "job": "line",
+   "why": "THE CANTORS' ISLAND (2.4 m, 8 x 10 m; the card's Every-solid rule): wave 1's stand in view from the door; the mid tier; the ground loop runs round it and over it (its south and north ramps)",
+   "note": "THE CANTORS' ISLAND (2.4 m, 8 x 10 m; the card's Every-solid rule): wave 1's stand in view from the door; the mid tier; the ground loop runs round it and over it (its south and north ramps)"
+  },
+  {
+   "zone": "v6",
+   "kind": "deck",
+   "min": [
+    -23,
+    0,
+    -95
+   ],
+   "max": [
+    -17,
+    3.2,
+    -77
+   ],
+   "job": "line",
+   "why": "THE HIGH STALLS (3.2 m, 6 x 18 m along the west wall): the ranged stand in the open, the air loop's west leg, 6.5 m across from the island (a jump-dash, 0.8 m up)",
+   "note": "THE HIGH STALLS (3.2 m, 6 x 18 m along the west wall): the ranged stand in the open, the air loop's west leg, 6.5 m across from the island (a jump-dash, 0.8 m up)"
+  },
+  {
+   "zone": "v6",
+   "kind": "deck",
+   "min": [
+    -23,
+    0,
+    -101
+   ],
+   "max": [
+    -13,
+    6,
+    -95
+   ],
+   "job": "line",
+   "why": "THE ORGAN LOFT (6 m, 10 x 6 m; the top tier, raised from 3.2 m): wave 3's stand over the apse; reached by its 12 m walkers' ramp, the bell hoist, the island hoist, or the east ring; its east end drops one way into the apse by the exit",
+   "note": "THE ORGAN LOFT (6 m, 10 x 6 m; the top tier, raised from 3.2 m): wave 3's stand over the apse; reached by its 12 m walkers' ramp, the bell hoist, the island hoist, or the east ring; its east end drops one way into the apse by the exit"
+  },
+  {
+   "zone": "v6",
+   "kind": "hull",
+   "min": [
+    -23,
+    6,
+    -101
+   ],
+   "max": [
+    -13,
+    16,
+    -100
+   ],
+   "job": "cover",
+   "why": "THE ORGAN (the landmark): the pipe stack on the loft's back from 6 m to the 16 m roof, the only roof-high solid on the far wall, seen from the door left of the island: the loft's back wall the drones rise against",
+   "note": "THE ORGAN (the landmark): the pipe stack on the loft's back from 6 m to the 16 m roof, the only roof-high solid on the far wall, seen from the door left of the island: the loft's back wall the drones rise against"
+  },
+  {
+   "zone": "v6",
+   "kind": "wall",
+   "min": [
+    1,
+    0,
+    -97
+   ],
+   "max": [
+    1.6,
+    10,
+    -73
+   ],
+   "job": "line",
+   "why": "the EAST RIDE WALL (cyan, 24 m x 6 m; the card's flow plan 3 'the ride wall up'): ride the east lane past the island to the apse, or jump off it onto the island's east edge (NIGHT52 F: 10 m tall, its top out of a jump-off's reach: at 6 m it was a near-camp, 2 hits in hold52's 20 s)",
+   "note": "the EAST RIDE WALL (cyan, 24 m x 6 m; the card's flow plan 3 'the ride wall up'): ride the east lane past the island to the apse, or jump off it onto the island's east edge (NIGHT52 F: 10 m tall, its top out of a jump-off's reach: at 6 m it was a near-camp, 2 hits in hold52's 20 s)",
+   "ride": true,
+   "ride36": {
+    "face": "W",
+    "planeX": 1,
+    "lz": [
+     4,
+     28
+    ]
+   }
+  },
+  {
+   "zone": "v6",
+   "kind": "wall",
+   "min": [
+    -23,
+    3.2,
+    -94.5
+   ],
+   "max": [
+    -22.4,
+    9,
+    -77.5
+   ],
+   "job": "line",
+   "why": "THE STALLS' RIDE WALL (cyan, 17 m x 5.8 m on the west wall above the stalls): the air loop's west leg: ride from the stalls' south end along the wall and jump off its end up onto the organ loft (6 m)",
+   "note": "THE STALLS' RIDE WALL (cyan, 17 m x 5.8 m on the west wall above the stalls): the air loop's west leg: ride from the stalls' south end along the wall and jump off its end up onto the organ loft (6 m)",
+   "ride": true,
+   "ride36": {
+    "face": "E",
+    "planeX": -22.4,
+    "lz": [
+     8.5,
+     25.5
+    ]
+   }
+  },
+  {
+   "zone": "v6",
+   "kind": "deck",
+   "min": [
+    -2.5,
+    -0.8,
+    -91
+   ],
+   "max": [
+    -1.5,
+    0,
+    -81
+   ],
+   "job": "line",
+   "why": "the island's CURB (flush, 1 m wide, cast iron, card: Hazard both ways): the walkers' single file between the island's face and the lava strip (GG: walker routes kept); a husk on it is one punch from the lava; every lava edge a floor (the walk pilot leaves lava by the nearest edge)",
+   "note": "the island's CURB (flush, 1 m wide, cast iron, card: Hazard both ways): the walkers' single file between the island's face and the lava strip (GG: walker routes kept); a husk on it is one punch from the lava; every lava edge a floor (the walk pilot leaves lava by the nearest edge)"
+  },
+  {
+   "zone": "v6",
+   "kind": "deck",
+   "min": [
+    0,
+    -0.8,
+    -91
+   ],
+   "max": [
+    1,
+    0,
+    -81
+   ],
+   "job": "line",
+   "why": "the RIDER'S CURB (flush, 1 m wide, cast iron, under the east ride wall): the other single file beside the strip, the health's ledge (the riskiest floor spot); the ride over it is the crossing",
+   "note": "the RIDER'S CURB (flush, 1 m wide, cast iron, under the east ride wall): the other single file beside the strip, the health's ledge (the riskiest floor spot); the ride over it is the crossing"
+  },
+  {
+   "zone": "v6",
+   "kind": "hull",
+   "min": [
+    -14.5,
+    0,
+    -86.5
+   ],
+   "max": [
+    -13.5,
+    16,
+    -85.5
+   ],
+   "job": "cover",
+   "why": "THE WEST LANE PIER (round 6, the lead's midpoint review: in place of the two rings cut, so the room keeps the contract's density), floor to roof, 1 x 1 m in the middle of the west lane between the high stalls and the island: a corner to circle on the loop round the island (husks come round it at punch range) and it cuts the stalls' line of sight down the lane; 2.5 m to the stalls' face, 3 m to the island",
+   "note": "THE WEST LANE PIER (round 6, the lead's midpoint review: in place of the two rings cut, so the room keeps the contract's density), floor to roof, 1 x 1 m in the middle of the west lane between the high stalls and the island: a corner to circle on the loop round the island (husks come round it at punch range) and it cuts the stalls' line of sight down the lane; 2.5 m to the stalls' face, 3 m to the island"
+  },
+  {
+   "zone": "v6",
+   "kind": "hull",
+   "min": [
+    -10.5,
+    2.4,
+    -82
+   ],
+   "max": [
+    -9.5,
+    16,
+    -81
+   ],
+   "job": "cover",
+   "why": "the WEST BELL POST (1 x 1 m on the island's front corner, island to roof): the island's cover from the stalls while you torch the file on its ramp; a LOS break, a wall-jump post",
+   "note": "the WEST BELL POST (1 x 1 m on the island's front corner, island to roof): the island's cover from the stalls while you torch the file on its ramp; a LOS break, a wall-jump post"
+  },
+  {
+   "zone": "v6",
+   "kind": "hull",
+   "min": [
+    -3.5,
+    2.4,
+    -82
+   ],
+   "max": [
+    -2.5,
+    16,
+    -81
+   ],
+   "job": "cover",
+   "why": "the EAST BELL POST (the west's mirror): cover from the east lane's far floor; the drones' orbs break on it",
+   "note": "the EAST BELL POST (the west's mirror): cover from the east lane's far floor; the drones' orbs break on it"
+  },
+  {
+   "zone": "v3",
+   "kind": "hull",
+   "min": [
+    -16,
+    4,
+    20
+   ],
+   "max": [
+    -4,
+    9,
+    38
+   ],
+   "job": "line",
+   "why": "the CEILING (4 m over the takeoff; undefined m capsule): the jump-dash's apex (1.85 m) passes under it; it caps a double jump's and a jump's rise",
+   "note": "the CEILING (4 m over the takeoff; undefined m capsule): the jump-dash's apex (1.85 m) passes under it; it caps a double jump's and a jump's rise",
+   "ceiling": true
+  },
+  {
+   "zone": "v3",
+   "kind": "deck",
+   "min": [
+    -15,
+    -1,
+    14
+   ],
+   "max": [
+    -5,
+    0,
+    20
+   ],
+   "job": "line",
+   "why": "the LANDING past the gap (flush with the floor): the gate's landing solid (builder E's checker judges the jump-dash on it)",
+   "note": "the LANDING past the gap (flush with the floor): the gate's landing solid (builder E's checker judges the jump-dash on it)",
+   "gate": {
+    "id": "v3.G",
+    "verb": "dashjump",
+    "from": [
+     -10,
+     0,
+     37.1
+    ],
+    "to": [
+     -10,
+     0,
+     18
+    ],
+    "runUp": 8,
+    "gap": 17,
+    "meter": 1,
+    "why": "room v3's gate: the jump-dash, one per pad (spire38's meter)"
+   }
+  },
+  {
+   "zone": "v3",
+   "kind": "hull",
+   "min": [
+    -16,
+    -5,
+    20
+   ],
+   "max": [
+    -15,
+    4,
+    38
+   ],
+   "job": "line",
+   "why": "the west LINER over the gap (1 m thick): a dull wall that can't be ridden (noride): a wall ride is not a way across",
+   "note": "the west LINER over the gap (1 m thick): a dull wall that can't be ridden (noride): a wall ride is not a way across",
+   "noride": true
+  },
+  {
+   "zone": "v3",
+   "kind": "hull",
+   "min": [
+    -5,
+    -5,
+    20
+   ],
+   "max": [
+    -4,
+    4,
+    38
+   ],
+   "job": "line",
+   "why": "the east LINER over the gap (1 m thick): a dull wall that can't be ridden (noride): a wall ride is not a way across",
+   "note": "the east LINER over the gap (1 m thick): a dull wall that can't be ridden (noride): a wall ride is not a way across",
+   "noride": true
+  },
+  {
+   "zone": "v3",
+   "kind": "deck",
+   "min": [
+    -15,
+    -5,
+    34
+   ],
+   "max": [
+    -12,
+    -1.25,
+    37
+   ],
+   "job": "climb",
+   "why": "the recovery stair, step 1 (top -1.25 m): the way back up to the pad after a miss (each step <= 1.25 m)",
+   "note": "the recovery stair, step 1 (top -1.25 m): the way back up to the pad after a miss (each step <= 1.25 m)"
+  },
+  {
+   "zone": "v3",
+   "kind": "deck",
+   "min": [
+    -12,
+    -5,
+    34
+   ],
+   "max": [
+    -9,
+    -2.5,
+    37
+   ],
+   "job": "climb",
+   "why": "the recovery stair, step 2 (top -2.5 m): the way back up to the pad after a miss (each step <= 1.25 m)",
+   "note": "the recovery stair, step 2 (top -2.5 m): the way back up to the pad after a miss (each step <= 1.25 m)"
+  },
+  {
+   "zone": "v3",
+   "kind": "deck",
+   "min": [
+    -9,
+    -5,
+    34
+   ],
+   "max": [
+    -6,
+    -3.75,
+    37
+   ],
+   "job": "climb",
+   "why": "the recovery stair, step 3 (top -3.75 m): the way back up to the pad after a miss (each step <= 1.25 m)",
+   "note": "the recovery stair, step 3 (top -3.75 m): the way back up to the pad after a miss (each step <= 1.25 m)"
+  },
+  {
+   "zone": "v4",
+   "kind": "hull",
+   "min": [
+    -16,
+    4,
+    -19
+   ],
+   "max": [
+    -4,
+    9,
+    0
+   ],
+   "job": "line",
+   "why": "the CEILING (4 m over the takeoff; undefined m capsule): the jump-dash's apex (1.85 m) passes under it; it caps a double jump's and a jump's rise",
+   "note": "the CEILING (4 m over the takeoff; undefined m capsule): the jump-dash's apex (1.85 m) passes under it; it caps a double jump's and a jump's rise",
+   "ceiling": true
+  },
+  {
+   "zone": "v4",
+   "kind": "deck",
+   "min": [
+    -15,
+    -1,
+    -25
+   ],
+   "max": [
+    -5,
+    1,
+    -19
+   ],
+   "job": "line",
+   "why": "the LANDING, 1.0 m UP past the 18 m gap (A2, THE STEP UP): the jump-dash's apex (1.85 m) lands on it, a flat arc hits its face; the rehearsal for v6's 0.8 m jump-dashes up onto the high stalls",
+   "note": "the LANDING, 1.0 m UP past the 18 m gap (A2, THE STEP UP): the jump-dash's apex (1.85 m) lands on it, a flat arc hits its face; the rehearsal for v6's 0.8 m jump-dashes up onto the high stalls",
+   "gate": {
+    "id": "v4.G",
+    "verb": "dashjump",
+    "from": [
+     -10,
+     0,
+     -0.9
+    ],
+    "to": [
+     -10,
+     1,
+     -21
+    ],
+    "runUp": 8,
+    "gap": 18,
+    "meter": 1,
+    "why": "room v4's gate (A2, THE STEP UP): the jump-dash up 1.0 m over 18 m, one per pad (spire38's meter)",
+    "rise": 1
+   }
+  },
+  {
+   "zone": "v4",
+   "kind": "hull",
+   "min": [
+    -16,
+    -5,
+    -19
+   ],
+   "max": [
+    -15,
+    4,
+    0
+   ],
+   "job": "line",
+   "why": "the west LINER over the gap (1 m thick): a dull wall that can't be ridden (noride): a wall ride is not a way across",
+   "note": "the west LINER over the gap (1 m thick): a dull wall that can't be ridden (noride): a wall ride is not a way across",
+   "noride": true
+  },
+  {
+   "zone": "v4",
+   "kind": "hull",
+   "min": [
+    -5,
+    -5,
+    -19
+   ],
+   "max": [
+    -4,
+    4,
+    0
+   ],
+   "job": "line",
+   "why": "the east LINER over the gap (1 m thick): a dull wall that can't be ridden (noride): a wall ride is not a way across",
+   "note": "the east LINER over the gap (1 m thick): a dull wall that can't be ridden (noride): a wall ride is not a way across",
+   "noride": true
+  },
+  {
+   "zone": "v4",
+   "kind": "deck",
+   "min": [
+    -15,
+    -5,
+    -4
+   ],
+   "max": [
+    -12,
+    -1.25,
+    -1
+   ],
+   "job": "climb",
+   "why": "the recovery stair, step 1 (top -1.25 m): the way back up to the pad after a miss (each step <= 1.25 m)",
+   "note": "the recovery stair, step 1 (top -1.25 m): the way back up to the pad after a miss (each step <= 1.25 m)"
+  },
+  {
+   "zone": "v4",
+   "kind": "deck",
+   "min": [
+    -12,
+    -5,
+    -4
+   ],
+   "max": [
+    -9,
+    -2.5,
+    -1
+   ],
+   "job": "climb",
+   "why": "the recovery stair, step 2 (top -2.5 m): the way back up to the pad after a miss (each step <= 1.25 m)",
+   "note": "the recovery stair, step 2 (top -2.5 m): the way back up to the pad after a miss (each step <= 1.25 m)"
+  },
+  {
+   "zone": "v4",
+   "kind": "deck",
+   "min": [
+    -9,
+    -5,
+    -4
+   ],
+   "max": [
+    -6,
+    -3.75,
+    -1
+   ],
+   "job": "climb",
+   "why": "the recovery stair, step 3 (top -3.75 m): the way back up to the pad after a miss (each step <= 1.25 m)",
+   "note": "the recovery stair, step 3 (top -3.75 m): the way back up to the pad after a miss (each step <= 1.25 m)"
+  },
+  {
+   "zone": "v7",
+   "kind": "hull",
+   "min": [
+    -16,
+    4,
+    -145
+   ],
+   "max": [
+    -4,
+    9,
+    -124
+   ],
+   "job": "line",
+   "why": "the CEILING (4 m over the takeoff; undefined m capsule): the jump-dash's apex (1.85 m) passes under it; it caps a double jump's and a jump's rise",
+   "note": "the CEILING (4 m over the takeoff; undefined m capsule): the jump-dash's apex (1.85 m) passes under it; it caps a double jump's and a jump's rise",
+   "ceiling": true
+  },
+  {
+   "zone": "v7",
+   "kind": "deck",
+   "min": [
+    -15,
+    -1,
+    -150
+   ],
+   "max": [
+    -5,
+    0,
+    -145
+   ],
+   "job": "line",
+   "why": "the LANDING past the 20 m gap (A2, THE LONG BELL: the exam near the jump-dash's reach), flush with the floor",
+   "note": "the LANDING past the 20 m gap (A2, THE LONG BELL: the exam near the jump-dash's reach), flush with the floor",
+   "gate": {
+    "id": "v7.G",
+    "verb": "dashjump",
+    "from": [
+     -10,
+     0,
+     -124.9
+    ],
+    "to": [
+     -10,
+     0,
+     -147
+    ],
+    "runUp": 8,
+    "gap": 20,
+    "meter": 1,
+    "why": "room v7's gate (A2): the jump-dash over 20 m, one per pad (spire38's meter)"
+   }
+  },
+  {
+   "zone": "v7",
+   "kind": "hull",
+   "min": [
+    -16,
+    -5,
+    -145
+   ],
+   "max": [
+    -15,
+    4,
+    -124
+   ],
+   "job": "line",
+   "why": "the west LINER over the gap (1 m thick): a dull wall that can't be ridden (noride): a wall ride is not a way across",
+   "note": "the west LINER over the gap (1 m thick): a dull wall that can't be ridden (noride): a wall ride is not a way across",
+   "noride": true
+  },
+  {
+   "zone": "v7",
+   "kind": "hull",
+   "min": [
+    -5,
+    -5,
+    -145
+   ],
+   "max": [
+    -4,
+    4,
+    -124
+   ],
+   "job": "line",
+   "why": "the east LINER over the gap (1 m thick): a dull wall that can't be ridden (noride): a wall ride is not a way across",
+   "note": "the east LINER over the gap (1 m thick): a dull wall that can't be ridden (noride): a wall ride is not a way across",
+   "noride": true
+  },
+  {
+   "zone": "v7",
+   "kind": "deck",
+   "min": [
+    -15,
+    -5,
+    -128
+   ],
+   "max": [
+    -12,
+    -1.25,
+    -125
+   ],
+   "job": "climb",
+   "why": "the recovery stair, step 1 (top -1.25 m): the way back up to the pad after a miss (each step <= 1.25 m)",
+   "note": "the recovery stair, step 1 (top -1.25 m): the way back up to the pad after a miss (each step <= 1.25 m)"
+  },
+  {
+   "zone": "v7",
+   "kind": "deck",
+   "min": [
+    -12,
+    -5,
+    -128
+   ],
+   "max": [
+    -9,
+    -2.5,
+    -125
+   ],
+   "job": "climb",
+   "why": "the recovery stair, step 2 (top -2.5 m): the way back up to the pad after a miss (each step <= 1.25 m)",
+   "note": "the recovery stair, step 2 (top -2.5 m): the way back up to the pad after a miss (each step <= 1.25 m)"
+  },
+  {
+   "zone": "v7",
+   "kind": "deck",
+   "min": [
+    -9,
+    -5,
+    -128
+   ],
+   "max": [
+    -6,
+    -3.75,
+    -125
+   ],
+   "job": "climb",
+   "why": "the recovery stair, step 3 (top -3.75 m): the way back up to the pad after a miss (each step <= 1.25 m)",
+   "note": "the recovery stair, step 3 (top -3.75 m): the way back up to the pad after a miss (each step <= 1.25 m)"
+  },
+  {
+   "zone": "v9",
+   "kind": "deck",
+   "min": [
+    -22,
+    -6,
+    -185
+   ],
+   "max": [
+    -19,
+    -3.75,
+    -181
+   ],
+   "job": "climb",
+   "why": "v9 recovery stair: step 1 (top -3.75 m; each step <= 1.3 m: the way back after a missed jump)",
+   "note": "v9 recovery stair: step 1 (top -3.75 m; each step <= 1.3 m: the way back after a missed jump)"
+  },
+  {
+   "zone": "v9",
+   "kind": "deck",
+   "min": [
+    -22,
+    -6,
+    -181
+   ],
+   "max": [
+    -19,
+    -2.5,
+    -177
+   ],
+   "job": "climb",
+   "why": "v9 recovery stair: step 2 (top -2.5 m; each step <= 1.3 m: the way back after a missed jump)",
+   "note": "v9 recovery stair: step 2 (top -2.5 m; each step <= 1.3 m: the way back after a missed jump)"
+  },
+  {
+   "zone": "v9",
+   "kind": "deck",
+   "min": [
+    -22,
+    -6,
+    -177
+   ],
+   "max": [
+    -19,
+    -1.25,
+    -173
+   ],
+   "job": "climb",
+   "why": "v9 recovery stair: step 3 (top -1.25 m; each step <= 1.3 m: the way back after a missed jump)",
+   "note": "v9 recovery stair: step 3 (top -1.25 m; each step <= 1.3 m: the way back after a missed jump)"
+  },
+  {
+   "zone": "v10",
+   "kind": "deck",
+   "min": [
+    -22,
+    -6,
+    -233
+   ],
+   "max": [
+    -19,
+    -3.75,
+    -229
+   ],
+   "job": "climb",
+   "why": "v10 recovery stair: step 1 (top -3.75 m; each step <= 1.3 m: the way back after a missed jump)",
+   "note": "v10 recovery stair: step 1 (top -3.75 m; each step <= 1.3 m: the way back after a missed jump)"
+  },
+  {
+   "zone": "v10",
+   "kind": "deck",
+   "min": [
+    -22,
+    -6,
+    -229
+   ],
+   "max": [
+    -19,
+    -2.5,
+    -225
+   ],
+   "job": "climb",
+   "why": "v10 recovery stair: step 2 (top -2.5 m; each step <= 1.3 m: the way back after a missed jump)",
+   "note": "v10 recovery stair: step 2 (top -2.5 m; each step <= 1.3 m: the way back after a missed jump)"
+  },
+  {
+   "zone": "v10",
+   "kind": "deck",
+   "min": [
+    -22,
+    -6,
+    -225
+   ],
+   "max": [
+    -19,
+    -1.25,
+    -221
+   ],
+   "job": "climb",
+   "why": "v10 recovery stair: step 3 (top -1.25 m; each step <= 1.3 m: the way back after a missed jump)",
+   "note": "v10 recovery stair: step 3 (top -1.25 m; each step <= 1.3 m: the way back after a missed jump)"
+  },
+  {
+   "zone": "v11",
+   "kind": "deck",
+   "min": [
+    -12,
+    -1,
+    -265
+   ],
+   "max": [
+    -8,
+    0,
+    -255
+   ],
+   "job": "line",
+   "why": "the WALK-IN bridge's stub (the door to the chasm): leg 1's checkpoint; the rest of the bridge is the summit's and shatters",
+   "note": "the WALK-IN bridge's stub (the door to the chasm): leg 1's checkpoint; the rest of the bridge is the summit's and shatters"
+  },
+  {
+   "zone": "v11",
+   "kind": "deck",
+   "min": [
+    -14,
+    -60,
+    -293
+   ],
+   "max": [
+    -6,
+    0,
+    -285
+   ],
+   "job": "line",
+   "why": "the SPIRE's core: 8 x 8 m, 60 m tall from the plaza to the summit; every face rideable; the axis the fight descends",
+   "note": "the SPIRE's core: 8 x 8 m, 60 m tall from the plaza to the summit; every face rideable; the axis the fight descends"
+  },
+  {
+   "zone": "v11",
+   "kind": "deck",
+   "min": [
+    -25,
+    -28,
+    -282
+   ],
+   "max": [
+    -19,
+    -27,
+    -276
+   ],
+   "job": "line",
+   "why": "leg 2's CHECKPOINT: a broken buttress off the spire's SW (top -27), clear of the core: the gallery's first slabs lie in line from it (a fall in the gallery puts you back here)",
+   "note": "leg 2's CHECKPOINT: a broken buttress off the spire's SW (top -27), clear of the core: the gallery's first slabs lie in line from it (a fall in the gallery puts you back here)"
+  },
+  {
+   "zone": "v11",
+   "kind": "deck",
+   "min": [
+    -20,
+    -61,
+    -299
+   ],
+   "max": [
+    0,
+    -60,
+    -279
+   ],
+   "job": "line",
+   "why": "the PLAZA's inner square (20 x 20 m at -60): leg 3's floor and checkpoint; its outer ring is eight sectors that drop",
+   "note": "the PLAZA's inner square (20 x 20 m at -60): leg 3's floor and checkpoint; its outer ring is eight sectors that drop"
+  },
+  {
+   "zone": "v11",
+   "kind": "wall",
+   "min": [
+    -14.3,
+    -50,
+    -292
+   ],
+   "max": [
+    -14,
+    -29,
+    -286
+   ],
+   "job": "line",
+   "why": "ride panel, the core's west face: ride past a cut slab",
+   "note": "ride panel, the core's west face: ride past a cut slab",
+   "ride": true
+  },
+  {
+   "zone": "v11",
+   "kind": "wall",
+   "min": [
+    -6,
+    -50,
+    -292
+   ],
+   "max": [
+    -5.7,
+    -29,
+    -286
+   ],
+   "job": "line",
+   "why": "ride panel, the core's east face: ride past a cut slab",
+   "note": "ride panel, the core's east face: ride past a cut slab",
+   "ride": true
+  },
+  {
+   "zone": "v11",
+   "kind": "wall",
+   "min": [
+    -13,
+    -50,
+    -293.3
+   ],
+   "max": [
+    -7,
+    -29,
+    -293
+   ],
+   "job": "line",
+   "why": "ride panel, the core's north face: ride past a cut slab",
+   "note": "ride panel, the core's north face: ride past a cut slab",
+   "ride": true
+  },
+  {
+   "zone": "v11",
+   "kind": "wall",
+   "min": [
+    -13,
+    -50,
+    -285
+   ],
+   "max": [
+    -7,
+    -29,
+    -284.7
+   ],
+   "job": "line",
+   "why": "ride panel, the core's south face: ride past a cut slab",
+   "note": "ride panel, the core's south face: ride past a cut slab",
+   "ride": true
+  }
+ ],
+ "ramps": [
+  {
+   "zone": "v6",
+   "from": [
+    -21.5,
+    -69
+   ],
+   "to": [
+    -21.5,
+    -77
+   ],
+   "width": 3,
+   "rise": 3.2,
+   "job": "climb",
+   "why": "the stalls' walkers' ramp (3.2 m over 8 m) in the south-west corner by the door: the walkers' way to the stalls (GG NIGHT20)",
+   "note": "the stalls' walkers' ramp (3.2 m over 8 m) in the south-west corner by the door: the walkers' way to the stalls (GG NIGHT20)"
+  },
+  {
+   "zone": "v6",
+   "from": [
+    -15.5,
+    -83
+   ],
+   "to": [
+    -15.5,
+    -95
+   ],
+   "width": 3,
+   "rise": 6,
+   "job": "climb",
+   "why": "THE ORGAN LOFT's walkers' ramp (6 m over 12 m) beside the stalls: the climb route enemies use to the top tier (no safe ledge, A12); yours when the loft's wave holds it",
+   "note": "THE ORGAN LOFT's walkers' ramp (6 m over 12 m) beside the stalls: the climb route enemies use to the top tier (no safe ledge, A12); yours when the loft's wave holds it"
+  },
+  {
+   "zone": "v6",
+   "from": [
+    -6.5,
+    -75
+   ],
+   "to": [
+    -6.5,
+    -81
+   ],
+   "width": 3,
+   "rise": 2.4,
+   "job": "climb",
+   "why": "the island's SOUTH RAMP (2.4 m over 6 m; the card: 'the fodder's file into the TORCH'): wave 1 comes down it at you; the walkers' one way up (NIGHT52 F: the north ramp, a duplicate route, cut for the island -> loft ring)",
+   "note": "the island's SOUTH RAMP (2.4 m over 6 m; the card: 'the fodder's file into the TORCH'): wave 1 comes down it at you; the walkers' one way up (NIGHT52 F: the north ramp, a duplicate route, cut for the island -> loft ring)"
+  },
+  {
+   "zone": "v2",
+   "from": [
+    -20,
+    53
+   ],
+   "to": [
+    -20,
+    59
+   ],
+   "width": 4,
+   "rise": 2.4,
+   "job": "climb",
+   "why": "the west aisle's NORTH RAMP (card: Every-solid rule, kept; GG NIGHT20 'a route that enemies can climb up'): the walkers' way onto the aisle and the narthex",
+   "note": "the west aisle's NORTH RAMP (card: Every-solid rule, kept; GG NIGHT20 'a route that enemies can climb up'): the walkers' way onto the aisle and the narthex"
+  },
+  {
+   "zone": "v2",
+   "from": [
+    -20.75,
+    65
+   ],
+   "to": [
+    -20.75,
+    70
+   ],
+   "width": 2.5,
+   "rise": 2.4,
+   "job": "climb",
+   "why": "the AISLE GAP's RAMP (round 4, GG review; GG NIGHT20 'a route that enemies can climb up'): in the 5 m gap under the clerestory ride, against the west wall, 2.4 m over 5 m up to the aisle's south part: the walkers' way to the narthex wing and the south aisle (the ride passes over it; walking the aisle means dropping into the gap and climbing out)",
+   "note": "the AISLE GAP's RAMP (round 4, GG review; GG NIGHT20 'a route that enemies can climb up'): in the 5 m gap under the clerestory ride, against the west wall, 2.4 m over 5 m up to the aisle's south part: the walkers' way to the narthex wing and the south aisle (the ride passes over it; walking the aisle means dropping into the gap and climbing out)"
+  },
+  {
+   "zone": "v2",
+   "from": [
+    0,
+    53
+   ],
+   "to": [
+    0,
+    59
+   ],
+   "width": 4,
+   "rise": 2.4,
+   "job": "climb",
+   "why": "the east aisle's NORTH RAMP: the walkers' way onto the east aisle; wave 3's swarmers come down it",
+   "note": "the east aisle's NORTH RAMP: the walkers' way onto the east aisle; wave 3's swarmers come down it"
+  },
+  {
+   "zone": "v2",
+   "from": [
+    -12,
+    54
+   ],
+   "to": [
+    -12,
+    64
+   ],
+   "width": 3,
+   "rise": 5,
+   "job": "climb",
+   "why": "THE BELL BEAM (card: Hero prop): the bell's broken headstock lying from the apse up to its crown, 5 m over 10 m: the walkers' way onto the bell (no safe perch, A12) and a TORCH line as a file climbs it",
+   "note": "THE BELL BEAM (card: Hero prop): the bell's broken headstock lying from the apse up to its crown, 5 m over 10 m: the walkers' way onto the bell (no safe perch, A12) and a TORCH line as a file climbs it"
+  },
+  {
+   "zone": "v5",
+   "from": [
+    -17.65,
+    -48
+   ],
+   "to": [
+    -17.65,
+    -58
+   ],
+   "width": 2.5,
+   "rise": 5,
+   "job": "climb",
+   "why": "THE RINGERS' STAIR (card: Title, Molecule; GG NIGHT20 'a route that enemies can climb up'): 5 m over 10 m 2.5 m off the stair wall (round 4, P-rank review: the wall's 18 m ride runs clear over the floor lane beside it and ends at the chamber beside the stair's top), the walkers' way to the chamber: the file comes down it at you (torch it at its foot) and a rider over it steps off onto it",
+   "note": "THE RINGERS' STAIR (card: Title, Molecule; GG NIGHT20 'a route that enemies can climb up'): 5 m over 10 m 2.5 m off the stair wall (round 4, P-rank review: the wall's 18 m ride runs clear over the floor lane beside it and ends at the chamber beside the stair's top), the walkers' way to the chamber: the file comes down it at you (torch it at its foot) and a rider over it steps off onto it"
+  },
+  {
+   "zone": "v5",
+   "from": [
+    0.75,
+    -41
+   ],
+   "to": [
+    0.75,
+    -47
+   ],
+   "width": 2.5,
+   "rise": 2.5,
+   "job": "climb",
+   "why": "the gallery's SOUTH RAMP (2.5 m over 6 m) beside the mouth: the walkers' way up from the entry side",
+   "note": "the gallery's SOUTH RAMP (2.5 m over 6 m) beside the mouth: the walkers' way up from the entry side"
+  },
+  {
+   "zone": "v5",
+   "from": [
+    0.75,
+    -63
+   ],
+   "to": [
+    0.75,
+    -57
+   ],
+   "width": 2.5,
+   "rise": 2.5,
+   "job": "climb",
+   "why": "the gallery's NORTH RAMP (2.5 m over 6 m, from the north floor): the second walkers' way up, so the gallery's husks come at you from both ends",
+   "note": "the gallery's NORTH RAMP (2.5 m over 6 m, from the north floor): the second walkers' way up, so the gallery's husks come at you from both ends"
+  }
+ ],
+ "pads": [
+  {
+   "zone": "v6",
+   "at": [
+    -4,
+    0,
+    -94.25
+   ],
+   "target": [
+    -17,
+    6,
+    -98.5
+   ],
+   "apexAbove": 3,
+   "job": "line",
+   "why": "THE BELL HOIST (a jump pad, the upward line, A5): from the east lane's north end (past the lava strip) over to the organ loft (6 m): the way to wave 3's stand without the ramp (EXT53 e53-loop-pads.cjs, I4: off the walk line, [-0.5,0,-94.5] -> [-4,0,-94.25])",
+   "note": "THE BELL HOIST (a jump pad, the upward line, A5): from the east lane's north end (past the lava strip) over to the organ loft (6 m): the way to wave 3's stand without the ramp (EXT53 e53-loop-pads.cjs, I4: off the walk line, [-0.5,0,-94.5] -> [-4,0,-94.25])"
+  },
+  {
+   "zone": "v6",
+   "at": [
+    -4,
+    2.4,
+    -89.5
+   ],
+   "target": [
+    -15.5,
+    6,
+    -98.5
+   ],
+   "apexAbove": 2,
+   "job": "line",
+   "why": "THE ISLAND HOIST (a jump pad on the island's north-east corner): island -> loft, the air loop's top leg (island, loft, the stalls' drop, the stalls, the jump-dash back to the island)",
+   "note": "the island hoist"
+  },
+  {
+   "zone": "v5",
+   "at": [
+    -12.25,
+    0,
+    -57.75
+   ],
+   "target": [
+    -18.5,
+    5,
+    -61.5
+   ],
+   "apexAbove": 2.5,
+   "job": "line",
+   "why": "THE CHAMBER HOIST (card: Molecule; contract item 5, the upward line): from the north floor beside the newel up onto the ringing chamber behind its spitter (apex 2.5 m: over the chamber's corner at 5.9 m) (EXT53 e53-loop-pads.cjs, I4: off the walk line, [-13.5,0,-56] -> [-12.25,0,-57.75])",
+   "note": "THE CHAMBER HOIST (card: Molecule; contract item 5, the upward line): from the north floor beside the newel up onto the ringing chamber behind its spitter (apex 2.5 m: over the chamber's corner at 5.9 m) (EXT53 e53-loop-pads.cjs, I4: off the walk line, [-13.5,0,-56] -> [-12.25,0,-57.75])"
+  },
+  {
+   "zone": "v5",
+   "at": [
+    -2.25,
+    2.5,
+    -55.25
+   ],
+   "target": [
+    -18.5,
+    5,
+    -62.5
+   ],
+   "apexAbove": 1.5,
+   "job": "line",
+   "why": "THE GALLERY HOIST (card: Molecule): from the rope gallery's north end 18 m over the hall onto the chamber: the high loop (gallery, chamber, the stair down) (EXT53 e53-loop-pads.cjs, I4: off the walk line, [-1,2.5,-55] -> [-2.25,2.5,-55.25])",
+   "note": "THE GALLERY HOIST (card: Molecule): from the rope gallery's north end 18 m over the hall onto the chamber: the high loop (gallery, chamber, the stair down) (EXT53 e53-loop-pads.cjs, I4: off the walk line, [-1,2.5,-55] -> [-2.25,2.5,-55.25])"
+  },
+  {
+   "zone": "v2",
+   "at": [
+    -6.75,
+    0,
+    61
+   ],
+   "target": [
+    -10.5,
+    5,
+    66
+   ],
+   "apexAbove": 1.5,
+   "job": "line",
+   "why": "the BELL HOIST (card: Molecule; contract item 5, the upward line): from the east lane's north end up onto the bell's crown (the grapple side's pad) (EXT53 e53-loop-pads.cjs, I4: off the walk line, [-4.5,0,61] -> [-6.75,0,61])",
+   "note": "the BELL HOIST (card: Molecule; contract item 5, the upward line): from the east lane's north end up onto the bell's crown (the grapple side's pad) (EXT53 e53-loop-pads.cjs, I4: off the walk line, [-4.5,0,61] -> [-6.75,0,61])"
+  },
+  {
+   "zone": "v2",
+   "at": [
+    -18,
+    2.4,
+    72
+   ],
+   "target": [
+    -13.5,
+    5,
+    65.5
+   ],
+   "apexAbove": 1.5,
+   "job": "line",
+   "why": "the AISLE HOIST (card: Molecule): from the west aisle onto the bell: the air loop's cross-link (aisle, bell, the east aisle's ring or the drop) (EXT53 e53-loop-pads.cjs, I4: off the walk line, [-20,2.4,72] -> [-18,2.4,72])",
+   "note": "the AISLE HOIST (card: Molecule): from the west aisle onto the bell: the air loop's cross-link (aisle, bell, the east aisle's ring or the drop) (EXT53 e53-loop-pads.cjs, I4: off the walk line, [-20,2.4,72] -> [-18,2.4,72])"
+  }
+ ],
+ "grapple": [],
+ "pits": [
+  {
+   "zone": "v3",
+   "rect": [
+    -16,
+    20,
+    -4,
+    37
+   ],
+   "floorY": -5,
+   "job": "hazard",
+   "why": "the GAP, 17 m (a jump-dash crosses; nothing else the player owns here does); a dry pit, a miss costs the stair's climb back to the pad",
+   "note": "the GAP, 17 m (a jump-dash crosses; nothing else the player owns here does); a dry pit, a miss costs the stair's climb back to the pad"
+  },
+  {
+   "zone": "v4",
+   "rect": [
+    -16,
+    -19,
+    -4,
+    -1
+   ],
+   "floorY": -5,
+   "job": "hazard",
+   "why": "the GAP, 18 m (a jump-dash crosses; nothing else the player owns here does); a dry pit, a miss costs the stair's climb back to the pad",
+   "note": "the GAP, 18 m (a jump-dash crosses; nothing else the player owns here does); a dry pit, a miss costs the stair's climb back to the pad"
+  },
+  {
+   "zone": "v7",
+   "rect": [
+    -16,
+    -145,
+    -4,
+    -125
+   ],
+   "floorY": -5,
+   "job": "hazard",
+   "why": "the GAP, 20 m (A2: the exam, 2 m longer than v3 / v4); a dry pit, a miss costs the stair's climb back to the pad",
+   "note": "the GAP, 20 m (A2: the exam, 2 m longer than v3 / v4); a dry pit, a miss costs the stair's climb back to the pad"
+  },
+  {
+   "zone": "v9",
+   "rect": [
+    -22,
+    -208,
+    2,
+    -173
+   ],
+   "floorY": -5,
+   "job": "hazard",
+   "why": "the FALL: a 35 m pit (5 m deep) crossed only on the two falling stones; a miss costs the stair's climb, never health",
+   "note": "the FALL: a 35 m pit (5 m deep) crossed only on the two falling stones; a miss costs the stair's climb, never health"
+  },
+  {
+   "zone": "v10",
+   "rect": [
+    -22,
+    -231,
+    2,
+    -221
+   ],
+   "floorY": -5,
+   "job": "hazard",
+   "why": "the RING's gap: 10 m (a run jump falls short; the jump-dash through the ring clears it); a miss costs the stair's climb",
+   "note": "the RING's gap: 10 m (a run jump falls short; the jump-dash through the ring clears it); a miss costs the stair's climb"
+  },
+  {
+   "zone": "v11",
+   "rect": [
+    -44,
+    -323,
+    24,
+    -255
+   ],
+   "floorY": -74,
+   "job": "hazard",
+   "why": "THE CHASM: the spire stands in a 74 m deep pit; there is no floor but the spire's pieces (a fall is caught by the leg's floor rule: back to its checkpoint, -20 HP)",
+   "note": "THE CHASM: the spire stands in a 74 m deep pit; there is no floor but the spire's pieces (a fall is caught by the leg's floor rule: back to its checkpoint, -20 HP)"
+  },
+  {
+   "zone": "v6",
+   "rect": [
+    -1.5,
+    -91,
+    0,
+    -81
+   ],
+   "floorY": -0.8,
+   "lava": true,
+   "job": "hazard",
+   "why": "the BELL-METAL STRIP (lava 1.5 x 10 m in the east lane beside the island; GG, DECIDE52 D-16: the east ride is the crossing there): to you a burn and a knock-up out to a curb; to an enemy death (Lava30): punch a husk off a curb or the island's edge into it",
+   "note": "the BELL-METAL STRIP (lava 1.5 x 10 m in the east lane beside the island; GG, DECIDE52 D-16: the east ride is the crossing there): to you a burn and a knock-up out to a curb; to an enemy death (Lava30): punch a husk off a curb or the island's edge into it"
+  }
+ ],
+ "tunnels": [],
+ "lights": [
+  {
+   "id": "v1-L1",
+   "room": "v1",
+   "kind": "ceiling",
+   "at": [
+    -10,
+    8.95,
+    109
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    2,
+    0.1
+   ],
+   "color": "white",
+   "range": 8,
+   "intensity": 1.1
+  },
+  {
+   "id": "v1-L2",
+   "room": "v1",
+   "kind": "ceiling",
+   "at": [
+    -10,
+    8.95,
+    103.5
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    2,
+    0.1
+   ],
+   "color": "amber",
+   "range": 7,
+   "intensity": 1
+  },
+  {
+   "id": "v1-L3",
+   "room": "v1",
+   "kind": "pool",
+   "at": [
+    -10,
+    0.025,
+    95.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.5,
+    2.5,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.6
+  },
+  {
+   "id": "v1-crown47",
+   "room": "v1",
+   "kind": "wall",
+   "at": [
+    -10,
+    6.5,
+    87.05
+   ],
+   "normal": [
+    0,
+    0,
+    1
+   ],
+   "size": [
+    3,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 7,
+   "intensity": 1.7,
+   "job": "route",
+   "why": "THE CROWN'S WINDOW (spire47, G42): take the TORCH and see where you are going: the light over the way out; on the exit wall over the door (A-6: the way on is lit), off the fight floor and every climb route",
+   "note": "THE CROWN'S WINDOW (spire47, G42): take the TORCH and see where you are going: the light over the way out; on the exit wall over the door (A-6: the way on is lit), off the fight floor and every climb route"
+  },
+  {
+   "id": "v2-L1",
+   "room": "v2",
+   "kind": "ceiling",
+   "at": [
+    -10,
+    13.95,
+    74
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 12,
+   "intensity": 1.2,
+   "job": "light",
+   "why": "the nave's south roof panel (card: Light story 'the lip's release lit white'): over the lip's drop, not over the channel",
+   "note": "the nave's south roof panel (card: Light story 'the lip's release lit white'): over the lip's drop, not over the channel"
+  },
+  {
+   "id": "v2-L2",
+   "room": "v2",
+   "kind": "ceiling",
+   "at": [
+    -10,
+    13.95,
+    57
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 12,
+   "intensity": 1.2,
+   "job": "light",
+   "why": "the nave's north roof panel: the far end and the exit apse (the captain's end) read",
+   "note": "the nave's north roof panel: the far end and the exit apse (the captain's end) read"
+  },
+  {
+   "id": "v2-L3",
+   "room": "v2",
+   "kind": "ceiling",
+   "at": [
+    -16,
+    13.95,
+    67
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 13,
+   "intensity": 1.2,
+   "job": "light",
+   "why": "the hole in the vault the bell fell through (round 3: white; the amber moved under the bell's lip): top-lights the bell's profile",
+   "note": "the hole in the vault the bell fell through (round 3: white; the amber moved under the bell's lip): top-lights the bell's profile"
+  },
+  {
+   "id": "v2-bell-lamp",
+   "room": "v2",
+   "kind": "pool",
+   "at": [
+    -12,
+    0.025,
+    71.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    6,
+    2.5,
+    0.05
+   ],
+   "color": "amber",
+   "range": 10,
+   "intensity": 2.2,
+   "job": "light",
+   "why": "the BELL's warm lamp at its skirt (round 4, the lead's frame: 'the lamp's warm pool lighting the skirt'; the room's one accent): a 6 x 2.5 m pool on the lip side lighting the skirt and the waist's face; shift46's fixture (amber -> red-orange as the TANK enters)",
+   "note": "the BELL's warm lamp at its skirt (round 4, the lead's frame: 'the lamp's warm pool lighting the skirt'; the room's one accent): a 6 x 2.5 m pool on the lip side lighting the skirt and the waist's face; shift46's fixture (amber -> red-orange as the TANK enters)"
+  },
+  {
+   "id": "v2-L4",
+   "room": "v2",
+   "kind": "wall",
+   "at": [
+    -21.95,
+    3.4,
+    55.5
+   ],
+   "normal": [
+    1,
+    0,
+    0
+   ],
+   "size": [
+    5,
+    0.2,
+    0.1
+   ],
+   "color": "white",
+   "range": 8,
+   "intensity": 1,
+   "job": "light",
+   "why": "the west aisle's wall strip (n41's, white now: one accent per room): the spitters' stand reads",
+   "note": "the west aisle's wall strip (n41's, white now: one accent per room): the spitters' stand reads"
+  },
+  {
+   "id": "v2-L5",
+   "room": "v2",
+   "kind": "wall",
+   "at": [
+    1.9499999999999993,
+    3.4,
+    66
+   ],
+   "normal": [
+    -1,
+    0,
+    0
+   ],
+   "size": [
+    24,
+    0.2,
+    0.1
+   ],
+   "color": "white",
+   "range": 8,
+   "intensity": 1,
+   "job": "light",
+   "why": "the east aisle's wall strip (n41's): the spitters' stand reads",
+   "note": "the east aisle's wall strip (n41's): the spitters' stand reads"
+  },
+  {
+   "id": "v2-L6",
+   "room": "v2",
+   "kind": "pool",
+   "at": [
+    -10,
+    0.025,
+    52
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.5,
+    2.5,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.6,
+   "job": "light",
+   "why": "the exit's cyan pool (A-6, kept from n41)",
+   "note": "the exit's cyan pool (A-6, kept from n41)"
+  },
+  {
+   "id": "v2-crown47",
+   "room": "v2",
+   "kind": "wall",
+   "at": [
+    -10,
+    9,
+    51.05
+   ],
+   "normal": [
+    0,
+    0,
+    1
+   ],
+   "size": [
+    3,
+    8,
+    0.1
+   ],
+   "color": "white",
+   "range": 7,
+   "intensity": 1.7,
+   "job": "route",
+   "why": "THE CROWN'S WINDOW (spire47, G42): the TORCH up close round the fallen bell; the light over the apse door says the bell fell from where you are going; on the exit wall over the door (A-6: the way on is lit), off the fight floor and every climb route",
+   "note": "THE CROWN'S WINDOW (spire47, G42): the TORCH up close round the fallen bell; the light over the apse door says the bell fell from where you are going; on the exit wall over the door (A-6: the way on is lit), off the fight floor and every climb route"
+  },
+  {
+   "id": "v2-RW",
+   "room": "v2",
+   "kind": "wall",
+   "at": [
+    -21.35,
+    3.6,
+    67.5
+   ],
+   "normal": [
+    1,
+    0,
+    0
+   ],
+   "size": [
+    17,
+    0.2,
+    0.1
+   ],
+   "color": "cyan",
+   "range": 6,
+   "intensity": 1.1,
+   "job": "light",
+   "why": "the clerestory wall's cyan ride strip (V-3)",
+   "note": "the clerestory wall's cyan ride strip"
+  },
+  {
+   "id": "v2-L56a",
+   "room": "v2",
+   "kind": "wall",
+   "at": [
+    -12,
+    2.3,
+    67.05
+   ],
+   "normal": [
+    0,
+    0,
+    1
+   ],
+   "size": [
+    2.5,
+    0.3,
+    0.1
+   ],
+   "color": "white",
+   "range": 7,
+   "intensity": 1.1,
+   "why": "NIGHT56 L (n56-l-doors.py, S1-doors: the flat frames of r1 verbs37): the BELL's FACE LAMP: THE BELL's 5 m south face (r1 vp f1550 / f1600 at (-12.1, 1.6, 67.3) looking up, luma std 0.0203 / 0.0250) NIGHT56 L (n56-l-doors3.py, S1-doors slice 3): moved into r3 vp f1550 / f1600's frame (0.35 m off the face, 34 deg up: ~1.6-2.6 m in view; 0.0205 / 0.0249 at 3.2 m)",
+   "job": "light"
+  },
+  {
+   "id": "v5-L1",
+   "room": "v5",
+   "kind": "ceiling",
+   "at": [
+    -10,
+    11.95,
+    -45
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 9,
+   "intensity": 1,
+   "job": "light",
+   "why": "the stair's one white panel (the file reads)",
+   "note": "the stair's one white panel (the file reads)"
+  },
+  {
+   "id": "v5-L2",
+   "room": "v5",
+   "kind": "ceiling",
+   "at": [
+    -10,
+    11.95,
+    -59
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 9,
+   "intensity": 1,
+   "job": "light",
+   "why": "the far end's panel: wave 1's spots in view from the door",
+   "note": "the far end's panel: wave 1's spots in view from the door"
+  },
+  {
+   "id": "v5-L3",
+   "room": "v5",
+   "kind": "pool",
+   "at": [
+    -10,
+    0.025,
+    -63.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.5,
+    2.5,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.6,
+   "job": "light",
+   "why": "the exit's cyan pool (A-6)",
+   "note": "the exit's cyan pool (A-6)"
+  },
+  {
+   "id": "v5-crown47",
+   "room": "v5",
+   "kind": "wall",
+   "at": [
+    -10,
+    6.5,
+    -64.95
+   ],
+   "normal": [
+    0,
+    0,
+    1
+   ],
+   "size": [
+    3,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 7,
+   "intensity": 1.7,
+   "job": "route",
+   "why": "THE CROWN'S WINDOW (spire47, G42): a breather fight in the TORCH's lane, the light over its far door; on the exit wall over the door (A-6: the way on is lit), off the fight floor and every climb route",
+   "note": "THE CROWN'S WINDOW (spire47, G42): a breather fight in the TORCH's lane, the light over its far door; on the exit wall over the door (A-6: the way on is lit), off the fight floor and every climb route"
+  },
+  {
+   "id": "v5-RW",
+   "room": "v5",
+   "kind": "wall",
+   "at": [
+    -21.35,
+    1.2,
+    -49
+   ],
+   "normal": [
+    1,
+    0,
+    0
+   ],
+   "size": [
+    18,
+    0.2,
+    0.1
+   ],
+   "color": "cyan",
+   "range": 6,
+   "intensity": 1.1,
+   "job": "light",
+   "why": "the stair wall's cyan ride strip (V-3)",
+   "note": "the stair wall's cyan ride strip"
+  },
+  {
+   "id": "v5-NW",
+   "room": "v5",
+   "kind": "wall",
+   "at": [
+    -8.05,
+    1.2,
+    -50.5
+   ],
+   "normal": [
+    -1,
+    0,
+    0
+   ],
+   "size": [
+    5,
+    0.2,
+    0.1
+   ],
+   "color": "cyan",
+   "range": 5,
+   "intensity": 1,
+   "job": "light",
+   "why": "the newel's west ride face's cyan strip (V-3)",
+   "note": "the newel's west ride strip"
+  },
+  {
+   "id": "v5-NE",
+   "room": "v5",
+   "kind": "wall",
+   "at": [
+    -6.95,
+    3.7,
+    -50.5
+   ],
+   "normal": [
+    1,
+    0,
+    0
+   ],
+   "size": [
+    5,
+    0.2,
+    0.1
+   ],
+   "color": "cyan",
+   "range": 5,
+   "intensity": 1,
+   "job": "light",
+   "why": "the newel's east ride face's cyan strip (V-3)",
+   "note": "the newel's east ride strip"
+  },
+  {
+   "id": "v6-L1",
+   "room": "v6",
+   "kind": "ceiling",
+   "at": [
+    -10,
+    15.95,
+    -74
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 12,
+   "intensity": 0.9,
+   "job": "light",
+   "why": "the door side's one dim panel (card: Light story)",
+   "note": "the door side's one dim panel (card: Light story)"
+  },
+  {
+   "id": "v6-L2",
+   "room": "v6",
+   "kind": "ceiling",
+   "at": [
+    -10,
+    15.95,
+    -87
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    6,
+    6,
+    0.1
+   ],
+   "color": "white",
+   "range": 16,
+   "intensity": 1.4,
+   "job": "light",
+   "why": "the bell shaft's light on the island (the brightest pool: wave 1's stand reads from the door)",
+   "note": "the bell shaft's light on the island (the brightest pool: wave 1's stand reads from the door)"
+  },
+  {
+   "id": "v6-organ-lamp",
+   "room": "v6",
+   "kind": "wall",
+   "at": [
+    -18,
+    11,
+    -99.95
+   ],
+   "normal": [
+    0,
+    0,
+    1
+   ],
+   "size": [
+    6,
+    0.3,
+    0.1
+   ],
+   "color": "amber",
+   "range": 14,
+   "intensity": 1.3,
+   "job": "light",
+   "why": "THE ORGAN's lamp (the room's one accent; shift46's fixture: amber -> red-orange as wave 3 drops) (NIGHT52: on the organ's face over the 6 m loft)",
+   "note": "THE ORGAN's lamp (the room's one accent; shift46's fixture: amber -> red-orange as wave 3 drops)"
+  },
+  {
+   "id": "v6-L4",
+   "room": "v6",
+   "kind": "pool",
+   "at": [
+    -10,
+    0.025,
+    -99
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.5,
+    2.5,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.6,
+   "job": "light",
+   "why": "the exit's cyan pool (A-6)",
+   "note": "the exit's cyan pool (A-6)"
+  },
+  {
+   "id": "v6-crown47",
+   "room": "v6",
+   "kind": "wall",
+   "at": [
+    -10,
+    10,
+    -100.95
+   ],
+   "normal": [
+    0,
+    0,
+    1
+   ],
+   "size": [
+    3,
+    10,
+    0.1
+   ],
+   "color": "white",
+   "range": 7,
+   "intensity": 1.7,
+   "job": "route",
+   "why": "THE CROWN'S WINDOW (spire47, G42): fly between three heights and punch the drones' orbs back; the light behind the organ loft's door; on the exit wall over the door (A-6: the way on is lit), off the fight floor and every climb route",
+   "note": "THE CROWN'S WINDOW (spire47, G42): fly between three heights and punch the drones' orbs back; the light behind the organ loft's door; on the exit wall over the door (A-6: the way on is lit), off the fight floor and every climb route"
+  },
+  {
+   "id": "v3-L1",
+   "room": "v3",
+   "kind": "pool",
+   "at": [
+    -10,
+    0.025,
+    41
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    4,
+    4,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.5
+  },
+  {
+   "id": "v3-L2",
+   "room": "v3",
+   "kind": "ceiling",
+   "at": [
+    -10,
+    3.95,
+    36.5
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    11,
+    0.4,
+    0.1
+   ],
+   "color": "white",
+   "range": 6,
+   "intensity": 0.9
+  },
+  {
+   "id": "v3-L3",
+   "room": "v3",
+   "kind": "pool",
+   "at": [
+    -10,
+    0.025,
+    15.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.5,
+    2.5,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.6
+  },
+  {
+   "id": "v3-L4",
+   "room": "v3",
+   "kind": "ceiling",
+   "at": [
+    -10,
+    8.95,
+    43
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 9,
+   "intensity": 1
+  },
+  {
+   "id": "v3-crown47-w",
+   "room": "v3",
+   "kind": "wall",
+   "at": [
+    -14,
+    2.25,
+    13.05
+   ],
+   "normal": [
+    0,
+    0,
+    1
+   ],
+   "size": [
+    2.5,
+    2.9,
+    0.1
+   ],
+   "color": "white",
+   "range": 7,
+   "intensity": 1.7,
+   "job": "route",
+   "why": "THE CROWN'S WINDOW (spire47, G42): learn to fly over the fallen belfry floor toward the light; on the exit wall beside the door (A-6: the way on is lit), off the fight floor and every climb route",
+   "note": "THE CROWN'S WINDOW (spire47, G42): learn to fly over the fallen belfry floor toward the light; on the exit wall beside the door (A-6: the way on is lit), off the fight floor and every climb route"
+  },
+  {
+   "id": "v3-crown47-e",
+   "room": "v3",
+   "kind": "wall",
+   "at": [
+    -6,
+    2.25,
+    13.05
+   ],
+   "normal": [
+    0,
+    0,
+    1
+   ],
+   "size": [
+    2.5,
+    2.9,
+    0.1
+   ],
+   "color": "white",
+   "range": 7,
+   "intensity": 1.7,
+   "job": "route",
+   "why": "THE CROWN'S WINDOW (spire47, G42): learn to fly over the fallen belfry floor toward the light; on the exit wall beside the door (A-6: the way on is lit), off the fight floor and every climb route",
+   "note": "THE CROWN'S WINDOW (spire47, G42): learn to fly over the fallen belfry floor toward the light; on the exit wall beside the door (A-6: the way on is lit), off the fight floor and every climb route"
+  },
+  {
+   "id": "v4-L1",
+   "room": "v4",
+   "kind": "pool",
+   "at": [
+    -10,
+    0.025,
+    3
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    4,
+    4,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.5
+  },
+  {
+   "id": "v4-L2",
+   "room": "v4",
+   "kind": "ceiling",
+   "at": [
+    -10,
+    3.95,
+    -1.5
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    11,
+    0.4,
+    0.1
+   ],
+   "color": "white",
+   "range": 6,
+   "intensity": 0.9
+  },
+  {
+   "id": "v4-L3",
+   "room": "v4",
+   "kind": "pool",
+   "at": [
+    -10,
+    0.025,
+    -23.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.5,
+    2.5,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.6
+  },
+  {
+   "id": "v4-L4",
+   "room": "v4",
+   "kind": "ceiling",
+   "at": [
+    -10,
+    8.95,
+    5
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 9,
+   "intensity": 1
+  },
+  {
+   "id": "v4-crown47-w",
+   "room": "v4",
+   "kind": "wall",
+   "at": [
+    -14,
+    2.25,
+    -34.95
+   ],
+   "normal": [
+    0,
+    0,
+    1
+   ],
+   "size": [
+    2.5,
+    2.9,
+    0.1
+   ],
+   "color": "white",
+   "range": 7,
+   "intensity": 1.7,
+   "job": "route",
+   "why": "THE CROWN'S WINDOW (spire47, G42): fly onto a higher ledge, the light ahead; on the exit wall beside the door (A-6: the way on is lit), off the fight floor and every climb route",
+   "note": "THE CROWN'S WINDOW (spire47, G42): fly onto a higher ledge, the light ahead; on the exit wall beside the door (A-6: the way on is lit), off the fight floor and every climb route"
+  },
+  {
+   "id": "v4-crown47-e",
+   "room": "v4",
+   "kind": "wall",
+   "at": [
+    -6,
+    2.25,
+    -34.95
+   ],
+   "normal": [
+    0,
+    0,
+    1
+   ],
+   "size": [
+    2.5,
+    2.9,
+    0.1
+   ],
+   "color": "white",
+   "range": 7,
+   "intensity": 1.7,
+   "job": "route",
+   "why": "THE CROWN'S WINDOW (spire47, G42): fly onto a higher ledge, the light ahead; on the exit wall beside the door (A-6: the way on is lit), off the fight floor and every climb route",
+   "note": "THE CROWN'S WINDOW (spire47, G42): fly onto a higher ledge, the light ahead; on the exit wall beside the door (A-6: the way on is lit), off the fight floor and every climb route"
+  },
+  {
+   "id": "v7-L1",
+   "room": "v7",
+   "kind": "pool",
+   "at": [
+    -10,
+    0.025,
+    -121
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    4,
+    4,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.5
+  },
+  {
+   "id": "v7-L2",
+   "room": "v7",
+   "kind": "ceiling",
+   "at": [
+    -10,
+    3.95,
+    -125.5
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    11,
+    0.4,
+    0.1
+   ],
+   "color": "white",
+   "range": 6,
+   "intensity": 0.9
+  },
+  {
+   "id": "v7-L3",
+   "room": "v7",
+   "kind": "pool",
+   "at": [
+    -10,
+    0.025,
+    -147.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.5,
+    2.5,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.6
+  },
+  {
+   "id": "v7-L4",
+   "room": "v7",
+   "kind": "ceiling",
+   "at": [
+    -10,
+    8.95,
+    -119
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 9,
+   "intensity": 1
+  },
+  {
+   "id": "v7-crown47-w",
+   "room": "v7",
+   "kind": "wall",
+   "at": [
+    -14,
+    2.25,
+    -149.95
+   ],
+   "normal": [
+    0,
+    0,
+    1
+   ],
+   "size": [
+    2.5,
+    2.9,
+    0.1
+   ],
+   "color": "white",
+   "range": 7,
+   "intensity": 1.7,
+   "job": "route",
+   "why": "THE CROWN'S WINDOW (spire47, G42): the exam at the jump-dash's limit, the light over the landing's door; on the exit wall beside the door (A-6: the way on is lit), off the fight floor and every climb route",
+   "note": "THE CROWN'S WINDOW (spire47, G42): the exam at the jump-dash's limit, the light over the landing's door; on the exit wall beside the door (A-6: the way on is lit), off the fight floor and every climb route"
+  },
+  {
+   "id": "v7-crown47-e",
+   "room": "v7",
+   "kind": "wall",
+   "at": [
+    -6,
+    2.25,
+    -149.95
+   ],
+   "normal": [
+    0,
+    0,
+    1
+   ],
+   "size": [
+    2.5,
+    2.9,
+    0.1
+   ],
+   "color": "white",
+   "range": 7,
+   "intensity": 1.7,
+   "job": "route",
+   "why": "THE CROWN'S WINDOW (spire47, G42): the exam at the jump-dash's limit, the light over the landing's door; on the exit wall beside the door (A-6: the way on is lit), off the fight floor and every climb route",
+   "note": "THE CROWN'S WINDOW (spire47, G42): the exam at the jump-dash's limit, the light over the landing's door; on the exit wall beside the door (A-6: the way on is lit), off the fight floor and every climb route"
+  },
+  {
+   "id": "v8-L1",
+   "room": "v8",
+   "kind": "ceiling",
+   "at": [
+    -10,
+    5.95,
+    -160
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 8,
+   "intensity": 1
+  },
+  {
+   "id": "v8-L2",
+   "room": "v8",
+   "kind": "pool",
+   "at": [
+    -10,
+    0.025,
+    -164.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2,
+    2,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 6,
+   "intensity": 1.4
+  },
+  {
+   "id": "v8-crown47-w",
+   "room": "v8",
+   "kind": "wall",
+   "at": [
+    -14,
+    2.9,
+    -165.95
+   ],
+   "normal": [
+    0,
+    0,
+    1
+   ],
+   "size": [
+    2.5,
+    4.2,
+    0.1
+   ],
+   "color": "white",
+   "range": 7,
+   "intensity": 2,
+   "job": "route",
+   "why": "THE CROWN'S WINDOW (spire47, G42): rest, heal and see the light close: the widest window (the picture spot before the stones and the ring); on the exit wall beside the door (A-6: the way on is lit), off the fight floor and every climb route",
+   "note": "THE CROWN'S WINDOW (spire47, G42): rest, heal and see the light close: the widest window (the picture spot before the stones and the ring); on the exit wall beside the door (A-6: the way on is lit), off the fight floor and every climb route"
+  },
+  {
+   "id": "v8-crown47-e",
+   "room": "v8",
+   "kind": "wall",
+   "at": [
+    -6,
+    2.9,
+    -165.95
+   ],
+   "normal": [
+    0,
+    0,
+    1
+   ],
+   "size": [
+    2.5,
+    4.2,
+    0.1
+   ],
+   "color": "white",
+   "range": 7,
+   "intensity": 2,
+   "job": "route",
+   "why": "THE CROWN'S WINDOW (spire47, G42): rest, heal and see the light close: the widest window (the picture spot before the stones and the ring); on the exit wall beside the door (A-6: the way on is lit), off the fight floor and every climb route",
+   "note": "THE CROWN'S WINDOW (spire47, G42): rest, heal and see the light close: the widest window (the picture spot before the stones and the ring); on the exit wall beside the door (A-6: the way on is lit), off the fight floor and every climb route"
+  },
+  {
+   "id": "v9-L1",
+   "room": "v9",
+   "kind": "pool",
+   "at": [
+    -10,
+    0.025,
+    -171.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.5,
+    2.5,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 6,
+   "intensity": 1.4
+  },
+  {
+   "id": "v9-L2",
+   "room": "v9",
+   "kind": "pool",
+   "at": [
+    -10,
+    0.025,
+    -209.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.5,
+    2.5,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.6
+  },
+  {
+   "id": "v9-L3",
+   "room": "v9",
+   "kind": "wall",
+   "at": [
+    -21.95,
+    1.6,
+    -190
+   ],
+   "normal": [
+    1,
+    0,
+    0
+   ],
+   "size": [
+    30,
+    0.2,
+    0.1
+   ],
+   "color": "amber",
+   "range": 8,
+   "intensity": 1
+  },
+  {
+   "id": "v9-L4",
+   "room": "v9",
+   "kind": "wall",
+   "at": [
+    1.95,
+    1.6,
+    -190
+   ],
+   "normal": [
+    -1,
+    0,
+    0
+   ],
+   "size": [
+    30,
+    0.2,
+    0.1
+   ],
+   "color": "white",
+   "range": 8,
+   "intensity": 1
+  },
+  {
+   "id": "v9-crown47",
+   "room": "v9",
+   "kind": "wall",
+   "at": [
+    -10,
+    7,
+    -210.95
+   ],
+   "normal": [
+    0,
+    0,
+    1
+   ],
+   "size": [
+    3,
+    4,
+    0.1
+   ],
+   "color": "white",
+   "range": 7,
+   "intensity": 1.7,
+   "job": "route",
+   "why": "THE CROWN'S WINDOW (spire47, G42): keep moving across stones that fall under you, the light over the far door; on the exit wall over the door (A-6: the way on is lit), off the fight floor and every climb route",
+   "note": "THE CROWN'S WINDOW (spire47, G42): keep moving across stones that fall under you, the light over the far door; on the exit wall over the door (A-6: the way on is lit), off the fight floor and every climb route"
+  },
+  {
+   "id": "v10-L1",
+   "room": "v10",
+   "kind": "pool",
+   "at": [
+    -10,
+    0.025,
+    -218.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.5,
+    2.5,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 6,
+   "intensity": 1.4
+  },
+  {
+   "id": "v10-L2",
+   "room": "v10",
+   "kind": "pool",
+   "at": [
+    -10,
+    0.025,
+    -248
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.5,
+    2.5,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.6
+  },
+  {
+   "id": "v10-L3",
+   "room": "v10",
+   "kind": "wall",
+   "at": [
+    -21.95,
+    1.6,
+    -233
+   ],
+   "normal": [
+    1,
+    0,
+    0
+   ],
+   "size": [
+    30,
+    0.2,
+    0.1
+   ],
+   "color": "amber",
+   "range": 8,
+   "intensity": 1
+  },
+  {
+   "id": "v10-L4",
+   "room": "v10",
+   "kind": "wall",
+   "at": [
+    1.95,
+    1.6,
+    -233
+   ],
+   "normal": [
+    -1,
+    0,
+    0
+   ],
+   "size": [
+    30,
+    0.2,
+    0.1
+   ],
+   "color": "white",
+   "range": 8,
+   "intensity": 1
+  },
+  {
+   "id": "v10-crown47",
+   "room": "v10",
+   "kind": "wall",
+   "at": [
+    -10,
+    7,
+    -250.95
+   ],
+   "normal": [
+    0,
+    0,
+    1
+   ],
+   "size": [
+    3,
+    4,
+    0.1
+   ],
+   "color": "white",
+   "range": 7,
+   "intensity": 1.7,
+   "job": "route",
+   "why": "THE CROWN'S WINDOW (spire47, G42): rehearse the pass through the ring, the light beyond it; on the exit wall over the door (A-6: the way on is lit), off the fight floor and every climb route",
+   "note": "THE CROWN'S WINDOW (spire47, G42): rehearse the pass through the ring, the light beyond it; on the exit wall over the door (A-6: the way on is lit), off the fight floor and every climb route"
+  },
+  {
+   "id": "v11-L1",
+   "room": "v11",
+   "kind": "pool",
+   "at": [
+    -10,
+    0.025,
+    -259
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 8,
+   "intensity": 1.6
+  },
+  {
+   "id": "v11-L2",
+   "room": "v11",
+   "kind": "pool",
+   "at": [
+    -22,
+    -26.975,
+    -279
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.4,
+    2.4,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 8,
+   "intensity": 1.6
+  },
+  {
+   "id": "v11-L3",
+   "room": "v11",
+   "kind": "pool",
+   "at": [
+    -10,
+    -59.975,
+    -281
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 10,
+   "intensity": 1.8
+  }
+ ],
+ "props": [
+  {
+   "id": "v1-P1",
+   "room": "v1",
+   "kind": "weaponPickup",
+   "at": [
+    -10,
+    1,
+    109
+   ],
+   "size": [
+    0.6,
+    0.6,
+    0.6
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "pickup": true,
+   "job": "reward",
+   "why": "the TORCH on the axis, in view from the spawn: walk onto it (the level's weapon, VERBS row 33)",
+   "weapon": "torch"
+  },
+  {
+   "id": "v6-P1",
+   "room": "v6",
+   "kind": "healthPickup",
+   "at": [
+    0.5,
+    0.9,
+    -86
+   ],
+   "size": [
+    0.6,
+    0.6,
+    0.6
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "pickup": true,
+   "job": "reward",
+   "why": "the riskiest floor spot pays (A20; D-16): the rider's curb beside the lava strip under the east ride, in the island's and the drones' fire (off the organ loft: a camp with health on it)"
+  },
+  {
+   "id": "v2-P1",
+   "room": "v2",
+   "kind": "healthPickup",
+   "at": [
+    -12,
+    0.9,
+    69.5
+   ],
+   "size": [
+    0.6,
+    0.6,
+    0.6
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "pickup": true,
+   "job": "reward",
+   "why": "the riskiest spot pays (A20; round 6, the lead's midpoint review: off the bell, where the block, its beam ramp and the health made the camp): on the floor under the bell ring, in front of the bell's cut face on the door's line, where wave 1 comes round both sides of the bell and the aisles' spitters see it"
+  },
+  {
+   "id": "v2-bell-lip-s",
+   "room": "v2",
+   "kind": "edgeLight",
+   "at": [
+    -12,
+    0.6,
+    67.03
+   ],
+   "size": [
+    6.4,
+    0.08,
+    0.05
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "job": "marker",
+   "why": "THE BELL's flared lip (round 4, GG review: it read as a plain cube): the rim of its mouth on the floor, drawn along its south face"
+  },
+  {
+   "id": "v2-bell-lip-n",
+   "room": "v2",
+   "kind": "edgeLight",
+   "at": [
+    -12,
+    0.6,
+    63.97
+   ],
+   "size": [
+    6.4,
+    0.08,
+    0.05
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "job": "marker",
+   "why": "THE BELL's flared lip along its north face, either side of the beam"
+  },
+  {
+   "id": "v2-bell-crown",
+   "room": "v2",
+   "kind": "edgeLight",
+   "at": [
+    -12,
+    4.95,
+    67.03
+   ],
+   "size": [
+    5.6,
+    0.08,
+    0.05
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "job": "marker",
+   "why": "THE BELL's crown edge (its shoulder at 5 m) seen from the mouth"
+  },
+  {
+   "id": "v8-P1",
+   "room": "v8",
+   "kind": "healthPickup",
+   "at": [
+    -10,
+    0.9,
+    -160
+   ],
+   "size": [
+    0.6,
+    0.6,
+    0.6
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "pickup": true,
+   "job": "reward",
+   "why": "the last rest before FALLING STONES, THE RING and THE CROWN: full health"
+  },
+  {
+   "id": "v5-P1",
+   "room": "v5",
+   "kind": "healthPickup",
+   "at": [
+    -17.65,
+    0.9,
+    -46.8
+   ],
+   "size": [
+    0.6,
+    0.6,
+    0.6
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "pickup": true,
+   "job": "reward",
+   "why": "the riskiest spot pays (A20; round 6, the lead's midpoint review: off the ringing chamber, where it made the 5 m deck a camp): on the floor at the ringers' stair's foot, under the chamber's spitter and in the file coming down the stair"
+  }
+ ],
+ "surfaces": [],
+ "gates38": {
+  "_why": "builder C2: every gate in the level (the landing solids' `gate` tags), for builder E's checker and the report",
+  "list": [
+   {
+    "id": "v3.G",
+    "verb": "dashjump",
+    "from": [
+     -10,
+     0,
+     37.1
+    ],
+    "to": [
+     -10,
+     0,
+     18
+    ],
+    "runUp": 8,
+    "gap": 17,
+    "meter": 1,
+    "why": "room v3's gate: the jump-dash, one per pad (spire38's meter)"
+   },
+   {
+    "id": "v4.G",
+    "verb": "dashjump",
+    "from": [
+     -10,
+     0,
+     -0.9
+    ],
+    "to": [
+     -10,
+     1,
+     -21
+    ],
+    "runUp": 8,
+    "gap": 18,
+    "meter": 1,
+    "why": "room v4's gate (A2, THE STEP UP): the jump-dash up 1.0 m over 18 m, one per pad (spire38's meter)",
+    "rise": 1
+   },
+   {
+    "id": "v7.G",
+    "verb": "dashjump",
+    "from": [
+     -10,
+     0,
+     -124.9
+    ],
+    "to": [
+     -10,
+     0,
+     -147
+    ],
+    "runUp": 8,
+    "gap": 20,
+    "meter": 1,
+    "why": "room v7's gate (A2): the jump-dash over 20 m, one per pad (spire38's meter)"
+   }
+  ]
+ },
+ "owns38": [
+  "jump",
+  "double",
+  "dash",
+  "slide",
+  "ride",
+  "walljump"
+ ],
+ "owns38_why": "builder C2: the gates are all in flight38 rooms: no boost (LIMIT pistolOnly) and no grapple (spire38 meter.noHook); the shockwave is off game-wide (shockwaveOff25)"
+}

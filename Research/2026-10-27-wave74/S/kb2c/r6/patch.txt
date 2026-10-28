@@ -1,0 +1,10 @@
+# command: node Tools/night/n70-patch-share.cjs --level kiln --room Design/levels/n67/kiln/rooms/kb2c.json kb2c
+# sha: 9514f7bd8; time: 2026-10-27 23:26:57
+n70-patch-share: room kb2c | shipped Design/levels/n67/kiln/rooms-base/kb2c.json vs rebuilt Design/levels/n67/kiln/rooms/kb2c.json
+| room | shipped pieces kept | by kind (kept / shipped) | rect / spawn / exit | waves |
+|---|---|---|---|---|
+| kb2c | 2 / 15 (13 %) | boxes 2 / 12, ramps 0 / 2, pads 0 / 1, pits 0 / 0 | rect same, spawn same, exit same | waves same |
+  kept: box (-6, 0, -164.5)..(-2, 12, -163.5) (shipped job: molecule: the entrance gated (the door's west liner))
+  kept: box (2, 0, -164.5)..(6, 12, -163.5) (shipped job: molecule: the entrance gated (the door's east liner))
+  rebuilt room pieces: boxes 11, ramps 2, pads 3, pits 0 | the rule: PASS at <= 25 % of the shipped room's pieces kept (geometry-equal; job / why text ignored)
+n70-patch-share: PASS kb2c (13 % kept)

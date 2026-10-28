@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="662" height="512" viewBox="0 0 662 512">
+<defs><pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="8" stroke="#ff5a1f" stroke-width="2" opacity="0.55"/></pattern><marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#ffe08a"/></marker></defs>
+<rect width="662" height="512" fill="#14121c"/>
+<rect x="111.5" y="111.5" width="288.0" height="288.0" fill="#3a3550"/>
+<rect x="135.5" y="135.5" width="240.0" height="240.0" fill="#26232f" stroke="#8a84a8" stroke-width="1"/>
+<rect x="207.5" y="375.5" width="48.0" height="48.0" fill="#26232f" stroke="#cfc6ff" stroke-dasharray="3,2" stroke-width="1"/>
+<circle cx="136.1" cy="315.5" r="3" fill="#f2efff"/>
+<circle cx="374.9" cy="315.5" r="3" fill="#f2efff"/>
+<circle cx="255.5" cy="255.5" r="3" fill="#f2efff"/>
+<circle cx="255.5" cy="171.5" r="30.0" fill="#ff5a1f" opacity="0.18"/>
+<circle cx="255.5" cy="171.5" r="3" fill="#ff5a1f"/>
+<polygon points="439.1,255.5 425.1,325.8 385.3,385.3 325.8,425.1 255.5,439.1 185.3,425.1 125.8,385.3 86.0,325.8 72.0,255.5 86.0,185.3 125.8,125.8 185.3,86.0 255.5,72.0 325.8,86.0 385.3,125.8 425.1,185.3 439.1,255.5" fill="#1d1a26" fill-opacity="0.55" stroke="#f2efff" stroke-width="2" stroke-opacity="0.8"/>
+<polygon points="379.3,389.3 331.8,421.1 315.7,397.1 363.3,365.4" fill="rgb(112,112,118)" stroke="#ff5a1f" stroke-width="2" stroke-dasharray="5,3"/>
+<text x="347.5" y="393.2" font-size="9" fill="#fff3c0" font-family="Consolas,monospace" text-anchor="middle" dominant-baseline="middle">P2 2.4->0</text>
+<polygon points="84.6,318.7 73.4,262.6 101.7,257.0 112.8,313.1" fill="rgb(112,112,118)" stroke="#ff5a1f" stroke-width="2" stroke-dasharray="5,3"/>
+<text x="93.1" y="287.8" font-size="9" fill="#fff3c0" font-family="Consolas,monospace" text-anchor="middle" dominant-baseline="middle">P7 2.4->0</text>
+<polygon points="331.8,90.0 379.3,121.8 363.3,145.7 315.7,113.9" fill="rgb(112,112,118)" stroke="#ff5a1f" stroke-width="2" stroke-dasharray="5,3"/>
+<text x="347.5" y="117.8" font-size="9" fill="#fff3c0" font-family="Consolas,monospace" text-anchor="middle" dominant-baseline="middle">P13 2.4->0</text>
+<text x="415.1" y="285.5" font-size="10" fill="#f2efff" font-family="Consolas,monospace" text-anchor="end">LANTERN RING (arena)</text>
+<polyline points="231.5,327.5 255.5,165.5" fill="none" stroke="#ffffff" stroke-width="1" stroke-dasharray="2,3" opacity="0.6"/>
+<path d="M231.5,320.5 L236.5,331.5 L226.5,331.5 z" fill="#36e3ff"/>
+<circle cx="255.5" cy="165.5" r="5" fill="none" stroke="#ffffff" stroke-width="2"/>
+<text x="140.3" y="152.3" font-size="12" fill="#ffffff" font-family="Consolas,monospace" font-weight="bold">f12 1.12 THE LANTERN</text>
+<text x="140.3" y="170.3" font-size="10" fill="#cfc6ff" font-family="Consolas,monospace" >20x20 h14</text>
+<text x="520" y="18" font-size="12" fill="#fff" font-family="Consolas,monospace" font-weight="bold">n30-foundry</text>
+<rect x="520" y="30" width="12" height="10" fill="#ff4d12" stroke="#888"/>
+<text x="536" y="39" font-size="10" fill="#ddd" font-family="Consolas,monospace">lava</text>
+<rect x="520" y="46" width="12" height="10" fill="#050508" stroke="#888"/>
+<text x="536" y="55" font-size="10" fill="#ddd" font-family="Consolas,monospace">void pit</text>
+<rect x="520" y="62" width="12" height="10" fill="#ff5a1f" stroke="#888"/>
+<text x="536" y="71" font-size="10" fill="#ddd" font-family="Consolas,monospace">hazard</text>
+<rect x="520" y="78" width="12" height="10" fill="#9fd8ff" stroke="#888"/>
+<text x="536" y="87" font-size="10" fill="#ddd" font-family="Consolas,monospace">ice</text>
+<rect x="520" y="94" width="12" height="10" fill="#6d6250" stroke="#888"/>
+<text x="536" y="103" font-size="10" fill="#ddd" font-family="Consolas,monospace">ramp (arrow up)</text>
+<rect x="520" y="110" width="12" height="10" fill="rgb(140,140,147)" stroke="#888"/>
+<text x="536" y="119" font-size="10" fill="#ddd" font-family="Consolas,monospace">box: kind top-y</text>
+<rect x="520" y="126" width="12" height="10" fill="#36e3ff" stroke="#888"/>
+<text x="536" y="135" font-size="10" fill="#ddd" font-family="Consolas,monospace">spawn</text>
+<rect x="520" y="142" width="12" height="10" fill="#ffffff" stroke="#888"/>
+<text x="536" y="151" font-size="10" fill="#ddd" font-family="Consolas,monospace">exit</text>
+<rect x="520" y="158" width="12" height="10" fill="#ff5a1f" stroke="#888"/>
+<text x="536" y="167" font-size="10" fill="#ddd" font-family="Consolas,monospace">node / high node</text>
+<rect x="520" y="174" width="12" height="10" fill="#5cff8a" stroke="#888"/>
+<text x="536" y="183" font-size="10" fill="#ddd" font-family="Consolas,monospace">pickup</text>
+<rect x="520" y="190" width="12" height="10" fill="#36e3ff" stroke="#888"/>
+<text x="536" y="199" font-size="10" fill="#ddd" font-family="Consolas,monospace">grapple node</text>
+<text x="520" y="220" font-size="10" fill="#aaa" font-family="Consolas,monospace">north up, 12 px/m</text>
+</svg>

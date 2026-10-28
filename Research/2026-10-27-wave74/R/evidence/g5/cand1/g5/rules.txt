@@ -1,0 +1,18 @@
+# command: python -I Tools/night/n74-room-rules.py room Design/levels/n67/iceline/rooms/g5.json
+# sha: 716e3003a (+ the room file as in the tree); time: 2026-10-28 00:50:21
+# command: python -I Tools/night/n74-room-rules.py room Design/levels/n67/iceline/rooms/g5.json
+# sha: 4435ab91e; time: 2026-10-28 00:50:21
+iceline/g5  rect [-11.0, -158.0, 10.0, -128.0]  spawn [0.0, 0.0, -130.0] yaw 0  floor 0.0
+  PLANES  PASS  planes 3 (0.0 m: 442 cells, 2.5 m: 66 cells, 4.5 m: 32 cells)
+  COVER   PASS  cover: free-standing high 3, low 0, between 0 (0 without a job), none 0
+  LOOPS   PASS  loops 6 (floor holes 2 + closed pad / ride routes 4 of 4)
+  REAR    PASS  rear arc: 0 of 1 wave-1 usable nodes behind the entry facing (all waves: 0 node uses behind)
+  VIEW    PASS  view: enemy in view at 0.00 s (1 of 1 wave-1 nodes seen at entry)
+  CROSS   PASS  cross: chord 36.6 m, dash 1.53 s, walk 4.6 s (bar 2.0 s at dash)
+  EXPOSE  PASS  exposure: 57 % of 1035 floor-sample pairs see each other (bar 60 %); longest clear line 29.5 m (medium band 19.5 m)
+  CLIMB   PASS  climb: 2 tier group(s), 0 not reached by walker links
+    free-standing high piece: hull [-5.0, 0.0, -151.6]-[-3.8, 3.5, -150.4] h 3.50 job "cover"
+    free-standing high piece: hull [3.4, 0.0, -156.6]-[4.6, 3.5, -155.4] h 3.50 job "cover"
+    free-standing high piece: hull [-1.5, 0.0, -145.0]-[2.5, 12.0, -141.0] h 12.00 job "spatial law: THE ICE STACK (the landmark; splits t"
+    walkers reach every tier: climb: 2 tier group(s), 0 not reached by walker links
+  core 5/5 PASS, extra 3/3 PASS

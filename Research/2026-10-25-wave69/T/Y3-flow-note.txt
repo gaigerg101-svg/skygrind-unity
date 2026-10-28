@@ -1,0 +1,12 @@
+# Y3 five-level walk: 2026-10-25 10:08:16
+# Y3 is node only: the files it adds beside Y1's commit 33998e31 (git status --short):
+?? Research/2026-10-25-wave69/T/Y3-flow-note.txt
+?? Research/2026-10-25-wave69/T/Y3-patch-share-GREEN.txt
+?? Research/2026-10-25-wave69/T/Y3-patch-share-RED.txt
+?? Tools/night/n69-patch-share.cjs
+# git diff --stat 33998e31 -- Tools/SimHarness Assets Design (nothing the SimHarness DLL or a level is built from):
+(empty above = unchanged)
+# the DLL the Y1 walk ran on (sha256), unchanged since its build at 10:01:
+ffad0b6c7f13dabcd457be96b8d2afb23c4a721456d02d4e15c85c01277ffdc0 *Temp/SimHarness/bin/Release/net10.0/SimHarness.dll
+-rwxr-xr-x 1 gaige 197609 5411328 10:01:44 Temp/SimHarness/bin/Release/net10.0/SimHarness.dll*
+# so the five-level walk for Y3 is Y1's: Y1-flow-compare.txt (n46flow --off67 seeds 10 on the five levels: EQUAL to Logs/n69/flow-base.txt); not re-run

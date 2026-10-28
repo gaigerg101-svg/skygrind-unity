@@ -1,0 +1,26 @@
+{
+  "_why": "NIGHT24 builder L's pipeline spike: two rooms and one door (LEVEL-FORMAT.md). Web coordinates: x east, y up, z SOUTH (north is -z); metres. Not a layer.",
+  "id": "spike",
+  "name": "SPIKE",
+  "floorSize": 128,
+  "killPlaneY": -30,
+  "rooms": [
+    { "id": "r1", "name": "ROOM ONE", "kind": "room", "rect": [-20, -20, 20, 20], "par": 30,
+      "spawn": { "at": [0, 0, 14], "yawDeg": 0 },
+      "exit": [0, 0, -17],
+      "nodes": [[-14, 0, -10], [14, 0, -10], [-14, 0, 8], [14, 0, 8]],
+      "waves": [["husk", "husk"]] },
+    { "id": "r2", "name": "ROOM TWO", "kind": "room", "rect": [-20, -66, 20, -26], "par": 40,
+      "spawn": { "at": [0, 0, -30], "yawDeg": 0 },
+      "exit": [0, 0, -63],
+      "nodes": [[-14, 0, -40], [14, 0, -40], [-14, 0, -56], [14, 0, -56]],
+      "waves": [["husk", "husk", "husk"]] }
+  ],
+  "doors": [
+    { "id": "d1", "between": ["r1", "r2"], "rect": [-4, -26, 4, -20], "checkpoint": true }
+  ],
+  "boxes": [],
+  "ramps": [],
+  "pads": [],
+  "grapple": []
+}

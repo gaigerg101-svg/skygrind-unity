@@ -1,0 +1,13 @@
+cmd: bash Tools/night/dn-check-wt.sh <scratch>/dn
+base sha: 0d40b0c9f + the uncommitted N4 diff (git rm)
+ Assets/Scripts/Game/N37Fixes.cs      | 25 -------------------------
+ Assets/Scripts/Game/N37Fixes.cs.meta |  2 --
+ 2 files changed, 27 deletions(-)
+N37Fixes.cs.meta guid ff8418be726c3f73a92e8e94a3172d1f: git grep in *.unity *.prefab *.asset: none (checked before the rm)
+start: 11:49:43
+== Skygrind.Game.csproj: 0 error(s)
+== Skygrind.Game.Tests.csproj: 0 error(s)
+== Skygrind.Core.Tests.csproj: 0 error(s)
+== Assembly-CSharp-Editor.csproj: 0 error(s)
+dn-check total errors: 0
+end: 11:51:03

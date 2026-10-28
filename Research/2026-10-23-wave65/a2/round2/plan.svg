@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="514" height="448" viewBox="0 0 514 448">
+<defs><pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="8" stroke="#ff5a1f" stroke-width="2" opacity="0.55"/></pattern><marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#ffe08a"/></marker></defs>
+<rect width="514" height="448" fill="#14121c"/>
+<rect x="56.0" y="56.0" width="252.0" height="336.0" fill="#3a3550"/>
+<rect x="84.0" y="84.0" width="196.0" height="280.0" fill="#26232f" stroke="#8a84a8" stroke-width="1"/>
+<rect x="154.0" y="364.0" width="56.0" height="56.0" fill="#26232f" stroke="#cfc6ff" stroke-dasharray="3,2" stroke-width="1"/>
+<rect x="154.0" y="28.0" width="56.0" height="56.0" fill="#26232f" stroke="#cfc6ff" stroke-dasharray="3,2" stroke-width="1"/>
+<rect x="84.0" y="154.0" width="35.0" height="21.0" fill="rgb(102,102,107)" stroke="#0c0b10" stroke-width="1" opacity="0.95"/>
+<text x="101.5" y="164.5" font-size="11" fill="#0c0b10" font-family="Consolas,monospace" text-anchor="middle" dominant-baseline="middle">h 1.8</text>
+<rect x="112.0" y="238.0" width="35.0" height="49.0" fill="rgb(109,109,114)" stroke="#0c0b10" stroke-width="1" opacity="0.95"/>
+<text x="129.5" y="262.5" font-size="11" fill="#0c0b10" font-family="Consolas,monospace" text-anchor="middle" dominant-baseline="middle">h 2.2</text>
+<rect x="217.0" y="84.0" width="63.0" height="77.0" fill="rgb(114,114,120)" stroke="#0c0b10" stroke-width="1" opacity="0.95"/>
+<text x="248.5" y="122.5" font-size="11" fill="#0c0b10" font-family="Consolas,monospace" text-anchor="middle" dominant-baseline="middle">d 2.5</text>
+<rect x="231.0" y="161.0" width="49.0" height="84.0" fill="#6d6250" stroke="#ffe08a" stroke-width="1" opacity="0.9"/>
+<line x1="255.5" y1="245.0" x2="255.5" y2="161.0" stroke="#ffe08a" stroke-width="2" marker-end="url(#arr)"/>
+<text x="284.2" y="203.0" font-size="9" fill="#ffe08a" font-family="Consolas,monospace" >ramp 2.5</text>
+<rect x="231.0" y="266.0" width="14.0" height="14.0" fill="#888" opacity="0.35" stroke="none"/>
+<rect x="179.2" y="143.5" width="5.6" height="119.0" fill="#888" opacity="0.35" stroke="none"/>
+<rect x="217.0" y="155.4" width="63.0" height="5.6" fill="#888" opacity="0.35" stroke="none"/>
+<rect x="114.1" y="286.3" width="30.8" height="2.8" fill="#888" opacity="0.35" stroke="none"/>
+<rect x="154.0" y="84.0" width="56.0" height="1.4" fill="#888" opacity="0.35" stroke="none"/>
+<circle cx="194.6" cy="203.0" r="3" fill="#f2efff"/>
+<circle cx="252.0" cy="119.0" r="3" fill="#ffb43a"/>
+<circle cx="182.0" cy="112.0" r="17.5" fill="#36e3ff" opacity="0.18"/>
+<circle cx="182.0" cy="112.0" r="3" fill="#36e3ff"/>
+<circle cx="140.0" cy="294.0" r="3" fill="#f2efff"/>
+<circle cx="91.0" cy="147.0" r="2.5" fill="#ff5a1f"/>
+<circle cx="91.0" cy="131.6" r="2.5" fill="#ff5a1f"/>
+<rect x="228.0" y="95.0" width="6" height="6" fill="none" stroke="#ff5a1f" stroke-width="1.5"/>
+<rect x="249.0" y="95.0" width="6" height="6" fill="none" stroke="#ff5a1f" stroke-width="1.5"/>
+<rect x="270.0" y="95.0" width="6" height="6" fill="none" stroke="#ff5a1f" stroke-width="1.5"/>
+<rect x="249.0" y="130.0" width="6" height="6" fill="none" stroke="#ff5a1f" stroke-width="1.5"/>
+<polyline points="182.0,336.0 238.0,273.0 203.0,217.0 182.0,112.0" fill="none" stroke="#ffffff" stroke-width="1" stroke-dasharray="2,3" opacity="0.6"/>
+<polyline points="238.0,273.0 255.5,252.0 255.5,154.0 252.0,119.0" fill="none" stroke="#ffffff" stroke-width="1" stroke-dasharray="2,3" opacity="0.6"/>
+<polyline points="182.0,336.0 161.0,224.0 98.0,203.0 133.0,189.0 140.0,126.0 182.0,112.0" fill="none" stroke="#ffffff" stroke-width="1" stroke-dasharray="2,3" opacity="0.6"/>
+<path d="M182.0,329.0 L187.0,340.0 L177.0,340.0 z" fill="#36e3ff"/>
+<circle cx="182.0" cy="112.0" r="5" fill="none" stroke="#ffffff" stroke-width="2"/>
+<text x="89.6" y="103.6" font-size="12" fill="#ffffff" font-family="Consolas,monospace" font-weight="bold">a2 1.2 KESTREL</text>
+<text x="89.6" y="124.6" font-size="10" fill="#cfc6ff" font-family="Consolas,monospace" >14x20 h7  4h / 2h</text>
+<text x="372" y="18" font-size="12" fill="#fff" font-family="Consolas,monospace" font-weight="bold">n65-foundry</text>
+<rect x="372" y="30" width="12" height="10" fill="#ff4d12" stroke="#888"/>
+<text x="388" y="39" font-size="10" fill="#ddd" font-family="Consolas,monospace">lava</text>
+<rect x="372" y="46" width="12" height="10" fill="#050508" stroke="#888"/>
+<text x="388" y="55" font-size="10" fill="#ddd" font-family="Consolas,monospace">void pit</text>
+<rect x="372" y="62" width="12" height="10" fill="#ff5a1f" stroke="#888"/>
+<text x="388" y="71" font-size="10" fill="#ddd" font-family="Consolas,monospace">hazard</text>
+<rect x="372" y="78" width="12" height="10" fill="#9fd8ff" stroke="#888"/>
+<text x="388" y="87" font-size="10" fill="#ddd" font-family="Consolas,monospace">ice</text>
+<rect x="372" y="94" width="12" height="10" fill="#6d6250" stroke="#888"/>
+<text x="388" y="103" font-size="10" fill="#ddd" font-family="Consolas,monospace">ramp (arrow up)</text>
+<rect x="372" y="110" width="12" height="10" fill="rgb(140,140,147)" stroke="#888"/>
+<text x="388" y="119" font-size="10" fill="#ddd" font-family="Consolas,monospace">box: kind top-y</text>
+<rect x="372" y="126" width="12" height="10" fill="#36e3ff" stroke="#888"/>
+<text x="388" y="135" font-size="10" fill="#ddd" font-family="Consolas,monospace">spawn</text>
+<rect x="372" y="142" width="12" height="10" fill="#ffffff" stroke="#888"/>
+<text x="388" y="151" font-size="10" fill="#ddd" font-family="Consolas,monospace">exit</text>
+<rect x="372" y="158" width="12" height="10" fill="#ff5a1f" stroke="#888"/>
+<text x="388" y="167" font-size="10" fill="#ddd" font-family="Consolas,monospace">node / high node</text>
+<rect x="372" y="174" width="12" height="10" fill="#5cff8a" stroke="#888"/>
+<text x="388" y="183" font-size="10" fill="#ddd" font-family="Consolas,monospace">pickup</text>
+<rect x="372" y="190" width="12" height="10" fill="#36e3ff" stroke="#888"/>
+<text x="388" y="199" font-size="10" fill="#ddd" font-family="Consolas,monospace">grapple node</text>
+<text x="372" y="220" font-size="10" fill="#aaa" font-family="Consolas,monospace">north up, 14 px/m</text>
+</svg>

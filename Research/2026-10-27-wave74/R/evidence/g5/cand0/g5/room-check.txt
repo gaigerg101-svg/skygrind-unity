@@ -1,0 +1,13 @@
+# command: python -I Tools/night/n59-l-room.py n67-iceline room g5 --dir C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/ice/g5/cand0
+# sha: f360cf025; time: 2026-10-28 00:30:14
+== n56-room room iceline g5 (ambushed)
+  PASS R2 no dead ends      0 dead-end cells of 165 (2 m x 0.5 m cells; 0 bridges)
+  FAIL R5 foothold          no box above the eye (1.6 m) reaching 4-8 m inside the entry
+  PASS R8 every job         0 untagged of 14 solids
+  n/c  IN VIEW ambushed     not measured: no foothold (R5 FAIL) | without the foothold clauses: PASS, 0 of 4 nodes in use fail (8-15 m from the door, <= 15 m from midfield, no line into the corridor)
+  w1 entry frame (a156): 1.2 of 5 seen, nearest 7.4 m; node distances 7.4, 7.9, 11.5, 12.7
+  PASS I1 no mirror         mirror overlap 47 % across the door axis x = 0 (d4; 14 solids, 175 m2 footprint; < 60 % PASS)
+  PASS I2 ride shortcut     ride 16 m at x -11..-10.4 z -147..-131: best side +1 dir -1: walk 19.1 m / ride 16.0 m = 1.19; ride 10 m at x 9.4..10 z -139..-129: best side -1 dir -1: walk 39.5 m / ride 10.0 m = 3.95; ride 4 m at x -5.3..-4.7 z -139..-135: best side -1 dir -1: walk 5.0 m / ride 4.0 m = 1.25; ride 4 m at x 4.7..5.
+  n/c  I3 teach verb needed not a grapple-pull teach room (ride lessons: I2; whip, pad and slide lessons: not computed)
+  PASS I4 pads clear        3 pads, 4 walk lines; all clear (nearest line distances 3.0, 3.5, 3.0 m)
+ROOM g5: FAIL R5 foothold

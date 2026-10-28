@@ -1,0 +1,29 @@
+# command: dotnet run --project Tools/SimHarness -c Release --no-build -- n65tour --level n65-foundry
+# sha: fef04eb2 (branch n65-T; tracked changes uncommitted: 3 file(s))
+# time: 2026-10-23 14:56:51 -> 2026-10-23 14:56:52 (local)
+# exit: 0
+
+n65tour: level n65-foundry (C:\Users\gaige\dev\SKYGRIND-unity\.claude\worktrees\agent-af48e888c59fa3626\Design\levels\n65-foundry.json), 202 collision boxes; planted none
+n65tour a2 pose entry (frames65) | feet (0.0, 0.0, -36.0) yaw 0 pitch 0.10
+n65tour a2 pose deck (frames65) | feet (-4.0, 2.0, -51.0) yaw 160 pitch -0.20
+n65tour a2 pose wall (frames65) | feet (-4.0, 0.0, -52.5) yaw 0 pitch 0.00 | WARN inside a solid (feet + eye): the camera in a wall
+n65tour a2 line65 1/8 | feet (0.0, 0.0, -37.0) yaw 45 pitch -0.08
+n65tour a2 line65 2/8 | feet (-2.2, 0.0, -39.2) yaw 45 pitch -0.08
+n65tour a2 line65 3/8 | feet (-4.1, 0.0, -41.4) yaw 17 pitch -0.08
+n65tour a2 line65 4/8 | feet (-5.0, 0.0, -44.4) yaw 17 pitch -0.08
+n65tour a2 line65 5/8 | feet (-5.1, 0.5, -47.2) yaw -17 pitch 0.29
+n65tour a2 line65 6/8 | feet (-4.3, 1.6, -49.9) yaw -17 pitch 0.29
+n65tour a2 line65 7/8 | feet (-2.5, 1.2, -51.8) yaw -63 pitch -0.50 | WARN inside a solid (feet): the camera in a wall
+n65tour a2 line65 8/8 | feet (0.0, 0.0, -53.0) yaw -63 pitch -0.50
+n65tour a3 pose mid36 (frames36.mid) | feet (6.5, 0.0, -60.5) yaw 33 pitch -0.01
+n65tour a3 line65: none in the row (no sequence)
+n65tour a4 pose mid36 (frames36.mid) | feet (-3.0, 0.0, -93.0) yaw -16 pitch 0.04
+n65tour a4 line65: none in the row (no sequence)
+n65tour a5 pose mid36 (frames36.mid) | feet (-9.0, 0.0, -113.0) yaw -35 pitch -0.02
+n65tour a5 line65: none in the row (no sequence)
+n65tour b1 pose mid36 (frames36.mid) | feet (-7.9, 0.0, -157.0) yaw -20 pitch 0.08
+n65tour b1 line65: none in the row (no sequence)
+n65tour a8 pose mid36 (frames36.mid) | feet (-3.7, 0.6, -347.0) yaw -8 pitch 0.00
+n65tour a8 line65: none in the row (no sequence)
+n65tour cases: an L-shaped line65 -> 8 frames, first yaw -0, last (10.0, -10.0) yaw -90: PASS; a bad plant 'a2:1,x,3' parses to nothing (PASS)
+n65tour n65-foundry: rooms toured 6, poses 8 (on the fallback frames36.mid: a3, a4, a5, b1, a8), line65 in 1 room(s), WARN 2; GREEN

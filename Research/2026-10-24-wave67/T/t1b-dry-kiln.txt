@@ -1,0 +1,12 @@
+# L67=kiln ROOMS=kb3 SLATE=Research/2026-10-24-wave67/T/t1b-dry-slate.json bash Tools/night/n67-round.sh dry-kiln
+# sha e4fae1a2; dirty: ; 2026-10-24 11:16:21
+n67-round dry-kiln: level kiln (n67-kiln), rooms kb3, the slate snapshot Logs/n67/dry-kiln/slate-at-start.json (from Research/2026-10-24-wave67/T/t1b-dry-slate.json, sha256 4217ea8aaac3c30b)
+n67-round dry-kiln: latest assembled into Logs/n67/dry-kiln (21 s): levelgen --walk: 0 ERROR (none; 9 s)
+n67-round dry-kiln: verb65 kb3 - (slate ride): plant
+n67-red: 5 jobs on n67-kiln in 91 s; outputs under Logs/n67/dry-kiln/<room>/ (11:18:17)
+n67-round dry-kiln: iso pictures 1 / 1
+n67-round-verbs dry-kiln: 4 verdicts in 207 s (Logs/n67/dry-kiln/verbs.md)
+n67-round dry-kiln: done in 329 s; table Logs/n67/dry-kiln/table.md; the round's level is Logs/n67/dry-kiln/n67-kiln.json (never the tracked files); tracked status before / after (Logs/n67/dry-kiln/tracked-status.txt):
+  # git status --short Design/levels Assets/StreamingAssets/Design/levels Reports, before the round (2026-10-24 11:16:25):
+  # git status --short Design/levels Assets/StreamingAssets/Design/levels Reports, after the round (2026-10-24 11:21:52):
+# exit 0 at 11:21:53

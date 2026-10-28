@@ -1,0 +1,12 @@
+# cmd: node Tools/night/n72-c-marks.cjs Assets/StreamingAssets/Design/levels/{n52-foundry,n65-foundry,n52-iceline,n67-iceline,n52-kiln,n57-kiln,n67-kiln,n52-span,n58-span,n52-spire,n67-spire}.json  (ROUTE_M 4, HAZARD_M 2)  base sha: 9e49c8913  time: 2026-10-27 11:21:36
+n52-foundry: wall boxes 128 (ride panels 13), faces 466, segments 1428; marks: ride 126, route 280 (10 doors), hazard 212 (12 pits / lava); kept 618 (43 %), no job 810
+n65-foundry: wall boxes 128 (ride panels 13), faces 466, segments 1428; marks: ride 126, route 280 (10 doors), hazard 212 (12 pits / lava); kept 618 (43 %), no job 810
+n52-iceline: wall boxes 127 (ride panels 13), faces 484, segments 1240; marks: ride 118, route 226 (9 doors), hazard 26 (10 pits / lava); kept 370 (30 %), no job 870
+n67-iceline: wall boxes 127 (ride panels 13), faces 484, segments 1240; marks: ride 118, route 226 (9 doors), hazard 26 (10 pits / lava); kept 370 (30 %), no job 870
+n52-kiln: wall boxes 100 (ride panels 7), faces 360, segments 1296; marks: ride 62, route 206 (8 doors), hazard 109 (10 pits / lava); kept 377 (29 %), no job 919
+n57-kiln: wall boxes 119 (ride panels 7), faces 442, segments 1362; marks: ride 62, route 268 (9 doors), hazard 75 (5 pits / lava); kept 405 (30 %), no job 957
+n67-kiln: wall boxes 119 (ride panels 7), faces 442, segments 1362; marks: ride 62, route 268 (9 doors), hazard 75 (5 pits / lava); kept 405 (30 %), no job 957
+n52-span: wall boxes 92 (ride panels 13), faces 340, segments 1492; marks: ride 114, route 165 (7 doors), hazard 392 (19 pits / lava); kept 671 (45 %), no job 821
+n58-span: wall boxes 92 (ride panels 13), faces 340, segments 1492; marks: ride 114, route 165 (7 doors), hazard 392 (19 pits / lava); kept 671 (45 %), no job 821
+n52-spire: wall boxes 117 (ride panels 9), faces 448, segments 1410; marks: ride 64, route 240 (10 doors), hazard 278 (8 pits / lava); kept 582 (41 %), no job 828
+n67-spire: wall boxes 117 (ride panels 9), faces 448, segments 1410; marks: ride 64, route 240 (10 doors), hazard 278 (8 pits / lava); kept 582 (41 %), no job 828

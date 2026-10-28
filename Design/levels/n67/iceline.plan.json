@@ -1,0 +1,5893 @@
+{
+ "_why": "NIGHT67 (row design.n67.iceline67; Tools/night/gen-slots.cjs --level iceline): n52-iceline's plan with 8 slots from room files (g1 latest (rebuilt), g2 latest (rebuilt), g3 latest (rebuilt), g4 latest (rebuilt), g5 latest (rebuilt), g6 latest (rebuilt), g7 latest (rebuilt), g8 latest (rebuilt)). Before it: NIGHT52 the room loop (design.n52.iceline52 swaps n47-iceline for n52-iceline while the row is on; NIGHT52.md section 5): n47's plan with the loop's rebuilt rooms (THE ROOM CONTRACT, section 2). Before it: NIGHT47 builder B (design.n47.iceline47 swaps n46-iceline for this file while the row is on; GG 2026-10-18 \"the charging enemy in the second stage needs to appear earlier and more frequently before the boss fight ... a mini challenge with three or more of them plus other enemies\"): Tools/night/gen-n47-iceline.cjs copies n46-iceline's plan whole: a charger alone in g1 after the tank, one in g2's third wave and g5's second, and g8 rebuilt as THE STAMPEDE (the card THE ROUNDHOUSE). n46-iceline's _why: NIGHT46 builder A3 (design.n46.iceline46 swaps n45-iceline for this file while the row is on; GG 2026-10-17 \"need to feel and flow better\"): Tools/night/gen-n46-iceline.cjs copies n45-iceline's plan whole: g4 gets a second bridge (a loop round the canal), g8's first charger stands in view, and g3 THE SWARM is rebuilt from its identity card THE TIPPLE (docs/ROOMS.md, NIGHT46). n45-iceline's _why: NIGHT45 builder A2 (design.n45.iceline45 swaps n43-iceline for this file while the row is on; GG 2026-10-17 J4; DESIGN-RULES A-9): Tools/night/gen-n45-iceline.cjs copies n43-iceline's plan whole and rebuilds g7 THE MIX only, from its identity card THE THAW LOCK (docs/ROOMS.md): a stone quay, a burning grate (Lava30) with two bridges and THE BOILER standing in it, two coal gantries; wave 2 from the door side. n43-iceline's _why: NIGHT43 builder E1 (design.n43.iceline43 swaps n40-iceline for this file while the row is on; GG G23 / G19; DESIGN-RULES R-3): Tools/night/gen-n43-iceline.cjs copies n40-iceline's plan whole and changes four rooms' rows only: g5 a WARDEN + 2 DRONES (from g7), g6 a FUSION husk at the far end of a 13.5 m dash lane after the KESTREL lesson ('{dash} INTO IT. {fire} THE GAUNTLET.'), g7 THE MIX cut to 3 roles (tank, spitter, swarmer: introduce, combine, escalate), g8 a CHARGER alone beside a wall ('{dash} ASIDE: IT HITS THE WALL'), a CHARGER with an escort, two CHARGERS. n40-iceline's _why: NIGHT40 builder L2 (design.n40.iceline40 swaps n37-iceline for this file): Tools/night/gen-n40-iceline.cjs from the beat sheet Design/levels/n40/iceline.beats.md: the gauntlet's curriculum, one job per room: 2.1 TANK ALONE, 2.2 THE SHIELD (a WARDEN), 2.3 THE SWARM (the blast for the pack), 2.4 THE REACH (a DRONE across the canal), 2.5 THE COOLDOWN (the 15 s), 2.6 THE ARMOURY (the KESTREL returns: iceline40.awards), 2.7 THE MIX, 2.8 THE REHEARSAL (a CHARGER), 2.9 REST, THE BRAWL (B2's boss room x9). GG 2026-10-13 asks 13-14 (Research/2026-10-14-wave40/GG-REQUEST.md).",
+ "id": "n67-iceline",
+ "name": "LEVEL 2 THE ICE LINE",
+ "n29": true,
+ "n30": true,
+ "n36": true,
+ "floorSize": 636,
+ "killPlaneY": -30,
+ "wallHeight": 14,
+ "rank": {
+  "time": [
+   345,
+   530,
+   790,
+   1190
+  ],
+  "kills": [
+   100,
+   85,
+   65,
+   40
+  ],
+  "style": [
+   2500,
+   1500,
+   700,
+   250
+  ],
+  "_why": "Unity-only (builder L2, NIGHT40): S/A/B/C cuts: time = the beat sheet's room times (219 s) + THE BRAWL's bot band middle 45 s (boss_rules 7), x [1.3, 2, 3, 4.5] as NIGHT36's; kills and style as n38-iceline's (NOT calibrated: no walk bot medians yet)."
+ },
+ "n27": {
+  "noKills": true
+ },
+ "rooms": [
+  {
+   "id": "g1",
+   "name": "2.1 TANK ALONE",
+   "kind": "room",
+   "rect": [
+    -11,
+    -26,
+    11,
+    0
+   ],
+   "height": 9,
+   "roof": true,
+   "par": 12,
+   "job36": "teach",
+   "verb36": "the punch: a tank dies to one swing of the gauntlet",
+   "spawn": {
+    "at": [
+     0,
+     0,
+     -2
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    0,
+    0,
+    -24.5
+   ],
+   "arena36": true,
+   "waves": [
+    [
+     "tank"
+    ],
+    [
+     "charger"
+    ]
+   ],
+   "lessons": [
+    {
+     "promptPad": "{fire}: ONE SWING FELLS A TANK",
+     "kind": "husksDead",
+     "n": 1,
+     "prompt": "{fire}: ONE SWING FELLS A TANK"
+    },
+    {
+     "promptPad": "Dodge late. It can't turn.",
+     "kind": "husksDead",
+     "n": 2,
+     "prompt": "Dodge late. It can't turn."
+    }
+   ],
+   "lessons31": [
+    {
+     "promptPad": "{fire}: ONE SWING FELLS A TANK",
+     "kind": "husksDead",
+     "n": 1,
+     "prompt": "{fire}: ONE SWING FELLS A TANK"
+    },
+    {
+     "promptPad": "Dodge late. It can't turn.",
+     "kind": "husksDead",
+     "n": 2,
+     "prompt": "Dodge late. It can't turn."
+    }
+   ],
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       0,
+       -2
+      ],
+      [
+       0,
+       0,
+       -8
+      ],
+      [
+       0,
+       0,
+       -20
+      ],
+      [
+       0,
+       0,
+       -24.5
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -6.5,
+       0,
+       -9
+      ],
+      [
+       -6.5,
+       3,
+       -17
+      ],
+      [
+       -8,
+       3,
+       -21
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "jump": true,
+     "points": [
+      [
+       3,
+       0,
+       -4
+      ],
+      [
+       5,
+       0.9,
+       -12
+      ],
+      [
+       5,
+       0,
+       -18
+      ]
+     ]
+    }
+   ],
+   "frames36": {
+    "mid": [
+     5,
+     0,
+     -3,
+     24.444,
+     -0.05
+    ],
+    "exit": [
+     0,
+     0,
+     -18,
+     0,
+     -0.075
+    ]
+   },
+   "nodes": [
+    [
+     0,
+     0,
+     -14
+    ]
+   ],
+   "waveNodes43": [
+    null,
+    [
+     [
+      0,
+      0,
+      -22
+     ]
+    ]
+   ],
+   "waveNodes43_why": "NIGHT47 B (G25): wave 2's CHARGER comes in at the exit door's mouth (0, -22), 20 m down the room's axis from the spawn and in view, alone; its first charge runs at you down the axis: sidestep late and it breaks on the entry wall or a ride panel (x +-8), its back open",
+   "iceline47_why": "NIGHT47 B G25 (DECIDE47 D-10): a second wave, the level's first CHARGER alone after the tank (R-3 broken on purpose: GG's \"appear earlier\"); its lesson (copy for F) after the tank's",
+   "bot43": false,
+   "verb65": "ride",
+   "line65": [
+    [
+     -9.7,
+     0,
+     -3
+    ],
+    [
+     -9.7,
+     1.5,
+     -9
+    ],
+    [
+     -9.7,
+     3,
+     -16
+    ],
+    [
+     -8,
+     3,
+     -21
+    ]
+   ],
+   "line65_why": "NIGHT74 S g1 r1 (Research/2026-10-27-wave74/S/card-g1.md): THE WEST WALL's ride: along its east face 0.7 m out from the door end to the gallery's top",
+   "card65": "Research/2026-10-27-wave74/S/card-g1.md",
+   "frames52": {
+    "_why": "NIGHT74 S g1 r1 (Research/2026-10-27-wave74/S/card-g1.md): the room frames: the door just crossed (the tank, the gallery, the step), the fight from the gallery",
+    "entry": [
+     0,
+     0,
+     -2,
+     0,
+     0.04
+    ],
+    "mid": [
+     -8,
+     3,
+     -20,
+     160,
+     -0.1
+    ],
+    "high": [
+     -8,
+     3,
+     -20,
+     160,
+     -0.1
+    ]
+   }
+  },
+  {
+   "id": "g2",
+   "name": "2.2 THE SHIELD",
+   "kind": "room",
+   "rect": [
+    -12,
+    -58,
+    9,
+    -30
+   ],
+   "height": 10,
+   "roof": true,
+   "par": 30,
+   "job36": "teach",
+   "verb36": "the WARDEN: punch the shield (a 1 s stun) or get round it",
+   "spawn": {
+    "at": [
+     0,
+     0,
+     -34.5
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    0,
+    0,
+    -56
+   ],
+   "arena36": true,
+   "waves": [
+    [
+     "warden",
+     "warden",
+     "husk",
+     "husk"
+    ],
+    [
+     "charger",
+     "husk",
+     "husk"
+    ]
+   ],
+   "lessons": [
+    {
+     "promptPad": "{fire} THE SHIELD, OR FLANK IT",
+     "kind": "husksDead",
+     "n": 1,
+     "prompt": "{fire} THE SHIELD, OR FLANK IT"
+    }
+   ],
+   "lessons31": [
+    {
+     "promptPad": "{fire} THE SHIELD, OR FLANK IT",
+     "kind": "husksDead",
+     "n": 1,
+     "prompt": "{fire} THE SHIELD, OR FLANK IT"
+    }
+   ],
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       0,
+       -34.5
+      ],
+      [
+       0,
+       0,
+       -40
+      ],
+      [
+       0,
+       0,
+       -47
+      ],
+      [
+       0,
+       0,
+       -51
+      ],
+      [
+       0,
+       0,
+       -56
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       7,
+       0,
+       -30.5
+      ],
+      [
+       7,
+       2,
+       -37.5
+      ],
+      [
+       7,
+       2,
+       -46
+      ],
+      [
+       7,
+       4,
+       -52.5
+      ],
+      [
+       7.5,
+       4,
+       -53.8
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -0.5,
+       0,
+       -52
+      ],
+      [
+       -3,
+       1.5,
+       -54
+      ],
+      [
+       -8,
+       4,
+       -54
+      ],
+      [
+       -10,
+       4,
+       -55
+      ]
+     ]
+    }
+   ],
+   "frames36": {
+    "mid": [
+     6,
+     0,
+     -33,
+     24.775,
+     -0.042
+    ],
+    "exit": [
+     0,
+     0,
+     -50,
+     0,
+     -0.075
+    ]
+   },
+   "nodes": [
+    [
+     1.5,
+     0,
+     -50.5
+    ],
+    [
+     4.2,
+     0,
+     -52
+    ],
+    [
+     -3,
+     0,
+     -51.5
+    ],
+    [
+     0,
+     0,
+     -53.5
+    ]
+   ],
+   "highNodes": [
+    [
+     -10,
+     4,
+     -54.5
+    ],
+    [
+     8.2,
+     4,
+     -55
+    ]
+   ],
+   "iceline47_why": "NIGHT47 B G25: wave 3 [charger, husk, husk]: the flank pillars (x +-9..9.6) break its charge; at most 3 roles at once (warden, husk, charger)",
+   "spawn_why": "NIGHT52 fix K2 (n52-loop-fix-k2.cjs): 4.5 m in from the door d1 (it stood 2 m in, on the door's 4 m dwell band): a retry starts you facing the anvil, not in the doorway",
+   "nodes_why": "NIGHT74 S g2 r1 (Research/2026-10-27-wave74/S/card-g2.md): the ground nodes on the far floor, clear of the new pieces (the east gantry step's footprint starts at x 5.5).",
+   "loop52_why": "NIGHT52 fix K2 (n52-loop-fix-k2.cjs): n47's THE SHIELD (24 x 28 x 9 m, 8 pieces 1.19 per 100 m2, the lead's D-25: an open floor with two pillars) rebuilt to THE ROOM CONTRACT: 24 x 28 x 10 m, 17 pieces, three planes (0 / 1.5 / 4 m) on walkers' ramps, two 18 m ride panels with a flank lane behind each, THE ANVIL to loop round, four springs (two over the warden onto the north decks, two up the flank lanes); the lesson and the waves kept EXT53 (e53-m-g2.cjs, builder M): the mirror broken: the west is the flank (its panel, hidden lane, springs, gantry and health kept), the east is the face: the east wall 3 m in (21 x 28 m), the east panel, deck 1.5, its ramp, spring and pillar cut, the east gantry 4 x 5 m with its ramp on the new wall, the quench tank, the run-up step and the yard spring added.",
+   "frames52": {
+    "_why": "NIGHT74 S g2 r1 (Research/2026-10-27-wave74/S/card-g2.md): the room frames: the door just crossed (the anvil, the terrace, the wall), the fight from the west gantry",
+    "entry": [
+     0,
+     0,
+     -34.5,
+     0,
+     0.04
+    ],
+    "mid": [
+     -4,
+     0,
+     -40,
+     10,
+     0.05
+    ],
+    "high": [
+     -10,
+     4,
+     -55,
+     -140,
+     -0.12
+    ]
+   },
+   "waveNodes43": [
+    [
+     [
+      1.5,
+      0,
+      -50.5
+     ],
+     [
+      4.2,
+      0,
+      -52
+     ],
+     [
+      -10,
+      4,
+      -54.5
+     ],
+     [
+      8.2,
+      4,
+      -55
+     ]
+    ]
+   ],
+   "waveNodes43_why": "NIGHT74 S g2 r1 (Research/2026-10-27-wave74/S/card-g2.md): wave 1 on the far floor and the two gantries (the shipped nodes stood on decks that are gone).",
+   "waves56_why": "NIGHT56 L (n56-l-wave1.py, L2 spawns in view): waves 1 + 2 merged [1, 3, 3] -> [4, 3]: both wardens and their husks hold the pillars at once (the same enemies, re-dealt: no wave-1 placement can show 4 of a smaller wave)",
+   "bot43": false,
+   "verb65": "ride",
+   "line65": [
+    [
+     -10.7,
+     0,
+     -34
+    ],
+    [
+     -10.7,
+     2,
+     -40
+    ],
+    [
+     -10.7,
+     3.5,
+     -48
+    ],
+    [
+     -10,
+     4,
+     -53
+    ]
+   ],
+   "line65_why": "NIGHT74 S g2 r1 (Research/2026-10-27-wave74/S/card-g2.md): THE FLANK WALL's ride: along its east face 0.7 m out from the door end to the west gantry",
+   "card65": "Research/2026-10-27-wave74/S/card-g2.md"
+  },
+  {
+   "id": "g3",
+   "name": "2.3 THE TIPPLE RIDES",
+   "kind": "room",
+   "rect": [
+    -12,
+    -90,
+    12,
+    -62
+   ],
+   "height": 10,
+   "roof": true,
+   "par": 25,
+   "job36": "teach",
+   "verb36": "the wall ride onto the high ground, then the LT blast: ride THE COAL RIDE over the floor onto THE TIPPLE HEAD (on foot the long way round), THE PANEL onto THE WEIGH LOFT; blast the swarm as it climbs to you",
+   "spawn": {
+    "at": [
+     0,
+     0,
+     -64
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    0,
+    0,
+    -88
+   ],
+   "arena36": true,
+   "waves": [
+    [
+     "husk",
+     "husk",
+     "husk"
+    ],
+    [
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "swarmer"
+    ]
+   ],
+   "lessons": [
+    {
+     "promptPad": "FIVE KILLS: {altFire} BLASTS THE PACK",
+     "kind": "husksDead",
+     "n": 3,
+     "prompt": "FIVE KILLS: {altFire} BLASTS THE PACK"
+    }
+   ],
+   "lessons31": [
+    {
+     "promptPad": "FIVE KILLS: {altFire} BLASTS THE PACK",
+     "kind": "husksDead",
+     "n": 3,
+     "prompt": "FIVE KILLS: {altFire} BLASTS THE PACK"
+    }
+   ],
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       0,
+       -64
+      ],
+      [
+       -3,
+       0,
+       -72
+      ],
+      [
+       -3,
+       0,
+       -81
+      ],
+      [
+       -3,
+       0,
+       -88
+      ],
+      [
+       0,
+       0,
+       -88
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -3,
+       0,
+       -84.5
+      ],
+      [
+       5,
+       4,
+       -84.5
+      ],
+      [
+       8,
+       4,
+       -83
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -8,
+       0,
+       -75
+      ],
+      [
+       -8,
+       4,
+       -66
+      ],
+      [
+       -10,
+       4,
+       -64
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       6,
+       0,
+       -66
+      ],
+      [
+       6,
+       0,
+       -76
+      ]
+     ]
+    }
+   ],
+   "frames36": {
+    "mid": [
+     0,
+     0,
+     -67,
+     0,
+     0.05
+    ],
+    "exit": [
+     8.5,
+     4,
+     -81,
+     160,
+     -0.25
+    ]
+   },
+   "nodes": [
+    [
+     -10.5,
+     0,
+     -68.5
+    ],
+    [
+     7.5,
+     0,
+     -66.5
+    ],
+    [
+     8.5,
+     0,
+     -64.5
+    ],
+    [
+     -8,
+     0,
+     -77
+    ],
+    [
+     -9,
+     0,
+     -80
+    ],
+    [
+     -4,
+     0,
+     -80.5
+    ],
+    [
+     5,
+     0,
+     -75
+    ],
+    [
+     -6,
+     0,
+     -88
+    ],
+    [
+     3.5,
+     0,
+     -88.5
+    ]
+   ],
+   "nodes_why": "NIGHT71 R (the lead's IN VIEW return; Research/2026-10-26-wave71/R/g3/card.md): wave 1 (the three husks, the ambush) either side of the door floor, hidden from the corridor by the weigh loft and the door wall, 8-15 m from the door (ambushed fallback), off the spawn's view cone (spawn31). NIGHT71 R r2 (Research/2026-10-26-wave71/R/g3/card.md): wave 1 (the three husks) 12 m or more from the spawn (spawn31), beside the hopper's west face. NIGHT71 R r1 (Research/2026-10-26-wave71/R/g3/card.md, THE TIPPLE RIDES, ride; rebuilt from the blank rect): wave 1 (the three husks, the ambush) off the door's view cone beside the loft stair; wave 2 (the swarm) the far floor and both decks, so it climbs to you",
+   "waveNodes43": [
+    [
+     [
+      -10.5,
+      0,
+      -68.5
+     ],
+     [
+      7.5,
+      0,
+      -66.5
+     ],
+     [
+      8.5,
+      0,
+      -64.5
+     ]
+    ],
+    [
+     [
+      -8,
+      0,
+      -77
+     ],
+     [
+      -9,
+      0,
+      -80
+     ],
+     [
+      -4,
+      0,
+      -80.5
+     ],
+     [
+      5,
+      0,
+      -75
+     ],
+     [
+      -6,
+      0,
+      -88
+     ],
+     [
+      3.5,
+      0,
+      -88.5
+     ],
+     [
+      8.5,
+      4,
+      -84
+     ],
+     [
+      -9,
+      4,
+      -64
+     ]
+    ]
+   ],
+   "waveNodes43_why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/g3/card.md, THE TIPPLE RIDES, ride; rebuilt from the blank rect): wave 1 (the three husks, the ambush) off the door's view cone beside the loft stair; wave 2 (the swarm) the far floor and both decks, so it climbs to you",
+   "iceline46_why": "NIGHT46 A3 I-3 (docs/ROOMS.md THE TIPPLE): n43's PEN and east ride panel cut; THE HOPPER (6 x 8 m to the roof, off the door's axis), THE TRESTLE (2 m deck + ramp, one-way drop north), four 0.9 m coal cars, the west ride panel kept; wave 1 in view either side of the hopper, wave 2 from the chute; rect, doors, waves and lesson unchanged",
+   "frames52": {
+    "_why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/g3/card.md, THE TIPPLE RIDES, ride; rebuilt from the blank rect): the room frames: the door just crossed (the floor, both ride walls, the hopper), the fight from the loft, the tipple's top",
+    "entry": [
+     0,
+     0,
+     -63,
+     0,
+     0.04
+    ],
+    "mid": [
+     -9,
+     4,
+     -64.5,
+     -150,
+     -0.2
+    ],
+    "high": [
+     8.5,
+     4,
+     -81,
+     160,
+     -0.25
+    ]
+   },
+   "loop52_why": "NIGHT52 the room loop (Tools/night/n52-loop-g3.cjs; THE ROOM CONTRACT's spirit, a teach room): NIGHT46's THE TIPPLE rebuilt as THE TIPPLE II: 24 x 28 x 10 m; 17 pieces; three tiers (floor, the 2 m trestle and tipple head, the 4 m SE loft), each on a walkers' ramp; the 18 m ride panel; the tipple and loft hoists (pads); two spill walls pack the swarm into the west lane; the lesson and waves kept. NIGHT53 (n53-loop-g3.cjs): the hopper 4 x 6 m, the chute's cheeks on its west face, wave 2's nodes in the west lane's north end.",
+   "highNodes": [
+    [
+     8.5,
+     4,
+     -84
+    ],
+    [
+     -9,
+     4,
+     -64
+    ]
+   ],
+   "bot43": false,
+   "verb65": "ride",
+   "line65": [
+    [
+     10.8,
+     0,
+     -65
+    ],
+    [
+     10.8,
+     2,
+     -70
+    ],
+    [
+     10.8,
+     2,
+     -76
+    ],
+    [
+     10,
+     4,
+     -80.5
+    ]
+   ],
+   "line65_why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/g3/card.md, THE TIPPLE RIDES, ride; rebuilt from the blank rect): THE COAL RIDE: along its west face 0.6 m out from the door wall's corner to its end over the tipple head",
+   "card65": "Research/2026-10-26-wave71/R/g3/card.md"
+  },
+  {
+   "id": "g4",
+   "name": "2.4 THE ORB YARD",
+   "kind": "room",
+   "rect": [
+    -12,
+    -124,
+    12,
+    -94
+   ],
+   "height": 10,
+   "roof": true,
+   "par": 30,
+   "job36": "twist",
+   "verb36": "the glove cannot reach a flyer: punch its yellow orb back at it; skate the ice pond under the orbs, break their line at the ice posts, ride the lock wall onto the gallery or take a hoist to meet the drones at their height",
+   "spawn": {
+    "at": [
+     0,
+     0,
+     -96
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    0,
+    0,
+    -122
+   ],
+   "arena36": true,
+   "waves": [
+    [
+     "drone"
+    ],
+    [
+     "drone",
+     "drone"
+    ]
+   ],
+   "lessons": [
+    {
+     "promptPad": "{fire} AS THE YELLOW ORB ARRIVES",
+     "kind": "husksDead",
+     "n": 1,
+     "prompt": "{fire} AS THE YELLOW ORB ARRIVES"
+    }
+   ],
+   "lessons31": [
+    {
+     "promptPad": "{fire} AS THE YELLOW ORB ARRIVES",
+     "kind": "husksDead",
+     "n": 1,
+     "prompt": "{fire} AS THE YELLOW ORB ARRIVES"
+    }
+   ],
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       0,
+       -96
+      ],
+      [
+       2,
+       0,
+       -102
+      ],
+      [
+       2,
+       0.9,
+       -108
+      ],
+      [
+       0,
+       0.9,
+       -112
+      ],
+      [
+       0,
+       0,
+       -118
+      ],
+      [
+       0,
+       0,
+       -122
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       6.5,
+       0,
+       -108
+      ],
+      [
+       6.5,
+       4,
+       -117
+      ],
+      [
+       9,
+       4,
+       -121
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -9.5,
+       0,
+       -115
+      ],
+      [
+       -9.5,
+       2.5,
+       -108
+      ],
+      [
+       -9,
+       2.5,
+       -104
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       9,
+       0,
+       -97
+      ],
+      [
+       9,
+       0,
+       -106
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -0.5,
+       0,
+       -105
+      ],
+      [
+       -6,
+       2.5,
+       -105
+      ],
+      [
+       -6.5,
+       2.5,
+       -106.5
+      ]
+     ]
+    }
+   ],
+   "frames36": {
+    "mid": [
+     0,
+     0,
+     -100,
+     0,
+     0.1
+    ],
+    "exit": [
+     9,
+     4,
+     -119,
+     160,
+     -0.2
+    ]
+   },
+   "nodes": [
+    [
+     -6,
+     0,
+     -114
+    ],
+    [
+     -3,
+     0,
+     -119
+    ],
+    [
+     4.5,
+     0,
+     -120
+    ],
+    [
+     3,
+     0,
+     -121
+    ],
+    [
+     -9,
+     0,
+     -121
+    ]
+   ],
+   "iceline46_why": "NIGHT46 A3 I-1: the east bridge x 6..9 over the canal (2 crossings, a loop); the drones, their nodes, the lesson and the NW ledge unchanged",
+   "nodes_why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/g4/card.md, THE ORB YARD, parry; rebuilt from the blank rect): the drones rise from the far floor (the shipped nodes, the west one on the floor now), the gallery and the west ledge",
+   "highNodes": [
+    [
+     8.5,
+     4,
+     -121.5
+    ],
+    [
+     -9,
+     2.5,
+     -105
+    ]
+   ],
+   "highNodes_why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/g4/card.md, THE ORB YARD, parry; rebuilt from the blank rect): the drones rise from the far floor (the shipped nodes, the west one on the floor now), the gallery and the west ledge",
+   "frames52": {
+    "_why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/g4/card.md, THE ORB YARD, parry; rebuilt from the blank rect): the room frames: the door just crossed (the pond, the posts, the gallery beyond), the fight from the west ledge, the gallery's top",
+    "entry": [
+     0,
+     0,
+     -95,
+     0,
+     0.08
+    ],
+    "mid": [
+     -9,
+     2.5,
+     -105,
+     -150,
+     0.05
+    ],
+    "high": [
+     9,
+     4,
+     -119,
+     160,
+     -0.2
+    ]
+   },
+   "loop52_why": "NIGHT52 the room loop (Tools/night/n52-loop-g4.cjs; THE ROOM CONTRACT's spirit, a teach room: the enemy-types item exempt): n47's THE REACH rebuilt as THE REACH II: 24 x 30 x 10 m; 19 pieces; three tiers (floor, the 2 m NW ledge, the 4 m NE gallery, each on a walkers' ramp); two 17.5 m lock walls over the canal; the canal hoist and the return hoist (pads); the lesson and the waves kept. Fix 6 (n52-loop-fix6.cjs): the canal hoist in the east ride's pocket, the NW ramp flush to the wall. NIGHT53 (n53-loop-g4.cjs): the mirror broken: the east lock wall runs on to the gallery (24 m), the west wall and run-up cut, a sluice head and a canal stone in the west, the west post 3 m west, the first drone off-axis west, the canal lit from below.",
+   "bot43": false,
+   "verb65": "parry",
+   "line65": [
+    [
+     1.5,
+     0,
+     -100
+    ],
+    [
+     2,
+     0.45,
+     -105.25
+    ],
+    [
+     0,
+     0.9,
+     -110
+    ],
+    [
+     0,
+     0.45,
+     -114.75
+    ],
+    [
+     0,
+     0,
+     -119
+    ]
+   ],
+   "line65_why": "NIGHT74 S g4 r6 (Research/2026-10-27-wave74/S/card-g4.md; the lead's slice: GG's g4 was flatter than THE REACH): the parry line over the raised ice: the door floor, THE STAGE STEP, the stage, THE STAGE DROP, the far floor (y follows the surface)",
+   "card65": "Research/2026-10-26-wave71/R/g4/card.md"
+  },
+  {
+   "id": "g5",
+   "name": "2.5 THE CRANE YARD",
+   "kind": "room",
+   "rect": [
+    -11,
+    -158,
+    10,
+    -128
+   ],
+   "height": 12,
+   "roof": true,
+   "par": 30,
+   "job36": "twist",
+   "verb36": "the blast's 15 s cooldown: punch the first pack, save the blast for the second as it pours off the shelf; ride the west wall onto the shelf or the east wall onto the crane runway; the hoists up when the warden's drones come",
+   "spawn": {
+    "at": [
+     0,
+     0,
+     -130
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    0,
+    0,
+    -156
+   ],
+   "arena36": true,
+   "waves": [
+    [
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "swarmer"
+    ],
+    [
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "charger"
+    ],
+    [
+     "warden",
+     "drone",
+     "drone"
+    ]
+   ],
+   "lessons": [
+    {
+     "promptPad": "SAVE {altFire} FOR THE SECOND PACK",
+     "kind": "husksDead",
+     "n": 5,
+     "prompt": "SAVE {altFire} FOR THE SECOND PACK"
+    }
+   ],
+   "lessons31": [
+    {
+     "promptPad": "SAVE {altFire} FOR THE SECOND PACK",
+     "kind": "husksDead",
+     "n": 5,
+     "prompt": "SAVE {altFire} FOR THE SECOND PACK"
+    }
+   ],
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       0,
+       -130
+      ],
+      [
+       0,
+       0,
+       -138
+      ],
+      [
+       -3,
+       0,
+       -144
+      ],
+      [
+       -2,
+       0,
+       -150
+      ],
+      [
+       0,
+       0,
+       -156
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -6,
+       0,
+       -140
+      ],
+      [
+       -6,
+       2.5,
+       -147
+      ],
+      [
+       -8,
+       2.5,
+       -152
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       8,
+       0,
+       -156
+      ],
+      [
+       8,
+       4.5,
+       -147
+      ],
+      [
+       7,
+       4.5,
+       -142
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -9,
+       0,
+       -131
+      ],
+      [
+       -9,
+       0,
+       -139
+      ]
+     ]
+    }
+   ],
+   "frames36": {
+    "mid": [
+     0,
+     0,
+     -134,
+     0,
+     0.05
+    ],
+    "exit": [
+     8,
+     4.5,
+     -142,
+     200,
+     -0.2
+    ]
+   },
+   "nodes": [
+    [
+     -3,
+     0,
+     -149
+    ],
+    [
+     4.5,
+     0,
+     -150.5
+    ],
+    [
+     0,
+     0,
+     -150
+    ],
+    [
+     -2,
+     0,
+     -153
+    ],
+    [
+     2,
+     0,
+     -153
+    ]
+   ],
+   "highNodes": [
+    [
+     -8,
+     2.5,
+     -152
+    ],
+    [
+     -8,
+     2.5,
+     -156
+    ],
+    [
+     8,
+     4.5,
+     -141
+    ],
+    [
+     7.5,
+     4.5,
+     -144.5
+    ]
+   ],
+   "iceline43_why": "NIGHT43 E1 round 2 (R-3; one new role per room, no role before its own room): a third wave, a WARDEN with two DRONES, moved from g7 THE MIX: after the two packs, the shield with flyers over it while the blast cools (punch the shield or flank it, punch the orbs back). Both roles were taught before (g2 the shield, g4 the flyer); the room's roles: fodder, shield, flyer (3).",
+   "iceline47_why": "NIGHT47 B G25: wave 2 is the six swarmers + 1 charger (its two husks out: LevelValidate's budget is 2 kinds a wave): with charger47 a charge through the swarm bursts it (the charger as your tool while the blast cools)",
+   "nodes_why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/g5/card.md, THE CRANE YARD, ride; rebuilt from the blank rect): the far floor round the posts; the high nodes on the shelf and the runway (the second pack pours off the shelf, the drones over the runway)",
+   "highNodes_why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/g5/card.md, THE CRANE YARD, ride; rebuilt from the blank rect): the far floor round the posts; the high nodes on the shelf and the runway (the second pack pours off the shelf, the drones over the runway)",
+   "frames52": {
+    "_why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/g5/card.md, THE CRANE YARD, ride; rebuilt from the blank rect): the room frames: the door just crossed (the ice stack, both ride walls), the fight from the shelf, the runway's top",
+    "entry": [
+     0,
+     0,
+     -129,
+     0,
+     0.04
+    ],
+    "mid": [
+     -8,
+     2.5,
+     -150,
+     -30,
+     -0.05
+    ],
+    "high": [
+     8,
+     4.5,
+     -142,
+     200,
+     -0.2
+    ]
+   },
+   "loop52_why": "NIGHT52 the room loop, cycle 2 (Tools/night/n52-loop-g5.cjs; THE ROOM CONTRACT): n47's THE COOLDOWN rebuilt as THE ICEHOUSE: 22 x 30 x 12 m; 17 pieces; three tiers (floor, 2 m shelf, 4.5 m crane deck), each on a walkers' ramp; two 18 m ride walls; the ice hoist and the shelf hoist (pads); a ring round the ice stack; the waves and the lesson kept. Fix 1 (n52-loop-fix1.cjs, the persona reviews): 21 x 30 m; the door-side posts cut, the inner ice walls 4 m, the crane hoist turned round, the west hoist added, the frost lamp. NIGHT52 fix K1 (n52-loop-fix-k1.cjs, the QA sweep): the far posts flush to the decks (no slot). NIGHT55 (n55-r-g5.cjs, builder R; O-15): the mirror broken: the west is the pour (the shelf and the west ride kept, its ramp moved to the pour chute facing the ring), the east the crane: the crane deck moved out of the SE corner onto a 3.5 x 10 m runway along the east wall over the ring, the east ride wall 9.5 m into it (the ride the shortcut onto the drones' perch), its ramp from the far corner, the crane hook at the ramp's foot (the far east post moved), the cab and the crane hoist on the runway, the ice hoist re-aimed.",
+   "waveNodes43": [
+    [
+     [
+      -9.5,
+      0,
+      -137.5
+     ],
+     [
+      -9.5,
+      0,
+      -135.5
+     ],
+     [
+      6.5,
+      0,
+      -133.5
+     ],
+     [
+      6.5,
+      0,
+      -132.5
+     ]
+    ]
+   ],
+   "waveNodes43_why": "NIGHT71 R (the lead's IN VIEW return; Research/2026-10-26-wave71/R/g5/card.md): the first pack in the two side lanes (r7), hidden from the corridor by the door wall, 8-15 m from the door (ambushed fallback), off the spawn's view cone (spawn31). NIGHT71 R r1 (Research/2026-10-26-wave71/R/g5/card.md, THE CRANE YARD, ride; rebuilt from the blank rect): the first pack 14-20 m from the spawn either side of the ice stack (spawn31)",
+   "bot43": false,
+   "verb65": "ride",
+   "line65": [
+    [
+     -9.8,
+     0,
+     -132
+    ],
+    [
+     -9.8,
+     2,
+     -137
+    ],
+    [
+     -9.8,
+     2,
+     -143
+    ],
+    [
+     -9,
+     2.5,
+     -147.5
+    ]
+   ],
+   "line65_why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/g5/card.md, THE CRANE YARD, ride; rebuilt from the blank rect): THE WEST WALL's ride: along its east face 0.6 m out from the door wall's corner to its end over the pour shelf",
+   "card65": "Research/2026-10-26-wave71/R/g5/card.md"
+  },
+  {
+   "id": "g6",
+   "name": "2.6 THE ARMOURY",
+   "kind": "room",
+   "rect": [
+    -7,
+    -180,
+    7,
+    -162
+   ],
+   "height": 6,
+   "roof": true,
+   "par": 8,
+   "job36": "reward",
+   "verb36": "the KESTREL returns: shoot the two husks",
+   "spawn": {
+    "at": [
+     0,
+     0,
+     -163.5
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    0,
+    0,
+    -178.5
+   ],
+   "waves": [
+    [
+     "husk",
+     "husk"
+    ],
+    [
+     "husk"
+    ]
+   ],
+   "lessons": [
+    {
+     "promptPad": "KESTREL BACK: {fire} THE FAR ONES",
+     "kind": "husksDead",
+     "n": 2,
+     "prompt": "KESTREL BACK: {fire} THE FAR ONES"
+    },
+    {
+     "promptPad": "{dash} INTO IT. {fire} THE GAUNTLET.",
+     "kind": "husksDead",
+     "n": 3,
+     "prompt": "{dash} INTO IT. {fire} THE GAUNTLET."
+    }
+   ],
+   "lessons31": [
+    {
+     "promptPad": "KESTREL BACK: {fire} THE FAR ONES",
+     "kind": "husksDead",
+     "n": 2,
+     "prompt": "KESTREL BACK: {fire} THE FAR ONES"
+    },
+    {
+     "promptPad": "{dash} INTO IT. {fire} THE GAUNTLET.",
+     "kind": "husksDead",
+     "n": 3,
+     "prompt": "{dash} INTO IT. {fire} THE GAUNTLET."
+    }
+   ],
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       0,
+       -163.5
+      ],
+      [
+       2,
+       0,
+       -167
+      ],
+      [
+       0,
+       0,
+       -173
+      ],
+      [
+       0,
+       0,
+       -178.5
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -5.5,
+       0,
+       -164
+      ],
+      [
+       -5.5,
+       2,
+       -168.5
+      ],
+      [
+       -5.5,
+       2,
+       -173
+      ]
+     ]
+    }
+   ],
+   "frames36": {
+    "mid": [
+     4,
+     0,
+     -164,
+     18.435,
+     -0.047
+    ],
+    "exit": [
+     0,
+     0,
+     -172,
+     0,
+     -0.075
+    ]
+   },
+   "nodes": [
+    [
+     -3,
+     0,
+     -176.5
+    ],
+    [
+     3,
+     0,
+     -176.5
+    ]
+   ],
+   "afterLesson43": [
+    -1,
+    0
+   ],
+   "afterLesson43_why": "rooms43 (E1): wave 1 (the FUSION husk) waits for lesson 0 (the two KESTREL kills), so the gauntlet lesson comes after the gun's, never on top of it",
+   "waveNodes43": [
+    null,
+    [
+     [
+      4.5,
+      0,
+      -177.5
+     ]
+    ]
+   ],
+   "waveNodes43_why": "rooms43 (E1 round 2): wave 1's own spot, the far end of the dash lane (x 4.5, 15.5 m in; the lane from the door line 2 m in is 13.5 m long and empty: the plinth stands on the axis): the husk walks down the lane at you, a dash (6 m at 24 m/s) plus a swing closes it",
+   "iceline43_why": "NIGHT43 E1 (G19): the gun-again room teaches the dash into a gauntlet hit (W1's FUSION) on one husk that comes in down a straight lane after the KESTREL's two; lesson 1 counts 3 kills from the stage's start (husksDead counts from the stage's start: the KESTREL's 2 + this one)",
+   "bot43": false,
+   "verb65": "launch",
+   "line65": [
+    [
+     0,
+     0,
+     -164.5
+    ],
+    [
+     0,
+     0,
+     -170
+    ],
+    [
+     0.5,
+     0,
+     -175
+    ],
+    [
+     3,
+     0,
+     -176.5
+    ]
+   ],
+   "line65_why": "NIGHT74 S g6 r1 (Research/2026-10-27-wave74/S/card-g6.md): the launch line: the dash lane from the door past the plinth to the far husks, the throw at the east rack",
+   "card65": "Research/2026-10-27-wave74/S/card-g6.md"
+  },
+  {
+   "id": "g7",
+   "name": "2.7 THE MIX",
+   "kind": "room",
+   "rect": [
+    -12,
+    -216,
+    12,
+    -184
+   ],
+   "height": 10,
+   "roof": true,
+   "par": 50,
+   "job36": "combine",
+   "verb36": "switch: the KESTREL for the far gantry and the keeper's house, the glove for the bridge; ride the side walls over the fire or take the coal hoist up, punch a body off a bridge into the grate",
+   "spawn": {
+    "at": [
+     0,
+     0,
+     -189.5
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    2,
+    0,
+    -214
+   ],
+   "arena36": true,
+   "waves": [
+    [
+     "tank",
+     "spitter",
+     "spitter"
+    ],
+    [
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "spitter"
+    ],
+    [
+     "tank",
+     "spitter",
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "swarmer"
+    ]
+   ],
+   "lessons": [
+    {
+     "promptPad": "{quickSwap}: KESTREL FAR, GLOVE CLOSE",
+     "kind": "husksDead",
+     "n": 3,
+     "prompt": "{quickSwap}: KESTREL FAR, GLOVE CLOSE"
+    }
+   ],
+   "lessons31": [
+    {
+     "promptPad": "{quickSwap}: KESTREL FAR, GLOVE CLOSE",
+     "kind": "husksDead",
+     "n": 3,
+     "prompt": "{quickSwap}: KESTREL FAR, GLOVE CLOSE"
+    }
+   ],
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       0,
+       -186
+      ],
+      [
+       -1,
+       0,
+       -190
+      ],
+      [
+       -4.5,
+       0,
+       -196
+      ],
+      [
+       -4.5,
+       0,
+       -205
+      ],
+      [
+       -1,
+       0,
+       -209
+      ],
+      [
+       1,
+       0,
+       -211
+      ],
+      [
+       2,
+       0,
+       -214
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       1,
+       0,
+       -212.5
+      ],
+      [
+       -3.5,
+       2,
+       -213
+      ],
+      [
+       -7,
+       3.5,
+       -213
+      ],
+      [
+       -10,
+       3.5,
+       -213.5
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       9.5,
+       0,
+       -193
+      ],
+      [
+       9.5,
+       4,
+       -209.5
+      ],
+      [
+       9.5,
+       4,
+       -212.5
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       0,
+       -192
+      ],
+      [
+       0,
+       2,
+       -198.5
+      ],
+      [
+       0,
+       2,
+       -202
+      ]
+     ]
+    }
+   ],
+   "frames36": {
+    "mid": [
+     5,
+     0,
+     -189,
+     20,
+     -0.03
+    ],
+    "exit": [
+     -2.5,
+     0,
+     -205,
+     0,
+     -0.06
+    ]
+   },
+   "nodes": [
+    [
+     -2,
+     0,
+     -209
+    ],
+    [
+     2.5,
+     0,
+     -209
+    ],
+    [
+     -5,
+     0,
+     -210.5
+    ],
+    [
+     5.5,
+     0,
+     -211
+    ],
+    [
+     2,
+     0,
+     -212.5
+    ]
+   ],
+   "highNodes": [
+    [
+     -10,
+     3.5,
+     -213
+    ],
+    [
+     9.5,
+     4,
+     -212.5
+    ]
+   ],
+   "iceline43_why": "NIGHT43 E1 round 2 (DESIGN-RULES R-3, at most three roles before level 4; n40 had five: tank, spitter, warden, drone, swarmer): introduce (tank + 2 spitters: KESTREL far, glove close), combine (6 swarmers + a spitter: the pack under fire from the perch), escalate (tank + spitter + 4 swarmers: the three at once). The warden and the drones moved to g5; n40's lesson ('{quickSwap}: KESTREL FAR, GLOVE CLOSE', 3 kills) kept.",
+   "nodes_why": "NIGHT74 S g7 r1 (Research/2026-10-27-wave74/S/card-g7.md): the ground nodes on the far floor, 14-21 m from the commit feet, clear of the new pieces.",
+   "highNodes_why": "NIGHT52 loop (R-4: ranged on high ground): the west coal gantry (2 m) and THE KEEPER'S HOUSE (4 m), ~27 m from the door across the fire",
+   "waveNodes43": [
+    [
+     [
+      -10,
+      3.5,
+      -213
+     ],
+     [
+      9.5,
+      4,
+      -212.5
+     ],
+     [
+      -2,
+      0,
+      -209
+     ]
+    ],
+    null,
+    [
+     [
+      -2,
+      0,
+      -209
+     ],
+     [
+      2.5,
+      0,
+      -209
+     ],
+     [
+      -5,
+      0,
+      -210.5
+     ],
+     [
+      5.5,
+      0,
+      -211
+     ],
+     [
+      -10,
+      3.5,
+      -213
+     ],
+     [
+      2,
+      0,
+      -212.5
+     ]
+    ]
+   ],
+   "waveNodes43_why": "NIGHT74 S g7 r1 (Research/2026-10-27-wave74/S/card-g7.md): wave 1: the spitters on the two gantries, the tank on the far floor; wave 3's six on the far floor and the west gantry (the shipped wave 3 came out of the bunkers behind the spawn: a spawn in the entry's rear arc).",
+   "iceline45_why": "NIGHT45 A2 (DESIGN-RULES A-9; docs/ROOMS.md's card THE THAW LOCK): rebuilt from its identity card: the quay, the grate (three lava pits, two 3 m bridges), THE BOILER in the fire, the two coal gantries with ramps; nodes across the fire, the spitters on the gantries, wave 2 from the door side. n43's rect, doors, waves and lesson kept.",
+   "frames52": {
+    "_why": "NIGHT74 S g7 r1 (Research/2026-10-27-wave74/S/card-g7.md): the room frames: the door just crossed (the stage, the gantries, the wall), the fight from the stage",
+    "entry": [
+     0,
+     0,
+     -186,
+     0,
+     0.04
+    ],
+    "mid": [
+     0,
+     2,
+     -201,
+     0,
+     0.05
+    ],
+    "high": [
+     9.5,
+     4,
+     -212.5,
+     150,
+     -0.12
+    ]
+   },
+   "loop52_why": "NIGHT52 the room loop, cycle 1 (Tools/night/n52-loop-g7.cjs; THE ROOM CONTRACT): n47's THE THAW LOCK rebuilt as THE THAW LOCK II: 24 x 32 x 10 m; 21 pieces; three tiers (floor, 2 m gantry and bunkers, 4 m keeper's house), every perch on a walkers' ramp; two 18 m ride walls over the fire; the coal hoist and the return hoist (pads); a circuit round the boiler over both bridges; the waves, lesson and lights' roles kept. Fix 2 (n52-loop-fix2.cjs): the pockets the isolated walk found closed. Fix 3 (n52-loop-fix3.cjs): two quay nodes. Fix 4 (n52-loop-fix4.cjs): the retry spawn 3.5 m in. Fix 5 (n52-loop-fix5.cjs): the bunker ramps face the door. NIGHT55 (n55-r-g7.cjs, builder R; O-14): the mirror broken by giving each half a job: the west is the walkers' lock (kept), the east the riders' firebox: the east pit 7.5 m wide, the walkers' east crossing the stoker's bridge against the boiler, the east sluice wall 15 m to the firebox's far edge, the keeper's house moved to the keeper's tower over the fire with the coal conveyor, the stoker's post added at the bridge's mouth, the coal and return hoists re-sited, the east coal island cut.",
+   "spawn_why": "NIGHT52 fix 4: the retry point on the quay's middle, 5.5 m from the door wall (outside the door's 4 m band): a death never restarts the fight camped at the door",
+   "bot43": false,
+   "verb65": "ride",
+   "line65": [
+    [
+     -10.7,
+     0,
+     -195
+    ],
+    [
+     -10.7,
+     2,
+     -201
+    ],
+    [
+     -10.7,
+     3,
+     -207
+    ],
+    [
+     -10,
+     3.5,
+     -211
+    ]
+   ],
+   "line65_why": "NIGHT74 S g7 r1 (Research/2026-10-27-wave74/S/card-g7.md): THE WEST SLUICE WALL's ride: along its east face 0.7 m out from the door end to the west gantry",
+   "card65": "Research/2026-10-27-wave74/S/card-g7.md"
+  },
+  {
+   "id": "g8",
+   "name": "2.8 THE STAMPEDE",
+   "kind": "room",
+   "rect": [
+    -10,
+    -250,
+    11,
+    -220
+   ],
+   "height": 12,
+   "roof": true,
+   "par": 30,
+   "job36": "the stampede: three chargers and the gallery's spitters before THE BRAWL",
+   "verb36": "the late dodge into a column or a sand tower (the charge ends in it: the stun), then the punish from behind with the right tool; ride the lane walls past the stampede, take the cross hoist out of the hoist bay to the signal box",
+   "spawn": {
+    "at": [
+     0,
+     0,
+     -227.5
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    1.5,
+    0,
+    -248.5
+   ],
+   "arena36": true,
+   "waves": [
+    [
+     "charger"
+    ],
+    [
+     "charger",
+     "charger",
+     "husk",
+     "husk"
+    ],
+    [
+     "charger",
+     "charger",
+     "charger",
+     "spitter",
+     "spitter"
+    ]
+   ],
+   "lessons": [
+    {
+     "promptPad": "Hit its back with {fire}.",
+     "kind": "husksDead",
+     "n": 1,
+     "prompt": "Hit its back with {fire}."
+    },
+    {
+     "promptPad": "Lead one into the pit.",
+     "kind": "husksDead",
+     "n": 2,
+     "prompt": "Lead one into the pit."
+    }
+   ],
+   "lessons31": [
+    {
+     "promptPad": "Hit its back with {fire}.",
+     "kind": "husksDead",
+     "n": 1,
+     "prompt": "Hit its back with {fire}."
+    },
+    {
+     "promptPad": "Lead one into the pit.",
+     "kind": "husksDead",
+     "n": 2,
+     "prompt": "Lead one into the pit."
+    }
+   ],
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       0,
+       -222
+      ],
+      [
+       -2.5,
+       0,
+       -225
+      ],
+      [
+       -6,
+       0,
+       -228.3
+      ],
+      [
+       -4,
+       0,
+       -233
+      ],
+      [
+       -4,
+       0,
+       -243
+      ],
+      [
+       0,
+       0,
+       -247
+      ],
+      [
+       1.5,
+       0,
+       -248.5
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       7,
+       0,
+       -225
+      ],
+      [
+       7,
+       5,
+       -243.5
+      ],
+      [
+       7.5,
+       5,
+       -246
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       0,
+       -247
+      ],
+      [
+       -4.5,
+       2.5,
+       -247
+      ],
+      [
+       -7.5,
+       2.5,
+       -247
+      ]
+     ]
+    }
+   ],
+   "frames36": {
+    "mid": [
+     6,
+     0,
+     -223,
+     17.526,
+     -0.03
+    ],
+    "exit": [
+     -1.5,
+     0,
+     -243.5,
+     0,
+     -0.06
+    ]
+   },
+   "nodes": [
+    [
+     -2.5,
+     0,
+     -243
+    ],
+    [
+     1.5,
+     0,
+     -243.5
+    ],
+    [
+     -6.5,
+     0,
+     -239
+    ],
+    [
+     3.5,
+     0,
+     -241.5
+    ]
+   ],
+   "waveNodes43": [
+    [
+     [
+      -4.5,
+      0,
+      -231.5
+     ],
+     [
+      4.5,
+      0,
+      -231.5
+     ]
+    ],
+    [
+     [
+      -2.5,
+      0,
+      -243
+     ],
+     [
+      1.5,
+      0,
+      -243.5
+     ],
+     [
+      -8,
+      2.5,
+      -247
+     ],
+     [
+      -6.5,
+      0,
+      -239
+     ]
+    ],
+    [
+     [
+      -2.5,
+      0,
+      -243
+     ],
+     [
+      1.5,
+      0,
+      -243.5
+     ],
+     [
+      3.5,
+      0,
+      -241.5
+     ],
+     [
+      -8,
+      2.5,
+      -247
+     ],
+     [
+      8,
+      5,
+      -247
+     ]
+    ]
+   ],
+   "waveNodes43_why": "NIGHT74 S g8 r2 (Research/2026-10-27-wave74/S/card-g8.md): wave 1 on the two shipped near-floor nodes (the third, 2 m behind the spawn, is gone: the meter's REAR); waves 2 and 3 on the far floor, the east lane and both tiers (the shipped nodes stood on decks and stairs that are gone).",
+   "iceline43_why": "NIGHT43 E1 (G23): the CHARGER rehearsed three ways before THE BRAWL: alone beside a wall (the lesson names the stun: a charge that ends in a wall stuns it 1.5 s with its back open, Charger.cs), with a husk escort (n40's wave), two at once (escalate). 4 chargers in the room (n40: 2).",
+   "iceline46_why": "NIGHT46 A3 I-2: wave 1's charger nodes in view; the pillars, waves and lessons unchanged",
+   "iceline47_why": "NIGHT47 B G27: rebuilt as THE STAMPEDE from its card THE ROUNDHOUSE (B-cards.md section 2): 6 columns, THE PIT, THE GALLERY (two halves + ramps), two carts, the east ride panel, the turntable gate, two gallery lamps; waves 1 / 2 / 3 chargers (6) with husks and spitters; the door lip of the card cut (the spawn and retry point stand at the door: a lip there holds them in a solid)",
+   "highNodes": [
+    [
+     -8,
+     2.5,
+     -247
+    ],
+    [
+     8,
+     5,
+     -247
+    ]
+   ],
+   "highNodes_why": "NIGHT52 loop (R-4): the spitters' stands: the west gallery (3 m) and THE SIGNAL BOX (5.5 m) over the exit, 25-28 m from the door; EXT53 (e53-m-g8.cjs): the gallery's spitter node 2.5 m east with the gallery's new west end",
+   "frames52": {
+    "_why": "NIGHT52 the room frames reel a452 (FeelReel.N52.Rooms.cs): entry, the fight live, the highest tier",
+    "entry": [
+     0,
+     0,
+     -222,
+     0,
+     0.02
+    ],
+    "mid": [
+     -3,
+     0,
+     -225,
+     5,
+     0.05
+    ],
+    "high": [
+     7,
+     5.5,
+     -248,
+     170,
+     -0.15
+    ]
+   },
+   "loop52_why": "NIGHT52 the room loop, cycle 3 (Tools/night/n52-loop-g8.cjs; THE ROOM CONTRACT): NIGHT47's THE ROUNDHOUSE kept and finished as THE ROUNDHOUSE II: 22 x 30 x 12 m; 17 pieces; three tiers (floor, 3 m gallery, 5.5 m signal box) each on a walkers' ramp; two 20 m ride panels; the cross hoist (a pad); the coal carts (waist-high) cut; the columns, the pit, the lessons and the waves kept. Fix 1 (n52-loop-fix1.cjs): the columns to the roof (their 5 m tops were 0-hit perches), the east tower out of the ramp's run-out. Fix 2 (n52-loop-fix2.cjs): the pockets the isolated walk found closed. NIGHT52 fix K1 (n52-loop-fix-k1.cjs, the QA sweep): the cross hoist clear of the NW column; the lane walls, towers, hopper and lever frame to the roof (no 0-hit perch); the towers 1.0 m wide and centred (no slot); the retry spawn 5.5 m in (off the dwell band). Fix 5 (n52-loop-fix5.cjs): the two east columns beside THE PIT 1 m out. EXT53 (e53-m-g8.cjs, builder M): the mirror broken: the west wall 1 m in (21 x 30 m), the gallery's ramp at its east end in the NW column's place, the cross hoist in the hoist bay behind it (off the walk line), the far-end charger node in the bay.",
+   "spawn_why": "NIGHT52 fix K1: the retry point 7.5 m from the door wall, between the south columns (outside the door's 4 m dwell band, as fix 4 for g7): a death never restarts the fight at the door, where the charges end",
+   "proofs56_why": "NIGHT56 L (n56-l-l3.py, L3): proofs[0] re-walked round THE PIT's south end, up its east side and west past its north end (THE ASH PIT closes the west lane at z -230.5 .. -226.5)",
+   "nodes_why": "NIGHT74 S g8 r1 (Research/2026-10-27-wave74/S/card-g8.md): the ground nodes on the far floor and the lanes, clear of the new pieces.",
+   "bot43": false,
+   "verb65": "ride",
+   "line65": [
+    [
+     -9.7,
+     0,
+     -224
+    ],
+    [
+     -9.7,
+     2,
+     -232
+    ],
+    [
+     -9.7,
+     2.5,
+     -240
+    ],
+    [
+     -8,
+     2.5,
+     -246
+    ]
+   ],
+   "line65_why": "NIGHT74 S g8 r1 (Research/2026-10-27-wave74/S/card-g8.md): THE WEST LANE WALL's ride: along its east face 0.7 m out from the door end to the gallery's top",
+   "card65": "Research/2026-10-27-wave74/S/card-g8.md"
+  },
+  {
+   "id": "gr",
+   "name": "2.9 REST",
+   "kind": "link",
+   "rect": [
+    -5,
+    -264,
+    5,
+    -254
+   ],
+   "height": 5,
+   "roof": true,
+   "par": 4,
+   "job36": "rest",
+   "verb36": "none",
+   "spawn": {
+    "at": [
+     0,
+     0,
+     -255.5
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    0,
+    0,
+    -262.5
+   ],
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       0,
+       -255.5
+      ],
+      [
+       0,
+       0,
+       -262.5
+      ]
+     ]
+    }
+   ],
+   "frames36": {
+    "mid": [
+     0,
+     0,
+     -256,
+     0,
+     -0.268
+    ],
+    "exit": [
+     2,
+     0,
+     -259,
+     21.801,
+     -0.111
+    ]
+   }
+  },
+  {
+   "id": "x9",
+   "name": "THE BRAWL",
+   "kind": "boss",
+   "rect": [
+    -19,
+    -306,
+    19,
+    -268
+   ],
+   "height": 14,
+   "roof": true,
+   "par": 60,
+   "job36": "boss",
+   "verb36": "the brawler: close in, punch, punish the stuck fist (B2's)",
+   "spawn": {
+    "at": [
+     0,
+     0,
+     -271
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    0,
+    0,
+    -287
+   ],
+   "boss": "brawl40",
+   "brawl40": {
+    "centre": [
+     0,
+     0,
+     -287
+    ],
+    "size": [
+     36,
+     36
+    ],
+    "_why": "NIGHT40 B2's arena (Research/2026-10-14-wave40/B2.md): the floor's centre (world); the sim builds THE BRAWL's 36 x 36 arena here (the lead's id x9); the room is 38 x 38 so nothing of its own is solid in the arena's footprint"
+   },
+   "frames36": {
+    "mid": [
+     0,
+     0,
+     -271,
+     0,
+     -0.037
+    ],
+    "exit": [
+     10,
+     0,
+     -278,
+     21.038,
+     -0.022
+    ]
+   }
+  }
+ ],
+ "doors": [
+  {
+   "id": "d1",
+   "between": [
+    "g1",
+    "g2"
+   ],
+   "rect": [
+    -2,
+    -30,
+    2,
+    -26
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  },
+  {
+   "id": "d2",
+   "between": [
+    "g2",
+    "g3"
+   ],
+   "rect": [
+    -2,
+    -62,
+    2,
+    -58
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  },
+  {
+   "id": "d3",
+   "between": [
+    "g3",
+    "g4"
+   ],
+   "rect": [
+    -2,
+    -94,
+    2,
+    -90
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  },
+  {
+   "id": "d4",
+   "between": [
+    "g4",
+    "g5"
+   ],
+   "rect": [
+    -2,
+    -128,
+    2,
+    -124
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  },
+  {
+   "id": "d5",
+   "between": [
+    "g5",
+    "g6"
+   ],
+   "rect": [
+    -2,
+    -162,
+    2,
+    -158
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  },
+  {
+   "id": "d6",
+   "between": [
+    "g6",
+    "g7"
+   ],
+   "rect": [
+    -2,
+    -184,
+    2,
+    -180
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  },
+  {
+   "id": "d7",
+   "between": [
+    "g7",
+    "g8"
+   ],
+   "rect": [
+    -2,
+    -220,
+    2,
+    -216
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  },
+  {
+   "id": "d8",
+   "between": [
+    "g8",
+    "gr"
+   ],
+   "rect": [
+    -2,
+    -254,
+    2,
+    -250
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  },
+  {
+   "id": "d9",
+   "between": [
+    "gr",
+    "x9"
+   ],
+   "rect": [
+    -2,
+    -268,
+    2,
+    -264
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  }
+ ],
+ "boxes": [
+  {
+   "zone": "g1",
+   "kind": "wall",
+   "min": [
+    8,
+    0,
+    -19.5
+   ],
+   "max": [
+    8.6,
+    5,
+    -4
+   ],
+   "job": "line",
+   "why": "NIGHT74 S g1 r1 (Research/2026-10-27-wave74/S/card-g1.md): z -18..-5 -> -19.5..-4 (13 -> 15.5 m): the east ride face runs on, the west wall's twin. ride panel E (face west), 16 m from W plane to plane: no chain, each its own line past the tank",
+   "note": "ride panel E (5 m tall, 15.5 m, face west): the line round the tank on the east side",
+   "ride": true,
+   "ride36": {
+    "face": "W",
+    "planeX": 8,
+    "lz": [
+     6.5,
+     22
+    ]
+   }
+  },
+  {
+   "zone": "g1",
+   "kind": "wall",
+   "min": [
+    -11,
+    0,
+    -17.5
+   ],
+   "max": [
+    -10.4,
+    9,
+    -2.5
+   ],
+   "job": "ride: THE WEST WALL (ride north along the west wall onto THE PEN GALLERY, round the tank)",
+   "why": "NIGHT74 S g1 r1 (Research/2026-10-27-wave74/S/card-g1.md): the shipped free-standing west panel (13 m, x -8.6..-8) becomes a 15 m ride face ON the west wall, its landing the gallery at its north end: the west half of the room is a line, not a field.",
+   "note": "THE WEST WALL (ride, cyan, 15 m x 9 m on the west wall)",
+   "ride": true,
+   "ride36": {
+    "face": "E",
+    "planeX": -10.4,
+    "lz": [
+     8.5,
+     23.5
+    ]
+   }
+  },
+  {
+   "zone": "g1",
+   "kind": "deck",
+   "min": [
+    -11,
+    0,
+    -24
+   ],
+   "max": [
+    -5.5,
+    3,
+    -17.5
+   ],
+   "job": "line: THE PEN GALLERY (3 m: the west wall's landing, the high ground over the charger's lane)",
+   "why": "NIGHT74 S g1 r1 (Research/2026-10-27-wave74/S/card-g1.md): a 3 m tier in the north-west corner (5.5 x 6.5 m, rimmed): the second floor plane; the ride and the stair both end on it.",
+   "note": "THE PEN GALLERY (3 m, 5.5 x 6.5 m, north-west)"
+  },
+  {
+   "zone": "g1",
+   "kind": "hull",
+   "min": [
+    -3.5,
+    0,
+    -19
+   ],
+   "max": [
+    -2,
+    9,
+    -17.5
+   ],
+   "job": "30 s problem: THE WEST CHARGE POST (to the roof: the charger's stun post, a circuit round the tank)",
+   "why": "NIGHT74 S g1 r1 (Research/2026-10-27-wave74/S/card-g1.md): a 1.5 x 1.5 m post to the roof on the charger's side of the tank: dodge late into it and the charger stuns; R's NIGHT71 positions.",
+   "note": "THE WEST CHARGE POST (to the roof, 1.5 x 1.5 m)"
+  },
+  {
+   "zone": "g1",
+   "kind": "hull",
+   "min": [
+    2,
+    0,
+    -19
+   ],
+   "max": [
+    3.5,
+    9,
+    -17.5
+   ],
+   "job": "30 s problem: THE EAST CHARGE POST (to the roof: the west post's mirror across the lane)",
+   "why": "NIGHT74 S g1 r1 (Research/2026-10-27-wave74/S/card-g1.md): the west post's mirror: the charger's lane between the posts is 4 m wide.",
+   "note": "THE EAST CHARGE POST (to the roof, 1.5 x 1.5 m)"
+  },
+  {
+   "zone": "g1",
+   "kind": "deck",
+   "min": [
+    3.5,
+    0,
+    -16
+   ],
+   "max": [
+    6.5,
+    0.9,
+    -9
+   ],
+   "job": "line: THE EAST STEP (0.9 m, rimmed: a walkers' tier and a hop for the tank's far side, the east panel's lane runs beside it)",
+   "why": "NIGHT74 S g1 r1 (Research/2026-10-27-wave74/S/card-g1.md): a 3 x 7 m low tier on the east side of the tank's room (0.9 m: levelgen's walkers' tier is 0.9 m, a 1.25 m first try was 'not reached by walkers'): raised, rimmed ground in the door's view; 0.45 m clear of the east panel's lane (x 7.3).",
+   "note": "THE EAST STEP (0.9 m, 3 x 7 m)"
+  },
+  {
+   "zone": "g1",
+   "kind": "hull",
+   "min": [
+    -6,
+    0,
+    -8
+   ],
+   "max": [
+    -4,
+    1.2,
+    -6
+   ],
+   "job": "cover: THE WEST PEN RAIL (1.2 m low cover in the door's view: shelter from the tank, hop it)",
+   "why": "NIGHT74 S g1 r1 (Research/2026-10-27-wave74/S/card-g1.md): 2 x 2 x 1.2 m low cover (1.0-1.25 m) 6 m ahead of the spawn, west of the axis.",
+   "note": "THE WEST PEN RAIL (1.2 m, 2 x 2 m)"
+  },
+  {
+   "zone": "g1",
+   "kind": "hull",
+   "min": [
+    4,
+    0,
+    -5
+   ],
+   "max": [
+    6,
+    1.2,
+    -3
+   ],
+   "job": "cover: THE EAST PEN RAIL (1.2 m low cover by the door: the first thing to hop)",
+   "why": "NIGHT74 S g1 r1 (Research/2026-10-27-wave74/S/card-g1.md): 2 x 2 x 1.2 m low cover 4 m east of the spawn; it keeps clear of the east panel's lane (x 7.3) by 1.3 m.",
+   "note": "THE EAST PEN RAIL (1.2 m, 2 x 2 m)"
+  },
+  {
+   "zone": "g2",
+   "kind": "wall",
+   "min": [
+    -12,
+    0,
+    -50
+   ],
+   "max": [
+    -11.4,
+    10,
+    -33
+   ],
+   "job": "ride: THE FLANK WALL (ride north along the west wall onto THE WEST GANTRY, past the wardens' shields)",
+   "why": "NIGHT74 S g2 r1 (Research/2026-10-27-wave74/S/card-g2.md): the shipped free-standing 18 m panel (x -9.6..-9) becomes a 17 m ride face ON the west wall: the flank is the wall, and its landing is the gantry at its north end.",
+   "note": "THE FLANK WALL (ride, cyan, 17 m x 10 m on the west wall)",
+   "ride": true,
+   "ride36": {
+    "face": "E",
+    "planeX": -11.4,
+    "lz": [
+     8,
+     25
+    ]
+   }
+  },
+  {
+   "zone": "g2",
+   "kind": "deck",
+   "min": [
+    -12,
+    0,
+    -58
+   ],
+   "max": [
+    -8,
+    4,
+    -50
+   ],
+   "job": "line: THE WEST GANTRY (4 m: the flank wall's landing, wave 1's west high ground, the health)",
+   "why": "NIGHT74 S g2 r1 (Research/2026-10-27-wave74/S/card-g2.md): a 4 x 8 m tier in the north-west corner (rimmed): the ride, the stair and the west spring all end on it.",
+   "note": "THE WEST GANTRY (4 m, 4 x 8 m, north-west)"
+  },
+  {
+   "zone": "g2",
+   "kind": "deck",
+   "min": [
+    4,
+    0,
+    -48
+   ],
+   "max": [
+    9,
+    2,
+    -36
+   ],
+   "job": "line: THE EAST TERRACE (2 m: the east side's first tier, the way up to the east gantry)",
+   "why": "NIGHT74 S g2 r1 (Research/2026-10-27-wave74/S/card-g2.md): a 5 x 12 m tier on the east wall (rimmed, 2 m): the second floor plane; a ramp at its door end and the east spring land on it.",
+   "note": "THE EAST TERRACE (2 m, 5 x 12 m, east wall)"
+  },
+  {
+   "zone": "g2",
+   "kind": "deck",
+   "min": [
+    5.5,
+    0,
+    -58
+   ],
+   "max": [
+    9,
+    4,
+    -53
+   ],
+   "job": "line: THE EAST GANTRY (4 m: the terrace's top, wave 1's east high ground)",
+   "why": "NIGHT74 S g2 r1 (Research/2026-10-27-wave74/S/card-g2.md): a 3.5 x 5 m tier in the north-east corner (rimmed): reached up the terrace and its second ramp.",
+   "note": "THE EAST GANTRY (4 m, 3.5 x 5 m, north-east)"
+  },
+  {
+   "zone": "g2",
+   "kind": "hull",
+   "min": [
+    -5,
+    0,
+    -47
+   ],
+   "max": [
+    -1,
+    3.2,
+    -43
+   ],
+   "job": "line: THE ANVIL (4 x 4 m, 3.2 m: the mass a warden turns on: circle it to a warden's back)",
+   "why": "NIGHT74 S g2 r1 (Research/2026-10-27-wave74/S/card-g2.md): the shipped anvil was 3 x 3 m to the roof in the middle of the axis; this one is off the axis to the west (the entry's sight line to wave 1's east nodes is clear), 3.2 m high, 4 x 4 m.",
+   "note": "THE ANVIL (3.2 m, 4 x 4 m, west of the axis)"
+  },
+  {
+   "zone": "g2",
+   "kind": "hull",
+   "min": [
+    1.5,
+    0,
+    -40
+   ],
+   "max": [
+    3.5,
+    1.2,
+    -38.5
+   ],
+   "job": "cover: THE QUENCH RAIL (1.2 m low cover east of the axis in the door half: hop it, shelter behind it)",
+   "why": "NIGHT74 S g2 r1 (Research/2026-10-27-wave74/S/card-g2.md): 2 x 1.5 x 1.2 m low cover (1.0-1.25 m): the shipped 3.5 x 2.5 m quench tank, smaller and nearer the axis.",
+   "note": "THE QUENCH RAIL (1.2 m, 2 x 1.5 m)"
+  },
+  {
+   "zone": "g2",
+   "kind": "hull",
+   "min": [
+    -9,
+    0,
+    -37.5
+   ],
+   "max": [
+    -7,
+    1.2,
+    -36
+   ],
+   "job": "cover: THE RUN-UP RAIL (1.2 m low cover at the stair's and the wall's foot, west door half)",
+   "why": "NIGHT74 S g2 r1 (Research/2026-10-27-wave74/S/card-g2.md): 2 x 1.5 x 1.2 m low cover west of the lane, clear of the flank wall's lane (x -10.7) by 1.3 m and of the stair (x -9.5..-6.5, from z -42).",
+   "note": "THE RUN-UP RAIL (1.2 m, 2 x 1.5 m)"
+  },
+  {
+   "zone": "g2",
+   "kind": "hull",
+   "min": [
+    3.8,
+    0,
+    -36
+   ],
+   "max": [
+    5.3,
+    3.5,
+    -34.5
+   ],
+   "job": "cover: THE DOOR POST (a 3.5 m post 6.5-8 m inside the door, east of the axis: the entry's foothold and high cover)",
+   "why": "NIGHT74 S g2 r1 (Research/2026-10-27-wave74/S/card-g2.md): a 1.5 x 1.5 x 3.5 m free-standing post (high cover) in R5's foothold band (4-8 m inside the door), 3.8 m east of the spawn, 0.2 m west of the terrace step's ramp (x 5.5).",
+   "note": "THE DOOR POST (3.5 m, 1.5 x 1.5 m)"
+  },
+  {
+   "zone": "g2",
+   "kind": "hull",
+   "min": [
+    -8.2,
+    0,
+    -44
+   ],
+   "max": [
+    -6.7,
+    3.5,
+    -42.5
+   ],
+   "job": "cover: THE WARDEN'S POST (a 3.5 m post west of the anvil: high cover on the lane's west side)",
+   "why": "NIGHT74 S g2 r1 (Research/2026-10-27-wave74/S/card-g2.md): a 1.5 x 1.5 x 3.5 m free-standing post (high cover), 1.1 m east of the flank wall ride pilot's target line and clear of the entry's sight lines to wave 1 (a first try east of the axis hid the east gantry's spitter).",
+   "note": "THE WARDEN'S POST (3.5 m, 1.5 x 1.5 m)"
+  },
+  {
+   "zone": "g3",
+   "kind": "wall",
+   "min": [
+    11.4,
+    0,
+    -79
+   ],
+   "max": [
+    12,
+    8,
+    -64
+   ],
+   "job": "line: THE COAL RIDE (ride over the east floor onto the tipple head)",
+   "why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/g3/card.md, THE TIPPLE RIDES, ride; rebuilt from the blank rect): THE COAL RIDE (ride, cyan, 15 m x 8 m on the east wall): from the door wall's corner over the east floor and off its end onto THE TIPPLE HEAD; on foot the head is the long way round (its stair starts west of the exit)",
+   "note": "THE COAL RIDE (ride, cyan, 15 m x 8 m on the east wall)",
+   "ride": true,
+   "ride36": {
+    "face": "W",
+    "planeX": 11.4,
+    "lz": [
+     11,
+     26
+    ]
+   }
+  },
+  {
+   "zone": "g3",
+   "kind": "deck",
+   "min": [
+    5,
+    0,
+    -86
+   ],
+   "max": [
+    12,
+    4,
+    -79
+   ],
+   "job": "line: THE TIPPLE HEAD (the high tier, the coal ride's landing)",
+   "why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/g3/card.md, THE TIPPLE RIDES, ride; rebuilt from the blank rect): THE TIPPLE HEAD (4 m, 7 x 7 m on the east side by the exit): the coal ride's landing, the swarm's climb target, the health on it; the walkers come up its stair (no safe ledge)",
+   "note": "THE TIPPLE HEAD (4 m, 7 x 7 m on the east side by the exit)"
+  },
+  {
+   "zone": "g3",
+   "kind": "wall",
+   "min": [
+    -12,
+    0,
+    -82
+   ],
+   "max": [
+    -11.4,
+    8,
+    -66
+   ],
+   "job": "line: THE PANEL (ride up the west side onto the weigh loft)",
+   "why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/g3/card.md, THE TIPPLE RIDES, ride; rebuilt from the blank rect): THE PANEL (ride, cyan, 16 m x 8 m on the west wall): from the far west floor north along the wall and off its end onto THE WEIGH LOFT",
+   "note": "THE PANEL (ride, cyan, 16 m x 8 m on the west wall)",
+   "ride": true,
+   "ride36": {
+    "face": "E",
+    "planeX": -11.4,
+    "lz": [
+     8,
+     24
+    ]
+   }
+  },
+  {
+   "zone": "g3",
+   "kind": "deck",
+   "min": [
+    -12,
+    0,
+    -66
+   ],
+   "max": [
+    -6,
+    4,
+    -62
+   ],
+   "job": "line: THE WEIGH LOFT (the high tier on the door wall, the panel's landing)",
+   "why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/g3/card.md, THE TIPPLE RIDES, ride; rebuilt from the blank rect): THE WEIGH LOFT (4 m, 6 x 4 m on the door wall's west half): the panel's landing, the stand over the floor; the walkers come up its stair",
+   "note": "THE WEIGH LOFT (4 m, 6 x 4 m on the door wall's west half)"
+  },
+  {
+   "zone": "g3",
+   "kind": "hull",
+   "min": [
+    -1,
+    0,
+    -77
+   ],
+   "max": [
+    3,
+    3,
+    -73
+   ],
+   "job": "30 s problem: THE HOPPER (mid-floor cover, the step between the decks)",
+   "why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/g3/card.md, THE TIPPLE RIDES, ride; rebuilt from the blank rect): THE HOPPER (3 m, 4 x 4 m mid-floor): the cover the husks and the swarm come round, and a 3 m step a jump or a dash links to both decks and both walls",
+   "note": "THE HOPPER (3 m, 4 x 4 m mid-floor)"
+  },
+  {
+   "zone": "g3",
+   "kind": "hull",
+   "min": [
+    -7.5,
+    0,
+    -83
+   ],
+   "max": [
+    -4.5,
+    2,
+    -81
+   ],
+   "job": "30 s problem: THE COAL CAR (far-floor cover, a step up)",
+   "why": "NIGHT71 R r2 (Research/2026-10-26-wave71/R/g3/card.md): THE COAL CAR (2 m, 3 x 2 m on the far west floor): the cover the swarm comes round on its way to the decks, and a 2 m step a jump links to the panel, the hopper and the tipple head",
+   "note": "THE COAL CAR (2 m)"
+  },
+  {
+   "zone": "g4",
+   "kind": "wall",
+   "min": [
+    11.4,
+    0,
+    -117
+   ],
+   "max": [
+    12,
+    6,
+    -99
+   ],
+   "job": "line: THE LOCK WALL (ride over the east floor onto the gallery)",
+   "why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/g4/card.md, THE ORB YARD, parry; rebuilt from the blank rect): THE LOCK WALL (ride, cyan, 18 m x 6 m on the east wall): from the door floor over the east lane and off its end onto THE GALLERY, the drones' height",
+   "note": "THE LOCK WALL (ride, cyan, 18 m x 6 m on the east wall)",
+   "ride": true,
+   "ride36": {
+    "face": "W",
+    "planeX": 11.4,
+    "lz": [
+     5,
+     23
+    ]
+   }
+  },
+  {
+   "zone": "g4",
+   "kind": "deck",
+   "min": [
+    6,
+    0,
+    -124
+   ],
+   "max": [
+    12,
+    4,
+    -117
+   ],
+   "job": "line: THE GALLERY (the drones' height, the lock wall's landing)",
+   "why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/g4/card.md, THE ORB YARD, parry; rebuilt from the blank rect): THE GALLERY (4 m, 6 x 7 m in the far east corner): the lock wall's landing and the canal hoist's; from it the far drone is level with you; the walkers come up its stair",
+   "note": "THE GALLERY (4 m, 6 x 7 m in the far east corner)"
+  },
+  {
+   "zone": "g4",
+   "kind": "hull",
+   "min": [
+    10,
+    4,
+    -124
+   ],
+   "max": [
+    12,
+    6.5,
+    -122
+   ],
+   "job": "cover",
+   "why": "the GALLERY's WINCH HOUSE (2 x 2 m on its back corner): your shield from the far drone's orb on the gallery (a stand you must move to break)",
+   "note": "the GALLERY's WINCH HOUSE (2 x 2 m on its back corner): your shield from the far drone's orb on the gallery (a stand you must move to break)"
+  },
+  {
+   "zone": "g4",
+   "kind": "deck",
+   "min": [
+    -12,
+    0,
+    -108
+   ],
+   "max": [
+    -6,
+    2.5,
+    -102
+   ],
+   "job": "line: THE WEST LEDGE (the near-west stand at the drones' near height)",
+   "why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/g4/card.md, THE ORB YARD, parry; rebuilt from the blank rect): THE WEST LEDGE (2.5 m, 6 x 6 m on the west wall): a stand over the pond where the orbs cross; its stair from the far floor",
+   "note": "THE WEST LEDGE (2.5 m, 6 x 6 m on the west wall)"
+  },
+  {
+   "zone": "g4",
+   "kind": "hull",
+   "min": [
+    4.4,
+    0,
+    -104.6
+   ],
+   "max": [
+    5.6,
+    4,
+    -103.4
+   ],
+   "job": "30 s problem: THE EAST ICE POST (breaks the orb line onto the door floor)",
+   "why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/g4/card.md, THE ORB YARD, parry; rebuilt from the blank rect): THE EAST ICE POST (1.2 x 1.2 x 4 m on the door floor's east side): breaks the far drones' orb line onto the door floor; its top a step",
+   "note": "THE EAST ICE POST (1.2 x 1.2 x 4 m on the door floor's east side)"
+  },
+  {
+   "zone": "g4",
+   "kind": "hull",
+   "min": [
+    -5.6,
+    0,
+    -116.6
+   ],
+   "max": [
+    -4.4,
+    4,
+    -115.4
+   ],
+   "job": "30 s problem: THE WEST ICE POST (breaks the orb line onto the far floor)",
+   "why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/g4/card.md, THE ORB YARD, parry; rebuilt from the blank rect): THE WEST ICE POST (1.2 x 1.2 x 4 m on the far floor's west side): breaks the gallery drone's orb line across the far floor; its top a step",
+   "note": "THE WEST ICE POST (1.2 x 1.2 x 4 m on the far floor's west side)"
+  },
+  {
+   "zone": "g4",
+   "kind": "hull",
+   "min": [
+    -12,
+    0,
+    -101
+   ],
+   "max": [
+    -9,
+    1.2,
+    -98.5
+   ],
+   "job": "cover",
+   "why": "NIGHT71 R r2 (Research/2026-10-26-wave71/R/g4/card.md; rule 1, air65): the shipped piece exactly. the WEST SLUICE HEAD (1.2 m, 3 x 2.5 m, on the door floor's west side): cover from the west drone's orbs over the canal and a vault step to see the far lip (NIGHT53: where the run-up stood; the west has no ride now)",
+   "note": "the WEST SLUICE HEAD (1.2 m, 3 x 2.5 m, on the door floor's west side): cover from the west drone's orbs over the canal and a vault step to see the far lip (NIGHT53: where the run-up stood; the west has no ride now)"
+  },
+  {
+   "zone": "g4",
+   "kind": "hull",
+   "min": [
+    8,
+    0,
+    -99
+   ],
+   "max": [
+    11,
+    1.2,
+    -96
+   ],
+   "job": "line",
+   "why": "NIGHT71 R r2 (Research/2026-10-26-wave71/R/g4/card.md; rule 1, air65): the shipped piece exactly. the EAST RUN-UP BLOCK (the west's mirror): onto the east lock wall; the return hoist lands on it",
+   "note": "the EAST RUN-UP BLOCK (the west's mirror): onto the east lock wall; the return hoist lands on it"
+  },
+  {
+   "zone": "g4",
+   "kind": "hull",
+   "min": [
+    -12,
+    2.5,
+    -104
+   ],
+   "max": [
+    -10,
+    5,
+    -102
+   ],
+   "job": "every-solid: the west ledge's ICE HOPPER (cover on the ledge)",
+   "why": "NIGHT71 R r2 (Research/2026-10-26-wave71/R/g4/card.md; rule 1, air65): THE ICE HOPPER (2 x 2 m on the west ledge's back corner, 2.5 m tall): the ledge's shield from the far drones' orbs, its top a step (the shipped ledge had one)",
+   "note": "THE ICE HOPPER (on the west ledge)"
+  },
+  {
+   "zone": "g4",
+   "kind": "deck",
+   "min": [
+    -6,
+    0,
+    -113
+   ],
+   "max": [
+    4.5,
+    0.9,
+    -107
+   ],
+   "job": "line: THE ICE STAGE (the pond raised 0.9 m: the glide lane under the orbs; the raised, rimmed block the room reads from the door)",
+   "why": "NIGHT74 S g4 r6 (Research/2026-10-27-wave74/S/card-g4.md; the lead's slice: GG's g4 was flatter than THE REACH): THE ICE POND (x -6..4.5, z -113..-107) stood on the floor, so the yard read flat from the door. It is now a deck 0.9 m high (10.5 x 6 m, rimmed like every deck, the ice on its top: surfaces minY 0.4 / maxY 1.4); two short ramps (south and north) put the walkers' and the skater's way onto it.",
+   "note": "THE ICE STAGE (0.9 m, 10.5 x 6 m: the ice pond raised)"
+  },
+  {
+   "zone": "g5",
+   "kind": "hull",
+   "min": [
+    -5,
+    0,
+    -151.6
+   ],
+   "max": [
+    -3.8,
+    3.5,
+    -150.4
+   ],
+   "job": "cover",
+   "why": "the FAR WEST POST (1.2 m x 3.5 m) on the far floor: the pack pouring off the shelf rounds it into the blast's cone; it breaks the crane's line onto the shelf's foot (NIGHT52 fix K1 (n52-loop-fix-k1.cjs, the QA sweep): flush to the west shelf's inner face (x -5): it stood 0.9 m off it, a slot)",
+   "note": "the FAR WEST POST (1.2 m x 3.5 m) on the far floor: the pack pouring off the shelf rounds it into the blast's cone; it breaks the crane's line onto the shelf's foot (NIGHT52 fix K1 (n52-loop-fix-k1.cjs, the QA sweep): flush to the west shelf's inner face (x -5): it stood 0.9 m off it, a slot)"
+  },
+  {
+   "zone": "g5",
+   "kind": "hull",
+   "min": [
+    3.4,
+    0,
+    -156.6
+   ],
+   "max": [
+    4.6,
+    3.5,
+    -155.4
+   ],
+   "job": "cover",
+   "why": "THE CRANE HOOK (1.2 m x 3.5 m, the crane's block lowered to the far floor at the runway ramp's foot; NIGHT55: the far east post moved off the old ramp's foot): the corner the warden circles to reach you, and the break on the runway's line down to the exit: duck behind it while the drones are up",
+   "note": "THE CRANE HOOK (1.2 m x 3.5 m, the crane's block lowered to the far floor at the runway ramp's foot; NIGHT55: the far east post moved off the old ramp's foot): the corner the warden circles to reach you, and the break on the runway's line down to the exit: duck behind it while the drones are up"
+  },
+  {
+   "zone": "g5",
+   "kind": "wall",
+   "min": [
+    -11,
+    0,
+    -147
+   ],
+   "max": [
+    -10.4,
+    8,
+    -131
+   ],
+   "job": "line: THE WEST WALL (ride onto the pour shelf)",
+   "why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/g5/card.md, THE CRANE YARD, ride; rebuilt from the blank rect): THE WEST WALL (ride, cyan, 16 m x 8 m on the west wall): from the door wall's corner along the west side and off its end onto THE POUR SHELF",
+   "note": "THE WEST WALL (ride, cyan, 16 m x 8 m on the west wall)",
+   "ride": true,
+   "ride36": {
+    "face": "E",
+    "planeX": -10.4,
+    "lz": [
+     11,
+     27
+    ]
+   }
+  },
+  {
+   "zone": "g5",
+   "kind": "wall",
+   "min": [
+    9.4,
+    0,
+    -139
+   ],
+   "max": [
+    10,
+    8,
+    -129
+   ],
+   "job": "line: THE EAST WALL (ride onto the crane runway)",
+   "why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/g5/card.md, THE CRANE YARD, ride; rebuilt from the blank rect): THE EAST WALL (ride, cyan, 10 m x 8 m on the east wall): from the door wall's corner off its end onto THE CRANE RUNWAY",
+   "note": "THE EAST WALL (ride, cyan, 10 m x 8 m on the east wall)",
+   "ride": true,
+   "ride36": {
+    "face": "W",
+    "planeX": 9.4,
+    "lz": [
+     17,
+     27
+    ]
+   }
+  },
+  {
+   "zone": "g5",
+   "kind": "deck",
+   "min": [
+    -11,
+    0,
+    -158
+   ],
+   "max": [
+    -5,
+    2.5,
+    -147
+   ],
+   "job": "line: THE POUR SHELF (the second pack's shelf, the west wall's landing)",
+   "why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/g5/card.md, THE CRANE YARD, ride; rebuilt from the blank rect): THE POUR SHELF (2.5 m, 6 x 11 m in the far west): the second pack pours off it at once (save the blast for it); the west wall's landing",
+   "note": "THE POUR SHELF (2.5 m, 6 x 11 m in the far west)"
+  },
+  {
+   "zone": "g5",
+   "kind": "deck",
+   "min": [
+    6,
+    0,
+    -147
+   ],
+   "max": [
+    10,
+    4.5,
+    -139
+   ],
+   "job": "line: THE CRANE RUNWAY (the drones' height, the east wall's landing)",
+   "why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/g5/card.md, THE CRANE YARD, ride; rebuilt from the blank rect): THE CRANE RUNWAY (4.5 m, 4 x 8 m on the east wall mid-yard): the east wall's landing, level with the warden's drones; the walkers come up its stair",
+   "note": "THE CRANE RUNWAY (4.5 m, 4 x 8 m on the east wall mid-yard)"
+  },
+  {
+   "zone": "g5",
+   "kind": "hull",
+   "min": [
+    -1.5,
+    0,
+    -145
+   ],
+   "max": [
+    2.5,
+    12,
+    -141
+   ],
+   "job": "spatial law: THE ICE STACK (the landmark; splits the first pack)",
+   "why": "NIGHT74 R: moved 1 m south to z -145..-141, the shipped room's place: at z -146..-142 seed 6 of the verb-aware flow capped at 240 s with one drone alive at (4.6, 11.4, -146.4) against the stack's north-east corner (flow-V 9 / 10, NIGHT71's SHORT); at z -145..-141 flow-V reads 10 / 10, stall 48.8 %. NIGHT71 R r1/r4 (Research/2026-10-26-wave71/R/g5/card.md, THE CRANE YARD, ride; rebuilt from the blank rect): THE ICE STACK (4 x 4 m, floor to roof, dead ahead of the door): the first pack splits round it; the blast's line is down either side (r3 tried it at 4 m: walk stall A 55.1 %, back to the roof at r4)",
+   "note": "THE ICE STACK (4 x 4 m, floor to roof; the landmark dead ahead of the door)"
+  },
+  {
+   "zone": "g5",
+   "kind": "hull",
+   "min": [
+    9,
+    4.5,
+    -145
+   ],
+   "max": [
+    10,
+    6.5,
+    -143
+   ],
+   "job": "every-solid: THE CRANE CAB (cover on the runway)",
+   "why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/g5/card.md, THE CRANE YARD, ride; rebuilt from the blank rect): THE CRANE CAB (1 x 2 m against the east wall on the runway): the runway's shield from the far drone; a step",
+   "note": "THE CRANE CAB (1 x 2 m against the east wall on the runway)"
+  },
+  {
+   "zone": "g5",
+   "kind": "hull",
+   "min": [
+    -11,
+    2.5,
+    -158
+   ],
+   "max": [
+    -9,
+    5,
+    -155
+   ],
+   "job": "every-solid: THE ICE SAW (cover on the shelf)",
+   "why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/g5/card.md, THE CRANE YARD, ride; rebuilt from the blank rect): THE ICE SAW (2 x 3 m on the shelf's back corner): the shelf's one shield; a step",
+   "note": "THE ICE SAW (2 x 3 m on the shelf's back corner)"
+  },
+  {
+   "zone": "g5",
+   "kind": "wall",
+   "min": [
+    -5.3,
+    0,
+    -139
+   ],
+   "max": [
+    -4.7,
+    4,
+    -135
+   ],
+   "job": "line",
+   "why": "NIGHT71 R r2 (Research/2026-10-26-wave71/R/g5/card.md; rule 1, air65): the shipped piece exactly. the WEST ICE WALL (cyan, 4 m x 4 m, 7-11 m in): the short ride off the door's diagonal into the west lane; it splits the bait into lanes for the punch (cut to its north 4 m: the door chute opens onto the west ride wall)",
+   "note": "the WEST ICE WALL (cyan, 4 m x 4 m, 7-11 m in): the short ride off the door's diagonal into the west lane; it splits the bait into lanes for the punch (cut to its north 4 m: the door chute opens onto the west ride wall)",
+   "ride": true,
+   "ride36": {
+    "face": "W",
+    "planeX": -5.3,
+    "lz": [
+     7,
+     11
+    ]
+   }
+  },
+  {
+   "zone": "g5",
+   "kind": "wall",
+   "min": [
+    4.7,
+    0,
+    -139
+   ],
+   "max": [
+    5.3,
+    4,
+    -135
+   ],
+   "job": "line",
+   "why": "NIGHT71 R r2 (Research/2026-10-26-wave71/R/g5/card.md; rule 1, air65): the shipped piece exactly. the EAST ICE WALL (cyan, 4 m, the west's mirror): the short ride into the east lane toward the crane's ramp",
+   "note": "the EAST ICE WALL (cyan, 4 m, the west's mirror): the short ride into the east lane toward the crane's ramp",
+   "ride": true,
+   "ride36": {
+    "face": "E",
+    "planeX": 5.3,
+    "lz": [
+     7,
+     11
+    ]
+   }
+  },
+  {
+   "zone": "g5",
+   "kind": "hull",
+   "min": [
+    -7,
+    2.5,
+    -158
+   ],
+   "max": [
+    -5,
+    4,
+    -155.5
+   ],
+   "job": "every-solid: THE ICE BLOCKS (cover on the shelf's front corner)",
+   "why": "NIGHT71 R r5 (Research/2026-10-26-wave71/R/g5/card.md; air65): THE ICE BLOCKS (1.5 m, 2 x 2.5 m on the pour shelf's south-east corner): cover on the shelf from the far floor, a step to the runway and the walls; r4's coal tub on the door floor sat where the walker stuck (flow-V seed 3)",
+   "note": "THE ICE BLOCKS (on the shelf)"
+  },
+  {
+   "zone": "g7",
+   "kind": "wall",
+   "min": [
+    -12,
+    0,
+    -210
+   ],
+   "max": [
+    -11.4,
+    10,
+    -194
+   ],
+   "job": "ride: THE WEST SLUICE WALL (ride north along the west wall onto THE WEST GANTRY, over the yard)",
+   "why": "NIGHT74 S g7 r1 (Research/2026-10-27-wave74/S/card-g7.md): the shipped west sluice wall (18 m, standing in a lava trench) is a 16 m ride face ON the west wall, dry: its landing is the gantry at its north end.",
+   "note": "THE WEST SLUICE WALL (ride, cyan, 16 m x 10 m on the west wall)",
+   "ride": true,
+   "ride36": {
+    "face": "E",
+    "planeX": -11.4,
+    "lz": [
+     6,
+     22
+    ]
+   }
+  },
+  {
+   "zone": "g7",
+   "kind": "deck",
+   "min": [
+    -12,
+    0,
+    -216
+   ],
+   "max": [
+    -7,
+    3.5,
+    -210
+   ],
+   "job": "line: THE WEST GANTRY (3.5 m: wave 1's west spitter, the ride's landing)",
+   "why": "NIGHT74 S g7 r1 (Research/2026-10-27-wave74/S/card-g7.md): a 5 x 6 m tier in the north-west corner (rimmed): the shipped west coal gantry was 2 m; 3.5 m, not 4, because the stair (6.5 m long, the exit lane's limit) was 'not reached by walkers' at 4 m (0.615 per metre).",
+   "note": "THE WEST GANTRY (3.5 m, 5 x 6 m, north-west)"
+  },
+  {
+   "zone": "g7",
+   "kind": "deck",
+   "min": [
+    7.5,
+    0,
+    -216
+   ],
+   "max": [
+    12,
+    4,
+    -209
+   ],
+   "job": "line: THE KEEPER'S TOWER (4 m: wave 1's east spitter, the east stair's landing, the health)",
+   "why": "NIGHT74 S g7 r1 (Research/2026-10-27-wave74/S/card-g7.md): a 4.5 x 7 m tier in the north-east corner (rimmed), as the shipped tower, with a stair along the east wall.",
+   "note": "THE KEEPER'S TOWER (4 m, 4.5 x 7 m, north-east)"
+  },
+  {
+   "zone": "g7",
+   "kind": "deck",
+   "min": [
+    -3,
+    0,
+    -204
+   ],
+   "max": [
+    3,
+    2,
+    -198
+   ],
+   "job": "line: THE BOILER STAGE (2 m: the middle tier; a circuit round it, a step between the floor and the gantries)",
+   "why": "NIGHT74 S g7 r1 (Research/2026-10-27-wave74/S/card-g7.md): the shipped boiler was a full-height 3 x 3 m stack in a lava trench; this is a walkable 6 x 6 m tier (2 m, rimmed) in the middle of the yard, dry, with a ramp from the door side.",
+   "note": "THE BOILER STAGE (2 m, 6 x 6 m, mid-yard)"
+  },
+  {
+   "zone": "g7",
+   "kind": "hull",
+   "min": [
+    -7.2,
+    0,
+    -193.5
+   ],
+   "max": [
+    -5.7,
+    3.5,
+    -192
+   ],
+   "job": "cover: THE WEST MOORING POST (a 3.5 m post by the door half's west: high cover from the far spitters)",
+   "why": "NIGHT74 S g7 r1 (Research/2026-10-27-wave74/S/card-g7.md): a 1.5 x 1.5 x 3.5 m free-standing post (high cover), 3.7 m west of the ramp's foot, off the entry's sight lines to the gantries.",
+   "note": "THE WEST MOORING POST (3.5 m, 1.5 x 1.5 m)"
+  },
+  {
+   "zone": "g7",
+   "kind": "hull",
+   "min": [
+    5.7,
+    0,
+    -193.5
+   ],
+   "max": [
+    7.2,
+    3.5,
+    -192
+   ],
+   "job": "cover: THE EAST MOORING POST (the west post's mirror across the axis)",
+   "why": "NIGHT74 S g7 r1 (Research/2026-10-27-wave74/S/card-g7.md): the west post's mirror: the entry yard between them is 11.4 m wide.",
+   "note": "THE EAST MOORING POST (3.5 m, 1.5 x 1.5 m)"
+  },
+  {
+   "zone": "g7",
+   "kind": "hull",
+   "min": [
+    3.5,
+    0,
+    -207.5
+   ],
+   "max": [
+    5.5,
+    1.2,
+    -206
+   ],
+   "job": "cover: THE EAST RAIL (1.2 m low cover on the far floor: hop it, shelter behind it from the spitters)",
+   "why": "NIGHT74 S g7 r1 (Research/2026-10-27-wave74/S/card-g7.md): 2 x 1.5 x 1.2 m low cover (1.0-1.25 m) on the far floor's east half.",
+   "note": "THE EAST RAIL (1.2 m, 2 x 1.5 m)"
+  },
+  {
+   "zone": "g7",
+   "kind": "hull",
+   "min": [
+    -5.5,
+    0,
+    -207.5
+   ],
+   "max": [
+    -3.5,
+    1.2,
+    -206
+   ],
+   "job": "cover: THE WEST RAIL (1.2 m low cover: the east rail's twin across the far floor)",
+   "why": "NIGHT74 S g7 r1 (Research/2026-10-27-wave74/S/card-g7.md): 2 x 1.5 x 1.2 m low cover on the far floor's west half.",
+   "note": "THE WEST RAIL (1.2 m, 2 x 1.5 m)"
+  },
+  {
+   "zone": "g8",
+   "kind": "wall",
+   "min": [
+    -10,
+    0,
+    -246
+   ],
+   "max": [
+    -9.4,
+    12,
+    -223
+   ],
+   "job": "line",
+   "why": "the WEST LANE WALL (ride, cyan, 23 m; EXT53 e53-m-g8.cjs: 1 m in with the wall): ride lane W past the charging pack (a charge that misses you ends in the wall: the stun) and off its end into the hoist bay, onto the cross hoist",
+   "note": "the WEST LANE WALL (ride, cyan, 23 m; EXT53 e53-m-g8.cjs: 1 m in with the wall): ride lane W past the charging pack (a charge that misses you ends in the wall: the stun) and off its end into the hoist bay, onto the cross hoist",
+   "ride": true,
+   "ride36": {
+    "face": "E",
+    "planeX": -9.4,
+    "lz": [
+     3,
+     26
+    ]
+   }
+  },
+  {
+   "zone": "g8",
+   "kind": "wall",
+   "min": [
+    10.4,
+    0,
+    -246
+   ],
+   "max": [
+    11,
+    12,
+    -223
+   ],
+   "job": "line",
+   "why": "the EAST LANE WALL (ride, cyan, 23 m x 5 m, run on to the deck (NIGHT52 fix 2: no slot beside the ramp); NIGHT47's east panel, now with its mirror): ride lane E and jump off its end onto the signal box's ramp (NIGHT52 fix K1 (n52-loop-fix-k1.cjs, the QA sweep): to the roof: its 5 m top was a 0-hit perch against wave 1's charger)",
+   "note": "the EAST LANE WALL (ride, cyan, 23 m x 5 m, run on to the deck (NIGHT52 fix 2: no slot beside the ramp); NIGHT47's east panel, now with its mirror): ride lane E and jump off its end onto the signal box's ramp (NIGHT52 fix K1 (n52-loop-fix-k1.cjs, the QA sweep): to the roof: its 5 m top was a 0-hit perch against wave 1's charger)",
+   "ride": true,
+   "ride36": {
+    "face": "W",
+    "planeX": 10.4,
+    "lz": [
+     3,
+     26
+    ]
+   }
+  },
+  {
+   "zone": "g8",
+   "kind": "deck",
+   "min": [
+    -10,
+    0,
+    -250
+   ],
+   "max": [
+    -5,
+    2.5,
+    -244
+   ],
+   "job": "line: THE GALLERY (2.5 m: the west lane wall's landing, the spitters' west stand)",
+   "why": "NIGHT74 S g8 r1 (Research/2026-10-27-wave74/S/card-g8.md): the shipped gallery was 5 x 4 m at 3 m between x -8..-3; this is 5 x 6 m at 2.5 m against the west wall (the lane wall's ride lands on it), with its stair on the far floor.",
+   "note": "THE GALLERY (2.5 m, 5 x 6 m, north-west)"
+  },
+  {
+   "zone": "g8",
+   "kind": "deck",
+   "min": [
+    5.5,
+    0,
+    -250
+   ],
+   "max": [
+    11,
+    5,
+    -243
+   ],
+   "job": "line: THE SIGNAL BOX (5 m: the east lane wall's landing, the third tier, the spitters' east stand)",
+   "why": "NIGHT74 S g8 r2 (Research/2026-10-27-wave74/S/card-g8.md): r1's box was 6.5 x 7 m: a plane of 6 m or more needs two climb tops 8 m apart (n70-area P9) and the stair, hoist and ride landing are within 3 m of each other; 5.5 x 7 m keeps all three and the east lane wall's landing.",
+   "note": "THE SIGNAL BOX (5 m, 5.5 x 7 m, north-east)"
+  },
+  {
+   "zone": "g8",
+   "kind": "hull",
+   "min": [
+    -6.75,
+    0,
+    -237
+   ],
+   "max": [
+    -5.25,
+    12,
+    -235.5
+   ],
+   "job": "30 s problem: THE WEST COLUMN (floor to roof: a charge ends in it: the stun, then the punish from behind)",
+   "why": "NIGHT74 S g8 r1 (Research/2026-10-27-wave74/S/card-g8.md): the shipped sand towers (1.5 x 1.5 m, full height) and the five decor pillars become four columns that do the job: one at each end of each lane beside the pit.",
+   "note": "THE WEST COLUMN (1.5 x 1.5 m, full height)"
+  },
+  {
+   "zone": "g8",
+   "kind": "hull",
+   "min": [
+    3,
+    0,
+    -237
+   ],
+   "max": [
+    4.5,
+    12,
+    -235.5
+   ],
+   "job": "30 s problem: THE EAST COLUMN (the west column's twin across the pit)",
+   "why": "NIGHT74 S g8 r1 (Research/2026-10-27-wave74/S/card-g8.md): the east lane's column, 1 m from the stair's west edge.",
+   "note": "THE EAST COLUMN (1.5 x 1.5 m, full height)"
+  },
+  {
+   "zone": "g8",
+   "kind": "hull",
+   "min": [
+    -4.5,
+    0,
+    -229
+   ],
+   "max": [
+    -3,
+    12,
+    -227.5
+   ],
+   "job": "30 s problem: THE WEST DOOR COLUMN (the west lane's near column, the east door column's mirror across the spawn: a charge from the door end is stopped by it)",
+   "why": "NIGHT74 S g8 r2 (Research/2026-10-27-wave74/S/card-g8.md): r1's column at x -6.75..-5.25 left the shipped wave-1 node (-4.5, 0, -231.5) in a straight line to the entry corridor; at x -4.5..-3 it hides that node as the east door column hides (4.5, 0, -231.5).",
+   "note": "THE WEST DOOR COLUMN (1.5 x 1.5 m, full height)"
+  },
+  {
+   "zone": "g8",
+   "kind": "hull",
+   "min": [
+    3,
+    0,
+    -229
+   ],
+   "max": [
+    4.5,
+    12,
+    -227.5
+   ],
+   "job": "30 s problem: THE EAST DOOR COLUMN (the east lane's near column)",
+   "why": "NIGHT74 S g8 r1 (Research/2026-10-27-wave74/S/card-g8.md): the near column of the east lane, the west door column's twin.",
+   "note": "THE EAST DOOR COLUMN (1.5 x 1.5 m, full height)"
+  },
+  {
+   "zone": "g8",
+   "kind": "hull",
+   "min": [
+    -9,
+    0,
+    -241
+   ],
+   "max": [
+    -7.5,
+    1.2,
+    -239.5
+   ],
+   "job": "cover: THE WEST RAIL (1.2 m low cover on the west wall's lane: hop it, shelter behind it)",
+   "why": "NIGHT74 S g8 r1 (Research/2026-10-27-wave74/S/card-g8.md): 1.5 x 1.5 x 1.2 m low cover between the lane wall and the lane, off the ride pilot's target spot (x -8.2, 10 m along the wall).",
+   "note": "THE WEST RAIL (1.2 m, 1.5 x 1.5 m)"
+  },
+  {
+   "zone": "g6",
+   "kind": "deck",
+   "min": [
+    -7,
+    0,
+    -177
+   ],
+   "max": [
+    -4,
+    2,
+    -168
+   ],
+   "job": "line: THE WEST SHELF (2 m: the armoury's raised shelf over the dash lane: shoot down the far husks, throw a husk at its face)",
+   "why": "NIGHT74 S g6 r1 (Research/2026-10-27-wave74/S/card-g6.md): the room was one bare floor: a 3 x 9 m shelf along the west wall, 2 m high and rimmed, the second floor plane; the ramp and the gun lift both end on it.",
+   "note": "THE WEST SHELF (2 m, 3 x 9 m, west wall)"
+  },
+  {
+   "zone": "g6",
+   "kind": "hull",
+   "min": [
+    4.3,
+    0,
+    -176
+   ],
+   "max": [
+    5.5,
+    2.5,
+    -169
+   ],
+   "job": "line: THE EAST RACK (a free-standing 2.5 m gun rack: the burst wall beside the dash lane and the cover from the far husks' line)",
+   "why": "NIGHT74 S g6 r1 (Research/2026-10-27-wave74/S/card-g6.md): NIGHT71 R's east rack idea, free-standing (1.2 x 7 m): a husk thrown at it bursts on its face; a circuit round it.",
+   "note": "THE EAST RACK (2.5 m, 1.2 x 7 m, free-standing)"
+  },
+  {
+   "zone": "g6",
+   "kind": "hull",
+   "min": [
+    -3.6,
+    0,
+    -170
+   ],
+   "max": [
+    -2,
+    2.2,
+    -168.4
+   ],
+   "job": "cover: THE PIER (a 2.2 m pillar west of the plinth: high cover on the way to the far husks)",
+   "why": "NIGHT74 S g6 r1 (Research/2026-10-27-wave74/S/card-g6.md): a 1.6 x 1.6 x 2.2 m pillar (high cover, 1.75 m or more) 1.4 m west of the plinth's line, 8.4 m inside the door (not R5's 4-8 m foothold band); clear of the entry's sight lines to both wave-1 nodes.",
+   "note": "THE PIER (2.2 m, 1.6 x 1.6 m)"
+  },
+  {
+   "zone": "g6",
+   "kind": "hull",
+   "min": [
+    2,
+    0,
+    -171.5
+   ],
+   "max": [
+    3.6,
+    1.2,
+    -170
+   ],
+   "job": "cover: THE CART (1.2 m low cover east of the dash lane: hop it or shelter behind it from the far husks)",
+   "why": "NIGHT74 S g6 r1 (Research/2026-10-27-wave74/S/card-g6.md): a 1.6 x 1.5 x 1.2 m low piece (1.0-1.25 m) 2 m east of the axis, clear of the walk line.",
+   "note": "THE CART (1.2 m, 1.6 x 1.5 m)"
+  }
+ ],
+ "ramps": [
+  {
+   "zone": "g2",
+   "from": [
+    -0.5,
+    -54
+   ],
+   "to": [
+    -8,
+    -54
+   ],
+   "width": 3,
+   "rise": 4,
+   "job": "climb: THE WEST STAIR (the walkers' way onto the west gantry from the far floor: 4 m over 7.5 m: the long way round the flank wall's ride)",
+   "why": "NIGHT74 S g2 r1 (Research/2026-10-27-wave74/S/card-g2.md): a route enemies can climb to every floor (GG, NIGHT20): along the north wall, so the walk to the gantry is longer than the ride (I2); a first try beside the wall's lane stood on the ride pilot's target and the walk was 1.16 x the ride.",
+   "note": "THE WEST STAIR"
+  },
+  {
+   "zone": "g2",
+   "from": [
+    7,
+    -31
+   ],
+   "to": [
+    7,
+    -36
+   ],
+   "width": 3,
+   "rise": 2,
+   "job": "climb: THE TERRACE STEP (the door end's ramp onto the east terrace: 2 m over 5 m, its top flush with the terrace's south edge z -36)",
+   "why": "NIGHT74 S g2 r1 (Research/2026-10-27-wave74/S/card-g2.md): the east tier's first way up, in the door's view on the right.",
+   "note": "THE TERRACE STEP"
+  },
+  {
+   "zone": "g2",
+   "from": [
+    7,
+    -45
+   ],
+   "to": [
+    7,
+    -53
+   ],
+   "width": 3,
+   "rise": 4,
+   "job": "climb: THE GANTRY STEP (from the terrace's top onto the east gantry: a 4 m wedge whose first half is buried in the terrace, so it climbs 2 m over 4 m from the terrace)",
+   "why": "NIGHT74 S g2 r1 (Research/2026-10-27-wave74/S/card-g2.md): a wedge cannot start above the floor: it starts at the floor under the terrace (z -45..-48, buried) and clears the terrace's 2 m at z -49.",
+   "note": "THE GANTRY STEP"
+  },
+  {
+   "zone": "g4",
+   "from": [
+    6.5,
+    -109
+   ],
+   "to": [
+    6.5,
+    -117
+   ],
+   "width": 3,
+   "rise": 4,
+   "job": "climb: the walkers' climb to the gallery",
+   "why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/g4/card.md, THE ORB YARD, parry; rebuilt from the blank rect): THE GALLERY STAIR (4 m over 8 m, from the pond's east end south onto the gallery, x 5..8, clear of the lock wall's lane): the walkers' climb (GG: a route enemies can climb)",
+   "note": "THE GALLERY STAIR"
+  },
+  {
+   "zone": "g4",
+   "from": [
+    -9.5,
+    -114
+   ],
+   "to": [
+    -9.5,
+    -108
+   ],
+   "width": 3,
+   "rise": 2.5,
+   "job": "climb: the walkers' climb to the west ledge",
+   "why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/g4/card.md, THE ORB YARD, parry; rebuilt from the blank rect): THE LEDGE STAIR (2.5 m over 6 m, from the far west floor north onto the ledge): the walkers' climb (GG: a route enemies can climb)",
+   "note": "THE LEDGE STAIR"
+  },
+  {
+   "zone": "g4",
+   "from": [
+    2,
+    -103.5
+   ],
+   "to": [
+    2,
+    -107
+   ],
+   "width": 3,
+   "rise": 0.9,
+   "job": "climb: THE STAGE STEP (the door floor onto the ice stage: the skater's and the walkers' way up, 0.9 m over 3.5 m)",
+   "why": "NIGHT74 S g4 r6 (Research/2026-10-27-wave74/S/card-g4.md; the lead's slice: GG's g4 was flatter than THE REACH): the south ramp onto THE ICE STAGE (x 0.5..3.5), 2 m east of the ledge ramp and 0.9 m clear of THE EAST ICE POST (x 4.4).",
+   "note": "THE STAGE STEP"
+  },
+  {
+   "zone": "g4",
+   "from": [
+    0,
+    -116.5
+   ],
+   "to": [
+    0,
+    -113
+   ],
+   "width": 3,
+   "rise": 0.9,
+   "job": "climb: THE STAGE DROP (the far floor onto the ice stage and back: 0.9 m over 3.5 m)",
+   "why": "NIGHT74 S g4 r6 (Research/2026-10-27-wave74/S/card-g4.md; the lead's slice: GG's g4 was flatter than THE REACH): the north ramp off THE ICE STAGE onto the far floor, west of THE CANAL HOIST's pad (x 2..4) and east of THE WEST ICE POST (x -5.6..-4.4).",
+   "note": "THE STAGE DROP"
+  },
+  {
+   "zone": "g4",
+   "from": [
+    -1.5,
+    -105
+   ],
+   "to": [
+    -6,
+    -105
+   ],
+   "width": 3,
+   "rise": 2.5,
+   "job": "climb: THE LEDGE RAMP (the door floor onto THE WEST LEDGE: 2.5 m over 4.5 m, in the entry's view; the walkers' second way up)",
+   "why": "NIGHT74 S g4 r6 (Research/2026-10-27-wave74/S/card-g4.md; the lead's slice: GG's g4 was flatter than THE REACH): the west ledge's only stair (x -11..-8, z -114..-108) stood behind the ledge, out of the door's view; this second ramp climbs the ledge's east face from the door floor (z -106.5..-103.5), 2 m clear of the stage step.",
+   "note": "THE LEDGE RAMP"
+  },
+  {
+   "zone": "g5",
+   "from": [
+    -6,
+    -141
+   ],
+   "to": [
+    -6,
+    -147
+   ],
+   "width": 3,
+   "rise": 2.5,
+   "job": "climb: the walkers' climb to the pour shelf",
+   "why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/g5/card.md, THE CRANE YARD, ride; rebuilt from the blank rect): THE POUR CHUTE (2.5 m over 6 m, x -7.5..-4.5, 2.9 m off the west wall's face, onto the shelf's north edge): the walkers' climb (GG: a route enemies can climb)",
+   "note": "THE POUR CHUTE"
+  },
+  {
+   "zone": "g5",
+   "from": [
+    8,
+    -155
+   ],
+   "to": [
+    8,
+    -147
+   ],
+   "width": 3,
+   "rise": 4.5,
+   "job": "climb: the walkers' climb to the crane runway",
+   "why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/g5/card.md, THE CRANE YARD, ride; rebuilt from the blank rect): THE RUNWAY RAMP (4.5 m over 8 m from the far floor's east side north onto the runway): the walkers' climb (GG: a route enemies can climb)",
+   "note": "THE RUNWAY RAMP"
+  },
+  {
+   "zone": "g7",
+   "from": [
+    -0.5,
+    -213
+   ],
+   "to": [
+    -7,
+    -213
+   ],
+   "width": 3,
+   "rise": 3.5,
+   "job": "climb: THE WEST STAIR (the walkers' way onto the west gantry from the far floor: 3.5 m over 6.5 m: the long way round the sluice wall's ride)",
+   "why": "NIGHT74 S g7 r1 (Research/2026-10-27-wave74/S/card-g7.md): a route enemies can climb to every floor (GG, NIGHT20): along the north wall, so the walk to the gantry is longer than the ride (I2) and the ride pilot's target line (x -9.6, 10 m along the wall) stays clear.",
+   "note": "THE WEST STAIR"
+  },
+  {
+   "zone": "g7",
+   "from": [
+    9.5,
+    -194
+   ],
+   "to": [
+    9.5,
+    -209
+   ],
+   "width": 3,
+   "rise": 4,
+   "job": "climb: THE EAST STAIR (the walkers' way onto the keeper's tower: 4 m over 15 m along the east wall)",
+   "why": "NIGHT74 S g7 r1 (Research/2026-10-27-wave74/S/card-g7.md): the shipped east stair's job (the climb onto the tower): along the east wall, x 8..11.",
+   "note": "THE EAST STAIR"
+  },
+  {
+   "zone": "g7",
+   "from": [
+    0,
+    -193
+   ],
+   "to": [
+    0,
+    -198
+   ],
+   "width": 3,
+   "rise": 2,
+   "job": "climb: THE STAGE STEP (the door half's ramp onto the boiler stage: 2 m over 5 m, 3.5 m ahead of the spawn)",
+   "why": "NIGHT74 S g7 r1 (Research/2026-10-27-wave74/S/card-g7.md): the stage's walkers' route; the exit's lane (x 0) runs over it or round it.",
+   "note": "THE STAGE STEP"
+  },
+  {
+   "zone": "g3",
+   "from": [
+    -2,
+    -84.5
+   ],
+   "to": [
+    5,
+    -84.5
+   ],
+   "width": 3,
+   "rise": 4,
+   "job": "climb: the walkers' climb to the tipple head",
+   "why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/g3/card.md, THE TIPPLE RIDES, ride; rebuilt from the blank rect): THE TIPPLE STAIR (4 m over 7 m, from west of the exit east onto the tipple head's west edge): the walkers' climb (GG: a route enemies can climb); the long way for a player, the ride the short one",
+   "note": "THE TIPPLE STAIR"
+  },
+  {
+   "zone": "g3",
+   "from": [
+    -8,
+    -74
+   ],
+   "to": [
+    -8,
+    -66
+   ],
+   "width": 3,
+   "rise": 4,
+   "job": "climb: the walkers' climb to the weigh loft",
+   "why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/g3/card.md, THE TIPPLE RIDES, ride; rebuilt from the blank rect): THE LOFT STAIR (4 m over 8 m, 2 m off the panel, from the west floor north onto the loft): the walkers' climb (GG: a route enemies can climb)",
+   "note": "THE LOFT STAIR"
+  },
+  {
+   "zone": "g8",
+   "from": [
+    -0.5,
+    -247
+   ],
+   "to": [
+    -5,
+    -247
+   ],
+   "width": 3,
+   "rise": 2.5,
+   "job": "climb: THE GALLERY STAIR (the walkers' way onto the gallery from the far floor: 2.5 m over 4.5 m: the long way round the west lane wall's ride)",
+   "why": "NIGHT74 S g8 r1 (Research/2026-10-27-wave74/S/card-g8.md): a route enemies can climb to every floor (GG, NIGHT20): on the far floor, so the walk to the gallery is longer than the lane wall's ride (I2).",
+   "note": "THE GALLERY STAIR"
+  },
+  {
+   "zone": "g8",
+   "from": [
+    7,
+    -226
+   ],
+   "to": [
+    7,
+    -243
+   ],
+   "width": 3,
+   "rise": 5,
+   "job": "climb: THE SIGNAL STAIR (the walkers' way up the signal box: 5 m over 17 m along the east half)",
+   "why": "NIGHT74 S g8 r1 (Research/2026-10-27-wave74/S/card-g8.md): the shipped east ramp's job (the climb onto the signal box), x 5.5..8.5, 0.85 m clear of the east lane wall's lane (x 9.7 centre).",
+   "note": "THE SIGNAL STAIR"
+  },
+  {
+   "zone": "g1",
+   "from": [
+    -6.5,
+    -10
+   ],
+   "to": [
+    -6.5,
+    -17.5
+   ],
+   "width": 3,
+   "rise": 3,
+   "job": "climb: THE GALLERY STAIR (the walkers' way onto the pen gallery: 3 m over 7.5 m)",
+   "why": "NIGHT74 S g1 r1 (Research/2026-10-27-wave74/S/card-g1.md): a route enemies can climb to every floor (GG, NIGHT20): east of the west wall's ride lane (x -9.7) by 1.7 m.",
+   "note": "THE GALLERY STAIR"
+  },
+  {
+   "zone": "g6",
+   "from": [
+    -5.5,
+    -164
+   ],
+   "to": [
+    -5.5,
+    -168
+   ],
+   "width": 2.5,
+   "rise": 2,
+   "job": "climb: THE SHELF STAIR (the walkers' and the player's way onto the west shelf: 2 m over 4 m, beside the door)",
+   "why": "NIGHT74 S g6 r1 (Research/2026-10-27-wave74/S/card-g6.md): a route enemies can climb to every floor (GG, NIGHT20): on the shelf's south end, in the door's view on the left.",
+   "note": "THE SHELF STAIR"
+  }
+ ],
+ "pads": [
+  {
+   "zone": "g7",
+   "at": [
+    6,
+    0,
+    -203
+   ],
+   "target": [
+    9.5,
+    4,
+    -212
+   ],
+   "apexAbove": 3,
+   "job": "line: THE COAL HOIST (the yard's east side onto the keeper's tower: the east way up without the stair)",
+   "why": "NIGHT74 S g7 r1 (Research/2026-10-27-wave74/S/card-g7.md): the shipped coal hoist's job (the floor onto the tower), 10 m from the tower.",
+   "note": "THE COAL HOIST"
+  },
+  {
+   "zone": "g7",
+   "at": [
+    -7.8,
+    0,
+    -203
+   ],
+   "target": [
+    -10.5,
+    3.5,
+    -212
+   ],
+   "apexAbove": 3,
+   "job": "line: THE WEST HOIST (the yard's west side onto the west gantry: the west way up without the wall)",
+   "why": "NIGHT74 S g7 r1 (Research/2026-10-27-wave74/S/card-g7.md): the shipped return hoist's job (a way up from the floor), the west mirror of the coal hoist: 3.3 m from the walk line, 1.9 m from the ride lane.",
+   "note": "THE WEST HOIST"
+  },
+  {
+   "zone": "g5",
+   "at": [
+    3,
+    0,
+    -135.5
+   ],
+   "target": [
+    8,
+    4.5,
+    -142.5
+   ],
+   "apexAbove": 2,
+   "job": "line: THE ICE HOIST (the door floor onto the crane runway)",
+   "why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/g5/card.md, THE CRANE YARD, ride; rebuilt from the blank rect): THE ICE HOIST (the shipped room's: a jump pad on the door floor's east side): onto THE CRANE RUNWAY",
+   "note": "THE ICE HOIST"
+  },
+  {
+   "zone": "g5",
+   "at": [
+    2.5,
+    0,
+    -152.5
+   ],
+   "target": [
+    8,
+    4.5,
+    -142
+   ],
+   "apexAbove": 2,
+   "job": "line: THE CRANE HOIST (the far floor onto the crane runway)",
+   "why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/g5/card.md, THE CRANE YARD, ride; rebuilt from the blank rect): THE CRANE HOIST (the shipped room's second: a jump pad on the far floor): back up onto THE CRANE RUNWAY when the drones come",
+   "note": "THE CRANE HOIST"
+  },
+  {
+   "zone": "g5",
+   "at": [
+    -6,
+    0,
+    -133
+   ],
+   "target": [
+    -8,
+    2.5,
+    -154
+   ],
+   "apexAbove": 2,
+   "job": "line: THE WEST HOIST (the door floor onto the pour shelf)",
+   "why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/g5/card.md, THE CRANE YARD, ride; rebuilt from the blank rect): THE WEST HOIST (the shipped room's third: a jump pad on the door floor's west side): over the first pack onto THE POUR SHELF",
+   "note": "THE WEST HOIST"
+  },
+  {
+   "zone": "g8",
+   "at": [
+    3,
+    0,
+    -245
+   ],
+   "target": [
+    7.5,
+    5,
+    -247
+   ],
+   "apexAbove": 3,
+   "job": "line: THE CROSS HOIST (the far floor onto the signal box: the hoist bay's way up)",
+   "why": "NIGHT74 S g8 r1 (Research/2026-10-27-wave74/S/card-g8.md): the shipped cross hoist's job (the hoist bay onto the signal box), from the far floor 4.5 m from the box.",
+   "note": "THE CROSS HOIST"
+  },
+  {
+   "zone": "g8",
+   "at": [
+    -7,
+    0,
+    -243
+   ],
+   "target": [
+    -7.5,
+    2.5,
+    -247
+   ],
+   "apexAbove": 3,
+   "job": "line: THE GALLERY HOIST (the west lane onto the gallery)",
+   "why": "NIGHT74 S g8 r1 (Research/2026-10-27-wave74/S/card-g8.md): a second way up for the player (the stair is the walkers'): the west lane's far end, 3.5 m west of the walk line, clear of the west column and the rail.",
+   "note": "THE GALLERY HOIST"
+  },
+  {
+   "zone": "g4",
+   "at": [
+    3,
+    0,
+    -117.5
+   ],
+   "target": [
+    8.5,
+    4,
+    -121
+   ],
+   "apexAbove": 2,
+   "job": "line: THE CANAL HOIST (the far floor onto the gallery)",
+   "why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/g4/card.md, THE ORB YARD, parry; rebuilt from the blank rect): THE CANAL HOIST (the shipped room's: a jump pad on the far floor by the gallery stair): onto THE GALLERY (4 m), level with the far drone",
+   "note": "THE CANAL HOIST"
+  },
+  {
+   "zone": "g4",
+   "at": [
+    -7,
+    0,
+    -120.5
+   ],
+   "target": [
+    -9,
+    2.5,
+    -105
+   ],
+   "apexAbove": 2,
+   "job": "line: THE RETURN HOIST (the far floor back onto the west ledge)",
+   "why": "NIGHT71 R r3: (-4, 0, -119.5) -> (-7, 0, -120.5), its flight clear of THE WEST ICE POST. NIGHT71 R r1 (Research/2026-10-26-wave71/R/g4/card.md, THE ORB YARD, parry; rebuilt from the blank rect): THE RETURN HOIST (the shipped room's: a jump pad on the far floor's west side): back over the pond onto THE WEST LEDGE",
+   "note": "THE RETURN HOIST"
+  },
+  {
+   "zone": "g4",
+   "at": [
+    -6.8,
+    2.5,
+    -103
+   ],
+   "target": [
+    8.5,
+    4,
+    -120.5
+   ],
+   "apexAbove": 2,
+   "job": "line: THE LEDGE HOIST (the west ledge over the yard onto the gallery)",
+   "why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/g4/card.md, THE ORB YARD, parry; rebuilt from the blank rect): THE LEDGE HOIST (the shipped room's third: a jump pad on the west ledge's east edge): from one high stand over the pond to the other",
+   "note": "THE LEDGE HOIST"
+  },
+  {
+   "zone": "g3",
+   "at": [
+    -9,
+    0,
+    -87
+   ],
+   "target": [
+    8.5,
+    4,
+    -82.5
+   ],
+   "apexAbove": 2,
+   "job": "line: THE TIPPLE HOIST (the far west floor onto the tipple head)",
+   "why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/g3/card.md, THE TIPPLE RIDES, ride; rebuilt from the blank rect): THE TIPPLE HOIST (a jump pad in the far west corner, the shipped room's): over the floor onto THE TIPPLE HEAD",
+   "note": "THE TIPPLE HOIST"
+  },
+  {
+   "zone": "g3",
+   "at": [
+    10,
+    4,
+    -85
+   ],
+   "target": [
+    -9,
+    4,
+    -64.5
+   ],
+   "apexAbove": 2,
+   "job": "line: THE LOFT HOIST (the tipple head over the room onto the weigh loft)",
+   "why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/g3/card.md, THE TIPPLE RIDES, ride; rebuilt from the blank rect): THE LOFT HOIST (a jump pad on the tipple head's back corner, the shipped room's second): one high deck to the other over the swarm",
+   "note": "THE LOFT HOIST"
+  },
+  {
+   "zone": "g2",
+   "at": [
+    -4,
+    0,
+    -37
+   ],
+   "target": [
+    -10,
+    4,
+    -54.5
+   ],
+   "apexAbove": 3,
+   "job": "line: THE WEST SPRING (the floor onto the west gantry over the anvil: the flank without the wall)",
+   "why": "NIGHT74 S g2 r1 (Research/2026-10-27-wave74/S/card-g2.md): the shipped west spring's job (floor to the west gantry): from the door half's west lane, 3 m from the walk line.",
+   "note": "THE WEST SPRING"
+  },
+  {
+   "zone": "g2",
+   "at": [
+    2.2,
+    0,
+    -41
+   ],
+   "target": [
+    6.5,
+    2,
+    -45
+   ],
+   "apexAbove": 3,
+   "job": "line: THE TERRACE SPRING (the door half onto the east terrace)",
+   "why": "NIGHT74 S g2 r1 (Research/2026-10-27-wave74/S/card-g2.md): the shipped east spring's job (floor to the east side), onto the terrace.",
+   "note": "THE TERRACE SPRING"
+  },
+  {
+   "zone": "g2",
+   "at": [
+    3.5,
+    0,
+    -55.5
+   ],
+   "target": [
+    -9.5,
+    4,
+    -55.5
+   ],
+   "apexAbove": 3,
+   "job": "line: THE CROSS SPRING (the far floor, east of the exit, over the stair onto the west gantry)",
+   "why": "NIGHT74 S g2 r1 (Research/2026-10-27-wave74/S/card-g2.md): the shipped far-floor spring's own geometry and job (the floor onto the west gantry across the far end, 13 m; hold52 PASS on the shipped room): first tries from the terrace (2.4 m short) and from the east gantry (apexAbove is capped by the pad's apex 8 m: 3.3 m short) did not land.",
+   "note": "THE CROSS SPRING"
+  },
+  {
+   "zone": "g6",
+   "at": [
+    -2.5,
+    0,
+    -173.5
+   ],
+   "target": [
+    -5.5,
+    2,
+    -172.5
+   ],
+   "apexAbove": 1.5,
+   "job": "line: THE GUN LIFT (a jump pad from the floor onto the west shelf: the launch room's way up)",
+   "why": "NIGHT74 S g6 r1 (Research/2026-10-27-wave74/S/card-g6.md): the shelf's second way up (the stair is the walkers'): a pad 2.5 m west of the dash lane, its flight clear of the pier.",
+   "note": "THE GUN LIFT"
+  }
+ ],
+ "grapple": [],
+ "pits": [
+  {
+   "zone": "g8",
+   "rect": [
+    -2,
+    -240,
+    2,
+    -230
+   ],
+   "floorY": -1.5,
+   "job": "hazard",
+   "why": "NIGHT74 S g8 r1 (Research/2026-10-27-wave74/S/card-g8.md): THE PIT (the lesson's: 'Lead one into the pit.'): 4 x 10 m, 1.5 m deep (was 3 x 11 m), z -240..-230. THE PIT (3 x 11 m, 1.5 m deep, along lane C; card: Hero prop, Hazard both ways): the shed's inspection pit. A charger whose charge crosses it falls in and cannot climb out (ai.jumps.charger.jumps false: it stands dazed): the free punish from above; a player who falls in jumps or double-jumps out (a jump reaches 1.58 m, a double 2.88 m: n47b reach). It cuts lane C only: the strafe ring round it stays whole",
+   "note": "THE PIT (4 x 10 m, 1.5 m deep, along the middle lane)"
+  }
+ ],
+ "tunnels": [],
+ "lights": [
+  {
+   "id": "g1-L1",
+   "room": "g1",
+   "kind": "ceiling",
+   "at": [
+    0,
+    8.95,
+    -3
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 9,
+   "intensity": 1
+  },
+  {
+   "id": "g1-L2",
+   "room": "g1",
+   "kind": "ceiling",
+   "at": [
+    0,
+    8.95,
+    -14
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    4,
+    0.1
+   ],
+   "color": "amber",
+   "range": 10,
+   "intensity": 1.1
+  },
+  {
+   "id": "g1-L3",
+   "room": "g1",
+   "kind": "pool",
+   "at": [
+    0,
+    0.025,
+    -24.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.5,
+    2.5,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.6
+  },
+  {
+   "id": "g1-L56a",
+   "room": "g1",
+   "kind": "wall",
+   "at": [
+    10.95,
+    2.4,
+    -22
+   ],
+   "normal": [
+    -1,
+    0,
+    0
+   ],
+   "size": [
+    2.5,
+    0.3,
+    0.1
+   ],
+   "color": "white",
+   "range": 8,
+   "intensity": 1.2,
+   "why": "NIGHT56 L (n56-l-doors.py, S1-doors: the flat frames of r1 verbs37): the EAST WALL LAMP (south): verbs37's wall steps on g1's east wall (r1 vi f0900 at (9.8, 1.8, -22.0), luma std 0.0181: one flat panel); g1's ceiling panels stand on x 0 NIGHT56 L (n56-l-doors3.py, S1-doors slice 3): moved into r3 vi f0900's frame (1.2 m off the wall: ~0.9-2.7 m of its height in view; 0.0238 at 3.5 m)",
+   "job": "light"
+  },
+  {
+   "id": "g1-L56b",
+   "room": "g1",
+   "kind": "wall",
+   "at": [
+    10.95,
+    3.5,
+    -10
+   ],
+   "normal": [
+    -1,
+    0,
+    0
+   ],
+   "size": [
+    2.5,
+    0.3,
+    0.1
+   ],
+   "color": "white",
+   "range": 8,
+   "intensity": 1.2,
+   "why": "NIGHT56 L (n56-l-doors.py, S1-doors: the flat frames of r1 verbs37): the EAST WALL LAMP (north): the slot between the east ride panel and the east wall (r1 vi f1350 at (10.7, 1.6, -9.8), luma std 0.0219)",
+   "job": "light"
+  },
+  {
+   "id": "g1-L56c",
+   "room": "g1",
+   "kind": "wall",
+   "at": [
+    7,
+    4,
+    -0.05
+   ],
+   "normal": [
+    0,
+    0,
+    -1
+   ],
+   "size": [
+    2.5,
+    0.3,
+    0.1
+   ],
+   "color": "white",
+   "range": 8,
+   "intensity": 1.1,
+   "why": "NIGHT56 L (n56-l-doors.py, S1-doors: the flat frames of r1 verbs37): the SOUTH WALL LAMP: the start wall's east half (r1 vi f0850 at (8.5, 3.6, -0.3), luma std 0.0149)",
+   "job": "light"
+  },
+  {
+   "id": "g1-RW",
+   "room": "g1",
+   "kind": "wall",
+   "at": [
+    -10.35,
+    1.2,
+    -10
+   ],
+   "normal": [
+    1,
+    0,
+    0
+   ],
+   "size": [
+    15,
+    0.2,
+    0.1
+   ],
+   "color": "cyan",
+   "range": 6,
+   "intensity": 1.1,
+   "why": "NIGHT74 S g1 r1 (Research/2026-10-27-wave74/S/card-g1.md): THE WEST WALL's cyan ride strip (player-usable: cyan)"
+  },
+  {
+   "id": "g2-L1",
+   "room": "g2",
+   "kind": "ceiling",
+   "at": [
+    0,
+    9.95,
+    -33
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 9,
+   "intensity": 1
+  },
+  {
+   "id": "g2-L2",
+   "room": "g2",
+   "kind": "ceiling",
+   "at": [
+    0,
+    9.95,
+    -50
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    4,
+    0.1
+   ],
+   "color": "amber",
+   "range": 10,
+   "intensity": 1.1
+  },
+  {
+   "id": "g2-L3",
+   "room": "g2",
+   "kind": "ceiling",
+   "at": [
+    -7,
+    9.95,
+    -55.5
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 9,
+   "intensity": 1
+  },
+  {
+   "id": "g2-L4",
+   "room": "g2",
+   "kind": "ceiling",
+   "at": [
+    7,
+    9.95,
+    -55.5
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 9,
+   "intensity": 1
+  },
+  {
+   "id": "g2-L5",
+   "room": "g2",
+   "kind": "pool",
+   "at": [
+    0,
+    0.025,
+    -56
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.5,
+    2.5,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.6
+  },
+  {
+   "id": "g2-RW",
+   "room": "g2",
+   "kind": "wall",
+   "at": [
+    -11.35,
+    1.2,
+    -41.5
+   ],
+   "normal": [
+    1,
+    0,
+    0
+   ],
+   "size": [
+    17,
+    0.2,
+    0.1
+   ],
+   "color": "cyan",
+   "range": 6,
+   "intensity": 1.1,
+   "why": "NIGHT74 S g2 r1 (Research/2026-10-27-wave74/S/card-g2.md): THE FLANK WALL's cyan ride strip (player-usable: cyan)"
+  },
+  {
+   "id": "g3-L1",
+   "room": "g3",
+   "kind": "ceiling",
+   "at": [
+    0,
+    9.95,
+    -65
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 10,
+   "intensity": 0.9
+  },
+  {
+   "id": "g3-L2",
+   "room": "g3",
+   "kind": "ceiling",
+   "at": [
+    -5,
+    9.95,
+    -78
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    6,
+    4,
+    0.1
+   ],
+   "color": "white",
+   "range": 11,
+   "intensity": 1.1
+  },
+  {
+   "id": "g3-L3",
+   "room": "g3",
+   "kind": "ceiling",
+   "at": [
+    6,
+    9.95,
+    -80
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    4,
+    0.1
+   ],
+   "color": "white",
+   "range": 10,
+   "intensity": 1
+  },
+  {
+   "id": "g3-L5",
+   "room": "g3",
+   "kind": "pool",
+   "at": [
+    0,
+    0.025,
+    -88
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    1.8,
+    1.8,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 8,
+   "intensity": 1.7
+  },
+  {
+   "id": "g3-L6",
+   "room": "g3",
+   "kind": "pool",
+   "at": [
+    8.5,
+    4.025,
+    -82.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2,
+    2,
+    0.05
+   ],
+   "color": "white",
+   "range": 8,
+   "intensity": 1
+  },
+  {
+   "id": "g3-L7",
+   "room": "g3",
+   "kind": "pool",
+   "at": [
+    -9,
+    4.025,
+    -64
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2,
+    2,
+    0.05
+   ],
+   "color": "white",
+   "range": 7,
+   "intensity": 0.9
+  },
+  {
+   "id": "g3-RE",
+   "room": "g3",
+   "kind": "wall",
+   "at": [
+    11.35,
+    1.2,
+    -71.5
+   ],
+   "normal": [
+    -1,
+    0,
+    0
+   ],
+   "size": [
+    15,
+    0.2,
+    0.1
+   ],
+   "color": "cyan",
+   "range": 6,
+   "intensity": 1.1
+  },
+  {
+   "id": "g3-RW",
+   "room": "g3",
+   "kind": "wall",
+   "at": [
+    -11.35,
+    1.2,
+    -74
+   ],
+   "normal": [
+    1,
+    0,
+    0
+   ],
+   "size": [
+    16,
+    0.2,
+    0.1
+   ],
+   "color": "cyan",
+   "range": 6,
+   "intensity": 1.1
+  },
+  {
+   "id": "g4-L1",
+   "room": "g4",
+   "kind": "ceiling",
+   "at": [
+    0,
+    9.95,
+    -97
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 10,
+   "intensity": 0.9
+  },
+  {
+   "id": "g4-L2",
+   "room": "g4",
+   "kind": "ceiling",
+   "at": [
+    0,
+    9.95,
+    -110
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    6,
+    0.1
+   ],
+   "color": "white",
+   "range": 11,
+   "intensity": 1.1
+  },
+  {
+   "id": "g4-L3",
+   "room": "g4",
+   "kind": "ceiling",
+   "at": [
+    0,
+    9.95,
+    -120
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    6,
+    4,
+    0.1
+   ],
+   "color": "white",
+   "range": 10,
+   "intensity": 1
+  },
+  {
+   "id": "g4-L4",
+   "room": "g4",
+   "kind": "pool",
+   "at": [
+    0,
+    0.025,
+    -122
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.5,
+    2.5,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 8,
+   "intensity": 1.7
+  },
+  {
+   "id": "g4-L5",
+   "room": "g4",
+   "kind": "pool",
+   "at": [
+    9,
+    4.025,
+    -120.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2,
+    2,
+    0.05
+   ],
+   "color": "white",
+   "range": 8,
+   "intensity": 1
+  },
+  {
+   "id": "g4-L6",
+   "room": "g4",
+   "kind": "pool",
+   "at": [
+    -9,
+    2.525,
+    -105.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2,
+    2,
+    0.05
+   ],
+   "color": "white",
+   "range": 7,
+   "intensity": 0.9
+  },
+  {
+   "id": "g4-L7",
+   "room": "g4",
+   "kind": "pool",
+   "at": [
+    -1,
+    0.925,
+    -110
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    5,
+    4,
+    0.05
+   ],
+   "color": "white",
+   "range": 8,
+   "intensity": 1
+  },
+  {
+   "id": "g4-RE",
+   "room": "g4",
+   "kind": "wall",
+   "at": [
+    11.35,
+    1.2,
+    -108
+   ],
+   "normal": [
+    -1,
+    0,
+    0
+   ],
+   "size": [
+    18,
+    0.2,
+    0.1
+   ],
+   "color": "cyan",
+   "range": 6,
+   "intensity": 1.1
+  },
+  {
+   "id": "g5-L1",
+   "room": "g5",
+   "kind": "ceiling",
+   "at": [
+    0,
+    11.95,
+    -131
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 11,
+   "intensity": 1
+  },
+  {
+   "id": "g5-L2",
+   "room": "g5",
+   "kind": "ceiling",
+   "at": [
+    0,
+    11.95,
+    -150
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    6,
+    4,
+    0.1
+   ],
+   "color": "white",
+   "range": 12,
+   "intensity": 1.1
+  },
+  {
+   "id": "g5-L3",
+   "room": "g5",
+   "kind": "pool",
+   "at": [
+    0,
+    0.025,
+    -156
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.5,
+    2.5,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 8,
+   "intensity": 1.7
+  },
+  {
+   "id": "g5-L4",
+   "room": "g5",
+   "kind": "pool",
+   "at": [
+    -8,
+    2.525,
+    -151
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2,
+    2,
+    0.05
+   ],
+   "color": "white",
+   "range": 8,
+   "intensity": 1
+  },
+  {
+   "id": "g5-L5",
+   "room": "g5",
+   "kind": "pool",
+   "at": [
+    7.5,
+    4.525,
+    -141.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2,
+    2,
+    0.05
+   ],
+   "color": "white",
+   "range": 8,
+   "intensity": 1
+  },
+  {
+   "id": "g5-RW",
+   "room": "g5",
+   "kind": "wall",
+   "at": [
+    -10.35,
+    1.2,
+    -139
+   ],
+   "normal": [
+    1,
+    0,
+    0
+   ],
+   "size": [
+    16,
+    0.2,
+    0.1
+   ],
+   "color": "cyan",
+   "range": 6,
+   "intensity": 1.1
+  },
+  {
+   "id": "g5-RE",
+   "room": "g5",
+   "kind": "wall",
+   "at": [
+    9.35,
+    1.2,
+    -134
+   ],
+   "normal": [
+    -1,
+    0,
+    0
+   ],
+   "size": [
+    10,
+    0.2,
+    0.1
+   ],
+   "color": "cyan",
+   "range": 6,
+   "intensity": 1.1
+  },
+  {
+   "id": "g6-L1",
+   "room": "g6",
+   "kind": "ceiling",
+   "at": [
+    0,
+    5.95,
+    -167
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.1
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.2
+  },
+  {
+   "id": "g6-L2",
+   "room": "g6",
+   "kind": "ceiling",
+   "at": [
+    0,
+    5.95,
+    -176
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    6,
+    2,
+    0.1
+   ],
+   "color": "white",
+   "range": 8,
+   "intensity": 1
+  },
+  {
+   "id": "g6-L3",
+   "room": "g6",
+   "kind": "pool",
+   "at": [
+    0,
+    0.025,
+    -178.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2,
+    2,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 6,
+   "intensity": 1.4
+  },
+  {
+   "id": "g7-L1",
+   "room": "g7",
+   "kind": "ceiling",
+   "at": [
+    0,
+    9.95,
+    -191.75
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    4,
+    0.1
+   ],
+   "color": "white",
+   "range": 10,
+   "intensity": 0.7,
+   "why": "the quay's one dim panel: the run-up reads, the fire ahead is the brighter light"
+  },
+  {
+   "id": "g7-L4",
+   "room": "g7",
+   "kind": "ceiling",
+   "at": [
+    -8,
+    9.95,
+    -213
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    5,
+    4,
+    0.1
+   ],
+   "color": "white",
+   "range": 10,
+   "intensity": 1,
+   "why": "the west gantry's coal lamp: the spitters' high ground reads"
+  },
+  {
+   "id": "g7-L5",
+   "room": "g7",
+   "kind": "ceiling",
+   "at": [
+    8,
+    9.95,
+    -213
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    5,
+    4,
+    0.1
+   ],
+   "color": "white",
+   "range": 10,
+   "intensity": 1,
+   "why": "the keeper's house lamp: the third tier reads from the quay"
+  },
+  {
+   "id": "g7-L6",
+   "room": "g7",
+   "kind": "pool",
+   "at": [
+    2,
+    0.025,
+    -214
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.5,
+    2.5,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 8,
+   "intensity": 1.6,
+   "why": "the exit's cyan pool (A-6: the exit is lit)"
+  },
+  {
+   "id": "g7-RW",
+   "room": "g7",
+   "kind": "wall",
+   "at": [
+    -11.35,
+    1.2,
+    -202
+   ],
+   "normal": [
+    1,
+    0,
+    0
+   ],
+   "size": [
+    16,
+    0.2,
+    0.1
+   ],
+   "color": "cyan",
+   "range": 6,
+   "intensity": 1.1,
+   "why": "NIGHT74 S g7 r1 (Research/2026-10-27-wave74/S/card-g7.md): THE WEST SLUICE WALL's cyan ride strip (player-usable: cyan)"
+  },
+  {
+   "id": "g8-L1",
+   "room": "g8",
+   "kind": "ceiling",
+   "at": [
+    0,
+    11.95,
+    -223
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 12,
+   "intensity": 1,
+   "why": "the door end's panel"
+  },
+  {
+   "id": "g8-L2",
+   "room": "g8",
+   "kind": "ceiling",
+   "at": [
+    0,
+    11.95,
+    -234
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    10,
+    0.1
+   ],
+   "color": "white",
+   "range": 12,
+   "intensity": 1,
+   "why": "the lanes and the pit read"
+  },
+  {
+   "id": "g8-L3",
+   "room": "g8",
+   "kind": "ceiling",
+   "at": [
+    0,
+    11.95,
+    -243
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    6,
+    3,
+    0.1
+   ],
+   "color": "amber",
+   "range": 12,
+   "intensity": 1.1,
+   "why": "the far end's warm panel: the stampede's start"
+  },
+  {
+   "id": "g8-L5",
+   "room": "g8",
+   "kind": "wall",
+   "at": [
+    -4.5,
+    5,
+    -249.95
+   ],
+   "normal": [
+    0,
+    0,
+    1
+   ],
+   "size": [
+    1.2,
+    0.5,
+    0.1
+   ],
+   "color": "white",
+   "range": 9,
+   "intensity": 1.2,
+   "why": "the gallery's lamp (white): the spitters' stand reads"
+  },
+  {
+   "id": "g8-L6",
+   "room": "g8",
+   "kind": "wall",
+   "at": [
+    7.5,
+    8,
+    -249.95
+   ],
+   "normal": [
+    0,
+    0,
+    1
+   ],
+   "size": [
+    1.2,
+    0.5,
+    0.1
+   ],
+   "color": "white",
+   "range": 9,
+   "intensity": 1.2,
+   "why": "the signal box's lamp, above its deck"
+  },
+  {
+   "id": "g8-L4",
+   "room": "g8",
+   "kind": "pool",
+   "at": [
+    1.5,
+    0.025,
+    -248.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.5,
+    2.5,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.6,
+   "why": "the exit's cyan pool (A-6)"
+  },
+  {
+   "id": "gr-L1",
+   "room": "gr",
+   "kind": "ceiling",
+   "at": [
+    0,
+    4.95,
+    -259
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 8,
+   "intensity": 1
+  },
+  {
+   "id": "gr-L2",
+   "room": "gr",
+   "kind": "pool",
+   "at": [
+    0,
+    0.025,
+    -262.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2,
+    2,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 6,
+   "intensity": 1.4
+  },
+  {
+   "id": "x9-L1",
+   "room": "x9",
+   "kind": "ceiling",
+   "at": [
+    0,
+    13.95,
+    -287
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    6,
+    6,
+    0.1
+   ],
+   "color": "white",
+   "range": 16,
+   "intensity": 1.2
+  },
+  {
+   "id": "x9-L2",
+   "room": "x9",
+   "kind": "pool",
+   "at": [
+    0,
+    0.025,
+    -287
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 8,
+   "intensity": 1.2
+  }
+ ],
+ "props": [
+  {
+   "id": "g2-P3",
+   "room": "g2",
+   "kind": "healthPickup",
+   "at": [
+    -10,
+    4.9,
+    -55
+   ],
+   "size": [
+    0.6,
+    0.6,
+    0.6
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "pickup": true,
+   "job": "reward",
+   "why": "the high ground pays health: on the west gantry (4 m) at the flank lane's end (NIGHT52 fix K2 (n52-loop-fix-k2.cjs))"
+  },
+  {
+   "id": "g5-P1",
+   "room": "g5",
+   "kind": "healthPickup",
+   "at": [
+    8.5,
+    5.4,
+    -140.5
+   ],
+   "size": [
+    0.6,
+    0.6,
+    0.6
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "pickup": true,
+   "job": "reward",
+   "why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/g5/card.md, THE CRANE YARD, ride; rebuilt from the blank rect): the health on THE CRANE RUNWAY: the east wall's ride pays"
+  },
+  {
+   "id": "g6-P1",
+   "room": "g6",
+   "kind": "plinth",
+   "at": [
+    0,
+    0.3,
+    -167
+   ],
+   "size": [
+    1.2,
+    0.6,
+    1.2
+   ],
+   "yawDeg": 0,
+   "collider": true,
+   "job": "reward",
+   "why": "the KESTREL's plinth, 3.5 m from the door on the axis: the gun is the first thing in the room (design.n40.iceline40.awards gives it on entry)"
+  },
+  {
+   "id": "g6-P2",
+   "room": "g6",
+   "kind": "weaponPickup",
+   "at": [
+    0,
+    1,
+    -167
+   ],
+   "size": [
+    0.6,
+    0.6,
+    0.6
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "pickup": true,
+   "job": "reward",
+   "why": "the KESTREL on its plinth, in view from the door (the row's award gives it on entry anyway)",
+   "weapon": "revolver"
+  },
+  {
+   "id": "g7-P1",
+   "room": "g7",
+   "kind": "healthPickup",
+   "at": [
+    0,
+    2.9,
+    -201
+   ],
+   "size": [
+    0.6,
+    0.6,
+    0.6
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "pickup": true,
+   "job": "reward",
+   "why": "the health right behind the boiler on the far floor, under both stands' fire (A20: the best at the riskiest spot): the dash-jump or an island hop lands on it"
+  },
+  {
+   "id": "g8-P7",
+   "room": "g8",
+   "kind": "hero",
+   "at": [
+    0,
+    6,
+    -249.8
+   ],
+   "size": [
+    7,
+    5,
+    0.3
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "job": "marker",
+   "why": "THE TURNTABLE GATE (card: Landmark): the engine shed's round door over the exit, its plough-blade frame red-orange, lit from behind: seen from the door, the only round shape in the room"
+  },
+  {
+   "id": "g8-P8",
+   "room": "g8",
+   "kind": "healthPickup",
+   "at": [
+    0,
+    0.9,
+    -242
+   ],
+   "size": [
+    0.6,
+    0.6,
+    0.6
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "pickup": true,
+   "job": "reward",
+   "why": "the health at THE PIT's far end in lane C, where the centre charger runs (A20: the best at the riskiest spot): cross the pit's lane under the stands to take it"
+  },
+  {
+   "id": "gr-P1",
+   "room": "gr",
+   "kind": "healthPickup",
+   "at": [
+    0,
+    0.9,
+    -259
+   ],
+   "size": [
+    0.6,
+    0.6,
+    0.6
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "pickup": true,
+   "job": "reward",
+   "why": "the rest before THE BRAWL: full health"
+  },
+  {
+   "id": "g3-P2",
+   "room": "g3",
+   "kind": "healthPickup",
+   "at": [
+    10.5,
+    4.9,
+    -81
+   ],
+   "size": [
+    0.6,
+    0.6,
+    0.6
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "pickup": true,
+   "job": "reward",
+   "why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/g3/card.md, THE TIPPLE RIDES, ride; rebuilt from the blank rect): the health on THE TIPPLE HEAD: the coal ride pays"
+  },
+  {
+   "id": "g4-P1",
+   "room": "g4",
+   "kind": "healthPickup",
+   "at": [
+    0,
+    1.8,
+    -110
+   ],
+   "size": [
+    0.6,
+    0.6,
+    0.6
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "pickup": true,
+   "job": "reward",
+   "why": "NIGHT71 R r1 (Research/2026-10-26-wave71/R/g4/card.md, THE ORB YARD, parry; rebuilt from the blank rect): the health in the middle of the ice pond, under the orbs: the riskiest spot (the shipped room's on its centre bridge)"
+  }
+ ],
+ "surfaces": [
+  {
+   "kind": "ice",
+   "rect": [
+    -6,
+    -113,
+    4.5,
+    -107
+   ],
+   "minY": 0.4,
+   "maxY": 1.4,
+   "room": "g4",
+   "note": "THE ICE POND's frozen floor (the level's name; design.n30.glide): you skate it under the orbs (NIGHT71 R: the shipped canal's ice, kept on the floor); NIGHT74 S g4 r6: the pond is THE ICE STAGE now (0.9 m): the band follows its top (0.4 .. 1.4)"
+  }
+ ],
+ "owns38": [
+  "jump",
+  "double",
+  "dash",
+  "slide",
+  "ride",
+  "walljump"
+ ],
+ "owns38_why": "Builder E's gate checker (Design/levels/n38/GATES38.md), as n38-iceline: level 2 owns the movement verbs, the KESTREL and the PULSE gauntlet; the THUNDERCLAP boost is level 3's, the grapple level 4's. n40-iceline has no `gate` tag (no traversal gate: every crossing is a walk, a bridge or a ramp)."
+}

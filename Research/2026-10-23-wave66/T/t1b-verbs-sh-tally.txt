@@ -1,0 +1,41 @@
+# command: bash Tools/night/n65-verbs.sh skip Design/levels/n52-foundry.json b1,a2 --seeds 2 --plant-verb65 b1:launch --bars C:/Users/gaige/dev/SKYGRIND-unity/Logs/n66/slate.json
+# sha: 5aee475e (tree 6 dirty paths), 2026-10-24 00:59:41 USMST, /c/Users/gaige/dev/SKYGRIND-unity/.claude/worktrees/agent-af48e888c59fa3626
+
+n65verb skip v2: level Design/levels/n52-foundry.json, room b1, verb65 launch (planted, bot43 false), refuse launch, seeds 1..2 (--seeds 2), cap 120.0 s, bar 1.25 from the default 1.25 (C:/Users/gaige/dev/SKYGRIND-unity/Logs/n66/slate.json b1.mainBar is null), need 2 exercised
+  runs: verb-aware = Walk38Pilot + n46flow's lava rule + the ported autopilot (normal) + the verb-aware layer; refused-in = the same with the verb refused inside the layer (episodes declined, holds and approach released) and the inner pilot's verb presses dropped; walker = the plain pilot with the verb's presses dropped. Not invulnerable. A run that does not clear counts the cap.
+  seed 1 verb-aware: cleared yes in 26.3 s | deaths 0, falls 0 | launch36 1 | STYLE above DULL 53.5 %, top BOLD | walked 163.4 m, shots 24 (charged 5, bodies hit per charged shot 1/1/1/0/1) | trigger held 135 steps
+  seed 1 refused-in: cleared yes in 30.2 s | deaths 0, falls 0 | launch36 0 | STYLE above DULL 32.2 %, top COOL | walked 158.0 m, shots 35 (charged 4, bodies hit per charged shot 0/0/1/1) | presses refused 43 (episodes declined 8, the inner pilot's presses dropped 35)
+  seed 1 walker:     cleared yes in 34.3 s | deaths 0, falls 0 | launch36 0 | STYLE above DULL 4.2 %, top COOL | walked 166.3 m, shots 37 (charged 6, bodies hit per charged shot 0/0/1/1/1/0) | presses refused 25
+  seed 1 => ratio 1.15 (the faster refusal: refused-in 30.2 s / verb-aware 26.3 s) | exercised
+  seed 1 touches (verb-aware, steps): box(9.4,0,-165..10,12,-148) 240; box(6.4,-0.8,-165..9.4,0,-159) 439; box(-0.5,0,-173..0.1,12,-172) 4; box(4.4,0,-156.1..5.6,12,-154.9) 87; box(2,0,-150..6,12,-148) 202; ramp(-3.5,-176,6,6,2.5) 6 | launch36 kills: (-5.5, 1.0, -157.0) kills 3
+  seed 2 verb-aware: cleared yes in 26.6 s | deaths 0, falls 0 | launch36 3 | STYLE above DULL 78.5 %, top AIRBORNE | walked 190.6 m, shots 19 (charged 3, bodies hit per charged shot 1/1/0) | trigger held 175 steps
+  seed 2 refused-in: cleared yes in 47.6 s | deaths 1, falls 0 | launch36 0 | STYLE above DULL 37.5 %, top BOLD | walked 296.0 m, shots 49 (charged 8, bodies hit per charged shot 0/0/0/0/1/1/1/1) | presses refused 42 (episodes declined 11, the inner pilot's presses dropped 31)
+  seed 2 walker:     cleared yes in 51.3 s | deaths 1, falls 0 | launch36 0 | STYLE above DULL 2.2 %, top COOL | walked 267.1 m, shots 57 (charged 9, bodies hit per charged shot 0/0/1/1/0/0/0/1/0) | presses refused 10
+  seed 2 => ratio 1.79 (the faster refusal: refused-in 47.6 s / verb-aware 26.6 s) | exercised
+  seed 2 touches (verb-aware, steps): box(9.4,0,-165..10,12,-148) 36; box(6.4,-0.8,-165..9.4,0,-159) 91; box(-6.5,0,-170..-0.5,2.5,-168.5) 103; box(-7.1,0,-173..-6.5,12,-172) 4; box(-0.5,0,-173..0.1,12,-172) 101; box(5.5,0,-180..10,4.5,-174.5) 99; ramp(-3.5,-176,6,6,2.5) 167; ramp(8.5,-165.5,9,3,4.5) 112; pad(1.5,0,-166.5) 6 | launch36 kills: (8.8, 1.1, -162.8) kills 1 wall; (-6.6, 1.1, -167.1) kills 2
+n65verb skip: M1 PASS | room b1, ratio 1.47 vs bar 1.25, exercised 2/2
+n65verb skip: M2 PASS | room b1, STYLE above DULL verb-aware 66.1 % vs the faster refusal 35.4 % (+15 needed), over the 2 exercised seed(s)
+n65verb skip: totals | room b1 | median clear (all seeds; the cap for a non-clear): verb-aware 26.5 s, refused-in 38.9 s, walker 42.8 s | cleared 2 / 2 / 2 of 2 | deaths 0 / 1 / 1 | launch36 4 / 0 / 0 | presses refused (refused-in) 85, (walker) 35 | walked (median m) 177.0 / 227.0 / 216.7 | shots (median) 21.5 / 42.0 / 47.0 | wall time 34 s
+n65verb skip touch: room b1 | box(-10,0,-180..-9.4,12,-148) | seeds 0/2 | steps 0 | ride: THE WEST CRANE RAIL
+n65verb skip touch: room b1 | box(9.4,0,-165..10,12,-148) | seeds 2/2 | steps 276 | ride: THE EAST CRANE RAIL
+n65verb skip touch: room b1 | box(6.4,-0.8,-165..9.4,0,-159) | seeds 2/2 | steps 530 | lane: THE EAST BRIDGE
+n65verb skip touch: room b1 | box(-9.4,-0.8,-165..-6.4,0,-159) | seeds 0/2 | steps 0 | lane: THE WEST BRIDGE
+n65verb skip touch: room b1 | box(-6.5,0,-170..-0.5,2.5,-168.5) | seeds 1/2 | steps 103 | perch: THE LADLE's LIP
+n65verb skip touch: room b1 | box(-7.1,0,-173..-6.5,12,-172) | seeds 1/2 | steps 4 | cover: THE LADLE's BAIL, west arm
+n65verb skip touch: room b1 | box(-0.5,0,-173..0.1,12,-172) | seeds 2/2 | steps 105 | cover: THE LADLE's BAIL, east arm
+n65verb skip touch: room b1 | box(5.5,0,-180..10,4.5,-174.5) | seeds 1/2 | steps 99 | perch: THE EAST CRANE CAB
+n65verb skip touch: room b1 | box(8.5,4.5,-180..10,12,-178.5) | seeds 0/2 | steps 0 | cover: the east cab's MAST
+n65verb skip touch: room b1 | box(4.4,0,-156.1..5.6,12,-154.9) | seeds 1/2 | steps 87 | cover: the near bank's FURNACE POST
+n65verb skip touch: room b1 | box(-6,0,-150..-2,12,-148) | seeds 0/2 | steps 0 | lane: the yard gate's west CHEEK
+n65verb skip touch: room b1 | box(2,0,-150..6,12,-148) | seeds 1/2 | steps 202 | lane: the yard gate's east CHEEK
+n65verb skip touch: room b1 | ramp(-3.5,-176,6,6,2.5) | seeds 2/2 | steps 173 | ramp
+n65verb skip touch: room b1 | ramp(8.5,-165.5,9,3,4.5) | seeds 1/2 | steps 112 | ramp
+n65verb skip touch: room b1 | pad(-4.5,0,-158) | seeds 0/2 | steps 0 | pad
+n65verb skip touch: room b1 | pad(1.5,0,-166.5) | seeds 1/2 | steps 6 | pad
+n65verb skip launchkill: room b1 | seed 1 | at (-5.5, 1.0, -157.0) kills 3
+n65verb skip launchkill: room b1 | seed 2 | at (8.8, 1.1, -162.8) kills 1 wall
+n65verb skip launchkill: room b1 | seed 2 | at (-6.6, 1.1, -167.1) kills 2
+n65verb skip v2: level Design/levels/n52-foundry.json, room a2: no verb65 in the row (and none planted): the verb-aware pilot has no verb to use
+n65verb skip: M1 UNSURE | room a2, ratio - vs bar 1.25, exercised 0/2 | no verb65: nothing to refuse
+n65-verbs skip on Design/levels/n52-foundry.json (b1,a2): GREEN 1, RED 0, UNSURE 1 (skip v2: GREEN = M1 PASS, RED = M1 FAIL or a refusal)
+# exit 0, 01:00:21

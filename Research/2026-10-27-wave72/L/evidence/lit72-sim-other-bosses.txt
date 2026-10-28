@@ -1,0 +1,19 @@
+command: python -I Tools/night/n72-lit-sim.py <THE WICK (bwk, n52-foundry), the iceline boss (bbr, n52-iceline, brawl40), THE LOOM (blo, n52-span) boss63 frames of Logs/feel/n71-polish4, Bright71 ON> --out Research/2026-10-27-wave72/L/evidence/lit72-sim-other-bosses   (defaults, kmax 9)
+frames: build n71-polish4 (earlier than polish8; the arenas may have moved since); run 2026-10-27 11:53:34 USMST
+MODEL A 0.120 l0 0.120 l1 0.420 kmax 9.00 mask HUD + gun rects
+shot-N30-B63-wick-flinch.png | mean 75.4 -> 86.7 | dark<30 4.3% -> 2.0% | blown>235 0.46% -> 0.46% | hue 158.3 -> 173.1 (shift 14.8 deg)
+shot-N30-B63-wick-idle.png | mean 71.5 -> 84.0 | dark<30 6.4% -> 2.5% | blown>235 0.38% -> 0.38% | hue 131.7 -> 157.7 (shift 25.9 deg)
+shot-N30-B63-wick-stagger.png | mean 75.6 -> 87.1 | dark<30 4.0% -> 2.8% | blown>235 0.77% -> 0.77% | hue 143.2 -> 160.5 (shift 17.3 deg)
+shot-N30-B63-wick-windup.png | mean 78.9 -> 90.4 | dark<30 4.2% -> 2.6% | blown>235 0.27% -> 0.27% | hue 45.2 -> 48.7 (shift 3.5 deg)
+shot-N30-B63-brawl40-flinch.png | mean 72.8 -> 87.4 | dark<30 32.5% -> 9.9% | blown>235 3.22% -> 3.22% | hue 221.9 -> 231.2 (shift 9.2 deg)
+shot-N30-B63-brawl40-idle.png | mean 45.1 -> 60.9 | dark<30 52.1% -> 23.4% | blown>235 0.54% -> 0.54% | hue 239.0 -> 239.3 (shift 0.3 deg)
+shot-N30-B63-brawl40-stagger.png | mean 66.8 -> 81.9 | dark<30 41.2% -> 12.5% | blown>235 0.45% -> 0.45% | hue 215.8 -> 225.6 (shift 9.8 deg)
+shot-N30-B63-brawl40-windup.png | mean 52.2 -> 67.3 | dark<30 51.0% -> 22.0% | blown>235 0.52% -> 0.52% | hue 322.5 -> 285.3 (shift 37.2 deg)
+shot-N30-B63-loom37-flinch.png | mean 25.0 -> 47.8 | dark<30 82.6% -> 15.7% | blown>235 0.31% -> 0.31% | hue 235.5 -> 246.6 (shift 11.0 deg)
+shot-N30-B63-loom37-idle.png | mean 27.3 -> 49.3 | dark<30 80.0% -> 20.9% | blown>235 0.20% -> 0.20% | hue 233.3 -> 242.2 (shift 8.9 deg)
+shot-N30-B63-loom37-stagger.png | mean 29.3 -> 50.9 | dark<30 79.2% -> 15.1% | blown>235 0.27% -> 0.27% | hue 201.6 -> 228.2 (shift 26.5 deg)
+shot-N30-B63-loom37-windup.png | mean 23.9 -> 46.6 | dark<30 83.6% -> 17.4% | blown>235 0.24% -> 0.24% | hue 229.5 -> 244.4 (shift 14.9 deg)
+SUMMARY lit-sim | frames 12 | worst dark after 23.4% | worst hue shift 37.2 deg | worst blown after 3.22%
+
+unmasked:
+SUMMARY lit-sim | frames 12 | worst dark after 18.4% | worst hue shift 39.8 deg | worst blown after 3.22%

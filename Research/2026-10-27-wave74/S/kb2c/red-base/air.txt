@@ -1,0 +1,28 @@
+# command: node Tools/night/n65-air.cjs C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/kiln-play/kiln.plan.json kb2c
+# sha: 9783f7f80; time: 2026-10-27 23:11:44
+n65-air n67-kiln kb2c "3.2c THE CLINKER BRIDGES" (C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/kiln-play/kiln.plan.json):
+  numbers: jump v0 8.33 m/s, g 23.15 m/s2 (fall x1.35), double v0 7.50, dash 24 m/s x 0.25 s = 6.0 m, dash-jump v0 6.67 with g x0.5 for 0.5 s at 24 m/s, run-up 8 m/s, wall jump out 5 up 8.33 (wallfling42 on), ride 9.20 m/s, jump-off out 8 +1 up 7.30 (ride39 on), capsule 0.35 m; a ride held 2.5 m over its base
+  air pieces 5:
+    R1   ride  face x = 8.4 (-x), -181.5..-164.5 (17.0 m), band 0.0..12.0, held at 2.5 | verb it celebrates: the cooling wall's ride off the ash: THE COOLING WALL (ride, cyan, 17 m on th
+    D2   deck  top 4.5 m over [1.0, -184.5, 7.0, -181.5] | spatial law: THE FAR BRIDGE (the crane's run, the high tier): THE FAR BRIDGE (4.5 m, 8 x 3 m from the 
+    D3   deck  top 4.5 m over [7.0, -184.5, 9.0, -181.5] | spatial law: THE FAR BRIDGE's landing pier (the ride's end): THE LANDING PIER (NIGHT58 L0: the far br
+    D4   deck  top 1.5 m over [-9.0, -174.5, -2.0, -171.5] | spatial law: THE NEAR BRIDGE (the mid tier): THE NEAR BRIDGE (1.5 m, 7 x 3 m from the
+    P5   pad   at (4.0, 0.0, -179.0) -> (5.0, 4.5, -183.0) (on the floor) | molecule: the upward line, the ash vent
+  hand-offs 12 (piece -> piece without touching the floor, the easiest move first):
+    R1 -> D2  jump-off + double, margin 4.89 m (gap 1.8 m); also wall jump + double 2.67
+    R1 -> D3  jump-off + double, margin 6.29 m (gap 0.4 m); also wall jump + double 4.07
+    R1 -> D4  dash, margin 0.72 m (gap 10.8 m)
+    D2 -> R1  jump, margin 4.89 m of height (gap 1.1 m); also jump + double 4.89, dash 4.00, dash-jump 4.32, dash-jump + double 4.32
+    D2 -> D3  jump, margin 4.92 m (gap 0.4 m); also jump + double 8.38, dash 10.32, dash-jump 20.65, dash-jump + double 30.85
+    D2 -> D4  jump + double, margin 2.30 m (gap 8.0 m); also dash 4.70, dash-jump 18.23, dash-jump + double 27.43
+    D3 -> D2  jump, margin 4.92 m (gap 0.4 m); also jump + double 8.38, dash 10.32, dash-jump 20.65, dash-jump + double 30.85
+    D3 -> D4  dash, margin 0.91 m (gap 11.8 m); also dash-jump 14.45, dash-jump + double 23.65
+    D4 -> R1  dash, margin 1.60 m of height (gap 10.1 m); also dash-jump 2.77, dash-jump + double 2.77
+    D4 -> D2  dash-jump + double, margin 13.83 m (gap 8.0 m)
+    D4 -> D3  dash-jump + double, margin 10.05 m (gap 11.8 m)
+    P5 -> D2  pad (gap 4.1 m)
+  longest floor-free chain: 5 piece(s): P5 -> D2 -> R1 -> D3 -> D4 (opened by a floor pad)
+  note: a dash-jump keeps the dash's 24 m/s for its whole flight (Mover.cs:1080; air accel never slows a body: MovementMath.Accelerate), so its reach is long; no obstacle, line-of-sight or air-control test
+  flight pieces (rides + pads) on one floor-free path: 2 of 2: P5 -> D2 -> R1 -> D3 -> D4; without the dash-jump: 2: P5 -> D2 -> R1 -> D3 -> D4
+  without the dash-jump: hand-offs 10, longest chain 5: P5 -> D2 -> R1 -> D3 -> D4, dead ends 0/4
+n65-air kb2c: air pieces 5 (rides 1, decks 3, ledges 0, pads 1), hand-offs 12, longest floor-free chain 5, dead ends 0/4 | without the dash-jump: hand-offs 10, chain 5, dead ends 0/4 | flights handed on: 2 of 2 on one path (2 without the dash-jump)

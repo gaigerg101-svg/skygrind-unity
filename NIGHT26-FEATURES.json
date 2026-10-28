@@ -1,0 +1,141 @@
+{
+  "schema": "night26-features-1",
+  "about": "The 15 contracts of NIGHT26 (NIGHT26.md). The run sets passes / evidence only from this night's printed lines. owner = the builder queue in NIGHT26.md (M movement and surfaces, W weapons, B bosses, L levels and UI, lead = the Editor-bound rows).",
+  "features": [
+    {
+      "id": "pulse-lt",
+      "owner": "W",
+      "switch": "design.n26.pulseLT",
+      "scenario": "reel pulselt + harness weapons",
+      "check": "the PULSE GAUNTLET: holding the LEFT TRIGGER charges by its own hits (3 notches of 6-8 hits, never by time: idle 60 s = +0), releasing launches the player 0.5 / 1.0 / 2.25 jumps along the aim (collider-capped) with a little damage and a 3 s lockout; the left click is a plain swing that does not charge; R3 punches; the Player line prints hits per notch, launch distances and the click-does-not-charge check; RED with --off26",
+      "passes": false,
+      "evidence": null
+    },
+    {
+      "id": "weapon-lt",
+      "owner": "W",
+      "switch": "design.n26.weaponIdentity",
+      "scenario": "reel weapons",
+      "check": "every owned weapon has an LT that zooms or does something else (a table of weapon, LT behaviour, cost printed once, no weapon without an LT); the shotgun LT zooms; Player line per weapon",
+      "passes": false,
+      "evidence": null
+    },
+    {
+      "id": "weapon-identity",
+      "owner": "W",
+      "switch": "design.n26.weaponIdentity",
+      "scenario": "harness weapons",
+      "check": "a weapon-by-enemy table (time to kill 8 of each kind) in which no weapon is the best on every row; rocket and BOUNCER nerfed (damage -30 % / -35 %, splash -35 %, fuse 2.4 s, pool 3, self-damage on) and their room-clear time within 15 % of the best other weapon; Design/levels/unlocks.json drives one unlock per level (THUNDERCLAP after level 1, NAILGUN after 2, RATTLER after 3) and the wheel shows only owned weapons",
+      "passes": false,
+      "evidence": null
+    },
+    {
+      "id": "surfaces",
+      "owner": "M",
+      "switch": "design.n26.surfaces",
+      "scenario": "harness surfaces + reel ice",
+      "check": "Mover.groundFrictionMult = 1 public, multiplied into the ground friction call, its own commit; golden vectors 0 mismatches and trajectory replays 22 / 22 exact; ice (0.25) and boost strips from a plan's surfaces list; the harness prints a standing-start sprint speed and a stop distance on ice vs normal ground (ice slides further, normal ground identical to the bit)",
+      "passes": false,
+      "evidence": null
+    },
+    {
+      "id": "wall-ride-feel",
+      "owner": "M",
+      "switch": "design.n26.surfaces",
+      "scenario": "harness surfaces (floor vs wall route) + reel level1",
+      "check": "no Mover change: the validate report prints floor-route vs wall-route times for every platforming section (the wall route faster), light strips along rideable walls, a short FOV lift while riding, style points per ride; a Player frame shows the strip",
+      "passes": false,
+      "evidence": null
+    },
+    {
+      "id": "hulk",
+      "owner": "B",
+      "switch": "design.n26.level1",
+      "scenario": "reel hulk + harness hulk",
+      "check": "THE SLAG HULK (level 1 boss): 1500 HP shared pool, a slam ring (tell 0.8 s) and a charge (tell 0.8 s, stunned 2 s at a wall), back / head x2, phases at 66 / 33 % with a checkpoint each, bar + room view; a pistol-only human-lag bot kills it in 60-90 s with 0-2 deaths; every tell >= 0.5 s; tape EQUAL; RED with the row off",
+      "passes": false,
+      "evidence": null
+    },
+    {
+      "id": "glacier",
+      "owner": "B",
+      "switch": "design.n26.level2",
+      "scenario": "reel glacier + harness glacier",
+      "check": "THE GLACIER chase on ice: a recycled 40 m tile course, the gap meter, telegraphed lane attacks (jump / slide / dash / grapple) with tells >= 0.6 s and no two lethal attacks inside 0.5 s, damage only at a gap of 25 m or less, a soft fail at 80 m, PISTOL ONLY; the Player line prints the gap, the attacks and a bot run that finishes; RED with the row off",
+      "passes": false,
+      "evidence": null
+    },
+    {
+      "id": "wyrm-26",
+      "owner": "B",
+      "switch": "design.n26.level3",
+      "scenario": "reel wyrm26 + harness wyrm26",
+      "check": "the worm: proximity aggro (within 14 m the head breaks its cycle and dives with a 0.5 s telegraphed re-aim, cooldown 6 s), body x0.5 / head x2 / core x3, a phase-3 final attack (a coil squeeze with one marked gap, tell 1 s), a second spit lane in phase 2, an arena that invites wall riding; human-lag bot kill 4:00-5:00; every tell >= 0.5 s",
+      "passes": false,
+      "evidence": null
+    },
+    {
+      "id": "level-1",
+      "owner": "L",
+      "switch": "design.n26.level1",
+      "scenario": "reel level1",
+      "check": "THE FOUNDRY: every room at most 28 m wide, the six tutorial stages, a platforming run (wall-jump shafts, dash gaps, pad hops, a par for the wall route vs the floor route) and a wall-ride hall, ending in the HULK; validate 0 errors; a bot clears it; the Player reel line prints times per stage",
+      "passes": false,
+      "evidence": null
+    },
+    {
+      "id": "level-3",
+      "owner": "L",
+      "switch": "design.n26.level3",
+      "scenario": "reel level3",
+      "check": "THE KILN rooms trimmed (narrower, one platforming link) then the worm room; validate 0 errors; the layer clears on a Player (bot with HP cuts)",
+      "passes": false,
+      "evidence": null
+    },
+    {
+      "id": "level-select",
+      "owner": "L",
+      "switch": "design.n26.levelSelect",
+      "scenario": "reel levelselect",
+      "check": "TITLE > PLAY on CAMPAIGN opens a LEVEL SELECT listing ten slots (levels 4+ LOCKED), each with name, best aggregate rank, best time, kills %, style and the weapon it unlocks; the cursor is on the next unlocked level; A starts it on pad and keyboard; text >= 18 px; no pop-ins",
+      "passes": false,
+      "evidence": null
+    },
+    {
+      "id": "ranks",
+      "owner": "L",
+      "switch": "design.n26.levelSelect",
+      "scenario": "reel ranks + EditMode test",
+      "check": "TIME / KILLS / STYLE ranks D-S from per-level thresholds; aggregate S5 A4 B3 C2 D1 minus 1 per checkpoint restart; P = S in all three without restarts; the best per level persists in the profile (an old profile loads); RESULTS shows the three ranks, the aggregate and the unlocked weapon",
+      "passes": false,
+      "evidence": null
+    },
+    {
+      "id": "campaign-default",
+      "owner": "L",
+      "switch": "design.n26.levelSelect",
+      "scenario": "reel levelselect",
+      "check": "a fresh profile boots with MODE = CAMPAIGN selected as the first and default row",
+      "passes": false,
+      "evidence": null
+    },
+    {
+      "id": "no-campaign-box",
+      "owner": "lead",
+      "switch": "design.n24.bigPick.campaign (false) + design.n26.levelSelect",
+      "scenario": "grep + Player line",
+      "check": "no BIG PICK and no mystery box in any campaign level: a campaign run to the layer end shows RESULTS with no draft; SURVIVAL still shows its BIG PICK (the bigpick reel)",
+      "passes": false,
+      "evidence": null
+    },
+    {
+      "id": "fingerprint",
+      "owner": "lead",
+      "switch": "FingerprintBaseline.N26OnPath",
+      "scenario": "harness fingerprint",
+      "check": "N26OnPath recorded once at the freeze in its own commit if pulseLT / weaponIdentity are on; --off26 EQUAL to the previous baseline",
+      "passes": false,
+      "evidence": null
+    }
+  ]
+}

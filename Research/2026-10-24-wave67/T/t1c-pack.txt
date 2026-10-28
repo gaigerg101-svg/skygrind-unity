@@ -1,0 +1,53 @@
+# sha a80093a6 (+ uncommitted: ); 2026-10-24 12:08:23
+## (1) PLANTED Design/levels/n67/iceline/rooms/g8.json row.verb65 ride; L67=iceline ROOMS=g8 SLATE=Research/2026-10-24-wave67/T/t1b-dry-slate.json bash Tools/night/n67-round.sh dry-pack2-iceline
+t1b-plant-verb65: Design/levels/n67/iceline/rooms/g8.json row.verb65 = ride (PLANTED; restore with git checkout -- Design/levels/n67/iceline/rooms/g8.json)
+n67-round dry-pack2-iceline: level iceline (n67-iceline), rooms g8, the slate snapshot Logs/n67/dry-pack2-iceline/slate-at-start.json (from Research/2026-10-24-wave67/T/t1b-dry-slate.json, sha256 4217ea8aaac3c30b)
+n67-round dry-pack2-iceline: latest assembled into Logs/n67/dry-pack2-iceline (17 s): levelgen --walk: 0 ERROR (none; 5 s)
+n67-round dry-pack2-iceline: verb65 g8 ride (slate ride): row
+n67-round dry-pack2-iceline: iso pictures 1 / 1
+n67-round-verbs dry-pack2-iceline: 5 verdicts in 113 s (Logs/n67/dry-pack2-iceline/verbs.md)
+n67-round dry-pack2-iceline: n67-area: FAIL g8 (2/4)
+n67-round dry-pack2-iceline: n67-deco: PASS | room g8, base 350a1474: 0 piece(s) added or moved, 0 pass, 0 FAIL; dressing 0 not judged
+n67-round dry-pack2-iceline: done in 202 s; table Logs/n67/dry-pack2-iceline/table.md; the round's level is Logs/n67/dry-pack2-iceline/n67-iceline.json (never the tracked files); tracked status before / after (Logs/n67/dry-pack2-iceline/tracked-status.txt):
+# exit 0
+# restored Design/levels/n67/iceline/rooms/g8.json: '' (empty = restored)
+
+## (2) L67=iceline node Tools/night/n67-gate-pack.cjs g8 dry-pack2-iceline --slate Research/2026-10-24-wave67/T/t1b-dry-slate.json --out Logs/n67/gate/g8-dry --key Logs/n67/gate/keys/g8-dry-spot-key.txt
+C:\Users\gaige\dev\SKYGRIND-unity\.claude\worktrees\agent-af48e888c59fa3626\Tools\night\n67-gate-pack.cjs:290
+} finally {
+  ^^^^^^^
+
+SyntaxError: Unexpected token 'finally'
+    at wrapSafe (node:internal/modules/cjs/loader:1804:18)
+    at Module._compile (node:internal/modules/cjs/loader:1846:20)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+
+Node.js v24.19.0
+# exit 1
+ls: cannot access 'Logs/n67/gate/g8-dry': No such file or directory
+# the pack: 
+grep: Logs/n67/gate/g8-dry/verbs65-skip.txt: No such file or directory
+
+## (3) PLANTED mismatch: the same pack against a slate with g8 verb pierce
+C:\Users\gaige\dev\SKYGRIND-unity\.claude\worktrees\agent-af48e888c59fa3626\Tools\night\n67-gate-pack.cjs:290
+} finally {
+  ^^^^^^^
+
+SyntaxError: Unexpected token 'finally'
+    at wrapSafe (node:internal/modules/cjs/loader:1804:18)
+    at Module._compile (node:internal/modules/cjs/loader:1846:20)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+
+Node.js v24.19.0
+# exit 1 (1 expected: refused); pack folder: none
+# done 12:11:58

@@ -1,0 +1,794 @@
+{
+ "_why": "NIGHT74 S v5 r5 (Research/2026-10-27-wave74/S/card-v5.md): THE STAIR WALL runs on to z -40.5 (the verbs37 pick's lane meets the wall's face, not its end); THE BELL STAGE, THE STAGE STEP and THE CLAPPER make the hall's middle; the rest is NIGHT71 R's. NIGHT71 R r2 (Research/2026-10-26-wave71/R/v5/card.md, THE BELL WALLS, ride; rebuilt from the blank rect): two ride walls, each onto the room's high ground: THE BELL WALL (east) onto THE BELFRY (4 m, its stair from the far west: the long way), THE STAIR WALL (west) onto THE RINGING CHAMBER (5 m); two hoists (pads); the door's two cheeks kept; the three grapple rings kept. NIGHT67 T1a (Tools/night/gen-slots.cjs --level spire --export): n52-spire's room v5 (5.5 THE RINGERS' STAIR) exactly as Design/levels/n52/spire.plan.json has it: the row (every key), its zone-keyed pieces (boxes, ramps, pads, grapple, pits, tunnels), its room-keyed pieces (lights, props, surfaces). The slot's starting point: rebuild it here (every new piece with a job and a why), give the row bot43: false, verb65 (the slate's verb) and line65 (the verb's line, 3+ waypoints); never an area67 block (refused). A key the row drops needs a reason in drop{}. The room's opening: top-level \"opening\": \"vista\" | \"ambushed\" | \"ambusher\" | \"held\" (and \"opening_why\"); left out, the room keeps n52-spire's.",
+ "room": "v5",
+ "row": {
+  "id": "v5",
+  "name": "5.5 THE BELL WALLS",
+  "kind": "room",
+  "rect": [
+   -22,
+   -65,
+   2,
+   -39
+  ],
+  "height": 12,
+  "roof": true,
+  "par": 10,
+  "job36": "practise",
+  "verb36": "the wall ride onto the high ground: ride THE BELL WALL over the hall onto THE BELFRY (on foot the long way round), THE STAIR WALL onto THE RINGING CHAMBER; the hoists between the two; the grapple rings over the hall",
+  "spawn": {
+   "at": [
+    -10,
+    0,
+    -44.5
+   ],
+   "yawDeg": 0
+  },
+  "exit": [
+   -10,
+   0,
+   -63.5
+  ],
+  "proofs": [
+   {
+    "kind": "walk",
+    "points": [
+     [
+      -10,
+      0,
+      -40
+     ],
+     [
+      -10,
+      0,
+      -44.5
+     ],
+     [
+      -14.5,
+      0,
+      -47
+     ],
+     [
+      -14.5,
+      0,
+      -57.5
+     ],
+     [
+      -10,
+      0,
+      -63.5
+     ]
+    ]
+   },
+   {
+    "kind": "walk",
+    "points": [
+     [
+      -14,
+      0,
+      -54.5
+     ],
+     [
+      -4,
+      4,
+      -54.5
+     ],
+     [
+      0,
+      4,
+      -53
+     ]
+    ]
+   },
+   {
+    "kind": "walk",
+    "points": [
+     [
+      -16.5,
+      0,
+      -47.5
+     ],
+     [
+      -16.5,
+      5,
+      -57.5
+     ],
+     [
+      -19,
+      5,
+      -61
+     ]
+    ]
+   },
+   {
+    "kind": "walk",
+    "points": [
+     [
+      0,
+      0,
+      -42
+     ],
+     [
+      0,
+      0,
+      -49.5
+     ]
+    ]
+   },
+   {
+    "kind": "walk",
+    "points": [
+     [
+      -12.5,
+      0,
+      -48
+     ],
+     [
+      -7.5,
+      2.5,
+      -48
+     ],
+     [
+      -4.5,
+      2.5,
+      -48
+     ]
+    ]
+   }
+  ],
+  "frames36": {
+   "mid": [
+    -10,
+    0,
+    -47,
+    0,
+    0.05
+   ],
+   "exit": [
+    -1,
+    4,
+    -53,
+    200,
+    -0.25
+   ]
+  },
+  "waves": [
+   [
+    "husk",
+    "husk",
+    "husk",
+    "spitter"
+   ],
+   [
+    "swarmer",
+    "swarmer",
+    "husk",
+    "husk"
+   ]
+  ],
+  "nodes": [
+   [
+    -14.5,
+    0,
+    -57
+   ],
+   [
+    -12.5,
+    0,
+    -59.5
+   ],
+   [
+    -10.5,
+    0,
+    -61.5
+   ],
+   [
+    -10,
+    0,
+    -58.5
+   ],
+   [
+    -7,
+    0,
+    -63.5
+   ]
+  ],
+  "waves52_why": "NIGHT52 loop F (the card's 30 s problem): one wave still (the breather between the nave and the choir), a spitter on the chamber so the hall has its height problem; the report's budget allows 2 kinds a wave (no heavy here): n47's two swarmers -> a husk (5 points: husks 3, the spitter 2); round 4 (GG review): a second wave, two from the ringing chamber and two from behind the newel (overlap46 releases it as wave 1 thins)",
+  "highNodes": [
+   [
+    -19,
+    5,
+    -62
+   ],
+   [
+    -1,
+    4,
+    -55.5
+   ]
+  ],
+  "waveNodes43": [
+   [
+    [
+     -19,
+     5,
+     -62
+    ],
+    [
+     -1,
+     4,
+     -55.5
+    ],
+    [
+     -14.5,
+     0,
+     -57
+    ],
+    [
+     -12.5,
+     0,
+     -59.5
+    ],
+    [
+     -10.5,
+     0,
+     -61.5
+    ]
+   ],
+   [
+    [
+     -19,
+     5,
+     -62
+    ],
+    [
+     -10,
+     0,
+     -58.5
+    ],
+    [
+     -7,
+     0,
+     -63.5
+    ],
+    [
+     -10.5,
+     0,
+     -61.5
+    ]
+   ]
+  ],
+  "waveNodes43_why": "NIGHT71 R (the lead's IN VIEW return; Research/2026-10-26-wave71/R/v5/card.md): the far floor's west node (-13.5, -62.5) -> (-10.5, -61.5), in the entry eye's view (vista fallback 3.2 -> 4 of 4). NIGHT71 R r2 (Research/2026-10-26-wave71/R/v5/card.md, THE BELL WALLS, ride; rebuilt from the blank rect): wave 1's spitter on either high deck (the chamber or the belfry: ride up to it), the husks on the hall floor 12-17 m from the door (spawn31); wave 2 the hall floor and the chamber",
+  "grappleNodes": [
+   [
+    -14,
+    7.5,
+    -45
+   ],
+   [
+    -13,
+    9,
+    -59.5
+   ],
+   [
+    -6,
+    7.5,
+    -58.5
+   ]
+  ],
+  "grapple": "THREE bell-rope rings (the card's Verb it celebrates, the ropes' iron grips; >= 2 where the grapple is owned): the SOUTH RING over the west lane by the mouth (the first pull, off the floor toward the stair), the NORTH RING over the north floor beside the chamber's east edge (the pull UP onto the chamber), the EAST RING over the gallery's north end (floor -> gallery, the gallery's way back to the chamber's line)",
+  "frames52": {
+   "_why": "NIGHT71 R r2 (Research/2026-10-26-wave71/R/v5/card.md, THE BELL WALLS, ride; rebuilt from the blank rect): the room frames: the door just crossed (the hall, both ride walls), the fight from the belfry, the chamber's top",
+   "entry": [
+    -10,
+    0,
+    -41,
+    0,
+    0.04
+   ],
+   "mid": [
+    -1,
+    4,
+    -54,
+    200,
+    -0.2
+   ],
+   "high": [
+    -19,
+    5,
+    -61,
+    160,
+    -0.25
+   ]
+  },
+  "loop52_why": "NIGHT52 the room loop, builder F (Tools/night/n52-loop-f-v5.cjs; THE ROOM CONTRACT): THE RINGERS' STAIR II, 24 x 26 x 12 m from the corridor (12 x 35 x 9 m, 0.95): the newel's loop, the rope gallery (2.5 m) and the ringing chamber (5 m) each on walkers' ramps, the stair wall's 17 m ride, three bell-rope rings, two hoist pads, the cheeks; the half walls and liners cut; v4's rect and d4 re-cut to meet the moved edge (v4's exam untouched).",
+  "f52b_why": "NIGHT52 F round 4 (Tools/night/n52-loop-f-v5b.cjs): the stair wall on to the chamber (the notch that held chained seed 17 closed), the newel a ride wall, a second wave",
+  "f52c_why": "NIGHT52 F round 4 (Tools/night/n52-loop-f-v5c.cjs; the P-rank review): the cheeks 2.5 m tall, the stair 2.5 m east (the ride clear), the gallery 4 m west to the newel (the loop over it)",
+  "f52d_why": "NIGHT52 F round 6 (Tools/night/n52-loop-f-v5d.cjs; the lead's midpoint review item 1): the newel a 1 m wall on the gallery's west edge (the door opens north), the health on the floor at the stair's foot",
+  "bot43": false,
+  "verb65": "ride",
+  "line65": [
+   [
+    1,
+    0,
+    -41.5
+   ],
+   [
+    1,
+    2,
+    -45
+   ],
+   [
+    1,
+    2,
+    -49
+   ],
+   [
+    0,
+    4,
+    -52.5
+   ]
+  ],
+  "line65_why": "NIGHT71 R r2 (Research/2026-10-26-wave71/R/v5/card.md, THE BELL WALLS, ride; rebuilt from the blank rect): THE BELL WALL's ride: along its west face 0.6 m out from the door's corner to its end over the belfry",
+  "card65": "Research/2026-10-26-wave71/R/v5/card.md",
+  "proofs_why": "NIGHT71 R r3 (Research/2026-10-26-wave71/R/v5/card.md; I1): the walks follow the moved belfry and stairs",
+  "nodes_why": "NIGHT74 S v5 r5 (Research/2026-10-27-wave74/S/card-v5.md): node (-7, 0, -58) -> (-12.5, 0, -59.5): hidden from the entry eye by THE BELFRY STAIR (the wedge's real orientation; the entry frame read 3.2 of wave 1's 4 seen). "
+ },
+ "boxes": [
+  {
+   "zone": "v5",
+   "kind": "hull",
+   "min": [
+    -16,
+    0,
+    -43
+   ],
+   "max": [
+    -12,
+    2.5,
+    -39
+   ],
+   "job": "line",
+   "why": "the stair hall's west CHEEK (card: Molecule node E; contract item 4, the entrance gated), floor to roof: d4 opens into a 4 m mouth, so the fight is not pulled back along the south wall to the door (foundry a5 / b1: the walk pilot kited that wall through the door's band) (round 4, P-rank review: 2.5 m tall, was roof-high: the roof-high pair made a 4 m slot 5 m from the newel and pocketed the gallery ramp's foot; now two steps up beside the mouth)",
+   "note": "the stair hall's west CHEEK (card: Molecule node E; contract item 4, the entrance gated), floor to roof: d4 opens into a 4 m mouth, so the fight is not pulled back along the south wall to the door (foundry a5 / b1: the walk pilot kited that wall through the door's band) (round 4, P-rank review: 2.5 m tall, was roof-high: the roof-high pair made a 4 m slot 5 m from the newel and pocketed the gallery ramp's foot; now two steps up beside the mouth)"
+  },
+  {
+   "zone": "v5",
+   "kind": "hull",
+   "min": [
+    -8,
+    0,
+    -43
+   ],
+   "max": [
+    -4,
+    2.5,
+    -39
+   ],
+   "job": "line",
+   "why": "the stair hall's east CHEEK (card: Molecule node E): the mouth's other side; the corner beyond it is the rope gallery's south ramp (round 4, P-rank review: 2.5 m tall, was roof-high: the roof-high pair made a 4 m slot 5 m from the newel and pocketed the gallery ramp's foot; now two steps up beside the mouth)",
+   "note": "the stair hall's east CHEEK (card: Molecule node E): the mouth's other side; the corner beyond it is the rope gallery's south ramp (round 4, P-rank review: 2.5 m tall, was roof-high: the roof-high pair made a 4 m slot 5 m from the newel and pocketed the gallery ramp's foot; now two steps up beside the mouth)"
+  },
+  {
+   "zone": "v5",
+   "kind": "wall",
+   "min": [
+    1.4,
+    0,
+    -51
+   ],
+   "max": [
+    2,
+    8,
+    -40.5
+   ],
+   "job": "line: THE BELL WALL (ride over the hall onto the belfry)",
+   "why": "NIGHT71 R r3 (Research/2026-10-26-wave71/R/v5/card.md; I1): 15 -> 10.5 m (z -55.5 -> -51), to the belfry's new north edge. NIGHT71 R r2 (Research/2026-10-26-wave71/R/v5/card.md, THE BELL WALLS, ride; rebuilt from the blank rect): THE BELL WALL (ride, cyan, 10.5 m x 8 m on the east wall): ride it from the door's corner over the hall's east side and off its end onto THE BELFRY; on foot the belfry is the long way round (its stair starts in the far west)",
+   "note": "THE BELL WALL (ride, cyan, 15 m x 8 m on the east wall)",
+   "ride": true,
+   "ride36": {
+    "face": "W",
+    "planeX": 1.4,
+    "lz": [
+     12.5,
+     23
+    ]
+   }
+  },
+  {
+   "zone": "v5",
+   "kind": "deck",
+   "min": [
+    -4,
+    0,
+    -58
+   ],
+   "max": [
+    2,
+    4,
+    -51
+   ],
+   "job": "line: THE BELFRY (the high tier, the bell wall's landing)",
+   "why": "NIGHT71 R r3 (Research/2026-10-26-wave71/R/v5/card.md; I1): north (z -62.5..-55.5 -> -58..-51): off the chamber's mirror. NIGHT71 R r2 (Research/2026-10-26-wave71/R/v5/card.md, THE BELL WALLS, ride; rebuilt from the blank rect): THE BELFRY (4 m, 6 x 7 m on the east side mid-hall): the bell wall's landing, a spitter's stand over the exit, the health on it; the walkers come up its stair (no safe ledge)",
+   "note": "THE BELFRY (4 m, 6 x 7 m in the south-east, 2.5 m off the far wall)"
+  },
+  {
+   "zone": "v5",
+   "kind": "wall",
+   "min": [
+    -22,
+    0,
+    -58
+   ],
+   "max": [
+    -21.4,
+    8,
+    -40.5
+   ],
+   "job": "line: THE STAIR WALL (ride up the west side onto the ringing chamber)",
+   "why": "NIGHT74 S v5 r5 (Research/2026-10-27-wave74/S/card-v5.md): z -42 -> -40.5 (16 -> 17.5 m): the wall runs on to the corner by the door, as the shipped ride face did. The verbs37 wall pick starts at the west wall's door-side corner and runs north 17 m; the wall ended 2 m short of it, the bot met its south end (0 rides, Player RED at NIGHT71). NIGHT71 R r2 (Research/2026-10-26-wave71/R/v5/card.md, THE BELL WALLS, ride; rebuilt from the blank rect): THE STAIR WALL (ride, cyan, 16 m x 8 m on the west wall): ride it from the door's west corner along the hall onto THE RINGING CHAMBER at its end",
+   "note": "THE STAIR WALL (ride, cyan, 17.5 m x 8 m on the west wall)",
+   "ride": true,
+   "ride36": {
+    "face": "E",
+    "planeX": -21.4,
+    "lz": [
+     7,
+     24.5
+    ]
+   }
+  },
+  {
+   "zone": "v5",
+   "kind": "deck",
+   "min": [
+    -22,
+    0,
+    -65
+   ],
+   "max": [
+    -15,
+    5,
+    -58
+   ],
+   "job": "line: THE RINGING CHAMBER (the high tier, the stair wall's landing)",
+   "why": "NIGHT71 R r3 (Research/2026-10-26-wave71/R/v5/card.md; I1): x -16 -> -15 (7 x 7 m), so the ringers' stair lands on it at x -16.5. NIGHT71 R r2 (Research/2026-10-26-wave71/R/v5/card.md, THE BELL WALLS, ride; rebuilt from the blank rect): THE RINGING CHAMBER (5 m, 7 x 7 m in the south-west corner): the stair wall's landing, the spitters' stand; the walkers come up its ramp",
+   "note": "THE RINGING CHAMBER (5 m, 6 x 7 m in the south-west corner)"
+  },
+  {
+   "zone": "v5",
+   "kind": "deck",
+   "min": [
+    -7.5,
+    0,
+    -51
+   ],
+   "max": [
+    -1.5,
+    2.5,
+    -45.4
+   ],
+   "job": "line: THE BELL STAGE (the mid tier: the ramp's top ahead of the door, a step between the floor, the belfry and the bell wall)",
+   "why": "NIGHT74 S v5 r5 (Research/2026-10-27-wave74/S/card-v5.md): the hall's middle was open floor: a 2.5 m deck (6 x 5.6 m, rimmed) ahead of the door, its north face touching the belfry's south face (z -51), so the hall reads in three planes (0 / 2.5 / 4 and 5) from the entry. Its near edge is 8.4 m inside the door (not within R5's 4-8 m band): it is a tier, not a foothold, so the room check does not read IN VIEW from its flanks.",
+   "note": "THE BELL STAGE (2.5 m, 6 x 5.6 m, mid-hall)"
+  },
+  {
+   "zone": "v5",
+   "kind": "hull",
+   "min": [
+    -6,
+    0,
+    -62
+   ],
+   "max": [
+    -4,
+    2.2,
+    -60
+   ],
+   "job": "cover: THE CLAPPER (a 2.2 m bell-weight pillar on the far floor: the one free-standing piece to circle under the spitters)",
+   "why": "NIGHT74 S v5 r5 (Research/2026-10-27-wave74/S/card-v5.md): the hall had no free-standing cover (the meter's COVER RED): a 2 x 2 x 2.2 m pillar (high cover, 1.75 m or more) in the north-east of the far floor, 1.5 m from the exit's lane (x -10), clear of the belfry and of every pad's flight.",
+   "note": "THE CLAPPER (2.2 m, 2 x 2 m, far floor)"
+  }
+ ],
+ "ramps": [
+  {
+   "zone": "v5",
+   "from": [
+    -13,
+    -54.5
+   ],
+   "to": [
+    -4,
+    -54.5
+   ],
+   "width": 3,
+   "rise": 4,
+   "job": "climb: the walkers' climb to the belfry",
+   "why": "NIGHT71 R r3 (Research/2026-10-26-wave71/R/v5/card.md; I1): with the belfry (z -59 -> -54.5): across the hall from its west half onto the belfry's west edge. NIGHT71 R r2 (Research/2026-10-26-wave71/R/v5/card.md, THE BELL WALLS, ride; rebuilt from the blank rect): THE BELFRY STAIR (4 m over 9 m, from the hall's south-west east onto the belfry's west edge): the walkers' climb (GG: a route enemies can climb); the long way for a player, the ride the short one",
+   "note": "THE BELFRY STAIR"
+  },
+  {
+   "zone": "v5",
+   "from": [
+    -16.5,
+    -48
+   ],
+   "to": [
+    -16.5,
+    -58
+   ],
+   "width": 2.5,
+   "rise": 5,
+   "job": "climb: the walkers' climb to the ringing chamber",
+   "why": "NIGHT71 R r3 (Research/2026-10-26-wave71/R/v5/card.md; I1): x -18.5 -> -16.5 (5 m off the west wall): off the belfry's mirror. NIGHT71 R r2 (Research/2026-10-26-wave71/R/v5/card.md, THE BELL WALLS, ride; rebuilt from the blank rect): THE RINGERS' STAIR (5 m over 10 m, 5 m off the west wall, beside the stair wall's ride): the walkers' climb onto the chamber (GG: a route enemies can climb)",
+   "note": "THE RINGERS' STAIR"
+  },
+  {
+   "zone": "v5",
+   "from": [
+    -12.5,
+    -48
+   ],
+   "to": [
+    -7.5,
+    -48
+   ],
+   "width": 3,
+   "rise": 2.5,
+   "job": "climb: THE STAGE STEP (the walkers' and the player's way onto the bell stage, 2.5 m over 5 m, from the spawn's side)",
+   "why": "NIGHT74 S v5 r5 (Research/2026-10-27-wave74/S/card-v5.md): the ramp onto THE BELL STAGE: a route enemies can climb to every floor (GG, NIGHT20); it starts 2 m ahead of the spawn.",
+   "note": "THE STAGE STEP"
+  }
+ ],
+ "pads": [
+  {
+   "zone": "v5",
+   "at": [
+    -18.5,
+    0,
+    -45
+   ],
+   "target": [
+    -19,
+    5,
+    -61.5
+   ],
+   "apexAbove": 2,
+   "job": "line: THE CHAMBER HOIST (the hall floor onto the ringing chamber)",
+   "why": "NIGHT74 S v5 r5 (Research/2026-10-27-wave74/S/card-v5.md): THE CHAMBER HOIST's pad (-12, 0, -50.5) -> (-18.5, 0, -45): off THE STAGE STEP's foot (the ramp's north edge z -49.5); the target (the chamber, (-19, 5, -61.5)) and the job are unchanged. NIGHT71 R r2 (Research/2026-10-26-wave71/R/v5/card.md, THE BELL WALLS, ride; rebuilt from the blank rect): THE CHAMBER HOIST (a jump pad on the hall floor east of the ringers' stair): from the fight onto THE RINGING CHAMBER (5 m)",
+   "note": "THE CHAMBER HOIST"
+  },
+  {
+   "zone": "v5",
+   "at": [
+    -3,
+    4,
+    -56.5
+   ],
+   "target": [
+    -18.5,
+    5,
+    -62.5
+   ],
+   "apexAbove": 2,
+   "job": "line: THE BELL HOIST (the belfry over the hall onto the chamber)",
+   "why": "NIGHT71 R r2 (Research/2026-10-26-wave71/R/v5/card.md, THE BELL WALLS, ride; rebuilt from the blank rect): THE BELL HOIST (a jump pad on the belfry's south-west corner): from one high deck over the hall onto the other: the high road between the two rides' landings",
+   "note": "THE BELL HOIST"
+  }
+ ],
+ "grapple": [],
+ "pits": [],
+ "tunnels": [],
+ "lights": [
+  {
+   "id": "v5-L1",
+   "room": "v5",
+   "kind": "ceiling",
+   "at": [
+    -10,
+    11.95,
+    -45
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 11,
+   "intensity": 1
+  },
+  {
+   "id": "v5-L2",
+   "room": "v5",
+   "kind": "ceiling",
+   "at": [
+    -10,
+    11.95,
+    -58
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    6,
+    4,
+    0.1
+   ],
+   "color": "white",
+   "range": 12,
+   "intensity": 1.1
+  },
+  {
+   "id": "v5-L3",
+   "room": "v5",
+   "kind": "pool",
+   "at": [
+    -10,
+    0.025,
+    -63.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    1.8,
+    1.8,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 8,
+   "intensity": 1.7
+  },
+  {
+   "id": "v5-L4",
+   "room": "v5",
+   "kind": "pool",
+   "at": [
+    -1,
+    4.025,
+    -54.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2,
+    2,
+    0.05
+   ],
+   "color": "white",
+   "range": 8,
+   "intensity": 1
+  },
+  {
+   "id": "v5-L5",
+   "room": "v5",
+   "kind": "pool",
+   "at": [
+    -19,
+    5.025,
+    -61.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2,
+    2,
+    0.05
+   ],
+   "color": "white",
+   "range": 8,
+   "intensity": 1
+  },
+  {
+   "id": "v5-RW",
+   "room": "v5",
+   "kind": "wall",
+   "at": [
+    -21.35,
+    1.2,
+    -49.25
+   ],
+   "normal": [
+    1,
+    0,
+    0
+   ],
+   "size": [
+    17.5,
+    0.2,
+    0.1
+   ],
+   "color": "cyan",
+   "range": 6,
+   "intensity": 1.1
+  },
+  {
+   "id": "v5-RE",
+   "room": "v5",
+   "kind": "wall",
+   "at": [
+    1.35,
+    1.2,
+    -45.75
+   ],
+   "normal": [
+    -1,
+    0,
+    0
+   ],
+   "size": [
+    10.5,
+    0.2,
+    0.1
+   ],
+   "color": "cyan",
+   "range": 6,
+   "intensity": 1.1
+  },
+  {
+   "id": "v5-crown47",
+   "room": "v5",
+   "kind": "wall",
+   "at": [
+    -10,
+    6.5,
+    -64.95
+   ],
+   "normal": [
+    0,
+    0,
+    1
+   ],
+   "size": [
+    3,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 7,
+   "intensity": 1.7,
+   "job": "route",
+   "why": "THE CROWN'S WINDOW (spire47, G42): a breather fight in the TORCH's lane, the light over its far door; on the exit wall over the door (A-6: the way on is lit), off the fight floor and every climb route",
+   "note": "THE CROWN'S WINDOW (spire47, G42): a breather fight in the TORCH's lane, the light over its far door; on the exit wall over the door (A-6: the way on is lit), off the fight floor and every climb route"
+  }
+ ],
+ "props": [
+  {
+   "id": "v5-P1",
+   "room": "v5",
+   "kind": "healthPickup",
+   "at": [
+    0,
+    4.9,
+    -56
+   ],
+   "size": [
+    0.6,
+    0.6,
+    0.6
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "pickup": true,
+   "job": "reward",
+   "why": "NIGHT71 R r2 (Research/2026-10-26-wave71/R/v5/card.md, THE BELL WALLS, ride; rebuilt from the blank rect): the health on THE BELFRY: the bell wall's ride pays"
+  }
+ ],
+ "surfaces": [],
+ "drop": {}
+}

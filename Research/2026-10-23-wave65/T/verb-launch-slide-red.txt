@@ -1,0 +1,14 @@
+# command: bash Tools/night/n65-verbs.sh launch Design/levels/n52-foundry.json a5,b1 --slide
+# sha: 1f00d1d4 (branch n65-T; tracked changes uncommitted: 1 file(s))
+# time: 2026-10-23 15:25:41 -> 2026-10-23 15:25:48 (local)
+# exit: 0
+
+n65verb launch: level n52-foundry (Design/levels/n52-foundry.json), room a5 "1.5 CRUCIBLE", seed 1; pose (0.0, 0.0, -117.0) yaw 0.0 from the room's spawn (no line65); off switch none
+  burst at (-0.3, 1.0, -123.5) hits 2 kills 2
+  target husk #2 at (-0.3, 0.0, -122.9) (from (0.0, -0.0, -117.0)), slide at step 21, punch at step 53 in state Slide (grace 18)
+n65verb launch: GREEN | room a5 | launch36 1, flight end body thrown 0.3 m (max 0.1 m), bursts 1 (hits 2, kills 2) | landed (-0.4, 1.1, -123.0), in a pit no, in lava no, target dead (launch36) | pose the room's spawn (no line65)
+n65verb launch: level n52-foundry (Design/levels/n52-foundry.json), room b1 "1.6 THE YARD", seed 1; pose (0.0, 0.0, -153.5) yaw 0.0 from the room's spawn (no line65); off switch none
+  burst at (-5.2, 1.1, -156.9) hits 3 kills 3
+  target husk #1 at (-4.4, 0.0, -156.8) (from (0.0, -0.0, -153.5)), slide at step 8, punch at step 44 in state Slide (grace 18)
+n65verb launch: GREEN | room b1 | launch36 1, flight end body thrown 0.5 m (max 0.4 m), bursts 1 (hits 3, kills 3) | landed (-4.7, 1.2, -157.0), in a pit no, in lava no, target dead (launch36) | pose the room's spawn (no line65)
+n65-verbs launch on Design/levels/n52-foundry.json (a5,b1): GREEN 2, RED 0

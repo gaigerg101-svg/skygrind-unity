@@ -1,0 +1,41 @@
+levelgen --walk: 1 ERROR row(s), all the roofless a3's own (allowed, NIGHT72 N0)
+shipped after:  Design/levels/n65-foundry.json 4ecf438a86b060f5d62bbbd79e32d153b1cffb40766b792c09f6a4b7cab6ea13, Assets/StreamingAssets/Design/levels/n65-foundry.json 4ecf438a86b060f5d62bbbd79e32d153b
+the round's level: C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/a5/cand0/n65-foundry.json 93da474b2f32962770b564e8868a4b10
+== a5 cand0 (b1,a8,a5)
+  PASS R2 no dead ends      0 dead-end cells of 146 (2 m x 0.5 m cells; 0 bridges)
+  PASS R5 foothold          box [-5, 0, -119]..[-2, 2.2, -117] (hull, job cover): top 2.2 m over the floor, 7.0-9.0 m inside
+  PASS R8 every job         0 untagged of 12 solids
+  PASS IN VIEW held         held: 6.0 of wave 1's 6 expected seen from the foothold's flanks (>= 4 PASS); 4 nodes, 4 in use
+  PASS I1 no mirror         mirror overlap 26 % across the door axis x = 0 (d4; 12 solids, 111 m2 footprint; < 60 % PASS)
+  PASS I2 ride shortcut     ride 14 m at x 9.4..10 z -138..-124: best side -1 dir -1: walk 19.4 m / ride 14.0 m = 1.38 (>= 1.3 or unreachable PASS: at least one ride a shortcut)
+  n/c  I3 teach verb needed not a grapple-pull teach room (ride lessons: I2; whip, pad and slide lessons: not computed)
+  PASS I4 pads clear        1 pads, 3 walk lines; all clear (nearest line distances 2.5 m)
+ROOM a5: PASS
+-- flow-A
+n46flow n65-foundry SUMMARY: GREEN 10/10; stall 29.7 %, longest stall 3.9 s, air 53.2 %, kill gap 2.3 / 17.2 s, nearest 6.6 m, dwell 1.2 s, dead 4.2 s, deaths 1, falls 0, clear 28.6 s
+n46flow n65-foundry STYLE: DULL 75.3 % of 306 s of fight; above DULL 24.7 %; rooms reaching SAVAGE 0/1; top rank COOL
+-- flow-B
+n46flow n65-foundry SUMMARY: GREEN 10/10; stall 38.0 %, longest stall 3.9 s, air 50.4 %, kill gap 1.6 / 9.0 s, nearest 5.5 m, dwell 1.8 s, dead 4.2 s, deaths 0, falls 0, clear 25.1 s
+n46flow n65-foundry STYLE: DULL 63.0 % of 244 s of fight; above DULL 37.0 %; rooms reaching SAVAGE 0/1; top rank AIRBORNE
+-- flow-V
+n46flow n65-foundry SUMMARY: GREEN 10/10; stall 30.0 %, longest stall 3.9 s, air 55.0 %, kill gap 1.6 / 11.3 s, nearest 5.9 m, dwell 1.2 s, dead 4.2 s, deaths 0, falls 0, clear 23.6 s
+n46flow n65-foundry STYLE: DULL 50.0 % of 238 s of fight; above DULL 50.0 %; rooms reaching SAVAGE 1/1; top rank SAVAGE
+  a5     verb65 launch+slide | trigger held 2469 of 28530 fight steps (8.7 %), episodes 41, performed: launch36 8 after its punches (in the room 8; dashes 41, steps at speed 1166, punches 9) | launch targets (kind hp at the trigger): husk hp 40 x32, spitter hp
+n65-air n65-foundry a5 "1.5 CRUCIBLE" (C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/a5/cand0/foundry.plan.json):
+n65-air a5: air pieces 8 (rides 1, decks 1, ledges 5, pads 1), hand-offs 33, longest floor-free chain 7, dead ends 0/7 | without the dash-jump: hand-offs 26, chain 7, dead ends 0/7 | flights handed on: 2 of 2 on one path (2 without the dash-jump)
+pad52 a5 pad 2 at [-6,0,-131.5] target [5.5,2.5,-141.5] launched yes apex 4.5 landed [5.52,2.5,-141.52] miss 0.03 m PASS
+n65verb launch: level n65-foundry (C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/a5/cand0/n65-foundry.json), room a5 "1.5 CRUCIBLE", seed 1; pose (0.0, 0.0, -116.6) yaw 23.8 from line
+n65verb launch: GREEN | room a5 | launch36 1, flight end wall thrown 2.8 m (max 2.7 m), bursts 1 (hits 2, kills 2) | launched body husk #4 (the target: yes), landed (9.1, 1.5, -123.5), in a pit no, in lava no, target dead (launch36) | pose line65[0]
+n65verb skip: M1 PASS | room a5, ratio 1.29 vs bar 1.25 (default: no --bars), exercised 17/20
+n65verb skip: M2 VERB PASS | room a5, verb launch, pooled ratio 1.29 vs mainBar 1.25 (default: no --bars), sets 1-10 1.76 (8/10), 11-20 1.15 (9/10), exercised 17 / 20 (need 14), median of all 20 seeds 1.27, refusal fired on 17 of 17 exercised seeds (by construction: an exercised seed refused a press), the refused run used the ve
+n70-area: room a5; plan C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/a5/cand0/foundry.plan.json, level C:/Users/gaige/AppD
+OPEN  PASS largest open square 9.0 m (x -2.0..7.0, z -122.0..-113.0; 16 pieces on a 20.0 x 32.0 m rect; 12 m or less passes)
+P1    FAIL the last wave's 1 ranged of 3; its spawn set (waveNodes43) 0 / 4 nodes 3.5 m or more over the floor (y 0.0; each enemy takes a random node: all must be high)
+P4    PASS 6 / 6 standing solids >= 1.75 m do a job ((a) touched 6, (b) sight 2, (c) launch kill 5)
+P5    PASS walk line in a ranged spawn's sight at 6-24 m 72.4 % (>= 50 %), line65 97.1 % (<= walk - 30 points: no); line65's nearest enemy spawn 0.0 m (<= 6: yes); 4 ranged spawns
+P9    FAIL 0 / 1 planes with 2 climb tops >= 8 m apart: box(2.5,0,-144..10,2.5,-138) 7.5 x 6.0 m at 2.5 m: 7 climb top(s), farthest apart 2.0 m (NO)
+P11   N/A  the card names no TOWER / GALLERY / SPLIT LEVEL (no card)
+P17   PASS 1 / 1 ride walls 4 m tall and 8 m long; 0 non-ride wall(s) in that band; the strip = ride: true (ride36 faces 1)
+n70-area: FAIL a5 (4/6)
+n70-deco: FAIL | room a5, base 73b88cbd4: 16 piece(s) added or moved, 11 pass, 5 FAIL; dressing 17 not judged
+finished

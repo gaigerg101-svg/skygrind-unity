@@ -1,0 +1,31 @@
+# command: dotnet Temp/SimHarness/bin/Release/net10.0/SimHarness.dll n46flow --level n65-foundry --rooms <id> --seeds 10 --first 1|11 --no-geo --verbs65
+#   (T's verb-aware pilot, port/stage3 02d789cd's Harness.N65.VerbPilot.cs / Harness.N65.Verb.cs / Harness.N46.Flow.cs / gen-n65-foundry.cjs
+#   checked out unstaged into this tree; SimHarness rebuilt once)
+# sha: the room files at 40d9813d + verb65 on each row (a2 pierce, a3 ride, a5 launch+slide), committed after this run; time ~2:20 night clock
+# The red's verb-aware numbers in Research/2026-10-23-wave65/T/flow-verbs65-red.txt are a FULL-LEVEL walk (the style carries between rooms),
+# not --rooms runs: not like for like with the lines below (e.g. the red a3's DULL is 21.1 there, 56.8 with --rooms).
+
+== a2 seeds 1-10
+  a2         room |   17.6      1.3  64.9 |  1.8 / 8.8   |  6.0 /  2.4 / 10.5  |   2.8   5.5 |      0     0 |   19.4 (10/10) | -
+  a2         room |  28.7  21.3  40.6   9.3   0.0   0.0                    | BOLD / AIRBORNE (10)
+  a2     verb65 pierce       | trigger held 12896 of 21897 fight steps (58.9 %), episodes 49, performed: charged shots 51
+== a2 seeds 11-20
+  a2         room |   20.2      2.0  70.7 |  2.9 / 7.3   |  6.1 /  2.1 / 10.1  |   2.5   4.5 |      0     0 |   19.6 (10/10) | -
+  a2         room |  27.1  28.1  25.4  17.7   1.7   0.0                    | AIRBORNE / SAVAGE (10)
+  a2     verb65 pierce       | trigger held 13614 of 24054 fight steps (56.6 %), episodes 52, performed: charged shots 53
+== a3 seeds 1-10
+  a3         room |   28.6      3.9  59.6 |  1.9 / 11.4  |  4.8 /  1.4 / 10.1  |   1.8   4.2 |      0     0 |   27.8 (10/10) | -
+  a3         room |  60.8  27.9  11.3   0.0   0.0   0.0                    | BOLD / BOLD (10)
+  a3     verb65 ride         | trigger held 3775 of 34445 fight steps (11.0 %), episodes 20, performed: wall rides 18
+== a3 seeds 11-20
+  a3         room |   27.5      3.9  54.6 |  1.6 / 18.2  |  5.5 /  1.5 / 10.6  |   2.8   4.2 |      0     0 |   31.9 (10/10) | -
+  a3         room |  64.3  33.5   2.2   0.0   0.0   0.0                    | COOL / BOLD (10)
+  a3     verb65 ride         | trigger held 6393 of 39568 fight steps (16.2 %), episodes 30, performed: wall rides 22
+== a5 seeds 1-10
+  a5         room |   24.5      4.3  47.2 |  2.2 / 16.2  |  7.4 /  2.8 / 11.8  |   3.4   4.2 |      0     0 |   24.9 (10/10) | -
+  a5         room |  33.0  39.5  19.5   8.0   0.0   0.0                    | BOLD / AIRBORNE (10)
+  a5     verb65 launch+slide | trigger held 3784 of 30590 fight steps (12.4 %), episodes 72, performed: launch36 9 after its punches (in the room 9; dashes 72, steps at speed 2212, punches 18)
+== a5 seeds 11-20
+  a5         room |   28.3      4.3  46.6 |  1.5 / 11.3  |  7.5 /  2.4 / 11.7  |   1.2   4.2 |      0     0 |   24.7 (10/10) | -
+  a5         room |  42.8  32.8  15.4   9.0   0.0   0.0                    | BOLD / AIRBORNE (10)
+  a5     verb65 launch+slide | trigger held 3495 of 27916 fight steps (12.5 %), episodes 60, performed: launch36 12 after its punches (in the room 12; dashes 60, steps at speed 1654, punches 17)

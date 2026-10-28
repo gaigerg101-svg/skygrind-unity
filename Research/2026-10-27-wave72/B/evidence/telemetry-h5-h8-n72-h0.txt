@@ -1,0 +1,17 @@
+# commands: python -I Tools/night/n72-telemetry.py {cam,enemy,spinlen,reticle,pump,pumplen} <label> <ON telemetry.jsonl> <OFF telemetry.jsonl>   (the lead's n72-h0 reels: h5on-ki / h5off-ki kill12 [hitzone47 + models41 + kicks71 vs plain] and h8on-sp / h8off-sp verbs37 [reticle42 + pump40 vs plain])
+# builder B, worktree n72-B at 7de54b3d7 + uncommitted, 2026-10-27 12:36:46 USMST. Both runs are deterministic: frame i of ON and OFF is the same sim step.
+h5-kill12	frames 150	camera pitch differs on 13 frames, max 2.1870 (units of the log's pitch), first at frame 78	fov differs on 9 frames, max 1.1690 deg, first at 78	roll max 0.0050
+h5-kill12	ON pitch from frame 78: -0.684 5.236 6.140 4.283 1.726 -0.276 -1.915 -2.870 -2.796 -2.694 -2.855 -3.001
+h5-kill12	OFF pitch from frame 78: -2.587 3.049 4.040 2.342 -0.001 -1.750 -3.114 -3.787 -3.443 -3.098 -3.059 -3.065
+h5-kill12	frames with the enemy in both 78	height rms about its mean: ON 0.00 px, OFF 0.00 px	max height ON 115.4 OFF 115.4
+h5-kill12	reticle turn (spin > 0): ON 2 episodes: t 0.45 s 0.73 s (spinKind 2), t 1.30 s 1.20 s (spinKind 3)
+h5-kill12	reticle turn (spin > 0): OFF 2 episodes: t 0.45 s 0.73 s (spinKind 2), t 1.30 s 1.20 s (spinKind 3)
+h5-kill12	reticle turn (spin > 0): duration ON / OFF per episode: 0.73/0.73, 1.20/1.20
+h8-verbs37	frames 1800	reticle spin: ON max 0.000 on 0 frames, fastest step 0.0000 per frame, mean step 0.0000	OFF max 0.000 on 0 frames, fastest step 0.0000, mean step 0.0000
+h8-verbs37	spinKind values ON [0] OFF [0]
+h8-verbs37	frames 1800	pump: ON live on 0 frames, longest run 0, first -1, max -1.000	OFF live on 0 frames, longest run 0, first -1, max -1.000
+h8-verbs37	reticle turn (spin > 0): ON 0 episodes: none
+h8-verbs37	reticle turn (spin > 0): OFF 0 episodes: none
+h8-verbs37	THUNDERCLAP pump (phase >= 0): ON 0 episodes: none
+h8-verbs37	THUNDERCLAP pump (phase >= 0): OFF 0 episodes: none
+h8-verbs37	frames 1800	camera pitch differs on 0 frames, max 0.0000 (units of the log's pitch), first at frame -	fov differs on 0 frames, max 0.0000 deg, first at -	roll max 0.0000

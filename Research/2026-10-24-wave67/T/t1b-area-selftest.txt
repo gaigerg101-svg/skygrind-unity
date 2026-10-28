@@ -1,0 +1,29 @@
+# node Tools/night/n67-area.cjs --selftest (the Archetype-line fix, verdict-cards.md item A)
+# sha 3079e332 + the uncommitted n67-area.cjs; 2026-10-24 11:35:38
+PASS OPEN PLANTED FAIL (the bare room): FAIL | largest open square 30.0 m (x 0.0..30.0, z -30.0..0.0; 0 pieces on a 30.0 x 30.0 m rect; 12 m or less passes)
+PASS OPEN PLANTED PASS (pillars every 9 m): PASS | largest open square 8.0 m (x 5.0..13.0, z -30.0..-22.0; 9 pieces on a 30.0 x 30.0 m rect; 12 m or less passes)
+PASS P1 PLANTED FAIL (the last wave's spitter on floor nodes): FAIL | the last wave's 1 ranged of 2; its spawn set (nodes + highNodes) 0 / 2 nodes 3.5 m or more over the floor (y 0.0; each enemy takes a random node: all must be high)
+PASS P1 PLANTED PASS (its own set 4 m up): PASS | the last wave's 1 ranged of 2; its spawn set (waveNodes43) 2 / 2 nodes 3.5 m or more over the floor (y 0.0; each enemy takes a random node: all must be high)
+PASS P1 PLANTED N/A (no ranged enemy): N/A | the last wave (husk husk) has no ranged enemy (spitter / drone)
+PASS P4 PLANTED FAIL (a corner pillar with no job): FAIL | 0 / 1 standing solids >= 1.75 m do a job ((a) touched 0, (b) sight 0, (c) launch kill 0); no job: box(2,0,-28..3,3,-27) cover: planted
+PASS P4 PLANTED PASS (a pillar between a spitter and the walk line): PASS | 1 / 1 standing solids >= 1.75 m do a job ((a) touched 0, (b) sight 1, (c) launch kill 0)
+PASS P4 PLANTED PASS (the corner pillar touched on 5 / 10 seeds): PASS | 1 / 1 standing solids >= 1.75 m do a job ((a) touched 1, (b) sight 0, (c) launch kill 0)
+PASS P5 PLANTED FAIL (line65 in the spitter's open sight, 12 m from it): FAIL | walk line in a ranged spawn's sight at 6-24 m 62.1 % (>= 50 %), line65 100.0 % (<= walk - 30 points: no); line65's nearest enemy spawn 12.0 m (<= 6: no); 1 ranged spawns
+PASS P5 PLANTED PASS (line65 behind a wall, the walk line open): PASS | walk line in a ranged spawn's sight at 6-24 m 100.0 % (>= 50 %), line65 0.0 % (<= walk - 30 points: yes); line65's nearest enemy spawn 22.0 m (<= 6: no); 1 ranged spawns
+PASS P5 PLANTED N/A (no line65): N/A | no line65 in the row
+PASS P9 PLANTED FAIL (a deck with one climb): FAIL | 0 / 1 planes with 2 climb tops >= 8 m apart: box(10,0,-20..18,3,-10) 8.0 x 10.0 m at 3.0 m: 1 climb top(s), farthest apart 0.0 m (NO)
+PASS P9 PLANTED PASS (a deck with climbs at both ends (tops 8.9 m apart)): PASS | 1 / 1 planes with 2 climb tops >= 8 m apart: box(10,0,-20..18,3,-10) 8.0 x 10.0 m at 3.0 m: 2 climb top(s), farthest apart 8.9 m
+PASS P9 PLANTED N/A (a 5 x 18 m gallery (short side 5 m)): N/A | no plane 1 m or more up with a short side of 6 m or more
+PASS P11 PLANTED FAIL (GALLERY, a spitter on the floor 5 m from the lane): FAIL | GALLERY card (planted): 1 ranged spawns (each node of a wave's set that holds a ranged enemy): 0 2.5 m or more up, 0 12-24 m from the walk lane (the spawn -> exit line); failing: (10.0, 0.0, -15.0) 0.0 m up, 5.0 m from the lane
+PASS P11 PLANTED PASS (GALLERY, a spitter 4 m up, 13 m from the lane): PASS | GALLERY card (planted): 1 ranged spawns (each node of a wave's set that holds a ranged enemy): 1 2.5 m or more up, 1 12-24 m from the walk lane (the spawn -> exit line)
+PASS P11 PLANTED N/A (no card): N/A | the card names no TOWER / GALLERY / SPLIT LEVEL (no card)
+PASS P11 PLANTED card lines: '**Archetype: CHUTE** ... (Card v1 was a GALLERY)' reads none (Archetype: CHUTE); '**Archetype: GALLERY**' reads GALLERY; '**Archetype: SPLIT LEVEL**' reads SPLIT LEVEL; no Archetype line (GALLERY in the text) reads none
+PASS P11 PLANTED N/A (the CHUTE card that mentions a GALLERY, a floor spitter 5 m from the lane): N/A | the card names no TOWER / GALLERY / SPLIT LEVEL (planted chute card)
+PASS P17 PLANTED FAIL (a 3 m ride wall): FAIL | 0 / 1 ride walls 4 m tall and 8 m long (short: box(20,0,-20..21,3,-10) 3.0 x 10.0 m); 0 non-ride wall(s) in that band; the strip = ride: true (ride36 faces 0)
+PASS P17 PLANTED PASS (a 5 x 10 m ride wall): PASS | 1 / 1 ride walls 4 m tall and 8 m long; 0 non-ride wall(s) in that band; the strip = ride: true (ride36 faces 0)
+PASS P17 PLANTED FAIL (a ride wall and a plain wall in its band): FAIL | 1 / 1 ride walls 4 m tall and 8 m long; 1 non-ride wall(s) in that band (box(8,0,-20..9,5,-10)); the strip = ride: true (ride36 faces 0)
+PASS P17 PLANTED N/A (neither): N/A | no ride wall and no wall-like box 4 m x 8 m
+PASS the last line, a room where only OPEN applies and PASSes: n67-area: PASS (1/1)
+PASS the last line, the bare room: n67-area: FAIL (0/1)
+n67-area --selftest: PLANTED GREEN (25 cases: a planted PASS and FAIL for each of OPEN P1 P4 P5 P9 P11 P17, N/A where a rule has nothing to judge)
+# exit 0

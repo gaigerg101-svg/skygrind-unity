@@ -1,0 +1,22 @@
+{
+    "name": "Skygrind.HudFx20",
+    "rootNamespace": "Skygrind.Game",
+    "references": [
+        "Skygrind.Game",
+        "Skygrind.Core",
+        "Unity.TextMeshPro",
+        "UnityEngine.UI",
+        "LitMotion",
+        "LitMotion.Extensions",
+        "Coffee.UIEffect"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

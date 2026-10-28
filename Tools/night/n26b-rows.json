@@ -1,0 +1,115 @@
+{
+  "_why": "NIGHT26 builder B: the three new boss rows (GG 2026-10-08: the worm is too hard for a first boss, so an easy one first; a chase boss on ice at level 2; the worm at level 3). Every number is Unity-only (the web had no hulk, no glacier and no proximity aggro), each group has its _why. Applied by Tools/night/n26b-config.py.",
+  "hulk": {
+    "_why": "THE SLAG HULK (builder B, contract hulk; Core/Enemies/Hulk26.cs, Design/bosses/hulk.json, Design/maps/hulk-arena.json): level 1's EASY boss. enabled gates the room (boss key hulk), the rest of the groups are numbers. room.origin is where its room sits in the world (the worm is at x 400, MONOLITH -400, the BULWARK 800, the ELDER WYRM 1200); salt xors the run seed.",
+    "enabled": true,
+    "name": "SLAG HULK",
+    "paths": "Design/bosses/hulk.json",
+    "arena": "Design/maps/hulk-arena.json",
+    "room": {
+      "_why": "Where the room sits and its one light, in the pale violet-white boundary tone (rule 8): a smaller room than the worm's, so a nearer, dimmer light.",
+      "origin": [1600, 0, 0], "salt": 1213990101, "lightHeight": 9, "lightRange": 40, "lightIntensity": 8, "lightColor": 13616895
+    },
+    "hp": {
+      "_why": "GG: an easier boss first. 1500 HP in one shared pool (the contract), phases at 66 and 33 % (the worm's marks), back and head x2 (GG's Terraria rule: weak points pay), body x1; shellFront 0.4: the SLAG SHELL, a body hit from any side while it is not stunned lands x0.2 (the head and the back plate are never shelled: circle behind it or wait for the stun; the bot's kill time needs it, the pistol alone does 62 damage a second); guardHead 0.5: its arms are up while it walks, so a head hit then lands x1 (the head is x2 again the moment it slams, charges, recovers or is stunned: shoot it when it attacks). Both are needed because the pistol alone does 62 damage a second: with the contract's 1500 HP and the plain x2 / x1 the human-lag bot killed it in 36 s, the contract wants 60-90 s; stunMult 1 (the stun already drops the shell and the guard: that is the payoff for dodging the charge) (the stunned hulk is hittable x1 everywhere).",
+      "pool": 1500, "phase2At": 0.66, "phase3At": 0.33, "bodyMult": 1, "headMult": 2, "backMult": 2, "stunMult": 1, "shellFront": 0.2, "guardHead": 0.5
+    },
+    "move": {
+      "_why": "Slow on purpose (the sprint is about 9 m/s, the hulk walks 3.2): you can always walk away from it. phaseMult 1.2 per phase speeds the walk, the turn, the ring and the charge. turnRate 2.2 rad/s: it turns slowly enough that circling it keeps you behind it (the back plate is a weak point). standoff 3 m: it stops walking this close.",
+      "walk": 3.2, "phaseMult": 1.2, "turnRate": 2.2, "standoff": 3
+    },
+    "slam": {
+      "_why": "ONE telegraphed slam (contract): tell 0.8 s (a circle at its feet of tellRadius 3.5 m), then a shockwave ring runs out at 9 m/s to 16 m, 1.4 m thick and 1 m tall: JUMP it (a standing player is hit; a jump apex is above 1 m). damage 18 of the player's 100, recover 1.4 s. It only slams when you are within range 10 m (else it walks closer). In phase 3 a second ring follows 0.9 s behind (ring2Delay: two jumps, never two hits inside 0.5 s).",
+      "tell": 0.8, "ringSpeed": 9, "ringMax": 16, "ringThick": 1.4, "ringHeight": 1, "damage": 18, "recover": 1.4, "range": 10, "tellRadius": 3.5, "ring2Delay": 0.9
+    },
+    "charge": {
+      "_why": "ONE telegraphed charge (contract): tell 0.8 s, a line (width 3 m) to the wall or pillar it will hit, LOCKED when the tell starts (sidestep it), then 15 m/s in a straight line; it stops at the wall, stunned for 2 s (the contract), then recovers 1 s. A hit does 22 and throws you sideways (push 10). maxLength 30 m (longer than the room: the wall always stops it).",
+      "tell": 0.8, "speed": 15, "damage": 22, "width": 3, "maxLength": 30, "stun": 2, "recover": 1, "radius": 1.5, "push": 10
+    },
+    "cycle": {
+      "_why": "Slam, charge, slam, charge, with a walk between: the seconds of walking before the next attack in phase 1, 2 and 3 (shorter as it angers). Nothing resolves inside tells.resolveGap (0.5 s) of the last attack: the walk is never shorter than that and the cycle holds the next tell until it has passed.",
+      "walk1": 5, "walk2": 3.5, "walk3": 2.5
+    },
+    "tells": {
+      "_why": "The night's rule: every tell >= 0.5 s and no two lethal attacks resolve inside resolveGap (the worm's 0.5 s). The slam and the charge tell 0.8 s (the contract's floor).",
+      "resolveGap": 0.5
+    },
+    "contact": {
+      "_why": "Touching it hurts a little (8 of 100) with a 1 s cooldown, so standing in its legs is a mistake but not a death; the push throws you clear (the boxes are not solid to the player: damage plus a push, as the worm's).",
+      "damage": 8, "cooldown": 1, "push": 8, "pushUp": 4
+    },
+    "body": {
+      "_why": "footRadius 1.4 m: the circle the walk and the charge keep off walls and pillars (the torso is 2.6 m wide). dieTime 2.5 s: the finisher before bossDown. spawnZ -6: where it stands in the room (arena-local z, the player enters at z +10 facing it).",
+      "footRadius": 1.4, "dieTime": 2.5, "spawnZ": -6
+    }
+  },
+  "glacier": {
+    "_why": "THE GLACIER (builder B, contract glacier; Core/Enemies/Glacier26.cs, Design/maps/glacier-course.json; GG: 'speed skating to get this boss ... dodge these telegraph attacks and get close to the boss and do damage', pistol only). Switch: design.n26.level2 (n26.level2 on). room.origin is where tile 0 sits in the world (the worm 400, MONOLITH -400, BULWARK 800, ELDER WYRM 1200, HULK 1600).",
+    "name": "THE GLACIER",
+    "course": {
+      "_why": "The course: tileLen 40 m, half-width 12, lanes at x -7 / 0 / 7 (rails at +-3.5), a window of windowBack tiles behind and windowAhead ahead of the player's tile (+ the player's own: 8 tiles = 320 m: the contract's course length, recycled), a checkpoint every 4 tiles (160 m).",
+      "paths": "Design/maps/glacier-course.json", "tileLen": 40, "halfWidth": 12, "railX": 3.5, "laneX": [-7, 0, 7], "windowBack": 2, "windowAhead": 5, "checkpointTiles": 4
+    },
+    "room": {
+      "_why": "Where tile 0 sits in the world, the run-seed salt, and the one light (pale violet-white boundary tone, rule 8) that follows the player along the course.",
+      "origin": [2000, 0, 0], "salt": 1347120011, "lightHeight": 8, "lightRange": 60, "lightIntensity": 9, "lightColor": 13616895
+    },
+    "hp": {
+      "_why": "One pool; phases at 66 / 33 % (the worm's marks); the hull x1, the engine block on its back x2 (shoot it from behind, as you chase it). Tuned so the headless bot (pistol, close-range bonus) closes and kills in 2:00-3:30.",
+      "pool": 21000, "phase2At": 0.66, "phase3At": 0.33, "hullMult": 1, "engineMult": 1.5
+    },
+    "gap": {
+      "_why": "The GAP METER (DESIGN24-bosses.md section 2; the contract's numbers): starts at 60 m, the boss can be hurt only at 25 m or less, a soft fail at 80 m (back to the checkpoint, the boss keeps its HP).",
+      "start": 60, "hurtAt": 25, "failAt": 80
+    },
+    "speed": {
+      "_why": "The boss pulls away at base m/s (the player's sprint is about 9 and a boost strip adds 6, so you close in by skating well) x phaseMult per phase; it rubber-bands in ONE direction only: x (1 + rubber x clamp((gap - rubberNear) / (rubberFar - rubberNear))): faster when you are far, never slower when you are near (the HUD says so). laneMove m/s: how fast it slides between lanes, one lane choice every laneEvery s (from the seeded stream); introHold: it waits this long at the start.",
+      "base": 7.5, "phaseMult": 1.05, "rubber": 0.25, "rubberNear": 30, "rubberFar": 70, "laneMove": 6, "laneEvery": 3, "introHold": 4
+    },
+    "tells": {
+      "_why": "Every lane attack tells >= 0.6 s (the contract; the night's floor is 0.5): the sweeping bar 0.7 s (jump), the low bar 0.7 s (slide), the spike wall 0.9 s (be in the open lane: dash into it). Never two resolve inside resolveGap (0.5 s).",
+      "sweep": 0.7, "low": 0.7, "spikes": 0.9, "resolveGap": 0.5
+    },
+    "attack": {
+      "_why": "A lane attack is placed `ahead` m in front of the player (never beyond the boss) and lethal for `life` s after its tell; damage 18 of the player's 100 and a push back; `thick` m thick (and the telegraph's width); every1 / every2 / every3 s between attacks in phase 1 / 2 / 3. Heights (m): the sweeping bar is 0.45 m tall (under a rail's 0.9: any jump clears it), the low bar hangs from 1.15 to 2.8 m (a slide passes under, a standing player does not), the spike wall is 3 m.",
+      "sweepTop": 0.45, "lowBottom": 1.15, "lowTop": 2.8, "spikeHeight": 3, "life": 1.4, "ahead": 18, "damage": 12, "push": 8, "thick": 1.2, "every1": 4, "every2": 3.2, "every3": 2.6
+    },
+    "closeBonus": {
+      "_why": "GG: 'you have to get close': a hit on the boss does up to max x damage at point blank, falling to x1 at `range` m (the gap's hurt line is 25 m): closing in pays. (The pistol is the only weapon in this level: the plan's LIMIT flag.)",
+      "range": 25, "max": 2
+    },
+    "body": {
+      "_why": "The hull (a long dark skating block 3 x 1.2 x 5 m) and the engine block on its back (2 x 1 x 1.6 m); touching it hurts contactDamage with a cooldown; dieTime s of finisher.",
+      "hullW": 3, "hullH": 1.2, "hullL": 5, "engW": 2, "engH": 1, "engL": 1.6, "contactDamage": 10, "contactCooldown": 1, "dieTime": 2.5
+    }
+  },
+  "wyrm26": {
+    "_why": "LEVEL 3's WORM (builder B, contract wyrm-26; GG: 'it should almost feel a little like Terraria: if the boss is close it might just go after you', 'body hits do lesser damage, more on the head', 'a final harder attack when it coils in the middle', 'an arena that encourages wall riding'; Core/Enemies/Wyrm.cs under design.n26.level3, switch off = NIGHT25's worm bit for bit). paths / arena are Tools/gen-wyrm26.py's copies of NIGHT25's files plus the finale pattern and the wall-ride slabs.",
+    "paths": "Design/bosses/wyrm26.json",
+    "arena": "Design/maps/wyrm26-arena.json",
+    "hp": {
+      "_why": "mult x the pool (design.n24.wyrm.hp.pool x design.n25.wyrmAim.hp.mult): tuned so the composed human-lag bot kills level 3's worm in 4:00-5:00 with deaths printed (NIGHT25's measured 3:57 with 2 deaths): the body now does half, the aggro and the finale cost the player time.",
+      "mult": 1
+    },
+    "body": {
+      "_why": "GG: 'if you hit the body of it it does damage but lesser damage and it does more if you hit the head'. The body and the tail land x mult on top of design.n24.wyrm.hp.bodyMult (1): body x0.5; the head (x2) and the exposed core (x3) are unchanged.",
+      "mult": 0.5
+    },
+    "aggro": {
+      "_why": "PROXIMITY AGGRO (RESEARCH.md S5, Terraria's worms): when the player is within radius m of the head or any piece, the head breaks its cycle and dives at him: a tell (tells.aggro, a line from the head to where he stood, LOCKED: sidestep it), then a pass at speedMult x the phase speed through his spot and overshoot m beyond it (clamped inside the room, between yMin and yMax m up, pitch limit pitch degrees), then the cycle restarts the pattern it interrupted. cooldown 14 s between aggros (GG said 6 s, DECIDE26 D-7; eased after the lead found 4-5 bot deaths too punishing), the first one after first s of a fight so the opening cycle reads. Never during an attack's tell, the finale, the dive's burrow or inside the resolve gap of another lethal attack.",
+      "radius": 14, "cooldown": 14, "first": 12, "speedMult": 1.0, "overshoot": 14, "pitch": 75, "yMin": 2, "yMax": 9
+    },
+    "tells": {
+      "_why": "The night's rule: every tell >= 0.5 s. The aggro re-aim line tells 0.5 s (the floor), the finale's squeeze and its marked gap tell 1.0 s (the contract).",
+      "aggro": 0.5, "finale": 1, "finaleGap": 1
+    },
+    "spit2": {
+      "_why": "A SECOND SPIT LANE in phase 2 (contract: harder than NIGHT25's): delay s after each volley the body's in-between ports fire a second volley (never inside the resolve gap of a lethal attack): 0.7 s, so it reads as two beats, not one wall.",
+      "delay": 1.0
+    },
+    "finale": {
+      "_why": "The phase-3 FINALE (a ring squeeze with one marked gap, tell 1 s): contact with the worm while it runs hurts x contactMult (NIGHT25's body contact is 5, the squeeze would never matter): 1.5 means a ring touch is about 8 and a head touch 27: you leave through the gap or jump the ring.",
+      "contactMult": 1
+    }
+  }
+}

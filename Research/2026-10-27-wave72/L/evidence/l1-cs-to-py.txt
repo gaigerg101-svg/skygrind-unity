@@ -1,0 +1,6 @@
+commands: (cd s72check && dotnet run -- <out.s72>) with Assets/Scripts/Game/Still72.cs linked, then python -I Tools/night/n72-flicker.py <out.s72> --plant 53,180,16
+worktree n72-L, base b80afc2fa, run 2026-10-27 10:48:02 USMST
+Still72 round trip: ok | frames 12 | 640x360 | file 24878 bytes
+POSE still72-T72-cs-r1-p1 | frames 12 | flip share 0.1111 % (256 px) | p99.9 |dY| 151 | p99.99 151 | max 151 | mean 0.168 | blobs: 256 px at x 52-70 y 179-197 | RED | plant rect 256 of 256 px flip
+LEVEL cs | poses 1 | worst still72-T72-cs-r1-p1 0.1111 % | mean 0.1111 %
+SUMMARY n72-flicker | poses 1 | RED 1 | GREEN 0 | bar 0.010 % of the frame

@@ -1,0 +1,52 @@
+# command: bash Research/2026-10-23-wave66/T/t1c-ride.sh C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/b545c660-8250-4a8f-9419-f29ef22d3556/scratchpad/genout/latest/n65-foundry.json
+# sha: 415b388d (tree 4 dirty paths), 2026-10-24 01:09:27 USMST, /c/Users/gaige/dev/SKYGRIND-unity/.claude/worktrees/agent-af48e888c59fa3626
+
+# the latest level: C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/b545c660-8250-4a8f-9419-f29ef22d3556/scratchpad/genout/latest/n65-foundry.json, sha256 9404f13e8d8aa962
+== n65verb ride --level C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/b545c660-8250-4a8f-9419-f29ef22d3556/scratchpad/genout/latest/n65-foundry.json --room a3 
+n65verb ride: level n65-foundry (C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/b545c660-8250-4a8f-9419-f29ef22d3556/scratchpad/genout/latest/n65-foundry.json), room a3 "1.3 RIDE", seed 1; pose (0.0, 0.0, -60.0) yaw -94.6 from line65[0]; off switch none
+  face 0 of 1: x = 4.0, -80.0..-61.0 (19.0 m), top 6.0, normal (-1.0, 0.0), ride along (0.0, -1.0) from (3.6, 0.0, -62.0); the room's wave live, alive 4; weapon revolver
+n65verb ride: GREEN | room a3 | ride yes (1.8 s on the wall, 16.2 m along it, WallRideStart 1) | look off the wall at most 0.0 deg | shots from the wall 0 (off it 0) | kills from the wall 0 (other kills 0) | pose line65[0]
+   exit 0
+== n65verb ride --level C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/b545c660-8250-4a8f-9419-f29ef22d3556/scratchpad/genout/latest/n65-foundry.json --room a3 --shoot
+n65verb ride: level n65-foundry (C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/b545c660-8250-4a8f-9419-f29ef22d3556/scratchpad/genout/latest/n65-foundry.json), room a3 "1.3 RIDE", seed 1; pose (0.0, 0.0, -60.0) yaw -94.6 from line65[0]; off switch none
+  face 0 of 1: x = 4.0, -80.0..-61.0 (19.0 m), top 6.0, normal (-1.0, 0.0), ride along (0.0, -1.0) from (3.6, 0.0, -62.0); the room's wave live, alive 4; weapon revolver
+    kill swarmer #1 by revolver at (-0.5, 0.5, -68.7), 7.4 m, step 40: FROM THE WALL
+    kill swarmer #4 by revolver at (3.5, 0.5, -68.3), 4.3 m, step 156: FROM THE WALL
+    kill swarmer #2 by revolver at (3.6, 1.5, -70.1), 6.6 m, step 214: FROM THE WALL
+    kill swarmer #8 by revolver at (-9.2, 0.5, -82.5), 6.5 m, step 596: FROM THE WALL
+n65verb ride --shoot: GREEN | room a3 | ride yes (4.7 s on the wall, 12.1 m along it, WallRideStart 1) | look off the wall at most 180.0 deg | shots from the wall 8 (off it 0) | kills from the wall 4 (other kills 0) | pose line65[0]
+   exit 0
+== n65verb ride --level C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/b545c660-8250-4a8f-9419-f29ef22d3556/scratchpad/genout/latest/n65-foundry.json --room a3 --shoot --plant-target auto
+n65verb ride: level n65-foundry (C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/b545c660-8250-4a8f-9419-f29ef22d3556/scratchpad/genout/latest/n65-foundry.json), room a3 "1.3 RIDE", seed 1; pose (0.0, 0.0, -60.0) yaw -94.6 from line65[0]; off switch none
+  face 0 of 1: x = 4.0, -80.0..-61.0 (19.0 m), top 6.0, normal (-1.0, 0.0), ride along (0.0, -1.0) from (3.6, 0.0, -62.0); the room's wave live, alive 4; weapon revolver
+  planted target: husk #5 held at (1.0, 0.0, -72.0), hp 40.0
+    kill husk #5 by revolver at (1.0, 1.0, -72.0), 6.0 m, step 98: FROM THE WALL (the planted target)
+    kill swarmer #2 by revolver at (3.2, 0.5, -67.2), 5.5 m, step 156: FROM THE WALL
+    kill swarmer #4 by revolver at (3.5, 0.5, -72.6), 4.6 m, step 214: FROM THE WALL
+    kill husk #8 by revolver at (-0.7, 2.1, -82.5), 2.2 m, step 388: FROM THE WALL
+n65verb ride --shoot: GREEN | room a3 | ride yes (4.7 s on the wall, 12.2 m along it, WallRideStart 1) | look off the wall at most 180.0 deg | shots from the wall 7 (off it 0) | kills from the wall 4 (other kills 0) | the planted target #5 killed from the wall | pose line65[0]
+   exit 0
+== n65verb ride --level Design/levels/n52-foundry.json --room b1 
+n65verb ride: level n52-foundry (Design/levels/n52-foundry.json), room b1 "1.6 THE YARD", seed 1; pose (0.0, 0.0, -153.5) yaw 0.0 from the room's spawn (no line65); off switch none
+  face 0 of 2: x = -9.4, -180.0..-148.0 (32.0 m), top 12.0, normal (1.0, 0.0), ride along (0.0, -1.0) from (-9.0, 0.0, -149.0); the room's wave live, alive 3; weapon revolver
+n65verb ride: GREEN | room b1 | ride yes (4.9 s on the wall, 19.0 m along it, WallRideStart 1) | look off the wall at most 0.0 deg | shots from the wall 0 (off it 0) | kills from the wall 0 (other kills 0) | pose the room's spawn (no line65)
+   exit 0
+== n65verb ride --level Design/levels/n52-foundry.json --room b1 --shoot
+n65verb ride: level n52-foundry (Design/levels/n52-foundry.json), room b1 "1.6 THE YARD", seed 1; pose (0.0, 0.0, -153.5) yaw 0.0 from the room's spawn (no line65); off switch none
+  face 0 of 2: x = -9.4, -180.0..-148.0 (32.0 m), top 12.0, normal (1.0, 0.0), ride along (0.0, -1.0) from (-9.0, 0.0, -149.0); the room's wave live, alive 3; weapon revolver
+    kill husk #2 by revolver at (-7.8, 1.0, -155.6), 2.6 m, step 63: FROM THE WALL
+    kill husk #3 by revolver at (-8.3, 1.0, -153.1), 12.7 m, step 179: FROM THE WALL
+    kill husk #7 by revolver at (1.2, 1.0, -172.8), 9.6 m, step 353: FROM THE WALL
+n65verb ride --shoot: GREEN | room b1 | ride yes (4.9 s on the wall, 19.6 m along it, WallRideStart 1) | look off the wall at most 179.1 deg | shots from the wall 11 (off it 0) | kills from the wall 3 (other kills 0) | pose the room's spawn (no line65)
+   exit 0
+== n65verb ride --level Design/levels/n52-foundry.json --room b1 --shoot --plant-target auto
+n65verb ride: level n52-foundry (Design/levels/n52-foundry.json), room b1 "1.6 THE YARD", seed 1; pose (0.0, 0.0, -153.5) yaw 0.0 from the room's spawn (no line65); off switch none
+  face 0 of 2: x = -9.4, -180.0..-148.0 (32.0 m), top 12.0, normal (1.0, 0.0), ride along (0.0, -1.0) from (-9.0, 0.0, -149.0); the room's wave live, alive 3; weapon revolver
+  planted target: husk #4 held at (-6.4, 0.0, -159.0), hp 40.0
+    kill husk #4 by revolver at (-6.4, 1.0, -159.0), 3.1 m, step 121: FROM THE WALL (the planted target)
+    kill husk #2 by revolver at (-7.5, 1.0, -155.8), 10.2 m, step 179: FROM THE WALL
+    kill husk #1 by revolver at (-8.6, 1.0, -152.5), 25.0 m, step 295: FROM THE WALL
+    kill husk #7 by revolver at (4.4, 4.1, -176.6), 3.4 m, step 469: FROM THE WALL
+n65verb ride --shoot: GREEN | room b1 | ride yes (4.9 s on the wall, 19.3 m along it, WallRideStart 1) | look off the wall at most 179.1 deg | shots from the wall 10 (off it 0) | kills from the wall 4 (other kills 0) | the planted target #4 killed from the wall | pose the room's spawn (no line65)
+   exit 0
+# exit 0, 01:09:54

@@ -1,0 +1,24 @@
+{
+  "_about": "NIGHT30's player-facing rows: switch, owner, the Player proof (RED with -skygrindOff30 / the n29 level, GREEN with the rows on). Reel scenario ids are the -skygrindReelOnly names.",
+  "rows": [
+    { "id": "P0a", "what": "LitMotion NRE gone after level reloads", "switch": "N30Fixes.On", "owner": "S", "reel": "hudfx30" },
+    { "id": "P0b", "what": "lesson text clears on leave / clear, never in a boss fight", "switch": "design.n30.teach", "owner": "S", "reel": "lesson30" },
+    { "id": "P0c", "what": "run HUD rows hidden on TITLE / PAUSE / RESULTS", "switch": "design.n30.hud30", "owner": "V", "reel": "menus30" },
+    { "id": "P0d", "what": "a boss bar only in its boss room", "switch": "design.n30.teach", "owner": "S", "reel": "lesson30" },
+    { "id": "P0e", "what": "HUD layout: 0 overlapping text rects (Hud30Layout)", "switch": "design.n30.hud30", "owner": "V", "reel": "layout30" },
+    { "id": "P0f", "what": "the 1/2 badge explained or removed", "switch": "design.n30.hud30", "owner": "V", "reel": "layout30" },
+    { "id": "P0g", "what": "the Player smoke passes with the rows ON", "switch": "-", "owner": "lead", "reel": "smoke.sh" },
+    { "id": "1", "what": "weapon rules: a switch waits only for the action; cooldowns run holstered", "switch": "design.n30.rules", "owner": "S", "reel": "rules30" },
+    { "id": "2", "what": "weapon-state widget READY / COOLING / CHARGING", "switch": "design.n30.hud30", "owner": "V", "reel": "weaponhud30" },
+    { "id": "3", "what": "lava: burns 25 %, knocks up, no teleport; enemies burn", "switch": "design.n30.lava", "owner": "S+L+V", "reel": "lava30" },
+    { "id": "4", "what": "the Lantern ring (16 panels), lines, lead orbs, sweep", "switch": "design.n30.lantern30", "owner": "B", "reel": "lantern30" },
+    { "id": "5", "what": "fewer enemies in levels 1-2, the tank alone", "switch": "design.n30.levels", "owner": "L", "reel": "walk29" },
+    { "id": "6", "what": "glide ice + the Glacier rebuilt", "switch": "design.n30.glide + glacier30", "owner": "S+B", "reel": "glacier30" },
+    { "id": "7", "what": "the Wyrm head-punch stagger", "switch": "design.n30.wyrm30", "owner": "B", "reel": "wyrm30" },
+    { "id": "8", "what": "the look: HUD fx, quantise + dither, no full-frame wash", "switch": "design.n30.look30", "owner": "V", "reel": "look30" },
+    { "id": "9", "what": "rooms pass on levels 1-3", "switch": "design.n30.levels", "owner": "L", "reel": "walk29 + frames" },
+    { "id": "10", "what": "LEVEL 4 THE SPAN + THE LOOM", "switch": "design.n30.span + levels", "owner": "L+S+B", "reel": "loom30" },
+    { "id": "11", "what": "balance bands", "switch": "-", "owner": "lead", "reel": "boss reels" },
+    { "id": "12", "what": "teaching lines stay right", "switch": "design.n30.teach", "owner": "S", "reel": "lesson30" }
+  ]
+}

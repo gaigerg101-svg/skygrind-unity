@@ -1,0 +1,33 @@
+# command: dotnet run --project Tools/SimHarness -c Release -- n46flow --level n52-foundry --seeds 10
+# sha: 1cfbc786 (branch n65-T; clean tracked tree)
+# time: 2026-10-23 14:21:43 -> 2026-10-23 14:23:21 (local)
+# exit: 0
+
+C:\Program Files\dotnet\sdk\10.0.401\Microsoft.Common.CurrentVersion.targets(887,5): warning MSB3539: The value of the property "BaseIntermediateOutputPath" was modified after it was used by MSBuild which can lead to unexpected build results. Tools such as NuGet will write outputs to the path specified by the "MSBuildProjectExtensionsPath" instead. To set this property, you must do so before Microsoft.Common.props is imported, for example by using Directory.Build.props.  For more information, please visit https://go.microsoft.com/fwlink/?linkid=869650" [C:\Users\gaige\dev\SKYGRIND-unity\.claude\worktrees\agent-af48e888c59fa3626\Tools\SimHarness\SimHarness.csproj]
+CSC : warning CS2002: Source file 'C:\Users\gaige\dev\SKYGRIND-unity\.claude\worktrees\agent-af48e888c59fa3626\Tools\SimHarness\Hitch24Stub.cs' specified multiple times [C:\Users\gaige\dev\SKYGRIND-unity\.claude\worktrees\agent-af48e888c59fa3626\Tools\SimHarness\SimHarness.csproj]
+C:\Users\gaige\dev\SKYGRIND-unity\.claude\worktrees\agent-af48e888c59fa3626\Assets\Scripts\Game\SurvivalSim.Loom37.Boss.cs(63,22): warning CS8826: Partial method declarations 'void SurvivalSim.Loom37BossLevel(Dictionary<string, object> canyon)' and 'void SurvivalSim.Loom37BossLevel(Dictionary<string, object> lr)' have signature differences. [C:\Users\gaige\dev\SKYGRIND-unity\.claude\worktrees\agent-af48e888c59fa3626\Tools\SimHarness\SimHarness.csproj]
+n46flow: seeds 1..10, cap 240 s per room, rows forced on: none, off switch: none; pilot: Walk38Pilot + the ported autopilot (normal)
+n46flow n52-foundry (loaded n52-foundry; BaseId n45-foundry): 10/10 walks through a2..a8; level time median 242.1 s; the pilot's lava rule: out of lava 1069 steps, held at an edge 12037 steps, chases round it 21, detours 7; put at the next room (a link not crossed in max(30 s, 3 x par) or a cleared room not left in 15 s) 18; stuck46 burrowers ended 0
+  room       kind | stall%  maxStall  air% | kgap med/max | near med/p10/p90 | dwell  dead | deaths falls | clear (k/n)    | geometry
+  a2         room |   12.4      0.8  73.9 |  2.8 / 9.8   |  8.0 /  3.0 / 14.9  |   1.4   8.2 |      0     0 |   14.7 (10/10) | floor 280 m2, tiers 2, loop n (0 m2), pockets 0, sight 23.1 m, w1 in view 2/2
+  a3         room |   38.2      3.2  51.1 |  2.0 / 25.1  |  4.9 /  1.0 / 11.7  |   2.8   2.0 |      4     0 |   28.1 (10/10) | floor 410 m2, tiers 3, loop n (3.5 m2), pockets 5, sight 28.3 m, w1 in view 0/4
+  a4         room |   33.7      2.9  57.6 |  4.2 / 11.7  |  8.8 /  5.0 / 12.6  |   4.2   4.2 |      0     0 |   13.8 (10/10) | floor 152 m2, tiers 2, loop n (1.5 m2), pockets 0, sight 16.6 m, w1 in view 3/3
+  a5         room |   28.1      1.9  53.7 |  2.4 / 16.4  |  7.9 /  3.2 / 12.2  |   1.5   1.7 |      6     0 |   30.5 (10/10) | floor 576 m2, tiers 4, loop n (27.6 m2), pockets 1, sight 36.4 m, w1 in view 6/6
+  b1         room |   28.8      1.9  57.3 |  2.2 / 11.8  |  7.3 /  2.7 / 13.1  |   4.1   2.0 |      3     0 |   34.2 (10/10) | floor 517 m2, tiers 3, loop y (90.3 m2), pockets 0, sight 35.6 m, w1 in view 1/3
+  a8         room |   45.6      1.6  33.6 |  2.1 / 5.6   |  4.6 /  2.2 / 10.0  |   0.0   0.6 |      0     0 |    5.4 (10/10) | floor 308 m2, tiers 3, loop n (0 m2), pockets 0, sight 13.2 m, w1 in view 3/3
+  LEVEL           |   30.8      3.2  55.4 |  2.3 / 25.1  |  6.9 /  2.2 / 12.5  |  14.0  18.7 |     13     0 |  126.7 sum of medians
+n46flow n52-foundry SUMMARY: GREEN 10/10; stall 30.8 %, longest stall 3.2 s, air 55.4 %, kill gap 2.3 / 25.1 s, nearest 6.9 m, dwell 14.0 s, dead 18.7 s, deaths 13, falls 0, clear 126.7 s
+  style      kind |  DULL  COOL  BOLD  AIRB  SAVA  SKYG (% of fight steps) | top rank med / max (seeds)
+  a2         room |  21.1  46.1  29.8   3.0   0.0   0.0                    | BOLD / AIRBORNE (10)
+  a3         room |  21.0  25.0  37.2  15.2   1.6   0.0                    | AIRBORNE / SAVAGE (10)
+  a4         room |  43.5  32.9  23.6   0.0   0.0   0.0                    | COOL / BOLD (10)
+  a5         room |  71.5  24.4   3.6   0.5   0.0   0.0                    | COOL / AIRBORNE (10)
+  b1         room |  53.0  22.8  19.5   4.6   0.0   0.0                    | BOLD / AIRBORNE (10)
+  a8         room |  19.6  40.9  36.9   2.5   0.0   0.0                    | BOLD / AIRBORNE (10)
+  LEVEL           |  43.7  27.9  22.4   5.5   0.4   0.0                    | top SAVAGE
+n46flow n52-foundry STYLE: DULL 43.7 % of 1299 s of fight; above DULL 56.3 %; rooms reaching SAVAGE 1/6; top rank SAVAGE
+n46flow n52-foundry PAYOFFS: heal36 HP per close kill by rank: DULL 8.48 (23), COOL 9.16 (19), BOLD 8.82 (11), AIRBORNE 10.00 (2), SAVAGE - (0), SKYGRIND - (0); RIDE KILL refund per ride kill by rank: DULL 0.00 (35), COOL 0.00 (25), BOLD 0.00 (23), AIRBORNE 0.00 (5), SAVAGE - (0), SKYGRIND - (0)
+n46flow n52-foundry TOKENS: attack starts inside the sim cone (camera.fovDeg 74 / 2) 342/399 = 85.7 % (by kind: spitter 199/242, husk 125/126, swarmer 18/31); tokens56 thinks waited out of view 7598, advances 12
+n46flow n52-foundry RANGED: hit rate by the player's speed at the shot: stand 14/52 = 26.9 %, run 30/163 = 18.4 %, fast 2/11 = 18.2 %, dash 0/0 = - %; dash / stand NaN %, fast+dash / stand 68 %
+n46flow n52-foundry IDLE: idle in place 8.6 % of enemy-alive steps; per enemy (alive >= 2 s, 363): median 5.3 %, p90 18.2 %, over 20 %: 30 (8.3 %); by kind: husk 11.1 %, spitter 4.9 %, swarmer 8.6 %
+n46flow n52-foundry: wall time 84 s

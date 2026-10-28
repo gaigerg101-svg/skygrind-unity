@@ -1,0 +1,10 @@
+22c22
+< n65verb skip: M2 VERB FAIL | room kb3, verb launch, pooled ratio 1.37 vs mainBar 1.25 (default: no --bars), sets 1-3 1.37 (3/3), exercised 3 / 3 (need 3), median of all 3 seeds 1.37, refusal fired on 3 of 3 exercised seeds (by construction: an exercised seed refused a press), the refused run used the verb on 0 exercised seed(s), STYLE above DULL 81.2 % vs need 95.0 % (the faster refusal 83.3 %: min(refusal + 15, max(refusal, 95))) | STYLE under its need
+---
+> n65verb skip: M2 VERB PASS | room kb3, verb launch, pooled ratio 1.37 vs mainBar 1.25 (default: no --bars), sets 1-3 1.37 (3/3), exercised 3 / 3 (need 3), median of all 3 seeds 1.37, refusal fired on 3 of 3 exercised seeds (by construction: an exercised seed refused a press), the refused run used the verb on 0 exercised seed(s), STYLE above DULL 81.2 % vs need 78.3 % (the faster refusal 83.3 % - 5: STYLE PASS; NIGHT68's min(refusal + 15, max(refusal, 95)) 95.0 %, not the verdict) | every part met
+47,48c47,48
+< n65verb: exit 1
+< # exit 1
+---
+> n65verb: exit 0
+> # exit 0

@@ -1,0 +1,121 @@
+# command: node Tools/night/n65-air.cjs C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/ice-base/iceline.plan.json g7
+# sha: f1c885137; time: 2026-10-28 00:45:36
+n65-air n67-iceline g7 "2.7 THE MIX" (C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/ice-base/iceline.plan.json):
+  numbers: jump v0 8.33 m/s, g 23.15 m/s2 (fall x1.35), double v0 7.50, dash 24 m/s x 0.25 s = 6.0 m, dash-jump v0 6.67 with g x0.5 for 0.5 s at 24 m/s, run-up 8 m/s, wall jump out 5 up 8.33 (wallfling42 on), ride 9.20 m/s, jump-off out 8 +1 up 7.30 (ride39 on), capsule 0.35 m; a ride held 2.5 m over its base
+  air pieces 15:
+    D1   deck  top 2.0 m over [-12.0, -216.0, -4.0, -210.0] | line: the WEST COAL GANTRY (2 m, 8 x 6 m): the
+    D2   deck  top 4.0 m over [8.5, -211.0, 12.0, -204.5] | line: THE KEEPER'S TOWER (4 m, 3.5 x 6.5 m aga
+    R3   ride  face x = -11.0 (+x), -205.5..-187.5 (18.0 m), band -0.8..5.0, held at 1.7 | line: the WEST SLUICE WALL (ride, cyan, 18 m x
+    R4   ride  face x = 11.0 (-x), -202.5..-191.0 (11.5 m), band -0.8..5.0, held at 1.7 | line: the EAST SLUICE WALL (ride, cyan, 11.5 m
+    L5   ledge top 3.5 m over [-6.6, -191.6, -5.4, -190.4] | cover: the WEST MOORING POST (1.2 m x 3.5 m): b
+    L6   ledge top 3.5 m over [3.9, -192.6, 5.1, -191.4] | cover: the EAST MOORING POST (1.2 m x 3.5 m; NI
+    D7   deck  top 2.0 m over [-12.0, -188.0, -7.0, -184.0] | line: the WEST COAL BUNKER (2 m, 4 x 4 m): wav
+    D8   deck  top 2.0 m over [7.0, -188.0, 12.0, -184.0] | line: the EAST COAL BUNKER (2 m, the west's mi
+    D9   deck  top 2.0 m over [8.0, -191.0, 12.0, -188.0] | line: THE COAL STAGE (2 m, 4 x 3 m: the east b
+    L10  ledge top 4.0 m over [-3.6, -207.1, -2.4, -205.9] | cover: the WEST SLUICE POST (1.2 m x 4 m) on th
+    L11  ledge top 4.0 m over [4.4, -204.6, 5.6, -203.4] | cover: THE STOKER'S POST (1.2 m x 4 m at the st
+    L12  ledge top 4.5 m over [-12.0, -216.0, -10.0, -213.5] | cover: the WEST GANTRY's COAL HOPPER (2 x 2.5 m
+    L13  ledge top 6.0 m over [10.5, -211.0, 12.0, -209.0] | cover: the KEEPER'S HUT (1.5 x 2 m on the tower
+    P14  pad   at (7.0, 0.0, -193.5) -> (10.0, 4.0, -206.5) (on the floor) | line
+    P15  pad   at (7.0, 0.0, -205.2) -> (9.0, 2.0, -186.0) (on the floor) | line
+  hand-offs 95 (piece -> piece without touching the floor, the easiest move first):
+    D1 -> D2  dash-jump + double, margin 13.95 m (gap 12.9 m)
+    D1 -> R4  dash-jump, margin 1.21 m of height (gap 16.4 m)
+    D1 -> L5  dash-jump + double, margin 9.25 m (gap 18.8 m)
+    D1 -> D7  dash-jump + double, margin 8.85 m (gap 22.4 m)
+    D1 -> D9  dash-jump + double, margin 8.38 m (gap 22.8 m)
+    D1 -> L10  jump + double, margin 3.79 m (gap 3.3 m); also dash-jump + double 23.52
+    D1 -> L11  dash-jump + double, margin 16.46 m (gap 10.3 m)
+    D1 -> L12  jump + double, margin 5.78 m (gap 0.4 m); also dash-jump + double 24.65
+    D2 -> D1  dash-jump, margin 11.75 m (gap 12.9 m); also dash-jump + double 21.35
+    D2 -> L6  dash-jump, margin 9.27 m (gap 12.7 m); also dash-jump + double 19.27
+    D2 -> D7  dash-jump, margin 1.61 m (gap 23.0 m); also dash-jump + double 11.21
+    D2 -> D8  dash-jump, margin 7.75 m (gap 16.9 m); also dash-jump + double 17.35
+    D2 -> D9  dash-jump, margin 10.75 m (gap 13.9 m); also dash-jump + double 20.35
+    D2 -> L10  dash-jump, margin 9.75 m (gap 11.3 m); also dash-jump + double 19.95
+    D2 -> L11  jump, margin 2.02 m (gap 3.3 m); also jump + double 5.48, dash 7.42, dash-jump 17.75, dash-jump + double 27.95
+    D2 -> L12  dash-jump, margin 0.78 m (gap 19.0 m); also dash-jump + double 11.18
+    D2 -> L13  jump + double, margin 6.72 m (gap 0.4 m); also dash-jump + double 26.45
+    R3 -> L5  jump-off + double, margin 2.25 m (gap 4.8 m)
+    R3 -> D7  jump-off, margin 4.27 m (gap 0.4 m); also jump-off + double 8.16, wall jump 2.77, wall jump + double 4.98, dash 10.05
+    R4 -> L6  jump-off + double, margin 0.75 m (gap 6.3 m)
+    R4 -> D9  jump-off, margin 4.27 m (gap 0.4 m); also jump-off + double 8.16, wall jump 2.77, wall jump + double 4.98, dash 10.05
+    L5 -> D1  dash-jump, margin 5.05 m (gap 18.8 m); also dash-jump + double 14.65
+    L5 -> R3  jump, margin 0.09 m of height (gap 4.1 m); also dash 1.20, dash-jump 0.22, dash-jump + double 0.22
+    L5 -> L6  dash, margin 1.02 m (gap 9.7 m); also dash-jump 11.35, dash-jump + double 21.55
+    L5 -> D7  jump, margin 3.55 m (gap 2.8 m); also jump + double 6.75, dash 9.02, dash-jump 21.02, dash-jump + double 30.62
+    L5 -> D8  dash-jump, margin 10.82 m (gap 13.0 m); also dash-jump + double 20.42
+    L5 -> D9  dash-jump, margin 10.05 m (gap 13.8 m); also dash-jump + double 19.65
+    L5 -> L10  dash-jump, margin 5.04 m (gap 14.8 m); also dash-jump + double 15.44
+    L5 -> L12  dash-jump + double, margin 6.69 m (gap 22.5 m)
+    L6 -> D2  dash-jump, margin 7.07 m (gap 12.7 m); also dash-jump + double 17.47
+    L6 -> R4  jump, margin 1.57 m of height (gap 5.6 m); also dash 1.20
+    L6 -> L5  dash, margin 1.02 m (gap 9.7 m); also dash-jump 11.35, dash-jump + double 21.55
+    L6 -> D7  dash, margin 0.03 m (gap 11.8 m); also dash-jump 12.03, dash-jump + double 21.63
+    L6 -> D8  jump, margin 2.09 m (gap 4.2 m); also jump + double 5.29, dash 7.56, dash-jump 19.56, dash-jump + double 29.16
+    L6 -> D9  jump, margin 3.06 m (gap 3.3 m); also jump + double 6.26, dash 8.52, dash-jump 20.52, dash-jump + double 30.12
+    L6 -> L11  dash-jump, margin 8.65 m (gap 11.2 m); also dash-jump + double 19.05
+    L6 -> L13  dash-jump + double, margin 7.38 m (gap 17.6 m)
+    D7 -> D1  dash-jump + double, margin 8.85 m (gap 22.4 m)
+    D7 -> D2  dash-jump + double, margin 3.81 m (gap 23.0 m)
+    D7 -> R4  dash-jump, margin 1.55 m of height (gap 17.9 m)
+    D7 -> L5  jump + double, margin 4.82 m (gap 2.8 m); also dash-jump 13.62, dash-jump + double 25.22
+    D7 -> L6  dash-jump, margin 4.63 m (gap 11.8 m); also dash-jump + double 16.23
+    D7 -> D8  dash-jump, margin 6.65 m (gap 14.4 m); also dash-jump + double 16.85
+    D7 -> D9  dash-jump, margin 5.65 m (gap 15.4 m); also dash-jump + double 15.85
+    D8 -> D2  dash-jump + double, margin 9.95 m (gap 16.9 m)
+    D8 -> R3  dash-jump, margin 1.49 m of height (gap 17.7 m)
+    D8 -> L5  dash-jump, margin 3.42 m (gap 13.0 m); also dash-jump + double 15.02
+    D8 -> L6  jump + double, margin 3.36 m (gap 4.2 m); also dash-jump 12.16, dash-jump + double 23.76
+    D8 -> D7  dash-jump, margin 6.65 m (gap 14.4 m); also dash-jump + double 16.85
+    D8 -> D9  jump, margin 4.92 m (gap 0.4 m); also jump + double 8.38, dash 10.32, dash-jump 20.65, dash-jump + double 30.85
+    D8 -> L11  dash-jump + double, margin 10.99 m (gap 15.8 m)
+    D9 -> D1  dash-jump + double, margin 8.38 m (gap 22.8 m)
+    D9 -> D2  dash-jump + double, margin 12.95 m (gap 13.9 m)
+    D9 -> R3  dash-jump, margin 1.79 m of height (gap 18.7 m)
+    D9 -> L5  dash-jump, margin 2.65 m (gap 13.8 m); also dash-jump + double 14.25
+    D9 -> L6  jump + double, margin 4.32 m (gap 3.3 m); also dash-jump 13.12, dash-jump + double 24.72
+    D9 -> D7  dash-jump, margin 5.65 m (gap 15.4 m); also dash-jump + double 15.85
+    D9 -> D8  jump, margin 4.92 m (gap 0.4 m); also jump + double 8.38, dash 10.32, dash-jump 20.65, dash-jump + double 30.85
+    D9 -> L11  dash-jump + double, margin 13.82 m (gap 13.0 m)
+    L10 -> D1  jump, margin 3.32 m (gap 3.3 m); also jump + double 6.52, dash 8.86, dash-jump 21.32, dash-jump + double 30.92
+    L10 -> D2  dash-jump, margin 9.75 m (gap 11.3 m); also dash-jump + double 19.95
+    L10 -> R3  jump, margin 1.45 m of height (gap 7.1 m)
+    L10 -> L5  dash-jump, margin 7.24 m (gap 14.8 m); also dash-jump + double 17.24
+    L10 -> D7  dash-jump, margin 6.03 m (gap 18.6 m); also dash-jump + double 15.63
+    L10 -> D9  dash-jump, margin 6.08 m (gap 18.5 m); also dash-jump + double 15.68
+    L10 -> L11  jump + double, margin 1.46 m (gap 7.3 m); also dash 3.39, dash-jump 13.73, dash-jump + double 23.93
+    L10 -> L12  dash, margin 0.73 m (gap 9.4 m); also dash-jump 10.40, dash-jump + double 20.80
+    L10 -> L13  dash-jump + double, margin 13.41 m (gap 13.4 m)
+    L11 -> D1  dash, margin 1.80 m (gap 10.3 m); also dash-jump 14.26, dash-jump + double 23.86
+    L11 -> D2  jump, margin 2.02 m (gap 3.3 m); also jump + double 5.48, dash 7.42, dash-jump 17.75, dash-jump + double 27.95
+    L11 -> R4  jump, margin 0.50 m of height (gap 5.1 m); also dash 0.70
+    L11 -> L6  dash-jump, margin 10.85 m (gap 11.2 m); also dash-jump + double 20.85
+    L11 -> D8  dash-jump, margin 8.79 m (gap 15.8 m); also dash-jump + double 18.39
+    L11 -> D9  dash-jump, margin 11.62 m (gap 13.0 m); also dash-jump + double 21.22
+    L11 -> L10  jump + double, margin 1.46 m (gap 7.3 m); also dash 3.39, dash-jump 13.73, dash-jump + double 23.93
+    L11 -> L12  dash-jump, margin 2.52 m (gap 17.3 m); also dash-jump + double 12.92
+    L11 -> L13  jump + double, margin 0.13 m (gap 6.9 m); also dash-jump + double 19.86
+    L12 -> D1  jump, margin 6.52 m (gap 0.4 m); also jump + double 9.65, dash 12.05, dash-jump 25.05, dash-jump + double 34.45
+    L12 -> D2  dash-jump, margin 2.98 m (gap 19.0 m); also dash-jump + double 12.98
+    L12 -> R4  dash-jump, margin 1.35 m of height (gap 23.4 m)
+    L12 -> L5  dash-jump, margin 0.49 m (gap 22.5 m); also dash-jump + double 10.29
+    L12 -> D7  dash-jump + double, margin 8.95 m (gap 25.9 m)
+    L12 -> L10  dash, margin 1.73 m (gap 9.4 m); also dash-jump 12.60, dash-jump + double 22.60
+    L12 -> L11  dash-jump, margin 4.72 m (gap 17.3 m); also dash-jump + double 14.72
+    L12 -> L13  dash-jump + double, margin 7.00 m (gap 21.0 m)
+    L13 -> D1  dash-jump, margin 12.55 m (gap 14.9 m); also dash-jump + double 21.75
+    L13 -> D2  jump, margin 6.25 m (gap 0.4 m); also jump + double 9.45, dash 11.78, dash-jump 24.25, dash-jump + double 33.85
+    L13 -> L6  dash-jump, margin 7.78 m (gap 17.6 m); also dash-jump + double 17.18
+    L13 -> D8  dash-jump, margin 6.05 m (gap 21.4 m); also dash-jump + double 15.25
+    L13 -> D9  dash-jump, margin 9.05 m (gap 18.4 m); also dash-jump + double 18.25
+    L13 -> L10  dash-jump, margin 11.21 m (gap 13.4 m); also dash-jump + double 20.81
+    L13 -> L11  jump + double, margin 2.86 m (gap 6.9 m); also dash 5.20, dash-jump 17.66, dash-jump + double 27.26
+    L13 -> L12  dash-jump, margin 2.80 m (gap 21.0 m); also dash-jump + double 12.40
+    P14 -> D2  pad (gap 13.3 m)
+    P15 -> D8  pad (gap 19.3 m)
+  longest floor-free chain: 14 piece(s): P14 -> D2 -> D1 -> R4 -> L6 -> L5 -> R3 -> D7 -> D8 -> D9 -> L11 -> L10 -> L12 -> L13 (opened by a floor pad)
+  note: a dash-jump keeps the dash's 24 m/s for its whole flight (Mover.cs:1080; air accel never slows a body: MovementMath.Accelerate), so its reach is long; no obstacle, line-of-sight or air-control test
+  flight pieces (rides + pads) on one floor-free path: 3 of 4: P14 -> D2 -> D1 -> R4 -> L6 -> L5 -> R3 -> D7 -> D8 -> D9 -> L11 -> L10 -> L12 -> L13; without the dash-jump: 3: P14 -> D2 -> L13 -> L11 -> D1 -> L12 -> L10 -> R3 -> D7 -> L5 -> L6 -> R4 -> D9 -> D8
+  without the dash-jump: hand-offs 36, longest chain 14: P14 -> D2 -> L13 -> L11 -> D1 -> L12 -> L10 -> R3 -> D7 -> L5 -> L6 -> R4 -> D9 -> D8, dead ends 0/13
+n65-air g7: air pieces 15 (rides 2, decks 5, ledges 6, pads 2), hand-offs 95, longest floor-free chain 14, dead ends 0/13 | without the dash-jump: hand-offs 36, chain 14, dead ends 0/13 | flights handed on: 3 of 4 on one path (3 without the dash-jump)

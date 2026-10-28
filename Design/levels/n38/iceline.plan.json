@@ -1,0 +1,3002 @@
+{
+ "_why": "NIGHT38 builder S2 (design.n38.iceline38 swaps n37-iceline for this file): Tools/night/gen-n37-iceline-boss.cjs --n38 from the beat sheet Design/levels/n38/iceline.beats.md: no copied room: 2.1 THE GAUNTLET (the PULSE gauntlet, a tank alone, an open roofed arena), 2.2 THE RINK (an ice loop round a ride-wall island, enemies on the lane ahead), 2.3 THE RUN (flight38: a skate gap, a ride gate, a ride chain; gaps from Design/levels/envelopes38.json), 2.4 REST, then NIGHT37's 2.8 LANES, 2.9 SLIPSTREAM, 2.10 THE GATE and 2.11 THE CANAL (THE STAG's loop at stag37.centre; stag38's walls with that row on). GG 2026-10-13 (Research/2026-10-13-wave38/GG-REQUEST.md).",
+ "id": "n38-iceline",
+ "name": "LEVEL 2 THE ICE LINE",
+ "n29": true,
+ "n30": true,
+ "n36": true,
+ "floorSize": 1266,
+ "killPlaneY": -30,
+ "wallHeight": 14,
+ "rank": {
+  "time": [
+   235,
+   360,
+   545,
+   815
+  ],
+  "kills": [
+   100,
+   85,
+   65,
+   40
+  ],
+  "style": [
+   2500,
+   1500,
+   700,
+   250
+  ],
+  "_why": "Unity-only (builder S2, NIGHT38): S/A/B/C cuts: time = the beat sheet's room times (about 160 s) + THE STAG's bot band p50 21 s (harness iceline38 band), x [1.3, 2, 3, 4.5] as NIGHT36's; kills and style as n35-iceline's (NOT calibrated: no walk bot medians yet)."
+ },
+ "n27": {
+  "noKills": true
+ },
+ "rooms": [
+  {
+   "id": "j1",
+   "name": "2.1 THE GAUNTLET",
+   "kind": "room",
+   "rect": [
+    -13,
+    -30,
+    13,
+    0
+   ],
+   "height": 10,
+   "roof": true,
+   "par": 30,
+   "job36": "teach",
+   "verb36": "the PULSE gauntlet: a tank dies to one punch",
+   "spawn": {
+    "at": [
+     0,
+     0,
+     -2
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    0,
+    0,
+    -28.5
+   ],
+   "arena36": true,
+   "pickup31": {
+    "id": "j1-P31",
+    "kind": "weaponPickup",
+    "weapon": "gauntlet",
+    "at": [
+     0,
+     1,
+     -4.5
+    ]
+   },
+   "waves": [
+    [
+     "tank"
+    ],
+    [
+     "husk",
+     "husk",
+     "husk",
+     "tank"
+    ]
+   ],
+   "lessons": [
+    {
+     "kind": "husksDead",
+     "n": 1,
+     "prompt": "THE TANK DIES TO ONE PUNCH",
+     "promptPad": "THE TANK DIES TO ONE PUNCH"
+    }
+   ],
+   "lessons31": [
+    {
+     "kind": "husksDead",
+     "n": 1,
+     "prompt": "GRAB THE GAUNTLET. PUNCH THE TANK.",
+     "promptPad": "GRAB THE GAUNTLET. PUNCH THE TANK."
+    }
+   ],
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       0,
+       -2
+      ],
+      [
+       3,
+       0,
+       -10
+      ],
+      [
+       0,
+       0,
+       -27
+      ],
+      [
+       0,
+       0,
+       -28.5
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       5.5,
+       0,
+       -16
+      ],
+      [
+       5.5,
+       2,
+       -25
+      ],
+      [
+       8,
+       2,
+       -27
+      ]
+     ]
+    }
+   ],
+   "frames36": {
+    "mid": [
+     10,
+     0,
+     -3,
+     37.569,
+     -0.037
+    ],
+    "exit": [
+     -8,
+     2,
+     -27,
+     -75.964,
+     -0.305
+    ]
+   },
+   "nodes": [
+    [
+     0,
+     0,
+     -16
+    ]
+   ],
+   "highNodes": [
+    [
+     -8,
+     2,
+     -27
+    ],
+    [
+     -6,
+     2,
+     -27.5
+    ],
+    [
+     8,
+     2,
+     -27
+    ],
+    [
+     6,
+     2,
+     -27.5
+    ]
+   ]
+  },
+  {
+   "id": "j2",
+   "name": "2.2 THE RINK",
+   "kind": "room",
+   "rect": [
+    -18,
+    -74,
+    18,
+    -34
+   ],
+   "height": 12,
+   "roof": true,
+   "par": 50,
+   "job36": "combine",
+   "verb36": "skate the loop, ride the island, punch the tanks",
+   "spawn": {
+    "at": [
+     0,
+     0,
+     -36
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    14,
+    0,
+    -72
+   ],
+   "arena36": true,
+   "waves": [
+    [
+     "husk",
+     "husk",
+     "husk",
+     "husk"
+    ],
+    [
+     "husk",
+     "husk",
+     "tank"
+    ],
+    [
+     "spitter",
+     "spitter",
+     "husk",
+     "husk"
+    ]
+   ],
+   "lessons": [
+    {
+     "promptPad": "SKATE THE LOOP. RIDE THE ISLAND.",
+     "kind": "husksDead",
+     "n": 4,
+     "prompt": "SKATE THE LOOP. RIDE THE ISLAND."
+    }
+   ],
+   "lessons31": [
+    {
+     "promptPad": "SKATE THE LOOP. RIDE THE ISLAND.",
+     "kind": "husksDead",
+     "n": 4,
+     "prompt": "SKATE THE LOOP. RIDE THE ISLAND."
+    }
+   ],
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       0,
+       -36
+      ],
+      [
+       12,
+       0,
+       -40
+      ],
+      [
+       12,
+       0,
+       -68
+      ],
+      [
+       14,
+       0,
+       -72
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       0,
+       -68
+      ],
+      [
+       -12,
+       0,
+       -67
+      ],
+      [
+       -15,
+       0,
+       -61
+      ],
+      [
+       -15,
+       1.5,
+       -70
+      ]
+     ]
+    }
+   ],
+   "frames36": {
+    "mid": [
+     12,
+     0,
+     -37,
+     0,
+     -0.022
+    ],
+    "exit": [
+     -12,
+     0,
+     -40,
+     -36.87,
+     -0.015
+    ]
+   },
+   "nodes": [
+    [
+     13,
+     0,
+     -52
+    ],
+    [
+     12,
+     0,
+     -58
+    ],
+    [
+     14,
+     0,
+     -64
+    ],
+    [
+     10,
+     0,
+     -69
+    ],
+    [
+     0,
+     0,
+     -69
+    ],
+    [
+     -3,
+     0,
+     -70.5
+    ],
+    [
+     -12,
+     0,
+     -54
+    ],
+    [
+     -13,
+     0,
+     -46
+    ]
+   ],
+   "highNodes": [
+    [
+     -15,
+     1.5,
+     -71
+    ],
+    [
+     -13.5,
+     1.5,
+     -72
+    ]
+   ]
+  },
+  {
+   "id": "j3",
+   "name": "2.3 THE RUN",
+   "kind": "room",
+   "rect": [
+    6,
+    -318,
+    22,
+    -78
+   ],
+   "height": 12,
+   "roof": true,
+   "par": 30,
+   "job36": "test",
+   "verb36": "skate gap, ride gate, ride chain",
+   "spawn": {
+    "at": [
+     14,
+     0,
+     -80
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    14,
+    0,
+    -316
+   ],
+   "flight38": true,
+   "run38": {
+    "_why": "Read by Tools/SimHarness/Harness.N38.Iceline.cs (iceline38 gates): the skate gap G1 and the chain G3 flown by the real Mover on this level (E's box world has no ice; its ride try releases only near the landing, so it never chains).",
+    "laneStart": [
+     14,
+     0,
+     -81
+    ],
+    "lip1": [
+     14,
+     0,
+     -134
+    ],
+    "d1": [
+     -170,
+     -158
+    ],
+    "d1Lip": [
+     10.55,
+     0,
+     -170
+    ],
+    "d2": [
+     -244,
+     -234
+    ],
+    "d2Lip": [
+     10.55,
+     0,
+     -244
+    ],
+    "d3": [
+     -318,
+     -308
+    ],
+    "stairs": [
+     [
+      11,
+      0,
+      -139
+     ],
+     [
+      17,
+      0,
+      -175
+     ],
+     [
+      15.7,
+      0,
+      -249
+     ]
+    ],
+    "chain": [
+     {
+      "planeX": 10,
+      "side": -1,
+      "z": [
+       -267.333,
+       -242
+      ]
+     },
+     {
+      "planeX": 18,
+      "side": 1,
+      "z": [
+       -288.666,
+       -263.333
+      ]
+     },
+     {
+      "planeX": 10,
+      "side": -1,
+      "z": [
+       -314,
+       -284.666
+      ]
+     }
+    ]
+   },
+   "routeVia": [
+    [
+     [
+      14,
+      0,
+      -133
+     ],
+     [
+      14,
+      0,
+      -160
+     ]
+    ],
+    [
+     [
+      11,
+      0,
+      -169
+     ],
+     [
+      11,
+      0,
+      -236
+     ]
+    ],
+    [
+     [
+      11,
+      0,
+      -243
+     ],
+     [
+      11,
+      0,
+      -310
+     ]
+    ]
+   ],
+   "lessons": [
+    {
+     "promptPad": "SKATE. DASH OFF THE ICE.",
+     "kind": "reached",
+     "rect": [
+      9,
+      -318,
+      19,
+      -308
+     ],
+     "minY": -0.5,
+     "prompt": "SKATE. DASH OFF THE ICE."
+    }
+   ],
+   "lessons31": [
+    {
+     "promptPad": "SKATE. DASH OFF THE ICE.",
+     "kind": "reached",
+     "rect": [
+      9,
+      -318,
+      19,
+      -308
+     ],
+     "minY": -0.5,
+     "prompt": "SKATE. DASH OFF THE ICE."
+    }
+   ],
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       14,
+       0,
+       -80
+      ],
+      [
+       14,
+       0,
+       -132
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       14,
+       0,
+       -160
+      ],
+      [
+       14,
+       0,
+       -168
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       14,
+       0,
+       -236
+      ],
+      [
+       14,
+       0,
+       -242
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       14,
+       0,
+       -309
+      ],
+      [
+       14,
+       0,
+       -316
+      ]
+     ]
+    }
+   ],
+   "frames36": {
+    "mid": [
+     14,
+     0,
+     -108,
+     0,
+     -0.012
+    ],
+    "exit": [
+     11,
+     0,
+     -243,
+     -2.643,
+     0.006
+    ]
+   }
+  },
+  {
+   "id": "j4",
+   "name": "2.4 REST",
+   "kind": "link",
+   "rect": [
+    9,
+    -332,
+    19,
+    -322
+   ],
+   "height": 5,
+   "roof": true,
+   "par": 3,
+   "job36": "rest",
+   "verb36": "none",
+   "spawn": {
+    "at": [
+     14,
+     0,
+     -323.5
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    14,
+    0,
+    -330.5
+   ],
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       14,
+       0,
+       -323.5
+      ],
+      [
+       14,
+       0,
+       -330.5
+      ]
+     ]
+    }
+   ],
+   "frames36": {
+    "mid": [
+     14,
+     0,
+     -324,
+     0,
+     -0.268
+    ],
+    "exit": [
+     16,
+     0,
+     -327,
+     21.801,
+     -0.111
+    ]
+   }
+  },
+  {
+   "id": "s1",
+   "name": "2.8 LANES",
+   "kind": "room",
+   "rect": [
+    6.5,
+    -380,
+    21.5,
+    -336
+   ],
+   "height": 7,
+   "roof": true,
+   "par": 25,
+   "job36": "rehearse",
+   "verb36": "change lanes (dash sideways) under fire",
+   "spawn": {
+    "at": [
+     14,
+     0,
+     -338
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    14,
+    1.5,
+    -378
+   ],
+   "waves": [
+    [
+     "spitter"
+    ],
+    [
+     "spitter",
+     "spitter"
+    ]
+   ],
+   "lessons": [
+    {
+     "promptPad": "DASH SIDEWAYS: CHANGE LANES",
+     "kind": "husksDead",
+     "n": 3,
+     "prompt": "DASH SIDEWAYS: CHANGE LANES"
+    }
+   ],
+   "lessons31": [
+    {
+     "promptPad": "DASH SIDEWAYS: CHANGE LANES",
+     "kind": "husksDead",
+     "n": 3,
+     "prompt": "DASH SIDEWAYS: CHANGE LANES"
+    }
+   ],
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       14,
+       0,
+       -338
+      ],
+      [
+       9,
+       0,
+       -344
+      ],
+      [
+       9,
+       0,
+       -368
+      ],
+      [
+       8,
+       1.5,
+       -375
+      ],
+      [
+       14,
+       1.5,
+       -378
+      ],
+      [
+       14,
+       1.5,
+       -378
+      ]
+     ]
+    }
+   ],
+   "frames36": {
+    "mid": [
+     14,
+     0,
+     -339,
+     0,
+     -0.016
+    ],
+    "exit": [
+     9,
+     0,
+     -364,
+     -37.569,
+     -0.006
+    ]
+   },
+   "highNodes": [
+    [
+     10,
+     1.5,
+     -377
+    ],
+    [
+     14,
+     1.5,
+     -377.5
+    ],
+    [
+     18,
+     1.5,
+     -377
+    ]
+   ]
+  },
+  {
+   "id": "s2",
+   "name": "2.9 SLIPSTREAM",
+   "kind": "room",
+   "rect": [
+    6.5,
+    -474,
+    21.5,
+    -384
+   ],
+   "height": 7,
+   "roof": true,
+   "par": 20,
+   "job36": "rehearse",
+   "verb36": "the slipstream: skate behind it, catch it, punch it",
+   "spawn": {
+    "at": [
+     14,
+     0,
+     -386
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    14,
+    0,
+    -472
+   ],
+   "pacer37": {
+    "from": [
+     14,
+     0,
+     -394
+    ],
+    "to": [
+     14,
+     0,
+     -468
+    ],
+    "startLz": 6,
+    "_why": "Game/SurvivalSim.Stag37.cs's pacer: a cyan skater on the middle lane that bolts when the player crosses lz 6 (speed design.n37.stag37.pacer); the slipstream rule behind it as behind the Stag; catch it within 4 m and punch it"
+   },
+   "lessons": [
+    {
+     "promptPad": "SLIPSTREAM: CATCH IT. PUNCH IT.",
+     "kind": "reached",
+     "rect": [
+      8,
+      -470,
+      20,
+      -462
+     ],
+     "minY": -0.5,
+     "prompt": "SLIPSTREAM: CATCH IT. PUNCH IT."
+    }
+   ],
+   "lessons31": [
+    {
+     "promptPad": "SLIPSTREAM: CATCH IT. PUNCH IT.",
+     "kind": "reached",
+     "rect": [
+      8,
+      -470,
+      20,
+      -462
+     ],
+     "minY": -0.5,
+     "prompt": "SLIPSTREAM: CATCH IT. PUNCH IT."
+    }
+   ],
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       14,
+       0,
+       -386
+      ],
+      [
+       14,
+       0,
+       -429
+      ],
+      [
+       14,
+       0,
+       -472
+      ]
+     ]
+    }
+   ],
+   "frames36": {
+    "mid": [
+     14,
+     0,
+     -396,
+     0,
+     -0.012
+    ],
+    "exit": [
+     16,
+     0,
+     -454,
+     6.009,
+     -0.031
+    ]
+   }
+  },
+  {
+   "id": "s3",
+   "name": "2.10 THE GATE",
+   "kind": "link",
+   "rect": [
+    11,
+    -484,
+    17,
+    -478
+   ],
+   "height": 4.5,
+   "roof": true,
+   "par": 2,
+   "job36": "link",
+   "verb36": "walk in",
+   "spawn": {
+    "at": [
+     14,
+     0,
+     -478.5
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    14,
+    0,
+    -483.5
+   ],
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       14,
+       0,
+       -478.5
+      ],
+      [
+       14,
+       0,
+       -483.5
+      ]
+     ]
+    }
+   ],
+   "frames36": {
+    "mid": [
+     14,
+     0,
+     -478.8,
+     0,
+     -0.015
+    ],
+    "exit": [
+     14,
+     0,
+     -483,
+     -10.305,
+     -0.011
+    ]
+   }
+  },
+  {
+   "id": "s4",
+   "name": "2.11 THE CANAL",
+   "kind": "boss",
+   "rect": [
+    -8,
+    -621,
+    36,
+    -488
+   ],
+   "height": 8,
+   "roof": false,
+   "par": 60,
+   "job36": "boss",
+   "verb36": "the chase: slipstream, lanes, catch and punch, the head-on parry",
+   "spawn": {
+    "at": [
+     14,
+     0,
+     -490.093
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    14,
+    0,
+    -553.843
+   ],
+   "boss": "stag37",
+   "stag37": {
+    "centre": [
+     14,
+     0,
+     -553.843
+    ],
+    "_why": "Core/Enemies/Stag37Arena.cs builds THE CANAL here at load (design.n37.stag37.arena): the loop's centre on the ice; its entry gap at the south apex meets this room's door"
+   },
+   "frames36": {
+    "mid": [
+     14,
+     0,
+     -491,
+     -6.743,
+     -0.006
+    ],
+    "exit": [
+     1.25,
+     0,
+     -510.843,
+     0,
+     0.031
+    ]
+   }
+  }
+ ],
+ "doors": [
+  {
+   "id": "d1",
+   "between": [
+    "j1",
+    "j2"
+   ],
+   "rect": [
+    -2,
+    -34,
+    2,
+    -30
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  },
+  {
+   "id": "d2",
+   "between": [
+    "j2",
+    "j3"
+   ],
+   "rect": [
+    12,
+    -78,
+    16,
+    -74
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  },
+  {
+   "id": "d3",
+   "between": [
+    "j3",
+    "j4"
+   ],
+   "rect": [
+    12,
+    -322,
+    16,
+    -318
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  },
+  {
+   "id": "d4",
+   "between": [
+    "j4",
+    "s1"
+   ],
+   "rect": [
+    12,
+    -336,
+    16,
+    -332
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  },
+  {
+   "id": "d5",
+   "between": [
+    "s1",
+    "s2"
+   ],
+   "rect": [
+    12,
+    -384,
+    16,
+    -380
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  },
+  {
+   "id": "d6",
+   "between": [
+    "s2",
+    "s3"
+   ],
+   "rect": [
+    12,
+    -478,
+    16,
+    -474
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  },
+  {
+   "id": "d7",
+   "between": [
+    "s3",
+    "s4"
+   ],
+   "rect": [
+    12,
+    -488,
+    16,
+    -484
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  }
+ ],
+ "boxes": [
+  {
+   "zone": "j1",
+   "kind": "deck",
+   "min": [
+    -13,
+    0,
+    -30
+   ],
+   "max": [
+    -3,
+    2,
+    -24
+   ],
+   "job": "line",
+   "why": "the north deck's west half (2 m): wave 2 switches on here, in view from the door, and comes down its ramp at you",
+   "note": "the north deck's west half (2 m): wave 2 switches on here, in view from the door, and comes down its ramp at you"
+  },
+  {
+   "zone": "j1",
+   "kind": "deck",
+   "min": [
+    3,
+    0,
+    -30
+   ],
+   "max": [
+    13,
+    2,
+    -24
+   ],
+   "job": "line",
+   "why": "the north deck's east half (2 m): the exit runs between the halves at floor level",
+   "note": "the north deck's east half (2 m): the exit runs between the halves at floor level"
+  },
+  {
+   "zone": "j1",
+   "kind": "wall",
+   "min": [
+    -9.6,
+    0,
+    -22
+   ],
+   "max": [
+    -9,
+    5,
+    -8
+   ],
+   "job": "line",
+   "why": "ride panel W (5 m tall, 14 m): the line over the floor's fight: ride past the pack toward the deck (THE CANAL's walls are the same height)",
+   "note": "ride panel W (5 m tall, 14 m): the line over the floor's fight: ride past the pack toward the deck (THE CANAL's walls are the same height)",
+   "ride": true,
+   "ride36": {
+    "face": "E",
+    "planeX": -9,
+    "lz": [
+     8,
+     22
+    ]
+   }
+  },
+  {
+   "zone": "j1",
+   "kind": "wall",
+   "min": [
+    9,
+    0,
+    -22
+   ],
+   "max": [
+    9.6,
+    5,
+    -8
+   ],
+   "job": "line",
+   "why": "ride panel E, 18 m from W plane to plane (no chain: each is its own line over the floor)",
+   "note": "ride panel E, 18 m from W plane to plane (no chain: each is its own line over the floor)",
+   "ride": true,
+   "ride36": {
+    "face": "W",
+    "planeX": 9,
+    "lz": [
+     8,
+     22
+    ]
+   }
+  },
+  {
+   "zone": "j2",
+   "kind": "wall",
+   "min": [
+    5.4,
+    0,
+    -64
+   ],
+   "max": [
+    6,
+    5,
+    -44
+   ],
+   "job": "line",
+   "why": "the ISLAND's east face (5 m tall, 20 m): the ride wall beside the east lane, over the husks that meet you on it (THE CANAL's island, rehearsed)",
+   "note": "the ISLAND's east face (5 m tall, 20 m): the ride wall beside the east lane, over the husks that meet you on it (THE CANAL's island, rehearsed)",
+   "ride": true,
+   "ride36": {
+    "face": "E",
+    "planeX": 6,
+    "lz": [
+     10,
+     30
+    ]
+   }
+  },
+  {
+   "zone": "j2",
+   "kind": "wall",
+   "min": [
+    -6,
+    0,
+    -64
+   ],
+   "max": [
+    -5.4,
+    5,
+    -44
+   ],
+   "job": "line",
+   "why": "the ISLAND's west face: the ride wall beside the west lane, past the spitters' globs",
+   "note": "the ISLAND's west face: the ride wall beside the west lane, past the spitters' globs",
+   "ride": true,
+   "ride36": {
+    "face": "W",
+    "planeX": -6,
+    "lz": [
+     10,
+     30
+    ]
+   }
+  },
+  {
+   "zone": "j2",
+   "kind": "hull",
+   "min": [
+    -5.4,
+    0,
+    -64
+   ],
+   "max": [
+    5.4,
+    5,
+    -44
+   ],
+   "job": "line",
+   "why": "the ISLAND's core between its two ride faces: the loop's inside (you skate round it, never through)",
+   "note": "the ISLAND's core between its two ride faces: the loop's inside (you skate round it, never through)"
+  },
+  {
+   "zone": "j2",
+   "kind": "deck",
+   "min": [
+    -18,
+    0,
+    -74
+   ],
+   "max": [
+    -12,
+    1.5,
+    -68
+   ],
+   "job": "line",
+   "why": "the NW perch (1.5 m): the spitters' stand in wave 3, seen across the rink from the door",
+   "note": "the NW perch (1.5 m): the spitters' stand in wave 3, seen across the rink from the door"
+  },
+  {
+   "zone": "j3",
+   "kind": "hull",
+   "min": [
+    6,
+    -4,
+    -318
+   ],
+   "max": [
+    9,
+    12,
+    -134
+   ],
+   "job": "line",
+   "why": "the void's WEST side, pit floor to roof: a noride wall (dull, no cyan trim): no ride along the skate gap; the ride gates use their own panels",
+   "note": "the void's WEST side, pit floor to roof: a noride wall (dull, no cyan trim): no ride along the skate gap; the ride gates use their own panels",
+   "noride": true
+  },
+  {
+   "zone": "j3",
+   "kind": "hull",
+   "min": [
+    19,
+    -4,
+    -318
+   ],
+   "max": [
+    22,
+    12,
+    -134
+   ],
+   "job": "line",
+   "why": "the void's EAST side, pit floor to roof: a noride wall",
+   "note": "the void's EAST side, pit floor to roof: a noride wall",
+   "noride": true
+  },
+  {
+   "zone": "j3",
+   "kind": "deck",
+   "min": [
+    9,
+    -4,
+    -170
+   ],
+   "max": [
+    19,
+    0,
+    -158
+   ],
+   "job": "line",
+   "why": "D1: G1's landing (the 24 m skate gap past the lane's lip: a flow beat, not a D-6 gate: the dash jump and the PULSE blast clear it too, Design/levels/envelopes38.json (builder E, measured on the real sim)) and G2's takeoff",
+   "note": "D1: G1's landing (the 24 m skate gap past the lane's lip: a flow beat, not a D-6 gate: the dash jump and the PULSE blast clear it too, Design/levels/envelopes38.json (builder E, measured on the real sim)) and G2's takeoff",
+   "skate38": {
+    "from": [
+     14,
+     0,
+     -133.5
+    ],
+    "to": [
+     14,
+     0,
+     -161
+    ],
+    "laneFrom": [
+     14,
+     0,
+     -81
+    ],
+    "id": "j3-g1",
+    "_why": "the SKATE gap (24 m): flown by harness iceline38 gates on the real ice (not a D-6 gate since round 3: the best other try off dry ground is 57.26 m, dashjump+pulse; E's box world has no ice)"
+   }
+  },
+  {
+   "zone": "j3",
+   "kind": "deck",
+   "min": [
+    9,
+    -4,
+    -244
+   ],
+   "max": [
+    19,
+    0,
+    -234
+   ],
+   "job": "line",
+   "why": "D2: G2's landing (64 m of void: a ride wall only) and G3's takeoff",
+   "note": "D2: G2's landing (64 m of void: a ride wall only) and G3's takeoff",
+   "gate": {
+    "verb": "ride",
+    "from": [
+     10.55,
+     0,
+     -169.5
+    ],
+    "to": [
+     10.55,
+     0,
+     -238
+    ],
+    "runUp": 6,
+    "id": "j3-g2"
+   }
+  },
+  {
+   "zone": "j3",
+   "kind": "deck",
+   "min": [
+    9,
+    -4,
+    -318
+   ],
+   "max": [
+    19,
+    0,
+    -308
+   ],
+   "job": "line",
+   "why": "D3: the exit deck, G3's landing (64 m of void: the ride chain only)",
+   "note": "D3: the exit deck, G3's landing (64 m of void: the ride chain only)",
+   "gate": {
+    "verb": "ride",
+    "from": [
+     10.55,
+     0,
+     -243.5
+    ],
+    "to": [
+     10.55,
+     0,
+     -311
+    ],
+    "runUp": 6,
+    "id": "j3-g3"
+   }
+  },
+  {
+   "zone": "j3",
+   "kind": "wall",
+   "min": [
+    9.4,
+    -4,
+    -236
+   ],
+   "max": [
+    10,
+    5,
+    -168
+   ],
+   "job": "line",
+   "why": "G2's RIDE WALL (face east, 68 m): jump at it from D1, hold, ride the 64 m void, jump off onto D2",
+   "note": "G2's RIDE WALL (face east, 68 m): jump at it from D1, hold, ride the 64 m void, jump off onto D2",
+   "ride": true,
+   "ride36": {
+    "face": "E",
+    "planeX": 10,
+    "lz": [
+     90,
+     158
+    ]
+   }
+  },
+  {
+   "zone": "j3",
+   "kind": "wall",
+   "min": [
+    9.4,
+    -4,
+    -267.333
+   ],
+   "max": [
+    10,
+    5,
+    -242
+   ],
+   "job": "line",
+   "why": "G3 chain wall W1 (face east, 25.333 m): ride it off D2, jump off across 8 m to E1",
+   "note": "G3 chain wall W1 (face east, 25.333 m): ride it off D2, jump off across 8 m to E1",
+   "ride": true,
+   "ride36": {
+    "face": "E",
+    "planeX": 10,
+    "lz": [
+     164,
+     189.333
+    ]
+   }
+  },
+  {
+   "zone": "j3",
+   "kind": "wall",
+   "min": [
+    18,
+    -4,
+    -288.666
+   ],
+   "max": [
+    18.6,
+    5,
+    -263.333
+   ],
+   "job": "line",
+   "why": "G3 chain wall E1 (face west, 8 m from W1 plane to plane: in E's chain list 3-11 m)",
+   "note": "G3 chain wall E1 (face west, 8 m from W1 plane to plane: in E's chain list 3-11 m)",
+   "ride": true,
+   "ride36": {
+    "face": "W",
+    "planeX": 18,
+    "lz": [
+     185.333,
+     210.666
+    ]
+   }
+  },
+  {
+   "zone": "j3",
+   "kind": "wall",
+   "min": [
+    9.4,
+    -4,
+    -314
+   ],
+   "max": [
+    10,
+    5,
+    -284.666
+   ],
+   "job": "line",
+   "why": "G3 chain wall W2 (face east): the last link onto the exit deck",
+   "note": "G3 chain wall W2 (face east): the last link onto the exit deck",
+   "ride": true,
+   "ride36": {
+    "face": "E",
+    "planeX": 10,
+    "lz": [
+     206.666,
+     236
+    ]
+   }
+  },
+  {
+   "zone": "j3",
+   "kind": "deck",
+   "min": [
+    9,
+    -4,
+    -136
+   ],
+   "max": [
+    13,
+    -0.4,
+    -134
+   ],
+   "job": "climb",
+   "why": "the lane's way back from the void, step 3 (0.4 m under the lip): a fall costs a climb",
+   "note": "the lane's way back from the void, step 3 (0.4 m under the lip): a fall costs a climb"
+  },
+  {
+   "zone": "j3",
+   "kind": "deck",
+   "min": [
+    9,
+    -4,
+    -138
+   ],
+   "max": [
+    13,
+    -1.6,
+    -136
+   ],
+   "job": "climb",
+   "why": "the lane's way back, step 2",
+   "note": "the lane's way back, step 2"
+  },
+  {
+   "zone": "j3",
+   "kind": "deck",
+   "min": [
+    9,
+    -4,
+    -140
+   ],
+   "max": [
+    13,
+    -2.8,
+    -138
+   ],
+   "job": "climb",
+   "why": "the lane's way back, step 1 (1.2 m over the pit floor)",
+   "note": "the lane's way back, step 1 (1.2 m over the pit floor)"
+  },
+  {
+   "zone": "j3",
+   "kind": "deck",
+   "min": [
+    15,
+    -4,
+    -172
+   ],
+   "max": [
+    19,
+    -0.4,
+    -170
+   ],
+   "job": "climb",
+   "why": "D1's way back from the void, step 3 (0.4 m under the lip): a fall costs a climb",
+   "note": "D1's way back from the void, step 3 (0.4 m under the lip): a fall costs a climb"
+  },
+  {
+   "zone": "j3",
+   "kind": "deck",
+   "min": [
+    15,
+    -4,
+    -174
+   ],
+   "max": [
+    19,
+    -1.6,
+    -172
+   ],
+   "job": "climb",
+   "why": "D1's way back, step 2",
+   "note": "D1's way back, step 2"
+  },
+  {
+   "zone": "j3",
+   "kind": "deck",
+   "min": [
+    15,
+    -4,
+    -176
+   ],
+   "max": [
+    19,
+    -2.8,
+    -174
+   ],
+   "job": "climb",
+   "why": "D1's way back, step 1 (1.2 m over the pit floor)",
+   "note": "D1's way back, step 1 (1.2 m over the pit floor)"
+  },
+  {
+   "zone": "j3",
+   "kind": "deck",
+   "min": [
+    14,
+    -4,
+    -246
+   ],
+   "max": [
+    17.4,
+    -0.4,
+    -244
+   ],
+   "job": "climb",
+   "why": "D2's way back from the void, step 3 (0.4 m under the lip): a fall costs a climb",
+   "note": "D2's way back from the void, step 3 (0.4 m under the lip): a fall costs a climb"
+  },
+  {
+   "zone": "j3",
+   "kind": "deck",
+   "min": [
+    14,
+    -4,
+    -248
+   ],
+   "max": [
+    17.4,
+    -1.6,
+    -246
+   ],
+   "job": "climb",
+   "why": "D2's way back, step 2",
+   "note": "D2's way back, step 2"
+  },
+  {
+   "zone": "j3",
+   "kind": "deck",
+   "min": [
+    14,
+    -4,
+    -250
+   ],
+   "max": [
+    17.4,
+    -2.8,
+    -248
+   ],
+   "job": "climb",
+   "why": "D2's way back, step 1 (1.2 m over the pit floor)",
+   "note": "D2's way back, step 1 (1.2 m over the pit floor)"
+  },
+  {
+   "zone": "s1",
+   "kind": "wall",
+   "min": [
+    11.3,
+    0,
+    -362
+   ],
+   "max": [
+    11.7,
+    2.6,
+    -346
+   ],
+   "job": "line",
+   "why": "a lane wall (ride panel, as straight B's): a run between the west and middle lanes; its ends are the gaps you change lanes at",
+   "note": "a lane wall (ride panel, as straight B's): a run between the west and middle lanes; its ends are the gaps you change lanes at",
+   "ride": true,
+   "ride36": {
+    "face": "both",
+    "planeX": 11.5,
+    "lz": [
+     10,
+     26
+    ]
+   }
+  },
+  {
+   "zone": "s1",
+   "kind": "wall",
+   "min": [
+    16.3,
+    0,
+    -368
+   ],
+   "max": [
+    16.7,
+    2.6,
+    -352
+   ],
+   "job": "line",
+   "why": "a lane wall between the middle and east lanes, offset from the west one: the lane you need is open at a different place",
+   "note": "a lane wall between the middle and east lanes, offset from the west one: the lane you need is open at a different place",
+   "ride": true,
+   "ride36": {
+    "face": "both",
+    "planeX": 16.5,
+    "lz": [
+     16,
+     32
+    ]
+   }
+  },
+  {
+   "zone": "s1",
+   "kind": "deck",
+   "min": [
+    6.5,
+    0,
+    -380
+   ],
+   "max": [
+    21.5,
+    1.5,
+    -374
+   ],
+   "job": "line",
+   "why": "the SPITTERS' deck across the far end: their globs fly down your lane; dash sideways to change lanes (the Stag's shard kick, rehearsed)",
+   "note": "the SPITTERS' deck across the far end: their globs fly down your lane; dash sideways to change lanes (the Stag's shard kick, rehearsed)"
+  },
+  {
+   "zone": "s4",
+   "kind": "deck",
+   "min": [
+    -6.3,
+    -2,
+    -510.343
+   ],
+   "max": [
+    8.8,
+    -1,
+    -508.843
+   ],
+   "job": "climb",
+   "why": "the water's step at B's south end (levelgen's pit recovery: 1 m, then 1 m to the turn's ice); in play a fall restarts the leg before it is reached (D-6)",
+   "note": "the water's step at B's south end (levelgen's pit recovery: 1 m, then 1 m to the turn's ice); in play a fall restarts the leg before it is reached (D-6)"
+  }
+ ],
+ "ramps": [
+  {
+   "zone": "j1",
+   "from": [
+    -5.5,
+    -18
+   ],
+   "to": [
+    -5.5,
+    -24
+   ],
+   "width": 3,
+   "rise": 2,
+   "job": "climb",
+   "why": "the west half's ramp: the husks' way down to you (2 m over 6 m) and yours up",
+   "note": "the west half's ramp: the husks' way down to you (2 m over 6 m) and yours up"
+  },
+  {
+   "zone": "j1",
+   "from": [
+    5.5,
+    -18
+   ],
+   "to": [
+    5.5,
+    -24
+   ],
+   "width": 3,
+   "rise": 2,
+   "job": "climb",
+   "why": "the east half's ramp",
+   "note": "the east half's ramp"
+  },
+  {
+   "zone": "j2",
+   "from": [
+    -15,
+    -62
+   ],
+   "to": [
+    -15,
+    -68
+   ],
+   "width": 3,
+   "rise": 1.5,
+   "job": "climb",
+   "why": "the perch's ramp down to the west lane (the spitters' route and yours up)",
+   "note": "the perch's ramp down to the west lane (the spitters' route and yours up)"
+  },
+  {
+   "zone": "s1",
+   "from": [
+    8,
+    -369
+   ],
+   "to": [
+    8,
+    -374
+   ],
+   "width": 2.5,
+   "rise": 1.5,
+   "job": "climb",
+   "why": "the deck's west ramp (the spitters' way down and yours up)",
+   "note": "the deck's west ramp (the spitters' way down and yours up)"
+  },
+  {
+   "zone": "s1",
+   "from": [
+    20,
+    -369
+   ],
+   "to": [
+    20,
+    -374
+   ],
+   "width": 2.5,
+   "rise": 1.5,
+   "job": "climb",
+   "why": "the deck's east ramp",
+   "note": "the deck's east ramp"
+  }
+ ],
+ "pads": [],
+ "grapple": [],
+ "pits": [
+  {
+   "zone": "j3",
+   "rect": [
+    9,
+    -318,
+    19,
+    -134
+   ],
+   "floorY": -4,
+   "job": "hazard",
+   "why": "THE RUN's void under all three gates (a dry pit 4 m deep): the decks stand on its floor; a fall costs the climb back to the gate, never health",
+   "note": "THE RUN's void under all three gates (a dry pit 4 m deep): the decks stand on its floor; a fall costs the climb back to the gate, never health"
+  },
+  {
+   "zone": "s4",
+   "rect": [
+    -6.3,
+    -598.843,
+    8.8,
+    -508.843
+   ],
+   "floorY": -2,
+   "job": "hazard",
+   "why": "straight B's WATER under the floes (Stag37Arena's floe layer is the only ice there): a floe that drops opens it; a fall below design.n37.stag37.fallY restarts the leg (D-6)",
+   "note": "straight B's WATER under the floes (Stag37Arena's floe layer is the only ice there): a floe that drops opens it; a fall below design.n37.stag37.fallY restarts the leg (D-6)"
+  }
+ ],
+ "tunnels": [],
+ "lights": [
+  {
+   "id": "j1-L1",
+   "room": "j1",
+   "kind": "ceiling",
+   "at": [
+    0,
+    9.95,
+    -4.5
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 9,
+   "intensity": 1.1
+  },
+  {
+   "id": "j1-L2",
+   "room": "j1",
+   "kind": "ceiling",
+   "at": [
+    0,
+    9.95,
+    -16
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    4,
+    0.1
+   ],
+   "color": "amber",
+   "range": 10,
+   "intensity": 1.1
+  },
+  {
+   "id": "j1-L3",
+   "room": "j1",
+   "kind": "ceiling",
+   "at": [
+    -8,
+    9.95,
+    -27
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 9,
+   "intensity": 1
+  },
+  {
+   "id": "j1-L4",
+   "room": "j1",
+   "kind": "ceiling",
+   "at": [
+    8,
+    9.95,
+    -27
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 9,
+   "intensity": 1
+  },
+  {
+   "id": "j1-L5",
+   "room": "j1",
+   "kind": "pool",
+   "at": [
+    0,
+    0.025,
+    -4.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    1.5,
+    1.5,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 5,
+   "intensity": 1.2
+  },
+  {
+   "id": "j1-L6",
+   "room": "j1",
+   "kind": "pool",
+   "at": [
+    0,
+    0.025,
+    -28
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.5,
+    2.5,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.6
+  },
+  {
+   "id": "j2-L1",
+   "room": "j2",
+   "kind": "ceiling",
+   "at": [
+    12,
+    11.95,
+    -42
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 10,
+   "intensity": 1
+  },
+  {
+   "id": "j2-L2",
+   "room": "j2",
+   "kind": "ceiling",
+   "at": [
+    12,
+    11.95,
+    -56
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 10,
+   "intensity": 1
+  },
+  {
+   "id": "j2-L3",
+   "room": "j2",
+   "kind": "ceiling",
+   "at": [
+    12,
+    11.95,
+    -68
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 10,
+   "intensity": 1
+  },
+  {
+   "id": "j2-L4",
+   "room": "j2",
+   "kind": "ceiling",
+   "at": [
+    -12,
+    11.95,
+    -42
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 10,
+   "intensity": 0.9
+  },
+  {
+   "id": "j2-L5",
+   "room": "j2",
+   "kind": "ceiling",
+   "at": [
+    -12,
+    11.95,
+    -56
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 10,
+   "intensity": 0.9
+  },
+  {
+   "id": "j2-L6",
+   "room": "j2",
+   "kind": "ceiling",
+   "at": [
+    -15,
+    11.95,
+    -71
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.1
+   ],
+   "color": "amber",
+   "range": 9,
+   "intensity": 1
+  },
+  {
+   "id": "j2-L7",
+   "room": "j2",
+   "kind": "pool",
+   "at": [
+    14,
+    0.025,
+    -72
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.5,
+    2.5,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 8,
+   "intensity": 1.6
+  },
+  {
+   "id": "j3-L1",
+   "room": "j3",
+   "kind": "ceiling",
+   "at": [
+    14,
+    11.95,
+    -88
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    2,
+    2,
+    0.1
+   ],
+   "color": "white",
+   "range": 9,
+   "intensity": 1
+  },
+  {
+   "id": "j3-L2",
+   "room": "j3",
+   "kind": "ceiling",
+   "at": [
+    14,
+    11.95,
+    -103
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    2,
+    2,
+    0.1
+   ],
+   "color": "white",
+   "range": 9,
+   "intensity": 1
+  },
+  {
+   "id": "j3-L3",
+   "room": "j3",
+   "kind": "ceiling",
+   "at": [
+    14,
+    11.95,
+    -118
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    2,
+    2,
+    0.1
+   ],
+   "color": "white",
+   "range": 9,
+   "intensity": 1
+  },
+  {
+   "id": "j3-L4",
+   "room": "j3",
+   "kind": "ceiling",
+   "at": [
+    14,
+    11.95,
+    -130
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    2,
+    2,
+    0.1
+   ],
+   "color": "white",
+   "range": 9,
+   "intensity": 1
+  },
+  {
+   "id": "j3-L5",
+   "room": "j3",
+   "kind": "ceiling",
+   "at": [
+    14,
+    11.95,
+    -164
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 10,
+   "intensity": 1
+  },
+  {
+   "id": "j3-L6",
+   "room": "j3",
+   "kind": "ceiling",
+   "at": [
+    14,
+    11.95,
+    -239
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 10,
+   "intensity": 1
+  },
+  {
+   "id": "j3-L7",
+   "room": "j3",
+   "kind": "pool",
+   "at": [
+    14,
+    0.025,
+    -164
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.5,
+    2.5,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 8,
+   "intensity": 1.3
+  },
+  {
+   "id": "j3-L8",
+   "room": "j3",
+   "kind": "pool",
+   "at": [
+    14,
+    0.025,
+    -239
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.5,
+    2.5,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 8,
+   "intensity": 1.3
+  },
+  {
+   "id": "j3-L9",
+   "room": "j3",
+   "kind": "pool",
+   "at": [
+    14,
+    0.025,
+    -316
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.5,
+    2.5,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 9,
+   "intensity": 1.8
+  },
+  {
+   "id": "j4-L1",
+   "room": "j4",
+   "kind": "ceiling",
+   "at": [
+    14,
+    4.95,
+    -327
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 8,
+   "intensity": 1
+  },
+  {
+   "id": "j4-L2",
+   "room": "j4",
+   "kind": "pool",
+   "at": [
+    14,
+    0.025,
+    -330.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2,
+    2,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 6,
+   "intensity": 1.4
+  },
+  {
+   "id": "s1-L1",
+   "room": "s1",
+   "kind": "ceiling",
+   "at": [
+    9,
+    6.95,
+    -356
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    1,
+    30,
+    0.1
+   ],
+   "color": "cyan",
+   "range": 8,
+   "intensity": 0.8
+  },
+  {
+   "id": "s1-L2",
+   "room": "s1",
+   "kind": "ceiling",
+   "at": [
+    19,
+    6.95,
+    -356
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    1,
+    30,
+    0.1
+   ],
+   "color": "cyan",
+   "range": 8,
+   "intensity": 0.8
+  },
+  {
+   "id": "s1-L3",
+   "room": "s1",
+   "kind": "ceiling",
+   "at": [
+    14,
+    6.95,
+    -377
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    6,
+    2,
+    0.1
+   ],
+   "color": "amber",
+   "range": 8,
+   "intensity": 1
+  },
+  {
+   "id": "s1-L4",
+   "room": "s1",
+   "kind": "pool",
+   "at": [
+    14,
+    1.525,
+    -378.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2,
+    2,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 6,
+   "intensity": 1.4
+  },
+  {
+   "id": "s2-L1",
+   "room": "s2",
+   "kind": "ceiling",
+   "at": [
+    14,
+    6.95,
+    -404
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    2,
+    2,
+    0.1
+   ],
+   "color": "white",
+   "range": 9,
+   "intensity": 1
+  },
+  {
+   "id": "s2-L2",
+   "room": "s2",
+   "kind": "ceiling",
+   "at": [
+    14,
+    6.95,
+    -429
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    2,
+    2,
+    0.1
+   ],
+   "color": "white",
+   "range": 9,
+   "intensity": 1
+  },
+  {
+   "id": "s2-L3",
+   "room": "s2",
+   "kind": "ceiling",
+   "at": [
+    14,
+    6.95,
+    -454
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    2,
+    2,
+    0.1
+   ],
+   "color": "white",
+   "range": 9,
+   "intensity": 1
+  },
+  {
+   "id": "s2-L4",
+   "room": "s2",
+   "kind": "wall",
+   "at": [
+    6.55,
+    1.2,
+    -429
+   ],
+   "normal": [
+    1,
+    0,
+    0
+   ],
+   "size": [
+    80,
+    0.2,
+    0.1
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.1
+  },
+  {
+   "id": "s2-L5",
+   "room": "s2",
+   "kind": "wall",
+   "at": [
+    21.45,
+    1.2,
+    -429
+   ],
+   "normal": [
+    -1,
+    0,
+    0
+   ],
+   "size": [
+    80,
+    0.2,
+    0.1
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.1
+  },
+  {
+   "id": "s2-L6",
+   "room": "s2",
+   "kind": "pool",
+   "at": [
+    14,
+    0.025,
+    -471.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.5,
+    2.5,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.6
+  },
+  {
+   "id": "s3-L1",
+   "room": "s3",
+   "kind": "pool",
+   "at": [
+    14,
+    0.025,
+    -482.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    1.5,
+    1.5,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 4,
+   "intensity": 0.8
+  },
+  {
+   "id": "s3-L2",
+   "room": "s3",
+   "kind": "ceiling",
+   "at": [
+    14,
+    4.45,
+    -480
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    2,
+    2,
+    0.1
+   ],
+   "color": "white",
+   "range": 5,
+   "intensity": 0.5
+  }
+ ],
+ "props": [
+  {
+   "id": "j1-P1",
+   "room": "j1",
+   "kind": "healthPickup",
+   "at": [
+    -8,
+    2.9,
+    -27
+   ],
+   "size": [
+    0.6,
+    0.6,
+    0.6
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "pickup": true,
+   "job": "reward",
+   "why": "the high ground pays health after the tank wave"
+  },
+  {
+   "id": "j2-P1",
+   "room": "j2",
+   "kind": "healthPickup",
+   "at": [
+    0,
+    0.9,
+    -67
+   ],
+   "size": [
+    0.6,
+    0.6,
+    0.6
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "pickup": true,
+   "job": "reward",
+   "why": "the north end between the waves: a lap pays health"
+  },
+  {
+   "id": "j4-P1",
+   "room": "j4",
+   "kind": "healthPickup",
+   "at": [
+    14,
+    0.9,
+    -327
+   ],
+   "size": [
+    0.6,
+    0.6,
+    0.6
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "pickup": true,
+   "job": "reward",
+   "why": "the rest before THE STAG's rehearsals: full health"
+  }
+ ],
+ "surfaces": [
+  {
+   "kind": "ice",
+   "rect": [
+    -18,
+    -74,
+    18,
+    -34
+   ],
+   "minY": -0.5,
+   "maxY": 0.5,
+   "room": "j2",
+   "note": "THE RINK's ice, wall to wall: every metre glides (design.n30.glide): the loop is a skate"
+  },
+  {
+   "kind": "ice",
+   "rect": [
+    6,
+    -134,
+    22,
+    -80
+   ],
+   "minY": -0.5,
+   "maxY": 0.5,
+   "room": "j3",
+   "note": "the RUN-UP: a 56 m ice lane from the door to the first lip: pump dashes to the skating speed (the canal's pumped lap average 21.2 m/s, harness stag37 speeds)",
+   "lane": {
+    "axis": "z",
+    "line": 14,
+    "halfWidth": 5,
+    "dir": [
+     0,
+     -1
+    ]
+   }
+  },
+  {
+   "kind": "ice",
+   "rect": [
+    6.5,
+    -374,
+    11.5,
+    -336
+   ],
+   "minY": -0.5,
+   "maxY": 0.5,
+   "room": "s1",
+   "note": "the west lane (5 m, as THE CANAL's)",
+   "lane": {
+    "axis": "z",
+    "line": 9,
+    "halfWidth": 2.5,
+    "dir": [
+     0,
+     -1
+    ]
+   }
+  },
+  {
+   "kind": "ice",
+   "rect": [
+    11.5,
+    -374,
+    16.5,
+    -336
+   ],
+   "minY": -0.5,
+   "maxY": 0.5,
+   "room": "s1",
+   "note": "the middle lane (5 m, as THE CANAL's)",
+   "lane": {
+    "axis": "z",
+    "line": 14,
+    "halfWidth": 2.5,
+    "dir": [
+     0,
+     -1
+    ]
+   }
+  },
+  {
+   "kind": "ice",
+   "rect": [
+    16.5,
+    -374,
+    21.5,
+    -336
+   ],
+   "minY": -0.5,
+   "maxY": 0.5,
+   "room": "s1",
+   "note": "the east lane (5 m, as THE CANAL's)",
+   "lane": {
+    "axis": "z",
+    "line": 19,
+    "halfWidth": 2.5,
+    "dir": [
+     0,
+     -1
+    ]
+   }
+  },
+  {
+   "kind": "ice",
+   "rect": [
+    6.5,
+    -474,
+    11.5,
+    -384
+   ],
+   "minY": -0.5,
+   "maxY": 0.5,
+   "room": "s2",
+   "note": "the west lane of the run (5 m)",
+   "lane": {
+    "axis": "z",
+    "line": 9,
+    "halfWidth": 2.5,
+    "dir": [
+     0,
+     -1
+    ]
+   }
+  },
+  {
+   "kind": "ice",
+   "rect": [
+    11.5,
+    -474,
+    16.5,
+    -384
+   ],
+   "minY": -0.5,
+   "maxY": 0.5,
+   "room": "s2",
+   "note": "the middle lane of the run (5 m)",
+   "lane": {
+    "axis": "z",
+    "line": 14,
+    "halfWidth": 2.5,
+    "dir": [
+     0,
+     -1
+    ]
+   }
+  },
+  {
+   "kind": "ice",
+   "rect": [
+    16.5,
+    -474,
+    21.5,
+    -384
+   ],
+   "minY": -0.5,
+   "maxY": 0.5,
+   "room": "s2",
+   "note": "the east lane of the run (5 m)",
+   "lane": {
+    "axis": "z",
+    "line": 19,
+    "halfWidth": 2.5,
+    "dir": [
+     0,
+     -1
+    ]
+   }
+  },
+  {
+   "kind": "ice",
+   "rect": [
+    -8,
+    -621,
+    36,
+    -488
+   ],
+   "minY": -0.5,
+   "maxY": 0.5,
+   "room": "s4",
+   "note": "THE CANAL's ice (the sim's Stag37 surface says the same): every metre of the loop glides (design.n30.glide)"
+  }
+ ],
+ "owns38": [
+  "jump",
+  "double",
+  "dash",
+  "slide",
+  "ride",
+  "walljump"
+ ],
+ "owns38_why": "Builder E's gate checker (Design/levels/n38/GATES38.md): level 2 owns the movement verbs, the KESTREL and the PULSE gauntlet; the THUNDERCLAP boost is level 3's, the grapple level 4's (design.n35.grapple35.fromLevel)."
+}

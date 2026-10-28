@@ -1,0 +1,23 @@
+{
+  "_why": "NIGHT35 builder M: design.n35.wallride35's distances for room spacing, measured by `dotnet run --project Tools/SimHarness -c Release -- n35move ride --write` on the real Mover (box worlds, 120 Hz, NIGHT34's flow34 on). Not a level file. Numbers are the row's at the time of writing; re-run after a tuning change.",
+  "rideSpeed": 10.45,
+  "rideSpeed_why": "m/s along the wall on a hold ride entered at walk speed (wallRide.minSpeed 8 x 1.3): metres ridden per second held.",
+  "ride30": { "metres": 29.21, "seconds": 2.82, "heightLost": 0.28, "end": "away", "before": { "metres": 9.95, "seconds": 1.20, "end": "timeout" } },
+  "safetyCapSeconds": 8.00,
+  "sinkPerSecond": 0.10,
+  "jumpOff": {
+    "pitch-45": { "up": 3.93, "speed": 15.12, "outAtTakeoffHeight": 3.00, "outAt2mBelow": 5.15, "peakGain": 0.33, "airSecondsToTakeoffHeight": 0.33 },
+    "pitch0": { "up": 6.43, "speed": 15.12, "outAtTakeoffHeight": 4.84, "outAt2mBelow": 6.61, "peakGain": 0.89, "airSecondsToTakeoffHeight": 0.53 },
+    "pitch45": { "up": 8.93, "speed": 15.12, "outAtTakeoffHeight": 6.68, "outAt2mBelow": 8.14, "peakGain": 1.72, "airSecondsToTakeoffHeight": 0.73 }
+  },
+  "jumpOff_why": "Metres out from the wall's plane (the capsule's travel) after a release at look pitch -45 / 0 / +45 degrees; speed = horizontal m/s after the exit boost. Along the wall the jump keeps the ride's speed (about speed x airSeconds).",
+  "facingGapsThatWork": [3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+  "facingGapDrops": [-0.96, -1.61, -2.01, -2.19, -2.22, -2.11, -1.80, -1.14, -0.12, 1.28],
+  "facingGaps_why": "Plane-to-plane gaps (m) between two facing walls where a pitch-0 release, jump held again 0.25 s later, starts a hold ride on the second wall (stick toward it); facingGapDrops = metres the second ride starts BELOW the release height (negative: above it; the re-press in the air is the double jump, which lifts it).",
+  "chainSpeeds": [9.02, 15.15, 19.13, 20.74],
+  "chainSpeedsBefore": [8.33, 11.55, 14.05, 16.17],
+  "chain_why": "Three 10 m walls facing alternate ways, planes 6 m apart, 3 m gaps along: m/s at each ride's start and 0.1 s after the third jump-off (before: the web's press wall jump).",
+  "corners": { "outsideTurnDeg": 383.33, "insideTurnDeg": 365.96, "pillarR2TurnDeg": 369.76 },
+  "reRideDistance": 3.00,
+  "reRide_why": "A wall facing within 30 deg of the last ridden one gives no ride until a landing or until the player is this many metres from where that ride ended: alternate the walls' facing in a chain."
+}

@@ -1,0 +1,16 @@
+# NIGHT69 Y2 planted launch runs for Tools/night/n69-m3-cases.sh (written by hand in the probe's format; each block: header, verdict, exit)
+n65verb launch: level planted (none), room P1 "a GREEN throw into no pit", seed 1; pose (0.0, 0.0, 0.0) yaw 0.0 from line65[0]; off switch none
+n65verb launch: GREEN | room P1 | launch36 1, flight end body thrown 3.7 m (max 3.6 m), bursts 1 (hits 4, kills 4) | launched body husk #2 (the target: yes), landed (0.9, 1.5, -272.9), in a pit no, in lava no, target dead (launch36) | pose line65[0]
+n65verb: exit 0
+n65verb launch: level planted (none), room P2 "a RED line with a launch and a pit YES", seed 1; pose (0.0, 0.0, 0.0) yaw 0.0 from line65[0]; off switch none
+n65verb launch: RED | room P2 | launch36 1, flight end body thrown 0.4 m (max 0.6 m), bursts 0 (hits 0, kills 0) | launched body husk #3 (the target: yes), landed (4.2, -1.5, -207.2), in a pit YES, in lava no, target alive | pose line65[0] | the punch launched nothing far
+n65verb: exit 1
+n65verb launch: level planted (none), room P3 "a GREEN throw into the lava", seed 1; pose (0.0, 0.0, 0.0) yaw 0.0 from line65[0]; off switch none
+n65verb launch: GREEN | room P3 | launch36 2, flight end body thrown 6.1 m (max 6.0 m), bursts 0 (hits 0, kills 0) | launched body husk #4 (the target: yes), landed (9.0, -0.6, -240.0), in a pit no, in lava YES, target gone | pose line65[0]
+n65verb: exit 0
+n65verb launch: level planted (none), room P4 "the fixed probe's nothing launched", seed 1; pose (0.0, 0.0, 0.0) yaw 0.0 from line65[0]; off switch none
+n65verb launch: RED | room P4 | launch36 0, flight end  thrown 0.0 m (max 5.2 m), bursts 0 (hits 0, kills 0) | launched body none, landed (4.2, -1.5, -207.2) (the target: nothing launched), in a pit n/a (nothing launched), in lava n/a (nothing launched), target alive | pose line65[0] | the punch launched nothing far
+n65verb: exit 1
+n65verb launch: level planted (none), room P5 "a GREEN line printing launch36 0 (impossible from the probe: GREEN needs launchEv >= 1)", seed 1; pose (0.0, 0.0, 0.0) yaw 0.0 from line65[0]; off switch none
+n65verb launch: GREEN | room P5 | launch36 0, flight end body thrown 3.7 m (max 3.6 m), bursts 1 (hits 1, kills 1) | landed (4.2, -1.5, -207.2), in a pit YES, in lava no, target dead (launch36) | pose line65[0]
+n65verb: exit 0

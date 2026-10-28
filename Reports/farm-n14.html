@@ -1,0 +1,775 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SKYGRIND farm n14</title><style>body{margin:0;background:#100a2c;color:#ece8f6;font:14px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
+main{max-width:780px;margin:0 auto;padding:24px 16px 48px}h1{font-size:24px;margin:0 0 8px}h2{font-size:17px;margin:28px 0 8px;color:#19d3e6}
+.card{background:#1a1438;border:1px solid #c9bcff33;border-radius:8px;padding:12px 14px;margin:10px 0}
+table{border-collapse:collapse;width:100%;font-size:13px}th,td{border-bottom:1px solid #c9bcff26;padding:4px 6px;text-align:right}
+th:first-child,td:first-child{text-align:left}th{color:#a69fc0;font-weight:600}.dim{color:#a69fc0}ul{padding-left:20px}
+.scroll{overflow-x:auto}</style></head>
+<body><main>
+<h1>THE FARM: 300 AUTOPILOT runs</h1>
+<p class="dim">JSONL: 300 lines in farm-easy-1.jsonl, farm-normal-1.jsonl, farm-hard-1.jsonl, farm-hard-51.jsonl; runs in this report: 300. Brain: botBrain ×300. Build: SKYGRIND 0.1.0 (4e718c6-dirty) ×300. 2026-10-05 16:01 UTC.</p>
+<div class="card"><h2 style="margin-top:0">Observations for GG</h2><p class="dim">Observations only: GG owns enemy design and the numbers. Nothing here is a change.</p><ul><li>easy: 100 runs reached a median round 6.0 (mean 6.70, max 14); the most common last round is 6 (42 runs, 42%). The most common cause of DOWN is HUSK (49 of 91 downs).</li><li>normal: 100 runs reached a median round 6.0 (mean 9.52, max 26); the most common last round is 6 (44 runs, 44%). The most common cause of DOWN is HUSK (32 of 87 downs).</li><li>hard: 100 runs reached a median round 14.0 (mean 12.66, max 26); the most common last round is 6 (42 runs, 42%). The most common cause of DOWN is ACID (31 of 81 downs).</li><li>41 of 300 runs hit the sim-time cap alive (a stall, not a win): round 6 ×37, round 7 ×2, round 10 ×1, round 26 ×1.</li><li>Kills by gun: shotgun 43%, nailgun 29%, revolver 26%, shockwave 2% of 74510 kills.</li><li>55 of 300 runs bought no gun and no perk.</li><li>The first perk came in round 6.3 on average (189 runs bought one).</li><li>Points left unspent at the end: mean 24818 of a mean 32492 earned.</li><li>38 of the 41 timeouts ended in a HOLD round with the ring not held (objectives.js: the round can't clear until it is).</li><li>173 of 259 downs came in a HOLD round.</li></ul></div>
+<h2>Per difficulty</h2><div class="scroll"><table><tr><th>difficulty</th><th>runs</th><th>mean round</th><th>median</th><th>max</th><th>mean sim time (s)</th><th>timeouts</th><th>exfil</th><th>mean kills</th><th>accuracy</th></tr><tr><td>easy</td><td>100</td><td>6.70</td><td>6.0</td><td>14</td><td>616.5</td><td>9</td><td>0</td><td>124.6</td><td>20%</td></tr><tr><td>normal</td><td>100</td><td>9.52</td><td>6.0</td><td>26</td><td>747.5</td><td>13</td><td>0</td><td>231.5</td><td>35%</td></tr><tr><td>hard</td><td>100</td><td>12.66</td><td>14.0</td><td>26</td><td>1005.7</td><td>19</td><td>0</td><td>389.0</td><td>47%</td></tr></table></div>
+<h2>Round reached per difficulty</h2><div class="card"><svg viewBox="0 0 720 260" width="100%" role="img" aria-label="Round reached per difficulty" xmlns="http://www.w3.org/2000/svg">
+<line x1="48" y1="220" x2="708" y2="220" stroke="#c9bcff" stroke-opacity="0.6"/>
+<line x1="48" y1="30" x2="48" y2="220" stroke="#c9bcff" stroke-opacity="0.6"/>
+<text x="42" y="224" text-anchor="end" fill="#a69fc0" font-size="12">0</text>
+<text x="42" y="176.5" text-anchor="end" fill="#a69fc0" font-size="12">11</text>
+<line x1="48" y1="172.5" x2="708" y2="172.5" stroke="#c9bcff" stroke-opacity="0.12"/>
+<text x="42" y="129" text-anchor="end" fill="#a69fc0" font-size="12">22</text>
+<line x1="48" y1="125" x2="708" y2="125" stroke="#c9bcff" stroke-opacity="0.12"/>
+<text x="42" y="81.5" text-anchor="end" fill="#a69fc0" font-size="12">33</text>
+<line x1="48" y1="77.5" x2="708" y2="77.5" stroke="#c9bcff" stroke-opacity="0.12"/>
+<text x="42" y="34" text-anchor="end" fill="#a69fc0" font-size="12">44</text>
+<line x1="48" y1="30" x2="708" y2="30" stroke="#c9bcff" stroke-opacity="0.12"/>
+<rect x="50.5" y="202.7" width="5.8" height="17.3" fill="#8ff0fa"><title>easy 1: 4</title></rect>
+<rect x="57.3" y="220.0" width="5.8" height="0.0" fill="#19d3e6"><title>normal 1: 0</title></rect>
+<rect x="64.1" y="220.0" width="5.8" height="0.0" fill="#0e8a99"><title>hard 1: 0</title></rect>
+<text x="60.69230769230769" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">1</text>
+<rect x="75.9" y="172.5" width="5.8" height="47.5" fill="#8ff0fa"><title>easy 2: 11</title></rect>
+<rect x="82.7" y="215.7" width="5.8" height="4.3" fill="#19d3e6"><title>normal 2: 1</title></rect>
+<rect x="89.5" y="220.0" width="5.8" height="0.0" fill="#0e8a99"><title>hard 2: 0</title></rect>
+<text x="86.07692307692308" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">2</text>
+<rect x="101.3" y="207.0" width="5.8" height="13.0" fill="#8ff0fa"><title>easy 3: 3</title></rect>
+<rect x="108.1" y="207.0" width="5.8" height="13.0" fill="#19d3e6"><title>normal 3: 3</title></rect>
+<rect x="114.8" y="220.0" width="5.8" height="0.0" fill="#0e8a99"><title>hard 3: 0</title></rect>
+<text x="111.46153846153847" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">3</text>
+<rect x="126.7" y="194.1" width="5.8" height="25.9" fill="#8ff0fa"><title>easy 4: 6</title></rect>
+<rect x="133.5" y="198.4" width="5.8" height="21.6" fill="#19d3e6"><title>normal 4: 5</title></rect>
+<rect x="140.2" y="220.0" width="5.8" height="0.0" fill="#0e8a99"><title>hard 4: 0</title></rect>
+<text x="136.84615384615384" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">4</text>
+<rect x="152.1" y="215.7" width="5.8" height="4.3" fill="#8ff0fa"><title>easy 5: 1</title></rect>
+<rect x="158.8" y="215.7" width="5.8" height="4.3" fill="#19d3e6"><title>normal 5: 1</title></rect>
+<rect x="165.6" y="220.0" width="5.8" height="0.0" fill="#0e8a99"><title>hard 5: 0</title></rect>
+<text x="162.23076923076923" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">5</text>
+<rect x="177.5" y="38.6" width="5.8" height="181.4" fill="#8ff0fa"><title>easy 6: 42</title></rect>
+<rect x="184.2" y="30.0" width="5.8" height="190.0" fill="#19d3e6"><title>normal 6: 44</title></rect>
+<rect x="191.0" y="38.6" width="5.8" height="181.4" fill="#0e8a99"><title>hard 6: 42</title></rect>
+<text x="187.61538461538458" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">6</text>
+<rect x="202.8" y="189.8" width="5.8" height="30.2" fill="#8ff0fa"><title>easy 7: 7</title></rect>
+<rect x="209.6" y="207.0" width="5.8" height="13.0" fill="#19d3e6"><title>normal 7: 3</title></rect>
+<rect x="216.4" y="215.7" width="5.8" height="4.3" fill="#0e8a99"><title>hard 7: 1</title></rect>
+<text x="212.99999999999997" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">7</text>
+<rect x="228.2" y="220.0" width="5.8" height="0.0" fill="#8ff0fa"><title>easy 8: 0</title></rect>
+<rect x="235.0" y="220.0" width="5.8" height="0.0" fill="#19d3e6"><title>normal 8: 0</title></rect>
+<rect x="241.8" y="220.0" width="5.8" height="0.0" fill="#0e8a99"><title>hard 8: 0</title></rect>
+<text x="238.38461538461536" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">8</text>
+<rect x="253.6" y="202.7" width="5.8" height="17.3" fill="#8ff0fa"><title>easy 9: 4</title></rect>
+<rect x="260.4" y="215.7" width="5.8" height="4.3" fill="#19d3e6"><title>normal 9: 1</title></rect>
+<rect x="267.2" y="215.7" width="5.8" height="4.3" fill="#0e8a99"><title>hard 9: 1</title></rect>
+<text x="263.7692307692308" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">9</text>
+<rect x="279.0" y="207.0" width="5.8" height="13.0" fill="#8ff0fa"><title>easy 10: 3</title></rect>
+<rect x="285.8" y="202.7" width="5.8" height="17.3" fill="#19d3e6"><title>normal 10: 4</title></rect>
+<rect x="292.5" y="220.0" width="5.8" height="0.0" fill="#0e8a99"><title>hard 10: 0</title></rect>
+<text x="289.15384615384613" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">10</text>
+<rect x="304.4" y="189.8" width="5.8" height="30.2" fill="#8ff0fa"><title>easy 11: 7</title></rect>
+<rect x="311.2" y="211.4" width="5.8" height="8.6" fill="#19d3e6"><title>normal 11: 2</title></rect>
+<rect x="317.9" y="207.0" width="5.8" height="13.0" fill="#0e8a99"><title>hard 11: 3</title></rect>
+<text x="314.5384615384615" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">11</text>
+<rect x="329.8" y="207.0" width="5.8" height="13.0" fill="#8ff0fa"><title>easy 12: 3</title></rect>
+<rect x="336.5" y="207.0" width="5.8" height="13.0" fill="#19d3e6"><title>normal 12: 3</title></rect>
+<rect x="343.3" y="220.0" width="5.8" height="0.0" fill="#0e8a99"><title>hard 12: 0</title></rect>
+<text x="339.9230769230769" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">12</text>
+<rect x="355.2" y="220.0" width="5.8" height="0.0" fill="#8ff0fa"><title>easy 13: 0</title></rect>
+<rect x="361.9" y="220.0" width="5.8" height="0.0" fill="#19d3e6"><title>normal 13: 0</title></rect>
+<rect x="368.7" y="220.0" width="5.8" height="0.0" fill="#0e8a99"><title>hard 13: 0</title></rect>
+<text x="365.30769230769226" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">13</text>
+<rect x="380.5" y="181.1" width="5.8" height="38.9" fill="#8ff0fa"><title>easy 14: 9</title></rect>
+<rect x="387.3" y="125.0" width="5.8" height="95.0" fill="#19d3e6"><title>normal 14: 22</title></rect>
+<rect x="394.1" y="112.0" width="5.8" height="108.0" fill="#0e8a99"><title>hard 14: 25</title></rect>
+<text x="390.6923076923077" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">14</text>
+<rect x="405.9" y="220.0" width="5.8" height="0.0" fill="#8ff0fa"><title>easy 15: 0</title></rect>
+<rect x="412.7" y="215.7" width="5.8" height="4.3" fill="#19d3e6"><title>normal 15: 1</title></rect>
+<rect x="419.5" y="220.0" width="5.8" height="0.0" fill="#0e8a99"><title>hard 15: 0</title></rect>
+<text x="416.07692307692304" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">15</text>
+<rect x="431.3" y="220.0" width="5.8" height="0.0" fill="#8ff0fa"><title>easy 16: 0</title></rect>
+<rect x="438.1" y="215.7" width="5.8" height="4.3" fill="#19d3e6"><title>normal 16: 1</title></rect>
+<rect x="444.8" y="215.7" width="5.8" height="4.3" fill="#0e8a99"><title>hard 16: 1</title></rect>
+<text x="441.46153846153845" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">16</text>
+<rect x="456.7" y="220.0" width="5.8" height="0.0" fill="#8ff0fa"><title>easy 17: 0</title></rect>
+<rect x="463.5" y="211.4" width="5.8" height="8.6" fill="#19d3e6"><title>normal 17: 2</title></rect>
+<rect x="470.2" y="220.0" width="5.8" height="0.0" fill="#0e8a99"><title>hard 17: 0</title></rect>
+<text x="466.8461538461538" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">17</text>
+<rect x="482.1" y="220.0" width="5.8" height="0.0" fill="#8ff0fa"><title>easy 18: 0</title></rect>
+<rect x="488.8" y="220.0" width="5.8" height="0.0" fill="#19d3e6"><title>normal 18: 0</title></rect>
+<rect x="495.6" y="220.0" width="5.8" height="0.0" fill="#0e8a99"><title>hard 18: 0</title></rect>
+<text x="492.23076923076917" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">18</text>
+<rect x="507.5" y="220.0" width="5.8" height="0.0" fill="#8ff0fa"><title>easy 19: 0</title></rect>
+<rect x="514.2" y="211.4" width="5.8" height="8.6" fill="#19d3e6"><title>normal 19: 2</title></rect>
+<rect x="521.0" y="215.7" width="5.8" height="4.3" fill="#0e8a99"><title>hard 19: 1</title></rect>
+<text x="517.6153846153846" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">19</text>
+<rect x="532.8" y="220.0" width="5.8" height="0.0" fill="#8ff0fa"><title>easy 20: 0</title></rect>
+<rect x="539.6" y="220.0" width="5.8" height="0.0" fill="#19d3e6"><title>normal 20: 0</title></rect>
+<rect x="546.4" y="215.7" width="5.8" height="4.3" fill="#0e8a99"><title>hard 20: 1</title></rect>
+<text x="543" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">20</text>
+<rect x="558.2" y="220.0" width="5.8" height="0.0" fill="#8ff0fa"><title>easy 21: 0</title></rect>
+<rect x="565.0" y="215.7" width="5.8" height="4.3" fill="#19d3e6"><title>normal 21: 1</title></rect>
+<rect x="571.8" y="211.4" width="5.8" height="8.6" fill="#0e8a99"><title>hard 21: 2</title></rect>
+<text x="568.3846153846154" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">21</text>
+<rect x="583.6" y="220.0" width="5.8" height="0.0" fill="#8ff0fa"><title>easy 22: 0</title></rect>
+<rect x="590.4" y="207.0" width="5.8" height="13.0" fill="#19d3e6"><title>normal 22: 3</title></rect>
+<rect x="597.2" y="133.6" width="5.8" height="86.4" fill="#0e8a99"><title>hard 22: 20</title></rect>
+<text x="593.7692307692308" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">22</text>
+<rect x="609.0" y="220.0" width="5.8" height="0.0" fill="#8ff0fa"><title>easy 23: 0</title></rect>
+<rect x="615.8" y="220.0" width="5.8" height="0.0" fill="#19d3e6"><title>normal 23: 0</title></rect>
+<rect x="622.5" y="220.0" width="5.8" height="0.0" fill="#0e8a99"><title>hard 23: 0</title></rect>
+<text x="619.1538461538462" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">23</text>
+<rect x="634.4" y="220.0" width="5.8" height="0.0" fill="#8ff0fa"><title>easy 24: 0</title></rect>
+<rect x="641.2" y="220.0" width="5.8" height="0.0" fill="#19d3e6"><title>normal 24: 0</title></rect>
+<rect x="647.9" y="220.0" width="5.8" height="0.0" fill="#0e8a99"><title>hard 24: 0</title></rect>
+<text x="644.5384615384615" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">24</text>
+<rect x="659.8" y="220.0" width="5.8" height="0.0" fill="#8ff0fa"><title>easy 25: 0</title></rect>
+<rect x="666.5" y="220.0" width="5.8" height="0.0" fill="#19d3e6"><title>normal 25: 0</title></rect>
+<rect x="673.3" y="220.0" width="5.8" height="0.0" fill="#0e8a99"><title>hard 25: 0</title></rect>
+<text x="669.9230769230769" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">25</text>
+<rect x="685.2" y="220.0" width="5.8" height="0.0" fill="#8ff0fa"><title>easy 26: 0</title></rect>
+<rect x="691.9" y="215.7" width="5.8" height="4.3" fill="#19d3e6"><title>normal 26: 1</title></rect>
+<rect x="698.7" y="207.0" width="5.8" height="13.0" fill="#0e8a99"><title>hard 26: 3</title></rect>
+<text x="695.3076923076923" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">26</text>
+<text x="378" y="254" text-anchor="middle" fill="#a69fc0" font-size="12">round reached (runs)</text>
+<rect x="48" y="8" width="12" height="12" fill="#8ff0fa"/>
+<text x="70" y="18" fill="#ece8f6" font-size="12">easy</text>
+<rect x="108" y="8" width="12" height="12" fill="#19d3e6"/>
+<text x="130" y="18" fill="#ece8f6" font-size="12">normal</text>
+<rect x="183" y="8" width="12" height="12" fill="#0e8a99"/>
+<text x="205" y="18" fill="#ece8f6" font-size="12">hard</text>
+</svg></div>
+<h2>Survival curve</h2><div class="card"><svg viewBox="0 0 720 260" width="100%" role="img" aria-label="Survival curve" xmlns="http://www.w3.org/2000/svg">
+<line x1="48" y1="220" x2="708" y2="220" stroke="#c9bcff" stroke-opacity="0.6"/>
+<line x1="48" y1="30" x2="48" y2="220" stroke="#c9bcff" stroke-opacity="0.6"/>
+<text x="42" y="224" text-anchor="end" fill="#a69fc0" font-size="12">0%</text>
+<text x="42" y="176.5" text-anchor="end" fill="#a69fc0" font-size="12">25%</text>
+<line x1="48" y1="172.5" x2="708" y2="172.5" stroke="#c9bcff" stroke-opacity="0.12"/>
+<text x="42" y="129" text-anchor="end" fill="#a69fc0" font-size="12">50%</text>
+<line x1="48" y1="125" x2="708" y2="125" stroke="#c9bcff" stroke-opacity="0.12"/>
+<text x="42" y="81.5" text-anchor="end" fill="#a69fc0" font-size="12">75%</text>
+<line x1="48" y1="77.5" x2="708" y2="77.5" stroke="#c9bcff" stroke-opacity="0.12"/>
+<text x="42" y="34" text-anchor="end" fill="#a69fc0" font-size="12">100%</text>
+<line x1="48" y1="30" x2="708" y2="30" stroke="#c9bcff" stroke-opacity="0.12"/>
+<text x="48" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">1</text>
+<text x="74.4" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">2</text>
+<text x="100.8" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">3</text>
+<text x="127.2" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">4</text>
+<text x="153.6" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">5</text>
+<text x="180" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">6</text>
+<text x="206.4" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">7</text>
+<text x="232.8" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">8</text>
+<text x="259.2" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">9</text>
+<text x="285.6" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">10</text>
+<text x="312" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">11</text>
+<text x="338.4" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">12</text>
+<text x="364.8" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">13</text>
+<text x="391.2" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">14</text>
+<text x="417.6" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">15</text>
+<text x="444" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">16</text>
+<text x="470.4" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">17</text>
+<text x="496.8" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">18</text>
+<text x="523.2" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">19</text>
+<text x="549.6" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">20</text>
+<text x="576" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">21</text>
+<text x="602.4" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">22</text>
+<text x="628.8" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">23</text>
+<text x="655.2" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">24</text>
+<text x="681.6" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">25</text>
+<text x="708" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">26</text>
+<polyline points="48.0,30.0 74.4,37.6 100.8,58.5 127.2,64.2 153.6,75.6 180.0,77.5 206.4,157.3 232.8,170.6 259.2,170.6 285.6,178.2 312.0,183.9 338.4,197.2 364.8,202.9 391.2,202.9 417.6,220.0 444.0,220.0 470.4,220.0 496.8,220.0 523.2,220.0 549.6,220.0 576.0,220.0 602.4,220.0 628.8,220.0 655.2,220.0 681.6,220.0 708.0,220.0" fill="none" stroke="#8ff0fa" stroke-width="2"/>
+<circle cx="48.0" cy="30.0" r="2.5" fill="#8ff0fa"><title>easy round 1: 100%</title></circle>
+<circle cx="74.4" cy="37.6" r="2.5" fill="#8ff0fa"><title>easy round 2: 96%</title></circle>
+<circle cx="100.8" cy="58.5" r="2.5" fill="#8ff0fa"><title>easy round 3: 85%</title></circle>
+<circle cx="127.2" cy="64.2" r="2.5" fill="#8ff0fa"><title>easy round 4: 82%</title></circle>
+<circle cx="153.6" cy="75.6" r="2.5" fill="#8ff0fa"><title>easy round 5: 76%</title></circle>
+<circle cx="180.0" cy="77.5" r="2.5" fill="#8ff0fa"><title>easy round 6: 75%</title></circle>
+<circle cx="206.4" cy="157.3" r="2.5" fill="#8ff0fa"><title>easy round 7: 33%</title></circle>
+<circle cx="232.8" cy="170.6" r="2.5" fill="#8ff0fa"><title>easy round 8: 26%</title></circle>
+<circle cx="259.2" cy="170.6" r="2.5" fill="#8ff0fa"><title>easy round 9: 26%</title></circle>
+<circle cx="285.6" cy="178.2" r="2.5" fill="#8ff0fa"><title>easy round 10: 22%</title></circle>
+<circle cx="312.0" cy="183.9" r="2.5" fill="#8ff0fa"><title>easy round 11: 19%</title></circle>
+<circle cx="338.4" cy="197.2" r="2.5" fill="#8ff0fa"><title>easy round 12: 12%</title></circle>
+<circle cx="364.8" cy="202.9" r="2.5" fill="#8ff0fa"><title>easy round 13: 9%</title></circle>
+<circle cx="391.2" cy="202.9" r="2.5" fill="#8ff0fa"><title>easy round 14: 9%</title></circle>
+<circle cx="417.6" cy="220.0" r="2.5" fill="#8ff0fa"><title>easy round 15: 0%</title></circle>
+<circle cx="444.0" cy="220.0" r="2.5" fill="#8ff0fa"><title>easy round 16: 0%</title></circle>
+<circle cx="470.4" cy="220.0" r="2.5" fill="#8ff0fa"><title>easy round 17: 0%</title></circle>
+<circle cx="496.8" cy="220.0" r="2.5" fill="#8ff0fa"><title>easy round 18: 0%</title></circle>
+<circle cx="523.2" cy="220.0" r="2.5" fill="#8ff0fa"><title>easy round 19: 0%</title></circle>
+<circle cx="549.6" cy="220.0" r="2.5" fill="#8ff0fa"><title>easy round 20: 0%</title></circle>
+<circle cx="576.0" cy="220.0" r="2.5" fill="#8ff0fa"><title>easy round 21: 0%</title></circle>
+<circle cx="602.4" cy="220.0" r="2.5" fill="#8ff0fa"><title>easy round 22: 0%</title></circle>
+<circle cx="628.8" cy="220.0" r="2.5" fill="#8ff0fa"><title>easy round 23: 0%</title></circle>
+<circle cx="655.2" cy="220.0" r="2.5" fill="#8ff0fa"><title>easy round 24: 0%</title></circle>
+<circle cx="681.6" cy="220.0" r="2.5" fill="#8ff0fa"><title>easy round 25: 0%</title></circle>
+<circle cx="708.0" cy="220.0" r="2.5" fill="#8ff0fa"><title>easy round 26: 0%</title></circle>
+<polyline points="48.0,30.0 74.4,30.0 100.8,31.9 127.2,37.6 153.6,47.1 180.0,49.0 206.4,132.6 232.8,138.3 259.2,138.3 285.6,140.2 312.0,147.8 338.4,151.6 364.8,157.3 391.2,157.3 417.6,199.1 444.0,201.0 470.4,202.9 496.8,206.7 523.2,206.7 549.6,210.5 576.0,210.5 602.4,212.4 628.8,218.1 655.2,218.1 681.6,218.1 708.0,218.1" fill="none" stroke="#19d3e6" stroke-width="2"/>
+<circle cx="48.0" cy="30.0" r="2.5" fill="#19d3e6"><title>normal round 1: 100%</title></circle>
+<circle cx="74.4" cy="30.0" r="2.5" fill="#19d3e6"><title>normal round 2: 100%</title></circle>
+<circle cx="100.8" cy="31.9" r="2.5" fill="#19d3e6"><title>normal round 3: 99%</title></circle>
+<circle cx="127.2" cy="37.6" r="2.5" fill="#19d3e6"><title>normal round 4: 96%</title></circle>
+<circle cx="153.6" cy="47.1" r="2.5" fill="#19d3e6"><title>normal round 5: 91%</title></circle>
+<circle cx="180.0" cy="49.0" r="2.5" fill="#19d3e6"><title>normal round 6: 90%</title></circle>
+<circle cx="206.4" cy="132.6" r="2.5" fill="#19d3e6"><title>normal round 7: 46%</title></circle>
+<circle cx="232.8" cy="138.3" r="2.5" fill="#19d3e6"><title>normal round 8: 43%</title></circle>
+<circle cx="259.2" cy="138.3" r="2.5" fill="#19d3e6"><title>normal round 9: 43%</title></circle>
+<circle cx="285.6" cy="140.2" r="2.5" fill="#19d3e6"><title>normal round 10: 42%</title></circle>
+<circle cx="312.0" cy="147.8" r="2.5" fill="#19d3e6"><title>normal round 11: 38%</title></circle>
+<circle cx="338.4" cy="151.6" r="2.5" fill="#19d3e6"><title>normal round 12: 36%</title></circle>
+<circle cx="364.8" cy="157.3" r="2.5" fill="#19d3e6"><title>normal round 13: 33%</title></circle>
+<circle cx="391.2" cy="157.3" r="2.5" fill="#19d3e6"><title>normal round 14: 33%</title></circle>
+<circle cx="417.6" cy="199.1" r="2.5" fill="#19d3e6"><title>normal round 15: 11%</title></circle>
+<circle cx="444.0" cy="201.0" r="2.5" fill="#19d3e6"><title>normal round 16: 10%</title></circle>
+<circle cx="470.4" cy="202.9" r="2.5" fill="#19d3e6"><title>normal round 17: 9%</title></circle>
+<circle cx="496.8" cy="206.7" r="2.5" fill="#19d3e6"><title>normal round 18: 7%</title></circle>
+<circle cx="523.2" cy="206.7" r="2.5" fill="#19d3e6"><title>normal round 19: 7%</title></circle>
+<circle cx="549.6" cy="210.5" r="2.5" fill="#19d3e6"><title>normal round 20: 5%</title></circle>
+<circle cx="576.0" cy="210.5" r="2.5" fill="#19d3e6"><title>normal round 21: 5%</title></circle>
+<circle cx="602.4" cy="212.4" r="2.5" fill="#19d3e6"><title>normal round 22: 4%</title></circle>
+<circle cx="628.8" cy="218.1" r="2.5" fill="#19d3e6"><title>normal round 23: 1%</title></circle>
+<circle cx="655.2" cy="218.1" r="2.5" fill="#19d3e6"><title>normal round 24: 1%</title></circle>
+<circle cx="681.6" cy="218.1" r="2.5" fill="#19d3e6"><title>normal round 25: 1%</title></circle>
+<circle cx="708.0" cy="218.1" r="2.5" fill="#19d3e6"><title>normal round 26: 1%</title></circle>
+<polyline points="48.0,30.0 74.4,30.0 100.8,30.0 127.2,30.0 153.6,30.0 180.0,30.0 206.4,109.8 232.8,111.7 259.2,111.7 285.6,113.6 312.0,113.6 338.4,119.3 364.8,119.3 391.2,119.3 417.6,166.8 444.0,166.8 470.4,168.7 496.8,168.7 523.2,168.7 549.6,170.6 576.0,172.5 602.4,176.3 628.8,214.3 655.2,214.3 681.6,214.3 708.0,214.3" fill="none" stroke="#0e8a99" stroke-width="2"/>
+<circle cx="48.0" cy="30.0" r="2.5" fill="#0e8a99"><title>hard round 1: 100%</title></circle>
+<circle cx="74.4" cy="30.0" r="2.5" fill="#0e8a99"><title>hard round 2: 100%</title></circle>
+<circle cx="100.8" cy="30.0" r="2.5" fill="#0e8a99"><title>hard round 3: 100%</title></circle>
+<circle cx="127.2" cy="30.0" r="2.5" fill="#0e8a99"><title>hard round 4: 100%</title></circle>
+<circle cx="153.6" cy="30.0" r="2.5" fill="#0e8a99"><title>hard round 5: 100%</title></circle>
+<circle cx="180.0" cy="30.0" r="2.5" fill="#0e8a99"><title>hard round 6: 100%</title></circle>
+<circle cx="206.4" cy="109.8" r="2.5" fill="#0e8a99"><title>hard round 7: 58%</title></circle>
+<circle cx="232.8" cy="111.7" r="2.5" fill="#0e8a99"><title>hard round 8: 57%</title></circle>
+<circle cx="259.2" cy="111.7" r="2.5" fill="#0e8a99"><title>hard round 9: 57%</title></circle>
+<circle cx="285.6" cy="113.6" r="2.5" fill="#0e8a99"><title>hard round 10: 56%</title></circle>
+<circle cx="312.0" cy="113.6" r="2.5" fill="#0e8a99"><title>hard round 11: 56%</title></circle>
+<circle cx="338.4" cy="119.3" r="2.5" fill="#0e8a99"><title>hard round 12: 53%</title></circle>
+<circle cx="364.8" cy="119.3" r="2.5" fill="#0e8a99"><title>hard round 13: 53%</title></circle>
+<circle cx="391.2" cy="119.3" r="2.5" fill="#0e8a99"><title>hard round 14: 53%</title></circle>
+<circle cx="417.6" cy="166.8" r="2.5" fill="#0e8a99"><title>hard round 15: 28%</title></circle>
+<circle cx="444.0" cy="166.8" r="2.5" fill="#0e8a99"><title>hard round 16: 28%</title></circle>
+<circle cx="470.4" cy="168.7" r="2.5" fill="#0e8a99"><title>hard round 17: 27%</title></circle>
+<circle cx="496.8" cy="168.7" r="2.5" fill="#0e8a99"><title>hard round 18: 27%</title></circle>
+<circle cx="523.2" cy="168.7" r="2.5" fill="#0e8a99"><title>hard round 19: 27%</title></circle>
+<circle cx="549.6" cy="170.6" r="2.5" fill="#0e8a99"><title>hard round 20: 26%</title></circle>
+<circle cx="576.0" cy="172.5" r="2.5" fill="#0e8a99"><title>hard round 21: 25%</title></circle>
+<circle cx="602.4" cy="176.3" r="2.5" fill="#0e8a99"><title>hard round 22: 23%</title></circle>
+<circle cx="628.8" cy="214.3" r="2.5" fill="#0e8a99"><title>hard round 23: 3%</title></circle>
+<circle cx="655.2" cy="214.3" r="2.5" fill="#0e8a99"><title>hard round 24: 3%</title></circle>
+<circle cx="681.6" cy="214.3" r="2.5" fill="#0e8a99"><title>hard round 25: 3%</title></circle>
+<circle cx="708.0" cy="214.3" r="2.5" fill="#0e8a99"><title>hard round 26: 3%</title></circle>
+<text x="378" y="254" text-anchor="middle" fill="#a69fc0" font-size="12">share of runs that reached the round</text>
+<rect x="48" y="8" width="12" height="12" fill="#8ff0fa"/>
+<text x="70" y="18" fill="#ece8f6" font-size="12">easy</text>
+<rect x="108" y="8" width="12" height="12" fill="#19d3e6"/>
+<text x="130" y="18" fill="#ece8f6" font-size="12">normal</text>
+<rect x="183" y="8" width="12" height="12" fill="#0e8a99"/>
+<text x="205" y="18" fill="#ece8f6" font-size="12">hard</text>
+</svg></div>
+<h2>Points per round</h2><div class="card"><svg viewBox="0 0 720 260" width="100%" role="img" aria-label="Points per round (easy)" xmlns="http://www.w3.org/2000/svg">
+<line x1="48" y1="220" x2="708" y2="220" stroke="#c9bcff" stroke-opacity="0.6"/>
+<line x1="48" y1="30" x2="48" y2="220" stroke="#c9bcff" stroke-opacity="0.6"/>
+<text x="42" y="224" text-anchor="end" fill="#a69fc0" font-size="12">0</text>
+<text x="42" y="176.5" text-anchor="end" fill="#a69fc0" font-size="12">1679</text>
+<line x1="48" y1="172.5" x2="708" y2="172.5" stroke="#c9bcff" stroke-opacity="0.12"/>
+<text x="42" y="129" text-anchor="end" fill="#a69fc0" font-size="12">3358</text>
+<line x1="48" y1="125" x2="708" y2="125" stroke="#c9bcff" stroke-opacity="0.12"/>
+<text x="42" y="81.5" text-anchor="end" fill="#a69fc0" font-size="12">5036</text>
+<line x1="48" y1="77.5" x2="708" y2="77.5" stroke="#c9bcff" stroke-opacity="0.12"/>
+<text x="42" y="34" text-anchor="end" fill="#a69fc0" font-size="12">6715</text>
+<line x1="48" y1="30" x2="708" y2="30" stroke="#c9bcff" stroke-opacity="0.12"/>
+<rect x="52.7" y="200.8" width="17.9" height="19.2" fill="#8ff0fa"><title>earned 1: 677.76</title></rect>
+<rect x="71.6" y="220.0" width="17.9" height="0.0" fill="#c9bcff"><title>spent 1: 0</title></rect>
+<text x="71.57142857142857" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">1</text>
+<rect x="99.9" y="194.6" width="17.9" height="25.4" fill="#8ff0fa"><title>earned 2: 896.1875</title></rect>
+<rect x="118.7" y="219.3" width="17.9" height="0.7" fill="#c9bcff"><title>spent 2: 23.4375</title></rect>
+<text x="118.71428571428571" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">2</text>
+<rect x="147.0" y="187.0" width="17.9" height="33.0" fill="#8ff0fa"><title>earned 3: 1166.6352941176472</title></rect>
+<rect x="165.9" y="199.3" width="17.9" height="20.7" fill="#c9bcff"><title>spent 3: 732.3529411764706</title></rect>
+<text x="165.85714285714286" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">3</text>
+<rect x="194.1" y="175.5" width="17.9" height="44.5" fill="#8ff0fa"><title>earned 4: 1571.1951219512196</title></rect>
+<rect x="213.0" y="188.9" width="17.9" height="31.1" fill="#c9bcff"><title>spent 4: 1097.560975609756</title></rect>
+<text x="213.00000000000003" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">4</text>
+<rect x="241.3" y="166.1" width="17.9" height="53.9" fill="#8ff0fa"><title>earned 5: 1903.7368421052631</title></rect>
+<rect x="260.1" y="177.9" width="17.9" height="42.1" fill="#c9bcff"><title>spent 5: 1488.8157894736842</title></rect>
+<text x="260.14285714285717" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">5</text>
+<rect x="288.4" y="166.0" width="17.9" height="54.0" fill="#8ff0fa"><title>earned 6: 1909.8266666666666</title></rect>
+<rect x="307.3" y="190.7" width="17.9" height="29.3" fill="#c9bcff"><title>spent 6: 1035.8666666666666</title></rect>
+<text x="307.2857142857143" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">6</text>
+<rect x="335.6" y="77.7" width="17.9" height="142.3" fill="#8ff0fa"><title>earned 7: 5027.606060606061</title></rect>
+<rect x="354.4" y="184.1" width="17.9" height="35.9" fill="#c9bcff"><title>spent 7: 1269.6969696969697</title></rect>
+<text x="354.42857142857144" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">7</text>
+<rect x="382.7" y="142.9" width="17.9" height="77.1" fill="#8ff0fa"><title>earned 8: 2725.5384615384614</title></rect>
+<rect x="401.6" y="204.5" width="17.9" height="15.5" fill="#c9bcff"><title>spent 8: 548.0769230769231</title></rect>
+<text x="401.57142857142856" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">8</text>
+<rect x="429.9" y="134.2" width="17.9" height="85.8" fill="#8ff0fa"><title>earned 9: 3032.4615384615386</title></rect>
+<rect x="448.7" y="209.4" width="17.9" height="10.6" fill="#c9bcff"><title>spent 9: 373.0769230769231</title></rect>
+<text x="448.7142857142857" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">9</text>
+<rect x="477.0" y="120.6" width="17.9" height="99.4" fill="#8ff0fa"><title>earned 10: 3512.090909090909</title></rect>
+<rect x="495.9" y="191.4" width="17.9" height="28.6" fill="#c9bcff"><title>spent 10: 1010.2272727272727</title></rect>
+<text x="495.8571428571429" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">10</text>
+<rect x="524.1" y="30.0" width="17.9" height="190.0" fill="#8ff0fa"><title>earned 11: 6715.1578947368425</title></rect>
+<rect x="543.0" y="167.7" width="17.9" height="52.3" fill="#c9bcff"><title>spent 11: 1849.4736842105262</title></rect>
+<text x="543" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">11</text>
+<rect x="571.3" y="113.7" width="17.9" height="106.3" fill="#8ff0fa"><title>earned 12: 3757.8333333333335</title></rect>
+<rect x="590.1" y="183.7" width="17.9" height="36.3" fill="#c9bcff"><title>spent 12: 1283.3333333333333</title></rect>
+<text x="590.1428571428571" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">12</text>
+<rect x="618.4" y="93.6" width="17.9" height="126.4" fill="#8ff0fa"><title>earned 13: 4468.111111111111</title></rect>
+<rect x="637.3" y="220.0" width="17.9" height="0.0" fill="#c9bcff"><title>spent 13: 0</title></rect>
+<text x="637.2857142857143" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">13</text>
+<rect x="665.6" y="194.1" width="17.9" height="25.9" fill="#8ff0fa"><title>earned 14: 913.7777777777778</title></rect>
+<rect x="684.4" y="197.3" width="17.9" height="22.7" fill="#c9bcff"><title>spent 14: 803.3333333333334</title></rect>
+<text x="684.4285714285714" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">14</text>
+<text x="378" y="254" text-anchor="middle" fill="#a69fc0" font-size="12">round (mean over the runs that reached it, easy)</text>
+<rect x="48" y="8" width="12" height="12" fill="#8ff0fa"/>
+<text x="70" y="18" fill="#ece8f6" font-size="12">earned</text>
+<rect x="123" y="8" width="12" height="12" fill="#c9bcff"/>
+<text x="145" y="18" fill="#ece8f6" font-size="12">spent</text>
+</svg></div><div class="card"><svg viewBox="0 0 720 260" width="100%" role="img" aria-label="Points per round (normal)" xmlns="http://www.w3.org/2000/svg">
+<line x1="48" y1="220" x2="708" y2="220" stroke="#c9bcff" stroke-opacity="0.6"/>
+<line x1="48" y1="30" x2="48" y2="220" stroke="#c9bcff" stroke-opacity="0.6"/>
+<text x="42" y="224" text-anchor="end" fill="#a69fc0" font-size="12">0</text>
+<text x="42" y="176.5" text-anchor="end" fill="#a69fc0" font-size="12">3484</text>
+<line x1="48" y1="172.5" x2="708" y2="172.5" stroke="#c9bcff" stroke-opacity="0.12"/>
+<text x="42" y="129" text-anchor="end" fill="#a69fc0" font-size="12">6967</text>
+<line x1="48" y1="125" x2="708" y2="125" stroke="#c9bcff" stroke-opacity="0.12"/>
+<text x="42" y="81.5" text-anchor="end" fill="#a69fc0" font-size="12">10451</text>
+<line x1="48" y1="77.5" x2="708" y2="77.5" stroke="#c9bcff" stroke-opacity="0.12"/>
+<text x="42" y="34" text-anchor="end" fill="#a69fc0" font-size="12">13934</text>
+<line x1="48" y1="30" x2="708" y2="30" stroke="#c9bcff" stroke-opacity="0.12"/>
+<rect x="50.5" y="209.5" width="9.2" height="10.5" fill="#19d3e6"><title>earned 1: 766.42</title></rect>
+<rect x="60.7" y="220.0" width="9.2" height="0.0" fill="#c9bcff"><title>spent 1: 0</title></rect>
+<text x="60.69230769230769" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">1</text>
+<rect x="75.9" y="206.6" width="9.2" height="13.4" fill="#19d3e6"><title>earned 2: 980.61</title></rect>
+<rect x="86.1" y="219.5" width="9.2" height="0.5" fill="#c9bcff"><title>spent 2: 33.75</title></rect>
+<text x="86.07692307692308" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">2</text>
+<rect x="101.3" y="203.7" width="9.2" height="16.3" fill="#19d3e6"><title>earned 3: 1191.989898989899</title></rect>
+<rect x="111.5" y="211.8" width="9.2" height="8.2" fill="#c9bcff"><title>spent 3: 598.4848484848485</title></rect>
+<text x="111.46153846153847" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">3</text>
+<rect x="126.7" y="198.0" width="9.2" height="22.0" fill="#19d3e6"><title>earned 4: 1612.1041666666667</title></rect>
+<rect x="136.8" y="203.5" width="9.2" height="16.5" fill="#c9bcff"><title>spent 4: 1209.6354166666667</title></rect>
+<text x="136.84615384615384" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">4</text>
+<rect x="152.1" y="191.8" width="9.2" height="28.2" fill="#19d3e6"><title>earned 5: 2065.098901098901</title></rect>
+<rect x="162.2" y="200.1" width="9.2" height="19.9" fill="#c9bcff"><title>spent 5: 1462.967032967033</title></rect>
+<text x="162.23076923076923" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">5</text>
+<rect x="177.5" y="192.3" width="9.2" height="27.7" fill="#19d3e6"><title>earned 6: 2031.3555555555556</title></rect>
+<rect x="187.6" y="202.7" width="9.2" height="17.3" fill="#c9bcff"><title>spent 6: 1267.888888888889</title></rect>
+<text x="187.61538461538458" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">6</text>
+<rect x="202.8" y="132.2" width="9.2" height="87.8" fill="#19d3e6"><title>earned 7: 6440.130434782609</title></rect>
+<rect x="213.0" y="205.4" width="9.2" height="14.6" fill="#c9bcff"><title>spent 7: 1073.0434782608695</title></rect>
+<text x="212.99999999999997" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">7</text>
+<rect x="228.2" y="179.8" width="9.2" height="40.2" fill="#19d3e6"><title>earned 8: 2949.3255813953488</title></rect>
+<rect x="238.4" y="209.1" width="9.2" height="10.9" fill="#c9bcff"><title>spent 8: 798.8372093023256</title></rect>
+<text x="238.38461538461536" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">8</text>
+<rect x="253.6" y="169.9" width="9.2" height="50.1" fill="#19d3e6"><title>earned 9: 3675.4418604651164</title></rect>
+<rect x="263.8" y="213.0" width="9.2" height="7.0" fill="#c9bcff"><title>spent 9: 516.2790697674419</title></rect>
+<text x="263.7692307692308" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">9</text>
+<rect x="279.0" y="167.9" width="9.2" height="52.1" fill="#19d3e6"><title>earned 10: 3818.8571428571427</title></rect>
+<rect x="289.2" y="201.1" width="9.2" height="18.9" fill="#c9bcff"><title>spent 10: 1382.857142857143</title></rect>
+<text x="289.15384615384613" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">10</text>
+<rect x="304.4" y="80.6" width="9.2" height="139.4" fill="#19d3e6"><title>earned 11: 10226.184210526315</title></rect>
+<rect x="314.5" y="201.9" width="9.2" height="18.1" fill="#c9bcff"><title>spent 11: 1325.2631578947369</title></rect>
+<text x="314.5384615384615" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">11</text>
+<rect x="329.8" y="154.4" width="9.2" height="65.6" fill="#19d3e6"><title>earned 12: 4810.25</title></rect>
+<rect x="339.9" y="208.2" width="9.2" height="11.8" fill="#c9bcff"><title>spent 12: 861.9444444444445</title></rect>
+<text x="339.9230769230769" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">12</text>
+<rect x="355.2" y="152.8" width="9.2" height="67.2" fill="#19d3e6"><title>earned 13: 4924.848484848485</title></rect>
+<rect x="365.3" y="220.0" width="9.2" height="0.0" fill="#c9bcff"><title>spent 13: 0</title></rect>
+<text x="365.30769230769226" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">13</text>
+<rect x="380.5" y="172.4" width="9.2" height="47.6" fill="#19d3e6"><title>earned 14: 3493.878787878788</title></rect>
+<rect x="390.7" y="211.3" width="9.2" height="8.7" fill="#c9bcff"><title>spent 14: 635.1515151515151</title></rect>
+<text x="390.6923076923077" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">14</text>
+<rect x="405.9" y="138.5" width="9.2" height="81.5" fill="#19d3e6"><title>earned 15: 5979.454545454545</title></rect>
+<rect x="416.1" y="205.9" width="9.2" height="14.1" fill="#c9bcff"><title>spent 15: 1037.7272727272727</title></rect>
+<text x="416.07692307692304" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">15</text>
+<rect x="431.3" y="132.8" width="9.2" height="87.2" fill="#19d3e6"><title>earned 16: 6393.5</title></rect>
+<rect x="441.5" y="214.1" width="9.2" height="5.9" fill="#c9bcff"><title>spent 16: 430</title></rect>
+<text x="441.46153846153845" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">16</text>
+<rect x="456.7" y="132.7" width="9.2" height="87.3" fill="#19d3e6"><title>earned 17: 6404.333333333333</title></rect>
+<rect x="466.8" y="215.1" width="9.2" height="4.9" fill="#c9bcff"><title>spent 17: 358.3333333333333</title></rect>
+<text x="466.8461538461538" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">17</text>
+<rect x="482.1" y="127.2" width="9.2" height="92.8" fill="#19d3e6"><title>earned 18: 6804.857142857143</title></rect>
+<rect x="492.2" y="220.0" width="9.2" height="0.0" fill="#c9bcff"><title>spent 18: 0</title></rect>
+<text x="492.23076923076917" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">18</text>
+<rect x="507.5" y="30.0" width="9.2" height="190.0" fill="#19d3e6"><title>earned 19: 13934.285714285714</title></rect>
+<rect x="517.6" y="206.8" width="9.2" height="13.2" fill="#c9bcff"><title>spent 19: 971.4285714285714</title></rect>
+<text x="517.6153846153846" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">19</text>
+<rect x="532.8" y="97.7" width="9.2" height="122.3" fill="#19d3e6"><title>earned 20: 8966.8</title></rect>
+<rect x="543.0" y="200.1" width="9.2" height="19.9" fill="#c9bcff"><title>spent 20: 1456</title></rect>
+<text x="543" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">20</text>
+<rect x="558.2" y="107.5" width="9.2" height="112.5" fill="#19d3e6"><title>earned 21: 8251.6</title></rect>
+<rect x="568.4" y="192.7" width="9.2" height="27.3" fill="#c9bcff"><title>spent 21: 2000</title></rect>
+<text x="568.3846153846154" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">21</text>
+<rect x="583.6" y="168.0" width="9.2" height="52.0" fill="#19d3e6"><title>earned 22: 3813.5</title></rect>
+<rect x="593.8" y="216.6" width="9.2" height="3.4" fill="#c9bcff"><title>spent 22: 250</title></rect>
+<text x="593.7692307692308" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">22</text>
+<rect x="609.0" y="107.4" width="9.2" height="112.6" fill="#19d3e6"><title>earned 23: 8259</title></rect>
+<rect x="619.2" y="220.0" width="9.2" height="0.0" fill="#c9bcff"><title>spent 23: 0</title></rect>
+<text x="619.1538461538462" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">23</text>
+<rect x="634.4" y="88.7" width="9.2" height="131.3" fill="#19d3e6"><title>earned 24: 9628</title></rect>
+<rect x="644.5" y="220.0" width="9.2" height="0.0" fill="#c9bcff"><title>spent 24: 0</title></rect>
+<text x="644.5384615384615" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">24</text>
+<rect x="659.8" y="46.3" width="9.2" height="173.7" fill="#19d3e6"><title>earned 25: 12741</title></rect>
+<rect x="669.9" y="220.0" width="9.2" height="0.0" fill="#c9bcff"><title>spent 25: 0</title></rect>
+<text x="669.9230769230769" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">25</text>
+<rect x="685.2" y="192.4" width="9.2" height="27.6" fill="#19d3e6"><title>earned 26: 2021</title></rect>
+<rect x="695.3" y="220.0" width="9.2" height="0.0" fill="#c9bcff"><title>spent 26: 0</title></rect>
+<text x="695.3076923076923" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">26</text>
+<text x="378" y="254" text-anchor="middle" fill="#a69fc0" font-size="12">round (mean over the runs that reached it, normal)</text>
+<rect x="48" y="8" width="12" height="12" fill="#19d3e6"/>
+<text x="70" y="18" fill="#ece8f6" font-size="12">earned</text>
+<rect x="123" y="8" width="12" height="12" fill="#c9bcff"/>
+<text x="145" y="18" fill="#ece8f6" font-size="12">spent</text>
+</svg></div><div class="card"><svg viewBox="0 0 720 260" width="100%" role="img" aria-label="Points per round (hard)" xmlns="http://www.w3.org/2000/svg">
+<line x1="48" y1="220" x2="708" y2="220" stroke="#c9bcff" stroke-opacity="0.6"/>
+<line x1="48" y1="30" x2="48" y2="220" stroke="#c9bcff" stroke-opacity="0.6"/>
+<text x="42" y="224" text-anchor="end" fill="#a69fc0" font-size="12">0</text>
+<text x="42" y="176.5" text-anchor="end" fill="#a69fc0" font-size="12">4783</text>
+<line x1="48" y1="172.5" x2="708" y2="172.5" stroke="#c9bcff" stroke-opacity="0.12"/>
+<text x="42" y="129" text-anchor="end" fill="#a69fc0" font-size="12">9565</text>
+<line x1="48" y1="125" x2="708" y2="125" stroke="#c9bcff" stroke-opacity="0.12"/>
+<text x="42" y="81.5" text-anchor="end" fill="#a69fc0" font-size="12">14348</text>
+<line x1="48" y1="77.5" x2="708" y2="77.5" stroke="#c9bcff" stroke-opacity="0.12"/>
+<text x="42" y="34" text-anchor="end" fill="#a69fc0" font-size="12">19130</text>
+<line x1="48" y1="30" x2="708" y2="30" stroke="#c9bcff" stroke-opacity="0.12"/>
+<rect x="50.5" y="212.5" width="9.2" height="7.5" fill="#0e8a99"><title>earned 1: 759.06</title></rect>
+<rect x="60.7" y="220.0" width="9.2" height="0.0" fill="#c9bcff"><title>spent 1: 0</title></rect>
+<text x="60.69230769230769" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">1</text>
+<rect x="75.9" y="211.1" width="9.2" height="8.9" fill="#0e8a99"><title>earned 2: 893.48</title></rect>
+<rect x="86.1" y="219.8" width="9.2" height="0.2" fill="#c9bcff"><title>spent 2: 18.75</title></rect>
+<text x="86.07692307692308" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">2</text>
+<rect x="101.3" y="207.0" width="9.2" height="13.0" fill="#0e8a99"><title>earned 3: 1304.09</title></rect>
+<rect x="111.5" y="209.1" width="9.2" height="10.9" fill="#c9bcff"><title>spent 3: 1100</title></rect>
+<text x="111.46153846153847" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">3</text>
+<rect x="126.7" y="200.2" width="9.2" height="19.8" fill="#0e8a99"><title>earned 4: 1996.92</title></rect>
+<rect x="136.8" y="205.6" width="9.2" height="14.4" fill="#c9bcff"><title>spent 4: 1450</title></rect>
+<text x="136.84615384615384" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">4</text>
+<rect x="152.1" y="195.2" width="9.2" height="24.8" fill="#0e8a99"><title>earned 5: 2493.83</title></rect>
+<rect x="162.2" y="203.4" width="9.2" height="16.6" fill="#c9bcff"><title>spent 5: 1670.6</title></rect>
+<text x="162.23076923076923" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">5</text>
+<rect x="177.5" y="198.2" width="9.2" height="21.8" fill="#0e8a99"><title>earned 6: 2194.11</title></rect>
+<rect x="187.6" y="207.1" width="9.2" height="12.9" fill="#c9bcff"><title>spent 6: 1301.3</title></rect>
+<text x="187.61538461538458" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">6</text>
+<rect x="202.8" y="144.5" width="9.2" height="75.5" fill="#0e8a99"><title>earned 7: 7598.362068965517</title></rect>
+<rect x="213.0" y="212.2" width="9.2" height="7.8" fill="#c9bcff"><title>spent 7: 789.3103448275862</title></rect>
+<text x="212.99999999999997" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">7</text>
+<rect x="228.2" y="189.2" width="9.2" height="30.8" fill="#0e8a99"><title>earned 8: 3104.035087719298</title></rect>
+<rect x="238.4" y="213.0" width="9.2" height="7.0" fill="#c9bcff"><title>spent 8: 707.8947368421053</title></rect>
+<text x="238.38461538461536" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">8</text>
+<rect x="253.6" y="178.4" width="9.2" height="41.6" fill="#0e8a99"><title>earned 9: 4187.561403508772</title></rect>
+<rect x="263.8" y="213.6" width="9.2" height="6.4" fill="#c9bcff"><title>spent 9: 640.3508771929825</title></rect>
+<text x="263.7692307692308" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">9</text>
+<rect x="279.0" y="172.6" width="9.2" height="47.4" fill="#0e8a99"><title>earned 10: 4773.517857142857</title></rect>
+<rect x="289.2" y="202.1" width="9.2" height="17.9" fill="#c9bcff"><title>spent 10: 1798.9285714285713</title></rect>
+<text x="289.15384615384613" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">10</text>
+<rect x="304.4" y="102.3" width="9.2" height="117.7" fill="#0e8a99"><title>earned 11: 11851.482142857143</title></rect>
+<rect x="314.5" y="206.3" width="9.2" height="13.7" fill="#c9bcff"><title>spent 11: 1382.142857142857</title></rect>
+<text x="314.5384615384615" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">11</text>
+<rect x="329.8" y="163.6" width="9.2" height="56.4" fill="#0e8a99"><title>earned 12: 5682.8490566037735</title></rect>
+<rect x="339.9" y="216.6" width="9.2" height="3.4" fill="#c9bcff"><title>spent 12: 347.35849056603774</title></rect>
+<text x="339.9230769230769" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">12</text>
+<rect x="355.2" y="169.9" width="9.2" height="50.1" fill="#0e8a99"><title>earned 13: 5045.792452830188</title></rect>
+<rect x="365.3" y="215.1" width="9.2" height="4.9" fill="#c9bcff"><title>spent 13: 494.33962264150944</title></rect>
+<text x="365.30769230769226" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">13</text>
+<rect x="380.5" y="173.9" width="9.2" height="46.1" fill="#0e8a99"><title>earned 14: 4639.584905660377</title></rect>
+<rect x="390.7" y="210.7" width="9.2" height="9.3" fill="#c9bcff"><title>spent 14: 934.433962264151</title></rect>
+<text x="390.6923076923077" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">14</text>
+<rect x="405.9" y="149.9" width="9.2" height="70.1" fill="#0e8a99"><title>earned 15: 7055.035714285715</title></rect>
+<rect x="416.1" y="207.6" width="9.2" height="12.4" fill="#c9bcff"><title>spent 15: 1244.8214285714287</title></rect>
+<text x="416.07692307692304" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">15</text>
+<rect x="431.3" y="148.5" width="9.2" height="71.5" fill="#0e8a99"><title>earned 16: 7198.642857142857</title></rect>
+<rect x="441.5" y="212.8" width="9.2" height="7.2" fill="#c9bcff"><title>spent 16: 728.5714285714286</title></rect>
+<text x="441.46153846153845" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">16</text>
+<rect x="456.7" y="141.9" width="9.2" height="78.1" fill="#0e8a99"><title>earned 17: 7859.185185185185</title></rect>
+<rect x="466.8" y="217.0" width="9.2" height="3.0" fill="#c9bcff"><title>spent 17: 305.18518518518516</title></rect>
+<text x="466.8461538461538" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">17</text>
+<rect x="482.1" y="152.2" width="9.2" height="67.8" fill="#0e8a99"><title>earned 18: 6826.851851851852</title></rect>
+<rect x="492.2" y="217.1" width="9.2" height="2.9" fill="#c9bcff"><title>spent 18: 296.2962962962963</title></rect>
+<text x="492.23076923076917" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">18</text>
+<rect x="507.5" y="30.0" width="9.2" height="190.0" fill="#0e8a99"><title>earned 19: 19130.11111111111</title></rect>
+<rect x="517.6" y="211.7" width="9.2" height="8.3" fill="#c9bcff"><title>spent 19: 831.6666666666666</title></rect>
+<text x="517.6153846153846" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">19</text>
+<rect x="532.8" y="127.5" width="9.2" height="92.5" fill="#0e8a99"><title>earned 20: 9316.884615384615</title></rect>
+<rect x="543.0" y="211.5" width="9.2" height="8.5" fill="#c9bcff"><title>spent 20: 855.1923076923077</title></rect>
+<text x="543" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">20</text>
+<rect x="558.2" y="121.8" width="9.2" height="98.2" fill="#0e8a99"><title>earned 21: 9886.64</title></rect>
+<rect x="568.4" y="216.2" width="9.2" height="3.8" fill="#c9bcff"><title>spent 21: 380</title></rect>
+<text x="568.3846153846154" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">21</text>
+<rect x="583.6" y="175.0" width="9.2" height="45.0" fill="#0e8a99"><title>earned 22: 4527.95652173913</title></rect>
+<rect x="593.8" y="220.0" width="9.2" height="0.0" fill="#c9bcff"><title>spent 22: 0</title></rect>
+<text x="593.7692307692308" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">22</text>
+<rect x="609.0" y="130.6" width="9.2" height="89.4" fill="#0e8a99"><title>earned 23: 8998.333333333334</title></rect>
+<rect x="619.2" y="220.0" width="9.2" height="0.0" fill="#c9bcff"><title>spent 23: 0</title></rect>
+<text x="619.1538461538462" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">23</text>
+<rect x="634.4" y="87.6" width="9.2" height="132.4" fill="#0e8a99"><title>earned 24: 13328.333333333334</title></rect>
+<rect x="644.5" y="220.0" width="9.2" height="0.0" fill="#c9bcff"><title>spent 24: 0</title></rect>
+<text x="644.5384615384615" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">24</text>
+<rect x="659.8" y="82.3" width="9.2" height="137.7" fill="#0e8a99"><title>earned 25: 13860.333333333334</title></rect>
+<rect x="669.9" y="220.0" width="9.2" height="0.0" fill="#c9bcff"><title>spent 25: 0</title></rect>
+<text x="669.9230769230769" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">25</text>
+<rect x="685.2" y="161.2" width="9.2" height="58.8" fill="#0e8a99"><title>earned 26: 5924.666666666667</title></rect>
+<rect x="695.3" y="220.0" width="9.2" height="0.0" fill="#c9bcff"><title>spent 26: 0</title></rect>
+<text x="695.3076923076923" y="236" text-anchor="middle" fill="#a69fc0" font-size="12">26</text>
+<text x="378" y="254" text-anchor="middle" fill="#a69fc0" font-size="12">round (mean over the runs that reached it, hard)</text>
+<rect x="48" y="8" width="12" height="12" fill="#0e8a99"/>
+<text x="70" y="18" fill="#ece8f6" font-size="12">earned</text>
+<rect x="123" y="8" width="12" height="12" fill="#c9bcff"/>
+<text x="145" y="18" fill="#ece8f6" font-size="12">spent</text>
+</svg></div>
+<h2>Kills by gun</h2><div class="card"><svg viewBox="0 0 720 108" width="100%" role="img" aria-label="Kills by gun" xmlns="http://www.w3.org/2000/svg">
+<text x="162" y="25" text-anchor="end" fill="#ece8f6" font-size="12">shotgun</text>
+<rect x="170" y="13" width="490.0" height="16" fill="#19d3e6"><title>shotgun: 32250</title></rect>
+<text x="666" y="25" fill="#a69fc0" font-size="12">32250</text>
+<text x="162" y="47" text-anchor="end" fill="#ece8f6" font-size="12">nailgun</text>
+<rect x="170" y="35" width="322.7" height="16" fill="#19d3e6"><title>nailgun: 21236</title></rect>
+<text x="498.655503875969" y="47" fill="#a69fc0" font-size="12">21236</text>
+<text x="162" y="69" text-anchor="end" fill="#ece8f6" font-size="12">revolver</text>
+<rect x="170" y="57" width="295.1" height="16" fill="#19d3e6"><title>revolver: 19422</title></rect>
+<text x="471.0939534883721" y="69" fill="#a69fc0" font-size="12">19422</text>
+<text x="162" y="91" text-anchor="end" fill="#ece8f6" font-size="12">shockwave</text>
+<rect x="170" y="79" width="24.3" height="16" fill="#19d3e6"><title>shockwave: 1602</title></rect>
+<text x="200.34046511627906" y="91" fill="#a69fc0" font-size="12">1602</text>
+<line x1="170" y1="10" x2="170" y2="98" stroke="#c9bcff" stroke-opacity="0.6"/>
+</svg></div>
+<h2>Downs by enemy kind</h2><div class="card"><svg viewBox="0 0 720 108" width="100%" role="img" aria-label="Downs by enemy kind" xmlns="http://www.w3.org/2000/svg">
+<text x="162" y="25" text-anchor="end" fill="#ece8f6" font-size="12">HUSK</text>
+<rect x="170" y="13" width="490.0" height="16" fill="#ff4a1c"><title>HUSK: 110</title></rect>
+<text x="666" y="25" fill="#a69fc0" font-size="12">110</text>
+<text x="162" y="47" text-anchor="end" fill="#ece8f6" font-size="12">ACID</text>
+<rect x="170" y="35" width="316.3" height="16" fill="#ff4a1c"><title>ACID: 71</title></rect>
+<text x="492.27272727272725" y="47" fill="#a69fc0" font-size="12">71</text>
+<text x="162" y="69" text-anchor="end" fill="#ece8f6" font-size="12">SWARMER</text>
+<rect x="170" y="57" width="178.2" height="16" fill="#ff4a1c"><title>SWARMER: 40</title></rect>
+<text x="354.1818181818182" y="69" fill="#a69fc0" font-size="12">40</text>
+<text x="162" y="91" text-anchor="end" fill="#ece8f6" font-size="12">SPITTER GLOB</text>
+<rect x="170" y="79" width="169.3" height="16" fill="#ff4a1c"><title>SPITTER GLOB: 38</title></rect>
+<text x="345.27272727272725" y="91" fill="#a69fc0" font-size="12">38</text>
+<line x1="170" y1="10" x2="170" y2="98" stroke="#c9bcff" stroke-opacity="0.6"/>
+</svg></div>
+<h2>Buy timing</h2><div class="card"><svg viewBox="0 0 720 408" width="100%" role="img" aria-label="Buy timing" xmlns="http://www.w3.org/2000/svg">
+<line x1="170.0" y1="26" x2="170.0" y2="378" stroke="#c9bcff" stroke-opacity="0.12"/>
+<text x="170" y="394" text-anchor="middle" fill="#a69fc0" font-size="12">1</text>
+<line x1="189.2" y1="26" x2="189.2" y2="378" stroke="#c9bcff" stroke-opacity="0.12"/>
+<text x="189.2" y="394" text-anchor="middle" fill="#a69fc0" font-size="12">2</text>
+<line x1="208.4" y1="26" x2="208.4" y2="378" stroke="#c9bcff" stroke-opacity="0.12"/>
+<text x="208.4" y="394" text-anchor="middle" fill="#a69fc0" font-size="12">3</text>
+<line x1="227.6" y1="26" x2="227.6" y2="378" stroke="#c9bcff" stroke-opacity="0.12"/>
+<text x="227.6" y="394" text-anchor="middle" fill="#a69fc0" font-size="12">4</text>
+<line x1="246.8" y1="26" x2="246.8" y2="378" stroke="#c9bcff" stroke-opacity="0.12"/>
+<text x="246.8" y="394" text-anchor="middle" fill="#a69fc0" font-size="12">5</text>
+<line x1="266.0" y1="26" x2="266.0" y2="378" stroke="#c9bcff" stroke-opacity="0.12"/>
+<text x="266" y="394" text-anchor="middle" fill="#a69fc0" font-size="12">6</text>
+<line x1="285.2" y1="26" x2="285.2" y2="378" stroke="#c9bcff" stroke-opacity="0.12"/>
+<text x="285.2" y="394" text-anchor="middle" fill="#a69fc0" font-size="12">7</text>
+<line x1="304.4" y1="26" x2="304.4" y2="378" stroke="#c9bcff" stroke-opacity="0.12"/>
+<text x="304.4" y="394" text-anchor="middle" fill="#a69fc0" font-size="12">8</text>
+<line x1="323.6" y1="26" x2="323.6" y2="378" stroke="#c9bcff" stroke-opacity="0.12"/>
+<text x="323.6" y="394" text-anchor="middle" fill="#a69fc0" font-size="12">9</text>
+<line x1="342.8" y1="26" x2="342.8" y2="378" stroke="#c9bcff" stroke-opacity="0.12"/>
+<text x="342.8" y="394" text-anchor="middle" fill="#a69fc0" font-size="12">10</text>
+<line x1="362.0" y1="26" x2="362.0" y2="378" stroke="#c9bcff" stroke-opacity="0.12"/>
+<text x="362" y="394" text-anchor="middle" fill="#a69fc0" font-size="12">11</text>
+<line x1="381.2" y1="26" x2="381.2" y2="378" stroke="#c9bcff" stroke-opacity="0.12"/>
+<text x="381.2" y="394" text-anchor="middle" fill="#a69fc0" font-size="12">12</text>
+<line x1="400.4" y1="26" x2="400.4" y2="378" stroke="#c9bcff" stroke-opacity="0.12"/>
+<text x="400.4" y="394" text-anchor="middle" fill="#a69fc0" font-size="12">13</text>
+<line x1="419.6" y1="26" x2="419.6" y2="378" stroke="#c9bcff" stroke-opacity="0.12"/>
+<text x="419.6" y="394" text-anchor="middle" fill="#a69fc0" font-size="12">14</text>
+<line x1="438.8" y1="26" x2="438.8" y2="378" stroke="#c9bcff" stroke-opacity="0.12"/>
+<text x="438.8" y="394" text-anchor="middle" fill="#a69fc0" font-size="12">15</text>
+<line x1="458.0" y1="26" x2="458.0" y2="378" stroke="#c9bcff" stroke-opacity="0.12"/>
+<text x="458" y="394" text-anchor="middle" fill="#a69fc0" font-size="12">16</text>
+<line x1="477.2" y1="26" x2="477.2" y2="378" stroke="#c9bcff" stroke-opacity="0.12"/>
+<text x="477.2" y="394" text-anchor="middle" fill="#a69fc0" font-size="12">17</text>
+<line x1="496.4" y1="26" x2="496.4" y2="378" stroke="#c9bcff" stroke-opacity="0.12"/>
+<text x="496.4" y="394" text-anchor="middle" fill="#a69fc0" font-size="12">18</text>
+<line x1="515.6" y1="26" x2="515.6" y2="378" stroke="#c9bcff" stroke-opacity="0.12"/>
+<text x="515.6" y="394" text-anchor="middle" fill="#a69fc0" font-size="12">19</text>
+<line x1="534.8" y1="26" x2="534.8" y2="378" stroke="#c9bcff" stroke-opacity="0.12"/>
+<text x="534.8" y="394" text-anchor="middle" fill="#a69fc0" font-size="12">20</text>
+<line x1="554.0" y1="26" x2="554.0" y2="378" stroke="#c9bcff" stroke-opacity="0.12"/>
+<text x="554" y="394" text-anchor="middle" fill="#a69fc0" font-size="12">21</text>
+<line x1="573.2" y1="26" x2="573.2" y2="378" stroke="#c9bcff" stroke-opacity="0.12"/>
+<text x="573.2" y="394" text-anchor="middle" fill="#a69fc0" font-size="12">22</text>
+<line x1="592.4" y1="26" x2="592.4" y2="378" stroke="#c9bcff" stroke-opacity="0.12"/>
+<text x="592.4" y="394" text-anchor="middle" fill="#a69fc0" font-size="12">23</text>
+<line x1="611.6" y1="26" x2="611.6" y2="378" stroke="#c9bcff" stroke-opacity="0.12"/>
+<text x="611.6" y="394" text-anchor="middle" fill="#a69fc0" font-size="12">24</text>
+<line x1="630.8" y1="26" x2="630.8" y2="378" stroke="#c9bcff" stroke-opacity="0.12"/>
+<text x="630.8" y="394" text-anchor="middle" fill="#a69fc0" font-size="12">25</text>
+<line x1="650.0" y1="26" x2="650.0" y2="378" stroke="#c9bcff" stroke-opacity="0.12"/>
+<text x="650" y="394" text-anchor="middle" fill="#a69fc0" font-size="12">26</text>
+<text x="410" y="406" text-anchor="middle" fill="#a69fc0" font-size="12">round bought</text>
+<text x="162" y="41" text-anchor="end" fill="#ece8f6" font-size="12">gate:armory</text>
+<circle cx="208.4" cy="37" r="8.0" fill="#19d3e6" fill-opacity="0.55"><title>gate:armory: 173 in round 3</title></circle>
+<circle cx="227.6" cy="37" r="3.7" fill="#19d3e6" fill-opacity="0.55"><title>gate:armory: 50 in round 4</title></circle>
+<circle cx="189.2" cy="37" r="2.3" fill="#19d3e6" fill-opacity="0.55"><title>gate:armory: 9 in round 2</title></circle>
+<circle cx="266.0" cy="37" r="2.1" fill="#19d3e6" fill-opacity="0.55"><title>gate:armory: 4 in round 6</title></circle>
+<circle cx="323.6" cy="37" r="2.1" fill="#19d3e6" fill-opacity="0.55"><title>gate:armory: 2 in round 9</title></circle>
+<circle cx="304.4" cy="37" r="2.0" fill="#19d3e6" fill-opacity="0.55"><title>gate:armory: 1 in round 8</title></circle>
+<line x1="214.0" y1="29" x2="214.0" y2="45" stroke="#ece8f6" stroke-width="2"/>
+<text x="656" y="41" fill="#a69fc0" font-size="12">239×</text>
+<text x="162" y="63" text-anchor="end" fill="#ece8f6" font-size="12">gun:shotgun</text>
+<circle cx="208.4" cy="59" r="8.0" fill="#19d3e6" fill-opacity="0.55"><title>gun:shotgun: 121 in round 3</title></circle>
+<circle cx="227.6" cy="59" r="5.9" fill="#19d3e6" fill-opacity="0.55"><title>gun:shotgun: 79 in round 4</title></circle>
+<circle cx="189.2" cy="59" r="2.2" fill="#19d3e6" fill-opacity="0.55"><title>gun:shotgun: 5 in round 2</title></circle>
+<circle cx="323.6" cy="59" r="2.2" fill="#19d3e6" fill-opacity="0.55"><title>gun:shotgun: 4 in round 9</title></circle>
+<circle cx="266.0" cy="59" r="2.1" fill="#19d3e6" fill-opacity="0.55"><title>gun:shotgun: 2 in round 6</title></circle>
+<circle cx="304.4" cy="59" r="2.1" fill="#19d3e6" fill-opacity="0.55"><title>gun:shotgun: 2 in round 8</title></circle>
+<circle cx="419.6" cy="59" r="2.0" fill="#19d3e6" fill-opacity="0.55"><title>gun:shotgun: 1 in round 14</title></circle>
+<circle cx="246.8" cy="59" r="2.0" fill="#19d3e6" fill-opacity="0.55"><title>gun:shotgun: 1 in round 5</title></circle>
+<line x1="219.7" y1="51" x2="219.7" y2="67" stroke="#ece8f6" stroke-width="2"/>
+<text x="656" y="63" fill="#a69fc0" font-size="12">215×</text>
+<text x="162" y="85" text-anchor="end" fill="#ece8f6" font-size="12">gun:nailgun</text>
+<circle cx="227.6" cy="81" r="8.0" fill="#19d3e6" fill-opacity="0.55"><title>gun:nailgun: 173 in round 4</title></circle>
+<circle cx="266.0" cy="81" r="2.5" fill="#19d3e6" fill-opacity="0.55"><title>gun:nailgun: 15 in round 6</title></circle>
+<circle cx="208.4" cy="81" r="2.3" fill="#19d3e6" fill-opacity="0.55"><title>gun:nailgun: 8 in round 3</title></circle>
+<circle cx="246.8" cy="81" r="2.1" fill="#19d3e6" fill-opacity="0.55"><title>gun:nailgun: 4 in round 5</title></circle>
+<circle cx="342.8" cy="81" r="2.0" fill="#19d3e6" fill-opacity="0.55"><title>gun:nailgun: 1 in round 10</title></circle>
+<circle cx="419.6" cy="81" r="2.0" fill="#19d3e6" fill-opacity="0.55"><title>gun:nailgun: 1 in round 14</title></circle>
+<circle cx="515.6" cy="81" r="2.0" fill="#19d3e6" fill-opacity="0.55"><title>gun:nailgun: 1 in round 19</title></circle>
+<line x1="233.0" y1="73" x2="233.0" y2="89" stroke="#ece8f6" stroke-width="2"/>
+<text x="656" y="85" fill="#a69fc0" font-size="12">203×</text>
+<text x="162" y="107" text-anchor="end" fill="#ece8f6" font-size="12">perk:flip</text>
+<circle cx="266.0" cy="103" r="8.0" fill="#19d3e6" fill-opacity="0.55"><title>perk:flip: 20 in round 6</title></circle>
+<circle cx="227.6" cy="103" r="7.4" fill="#19d3e6" fill-opacity="0.55"><title>perk:flip: 18 in round 4</title></circle>
+<circle cx="246.8" cy="103" r="5.0" fill="#19d3e6" fill-opacity="0.55"><title>perk:flip: 10 in round 5</title></circle>
+<circle cx="208.4" cy="103" r="3.2" fill="#19d3e6" fill-opacity="0.55"><title>perk:flip: 4 in round 3</title></circle>
+<line x1="244.6" y1="95" x2="244.6" y2="111" stroke="#ece8f6" stroke-width="2"/>
+<text x="656" y="107" fill="#a69fc0" font-size="12">52×</text>
+<text x="162" y="129" text-anchor="end" fill="#ece8f6" font-size="12">gate:slabs</text>
+<circle cx="246.8" cy="125" r="8.0" fill="#19d3e6" fill-opacity="0.55"><title>gate:slabs: 113 in round 5</title></circle>
+<circle cx="266.0" cy="125" r="7.1" fill="#19d3e6" fill-opacity="0.55"><title>gate:slabs: 96 in round 6</title></circle>
+<circle cx="285.2" cy="125" r="3.0" fill="#19d3e6" fill-opacity="0.55"><title>gate:slabs: 19 in round 7</title></circle>
+<circle cx="227.6" cy="125" r="2.9" fill="#19d3e6" fill-opacity="0.55"><title>gate:slabs: 17 in round 4</title></circle>
+<line x1="256.0" y1="117" x2="256.0" y2="133" stroke="#ece8f6" stroke-width="2"/>
+<text x="656" y="129" fill="#a69fc0" font-size="12">245×</text>
+<text x="162" y="151" text-anchor="end" fill="#ece8f6" font-size="12">perk:slipstream</text>
+<circle cx="266.0" cy="147" r="8.0" fill="#19d3e6" fill-opacity="0.55"><title>perk:slipstream: 12 in round 6</title></circle>
+<circle cx="246.8" cy="147" r="3.5" fill="#19d3e6" fill-opacity="0.55"><title>perk:slipstream: 3 in round 5</title></circle>
+<circle cx="554.0" cy="147" r="2.5" fill="#19d3e6" fill-opacity="0.55"><title>perk:slipstream: 1 in round 21</title></circle>
+<line x1="280.4" y1="139" x2="280.4" y2="155" stroke="#ece8f6" stroke-width="2"/>
+<text x="656" y="151" fill="#a69fc0" font-size="12">16×</text>
+<text x="162" y="173" text-anchor="end" fill="#ece8f6" font-size="12">gun:rocket</text>
+<circle cx="246.8" cy="169" r="8.0" fill="#19d3e6" fill-opacity="0.55"><title>gun:rocket: 88 in round 5</title></circle>
+<circle cx="266.0" cy="169" r="2.8" fill="#19d3e6" fill-opacity="0.55"><title>gun:rocket: 12 in round 6</title></circle>
+<circle cx="362.0" cy="169" r="2.6" fill="#19d3e6" fill-opacity="0.55"><title>gun:rocket: 9 in round 11</title></circle>
+<circle cx="342.8" cy="169" r="2.3" fill="#19d3e6" fill-opacity="0.55"><title>gun:rocket: 4 in round 10</title></circle>
+<circle cx="419.6" cy="169" r="2.3" fill="#19d3e6" fill-opacity="0.55"><title>gun:rocket: 4 in round 14</title></circle>
+<circle cx="496.4" cy="169" r="2.2" fill="#19d3e6" fill-opacity="0.55"><title>gun:rocket: 3 in round 18</title></circle>
+<circle cx="227.6" cy="169" r="2.2" fill="#19d3e6" fill-opacity="0.55"><title>gun:rocket: 3 in round 4</title></circle>
+<circle cx="515.6" cy="169" r="2.1" fill="#19d3e6" fill-opacity="0.55"><title>gun:rocket: 2 in round 19</title></circle>
+<circle cx="323.6" cy="169" r="2.1" fill="#19d3e6" fill-opacity="0.55"><title>gun:rocket: 2 in round 9</title></circle>
+<circle cx="381.2" cy="169" r="2.1" fill="#19d3e6" fill-opacity="0.55"><title>gun:rocket: 1 in round 12</title></circle>
+<circle cx="400.4" cy="169" r="2.1" fill="#19d3e6" fill-opacity="0.55"><title>gun:rocket: 1 in round 13</title></circle>
+<circle cx="477.2" cy="169" r="2.1" fill="#19d3e6" fill-opacity="0.55"><title>gun:rocket: 1 in round 17</title></circle>
+<circle cx="534.8" cy="169" r="2.1" fill="#19d3e6" fill-opacity="0.55"><title>gun:rocket: 1 in round 20</title></circle>
+<line x1="281.4" y1="161" x2="281.4" y2="177" stroke="#ece8f6" stroke-width="2"/>
+<text x="656" y="173" fill="#a69fc0" font-size="12">131×</text>
+<text x="162" y="195" text-anchor="end" fill="#ece8f6" font-size="12">gate:heights</text>
+<circle cx="304.4" cy="191" r="8.0" fill="#19d3e6" fill-opacity="0.55"><title>gate:heights: 50 in round 8</title></circle>
+<circle cx="266.0" cy="191" r="7.8" fill="#19d3e6" fill-opacity="0.55"><title>gate:heights: 48 in round 6</title></circle>
+<circle cx="285.2" cy="191" r="7.8" fill="#19d3e6" fill-opacity="0.55"><title>gate:heights: 48 in round 7</title></circle>
+<circle cx="246.8" cy="191" r="3.1" fill="#19d3e6" fill-opacity="0.55"><title>gate:heights: 9 in round 5</title></circle>
+<circle cx="323.6" cy="191" r="2.4" fill="#19d3e6" fill-opacity="0.55"><title>gate:heights: 3 in round 9</title></circle>
+<circle cx="342.8" cy="191" r="2.2" fill="#19d3e6" fill-opacity="0.55"><title>gate:heights: 2 in round 10</title></circle>
+<line x1="284.7" y1="183" x2="284.7" y2="199" stroke="#ece8f6" stroke-width="2"/>
+<text x="656" y="195" fill="#a69fc0" font-size="12">160×</text>
+<text x="162" y="217" text-anchor="end" fill="#ece8f6" font-size="12">perk:vigor</text>
+<circle cx="246.8" cy="213" r="8.0" fill="#19d3e6" fill-opacity="0.55"><title>perk:vigor: 64 in round 5</title></circle>
+<circle cx="266.0" cy="213" r="6.1" fill="#19d3e6" fill-opacity="0.55"><title>perk:vigor: 44 in round 6</title></circle>
+<circle cx="323.6" cy="213" r="3.1" fill="#19d3e6" fill-opacity="0.55"><title>perk:vigor: 12 in round 9</title></circle>
+<circle cx="419.6" cy="213" r="3.0" fill="#19d3e6" fill-opacity="0.55"><title>perk:vigor: 11 in round 14</title></circle>
+<circle cx="285.2" cy="213" r="2.9" fill="#19d3e6" fill-opacity="0.55"><title>perk:vigor: 10 in round 7</title></circle>
+<circle cx="342.8" cy="213" r="2.8" fill="#19d3e6" fill-opacity="0.55"><title>perk:vigor: 9 in round 10</title></circle>
+<circle cx="400.4" cy="213" r="2.3" fill="#19d3e6" fill-opacity="0.55"><title>perk:vigor: 3 in round 13</title></circle>
+<circle cx="362.0" cy="213" r="2.2" fill="#19d3e6" fill-opacity="0.55"><title>perk:vigor: 2 in round 11</title></circle>
+<circle cx="515.6" cy="213" r="2.2" fill="#19d3e6" fill-opacity="0.55"><title>perk:vigor: 2 in round 19</title></circle>
+<circle cx="227.6" cy="213" r="2.2" fill="#19d3e6" fill-opacity="0.55"><title>perk:vigor: 2 in round 4</title></circle>
+<circle cx="304.4" cy="213" r="2.2" fill="#19d3e6" fill-opacity="0.55"><title>perk:vigor: 2 in round 8</title></circle>
+<line x1="285.4" y1="205" x2="285.4" y2="221" stroke="#ece8f6" stroke-width="2"/>
+<text x="656" y="217" fill="#a69fc0" font-size="12">161×</text>
+<text x="162" y="239" text-anchor="end" fill="#ece8f6" font-size="12">perk:quick</text>
+<circle cx="342.8" cy="235" r="8.0" fill="#19d3e6" fill-opacity="0.55"><title>perk:quick: 39 in round 10</title></circle>
+<circle cx="362.0" cy="235" r="4.0" fill="#19d3e6" fill-opacity="0.55"><title>perk:quick: 13 in round 11</title></circle>
+<circle cx="323.6" cy="235" r="3.8" fill="#19d3e6" fill-opacity="0.55"><title>perk:quick: 12 in round 9</title></circle>
+<circle cx="419.6" cy="235" r="3.1" fill="#19d3e6" fill-opacity="0.55"><title>perk:quick: 7 in round 14</title></circle>
+<circle cx="381.2" cy="235" r="2.5" fill="#19d3e6" fill-opacity="0.55"><title>perk:quick: 3 in round 12</title></circle>
+<circle cx="400.4" cy="235" r="2.5" fill="#19d3e6" fill-opacity="0.55"><title>perk:quick: 3 in round 13</title></circle>
+<circle cx="438.8" cy="235" r="2.5" fill="#19d3e6" fill-opacity="0.55"><title>perk:quick: 3 in round 15</title></circle>
+<circle cx="285.2" cy="235" r="2.3" fill="#19d3e6" fill-opacity="0.55"><title>perk:quick: 2 in round 7</title></circle>
+<circle cx="304.4" cy="235" r="2.3" fill="#19d3e6" fill-opacity="0.55"><title>perk:quick: 2 in round 8</title></circle>
+<circle cx="458.0" cy="235" r="2.2" fill="#19d3e6" fill-opacity="0.55"><title>perk:quick: 1 in round 16</title></circle>
+<circle cx="266.0" cy="235" r="2.2" fill="#19d3e6" fill-opacity="0.55"><title>perk:quick: 1 in round 6</title></circle>
+<line x1="354.2" y1="227" x2="354.2" y2="243" stroke="#ece8f6" stroke-width="2"/>
+<text x="656" y="239" fill="#a69fc0" font-size="12">86×</text>
+<text x="162" y="261" text-anchor="end" fill="#ece8f6" font-size="12">gate:grinder</text>
+<circle cx="342.8" cy="257" r="8.0" fill="#19d3e6" fill-opacity="0.55"><title>gate:grinder: 20 in round 10</title></circle>
+<circle cx="362.0" cy="257" r="7.4" fill="#19d3e6" fill-opacity="0.55"><title>gate:grinder: 18 in round 11</title></circle>
+<circle cx="285.2" cy="257" r="4.7" fill="#19d3e6" fill-opacity="0.55"><title>gate:grinder: 9 in round 7</title></circle>
+<circle cx="323.6" cy="257" r="4.4" fill="#19d3e6" fill-opacity="0.55"><title>gate:grinder: 8 in round 9</title></circle>
+<circle cx="381.2" cy="257" r="3.8" fill="#19d3e6" fill-opacity="0.55"><title>gate:grinder: 6 in round 12</title></circle>
+<circle cx="438.8" cy="257" r="3.8" fill="#19d3e6" fill-opacity="0.55"><title>gate:grinder: 6 in round 15</title></circle>
+<circle cx="419.6" cy="257" r="3.5" fill="#19d3e6" fill-opacity="0.55"><title>gate:grinder: 5 in round 14</title></circle>
+<circle cx="534.8" cy="257" r="2.6" fill="#19d3e6" fill-opacity="0.55"><title>gate:grinder: 2 in round 20</title></circle>
+<circle cx="266.0" cy="257" r="2.6" fill="#19d3e6" fill-opacity="0.55"><title>gate:grinder: 2 in round 6</title></circle>
+<circle cx="304.4" cy="257" r="2.6" fill="#19d3e6" fill-opacity="0.55"><title>gate:grinder: 2 in round 8</title></circle>
+<circle cx="400.4" cy="257" r="2.3" fill="#19d3e6" fill-opacity="0.55"><title>gate:grinder: 1 in round 13</title></circle>
+<line x1="356.4" y1="249" x2="356.4" y2="265" stroke="#ece8f6" stroke-width="2"/>
+<text x="656" y="261" fill="#a69fc0" font-size="12">79×</text>
+<text x="162" y="283" text-anchor="end" fill="#ece8f6" font-size="12">perk:mend</text>
+<circle cx="362.0" cy="279" r="8.0" fill="#19d3e6" fill-opacity="0.55"><title>perk:mend: 23 in round 11</title></circle>
+<circle cx="342.8" cy="279" r="6.7" fill="#19d3e6" fill-opacity="0.55"><title>perk:mend: 18 in round 10</title></circle>
+<circle cx="438.8" cy="279" r="4.3" fill="#19d3e6" fill-opacity="0.55"><title>perk:mend: 9 in round 15</title></circle>
+<circle cx="381.2" cy="279" r="3.6" fill="#19d3e6" fill-opacity="0.55"><title>perk:mend: 6 in round 12</title></circle>
+<circle cx="285.2" cy="279" r="3.3" fill="#19d3e6" fill-opacity="0.55"><title>perk:mend: 5 in round 7</title></circle>
+<circle cx="419.6" cy="279" r="3.0" fill="#19d3e6" fill-opacity="0.55"><title>perk:mend: 4 in round 14</title></circle>
+<circle cx="400.4" cy="279" r="2.5" fill="#19d3e6" fill-opacity="0.55"><title>perk:mend: 2 in round 13</title></circle>
+<circle cx="534.8" cy="279" r="2.5" fill="#19d3e6" fill-opacity="0.55"><title>perk:mend: 2 in round 20</title></circle>
+<circle cx="266.0" cy="279" r="2.5" fill="#19d3e6" fill-opacity="0.55"><title>perk:mend: 2 in round 6</title></circle>
+<circle cx="304.4" cy="279" r="2.5" fill="#19d3e6" fill-opacity="0.55"><title>perk:mend: 2 in round 8</title></circle>
+<circle cx="323.6" cy="279" r="2.3" fill="#19d3e6" fill-opacity="0.55"><title>perk:mend: 1 in round 9</title></circle>
+<line x1="367.2" y1="271" x2="367.2" y2="287" stroke="#ece8f6" stroke-width="2"/>
+<text x="656" y="283" fill="#a69fc0" font-size="12">74×</text>
+<text x="162" y="305" text-anchor="end" fill="#ece8f6" font-size="12">perk:deadeye</text>
+<circle cx="362.0" cy="301" r="8.0" fill="#19d3e6" fill-opacity="0.55"><title>perk:deadeye: 14 in round 11</title></circle>
+<circle cx="419.6" cy="301" r="6.3" fill="#19d3e6" fill-opacity="0.55"><title>perk:deadeye: 10 in round 14</title></circle>
+<circle cx="381.2" cy="301" r="5.4" fill="#19d3e6" fill-opacity="0.55"><title>perk:deadeye: 8 in round 12</title></circle>
+<circle cx="342.8" cy="301" r="3.7" fill="#19d3e6" fill-opacity="0.55"><title>perk:deadeye: 4 in round 10</title></circle>
+<circle cx="438.8" cy="301" r="3.7" fill="#19d3e6" fill-opacity="0.55"><title>perk:deadeye: 4 in round 15</title></circle>
+<circle cx="285.2" cy="301" r="3.7" fill="#19d3e6" fill-opacity="0.55"><title>perk:deadeye: 4 in round 7</title></circle>
+<circle cx="515.6" cy="301" r="3.3" fill="#19d3e6" fill-opacity="0.55"><title>perk:deadeye: 3 in round 19</title></circle>
+<circle cx="534.8" cy="301" r="3.3" fill="#19d3e6" fill-opacity="0.55"><title>perk:deadeye: 3 in round 20</title></circle>
+<circle cx="458.0" cy="301" r="2.9" fill="#19d3e6" fill-opacity="0.55"><title>perk:deadeye: 2 in round 16</title></circle>
+<circle cx="477.2" cy="301" r="2.9" fill="#19d3e6" fill-opacity="0.55"><title>perk:deadeye: 2 in round 17</title></circle>
+<line x1="400.0" y1="293" x2="400.0" y2="309" stroke="#ece8f6" stroke-width="2"/>
+<text x="656" y="305" fill="#a69fc0" font-size="12">54×</text>
+<text x="162" y="327" text-anchor="end" fill="#ece8f6" font-size="12">gun:rail</text>
+<circle cx="381.2" cy="323" r="8.0" fill="#19d3e6" fill-opacity="0.55"><title>gun:rail: 6 in round 12</title></circle>
+<circle cx="458.0" cy="323" r="7.0" fill="#19d3e6" fill-opacity="0.55"><title>gun:rail: 5 in round 16</title></circle>
+<circle cx="534.8" cy="323" r="6.0" fill="#19d3e6" fill-opacity="0.55"><title>gun:rail: 4 in round 20</title></circle>
+<circle cx="554.0" cy="323" r="6.0" fill="#19d3e6" fill-opacity="0.55"><title>gun:rail: 4 in round 21</title></circle>
+<circle cx="362.0" cy="323" r="4.0" fill="#19d3e6" fill-opacity="0.55"><title>gun:rail: 2 in round 11</title></circle>
+<circle cx="400.4" cy="323" r="4.0" fill="#19d3e6" fill-opacity="0.55"><title>gun:rail: 2 in round 13</title></circle>
+<circle cx="419.6" cy="323" r="4.0" fill="#19d3e6" fill-opacity="0.55"><title>gun:rail: 2 in round 14</title></circle>
+<circle cx="515.6" cy="323" r="4.0" fill="#19d3e6" fill-opacity="0.55"><title>gun:rail: 2 in round 19</title></circle>
+<circle cx="496.4" cy="323" r="3.0" fill="#19d3e6" fill-opacity="0.55"><title>gun:rail: 1 in round 18</title></circle>
+<line x1="458.0" y1="315" x2="458.0" y2="331" stroke="#ece8f6" stroke-width="2"/>
+<text x="656" y="327" fill="#a69fc0" font-size="12">28×</text>
+<text x="162" y="349" text-anchor="end" fill="#ece8f6" font-size="12">gate:islands</text>
+<circle cx="458.0" cy="345" r="8.0" fill="#19d3e6" fill-opacity="0.55"><title>gate:islands: 3 in round 16</title></circle>
+<circle cx="477.2" cy="345" r="8.0" fill="#19d3e6" fill-opacity="0.55"><title>gate:islands: 3 in round 17</title></circle>
+<circle cx="515.6" cy="345" r="8.0" fill="#19d3e6" fill-opacity="0.55"><title>gate:islands: 3 in round 19</title></circle>
+<circle cx="554.0" cy="345" r="6.0" fill="#19d3e6" fill-opacity="0.55"><title>gate:islands: 2 in round 21</title></circle>
+<circle cx="381.2" cy="345" r="4.0" fill="#19d3e6" fill-opacity="0.55"><title>gate:islands: 1 in round 12</title></circle>
+<circle cx="419.6" cy="345" r="4.0" fill="#19d3e6" fill-opacity="0.55"><title>gate:islands: 1 in round 14</title></circle>
+<circle cx="438.8" cy="345" r="4.0" fill="#19d3e6" fill-opacity="0.55"><title>gate:islands: 1 in round 15</title></circle>
+<circle cx="534.8" cy="345" r="4.0" fill="#19d3e6" fill-opacity="0.55"><title>gate:islands: 1 in round 20</title></circle>
+<circle cx="573.2" cy="345" r="4.0" fill="#19d3e6" fill-opacity="0.55"><title>gate:islands: 1 in round 22</title></circle>
+<line x1="488.0" y1="337" x2="488.0" y2="353" stroke="#ece8f6" stroke-width="2"/>
+<text x="656" y="349" fill="#a69fc0" font-size="12">16×</text>
+<text x="162" y="371" text-anchor="end" fill="#ece8f6" font-size="12">perk:grip</text>
+<circle cx="515.6" cy="367" r="8.0" fill="#19d3e6" fill-opacity="0.55"><title>perk:grip: 2 in round 19</title></circle>
+<circle cx="554.0" cy="367" r="8.0" fill="#19d3e6" fill-opacity="0.55"><title>perk:grip: 2 in round 21</title></circle>
+<circle cx="438.8" cy="367" r="5.0" fill="#19d3e6" fill-opacity="0.55"><title>perk:grip: 1 in round 15</title></circle>
+<circle cx="477.2" cy="367" r="5.0" fill="#19d3e6" fill-opacity="0.55"><title>perk:grip: 1 in round 17</title></circle>
+<line x1="509.2" y1="359" x2="509.2" y2="375" stroke="#ece8f6" stroke-width="2"/>
+<text x="656" y="371" fill="#a69fc0" font-size="12">6×</text>
+</svg><p class="dim">Dots: runs that bought it in that round (larger: more). The bar: the mean round.</p></div>
+</main></body></html>

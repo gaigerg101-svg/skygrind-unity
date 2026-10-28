@@ -1,0 +1,10 @@
+command: node Tools/night/n72-zscan.cjs --selftest   (2026-10-27 11:47:53 USMST, worktree n72-L)
+ok   a planted coplanar pair (tops on y = 3, 4 m2 overlap) is found raw (1 found)
+ok   mod 3 separates indices 0 and 1 (2 mm)
+ok   indices 0 and 3 stay coplanar under mod 3 (the left pair)
+ok   the plan separates them by at least 4 mm (classes 0,0,0,2)
+ok   a 0.01 m gap is not found
+ok   a 2 mm raw gap is closed by growth class (1, 0) and is flagged there
+ok   the plan keeps it open at least 4 mm (classes 0,1)
+ok   touching boxes (A max x = B min x) share no same-facing face on x
+SELFTEST n72-zscan: PASS

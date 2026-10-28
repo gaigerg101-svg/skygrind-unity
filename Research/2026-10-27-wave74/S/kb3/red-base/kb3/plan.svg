@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="598" height="560" viewBox="0 0 598 560">
+<defs><pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="8" stroke="#ff5a1f" stroke-width="2" opacity="0.55"/></pattern><marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#ffe08a"/></marker></defs>
+<rect width="598" height="560" fill="#14121c"/>
+<rect x="56.0" y="56.0" width="336.0" height="448.0" fill="#3a3550"/>
+<rect x="84.0" y="84.0" width="280.0" height="392.0" fill="#26232f" stroke="#8a84a8" stroke-width="1"/>
+<rect x="196.0" y="476.0" width="56.0" height="56.0" fill="#26232f" stroke="#cfc6ff" stroke-dasharray="3,2" stroke-width="1"/>
+<rect x="196.0" y="28.0" width="56.0" height="56.0" fill="#26232f" stroke="#cfc6ff" stroke-dasharray="3,2" stroke-width="1"/>
+<rect x="294.0" y="84.0" width="70.0" height="98.0" fill="rgb(149,149,156)" stroke="#0c0b10" stroke-width="1" opacity="0.95"/>
+<text x="329.0" y="133.0" font-size="11" fill="#0c0b10" font-family="Consolas,monospace" text-anchor="middle" dominant-baseline="middle">d 4.5</text>
+<rect x="266.0" y="84.0" width="28.0" height="98.0" fill="rgb(149,149,156)" stroke="#0c0b10" stroke-width="1" opacity="0.95"/>
+<text x="280.0" y="133.0" font-size="11" fill="#0c0b10" font-family="Consolas,monospace" text-anchor="middle" dominant-baseline="middle">d 4.5</text>
+<rect x="355.6" y="196.0" width="8.4" height="238.0" fill="rgb(210,210,221)" stroke="#0c0b10" stroke-width="1" opacity="0.95"/>
+<rect x="273.0" y="378.0" width="21.0" height="28.0" fill="rgb(210,210,221)" stroke="#0c0b10" stroke-width="1" opacity="0.95"/>
+<text x="283.5" y="392.0" font-size="11" fill="#0c0b10" font-family="Consolas,monospace" text-anchor="middle" dominant-baseline="middle">h 14</text>
+<rect x="84.0" y="287.0" width="63.0" height="28.0" fill="rgb(210,210,221)" stroke="#0c0b10" stroke-width="1" opacity="0.95"/>
+<text x="115.5" y="301.0" font-size="11" fill="#0c0b10" font-family="Consolas,monospace" text-anchor="middle" dominant-baseline="middle">h 14</text>
+<rect x="182.0" y="287.0" width="84.0" height="28.0" fill="rgb(210,210,221)" stroke="#0c0b10" stroke-width="1" opacity="0.95"/>
+<text x="224.0" y="301.0" font-size="11" fill="#0c0b10" font-family="Consolas,monospace" text-anchor="middle" dominant-baseline="middle">h 14</text>
+<rect x="301.0" y="287.0" width="28.0" height="28.0" fill="rgb(210,210,221)" stroke="#0c0b10" stroke-width="1" opacity="0.95"/>
+<text x="315.0" y="301.0" font-size="11" fill="#0c0b10" font-family="Consolas,monospace" text-anchor="middle" dominant-baseline="middle">h 14</text>
+<rect x="133.0" y="231.0" width="63.0" height="28.0" fill="rgb(210,210,221)" stroke="#0c0b10" stroke-width="1" opacity="0.95"/>
+<text x="164.5" y="245.0" font-size="11" fill="#0c0b10" font-family="Consolas,monospace" text-anchor="middle" dominant-baseline="middle">h 14</text>
+<rect x="252.0" y="231.0" width="63.0" height="28.0" fill="rgb(210,210,221)" stroke="#0c0b10" stroke-width="1" opacity="0.95"/>
+<text x="283.5" y="245.0" font-size="11" fill="#0c0b10" font-family="Consolas,monospace" text-anchor="middle" dominant-baseline="middle">h 14</text>
+<rect x="154.0" y="126.0" width="112.0" height="42.0" fill="#6d6250" stroke="#ffe08a" stroke-width="1" opacity="0.9"/>
+<line x1="154.0" y1="147.0" x2="266.0" y2="147.0" stroke="#ffe08a" stroke-width="2" marker-end="url(#arr)"/>
+<text x="235.2" y="147.0" font-size="9" fill="#ffe08a" font-family="Consolas,monospace" >ramp 4.5</text>
+<path d="M217.0,267.0 L223.0,273.0 L217.0,279.0 L211.0,273.0 z" fill="#5cff8a" stroke="#fff" stroke-width="1"/>
+<text x="228.2" y="273.0" font-size="9" fill="#fff" font-family="Consolas,monospace" >health</text>
+<circle cx="224.0" cy="399.0" r="3" fill="#f2efff"/>
+<circle cx="224.0" cy="273.0" r="3" fill="#f2efff"/>
+<circle cx="224.0" cy="147.0" r="3" fill="#f2efff"/>
+<circle cx="322.0" cy="126.0" r="14.0" fill="#f2efff" opacity="0.18"/>
+<circle cx="322.0" cy="126.0" r="3" fill="#f2efff"/>
+<circle cx="224.0" cy="105.0" r="17.5" fill="#36e3ff" opacity="0.18"/>
+<circle cx="224.0" cy="105.0" r="3" fill="#36e3ff"/>
+<circle cx="133.0" cy="112.0" r="2.5" fill="#ff5a1f"/>
+<circle cx="175.0" cy="98.0" r="2.5" fill="#ff5a1f"/>
+<circle cx="224.0" cy="112.0" r="2.5" fill="#ff5a1f"/>
+<circle cx="259.0" cy="98.0" r="2.5" fill="#ff5a1f"/>
+<circle cx="196.0" cy="182.0" r="2.5" fill="#ff5a1f"/>
+<circle cx="133.0" cy="147.0" r="2.5" fill="#ff5a1f"/>
+<circle cx="273.0" cy="273.0" r="2.5" fill="#ff5a1f"/>
+<circle cx="287.0" cy="273.0" r="2.5" fill="#ff5a1f"/>
+<circle cx="297.5" cy="269.5" r="2.5" fill="#ff5a1f"/>
+<rect x="347.0" y="95.0" width="6" height="6" fill="none" stroke="#ff5a1f" stroke-width="1.5"/>
+<rect x="333.0" y="151.0" width="6" height="6" fill="none" stroke="#ff5a1f" stroke-width="1.5"/>
+<polyline points="133.0,413.0 164.5,343.0 164.5,273.0 224.0,273.0 224.0,203.0 161.0,175.0 161.0,112.0 224.0,105.0" fill="none" stroke="#ffffff" stroke-width="1" stroke-dasharray="2,3" opacity="0.6"/>
+<polyline points="161.0,147.0 287.0,147.0 322.0,119.0" fill="none" stroke="#ffffff" stroke-width="1" stroke-dasharray="2,3" opacity="0.6"/>
+<polyline points="343.0,427.0 343.0,329.0" fill="none" stroke="#ffffff" stroke-width="1" stroke-dasharray="2,3" opacity="0.6"/>
+<path d="M105.0,392.0 L110.0,403.0 L100.0,403.0 z" fill="#36e3ff"/>
+<circle cx="224.0" cy="105.0" r="5" fill="none" stroke="#ffffff" stroke-width="2"/>
+<text x="89.6" y="103.6" font-size="12" fill="#ffffff" font-family="Consolas,monospace" font-weight="bold">kb3 3.3 THE PRESS HALL</text>
+<text x="89.6" y="124.6" font-size="10" fill="#cfc6ff" font-family="Consolas,monospace" >20x28 h14  5h+2s / 1c+4h / 1c+2s / 4h+4s</text>
+<text x="89.6" y="469.0" font-size="9" fill="#9fe9ff" font-family="Consolas,monospace" >"When the floor glows, jump."</text>
+<text x="456" y="18" font-size="12" fill="#fff" font-family="Consolas,monospace" font-weight="bold">n67-kiln</text>
+<rect x="456" y="30" width="12" height="10" fill="#ff4d12" stroke="#888"/>
+<text x="472" y="39" font-size="10" fill="#ddd" font-family="Consolas,monospace">lava</text>
+<rect x="456" y="46" width="12" height="10" fill="#050508" stroke="#888"/>
+<text x="472" y="55" font-size="10" fill="#ddd" font-family="Consolas,monospace">void pit</text>
+<rect x="456" y="62" width="12" height="10" fill="#ff5a1f" stroke="#888"/>
+<text x="472" y="71" font-size="10" fill="#ddd" font-family="Consolas,monospace">hazard</text>
+<rect x="456" y="78" width="12" height="10" fill="#9fd8ff" stroke="#888"/>
+<text x="472" y="87" font-size="10" fill="#ddd" font-family="Consolas,monospace">ice</text>
+<rect x="456" y="94" width="12" height="10" fill="#6d6250" stroke="#888"/>
+<text x="472" y="103" font-size="10" fill="#ddd" font-family="Consolas,monospace">ramp (arrow up)</text>
+<rect x="456" y="110" width="12" height="10" fill="rgb(140,140,147)" stroke="#888"/>
+<text x="472" y="119" font-size="10" fill="#ddd" font-family="Consolas,monospace">box: kind top-y</text>
+<rect x="456" y="126" width="12" height="10" fill="#36e3ff" stroke="#888"/>
+<text x="472" y="135" font-size="10" fill="#ddd" font-family="Consolas,monospace">spawn</text>
+<rect x="456" y="142" width="12" height="10" fill="#ffffff" stroke="#888"/>
+<text x="472" y="151" font-size="10" fill="#ddd" font-family="Consolas,monospace">exit</text>
+<rect x="456" y="158" width="12" height="10" fill="#ff5a1f" stroke="#888"/>
+<text x="472" y="167" font-size="10" fill="#ddd" font-family="Consolas,monospace">node / high node</text>
+<rect x="456" y="174" width="12" height="10" fill="#5cff8a" stroke="#888"/>
+<text x="472" y="183" font-size="10" fill="#ddd" font-family="Consolas,monospace">pickup</text>
+<rect x="456" y="190" width="12" height="10" fill="#36e3ff" stroke="#888"/>
+<text x="472" y="199" font-size="10" fill="#ddd" font-family="Consolas,monospace">grapple node</text>
+<text x="456" y="220" font-size="10" fill="#aaa" font-family="Consolas,monospace">north up, 14 px/m</text>
+</svg>

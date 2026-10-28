@@ -1,0 +1,153 @@
+# command: node Tools/night/gen-n65-foundry.cjs --slots=latest --dry-plan --table
+# sha: 1cfbc786 (branch n65-T; tracked changes uncommitted: 1 file(s))
+# time: 2026-10-23 14:22:15 -> 2026-10-23 14:22:15 (local)
+# exit: 0
+
+gen-n65-foundry: Design/levels/n52/foundry.plan.json -> (--dry-plan: not written) (slots latest; rebuilt: none); every other room, door, piece and key n52's bit for bit
+  slot a2: latest Design/levels/n65/rooms/a2.json: n52's room exactly; boxes 1, ramps 1, pads 0, grapple 0, pits 0, tunnels 0, lights 3, props 0, teach35 2
+    row keys: keep 21, replace 0, add 0, drop 0
+    keep    id
+    keep    name
+    keep    kind
+    keep    rect
+    keep    height
+    keep    roof
+    keep    par
+    keep    job36
+    keep    verb36
+    keep    spawn
+    keep    exit
+    keep    arena36
+    keep    standIns
+    keep    standIns31
+    keep    standIns36
+    keep    waves
+    keep    lessons
+    keep    lessons31
+    keep    proofs
+    keep    frames36
+    keep    highNodes
+  slot a3: latest Design/levels/n65/rooms/a3.json: n52's room exactly; boxes 12, ramps 2, pads 2, grapple 0, pits 1, tunnels 0, lights 8, props 1, teach35 1
+    row keys: keep 25, replace 0, add 0, drop 0
+    keep    id
+    keep    name
+    keep    kind
+    keep    rect
+    keep    height
+    keep    roof
+    keep    par
+    keep    job36
+    keep    verb36
+    keep    spawn
+    keep    exit
+    keep    arena36
+    keep    waves
+    keep    lessons
+    keep    lessons31
+    keep    proofs
+    keep    frames36
+    keep    frames52
+    keep    nodes
+    keep    highNodes
+    keep    waveNodes43
+    keep    waveNodes43_why
+    keep    card52_why
+    keep    spawn_why
+    keep    n53_why
+  slot a4: latest Design/levels/n65/rooms/a4.json: n52's room exactly; boxes 1, ramps 2, pads 0, grapple 0, pits 0, tunnels 0, lights 3, props 0, teach35 0
+    row keys: keep 18, replace 0, add 0, drop 0
+    keep    id
+    keep    name
+    keep    kind
+    keep    rect
+    keep    height
+    keep    roof
+    keep    par
+    keep    job36
+    keep    verb36
+    keep    spawn
+    keep    exit
+    keep    arena36
+    keep    waves
+    keep    lessons
+    keep    lessons31
+    keep    proofs
+    keep    frames36
+    keep    highNodes
+  slot a5: latest Design/levels/n65/rooms/a5.json: n52's room exactly; boxes 12, ramps 3, pads 3, grapple 0, pits 1, tunnels 0, lights 8, props 3, teach35 0
+    row keys: keep 23, replace 0, add 0, drop 0
+    keep    id
+    keep    name
+    keep    kind
+    keep    rect
+    keep    height
+    keep    roof
+    keep    par
+    keep    job36
+    keep    verb36
+    keep    spawn
+    keep    exit
+    keep    arena36
+    keep    waves
+    keep    proofs
+    keep    frames36
+    keep    frames52
+    keep    nodes
+    keep    highNodes
+    keep    waveNodes43
+    keep    waveNodes43_why
+    keep    card52_why
+    keep    ext53_why
+    keep    waves56_why
+  slot b1: latest Design/levels/n65/rooms/b1.json: n52's room exactly; boxes 12, ramps 2, pads 2, grapple 0, pits 1, tunnels 0, lights 6, props 3, teach35 0
+    row keys: keep 24, replace 0, add 0, drop 0
+    keep    id
+    keep    name
+    keep    kind
+    keep    rect
+    keep    height
+    keep    roof
+    keep    par
+    keep    job36
+    keep    verb36
+    keep    spawn
+    keep    exit
+    keep    arena36
+    keep    waves
+    keep    proofs
+    keep    frames36
+    keep    frames52
+    keep    nodes
+    keep    highNodes
+    keep    waveNodes43
+    keep    waveNodes43_why
+    keep    bridges45
+    keep    bridges45_why
+    keep    card52_why
+    keep    ext53_why
+  slot a8: latest Design/levels/n65/rooms/a8.json: n52's room exactly; boxes 6, ramps 0, pads 0, grapple 0, pits 1, tunnels 0, lights 5, props 0, teach35 0
+    row keys: keep 24, replace 0, add 0, drop 0
+    keep    id
+    keep    name
+    keep    kind
+    keep    rect
+    keep    height
+    keep    roof
+    keep    par
+    keep    job36
+    keep    verb36
+    keep    spawn
+    keep    exit
+    keep    lessons
+    keep    lessons31
+    keep    routeVia
+    keep    proofs
+    keep    frames36
+    keep    arena36
+    keep    nodes
+    keep    reachFrom
+    keep    waves
+    keep    afterLesson43
+    keep    afterLesson43_why
+    keep    foundry43_why
+    keep    foundry46_why

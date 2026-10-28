@@ -1,0 +1,36 @@
+# node Tools/night/gen-slots.cjs --level kiln --run (slots67.json, every slot old; tracked outputs in T's tree); then n67-a1.cjs --verify; then n59-l-room.py n67-kiln vs n57-kiln room kb3c / kb2c
+# sha 00638946 + T1a's untracked tools; 2026-10-24 10:54:22
+openings: Design/levels/n67/openings67.json kiln kb2 held, kb2c vista, kb3 held, kb3c vista, kb3d held (seed Design/levels/n57/openings57.json)
+gen-slots --level kiln: Design/levels/n57/kiln.plan.json -> Design/levels/n67/kiln.plan.json (slots Design/levels/n67/kiln/slots67.json; rebuilt: none); every other room, door, piece and key n57-kiln's bit for bit
+  slot kb2: old Design/levels/n67/kiln/rooms-base/kb2.json: n57-kiln's room exactly; boxes 10, ramps 2, pads 2, grapple 0, pits 0, tunnels 0, lights 7, props 1
+  slot kb2c: old Design/levels/n67/kiln/rooms-base/kb2c.json: n57-kiln's room exactly; boxes 12, ramps 2, pads 1, grapple 0, pits 0, tunnels 0, lights 8, props 1
+  slot kb3: old Design/levels/n67/kiln/rooms-base/kb3.json: n57-kiln's room exactly; boxes 12, ramps 2, pads 2, grapple 0, pits 0, tunnels 0, lights 7, props 1
+  slot kb3c: old Design/levels/n67/kiln/rooms-base/kb3c.json: n57-kiln's room exactly; boxes 10, ramps 3, pads 2, grapple 0, pits 1, tunnels 0, lights 8, props 1
+  slot kb3d: old Design/levels/n67/kiln/rooms-base/kb3d.json: n57-kiln's room exactly; boxes 11, ramps 2, pads 1, grapple 0, pits 1, tunnels 0, lights 9, props 1
+shipped before: Design/levels/n67-kiln.json 79d29b5a8f834a0daba04584bed7b53afa7cbc04f7eb50caa1e355751135fee2, Assets/StreamingAssets/Design/levels/n67-kiln.json 79d29b5a8f834a0daba04584bed7b53afa7cbc04f7eb50caa1e355751135fee2
+  levelgen n67-kiln: 3442519 chars -> Design/levels/n67/kiln.json; 179 boxes + the floor, 17 barriers, 11 wedges, 8 pads, 0 grapple nodes, 19 zones (kb1, kb1b, kb2, kb2b, kb2c, kb3, kb3c, kb3d, kb4, k5, d1, d2, d3, d4, d5, d6, d6b, d7, d8) (1.1 s)
+    plan checks: 0 problems
+    level report: 0 errors -> Reports/LEVEL-n67-kiln-validate.md (2.0 s)
+    bot walk: ; DID NOT reach the last exit; zone at the end kb1
+n67-kiln --finish: Design/levels/n67/kiln.json -> Design/levels/n67-kiln.json, Assets/StreamingAssets/Design/levels/n67-kiln.json (3443202 chars, both copies identical); kept rooms bit-equal to n57-kiln's; ERROR rows 0 (none); slots Design/levels/n67/kiln/slots67.json: kb2 old, kb2c old, kb3 old, kb3c old, kb3d old
+levelgen --walk: 0 ERROR (none; 8 s)
+shipped after:  Design/levels/n67-kiln.json 8d5b8321bb7d69f9d9a3550820afcfd373c5687dd9f365d884fb5f8d189d3e94, Assets/StreamingAssets/Design/levels/n67-kiln.json 8d5b8321bb7d69f9d9a3550820afcfd373c5687dd9f365d884fb5f8d189d3e94
+# exit 0
+PASS design.n67.kiln67: levelFrom n57-kiln, levelTo n67-kiln, enabled false
+PASS BaseId(n67-kiln) = n45-kiln = BaseId(n57-kiln) (the older systems read it as its base: loadout, awards, unlocks)
+PASS maps.list: n67-kiln listed once, right after n57-kiln, file Design/levels/n67-kiln.json
+PASS n67-kiln: both level copies exist and are byte-identical
+PASS n67-kiln: name n67-kiln, assembled (Tools/night/gen-slots.cjs --level kiln (slots Design/levels/): equal to n57-kiln apart from name / _why / generatedBy
+n67-a1 --verify: all PASS
+## python -I Tools/night/n59-l-room.py n57-kiln room kb2c
+  PASS IN VIEW vista        vista: 5.0 of wave 1's 5 expected seen from the foothold's flanks (>= 4 PASS); 4 nodes, 4 in use
+ROOM kb2c: PASS
+## python -I Tools/night/n59-l-room.py n67-kiln room kb2c
+  PASS IN VIEW vista        vista: 5.0 of wave 1's 5 expected seen from the foothold's flanks (>= 4 PASS); 4 nodes, 4 in use
+ROOM kb2c: PASS
+## python -I Tools/night/n59-l-room.py n57-kiln room kb3c
+  PASS IN VIEW vista        vista: 6.0 of wave 1's 6 expected seen from the foothold's flanks (>= 4 PASS); 5 nodes, 5 in use
+ROOM kb3c: PASS
+## python -I Tools/night/n59-l-room.py n67-kiln room kb3c
+  PASS IN VIEW vista        vista: 6.0 of wave 1's 6 expected seen from the foothold's flanks (>= 4 PASS); 5 nodes, 5 in use
+ROOM kb3c: PASS

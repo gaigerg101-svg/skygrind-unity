@@ -1,0 +1,12 @@
+{
+ "_why": "THE SLAG HULK's body (builder B, NIGHT26 contract hulk; GG: 'an easier boss first'). A slow walking bruiser built from oriented boxes in its own frame (a = right, b = up from the feet, c = forward, metres; half = half sizes), each box one named part: `back` and `head` are the weak points (x2 in design.n26.bosses.hulk.hp), everything else is `body` (x1). The back plate sticks out 0.15 m behind the torso so a shot from behind finds it first. The numbers of the fight are in design.n26.bosses.hulk. Unity-only: the web had no hulk. The view draws exactly these boxes (blocky models as they are, GG owns enemy design).",
+ "parts": [
+  {"name": "legL", "part": "body", "a": -0.7, "b": 0.9, "c": 0.0, "half": [0.45, 0.9, 0.5]},
+  {"name": "legR", "part": "body", "a": 0.7, "b": 0.9, "c": 0.0, "half": [0.45, 0.9, 0.5]},
+  {"name": "torso", "part": "body", "a": 0.0, "b": 2.5, "c": 0.0, "half": [1.3, 1.0, 0.9]},
+  {"name": "back", "part": "back", "a": 0.0, "b": 2.55, "c": -1.0, "half": [0.9, 0.7, 0.15]},
+  {"name": "armL", "part": "body", "a": -1.75, "b": 2.3, "c": 0.1, "half": [0.4, 1.1, 0.4]},
+  {"name": "armR", "part": "body", "a": 1.75, "b": 2.3, "c": 0.1, "half": [0.4, 1.1, 0.4]},
+  {"name": "head", "part": "head", "a": 0.0, "b": 3.9, "c": 0.15, "half": [0.55, 0.5, 0.55]}
+ ]
+}

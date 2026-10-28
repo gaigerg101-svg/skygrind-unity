@@ -1,0 +1,68 @@
+{
+ "_why": "NIGHT65 builder S round 2 (card Research/2026-10-23-wave65/cards/a4.md; the lead's round-2 list: a climb route up, no safe firing post, the parry the answer): THE SPITTING GALLERY. The spitters hold the north end of THE GALLERY, a 3.0 m deck down the west wall reached only by its stair, whose whole run lies 7.5-13.5 m from them (inside spitter.maxRange 24, outside minRange 6: they lob at anyone on it). THE PARAPET on the gallery's north 6 m blinds every floor spot within 6 m of them, so the only place inside their minRange is the gallery's own north end, reached by crossing 10 m of open stair and deck under their lobs. Every piece carries its job and why.",
+ "room": "a4",
+ "opening": "held",
+ "opening_why": "card a4: the spitters hold THE GALLERY's north end and its stair; wave 2's second spitter holds the exit apron behind THE FENCE (round 2, the level-design review r1: both waves were from one booth)",
+ "row": {
+  "id": "a4",
+  "name": "1.4 THE SPITTING GALLERY",
+  "kind": "room",
+  "rect": [-4,-108,4,-89],
+  "height": 6,
+  "roof": true,
+  "par": 16,
+  "job36": "teach",
+  "verb36": "the parry (punch the yellow glob back)",
+  "spawn": {"at":[0,0,-91],"yawDeg":0},
+  "exit": [1.6,0,-106.5],
+  "arena36": true,
+  "waves": [["spitter"],["spitter","spitter"]],
+  "lessons": [{"promptPad":"PUNCH {punch} THE YELLOW GLOB BACK","kind":"husksDead","n":1,"prompt":"PUNCH {punch} THE YELLOW GLOB BACK"}],
+  "lessons31": [{"promptPad":"PUNCH {punch} THE YELLOW GLOB BACK","kind":"husksDead","n":1,"prompt":"PUNCH {punch} THE YELLOW GLOB BACK"}],
+  "proofs": [
+   {"kind":"walk","points":[[0,0,-91],[2.6,0,-92.8],[2.6,0,-97],[3.1,0,-100],[2,0,-102],[1.6,0,-106.5]]},
+   {"kind":"walk","points":[[-1,0,-90.3],[-3,0,-90.3],[-3,0,-91.2],[-3,1.5,-94],[-3,3,-97.5],[-3,3,-102.5]]}
+  ],
+  "frames36": {"mid":[-1.2,0,-93.5,10,0.2],"exit":[1.6,0,-104.5,0,0]},
+  "frames65": {"entry":[0,0,-90,8,0.14],"ramp":[-3,1.5,-94,0,0.12],"block":[0.6,0,-92.6,0,0.12],"gallery":[-3,3,-99,0,0],"exit":[1.6,0,-104.5,0,0]},
+  "line65": [[-3,1.5,-94],[-3,3,-97.5],[-3,3,-100.5],[-3.5,3,-103.5],[-3,3,-106.5],[-1.9,3,-107],[-1.2,0,-107.2],[1.6,0,-106.5]],
+  "line65_why": "NIGHT66 S round 1 (the lead's T1a note: tour65 WARN a4 line65 6/8 at (-2.5, 2.1, -106.7), inside P3 THE GALLERY): the drop off the gallery's north end now steps east past the deck's edge (x -1.9 > -2) before it falls, so no sampled pose is inside the deck",
+  "card65": "Research/2026-10-23-wave65/cards/a4.md",
+  "bot43": false,
+  "verb65": "parry",
+  "nodes": [[3.5,0,-104.5]],
+  "highNodes": [[-3.5,3,-104.5],[-3,3,-103]],
+  "waveNodes43": [[[-3.5,3,-104.5]],[[-3.5,3,-104.5],[-3,3,-103]]],
+  "waveNodes43_why": "NIGHT66 S round 2 (the r1 level-design review's one change for a4): wave 2's second spitter starts on a high node on THE GALLERY, (-3, 3, -103) (the review's (-3, 3, -99.5) is 9.0 m inside the entry's first view cone, and levelgen's spawn31 needs 12 m: refused), not on the floor by the exit (3.5, 0, -104.5), where a walker met it on its way out: every spitter now costs the gun the climb or a 14 m trade, while its globs still come down the stair and onto the floor. NIGHT66 S round 1 tried THE PAIR (verb plan a4, lever A: a third wave-2 spitter on a high node 1.2 m from the gallery's): v1 skip ratio flat (1.22 -> 1.23) and a walk-bot death on seeds 11-20 (both reds 0 / 0, a GUARD FAIL; Research/2026-10-23-wave66/a4/r1/A and r1/final-pair); spitters take 10 m ring slots anyway (Spitter.cs:186-197), so the pair does not stay 1.2 m apart: reverted. NIGHT65 S round 2 (card a4): wave 1's spitter at the gallery's north end, behind the parapet from the east floor, in sight of the lane's south half, the stair and the gallery's south part; wave 2's pair 1 m apart there, so one return's 3 m burst hits both"
+ },
+ "boxes": [
+  {"zone":"a4","kind":"hull","min":[-2,0,-95.5],"max":[1.6,3.6,-93.5],"job":"foothold","why":"P1 THE TELL BLOCK (fix round, the GATE verdict-a4's deaths: n46flow --per-seed put every death on a seed whose pilot dwelt 11-14 s at the entry door, trading shots with the gallery's spitter over the gallery's edge: widened to x -2.0 and raised to 3.6 m, it hides the door and the spawn from the gallery; the stair's foot, the glob's line, stays open; card a4): the foothold (R5): free-standing, top 2.0 m, 6.5-8.5 m from d3's centre; the pause beside the spawn: behind it the spitters cannot see you (a tell needs a line of sight, Spitter.cs:176); a step west out of it puts you in their sight at 14-15 m, where the glob comes"},
+  {"zone":"a4","kind":"wall","min":[-2,0,-100.1],"max":[2,4.5,-99.7],"ride":true,"ride36":{"face":"S","planeZ":-99.7},"job":"ride","why":"P10 THE BELLOWS FIN (NIGHT66 S round 2, a4 B; gg-proxy final NO, 'an 8 m wide corridor with no ride'; the verb-plan critic: a ride only as a free-standing piece with a job the decoration checker sees): a 4 m, 4.5 m fin standing out of THE GALLERY's east face across the floor at z -100, its south face a ride west onto the gallery's deck (3 m) in the spitters' fire, where the glob comes: the floor's fast way onto the spitters' end, the stair the long way round; it cuts the floor spitter's (3.5, 0, -104.5) sight of the walk line's south part (test b) and the walk line goes round its east end (2 m to the east wall)"},
+  {"zone":"a4","kind":"deck","min":[-4,0,-108],"max":[-2,3,-97],"job":"perch","why":"P3 THE GALLERY (round 2): the spitters' 3.0 m deck down the west wall to the north wall, 2 m wide and 11 m long (one box: the nav links break at a seam between two decks); its north end is theirs; d4's mouth (x -2..2) is clear. From the floor its 3 m edge hides them: they are seen from the stair and the gallery, where the glob comes down the stair's 2 m width. NIGHT66 S round 2 (N10, a4's line redesigned; skip v2 at t0: 1-2 parries a seed, the trigger held 2-14 steps, refused-in equal to the walker on every seed): P5 THE FENCE (a 4.2 m screen on the deck's east edge over z -99.5..-106 that blinded the whole east floor) is removed, so the gallery's spitters see the east floor beyond the deck's own 3 m edge (a floor eye at x 3 clears the edge at about 3.45 m, my arithmetic) and lob at the walker where it spends its time: the glob, and its parry, come on the floor, not only on the stair"}
+ ],
+ "ramps": [
+  {"zone":"a4","from":[-3,-91],"to":[-3,-97],"width":2,"rise":3,"job":"climb","why":"P4 THE GALLERY STAIR (round 2; GG NIGHT20 'a route that enemies can climb up'): the climb for the spitters and the player, 6 m at 26.6 deg (the red's steepest foundry ramps); its whole run is 7.5-13.5 m from the spitters, inside their maxRange 24 and outside minRange 6: a climb under their lobs"}
+ ],
+ "pads": [
+  {"zone":"a4","at":[0.2,0,-97.5],"target":[-3,3,-98],"apexAbove":0.8,"job":"pad","why":"P8 THE BELLOWS PAD (NIGHT66 S round 3 kept it: with no pad the bots stall on the stair, flow V stall 57.4 %, Research/2026-10-23-wave66/a4/r3/A-nopad; a landing 1 m nearer the stair did not save seed 13's walker, a4/r3/V1; fix round, the GATE verdict-a4: apexAbove 2 -> 0.8: at 2 the arc met the 6 m roof and landed 1.06 m short on the gallery's lip, the named cause of the deaths; round 3, the level-design review's hand-off theme): beside THE TELL BLOCK, the floor's second way up (rule 3): it hands the block's pause to THE GALLERY's south end, 6.5 m from the spitters and in their fire, where the glob comes; off the walk lines (I4: 2.3 m) and the spawn's forward line"}
+ ],
+ "grapple": [],
+ "pits": [],
+ "tunnels": [],
+ "lights": [
+  {"id":"a4-key","room":"a4","kind":"ceiling","at":[-3,5.95,-103.5],"normal":[0,-1,0],"size":[2.5,3,0.1],"color":"white","range":7,"intensity":1.3},
+  {"id":"a4-fill","room":"a4","kind":"ceiling","at":[1.5,5.95,-97],"normal":[0,-1,0],"size":[3,3,0.1],"color":"white","range":7,"intensity":0.7},
+  {"id":"a4-exit","room":"a4","kind":"pool","at":[1.6,0.025,-106.5],"normal":[0,1,0],"size":[2,2,0.05],"color":"cyan","range":6,"intensity":1.4}
+ ],
+ "props": [
+  {"id":"a4-P1","room":"a4","kind":"healthPickup","at":[2.9,0.9,-99.2],"size":[0.6,0.6,0.6],"yawDeg":0,"collider":false,"pickup":true,"job":"reward","why":"NIGHT66 S round 3 (the GUARD: the round-2 file's walk bot died once on seed 13, worn down over a 45-48 s fight by the gallery's two spitters, at the pad and then at THE BELLOWS FIN's east end, a4/r3/trace-seed13.txt and V1/seed13.txt): the health on the walk line at the fin's east end, where the floor's way round to the exit passes under the spitters' fire (A20, 'the riskiest line pays', as b1's and a8's); a parry heals 15 too, so the walker who refuses the parry is the one who needs it"},
+  {"id":"a4-scorch1","room":"a4","kind":"scorch","at":[0.2,0.02,-97.5],"size":[1.6,0.02,1.6],"yawDeg":0,"collider":false,"decor":true,"job":"read","why":"D2 'globs land here' at the bellows pad, north of the block: out of its shadow you are in the spitters' sight (decal; fix round: moved off the widened block)"},
+  {"id":"a4-scorch2","room":"a4","kind":"scorch","at":[-3,0.02,-90.6],"size":[1.4,0.02,1.4],"yawDeg":0,"collider":false,"decor":true,"job":"read","why":"D2 the stair's foot: the climb starts in their fire (decal)"},
+  {"id":"a4-lintel","room":"a4","kind":"lintelLight","at":[0,4.6,-107.9],"size":[4,0.2,0.2],"yawDeg":0,"collider":false,"decor":true,"job":"exit","why":"D4 the exit's frame over d4 (kit lamp), 5 m from the spitters' end behind the parapet"},
+  {"id":"a4-kiln","room":"a4","kind":"kilnArch","at":[3.85,1.4,-102.5],"size":[0.3,2.6,2.4],"yawDeg":90,"collider":false,"decor":true,"job":"landmark","why":"density pass: a kiln mouth in the east wall across from the gallery, 7 m from the spitters' end: the room's landmark, what the gallery's spitters guard (kit mouth, amber; kept off the gallery so the yellow tell is the hot colour there)"},
+  {"id":"a4-lampFill","room":"a4","kind":"lamp","at":[1.5,5.2,-97],"size":[0.6,1.2,0.6],"yawDeg":0,"collider":false,"decor":true,"job":"fixture","why":"density pass: the hanging lamp the lane's fill light hangs from (kit lamp, amber, 6 m from the gallery)"},
+  {"id":"a4-exitFrame","room":"a4","kind":"doorFrame","at":[0,2.4,-107.9],"size":[5,4.8,0.3],"yawDeg":0,"collider":false,"decor":true,"job":"exit","why":"density pass: d4's frame under its lintel (the lit exit)"}
+ ],
+ "teach35": [],
+ "drop": {}
+}

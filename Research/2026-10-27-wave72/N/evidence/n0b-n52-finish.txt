@@ -1,0 +1,1 @@
+n52-foundry: finished Design\levels\n52\foundry.json -> Design/levels/n52-foundry.json, Assets/StreamingAssets/Design/levels/n52-foundry.json (2376150 chars, both copies identical); a9 bit-equal to n48-foundry's; rooms not rebuilt bit-equal; rebuilt: a3, a5, b1

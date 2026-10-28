@@ -1,0 +1,784 @@
+{
+ "_why": "NIGHT74 S g8 r2 (Research/2026-10-27-wave74/S/card-g8.md): r1 with the west door column mirrored (x -4.5..-3), wave 1 on its two shipped nodes, the signal box 5.5 m wide. NIGHT74 S g8 r1 (Research/2026-10-27-wave74/S/card-g8.md): every piece new but the two lane walls and the lesson's pit (reshaped): THE GALLERY + stair, THE SIGNAL BOX + stair, four columns, a rail, two hoists; no lava, no decor pillar; the rect, the waves, the lessons and the verb are the shipped room's. NIGHT67 T1a (Tools/night/gen-slots.cjs --level iceline --export): n52-iceline's room g8 (2.8 THE STAMPEDE) exactly as Design/levels/n52/iceline.plan.json has it: the row (every key), its zone-keyed pieces (boxes, ramps, pads, grapple, pits, tunnels), its room-keyed pieces (lights, props, surfaces). The slot's starting point: rebuild it here (every new piece with a job and a why), give the row bot43: false, verb65 (the slate's verb) and line65 (the verb's line, 3+ waypoints); never an area67 block (refused). A key the row drops needs a reason in drop{}. The room's opening: top-level \"opening\": \"vista\" | \"ambushed\" | \"ambusher\" | \"held\" (and \"opening_why\"); left out, the room keeps n52-iceline's.",
+ "room": "g8",
+ "row": {
+  "id": "g8",
+  "name": "2.8 THE STAMPEDE",
+  "kind": "room",
+  "rect": [
+   -10,
+   -250,
+   11,
+   -220
+  ],
+  "height": 12,
+  "roof": true,
+  "par": 30,
+  "job36": "the stampede: three chargers and the gallery's spitters before THE BRAWL",
+  "verb36": "the late dodge into a column or a sand tower (the charge ends in it: the stun), then the punish from behind with the right tool; ride the lane walls past the stampede, take the cross hoist out of the hoist bay to the signal box",
+  "spawn": {
+   "at": [
+    0,
+    0,
+    -227.5
+   ],
+   "yawDeg": 0
+  },
+  "exit": [
+   1.5,
+   0,
+   -248.5
+  ],
+  "arena36": true,
+  "waves": [
+   [
+    "charger"
+   ],
+   [
+    "charger",
+    "charger",
+    "husk",
+    "husk"
+   ],
+   [
+    "charger",
+    "charger",
+    "charger",
+    "spitter",
+    "spitter"
+   ]
+  ],
+  "lessons": [
+   {
+    "promptPad": "Hit its back with {fire}.",
+    "kind": "husksDead",
+    "n": 1,
+    "prompt": "Hit its back with {fire}."
+   },
+   {
+    "promptPad": "Lead one into the pit.",
+    "kind": "husksDead",
+    "n": 2,
+    "prompt": "Lead one into the pit."
+   }
+  ],
+  "lessons31": [
+   {
+    "promptPad": "Hit its back with {fire}.",
+    "kind": "husksDead",
+    "n": 1,
+    "prompt": "Hit its back with {fire}."
+   },
+   {
+    "promptPad": "Lead one into the pit.",
+    "kind": "husksDead",
+    "n": 2,
+    "prompt": "Lead one into the pit."
+   }
+  ],
+  "proofs": [
+   {
+    "kind": "walk",
+    "points": [
+     [
+      0,
+      0,
+      -222
+     ],
+     [
+      -2.5,
+      0,
+      -225
+     ],
+     [
+      -6,
+      0,
+      -228.3
+     ],
+     [
+      -4,
+      0,
+      -233
+     ],
+     [
+      -4,
+      0,
+      -243
+     ],
+     [
+      0,
+      0,
+      -247
+     ],
+     [
+      1.5,
+      0,
+      -248.5
+     ]
+    ]
+   },
+   {
+    "kind": "walk",
+    "points": [
+     [
+      7,
+      0,
+      -225
+     ],
+     [
+      7,
+      5,
+      -243.5
+     ],
+     [
+      7.5,
+      5,
+      -246
+     ]
+    ]
+   },
+   {
+    "kind": "walk",
+    "points": [
+     [
+      0,
+      0,
+      -247
+     ],
+     [
+      -4.5,
+      2.5,
+      -247
+     ],
+     [
+      -7.5,
+      2.5,
+      -247
+     ]
+    ]
+   }
+  ],
+  "frames36": {
+   "mid": [
+    6,
+    0,
+    -223,
+    17.526,
+    -0.03
+   ],
+   "exit": [
+    -1.5,
+    0,
+    -243.5,
+    0,
+    -0.06
+   ]
+  },
+  "nodes": [
+   [
+    -2.5,
+    0,
+    -243
+   ],
+   [
+    1.5,
+    0,
+    -243.5
+   ],
+   [
+    -6.5,
+    0,
+    -239
+   ],
+   [
+    3.5,
+    0,
+    -241.5
+   ]
+  ],
+  "waveNodes43": [
+   [
+    [
+     -4.5,
+     0,
+     -231.5
+    ],
+    [
+     4.5,
+     0,
+     -231.5
+    ]
+   ],
+   [
+    [
+     -2.5,
+     0,
+     -243
+    ],
+    [
+     1.5,
+     0,
+     -243.5
+    ],
+    [
+     -8,
+     2.5,
+     -247
+    ],
+    [
+     -6.5,
+     0,
+     -239
+    ]
+   ],
+   [
+    [
+     -2.5,
+     0,
+     -243
+    ],
+    [
+     1.5,
+     0,
+     -243.5
+    ],
+    [
+     3.5,
+     0,
+     -241.5
+    ],
+    [
+     -8,
+     2.5,
+     -247
+    ],
+    [
+     8,
+     5,
+     -247
+    ]
+   ]
+  ],
+  "waveNodes43_why": "NIGHT74 S g8 r2 (Research/2026-10-27-wave74/S/card-g8.md): wave 1 on the two shipped near-floor nodes (the third, 2 m behind the spawn, is gone: the meter's REAR); waves 2 and 3 on the far floor, the east lane and both tiers (the shipped nodes stood on decks and stairs that are gone).",
+  "iceline43_why": "NIGHT43 E1 (G23): the CHARGER rehearsed three ways before THE BRAWL: alone beside a wall (the lesson names the stun: a charge that ends in a wall stuns it 1.5 s with its back open, Charger.cs), with a husk escort (n40's wave), two at once (escalate). 4 chargers in the room (n40: 2).",
+  "iceline46_why": "NIGHT46 A3 I-2: wave 1's charger nodes in view; the pillars, waves and lessons unchanged",
+  "iceline47_why": "NIGHT47 B G27: rebuilt as THE STAMPEDE from its card THE ROUNDHOUSE (B-cards.md section 2): 6 columns, THE PIT, THE GALLERY (two halves + ramps), two carts, the east ride panel, the turntable gate, two gallery lamps; waves 1 / 2 / 3 chargers (6) with husks and spitters; the door lip of the card cut (the spawn and retry point stand at the door: a lip there holds them in a solid)",
+  "highNodes": [
+   [
+    -8,
+    2.5,
+    -247
+   ],
+   [
+    8,
+    5,
+    -247
+   ]
+  ],
+  "highNodes_why": "NIGHT52 loop (R-4): the spitters' stands: the west gallery (3 m) and THE SIGNAL BOX (5.5 m) over the exit, 25-28 m from the door; EXT53 (e53-m-g8.cjs): the gallery's spitter node 2.5 m east with the gallery's new west end",
+  "frames52": {
+   "_why": "NIGHT52 the room frames reel a452 (FeelReel.N52.Rooms.cs): entry, the fight live, the highest tier",
+   "entry": [
+    0,
+    0,
+    -222,
+    0,
+    0.02
+   ],
+   "mid": [
+    -3,
+    0,
+    -225,
+    5,
+    0.05
+   ],
+   "high": [
+    7,
+    5.5,
+    -248,
+    170,
+    -0.15
+   ]
+  },
+  "loop52_why": "NIGHT52 the room loop, cycle 3 (Tools/night/n52-loop-g8.cjs; THE ROOM CONTRACT): NIGHT47's THE ROUNDHOUSE kept and finished as THE ROUNDHOUSE II: 22 x 30 x 12 m; 17 pieces; three tiers (floor, 3 m gallery, 5.5 m signal box) each on a walkers' ramp; two 20 m ride panels; the cross hoist (a pad); the coal carts (waist-high) cut; the columns, the pit, the lessons and the waves kept. Fix 1 (n52-loop-fix1.cjs): the columns to the roof (their 5 m tops were 0-hit perches), the east tower out of the ramp's run-out. Fix 2 (n52-loop-fix2.cjs): the pockets the isolated walk found closed. NIGHT52 fix K1 (n52-loop-fix-k1.cjs, the QA sweep): the cross hoist clear of the NW column; the lane walls, towers, hopper and lever frame to the roof (no 0-hit perch); the towers 1.0 m wide and centred (no slot); the retry spawn 5.5 m in (off the dwell band). Fix 5 (n52-loop-fix5.cjs): the two east columns beside THE PIT 1 m out. EXT53 (e53-m-g8.cjs, builder M): the mirror broken: the west wall 1 m in (21 x 30 m), the gallery's ramp at its east end in the NW column's place, the cross hoist in the hoist bay behind it (off the walk line), the far-end charger node in the bay.",
+  "spawn_why": "NIGHT52 fix K1: the retry point 7.5 m from the door wall, between the south columns (outside the door's 4 m dwell band, as fix 4 for g7): a death never restarts the fight at the door, where the charges end",
+  "proofs56_why": "NIGHT56 L (n56-l-l3.py, L3): proofs[0] re-walked round THE PIT's south end, up its east side and west past its north end (THE ASH PIT closes the west lane at z -230.5 .. -226.5)",
+  "nodes_why": "NIGHT74 S g8 r1 (Research/2026-10-27-wave74/S/card-g8.md): the ground nodes on the far floor and the lanes, clear of the new pieces.",
+  "bot43": false,
+  "verb65": "ride",
+  "line65": [
+   [
+    -9.7,
+    0,
+    -224
+   ],
+   [
+    -9.7,
+    2,
+    -232
+   ],
+   [
+    -9.7,
+    2.5,
+    -240
+   ],
+   [
+    -8,
+    2.5,
+    -246
+   ]
+  ],
+  "line65_why": "NIGHT74 S g8 r1 (Research/2026-10-27-wave74/S/card-g8.md): THE WEST LANE WALL's ride: along its east face 0.7 m out from the door end to the gallery's top",
+  "card65": "Research/2026-10-27-wave74/S/card-g8.md"
+ },
+ "boxes": [
+  {
+   "zone": "g8",
+   "kind": "wall",
+   "min": [
+    -10,
+    0,
+    -246
+   ],
+   "max": [
+    -9.4,
+    12,
+    -223
+   ],
+   "job": "line",
+   "why": "the WEST LANE WALL (ride, cyan, 23 m; EXT53 e53-m-g8.cjs: 1 m in with the wall): ride lane W past the charging pack (a charge that misses you ends in the wall: the stun) and off its end into the hoist bay, onto the cross hoist",
+   "note": "the WEST LANE WALL (ride, cyan, 23 m; EXT53 e53-m-g8.cjs: 1 m in with the wall): ride lane W past the charging pack (a charge that misses you ends in the wall: the stun) and off its end into the hoist bay, onto the cross hoist",
+   "ride": true,
+   "ride36": {
+    "face": "E",
+    "planeX": -9.4,
+    "lz": [
+     3,
+     26
+    ]
+   }
+  },
+  {
+   "zone": "g8",
+   "kind": "wall",
+   "min": [
+    10.4,
+    0,
+    -246
+   ],
+   "max": [
+    11,
+    12,
+    -223
+   ],
+   "job": "line",
+   "why": "the EAST LANE WALL (ride, cyan, 23 m x 5 m, run on to the deck (NIGHT52 fix 2: no slot beside the ramp); NIGHT47's east panel, now with its mirror): ride lane E and jump off its end onto the signal box's ramp (NIGHT52 fix K1 (n52-loop-fix-k1.cjs, the QA sweep): to the roof: its 5 m top was a 0-hit perch against wave 1's charger)",
+   "note": "the EAST LANE WALL (ride, cyan, 23 m x 5 m, run on to the deck (NIGHT52 fix 2: no slot beside the ramp); NIGHT47's east panel, now with its mirror): ride lane E and jump off its end onto the signal box's ramp (NIGHT52 fix K1 (n52-loop-fix-k1.cjs, the QA sweep): to the roof: its 5 m top was a 0-hit perch against wave 1's charger)",
+   "ride": true,
+   "ride36": {
+    "face": "W",
+    "planeX": 10.4,
+    "lz": [
+     3,
+     26
+    ]
+   }
+  },
+  {
+   "zone": "g8",
+   "kind": "deck",
+   "min": [
+    -10,
+    0,
+    -250
+   ],
+   "max": [
+    -5,
+    2.5,
+    -244
+   ],
+   "job": "line: THE GALLERY (2.5 m: the west lane wall's landing, the spitters' west stand)",
+   "why": "NIGHT74 S g8 r1 (Research/2026-10-27-wave74/S/card-g8.md): the shipped gallery was 5 x 4 m at 3 m between x -8..-3; this is 5 x 6 m at 2.5 m against the west wall (the lane wall's ride lands on it), with its stair on the far floor.",
+   "note": "THE GALLERY (2.5 m, 5 x 6 m, north-west)"
+  },
+  {
+   "zone": "g8",
+   "kind": "deck",
+   "min": [
+    5.5,
+    0,
+    -250
+   ],
+   "max": [
+    11,
+    5,
+    -243
+   ],
+   "job": "line: THE SIGNAL BOX (5 m: the east lane wall's landing, the third tier, the spitters' east stand)",
+   "why": "NIGHT74 S g8 r2 (Research/2026-10-27-wave74/S/card-g8.md): r1's box was 6.5 x 7 m: a plane of 6 m or more needs two climb tops 8 m apart (n70-area P9) and the stair, hoist and ride landing are within 3 m of each other; 5.5 x 7 m keeps all three and the east lane wall's landing.",
+   "note": "THE SIGNAL BOX (5 m, 5.5 x 7 m, north-east)"
+  },
+  {
+   "zone": "g8",
+   "kind": "hull",
+   "min": [
+    -6.75,
+    0,
+    -237
+   ],
+   "max": [
+    -5.25,
+    12,
+    -235.5
+   ],
+   "job": "30 s problem: THE WEST COLUMN (floor to roof: a charge ends in it: the stun, then the punish from behind)",
+   "why": "NIGHT74 S g8 r1 (Research/2026-10-27-wave74/S/card-g8.md): the shipped sand towers (1.5 x 1.5 m, full height) and the five decor pillars become four columns that do the job: one at each end of each lane beside the pit.",
+   "note": "THE WEST COLUMN (1.5 x 1.5 m, full height)"
+  },
+  {
+   "zone": "g8",
+   "kind": "hull",
+   "min": [
+    3,
+    0,
+    -237
+   ],
+   "max": [
+    4.5,
+    12,
+    -235.5
+   ],
+   "job": "30 s problem: THE EAST COLUMN (the west column's twin across the pit)",
+   "why": "NIGHT74 S g8 r1 (Research/2026-10-27-wave74/S/card-g8.md): the east lane's column, 1 m from the stair's west edge.",
+   "note": "THE EAST COLUMN (1.5 x 1.5 m, full height)"
+  },
+  {
+   "zone": "g8",
+   "kind": "hull",
+   "min": [
+    -4.5,
+    0,
+    -229
+   ],
+   "max": [
+    -3,
+    12,
+    -227.5
+   ],
+   "job": "30 s problem: THE WEST DOOR COLUMN (the west lane's near column, the east door column's mirror across the spawn: a charge from the door end is stopped by it)",
+   "why": "NIGHT74 S g8 r2 (Research/2026-10-27-wave74/S/card-g8.md): r1's column at x -6.75..-5.25 left the shipped wave-1 node (-4.5, 0, -231.5) in a straight line to the entry corridor; at x -4.5..-3 it hides that node as the east door column hides (4.5, 0, -231.5).",
+   "note": "THE WEST DOOR COLUMN (1.5 x 1.5 m, full height)"
+  },
+  {
+   "zone": "g8",
+   "kind": "hull",
+   "min": [
+    3,
+    0,
+    -229
+   ],
+   "max": [
+    4.5,
+    12,
+    -227.5
+   ],
+   "job": "30 s problem: THE EAST DOOR COLUMN (the east lane's near column)",
+   "why": "NIGHT74 S g8 r1 (Research/2026-10-27-wave74/S/card-g8.md): the near column of the east lane, the west door column's twin.",
+   "note": "THE EAST DOOR COLUMN (1.5 x 1.5 m, full height)"
+  },
+  {
+   "zone": "g8",
+   "kind": "hull",
+   "min": [
+    -9,
+    0,
+    -241
+   ],
+   "max": [
+    -7.5,
+    1.2,
+    -239.5
+   ],
+   "job": "cover: THE WEST RAIL (1.2 m low cover on the west wall's lane: hop it, shelter behind it)",
+   "why": "NIGHT74 S g8 r1 (Research/2026-10-27-wave74/S/card-g8.md): 1.5 x 1.5 x 1.2 m low cover between the lane wall and the lane, off the ride pilot's target spot (x -8.2, 10 m along the wall).",
+   "note": "THE WEST RAIL (1.2 m, 1.5 x 1.5 m)"
+  }
+ ],
+ "ramps": [
+  {
+   "zone": "g8",
+   "from": [
+    -0.5,
+    -247
+   ],
+   "to": [
+    -5,
+    -247
+   ],
+   "width": 3,
+   "rise": 2.5,
+   "job": "climb: THE GALLERY STAIR (the walkers' way onto the gallery from the far floor: 2.5 m over 4.5 m: the long way round the west lane wall's ride)",
+   "why": "NIGHT74 S g8 r1 (Research/2026-10-27-wave74/S/card-g8.md): a route enemies can climb to every floor (GG, NIGHT20): on the far floor, so the walk to the gallery is longer than the lane wall's ride (I2).",
+   "note": "THE GALLERY STAIR"
+  },
+  {
+   "zone": "g8",
+   "from": [
+    7,
+    -226
+   ],
+   "to": [
+    7,
+    -243
+   ],
+   "width": 3,
+   "rise": 5,
+   "job": "climb: THE SIGNAL STAIR (the walkers' way up the signal box: 5 m over 17 m along the east half)",
+   "why": "NIGHT74 S g8 r1 (Research/2026-10-27-wave74/S/card-g8.md): the shipped east ramp's job (the climb onto the signal box), x 5.5..8.5, 0.85 m clear of the east lane wall's lane (x 9.7 centre).",
+   "note": "THE SIGNAL STAIR"
+  }
+ ],
+ "pads": [
+  {
+   "zone": "g8",
+   "at": [
+    3,
+    0,
+    -245
+   ],
+   "target": [
+    7.5,
+    5,
+    -247
+   ],
+   "apexAbove": 3,
+   "job": "line: THE CROSS HOIST (the far floor onto the signal box: the hoist bay's way up)",
+   "why": "NIGHT74 S g8 r1 (Research/2026-10-27-wave74/S/card-g8.md): the shipped cross hoist's job (the hoist bay onto the signal box), from the far floor 4.5 m from the box.",
+   "note": "THE CROSS HOIST"
+  },
+  {
+   "zone": "g8",
+   "at": [
+    -7,
+    0,
+    -243
+   ],
+   "target": [
+    -7.5,
+    2.5,
+    -247
+   ],
+   "apexAbove": 3,
+   "job": "line: THE GALLERY HOIST (the west lane onto the gallery)",
+   "why": "NIGHT74 S g8 r1 (Research/2026-10-27-wave74/S/card-g8.md): a second way up for the player (the stair is the walkers'): the west lane's far end, 3.5 m west of the walk line, clear of the west column and the rail.",
+   "note": "THE GALLERY HOIST"
+  }
+ ],
+ "grapple": [],
+ "pits": [
+  {
+   "zone": "g8",
+   "rect": [
+    -2,
+    -240,
+    2,
+    -230
+   ],
+   "floorY": -1.5,
+   "job": "hazard",
+   "why": "NIGHT74 S g8 r1 (Research/2026-10-27-wave74/S/card-g8.md): THE PIT (the lesson's: 'Lead one into the pit.'): 4 x 10 m, 1.5 m deep (was 3 x 11 m), z -240..-230. THE PIT (3 x 11 m, 1.5 m deep, along lane C; card: Hero prop, Hazard both ways): the shed's inspection pit. A charger whose charge crosses it falls in and cannot climb out (ai.jumps.charger.jumps false: it stands dazed): the free punish from above; a player who falls in jumps or double-jumps out (a jump reaches 1.58 m, a double 2.88 m: n47b reach). It cuts lane C only: the strafe ring round it stays whole",
+   "note": "THE PIT (4 x 10 m, 1.5 m deep, along the middle lane)"
+  }
+ ],
+ "tunnels": [],
+ "lights": [
+  {
+   "id": "g8-L1",
+   "room": "g8",
+   "kind": "ceiling",
+   "at": [
+    0,
+    11.95,
+    -223
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 12,
+   "intensity": 1,
+   "why": "the door end's panel"
+  },
+  {
+   "id": "g8-L2",
+   "room": "g8",
+   "kind": "ceiling",
+   "at": [
+    0,
+    11.95,
+    -234
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    10,
+    0.1
+   ],
+   "color": "white",
+   "range": 12,
+   "intensity": 1,
+   "why": "the lanes and the pit read"
+  },
+  {
+   "id": "g8-L3",
+   "room": "g8",
+   "kind": "ceiling",
+   "at": [
+    0,
+    11.95,
+    -243
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    6,
+    3,
+    0.1
+   ],
+   "color": "amber",
+   "range": 12,
+   "intensity": 1.1,
+   "why": "the far end's warm panel: the stampede's start"
+  },
+  {
+   "id": "g8-L5",
+   "room": "g8",
+   "kind": "wall",
+   "at": [
+    -4.5,
+    5,
+    -249.95
+   ],
+   "normal": [
+    0,
+    0,
+    1
+   ],
+   "size": [
+    1.2,
+    0.5,
+    0.1
+   ],
+   "color": "white",
+   "range": 9,
+   "intensity": 1.2,
+   "why": "the gallery's lamp (white): the spitters' stand reads"
+  },
+  {
+   "id": "g8-L6",
+   "room": "g8",
+   "kind": "wall",
+   "at": [
+    7.5,
+    8,
+    -249.95
+   ],
+   "normal": [
+    0,
+    0,
+    1
+   ],
+   "size": [
+    1.2,
+    0.5,
+    0.1
+   ],
+   "color": "white",
+   "range": 9,
+   "intensity": 1.2,
+   "why": "the signal box's lamp, above its deck"
+  },
+  {
+   "id": "g8-L4",
+   "room": "g8",
+   "kind": "pool",
+   "at": [
+    1.5,
+    0.025,
+    -248.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.5,
+    2.5,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.6,
+   "why": "the exit's cyan pool (A-6)"
+  }
+ ],
+ "props": [
+  {
+   "id": "g8-P7",
+   "room": "g8",
+   "kind": "hero",
+   "at": [
+    0,
+    6,
+    -249.8
+   ],
+   "size": [
+    7,
+    5,
+    0.3
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "job": "marker",
+   "why": "THE TURNTABLE GATE (card: Landmark): the engine shed's round door over the exit, its plough-blade frame red-orange, lit from behind: seen from the door, the only round shape in the room"
+  },
+  {
+   "id": "g8-P8",
+   "room": "g8",
+   "kind": "healthPickup",
+   "at": [
+    0,
+    0.9,
+    -242
+   ],
+   "size": [
+    0.6,
+    0.6,
+    0.6
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "pickup": true,
+   "job": "reward",
+   "why": "the health at THE PIT's far end in lane C, where the centre charger runs (A20: the best at the riskiest spot): cross the pit's lane under the stands to take it"
+  }
+ ],
+ "surfaces": [],
+ "drop": {}
+}

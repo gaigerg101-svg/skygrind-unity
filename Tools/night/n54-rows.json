@@ -1,0 +1,93 @@
+{
+  "_why": "NIGHT54 row list (the lead's; written at P0 by Tools/night/n54-shared.cjs). One entry per row of NIGHT54.md section 3. Only the lead flips passes (Tools/night/n54-flip.cjs), only after printing the check's output in the transcript; `check` is never edited. Builders only report.",
+  "rows": [
+    {
+      "id": "P0",
+      "title": "Baselines + the shared commit",
+      "owner": "lead",
+      "switch": "-",
+      "check": "the WICK baseline (n47human 40 seeds) printed; design.n54 rows + N54SharedTests committed; gates green (golden, fingerprints plain / --off53 / --off54, the compile)",
+      "fallback": "-",
+      "passes": true,
+      "state": "DONE",
+      "evidence_paths": [
+        "Logs/n54/wick-base.txt",
+        "Logs/n54/gates-p0.txt"
+      ],
+      "note": "baseline + shared commit ef971fdc; gates GREEN"
+    },
+    {
+      "id": "W",
+      "title": "THE WICK: FLARE removed, the fight relatively easy",
+      "owner": "builder W",
+      "switch": "design.n54.wick54 (sim row)",
+      "check": "n47human --boss wick --seeds 40 with the row on: 0 flares; the median fight time and the deaths per fight below the baseline's (DECIDE54's targets); every other attack's numbers unchanged (a test); a454 in the Player GREEN on / RED off",
+      "fallback": "the row ships OFF",
+      "passes": true,
+      "state": "DONE",
+      "evidence_paths": [
+        "Logs/feel/n54-freeze/summary47.txt",
+        "Logs/n54/wick-after.txt"
+      ],
+      "note": "FLARE 9 -> 0; median 95.0 -> 45.5 s, deaths 51 -> 2, taken 189 -> 72; P2/P3 40/40"
+    },
+    {
+      "id": "L",
+      "title": "The flicker fixes + the lighting pass",
+      "owner": "builder L",
+      "switch": "design.n54.light54 (view row)",
+      "check": "a154: the still-camera flicker count in the Player RED off / GREEN on, on THE WICK's arena and two levels; frames looked at",
+      "fallback": "the row ships OFF",
+      "passes": true,
+      "state": "DONE",
+      "evidence_paths": [
+        "Logs/feel/n54-r3/summary47.txt"
+      ],
+      "note": "THE STACK flicker 55 -> 2; white-stone bug fixed in THE STACK + 7 boss views; iceline a154 RED on input only"
+    },
+    {
+      "id": "G",
+      "title": "Boss palettes, their turns, the guns' boss colours",
+      "owner": "builder G",
+      "switch": "design.n54.grade54 (view row)",
+      "check": "a254: each boss's grade measured distinct (hue / value), the turn at each phase change printed with its input, cyan's contrast held against each palette; frames looked at",
+      "fallback": "the row ships OFF",
+      "passes": false,
+      "state": "SHORT",
+      "evidence_paths": [
+        "Logs/feel/n54-r3/summary47.txt",
+        "Logs/player/n47-reel-n54-freeze2-gf.log"
+      ],
+      "note": "ON for ICEBREAKER / WYRM / LOOM / RIVAL (a254 GREEN); THE WICK and THE CROWN off (D-16: too close to danger)"
+    },
+    {
+      "id": "M",
+      "title": "The camera's smoothness",
+      "owner": "builder M",
+      "switch": "design.n54.move54 (view row)",
+      "check": "a354: the camera-jitter number in the Player RED off / GREEN on; golden + fingerprints EQUAL",
+      "fallback": "the row ships OFF",
+      "passes": true,
+      "state": "DONE",
+      "evidence_paths": [
+        "Logs/feel/n54-r2/summary47.txt"
+      ],
+      "note": "held 0.250 -> 0.150 s, jitter 0.246 -> 0.191 / 0.189; the step-down pop not measured (no step on the reel's line)"
+    },
+    {
+      "id": "Z",
+      "title": "Freeze and close",
+      "owner": "lead",
+      "switch": "-",
+      "check": "rows ON by their checks; Builds/n54-freeze; verbs37 x5 nothing lost; the smoke; golden / fingerprints EQUAL; the report; tag u3-n54",
+      "fallback": "whatever is unfinished at 16:54 closes SHORT",
+      "passes": false,
+      "state": "SHORT",
+      "evidence_paths": [
+        "Logs/feel/n54-freeze/summary47.txt",
+        "Logs/player/n54-smoke-n54-freeze2.log"
+      ],
+      "note": "verbs37 27/21/31/31/31; golden / fingerprints EQUAL; the smoke not clean; the full batch suite not run"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+# command: node Tools/night/gen-n65-foundry.cjs --export b2
+# sha: 385aad56 (tree 3 dirty paths), 2026-10-24 02:16:42 USMST, /c/Users/gaige/dev/SKYGRIND-unity/.claude/worktrees/agent-af48e888c59fa3626
+
+export b2: Design/levels/n65/rooms-n52/b2.json and Design/levels/n65/rooms/b2.json (15076 chars)
+# exit 0, 02:16:42

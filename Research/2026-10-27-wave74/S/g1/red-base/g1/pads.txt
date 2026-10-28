@@ -1,0 +1,4 @@
+# command: dotnet Temp/SimHarness/bin/Release/net10.0/SimHarness.dll hold52 --level n67-iceline --room g1 --pads --file C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/ice-base/n67-iceline.json
+# sha: efa8df54e; time: 2026-10-27 23:56:28
+hold52: level n67-iceline (C:\Users\gaige\AppData\Local\Temp\claude\C--Users-gaige-dev-SKYGRIND-unity\07ef7707-bc3a-4541-8901-f98169a14875\scratchpad\n74S\ice-base\n67-iceline.json), room g1 "2.1 TANK ALONE" rect [-11,-26,11,0], off switch none
+pad52 g1: no jump pad inside the room's rect (the map's pads: 15)

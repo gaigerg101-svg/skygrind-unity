@@ -1,0 +1,21 @@
+# command: dotnet Temp/wallprobe/bin/Release/net10.0/wallprobe.dll <level> open [cands]   (S's wallprobe from n74-S, zones OPENED: the Player's verbs37 pick, rows 9 / 11); levels from gen-n65-foundry.cjs --run --slots=<list> --out
+# sha: 36ea82efd (+ rooms/a3.json as in the tree); time: 2026-10-28 01:18:25; row 9 PASS needs a ride over 1.2 s
+## b1,a8,a2
+pick: 18 m in a7 at (1.1, 0.2, -326.2) along (0, 1) normal (-1, 0)
+ride: rode True, rides 1 [0.23-1.55], longest 1.32 s, ends [jump], end pos (-1.7, 0.0, -297.2); row 9 PASS, row 11 PASS (16.6 vs 11.7 m/s)
+## b1,a8,a2,a5,a3
+pick: 18 m in a7 at (1.1, 0.2, -326.2) along (0, 1) normal (-1, 0)
+ride: rode True, rides 1 [0.23-1.55], longest 1.32 s, ends [jump], end pos (-1.7, 0.0, -297.2); row 9 PASS, row 11 PASS (16.6 vs 11.7 m/s)
+## a3's runs of 12 m or more and the longest per room (b1,a8,a2,a5,a3):
+room a1: longest run 3 m
+room a2: longest run 12 m k 5 dir - start (6.3, -47.9) along (0, 1) normal (-1, 0) run 12 m
+room a3: longest run 1 m
+room a4: longest run 11 m k 5 dir - start (3.3, -100.2) along (0, 1) normal (-1, 0) run 11 m
+room a5: longest run 13 m k 3 dir + start (8.7, -124.1) along (-0, -1) normal (-1, 0) run 13 m
+room a6: longest run 9 m k 6 dir - start (4.3, -302.0) along (0, 1) normal (-1, 0) run 9 m
+room a7: longest run 18 m k 7 dir - start (1.1, -326.2) along (0, 1) normal (-1, 0) run 18 m
+room a8: longest run 17 m k 2 dir + start (6.3, -346.0) along (-0, -1) normal (-1, 0) run 17 m
+# command: dotnet Temp/wallprobe/bin/Release/net10.0/wallprobe.dll C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/a3/cand2/n65-foundry.json open   (S's wallprobe, zones opened: the Player's verbs37 pick); level = gen-n65-foundry.cjs --run --slots=b1,a8,a2,a5,a3 of the final a3 file
+# sha: 36ea82efd (+ rooms/a3.json as in the tree); time: 2026-10-28 01:29:02
+pick: 18 m in a7 at (1.1, 0.2, -326.2) along (0, 1) normal (-1, 0)
+ride: rode True, rides 1 [0.23-1.55], longest 1.32 s, ends [jump], end pos (-1.7, 0.0, -297.2); row 9 PASS, row 11 PASS (16.6 vs 11.7 m/s)

@@ -1,0 +1,20 @@
+11:39:05
+f17405979
+n72lane n52-foundry: Open35 picks a2 lane 16 m (first award room none); the longest lane (rays to 60 m) b2 58 m; per room: a1 4, a2 16, a3 14, a4 8, a5 24, b1 16, b2 58, a6 6, a7 22, a8 18
+  hop dry run at Open35's pick: web [2 hops, kept 100.0 %, 4.0 s RED] | ultra, the old 4 s window [1 hops, kept 100.0 %, 4.0 s RED] | ultra, window 6.0 s [2 hops, kept 100.0 %, 6.0 s RED] | Choose: the lane from room a3 at 270 deg (9 tried) [3 hops, kept 100.0 %, 5.6 s PASS]
+n72lane n52-iceline: Open35 picks g6 lane 16 m (first award room g6); the longest lane (rays to 60 m) g4 26 m; per room: g1 24, g2 18, g3 24, g4 26, g5 14, g6 16, g7 16, g8 20, gr 6
+  hop dry run at Open35's pick: web [3 hops, kept 100.0 %, 1.9 s PASS] | ultra, the old 4 s window [1 hops, kept 100.0 %, 4.0 s RED] | ultra, window 6.0 s [2 hops, kept 100.0 %, 6.0 s RED] | Choose: the lane from room g8 at 0 deg (11 tried) [3 hops, kept 100.0 %, 0.7 s PASS]
+n72lane n57-kiln: Open35 picks kb2b lane 24 m (first award room kb2b); the longest lane (rays to 60 m) kb2b 24 m; per room: kb1 6, kb1b 8, kb2 22, kb2b 24, kb2c 16, kb3 16, kb3c 18, kb3d 14, kb4 6
+  hop dry run at Open35's pick: web [3 hops, kept 100.0 %, 1.3 s PASS] | ultra, the old 4 s window [2 hops, kept 100.0 %, 4.0 s RED] | ultra, window 6.0 s [3 hops, kept 100.0 %, 4.4 s PASS] | Choose: Open35's pick (it passes) [3 hops, kept 100.0 %, 4.4 s PASS]
+n72lane n52-span: Open35 picks p1 lane 14 m (first award room none); the longest lane (rays to 60 m) o1 54 m; per room: p1 14, p2 44, p3 24, p4 50, p5 16, o1 54, o2 34
+  hop dry run at Open35's pick: web [3 hops, kept 100.0 %, 1.3 s PASS] | ultra, the old 4 s window [2 hops, kept 100.0 %, 4.0 s RED] | ultra, window 6.0 s [2 hops, kept 100.0 %, 6.0 s RED] | Choose: the lane from room p1 at 90 deg (4 tried) [3 hops, kept 100.0 %, 5.6 s PASS]
+n72lane n52-spire: Open35 picks v1 lane 24 m (first award room none); the longest lane (rays to 60 m) v9 38 m; per room: v1 24, v2 18, v3 30, v4 24, v5 18, v6 14, v7 30, v8 8, v9 38, v10 32
+  hop dry run at Open35's pick: web [3 hops, kept 100.0 %, 1.3 s PASS] | ultra, the old 4 s window [2 hops, kept 100.0 %, 4.0 s RED] | ultra, window 6.0 s [3 hops, kept 100.0 %, 4.4 s PASS] | Choose: Open35's pick (it passes) [3 hops, kept 100.0 %, 4.4 s PASS]
+n72lane n65-foundry: Open35 picks a2 lane 16 m (first award room none); the longest lane (rays to 60 m) b2 58 m; per room: a1 4, a2 16, a3 14, a4 8, a5 24, b1 8, b2 58, a6 6, a7 22, a8 16
+  hop dry run at Open35's pick: web [2 hops, kept 100.0 %, 4.0 s RED] | ultra, the old 4 s window [1 hops, kept 100.0 %, 4.0 s RED] | ultra, window 6.0 s [2 hops, kept 100.0 %, 6.0 s RED] | Choose: the lane from room a3 at 270 deg (9 tried) [3 hops, kept 100.0 %, 5.6 s PASS]
+n72lane n67-iceline: Open35 picks g6 lane 16 m (first award room g6); the longest lane (rays to 60 m) g4 28 m; per room: g1 24, g2 18, g3 24, g4 28, g5 14, g6 16, g7 16, g8 20, gr 6
+  hop dry run at Open35's pick: web [3 hops, kept 100.0 %, 1.9 s PASS] | ultra, the old 4 s window [1 hops, kept 100.0 %, 4.0 s RED] | ultra, window 6.0 s [2 hops, kept 100.0 %, 6.0 s RED] | Choose: the lane from room g8 at 0 deg (11 tried) [3 hops, kept 100.0 %, 0.7 s PASS]
+n72lane n67-kiln: Open35 picks kb2b lane 24 m (first award room kb2b); the longest lane (rays to 60 m) kb2b 24 m; per room: kb1 6, kb1b 8, kb2 20, kb2b 24, kb2c 16, kb3 14, kb3c 18, kb3d 10, kb4 6
+  hop dry run at Open35's pick: web [3 hops, kept 100.0 %, 1.3 s PASS] | ultra, the old 4 s window [2 hops, kept 100.0 %, 4.0 s RED] | ultra, window 6.0 s [3 hops, kept 100.0 %, 4.4 s PASS] | Choose: Open35's pick (it passes) [3 hops, kept 100.0 %, 4.4 s PASS]
+n72lane n67-spire: Open35 picks v1 lane 24 m (first award room none); the longest lane (rays to 60 m) v9 38 m; per room: v1 24, v2 18, v3 30, v4 24, v5 18, v6 14, v7 30, v8 8, v9 38, v10 32
+  hop dry run at Open35's pick: web [3 hops, kept 100.0 %, 1.3 s PASS] | ultra, the old 4 s window [2 hops, kept 100.0 %, 4.0 s RED] | ultra, window 6.0 s [3 hops, kept 100.0 %, 4.4 s PASS] | Choose: Open35's pick (it passes) [3 hops, kept 100.0 %, 4.4 s PASS]

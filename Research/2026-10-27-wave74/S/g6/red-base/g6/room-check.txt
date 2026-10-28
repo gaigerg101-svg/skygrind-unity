@@ -1,0 +1,13 @@
+# command: python -I Tools/night/n59-l-room.py n67-iceline room g6 --dir C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/ice-base
+# sha: bf5edde7e; time: 2026-10-28 00:05:47
+== n56-room room iceline g6 (-)
+  PASS R2 no dead ends      0 dead-end cells of 63 (2 m x 0.5 m cells; 0 bridges)
+  FAIL R5 foothold          no box above the eye (1.6 m) reaching 4-8 m inside the entry
+  PASS R8 every job         0 untagged of 0 solids
+  n/c  IN VIEW -            not measured: no foothold (R5 FAIL) | without the foothold clauses: FAIL, 2 of 2 nodes in use fail: [-3,0,-176.5] 16.8 m from the door, a line into the entry corridor; [3,0,-176.5] 16.8 m from the door, a line into the entry corridor
+  w1 entry frame (a156): 2.0 of 2 seen, nearest 13.3 m; node distances 13.3, 13.3
+  n/c  I1 no mirror         no solids
+  n/c  I2 ride shortcut     no ride wall
+  n/c  I3 teach verb needed not a grapple-pull teach room (ride lessons: I2; whip, pad and slide lessons: not computed)
+  PASS I4 pads clear        no pads
+ROOM g6: FAIL R5 foothold

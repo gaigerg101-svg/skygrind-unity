@@ -1,0 +1,53 @@
+# node Tools/night/gen-slots.cjs --level iceline --check
+# sha 00638946; dirty: ?? Tools/night/gen-slots.cjs ?? Tools/night/levels67.json ?? Tools/night/n67-a1.cjs 
+# start 2026-10-24 10:52:09
+gen-slots --check --level iceline: base n52-iceline (Design/levels/n52-iceline.json, plan Design/levels/n52/iceline.plan.json), new id n67-iceline, slots g1 g2 g3 g4 g5 g6 g7 g8, kept gr:link x9:boss
+PASS the slots g1 g2 g3 g4 g5 g6 g7 g8 are every fight room (kind room) of Design/levels/n52/iceline.plan.json (g1 g2 g3 g4 g5 g6 g7 g8)
+PASS every piece list of the plan is carried (boxes[70] ramps[15] pads[15] grapple[0] pits[6] tunnels[0] lights[50] props[18] surfaces[1])
+PASS every piece is keyed to a room of the plan
+PASS Design/levels/n67/iceline/rooms-base/g1.json is n52-iceline's g1 exactly (re-exported from Design/levels/n52/iceline.plan.json; boxes 2, ramps 0, pads 0, grapple 0, pits 0, tunnels 0, lights 6, props 0, surfaces 0)
+     Design/levels/n67/iceline/rooms/g1.json: n52-iceline's room (not rebuilt yet)
+PASS Design/levels/n67/iceline/rooms-base/g2.json is n52-iceline's g2 exactly (re-exported from Design/levels/n52/iceline.plan.json; boxes 7, ramps 3, pads 4, grapple 0, pits 0, tunnels 0, lights 5, props 2, surfaces 0)
+     Design/levels/n67/iceline/rooms/g2.json: n52-iceline's room (not rebuilt yet)
+PASS Design/levels/n67/iceline/rooms-base/g3.json is n52-iceline's g3 exactly (re-exported from Design/levels/n52/iceline.plan.json; boxes 13, ramps 2, pads 2, grapple 0, pits 0, tunnels 0, lights 7, props 2, surfaces 0)
+     Design/levels/n67/iceline/rooms/g3.json: n52-iceline's room (not rebuilt yet)
+PASS Design/levels/n67/iceline/rooms-base/g4.json is n52-iceline's g4 exactly (re-exported from Design/levels/n52/iceline.plan.json; boxes 14, ramps 2, pads 3, grapple 0, pits 1, tunnels 0, lights 7, props 1, surfaces 1)
+     Design/levels/n67/iceline/rooms/g4.json: n52-iceline's room (not rebuilt yet)
+PASS Design/levels/n67/iceline/rooms-base/g5.json is n52-iceline's g5 exactly (re-exported from Design/levels/n52/iceline.plan.json; boxes 11, ramps 2, pads 3, grapple 0, pits 0, tunnels 0, lights 6, props 1, surfaces 0)
+     Design/levels/n67/iceline/rooms/g5.json: n52-iceline's room (not rebuilt yet)
+PASS Design/levels/n67/iceline/rooms-base/g6.json is n52-iceline's g6 exactly (re-exported from Design/levels/n52/iceline.plan.json; boxes 0, ramps 0, pads 0, grapple 0, pits 0, tunnels 0, lights 3, props 2, surfaces 0)
+     Design/levels/n67/iceline/rooms/g6.json: n52-iceline's room (not rebuilt yet)
+PASS Design/levels/n67/iceline/rooms-base/g7.json is n52-iceline's g7 exactly (re-exported from Design/levels/n52/iceline.plan.json; boxes 15, ramps 4, pads 2, grapple 0, pits 3, tunnels 0, lights 6, props 2, surfaces 0)
+     Design/levels/n67/iceline/rooms/g7.json: n52-iceline's room (not rebuilt yet)
+PASS Design/levels/n67/iceline/rooms-base/g8.json is n52-iceline's g8 exactly (re-exported from Design/levels/n52/iceline.plan.json; boxes 8, ramps 2, pads 1, grapple 0, pits 2, tunnels 0, lights 6, props 7, surfaces 0)
+     Design/levels/n67/iceline/rooms/g8.json: n52-iceline's room (not rebuilt yet)
+     the surfaces list carried with its rooms: g1 0, g2 0, g3 0, g4 1, g5 0, g6 0, g7 0, g8 0 (plan total 1)
+PASS every slot old: the assembled plan equals Design/levels/n52/iceline.plan.json apart from id / _why
+PASS every slot old: openings67.json iceline = Design/levels/n52/openings53.json's {"g2":"held","g3":"ambushed","g4":"held","g5":"ambushed","g7":"held","g8":"ambushed"}
+PASS every slot old: levelgen --walk (0 ERROR, 6 s) + the finish (data-name): the level equals Design/levels/n52-iceline.json apart from its names (name, _why, generatedBy)
+PASS every slot old: with n52-iceline's name / _why / generatedBy the bytes ARE Design/levels/n52-iceline.json (2602885 chars)
+PASS every slot old: the levelgen ERROR rows are n52-iceline's own, as Tools/night/levels67.json lists them (none)
+PASS PLANTED one g1 box moved 1 m east (levelgen --walk 0 ERROR, 7 s): the difference prints (4 item(s)):
+       top: collision
+       top: navGrid
+       top: data
+       campaign.boxes: 1 row(s) only in the base, 1 only in the new (base {"zone":"g1","kind":"wall","min":[-8.6,0,-18],"max":[-8,5,-5],"job":"line","why":"ride panel W (5 m tall, 13 m, face east): the line round t; new {"zone":"g1","kind":"wall","min":[-7.6,0,-18],"max":[-7,5,-5],"job":"line","why":"ride panel W (5 m tall, 13 m, face east): the line round t)
+PASS PLANTED an unknown row key g1.row.spinners67: refused (Design/levels/n67/iceline/rooms-base/g1.json: unlisted row key 'spinners67' (refused: name its reader in gen-slots.cjs KNOWN first))
+PASS PLANTED an area67 block in g2's row (research.md's proposal): refused (Design/levels/n67/iceline/rooms-base/g2.json: unlisted row key 'area67' (refused: research.md's area67 block is a proposal, not a room field; the lint infers from the geometry: redteam.md 6))
+PASS PLANTED g2 drops its name with no reason: refused (Design/levels/n67/iceline/rooms-base/g2.json: row key 'name' dropped with no reason (add drop.name: "<reason>"; nothing lost, PRINCIPLES 1))
+PASS PLANTED an unknown file key g1.extras: refused (Design/levels/n67/iceline/rooms-base/g1.json: unlisted file key 'extras' (a iceline room file holds _why, room, row, boxes, ramps, pads, grapple, pits, tunnels, lights, props, surfaces, drop, opening, opening_why))
+PASS PLANTED g1's box keyed to zone g2: refused (Design/levels/n67/iceline/rooms-base/g1.json: boxes: a row keyed to 'g2', not g1: {"zone":"g2","kind":"wall","min":[-8.6,0,-18],"max":[-8,5,-5],"job":"line","why":"ride panel W (5 m tall, 13 m, face east): the line round the tank if the swi)
+PASS PLANTED g2's rect widened 1 m: refused (Design/levels/n67/iceline/rooms-base/g2.json: row.rect [-13,-58,9,-30] is the slot's ([-12,-58,9,-30]): the doors fix it)
+PASS PLANTED a new g1 box with no job / why: refused (Design/levels/n67/iceline/rooms-base/g1.json: boxes: a new piece without job / why: {"zone":"g1","kind":"hull","min":[0,0,-13],"max":[1,2,-12]})
+PASS PLANTED g1's opening 'sideways': refused (Design/levels/n67/iceline/rooms-base/g1.json: opening 'sideways' (one of vista, ambushed, ambusher, held; leave it out to keep n52-iceline's))
+PASS PLANTED g1.row verb65 ride + line65: accepted (the plan's g1 row carries verb65 ride, line65 3 waypoints)
+PASS PLANTED g1.opening ambusher: from an old slot iceline stays the seed, from a latest / new slot {"g2":"held","g3":"ambushed","g4":"held","g5":"ambushed","g7":"held","g8":"ambushed","g1":"ambusher"}
+PASS PLANTED a shared openings67.json with another level's key: kept ({"z1":"held"}), g1's card added
+PASS PLANTED g1 rebuilt (one pillar added, bot43 false): it appears in the assembled plan (g1 boxes 2 -> 3) and only g1's slot changed
+  slot g1: old Design/levels/n67/iceline/rooms-base/g1.json: REBUILT; boxes 2 -> 3*, ramps 0, pads 0, grapple 0, pits 0, tunnels 0, lights 6, props 0, surfaces 0; note = why filled on 1
+    row keys: keep 21, replace 0, add 1, drop 0
+    add     bot43
+PASS PLANTED g1 rebuilt, levelgen --walk 0 ERROR (none beyond the base's) + the finish: every campaign row that differs from Design/levels/n52-iceline.json is g1's (none foreign); the difference: top: collision; top: navGrid; top: data; campaign.boxes: 0 row(s) only in the base, 1 only in the new (new {"zone":"g1","kind":"hull","min":[-6.5,0,-23.5],"max":[-5.5,10,-22.5],"job":"cover: planted","why":"the --check's planted pillar","note":"th); campaign.rooms g1: bot43
+PASS PLANTED g1's spawn lifted 40 m: levelgen 2 ERROR, 2 beyond n52-iceline's own (spots on the nav grid; player route, doors open: --run / --finish refuse it); the base's own 0 row(s) still listed and allowed
+gen-slots --check --level iceline: all PASS (levelgen runs: 4, 6 s / 7 s / 6 s / 7 s)
+# exit 0 at 10:52:38

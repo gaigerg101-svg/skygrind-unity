@@ -1,0 +1,81 @@
+==== the round (r2): ../../../Logs/n65/r2/a2
+-- room-check.txt
+# command: python -I Tools/night/n59-l-room.py n65-foundry room a2
+# sha: d602157a; time: 2026-10-23 16:20:51
+== n56-room room foundry a2 (held)
+  PASS R2 no dead ends      0 dead-end cells of 76 (2 m x 0.5 m cells; 0 bridges)
+  PASS R5 foothold          box [-5, 0, -44]..[-2.5, 2.2, -40.5] (hull, job line): top 2.2 m over the floor, 7.5-11.0 m inside
+  PASS R8 every job         0 untagged of 4 solids
+  PASS IN VIEW held         held: 4.0 of wave 1's 4 expected seen from the foothold's flanks (>= 4 PASS); 4 nodes, 4 in use
+  w1 entry frame (a156): 4.0 of 4 seen, nearest 16.1 m; node distances 16.1, 16.2, 18.7, 19.6
+  PASS I1 no mirror         mirror overlap 15 % across the door axis x = 0 (d1; 4 solids, 58 m2 footprint; < 60 % PASS)
+  n/c  I2 ride shortcut     no ride wall
+  n/c  I3 teach verb needed not a grapple-pull teach room (ride lessons: I2; whip, pad and slide lessons: not computed)
+  PASS I4 pads clear        1 pads, 3 walk lines; all clear (nearest line distances 11.4 m)
+ROOM a2: PASS
+-- flow-A.txt
+# command: dotnet Temp/SimHarness/bin/Release/net10.0/SimHarness.dll n46flow --level n65-foundry --rooms a2 --seeds 10 --first 1
+# sha: d602157a; time: 2026-10-23 16:21:10
+n46flow: seeds 1..10, cap 240 s per room, rows forced on: none, off switch: none; pilot: Walk38Pilot + the ported autopilot (normal)
+  room       kind | stall%  maxStall  air% | kgap med/max | near med/p10/p90 | dwell  dead | deaths falls | clear (k/n)    | geometry
+  a2         room |   16.7      1.5  64.0 |  2.0 / 10.3  |  6.4 /  2.2 / 10.5  |   2.3   8.2 |      0     0 |   21.3 (10/10) | floor 280 m2, tiers 3, loop n (12.9 m2), pockets 0, sight 23.2 m, w1 in view 4/4
+n46flow n65-foundry SUMMARY: GREEN 10/10; stall 16.7 %, longest stall 1.5 s, air 64.0 %, kill gap 2.0 / 10.3 s, nearest 6.4 m, dwell 2.3 s, dead 8.2 s, deaths 0, falls 0, clear 21.3 s
+  style      kind |  DULL  COOL  BOLD  AIRB  SAVA  SKYG (% of fight steps) | top rank med / max (seeds)
+  a2         room |  52.6  19.2  26.8   1.4   0.0   0.0                    | BOLD / AIRBORNE (10)
+n46flow n65-foundry STYLE: DULL 52.6 % of 216 s of fight; above DULL 47.4 %; rooms reaching SAVAGE 0/1; top rank AIRBORNE
+-- flow-B.txt
+# command: dotnet Temp/SimHarness/bin/Release/net10.0/SimHarness.dll n46flow --level n65-foundry --rooms a2 --seeds 10 --first 11 --no-geo
+# sha: d602157a; time: 2026-10-23 16:21:10
+n46flow: seeds 11..20, cap 240 s per room, rows forced on: none, off switch: none; pilot: Walk38Pilot + the ported autopilot (normal)
+  room       kind | stall%  maxStall  air% | kgap med/max | near med/p10/p90 | dwell  dead | deaths falls | clear (k/n)    | geometry
+  a2         room |   20.2      1.3  68.0 |  1.8 / 8.2   |  6.0 /  2.4 / 10.8  |   1.3   8.2 |      0     0 |   17.9 (10/10) | -
+n46flow n65-foundry SUMMARY: GREEN 10/10; stall 20.2 %, longest stall 1.3 s, air 68.0 %, kill gap 1.8 / 8.2 s, nearest 6.0 m, dwell 1.3 s, dead 8.2 s, deaths 0, falls 0, clear 17.9 s
+  style      kind |  DULL  COOL  BOLD  AIRB  SAVA  SKYG (% of fight steps) | top rank med / max (seeds)
+  a2         room |  39.6  50.6   9.8   0.0   0.0   0.0                    | BOLD / BOLD (10)
+n46flow n65-foundry STYLE: DULL 39.6 % of 184 s of fight; above DULL 60.4 %; rooms reaching SAVAGE 0/1; top rank BOLD
+-- pads.txt
+# command: dotnet Temp/SimHarness/bin/Release/net10.0/SimHarness.dll hold52 --level n65-foundry --room a2 --pads
+# sha: d602157a; time: 2026-10-23 16:21:10
+hold52: level n65-foundry (C:\Users\gaige\dev\SKYGRIND-unity\Design\levels\n65-foundry.json), room a2 "1.2 KESTREL" rect [-7,-55,7,-35], off switch none
+pad52 a2 pad 4 at [-3.75,2.2,-43] target [6.3,2.5,-51.2] launched yes apex 4.5 landed [6.36,2.5,-51.25] miss 0.08 m PASS
+
+==== the red (n52-foundry): ../../../Logs/n65/red/a2
+-- room-check.txt
+# command: python -I Tools/night/n59-l-room.py n52-foundry room a2
+# sha: 2f3e4d94; time: 2026-10-23 14:07:19
+== n56-room room foundry a2 (-)
+  PASS R2 no dead ends      0 dead-end cells of 75 (2 m x 0.5 m cells; 0 bridges)
+  FAIL R5 foothold          no box above the eye (1.6 m) reaching 4-8 m inside the entry
+  PASS R8 every job         0 untagged of 2 solids
+  n/c  IN VIEW -            not measured: no foothold (R5 FAIL) | without the foothold clauses: FAIL, 2 of 2 nodes in use fail: [-5,2,-53] 20.6 m from the door, a line into the entry corridor; [-3,2,-53.5] 20.7 m from the door, a line into the entry corridor
+  w1 entry frame (a156): 2.0 of 2 seen, nearest 16.9 m; node distances 16.9, 16.9
+  PASS I1 no mirror         mirror overlap 0 % across the door axis x = 0 (d1; 2 solids, 45 m2 footprint; < 60 % PASS)
+  n/c  I2 ride shortcut     no ride wall
+  n/c  I3 teach verb needed not a grapple-pull teach room (ride lessons: I2; whip, pad and slide lessons: not computed)
+  PASS I4 pads clear        no pads
+ROOM a2: FAIL R5 foothold
+-- flow-A.txt
+# command: dotnet Temp/SimHarness/bin/Release/net10.0/SimHarness.dll n46flow --level n52-foundry --rooms a2 --seeds 10 --first 1
+# sha: 2f3e4d94; time: 2026-10-23 14:07:40
+n46flow: seeds 1..10, cap 240 s per room, rows forced on: none, off switch: none; pilot: Walk38Pilot + the ported autopilot (normal)
+  room       kind | stall%  maxStall  air% | kgap med/max | near med/p10/p90 | dwell  dead | deaths falls | clear (k/n)    | geometry
+  a2         room |   12.4      0.8  73.9 |  2.8 / 9.8   |  8.0 /  3.0 / 14.9  |   1.4   8.2 |      0     0 |   14.7 (10/10) | floor 280 m2, tiers 2, loop n (0 m2), pockets 0, sight 23.1 m, w1 in view 2/2
+n46flow n52-foundry SUMMARY: GREEN 10/10; stall 12.4 %, longest stall 0.8 s, air 73.9 %, kill gap 2.8 / 9.8 s, nearest 8.0 m, dwell 1.4 s, dead 8.2 s, deaths 0, falls 0, clear 14.7 s
+  style      kind |  DULL  COOL  BOLD  AIRB  SAVA  SKYG (% of fight steps) | top rank med / max (seeds)
+  a2         room |  21.1  46.1  29.8   3.0   0.0   0.0                    | BOLD / AIRBORNE (10)
+n46flow n52-foundry STYLE: DULL 21.1 % of 124 s of fight; above DULL 78.9 %; rooms reaching SAVAGE 0/1; top rank AIRBORNE
+-- flow-B.txt
+# command: dotnet Temp/SimHarness/bin/Release/net10.0/SimHarness.dll n46flow --level n52-foundry --rooms a2 --seeds 10 --first 11 --no-geo
+# sha: 2f3e4d94; time: 2026-10-23 14:07:41
+n46flow: seeds 11..20, cap 240 s per room, rows forced on: none, off switch: none; pilot: Walk38Pilot + the ported autopilot (normal)
+  room       kind | stall%  maxStall  air% | kgap med/max | near med/p10/p90 | dwell  dead | deaths falls | clear (k/n)    | geometry
+  a2         room |   11.9      0.6  78.8 |  3.7 / 10.2  |  7.1 /  2.8 / 15.2  |   0.8   8.2 |      0     0 |   13.0 (10/10) | -
+n46flow n52-foundry SUMMARY: GREEN 10/10; stall 11.9 %, longest stall 0.6 s, air 78.8 %, kill gap 3.7 / 10.2 s, nearest 7.1 m, dwell 0.8 s, dead 8.2 s, deaths 0, falls 0, clear 13.0 s
+  style      kind |  DULL  COOL  BOLD  AIRB  SAVA  SKYG (% of fight steps) | top rank med / max (seeds)
+  a2         room |  23.6  48.6  26.3   1.5   0.0   0.0                    | BOLD / AIRBORNE (10)
+n46flow n52-foundry STYLE: DULL 23.6 % of 134 s of fight; above DULL 76.4 %; rooms reaching SAVAGE 0/1; top rank AIRBORNE
+-- pads.txt
+# command: dotnet Temp/SimHarness/bin/Release/net10.0/SimHarness.dll hold52 --level n52-foundry --room a2 --pads
+# sha: 2f3e4d94; time: 2026-10-23 14:07:41
+hold52: level n52-foundry (C:\Users\gaige\dev\SKYGRIND-unity\Design\levels\n52-foundry.json), room a2 "1.2 KESTREL" rect [-7,-55,7,-35], off switch none
+pad52 a2: no jump pad inside the room's rect (the map's pads: 7)

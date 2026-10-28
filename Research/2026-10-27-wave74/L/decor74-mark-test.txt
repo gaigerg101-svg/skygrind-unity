@@ -1,0 +1,24 @@
+Decor74MarkTests 3/4 in the Editor: what was wrong (NIGHT74 builder L, 2026-10-28 01:1x; tree n74-L at 826af4337 + this commit's files, uncommitted when written).
+The failure: TheData_OldPlansStripsAreDecor_TheNight65RoomsMarksAreMarks: "the n29 foundry plan's floor strips (78 cyan, 42 white, 8 amber) Expected: greater than 50 But was: 8".
+
+## Diagnosis: the test's premise was wrong, the code is right
+The "78 cyan, 42 white, 8 amber" are the totals of my survey over EVERY plan and level file (47 files; each generated level file repeats its plan's strips), and I wrote them into the test as if the n29 foundry plan alone held them.
+The n29 foundry plan has 8 floorStrips: 3 cyan, 3 amber, 2 white (and 1 padMarker green, 1 padMarker cyan), none with a `job`.
+By the code's rule (kind floorStrip, a non-empty job, no decor:true) all 8 are decor, none a mark. The test read the right file and counted it correctly; it asked for the wrong number.
+Over the repo (python over Design/levels/n*/*.plan.json: 22 plan files, 79 floorStrips) and over every plan, room and level file (47 files, 158 floorStrip rows without a job + the 3 marks): the strips with a job are exactly 3, a2 / a3 / a5 of Design/levels/n65/rooms/ (job "line"); every other strip has no job. The code classes 0 decor strips as marks.
+Commands (python -I -B -c, read only): the n29 plan's counter by (kind, job, decor, color); the sweep's (is a mark by the rule, colour) counter: {(False, cyan): 78, (False, amber): 8, (False, white): 42, (False, orange): 6, (False, green): 24, (True, None): 3}.
+
+## The fix (test only; no code changed): Decor74MarkTests
+- the n29 foundry plan: >= 5 strips, none a mark, and more than one colour field read (the old test could not tell a one-colour read from the real thing);
+- a sweep over every Design/levels/n*/*.plan.json (22 files with floorStrips, 79 rows today; the test asks for >= 10 files and >= 40 strips): not one is taken for a mark, so no old level's decor changes colour;
+- the n65 rooms a2 / a3 / a5: every floorStrip they hold is a mark, at least one overall (a3's THE RIDE'S END);
+- the root is found from the test file's own path ([CallerFilePath], four folders up), not Application.dataPath: the same logic runs in a console.
+The stale "78 cyan, 42 white" comments (the test's header, PropsView29Math.FlatKey's doc) now say 79 rows in 22 files.
+
+## The test logic run (a console: Tools-free scratch project; the real Decor74MarkTests.cs compiled against the real built Skygrind.Game.dll and Skygrind.Core.dll of this tree through an NUnit stand-in, so Decor54.DecorKind, PropsView29Math and JsJson are the shipped code)
+PASS DecorFloorStrips_KeepTheirNameAndTheirRecolour
+PASS UsableMarks_AreNamedApart_AndNeverRecoloured
+PASS TheOtherDecorKinds_AreUntouched
+PASS TheData_OldPlansStripsAreDecor_TheNight65RoomsMarksAreMarks
+4 passed, 0 failed. (The Editor's run is the lead's.)
+Not checked: the Editor's NUnit run of the new test; a Player frame of a level with a usable mark (no shipped level has one yet: foundry with a3 in the slot list).

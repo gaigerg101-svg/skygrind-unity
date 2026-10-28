@@ -1,0 +1,26 @@
+# t1b-charge diff: NIGHT66's after-runs (Research/2026-10-23-wave66/T/t1b-amend-after-*.txt, harness built from d25ea7d8's tree) against NIGHT67's re-runs (Research/2026-10-24-wave67/T/t1b-charge/, sha 4d86b960, Temp/SimHarness/bin/Release/net10.0/SimHarness.dll (2026-10-24_10:56:04)), header and wall-time lines aside; 2026-10-24 11:11:29
+IDENTICAL t1b-amend-after-r2-flowV-a2.txt (17 lines)
+   old: n46flow n65-foundry SUMMARY: GREEN 10/10; stall 29.1 %, longest stall 2.4 s, air 64.4 %, kill gap 1.0 / 7.2 s, nearest 5.7 m, dwell 2.5 s, dead 4.2 s,
+   new: n46flow n65-foundry SUMMARY: GREEN 10/10; stall 29.1 %, longest stall 2.4 s, air 64.4 %, kill gap 1.0 / 7.2 s, nearest 5.7 m, dwell 2.5 s, dead 4.2 s,
+IDENTICAL t1b-amend-after-r2-flowV-a8.txt (17 lines)
+   old: n46flow n65-foundry SUMMARY: GREEN 10/10; stall 45.8 %, longest stall 4.3 s, air 57.8 %, kill gap 1.4 / 9.8 s, nearest 6.1 m, dwell 0.5 s, dead 4.2 s,
+   new: n46flow n65-foundry SUMMARY: GREEN 10/10; stall 45.8 %, longest stall 4.3 s, air 57.8 %, kill gap 1.4 / 9.8 s, nearest 6.1 m, dwell 0.5 s, dead 4.2 s,
+IDENTICAL t1b-amend-after-r2-skip-a2.txt (61 lines)
+   old: n65verb skip: M1 PASS | room a2, ratio 1.49 vs bar 1.25 (mainBar), exercised 10/10
+   new: n65verb skip: M1 PASS | room a2, ratio 1.49 vs bar 1.25 (mainBar), exercised 10/10
+IDENTICAL t1b-amend-after-r2-skip-a8.txt (71 lines)
+   old: n65verb skip: M1 UNSURE | room a8, ratio 0.97 vs bar 1.25 (mainBar), exercised 5/10 | too few seeds exercised (5 < 7): the comparison does not test th
+   new: n65verb skip: M1 UNSURE | room a8, ratio 0.97 vs bar 1.25 (mainBar), exercised 5/10 | too few seeds exercised (5 < 7): the comparison does not test th
+IDENTICAL t1b-amend-after-red65-flowV-a2.txt (17 lines)
+   old: n46flow n65-foundry SUMMARY: GREEN 10/10; stall 24.1 %, longest stall 1.6 s, air 67.8 %, kill gap 0.9 / 7.8 s, nearest 5.9 m, dwell 2.5 s, dead 1.5 s,
+   new: n46flow n65-foundry SUMMARY: GREEN 10/10; stall 24.1 %, longest stall 1.6 s, air 67.8 %, kill gap 0.9 / 7.8 s, nearest 5.9 m, dwell 2.5 s, dead 1.5 s,
+IDENTICAL t1b-amend-after-red65-flowV-a8.txt (17 lines)
+   old: n46flow n65-foundry SUMMARY: GREEN 10/10; stall 48.6 %, longest stall 4.3 s, air 57.5 %, kill gap 1.1 / 6.8 s, nearest 4.7 m, dwell 0.5 s, dead 4.2 s,
+   new: n46flow n65-foundry SUMMARY: GREEN 10/10; stall 48.6 %, longest stall 4.3 s, air 57.5 %, kill gap 1.1 / 6.8 s, nearest 4.7 m, dwell 0.5 s, dead 4.2 s,
+IDENTICAL t1b-amend-after-red65-skip-a2.txt (61 lines)
+   old: n65verb skip: M1 PASS | room a2, ratio 1.27 vs bar 1.25 (mainBar), exercised 10/10
+   new: n65verb skip: M1 PASS | room a2, ratio 1.27 vs bar 1.25 (mainBar), exercised 10/10
+IDENTICAL t1b-amend-after-red65-skip-a8.txt (72 lines)
+   old: n65verb skip: M1 UNSURE | room a8, ratio 0.93 vs bar 1.25 (mainBar), exercised 6/10 | too few seeds exercised (6 < 7): the comparison does not test th
+   new: n65verb skip: M1 UNSURE | room a8, ratio 0.93 vs bar 1.25 (mainBar), exercised 6/10 | too few seeds exercised (6 < 7): the comparison does not test th
+t1b-charge: 8 identical, 0 differ (of 8)

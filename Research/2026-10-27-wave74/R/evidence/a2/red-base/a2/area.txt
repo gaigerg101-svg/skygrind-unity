@@ -1,0 +1,10 @@
+# command: node Tools/night/n70-area.cjs --level foundry --dir C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/a2/base a2
+n70-area: room a2; plan C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/a2/base/foundry.plan.json, level C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/a2/base/n65-foundry.json (the round's folder C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/a2/base); touches none (P4's (a) / (c) not read); card none
+OPEN  PASS largest open square 10.0 m (x -7.0..3.0, z -45.0..-35.0; 2 pieces on a 14.0 x 20.0 m rect; 12 m or less passes)
+P1    N/A  the last wave (husk husk) has no ranged enemy (spitter / drone)
+P4    FAIL 0 / 1 standing solids >= 1.75 m do a job ((a) touched NOT READ, (b) sight 0, (c) launch kill NOT READ); no job: box(-7,0,-55..-1,2,-50) line: the north deck; no --touches: (a) / (c) not read
+P5    N/A  no line65 in the row
+P9    N/A  no plane 1 m or more up with a short side of 6 m or more
+P11   N/A  the card names no TOWER / GALLERY / SPLIT LEVEL (no card)
+P17   N/A  no ride wall and no wall-like box 4 m x 8 m
+n70-area: FAIL a2 (1/2)

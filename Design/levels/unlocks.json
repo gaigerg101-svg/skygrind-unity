@@ -1,0 +1,26 @@
+{
+  "_why": "NIGHT26 D-3 (GG: 'you slowly unlock weapons as you go on and maybe two levels in between the next weapon'): the weapon a level EARNS when it is cleared, one row per level in play order. The campaign starts with the KESTREL (revolver) and the PULSE (gauntlet) and owns, at any time, those two plus the `earns` of every level cleared (Core/Unlocks26.cs: OwnedAfter). Survival modes ignore this file. A level's LIMIT flags still override. NIGHT29 D-2 (GG 2026-10-09: 'you should only start with the pistol in the first map ... each level should kind of get you a new weapon'): level 1 (the tutorial / n29-foundry) and level 2 (level2 / n29-iceline) award NOTHING (they have no row: the player keeps the pistol, the fist and the PULSE gauntlet); level 3 (layer1 / n29-kiln) awards the THUNDERCLAP (the shotgun; the plan also puts its pickup in the first room), then one weapon per level: NAILGUN 4, TORCH 5, ZAPPER 6, RAIL 7, BOUNCER 8, ROCKET 9 (level 10 none). The rows are keyed by level id: the old ids (tutorial, level2, layer1, level3 ...) and the NIGHT29 plan ids (n29-...) both carry the table, so either order works. Levels 4-10 are untouched this night apart from this shift.",
+  "start": ["revolver", "gauntlet"],
+  "rows": [
+    { "n": 3, "id": "n29-kiln", "earns": "shotgun", "note": "THE KILN (the worm), NIGHT29 plan: the THUNDERCLAP (also a pickup in the first room)." },
+    { "n": 3, "id": "n30-kiln", "earns": "shotgun", "note": "THE KILN under its NIGHT30 plan id (design.n30.levels): the THUNDERCLAP." },
+    { "n": 3, "id": "n32-kiln", "earns": "shotgun", "note": "THE KILN rebuilt rooms (NIGHT32 A, design.n32.arenas32): the THUNDERCLAP." },
+    { "n": 3, "id": "n33-kiln", "earns": "shotgun", "note": "THE KILN overhauled rooms (NIGHT33 R, design.n33.kit33): the THUNDERCLAP." },
+    { "n": 3, "id": "n34-kiln", "earns": "shotgun", "note": "THE KILN movement lines (NIGHT34 A, design.n34.lines34): the THUNDERCLAP." },
+    { "n": 3, "id": "n35-kiln", "earns": "shotgun", "note": "THE KILN with a Lucio wall-ride room (NIGHT35 A, design.n35.campaign6): the THUNDERCLAP." },
+    { "n": 4, "id": "n30-span", "earns": "nailgun", "note": "LEVEL 4 THE SPAN (NIGHT30, DESIGN30 D; DESIGN29 F's level-4 weapon): the NAILGUN (also a pickup in room s1)." },
+    { "n": 4, "id": "n32-span", "earns": "nailgun", "note": "LEVEL 4 THE SPAN rebuilt (NIGHT32 S, design.n32.span32): the NAILGUN (also a pickup in room s1)." },
+    { "n": 4, "id": "n33-span", "earns": "nailgun", "note": "LEVEL 4 THE SPAN overhauled rooms (NIGHT33 R, design.n33.kit33): the NAILGUN (also a pickup in room s1)." },
+    { "n": 4, "id": "n37-span", "earns": "nailgun", "note": "LEVEL 4 THE SPAN with THE LOOM from scratch (NIGHT37 O, design.n37.loom37): n33-span's rooms + THE CANYON; the NAILGUN, as n33-span." },
+    { "n": 4, "id": "n38-span", "earns": "nailgun", "note": "LEVEL 4 THE SPAN rebuilt for flight (NIGHT38 O2, design.n38.span38 swaps n37-span for it): five new rooms (open roofed arenas, two flight rooms of grapple gates) and NIGHT37's two rehearsal rooms and THE CANYON. The STITCHER (also a pickup in room p1), as n37-span." },
+    { "n": 5, "id": "n32-spire", "earns": "torch", "note": "LEVEL 5 THE SPIRE (NIGHT32 F, design.n32.level5; the level-5 weapon of this table): the TORCH, earned with the last room (Campaign24's level unlock: AwardWeapon + weaponEarned; it fires with design.adds.b5 on)." },
+    { "n": 5, "id": "n33-spire", "earns": "torch", "note": "LEVEL 5 THE SPIRE overhauled rooms (NIGHT33 R, design.n33.kit33): the TORCH, earned with the last room, as n32-spire." },
+    { "n": 3, "id": "layer1", "earns": "shotgun", "note": "THE KILN under its old id: the THUNDERCLAP." },
+    { "n": 4, "id": "level3", "earns": "nailgun" },
+    { "n": 5, "id": "level4", "earns": "torch" },
+    { "n": 6, "id": "level5", "earns": "zapper" },
+    { "n": 7, "id": "level06", "earns": "rail" },
+    { "n": 8, "id": "level07", "earns": "bouncer" },
+    { "n": 9, "id": "level08", "earns": "rocket" }
+  ]
+}

@@ -1,0 +1,88 @@
+NIGHT74 L: pads74, the jump pad's particle stream steadied (view only), and the pad-region meter. Written 2026-10-28 01:30 on n74-L.
+Code: 6a86e0fb7 (pads74 + the pad regions + n74-flick.py pads + the model), 175df892a (review S1, reveal74: unrelated to the pads, same turn). Base t0b a354c0e94.
+Nothing here was checked in the Editor or a Player (L's rule: the lead runs every Player step). What was run: dn-check-wt.sh (0 errors in all four projects), a console run of the pure tests, the
+meter's selftest, and the offline model below.
+
+1. WHAT THE SHIPPED STREAM IS (read from JumpPadView27.MakeStream, Pad27.cs, SurvivalGame.Init.cs:317-331)
+   The stream is a ParticleSystem on the pad's glow material: a copy of the neon material, URP Unlit, additive (One / One), _BaseColor = colors.usable x world.neonBase (1.25): HDR cyan.
+   URP Unlit ignores particle (vertex) colours and the quads have no texture, so every mote is a HARD-EDGED FLAT SQUARE of full cyan: 0.13 m at its biggest, 0.026 m at birth, shrinking to
+   nothing at death, 12 a second, 1.5 s, 2 m/s. At 15-30 m that is 1-4 px: a quad that small gains and loses pixel centres as the camera turns. The n74-t1 b1 mid shot
+   (Logs/feel/n74-t1/pf/pan74/shot-N74-pan74-n65-foundry-b1-mid.png) shows them: two hard cyan squares of 15-20 px beside the beam at about 5 m. The URP assets say m_MSAA: 1 (no MSAA).
+
+2. WHAT pads74 DOES (Pad74.cs, Pad74Math.cs, JumpPadView27.cs; numbers UnityTuning.N74L.cs N74Pad*)
+   Every pad gets a second ParticleSystem, the steady twin; JumpPadView27.Update calls Pad74View.Apply(NightRows.ViewOn(cfg, "pads74")) every frame: one renderer on, the other off. Both
+   simulate always (a disabled renderer does not stop a ParticleSystem) and both get the launch burst. The row off draws exactly the shipped stream.
+   The twin: 5 motes a second (not 12), 0.34 m (not 0.13), 1.5 m/s for 2 s (the same 3 m of rise, a quarter slower), a SOFT sprite (a sheet of 32 frames of one blob, (1 - r^2)^2, exactly 0 at the
+   quad's edge; brightness per frame fades in over 0.30 of the life and out over the last 0.45), a size curve that never goes under 0.6 of its peak (0.2 m: 4.4 px at 25 m), tint 0.7, a fixed
+   random seed per pad (the shipped stream's is random: two OFF runs differ in the pad blocks, two ON runs draw the same motes).
+   The 16-frame first draft jumped 57 % in one brightness step; the pure test caught it; the sheet is 32 frames.
+
+3. THE MODEL (Tools/night/n74-pad-model.py, run 2026-10-28 01:26:31 on 6a86e0fb7; a MODEL: it renders pixels itself, the meter's own detect() reads them; NIGHT74's earlier models overstated the
+   real lift about 3 times, so read the sign and the size dependence, not the number)
+   python -I -B Tools/night/n74-pad-model.py --seeds 4
+   pad stream model: 640x360 px crop, block 8, 180 frames, pan 2.50 px a frame, floor 40, hard square adds 130 levels, 4 seeds
+   D 12 m (59.7 px a metre; hard square 7.8 px, soft sprite 20.3 px across): flagged block-windows per 1000 | shipped, no AA 1.0 | shipped, 4x MSAA 0.4 | steady 0.1 | steady vs shipped no AA -93 %, vs MSAA -80 %
+   D 20 m (35.8 px a metre; hard square 4.7 px, soft sprite 12.2 px across): flagged block-windows per 1000 | shipped, no AA 1.1 | shipped, 4x MSAA 0.0 | steady 0.0 | steady vs shipped no AA -100 %, vs MSAA -92 %
+   D 30 m (23.9 px a metre; hard square 3.1 px, soft sprite 8.1 px across): flagged block-windows per 1000 | shipped, no AA 0.7 | shipped, 4x MSAA 0.0 | steady 0.0 | steady vs shipped no AA -100 %, vs MSAA n/a (base 0)
+   D 45 m (15.9 px a metre; hard square 2.1 px, soft sprite 5.4 px across): flagged block-windows per 1000 | shipped, no AA 0.5 | shipped, 4x MSAA 0.0 | steady 0.0 | steady vs shipped no AA -100 %, vs MSAA n/a (base 0)
+   TOTAL flagged / block-windows | shipped no AA 8486 / 10252800 | shipped MSAA 1095 / 10252800 | steady 205 / 10252800
+   (the denominator is every block a mote ever touched over the sweep, so the per-1000 figures are small; the ratios are the point: a hard square's edge flags under the meter's test as it
+   crosses pixels at a fractional pan, a soft sprite's does not.) The game has no MSAA (m_MSAA 1), so the no-AA rows are the relevant ones: -97 % overall in the model.
+
+4. THE MEASURE (what the lead runs; the bar is the lead's, 2026-10-28 01:00): the pad regions' flagged blocks down >= 50 %, the pooled share not worse
+   The pan74 reel writes pan74-<level>-<room>.pads beside every sweep of a level with pads (Pan74Pads.cs / Pan74PadsMath.cs): per frame and per pad the screen rectangle of the pad volume
+   (halo + stream + chevrons, 1.7 R wide, 4 m high) and of the stream column (0.8 R, 3.4 m), and whether the pad is in view (in the picture, no box corner behind the camera, not hidden by
+   the level's boxes on BOTH sight lines, the pad's floor point lifted 1.5 m and 3.9 m; wedges are not tested). python -I -B Tools/night/n74-flick.py pads <base dir> <cand dir> counts the
+   flagged block-windows inside those rectangles for both runs (a window's region is every block a seen pad covered in the 8 frames it spans), the pooled share of every paired sweep, and
+   prints the two bars; a baseline that flags fewer than 40 block-windows on the pads is THIN (no ratio is evidence). The selftest's three pads cases: a flicker taken off the pad reads
+   7023 -> 0 with the z-fight strip outside unchanged (231 -> 231), bars PASS / PASS; an identical run reads 7023 -> 7023, the pad bar FAIL; a pad never in view is THIN.
+
+5. COMMANDS (tag n74-t9 is an example: the next free n74-* tag; build the Player from a tree with 6a86e0fb7 picked)
+   Before the build: the row. node Tools/night/n74-row-add.cjs refuses names that do not end in 73 (its regex /^[a-z]+73$/, line 14): pads74 has to be added by hand, or the regex widened to
+   /^[a-z]+7[34]$/. The row must also be in SameRun63Math.FrameRows (the tool does that, the hand edit must too: "kiln74" };). OFF in both config copies.
+   The sides (one Player each, serial; the extra args after the scenario name are comma-split; L-154: n65-foundry with its level rows as the repo has them):
+     bash Tools/night/n74-reels.sh n74-t9 pd0,n65-foundry,pan74,-skygrindRows72,pads74:0 pd1,n65-foundry,pan74,-skygrindRows72,pads74:1 pd2,n65-foundry,pan74,-skygrindRows72,pads74:0
+   (pd0 the baseline, pd1 the row on, pd2 the baseline again = the run-to-run floor of the pad blocks; a side is about 4-5 min: 5 rooms x 180 frames.) Read each sweep's line in
+   Logs/feel/n74-t9/summary47.txt: "pads N built, in view in X of 180 frames, pads74 ON|off": a room with X 0 contributes nothing to the pad figure; if no room has X above 0 on foundry, say so and
+   tell L: a pad-facing pose list is the next step (not checked which other levels have pads in a toured room).
+   The numbers:
+     python -I -B Tools/night/n74-flick.py pads Logs/feel/n74-t9/pd0/pan74 Logs/feel/n74-t9/pd1/pan74 --world --out Logs/n74/pads74 --json Logs/n74/pads74/on-vs-off.json
+     python -I -B Tools/night/n74-flick.py pads Logs/feel/n74-t9/pd0/pan74 Logs/feel/n74-t9/pd2/pan74 --world
+     python -I -B Tools/night/n74-flick.py compare Logs/feel/n74-t9/pd0/pan74 Logs/feel/n74-t9/pd1/pan74 --world --out Logs/n74/pads74
+   (the first: SUMMARY ... pad volume / stream column / outside / pooled, BAR pad regions down >= 50 %, BAR pooled share not worse, and Logs/n74/pads74/<sweep>.pads.png: the base heat map and
+   the candidate's side by side with the pad rectangles of the middle frame; the second reads OFF against OFF: the change it shows on the pads is the noise a real change must beat; the third is
+   compare's own per-level line.)
+   The still pair the spotter names (the pad must still read as a pad): the same room's middle frame of pd1 and pd0, the room with the most frames in view:
+     node Tools/night/n74-pair.cjs pads74 Logs/feel/n74-t9/pd1/pan74/shot-N74-pan74-n65-foundry-<room>-mid.png Logs/feel/n74-t9/pd0/pan74/shot-N74-pan74-n65-foundry-<room>-mid.png
+   (then the blind spotter on Logs/n74/spot/pads74/A.png and B.png). The pad's own close view, optional: the jumppad scenario (8 m from a pad, its RED / GREEN contrast line):
+     bash Tools/night/n74-reels.sh n74-t9 jp0,n65-foundry,jumppad,-skygrindRows72,pads74:0 jp1,n65-foundry,jumppad,-skygrindRows72,pads74:1
+   (its strip frames land under Logs/feel/n74-t9/jp0 and jp1, named as the reel's strip writes them: not checked; the motes rise 3 m.)
+   EditMode: Pad74MathTests (8; pass in a console), Pad74Tests (3; they need the Editor: the sheet texture, the material, the twin's settings with its renderer off, Apply),
+   Reveal74Tests (the two new S1 cases pass in a console).
+
+6. THE BEAM'S BRIGHTNESS (added 2026-10-28 on the lead's 01:35 message: gg-proxy-start #5, the cyan light columns are "blinding"; commits 36beeaf2c and the switch commit after it)
+   A SEPARATE commit on top of 6a86e0fb7; not picking it leaves pads74 as the stream alone. Same row: row on, the beam's painted HDR (Pad27BeamHdr x (0.6 + 0.4 glow); the launch burst takes it to 1.48 x)
+   is multiplied by Pad74Math.BeamFactor: x0.5 at any distance, and for a camera close to the column (horizontal distance to the pad's axis) 0.4 of that at or under 1 m, whole from 4 m, smoothstep between.
+   Colour untouched (the factor multiplies the HDR), never 0 (a fifth of the shipped light on top of the pad). Row off: the factor is 1f, the number painted is the shipped one exactly.
+   Why 0.5 (read off Logs/feel/n74-t1/pf/pan74/shot-N74-pan74-n65-foundry-b1-mid.png, 5 m from a pad, python -I -B Tools/night/n74-beam-px.py on it): the beam's lower third RGB (8, 245, 245), 52 % of its
+   pixels at 250 or more; the middle (1, 222, 228); the top (2, 185, 192); the wall behind luma 45-56. The frame has 101893 cyan-light pixels (4.9 %), 27539 of them clipped, mean luma 161. The Neutral
+   tonemap (PostFx.cs: look33 is always Neutral) puts those at about 1.16 / 0.73 / 0.49 of raw light (solved from the Khronos Neutral curve: knee 0.76); half of it is 0.58 / 0.37 / 0.25: sRGB 196 / 160 / 133,
+   no clip, a column 2-3 times the wall's luma. An estimate through a curve I did not run in the Editor, not a Player frame: the lead's pair decides. The near fade is for the case that fills the screen:
+   walking up to a pad or launching from it (the beam is an additive flat sheet; its area, not only its brightness, is what blinds).
+   The measure (the bars are written before any frame): the same pd1 / pd0 mid shots of a room with a pad in view:
+     python -I -B Tools/night/n74-beam-px.py Logs/feel/n74-t9/pd1/pan74/shot-N74-pan74-n65-foundry-<room>-mid.png Logs/feel/n74-t9/pd0/pan74/shot-N74-pan74-n65-foundry-<room>-mid.png "beam=x0,y0,x1,y1"
+   (the box read off the OFF frame: the beam's own place) -> CHANGE: clipped cyan pixels down >= 40 %, the cyan pixels' mean luma lower, the column still there (cyan pixels ON >= half of OFF). An identical
+   pair reads FAIL on all but the last (checked). The still the spotter names: the same pair via n74-pair.cjs as in section 5; it must not say the beam is gone.
+   The decomposition (the beam softening also lowers the beam's edge contrast, so it lowers the pad blocks' flicker too: one ON side cannot say which part did it): a fourth side with the beam part off:
+     bash Tools/night/n74-reels.sh n74-t9 pd1s,n65-foundry,pan74,-skygrindRows72,pads74:1,-skygrindPad74NoBeam
+   (the stream part alone; pads pd0 pd1s against pads pd0 pd1 tells the beam's share.) The beam-px frames of pd1s must read the OFF beam (the same clipped count): the switch's own proof.
+   Not checked: in the Editor or a Player; the camera distance (Camera position of SurvivalGame.cam, horizontal) and the fade's feel on the walk-up; whether a SPOT reads the column as dimmer but there.
+
+7. WHAT COULD NOT BE CHECKED, AND WHAT MAY BE LEFT (the stream part; section 6 has the beam's)
+   - Not run in the Editor or a Player: whether the twin draws (the texture sheet module's UVs reach URP Unlit's _BaseMap: expected, it bakes them into the quad's UVs), how the sprite looks
+     (an additive soft blob of 0.34 m: a spotter's call), whether ParticleSystem's culling pauses a twin whose renderer is off (a pause-and-catch-up only: the picture is the same).
+   - The model's -97 % is for the motes alone. The n74-t1 b1 shot shows other hard-edged bright parts of the pad inside the same region: the beacon beam (two crossed flat quads, hard side
+     edges, 0.7 m wide), the white expanding wave arcs, the ring, the chevrons. They are untouched by pads74. The meter reads their edges the same way as the squares' (a static hard edge at a
+     fractional pan), so if the pad volume's flagged blocks fall less than half while the stream column's fall by far more, the rest is the beam and the rings: the next lever would be a
+     soft-edged beam (own UVs and a texture; MeshKit has none) and a soft wave ring. Not built: the lead's call was the stream, and the freeze is 04:53.
+   - The same hard-edge reading may apply to the thin white boundary strips (the other hot source named in the 01:00 message); not touched.

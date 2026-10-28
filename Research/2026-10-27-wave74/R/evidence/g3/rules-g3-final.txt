@@ -1,0 +1,15 @@
+# command: python -I Tools/night/n74-room-rules.py room Design/levels/n67/iceline/rooms/g3.json
+# sha: 716e3003a; time: 2026-10-28 00:49:12
+iceline/g3  rect [-12.0, -90.0, 12.0, -62.0]  spawn [0.0, 0.0, -64.0] yaw 0  floor 0.0
+  PLANES  PASS  planes 2 (0.0 m: 501 cells, 4.0 m: 73 cells)
+  COVER   PASS  cover: free-standing high 2, low 0, between 0 (0 without a job), none 0
+  LOOPS   PASS  loops 5 (floor holes 2 + closed pad / ride routes 3 of 3)
+  REAR    PASS  rear arc: 0 of 3 wave-1 usable nodes behind the entry facing (all waves: 0 node uses behind) [no node 12 m out: every node taken]
+  VIEW    RED  view: no enemy in view within 2.0 s (0 of 3 wave-1 nodes seen at entry)
+  CROSS   PASS  cross: chord 36.9 m, dash 1.54 s, walk 4.6 s (bar 2.0 s at dash)
+  EXPOSE  PASS  exposure: 56 % of 1891 floor-sample pairs see each other (bar 60 %); longest clear line 29.7 m (medium band 19.5 m)
+  CLIMB   PASS  climb: 2 tier group(s), 0 not reached by walker links
+    free-standing high piece: hull [-1.0, 0.0, -77.0]-[3.0, 3.0, -73.0] h 3.00 job "30 s problem: THE HOPPER (mid-floor cover, the ste"
+    free-standing high piece: hull [-7.5, 0.0, -83.0]-[-4.5, 2.0, -81.0] h 2.00 job "30 s problem: THE COAL CAR (far-floor cover, a ste"
+    walkers reach every tier: climb: 2 tier group(s), 0 not reached by walker links
+  core 4/5 PASS, extra 3/3 PASS

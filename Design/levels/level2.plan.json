@@ -1,0 +1,291 @@
+{
+ "_why": "LEVEL 2, THE ICE LINE, NIGHT27 layout (builder A with B; GG: 'only attack him if you can catch up and hit him with the pulse'). The one place the loadout is cut: the intro hall (a few enemies, the PULSE only, a banner that says why), then a forced wall-ride stretch (a hazard floor 24 m long: the strip telegraphs, then hurts, so the wall lane is the way: no enemies), then THE GLACIER's room (the player is taken to the course when the fight begins, builder B). NIGHT26's version (one boss room, pistol only) is Design/levels/n26/level2.plan.json: what --off27 loads, and what to load while boss2 is off.",
+ "id": "level2",
+ "name": "LEVEL 2 THE ICE LINE",
+ "floorSize": 192,
+ "killPlaneY": -30,
+ "wallHeight": 14,
+ "rank": {
+  "time": [
+   150,
+   210,
+   330,
+   480
+  ],
+  "kills": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "style": [
+   1500,
+   900,
+   400,
+   150
+  ],
+  "_why": "Unity-only (builder L): S/A/B/C cuts for the chase: time in seconds (the course is a chase: a clean run is about two minutes, a first try more; no estimate was measured: the bot of the glacier harness decides), kills 0 each (a level with no waves is S for kills: the kills column reads 100 percent when nothing was planned), style = points (NOT calibrated)."
+ },
+ "rooms": [
+  {
+   "id": "i1",
+   "name": "2.1 THE PULSE HALL",
+   "kind": "room",
+   "rect": [
+    -8,
+    0,
+    16,
+    38
+   ],
+   "par": 65,
+   "spawn": {
+    "at": [
+     12,
+     0,
+     34
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    12,
+    0,
+    4
+   ],
+   "limit": [
+    "meleeOnly"
+   ],
+   "limitReason": "THE GLACIER ONLY FEELS THE PULSE: LEARN IT HERE",
+   "nodes": [
+    [
+     -6,
+     0,
+     6
+    ],
+    [
+     -4,
+     0,
+     16
+    ],
+    [
+     2,
+     0,
+     6
+    ],
+    [
+     8,
+     0,
+     10
+    ],
+    [
+     -5,
+     0,
+     26
+    ],
+    [
+     -6,
+     0,
+     34
+    ],
+    [
+     0,
+     0,
+     32
+    ]
+   ],
+   "highNodes": [
+    [
+     3,
+     3,
+     18
+    ]
+   ],
+   "waves": [
+    [
+     "husk",
+     "husk",
+     "husk"
+    ]
+   ]
+  },
+  {
+   "id": "i2",
+   "name": "2.2 THE RIDE",
+   "kind": "link",
+   "rect": [
+    -8,
+    -46,
+    16,
+    -6
+   ],
+   "par": 8,
+   "spawn": {
+    "at": [
+     12,
+     0,
+     -10
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    12,
+    0,
+    -42
+   ],
+   "hazard": {
+    "rect": [
+     -8,
+     -38,
+     16,
+     -14
+    ],
+    "note": "the whole floor between the entry and the exit telegraphs, then hurts: ride either long wall (cyan lane) while it is live"
+   }
+  },
+  {
+   "id": "ice",
+   "name": "THE ICE LINE",
+   "kind": "boss",
+   "boss": "glacier",
+   "rect": [
+    -16,
+    -92,
+    16,
+    -52
+   ],
+   "par": 120,
+   "limit": [
+    "meleeOnly"
+   ],
+   "spawn": {
+    "at": [
+     0,
+     0,
+     -56
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    0,
+    0,
+    -88
+   ],
+   "limitReason": "THE GLACIER ONLY FEELS THE PULSE: CATCH IT"
+  }
+ ],
+ "doors": [
+  {
+   "id": "d1",
+   "between": [
+    "i1",
+    "i2"
+   ],
+   "rect": [
+    8,
+    -6,
+    14,
+    0
+   ],
+   "checkpoint": true
+  },
+  {
+   "id": "d2",
+   "between": [
+    "i2",
+    "ice"
+   ],
+   "rect": [
+    8,
+    -52,
+    14,
+    -46
+   ],
+   "checkpoint": true
+  }
+ ],
+ "boxes": [
+  {
+   "zone": "i1",
+   "kind": "deck",
+   "min": [
+    -1,
+    0,
+    12
+   ],
+   "max": [
+    7,
+    3,
+    24
+   ],
+   "note": "the mezzanine in the middle (tier 2): ramp from the south"
+  },
+  {
+   "zone": "i1",
+   "kind": "hull",
+   "min": [
+    -4,
+    0,
+    28
+   ],
+   "max": [
+    -1,
+    3,
+    31
+   ],
+   "note": "cover"
+  },
+  {
+   "zone": "i1",
+   "kind": "hull",
+   "min": [
+    8,
+    0,
+    14
+   ],
+   "max": [
+    11,
+    3,
+    18
+   ],
+   "note": "cover"
+  },
+  {
+   "zone": "i1",
+   "kind": "hull",
+   "min": [
+    -4,
+    0,
+    4
+   ],
+   "max": [
+    -1,
+    3,
+    7
+   ],
+   "note": "cover"
+  }
+ ],
+ "ramps": [
+  {
+   "zone": "i1",
+   "from": [
+    3,
+    33
+   ],
+   "to": [
+    3,
+    24
+   ],
+   "width": 5,
+   "rise": 3,
+   "note": "up to the mezzanine"
+  }
+ ],
+ "pads": [],
+ "grapple": [],
+ "pits": [],
+ "tunnels": [],
+ "n27": {
+  "arenas": true,
+  "noKills": true
+ }
+}

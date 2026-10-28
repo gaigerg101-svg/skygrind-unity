@@ -1,0 +1,15 @@
+# command: python -I Tools/night/n74-room-rules.py room Design/levels/n67/kiln/rooms-base/kb2c.json
+# sha: 9783f7f80; time: 2026-10-27 23:11:44
+kiln/kb2c  rect [-9.0, -193.5, 9.0, -163.5]  spawn [-2.0, 0.0, -168.0] yaw -10  floor 0.0
+  PLANES  PASS  planes 3 (0.0 m: 407 cells, 1.5 m: 21 cells, 4.5 m: 18 cells)
+  COVER   PASS  cover: free-standing high 1, low 0, between 1 (0 without a job), none 3
+  LOOPS   PASS  loops 3 (floor holes 2 + closed pad / ride routes 1 of 1)
+  REAR    PASS  rear arc: 0 of 4 wave-1 usable nodes behind the entry facing (all waves: 0 node uses behind)
+  VIEW    PASS  view: enemy in view at 0.00 s (4 of 4 wave-1 nodes seen at entry)
+  CROSS   PASS  cross: chord 35.0 m, dash 1.46 s, walk 4.4 s (bar 2.0 s at dash)
+  EXPOSE  RED  exposure: 75 % of 1326 floor-sample pairs see each other (bar 60 %); longest clear line 29.5 m (medium band 19.5 m)
+  CLIMB   PASS  climb: 2 tier group(s), 0 not reached by walker links
+    between-height piece: deck [4.0, 0.0, -187.0]-[7.0, 0.9, -184.5] h 0.90 job "molecule: the small boost (T-5)"
+    free-standing high piece: hull [3.0, 0.0, -168.5]-[5.0, 12.0, -165.15] h 12.00 job "hero prop: THE CRANE MAST (the foothold)"
+    walkers reach every tier: climb: 2 tier group(s), 0 not reached by walker links
+  core 5/5 PASS, extra 2/3 PASS

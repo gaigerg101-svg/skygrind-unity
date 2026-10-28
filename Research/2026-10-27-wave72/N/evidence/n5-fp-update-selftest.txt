@@ -1,0 +1,7 @@
+n72-fp-update self-test 12:31:57
+Ultra71Hashes already equal to these two runs: nothing to do
+n72-fp-update: REFUSED: the two runs differ at step 3000: e3aabe0c38e78aa7 vs e3aabe0c38e78aa8 (not recorded)
+exit 1
+n72-fp-update: REFUSED: C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/699f7fa0-58df-46a1-afe7-1fa627be0b9e/scratchpad/fp-short.log: 11 seed-1 checkpoints, expected 12
+exit 1
+(no change to FingerprintBaseline.cs above)

@@ -1,0 +1,173 @@
+{
+  "_why": "NIGHT70's slate (FORGE70, 2026-10-25; GG: 'can we use the same 2 methods to prompt another 8 hour overnight prompt'). Seven slices: Z1-Z3 (M3 on 20 seeds with the burst, the throw chart and the falls, the committed pilot), two launch rooms measured ALONE (kb3 R, v2 S; g8 parked: DECIDE69 Q-C has no honest payer under the walker rule), LV and PC (Builds/n70-play at the end). A doneWhen is written before any measurement and never loosened after one.",
+  "ROOM": [
+    "an area card first (Research/2026-10-24-wave67/cards/<id>.md, <= 40 lines): the archetype (research.md section 2, one per room), the room's verb (one the verb pilot performs AND fires in this room with its loadout: the card cites the bearings' probe line), the lever that makes refusing the verb cost time, health or score, each piece and its job, the lint rules the shipped room fails and how the card fixes each, the aims for M1-M4; one card critic pass, its open items round 1's list; **a launch card also states (FORGE70, spike.md): the target launches per verb-aware run (at least the red's median + 2: kb3 red 4, v2 red 2) and how the room brings FRESH husk-shaped bodies (unshot, above the 30 hp launch bound) inside 5.5 m of the player (short sight lines, a corner or a door 6-10 m away: design-research.md R7), and where each throw ends (a wall 1-12 m past the punch spot on the approach line, or a pit whose near rim is 0.5-6.9 m out, 2.5-6.5 m long, no body within 1.1 m of the line before it: scout.md A, design-research.md R1-R4)**",
+    "the rebuilt room file carries `verb65` (equal to the slate's verb) and `line65` (the verb's line from the entry), never an `area67` block (the assembler refuses unknown fields)",
+    "a GATE needs M1-M4 and every GUARD held on one ALONE main-tree round on the passed tools, run as a job of the queue runner (`Tools/night/n70-runner.sh`; the job `bash Logs/n70/room-chain.sh <n> <id>`) (`L67=<L> ROOMS=<id> SLOTS=<id> bash Tools/night/n70-round.sh r<n>-<L>`, which Logs/n70/room-chain.sh runs: only this room new in its level, the others old, so it is measured against its red like for like: NIGHT68 saw one room file read 0.10 differently beside three other new rooms), skip v2 also on fresh seeds 21-30 (the GATE pack's fresh skip, or the alone round's pre-run it takes by --fresh; a pack whose fresh line names seed 11 is refused), the room file unchanged since that round, and that round read by a level review written at its named time (a fresh reviewer starts the moment the round ends: a round without one holds no GATE); a room without such a round is SHORT; **a GATE round starts after Z1-Z3 are each PASSed or SHORT (the tools at its start are the ones it is judged on: its slate-at-start.json); an earlier round is evidence only**",
+    "M1 AREA: `node Tools/night/n70-area.cjs --level <L> --dir <the round's folder> --touches <the round's verbs-skip.txt> <room>` passes every rule that applies (a rule with nothing to judge prints N/A): OPEN no open floor square larger than 12 x 12 m with no piece in it (gg-proxy's 'empty boxes'); P1 a plane 3.5 m or higher holds the last wave's ranged enemies (N/A with no ranged enemy); P4 every solid 1.75 m or taller does a job by the decoration checker; P5 at least half the walk line's samples in a ranged spawn's sight at 6-24 m and line65's share at least 0.3 lower, or line65 within 6 m of an enemy; P9 every plane 6 m or wider has at least 2 enemy climb routes with tops 8 m or more apart; P11 for a TOWER, GALLERY or SPLIT LEVEL card, every ranged spawn on a high node 2.5 m or more up and 12-24 m from the walk lane; P17 every ride wall 4 m or taller and 8 m or longer with the cyan strip, no non-ride wall in that band",
+    "M2 VERB: skip v2 on the room's verb, POOLED over seeds 1-20 (the median over the exercised seeds; the per-set ratios printed beside it), prints a ratio >= the room's mainBar (written from its red: max(1.25, red + 0.20)) with >= 14 of 20 seeds exercised, the refusal fired and the refused run NOT using the verb on any exercised seed; **STYLE: the verb-aware run's STYLE above DULL >= the refusal's - 5 points** (FORGE69: NIGHT68's min(refusal + 15, max(refusal, 95)) asked 91-94 % on levels 3 / 5 where the verb runs reach 79-82 %: unreachable; the new rule says the verb must not make the run duller; it is written here, before any measurement); a ride room whose ratio is in [mainBar, mainBar + 0.10) is UNSURE and does not PASS M2 (so a ride room needs 1.35); on the fresh seeds 21-30 the median ratio >= 1.25 and >= 7 of 10 exercised; **FORGE70: once Z3 (the committed pilot) PASSes, the verb-aware run is the FASTER of the plain verb-aware run and the committed one, as the refusal is the faster of the refused-in run and the walker (symmetric; written before any measurement); the reds and bars are then re-made on that tool before any GATE round**",
+    "M3: the room's verb pilot over 20 seeds (FORGE70 D-3, DECIDE69 Q-A; one seed was one sample: v2 s1b's crypt caught 15 of 20 probes where a1's seed 1 read FAIL): launch: `bash Tools/night/n70-throws.sh <the round's level> <id> <round>/throws-<id>.txt 20` (room-chain.sh runs it) prints `M3 candidates (D-3) N / 20`: a launched body that ends in a pit or lava, OR whose burst kills >= 2 (the flier included), on GREEN probes; PASS at N >= 10; ride: a kill from the wall (`n65verb ride --shoot`); parry: a returned glob kills a spitter; slide: the slide line's kill; pierce: >= 2 bodies",
+    "M4: every piece of the rebuilt room passes the decoration checker (its base the room file's first commit), and at least one collider piece was added with a job; a round's change counts only by a double-or-half (a piece added or removed, or one geometry number x2 / x0.5); **a rebuilt room keeps at most 25 % of the shipped room's pieces** (`node Tools/night/n70-patch-share.cjs --level <L> <id>`: geometry-equal boxes, ramps, pads and pits of Design/levels/n67/<L>/rooms-base/<id>.json: gg-proxy's #1 'the old room with a patch'; inside the slot's fixed rect and doors), and it keeps every verb and every pad / ride face the shipped room offered unless the card says what replaces it (nothing the player had is lost: air65's flights handed on)",
+    "GUARDS, no worse than the shipped room (its red; the ceilings in this slate: deathsAMax, deathsBMax, stallAMax): the walk bot (n46flow seeds 1-10 and 11-20) clears 10 / 10, deaths A / B and stall A at or under the ceilings; no room-check item fails that passed in the shipped room; air65's flights handed on; levelgen ERROR rows no more than the base level's own; the room's spawn never moved toward the verb's line",
+    "the blind SPOT (a fresh skygrind-spotter on the GATE pack's spot-A / spot-B) names the piece that serves the verb; a skygrind-critic PASS on the GATE round"
+  ],
+  "slices": [
+    {
+      "id": "Z1",
+      "owner": "T",
+      "state": "todo",
+      "passes": false,
+      "verdict": null,
+      "spot": null,
+      "passSha": null,
+      "passFiles": null,
+      "title": "M3 on 20 seeds, the burst counted: the readers read the throw chart (node / bash only; by 0:40)",
+      "why": "NIGHT69: M3 was one probe on seed 1 and the burst counted for nothing; a launched husk always dies in its own burst (60 dmg, 3.5 m, the flier included: Launch36.cs:211-229), so a pit end needs a throw that hits nothing (scout.md A, B); the forge's 20-seed spike (spike.md): v2 s1b 20 / 20 candidates where a1 read FAIL, shipped kb3 7 / 20.",
+      "row": "none (tools: Tools/SimHarness, Tools/night)",
+      "red": "NIGHT69 a1: `n65-verbs launch M3: kb3 FAIL` and v2 FAIL on one seed each (Logs/n69/r1-kiln/verbs.md, r1-spire/verbs.md)",
+      "doneWhen": [
+        "both readers (Tools/night/n65-verbs.sh's launch M3 and Tools/night/n70-gate-pack.cjs launchM3) and Tools/night/n70-next.cjs's M3 piece read the round's throws-<id>.txt summary (`M3 candidates (D-3) N / 20`, PASS at N >= 10; no file: FAIL 'no throw chart'); the ride / parry / slide / pierce M3 unchanged; n70-m3-cases.sh gains the planted cases (a 14 / 20 chart PASS, a 7 / 20 FAIL, a missing chart FAIL, a RED probe's burst never counted); the probe itself unchanged",
+        "a planted pair saved under Logs/n70/<slice>/ (RED on the t0 sha's code, GREEN on the fix), the five-level walk unchanged (flow-base compare) and one critic PASS (Logs/n70/verdict-<slice>.md)"
+      ],
+      "visible": "n/a (tools)",
+      "spotPose": null
+    },
+    {
+      "id": "Z2",
+      "owner": "T",
+      "state": "todo",
+      "passes": false,
+      "verdict": null,
+      "spot": null,
+      "passSha": null,
+      "passFiles": null,
+      "title": "The throw chart in skip v2 (print-only): every launch's start, end and outcome, and the falls counted (by 1:10)",
+      "why": "No line prints a skip run's landings (Harness.N65.Verb.cs:985 keeps kill bursts only) and skip v2 prints `falls 0` because it subscribes to stageRespawn only (:977) while the quench return emits fallReturn43 (Campaign24.cs:1038; n46flow counts it: Harness.N46.Flow.cs:233-234): NIGHT69's kb3 flow fell 52-78 times while every skip seed read falls 0 (scout.md A, E).",
+      "row": "none (tools: Tools/SimHarness, Tools/night)",
+      "red": "none: no such line; falls 0 on every skip seed of Logs/n69/r1-kiln/verbs-skip.txt",
+      "doneWhen": [
+        "a NEW line kind `n65verb skip launchend: room <id> | seed N | from (x, z) to (x, y, z) thrown D m | end <wall|body|timeout|landed> | kills K | in pit yes/no | in lava yes/no` per launch of the verb-aware run (not `launchkill`: the area lint and the deco checker read that), and each seed line's `falls` counting fallReturn43; every other line byte-identical (a 3-seed kb3 run before / after, the diff saved); room-chain.sh prints the median launches and launch ends per run from it",
+        "a planted pair saved under Logs/n70/<slice>/ (RED on the t0 sha's code, GREEN on the fix), the five-level walk unchanged (flow-base compare) and one critic PASS (Logs/n70/verdict-<slice>.md)"
+      ],
+      "visible": "n/a (tools)",
+      "spotPose": null
+    },
+    {
+      "id": "Z3",
+      "owner": "T",
+      "state": "todo",
+      "passes": false,
+      "verdict": null,
+      "spot": null,
+      "passSha": null,
+      "passFiles": null,
+      "title": "THE COMMITTED PILOT: a verb-aware run that holds fire on launchable bodies so the verb is CHOSEN, not left over (by 1:40 or in Act 2)",
+      "why": "The verb-aware pilot shoots every husk it sees and launches only an unshot husk-shaped body above the 30 hp bound within 5.5 m and 50 deg (Harness.N65.VerbPilot.cs:212, :299-347): 2-4 launches a run against about 23 bodies (spike.md), so a room can only show what the gun left over. A player who plays the verb lets husks come. The M2 question is 'is the verb the better way', so the verb-aware side may play the verb on purpose, as the refusal side is the faster of two refusals.",
+      "row": "none (tools: Tools/SimHarness, Tools/night)",
+      "red": "the plain verb-aware run: kb3 r1d 2.5 launches a run (Logs/n69/r1-kiln/verbs-skip.txt), v2 s1b 2",
+      "doneWhen": [
+        "`n65verb skip ... --commit` (and skip v2's own second verb-aware run when the room's verb is launch): the inner autopilot does not fire at a husk-shaped body with hp above the launch bound within 12 m while a launch episode can start on it (the pilot closes and punches instead); everything else as the plain run; the M2 VERB line prints both verb-aware runs, uses the FASTER per seed, and prints which; the refused-in and walker runs byte-identical to the plain build's (the planted pair diffs them); on the shipped kb3 and v2 the committed run's launches per run printed beside the plain run's",
+        "the reds (kb3, v2) re-made on the Z3 tool and their bars re-written (`node Tools/night/n70-red-bars.cjs --write`) BEFORE any GATE round, the change in each red's ratio printed (a red that rises raises its bar)",
+        "a planted pair saved under Logs/n70/<slice>/ (RED on the t0 sha's code, GREEN on the fix), the five-level walk unchanged (flow-base compare) and one critic PASS (Logs/n70/verdict-<slice>.md)"
+      ],
+      "visible": "n/a (tools)",
+      "spotPose": null
+    },
+    {
+      "id": "kb3",
+      "owner": "R",
+      "state": "todo",
+      "passes": false,
+      "verdict": null,
+      "spot": null,
+      "passSha": null,
+      "passFiles": null,
+      "level": "kiln",
+      "verb": "launch",
+      "mainBar": 1.33,
+      "redRatio": 1.13,
+      "redSkip": "Logs/n70/red-kiln/kb3/skip.txt",
+      "deathsAMax": 0,
+      "deathsBMax": 2,
+      "stallAMax": 22.7,
+      "title": "3.3 THE PRESS HALL (launch): the fresh body at the corner, the throw on the line",
+      "why": "NIGHT69 a1 1.08 vs 1.33 (red 1.13; fresh 1.23; nine layouts 0.94-1.12): the verb happened 2.5 times a run (red 4) because the bodies met the pilot on the far floor and were shot first (review-level.md; spike.md); M3 under D-3 already 14 / 20 on r1d, so the throw is not the blocker; the room check lost R5 / I4 (the press, the vent) and the flow fell into the quench 52-78 times.",
+      "row": "slot kb3 of n67.kiln67",
+      "red": "the shipped kb3 (Logs/n70/red-kiln/kb3/, bar 1.33; re-made on Z3 if it PASSes)",
+      "doneWhen": [
+        "the ROOM list"
+      ],
+      "visible": "the room's verb piece reads at a glance",
+      "spotPose": "the GATE pack's iso pair"
+    },
+    {
+      "id": "v2",
+      "owner": "S",
+      "state": "todo",
+      "passes": false,
+      "verdict": null,
+      "spot": null,
+      "passSha": null,
+      "passFiles": null,
+      "level": "spire",
+      "verb": "launch",
+      "mainBar": 1.25,
+      "redRatio": 0.87,
+      "redSkip": "Logs/n70/red-spire/v2/skip.txt",
+      "deathsAMax": 0,
+      "deathsBMax": 0,
+      "stallAMax": 19,
+      "title": "5.2 THE NAVE (launch): the crypt that catches, the bodies that come",
+      "why": "NIGHT69 a1 0.99 vs 1.25 (red 0.87; fresh 0.94): the crypt caught the probe's throw on 15 of 20 seeds (spike.md) but the verb happened twice a run; the clear time was set by whether W3's TANK fell into the crypt (26-37 s) or was shot (47-76 s: S.md); the pads unused (deco FAIL); keep the TANK (D-10: enemy kinds are GG's).",
+      "row": "slot v2 of n67.spire67",
+      "red": "the shipped v2 (Logs/n70/red-spire/v2/, bar 1.25; re-made on Z3 if it PASSes)",
+      "doneWhen": [
+        "the ROOM list"
+      ],
+      "visible": "the room's verb piece reads at a glance",
+      "spotPose": "the GATE pack's iso pair"
+    },
+    {
+      "id": "LV",
+      "owner": "lead",
+      "state": "todo",
+      "passes": false,
+      "verdict": null,
+      "spot": null,
+      "passSha": null,
+      "passFiles": null,
+      "title": "The level rows ON for every level with a PASSed room (branch A and A-lean only)",
+      "why": "The rooms reach the shipped game only by their level's row; the Player items live here.",
+      "row": "design.n67.iceline67 (levelFrom n52-iceline, levelTo n67-iceline), design.n67.kiln67 (n57-kiln -> n67-kiln), design.n67.spire67 (n52-spire -> n67-spire); -skygrindOff67",
+      "red": "rc0 = Builds/n66-freeze",
+      "doneWhen": [
+        "LV starts at the first room PASS, no later than 6:00; each flipped level's slots67.json holds at least one room set new by n65-slot-set.cjs; every other slot equals the shipped room (gen-slots --check on the old slots)",
+        "rc1, a real build of HEAD with the passed rows ON in a config copy (not yet flipped), named n70-rc1: tour65 frames every new room with wave 1 live; verbs37 on all five levels at their campaign places (27 / 29 / 31 / 31 / 31 as rc0, a flipped level through its row: the reel line names the level it loaded); NRE 0; `-skygrindOff67` boots the shipped levels; the smoke DONE; LV's own critic PASS on that build",
+        "the sim: n46flow on each flipped level, seeds 1-10 and 11-20, clears 10 / 10 with deaths and stall within the shipped level's bands",
+        "then the flip by n70-freeze-rows.cjs (passFiles naming each level's files and slots67.json) before 6:30; its commit re-makes the flow base (said in the commit); after it, n46flow on every level with `--off67` equals the flow base current at the flip (Logs/n70/flow-base-i3.txt or later)"
+      ],
+      "visible": "the rebuilt rooms are in the game",
+      "spotPose": "tour65's entry pose of a PASSed room, rc0 vs rc1"
+    },
+    {
+      "id": "PC",
+      "owner": "lead",
+      "state": "todo",
+      "passes": false,
+      "verdict": null,
+      "spot": null,
+      "passSha": null,
+      "passFiles": null,
+      "title": "GG's play card at the end: Builds/n70-play with the night's best kb3 and v2 (and NIGHT69's g8), each labelled PASS or NOT PASSED",
+      "why": "Builds/n69-play (NIGHT69: kb3 r1d, g8 r1f, v2 s1b, every room NOT PASSED) is GG's current build and has no reaction yet; NIGHT70 makes a NEW play build at the end (never writes n69-play), so GG can compare them.",
+      "row": "none (the report's section 2)",
+      "red": "none",
+      "doneWhen": [
+        "by the close: per level `node Tools/night/gen-slots.cjs --level <L> --slots=<id> --run --out=Logs/n70/play/<L>` (kiln kb3, spire v2: the best of the night's rounds by M2; iceline g8 = NIGHT69's r1f), then `bash Tools/night/n65-play-build.sh n66-freeze n70-play Logs/n70/play/kiln/n67-kiln.json,Logs/n70/play/iceline/n67-iceline.json,Logs/n70/play/spire/n67-spire.json --config Design/unity-config.json --add-level n67.kiln67 n67.iceline67 n67.spire67`; one direct `Builds/n70-play/SKYGRIND.exe -skygrindSmoke -logFile Logs/n70/play-smoke.log` (the guard's disk rule covers the scripts only; it loads none of the rebuilt levels: say so); the tracked slots and rows never change for PC; Logs/ is gitignored: `git add -f`",
+        "NIGHT70-REPORT.md section 2 names each room PASS or NOT PASSED with its numbers (M2, fresh, launches per run, M3 N / 20), what to try in it (about five minutes), what changed from Builds/n69-play, and the boot line; DECIDE70.md holds the questions; one critic PASS (Logs/n70/verdict-PC.md)"
+      ],
+      "visible": "n/a (a card)",
+      "spotPose": null
+    }
+  ]
+}

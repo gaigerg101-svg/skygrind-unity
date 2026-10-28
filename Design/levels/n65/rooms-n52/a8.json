@@ -1,0 +1,55 @@
+{
+ "_why": "NIGHT65 T1 (Tools/night/gen-n65-foundry.cjs --export): n52-foundry's room a8 (1.10 PIERCE) exactly as Design/levels/n52/foundry.plan.json has it: the row (every key), its zone-keyed pieces, its room-keyed lights / props, its teach35 entries. The slot's starting point: rebuild it here (every piece with a job and a why), give the row bot43: false (the walk bot's old id scripts drive the old geometry), add frames65 / line65 for tour65. A key the row drops needs a reason in drop{}. The room's opening for the checker: add top-level \"opening\": \"vista\" | \"ambushed\" | \"ambusher\" | \"held\" (and \"opening_why\": its card line); left out, the room keeps n52's (openings53.json).",
+ "room": "a8",
+ "row": {
+  "id": "a8",
+  "name": "1.10 PIERCE",
+  "kind": "room",
+  "rect": [-7,-364,7,-342],
+  "height": 9,
+  "roof": true,
+  "par": 24,
+  "job36": "teach",
+  "verb36": "the ride to a perch, then a shot from the wall pierces the husks' line",
+  "spawn": {"at":[0,0,-343.5],"yawDeg":0},
+  "exit": [0,0,-362.5],
+  "lessons": [{"promptPad":"HOLD {jump} ON A WALL: RIDE","kind":"reached","rect":[-7,-345.2,-2.5,-343],"minY":-0.2,"prompt":"HOLD {jump} ON A WALL: RIDE"},{"promptPad":"HOLD {altFire}: SLOW. {fire}: PIERCE","kind":"shots","n":1,"prompt":"HOLD {altFire}: SLOW. {fire}: PIERCE"}],
+  "lessons31": [{"promptPad":"HOLD {jump} ON A WALL: RIDE","kind":"reached","rect":[-7,-345.2,-2.5,-343],"minY":-0.2,"prompt":"HOLD {jump} ON A WALL: RIDE"},{"promptPad":"HOLD {altFire}: SLOW. {fire}: PIERCE","kind":"shots","n":1,"prompt":"HOLD {altFire}: SLOW. {fire}: PIERCE"}],
+  "routeVia": [[[0,0,-344.5],[1.5,0,-355.25]],[[1.5,0,-355.25],[0,0,-362]]],
+  "proofs": [{"kind":"walk","points":[[0,0,-343.5],[3,0,-344.5]]},{"kind":"walk","points":[[0,0,-361],[0,0,-363]]}],
+  "frames36": {"mid":[-3.65,0.6,-347,-8,0],"exit":[0,0,-361,0,-0.05]},
+  "arena36": true,
+  "nodes": [[2.98,0,-361],[2.79,0,-362.2],[2.62,0,-363.4]],
+  "reachFrom": [0,0,-362],
+  "waves": [["husk","husk","husk"]],
+  "afterLesson43": 0,
+  "afterLesson43_why": "NIGHT43 L1 (G4, T-4): wave 0 waits for lesson 0 (the ride to the perch): teach, confirm, then the enemies out of the hatch",
+  "foundry43_why": "L1 (foundry43): pit z -360..-345, P1 z -349.5..-345, P2 z -360..-353, perch [-1,-357.5,4,-353]; stand-ins out; wave [husk x3] at [[2.98,0,-361],[2.79,0,-362.2],[2.62,0,-363.4]] after lesson 0",
+  "foundry46_why": "NIGHT46 A3 F-3 (FLOW-AUDIT row 4, DECIDE46 N-11): lesson 0 (\"HOLD {jump} ON A WALL: RIDE\", reached = grounded in the rect) from the perch [-1,-357.5,4,-353] to P1's foot on the entry floor [-7,-345.2,-2.5,-343] (4.3 m from the spawn): the husks leave the hatch as the ride starts (afterLesson43 0), not 20 s later; VERBS.md row 9 (wall ride) unchanged: only this prompt shortens (the ride is taught in a3, chained in b2)"
+ },
+ "boxes": [
+  {"zone":"a8","kind":"deck","min":[-7,-4,-346.5],"max":[-4.8,-0.4,-345],"job":"climb","why":"the pit's way back, step 3 (0.4 m under the entry floor): a fall costs a climb, never health","note":"the pit's way back, step 3 (0.4 m under the entry floor): a fall costs a climb, never health"},
+  {"zone":"a8","kind":"deck","min":[-7,-4,-348],"max":[-4.8,-1.6,-346.5],"job":"climb","why":"the pit's way back, step 2 (1.2 m under step 3)","note":"the pit's way back, step 2 (1.2 m under step 3)"},
+  {"zone":"a8","kind":"deck","min":[-7,-4,-349.5],"max":[-4.8,-2.8,-348],"job":"climb","why":"the pit's way back, step 1 (1.2 m over the pit floor)","note":"the pit's way back, step 1 (1.2 m over the pit floor)"},
+  {"zone":"a8","kind":"wall","min":[-4.6,-4,-349.5],"max":[-4,3.2,-345],"job":"line","why":"ride panel P1 (west, z -349.5..-345; NIGHT43 L1): beat 1, the room's first ride: hold {jump} on it from the lip, let go near its end: the jump-off lands on the PERCH (measured: a ride jump-off carries ~6 m along, ~5 m out)","note":"ride panel P1 (west, z -349.5..-345; NIGHT43 L1): beat 1, the room's first ride: hold {jump} on it from the lip, let go near its end: the jump-off lands on the PERCH (measured: a ride jump-off carries ~6 m along, ~5 m out)","ride":true,"ride36":{"face":"E","planeX":-4,"lz":[3,7.5]}},
+  {"zone":"a8","kind":"wall","min":[4,-4,-360],"max":[4.6,3.2,-353],"job":"line","why":"ride panel P2 (east, z -360..-353; NIGHT43 L1): beat 3: from the perch onto it, riding north you face the hatch's line of husks: hold {altFire} to slow, {fire} to pierce the line; it ends over the far floor, the door ahead","note":"ride panel P2 (east, z -360..-353; NIGHT43 L1): beat 3: from the perch onto it, riding north you face the hatch's line of husks: hold {altFire} to slow, {fire} to pierce the line; it ends over the far floor, the door ahead","ride":true,"ride36":{"face":"W","planeX":4,"lz":[11,18]}},
+  {"zone":"a8","kind":"deck","min":[-1,-4,-357.5],"max":[4,0,-353],"job":"line","why":"the PERCH (NIGHT43 L1): an island in the pit where P1's jump-off lands, flush with the floor, P2 along its east edge: beat 1's confirm (you rode there: lesson 0), the place you stand when the hatch opens, and the run-up onto P2","note":"the PERCH (NIGHT43 L1): an island in the pit where P1's jump-off lands, flush with the floor, P2 along its east edge: beat 1's confirm (you rode there: lesson 0), the place you stand when the hatch opens, and the run-up onto P2"}
+ ],
+ "ramps": [],
+ "pads": [],
+ "grapple": [],
+ "pits": [
+  {"zone":"a8","rect":[-7,-360,7,-345],"floorY":-4,"job":"hazard","why":"the PIERCE pit (4 m deep, dry; NIGHT43 L1: z -360..-345): crossed by two rides with a perch between; a fall costs the climb up the entry side's steps","note":"the PIERCE pit (4 m deep, dry; NIGHT43 L1: z -360..-345): crossed by two rides with a perch between; a fall costs the climb up the entry side's steps"}
+ ],
+ "tunnels": [],
+ "lights": [
+  {"id":"a8-L1","room":"a8","kind":"ceiling","at":[0,8.95,-353],"normal":[0,-1,0],"size":[3,6,0.1],"color":"white","range":9,"intensity":1},
+  {"id":"a8-L2","room":"a8","kind":"ceiling","at":[0,8.95,-362.5],"normal":[0,-1,0],"size":[3,2,0.1],"color":"white","range":8,"intensity":1},
+  {"id":"a8-L4","room":"a8","kind":"pool","at":[0,0.025,-362.5],"normal":[0,1,0],"size":[2.5,2.5,0.05],"color":"cyan","range":7,"intensity":1.6},
+  {"normal":[0,1,0],"id":"a8-L3","room":"a8","kind":"pool","at":[1.5,0.025,-355.25],"size":[2,2,0.05],"color":"cyan","range":6,"intensity":1.2},
+  {"normal":[0,-1,0],"id":"a8-hatch","room":"a8","kind":"ceiling","at":[2.79,8.95,-362.2],"size":[2.5,3,0.1],"color":"orange","range":8,"intensity":1.2,"danger":true}
+ ],
+ "props": [],
+ "teach35": [],
+ "drop": {}
+}

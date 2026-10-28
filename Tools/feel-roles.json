@@ -1,0 +1,31 @@
+{
+ "_doc": "M11 (Tools/feel-metrics.py): the ui[] paths allowed to use each colour token, as plain string prefixes ('UI/HUD sight/Points pop ' allows Points pop 0..9). Filled by the lead at the baseline (build 1's reel, NIGHT18 09:40) from 'roles <reel> --suggest', keeping only CLAUDE.md rule 8's roles: GOLD for points only; DANGER for enemies and danger only (the hurt vignette, the damage-direction markers, DOWN's head); RIVAL for RIVAL only. Left out on purpose: 'Dash tint/left', 'Dash tint/bottom' (DANGER on the player's own boost) and 'UI/HUD sight/Kill marker' (NIGHT17's kill marker in DANGER; NIGHT18's is white).",
+ "GOLD": [
+  "UI/HUD sight/Points pop ",
+  "UI/HUD values/Points",
+  "UI/HUD values/Points bar",
+  "UI/Menus/Down/Payoff/Line ",
+  "UI/Menus/Results/Tally/Points/Number",
+  "UI/Menus/Reward reveal/Slot "
+ ],
+ "DANGER": [
+    "UI/HUD values/Deadline bar/Fill",
+  "UI/HUD sight/Marker ",
+  "UI/HUD values/Hurt vignette",
+  "UI/Menus/Down/Head",
+  "UI/HUD values/Announcer 20/Accent",
+  "UI/HUD values/Debut card 20/Foot",
+  "UI/HUD values/Next line 20/Pip ",
+  "UI/HUD sight/Climb arrow ",
+  "UI/HUD values/Threat bar 20/Fill",
+  "UI/HUD values/Threat bar 20/Plate/Accent",
+  "UI/HUD values/Threat bar 20/Plate ",
+  "UI/Menus/Down/Down tell 20/Kind plate",
+  "UI/HUD sight/Hit marker (elite)",
+  "UI/HUD values/Style meter/Decay bar (fill)",
+  "UI/HUD sight/Hit arc ",
+  "UI/Menus/Weapons/Codex list/",
+  "UI/HUD sight/Lancer arrow "
+ ],
+ "RIVAL": []
+}

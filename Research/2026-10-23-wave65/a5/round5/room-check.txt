@@ -1,0 +1,13 @@
+# command: python -I Tools/night/n59-l-room.py n65-foundry room a5
+# sha: fbfc7b33; time: 2026-10-23 18:33:40
+== n56-room room foundry a5 (held)
+  PASS R2 no dead ends      0 dead-end cells of 146 (2 m x 0.5 m cells; 0 bridges)
+  PASS R5 foothold          box [-5, 0, -119]..[-2, 2.2, -117] (hull, job cover): top 2.2 m over the floor, 7.0-9.0 m inside
+  PASS R8 every job         0 untagged of 12 solids
+  PASS IN VIEW held         held: 5.6 of wave 1's 7 expected seen from the foothold's flanks (>= 4 PASS); 5 nodes, 5 in use
+  w1 entry frame (a156): 5.6 of 7 seen, nearest 13.9 m; node distances 13.9, 14.0, 15.0, 16.6, 28.7
+  PASS I1 no mirror         mirror overlap 26 % across the door axis x = 0 (d4; 12 solids, 111 m2 footprint; < 60 % PASS)
+  PASS I2 ride shortcut     ride 14 m at x 9.4..10 z -138..-124: best side -1 dir -1: walk 19.4 m / ride 14.0 m = 1.38 (>= 1.3 or unreachable PASS: at least one ride a shortcut)
+  n/c  I3 teach verb needed not a grapple-pull teach room (ride lessons: I2; whip, pad and slide lessons: not computed)
+  PASS I4 pads clear        1 pads, 3 walk lines; all clear (nearest line distances 2.5 m)
+ROOM a5: PASS

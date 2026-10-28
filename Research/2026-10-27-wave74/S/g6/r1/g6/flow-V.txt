@@ -1,0 +1,24 @@
+# command: dotnet Temp/SimHarness/bin/Release/net10.0/SimHarness.dll n46flow --level n67-iceline --rooms g6 --seeds 10 --first 1 --verbs65 --file C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/ice-g6/n67-iceline.json 
+# sha: bf5edde7e; time: 2026-10-28 00:06:22
+n46flow: seeds 1..10, cap 240 s per room, rows forced on: none, off switch: none; pilot: Walk38Pilot + the ported autopilot (normal)
+n46flow n67-iceline: --file C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/ice-g6/n67-iceline.json
+  put-in loadout (g6, BEFORE entering it: the room's own award, if any, comes on entry): awards of the rooms before it given: none; owned gauntlet
+  ride pilot g1: line65's face g1 E x -10.4 (-17.5..-2.5), from -3 toward -16
+  entry loadout (n46flow, g6, 0.5 s after entering): owned gauntlet revolver, in hand revolver
+n46flow n67-iceline (loaded n67-iceline; BaseId n45-iceline): 10/10 walks through g6..g6; level time median 11.9 s; the pilot's lava rule: out of lava 0 steps, held at an edge 0 steps, chases round it 0, detours 0; put at the next room (a link not crossed in max(30 s, 3 x par) or a cleared room not left in 15 s) 0; stuck46 burrowers ended 0
+  room       kind | stall%  maxStall  air% | kgap med/max | near med/p10/p90 | dwell  dead | deaths falls | clear (k/n)    | geometry
+  g6         room |   41.5      3.1  38.8 |  3.0 / 10.7  |  6.5 /  1.7 / 10.3  |   1.5   3.8 |      0     0 |   11.9 (10/10) | floor 252 m2, tiers 1, loop n (2.6 m2), pockets 0, sight 21.4 m, w1 in view 2/2
+  LEVEL           |   41.5      3.1  38.8 |  3.0 / 10.7  |  6.5 /  1.7 / 10.3  |   1.5   3.8 |      0     0 |   11.9 sum of medians
+n46flow n67-iceline SUMMARY: GREEN 10/10; stall 41.5 %, longest stall 3.1 s, air 38.8 %, kill gap 3.0 / 10.7 s, nearest 6.5 m, dwell 1.5 s, dead 3.8 s, deaths 0, falls 0, clear 11.9 s
+  style      kind |  DULL  COOL  BOLD  AIRB  SAVA  SKYG (% of fight steps) | top rank med / max (seeds)
+  g6         room |  68.5  19.2  12.3   0.0   0.0   0.0                    | BOLD / BOLD (10)
+  LEVEL           |  68.5  19.2  12.3   0.0   0.0   0.0                    | top BOLD
+n46flow n67-iceline STYLE: DULL 68.5 % of 114 s of fight; above DULL 31.5 %; rooms reaching SAVAGE 0/1; top rank BOLD
+n46flow n67-iceline PAYOFFS: heal36 HP per close kill by rank: DULL 10.00 (1), COOL - (0), BOLD 10.00 (1), AIRBORNE - (0), SAVAGE - (0), SKYGRIND - (0); RIDE KILL refund per ride kill by rank: DULL 0.05 (5), COOL 0.00 (1), BOLD - (0), AIRBORNE - (0), SAVAGE - (0), SKYGRIND - (0)
+n46flow n67-iceline TOKENS: attack starts inside the sim cone (camera.fovDeg 74 / 2) 11/13 = 84.6 % (by kind: husk 11/13); tokens56 thinks waited out of view 112, advances 0
+n46flow n67-iceline RANGED: hit rate by the player's speed at the shot: stand 0/0 = - %, run 0/0 = - %, fast 0/0 = - %, dash 0/0 = - %; dash / stand -, fast+dash / stand -
+n46flow n67-iceline IDLE: idle in place 7.1 % of enemy-alive steps; per enemy (alive >= 2 s, 20): median 6.2 %, p90 12.6 %, over 20 %: 0 (0.0 %); by kind: husk 7.1 %
+n46flow n67-iceline VERBS65 (--verbs65: the verb-aware pilot in rooms with verb65):
+  g1     verb65 ride         | trigger held 0 of 10 fight steps (0.0 %), episodes 0, performed: wall rides 0 (the face: g1 E x -10.4 (-17.5..-2.5); off-line ride starts cut 0 wall contacts)
+  g6     verb65 launch       | trigger held 1016 of 13695 fight steps (7.4 %), episodes 17, performed: launch36 5 after its punches (in the room 5; dashes 17, steps at speed 549, punches 5) | launch targets (kind hp at the trigger): husk hp 40 x17; episode punches landed 5, killed their body 0, parries 0 (a parry never launches), punch held 137 steps while it would be a parry; bound 30 (the largest of the runs': max(punch.damage x momentum.meleeMax, the largest non-parry punch dealt in the run)): skipped 1382 steps with the nearest body in reach at or under it (husk hp 15 (at or under the bound) x1122, husk hp 5 (at or under the bound) x150, husk hp 2 (at or under the bound) x110)
+n46flow n67-iceline: wall time 24 s

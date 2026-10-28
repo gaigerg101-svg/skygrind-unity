@@ -1,0 +1,20 @@
+# command: dotnet Temp/SimHarness/bin/Release/net10.0/SimHarness.dll n46flow --level n67-spire --rooms v5 --seeds 10 --first 1 --file C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/spire-play/n67-spire.json
+# sha: 1a499d779; time: 2026-10-27 23:30:17
+n46flow: seeds 1..10, cap 240 s per room, rows forced on: none, off switch: none; pilot: Walk38Pilot + the ported autopilot (normal)
+n46flow n67-spire: --file C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/spire-play/n67-spire.json
+  put-in loadout (v5, BEFORE entering it: the room's own award, if any, comes on entry): awards of the rooms before it given: none; owned revolver gauntlet shotgun
+  entry loadout (n46flow, v5, 0.5 s after entering): owned revolver gauntlet shotgun, in hand shotgun
+n46flow n67-spire (loaded n67-spire; BaseId n41-spire): 10/10 walks through v5..v5; level time median 22.6 s; the pilot's lava rule: out of lava 0 steps, held at an edge 0 steps, chases round it 0, detours 0; put at the next room (a link not crossed in max(30 s, 3 x par) or a cleared room not left in 15 s) 0; stuck46 burrowers ended 0
+  room       kind | stall%  maxStall  air% | kgap med/max | near med/p10/p90 | dwell  dead | deaths falls | clear (k/n)    | geometry
+  v5         room |   29.8      3.7  61.0 |  0.8 / 9.9   |  5.4 /  1.7 / 11.4  |   0.4   4.0 |      0     0 |   22.6 (10/10) | floor 613 m2, tiers 4, loop n (16.6 m2), pockets 1, sight 31.5 m, w1 in view 3/5
+  LEVEL           |   29.8      3.7  61.0 |  0.8 / 9.9   |  5.4 /  1.7 / 11.4  |   0.4   4.0 |      0     0 |   22.6 sum of medians
+n46flow n67-spire SUMMARY: GREEN 10/10; stall 29.8 %, longest stall 3.7 s, air 61.0 %, kill gap 0.8 / 9.9 s, nearest 5.4 m, dwell 0.4 s, dead 4.0 s, deaths 0, falls 0, clear 22.6 s
+  style      kind |  DULL  COOL  BOLD  AIRB  SAVA  SKYG (% of fight steps) | top rank med / max (seeds)
+  v5         room |  48.0  19.7  23.8   6.1   2.4   0.0                    | BOLD / SAVAGE (10)
+  LEVEL           |  48.0  19.7  23.8   6.1   2.4   0.0                    | top SAVAGE
+n46flow n67-spire STYLE: DULL 48.0 % of 224 s of fight; above DULL 52.0 %; rooms reaching SAVAGE 1/1; top rank SAVAGE
+n46flow n67-spire PAYOFFS: heal36 HP per close kill by rank: DULL 7.63 (4), COOL 5.00 (4), BOLD 2.00 (1), AIRBORNE - (0), SAVAGE - (0), SKYGRIND - (0); RIDE KILL refund per ride kill by rank: DULL 0.00 (6), COOL 0.00 (3), BOLD 0.00 (10), AIRBORNE 0.00 (3), SAVAGE - (0), SKYGRIND - (0)
+n46flow n67-spire TOKENS: attack starts inside the sim cone (camera.fovDeg 74 / 2) 49/50 = 98.0 % (by kind: spitter 31/31, swarmer 9/10, husk 9/9); tokens56 thinks waited out of view 2159, advances 0
+n46flow n67-spire RANGED: hit rate by the player's speed at the shot: stand 0/5 = 0.0 %, run 4/21 = 19.0 %, fast 0/4 = 0.0 %, dash 0/0 = - %; dash / stand -, fast+dash / stand -
+n46flow n67-spire IDLE: idle in place 6.0 % of enemy-alive steps; per enemy (alive >= 2 s, 76): median 3.9 %, p90 13.8 %, over 20 %: 4 (5.3 %); by kind: husk 6.5 %, spitter 3.1 %, swarmer 8.0 %
+n46flow n67-spire: wall time 43 s

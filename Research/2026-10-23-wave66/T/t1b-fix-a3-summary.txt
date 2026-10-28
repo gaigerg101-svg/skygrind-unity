@@ -1,0 +1,34 @@
+# command: the summary block of t1b-fix.sh re-run on the saved t1b-fix-a3.txt (after its grep line was corrected; the runs themselves are t1b-fix-proofs.txt's)
+# sha: 9d31727a, 2026-10-24 01:43:48
+seed 1 refused-in	wall rides 0	stick taken off a wall 250 steps	rides ended at once by the away rule 0 steps	steps on a wall 0
+seed 1 walker	wall rides 0	stick taken off a wall 250 steps	rides ended at once by the away rule 0 steps	steps on a wall 0
+seed 2 refused-in	wall rides 0	stick taken off a wall 128 steps	rides ended at once by the away rule 0 steps	steps on a wall 0
+seed 2 walker	wall rides 0	stick taken off a wall 128 steps	rides ended at once by the away rule 0 steps	steps on a wall 0
+seed 3 refused-in	wall rides 0	stick taken off a wall 232 steps	rides ended at once by the away rule 0 steps	steps on a wall 0
+seed 3 walker	wall rides 0	stick taken off a wall 232 steps	rides ended at once by the away rule 0 steps	steps on a wall 0
+seed 4 refused-in	wall rides 0	stick taken off a wall 161 steps	rides ended at once by the away rule 0 steps	steps on a wall 0
+seed 4 walker	wall rides 0	stick taken off a wall 161 steps	rides ended at once by the away rule 0 steps	steps on a wall 0
+seed 5 refused-in	wall rides 0	stick taken off a wall 262 steps	rides ended at once by the away rule 0 steps	steps on a wall 0
+seed 5 walker	wall rides 0	stick taken off a wall 262 steps	rides ended at once by the away rule 0 steps	steps on a wall 0
+seed 6 refused-in	wall rides 0	stick taken off a wall 172 steps	rides ended at once by the away rule 0 steps	steps on a wall 0
+seed 6 walker	wall rides 0	stick taken off a wall 172 steps	rides ended at once by the away rule 0 steps	steps on a wall 0
+seed 7 refused-in	wall rides 1	stick taken off a wall 124 steps	rides ended at once by the away rule 1 steps	steps on a wall 1
+seed 7 walker	wall rides 1	stick taken off a wall 124 steps	rides ended at once by the away rule 1 steps	steps on a wall 1
+seed 8 refused-in	wall rides 0	stick taken off a wall 12 steps	rides ended at once by the away rule 0 steps	steps on a wall 0
+seed 8 walker	wall rides 0	stick taken off a wall 12 steps	rides ended at once by the away rule 0 steps	steps on a wall 0
+seed 9 refused-in	wall rides 1	stick taken off a wall 256 steps	rides ended at once by the away rule 1 steps	steps on a wall 1
+seed 9 walker	wall rides 1	stick taken off a wall 256 steps	rides ended at once by the away rule 1 steps	steps on a wall 1
+seed 10 refused-in	wall rides 0	stick taken off a wall 155 steps	rides ended at once by the away rule 0 steps	steps on a wall 0
+seed 10 walker	wall rides 0	stick taken off a wall 155 steps	rides ended at once by the away rule 0 steps	steps on a wall 0
+seed 1 verb-aware	wall rides 3
+seed 2 verb-aware	wall rides 4
+seed 3 verb-aware	wall rides 7
+seed 4 verb-aware	wall rides 12
+seed 5 verb-aware	wall rides 10
+seed 6 verb-aware	wall rides 8
+seed 7 verb-aware	wall rides 3
+seed 8 verb-aware	wall rides 9
+seed 9 verb-aware	wall rides 8
+seed 10 verb-aware	wall rides 5
+n65verb skip: M1 FAIL | room a3, ratio 0.83 vs bar 1.25 (mainBar), exercised 10/10
+n65verb skip: totals | room a3 | median clear (all seeds; the cap for a non-clear): verb-aware 34.5 s, refused-in 24.6 s, walker 24.6 s | cleared 10 / 10 / 10 of 10 | deaths 0 / 0 / 0 | wall rides 69 / 2 / 2 | presses refused (refused-in) 1773, (walker) 1754 | walked (median m) 212.1 / 92.4 / 92.4 | shots (median) 35.0 / 26.5 / 26.5 | wall time 204 s

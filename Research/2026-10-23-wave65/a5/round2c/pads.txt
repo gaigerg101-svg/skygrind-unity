@@ -1,0 +1,4 @@
+# command: dotnet Temp/SimHarness/bin/Release/net10.0/SimHarness.dll hold52 --level n65-foundry --room a5 --pads
+# sha: 8e1a26d7; time: 2026-10-23 15:59:15
+hold52: level n65-foundry (C:\Users\gaige\dev\SKYGRIND-unity\.claude\worktrees\agent-aeb9fc116ba05ef4d\Design\levels\n65-foundry.json), room a5 "1.5 CRUCIBLE" rect [-10,-144,10,-112], off switch none
+pad52 a5 pad 0 at [-6,0,-131.5] target [5.5,2.5,-141.5] launched yes apex 4.5 landed [5.52,2.5,-141.52] miss 0.03 m PASS

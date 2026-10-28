@@ -1,0 +1,725 @@
+{
+ "_why": "NIGHT74 S kb3 r2 (Research/2026-10-27-wave74/S/card-kb3.md): r1 plus THE DIE SILL (a 1.2 m plinth on the west wall). NIGHT74 S kb3 r1 (Research/2026-10-27-wave74/S/card-kb3.md): NIGHT70 R d2's file with the press line opened: three blocks and one baffle out, one press in, wave 1's nodes on the open floor. NIGHT70 R d2 (Research/2026-10-24-wave67/cards/kb3.md, THE PRESS LINE, launch): the room file (NIGHT70 R; THE PRESS LINE; the shipped room's identity, every piece new but the forge wall, the far gallery and the quench vent)",
+ "room": "kb3",
+ "row": {
+  "id": "kb3",
+  "name": "3.3 THE PRESS HALL",
+  "kind": "room",
+  "rect": [
+   -10,
+   -225.5,
+   10,
+   -197.5
+  ],
+  "height": 14,
+  "roof": true,
+  "par": 70,
+  "job36": "combine",
+  "card57": "THE PRESS HALL",
+  "verb36": "launch: the bodies come to THE PRESS LINE through two gates and the forge aisle, each round a baffle 2 m behind it, so they turn into the gate fresh and single file 2-4 m from a player who holds it; dash-punch the first and it flies back into the ones behind it (a burst: 60 to every body within 3.5 m) or into the baffle's face (a wall burst); refuse it and every body is shot at the gate one by one",
+  "spawn": {
+   "at": [
+    -8.5,
+    0,
+    -203
+   ],
+   "yawDeg": 0
+  },
+  "spawn_why": "NIGHT57 L (card kb3, Molecule: the west aisle under the press gantry's near end): 5.5 m in and 8.5 m off the door's axis, 8.5 m from the door (n52 kb3's T-119 distance; rounds 1-4 at 6.4 m read dwell 1.15-2.50 s)",
+  "exit": [
+   0,
+   0,
+   -224
+  ],
+  "arena36": true,
+  "waves": [
+   [
+    "husk",
+    "husk",
+    "husk",
+    "husk",
+    "husk",
+    "spitter",
+    "spitter"
+   ],
+   [
+    "charger",
+    "husk",
+    "husk",
+    "husk",
+    "husk"
+   ],
+   [
+    "charger",
+    "spitter",
+    "spitter"
+   ],
+   [
+    "husk",
+    "husk",
+    "husk",
+    "husk",
+    "swarmer",
+    "swarmer",
+    "swarmer",
+    "swarmer"
+   ]
+  ],
+  "waves_why": "NIGHT57 L (card kb3; the level walk r2: n52's kb3 was the level's deadliest room, 6 / 6 deaths): no drones here (they are kb3c's role); the charger alone with fodder first, then with the spitters",
+  "roles43": [
+   "fodder + ranged (the spitters on the far gallery)",
+   "charger + fodder (the charger introduced to level 3: bait it into a press, punch)",
+   "charger + ranged (the charge with the globs coming in)",
+   "fodder (the hall floods: the last push down the nave)"
+  ],
+  "roles43_why": "NIGHT57 L (card kb3; R-2: the charger reinforced with fodder before it combines with ranged; the gauntlet arrives in this room)",
+  "lessons": [
+   {
+    "promptPad": "When the floor glows, jump.",
+    "kind": "husksDead",
+    "n": 1,
+    "prompt": "When the floor glows, jump."
+   }
+  ],
+  "lessons31": [
+   {
+    "promptPad": "When the floor glows, jump.",
+    "kind": "husksDead",
+    "n": 1,
+    "prompt": "When the floor glows, jump."
+   }
+  ],
+  "kiln47_why": "NIGHT47 B G35 (kept by NIGHT57 L): the cameo's card (<= 6 words): the worm's breach tell is taught here before the fight",
+  "nodes": [
+   [
+    -6.5,
+    0,
+    -223.5
+   ],
+   [
+    -3.5,
+    0,
+    -224.5
+   ],
+   [
+    0,
+    0,
+    -223.5
+   ],
+   [
+    2.5,
+    0,
+    -224.5
+   ],
+   [
+    -2,
+    0,
+    -218.5
+   ],
+   [
+    -6.5,
+    0,
+    -221
+   ],
+   [
+    -3.5,
+    0,
+    -217
+   ],
+   [
+    1,
+    0,
+    -216
+   ],
+   [
+    3.5,
+    0,
+    -216.5
+   ]
+  ],
+  "highNodes": [
+   [
+    9,
+    4.5,
+    -224.5
+   ],
+   [
+    8,
+    4.5,
+    -220.5
+   ]
+  ],
+  "nodes_why": "NIGHT74 S kb3 r1 (Research/2026-10-27-wave74/S/card-kb3.md): the ground nodes: the far floor as shipped plus wave 1's three on the open floor.",
+  "waveNodes43": [
+   [
+    [
+     -3.5,
+     0,
+     -217
+    ],
+    [
+     1,
+     0,
+     -216
+    ],
+    [
+     3.5,
+     0,
+     -216.5
+    ]
+   ],
+   [
+    [
+     -2,
+     0,
+     -218.5
+    ],
+    [
+     0,
+     0,
+     -223.5
+    ],
+    [
+     2.5,
+     0,
+     -224.5
+    ]
+   ],
+   [
+    [
+     -2,
+     0,
+     -218.5
+    ],
+    [
+     0,
+     0,
+     -223.5
+    ],
+    [
+     2.5,
+     0,
+     -224.5
+    ],
+    [
+     9,
+     4.5,
+     -224.5
+    ],
+    [
+     8,
+     4.5,
+     -220.5
+    ]
+   ],
+   [
+    [
+     -2,
+     0,
+     -218.5
+    ],
+    [
+     0,
+     0,
+     -223.5
+    ],
+    [
+     2.5,
+     0,
+     -224.5
+    ]
+   ]
+  ],
+  "waveNodes43_why": "NIGHT74 S kb3 r1 (Research/2026-10-27-wave74/S/card-kb3.md): wave 1 on three nodes of the open floor (A (-3.5, 0, -217) and B (1, 0, -216) in view from the door and the spawn, C (3.5, 0, -216.5) behind the east baffle): the shipped three stood in a clump behind the east gate, hidden by the press line.",
+  "proofs": [
+   {
+    "kind": "walk",
+    "points": [
+     [
+      -6.5,
+      0,
+      -202
+     ],
+     [
+      -4,
+      0,
+      -207
+     ],
+     [
+      -3,
+      0,
+      -214
+     ],
+     [
+      -4.5,
+      0,
+      -219
+     ],
+     [
+      -4.5,
+      0,
+      -223.5
+     ],
+     [
+      0,
+      0,
+      -224
+     ]
+    ]
+   },
+   {
+    "kind": "walk",
+    "points": [
+     [
+      -4.5,
+      0,
+      -221
+     ],
+     [
+      4.5,
+      4.5,
+      -221
+     ],
+     [
+      7,
+      4.5,
+      -223
+     ]
+    ]
+   },
+   {
+    "kind": "walk",
+    "points": [
+     [
+      8.5,
+      0,
+      -201
+     ],
+     [
+      8.5,
+      0,
+      -208
+     ]
+    ]
+   }
+  ],
+  "frames36": {
+   "mid": [
+    -3,
+    0,
+    -203,
+    0,
+    0.05
+   ],
+   "exit": [
+    7,
+    4.5,
+    -223,
+    0,
+    -0.3
+   ]
+  },
+  "frames52": {
+   "_why": "NIGHT70 R d2 (Research/2026-10-24-wave67/cards/kb3.md, THE PRESS LINE, launch): the room frames: the door just crossed (the apron, the press line and its gates), the apron looking at the east gate, the gallery looking back over the far floor",
+   "entry": [
+    0,
+    0,
+    -199,
+    0,
+    0.05
+   ],
+   "mid": [
+    -2,
+    0,
+    -204.5,
+    -30,
+    -0.05
+   ],
+   "high": [
+    7,
+    4.5,
+    -223,
+    180,
+    -0.25
+   ]
+  },
+  "kiln57_why": "NIGHT57 L (Tools/night/gen-n57-kiln.cjs; docs/ROOMS.md, Level 3 as n57-kiln, kb3 THE PRESS HALL): built from scratch (no n52 piece): 20 x 28 x 14 m, three planes (0 / 2.5 / 4.5 m), four drop presses (the charger's stun posts, the first the foothold), the forge wall (a 17 m ride), two pads; the cameo's card and beat (by room id) and the gauntlet award (by room id) kept",
+  "bot43": false,
+  "verb65": "launch",
+  "line65": [
+   [
+    -6,
+    0,
+    -203.5
+   ],
+   [
+    -1,
+    0,
+    -206
+   ],
+   [
+    2.5,
+    0,
+    -209
+   ],
+   [
+    3.5,
+    0,
+    -212
+   ]
+  ],
+  "line65_why": "NIGHT74 S kb3 r1 (Research/2026-10-27-wave74/S/card-kb3.md): the launch line: from the spawn across the apron to the east baffle's south face (the gate it ran to is open floor now)",
+  "card65": "Research/2026-10-27-wave74/S/card-kb3.md",
+  "kiln70_why": "NIGHT70 R d2 (Research/2026-10-24-wave67/cards/kb3.md, THE PRESS LINE, launch): rebuilt from the blank rect (GG 2026-10-09: 'complete arena overhaul completely from scratch'): rect, doors, spawn, exit, waves, roles and lessons kept; THE PRESS LINE (three floor-to-roof presses, two gates), two BAFFLES, the FOOTHOLD PRESS, THE CRANE RAMP, THE HAMMER VENT and the door kerb new; the forge wall (ride), the far gallery and the quench vent kept exactly (3 of 16 shipped pieces); no pit (NIGHT69's quenches cost 52-78 falls a flow set)"
+ },
+ "boxes": [
+  {
+   "zone": "kb3",
+   "kind": "wall",
+   "min": [
+    9.4,
+    0,
+    -217.5
+   ],
+   "max": [
+    10,
+    14,
+    -200.5
+   ],
+   "job": "verb it celebrates: the forge wall's ride over the charge",
+   "why": "THE FORGE WALL (ride, cyan, 17 m on the east wall, to the roof): ride the east aisle over the charger's next charge and off its end onto the far gallery (the walk round is the gallery ramp's long way, by the west of the far end)",
+   "note": "THE FORGE WALL (ride, cyan, 17 m on the east wall, to the roof): ride the east aisle over the charger's next charge and off its end onto the far gallery (the walk round is the gallery ramp's long way, by the west of the far end)",
+   "ride": true,
+   "ride36": {
+    "face": "W",
+    "planeX": 9.4,
+    "lz": [
+     3,
+     20
+    ]
+   }
+  },
+  {
+   "zone": "kb3",
+   "kind": "deck",
+   "min": [
+    5,
+    0,
+    -225.5
+   ],
+   "max": [
+    10,
+    4.5,
+    -218.5
+   ],
+   "job": "30 s problem: THE FAR GALLERY (the spitters' roost, the high tier)",
+   "why": "THE FAR GALLERY (4.5 m, 7 x 7 m across the far end's east side): the sprayers' roost lobbing down the nave; the forge wall's ride lands on it, the boost or the step reaches its lip; the walkers take its long ramp (no safe ledge)",
+   "note": "THE FAR GALLERY (4.5 m, 7 x 7 m across the far end's east side): the sprayers' roost lobbing down the nave; the forge wall's ride lands on it, the boost or the step reaches its lip; the walkers take its long ramp (no safe ledge)"
+  },
+  {
+   "zone": "kb3",
+   "kind": "deck",
+   "min": [
+    3,
+    2.5,
+    -225.5
+   ],
+   "max": [
+    5,
+    4.5,
+    -218.5
+   ],
+   "job": "spatial law: THE FAR GALLERY's west span (the exit lane under it)",
+   "why": "NIGHT71 R (Research/2026-10-26-wave71/R/kb3/card.md): the shipped room's GALLERY ARCH given back, exactly as shipped (rule 1: d2 dropped it and air65 fell from the shipped 6 hand-offs to 3): the forge wall's jump-off lands on it, it hands you to the gallery and back to the wall; THE GALLERY ARCH (NIGHT58 L0: the gallery's west 2 m on a 2 m span, its underside 2.5 m up, where the gallery ramp lands): the ramp still reaches the gallery at 4.5 m; the exit strip walks under it",
+   "note": "THE GALLERY ARCH (the gallery's west 2 m, its underside 2.5 m up, where the crane ramp lands)"
+  },
+  {
+   "zone": "kb3",
+   "kind": "hull",
+   "min": [
+    3.5,
+    0,
+    -204.5
+   ],
+   "max": [
+    5,
+    14,
+    -202.5
+   ],
+   "job": "hero prop: THE FOOTHOLD PRESS (the entry's foothold, R5; the east gate's screen)",
+   "why": "NIGHT70 R d2 (Research/2026-10-24-wave67/cards/kb3.md, THE PRESS LINE, launch): THE FOOTHOLD PRESS (1.5 x 2 m, floor to roof, 5-7 m inside the entry on the east apron): the foothold you take on entry (R5) and see the east gate and the aisle from; it screens the east gate from the spawn's corner, so a body turning out of the gate meets you at the press, not at range; a burst face",
+   "note": "THE FOOTHOLD PRESS (1.5 x 2 m, floor to roof, 5-7 m inside the entry on the east apron)",
+   "noride": true
+  },
+  {
+   "zone": "kb3",
+   "kind": "hull",
+   "min": [
+    5.5,
+    0,
+    -211
+   ],
+   "max": [
+    7.5,
+    14,
+    -209
+   ],
+   "job": "spatial law: THE PRESS LINE, east press (the sight cut; the forge aisle's west side)",
+   "why": "NIGHT70 R d2 (Research/2026-10-24-wave67/cards/kb3.md, THE PRESS LINE, launch): THE PRESS LINE east press (floor to roof, 2 x 2 m): closes the line up to the forge aisle (x 7.5..9.4, the ride's lane, left open)",
+   "note": "THE PRESS LINE east press (floor to roof, 2 x 2 m)",
+   "noride": true
+  },
+  {
+   "zone": "kb3",
+   "kind": "hull",
+   "min": [
+    2,
+    0,
+    -215
+   ],
+   "max": [
+    6.5,
+    14,
+    -213
+   ],
+   "job": "30 s problem: THE EAST BAFFLE (the corner every body turns; the throw's wall)",
+   "why": "NIGHT70 R d2 (Research/2026-10-24-wave67/cards/kb3.md, THE PRESS LINE, launch): THE EAST BAFFLE (floor to roof, 4.5 x 2 m, 2 m behind the east gate): as the west one for the east gate and line65's punch",
+   "note": "THE EAST BAFFLE (floor to roof, 4.5 x 2 m, 2 m behind the east gate)",
+   "noride": true
+  },
+  {
+   "zone": "kb3",
+   "kind": "hull",
+   "min": [
+    -7.5,
+    0,
+    -214
+   ],
+   "max": [
+    -5.5,
+    14,
+    -212
+   ],
+   "job": "30 s problem: THE WEST PRESS (2 x 2 m, floor to roof, beside the spawn's lane: the west flank's cover and the throw's wall)",
+   "why": "NIGHT74 S kb3 r1 (Research/2026-10-27-wave74/S/card-kb3.md): the west block (4.5 x 2 m, a wall 6 m ahead of the spawn) and the west baffle leave; one 2 x 2 m stack stands 9 m out and 1.5 m off the spawn's axis (x -8.5): the first look up the west wall is open to the quench vent's glow, and the stack is a burst face for a body punched west and cover from the far floor's spitters for whoever runs the west flank.",
+   "note": "THE WEST PRESS (2 x 2 m, floor to roof)",
+   "noride": true
+  },
+  {
+   "zone": "kb3",
+   "kind": "hull",
+   "min": [
+    -10,
+    0,
+    -211
+   ],
+   "max": [
+    -8,
+    1.2,
+    -209
+   ],
+   "job": "cover: THE DIE SILL (1.2 m plinth, 2 x 2 m, against the west wall 6 m ahead of the spawn: hop it, shelter behind it from the far floor's spitters)",
+   "why": "NIGHT74 S kb3 r2 (Research/2026-10-27-wave74/S/card-kb3.md): r1 left the apron an open 13.5 m square (n70-area OPEN, 12 m or less passes) and the west wall one 23 m run (the Player's wall pick moved off kb2c's 18 m wall); a waist-high 2 x 2 m plinth at the west block's old end cuts both (runs 11.5 m and 14.5 m, open square 11.5 m), is the first cover on the spawn's lane, and stands under the eye (1.6 m) so the spawn still sees wave 1's nodes; a body punched west bursts on its face.",
+   "note": "THE DIE SILL (1.2 m, 2 x 2 m)",
+   "noride": true
+  }
+ ],
+ "ramps": [
+  {
+   "zone": "kb3",
+   "from": [
+    -5,
+    -221
+   ],
+   "to": [
+    3,
+    -221
+   ],
+   "width": 3,
+   "rise": 4.5,
+   "job": "molecule: the walkers' climb onto the far gallery",
+   "why": "NIGHT71 R: 2 m west (-3..5 -> -5..3, the shipped ramp's line) so it lands on the restored GALLERY ARCH's west edge at 4.5 m. NIGHT70 R d2 (Research/2026-10-24-wave67/cards/kb3.md, THE PRESS LINE, launch): THE CRANE RAMP (4.5 m over 8 m, from the far floor east onto THE FAR GALLERY's west edge): the walkers' climb to the gallery (GG NIGHT20); the exit strip (z -225.5..-222.5) runs south of it to the door",
+   "note": "THE CRANE RAMP"
+  }
+ ],
+ "pads": [
+  {
+   "zone": "kb3",
+   "at": [
+    7.25,
+    0,
+    -212
+   ],
+   "target": [
+    8,
+    4.5,
+    -221
+   ],
+   "apexAbove": 2,
+   "job": "molecule: the upward line, the hammer vent",
+   "why": "NIGHT70 R d2 (Research/2026-10-24-wave67/cards/kb3.md, THE PRESS LINE, launch): THE HAMMER VENT (the corridor's east end, in the forge aisle beside the east baffle; 4 m off every walk line): throws you down the aisle onto THE FAR GALLERY over the queue; the shipped vent's way up, moved with the line",
+   "note": "the hammer vent"
+  },
+  {
+   "zone": "kb3",
+   "at": [
+    -8.5,
+    0,
+    -224.5
+   ],
+   "target": [
+    5,
+    4.5,
+    -224
+   ],
+   "apexAbove": 2.5,
+   "job": "molecule: the upward line, the quench vent",
+   "why": "THE QUENCH VENT (a jump pad in the far west corner): throws you over the gallery ramp onto the far gallery: the nave's far end turned into a climb (the loop's second end)",
+   "note": "the quench vent"
+  }
+ ],
+ "grapple": [],
+ "pits": [],
+ "tunnels": [],
+ "lights": [
+  {
+   "id": "kb3-L1",
+   "room": "kb3",
+   "kind": "ceiling",
+   "at": [
+    0,
+    13.95,
+    -203
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 12,
+   "intensity": 0.9
+  },
+  {
+   "id": "kb3-L2",
+   "room": "kb3",
+   "kind": "ceiling",
+   "at": [
+    0,
+    13.95,
+    -212
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 12,
+   "intensity": 1.1
+  },
+  {
+   "id": "kb3-L3",
+   "room": "kb3",
+   "kind": "ceiling",
+   "at": [
+    0,
+    13.95,
+    -221
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    4,
+    0.1
+   ],
+   "color": "white",
+   "range": 12,
+   "intensity": 1
+  },
+  {
+   "id": "kb3-L5",
+   "room": "kb3",
+   "kind": "pool",
+   "at": [
+    7,
+    4.525,
+    -222.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2,
+    2,
+    0.05
+   ],
+   "color": "white",
+   "range": 8,
+   "intensity": 1
+  },
+  {
+   "id": "kb3-L7",
+   "room": "kb3",
+   "kind": "pool",
+   "at": [
+    0,
+    0.025,
+    -224
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.5,
+    2.5,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 8,
+   "intensity": 1.7
+  }
+ ],
+ "props": [
+  {
+   "id": "kb3-P1",
+   "room": "kb3",
+   "kind": "healthPickup",
+   "at": [
+    -0.5,
+    0.9,
+    -212
+   ],
+   "size": [
+    0.6,
+    0.6,
+    0.6
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "pickup": true,
+   "job": "reward",
+   "card57": "30 s problem: the reward on the risky leg",
+   "why": "NIGHT70 R d2 (Research/2026-10-24-wave67/cards/kb3.md, THE PRESS LINE, launch): the health in the corridor behind THE PRESS LINE (the bodies' way between the gates: the riskiest spot)"
+  }
+ ],
+ "drop": {}
+}

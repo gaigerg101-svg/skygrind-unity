@@ -1,0 +1,41 @@
+proofs at 8893ca10e 11:45:24: RenderSpecialHint SpecialHintText shownSpecialWeapon shownSpecialMode specialOn specialHints Hud20ShockWord HudSpecialDivider HudPadSpecial
+== RenderSpecialHint: (a1) worktree hits 1
+   Assets/Scripts/Game/UiHotbar.cs:700:        void RenderSpecialHint(string w, bool pad)
+== SpecialHintText: (a1) worktree hits 3
+   Assets/Scripts/Game/UiHotbar.cs:707:            if (!cache.TryGetValue(w ?? string.Empty, out string hint)) cache[w ?? string.Empty] = hint = SpecialHintText(w, mode);
+   Assets/Scripts/Game/UiHotbar.cs:723:        string SpecialHintText(string id, int mode)
+   Assets/Scripts/Game/UnityTuning.Hud20.cs:27:        public const string Hud20ShockWord = "SHOCKWAVE"; // the special hint's word for the THUNDERCLAP's LT (UiHotbar.SpecialHintText)
+== shownSpecialWeapon: (a1) worktree hits 4
+   Assets/Scripts/Game/UiHotbar.cs:94:        string shownSpecialWeapon;
+   Assets/Scripts/Game/UiHotbar.cs:251:                shownSpecialWeapon = null;
+   Assets/Scripts/Game/UiHotbar.cs:703:            if (mode == shownSpecialMode && w == shownSpecialWeapon) return;
+   Assets/Scripts/Game/UiHotbar.cs:705:            shownSpecialWeapon = w;
+== shownSpecialMode: (a1) worktree hits 3
+   Assets/Scripts/Game/UiHotbar.cs:95:        int shownSpecialMode = -1;
+   Assets/Scripts/Game/UiHotbar.cs:703:            if (mode == shownSpecialMode && w == shownSpecialWeapon) return;
+   Assets/Scripts/Game/UiHotbar.cs:704:            shownSpecialMode = mode;
+== specialOn: (a1) worktree hits 3
+   Assets/Scripts/Game/UiHotbar.cs:96:        bool specialOn;
+   Assets/Scripts/Game/UiHotbar.cs:710:            if (on != specialOn)
+   Assets/Scripts/Game/UiHotbar.cs:712:                specialOn = on;
+== specialHints: (a1) worktree hits 8
+   Assets/Scripts/Game/UiHotbar.cs:17:// - The special hint (POLISH V5): RMB ZOOM xN on a zoom gun, plus the SPECIAL key with ui.specialHints[gun]; RMB and the
+   Assets/Scripts/Game/UiHotbar.cs:97:        readonly Dictionary<string, string>[] specialHints = { new Dictionary<string, string>(), new Dictionary<string, string>(), new Dictionary<string, string>(), new Dictionary<strin
+   Assets/Scripts/Game/UiHotbar.cs:250:                foreach (Dictionary<string, string> c in specialHints) c.Clear();
+   Assets/Scripts/Game/UiHotbar.cs:706:            Dictionary<string, string> cache = specialHints[mode];
+   Assets/Scripts/Game/UiHotbar.cs:719:        /// main.js specialHint: a zoom gun (ads.weapons[id]): RIGHT MOUSE zooms (xzoom) and its ui.specialHints label, if any,
+   Assets/Scripts/Game/UiHotbar.cs:728:            string label = cfg.Has($"ui.specialHints.{id}") ? cfg.Str($"ui.specialHints.{id}") : null;
+   Assets/StreamingAssets/PortExport/config.json:6738:    "specialHints": {
+   PortExport/config.json:6738:    "specialHints": {
+== Hud20ShockWord: (a1) worktree hits 2
+   Assets/Scripts/Game/UiHotbar.cs:744:                rmb = UnityTuning.Hud20ShockWord; // the LT is the shockwave; the web's COMPRESS special isn't on SPECIAL with it (builder G)
+   Assets/Scripts/Game/UnityTuning.Hud20.cs:27:        public const string Hud20ShockWord = "SHOCKWAVE"; // the special hint's word for the THUNDERCLAP's LT (UiHotbar.SpecialHintText)
+== HudSpecialDivider: (a1) worktree hits 2
+   Assets/Scripts/Game/UiHotbar.cs:752:                if (rmb != null) s.Append("<color=#").Append(faintHex).Append('>').Append(UnityTuning.HudSpecialDivider).Append("</color>");
+   Assets/Scripts/Game/UnityTuning.Hotbar.cs:42:        public const string HudSpecialDivider = "   |   "; // the <i> divider: a 1 x 14 px var(--faint) bar with 4 px margins
+== HudPadSpecial: (a1) worktree hits 2
+   Assets/Scripts/Game/UiHotbar.cs:727:            string key = PromptText.For("special", false, mode == 0 ? KeyLabel(cfg, "special") ?? "-" : UnityTuning.HudPadSpecial);
+   Assets/Scripts/Game/UnityTuning.Hotbar.cs:51:        public const string HudPadSpecial = "D-PAD UP";
+(a2) main-tree untracked hits (7 files): none
+(a3) main-tree Logs/n71 + Research/2026-10-26* script hits: none
+(a4) UnityEvent m_MethodName hits: 0

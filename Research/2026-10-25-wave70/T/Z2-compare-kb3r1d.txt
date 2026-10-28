@@ -1,0 +1,18 @@
+  falls only: line 6: falls 0 -> 6:   seed 1 verb-aware: cleared yes in 31.0 s | deaths 0, falls
+  falls only: line 7: falls 0 -> 9:   seed 1 refused-in: cleared yes in 49.0 s | deaths 0, falls
+  falls only: line 8: falls 0 -> 4:   seed 1 walker:     cleared yes in 40.4 s | deaths 0, falls
+  falls only: line 9: falls 0 -> 5:   seed 1 committed:  cleared yes in 35.2 s | deaths 0, falls
+  falls only: line 12: falls 0 -> 3:   seed 2 verb-aware: cleared yes in 52.3 s | deaths 0, falls
+  falls only: line 13: falls 0 -> 2:   seed 2 refused-in: cleared yes in 46.9 s | deaths 0, falls
+  falls only: line 14: falls 0 -> 5:   seed 2 walker:     cleared yes in 51.8 s | deaths 0, falls
+  falls only: line 15: falls 0 -> 6:   seed 2 committed:  cleared yes in 34.3 s | deaths 0, falls
+  falls only: line 18: falls 0 -> 5:   seed 3 verb-aware: cleared yes in 41.3 s | deaths 0, falls
+  falls only: line 19: falls 0 -> 10:   seed 3 refused-in: cleared yes in 55.7 s | deaths 0, falls
+  falls only: line 20: falls 0 -> 3:   seed 3 walker:     cleared yes in 44.4 s | deaths 0, falls
+  falls only: line 21: falls 0 -> 1:   seed 3 committed:  cleared yes in 60.7 s | deaths 0, falls
+z2-compare: Research/2026-10-25-wave70/T/Z2-skip-kb3r1d-BEFORE.txt vs Research/2026-10-25-wave70/T/Z2-skip-kb3r1d-AFTER.txt: 31 lines identical, 12 differ only by their falls count, 0 other differences; 9 new launchend lines
+  seed 1: verb-aware launch36 5, launchend lines 5
+  seed 2: verb-aware launch36 3, launchend lines 3
+  seed 3: verb-aware launch36 1, launchend lines 1
+  launch ends: body 2, dead 3, wall 3, timeout 1; in pit 1, in lava 0
+z2-compare: PASS (print only: every existing line identical but the falls counts)

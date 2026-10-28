@@ -1,0 +1,16 @@
+# command: bash Tools/night/n65-verbs.sh launch C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/a5/cand1/n65-foundry.json a5
+# sha: e9837ffc2 (+ the room file as in the tree); time: 2026-10-27 23:42:04
+  put-in loadout (a5, BEFORE entering it: the room's own award, if any, comes on entry): awards of the rooms before it given: none; owned revolver
+  entry loadout (pilot, a5, on entering): owned revolver, in hand revolver, pending none
+n65verb launch: level n65-foundry (C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/a5/cand1/n65-foundry.json), room a5 "1.5 CRUCIBLE", seed 1; pose (0.0, 0.0, -116.6) yaw 23.8 from line65[0]; off switch none
+  target chosen: husk #4 hp 40.0 > the launch bound 30.0 (max(punch.damage 10.0 x momentum.meleeMax 3.0 = 30.0, the largest non-parry punch in this run 0.0)) (the nearest husk-shaped body the punch leaves alive, so launch36 can throw it), 10.9 m off
+  skipped: swarmer #1 hp 10.0 (at or under the bound: the punch would kill it)
+  skipped: swarmer #2 hp 10.0 (at or under the bound: the punch would kill it)
+  skipped: swarmer #3 hp 10.0 (at or under the bound: the punch would kill it)
+  punch: dealt 18.9 vs hp 40.0: survived | target husk hp 40.0 | the punch not a parry | held 0 steps while it would be a parry, dashes re-made 0
+  burst at (9.1, 1.5, -123.5) hits 2 kills 2 (a wall)
+  target husk #4 at (6.7, 0.0, -122.4) (from (0.0, -0.0, -116.6)), dash at step 63, punch at step 80 in state Dash (grace 18), 1.8 m off (reach 2.0), launch36 wants it yes, its hp 40.0 vs the punch's 10.0, in hand revolver
+n65verb launch: GREEN | room a5 | launch36 1, flight end wall thrown 2.8 m (max 2.7 m), bursts 1 (hits 2, kills 2) | launched body husk #4 (the target: yes), landed (9.1, 1.5, -123.5), in a pit no, in lava no, target dead (launch36) | pose line65[0]
+n65verb: exit 0
+n65-verbs launch M3: a5 PASS (14 / 20 candidates, >= 10) (the slate's launch M3, DECIDE70 D-3: the room's 20-seed throw chart C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/a5/cand1/throws-a5.txt, PASS at >= 10 / 20 candidates = a GREEN probe, launch36 1 or more, and a pit or lava end or a burst killing >= 2 incl. the flier; the chart: M3 candidates (D-3) 14 / 20; this probe said: launch36 1, bursts 1 (hits 2, kills 2), in a pit no, in lava no)
+n65-verbs launch on C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/a5/cand1/n65-foundry.json (a5): GREEN 1, RED 0, UNSURE 0 (launch: GREEN = the pilot's GREEN AND the slate's M3, the room's 20-seed throw chart >= 10 / 20: NIGHT70 Z1)

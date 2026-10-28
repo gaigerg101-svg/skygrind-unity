@@ -1,0 +1,1388 @@
+{
+ "_why": "THE KILN WYRM's arena for n45-kiln (NIGHT45 A3, T-65; the identity card THE KILN'S HEART, docs/ROOMS.md; Tools/night/gen-n45-wyrm-arena.cjs): Design/maps/wyrm43-arena.json's 30 boxes in order (the shell, the stepped corners, the ride slabs, the crucible stacks, the perches, K1's plate re-cut as the step to the 6 m perch: recut45; crumble39's indices unchanged) plus 3 slag plates, each 2.9 m clear of every worm route, never reached by the worm in the sim (n45ring wyrm) and tied to the attack it answers (plates45). Every box's reason: solids45. The worm's paths and AI are wyrm26.json's, untouched. No lava (WyrmArena is boxes only).",
+ "name": "wyrm45-arena",
+ "half": 30,
+ "height": 30,
+ "floorSize": 64,
+ "killPlaneY": -30,
+ "center": [
+  0,
+  0,
+  0
+ ],
+ "playerSpawn": {
+  "x": 0,
+  "y": 0,
+  "z": 27.5,
+  "yawDeg": 0
+ },
+ "collision": {
+  "boxes": [
+   {
+    "min": [
+     -32,
+     -0.5,
+     -32
+    ],
+    "max": [
+     32,
+     0,
+     32
+    ],
+    "kind": "floor"
+   },
+   {
+    "min": [
+     -32,
+     0,
+     -32
+    ],
+    "max": [
+     32,
+     30,
+     -30
+    ],
+    "kind": "wall"
+   },
+   {
+    "min": [
+     -32,
+     0,
+     30
+    ],
+    "max": [
+     32,
+     30,
+     32
+    ],
+    "kind": "wall"
+   },
+   {
+    "min": [
+     -32,
+     0,
+     -30
+    ],
+    "max": [
+     -30,
+     30,
+     30
+    ],
+    "kind": "wall"
+   },
+   {
+    "min": [
+     30,
+     0,
+     -30
+    ],
+    "max": [
+     32,
+     30,
+     30
+    ],
+    "kind": "wall"
+   },
+   {
+    "min": [
+     -32,
+     30,
+     -32
+    ],
+    "max": [
+     32,
+     32,
+     32
+    ],
+    "kind": "ceiling"
+   },
+   {
+    "min": [
+     -30,
+     0,
+     -30
+    ],
+    "max": [
+     -18,
+     30,
+     -26
+    ],
+    "kind": "wall"
+   },
+   {
+    "min": [
+     -30,
+     0,
+     -30
+    ],
+    "max": [
+     -22,
+     30,
+     -22
+    ],
+    "kind": "wall"
+   },
+   {
+    "min": [
+     -30,
+     0,
+     -30
+    ],
+    "max": [
+     -26,
+     30,
+     -18
+    ],
+    "kind": "wall"
+   },
+   {
+    "min": [
+     -30,
+     0,
+     26
+    ],
+    "max": [
+     -18,
+     30,
+     30
+    ],
+    "kind": "wall"
+   },
+   {
+    "min": [
+     -30,
+     0,
+     22
+    ],
+    "max": [
+     -22,
+     30,
+     30
+    ],
+    "kind": "wall"
+   },
+   {
+    "min": [
+     -30,
+     0,
+     18
+    ],
+    "max": [
+     -26,
+     30,
+     30
+    ],
+    "kind": "wall"
+   },
+   {
+    "min": [
+     18,
+     0,
+     -30
+    ],
+    "max": [
+     30,
+     30,
+     -26
+    ],
+    "kind": "wall"
+   },
+   {
+    "min": [
+     22,
+     0,
+     -30
+    ],
+    "max": [
+     30,
+     30,
+     -22
+    ],
+    "kind": "wall"
+   },
+   {
+    "min": [
+     26,
+     0,
+     -30
+    ],
+    "max": [
+     30,
+     30,
+     -18
+    ],
+    "kind": "wall"
+   },
+   {
+    "min": [
+     18,
+     0,
+     26
+    ],
+    "max": [
+     30,
+     30,
+     30
+    ],
+    "kind": "wall"
+   },
+   {
+    "min": [
+     22,
+     0,
+     22
+    ],
+    "max": [
+     30,
+     30,
+     30
+    ],
+    "kind": "wall"
+   },
+   {
+    "min": [
+     26,
+     0,
+     18
+    ],
+    "max": [
+     30,
+     30,
+     30
+    ],
+    "kind": "wall"
+   },
+   {
+    "min": [
+     15.09,
+     0,
+     18.34
+    ],
+    "max": [
+     23.09,
+     12,
+     19.84
+    ],
+    "kind": "wall"
+   },
+   {
+    "min": [
+     -15.41,
+     0,
+     23.72
+    ],
+    "max": [
+     -7.41,
+     12,
+     25.22
+    ],
+    "kind": "wall"
+   },
+   {
+    "min": [
+     -6.35,
+     0,
+     -27.65
+    ],
+    "max": [
+     1.65,
+     12,
+     -26.15
+    ],
+    "kind": "wall"
+   },
+   {
+    "min": [
+     24.34,
+     0,
+     7.91
+    ],
+    "max": [
+     27.34,
+     18,
+     10.91
+    ],
+    "kind": "pillar"
+   },
+   {
+    "min": [
+     -22.57,
+     0,
+     16.18
+    ],
+    "max": [
+     -19.57,
+     18,
+     19.18
+    ],
+    "kind": "pillar"
+   },
+   {
+    "min": [
+     6.23,
+     5,
+     22.37
+    ],
+    "max": [
+     12.23,
+     6,
+     28.37
+    ],
+    "kind": "platform"
+   },
+   {
+    "min": [
+     -25.12,
+     8.5,
+     -18.49
+    ],
+    "max": [
+     -19.12,
+     9.5,
+     -12.49
+    ],
+    "kind": "platform"
+   },
+   {
+    "min": [
+     3.99,
+     8.5,
+     -29.08
+    ],
+    "max": [
+     9.99,
+     9.5,
+     -23.08
+    ],
+    "kind": "platform"
+   },
+   {
+    "min": [
+     -5.18,
+     8.5,
+     21.9
+    ],
+    "max": [
+     0.82,
+     9.5,
+     27.9
+    ],
+    "kind": "platform"
+   },
+   {
+    "min": [
+     6.23,
+     12,
+     22.37
+    ],
+    "max": [
+     12.23,
+     13,
+     28.37
+    ],
+    "kind": "platform"
+   },
+   {
+    "min": [
+     -28.37,
+     12,
+     6.23
+    ],
+    "max": [
+     -22.37,
+     13,
+     12.23
+    ],
+    "kind": "platform"
+   },
+   {
+    "min": [
+     8.57,
+     0,
+     20.66
+    ],
+    "max": [
+     12.57,
+     1.2,
+     24.66
+    ],
+    "kind": "platform"
+   },
+   {
+    "min": [
+     -14,
+     0,
+     -30
+    ],
+    "max": [
+     -10,
+     1.2,
+     -26
+    ],
+    "kind": "platform"
+   },
+   {
+    "min": [
+     10,
+     0,
+     -30
+    ],
+    "max": [
+     14,
+     1.2,
+     -26
+    ],
+    "kind": "platform"
+   },
+   {
+    "min": [
+     -30,
+     0,
+     11
+    ],
+    "max": [
+     -26,
+     1.2,
+     15
+    ],
+    "kind": "platform"
+   }
+  ]
+ },
+ "crumble39": {
+  "_why": "the two highest perches (indices 27, 28) crumble at half health, the highest 6 m perch (23) stays: NIGHT31's camp test on the new perches",
+  "boxes": [
+   27,
+   28
+  ],
+  "keep": [
+   23
+  ],
+  "draw": [
+   {
+    "index": 18,
+    "kind": "wall",
+    "top": 12,
+    "crumble": false,
+    "rect": [
+     15.09,
+     18.34,
+     23.09,
+     19.84
+    ]
+   },
+   {
+    "index": 19,
+    "kind": "wall",
+    "top": 12,
+    "crumble": false,
+    "rect": [
+     -15.41,
+     23.72,
+     -7.41,
+     25.22
+    ]
+   },
+   {
+    "index": 20,
+    "kind": "wall",
+    "top": 12,
+    "crumble": false,
+    "rect": [
+     -6.35,
+     -27.65,
+     1.65,
+     -26.15
+    ]
+   },
+   {
+    "index": 21,
+    "kind": "pillar",
+    "top": 18,
+    "crumble": false,
+    "rect": [
+     24.34,
+     7.91,
+     27.34,
+     10.91
+    ]
+   },
+   {
+    "index": 22,
+    "kind": "pillar",
+    "top": 18,
+    "crumble": false,
+    "rect": [
+     -22.57,
+     16.18,
+     -19.57,
+     19.18
+    ]
+   },
+   {
+    "index": 23,
+    "kind": "platform",
+    "top": 6,
+    "crumble": false,
+    "rect": [
+     6.23,
+     22.37,
+     12.23,
+     28.37
+    ]
+   },
+   {
+    "index": 24,
+    "kind": "platform",
+    "top": 9.5,
+    "crumble": false,
+    "rect": [
+     -25.12,
+     -18.49,
+     -19.12,
+     -12.49
+    ]
+   },
+   {
+    "index": 25,
+    "kind": "platform",
+    "top": 9.5,
+    "crumble": false,
+    "rect": [
+     3.99,
+     -29.08,
+     9.99,
+     -23.08
+    ]
+   },
+   {
+    "index": 26,
+    "kind": "platform",
+    "top": 9.5,
+    "crumble": false,
+    "rect": [
+     -5.18,
+     21.9,
+     0.82,
+     27.9
+    ]
+   },
+   {
+    "index": 27,
+    "kind": "platform",
+    "top": 13,
+    "crumble": true,
+    "rect": [
+     6.23,
+     22.37,
+     12.23,
+     28.37
+    ]
+   },
+   {
+    "index": 28,
+    "kind": "platform",
+    "top": 13,
+    "crumble": true,
+    "rect": [
+     -28.37,
+     6.23,
+     -22.37,
+     12.23
+    ]
+   }
+  ]
+ },
+ "pieces43": [
+  {
+   "index": 29,
+   "kind": "platform",
+   "why": "a SLAG PLATE (1.2 m, 4 x 4 m, R 25): an island one jump high (apex 1.58 m) on the outer ring, off every route by 2.9 m: where the LUNGE (slide height) and the DIVE's floor crack cannot reach you; a step toward the boost perches",
+   "rect": [
+    8.57,
+    20.66,
+    12.57,
+    24.66
+   ],
+   "top": 1.2
+  },
+  {
+   "index": 30,
+   "kind": "platform",
+   "why": "a DIVE plate, north wall west of THE KILN MOUTH: the far side from the dive's southern floor cracks (z ~ +12) and from both of its wall exits (east / west, z ~ -5): stand here while the marked wall erupts",
+   "rect": [
+    -14,
+    -30,
+    -10,
+    -26
+   ],
+   "top": 1.2
+  },
+  {
+   "index": 31,
+   "kind": "platform",
+   "why": "a DIVE plate, north wall east of THE KILN MOUTH (beside the 9.5 m perch: the boost up from it is the card's shortcut): the far side from the dive's cracks and exits",
+   "rect": [
+    10,
+    -30,
+    14,
+    -26
+   ],
+   "top": 1.2
+  },
+  {
+   "index": 32,
+   "kind": "platform",
+   "why": "the COIL plate, west wall (under the 13 m perch that crumbles): outside the coil's R 19 ring and the finale's R 23 ring while they sweep round the floor",
+   "rect": [
+    -30,
+    11,
+    -26,
+    15
+   ],
+   "top": 1.2
+  }
+ ],
+ "landmark43": {
+  "kind": "kilnMouth",
+  "solid": false,
+  "rect": [
+   -6,
+   -30,
+   6,
+   -29.9
+  ],
+  "top": 16,
+  "why": "THE RING's landmark, flush on the north wall's face (no solid fits the worm's 2.9 m clearance): the far side, opposite the spawn nook; A1's look draws and lights it"
+ },
+ "plates45": {
+  "why": "the card's plates: each plate's index, the attack it answers, its clearance to every route (m) and to each pattern's route (nearest), and to the dive's nearest exit / crack (fromDive)",
+  "plates": [
+   {
+    "index": 30,
+    "id": "diveWest",
+    "attack": "dive",
+    "centre": [
+     -12,
+     -28
+    ],
+    "clearance": 5.2,
+    "nearest": {
+     "coil": 9,
+     "dive": 24.1,
+     "lunge": 18.9,
+     "loop": 12.4,
+     "finale": 5.2,
+     "emerge": 12.3
+    },
+    "why": "a DIVE plate, north wall west of THE KILN MOUTH: the far side from the dive's southern floor cracks (z ~ +12) and from both of its wall exits (east / west, z ~ -5): stand here while the marked wall erupts",
+    "fromDive": 27.7
+   },
+   {
+    "index": 31,
+    "id": "diveEast",
+    "attack": "dive",
+    "centre": [
+     12,
+     -28
+    ],
+    "clearance": 5.2,
+    "nearest": {
+     "coil": 9,
+     "dive": 24.1,
+     "lunge": 18.9,
+     "loop": 12.4,
+     "finale": 5.2,
+     "emerge": 9.6
+    },
+    "why": "a DIVE plate, north wall east of THE KILN MOUTH (beside the 9.5 m perch: the boost up from it is the card's shortcut): the far side from the dive's cracks and exits",
+    "fromDive": 27.7
+   },
+   {
+    "index": 32,
+    "id": "coilWest",
+    "attack": "coil",
+    "centre": [
+     -28,
+     13
+    ],
+    "clearance": 5.83,
+    "nearest": {
+     "coil": 9.6,
+     "dive": 11.5,
+     "lunge": 11.3,
+     "loop": 22.5,
+     "finale": 5.8,
+     "emerge": 33.4
+    },
+    "why": "the COIL plate, west wall (under the 13 m perch that crumbles): outside the coil's R 19 ring and the finale's R 23 ring while they sweep round the floor",
+    "fromDive": 11.5
+   }
+  ]
+ },
+ "recut45": {
+  "why": "wyrm43's pieces whose stated reason the sim disproved, kept with a new one",
+  "pieces": [
+   {
+    "index": 29,
+    "kind": "platform",
+    "rect": [
+     8.57,
+     20.66,
+     12.57,
+     24.66
+    ],
+    "top": 1.2,
+    "was": "K1: where the LUNGE (slide height) and the DIVE's floor crack cannot reach you",
+    "measured": "reached in the sim by the coil (2.5 m into its standing volume), the dive (1.1 m) and the aggro (2.5 m): `n45ring wyrm --level n43-kiln`, 3 seeds",
+    "now": "the route step beside the spawn up to the 6 m perch above it; no shelter"
+   }
+  ]
+ },
+ "solids45": {
+  "why": "every box's reason (DESIGN-RULES A-1, V-4): job route = where the player goes, encounter = the decision it forces in the fight",
+  "boxes": [
+   {
+    "index": 0,
+    "kind": "floor",
+    "job": "route",
+    "why": "the ring's floor: the worm breaks it where its routes cross (the seams look43 draws hot)"
+   },
+   {
+    "index": 1,
+    "kind": "wall",
+    "job": "route",
+    "why": "the ring's wall (the shell, half 30 m: Wyrm.cs's arenaHalf clamp): a wall to kick from round the whole rim"
+   },
+   {
+    "index": 2,
+    "kind": "wall",
+    "job": "route",
+    "why": "the ring's wall (the shell, half 30 m: Wyrm.cs's arenaHalf clamp): a wall to kick from round the whole rim"
+   },
+   {
+    "index": 3,
+    "kind": "wall",
+    "job": "route",
+    "why": "the ring's wall (the shell, half 30 m: Wyrm.cs's arenaHalf clamp): a wall to kick from round the whole rim"
+   },
+   {
+    "index": 4,
+    "kind": "wall",
+    "job": "route",
+    "why": "the ring's wall (the shell, half 30 m: Wyrm.cs's arenaHalf clamp): a wall to kick from round the whole rim"
+   },
+   {
+    "index": 5,
+    "kind": "ceiling",
+    "job": "route",
+    "why": "the roof at 30 m (the loop's top at 22 m stays under it)"
+   },
+   {
+    "index": 6,
+    "kind": "wall",
+    "job": "route",
+    "why": "a stepped corner (three boxes a corner): the ring reads round, and each step is a corner wall to wall-jump up from the rim"
+   },
+   {
+    "index": 7,
+    "kind": "wall",
+    "job": "route",
+    "why": "a stepped corner (three boxes a corner): the ring reads round, and each step is a corner wall to wall-jump up from the rim"
+   },
+   {
+    "index": 8,
+    "kind": "wall",
+    "job": "route",
+    "why": "a stepped corner (three boxes a corner): the ring reads round, and each step is a corner wall to wall-jump up from the rim"
+   },
+   {
+    "index": 9,
+    "kind": "wall",
+    "job": "route",
+    "why": "a stepped corner (three boxes a corner): the ring reads round, and each step is a corner wall to wall-jump up from the rim"
+   },
+   {
+    "index": 10,
+    "kind": "wall",
+    "job": "route",
+    "why": "a stepped corner (three boxes a corner): the ring reads round, and each step is a corner wall to wall-jump up from the rim"
+   },
+   {
+    "index": 11,
+    "kind": "wall",
+    "job": "route",
+    "why": "a stepped corner (three boxes a corner): the ring reads round, and each step is a corner wall to wall-jump up from the rim"
+   },
+   {
+    "index": 12,
+    "kind": "wall",
+    "job": "route",
+    "why": "a stepped corner (three boxes a corner): the ring reads round, and each step is a corner wall to wall-jump up from the rim"
+   },
+   {
+    "index": 13,
+    "kind": "wall",
+    "job": "route",
+    "why": "a stepped corner (three boxes a corner): the ring reads round, and each step is a corner wall to wall-jump up from the rim"
+   },
+   {
+    "index": 14,
+    "kind": "wall",
+    "job": "route",
+    "why": "a stepped corner (three boxes a corner): the ring reads round, and each step is a corner wall to wall-jump up from the rim"
+   },
+   {
+    "index": 15,
+    "kind": "wall",
+    "job": "route",
+    "why": "a stepped corner (three boxes a corner): the ring reads round, and each step is a corner wall to wall-jump up from the rim"
+   },
+   {
+    "index": 16,
+    "kind": "wall",
+    "job": "route",
+    "why": "a stepped corner (three boxes a corner): the ring reads round, and each step is a corner wall to wall-jump up from the rim"
+   },
+   {
+    "index": 17,
+    "kind": "wall",
+    "job": "route",
+    "why": "a stepped corner (three boxes a corner): the ring reads round, and each step is a corner wall to wall-jump up from the rim"
+   },
+   {
+    "index": 18,
+    "kind": "wall",
+    "job": "encounter",
+    "why": "a ride slab (8 m long, 12 m tall): when the coil comes round at body height, ride it off the floor (V-3: its cyan strip)"
+   },
+   {
+    "index": 19,
+    "kind": "wall",
+    "job": "encounter",
+    "why": "a ride slab (8 m long, 12 m tall): when the coil comes round at body height, ride it off the floor (V-3: its cyan strip)"
+   },
+   {
+    "index": 20,
+    "kind": "wall",
+    "job": "encounter",
+    "why": "a ride slab (8 m long, 12 m tall): when the coil comes round at body height, ride it off the floor (V-3: its cyan strip)"
+   },
+   {
+    "index": 21,
+    "kind": "pillar",
+    "job": "encounter",
+    "why": "a crucible stack (3 x 3 m, 18 m): cover from the spit barrage (phases 2-3) and a wall to ride up"
+   },
+   {
+    "index": 22,
+    "kind": "pillar",
+    "job": "encounter",
+    "why": "a crucible stack (3 x 3 m, 18 m): cover from the spit barrage (phases 2-3) and a wall to ride up"
+   },
+   {
+    "index": 23,
+    "kind": "platform",
+    "job": "encounter",
+    "why": "the 6 m boost perch (crumble keep): the boost's first step above the coil; it stays after the crumble"
+   },
+   {
+    "index": 24,
+    "kind": "platform",
+    "job": "encounter",
+    "why": "a 9.5 m boost perch: above the coil and the lunge; the boost from a rim plate reaches it (the card's shortcut)"
+   },
+   {
+    "index": 25,
+    "kind": "platform",
+    "job": "encounter",
+    "why": "a 9.5 m boost perch: above the coil and the lunge; the boost from a rim plate reaches it (the card's shortcut)"
+   },
+   {
+    "index": 26,
+    "kind": "platform",
+    "job": "encounter",
+    "why": "a 9.5 m boost perch: above the coil and the lunge; the boost from a rim plate reaches it (the card's shortcut)"
+   },
+   {
+    "index": 27,
+    "kind": "platform",
+    "job": "encounter",
+    "why": "a 13 m perch: the high camp that crumbles at half health (crumble31: the arena's state change)"
+   },
+   {
+    "index": 28,
+    "kind": "platform",
+    "job": "encounter",
+    "why": "a 13 m perch: the high camp that crumbles at half health (crumble31: the arena's state change)"
+   },
+   {
+    "index": 29,
+    "kind": "platform",
+    "job": "route",
+    "why": "K1's slag plate, re-cut: the step beside the spawn up to the 6 m perch above it (1.2 m, a jump); NOT a shelter: the coil, the dive and the aggro reach it (recut45)"
+   },
+   {
+    "index": 30,
+    "kind": "platform",
+    "job": "encounter",
+    "why": "a DIVE plate, north wall west of THE KILN MOUTH: the far side from the dive's southern floor cracks (z ~ +12) and from both of its wall exits (east / west, z ~ -5): stand here while the marked wall erupts"
+   },
+   {
+    "index": 31,
+    "kind": "platform",
+    "job": "encounter",
+    "why": "a DIVE plate, north wall east of THE KILN MOUTH (beside the 9.5 m perch: the boost up from it is the card's shortcut): the far side from the dive's cracks and exits"
+   },
+   {
+    "index": 32,
+    "kind": "platform",
+    "job": "encounter",
+    "why": "the COIL plate, west wall (under the 13 m perch that crumbles): outside the coil's R 19 ring and the finale's R 23 ring while they sweep round the floor"
+   }
+  ]
+ },
+ "loop43": {
+  "why": "every 5 degrees round the centre: the free floor radii (14-27 m) at that angle: one loop, no dead end (re-run on wyrm45's boxes)",
+  "narrowest": {
+   "deg": 65,
+   "free": 17,
+   "inner": 14,
+   "outer": 22
+  },
+  "angles": [
+   {
+    "deg": 0,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 5,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 10,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 15,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 20,
+    "free": 23,
+    "inner": 14,
+    "outer": 25
+   },
+   {
+    "deg": 25,
+    "free": 26,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 30,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 35,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 40,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 45,
+    "free": 23,
+    "inner": 14,
+    "outer": 25
+   },
+   {
+    "deg": 50,
+    "free": 20,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 55,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 60,
+    "free": 21,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 65,
+    "free": 17,
+    "inner": 14,
+    "outer": 22
+   },
+   {
+    "deg": 70,
+    "free": 21,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 75,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 80,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 85,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 90,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 95,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 100,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 105,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 110,
+    "free": 22,
+    "inner": 14,
+    "outer": 24.5
+   },
+   {
+    "deg": 115,
+    "free": 24,
+    "inner": 14,
+    "outer": 25.5
+   },
+   {
+    "deg": 120,
+    "free": 26,
+    "inner": 14,
+    "outer": 26.5
+   },
+   {
+    "deg": 125,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 130,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 135,
+    "free": 26,
+    "inner": 14,
+    "outer": 26.5
+   },
+   {
+    "deg": 140,
+    "free": 22,
+    "inner": 14,
+    "outer": 24.5
+   },
+   {
+    "deg": 145,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 150,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 155,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 160,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 165,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 170,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 175,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 180,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 185,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 190,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 195,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 200,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 205,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 210,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 215,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 220,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 225,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 230,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 235,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 240,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 245,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 250,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 255,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 260,
+    "free": 25,
+    "inner": 14,
+    "outer": 26
+   },
+   {
+    "deg": 265,
+    "free": 24,
+    "inner": 14,
+    "outer": 25.5
+   },
+   {
+    "deg": 270,
+    "free": 24,
+    "inner": 14,
+    "outer": 25.5
+   },
+   {
+    "deg": 275,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 280,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 285,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 290,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 295,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 300,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 305,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 310,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 315,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 320,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 325,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 330,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 335,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 340,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 345,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 350,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   },
+   {
+    "deg": 355,
+    "free": 27,
+    "inner": 14,
+    "outer": 27
+   }
+  ]
+ }
+}

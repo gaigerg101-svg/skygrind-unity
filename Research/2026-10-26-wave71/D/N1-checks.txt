@@ -1,0 +1,12 @@
+cmd: bash Tools/night/dn-check-wt.sh <scratch>/dn
+base sha: 28ef8cbf9 + the uncommitted N1 diff
+ Assets/Scripts/Game/UnityTuning.CameraMove.cs | 3 ---
+ Assets/Scripts/Game/UnityTuning.Hud17.cs      | 3 ---
+ 2 files changed, 6 deletions(-)
+start: 11:38:31
+== Skygrind.Game.csproj: 0 error(s)
+== Skygrind.Game.Tests.csproj: 0 error(s)
+== Skygrind.Core.Tests.csproj: 0 error(s)
+== Assembly-CSharp-Editor.csproj: 0 error(s)
+dn-check total errors: 0
+end: 11:39:50

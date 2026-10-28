@@ -1,0 +1,42 @@
+# command: python -I Tools/night/n74-room-rules.py planted
+# sha: a354c0e94; time: 2026-10-27 22:39:47
+ref  rect [-10.0, -26.0, 10.0, 0.0]  spawn [0.0, 0.0, -2.0] yaw 0  floor 0.0
+  PLANES  PASS  planes 3 (0.0 m: 383 cells, 2.5 m: 36 cells, 4.0 m: 35 cells)
+  COVER   PASS  cover: free-standing high 4, low 1, between 0 (0 without a job), none 0
+  LOOPS   PASS  loops 5 (floor holes 4 + closed pad / ride routes 1 of 1)
+  REAR    PASS  rear arc: 0 of 3 wave-1 usable nodes behind the entry facing (all waves: 0 node uses behind)
+  VIEW    PASS  view: enemy in view at 0.00 s (1 of 3 wave-1 nodes seen at entry)
+  CROSS   PASS  cross: chord 32.8 m, dash 1.37 s, walk 4.1 s (bar 2.0 s at dash)
+  EXPOSE  PASS  exposure: 49 % of 990 floor-sample pairs see each other (bar 60 %); longest clear line 25.6 m (medium band 19.5 m)
+  CLIMB   PASS  climb: 2 tier group(s), 0 not reached by walker links
+    free-standing high piece: hull [-2.0, 0.0, -14.0]-[1.0, 2.5, -11.0] h 2.50 job "cover: the centre pillar (a circuit)"
+    free-standing high piece: hull [3.0, 0.0, -9.0]-[5.0, 2.0, -7.0] h 2.00 job "cover: the east post (a second circuit)"
+    free-standing high piece: hull [-4.0, 0.0, -21.0]-[0.5, 2.0, -19.5] h 2.00 job "cover: the back wall piece (breaks the long line)"
+    free-standing high piece: hull [1.5, 0.0, -5.0]-[4.0, 1.8, -3.5] h 1.80 job "cover: the door-side piece (breaks the entry line)"
+    free-standing low piece: hull [-7.0, 0.0, -7.0]-[-5.0, 1.1, -5.0] h 1.10 job "cover: the low wall"
+    walkers reach every tier: climb: 2 tier group(s), 0 not reached by walker links
+  core 5/5 PASS, extra 3/3 PASS
+reference room: ALL PASS (as it must)
+planted PLANES: no tier, no ramp (one floor plane)                     -> RED on PLANES,EXPOSE (ok: PLANES is RED)
+planted COVER: no hull on the floor                                    -> RED on COVER,LOOPS,EXPOSE (ok: COVER is RED)
+planted COVER: every hull 1.5 m with a deco job                        -> RED on COVER,EXPOSE (ok: COVER is RED)
+planted LOOPS: one free pillar left, the pad taken out                 -> RED on LOOPS,EXPOSE (ok: LOOPS is RED)
+planted REAR: wave 1 behind the entry facing                           -> RED on REAR,VIEW (ok: REAR is RED)
+planted VIEW: a 6 m wall of cover 3 m ahead                            -> RED on VIEW,CLIMB (ok: VIEW is RED)
+planted CROSS: the rect 80 x 70 m                                      -> RED on CROSS,EXPOSE (ok: CROSS is RED)
+planted CLIMB: the hearth stair taken out (a pad and no walkers' route) -> RED on CLIMB (ok: CLIMB is RED)
+planted EXPOSE: the flat box 60 x 82 m (no solid)                      -> RED on PLANES,COVER,LOOPS,REAR,CROSS,EXPOSE (ok: EXPOSE is RED)
+planted flat box (a 60 x 82 m rect, nothing in it, the wave behind): RED on 6 checks (4 of the five core): PLANES,COVER,LOOPS,REAR,CROSS,EXPOSE
+the flat box reads RED on at least 3 core checks: YES
+ref  rect [-30.0, -62.0, 30.0, 20.0]  spawn [0.0, 0.0, -20.0] yaw 0  floor 0.0
+  PLANES  RED  planes 1 (0.0 m: 4920 cells)
+  COVER   RED  cover: free-standing high 0, low 0, between 0 (0 without a job), none 0 [no free-standing cover]
+  LOOPS   RED  loops 0 (floor holes 0 + closed pad / ride routes 0 of 0)
+  REAR    RED  rear arc: 2 of 3 wave-1 usable nodes behind the entry facing (all waves: 2 node uses behind)
+  VIEW    PASS  view: enemy in view at 0.00 s (1 of 3 wave-1 nodes seen at entry)
+  CROSS   RED  cross: chord 101.6 m, dash 4.23 s, walk 12.7 s (bar 2.0 s at dash)
+  EXPOSE  RED  exposure: 100 % of 3160 floor-sample pairs see each other (bar 60 %); longest clear line 85.0 m (medium band 19.5 m)
+  CLIMB   PASS  climb: 0 tier group(s), 0 not reached by walker links
+    walkers reach every tier: climb: 0 tier group(s), 0 not reached by walker links
+  core 1/5 PASS, extra 1/3 PASS
+PLANTED: every planted case flips its check RED and the reference PASSes

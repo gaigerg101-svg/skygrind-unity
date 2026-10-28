@@ -1,0 +1,10 @@
+n2 diff n65 (A: N0c's committed level) vs now (B)
+top: collision
+top: navGrid
+data.boxes: 194 vs 194; only in A 8, only in B 8
+campaign.rooms a3: height, height_why
+n52 (A: N0b's) vs now (B)
+top: collision
+top: navGrid
+data.boxes: 200 vs 200; only in A 8, only in B 8
+campaign.rooms a3: height, height_why

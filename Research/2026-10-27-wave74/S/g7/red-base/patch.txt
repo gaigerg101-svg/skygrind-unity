@@ -1,0 +1,32 @@
+# command: node Tools/night/n70-patch-share.cjs --level iceline --room Design/levels/n67/iceline/rooms-base/g7.json g7
+# sha: f1c885137; time: 2026-10-28 00:46:09
+n70-patch-share: room g7 | shipped Design/levels/n67/iceline/rooms-base/g7.json vs rebuilt Design/levels/n67/iceline/rooms-base/g7.json
+| room | shipped pieces kept | by kind (kept / shipped) | rect / spawn / exit | waves |
+|---|---|---|---|---|
+| g7 | 24 / 24 (100 %) | boxes 15 / 15, ramps 4 / 4, pads 2 / 2, pits 3 / 3 | rect same, spawn same, exit same | waves same |
+  kept: box (-1.5, -0.8, -200.5)..(1.5, 10, -197.5) (shipped job: cover)
+  kept: box (-12, 0, -216)..(-4, 2, -210) (shipped job: line)
+  kept: box (8.5, 0, -211)..(12, 4, -204.5) (shipped job: line)
+  kept: box (-12, -0.8, -205.5)..(-11, 5, -187.5) (shipped job: line)
+  kept: box (11, -0.8, -202.5)..(12, 5, -191) (shipped job: line)
+  kept: box (-6.6, 0, -191.6)..(-5.4, 3.5, -190.4) (shipped job: cover)
+  kept: box (3.9, 0, -192.6)..(5.1, 3.5, -191.4) (shipped job: cover)
+  kept: box (-12, 0, -188)..(-7, 2, -184) (shipped job: line)
+  kept: box (7, 0, -188)..(12, 2, -184) (shipped job: line)
+  kept: box (8, 0, -191)..(12, 2, -188) (shipped job: line)
+  kept: box (-3.6, 0, -207.1)..(-2.4, 4, -205.9) (shipped job: cover)
+  kept: box (4.4, 0, -204.6)..(5.6, 4, -203.4) (shipped job: cover)
+  kept: box (-4.5, -0.8, -200)..(-3, 0.6, -198) (shipped job: line)
+  kept: box (-12, 2, -216)..(-10, 4.5, -213.5) (shipped job: cover)
+  kept: box (10.5, 4, -211)..(12, 6, -209) (shipped job: cover)
+  kept: ramp (-2.5, -186)->(-7, -186) w 4 rise 2 (shipped job: climb)
+  kept: ramp (2.5, -185.25)->(7, -185.25) w 2.5 rise 2 (shipped job: climb)
+  kept: ramp (-7, -202.5)->(-7, -210) w 3 rise 2 (shipped job: climb)
+  kept: ramp (0.5, -208.5)->(8.5, -208.5) w 3 rise 4 (shipped job: climb)
+  kept: pad (7, 0, -193.5)->(10, 4, -206.5) (shipped job: line)
+  kept: pad (7, 0, -205.2)->(9, 2, -186) (shipped job: line)
+  kept: pit (-12, -202.5, -8.5, -195.5) floorY -0.8 lava (shipped job: hazard)
+  kept: pit (-5.5, -202.5, 1.5, -195.5) floorY -0.8 lava (shipped job: hazard)
+  kept: pit (4.5, -202.5, 12, -195.5) floorY -0.8 lava (shipped job: hazard)
+  rebuilt room pieces: boxes 15, ramps 4, pads 2, pits 3 | the rule: PASS at <= 25 % of the shipped room's pieces kept (geometry-equal; job / why text ignored)
+n70-patch-share: PATCH g7 (100 % kept)

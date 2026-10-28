@@ -1,0 +1,11 @@
+# command: node Tools/night/n70-area.cjs --level spire --dir C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/spire-v2r6 --touches Research/2026-10-27-wave74/S/v2/r6/skip.txt v2
+# sha: 70e86859c; time: 2026-10-27 23:49:24
+n70-area: room v2; plan C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/spire-v2r6/spire.plan.json, level C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/spire-v2r6/n67-spire.json (the round's folder C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/spire-v2r6); touches Research/2026-10-27-wave74/S/v2/r6/skip.txt (15 touch rows, 23 launch kills); card Research/2026-10-24-wave67/cards/v2.md (Archetype: CHUTE) (no TOWER / GALLERY / SPLIT LEVEL)
+OPEN  PASS largest open square 9.5 m (x -18.0..-8.5, z 51.0..60.5; 16 pieces on a 24.0 x 32.0 m rect; 12 m or less passes)
+P1    N/A  the last wave (heavy husk husk swarmer) has no ranged enemy (spitter / drone)
+P4    FAIL 7 / 8 standing solids >= 1.75 m do a job ((a) touched 7, (b) sight 1, (c) launch kill 3); no job: box(-22,0,71..-18,2.5,75) line: the WEST AISLE's south p
+P5    PASS walk line in a ranged spawn's sight at 6-24 m 100.0 % (>= 50 %), line65 100.0 % (<= walk - 30 points: no); line65's nearest enemy spawn 3.5 m (<= 6: yes); 5 ranged spawns
+P9    FAIL 0 / 1 planes with 2 climb tops >= 8 m apart: box(-22,0,75..-16,2.5,83) 6.0 x 8.0 m at 2.5 m: 7 climb top(s), farthest apart 2.0 m (NO)
+P11   N/A  the card names no TOWER / GALLERY / SPLIT LEVEL (Research/2026-10-24-wave67/cards/v2.md (Archetype: CHUTE))
+P17   PASS 2 / 2 ride walls 4 m tall and 8 m long; 0 non-ride wall(s) in that band; the strip = ride: true (ride36 faces 2)
+n70-area: FAIL v2 (3/5)

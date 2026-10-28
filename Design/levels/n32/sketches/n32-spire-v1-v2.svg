@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1118" height="1012" viewBox="0 0 1118 1012">
+<defs><pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="8" stroke="#ff5a1f" stroke-width="2" opacity="0.55"/></pattern><marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#ffe08a"/></marker></defs>
+<rect width="1118" height="1012" fill="#14121c"/>
+<rect x="220.0" y="660.0" width="660.0" height="264.0" fill="#3a3550"/>
+<rect x="264.0" y="704.0" width="572.0" height="176.0" fill="#26232f" stroke="#8a84a8" stroke-width="1"/>
+<rect x="88.0" y="88.0" width="484.0" height="572.0" fill="#3a3550"/>
+<rect x="132.0" y="132.0" width="396.0" height="484.0" fill="#26232f" stroke="#8a84a8" stroke-width="1"/>
+<rect x="286.0" y="616.0" width="88.0" height="88.0" fill="#26232f" stroke="#cfc6ff" stroke-dasharray="3,2" stroke-width="1"/>
+<rect x="330.0" y="44.0" width="88.0" height="88.0" fill="#26232f" stroke="#cfc6ff" stroke-dasharray="3,2" stroke-width="1"/>
+<rect x="132.0" y="352.0" width="132.0" height="154.0" fill="#ff4d12" opacity="0.85" stroke="#ffd36a" stroke-width="2"/>
+<text x="198.0" y="429.0" font-size="11" fill="#fff3c0" font-family="Consolas,monospace" text-anchor="middle" dominant-baseline="middle">LAVA -0.8</text>
+<rect x="308.0" y="352.0" width="110.0" height="154.0" fill="#ff4d12" opacity="0.85" stroke="#ffd36a" stroke-width="2"/>
+<text x="363.0" y="429.0" font-size="11" fill="#fff3c0" font-family="Consolas,monospace" text-anchor="middle" dominant-baseline="middle">LAVA -0.8</text>
+<rect x="132.0" y="132.0" width="176.0" height="88.0" fill="rgb(112,112,118)" stroke="#0c0b10" stroke-width="1" opacity="0.95"/>
+<text x="220.0" y="176.0" font-size="11" fill="#0c0b10" font-family="Consolas,monospace" text-anchor="middle" dominant-baseline="middle">d 2.4</text>
+<rect x="242.0" y="220.0" width="66.0" height="110.0" fill="#6d6250" stroke="#ffe08a" stroke-width="1" opacity="0.9"/>
+<line x1="275.0" y1="330.0" x2="275.0" y2="220.0" stroke="#ffe08a" stroke-width="2" marker-end="url(#arr)"/>
+<text x="314.6" y="275.0" font-size="9" fill="#ffe08a" font-family="Consolas,monospace" >ramp 2.4</text>
+<rect x="627.0" y="825.0" width="22.0" height="22.0" fill="rgb(173,173,182)" stroke="#ffffff" stroke-width="1"/>
+<text x="638.0" y="836.0" font-size="8" fill="#0c0b10" font-family="Consolas,monospace" text-anchor="middle" dominant-baseline="middle">p5.9</text>
+<rect x="495.0" y="737.0" width="22.0" height="22.0" fill="rgb(173,173,182)" stroke="#ffffff" stroke-width="1"/>
+<text x="506.0" y="748.0" font-size="8" fill="#0c0b10" font-family="Consolas,monospace" text-anchor="middle" dominant-baseline="middle">p5.9</text>
+<rect x="385.0" y="825.0" width="22.0" height="22.0" fill="rgb(173,173,182)" stroke="#ffffff" stroke-width="1"/>
+<text x="396.0" y="836.0" font-size="8" fill="#0c0b10" font-family="Consolas,monospace" text-anchor="middle" dominant-baseline="middle">p5.9</text>
+<rect x="660.0" y="785.4" width="44.0" height="13.2" fill="#36e3ff" opacity="0.35" stroke="none"/>
+<rect x="528.0" y="785.4" width="44.0" height="13.2" fill="#36e3ff" opacity="0.35" stroke="none"/>
+<rect x="149.6" y="292.6" width="30.8" height="30.8" fill="rgb(91,91,96)" stroke="#ffffff" stroke-width="1"/>
+<text x="165.0" y="308.0" font-size="8" fill="#0c0b10" font-family="Consolas,monospace" text-anchor="middle" dominant-baseline="middle">c1.2</text>
+<rect x="352.0" y="253.0" width="22.0" height="22.0" fill="rgb(210,210,221)" stroke="#ffffff" stroke-width="1"/>
+<text x="363.0" y="264.0" font-size="8" fill="#0c0b10" font-family="Consolas,monospace" text-anchor="middle" dominant-baseline="middle">p9.9</text>
+<circle cx="726.0" cy="705.1" r="3" fill="#36e3ff"/>
+<circle cx="594.0" cy="878.9" r="3" fill="#36e3ff"/>
+<circle cx="462.0" cy="705.1" r="3" fill="#36e3ff"/>
+<circle cx="638.0" cy="792.0" r="3" fill="#f2efff"/>
+<circle cx="418.0" cy="792.0" r="3" fill="#f2efff"/>
+<circle cx="330.0" cy="759.0" r="26.4" fill="#36e3ff" opacity="0.18"/>
+<circle cx="330.0" cy="759.0" r="3" fill="#36e3ff"/>
+<circle cx="198.0" cy="429.0" r="26.4" fill="#ff5a1f" opacity="0.18"/>
+<circle cx="198.0" cy="429.0" r="3" fill="#ff5a1f"/>
+<circle cx="133.1" cy="429.0" r="3" fill="#36e3ff"/>
+<circle cx="133.1" cy="176.0" r="3" fill="#f2efff"/>
+<circle cx="526.9" cy="572.0" r="3" fill="#36e3ff"/>
+<circle cx="526.9" cy="286.0" r="3" fill="#36e3ff"/>
+<circle cx="242.0" cy="484.0" r="3" fill="#f2efff"/>
+<circle cx="418.0" cy="264.0" r="3" fill="#f2efff"/>
+<circle cx="374.0" cy="187.0" r="33.0" fill="#36e3ff" opacity="0.18"/>
+<circle cx="374.0" cy="187.0" r="3" fill="#36e3ff"/>
+<polyline points="770.0,792.0 572.0,792.0 330.0,792.0 330.0,759.0" fill="none" stroke="#ffffff" stroke-width="1" stroke-dasharray="2,3" opacity="0.6"/>
+<path d="M770.0,785.0 L775.0,796.0 L765.0,796.0 z" fill="#36e3ff"/>
+<circle cx="330.0" cy="759.0" r="5" fill="none" stroke="#ffffff" stroke-width="2"/>
+<text x="272.8" y="734.8" font-size="12" fill="#ffffff" font-family="Consolas,monospace" font-weight="bold">v1 5.1 THRESHOLD</text>
+<text x="272.8" y="767.8" font-size="10" fill="#cfc6ff" font-family="Consolas,monospace" >26x8 h6</text>
+<text x="272.8" y="869.0" font-size="9" fill="#9fe9ff" font-family="Consolas,monospace" >"THE SPIRE. ALL FOUR GUNS."</text>
+<circle cx="484.0" cy="539.0" r="2.5" fill="#ff5a1f"/>
+<circle cx="495.0" cy="286.0" r="2.5" fill="#ff5a1f"/>
+<circle cx="396.0" cy="220.0" r="2.5" fill="#ff5a1f"/>
+<circle cx="462.0" cy="176.0" r="2.5" fill="#ff5a1f"/>
+<rect x="195.0" y="173.0" width="6" height="6" fill="none" stroke="#ff5a1f" stroke-width="1.5"/>
+<rect x="250.0" y="162.0" width="6" height="6" fill="none" stroke="#ff5a1f" stroke-width="1.5"/>
+<polyline points="330.0,528.0 473.0,528.0 473.0,286.0 374.0,187.0" fill="none" stroke="#ffffff" stroke-width="1" stroke-dasharray="2,3" opacity="0.6"/>
+<polyline points="286.0,550.0 286.0,341.0 275.0,187.0" fill="none" stroke="#ffffff" stroke-width="1" stroke-dasharray="2,3" opacity="0.6"/>
+<polyline points="158.4,594.0 158.4,528.0" fill="none" stroke="#ffffff" stroke-width="1" stroke-dasharray="2,3" opacity="0.6"/>
+<polyline points="198.0,473.0 198.0,550.0" fill="none" stroke="#ffffff" stroke-width="1" stroke-dasharray="2,3" opacity="0.6"/>
+<polyline points="363.0,385.0 363.0,319.0" fill="none" stroke="#ffffff" stroke-width="1" stroke-dasharray="2,3" opacity="0.6"/>
+<path d="M330.0,521.0 L335.0,532.0 L325.0,532.0 z" fill="#36e3ff"/>
+<circle cx="374.0" cy="187.0" r="5" fill="none" stroke="#ffffff" stroke-width="2"/>
+<text x="140.8" y="162.8" font-size="12" fill="#ffffff" font-family="Consolas,monospace" font-weight="bold">v2 5.2 FOUNDRY FLOOR</text>
+<text x="140.8" y="195.8" font-size="10" fill="#cfc6ff" font-family="Consolas,monospace" >18x22 h10  4h / 2h+2s</text>
+<text x="140.8" y="605.0" font-size="9" fill="#9fe9ff" font-family="Consolas,monospace" >"RIDE THE WALL OVER LAVA."</text>
+<text x="976" y="18" font-size="12" fill="#fff" font-family="Consolas,monospace" font-weight="bold">n32-spire</text>
+<rect x="976" y="30" width="12" height="10" fill="#ff4d12" stroke="#888"/>
+<text x="992" y="39" font-size="10" fill="#ddd" font-family="Consolas,monospace">lava</text>
+<rect x="976" y="46" width="12" height="10" fill="#050508" stroke="#888"/>
+<text x="992" y="55" font-size="10" fill="#ddd" font-family="Consolas,monospace">void pit</text>
+<rect x="976" y="62" width="12" height="10" fill="#ff5a1f" stroke="#888"/>
+<text x="992" y="71" font-size="10" fill="#ddd" font-family="Consolas,monospace">hazard</text>
+<rect x="976" y="78" width="12" height="10" fill="#9fd8ff" stroke="#888"/>
+<text x="992" y="87" font-size="10" fill="#ddd" font-family="Consolas,monospace">ice</text>
+<rect x="976" y="94" width="12" height="10" fill="#6d6250" stroke="#888"/>
+<text x="992" y="103" font-size="10" fill="#ddd" font-family="Consolas,monospace">ramp (arrow up)</text>
+<rect x="976" y="110" width="12" height="10" fill="rgb(140,140,147)" stroke="#888"/>
+<text x="992" y="119" font-size="10" fill="#ddd" font-family="Consolas,monospace">box: kind top-y</text>
+<rect x="976" y="126" width="12" height="10" fill="#36e3ff" stroke="#888"/>
+<text x="992" y="135" font-size="10" fill="#ddd" font-family="Consolas,monospace">spawn</text>
+<rect x="976" y="142" width="12" height="10" fill="#ffffff" stroke="#888"/>
+<text x="992" y="151" font-size="10" fill="#ddd" font-family="Consolas,monospace">exit</text>
+<rect x="976" y="158" width="12" height="10" fill="#ff5a1f" stroke="#888"/>
+<text x="992" y="167" font-size="10" fill="#ddd" font-family="Consolas,monospace">node / high node</text>
+<rect x="976" y="174" width="12" height="10" fill="#5cff8a" stroke="#888"/>
+<text x="992" y="183" font-size="10" fill="#ddd" font-family="Consolas,monospace">pickup</text>
+<rect x="976" y="190" width="12" height="10" fill="#36e3ff" stroke="#888"/>
+<text x="992" y="199" font-size="10" fill="#ddd" font-family="Consolas,monospace">grapple node</text>
+<text x="976" y="220" font-size="10" fill="#aaa" font-family="Consolas,monospace">north up, 22 px/m</text>
+</svg>

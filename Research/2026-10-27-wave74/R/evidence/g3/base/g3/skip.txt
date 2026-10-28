@@ -1,0 +1,6 @@
+# command: bash Tools/night/n65-verbs.sh skip C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/ice/g3/base/n67-iceline.json g3 --seeds 20
+# sha: f360cf025 (+ the room file as in the tree); time: 2026-10-28 00:19:21
+n65verb skip v2: level C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/ice/g3/base/n67-iceline.json, room g3: no verb65 in the row (and none planted): the verb-aware pilot has no verb to use
+n65verb skip: M1 UNSURE | room g3, ratio - vs bar 1.25 (default: no --bars), exercised 0/20 | no verb65: nothing to refuse
+n65verb: exit 3
+n65-verbs skip on C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/ice/g3/base/n67-iceline.json (g3): GREEN 0, RED 0, UNSURE 1 (skip v2: GREEN = M2 VERB PASS, or M2 FRESH PASS on seeds 21+; RED = FAIL or a refusal; NIGHT68 I4 fix)

@@ -1,0 +1,6 @@
+# cmd: python -I Tools/night/n72-c-yellow.py /c/Users/gaige/dev/SKYGRIND-unity/Logs/feel/n71-forge72/{tf,tp,ti,tk,ts}/tour65  base sha: 9a10e4d85  time: 2026-10-27 11:41:43  (the n71-forge72 baseline: yellow56 OFF)
+C:/Users/gaige/dev/SKYGRIND-unity/Logs/feel/n71-forge72/tf/tour65 n52-foundry-a2-mid36 0.98% | n52-foundry-a3-mid36 2.93% | n52-foundry-a4-mid36 0.55% | n52-foundry-a5-mid36 1.11% | n52-foundry-a8-mid36 0.28% | n52-foundry-b1-mid36 3.43% | over 0.5 %: 5 of 6
+C:/Users/gaige/dev/SKYGRIND-unity/Logs/feel/n71-forge72/tp/tour65 n52-spire-v2-mid36 5.28% | n52-spire-v5-mid36 2.34% | n52-spire-v6-mid36 1.48% | over 0.5 %: 3 of 3
+C:/Users/gaige/dev/SKYGRIND-unity/Logs/feel/n71-forge72/ti/tour65 n52-iceline-g1-mid36 0.10% | n52-iceline-g2-mid36 0.03% | n52-iceline-g3-mid36 0.09% | n52-iceline-g4-mid36 0.09% | n52-iceline-g5-mid36 0.06% | n52-iceline-g6-mid36 0.11% | n52-iceline-g7-mid36 0.04% | n52-iceline-g8-mid36 0.08% | over 0.5 %: 0 of 8
+C:/Users/gaige/dev/SKYGRIND-unity/Logs/feel/n71-forge72/tk/tour65 n57-kiln-kb2-mid36 0.08% | n57-kiln-kb2c-mid36 0.08% | n57-kiln-kb3-mid36 0.06% | n57-kiln-kb3c-mid36 0.07% | n57-kiln-kb3d-mid36 0.03% | over 0.5 %: 0 of 5
+C:/Users/gaige/dev/SKYGRIND-unity/Logs/feel/n71-forge72/ts/tour65 n52-span-p1-mid36 0.04% | n52-span-p3-mid36 0.28% | n52-span-p5-mid36 0.04% | over 0.5 %: 0 of 3

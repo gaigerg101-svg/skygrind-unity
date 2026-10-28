@@ -1,0 +1,3 @@
+# command: node Tools/night/n70-verbs-of.cjs Research/2026-10-27-wave74/S/slate-s.json C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/spire-v5r5/n67-spire.json v5
+# sha: d3bf2c47e; time: 2026-10-27 23:36:06
+verb65 v5 ride (slate ride): row

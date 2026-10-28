@@ -1,0 +1,9 @@
+# node Tools/night/gen-slots.cjs --level foundry --cross-n65 --slots=old
+# sha 00638946; dirty: ?? Tools/night/gen-slots.cjs ?? Tools/night/levels67.json ?? Tools/night/n67-a1.cjs 
+# start 2026-10-24 10:51:38
+gen-n65-foundry.cjs --slots=old --out=<a>: exit 0; openings: C:/Users/gaige/AppData/Local/Temp/gen-slots-cross-OPMVvg/n65/openings65.json none set (every slot keeps n52's opening, openings53.json) | gen-n65-foundry: Design/levels/n52/foundry.plan.json -> C:/Users/gaige/AppData/Local/Temp/gen-slots-cross-OPMVvg/n65/foundry.plan.json (slots old; rebuilt: none); every other room, door, piece and key n52's bit for bit
+gen-slots.cjs --level foundry --slots=old --out=<b>: exit 0; openings: C:/Users/gaige/AppData/Local/Temp/gen-slots-cross-OPMVvg/slots/openings65.json foundry none (seed none) | gen-slots --level foundry: Design/levels/n52/foundry.plan.json -> C:/Users/gaige/AppData/Local/Temp/gen-slots-cross-OPMVvg/slots/foundry.plan.json (slots old; rebuilt: none); every other room, door, piece and key n52-foundry's bit for bit
+PASS level 1 --slots=old: the plans are byte for byte the same (135721 / 135721 chars; sha256 5bd50ce238d4c721 / 5bd50ce238d4c721)
+PASS level 1 --slots=old: openings65.json the same ({})
+gen-slots --cross-n65 --slots=old: all PASS
+# exit 0 at 10:51:39

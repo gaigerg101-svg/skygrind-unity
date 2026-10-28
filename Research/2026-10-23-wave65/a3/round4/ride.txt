@@ -1,0 +1,7 @@
+# command: dotnet Temp/SimHarness/bin/Release/net10.0/SimHarness.dll n53ridekill ride --level Design/levels/n65-foundry.json --room a3
+# sha: 412e9501; time: 2026-10-23 17:56:48
+wall in room a3: start (3.58, 0.00, -79.81), along (0.00, 1.00), normal (-1.00, 0.00); row on True
+foot: grounded True, kill True, bar after 0.150, rideKill53 no, missed +1
+ride: yes after 4 steps (WallRideStart 1), feet (3.65, 1.18, -79.38), speed 11.7 m/s
+  rideKill53 #1: on the wall True, steps since the ride 0, bar 0.150 -> 0.650, weapon revolver
+n53ridekill ride: GREEN | level n65-foundry, room a3, rideKill53 on True | ride yes (WallRideStart 1), kill on the wall yes, rideKill53 events 1, bar after 0.650 vs the foot kill's 0.150 (+0.500, one boost = 0.500) | foot kill yes, paid no

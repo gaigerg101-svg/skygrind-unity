@@ -1,0 +1,6 @@
+command: dotnet Temp/SimHarness/bin/Release/net10.0/SimHarness.dll n72lab --committed --out Research/2026-10-27-wave72/N/evidence/n5-surfaces-committed.txt | tree: n72-N at 06bb71b4e plus the N5c working tree (the values and the --committed mode, committed after this run) | run 13:54
+n72lab --committed (2026-10-27 13:54:11): the real Mover (120 Hz), flat floor; the profile 'now' is design.ultra71.set of this tree
+committed design.n26.surfaces: iceFrictionMult 0.048281, mudFrictionMult 0.4685; ground friction 31.07, accel 31.07 (web: 6 / 10)
+  plain ground (now): stop 0.173 m, steady walk 8.49 m/s
+  ice (now, x0.048281): stop 4.766 m in 1.47 s, steady walk 8.49 m/s | the web's ice (x0.25): stop 4.444 m, steady 8.00 m/s
+  mud (now, x0.4685): stop 0.437 m in 0.15 s, steady walk 8.49 m/s | the web's mud (x2): stop 0.406 m, steady 6.67 m/s

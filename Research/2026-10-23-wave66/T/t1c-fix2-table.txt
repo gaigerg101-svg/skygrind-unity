@@ -1,0 +1,14 @@
+# command: node Tools/night/n66-table.cjs C:/Users/gaige/dev/SKYGRIND-unity/Logs/n66/r2 C:/Users/gaige/dev/SKYGRIND-unity/Logs/n66/red65 (read only), without and with $ROOMS; beside it the main tree's slots65.json keys today (what the old table read)
+# sha: 619d3aee, 2026-10-24 03:01:20
+main tree slots65.json keys now: a2 a3 a4 a5 b1 a8 b2
+== no $ROOMS:
+The round's rooms: a2 a3 a4 a5 b1 a8 (from C:/Users/gaige/dev/SKYGRIND-unity/Logs/n66/r2/foundry.assembly.json)
+
+| room | room check (red) | air % A / B (red) | stall % A / B (red) | stall % V (red) | DULL % A / B (red) | top rank A (red) | deaths A / B (red) | clear s A / B (red) | pads (red) | ride (red) |
+|---|---|---|---|---|---|---|---|---|---|---|
+  rows: 6
+  not-run rows: 0
+== ROOMS='a2 a8':
+The round's rooms: a2 a8 (from $ROOMS (the round's))
+| a2 | PASS (PASS) | 64.2 / 69.3 (66.5 / 70.0) | 30.5 / 27.1 (30.2 / 22.9) | 33.1 (23.9) | 36.7 / 39.0 (48.7 / 50.3) | AIRBORNE / AIRBORNE (10) (BOLD / SAVAGE (
+| a8 | PASS (PASS) | 55.4 / 58.5 (58.9 / 60.2) | 41.6 / 51.3 (45.8 / 42.9) | 37.5 (37.5) | 52.0 / 45.4 (55.4 / 53.4) | BOLD / AIRBORNE (10) (BOLD / SAVAGE (10))

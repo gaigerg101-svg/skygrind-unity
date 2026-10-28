@@ -1,0 +1,6 @@
+z2-compare: Research/2026-10-25-wave70/T/Z2-skip-kb3-BEFORE.txt vs Research/2026-10-25-wave70/T/Z2-skip-kb3-AFTER.txt: 54 lines identical, 0 differ only by their falls count, 0 other differences; 14 new launchend lines
+  seed 1: verb-aware launch36 3, launchend lines 3
+  seed 2: verb-aware launch36 5, launchend lines 5
+  seed 3: verb-aware launch36 6, launchend lines 6
+  launch ends: body 7, timeout 2, dead 3, wall 2; in pit 0, in lava 0
+z2-compare: PASS (print only: every existing line identical but the falls counts)

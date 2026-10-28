@@ -1,0 +1,1155 @@
+{
+ "_why": "LEVEL 3, THE KILN (NIGHT26, builder L; GG: 'it should be at level 3 or later' for the worm; 'the arena is just way too wide'). NIGHT24's layer 1 (id layer1 stays: tests and tapes) with every room cut to 32 m wide (x -16..16: the loading bay, casting floor and slag hall were 52, 52 and 56), the platforming link (the pit with two pad hops, the vent wall, the flue: the existing kits) kept, the THUNDERCLAP award taken out (level 1 gives it), then THE WORM (boss wyrm, builder B's wall-riding arena). The links and the boss room moved 12 m west to meet the narrower slag hall. The unlock at its end comes from Design/levels/unlocks.json.",
+ "id": "layer1",
+ "name": "LEVEL 3 THE KILN",
+ "floorSize": 256,
+ "killPlaneY": -30,
+ "rooms": [
+  {
+   "id": "r1",
+   "name": "THE LOADING BAY",
+   "kind": "room",
+   "rect": [
+    -16,
+    44,
+    16,
+    92
+   ],
+   "par": 16,
+   "spawn": {
+    "at": [
+     0,
+     0,
+     86
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    0,
+    0,
+    48
+   ],
+   "nodes": [
+    [
+     -13,
+     0,
+     50
+    ],
+    [
+     -13,
+     0,
+     66
+    ],
+    [
+     -13,
+     0,
+     84
+    ],
+    [
+     -4,
+     0,
+     50
+    ],
+    [
+     4,
+     0,
+     54
+    ],
+    [
+     -5,
+     0,
+     72
+    ],
+    [
+     -2,
+     0,
+     60
+    ],
+    [
+     4,
+     0,
+     84
+    ]
+   ],
+   "highNodes": [
+    [
+     12,
+     4,
+     58
+    ],
+    [
+     12,
+     4,
+     78
+    ],
+    [
+     14,
+     4,
+     68
+    ]
+   ],
+   "waves": [
+    [
+     "husk",
+     "husk",
+     "husk",
+     "husk"
+    ],
+    [
+     "husk",
+     "husk",
+     "husk",
+     "swarmer",
+     "swarmer"
+    ]
+   ]
+  },
+  {
+   "id": "r2",
+   "name": "THE CASTING FLOOR",
+   "kind": "room",
+   "rect": [
+    -16,
+    -10,
+    16,
+    38
+   ],
+   "par": 71,
+   "spawn": {
+    "at": [
+     0,
+     0,
+     32
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    8,
+    0,
+    -6
+   ],
+   "limit": [
+    "noDash"
+   ],
+   "nodes": [
+    [
+     -8,
+     0,
+     32
+    ],
+    [
+     10,
+     0,
+     32
+    ],
+    [
+     12,
+     0,
+     14
+    ],
+    [
+     13,
+     0,
+     6
+    ],
+    [
+     -4,
+     0,
+     2
+    ],
+    [
+     12,
+     0,
+     -2
+    ],
+    [
+     2,
+     0,
+     2
+    ]
+   ],
+   "highNodes": [
+    [
+     0,
+     3,
+     14
+    ],
+    [
+     -13,
+     6,
+     10
+    ],
+    [
+     -13,
+     6,
+     24
+    ]
+   ],
+   "waves": [
+    [
+     "husk",
+     "husk",
+     "husk",
+     "husk",
+     "husk",
+     "husk",
+     "swarmer",
+     "swarmer"
+    ],
+    [
+     "husk",
+     "husk",
+     "husk",
+     "husk",
+     "husk",
+     "husk",
+     "swarmer",
+     "swarmer",
+     "swarmer"
+    ],
+    [
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "husk",
+     "husk",
+     "husk",
+     "husk",
+     "husk",
+     "husk",
+     "husk",
+     "husk",
+     "husk",
+     "husk",
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "husk",
+     "husk",
+     "husk",
+     "husk",
+     "husk",
+     "husk",
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "swarmer"
+    ]
+   ]
+  },
+  {
+   "id": "r3",
+   "name": "THE SLAG HALL",
+   "kind": "room",
+   "rect": [
+    -16,
+    -72,
+    16,
+    -16
+   ],
+   "par": 65,
+   "spawn": {
+    "at": [
+     0,
+     0,
+     -20
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    13,
+    0,
+    -32
+   ],
+   "limit": [
+    "pistolOnly"
+   ],
+   "nodes": [
+    [
+     -13,
+     0,
+     -24
+    ],
+    [
+     -13,
+     0,
+     -66
+    ],
+    [
+     -8,
+     0,
+     -30
+    ],
+    [
+     8,
+     0,
+     -30
+    ],
+    [
+     -8,
+     0,
+     -60
+    ],
+    [
+     6,
+     0,
+     -62
+    ],
+    [
+     0,
+     0,
+     -52
+    ],
+    [
+     -13,
+     0,
+     -36
+    ]
+   ],
+   "highNodes": [
+    [
+     13,
+     5,
+     -52
+    ],
+    [
+     13,
+     5,
+     -66
+    ],
+    [
+     11,
+     5,
+     -58
+    ]
+   ],
+   "waves": [
+    [
+     "husk",
+     "husk",
+     "husk",
+     "husk",
+     "husk",
+     "husk",
+     "husk",
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "swarmer"
+    ],
+    [
+     "husk",
+     "husk",
+     "husk",
+     "husk",
+     "husk",
+     "husk",
+     "husk",
+     "husk"
+    ],
+    [
+     "husk",
+     "husk",
+     "husk",
+     "husk",
+     "husk",
+     "husk",
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "husk",
+     "husk",
+     "husk",
+     "husk",
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "husk",
+     "husk",
+     "husk",
+     "swarmer",
+     "swarmer",
+     "swarmer"
+    ]
+   ]
+  },
+  {
+   "id": "ka",
+   "name": "THE VENT HALL",
+   "kind": "link",
+   "rect": [
+    22,
+    -48,
+    66,
+    -20
+   ],
+   "par": 7,
+   "spawn": {
+    "at": [
+     26,
+     0,
+     -32
+    ],
+    "yawDeg": 270
+   },
+   "exit": [
+    64,
+    0.5,
+    -44
+   ]
+  },
+  {
+   "id": "kb",
+   "name": "THE FLUE",
+   "kind": "link",
+   "rect": [
+    72,
+    -60,
+    96,
+    -36
+   ],
+   "par": 8,
+   "spawn": {
+    "at": [
+     76,
+     0,
+     -44
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    84,
+    3.4,
+    -58
+   ],
+   "wallRoute": {
+    "note": "the wall-jump line: run north along the west wall from the corridor's mouth (campaign --shaft); the report times it against the stepped route"
+   }
+  },
+  {
+   "id": "boss",
+   "name": "THE FURNACE",
+   "kind": "boss",
+   "boss": "wyrm",
+   "rect": [
+    62,
+    -124,
+    94,
+    -66
+   ],
+   "par": 110,
+   "spawn": {
+    "at": [
+     74,
+     0,
+     -70
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    78,
+    0,
+    -118
+   ]
+  }
+ ],
+ "doors": [
+  {
+   "id": "d1",
+   "between": [
+    "r1",
+    "r2"
+   ],
+   "rect": [
+    -4,
+    38,
+    4,
+    44
+   ],
+   "checkpoint": true
+  },
+  {
+   "id": "d2",
+   "between": [
+    "r2",
+    "r3"
+   ],
+   "rect": [
+    -4,
+    -16,
+    4,
+    -10
+   ],
+   "checkpoint": true
+  },
+  {
+   "id": "d3",
+   "between": [
+    "r3",
+    "ka"
+   ],
+   "rect": [
+    16,
+    -36,
+    22,
+    -28
+   ],
+   "checkpoint": true
+  },
+  {
+   "id": "d4",
+   "between": [
+    "ka",
+    "kb"
+   ],
+   "rect": [
+    66,
+    -48,
+    72,
+    -40
+   ],
+   "checkpoint": true
+  },
+  {
+   "id": "d5",
+   "between": [
+    "kb",
+    "boss"
+   ],
+   "rect": [
+    80,
+    -66,
+    88,
+    -60
+   ],
+   "checkpoint": true
+  }
+ ],
+ "boxes": [
+  {
+   "zone": "r1",
+   "kind": "deck",
+   "min": [
+    8,
+    0,
+    52
+   ],
+   "max": [
+    16,
+    4,
+    84
+   ],
+   "note": "the mezzanine along the east wall (tier 2)"
+  },
+  {
+   "zone": "r1",
+   "kind": "hull",
+   "min": [
+    -12,
+    0,
+    58
+   ],
+   "max": [
+    -9,
+    3,
+    62
+   ],
+   "note": "cover"
+  },
+  {
+   "zone": "r1",
+   "kind": "hull",
+   "min": [
+    -12,
+    0,
+    76
+   ],
+   "max": [
+    -9,
+    3,
+    80
+   ],
+   "note": "cover"
+  },
+  {
+   "zone": "r1",
+   "kind": "hull",
+   "min": [
+    -1.5,
+    0,
+    78
+   ],
+   "max": [
+    1.5,
+    3,
+    82
+   ],
+   "note": "cover in front of the spawn"
+  },
+  {
+   "zone": "r2",
+   "kind": "deck",
+   "min": [
+    -9,
+    0,
+    6
+   ],
+   "max": [
+    9,
+    3,
+    22
+   ],
+   "note": "the central platform (tier 2)"
+  },
+  {
+   "zone": "r2",
+   "kind": "deck",
+   "min": [
+    -16,
+    0,
+    -10
+   ],
+   "max": [
+    -11,
+    6,
+    30
+   ],
+   "note": "the west catwalk (tier 3)"
+  },
+  {
+   "zone": "r2",
+   "kind": "hull",
+   "min": [
+    11,
+    0,
+    24
+   ],
+   "max": [
+    15,
+    3,
+    28
+   ],
+   "note": "cover"
+  },
+  {
+   "zone": "r2",
+   "kind": "hull",
+   "min": [
+    -8,
+    0,
+    26
+   ],
+   "max": [
+    -5,
+    3,
+    30
+   ],
+   "note": "cover"
+  },
+  {
+   "zone": "r3",
+   "kind": "deck",
+   "min": [
+    8,
+    0,
+    -72
+   ],
+   "max": [
+    16,
+    5,
+    -46
+   ],
+   "note": "the east shelf (tier 2)"
+  },
+  {
+   "zone": "r3",
+   "kind": "hull",
+   "min": [
+    -6,
+    0,
+    -48
+   ],
+   "max": [
+    6,
+    3,
+    -40
+   ],
+   "note": "the furnace block in the middle"
+  },
+  {
+   "zone": "r3",
+   "kind": "hull",
+   "min": [
+    -15,
+    0,
+    -58
+   ],
+   "max": [
+    -12,
+    3,
+    -54
+   ],
+   "note": "cover"
+  },
+  {
+   "zone": "r3",
+   "kind": "hull",
+   "min": [
+    -15,
+    0,
+    -34
+   ],
+   "max": [
+    -12,
+    3,
+    -30
+   ],
+   "note": "cover"
+  },
+  {
+   "zone": "r3",
+   "kind": "hull",
+   "min": [
+    -16,
+    0,
+    -50
+   ],
+   "max": [
+    -13,
+    4,
+    -40
+   ],
+   "note": "foundry wall, west part (the slide tunnel is its gap)"
+  },
+  {
+   "zone": "r3",
+   "kind": "hull",
+   "min": [
+    -10,
+    0,
+    -50
+   ],
+   "max": [
+    -6,
+    4,
+    -40
+   ],
+   "note": "foundry wall, middle part (the furnace block closes it to x 6)"
+  },
+  {
+   "zone": "boss",
+   "kind": "hull",
+   "min": [
+    64,
+    0,
+    -100
+   ],
+   "max": [
+    70,
+    6,
+    -94
+   ],
+   "note": "pillar"
+  },
+  {
+   "zone": "boss",
+   "kind": "hull",
+   "min": [
+    84,
+    0,
+    -100
+   ],
+   "max": [
+    90,
+    6,
+    -94
+   ],
+   "note": "pillar"
+  },
+  {
+   "zone": "boss",
+   "kind": "hull",
+   "min": [
+    64,
+    0,
+    -80
+   ],
+   "max": [
+    70,
+    6,
+    -74
+   ],
+   "note": "pillar"
+  },
+  {
+   "zone": "boss",
+   "kind": "hull",
+   "min": [
+    84,
+    0,
+    -80
+   ],
+   "max": [
+    90,
+    6,
+    -74
+   ],
+   "note": "pillar"
+  },
+  {
+   "zone": "ka",
+   "kind": "deck",
+   "min": [
+    31,
+    -4.5,
+    -36
+   ],
+   "max": [
+    34,
+    0,
+    -32
+   ],
+   "note": "hop platform 1 (a pad on it throws you to platform 2)"
+  },
+  {
+   "zone": "ka",
+   "kind": "deck",
+   "min": [
+    37,
+    -4.5,
+    -32
+   ],
+   "max": [
+    40,
+    0,
+    -28
+   ],
+   "note": "hop platform 2 (its pad throws you to the far rim)"
+  },
+  {
+   "zone": "ka",
+   "kind": "deck",
+   "min": [
+    34,
+    -4.5,
+    -24
+   ],
+   "max": [
+    38,
+    -2.4,
+    -20
+   ],
+   "note": "recovery stair, step 1 (from the pit floor)"
+  },
+  {
+   "zone": "ka",
+   "kind": "deck",
+   "min": [
+    30,
+    -4.5,
+    -24
+   ],
+   "max": [
+    34,
+    -1.2,
+    -20
+   ],
+   "note": "recovery stair, step 2 (then up to the hall floor)"
+  },
+  {
+   "zone": "ka",
+   "kind": "hull",
+   "min": [
+    46,
+    0,
+    -48
+   ],
+   "max": [
+    50,
+    7,
+    -20
+   ],
+   "note": "the vent wall: the far half is behind it; the pad throws you over"
+  },
+  {
+   "zone": "ka",
+   "kind": "deck",
+   "min": [
+    50,
+    0,
+    -48
+   ],
+   "max": [
+    54,
+    6,
+    -20
+   ],
+   "note": "the landing deck behind the vent wall (a ramp down the far side)"
+  },
+  {
+   "zone": "kb",
+   "kind": "slab",
+   "min": [
+    79.5,
+    0,
+    -56
+   ],
+   "max": [
+    81.5,
+    18,
+    -40
+   ],
+   "note": "wall-jump wall west (the corridor between the walls is 5 m)"
+  },
+  {
+   "zone": "kb",
+   "kind": "slab",
+   "min": [
+    86.5,
+    0,
+    -56
+   ],
+   "max": [
+    88.5,
+    18,
+    -40
+   ],
+   "note": "wall-jump wall east"
+  },
+  {
+   "zone": "kb",
+   "kind": "deck",
+   "min": [
+    72,
+    0,
+    -62
+   ],
+   "max": [
+    96,
+    3.4,
+    -56
+   ],
+   "note": "the exit deck at the top of the flue (height 3.4)"
+  },
+  {
+   "zone": "kb",
+   "kind": "deck",
+   "min": [
+    90,
+    0,
+    -44
+   ],
+   "max": [
+    96,
+    1.7,
+    -36
+   ],
+   "note": "the stepped route (slow, safe): step 1"
+  },
+  {
+   "zone": "kb",
+   "kind": "deck",
+   "min": [
+    90,
+    0,
+    -52
+   ],
+   "max": [
+    96,
+    3.4,
+    -46
+   ],
+   "note": "the stepped route: step 2"
+  }
+ ],
+ "ramps": [
+  {
+   "zone": "r1",
+   "from": [
+    -4,
+    68
+   ],
+   "to": [
+    8,
+    68
+   ],
+   "width": 6,
+   "rise": 4,
+   "note": "up to the mezzanine"
+  },
+  {
+   "zone": "r2",
+   "from": [
+    0,
+    30
+   ],
+   "to": [
+    0,
+    22
+   ],
+   "width": 6,
+   "rise": 3,
+   "note": "up to the platform"
+  },
+  {
+   "zone": "r2",
+   "from": [
+    3,
+    -4
+   ],
+   "to": [
+    -11,
+    -4
+   ],
+   "width": 6,
+   "rise": 6,
+   "note": "up to the catwalk"
+  },
+  {
+   "zone": "r3",
+   "from": [
+    -6,
+    -58
+   ],
+   "to": [
+    8,
+    -58
+   ],
+   "width": 6,
+   "rise": 5,
+   "note": "up to the east shelf"
+  },
+  {
+   "zone": "boss",
+   "from": [
+    84,
+    -76
+   ],
+   "to": [
+    84,
+    -62
+   ],
+   "width": 8,
+   "rise": 3.4,
+   "note": "down from the flue's deck into the furnace"
+  },
+  {
+   "zone": "ka",
+   "from": [
+    66,
+    -44
+   ],
+   "to": [
+    54,
+    -44
+   ],
+   "width": 8,
+   "rise": 6,
+   "note": "down the far side of the vent wall (the way out)"
+  }
+ ],
+ "pads": [
+  {
+   "zone": "ka",
+   "at": [
+    32,
+    0,
+    -34
+   ],
+   "target": [
+    37.5,
+    0,
+    -31
+   ],
+   "apexAbove": 2,
+   "note": "hop 1: platform 1 to platform 2"
+  },
+  {
+   "zone": "ka",
+   "at": [
+    39.5,
+    0,
+    -29
+   ],
+   "target": [
+    44,
+    0,
+    -37
+   ],
+   "apexAbove": 2,
+   "note": "hop 2: platform 2 to the far rim"
+  },
+  {
+   "zone": "ka",
+   "at": [
+    43.5,
+    0,
+    -44
+   ],
+   "target": [
+    52,
+    6,
+    -44
+   ],
+   "apexAbove": 4,
+   "note": "the vent: throws you over the 7 m wall onto the landing deck"
+  }
+ ],
+ "grapple": [],
+ "pits": [
+  {
+   "zone": "ka",
+   "rect": [
+    30,
+    -48,
+    42,
+    -20
+   ],
+   "floorY": -3.5,
+   "note": "the PLATFORMING stretch: a 12 m pit across the whole hall; two hop platforms with jump pads cross it, a failed hop drops to the pit floor, where the stair in the south corner (-2.4, -1.2, then the hall floor) walks back: never a soft-lock (the validate report proves it)"
+  }
+ ],
+ "tunnels": [
+  {
+   "zone": "r3",
+   "rect": [
+    -13,
+    -50,
+    -10,
+    -40
+   ],
+   "ceiling": 1.2,
+   "note": "the SLIDE TUNNEL (optional link): 3 m wide, 10 m long, a 1.2 m ceiling. The player must slide (slide collider 1.0 m); a swarmer (0.75 m) walks through, a husk (1.8 m) goes round by the east half. A flank line, never the only way."
+  }
+ ],
+ "rank": {
+  "time": [
+   600,
+   780,
+   1020,
+   1500
+  ],
+  "kills": [
+   100,
+   85,
+   65,
+   40
+  ],
+  "style": [
+   4000,
+   2500,
+   1200,
+   500
+  ],
+  "_why": "Unity-only (builder L): S/A/B/C cuts: time in seconds (rooms about 2.5 minutes, the worm 4-5 minutes for a human), kills = percent of the waves' enemies, style = points. Style is NOT calibrated (no run measured it)."
+ }
+}

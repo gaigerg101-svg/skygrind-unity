@@ -1,0 +1,70 @@
+{
+ "_why": "NIGHT67 T1a (Tools/night/gen-slots.cjs --level kiln --export): n57-kiln's room kb2 (3.2 THE CHARGING FLOOR) exactly as Design/levels/n57/kiln.plan.json has it: the row (every key), its zone-keyed pieces (boxes, ramps, pads, grapple, pits, tunnels), its room-keyed pieces (lights, props). The slot's starting point: rebuild it here (every new piece with a job and a why), give the row bot43: false, verb65 (the slate's verb) and line65 (the verb's line, 3+ waypoints); never an area67 block (refused). A key the row drops needs a reason in drop{}. The room's opening: top-level \"opening\": \"vista\" | \"ambushed\" | \"ambusher\" | \"held\" (and \"opening_why\"); left out, the room keeps n57-kiln's.",
+ "room": "kb2",
+ "row": {
+  "id": "kb2",
+  "name": "3.2 THE CHARGING FLOOR",
+  "kind": "room",
+  "rect": [-10,-103.5,10,-75.5],
+  "height": 14,
+  "roof": true,
+  "par": 60,
+  "job36": "teach",
+  "card57": "THE CHARGING FLOOR",
+  "verb36": "the THUNDERCLAP boost out of the pack onto the charging deck (4.5 m: its walkers' ramp is the long way round); the flue wall's ride down the east lane onto the deck; the bellows from the lane's end",
+  "spawn": {"at":[1.5,0,-80.5],"yawDeg":0},
+  "spawn_why": "NIGHT57 L (card kb2, Molecule: the apron): 5 m in and 1.5 m off the door's axis (T-119: a back-step stays out of the door's 4 m band)",
+  "exit": [0,0,-101.5],
+  "arena36": true,
+  "waves": [["husk","husk","husk","swarmer","swarmer","swarmer","swarmer"],["spitter","spitter","husk","husk","husk"],["swarmer","swarmer","swarmer","swarmer","spitter","spitter"]],
+  "roles43": ["fodder (the pack floods the charging floor: boost out of it)","ranged + fodder (the spitters take the deck and the barrow run: boost up to them)","fodder + ranged (the swarmers chase you up while the spitters hold)"],
+  "roles43_why": "NIGHT57 L (card kb2, The 30 s problem; R-2 / R-3): the level's first fight uses the roles level 1 taught (fodder, ranged): the boost is the only new thing; wave 2 puts the ranged where the boost reaches them first",
+  "nodes": [[-2.5,0,-92.5],[0.5,0,-93],[-3.5,0,-96.5],[-1,0,-100],[-1.5,0,-95],[-4.5,0,-93]],
+  "highNodes": [[4.5,4.5,-99.5],[3.5,4.5,-102],[-8,2.5,-88],[-8,2.5,-83.5]],
+  "nodes_why": "NIGHT57 L (card kb2, Molecule; R-4): the pack on the open charging floor 13-25 m from the door (spawn31: the entry's cone only past 12 m), the ranged on the deck and the barrow run",
+  "waveNodes43": [[[-2.5,0,-92.5],[0.5,0,-93],[-3.5,0,-96.5],[-1,0,-100],[-1.5,0,-95],[-4.5,0,-93]],[[4.5,4.5,-99.5],[3.5,4.5,-102],[-8,2.5,-88],[-8,2.5,-83.5]],[[-2.5,0,-92.5],[0.5,0,-93],[-3.5,0,-96.5],[-1,0,-100],[-1.5,0,-95],[-4.5,0,-93],[4.5,4.5,-99.5],[3.5,4.5,-102],[-8,2.5,-88],[-8,2.5,-83.5]]],
+  "waveNodes43_why": "NIGHT57 L (card kb2): wave 1 (the pack) on the floor in front of the door (the opening: a vista over it); wave 2 (spitters + husks) on the two tiers; wave 3 anywhere",
+  "lessons": [{"promptPad":"JUMP IN. SHOOT {fire} DOWN. FLY.","kind":"reached","rect":[-2,-86,4,-82],"minY":-0.2,"prompt":"JUMP IN. SHOOT {fire} DOWN. FLY."}],
+  "lessons31": [{"promptPad":"JUMP IN. SHOOT {fire} DOWN. FLY.","kind":"reached","rect":[-2,-86,4,-82],"minY":-0.2,"prompt":"JUMP IN. SHOOT {fire} DOWN. FLY."}],
+  "proofs": [{"kind":"walk","points":[[1.5,0,-81],[0.5,0,-91],[-3,0,-95],[-3.5,0,-100],[-0.5,0,-102],[1,0,-99.5],[1.2,0,-94],[1,0,-86],[1.5,0,-81]]},{"kind":"walk","points":[[3.9,0,-85],[3.9,4.5,-96.5],[6,4.5,-99]]},{"kind":"walk","points":[[-8,0,-99],[-8,2.5,-92],[-8,2.5,-85]]},{"kind":"walk","points":[[8,0,-79],[8,0,-90]]}],
+  "frames36": {"mid":[0,0,-77.5,0,0.1],"exit":[5,4.5,-98,0,-0.3]},
+  "frames52": {"_why":"NIGHT57 L the room frames (a452 / a157): the door just crossed (the pack's floor, the charging deck and the flue wall beyond), the fight from the apron, the deck's top","entry":[0,0,-77,0,0.04],"mid":[-1,0,-84,15,0.05],"high":[5,4.5,-97,160,-0.25]},
+  "kiln57_why": "NIGHT57 L (Tools/night/gen-n57-kiln.cjs; docs/ROOMS.md, Level 3 as n57-kiln, kb2 THE CHARGING FLOOR): built from scratch (no n52 piece): 20 x 28 x 14 m, three planes (0 / 2.5 / 4.5 m), the flue wall (a 17 m ride, also the foothold), the bellows and the draught (pads), the stack; the boost card and the worm's pass (kiln47 beat 2, by room id) kept"
+ },
+ "boxes": [
+  {"zone":"kb2","kind":"hull","min":[-6,0,-84],"max":[-2.5,14,-80],"job":"every-solid: THE STACK, the kiln's flue column (the room's landmark from the door)","why":"THE STACK (3.5 x 4 m, floor to roof, 4.5-8.5 m in, west of the spawn): the kiln's flue column through the hall: the entry's cover from the barrow run's spitters (a line-of-sight break you leave to fight); the pack comes round both its sides to you (the loop's pivot near the door)","note":"THE STACK (3.5 x 4 m, floor to roof, 4.5-8.5 m in, west of the spawn): the kiln's flue column through the hall: the entry's cover from the barrow run's spitters (a line-of-sight break you leave to fight); the pack comes round both its sides to you (the loop's pivot near the door)"},
+  {"zone":"kb2","kind":"wall","min":[5.4,0,-95.5],"max":[6,14,-78.5],"job":"molecule: the one-way ride, the flue wall (and the foothold)","why":"THE FLUE WALL (ride, cyan, 17 m, 3-20 m in, floor to roof): ride its east face down the east lane out of the pack and off its end onto the charging deck (the walk round is the deck ramp's long way); its near end is the foothold beside the spawn (R5: 3 m in, above the eye)","note":"THE FLUE WALL (ride, cyan, 17 m, 3-20 m in, floor to roof): ride its east face down the east lane out of the pack and off its end onto the charging deck (the walk round is the deck ramp's long way); its near end is the foothold beside the spawn (R5: 3 m in, above the eye)","ride":true,"ride36":{"face":"E","planeX":6,"lz":[3,20]}},
+  {"zone":"kb2","kind":"deck","min":[-10,0,-93],"max":[-6,2.5,-79],"job":"spatial law: the barrow run (the mid tier)","why":"THE BARROW RUN (2.5 m, 4 x 14 m along the west wall): the founders' barrow track: a stand over the pack's floor, the spitters' second perch in wave 2; a double jump from the floor reaches it; the walkers come up its ramp at the far end (no safe ledge)","note":"THE BARROW RUN (2.5 m, 4 x 14 m along the west wall): the founders' barrow track: a stand over the pack's floor, the spitters' second perch in wave 2; a double jump from the floor reaches it; the walkers come up its ramp at the far end (no safe ledge)"},
+  {"zone":"kb2","kind":"hull","min":[-10,2.5,-88.5],"max":[-8.5,14,-86.5],"job":"every-solid: the run's post (cover on the mid tier)","why":"THE RUN's POST (1.5 x 2 m on the barrow run, to the roof): the cover a spitter on the run stands behind (you come round it: a stand you must move to break); it cuts the run's line down to the door","note":"THE RUN's POST (1.5 x 2 m on the barrow run, to the roof): the cover a spitter on the run stands behind (you come round it: a stand you must move to break); it cuts the run's line down to the door"},
+  {"zone":"kb2","kind":"deck","min":[2,0,-103.5],"max":[10,4.5,-95.5],"job":"30 s problem: THE CHARGING DECK (the high tier, the spitters' roost)","why":"THE CHARGING DECK (4.5 m, 8 x 8 m over the exit's east side): where the barrows were tipped into the kiln: the spitters' roost; the boost from the pack reaches its lip (jump + THUNDERCLAP down), the flue wall's ride lands on it, the bellows throw you up; the walkers take its ramp, the long way (no safe ledge)","note":"THE CHARGING DECK (4.5 m, 8 x 8 m over the exit's east side): where the barrows were tipped into the kiln: the spitters' roost; the boost from the pack reaches its lip (jump + THUNDERCLAP down), the flue wall's ride lands on it, the bellows throw you up; the walkers take its ramp, the long way (no safe ledge)"},
+  {"zone":"kb2","kind":"deck","min":[0.5,3.4,-98.5],"max":[2,4.5,-95.5],"job":"hero prop: the deck's tipping lip","why":"THE TIPPING LIP (4.5 m, 1.5 m out over the floor, 3.4 m clear under it): the barrows' tipping edge: shotgun the pack below from it after the boost; the spitter on it lobs into the floor","note":"THE TIPPING LIP (4.5 m, 1.5 m out over the floor, 3.4 m clear under it): the barrows' tipping edge: shotgun the pack below from it after the boost; the spitter on it lobs into the floor"},
+  {"zone":"kb2","kind":"hull","min":[8.5,4.5,-102.5],"max":[10,14,-99.5],"job":"every-solid: the deck's flue (cover on the high tier)","why":"THE DECK's FLUE (1.5 x 3 m on the charging deck, to the roof): the spitters' cover on the deck: you come round it after the boost; it hides the deck's back corner from the door","note":"THE DECK's FLUE (1.5 x 3 m on the charging deck, to the roof): the spitters' cover on the deck: you come round it after the boost; it hides the deck's back corner from the door"},
+  {"zone":"kb2","kind":"deck","min":[-1,0,-98.5],"max":[0.5,0.9,-96],"job":"molecule: the small boost (T-5)","why":"THE SLAG CAKE (0.9 m beside the tipping lip): the small boost (jump, look down, fire) from it reaches the deck's lip; the big one from the floor (T-5: small, then big)","note":"THE SLAG CAKE (0.9 m beside the tipping lip): the small boost (jump, look down, fire) from it reaches the deck's lip; the big one from the floor (T-5: small, then big)"},
+  {"zone":"kb2","kind":"hull","min":[-6,0,-76.5],"max":[-2,14,-75.5],"job":"molecule: the entrance gated (the door's west liner)","why":"the DOOR's west LINER (1 m thick, noride): no ride across the doorway: the fight goes into the room (the walk pilot rode the door wall: dwell, NIGHT52 kb3)","note":"the DOOR's west LINER (1 m thick, noride): no ride across the doorway: the fight goes into the room (the walk pilot rode the door wall: dwell, NIGHT52 kb3)","noride":true},
+  {"zone":"kb2","kind":"hull","min":[2,0,-76.5],"max":[5.4,14,-75.5],"job":"molecule: the entrance gated (the door's east liner)","why":"the DOOR's east LINER (1 m thick, noride): as the west's: the room's ride is the flue wall","note":"the DOOR's east LINER (1 m thick, noride): as the west's: the room's ride is the flue wall","noride":true}
+ ],
+ "ramps": [
+  {"zone":"kb2","from":[3.9,-86],"to":[3.9,-95.5],"width":3,"rise":4.5,"job":"molecule: the walkers' climb to the charging deck","why":"THE DECK RAMP (4.5 m over 9.5 m, flush to the flue wall's west face): the walkers' climb onto the charging deck (no safe ledge; GG: a route enemies can climb); the long way up for a player, through the pack","note":"THE DECK RAMP (4.5 m over 9.5 m, flush to the flue wall's west face): the walkers' climb onto the charging deck (no safe ledge; GG: a route enemies can climb); the long way up for a player, through the pack"},
+  {"zone":"kb2","from":[-8,-98],"to":[-8,-93],"width":3,"rise":2.5,"job":"molecule: the walkers' climb to the barrow run","why":"the barrow run's walkers' ramp (2.5 m over 5 m, from the far floor beside the exit): the walkers' way onto the run; the run is a stand, not a dead end (it drops anywhere to the floor)","note":"the barrow run's walkers' ramp (2.5 m over 5 m, from the far floor beside the exit): the walkers' way onto the run; the run is a stand, not a dead end (it drops anywhere to the floor)"}
+ ],
+ "pads": [
+  {"zone":"kb2","at":[8,0,-91.5],"target":[7,4.5,-98.5],"apexAbove":2,"job":"molecule: the upward line, the bellows","why":"THE BELLOWS (a jump pad at the east lane's end, A5): the kiln's bellows vent: from the lane onto the charging deck (4.5 m): the pack that follows you down the lane is left on the floor","note":"the bellows"},
+  {"zone":"kb2","at":[-4,0,-88],"target":[-8,2.5,-91],"apexAbove":2,"job":"molecule: the upward line, the draught","why":"THE DRAUGHT (a jump pad in the middle of the floor): the kiln's draught throws you out of the pack onto the barrow run (2.5 m): the second way up, toward the run's spitters in wave 2","note":"the draught"}
+ ],
+ "grapple": [],
+ "pits": [],
+ "tunnels": [],
+ "lights": [
+  {"id":"kb2-L1","room":"kb2","kind":"ceiling","at":[0,13.95,-80.5],"normal":[0,-1,0],"size":[4,4,0.1],"color":"white","range":12,"intensity":0.9},
+  {"id":"kb2-L2","room":"kb2","kind":"ceiling","at":[-2,13.95,-90.5],"normal":[0,-1,0],"size":[6,4,0.1],"color":"white","range":12,"intensity":1.1},
+  {"id":"kb2-L3","room":"kb2","kind":"ceiling","at":[-2,13.95,-99.5],"normal":[0,-1,0],"size":[4,4,0.1],"color":"white","range":12,"intensity":1},
+  {"id":"kb2-L4","room":"kb2","kind":"pool","at":[6,4.525,-99],"normal":[0,1,0],"size":[3,3,0.05],"color":"white","range":9,"intensity":1},
+  {"id":"kb2-L5","room":"kb2","kind":"pool","at":[-8,2.525,-90.5],"normal":[0,1,0],"size":[2.5,2.5,0.05],"color":"white","range":7,"intensity":0.9},
+  {"id":"kb2-L6","room":"kb2","kind":"pool","at":[8,0.025,-91.5],"normal":[0,1,0],"size":[1.6,1.6,0.05],"color":"cyan","range":5,"intensity":1.2},
+  {"id":"kb2-L7","room":"kb2","kind":"pool","at":[-1.5,0.025,-101.5],"normal":[0,1,0],"size":[2.5,2.5,0.05],"color":"cyan","range":8,"intensity":1.7}
+ ],
+ "props": [
+  {"id":"kb2-P1","room":"kb2","kind":"healthPickup","at":[8,0.9,-86],"size":[0.6,0.6,0.6],"yawDeg":0,"collider":false,"pickup":true,"job":"reward","card57":"30 s problem: the reward on the risky leg","why":"the health in the east lane, halfway down the flue wall (the riskiest leg: the pack follows you in, and the lane is closed at its end but for the bellows): ride or run for it"}
+ ],
+ "drop": {}
+}

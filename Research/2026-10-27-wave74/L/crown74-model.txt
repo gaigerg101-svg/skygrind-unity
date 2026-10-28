@@ -1,0 +1,38 @@
+crown74 evidence (NIGHT74 builder L, slice L3), 2026-10-27 23:04. Tree: n74-L at 1c0bfaef8 (L1 and L2 committed; this slice's files uncommitted when written).
+Frames read (read only, main tree): Logs/feel/n73-freeze/bp/boss63/shot-N30-B63-crown37-{idle,flinch,windup,tell,stagger}.png (n73-freeze, the repo's config at 5ad6c89bf: lit72, fix72, calm72 ON).
+Nothing here is a Player frame of the n74 build: the lead's ON / OFF pair and Tools/night/n74-crown.py are the measure.
+
+## 1. What is dark (a dark-pixel map of the four frames: crown74-dark-map-n73.png beside this file; yellow = display luma under 30, red = under 45)
+The dark pixels are the CEILING: RoofView27's coffered ceiling (shader SKYGRIND/Ceiling27: unlit, a flat colour with a coffer grid and fog), darkest over the arena's far middle where the fog is deepest.
+The walls, the floor, the sky and the boss are not in the map. So a point light cannot lift it (the shader reads no light), and lit72's display lift cannot take a pixel at luma 1-4 over 30 (its gain cap is 9).
+The fix is in Assets/Shaders/Resources/Ceiling27.shader (the _Crown74 block) and Assets/Scripts/Game/Crown74.cs (the weight and the two shader globals).
+
+## 2. Baseline (command: python -I Tools/night/n74-crown.py --one <the five frames>)
+FRAME shot-N30-B63-crown37-idle.png | dark<30 4.1 % | region 900-1300 x 150-450 mean luma 35.9, dark 23.6 % | frame mean luma 71.8 | danger 3.7 %
+FRAME shot-N30-B63-crown37-flinch.png | dark<30 3.0 % | region 900-1300 x 150-450 mean luma 46.9, dark 2.7 % | frame mean luma 71.6 | danger 5.7 %
+FRAME shot-N30-B63-crown37-windup.png | dark<30 4.0 % | region 900-1300 x 150-450 mean luma 76.9, dark 23.7 % | frame mean luma 77.0 | danger 7.4 %
+FRAME shot-N30-B63-crown37-tell.png | dark<30 2.8 % | region 900-1300 x 150-450 mean luma 64.2, dark 9.6 % | frame mean luma 78.1 | danger 18.1 %
+FRAME shot-N30-B63-crown37-stagger.png | dark<30 6.1 % | region 900-1300 x 150-450 mean luma 61.6, dark 17.2 % | frame mean luma 73.6 | danger 8.3 %
+Read: the whole-frame dark share is ALREADY under the slate's 15 % bar on every frame (2.8 - 6.1 %); the bar that bites is the region's +25 mean luma, and the region's own dark share (2.7 - 23.7 %).
+
+## 3. The model (command: python -I Tools/night/n74-crown-model.py 1.0 1.25; Tools/night/n74-crown-model.py's header says what it assumes)
+fill scale 1.00 (fill 0.120 / 0.125 / 0.200)
+  idle     region mean luma 35.9 -> 70.4 (+34.4) | region dark<30 23.6 % -> 0.0 %
+  flinch   region mean luma 46.9 -> 75.3 (+28.4) | region dark<30 2.7 % -> 0.0 %
+  windup   region mean luma 76.9 -> 102.3 (+25.5) | region dark<30 23.7 % -> 0.0 %
+  tell     region mean luma 64.2 -> 91.0 (+26.8) | region dark<30 9.6 % -> 0.0 %
+  stagger  region mean luma 61.6 -> 87.9 (+26.3) | region dark<30 17.2 % -> 0.0 %
+  worst +25.5 (the bar: +25)
+fill scale 1.25 (fill 0.150 / 0.156 / 0.250)   <- the shipped fill (UnityTuning.N74CrownFillR / G / B)
+  idle     region mean luma 35.9 -> 75.8 (+39.9) | region dark<30 23.6 % -> 0.0 %
+  flinch   region mean luma 46.9 -> 79.9 (+33.0) | region dark<30 2.7 % -> 0.0 %
+  windup   region mean luma 76.9 -> 106.6 (+29.7) | region dark<30 23.7 % -> 0.0 %
+  tell     region mean luma 64.2 -> 95.6 (+31.4) | region dark<30 9.6 % -> 0.0 %
+  stagger  region mean luma 61.6 -> 92.1 (+30.5) | region dark<30 17.2 % -> 0.0 %
+  worst +29.7 (the bar: +25)
+Caveats, said plainly: it treats every pixel of the region as ceiling (the windup frame's sparkle haze is not, so that frame is the least sure); lit72 is inverted per pixel with its own numbers (a model of a model);
+the fill's hue is cool by construction (red never over green: danger share cannot rise), but its DANGER number is not modelled. The retake is `-skygrindCrown74Tune=1.5` (the fill x 1.5, no rebuild): worst +33.3 in the same model.
+
+## 4. Not checked
+Shader compile in the Editor (the lead's first compile imports Ceiling27.shader: a pink ceiling in the Player is the symptom of a compile error; the new block mirrors Crt29.shader's inline sRGB curves and Lit72 block line for line).
+A Player frame; the n73-hue.py danger share; whether the spotter names it; THE ICEBREAKER's and the other boss arenas (the shader block is weighted by THE CROWN's fight only: UnityTuning.N74Crown*).

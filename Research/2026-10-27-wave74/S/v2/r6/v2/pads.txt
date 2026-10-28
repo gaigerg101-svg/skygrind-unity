@@ -1,0 +1,6 @@
+# command: dotnet Temp/SimHarness/bin/Release/net10.0/SimHarness.dll hold52 --level n67-spire --room v2 --pads --file C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/spire-v2r6/n67-spire.json
+# sha: 70e86859c; time: 2026-10-27 23:44:27
+hold52: level n67-spire (C:\Users\gaige\AppData\Local\Temp\claude\C--Users-gaige-dev-SKYGRIND-unity\07ef7707-bc3a-4541-8901-f98169a14875\scratchpad\n74S\spire-v2r6\n67-spire.json), room v2 "5.2 THE NAVE" rect [-22,51,2,83], off switch none
+pad52 v2 pad 4 at [-14,-2,63.75] target [-19.5,2.5,62] launched yes apex 4 landed [-19.52,2.5,61.99] miss 0.02 m PASS
+pad52 v2 pad 5 at [-8,-2,63.75] target [-0.5,3.5,54] launched yes apex 5 landed [-0.47,3.5,53.96] miss 0.05 m PASS
+pad52 v2 pad 6 at [-20,2.5,73] target [-0.5,3.5,53.5] launched yes apex 9.5 landed [-0.46,3.5,53.46] miss 0.05 m PASS

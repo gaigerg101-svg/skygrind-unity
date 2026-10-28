@@ -1,0 +1,7 @@
+# command: node Research/2026-10-25-wave70/T/z3-redbars-case.cjs GREEN3 <scratch>/rb-green3 (Tools/night/n70-red-bars.cjs dry, --slate main, --logs scratch)
+# sha: add266e1 + the Z3 working copy; time: 2026-10-25 23:24:14
+# planted: the GREEN3 3-seed skips as the reds (header rewritten to seeds 1..20), the main tree's red flow files
+kb3 (kiln, launch): red 1.37 (exercised 3/3) -> mainBar 1.57; deaths A 0 / B 2, stall A 22.7 % (A GREEN 10/10, B GREEN 10/10); Z3 red: committed-or-plain 1.37 vs the plain run alone 1.37 (change +0): bar max(1.25 + change, red + 0.20) = 1.57 (was max(1.25, red + 0.20) = 1.57)
+v2 (spire, launch): red 0.92 (exercised 3/3) -> mainBar 1.37; deaths A 0 / B 0, stall A 19 % (A GREEN 10/10, B GREEN 10/10); Z3 red: committed-or-plain 0.92 vs the plain run alone 0.8 (change +0.12): bar max(1.25 + change, red + 0.20) = 1.37 (was max(1.25, red + 0.20) = 1.25)
+n70-red-bars: 2 / 2 rooms read (dry: --write sets them)
+

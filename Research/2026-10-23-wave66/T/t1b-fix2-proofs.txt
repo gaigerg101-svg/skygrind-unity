@@ -1,0 +1,69 @@
+# command: bash Research/2026-10-23-wave66/T/t1b-fix2.sh C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/b545c660-8250-4a8f-9419-f29ef22d3556/scratchpad/genout/latest/n65-foundry.json
+# sha: 8ba4c56e (tree 2 dirty paths), 2026-10-24 02:04:20 USMST, /c/Users/gaige/dev/SKYGRIND-unity/.claude/worktrees/agent-af48e888c59fa3626
+
+saved Research/2026-10-23-wave66/T/t1b-fix2-rideless-a2.txt (exit 3)
+saved Research/2026-10-23-wave66/T/t1b-fix2-rideless-a4.txt (exit 3)
+saved Research/2026-10-23-wave66/T/t1b-fix2-a3.txt (exit 1)
+saved Research/2026-10-23-wave66/T/t1b-fix2-a2-pierce.txt (exit 1)
+== (1) the planted rideless rooms: per seed the walker with nothing refused against the ride refused
+  Research/2026-10-23-wave66/T/t1b-fix2-rideless-a2.txt
+  seed 1: none 10.3 s (wall rides 0) | ride refused 10.3 s (wall rides 0), presses refused 0
+  seed 2: none 11.9 s (wall rides 0) | ride refused 11.9 s (wall rides 0), presses refused 0
+  seed 3: none 17.6 s (wall rides 0) | ride refused 17.6 s (wall rides 0), presses refused 0
+  seed 4: none 12.3 s (wall rides 0) | ride refused 12.3 s (wall rides 0), presses refused 0
+  seed 5: none 18.8 s (wall rides 0) | ride refused 18.8 s (wall rides 0), presses refused 0
+  seed 6: none 15.1 s (wall rides 0) | ride refused 15.1 s (wall rides 0), presses refused 0
+  seed 7: none 7.6 s (wall rides 0) | ride refused 7.6 s (wall rides 0), presses refused 0
+  seed 8: none 13.1 s (wall rides 0) | ride refused 13.1 s (wall rides 0), presses refused 0
+  seed 9: none 16.7 s (wall rides 0) | ride refused 16.7 s (wall rides 0), presses refused 0
+  seed 10: none 11.6 s (wall rides 0) | ride refused 11.6 s (wall rides 0), presses refused 0
+  identical seeds: 10 / 10
+  Research/2026-10-23-wave66/T/t1b-fix2-rideless-a4.txt
+  seed 1: none 23.3 s (wall rides 0) | ride refused 23.3 s (wall rides 0), presses refused 0
+  seed 2: none 13.5 s (wall rides 0) | ride refused 13.5 s (wall rides 0), presses refused 0
+  seed 3: none 10.5 s (wall rides 0) | ride refused 10.5 s (wall rides 0), presses refused 0
+  seed 4: none 15.2 s (wall rides 0) | ride refused 15.2 s (wall rides 0), presses refused 0
+  seed 5: none 15.9 s (wall rides 0) | ride refused 15.9 s (wall rides 0), presses refused 0
+  seed 6: none 15.2 s (wall rides 0) | ride refused 15.2 s (wall rides 0), presses refused 0
+  seed 7: none 14.9 s (wall rides 0) | ride refused 14.9 s (wall rides 0), presses refused 0
+  seed 8: none 20.4 s (wall rides 0) | ride refused 20.4 s (wall rides 0), presses refused 0
+  seed 9: none 19.6 s (wall rides 0) | ride refused 19.6 s (wall rides 0), presses refused 0
+  seed 10: none 15.2 s (wall rides 0) | ride refused 15.2 s (wall rides 0), presses refused 0
+  identical seeds: 10 / 10
+== (2) a3's refused runs: rides started and ended, steps on a wall, per seed
+seed 1 refused-in	wall rides 7	rides started and ended by the away rule 7	steps on a wall 7
+seed 1 walker	wall rides 7	rides started and ended by the away rule 7	steps on a wall 7
+seed 2 refused-in	wall rides 4	rides started and ended by the away rule 4	steps on a wall 4
+seed 2 walker	wall rides 4	rides started and ended by the away rule 4	steps on a wall 4
+seed 3 refused-in	wall rides 5	rides started and ended by the away rule 5	steps on a wall 5
+seed 3 walker	wall rides 5	rides started and ended by the away rule 5	steps on a wall 5
+seed 4 refused-in	wall rides 3	rides started and ended by the away rule 3	steps on a wall 3
+seed 4 walker	wall rides 3	rides started and ended by the away rule 3	steps on a wall 3
+seed 5 refused-in	wall rides 3	rides started and ended by the away rule 3	steps on a wall 3
+seed 5 walker	wall rides 3	rides started and ended by the away rule 3	steps on a wall 3
+seed 6 refused-in	wall rides 6	rides started and ended by the away rule 6	steps on a wall 6
+seed 6 walker	wall rides 6	rides started and ended by the away rule 6	steps on a wall 6
+seed 7 refused-in	wall rides 2	rides started and ended by the away rule 2	steps on a wall 2
+seed 7 walker	wall rides 2	rides started and ended by the away rule 2	steps on a wall 2
+seed 8 refused-in	wall rides 5	rides started and ended by the away rule 5	steps on a wall 5
+seed 8 walker	wall rides 5	rides started and ended by the away rule 5	steps on a wall 5
+seed 9 refused-in	wall rides 5	rides started and ended by the away rule 5	steps on a wall 5
+seed 9 walker	wall rides 5	rides started and ended by the away rule 5	steps on a wall 5
+seed 10 refused-in	wall rides 2	rides started and ended by the away rule 2	steps on a wall 2
+seed 10 walker	wall rides 2	rides started and ended by the away rule 2	steps on a wall 2
+n65verb skip: M1 FAIL | room a3, ratio 0.73 vs bar 1.25 (mainBar), exercised 10/10
+n65verb skip: totals | room a3 | median clear (all seeds; the cap for a non-clear): verb-aware 34.5 s, refused-in 23.6 s, walker 23.6 s | cleared 10 / 10 / 10 of 10 | deaths 0 / 0 / 0 | wall rides 69 / 42 / 42 | presses refused (refused-in) 73, (walker) 42 | walked (median m) 212.1 / 107.2 / 107.2 | shots (median) 35.0 / 26.5 / 26.5 | wall time 142 s
+== (3) a2 (pierce): uses per seed (KESTREL charged shots through >= 2 bodies) and the bodies per KESTREL charged shot
+seed 1 verb-aware	pierces (charged shots through >= 2 bodies) 0	charged 7, bodies hit per KESTREL charged shot 1/1/1/1/1/1/1
+seed 2 verb-aware	pierces (charged shots through >= 2 bodies) 1	charged 6, bodies hit per KESTREL charged shot 2/1/1/1/1/1
+seed 3 verb-aware	pierces (charged shots through >= 2 bodies) 1	charged 5, bodies hit per KESTREL charged shot 1/1/2/1/1
+seed 4 verb-aware	pierces (charged shots through >= 2 bodies) 1	charged 3, bodies hit per KESTREL charged shot 2/1/1
+seed 5 verb-aware	pierces (charged shots through >= 2 bodies) 1	charged 5, bodies hit per KESTREL charged shot 2/1/1/0/1
+seed 6 verb-aware	pierces (charged shots through >= 2 bodies) 1	charged 6, bodies hit per KESTREL charged shot 2/1/1/1/0/1
+seed 7 verb-aware	pierces (charged shots through >= 2 bodies) 1	charged 7, bodies hit per KESTREL charged shot 1/1/2/0/1/1/1
+seed 8 verb-aware	pierces (charged shots through >= 2 bodies) 1	charged 4, bodies hit per KESTREL charged shot 2/1/1/0
+seed 9 verb-aware	pierces (charged shots through >= 2 bodies) 2	charged 4, bodies hit per KESTREL charged shot 2/1/2/1
+seed 10 verb-aware	pierces (charged shots through >= 2 bodies) 1	charged 4, bodies hit per KESTREL charged shot 2/0/1/1
+n65verb skip: M1 FAIL | room a2, ratio 0.96 vs bar 1.25 (mainBar), exercised 9/10
+n65verb skip: totals | room a2 | median clear (all seeds; the cap for a non-clear): verb-aware 18.9 s, refused-in 17.9 s, walker 19.7 s | cleared 10 / 10 / 10 of 10 | deaths 0 / 0 / 0 | pierces (charged shots through >= 2 bodies) 10 / 0 / 0 | presses refused (refused-in) 8193, (walker) 9318 | walked (median m) 106.0 / 115.5 / 109.7 | shots (median) 12.5 / 37.0 / 37.0 | wall time 142 s
+# exit 0, 02:12:46

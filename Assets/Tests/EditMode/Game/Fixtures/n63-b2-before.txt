@@ -1,0 +1,22 @@
+# source: Logs/player/n47-reel-n63-b6-b2bf.log, Logs/player/n47-reel-n63-b6-b2bi.log, Logs/player/n47-reel-n63-b6-b2bk.log, Logs/player/n47-reel-n63-b6-b2bs.log, Logs/player/n47-reel-n63-b6-b2bp.log (the boss63 before set: bossTell63 off); written by Tools/night/n63-b2-fixlist.cjs --write together with design.n63.bossTell63.numbers.fix; N63BossTellTests computes the list from these lines with BossCue63.Verdict
+# Logs/player/n47-reel-n63-b6-b2bf.log
+[boss63] cue wick wickSlam start 4367 hit 5467 lead 1100 hue 10 sat 0.92 parry no danger yes tell 1100 kind red verdict ok objects 2 obj the wick/flame core
+[boss63] cue wick wickSlam start 9417 hit 10517 lead 1100 hue 10 sat 0.92 parry no danger yes tell 1100 kind red verdict ok objects 2 obj the wick/flame core
+[boss63] cue wick wickEmber start 20367 hit 21667 lead 1300 hue 46 sat 0.76 parry yes danger no tell 1300 kind yellow verdict ok objects 3 obj the wick/flame core
+# Logs/player/n47-reel-n63-b6-b2bi.log
+[boss63] cue brawl40 brawlLeap start 3017 hit 4025 lead 1008 hue 5 sat 0.96 parry no danger yes tell 1008 kind red verdict ok objects 13 obj fight/leap circle
+# Logs/player/n47-reel-n63-b6-b2bk.log
+[boss63] cue wyrm aggro start 13033 hit 13408 lead 375 hue 14 sat 0.92 parry no danger yes tell 375 kind ? verdict ok objects 3 obj NIGHT43 THE RING/ring43 throat
+[boss63] cue wyrm spit start none hit 24492 lead 0 hue - sat - parry no danger no tell none kind ? verdict short objects 0 obj -
+# Logs/player/n47-reel-n63-b6-b2bs.log
+[boss63] cue loom37 spool start 3900 hit 5225 lead 1325 hue 50 sat 0.71 parry yes danger no tell 1325 kind yellow verdict ok objects 45 obj loomLook47/loom47 lamp L
+[boss63] cue loom37 lash start 7067 hit 8392 lead 1325 hue 16 sat 0.88 parry no danger yes tell 1325 kind red verdict ok objects 15 obj loomLook47/loom47 lamp L
+[boss63] cue loom37 spool start 12183 hit 13508 lead 1325 hue 50 sat 0.71 parry yes danger no tell 1325 kind yellow verdict ok objects 45 obj loomLook47/loom47 lamp L
+[boss63] cue loom37 cage start 23033 hit 24658 lead 1625 hue 16 sat 0.88 parry no danger yes tell 1625 kind red verdict ok objects 48 obj NIGHT37 THE LOOM/loom47 cage thread 2
+# Logs/player/n47-reel-n63-b6-b2bp.log
+[boss63] cue crown37 bladeRing start 1650 hit 3025 lead 1375 hue 10 sat 0.92 parry no danger yes tell 1375 kind red verdict ok objects 164 obj light THE CROWN/crown light
+[boss63] cue crown37 gemShard start 3950 hit 5125 lead 1175 hue 46 sat 0.76 parry yes danger no tell 1175 kind yellow verdict ok objects 120 obj light THE CROWN/crown light
+[boss63] cue crown37 beamCut start 7650 hit 9133 lead 1483 hue 10 sat 0.92 parry no danger yes tell 1483 kind red verdict ok objects 168 obj light THE CROWN/crown light
+[boss63] cue crown37 crownFire start 9950 hit 11233 lead 1283 hue 41 sat 0.14 parry no danger no tell 1283 kind red verdict off-hue objects 30 obj THE CROWN/crown clapper
+[boss63] cue crown37 beamCut start 18017 hit 19442 lead 1425 hue 10 sat 0.92 parry no danger yes tell 1425 kind red verdict ok objects 143 obj light THE CROWN/crown light
+[boss63] cue crown37 lowFire start 22350 hit 23333 lead 983 hue 10 sat 0.92 parry no danger yes tell 983 kind red verdict ok objects 143 obj light THE CROWN/crown light

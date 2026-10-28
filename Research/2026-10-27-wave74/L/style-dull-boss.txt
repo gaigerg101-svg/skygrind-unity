@@ -1,0 +1,32 @@
+Leftover 5: why the style rank reads "D DULL" in a boss fight (NIGHT74 builder L, 2026-10-28 00:12; tree n74-L at 2122c1b6b + Tools/night/n74-style-boss.cs, uncommitted when written). REPORT ONLY: no rule is changed here.
+gg-proxy-close #10 (Logs/n73/gg-proxy-close.md): "Every boss frame that shows the rank shows D DULL" (wyrm-idle / -flinch at 515 / 540 points, crown37-flinch / -tell at 501 / 644, bosses-d.png's WICK, LOOM, CROWN panels), with an empty meter;
+it said "Not checked whether the reel's bot simply never combos". It does not, and the headless run below shows nothing a bot could do with a gun alone would move it.
+
+## 1. The rules that decide it (read: PortExport/config.json style block, Core/Style.cs, Core/StyleCore.cs)
+- The meter loses 17 points a second at rank D (drainBase 17, +4.8 per rank above). The ranks start at 0 / 90 / 240 / 470 / 800 / 1300 (DULL, COOL, BOLD, AIRBORNE, SAVAGE, SKYGRIND).
+- A HIT pays 5 (8 melee) and the pay is capped: style.hitCap, 12 points a second (a 12-point bucket refilled at 12 / s). The cap is BELOW the lowest drain: hits alone cannot ever lift the meter off the floor.
+- Every award is diminished by its key (the award's name + the weapon): x0.6 for each award of that key in the last 4 s, never under 0.15 (style.diminish). Then the payout is ROUNDED (ApplyMultipliers: Round(points x state x freshness)):
+  after the first few shots a HIT pays Round(5 x 0.15 x 1 x 1.1) = 1 point, and 0 on a STALE gun (x0.5). A boss is one long target with no kill: nothing the web's kills pay (30 - 100 each, huskKill 30 ... rivalKill 100) arrives.
+- The game's air34 row (design.n34.air34, ON) multiplies every award by x1 on the ground, rising to x3 in the air or sliding.
+- The boss systems emit no style award of their own (no weak-point, gem, ring-pass, stagger or window bonus: grep of "styleBonus" over Core and Game finds IMPACT, TRAPPED, SLIDE BITE, LIMIT, CHAIN and the arena's, none from a boss); a PARRY pays 40 (a PERFECT one 80: design.parry.perfectPoints).
+So a boss fight pays almost only the diminished hit (about 1 point a hit) against 17 a second of drain: the meter sits on 0 and the rank on D, and the HUD draws DULL under an empty bar for the whole fight.
+
+## 2. The headless run (the shipped StyleCore with PortExport/config.json, the sim's 120 Hz step, 60 s each; Tools/night/n74-style-boss.cs through a scratch console that compiles Assets/Scripts/Core, csproj text in Tools/night/n74-style-boss.csproj.txt)
+command: dotnet build the csproj (copy the .txt to a scratch folder as .csproj), then dotnet bin/Release/net10.0/styleboss.dll <the repo's PortExport>
+A  the gun on a boss, 4 hits/s, no tricks, no kills (grounded):            paid 4.0 points / s (drain 17.0)  -> meter 0.0, rank D (DULL) from 15 s on
+A2 8 hits/s with a headshot in four (revolver):                            paid 12.0 / s (the hit cap)       -> meter 0.0 .. 3.0, D
+B  hits + a movement trick every 3 s (an enemy near):                      paid 5.0 - 8.0 / s                 -> meter 0.0 .. 1.0, D
+C  hits + a trick every 3 s + a parry every 5 s (grounded):                paid 13.8 - 16.8 / s               -> mean meter 20.2 (of the 90 COOL needs), D
+D  a NORMAL round: a kill every 2 s + 4 hits/s with one gun (grounded):   paid 8.8 - 11.2 / s                -> meter 0.0 from 20 s on, D
+E  hits + a trick every 3 s with the air multiplier at its x3 peak all fight: paid 15.0 / s                    -> mean meter 84.8 (just under COOL's 90), D
+F  E plus a parry every 5 s:                                               paid 41.4 / s at 60 s              -> meter 858.5, rank SAVAGE (COOL at 10 s, BOLD at 15 s)
+Read: (1) on the ground, with a gun, a boss fight is D DULL by arithmetic, however long it lasts; (2) so is a normal round played with ONE gun (D): the rank is not a boss quirk but the web's style economy, which pays for variety (weapon swaps, tricks, parries, multikills, air time);
+(3) the only way up in a boss fight is to be in the air (the x3) AND parry: F climbs to SAVAGE, E alone stalls at the edge of COOL.
+The reel's boss63 bot is on the ground with one gun and no parry: its frames can only read D DULL, so they cannot judge what a player who parries and stays airborne sees. (The run is the meter's maths on invented inputs at rates I chose; no Player run of a human fight was measured.)
+
+## 3. What a fix could be (NOT done: a rule change, GG's call; listed for NIGHT75's seed)
+a) Boss moments that pay style: a weak-point hit, a gem broken, a ring passed, a stagger started (the boss systems have the events: crown37Gem, crown37Pass, the kit's boss* events) as styleBonus awards, so a fight has an income that is not 1 point a hit;
+b) a boss-fight hit pay that is not under the drain: the hit cap (12 / s) is the web's number and is lower than its own lowest drain (17 / s), which no round ever noticed because kills carry the economy;
+c) leave the rule and change what the HUD says: no rank word under an empty bar while a boss bar is up (GG: "the UI looks good as it is, so don't touch that", 2026-10-20: this is the reading, not the look);
+d) the reel: a boss63 variant that parries and stays airborne, so a frame can show what the rank does for a player who plays the verbs.
+Not checked: the Player's HUD in a human fight; whether the other style rows (style42, lab styleRamp) change a boss fight's income; THE WICK's and THE LOOM's fights (the same economy applies; their frames show D DULL in bosses-d.png).

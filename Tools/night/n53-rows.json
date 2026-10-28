@@ -1,0 +1,107 @@
+{
+  "_why": "NIGHT53 row list (the lead's; written at P0 by Tools/night/n53-shared.cjs). One entry per row of NIGHT53.md section 1. Only the lead flips passes (Tools/night/n53-flip.cjs), only after printing the check's output in the transcript; `check` is never edited. `state`, `evidence_paths` and `note` are the close's own fields. Builders only report.",
+  "rows": [
+    {
+      "id": "P0",
+      "title": "Debt + baselines + the shared commit",
+      "owner": "lead",
+      "switch": "-",
+      "check": "T-126 fixed at its source (Lesson25Tests restores every flag it sets; the batch pair L then N green); iceline g2 has frames52 and its two reviews; the identity checks (section 2) built, tested with a planted failure each, and printed for all 18 rooms (the baseline); design.n53 rows + n53-rows.json committed; gates green",
+      "fallback": "a check without its planted-failure test ships OFF",
+      "passes": true,
+      "state": "DONE",
+      "evidence_paths": [
+        "Logs/n53/contract-p0.md",
+        "Logs/n53/identity-p0.md",
+        "Logs/n53/identity-q1.md",
+        "NIGHT53-LOG.md 07:39-08:21",
+        "commits 4d4be1c7 d748867d 1145f013 5105e60f cdfe3ac9"
+      ],
+      "note": "shared commit + gates GREEN; T-126 fixed (Editor pair RED unpinned -> GREEN); identity I1-I5 + I7 built, 'PLANTED: every check FAILs its planted case (trusted)' (I2's case moved to g4 by D-11); 18-room baseline; g2 framed (a452 r1) and reviewed (09:00)"
+    },
+    {
+      "id": "K",
+      "title": "Rooms' second pass: kiln kb3, span p1, foundry a3 (then the queue)",
+      "owner": "builder K",
+      "switch": "design.n52.kiln52 / span52 / foundry52 (the n52 levels, edited in place)",
+      "check": "each changed room passes THE ROOM CONTRACT and the identity checks with numbers printed; verbs37 on its level unchanged or better; its frames looked at; a fresh review of the change",
+      "fallback": "the room reverted to u3-n52's (it shipped)",
+      "passes": false,
+      "state": "SHORT (fallback: none needed; every change kept passes the contract)",
+      "evidence_paths": [
+        "Logs/n53/identity-freeze.md",
+        "Logs/feel/n53-freeze/summary47.txt",
+        "Logs/feel/n53-r2/summary47.txt",
+        "commits 345556fb b8934bed 1d99204d c15331e4 dc7a9537"
+      ],
+      "note": "kb3, p1, a3 pass THE ROOM CONTRACT 14/14 (K's prints); kb3 and p1 pass every computed identity item; a3 I1 69 % FAIL; verbs37 kiln 31/31, span 31/31, foundry 27/27 on n53-freeze (nothing lost); frames looked at (kb3 entry, p1 entry, a3 mid); fresh review of kb3's first cut only: p1 / a3 / kb3's last cuts unreviewed"
+    },
+    {
+      "id": "L",
+      "title": "The loop: iceline g4, g3, then the queue (section 5)",
+      "owner": "lead",
+      "switch": "design.n52.iceline52 / spire52 (edited in place)",
+      "check": "same as K, per room; the levels' verbs37 unchanged",
+      "fallback": "the room reverted to u3-n52's",
+      "passes": false,
+      "state": "SHORT (fallback: none needed; rooms kept)",
+      "evidence_paths": [
+        "Logs/n53/c2-g4-contract.txt",
+        "Logs/n53/c3-g3-contract.txt",
+        "Logs/n53/c4-g7-contract.txt",
+        "Logs/n53/identity-freeze.md"
+      ],
+      "note": "4 cycles kept: q1 (I2 / I3), g4 (I1 77 -> 59 % PASS, I2 1.18 FAIL), g3 (iceline I5 PASS, I2 1.28 FAIL), g7's pad (I4 PASS); contract 14/14 (g4 13/14 exempt as at u3-n52); verbs37 iceline 21/21; g2's mirror not cut (D-14), g8 / spire pads answered (D-12)"
+    },
+    {
+      "id": "U",
+      "title": "Polish: the SHORT items (section 4)",
+      "owner": "builder U",
+      "switch": "design.n53.polish53 (view row; -skygrindOff53)",
+      "check": "each item: a Player proof line RED once (off) and GREEN once (on) that prints its input happened (L-089); before / after frames looked at; nothing in verbs37 lost",
+      "fallback": "the item stays at NIGHT52's fallback",
+      "passes": false,
+      "state": "SHORT (fallback shipped: T-122 firstShot and T-111 killWash at NIGHT52's look)",
+      "evidence_paths": [
+        "Logs/feel/n53-freeze/summary47.txt",
+        "Logs/feel/n53-r2/summary47.txt",
+        "DECIDE53.md D-15"
+      ],
+      "note": "kill pop GREEN on / RED off (foundry, iceline); T-120 GREEN on iceline / RED off (foundry -0.013 under its floor); T-116 GREEN on iceline (a153's own meter; a349's 4/4 not run); T-122 1/2 and T-111 over target: off; verbs37 nothing lost"
+    },
+    {
+      "id": "R",
+      "title": "Reviews",
+      "owner": "lead",
+      "switch": "-",
+      "check": "every changed room gets a P-rank and a GG-persona review (fresh, read-only); every concrete finding fixed (the room re-passes) or answered in DECIDE53",
+      "fallback": "answered, not fixed",
+      "passes": false,
+      "state": "SHORT (answered, not fixed)",
+      "evidence_paths": [
+        "DECIDE53.md D-13 D-14",
+        "NIGHT53-LOG.md 08:59"
+      ],
+      "note": "P-rank + GG persona reviews of g2 / g3 / g4 / kb3 (fresh, read-only): none would satisfy GG; taken: kb3's stubs + plateau (K, dc7a9537); answered: the door halves, g4's corner ledge, g3's hopper (the reviewers disagree), g2's mirror (NIGHT54); p1 / a3 / g7 and kb3's last cuts not reviewed"
+    },
+    {
+      "id": "Z",
+      "title": "Freeze and close",
+      "owner": "lead",
+      "switch": "-",
+      "check": "polish53 ON by its checks; Builds/n53-freeze; verbs37 x5 nothing lost; the flow table on the changed levels; the full batch suite green; the smoke; golden / fingerprints EQUAL; the report with before / after and the building share; tag u3-n53",
+      "fallback": "whatever is unfinished at 3:00 closes SHORT",
+      "passes": false,
+      "state": "SHORT (the suite not green: AutopilotTests' allocation flake)",
+      "evidence_paths": [
+        "Builds/n53-freeze",
+        "Logs/feel/n53-freeze/summary47.txt",
+        "Logs/n53/flow-freeze/table.md",
+        "Logs/n53-close-tests.xml",
+        "Logs/n53/smoke.txt",
+        "NIGHT53-REPORT.md"
+      ],
+      "note": "polish53 ON by its checks (D-15); n53-freeze built; verbs37 x5 27/21/31/31/31 nothing lost; flow table on the 4 changed levels; batch suite at 77c4d995 2241/2244: V50Tests x2 pinned test-only (8cc9542e; Editor 6/6), AutopilotTests.PerStep_AllocatesNothing 1 allocation (known flake since NIGHT14; failed again in the Editor re-run); smoke on n53-freeze DONE all steps passed (230.5 s, 0 NRE); golden 22/22 + fingerprints EQUAL at each build's gates; report with before / after and the building share (53 %); tag u3-n53"
+    }
+  ]
+}

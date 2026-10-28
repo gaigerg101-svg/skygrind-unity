@@ -1,0 +1,40 @@
+# command: bash Research/2026-10-23-wave66/T/t2-proofs.sh C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/b545c660-8250-4a8f-9419-f29ef22d3556/scratchpad/t2
+# sha: 385aad56 (tree 10 dirty paths), 2026-10-24 02:18:16 USMST, /c/Users/gaige/dev/SKYGRIND-unity/.claude/worktrees/agent-af48e888c59fa3626
+
+== 1. n65-slot-set.cjs
+PASS PLANTED gen-n65-foundry --slots=<that slots65.json> with a2.json changed: refused
+PASS gen-n65-foundry --slots=<that slots65.json> with a2.json as judged: assembles (a2 new)
+n65-slot-set selftest: PLANTED GREEN (5 cases; Design/levels/n65/rooms/a2.json restored, unchanged since HEAD)
+(dry) would write Design/levels/n65/slots65.json:
+  "b2": {
+   "why": "NIGHT66 T2: b2 THE GANTRY joins the slots as n52's room; rebuilt only on GG's own word (FORGE66 redteam.md finding 7)",
+n65-slot-set: b2 old -> Design/levels/n65/slots65.json; slots: a2 old, a3 old, a4 old, a5 old, b1 old, b2 old, a8 old
+== 2. the all-old assembly with the b2 slot (scratch --out)
+  slot b2: old Design/levels/n65/rooms-n52/b2.json: n52's room exactly; boxes 13, ramps 0, pads 0, grapple 0, pits 2, tunnels 0, lights 12, props 0, teach35 0
+levelgen --walk: 0 ERROR
+shipped after:  Design/levels/n65-foundry.json 5f3eba53c34b84b6a3a4548281865c6cc5691539745636b9ed88215ab296cd85, Assets/StreamingAssets/Design/levels/n65-foundry.json 5f3eba53c34b84b6a3a4548281865c6cc5691539745636b9ed88215ab296cd85 (byte-identical: --out writes only C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/b545c660-8250-4a8f-9419-f29ef22d3556/scratchpad/t2/allold)
+t2-samebytes: EQUAL apart from name / _why / generatedBy (2472006 / 2472006 chars of the rest); generatedBy: Tools/night/gen-n65-foundry.cjs (slots old: a2 old, a3 old, a4 old, a5 old, b1 old, b2 old, a8 old | vs | Tools/night/gen-n65-foundry.cjs (slots Design/levels/n65/slots65.json: a2 old, a3 old, a4 old, a5 old, b1 old, a8 old
+== 3. n39views wall: the all-old assembly with the b2 slot, the tracked n65-foundry, n52-foundry
+C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/b545c660-8250-4a8f-9419-f29ef22d3556/scratchpad/t2/allold/n65-foundry.json: level n65-foundry, noride boxes on the Mover 6, wallride35 True, wallgrip36 True
+  NIGHT38 pick: 30 m in b2 at (8.7, 0.2, -226.6) along (-0, -1)
+  NIGHT39 pick: 18 m in a7 at (1.1, 0.2, -326.2) along (0, 1) (CHANGED)
+  the solid at the start: [box 50 zone a7 kind wall noride False min (1.75, 0, -331) max (2.35, 12, -307.5): THE FLUE's east chimney wall (NIGHT43 L1, foundry43; GG G2): one conti...]
+  row 9 PASS: rides 2 [0.23-1.55, 1.71-2.16], longest 1.32 s, ends [jump, corner], rose 0.06 m
+  row 11 PASS: 16.60 m/s after letting go vs 11.70 m/s before
+  row 10 PASS: WallJump events 1
+n65-foundry: level n65-foundry, noride boxes on the Mover 6, wallride35 True, wallgrip36 True
+  NIGHT38 pick: 30 m in b2 at (8.7, 0.2, -226.6) along (-0, -1)
+  NIGHT39 pick: 18 m in a7 at (1.1, 0.2, -326.2) along (0, 1) (CHANGED)
+  the solid at the start: [box 50 zone a7 kind wall noride False min (1.75, 0, -331) max (2.35, 12, -307.5): THE FLUE's east chimney wall (NIGHT43 L1, foundry43; GG G2): one conti...]
+  row 9 PASS: rides 2 [0.23-1.55, 1.71-2.16], longest 1.32 s, ends [jump, corner], rose 0.06 m
+  row 11 PASS: 16.60 m/s after letting go vs 11.70 m/s before
+  row 10 PASS: WallJump events 1
+n52-foundry: level n52-foundry, noride boxes on the Mover 6, wallride35 True, wallgrip36 True
+  NIGHT38 pick: 30 m in b2 at (8.7, 0.2, -226.6) along (-0, -1)
+  NIGHT39 pick: 18 m in a7 at (1.1, 0.2, -326.2) along (0, 1) (CHANGED)
+  the solid at the start: [box 50 zone a7 kind wall noride False min (1.75, 0, -331) max (2.35, 12, -307.5): THE FLUE's east chimney wall (NIGHT43 L1, foundry43; GG G2): one conti...]
+  row 9 PASS: rides 2 [0.23-1.55, 1.71-2.16], longest 1.32 s, ends [jump, corner], rose 0.06 m
+  row 11 PASS: 16.60 m/s after letting go vs 11.70 m/s before
+  row 10 PASS: WallJump events 1
+n39views wall: 3/3 levels with rows 9 and 11 PASS on the picked wall
+# exit 0, 02:18:34

@@ -1,0 +1,12 @@
+# L67=iceline ROOMS=g8 SLATE=Research/2026-10-24-wave67/T/t1b-dry-slate.json bash Tools/night/n67-round.sh dry-iceline
+# sha 1933c505; dirty: ; 2026-10-24 11:11:35
+n67-round dry-iceline: level iceline (n67-iceline), rooms g8, the slate snapshot Logs/n67/dry-iceline/slate-at-start.json (from Research/2026-10-24-wave67/T/t1b-dry-slate.json, sha256 4217ea8aaac3c30b)
+n67-round dry-iceline: latest assembled into Logs/n67/dry-iceline (24 s): levelgen --walk: 0 ERROR (none; 8 s)
+n67-round dry-iceline: verb65 g8 - (slate ride): plant
+n67-red: 5 jobs on n67-iceline in 78 s; outputs under Logs/n67/dry-iceline/<room>/ (11:13:22)
+n67-round dry-iceline: iso pictures 1 / 1
+n67-round-verbs dry-iceline: 4 verdicts in 171 s (Logs/n67/dry-iceline/verbs.md)
+n67-round dry-iceline: done in 282 s; table Logs/n67/dry-iceline/table.md; the round's level is Logs/n67/dry-iceline/n67-iceline.json (never the tracked files); tracked status before / after (Logs/n67/dry-iceline/tracked-status.txt):
+  # git status --short Design/levels Assets/StreamingAssets/Design/levels Reports, before the round (2026-10-24 11:11:43):
+  # git status --short Design/levels Assets/StreamingAssets/Design/levels Reports, after the round (2026-10-24 11:16:19):
+# exit 0 at 11:16:20

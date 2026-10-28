@@ -1,0 +1,17 @@
+# node Tools/night/n65-slot-set.cjs --selftest
+# sha 350a1474 + the uncommitted n65-slot-set.cjs; 2026-10-24 11:04:57
+PASS a PASS with the room file unchanged since passSha sets a2 new
+PASS PLANTED a2.json changed after its PASS: refused (a2: Design/levels/n65/rooms/a2.json changed since its PASS at 350a1474afaa6b350cf6c39aeca1ae12decf71b4 (refused: GATE it again, or set passS)
+PASS a slice with passes false: refused (a2: the slate slice has passes false: a slot goes new only after its GATE PASS)
+PASS PLANTED gen-n65-foundry --slots=<that slots65.json> with a2.json changed: refused
+PASS gen-n65-foundry --slots=<that slots65.json> with a2.json as judged: assembles (a2 new)
+PASS PLANTED an unknown option --bogus: refused (n65-slot-set: REFUSED: unknown option --bogus (known: --slots --slate --dry --print --selftest --level; values)
+PASS PLANTED '--slots <file>' with a space: refused (n65-slot-set: REFUSED: --slots needs '=' (--slots=<value>): '--slots <value>' would make the value a positiona)
+PASS PLANTED g7 (iceline's) with --level=kiln: refused (n65-slot-set: REFUSED: g7 is not a slot of n67-kiln (kb2, kb2c, kb3, kb3c, kb3d; C:\Users\gaige\AppData\Local\)
+PASS PLANTED --level=kiln with level 1's slots65.json: refused (n65-slot-set: REFUSED: --slots=Design/levels/n65/slots65.json is level foundry's, not --level=kiln's (Design/l)
+PASS PLANTED --slots=<a file no level owns> with no --level: refused, never a fall-back (n65-slot-set: REFUSED: --slots=C:\Users\gaige\AppData\Local\Temp\n65slot-MD3ABp\nobody.json is no level's slot)
+PASS PLANTED kb3 against a kiln slots file without kb3: refused (n65-slot-set: REFUSED: kb3 is not in C:\Users\gaige\AppData\Local\Temp\n65slot-MD3ABp\kiln-no-kb3.json (its sl)
+PASS --level=kiln: a PASS sets kb3 new in the given slots file only (n65-slot-set: kb3 new (PASS 350a1474afaa6b350cf6c39aeca1ae12decf71b4, blob 2f42f6b3e9f9) -)
+PASS gen-slots --level kiln --slots=<that file> --dry-plan: assembles (kb3 new)
+n65-slot-set selftest: PLANTED GREEN (13 cases; Design/levels/n65/rooms/a2.json restored, unchanged since HEAD)
+# exit 0

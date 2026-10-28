@@ -1,0 +1,6 @@
+# command: bash Tools/night/n65-gate-pack.sh a2 r2 --logs C:/Users/gaige/dev/SKYGRIND-unity/Logs/n65 --blind C:/Users/gaige/dev/SKYGRIND-unity/Tools/night/n65-blind.py --out Research/2026-10-23-wave65/T/gate-proof-a2-r2 --key Research/2026-10-23-wave65/T/gate-proof-keys/a2-r2-spot-key.txt
+# sha: 086fca8d (branch n65-T; tracked changes uncommitted: 1 file(s))
+# time: 2026-10-23 16:31:31 -> 2026-10-23 16:32:18 (local)
+# exit: 0
+
+n65-gate-pack a2 r2: Research/2026-10-23-wave65/T/gate-proof-a2-r2 (11 files: README.md, air.md, card.md, checks.txt, open-findings.md, room-diff.txt, spot-A.png, spot-B.png, table.md, verbs.md, verbs65-skip.txt); key Research/2026-10-23-wave65/T/gate-proof-keys/a2-r2-spot-key.txt; sha d602157a

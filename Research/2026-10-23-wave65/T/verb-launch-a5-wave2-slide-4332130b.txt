@@ -1,0 +1,10 @@
+# command: dotnet run --project Tools/SimHarness -c Release --no-build -- n65verb launch --level C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/b545c660-8250-4a8f-9419-f29ef22d3556/scratchpad/skiptree3/Design/levels/n65-foundry.json --room a5 --wave 2 --slide --pose 0,0,-114,14
+# sha: 8652dac1 (branch n65-T3; tracked changes uncommitted: 1 file(s))
+# time: 2026-10-23 18:54:26 -> 2026-10-23 18:54:29 (local)
+# exit: 1
+
+n65verb launch: level n65-foundry (C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/b545c660-8250-4a8f-9419-f29ef22d3556/scratchpad/skiptree3/Design/levels/n65-foundry.json), room a5 "1.5 CRUCIBLE", seed 1; pose (0.0, 0.0, -114.0) yaw 14.0 from --pose; off switch none
+  wave 2 reached (waves spawned 2); 7 bodies of earlier waves killed outright
+  target chosen: husk #8 at (8.5, 2.2, -137.1) (nearest to the pose, wave 2)
+  target husk #8 at (8.1, -0.0, -122.7) (from (0.0, -0.0, -114.0)), slide at step 190, punch at step 353 in state Slide (grace 18)
+n65verb launch: RED | room a5 | launch36 0, flight end  thrown 0.0 m (max 2.6 m), bursts 0 (hits 0, kills 0) | landed (7.8, -0.0, -120.5), in a pit no, in lava no, target alive | pose --pose | the punch launched nothing far

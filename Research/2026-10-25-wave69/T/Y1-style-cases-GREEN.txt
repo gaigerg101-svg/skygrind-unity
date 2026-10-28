@@ -1,0 +1,15 @@
+# Y1 GREEN: n69-T worktree, the fix (V68StyleNeed = refusal - 5; NaN -> UNSURE); 2026-10-25 10:01:47
+# cmd: timeout 60 dotnet Temp/SimHarness/bin/Release/net10.0/SimHarness.dll n65verb skip --style-cases
+n65verb skip --style-cases: the ROOM list's STYLE rule (NIGHT69 Y1), STYLE above DULL on the verb-aware run >= the faster refusal's - 5 points (NaN: UNSURE); NIGHT68's rule (>= min(refusal + 15, max(refusal, 95))) beside each
+  verb-aware 69.0 % vs refusal 74.0 % (the slate's line: exactly refusal - 5): need 69.0 % -> PASS (expected PASS: OK) | NIGHT68's rule: need 89.0 % -> FAIL
+  verb-aware 68.9 % vs refusal 74.0 % (the slate's line: 0.1 under refusal - 5): need 69.0 % -> FAIL (expected FAIL: OK) | NIGHT68's rule: need 89.0 % -> FAIL
+  verb-aware NaN % vs refusal 74.0 % (the slate's line: no verb-aware STYLE (no fight on an exercised seed)): need 69.0 % -> UNSURE (expected UNSURE: OK) | NIGHT68's rule: need 89.0 % -> FAIL (NaN)
+  verb-aware 69.0 % vs refusal NaN % (no refusal STYLE): need NaN % -> UNSURE (expected UNSURE: OK) | NIGHT68's rule: need NaN % -> FAIL (NaN)
+  verb-aware 80.0 % vs refusal 85.0 % (a level 3 / 5 refusal: exactly refusal - 5): need 80.0 % -> PASS (expected PASS: OK) | NIGHT68's rule: need 95.0 % -> FAIL
+  verb-aware 79.9 % vs refusal 85.0 % (a level 3 / 5 refusal: 0.1 under): need 80.0 % -> FAIL (expected FAIL: OK) | NIGHT68's rule: need 95.0 % -> FAIL
+  verb-aware 84.0 % vs refusal 70.0 % (NIGHT68's refusal + 15 branch FAILed it (need 85)): need 65.0 % -> PASS (expected PASS: OK) | NIGHT68's rule: need 85.0 % -> FAIL
+  verb-aware 86.3 % vs refusal 79.8 % (r3 kb3's 2-seed skip (Logs/n68/I2): NIGHT68 need 94.8): need 74.8 % -> PASS (expected PASS: OK) | NIGHT68's rule: need 94.8 % -> FAIL
+  verb-aware 89.0 % vs refusal 88.6 % (v6's 88.6 % refusal (levels-data.md item 2): NIGHT68 need 95): need 83.6 % -> PASS (expected PASS: OK) | NIGHT68's rule: need 95.0 % -> FAIL
+style-cases: 9 / 9 as the ROOM list's rule expects (GREEN)
+n65verb: exit 0
+# exit 0

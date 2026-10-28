@@ -1,0 +1,92 @@
+// NIGHT65 builder R (round 3, the lead's item 3: "a3: where a dash-jump lands (D-5 says somewhere worse: check it in the sim)"): a LOCAL probe,
+// never committed (builder R owns room files, not tools). `r65dashjump`: the real sim (a CAMPAIGN run of the level file, n53ridekill's set-up,
+// DOORFREE, enemies killed every step, invulnerable), the player put on THE RUN-UP RAMP running north; at the ramp's top a dash, a jump inside
+// the dash (the dash-jump, Mover.cs's "keep the dash's horizontal velocity"), optionally a double jump at the apex; the stick forward the whole
+// way. Prints the path every 0.1 s and where the feet first come to rest (grounded) after the take-off.
+//   r65dashjump --level Design/levels/n65-foundry.json [--x 2.5] [--from -60.5] [--lip -63.5] [--double] [--jumpFirst]
+using System;
+using System.Collections.Generic;
+using System.Globalization;
+using System.Linq;
+using System.Runtime.CompilerServices;
+using Skygrind.Core;
+using Skygrind.Game;
+
+public static partial class Harness
+{
+    [ModuleInitializer]
+    internal static void R65DashJumpInit()
+    {
+        string[] argv = Environment.GetCommandLineArgs();
+        if (argv.Length < 2 || argv[1] != "r65dashjump") return;
+        string[] args = argv.Skip(1).ToArray();
+        int code;
+        try { code = R65DashJump(args); }
+        catch (Exception e) { Console.WriteLine("r65dashjump: EXCEPTION " + e); code = 2; }
+        Environment.Exit(code);
+    }
+
+    static int R65DashJump(string[] args)
+    {
+        CultureInfo ci = CultureInfo.InvariantCulture;
+        string path = N53RkOpt(args, "--level", "Design/levels/n65-foundry.json");
+        double x = double.Parse(N53RkOpt(args, "--x", "2.5"), ci);
+        double from = double.Parse(N53RkOpt(args, "--from", "-60.5"), ci);
+        double lip = double.Parse(N53RkOpt(args, "--lip", "-63.5"), ci);
+        bool dbl = Array.IndexOf(args, "--double") >= 0, jumpFirst = Array.IndexOf(args, "--jumpFirst") >= 0;
+        GameConfig cfg = Config();
+        SurvivalMap map = CampaignMapFrom(path, cfg, out var json);
+        SurvivalSim sim = SurvivalSim.Headless(cfg, map);
+        sim.noRecords = sim.noLab = true;
+        sim.n24Override = new N24Blocks { campaign = true };
+        sim.n25Override = new N25Blocks { tutorial = true };
+        sim.setup.mode = Campaign24.Mode;
+        sim.StartRun(6501, null, null);
+        for (int s = 0; s < 240; s++) { sim.health.hp = sim.health.max; sim.Step(); }
+        sim.zones?.OpenAll();
+        sim.campaign?.SetDoorFree29(true);
+        var start = new Vec3(x, 0.5, from);
+        sim.Respawn(start, 0);
+        sim.mover.invulnerable = true;
+        var inp = (ScriptedInput)sim.input;
+        void StepWith(InputFrame f) { inp.SetLook(f.yaw, f.pitch); inp.Set(f, new CombatInput { weapon = -1 }); sim.hitstopLeft = 0; sim.health.hp = sim.health.max; sim.husks.KillAll(); sim.Step(); }
+        for (int i = 0; i < 30; i++) StepWith(new InputFrame { yaw = 0 });
+        int fired = -1, t = 0, landedAt = -1;
+        double maxY = double.MinValue;
+        Vec3 takeoff = default, landed = default;
+        var path65 = new List<string>();
+        int stepsMax = MovementMath.StepsFor(6, sim.step);
+        for (; t < stepsMax; t++)
+        {
+            var f = new InputFrame { yaw = 0, moveZ = 1 };
+            Vec3 p = sim.mover.position;
+            if (fired < 0 && p.z <= lip)
+            {
+                fired = t; takeoff = p;
+                if (jumpFirst) f.jump = new Button { held = true, pressed = true };
+                else f.dash = new Button { held = true, pressed = true };
+            }
+            else if (fired >= 0)
+            {
+                int k = t - fired;
+                if (!jumpFirst && k == MovementMath.StepsFor(0.08, sim.step)) f.jump = new Button { held = true, pressed = true };
+                else if (jumpFirst && k == MovementMath.StepsFor(0.1, sim.step)) f.dash = new Button { held = true, pressed = true };
+                else if (k > 0 && k < MovementMath.StepsFor(0.3, sim.step)) f.jump = new Button { held = true };
+                if (dbl && k == MovementMath.StepsFor(0.45, sim.step)) f.jump = new Button { held = true, pressed = true };
+            }
+            StepWith(f);
+            p = sim.mover.position;
+            if (fired >= 0)
+            {
+                maxY = Math.Max(maxY, p.y);
+                if ((t - fired) % MovementMath.StepsFor(0.1, sim.step) == 0) path65.Add($"({p.x:0.0}, {p.y:0.00}, {p.z:0.0}) {sim.mover.state}");
+                if (t - fired > MovementMath.StepsFor(0.15, sim.step) && sim.mover.grounded) { landedAt = t; landed = p; break; }
+            }
+        }
+        Console.WriteLine($"r65dashjump: level {path}, {(jumpFirst ? "jump then dash" : "dash then jump")}{(dbl ? " + a double jump at 0.45 s" : "")}, the stick forward, take-off at ({takeoff.x:0.00}, {takeoff.y:0.00}, {takeoff.z:0.00})");
+        Console.WriteLine("  path every 0.1 s: " + string.Join("; ", path65));
+        if (landedAt < 0) { Console.WriteLine($"r65dashjump: NOT LANDED in 6 s; max feet y {maxY:0.00}"); return 1; }
+        Console.WriteLine($"r65dashjump: landed at ({landed.x:0.00}, {landed.y:0.00}, {landed.z:0.00}) after {(landedAt - fired) * sim.step:0.00} s, {Math.Abs(landed.z - takeoff.z):0.0} m north of the take-off; max feet y {maxY:0.00}");
+        return 0;
+    }
+}

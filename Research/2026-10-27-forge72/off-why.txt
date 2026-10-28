@@ -1,0 +1,96 @@
+## n63.colours63 enabled=false
+  enabled_why: Off until slate C1 passes NIGHT63.md's rules in a Player (Logs/n63/slate.json C1): the audit tool lists every literal effect colour with file:line and its role, the top offenders (incl. the lime floor stripes, the danger-red line on spire's exit, the yellow edge lines) read the role table; the off-palette pixel share per level on verbs37 frames falls by >= 50 % on vs off in the same build (the meter with planted cases); the same-run SPOT pair with the biggest change naming a colour change with >= 41,472 px changed; verbs37 x5 unchanged; then a skygrind-critic PASS whose SPOT line names its vis
+  _why tail: s/Game not read from config's role colours (hex and Color literals, file:line, its role); the role table (CLAUDE.md rule 8: cyan player-usable, red-orange enemies and danger only, magenta RIVAL only, pale violet-white the boundary; yellow the parry tell only: DECIDE63 D-1) lives in this row's numbers, and the top offenders read it behind this row. Off: -skygrindOff63 (or older) or -skygrindNoColours63. View only: no tape bit. The web has no such row: its effects pick their colours one at a time.
+## n64.goal64 enabled=false
+  enabled_why: Off until slate C4 passes NIGHT64.md's rules in a Player (Logs/n64/slate.json C4): on the GATE build's same-run pairs (a157 n52-spire clear shots) the column's danger-band pixels inside every door box are 0 while the column is still drawn (its pixels in the boundary band > 0); the window shafts keep their red-gold; the SPOT pair at a spire exit names the line's colour change; verbs37 n52-spire x1 31 / 31, verbs37 x5 on rc1 unchanged, fingerprints EQUAL; then a skygrind-critic PASS whose SPOT line names its visible change, flipped by Tools/night/n64-freeze-rows.cjs (the PASS's sha checked).
+  _why tail:  THE CROWN's goal column (Route47View.cs:113-135, its through-wall pass Column47.shader:98-106) stands at the centre of every spire door in the red-gold 0xff8a3a; with this row on it draws in the colour table's goal role, read with Colours63Math.From(cfg) every frame, never typed; the window shafts over the doors keep their red-gold (GG's call, DECIDE64). Off: -skygrindOff64 (or older) or -skygrindNoGoal64. View only: no tape bit. The web has no such row: its goal column was drawn in one colour.
+## n56.yellow56 enabled=false
+  enabled_why: Off until its slate entry (Logs/n56/slate.json) passes the critic gate and the freeze gates pass.
+  _why tail: View row. Builder V (V3): yellow means parry only: the non-parry yellow on the guns (THUNDERCLAP / TORCH plates) and the floor trims moved off the parry band; boss and enemy parts in yellow stay (GG's design). Off = NIGHT55's look.
+## n55.decor55 enabled=false
+  enabled_why: Off until its slate entry (Logs/n55/slate.json) passes the critic gate and the freeze gates pass.
+  _why tail: View row. Builder R: decor54's level accents made visible on screen (they read as subtle at NIGHT54's close) while usable cyan stays the brightest. Off = NIGHT54's decor.
+## n61.fixture61 enabled=false
+  enabled_why: Off until slate S4 passes NIGHT61.md section 2's visible rule in a Player: unmounted light sources on the a357 entry frames of the five levels <= 10 % of the red (each light with a housing and a hanger to a beam or a wall); no light moves, dims or flickers more (the light54 log lines and the frame-to-frame luma of a still pose unchanged within 0.01); the SPOT on two a357 entry pairs naming the lamps or fixtures; verbs37 x5 unchanged; then a skygrind-critic PASS.
+  _why tail: the plan's lights and fixtures are untouched; the mounts cast no shadow), and every part stays within Rods40WallClear under its ceiling (rods40's play volume never meets one). Off: -skygrindOff61 (or older) or -skygrindNoFixture61 (this row alone). Proof line in the Player log: '[fixture61] mounts on <level>: ceiling lights <n>, housed <n>, held by a beam <n>, by a wall <n>, unmounted <n>'. View only: no tape bit; its numbers are Unity-only (UnityTuning.N61V4.cs). The web draws no light fixture.
+## n63.exit63 enabled=false
+  enabled_why: Off until it passes its doneWhen (Research/2026-10-22-wave63/V-EXIT.md, written before any Player run) in a Player: OWN GAIN (door luma on / off, Tools/night/n60-v-lamp.py on a157's -skygrindClearShots60 kiln clear shots, a same-run pair) >= 1.5x in >= 4 of 5 rooms; the GUARD (the p95 luma outside the door's box within 0.02 of off) 5 / 5; one [exit63] door-lit line per lit door and 0 with the row off; the SPOT pair (a157 -skygrindExitShots63 kb3d) >= 41,472 px and named; verbs37 x5 unchanged; then a skygrind-critic PASS.
+  _why tail: d until it locks again; a door open since the map was read stays dark; doors into a boss room keep their boundary tone. Every gain 1 or under (no bloom past the door's box), no Light (nothing lights the room or the gun). Read every frame (Exit63.N63V.cs, NightRows.ViewOn: D1's override). Game layer only: the sim never reads it (no tape bit). Off: -skygrindOff63 (or older) or -skygrindNoExit63. The web has no such row: it has no campaign doors (Campaign24 is a Unity night's, after the web froze).
+## n61.exitFrame61 enabled=false
+  enabled_why: Off until slate S1 passes NIGHT61.md section 2's visible rule in a Player: the lamp's own gain on the door (Tools/night/n60-v-lamp.py, door luma on / off) >= 1.5x in >= 4 of n57-kiln's 5 rooms, on vs -skygrindNoExit58 in the same build; its GUARD (the room's p95 luma outside the door's box within 0.02 of off) 5 / 5; every clear shot's a157 line reading 'room cleared yes'; the SPOT naming the door or the exit; verbs37 x5 27 / 29 / 31 / 31 / 31 with 0 NREs; then a skygrind-critic PASS.
+  _why tail: ayer. Cyan = player-usable (CLAUDE.md rule 8). Off: -skygrindOff61 (or older), -skygrindNoExitFrame61 (this row alone) or -skygrindNoExit58 (no exit lamp at all), so the slate's 'on vs -skygrindNoExit58' measures this row as written in a build where lamp60 is off; turn this row on alone (both rows on draw both). Proof line in the Player log: '[exit61] door lit: room <id> (door <door>, frame <n>)'. View only: no tape bit; its numbers are Unity-only (UnityTuning.N61V.cs). The web has no exit lamp.
+## n60.lamp60 enabled=false
+  enabled_why: Off until its MAIN (the exit door's luma / the room's median at the clear frame >= 1.5x on n57-kiln's new rooms; Tools/night/n60-v-lamp.py on a157's -skygrindClearShots60 frames) and its GUARD (the room's p95 luma outside the door's mask within the planted tolerance of the off side) pass in a Player, by NIGHT57.md section 0's rule.
+  _why tail: ing left, dark while the door is locked and rising once over UnityTuning.Exit58FadeS when it opens (cyan = player-usable, CLAUDE.md rule 8: go here). This row replaces the compile-time UnityTuning.Exit58On (removed), so a build copy can turn it on (node Tools/night/n46-build-rows.cjs <tag> on n60.lamp60) and -skygrindOff60 (or older) turns it off; -skygrindNoExit58 still turns this lamp alone off. View only: no tape bit. Its numbers are Unity-only (UnityTuning.N58V.cs). The web has no exit lamp.
+## n38.doors38 enabled=false
+  enabled_why: (none)
+  _why tail: View row (builder M, PLAN.md section 3; D-2): every doorway is a holographic curtain visible from 40 m: CYAN = open (no collider, pass through), RED-ORANGE = locked (solid), the boss door PALE VIOLET-WHITE with its sign; the next room lit behind it. Off: today's dark gates.
+## n55.ssao55 enabled=false
+  enabled_why: Off until its slate entry (Logs/n55/slate.json) passes the critic gate and the freeze gates pass.
+  _why tail: View row. Builder C: SSAO's noise without TAA (blur, falloff, downsample settings or a pass of our own). Off = NIGHT54's SSAO.
+## n63.eye63 enabled=false
+  enabled_why: Off until GG's blind paired A / B (L-001: feel is done when the screen measurably changes, judged blind). A camera ease is not a still-frame change, so its SPOT is the telemetry, not a pair of frames: verbs37 on the five levels with the row on, again with -skygrindNoEye63, then node Tools/night/n63-m1-chop.cjs --pair <on tag> <off tag>: the eye's own residual (cam.height through the tool's fit) halved at every slide and landing event (the reel's placements left out), the feet, x and z the same on both runs (view only).
+  _why tail: xactly 0.10 s halves the exit's residual (the best, a smoothstep: 4.55 -> 3.54 cm). View only: the sim's eye height (body.eyeHeight: Combat's ray, the bots), the hitboxes and every fingerprint are untouched; the row is read every frame (D1's contract: the follow advances whether the row is on or off, a held frame moves nothing, off draws today's exact expression). Off: the row off, -skygrindOff63 (or older), -skygrindNoEye63. The web has no such row: its eye ease is the MoveTowards this follows.
+## n55.fov55 enabled=false
+  enabled_why: Off until its slate entry (Logs/n55/slate.json) passes the critic gate and the freeze gates pass.
+  _why tail: View row. Builder C: the world FOV follows horizontal speed and holds while the speed holds (the camera shows speed, not button presses). Off = NIGHT54's FOV kicks.
+## n55.step55 enabled=false
+  enabled_why: Off until its slate entry (Logs/n55/slate.json) passes the critic gate and the freeze gates pass.
+  _why tail: View row. Builder C: the step-down camera pop measured and smoothed (move54's unmeasured item). Off = NIGHT54's camera.
+## n71.wyrm71 enabled=false
+  enabled_why: OFF until GG's keep (NIGHT71: ON only in the play build)
+  _why tail: B3 (T-154): a wyrm motion that reads (BossMotion63 wyrm numbers; render only)
+## n71.voice71 enabled=false
+  enabled_why: OFF until GG's keep (NIGHT71: ON only in the play build)
+  _why tail: B1 (T-155): one order at a time on THE CROWN (call40 hidden while the fight line or bar draws the window order)
+## n71.words71 enabled=false
+  enabled_why: OFF until GG's keep (NIGHT71: ON only in the play build)
+  _why tail: B2 (T-155, DECIDE63 D-4): the orders name the hand you hold
+## n71.cyan71 enabled=false
+  enabled_why: OFF until GG's keep (NIGHT71: ON only in the play build)
+  _why tail: B4 (T-153, GG's DECIDE64 call): boss weak points in bone while closed, cyan while open (play build A / B only)
+## n55.bossText55 enabled=false
+  enabled_why: Off until its slate entry (Logs/n55/slate.json) passes the critic gate and the freeze gates pass.
+  _why tail: View row. Builder B: each boss's rule is said once, never twice in one frame, and the centre text gets out of the fight after its first seconds; the OPEN state shows on the boss's body. Off = NIGHT54's text.
+## n55.finish55 enabled=false
+  enabled_why: Off until its slate entry (Logs/n55/slate.json) passes the critic gate and the freeze gates pass.
+  _why tail: View row. Builder K (P2): the boss-kill finish: the freeze frame at a boss's death (a comic-panel beat with the JoJo turn). Off = NIGHT54's boss death.
+## n55.speed55 enabled=false
+  enabled_why: Off until its slate entry (Logs/n55/slate.json) passes the critic gate and the freeze gates pass.
+  _why tail: View row. Builder K (P2): kills pay movement on screen: a kill at speed bursts harder; three kills fast give one short slow-mo beat. Off = no speed / chain beat.
+## n47.hitzone47 enabled=false
+  enabled_why: Off until the lead has looked at its frames and its gates pass (NIGHT47.md section 1: a GG ask is ON at the freeze when its gates are GREEN, verbs37 passes on levels 1-5, the smoke passes and the frames show the change).
+  _why tail: View row (NightRows.ViewOn(cfg, "hitzone47")). Builder F, R4 idea 2 (NIGHT47.md section 6's list: "enemy hit reactions that read the hit's direction"): where a player hit lands on a body is read by the body: a head hit snaps it back (away from the shot), a leg hit buckles it, a hit on one side twists it away; on top of NIGHT18 / NIGHT36's sideways kick and stagger.
+## n41.models41 enabled=false
+  enabled_why: Off until its check passes and the lead has looked at its Player frames once and iterated once (NIGHT41.md method 2; closing_reminder).
+  _why tail: Builder E6 (NIGHT41.md E6; INVENTORY A7, A8): the HUSK's own feature (the blind reader's weakest pair husk / spitter) and a death break-apart for every kind's parts.
+## n47.finale47 enabled=false
+  enabled_why: Off until the lead has looked at its frames and its gates pass (NIGHT47.md section 1: a GG ask is ON at the freeze when its gates are GREEN, verbs37 passes on levels 1-5, the smoke passes and the frames show the change).
+  _why tail: View row (NightRows.ViewOn(cfg, "finale47")). Builder F, R4 idea 1 (NIGHT47.md section 6's list: "a boss finale beat (a short slow motion on the last hit, the arena reacting)"): on bossDown the arena answers the kill (a white-cyan light flare from the boss, a floor shockwave ring out to the room, a camera hit) and the boss's name comes down in big type ("<NAME> DOWN"); the slow motion is bossKit's own (bossDying).
+## n71.kicks71 enabled=false
+  enabled_why: OFF until GG's keep (NIGHT71: ON only in the play build)
+  _why tail: F3 (T-77): feel46 kicks bigger and rarer
+## n63.press63 enabled=false
+  enabled_why: Off until it passes NIGHT63.md's rules in a Player: the SPOT on a same-run pair (an a157 n57-kiln kb3 entry frame, or a verbs37 vk frame in THE PRESS HALL) naming the presses or machines with >= 41,472 px changed; colliders unchanged (n46flow n57-kiln byte-equal with the row on: the sim never reads it); verbs37 n57-kiln 31 / 31; then a skygrind-critic PASS.
+  _why tail:  the player, CLAUDE.md rule 8; no yellow: yellow is the parry tell, DECIDE63 D-1) and a lamp in a housing on the crossbeam that lights while the head is up. View geometry only (Game/Press63.cs; numbers in UnityTuning.N63GS7.cs): no collider, no sim box, no nav or flow change; every part stays within the press's box grown by its proud margin. Read every frame (D1's contract). Off: -skygrindOff63 (or older) or -skygrindNoPress63. View only: no tape bit. The web has no such row: it has no n57-kiln.
+## n42.reticle42 enabled=false
+  enabled_why: Off until its check passes and the lead has looked at its before / after Player frames and iterated once (NIGHT42.md method 2; closing_reminder).
+  _why tail: Builder W1 (G8, GG: 'animation for redical for all weapons needs to spin faster and complete animation'): every weapon's reticle turn faster (view numbers in UnityTuning.*42.cs); the attack gate is charge42's.
+## n40.pump40 enabled=false
+  enabled_why: Off until the lead has looked at its Player frames once and iterated once (NIGHT40.md method 2).
+  _why tail: Builder W1 (NIGHT40.md W1; GG: 'The shotgun's firing animation should also be sped up'): a view row (no sim bit); numbers in UnityTuning.Pump40.cs.
+## n71.wash71 enabled=false
+  enabled_why: OFF until GG's keep (NIGHT71: ON only in the play build)
+  _why tail: L4 (T-105): the kill wash f3-f4 source
+## n71.glow71 enabled=false
+  enabled_why: OFF until GG's keep (NIGHT71: ON only in the play build)
+  _why tail: L6 (T-113): the PULSE's own gun glow
+## n41.select41 enabled=false
+  enabled_why: Off until its check passes and the lead has looked at its Player frames once and iterated once (NIGHT41.md method 2; closing_reminder).
+  _why tail: Builder J2 (NIGHT41.md J2; INVENTORY C9; DECIDE41 D-7): each level-select slot shows the level's name, its new weapon and its boss's silhouette; slot 6 'REBUILDING', locked.
+## n45.look45 enabled=false
+  enabled_why: Off until the lead has looked at its arena's frames (the identity card's landmark from the entrance, the 30 s problem in play) and its walk / gates pass (NIGHT45.md method).
+  _why tail: Builder A3 (view): a room with its own landmark (level data) draws it instead of look43's generic exit pylons (DESIGN-RULES A-6, A-9).
+## n46.shift46 enabled=false
+  enabled_why: Off until the lead has looked at its frames and its gates pass (NIGHT46.md method).
+  _why tail: View row: a room's state change lights its fixtures (NightRows.ViewOn(cfg, "shift46")).

@@ -1,0 +1,69 @@
+{
+ "_why": "NIGHT67 T1a (Tools/night/gen-slots.cjs --level iceline --export): n52-iceline's room g2 (2.2 THE SHIELD) exactly as Design/levels/n52/iceline.plan.json has it: the row (every key), its zone-keyed pieces (boxes, ramps, pads, grapple, pits, tunnels), its room-keyed pieces (lights, props, surfaces). The slot's starting point: rebuild it here (every new piece with a job and a why), give the row bot43: false, verb65 (the slate's verb) and line65 (the verb's line, 3+ waypoints); never an area67 block (refused). A key the row drops needs a reason in drop{}. The room's opening: top-level \"opening\": \"vista\" | \"ambushed\" | \"ambusher\" | \"held\" (and \"opening_why\"); left out, the room keeps n52-iceline's.",
+ "room": "g2",
+ "row": {
+  "id": "g2",
+  "name": "2.2 THE SHIELD",
+  "kind": "room",
+  "rect": [-12,-58,9,-30],
+  "height": 10,
+  "roof": true,
+  "par": 30,
+  "job36": "teach",
+  "verb36": "the WARDEN: punch the shield (a 1 s stun) or get round it",
+  "spawn": {"at":[0,0,-34.5],"yawDeg":0},
+  "exit": [0,0,-56],
+  "arena36": true,
+  "waves": [["warden","warden","husk","husk"],["charger","husk","husk"]],
+  "lessons": [{"promptPad":"{fire} THE SHIELD, OR FLANK IT","kind":"husksDead","n":1,"prompt":"{fire} THE SHIELD, OR FLANK IT"}],
+  "lessons31": [{"promptPad":"{fire} THE SHIELD, OR FLANK IT","kind":"husksDead","n":1,"prompt":"{fire} THE SHIELD, OR FLANK IT"}],
+  "proofs": [{"kind":"walk","points":[[0,0,-34.5],[0,0,-38],[-2,0,-42],[-2.5,0,-47.5],[0,0,-51],[0,0,-56]]},{"kind":"walk","points":[[-4.5,0,-46],[-4.5,1.5,-54],[-3,1.5,-55.5]]},{"kind":"walk","points":[[-10.8,0,-39.5],[-10.8,0,-43],[-10.8,4,-53.5],[-9.5,4,-55.5]]},{"kind":"walk","points":[[7.8,0,-39.5],[7.8,0,-43],[7.8,4,-53.5],[7,4,-55.5]]}],
+  "frames36": {"mid":[6,0,-33,24.775,-0.042],"exit":[0,0,-50,0,-0.075]},
+  "nodes": [[0,0,-49.5],[0,0,-51.5]],
+  "highNodes": [[-9.5,4,-55.5],[7,4,-55.5]],
+  "iceline47_why": "NIGHT47 B G25: wave 3 [charger, husk, husk]: the flank pillars (x +-9..9.6) break its charge; at most 3 roles at once (warden, husk, charger)",
+  "spawn_why": "NIGHT52 fix K2 (n52-loop-fix-k2.cjs): 4.5 m in from the door d1 (it stood 2 m in, on the door's 4 m dwell band): a retry starts you facing the anvil, not in the doorway",
+  "nodes_why": "NIGHT52 fix K2 (n52-loop-fix-k2.cjs): the warden's ground north of the anvil (it turns on the anvil while you loop round); the husks of waves 2 / 3 from the two gantries (4 m), down their ramps and lanes; EXT53 (e53-m-g2.cjs): the east gantry's high node 2.5 m west with the gantry (the east wall 3 m in)",
+  "loop52_why": "NIGHT52 fix K2 (n52-loop-fix-k2.cjs): n47's THE SHIELD (24 x 28 x 9 m, 8 pieces 1.19 per 100 m2, the lead's D-25: an open floor with two pillars) rebuilt to THE ROOM CONTRACT: 24 x 28 x 10 m, 17 pieces, three planes (0 / 1.5 / 4 m) on walkers' ramps, two 18 m ride panels with a flank lane behind each, THE ANVIL to loop round, four springs (two over the warden onto the north decks, two up the flank lanes); the lesson and the waves kept EXT53 (e53-m-g2.cjs, builder M): the mirror broken: the west is the flank (its panel, hidden lane, springs, gantry and health kept), the east is the face: the east wall 3 m in (21 x 28 m), the east panel, deck 1.5, its ramp, spring and pillar cut, the east gantry 4 x 5 m with its ramp on the new wall, the quench tank, the run-up step and the yard spring added.",
+  "frames52": {"_why":"NIGHT53 (n53-loop-g4.cjs, queue q2): the room frames reel a452: entry at the spawn, mid in the door half facing the anvil, high on the west gantry looking back (off the pads)","entry":[0,0,-34.5,0,0.02],"mid":[-4,0,-40,10,0.05],"high":[-9.5,4,-55.5,-140,-0.12]},
+  "waveNodes43": [[[-2.5,0,-48.5],[-6.5,0,-51.5],[-8.5,4,-55.5],[-3.5,1.5,-53.5]]],
+  "waveNodes43_why": "NIGHT56 L (n56-l-wave1.py, L2 spawns in view): wave 1 (warden, warden, husk, husk) spawns where the entry sees it (held, 45 passing floor spots, 36 in the minSpawnDist band): [-2.5, 0, -48.5]; [-6.5, 0, -51.5]; [-8.5, 4, -55.5]; [-3.5, 1.5, -53.5]; waves 1 + 2 merged [1, 3, 3] -> [4, 3]: both wardens and their husks hold the pillars at once",
+  "waves56_why": "NIGHT56 L (n56-l-wave1.py, L2 spawns in view): waves 1 + 2 merged [1, 3, 3] -> [4, 3]: both wardens and their husks hold the pillars at once (the same enemies, re-dealt: no wave-1 placement can show 4 of a smaller wave)"
+ },
+ "boxes": [
+  {"zone":"g2","kind":"wall","min":[-9.6,0,-53],"max":[-9,10,-35],"job":"line","why":"the WEST RIDE PANEL (cyan, 18 m, to the roof): ride past the warden on its left; behind it the west flank lane (2.4 m) runs to the gantry ramp","note":"the WEST RIDE PANEL (cyan, 18 m, to the roof): ride past the warden on its left; behind it the west flank lane (2.4 m) runs to the gantry ramp","ride":true,"ride36":{"face":"E","planeX":-9,"lz":[5,23]}},
+  {"zone":"g2","kind":"deck","min":[-7,0,-58],"max":[-2,1.5,-53],"job":"line","why":"the north deck's west half (1.5 m): wave 2's husks come down its ramp; the west spring lands you on it behind the warden","note":"the north deck's west half (1.5 m): wave 2's husks come down its ramp; the west spring lands you on it behind the warden"},
+  {"zone":"g2","kind":"deck","min":[-12,0,-58],"max":[-7,4,-53],"job":"line","why":"THE WEST GANTRY (4 m, the third tier, the north-west corner): the end of the west flank lane (its ramp, its spring); the high ground over the warden's back; the health","note":"THE WEST GANTRY (4 m, the third tier, the north-west corner): the end of the west flank lane (its ramp, its spring); the high ground over the warden's back; the health"},
+  {"zone":"g2","kind":"deck","min":[5,0,-58],"max":[9,4,-53],"job":"line","why":"THE EAST GANTRY (4 m, 4 x 5 m against the east wall; EXT53 e53-m-g2.cjs: narrowed with the wall 3 m in): the husks' perch over the face side; they file down its ramp at you while the warden holds the yard; drop off it behind the warden (EXT53 e53-fix-g2.cjs: the deck ends at the moved east wall, x 5..9; it ran 3 m into it)","note":"THE EAST GANTRY (4 m, 4 x 5 m against the east wall; EXT53 e53-m-g2.cjs: narrowed with the wall 3 m in): the husks' perch over the face side; they file down its ramp at you while the warden holds the yard; drop off it behind the warden (EXT53 e53-fix-g2.cjs: the deck ends at the moved east wall, x 5..9; it ran 3 m into it)"},
+  {"zone":"g2","kind":"hull","min":[-1.5,0,-46],"max":[1.5,10,-43],"job":"line","why":"THE ANVIL (3 x 3 m, to the roof, mid-room): the mass the warden turns on: loop round it to its back (the flank), or let it come round and punch the shield","note":"THE ANVIL (3 x 3 m, to the roof, mid-room): the mass the warden turns on: loop round it to its back (the flank), or let it come round and punch the shield"},
+  {"zone":"g2","kind":"hull","min":[2.5,0,-39],"max":[6,1.2,-36.5],"job":"cover","why":"THE QUENCH TANK (1.2 m, 3.5 x 2.5 m, the east door half; EXT53): the face side's vault cover: the warden comes round it at you and you punch the shield over its lip; the charger (wave 3) breaks its charge on it (the east pillar's job, NIGHT47 B G25)","note":"THE QUENCH TANK (1.2 m, 3.5 x 2.5 m, the east door half; EXT53): the face side's vault cover: the warden comes round it at you and you punch the shield over its lip; the charger (wave 3) breaks its charge on it (the east pillar's job, NIGHT47 B G25)"},
+  {"zone":"g2","kind":"hull","min":[-9,0,-34],"max":[-7.6,0.8,-31.5],"job":"line","why":"THE RUN-UP STEP (0.8 m, 1.4 x 2.5 m, the west door half; EXT53): hop it and jump into the west panel's ride: the fast flank starts at the door","note":"THE RUN-UP STEP (0.8 m, 1.4 x 2.5 m, the west door half; EXT53): hop it and jump into the west panel's ride: the fast flank starts at the door"}
+ ],
+ "ramps": [
+  {"zone":"g2","from":[-4.5,-48],"to":[-4.5,-53],"width":3,"rise":1.5,"job":"climb","why":"the west half's ramp (1.5 m over 5 m): the husks' way down to you","note":"the west half's ramp (1.5 m over 5 m): the husks' way down to you"},
+  {"zone":"g2","from":[-10.8,-44],"to":[-10.8,-53],"width":2.4,"rise":4,"job":"climb","why":"the WEST GANTRY RAMP (4 m over 9 m, up the west flank lane behind the panel): the walkers' climb to the third tier (no safe ledge); the flank route to the warden's back","note":"the WEST GANTRY RAMP (4 m over 9 m, up the west flank lane behind the panel): the walkers' climb to the third tier (no safe ledge); the flank route to the warden's back"},
+  {"zone":"g2","from":[7.8,-44],"to":[7.8,-53],"width":2.4,"rise":4,"job":"climb","why":"the EAST GANTRY RAMP (4 m over 9 m, along the east wall; EXT53: moved 3 m in with the wall): the husks' climb and file down the face side, the walkers' way to the east gantry","note":"the EAST GANTRY RAMP (4 m over 9 m, along the east wall; EXT53: moved 3 m in with the wall): the husks' climb and file down the face side, the walkers' way to the east gantry"}
+ ],
+ "pads": [
+  {"zone":"g2","at":[-6.5,0,-37],"target":[-4.5,1.5,-55.5],"apexAbove":3,"job":"line","why":"the WEST SPRING (a jump pad by the west pillar): over the warden's shield onto the north deck behind it: the flank by air","note":"the west spring"},
+  {"zone":"g2","at":[-10.8,0,-36.5],"target":[-9.5,4,-55.5],"apexAbove":3,"job":"line","why":"the WEST LANE SPRING (a jump pad at the west flank lane's mouth): up the lane onto the west gantry: the fast flank","note":"the west lane spring"},
+  {"zone":"g2","at":[7.8,0,-36.5],"target":[7,4,-55.5],"apexAbove":3,"job":"line","why":"the EAST LANE SPRING (a jump pad at the east lane's mouth, beside the quench tank): up onto the east gantry over the husks' ramp: the face side's way to the height (EXT53: 3 m in with the wall)","note":"the east lane spring"},
+  {"zone":"g2","at":[3.5,0,-55.5],"target":[-9.5,4,-55.5],"apexAbove":3,"job":"loop","why":"THE YARD SPRING (a jump pad in the warden's back yard, east of the exit; EXT53): over the exit onto the west gantry and its health: the loop over the warden for whoever got behind it (the P-rank's loop, by air)","note":"the yard spring"}
+ ],
+ "grapple": [],
+ "pits": [],
+ "tunnels": [],
+ "lights": [
+  {"id":"g2-L1","room":"g2","kind":"ceiling","at":[0,9.95,-33],"normal":[0,-1,0],"size":[3,3,0.1],"color":"white","range":9,"intensity":1},
+  {"id":"g2-L2","room":"g2","kind":"ceiling","at":[0,9.95,-50],"normal":[0,-1,0],"size":[4,4,0.1],"color":"amber","range":10,"intensity":1.1},
+  {"id":"g2-L3","room":"g2","kind":"ceiling","at":[-7,9.95,-55.5],"normal":[0,-1,0],"size":[4,3,0.1],"color":"white","range":9,"intensity":1},
+  {"id":"g2-L4","room":"g2","kind":"ceiling","at":[7,9.95,-55.5],"normal":[0,-1,0],"size":[4,3,0.1],"color":"white","range":9,"intensity":1},
+  {"id":"g2-L5","room":"g2","kind":"pool","at":[0,0.025,-56],"normal":[0,1,0],"size":[2.5,2.5,0.05],"color":"cyan","range":7,"intensity":1.6}
+ ],
+ "props": [
+  {"id":"g2-P1","room":"g2","kind":"pillar","at":[-4,2,-40],"size":[2,4,2],"yawDeg":0,"collider":true,"job":"cover","why":"the west PILLAR (2 x 2 x 4 m) 6 m short of the warden: step round it to its flank (the shield covers only its front 120 deg)"},
+  {"id":"g2-P3","room":"g2","kind":"healthPickup","at":[-9.5,4.9,-55.5],"size":[0.6,0.6,0.6],"yawDeg":0,"collider":false,"pickup":true,"job":"reward","why":"the high ground pays health: on the west gantry (4 m) at the flank lane's end (NIGHT52 fix K2 (n52-loop-fix-k2.cjs))"}
+ ],
+ "surfaces": [],
+ "drop": {}
+}

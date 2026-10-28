@@ -1,0 +1,954 @@
+{
+  "_why": "LEVEL 7, WARDENS (NIGHT25, builder C; authored geometry in Tools/night/levels67-kits.py): the shield kind in earnest and a recap. Room 1, THE GATEHOUSE, is a breath (a gate wall with a 12 m gap). Room 2, THE WARD LANES: dense N-S cover lanes where wardens walk. Room 3, THE FISTWORKS, is meleeOnly: a grid of tight pillars, and a pit on the east side whose platform is reached by the ramp from the middle or by a pulse flick across the pit. Room 4, THE MINI GAUNTLET: every kind met so far in one arena with three heights (floor, a 2 m central deck, 4 m mezzanines).",
+  "id": "level07",
+  "name": "LEVEL 7 WARDENS",
+  "floorSize": 242,
+  "killPlaneY": -30,
+  "wallHeight": 14,
+  "rooms": [
+    {
+      "id": "w1",
+      "name": "THE GATEHOUSE",
+      "kind": "room",
+      "rect": [
+        -26,
+        57.0,
+        26,
+        105.0
+      ],
+      "par": 25.0,
+      "botMedian": 25.0,
+      "parCap": 73.2,
+      "spawn": {
+        "at": [
+          0,
+          0,
+          99.0
+        ],
+        "yawDeg": 0
+      },
+      "exit": [
+        0,
+        0,
+        61.0
+      ],
+      "nodes": [
+        [
+          -21,
+          0,
+          67.0
+        ],
+        [
+          -10,
+          0,
+          65.0
+        ],
+        [
+          10,
+          0,
+          65.0
+        ],
+        [
+          21,
+          0,
+          67.0
+        ],
+        [
+          0,
+          0,
+          69.0
+        ],
+        [
+          -20,
+          0,
+          87.0
+        ],
+        [
+          20,
+          0,
+          87.0
+        ]
+      ],
+      "highNodes": [],
+      "waves": [
+        [
+          "husk",
+          "husk",
+          "husk",
+          "husk",
+          "husk",
+          "swarmer",
+          "swarmer"
+        ],
+        [
+          "husk",
+          "husk",
+          "husk",
+          "husk",
+          "husk",
+          "husk",
+          "swarmer",
+          "swarmer",
+          "swarmer"
+        ]
+      ]
+    },
+    {
+      "id": "w2",
+      "name": "THE WARD LANES",
+      "kind": "room",
+      "rect": [
+        -26,
+        3.0,
+        26,
+        51.0
+      ],
+      "par": 161.2,
+      "botMedian": 184.4,
+      "parCap": 161.2,
+      "spawn": {
+        "at": [
+          0,
+          0,
+          45.0
+        ],
+        "yawDeg": 0
+      },
+      "exit": [
+        0,
+        0,
+        7.0
+      ],
+      "nodes": [
+        [
+          -22,
+          0,
+          15.0
+        ],
+        [
+          -22,
+          0,
+          33.0
+        ],
+        [
+          -11,
+          0,
+          17.0
+        ],
+        [
+          -11,
+          0,
+          39.0
+        ],
+        [
+          1,
+          0,
+          15.0
+        ],
+        [
+          1,
+          0,
+          31.0
+        ],
+        [
+          13,
+          0,
+          15.0
+        ],
+        [
+          13,
+          0,
+          39.0
+        ],
+        [
+          23,
+          0,
+          15.0
+        ],
+        [
+          23,
+          0,
+          33.0
+        ]
+      ],
+      "highNodes": [],
+      "waves": [
+        [
+          "husk",
+          "husk",
+          "husk",
+          "husk",
+          "husk",
+          "warden"
+        ],
+        [
+          "husk",
+          "husk",
+          "husk",
+          "husk",
+          "husk",
+          "warden",
+          "warden"
+        ],
+        [
+          "husk",
+          "husk",
+          "husk",
+          "husk",
+          "husk",
+          "swarmer",
+          "swarmer",
+          "swarmer",
+          "warden",
+          "warden"
+        ]
+      ]
+    },
+    {
+      "id": "w3",
+      "name": "THE FISTWORKS",
+      "kind": "room",
+      "rect": [
+        -26,
+        -51.0,
+        26,
+        -3.0
+      ],
+      "par": 62.0,
+      "botMedian": 515.6,
+      "parCap": 62.0,
+      "spawn": {
+        "at": [
+          0,
+          0,
+          -9.0
+        ],
+        "yawDeg": 0
+      },
+      "exit": [
+        0,
+        0,
+        -47.0
+      ],
+      "limit": [
+        "meleeOnly"
+      ],
+      "nodes": [
+        [
+          -21,
+          0,
+          -29.0
+        ],
+        [
+          -12,
+          0,
+          -31.0
+        ],
+        [
+          4,
+          0,
+          -33.0
+        ],
+        [
+          -4,
+          0,
+          -37.0
+        ],
+        [
+          0,
+          0,
+          -11.0
+        ],
+        [
+          -22,
+          0,
+          -43.0
+        ],
+        [
+          -12,
+          0,
+          -43.0
+        ]
+      ],
+      "highNodes": [
+        [
+          14,
+          2,
+          -43.0
+        ],
+        [
+          22,
+          2,
+          -43.0
+        ]
+      ],
+      "waves": [
+        [
+          "husk",
+          "husk",
+          "swarmer"
+        ],
+        [
+          "husk",
+          "husk",
+          "husk",
+          "swarmer"
+        ],
+        [
+          "husk",
+          "husk",
+          "husk",
+          "swarmer",
+          "swarmer"
+        ]
+      ]
+    },
+    {
+      "id": "w4",
+      "name": "THE MINI GAUNTLET",
+      "kind": "room",
+      "rect": [
+        -26,
+        -105.0,
+        26,
+        -57.0
+      ],
+      "par": 118.5,
+      "botMedian": 118.5,
+      "parCap": 171.2,
+      "spawn": {
+        "at": [
+          0,
+          0,
+          -63.0
+        ],
+        "yawDeg": 0
+      },
+      "exit": [
+        0,
+        0,
+        -101.0
+      ],
+      "nodes": [
+        [
+          -12,
+          0,
+          -97.0
+        ],
+        [
+          12,
+          0,
+          -97.0
+        ],
+        [
+          0,
+          0,
+          -99.0
+        ],
+        [
+          -14,
+          0,
+          -81.0
+        ],
+        [
+          14,
+          0,
+          -81.0
+        ],
+        [
+          -8,
+          0,
+          -61.0
+        ],
+        [
+          8,
+          0,
+          -61.0
+        ]
+      ],
+      "highNodes": [
+        [
+          -4,
+          2,
+          -81.0
+        ],
+        [
+          4,
+          2,
+          -85.0
+        ],
+        [
+          0,
+          2,
+          -77.0
+        ],
+        [
+          -22,
+          4,
+          -91.0
+        ],
+        [
+          -22,
+          4,
+          -75.0
+        ],
+        [
+          22,
+          4,
+          -91.0
+        ],
+        [
+          22,
+          4,
+          -75.0
+        ]
+      ],
+      "waves": [
+        [
+          "husk",
+          "husk",
+          "husk",
+          "husk",
+          "swarmer",
+          "swarmer",
+          "spitter"
+        ],
+        [
+          "husk",
+          "husk",
+          "husk",
+          "charger",
+          "warden"
+        ],
+        [
+          "husk",
+          "husk",
+          "husk",
+          "lancer",
+          "drone"
+        ],
+        [
+          "husk",
+          "husk",
+          "husk",
+          "warden",
+          "charger",
+          "spitter",
+          "drone"
+        ]
+      ]
+    }
+  ],
+  "doors": [
+    {
+      "id": "d1",
+      "between": [
+        "w1",
+        "w2"
+      ],
+      "rect": [
+        -4,
+        51.0,
+        4,
+        57.0
+      ],
+      "checkpoint": true
+    },
+    {
+      "id": "d2",
+      "between": [
+        "w2",
+        "w3"
+      ],
+      "rect": [
+        -4,
+        -3.0,
+        4,
+        3.0
+      ],
+      "checkpoint": true
+    },
+    {
+      "id": "d3",
+      "between": [
+        "w3",
+        "w4"
+      ],
+      "rect": [
+        -4,
+        -57.0,
+        4,
+        -51.0
+      ],
+      "checkpoint": true
+    }
+  ],
+  "boxes": [
+    {
+      "zone": "w1",
+      "kind": "hull",
+      "min": [
+        -26,
+        0,
+        79.0
+      ],
+      "max": [
+        -6,
+        3.0,
+        81.0
+      ],
+      "note": "gatehouse"
+    },
+    {
+      "zone": "w1",
+      "kind": "hull",
+      "min": [
+        6,
+        0,
+        79.0
+      ],
+      "max": [
+        26,
+        3.0,
+        81.0
+      ],
+      "note": "gatehouse"
+    },
+    {
+      "zone": "w1",
+      "kind": "hull",
+      "min": [
+        -16,
+        0,
+        89.0
+      ],
+      "max": [
+        -13,
+        3.0,
+        92.0
+      ],
+      "note": "gatehouse"
+    },
+    {
+      "zone": "w1",
+      "kind": "hull",
+      "min": [
+        13,
+        0,
+        89.0
+      ],
+      "max": [
+        16,
+        3.0,
+        92.0
+      ],
+      "note": "gatehouse"
+    },
+    {
+      "zone": "w2",
+      "kind": "hull",
+      "min": [
+        -18,
+        0,
+        11.0
+      ],
+      "max": [
+        -16,
+        3.0,
+        43.0
+      ],
+      "note": "lanes"
+    },
+    {
+      "zone": "w2",
+      "kind": "hull",
+      "min": [
+        -6,
+        0,
+        11.0
+      ],
+      "max": [
+        -4,
+        3.0,
+        37.0
+      ],
+      "note": "lanes"
+    },
+    {
+      "zone": "w2",
+      "kind": "hull",
+      "min": [
+        6,
+        0,
+        17.0
+      ],
+      "max": [
+        8,
+        3.0,
+        43.0
+      ],
+      "note": "lanes"
+    },
+    {
+      "zone": "w2",
+      "kind": "hull",
+      "min": [
+        18,
+        0,
+        11.0
+      ],
+      "max": [
+        20,
+        3.0,
+        37.0
+      ],
+      "note": "lanes"
+    },
+    {
+      "zone": "w3",
+      "kind": "hull",
+      "min": [
+        -19,
+        0,
+        -26.0
+      ],
+      "max": [
+        -17,
+        3.0,
+        -24.0
+      ],
+      "note": "fistworks"
+    },
+    {
+      "zone": "w3",
+      "kind": "hull",
+      "min": [
+        -19,
+        0,
+        -18.0
+      ],
+      "max": [
+        -17,
+        3.0,
+        -16.0
+      ],
+      "note": "fistworks"
+    },
+    {
+      "zone": "w3",
+      "kind": "hull",
+      "min": [
+        -10,
+        0,
+        -26.0
+      ],
+      "max": [
+        -8,
+        3.0,
+        -24.0
+      ],
+      "note": "fistworks"
+    },
+    {
+      "zone": "w3",
+      "kind": "hull",
+      "min": [
+        -10,
+        0,
+        -18.0
+      ],
+      "max": [
+        -8,
+        3.0,
+        -16.0
+      ],
+      "note": "fistworks"
+    },
+    {
+      "zone": "w3",
+      "kind": "hull",
+      "min": [
+        -1,
+        0,
+        -26.0
+      ],
+      "max": [
+        1,
+        3.0,
+        -24.0
+      ],
+      "note": "fistworks"
+    },
+    {
+      "zone": "w3",
+      "kind": "hull",
+      "min": [
+        -1,
+        0,
+        -18.0
+      ],
+      "max": [
+        1,
+        3.0,
+        -16.0
+      ],
+      "note": "fistworks"
+    },
+    {
+      "zone": "w3",
+      "kind": "hull",
+      "min": [
+        8,
+        0,
+        -26.0
+      ],
+      "max": [
+        10,
+        3.0,
+        -24.0
+      ],
+      "note": "fistworks"
+    },
+    {
+      "zone": "w3",
+      "kind": "hull",
+      "min": [
+        8,
+        0,
+        -18.0
+      ],
+      "max": [
+        10,
+        3.0,
+        -16.0
+      ],
+      "note": "fistworks"
+    },
+    {
+      "zone": "w3",
+      "kind": "hull",
+      "min": [
+        17,
+        0,
+        -26.0
+      ],
+      "max": [
+        19,
+        3.0,
+        -24.0
+      ],
+      "note": "fistworks"
+    },
+    {
+      "zone": "w3",
+      "kind": "hull",
+      "min": [
+        17,
+        0,
+        -18.0
+      ],
+      "max": [
+        19,
+        3.0,
+        -16.0
+      ],
+      "note": "fistworks"
+    },
+    {
+      "zone": "w3",
+      "kind": "hull",
+      "min": [
+        -19,
+        0,
+        -38.0
+      ],
+      "max": [
+        -17,
+        3.0,
+        -36.0
+      ],
+      "note": "fistworks"
+    },
+    {
+      "zone": "w3",
+      "kind": "hull",
+      "min": [
+        -10,
+        0,
+        -38.0
+      ],
+      "max": [
+        -8,
+        3.0,
+        -36.0
+      ],
+      "note": "fistworks"
+    },
+    {
+      "zone": "w3",
+      "kind": "deck",
+      "min": [
+        8,
+        0,
+        -47.0
+      ],
+      "max": [
+        26,
+        2.0,
+        -39.0
+      ],
+      "note": "fistworks"
+    },
+    {
+      "zone": "w4",
+      "kind": "deck",
+      "min": [
+        -10,
+        0,
+        -89.0
+      ],
+      "max": [
+        10,
+        2.0,
+        -73.0
+      ],
+      "note": "mini"
+    },
+    {
+      "zone": "w4",
+      "kind": "deck",
+      "min": [
+        -26,
+        0,
+        -97.0
+      ],
+      "max": [
+        -18,
+        4.0,
+        -65.0
+      ],
+      "note": "mini"
+    },
+    {
+      "zone": "w4",
+      "kind": "deck",
+      "min": [
+        18,
+        0,
+        -97.0
+      ],
+      "max": [
+        26,
+        4.0,
+        -65.0
+      ],
+      "note": "mini"
+    },
+    {
+      "zone": "w4",
+      "kind": "hull",
+      "min": [
+        -6,
+        0,
+        -65.0
+      ],
+      "max": [
+        -3,
+        3.0,
+        -63.0
+      ],
+      "note": "mini"
+    },
+    {
+      "zone": "w4",
+      "kind": "hull",
+      "min": [
+        3,
+        0,
+        -65.0
+      ],
+      "max": [
+        6,
+        3.0,
+        -63.0
+      ],
+      "note": "mini"
+    }
+  ],
+  "ramps": [
+    {
+      "zone": "w3",
+      "from": [
+        2,
+        -43.0
+      ],
+      "to": [
+        8,
+        -43.0
+      ],
+      "width": 6,
+      "rise": 2.0,
+      "note": "fistworks"
+    },
+    {
+      "zone": "w4",
+      "from": [
+        0,
+        -67.0
+      ],
+      "to": [
+        0,
+        -73.0
+      ],
+      "width": 6,
+      "rise": 2.0,
+      "note": "mini"
+    },
+    {
+      "zone": "w4",
+      "from": [
+        0,
+        -95.0
+      ],
+      "to": [
+        0,
+        -89.0
+      ],
+      "width": 6,
+      "rise": 2.0,
+      "note": "mini"
+    },
+    {
+      "zone": "w4",
+      "from": [
+        -10,
+        -69.0
+      ],
+      "to": [
+        -18,
+        -69.0
+      ],
+      "width": 6,
+      "rise": 4.0,
+      "note": "mini"
+    },
+    {
+      "zone": "w4",
+      "from": [
+        10,
+        -69.0
+      ],
+      "to": [
+        18,
+        -69.0
+      ],
+      "width": 6,
+      "rise": 4.0,
+      "note": "mini"
+    }
+  ],
+  "pads": [],
+  "grapple": [],
+  "pits": [],
+  "tunnels": []
+}

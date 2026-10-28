@@ -1,0 +1,6 @@
+proofs at 28ef8cbf9 11:40:47: N37Fixes
+== N37Fixes: (a1) worktree hits 1
+   Assets/Scripts/Game/N37Fixes.cs:7:    public static class N37Fixes
+(a2) main-tree untracked hits (7 files): none
+(a3) main-tree Logs/n71 + Research/2026-10-26* script hits: none
+(a4) UnityEvent m_MethodName hits: 0

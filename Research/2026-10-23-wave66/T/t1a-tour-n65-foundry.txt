@@ -1,0 +1,22 @@
+# command: dotnet run --project Tools/SimHarness -c Release --no-build -- n65tour --level n65-foundry
+# sha: 1b1f98ad (tree 1 dirty paths), 2026-10-23 22:35:04 USMST, /c/Users/gaige/dev/SKYGRIND-unity/.claude/worktrees/agent-af48e888c59fa3626
+
+n65tour: level n65-foundry (C:\Users\gaige\dev\SKYGRIND-unity\.claude\worktrees\agent-af48e888c59fa3626\Design\levels\n65-foundry.json), 212 solids (202 collision boxes, 10 wedges); planted none
+n65tour a2 pose mid36 (frames36.mid) | feet (5.0, 0.0, -39.0) yaw 38 pitch -0.05
+n65tour a2 line65: none in the row (no sequence)
+n65tour a3 pose mid36 (frames36.mid) | feet (6.5, 0.0, -60.5) yaw 33 pitch -0.01
+n65tour a3 line65: none in the row (no sequence)
+n65tour a4 pose mid36 (frames36.mid) | feet (-3.0, 0.0, -93.0) yaw -16 pitch 0.04
+n65tour a4 line65: none in the row (no sequence)
+n65tour a5 pose mid36 (frames36.mid) | feet (-9.0, 0.0, -113.0) yaw -35 pitch -0.02
+n65tour a5 line65: none in the row (no sequence)
+n65tour b1 pose mid36 (frames36.mid) | feet (-7.9, 0.0, -157.0) yaw -20 pitch 0.08
+n65tour b1 line65: none in the row (no sequence)
+n65tour a8 pose mid36 (frames36.mid) | feet (-3.7, 0.6, -347.0) yaw -8 pitch 0.00
+n65tour a8 line65: none in the row (no sequence)
+n65tour cases: an L-shaped line65 -> 8 frames, first yaw -0, last (10.0, -10.0) yaw -90: PASS; a bad plant 'a2:1,x,3' parses to nothing (PASS); the one-token '-skygrindTourPlant65=a8:-4/0/-352.5/180/-0.1': PASS
+n65tour case unframed (p2 has no pose): unframed p2, WARN 0 -> RED (the old rule: GREEN); fixed (p2 given a pose): unframed 0, WARN 0 -> GREEN
+n65tour case wedge (a pose 6 m up a 2.9 m / 8 m ramp, feet at y 0): solids 2 (1 box, 1 wedge), WARN 1 (p1 ramp (feet + eye)) -> RED (the old rule, boxes only: GREEN); fixed (feet on the ramp at y 2.2, its top 2.175): WARN 0 -> GREEN
+n65tour cases (T1a): PASS
+n65tour n65-foundry: rooms toured 6 (rows 6), poses 6 (on the fallback frames36.mid: a2, a3, a4, a5, b1, a8), line65 in 0 room(s), WARN 0, unframed none; tour65 rule (Tour65.Green, S3) GREEN; cases PASS; GREEN
+# exit 0, 22:35:05

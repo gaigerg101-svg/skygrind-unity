@@ -1,0 +1,46 @@
+# node Tools/night/gen-slots.cjs --level kiln --check
+# sha 00638946; dirty: ?? Tools/night/gen-slots.cjs ?? Tools/night/levels67.json ?? Tools/night/n67-a1.cjs 
+# start 2026-10-24 10:52:38
+gen-slots --check --level kiln: base n57-kiln (Design/levels/n57-kiln.json, plan Design/levels/n57/kiln.plan.json), new id n67-kiln, slots kb2 kb2c kb3 kb3c kb3d, kept kb1:link kb1b:link kb2b:link kb4:link k5:boss
+PASS the slots kb2 kb2c kb3 kb3c kb3d are every fight room (kind room) of Design/levels/n57/kiln.plan.json (kb2 kb2c kb3 kb3c kb3d)
+PASS every piece list of the plan is carried (boxes[72] ramps[11] pads[8] grapple[0] pits[3] tunnels[0] lights[74] props[6])
+PASS every piece is keyed to a room of the plan
+PASS Design/levels/n67/kiln/rooms-base/kb2.json is n57-kiln's kb2 exactly (re-exported from Design/levels/n57/kiln.plan.json; boxes 10, ramps 2, pads 2, grapple 0, pits 0, tunnels 0, lights 7, props 1)
+     Design/levels/n67/kiln/rooms/kb2.json: n57-kiln's room (not rebuilt yet)
+PASS Design/levels/n67/kiln/rooms-base/kb2c.json is n57-kiln's kb2c exactly (re-exported from Design/levels/n57/kiln.plan.json; boxes 12, ramps 2, pads 1, grapple 0, pits 0, tunnels 0, lights 8, props 1)
+     Design/levels/n67/kiln/rooms/kb2c.json: n57-kiln's room (not rebuilt yet)
+PASS Design/levels/n67/kiln/rooms-base/kb3.json is n57-kiln's kb3 exactly (re-exported from Design/levels/n57/kiln.plan.json; boxes 12, ramps 2, pads 2, grapple 0, pits 0, tunnels 0, lights 7, props 1)
+     Design/levels/n67/kiln/rooms/kb3.json: n57-kiln's room (not rebuilt yet)
+PASS Design/levels/n67/kiln/rooms-base/kb3c.json is n57-kiln's kb3c exactly (re-exported from Design/levels/n57/kiln.plan.json; boxes 10, ramps 3, pads 2, grapple 0, pits 1, tunnels 0, lights 8, props 1)
+     Design/levels/n67/kiln/rooms/kb3c.json: n57-kiln's room (not rebuilt yet)
+PASS Design/levels/n67/kiln/rooms-base/kb3d.json is n57-kiln's kb3d exactly (re-exported from Design/levels/n57/kiln.plan.json; boxes 11, ramps 2, pads 1, grapple 0, pits 1, tunnels 0, lights 9, props 1)
+     Design/levels/n67/kiln/rooms/kb3d.json: n57-kiln's room (not rebuilt yet)
+PASS every slot old: the assembled plan equals Design/levels/n57/kiln.plan.json apart from id / _why
+PASS every slot old: openings67.json kiln = Design/levels/n57/openings57.json's {"kb2":"held","kb2c":"vista","kb3":"held","kb3c":"vista","kb3d":"held"}
+PASS every slot old: levelgen --walk (0 ERROR, 8 s) + the finish (data-name): the level equals Design/levels/n57-kiln.json apart from its names (name, _why, generatedBy)
+PASS every slot old: with n57-kiln's name / _why / generatedBy the bytes ARE Design/levels/n57-kiln.json (3442531 chars)
+PASS every slot old: the levelgen ERROR rows are n57-kiln's own, as Tools/night/levels67.json lists them (none)
+PASS PLANTED one kb2 box moved 1 m east (levelgen --walk 0 ERROR, 8 s): the difference prints (4 item(s)):
+       top: collision
+       top: navGrid
+       top: data
+       campaign.boxes: 1 row(s) only in the base, 1 only in the new (base {"zone":"kb2","kind":"hull","min":[-6,0,-84],"max":[-2.5,14,-80],"job":"every-solid: THE STACK, the kiln's flue column (the room's landmark ; new {"zone":"kb2","kind":"hull","min":[-5,0,-84],"max":[-1.5,14,-80],"job":"every-solid: THE STACK, the kiln's flue column (the room's landmark )
+PASS PLANTED an unknown row key kb2.row.spinners67: refused (Design/levels/n67/kiln/rooms-base/kb2.json: unlisted row key 'spinners67' (refused: name its reader in gen-slots.cjs KNOWN first))
+PASS PLANTED an area67 block in kb2c's row (research.md's proposal): refused (Design/levels/n67/kiln/rooms-base/kb2c.json: unlisted row key 'area67' (refused: research.md's area67 block is a proposal, not a room field; the lint infers from the geometry: redteam.md 6))
+PASS PLANTED kb2c drops its name with no reason: refused (Design/levels/n67/kiln/rooms-base/kb2c.json: row key 'name' dropped with no reason (add drop.name: "<reason>"; nothing lost, PRINCIPLES 1))
+PASS PLANTED an unknown file key kb2.extras: refused (Design/levels/n67/kiln/rooms-base/kb2.json: unlisted file key 'extras' (a kiln room file holds _why, room, row, boxes, ramps, pads, grapple, pits, tunnels, lights, props, drop, opening, opening_why))
+PASS PLANTED kb2's box keyed to zone kb2c: refused (Design/levels/n67/kiln/rooms-base/kb2.json: boxes: a row keyed to 'kb2c', not kb2: {"zone":"kb2c","kind":"hull","min":[-6,0,-84],"max":[-2.5,14,-80],"job":"every-solid: THE STACK, the kiln's flue column (the room's landmark from the door)",)
+PASS PLANTED kb2c's rect widened 1 m: refused (Design/levels/n67/kiln/rooms-base/kb2c.json: row.rect [-10,-193.5,9,-163.5] is the slot's ([-9,-193.5,9,-163.5]): the doors fix it)
+PASS PLANTED a new kb2 box with no job / why: refused (Design/levels/n67/kiln/rooms-base/kb2.json: boxes: a new piece without job / why: {"zone":"kb2","kind":"hull","min":[0,0,-89.5],"max":[1,2,-88.5]})
+PASS PLANTED kb2's opening 'sideways': refused (Design/levels/n67/kiln/rooms-base/kb2.json: opening 'sideways' (one of vista, ambushed, ambusher, held; leave it out to keep n57-kiln's))
+PASS PLANTED kb2.row verb65 ride + line65: accepted (the plan's kb2 row carries verb65 ride, line65 3 waypoints)
+PASS PLANTED kb2.opening ambusher: from an old slot kiln stays the seed, from a latest / new slot {"kb2":"ambusher","kb2c":"vista","kb3":"held","kb3c":"vista","kb3d":"held"}
+PASS PLANTED a shared openings67.json with another level's key: kept ({"z1":"held"}), kb2's card added
+PASS PLANTED kb2 rebuilt (one pillar added, bot43 false): it appears in the assembled plan (kb2 boxes 10 -> 11) and only kb2's slot changed
+  slot kb2: old Design/levels/n67/kiln/rooms-base/kb2.json: REBUILT; boxes 10 -> 11*, ramps 2, pads 2, grapple 0, pits 0, tunnels 0, lights 7, props 1; note = why filled on 1
+    row keys: keep 28, replace 0, add 1, drop 0
+    add     bot43
+PASS PLANTED kb2 rebuilt, levelgen --walk 0 ERROR (none beyond the base's) + the finish: every campaign row that differs from Design/levels/n57-kiln.json is kb2's (none foreign); the difference: top: collision; top: navGrid; top: data; campaign.boxes: 0 row(s) only in the base, 1 only in the new (new {"zone":"kb2","kind":"hull","min":[-2.5,0,-89],"max":[-1.5,10,-88],"job":"cover: planted","why":"the --check's planted pillar","note":"the -); campaign.rooms kb2: bot43
+PASS PLANTED kb2's spawn lifted 40 m: levelgen 3 ERROR, 3 beyond n57-kiln's own (spots on the nav grid; player route, doors open; lesson kb2.1 reached: --run / --finish refuse it); the base's own 0 row(s) still listed and allowed
+gen-slots --check --level kiln: all PASS (levelgen runs: 4, 8 s / 8 s / 10 s / 9 s)
+# exit 0 at 10:53:15

@@ -1,0 +1,9 @@
+{
+  "_why": "NIGHT57 L (L0; NIGHT53 I7's sidecar for the n57 levels: Tools/night/n57-l-room.py points n53-identity / n56-room here): each n57-kiln combat room's opening, one of vista / ambushed / ambusher / held, read from its identity card in docs/ROOMS.md 'Level 3 as n57-kiln'. A slot that still holds n52's room keeps n52's opening (Design/levels/n52/openings53.json).",
+  "kiln": { "kb2": "held", "kb2c": "vista", "kb3": "held", "kb3c": "vista", "kb3d": "held" },
+  "_cards": {
+    "kb2": "the pack holds the charging floor and the spitters the deck: ground you take (held; was vista until slot B needed it: the same meter, >= 4 seen)",
+    "kb2c": "the ash bay and its two bridges seen from the crane mast: the burrower and the swarmers on the ash in front of you (vista; n52's THE ASH BED, the slot's fallback, was ambushed)",
+    "kb3": "n52's THE MOULD LINE until the new card's room passes (held)"
+  }
+}

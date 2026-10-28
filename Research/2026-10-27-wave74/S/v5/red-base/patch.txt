@@ -1,0 +1,21 @@
+# command: node Tools/night/n70-patch-share.cjs --level spire --room Design/levels/n67/spire/rooms-base/v5.json v5
+# sha: d3bf2c47e; time: 2026-10-27 23:33:36
+n70-patch-share: room v5 | shipped Design/levels/n67/spire/rooms-base/v5.json vs rebuilt Design/levels/n67/spire/rooms-base/v5.json
+| room | shipped pieces kept | by kind (kept / shipped) | rect / spawn / exit | waves |
+|---|---|---|---|---|
+| v5 | 13 / 13 (100 %) | boxes 8 / 8, ramps 3 / 3, pads 2 / 2, pits 0 / 0 | rect same, spawn same, exit same | waves same |
+  kept: box (-16, 0, -43)..(-12, 2.5, -39) (shipped job: line)
+  kept: box (-8, 0, -43)..(-4, 2.5, -39) (shipped job: line)
+  kept: box (-22, 0, -58)..(-21.4, 7, -40) (shipped job: line)
+  kept: box (-22, 0, -65)..(-15, 5, -58) (shipped job: line)
+  kept: box (-22, 5, -65)..(-20, 12, -63) (shipped job: cover)
+  kept: box (-8, 0, -53)..(-7, 12, -48) (shipped job: line)
+  kept: box (-8, 0, -57)..(2, 2.5, -47) (shipped job: line)
+  kept: box (0.5, 2.5, -52.5)..(2, 12, -51) (shipped job: cover)
+  kept: ramp (-17.65, -48)->(-17.65, -58) w 2.5 rise 5 (shipped job: climb)
+  kept: ramp (0.75, -41)->(0.75, -47) w 2.5 rise 2.5 (shipped job: climb)
+  kept: ramp (0.75, -63)->(0.75, -57) w 2.5 rise 2.5 (shipped job: climb)
+  kept: pad (-12.25, 0, -57.75)->(-18.5, 5, -61.5) (shipped job: line)
+  kept: pad (-2.25, 2.5, -55.25)->(-18.5, 5, -62.5) (shipped job: line)
+  rebuilt room pieces: boxes 8, ramps 3, pads 2, pits 0 | the rule: PASS at <= 25 % of the shipped room's pieces kept (geometry-equal; job / why text ignored)
+n70-patch-share: PATCH v5 (100 % kept)

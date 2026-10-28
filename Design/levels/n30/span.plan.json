@@ -1,0 +1,2840 @@
+{
+ "_why": "LEVEL 4, THE SPAN (NIGHT30, builder L, DESIGN30.md section D + I; GG: 'every level should revolve around a mechanic and a weapon with a fun, unique boss at the end that's inspired by that level's design'). A broken bridge of gantries over a lava gorge: THE ARCLINE grapple is the level's verb (grapple nodes as room rows), the NAILGUN its weapon (s1). s1 the tollgate (the NAILGUN, swarmers), s2 the first hook (one node over a 4 m wall with lava at its foot), s3 the gap (two nodes over a 12 m lava gap: a jump + dash reaches 8 m), s4 the hook fight (three gantries at three heights joined by nodes), s5 rest (the Loom's legs through a slot), s6 the chain (node -> wall lane -> node -> deck over lava), s7 the escalation (a ring of four nodes round the pylon), s8 THE LOOM (the boss room: a deck in a lava ring, four leg anchors, builder B's boss). Web coordinates, metres: x east, y up, z SOUTH (the player walks north, -z).",
+ "id": "n30-span",
+ "name": "LEVEL 4 THE SPAN",
+ "n29": true,
+ "n30": true,
+ "floorSize": 494,
+ "killPlaneY": -30,
+ "wallHeight": 14,
+ "rank": {
+  "time": [
+   240,
+   360,
+   540,
+   780
+  ],
+  "kills": [
+   100,
+   85,
+   65,
+   40
+  ],
+  "style": [
+   2500,
+   1500,
+   700,
+   250
+  ],
+  "_why": "Unity-only (builder L): S/A/B/C cuts for level 4 up to the Loom: time in seconds (an estimate: no pilot can grapple yet), kills = percent of the waves' enemies, style = points (NOT calibrated)."
+ },
+ "rooms": [
+  {
+   "id": "s1",
+   "name": "4.1 TOLLGATE",
+   "kind": "room",
+   "rect": [
+    -6,
+    -18,
+    6,
+    0
+   ],
+   "height": 7,
+   "roof": true,
+   "par": 30,
+   "spawn": {
+    "at": [
+     0,
+     0,
+     -2
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    0,
+    0,
+    -15.5
+   ],
+   "pickup": {
+    "weapon": "nailgun",
+    "at": [
+     2.5,
+     1.1,
+     -7
+    ]
+   },
+   "award": "nailgun",
+   "waves": [
+    [
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "swarmer"
+    ]
+   ],
+   "lessons": [
+    {
+     "kind": "husksDead",
+     "n": 4,
+     "prompt": "NAILGUN: HOLD TO STREAM.",
+     "promptPad": "NAILGUN: HOLD TO STREAM."
+    }
+   ],
+   "lessons31": [
+    {
+     "kind": "husksDead",
+     "n": 2,
+     "prompt": "NAILS STICK. {altFire} DETONATES THEM.",
+     "promptPad": "NAILS STICK. {altFire} DETONATES THEM."
+    },
+    {
+     "kind": "husksDead",
+     "n": 4,
+     "prompt": "A CHARGED SHOT SETS NAILS OFF.",
+     "promptPad": "A CHARGED SHOT SETS NAILS OFF."
+    }
+   ],
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       0,
+       -2
+      ],
+      [
+       0,
+       0,
+       -6
+      ],
+      [
+       0,
+       0,
+       -13
+      ],
+      [
+       0,
+       0,
+       -15.5
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -3.5,
+       0,
+       -5.5
+      ],
+      [
+       -3.5,
+       2.4,
+       -13
+      ]
+     ]
+    }
+   ],
+   "nodes": [
+    [
+     3,
+     0,
+     -14
+    ],
+    [
+     4.5,
+     0,
+     -15.5
+    ],
+    [
+     2,
+     0,
+     -16
+    ],
+    [
+     4,
+     0,
+     -13.5
+    ]
+   ],
+   "highNodes": [
+    [
+     -3.5,
+     2.4,
+     -15
+    ]
+   ]
+  },
+  {
+   "id": "s2",
+   "name": "4.2 FIRST HOOK",
+   "kind": "link",
+   "rect": [
+    -5,
+    -44,
+    5,
+    -22
+   ],
+   "height": 10,
+   "roof": true,
+   "par": 12,
+   "spawn": {
+    "at": [
+     0,
+     0,
+     -24
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    0,
+    0,
+    -41.5
+   ],
+   "grappleNodes": [
+    [
+     0,
+     8.5,
+     -32.5
+    ]
+   ],
+   "routeVia": [
+    [
+     [
+      0,
+      0,
+      -29.5
+     ],
+     [
+      0,
+      0,
+      -36
+     ]
+    ]
+   ],
+   "grapple": "the node at y 8.5 over the wall's south face: hook it from the entry floor (about 8 m), swing, let go over the wall (NOT proved by the validator: the span30 reel hooks it)",
+   "lessons": [
+    {
+     "kind": "reached",
+     "rect": [
+      -5,
+      -44,
+      5,
+      -34
+     ],
+     "minY": -0.5,
+     "prompt": "{grapple} GRAPPLE THE RING.",
+     "promptPad": "{grapple} GRAPPLE THE RING."
+    }
+   ],
+   "lessons31": [
+    {
+     "kind": "reached",
+     "rect": [
+      -5,
+      -44,
+      5,
+      -34
+     ],
+     "minY": -0.5,
+     "prompt": "TAP {grapple}: PULL. HOLD: SWING.",
+     "promptPad": "TAP {grapple}: PULL. HOLD: SWING."
+    }
+   ],
+   "gapLz31": 12,
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       0,
+       -24
+      ],
+      [
+       0,
+       0,
+       -44
+      ]
+     ],
+     "expect": "blocked",
+     "maxSeconds": 6
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       -0.8,
+       -31
+      ],
+      [
+       0,
+       0,
+       -28
+      ]
+     ],
+     "jump": true,
+     "maxSeconds": 10
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       0,
+       -35
+      ],
+      [
+       0,
+       0,
+       -41.5
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "name": "4.3 THE GAP",
+   "kind": "link",
+   "rect": [
+    -6,
+    -81,
+    6,
+    -48
+   ],
+   "height": 12,
+   "roof": true,
+   "par": 12,
+   "spawn": {
+    "at": [
+     0,
+     0,
+     -50
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    0,
+    0,
+    -78.5
+   ],
+   "grappleNodes": [
+    [
+     0,
+     9.5,
+     -59
+    ],
+    [
+     0,
+     9.5,
+     -66
+    ]
+   ],
+   "routeVia": [
+    [
+     [
+      0,
+      0,
+      -54.5
+     ],
+     [
+      0,
+      0,
+      -70.5
+     ]
+    ]
+   ],
+   "grapple": "two nodes at y 9.5 over lz 11 and 18: hook the first from the lip, let go at the top, hook the second (NOT proved by the validator)",
+   "lessons": [
+    {
+     "kind": "reached",
+     "rect": [
+      -6,
+      -81,
+      6,
+      -70.5
+     ],
+     "minY": -0.5,
+     "prompt": "SWING. LET GO AT THE TOP.",
+     "promptPad": "SWING. LET GO AT THE TOP."
+    }
+   ],
+   "lessons31": [
+    {
+     "kind": "reached",
+     "rect": [
+      -6,
+      -81,
+      6,
+      -70.5
+     ],
+     "minY": -0.5,
+     "prompt": "TAP {grapple} RING TO RING.",
+     "promptPad": "TAP {grapple} RING TO RING."
+    }
+   ],
+   "gapLz31": 22,
+   "proofs": [
+    {
+     "kind": "jumpDash",
+     "start": [
+      0,
+      0,
+      -49
+     ],
+     "lipZ": -55,
+     "gap": 15,
+     "toY": 0,
+     "expectFail": true
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       -1,
+       -56.2
+      ],
+      [
+       0,
+       0,
+       -53
+      ]
+     ],
+     "jump": true,
+     "maxSeconds": 10
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       0,
+       -71
+      ],
+      [
+       0,
+       0,
+       -78.5
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s4",
+   "name": "4.4 HOOK FIGHT",
+   "kind": "room",
+   "rect": [
+    -9,
+    -111,
+    9,
+    -85
+   ],
+   "height": 12,
+   "roof": true,
+   "par": 35,
+   "spawn": {
+    "at": [
+     0,
+     0,
+     -87
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    0,
+    0,
+    -108.5
+   ],
+   "grappleNodes": [
+    [
+     -1,
+     9,
+     -93.5
+    ],
+    [
+     0,
+     9.5,
+     -99.5
+    ]
+   ],
+   "grapple": "node 1 (y 9) between gantry 1 and gantry 2, node 2 (y 9.5) over the gap between gantry 2 and gantry 3 (NOT proved by the validator)",
+   "waves": [
+    [
+     "husk",
+     "husk",
+     "husk",
+     "husk"
+    ],
+    [
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "swarmer"
+    ]
+   ],
+   "lessons": [
+    {
+     "kind": "husksDead",
+     "n": 10,
+     "prompt": "NAILS FOR FLYERS.",
+     "promptPad": "NAILS FOR FLYERS."
+    }
+   ],
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       0,
+       -87
+      ],
+      [
+       0,
+       0,
+       -93
+      ],
+      [
+       0,
+       0,
+       -108.5
+      ],
+      [
+       0,
+       0,
+       -108.5
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       6,
+       0,
+       -110.5
+      ],
+      [
+       6,
+       3,
+       -98.5
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -6.5,
+       0,
+       -86
+      ],
+      [
+       -6.5,
+       1.2,
+       -93
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -6,
+       0,
+       -110.5
+      ],
+      [
+       -6,
+       4,
+       -100
+      ]
+     ]
+    }
+   ],
+   "nodes": [
+    [
+     -1,
+     0,
+     -99
+    ],
+    [
+     2,
+     0,
+     -106
+    ],
+    [
+     -1,
+     0,
+     -109
+    ],
+    [
+     3,
+     0,
+     -109.5
+    ]
+   ],
+   "highNodes": [
+    [
+     6,
+     3,
+     -98.5
+    ],
+    [
+     -6,
+     4,
+     -99
+    ],
+    [
+     -5,
+     4,
+     -100.5
+    ]
+   ]
+  },
+  {
+   "id": "s5",
+   "name": "4.5 REST",
+   "kind": "link",
+   "rect": [
+    -3,
+    -125,
+    3,
+    -115
+   ],
+   "height": 4,
+   "roof": true,
+   "par": 4,
+   "spawn": {
+    "at": [
+     0,
+     0,
+     -116.5
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    0,
+    0,
+    -123.5
+   ],
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       0,
+       -116.5
+      ],
+      [
+       0,
+       0,
+       -123.5
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s6",
+   "name": "4.6 CHAIN",
+   "kind": "room",
+   "rect": [
+    -7,
+    -165,
+    7,
+    -129
+   ],
+   "height": 12,
+   "roof": true,
+   "par": 30,
+   "spawn": {
+    "at": [
+     0,
+     0,
+     -131
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    0,
+    0,
+    -162.5
+   ],
+   "grappleNodes": [
+    [
+     -6,
+     3.5,
+     -143
+    ],
+    [
+     -2,
+     9.5,
+     -148
+    ]
+   ],
+   "grapple": "round 3 (the pull): node 1 (y 6, lz 7, 2 m off the west wall) pulls you onto the W wall lane (lz 9-16, under the baffle), node 2 (y 9.5, lz 19, hidden from the entry by the baffle) carries you onto the deck; the east strip is the walk (NOT proved by the validator; pull31 measures the taps)",
+   "gapLz31": 22,
+   "reachFrom": [
+    0,
+    0,
+    -162
+   ],
+   "waves": [
+    [
+     "spitter",
+     "spitter"
+    ]
+   ],
+   "lessons": [
+    {
+     "kind": "husksDead",
+     "n": 2,
+     "prompt": "HOOK. RIDE. HOOK.",
+     "promptPad": "HOOK. RIDE. HOOK."
+    }
+   ],
+   "lessons31": [
+    {
+     "kind": "husksDead",
+     "n": 2,
+     "prompt": "TAP {grapple}. RIDE. TAP AGAIN.",
+     "promptPad": "TAP {grapple}. RIDE. TAP AGAIN."
+    }
+   ],
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       -0.8,
+       -134.2
+      ],
+      [
+       0,
+       0,
+       -130.5
+      ]
+     ],
+     "jump": true,
+     "maxSeconds": 10
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       2,
+       -0.8,
+       -146
+      ],
+      [
+       5.5,
+       0.3,
+       -148.5
+      ],
+      [
+       5.5,
+       3,
+       -153
+      ]
+     ],
+     "jump": true,
+     "maxSeconds": 12
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       3,
+       -154
+      ],
+      [
+       0,
+       0,
+       -162.5
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       5.2,
+       0,
+       -131
+      ],
+      [
+       5.5,
+       0,
+       -147.4
+      ],
+      [
+       5.5,
+       0.3,
+       -148.5
+      ],
+      [
+       5.5,
+       3,
+       -153
+      ]
+     ],
+     "jump": true,
+     "maxSeconds": 14
+    }
+   ],
+   "nodes": [
+    [
+     4,
+     0,
+     -160
+    ]
+   ],
+   "highNodes": [
+    [
+     -3,
+     3,
+     -154
+    ],
+    [
+     3,
+     3,
+     -154.5
+    ]
+   ]
+  },
+  {
+   "id": "s7",
+   "name": "4.7 ESCALATION",
+   "kind": "room",
+   "rect": [
+    -10,
+    -197,
+    10,
+    -169
+   ],
+   "height": 12,
+   "roof": true,
+   "par": 50,
+   "spawn": {
+    "at": [
+     0,
+     0,
+     -171
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    0,
+    0,
+    -194.5
+   ],
+   "grappleNodes": [
+    [
+     -6,
+     9.5,
+     -177
+    ],
+    [
+     6,
+     9.5,
+     -177
+    ],
+    [
+     6,
+     9.5,
+     -189
+    ],
+    [
+     -6,
+     9.5,
+     -189
+    ]
+   ],
+   "grapple": "four nodes at y 9.5 at the moat's corners: a ring you can swing round the pylon while you fight (NOT proved by the validator)",
+   "waves": [
+    [
+     "husk",
+     "husk",
+     "husk",
+     "husk",
+     "husk"
+    ],
+    [
+     "husk",
+     "husk",
+     "husk",
+     "husk",
+     "husk"
+    ],
+    [
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "swarmer"
+    ],
+    [
+     "spitter",
+     "spitter"
+    ]
+   ],
+   "lessons": [
+    {
+     "kind": "husksDead",
+     "n": 18,
+     "prompt": "USE THE NODES.",
+     "promptPad": "USE THE NODES."
+    }
+   ],
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       0,
+       -171
+      ],
+      [
+       -8.5,
+       0,
+       -175
+      ],
+      [
+       -8.5,
+       0,
+       -191
+      ],
+      [
+       0,
+       0,
+       -194.5
+      ]
+     ]
+    }
+   ],
+   "nodes": [
+    [
+     -8,
+     0,
+     -174
+    ],
+    [
+     8,
+     0,
+     -174
+    ],
+    [
+     -8,
+     0,
+     -192
+    ],
+    [
+     8,
+     0,
+     -192
+    ],
+    [
+     0,
+     0,
+     -191
+    ],
+    [
+     -5,
+     0,
+     -189.5
+    ],
+    [
+     -8.5,
+     0,
+     -183
+    ],
+    [
+     8.5,
+     0,
+     -183
+    ]
+   ]
+  },
+  {
+   "id": "s8",
+   "name": "4.8 THE LOOM",
+   "kind": "boss",
+   "rect": [
+    -17,
+    -235,
+    17,
+    -201
+   ],
+   "height": 22,
+   "roof": true,
+   "par": 120,
+   "spawn": {
+    "at": [
+     0,
+     0,
+     -205
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    0,
+    0,
+    -232.5
+   ],
+   "boss": "loom",
+   "loomLegs": [
+    [
+     -9,
+     0,
+     -209
+    ],
+    [
+     9,
+     0,
+     -209
+    ],
+    [
+     9,
+     0,
+     -227
+    ],
+    [
+     -9,
+     0,
+     -227
+    ]
+   ],
+   "loomLegs_why": "the four points (world x, y, z) where THE LOOM's legs grip the deck's edge: SW, SE, NE, NW corners of the 18 x 18 deck (builder B: the legs, their two joints each and the body under the deck)",
+   "grappleNodes": [
+    [
+     -13,
+     12,
+     -205
+    ],
+    [
+     13,
+     12,
+     -205
+    ],
+    [
+     13,
+     12,
+     -231
+    ],
+    [
+     -13,
+     12,
+     -231
+    ]
+   ],
+   "grapple": "four static nodes at y 12 over the lava ring by each leg (the leg joints themselves are builder B's moving nodes)",
+   "deckBreak31": {
+    "rect": [
+     -5,
+     -223,
+     5,
+     -213
+    ],
+    "lavaY": -0.8,
+    "when": "half health",
+    "tell": "red-orange cracks across the middle",
+    "_why": "NIGHT31 DESIGN31 C4 / D: the deck's breakable middle (its extent and the lava under it); builder B adds the collider swap and the tell's seconds (design.n31.loom31)."
+   },
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       0,
+       -205
+      ],
+      [
+       0,
+       0,
+       -213
+      ],
+      [
+       0,
+       0,
+       -229
+      ],
+      [
+       0,
+       0,
+       -232.5
+      ]
+     ]
+    }
+   ]
+  }
+ ],
+ "doors": [
+  {
+   "id": "d1",
+   "between": [
+    "s1",
+    "s2"
+   ],
+   "rect": [
+    -2,
+    -22,
+    2,
+    -18
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  },
+  {
+   "id": "d2",
+   "between": [
+    "s2",
+    "s3"
+   ],
+   "rect": [
+    -2,
+    -48,
+    2,
+    -44
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  },
+  {
+   "id": "d3",
+   "between": [
+    "s3",
+    "s4"
+   ],
+   "rect": [
+    -2,
+    -85,
+    2,
+    -81
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  },
+  {
+   "id": "d4",
+   "between": [
+    "s4",
+    "s5"
+   ],
+   "rect": [
+    -2,
+    -115,
+    2,
+    -111
+   ],
+   "height": 4,
+   "checkpoint": true
+  },
+  {
+   "id": "d5",
+   "between": [
+    "s5",
+    "s6"
+   ],
+   "rect": [
+    -2,
+    -129,
+    2,
+    -125
+   ],
+   "height": 4,
+   "checkpoint": true
+  },
+  {
+   "id": "d6",
+   "between": [
+    "s6",
+    "s7"
+   ],
+   "rect": [
+    -2,
+    -169,
+    2,
+    -165
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  },
+  {
+   "id": "d7",
+   "between": [
+    "s7",
+    "s8"
+   ],
+   "rect": [
+    -2,
+    -201,
+    2,
+    -197
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  }
+ ],
+ "boxes": [
+  {
+   "zone": "s1",
+   "kind": "deck",
+   "min": [
+    -6,
+    0,
+    -18
+   ],
+   "max": [
+    -1,
+    2.4,
+    -12
+   ],
+   "note": "the toll deck (2.4 m): height over the swarmers' approach"
+  },
+  {
+   "zone": "s2",
+   "kind": "hull",
+   "min": [
+    -5,
+    0,
+    -34
+   ],
+   "max": [
+    5,
+    4,
+    -33
+   ],
+   "note": "the 4 m wall: no jump clears it, the node above it does"
+  },
+  {
+   "zone": "s3",
+   "kind": "hull",
+   "min": [
+    -4.5,
+    -1,
+    -62
+   ],
+   "max": [
+    4.5,
+    7.5,
+    -61
+   ],
+   "note": "the screen wall in the lava (top 7.5 m, 1.5 m gaps at the side walls): node 2 is hidden from the entry floor, so the line is node 1 -> node 2"
+  },
+  {
+   "zone": "s4",
+   "kind": "deck",
+   "min": [
+    -9,
+    0,
+    -96.5
+   ],
+   "max": [
+    -4,
+    1.2,
+    -90
+   ],
+   "note": "gantry 1 (low, 1.2 m)"
+  },
+  {
+   "zone": "s4",
+   "kind": "deck",
+   "min": [
+    3,
+    0,
+    -102
+   ],
+   "max": [
+    9,
+    3,
+    -95
+   ],
+   "note": "gantry 2 (mid, 3.0 m)"
+  },
+  {
+   "zone": "s4",
+   "kind": "deck",
+   "min": [
+    -9,
+    0,
+    -102.5
+   ],
+   "max": [
+    -3,
+    4,
+    -96.5
+   ],
+   "note": "gantry 3 (high, 4.0 m): the swarmers' perch, reached by the nodes (and by walkers up its ramp)"
+  },
+  {
+   "zone": "s6",
+   "kind": "hull",
+   "min": [
+    -7,
+    4.5,
+    -142
+   ],
+   "max": [
+    7,
+    12,
+    -141
+   ],
+   "note": "the BAFFLE: a 1 m slab from the roof down to y 4.5 (the wall lane and the east strip pass under it; the deck node is hidden from the entry)"
+  },
+  {
+   "zone": "s6",
+   "kind": "deck",
+   "min": [
+    -7,
+    0,
+    -157
+   ],
+   "max": [
+    7,
+    3,
+    -151
+   ],
+   "note": "the deck (3.0 m): the spitters' perch"
+  },
+  {
+   "zone": "s6",
+   "kind": "deck",
+   "min": [
+    4,
+    -0.8,
+    -149
+   ],
+   "max": [
+    7,
+    0.3,
+    -148
+   ],
+   "note": "catch step 1"
+  },
+  {
+   "zone": "s6",
+   "kind": "deck",
+   "min": [
+    4,
+    -0.8,
+    -150
+   ],
+   "max": [
+    7,
+    1.3,
+    -149
+   ],
+   "note": "catch step 2"
+  },
+  {
+   "zone": "s6",
+   "kind": "deck",
+   "min": [
+    4,
+    -0.8,
+    -151
+   ],
+   "max": [
+    7,
+    2.3,
+    -150
+   ],
+   "note": "catch step 3"
+  },
+  {
+   "zone": "s7",
+   "kind": "hull",
+   "min": [
+    -2,
+    0,
+    -185
+   ],
+   "max": [
+    2,
+    12,
+    -181
+   ],
+   "note": "the PYLON: the hero, floor to roof; the ring of nodes runs round it"
+  },
+  {
+   "zone": "s8",
+   "kind": "deck",
+   "min": [
+    -2,
+    -0.8,
+    -209
+   ],
+   "max": [
+    2,
+    0,
+    -201
+   ],
+   "note": "the entry strip over the south lava (floor level)"
+  },
+  {
+   "zone": "s8",
+   "kind": "deck",
+   "min": [
+    -2,
+    -0.8,
+    -235
+   ],
+   "max": [
+    2,
+    0,
+    -227
+   ],
+   "note": "the exit strip over the north lava (floor level)"
+  }
+ ],
+ "ramps": [
+  {
+   "zone": "s1",
+   "from": [
+    -3.5,
+    -6
+   ],
+   "to": [
+    -3.5,
+    -12
+   ],
+   "width": 3,
+   "rise": 2.4,
+   "note": "up to the toll deck (walkers: 6 m for 2.4 m)"
+  },
+  {
+   "zone": "s4",
+   "from": [
+    -6.5,
+    -86.5
+   ],
+   "to": [
+    -6.5,
+    -90
+   ],
+   "width": 3,
+   "rise": 1.2,
+   "note": "up to gantry 1 (walkers)"
+  },
+  {
+   "zone": "s4",
+   "from": [
+    6,
+    -110
+   ],
+   "to": [
+    6,
+    -102
+   ],
+   "width": 3,
+   "rise": 3,
+   "note": "up to gantry 2 from the north (walkers: 8 m for 3 m)"
+  },
+  {
+   "zone": "s4",
+   "from": [
+    -6,
+    -110.5
+   ],
+   "to": [
+    -6,
+    -102.5
+   ],
+   "width": 3,
+   "rise": 4,
+   "note": "up to gantry 3 from the north (walkers: 8 m for 4 m)"
+  },
+  {
+   "zone": "s6",
+   "from": [
+    -5.5,
+    -163.5
+   ],
+   "to": [
+    -5.5,
+    -157
+   ],
+   "width": 3,
+   "rise": 3,
+   "note": "up to the deck from the exit floor (walkers)"
+  }
+ ],
+ "pads": [],
+ "grapple": [],
+ "pits": [
+  {
+   "zone": "s2",
+   "rect": [
+    -5,
+    -33,
+    5,
+    -30
+   ],
+   "floorY": -0.8,
+   "lava": true,
+   "note": "the lava at the wall's foot (a miss burns and knocks you up; climb back out to the south)"
+  },
+  {
+   "zone": "s3",
+   "rect": [
+    -6,
+    -70,
+    6,
+    -55
+   ],
+   "floorY": -1,
+   "lava": true,
+   "note": "the 15 m lava gap (section I: lava under the whole gap, no void): a running jump + dash falls into it (the validator's jumpDash row), the two nodes carry you over (15 m, not the card's 12: margin for the dash)"
+  },
+  {
+   "zone": "s6",
+   "rect": [
+    -7,
+    -151,
+    3.5,
+    -133
+   ],
+   "floorY": -0.8,
+   "lava": true,
+   "note": "the lava floor, from the west wall to the dry east strip"
+  },
+  {
+   "zone": "s7",
+   "rect": [
+    -4,
+    -181,
+    4,
+    -179
+   ],
+   "floorY": -0.8,
+   "lava": true,
+   "note": "the lava moat, south of the pylon"
+  },
+  {
+   "zone": "s7",
+   "rect": [
+    -4,
+    -187,
+    4,
+    -185
+   ],
+   "floorY": -0.8,
+   "lava": true,
+   "note": "the lava moat, north of the pylon"
+  },
+  {
+   "zone": "s7",
+   "rect": [
+    -4,
+    -185,
+    -2,
+    -181
+   ],
+   "floorY": -0.8,
+   "lava": true,
+   "note": "the lava moat, west of the pylon"
+  },
+  {
+   "zone": "s7",
+   "rect": [
+    2,
+    -185,
+    4,
+    -181
+   ],
+   "floorY": -0.8,
+   "lava": true,
+   "note": "the lava moat, east of the pylon"
+  },
+  {
+   "zone": "s8",
+   "rect": [
+    -17,
+    -209,
+    17,
+    -201
+   ],
+   "floorY": -0.8,
+   "lava": true,
+   "note": "the lava ring, south (the entry strip crosses it)"
+  },
+  {
+   "zone": "s8",
+   "rect": [
+    -17,
+    -235,
+    17,
+    -227
+   ],
+   "floorY": -0.8,
+   "lava": true,
+   "note": "the lava ring, north"
+  },
+  {
+   "zone": "s8",
+   "rect": [
+    -17,
+    -227,
+    -9,
+    -209
+   ],
+   "floorY": -0.8,
+   "lava": true,
+   "note": "the lava ring, west"
+  },
+  {
+   "zone": "s8",
+   "rect": [
+    9,
+    -227,
+    17,
+    -209
+   ],
+   "floorY": -0.8,
+   "lava": true,
+   "note": "the lava ring, east"
+  }
+ ],
+ "tunnels": [],
+ "lights": [
+  {
+   "id": "s1-L1",
+   "room": "s1",
+   "kind": "ceiling",
+   "at": [
+    2.5,
+    6.95,
+    -7
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    2,
+    2,
+    0.1
+   ],
+   "color": "amber",
+   "range": 8,
+   "intensity": 1.6
+  },
+  {
+   "id": "s1-L2",
+   "room": "s1",
+   "kind": "wall",
+   "at": [
+    -5.95,
+    0.4,
+    -4
+   ],
+   "normal": [
+    1,
+    0,
+    0
+   ],
+   "size": [
+    3,
+    0.2,
+    0.1
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.1
+  },
+  {
+   "id": "s1-L3",
+   "room": "s1",
+   "kind": "wall",
+   "at": [
+    5.95,
+    0.4,
+    -4
+   ],
+   "normal": [
+    -1,
+    0,
+    0
+   ],
+   "size": [
+    3,
+    0.2,
+    0.1
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.1
+  },
+  {
+   "id": "s1-L4",
+   "room": "s1",
+   "kind": "wall",
+   "at": [
+    5.95,
+    0.4,
+    -14
+   ],
+   "normal": [
+    -1,
+    0,
+    0
+   ],
+   "size": [
+    3,
+    0.2,
+    0.1
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.1
+  },
+  {
+   "id": "s1-L5",
+   "room": "s1",
+   "kind": "pool",
+   "at": [
+    0,
+    0.025,
+    -15.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.8
+  },
+  {
+   "id": "s2-L1",
+   "room": "s2",
+   "kind": "wall",
+   "at": [
+    0,
+    3,
+    -32.95
+   ],
+   "normal": [
+    0,
+    0,
+    1
+   ],
+   "size": [
+    6,
+    0.25,
+    0.1
+   ],
+   "color": "cyan",
+   "range": 8,
+   "intensity": 1.6
+  },
+  {
+   "id": "s2-L2",
+   "room": "s2",
+   "kind": "ceiling",
+   "at": [
+    0,
+    9.95,
+    -32.5
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    2,
+    2,
+    0.1
+   ],
+   "color": "white",
+   "range": 10,
+   "intensity": 1
+  },
+  {
+   "id": "s2-L3",
+   "room": "s2",
+   "kind": "wall",
+   "at": [
+    -4.95,
+    0.4,
+    -26
+   ],
+   "normal": [
+    1,
+    0,
+    0
+   ],
+   "size": [
+    3,
+    0.2,
+    0.1
+   ],
+   "color": "white",
+   "range": 5,
+   "intensity": 0.9
+  },
+  {
+   "id": "s2-L4",
+   "room": "s2",
+   "kind": "wall",
+   "at": [
+    4.95,
+    0.4,
+    -26
+   ],
+   "normal": [
+    -1,
+    0,
+    0
+   ],
+   "size": [
+    3,
+    0.2,
+    0.1
+   ],
+   "color": "white",
+   "range": 5,
+   "intensity": 0.9
+  },
+  {
+   "id": "s2-L5",
+   "room": "s2",
+   "kind": "pool",
+   "at": [
+    0,
+    0.025,
+    -41.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.8
+  },
+  {
+   "id": "s3-L1",
+   "room": "s3",
+   "kind": "ceiling",
+   "at": [
+    0,
+    11.95,
+    -59
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    2,
+    2,
+    0.1
+   ],
+   "color": "white",
+   "range": 11,
+   "intensity": 1
+  },
+  {
+   "id": "s3-L2",
+   "room": "s3",
+   "kind": "ceiling",
+   "at": [
+    0,
+    11.95,
+    -66
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    2,
+    2,
+    0.1
+   ],
+   "color": "white",
+   "range": 11,
+   "intensity": 1
+  },
+  {
+   "id": "s3-L3",
+   "room": "s3",
+   "kind": "wall",
+   "at": [
+    -5.95,
+    0.4,
+    -52
+   ],
+   "normal": [
+    1,
+    0,
+    0
+   ],
+   "size": [
+    3,
+    0.2,
+    0.1
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.1
+  },
+  {
+   "id": "s3-L4",
+   "room": "s3",
+   "kind": "wall",
+   "at": [
+    5.95,
+    0.4,
+    -52
+   ],
+   "normal": [
+    -1,
+    0,
+    0
+   ],
+   "size": [
+    3,
+    0.2,
+    0.1
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.1
+  },
+  {
+   "id": "s3-L5",
+   "room": "s3",
+   "kind": "wall",
+   "at": [
+    -5.95,
+    0.4,
+    -75
+   ],
+   "normal": [
+    1,
+    0,
+    0
+   ],
+   "size": [
+    3,
+    0.2,
+    0.1
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.1
+  },
+  {
+   "id": "s3-L6",
+   "room": "s3",
+   "kind": "wall",
+   "at": [
+    5.95,
+    0.4,
+    -75
+   ],
+   "normal": [
+    -1,
+    0,
+    0
+   ],
+   "size": [
+    3,
+    0.2,
+    0.1
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.1
+  },
+  {
+   "id": "s3-L7",
+   "room": "s3",
+   "kind": "pool",
+   "at": [
+    0,
+    0.025,
+    -78.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.8
+  },
+  {
+   "id": "s4-L1",
+   "room": "s4",
+   "kind": "wall",
+   "at": [
+    -8.95,
+    5.5,
+    -99.5
+   ],
+   "normal": [
+    1,
+    0,
+    0
+   ],
+   "size": [
+    3,
+    0.3,
+    0.1
+   ],
+   "color": "amber",
+   "range": 8,
+   "intensity": 1.6
+  },
+  {
+   "id": "s4-L2",
+   "room": "s4",
+   "kind": "wall",
+   "at": [
+    8.95,
+    3.6,
+    -98.5
+   ],
+   "normal": [
+    -1,
+    0,
+    0
+   ],
+   "size": [
+    4,
+    0.2,
+    0.1
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.1
+  },
+  {
+   "id": "s4-L3",
+   "room": "s4",
+   "kind": "wall",
+   "at": [
+    -8.95,
+    1.8,
+    -93.5
+   ],
+   "normal": [
+    1,
+    0,
+    0
+   ],
+   "size": [
+    4,
+    0.2,
+    0.1
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.1
+  },
+  {
+   "id": "s4-L4",
+   "room": "s4",
+   "kind": "ceiling",
+   "at": [
+    -1,
+    11.95,
+    -94
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    2,
+    2,
+    0.1
+   ],
+   "color": "white",
+   "range": 11,
+   "intensity": 1
+  },
+  {
+   "id": "s4-L5",
+   "room": "s4",
+   "kind": "ceiling",
+   "at": [
+    0,
+    11.95,
+    -104
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    2,
+    2,
+    0.1
+   ],
+   "color": "white",
+   "range": 11,
+   "intensity": 1
+  },
+  {
+   "id": "s4-L6",
+   "room": "s4",
+   "kind": "pool",
+   "at": [
+    0,
+    0.025,
+    -108.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.8
+  },
+  {
+   "id": "s5-L1",
+   "room": "s5",
+   "kind": "wall",
+   "at": [
+    -2.95,
+    0.4,
+    -119
+   ],
+   "normal": [
+    1,
+    0,
+    0
+   ],
+   "size": [
+    3,
+    0.2,
+    0.1
+   ],
+   "color": "amber",
+   "range": 5,
+   "intensity": 1
+  },
+  {
+   "id": "s5-L2",
+   "room": "s5",
+   "kind": "wall",
+   "at": [
+    2.95,
+    0.4,
+    -119
+   ],
+   "normal": [
+    -1,
+    0,
+    0
+   ],
+   "size": [
+    3,
+    0.2,
+    0.1
+   ],
+   "color": "white",
+   "range": 5,
+   "intensity": 1
+  },
+  {
+   "id": "s5-L3",
+   "room": "s5",
+   "kind": "ceiling",
+   "at": [
+    0,
+    3.95,
+    -119
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    2,
+    2,
+    0.1
+   ],
+   "color": "white",
+   "range": 6,
+   "intensity": 0.9
+  },
+  {
+   "id": "s5-L4",
+   "room": "s5",
+   "kind": "pool",
+   "at": [
+    0,
+    0.025,
+    -123.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.4,
+    2.4,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 5,
+   "intensity": 1.2
+  },
+  {
+   "id": "s6-L1",
+   "room": "s6",
+   "kind": "wall",
+   "at": [
+    -6.95,
+    3,
+    -141.5
+   ],
+   "normal": [
+    1,
+    0,
+    0
+   ],
+   "size": [
+    7,
+    0.25,
+    0.1
+   ],
+   "color": "cyan",
+   "range": 8,
+   "intensity": 1.6
+  },
+  {
+   "id": "s6-L2",
+   "room": "s6",
+   "kind": "ceiling",
+   "at": [
+    0,
+    11.95,
+    -136
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    2,
+    2,
+    0.1
+   ],
+   "color": "white",
+   "range": 11,
+   "intensity": 1
+  },
+  {
+   "id": "s6-L3",
+   "room": "s6",
+   "kind": "ceiling",
+   "at": [
+    -2,
+    11.95,
+    -148
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    2,
+    2,
+    0.1
+   ],
+   "color": "white",
+   "range": 11,
+   "intensity": 1
+  },
+  {
+   "id": "s6-L4",
+   "room": "s6",
+   "kind": "ceiling",
+   "at": [
+    -5.5,
+    11.95,
+    -154
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    2,
+    2,
+    0.1
+   ],
+   "color": "white",
+   "range": 10,
+   "intensity": 1
+  },
+  {
+   "id": "s6-L5",
+   "room": "s6",
+   "kind": "wall",
+   "at": [
+    6.95,
+    0.4,
+    -130.5
+   ],
+   "normal": [
+    -1,
+    0,
+    0
+   ],
+   "size": [
+    3,
+    0.2,
+    0.1
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.1
+  },
+  {
+   "id": "s6-L6",
+   "room": "s6",
+   "kind": "wall",
+   "at": [
+    6.95,
+    0.4,
+    -160
+   ],
+   "normal": [
+    -1,
+    0,
+    0
+   ],
+   "size": [
+    3,
+    0.2,
+    0.1
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.1
+  },
+  {
+   "id": "s6-L7",
+   "room": "s6",
+   "kind": "pool",
+   "at": [
+    1,
+    0.025,
+    -162.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.8
+  },
+  {
+   "id": "s7-L1",
+   "room": "s7",
+   "kind": "wall",
+   "at": [
+    0,
+    7.5,
+    -180.95
+   ],
+   "normal": [
+    0,
+    0,
+    1
+   ],
+   "size": [
+    3,
+    0.3,
+    0.1
+   ],
+   "color": "amber",
+   "range": 9,
+   "intensity": 1.8
+  },
+  {
+   "id": "s7-L2",
+   "room": "s7",
+   "kind": "wall",
+   "at": [
+    -9.95,
+    1.8,
+    -183
+   ],
+   "normal": [
+    1,
+    0,
+    0
+   ],
+   "size": [
+    6,
+    0.2,
+    0.1
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.1
+  },
+  {
+   "id": "s7-L3",
+   "room": "s7",
+   "kind": "wall",
+   "at": [
+    9.95,
+    1.8,
+    -183
+   ],
+   "normal": [
+    -1,
+    0,
+    0
+   ],
+   "size": [
+    6,
+    0.2,
+    0.1
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.1
+  },
+  {
+   "id": "s7-L4",
+   "room": "s7",
+   "kind": "ceiling",
+   "at": [
+    -6,
+    11.95,
+    -177
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    2,
+    2,
+    0.1
+   ],
+   "color": "white",
+   "range": 11,
+   "intensity": 1
+  },
+  {
+   "id": "s7-L5",
+   "room": "s7",
+   "kind": "ceiling",
+   "at": [
+    6,
+    11.95,
+    -189
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    2,
+    2,
+    0.1
+   ],
+   "color": "white",
+   "range": 11,
+   "intensity": 1
+  },
+  {
+   "id": "s7-L6",
+   "room": "s7",
+   "kind": "pool",
+   "at": [
+    0,
+    0.025,
+    -194.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.8
+  },
+  {
+   "id": "s8-L1",
+   "room": "s8",
+   "kind": "wall",
+   "at": [
+    -16.95,
+    2,
+    -218
+   ],
+   "normal": [
+    1,
+    0,
+    0
+   ],
+   "size": [
+    8,
+    0.2,
+    0.1
+   ],
+   "color": "white",
+   "range": 12,
+   "intensity": 1.2
+  },
+  {
+   "id": "s8-L2",
+   "room": "s8",
+   "kind": "wall",
+   "at": [
+    16.95,
+    2,
+    -218
+   ],
+   "normal": [
+    -1,
+    0,
+    0
+   ],
+   "size": [
+    8,
+    0.2,
+    0.1
+   ],
+   "color": "white",
+   "range": 12,
+   "intensity": 1.2
+  },
+  {
+   "id": "s8-L3",
+   "room": "s8",
+   "kind": "ceiling",
+   "at": [
+    0,
+    21.95,
+    -218
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    6,
+    6,
+    0.1
+   ],
+   "color": "white",
+   "range": 18,
+   "intensity": 1.2
+  },
+  {
+   "id": "s8-L4",
+   "room": "s8",
+   "kind": "pool",
+   "at": [
+    0,
+    0.025,
+    -232.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 8,
+   "intensity": 1.4
+  }
+ ],
+ "props": [
+  {
+   "id": "s1-P1",
+   "room": "s1",
+   "kind": "plinth",
+   "at": [
+    2.5,
+    0.3,
+    -7
+   ],
+   "size": [
+    1.2,
+    0.6,
+    1.2
+   ],
+   "yawDeg": 0,
+   "collider": true
+  },
+  {
+   "id": "s1-P2",
+   "room": "s1",
+   "kind": "weaponPickup",
+   "at": [
+    2.5,
+    1.1,
+    -7
+   ],
+   "size": [
+    0.6,
+    0.6,
+    0.6
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "pickup": true,
+   "weapon": "nailgun",
+   "note": "the NAILGUN on its plinth, in view from the door (the room's `award` is the fallback)"
+  },
+  {
+   "id": "s1-P3",
+   "room": "s1",
+   "kind": "crate",
+   "at": [
+    4.5,
+    0.6,
+    -9.5
+   ],
+   "size": [
+    1.4,
+    1.2,
+    1.4
+   ],
+   "yawDeg": 0,
+   "collider": true
+  },
+  {
+   "id": "s1-P4",
+   "room": "s1",
+   "kind": "crate",
+   "at": [
+    -4.5,
+    0.6,
+    -3
+   ],
+   "size": [
+    1.4,
+    1.2,
+    1.4
+   ],
+   "yawDeg": 0,
+   "collider": true
+  },
+  {
+   "id": "s3-P1",
+   "room": "s3",
+   "kind": "crate",
+   "at": [
+    -4.5,
+    0.6,
+    -51
+   ],
+   "size": [
+    1.4,
+    1.2,
+    1.4
+   ],
+   "yawDeg": 0,
+   "collider": true
+  },
+  {
+   "id": "s3-P2",
+   "room": "s3",
+   "kind": "crate",
+   "at": [
+    4.5,
+    0.6,
+    -76
+   ],
+   "size": [
+    1.4,
+    1.2,
+    1.4
+   ],
+   "yawDeg": 0,
+   "collider": true
+  },
+  {
+   "id": "s4-P1",
+   "room": "s4",
+   "kind": "crate",
+   "at": [
+    1.5,
+    0.55,
+    -91
+   ],
+   "size": [
+    1.4,
+    1.1,
+    1.4
+   ],
+   "yawDeg": 0,
+   "collider": true
+  },
+  {
+   "id": "s4-P2",
+   "room": "s4",
+   "kind": "crate",
+   "at": [
+    0.8,
+    0.55,
+    -101.5
+   ],
+   "size": [
+    1.4,
+    1.1,
+    1.4
+   ],
+   "yawDeg": 0,
+   "collider": true
+  },
+  {
+   "id": "s5-P1",
+   "room": "s5",
+   "kind": "healthPickup",
+   "at": [
+    0,
+    0.9,
+    -119
+   ],
+   "size": [
+    0.6,
+    0.6,
+    0.6
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "pickup": true,
+   "note": "a health pickup before the chain"
+  },
+  {
+   "id": "s5-P2",
+   "room": "s5",
+   "kind": "slot",
+   "at": [
+    0,
+    0.025,
+    -122
+   ],
+   "size": [
+    3,
+    0.05,
+    0.4
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "color": "white",
+   "note": "the slot in the floor: the Loom's legs glimpsed below (view)"
+  },
+  {
+   "id": "s7-P1",
+   "room": "s7",
+   "kind": "crate",
+   "at": [
+    -8,
+    0.55,
+    -179
+   ],
+   "size": [
+    1.4,
+    1.1,
+    1.4
+   ],
+   "yawDeg": 0,
+   "collider": true
+  },
+  {
+   "id": "s7-P2",
+   "room": "s7",
+   "kind": "crate",
+   "at": [
+    8,
+    0.55,
+    -187
+   ],
+   "size": [
+    1.4,
+    1.1,
+    1.4
+   ],
+   "yawDeg": 0,
+   "collider": true
+  }
+ ]
+}

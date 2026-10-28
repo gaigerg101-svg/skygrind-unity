@@ -1,0 +1,28 @@
+# command: node Tools/night/n70-patch-share.cjs --level iceline --room Design/levels/n67/iceline/rooms-base/g4.json g4
+# sha: 2a0e6c103; time: 2026-10-27 23:01:27
+n70-patch-share: room g4 | shipped Design/levels/n67/iceline/rooms-base/g4.json vs rebuilt Design/levels/n67/iceline/rooms-base/g4.json
+| room | shipped pieces kept | by kind (kept / shipped) | rect / spawn / exit | waves |
+|---|---|---|---|---|
+| g4 | 20 / 20 (100 %) | boxes 14 / 14, ramps 2 / 2, pads 3 / 3, pits 1 / 1 | rect same, spawn same, exit same | waves same |
+  kept: box (-2, -1, -112)..(2, 0, -106) (shipped job: line)
+  kept: box (6, -1, -112)..(9, 0, -106) (shipped job: line)
+  kept: box (-11, -1, -109)..(-9, -0.5, -106) (shipped job: climb)
+  kept: box (9, -1, -109)..(11, -0.5, -106) (shipped job: climb)
+  kept: box (-12, 0, -124)..(-6, 2, -118) (shipped job: line)
+  kept: box (-12, 0, -101)..(-9, 1.2, -98.5) (shipped job: cover)
+  kept: box (-8, -1, -110)..(-5, -0.4, -108) (shipped job: climb)
+  kept: box (11, -1, -119)..(12, 5, -95) (shipped job: line)
+  kept: box (6, 0, -124)..(12, 4, -119) (shipped job: line)
+  kept: box (10, 4, -124)..(12, 6.5, -122) (shipped job: cover)
+  kept: box (-12, 2, -124)..(-10, 4.5, -122) (shipped job: cover)
+  kept: box (-8.6, 0, -101.6)..(-7.4, 4, -100.4) (shipped job: cover)
+  kept: box (4.4, 0, -101.6)..(5.6, 4, -100.4) (shipped job: cover)
+  kept: box (8, 0, -99)..(11, 1.2, -96) (shipped job: line)
+  kept: ramp (-10.5, -113)->(-10.5, -118) w 3 rise 2 (shipped job: climb)
+  kept: ramp (7.5, -112)->(7.5, -119) w 3 rise 4 (shipped job: climb)
+  kept: pad (10.5, 0, -115.5)->(8.5, 4, -121.5) (shipped job: line)
+  kept: pad (-4, 0, -116)->(9.5, 1.2, -97.5) (shipped job: line)
+  kept: pad (-7, 0, -103)->(-9, 2, -121) (shipped job: line)
+  kept: pit (-12, -112, 12, -106) floorY -1 (shipped job: hazard)
+  rebuilt room pieces: boxes 14, ramps 2, pads 3, pits 1 | the rule: PASS at <= 25 % of the shipped room's pieces kept (geometry-equal; job / why text ignored)
+n70-patch-share: PATCH g4 (100 % kept)

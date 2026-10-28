@@ -1,0 +1,33 @@
+proofs at 3bdbd2e7a 11:42:08: ShortName ShortNames HotbarLabel HotbarShortNames HotbarLabelPad AHotbarLabelIsNeverACutWord
+== ShortName: (a1) worktree hits 1
+   Assets/Scripts/Game/UiHotbar.cs:271:        string ShortName(string id)
+== ShortNames: (a1) worktree hits 3
+   Assets/Scripts/Game/UiHotbar.cs:82:        static readonly Dictionary<string, string> ShortNames = new Dictionary<string, string>();
+   Assets/Scripts/Game/UiHotbar.cs:273:            if (ShortNames.TryGetValue(id, out string s)) return s;
+   Assets/Scripts/Game/UiHotbar.cs:277:            ShortNames[id] = n;
+== HotbarLabel: (a1) worktree hits 11
+   Assets/Scripts/Game/UiHotbar.cs:42:    public static class HotbarLabel
+   Assets/Scripts/Game/UiHotbar.cs:268:        /// name when it fits the cell at the glyph's size, else the gun's short word, else the first whole word (HotbarLabel;
+   Assets/Scripts/Game/UiHotbar.cs:276:            n = HotbarLabel.Pick(id, n, w, hotCellWidth - 2 * UnityTuning.HotbarLabelPad);
+   Assets/Tests/EditMode/Game/FeelHudTests.cs:4:// (no scene): FeelHudMath (UiFeelHud.cs), HotbarWheelHint / HotbarLabel (UiHotbar.cs), FeelStrip's layout (FeelStrip.cs).
+   Assets/Tests/EditMode/Game/FeelHudTests.cs:106:            Assert.AreEqual("KESTREL", HotbarLabel.Pick("revolver", "KESTREL", 50, 60));
+   Assets/Tests/EditMode/Game/FeelHudTests.cs:107:            Assert.AreEqual("CLAP", HotbarLabel.Pick("shotgun", "THUNDERCLAP", 120, 60));
+   Assets/Tests/EditMode/Game/FeelHudTests.cs:108:            Assert.AreEqual("PULSE", HotbarLabel.Pick("gauntlet", "PULSE GAUNTLET", 130, 60));
+   Assets/Tests/EditMode/Game/FeelHudTests.cs:109:            Assert.AreEqual("STITCH", HotbarLabel.Pick("nailgun", "STITCHER", 70, 60));
+   Assets/Tests/EditMode/Game/FeelHudTests.cs:110:            Assert.AreEqual("WAVE", HotbarLabel.Pick("rail", "LONGWAVE", 80, 60));
+   Assets/Tests/EditMode/Game/FeelHudTests.cs:111:            Assert.AreEqual("NEW", HotbarLabel.Pick("unknownGun", "NEW GUN", 80, 60));
+   Assets/Tests/EditMode/Game/FeelHudTests.cs:114:                string s = HotbarLabel.Pick(id, "SOME LONG NAME", 999, 10);
+== HotbarShortNames: (a1) worktree hits 3
+   Assets/Scripts/Game/UiHotbar.cs:44:        /// <summary>The whole name when it fits the cell's room; else the gun's short word (UnityTuning.HotbarShortNames); else the name's first whole word. Never a cut word.</summary>
+   Assets/Scripts/Game/UiHotbar.cs:49:            if (id != null && UnityTuning.HotbarShortNames.TryGetValue(id, out string word)) return word;
+   Assets/Scripts/Game/UnityTuning.FeelHud.cs:44:        public static readonly Dictionary<string, string> HotbarShortNames = new Dictionary<string, string>
+== HotbarLabelPad: (a1) worktree hits 2
+   Assets/Scripts/Game/UiHotbar.cs:276:            n = HotbarLabel.Pick(id, n, w, hotCellWidth - 2 * UnityTuning.HotbarLabelPad);
+   Assets/Scripts/Game/UnityTuning.FeelHud.cs:53:        public const float HotbarLabelPad = 4; // px each side of a cell's label
+== AHotbarLabelIsNeverACutWord: (a1) worktree hits 3
+   Assets/Tests/EditMode/Game/FeelHudTests.cs:103:        public void AHotbarLabelIsNeverACutWord()
+   Logs/e53-mid-tests.xml:8802:                                <test-case id="2487" name="AHotbarLabelIsNeverACutWord" fullname="Skygrind.Game.Tests.FeelHudTests.AHotbarLabelIsNeverACutWord" methodname="AHotbarLabelIsNeverA
+   Logs/n54-close-tests.xml:8904:                                <test-case id="2506" name="AHotbarLabelIsNeverACutWord" fullname="Skygrind.Game.Tests.FeelHudTests.AHotbarLabelIsNeverACutWord" methodname="AHotbarLabelIsNeve
+(a2) main-tree untracked hits (7 files): none
+(a3) main-tree Logs/n71 + Research/2026-10-26* script hits: none
+(a4) UnityEvent m_MethodName hits: 0

@@ -1,0 +1,4 @@
+  verb65 v5 - (slate ride): plant
+n70-red: 5 jobs on n67-spire in 51 s; outputs under Research/2026-10-27-wave74/S/v5/red-base/<room>/ (23:31:04)
+  v5: flow-A.txt flow-B.txt flow-V.txt pads.txt plan.png plan.svg ride.txt room-check.txt 
+run-red: n67-spire v5 C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/spire-play -> Research/2026-10-27-wave74/S/v5/red-base rc=0 (23:31:04)

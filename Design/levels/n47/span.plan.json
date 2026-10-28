@@ -1,0 +1,4675 @@
+{
+ "_why": "NIGHT47 builder L (design.n47.span47 swaps n46-span for this file while the row is on): Tools/night/gen-n47-span.cjs copies n46-span's plan whole and rebuilds only o3, THE LOOM's room, as THE LOOM FRAME (L-cards.md section 3). n46-span's _why: NIGHT46 builder A1 (design.n46.span46 swaps n40-span for this file while the row is on; GG 2026-10-17 'need to feel and flow better'; DESIGN-RULES A-9; arena-flow-web.md Part D): Tools/night/gen-n46-span.cjs copies n40-span's plan whole and rebuilds p1 / p3 / p5 from their identity cards and flow plans (THE HOOK YARD, THE TIE-OFF, THE SPOOL HALL; docs/ROOMS.md), and gives the link gaps p2 / p4 / o1 / o2 lip returns (FLOW-AUDIT row 3). n40-span's _why: NIGHT40 builder B4 (design.n40.loom40 swaps n38-span for this file): Tools/night/gen-n40-span.cjs, a copy of gen-n38-span.cjs without the STITCHER. NIGHT38 builder O2 (design.n38.span38 swaps n37-span for n38-span): from the beat sheet Design/levels/n38/span.beats.md. Five new rooms (p1 HOOK YARD, p2 FIRST GAP, p3 KNOT YARD, p4 PULL LINE, p5 SPOOL HALL), then NIGHT37's o1 THREAD LINE, o2 SWING ANCHOR and o3 THE CANYON (THE LOOM) copied as they are. Spacing from PortExport/config.json (ground.walkSpeed, jump.height, dash.speed x dash.duration, slide.colliderHeight) + Design/levels/n35-ride-distances.json (rideSpeed, jumpOff.pitch0, facingGapsThatWork) and design.n32.grapple32.",
+ "id": "n47-span",
+ "name": "LEVEL 4 THE SPAN",
+ "owns38": [
+  "jump",
+  "double",
+  "dash",
+  "slide",
+  "boost",
+  "ride",
+  "walljump",
+  "grapple"
+ ],
+ "owns38_why": "the verbs level 4 owns (builder E's checker, Design/levels/n38/GATES38.md): the movement kit, the THUNDERCLAP's boost (level 3's weapon carries in), the grapple (design.n35.grapple35.fromLevel 4); the shockwave is not live (design.n25.shockwaveOff)",
+ "n29": true,
+ "n30": true,
+ "n36": true,
+ "n37": true,
+ "n38": true,
+ "floorSize": 806,
+ "killPlaneY": -40,
+ "killPlaneY_why": "under THE CANYON's void floor (-24) and the flight rooms' void floor (-14): a fall is caught by the room's respawnY / THE LOOM's ledge rule first",
+ "wallHeight": 14,
+ "rank": {
+  "time": [
+   240,
+   360,
+   540,
+   780
+  ],
+  "kills": [
+   100,
+   85,
+   65,
+   40
+  ],
+  "style": [
+   2500,
+   1500,
+   700,
+   250
+  ],
+  "_why": "Unity-only (builder O2, NIGHT38): NIGHT30's S/A/B/C cuts kept for level 4 (n37-span's); NOT calibrated on the n38 rooms (the walk bot's times come first)."
+ },
+ "n32": true,
+ "rooms": [
+  {
+   "id": "p1",
+   "name": "4.1 HOOK YARD",
+   "kind": "room",
+   "rect": [
+    -16,
+    91.5,
+    16,
+    127.5
+   ],
+   "height": 12,
+   "roof": true,
+   "par": 20,
+   "job36": "teach",
+   "verb36": "the first pull: the GREAT HOOK's eye from the floor onto the terrace; the air loop drum -> hoist ring -> the well's ride -> the hook",
+   "spawn": {
+    "at": [
+     0,
+     0,
+     125.5
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    0,
+    0,
+    93.5
+   ],
+   "arena36": true,
+   "grappleNodes": [
+    [
+     -8,
+     9,
+     103.5
+    ],
+    [
+     13.5,
+     8,
+     108.5
+    ]
+   ],
+   "grapple": "TWO rings (card: Landmark, Molecule): the GREAT HOOK's eye over the terrace's front edge (9 m; the lesson's ring: a pull from the floor lands you on the terrace), and the HOIST BLOCK over the well (8 m): drum -> hoist -> the well's ride -> the hook (the air loop)",
+   "waves": [
+    [
+     "husk",
+     "husk",
+     "husk"
+    ],
+    [
+     "spitter",
+     "spitter",
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "swarmer"
+    ]
+   ],
+   "lessons": [
+    {
+     "promptPad": "{grapple} PULL TO THE RING.",
+     "kind": "husksDead",
+     "n": 3,
+     "prompt": "{grapple} PULL TO THE RING."
+    }
+   ],
+   "lessons31": [
+    {
+     "promptPad": "{grapple} PULL TO THE RING.",
+     "kind": "husksDead",
+     "n": 3,
+     "prompt": "{grapple} PULL TO THE RING."
+    }
+   ],
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       0,
+       125.5
+      ],
+      [
+       0,
+       0,
+       115.5
+      ],
+      [
+       5.5,
+       0,
+       108.5
+      ],
+      [
+       0,
+       0,
+       93.5
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       0,
+       125.5
+      ],
+      [
+       0,
+       0,
+       115.5
+      ],
+      [
+       -5.5,
+       0,
+       108.5
+      ],
+      [
+       -5.5,
+       0,
+       100.5
+      ],
+      [
+       0,
+       0,
+       93.5
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -12,
+       0,
+       120
+      ],
+      [
+       -12,
+       4,
+       108.5
+      ],
+      [
+       -12,
+       4,
+       97.5
+      ]
+     ]
+    }
+   ],
+   "frames36": {
+    "mid": [
+     0,
+     0,
+     122.5,
+     8.973,
+     0.1
+    ],
+    "exit": [
+     4,
+     0,
+     101.5,
+     21.801,
+     0
+    ]
+   },
+   "nodes": [
+    [
+     -6,
+     0,
+     110.5
+    ],
+    [
+     6,
+     0,
+     108.5
+    ],
+    [
+     -6.5,
+     0,
+     104.5
+    ],
+    [
+     -2,
+     0,
+     96.5
+    ],
+    [
+     2,
+     0,
+     94.5
+    ],
+    [
+     6,
+     0,
+     95.5
+    ],
+    [
+     -5,
+     0,
+     94.5
+    ]
+   ],
+   "highNodes": [
+    [
+     -12,
+     4,
+     95.5
+    ],
+    [
+     -10,
+     4,
+     93.5
+    ]
+   ],
+   "waveNodes43": [
+    [
+     [
+      -6,
+      0,
+      110.5
+     ],
+     [
+      6,
+      0,
+      108.5
+     ],
+     [
+      -6.5,
+      0,
+      104.5
+     ]
+    ],
+    [
+     [
+      -12,
+      4,
+      95.5
+     ],
+     [
+      -10,
+      4,
+      93.5
+     ],
+     [
+      -2,
+      0,
+      96.5
+     ],
+     [
+      2,
+      0,
+      94.5
+     ],
+     [
+      6,
+      0,
+      95.5
+     ],
+     [
+      -5,
+      0,
+      94.5
+     ]
+    ]
+   ],
+   "waveNodes43_why": "NIGHT46 A1 (THE HOOK YARD's flow plan 8): wave 1 round the drum's north side (in view from the spawn, 21-23 m); wave 2 on the terrace's north end and the north apron (ahead of a player who cleared wave 1)",
+   "fallReturn43": {
+    "belowY": -1.5,
+    "to": [
+     11,
+     0,
+     117
+    ],
+    "yawDeg": 0,
+    "damage": 5,
+    "by": [
+     {
+      "rect": [
+       8,
+       101.5,
+       16,
+       115.5
+      ],
+      "to": [
+       11,
+       0,
+       117
+      ],
+      "yawDeg": 0
+     }
+    ],
+    "_why": "NIGHT46 A1 (THE HOOK YARD's Hazard both ways; A-4): feet under the fall line in the hoist well -> back on its south lip, 5 health"
+   },
+   "span46_why": "A1 (span46, THE HOOK YARD): n40's p1 cut (3 boxes, 1 ramps, 7 lights); terrace lx -16..-8 lz 18..36 4 m; drum +-3.5 lz 15..23 5.5 m; well lx 8..16 lz 12..26"
+  },
+  {
+   "id": "p2",
+   "name": "4.2 FIRST GAP",
+   "kind": "link",
+   "rect": [
+    -18,
+    37.5,
+    18,
+    87.5
+   ],
+   "height": 22,
+   "roof": true,
+   "par": 3,
+   "job36": "teach",
+   "verb36": "look up and pull: one gate",
+   "spawn": {
+    "at": [
+     0,
+     0,
+     85.5
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    0,
+    0,
+    39.5
+   ],
+   "loomRoom37": true,
+   "respawnY": -3,
+   "respawnY_why": "a fall into the void is back at the room's start (Campaign24's respawnY, a share of health: design.n29.roomRules.fallCostFraction): 1 m of drop under the take-off is already a miss, so no move but the pull lives long enough over the void to cross it",
+   "noride38": true,
+   "limit": [
+    "pistolOnly"
+   ],
+   "limitReason": "PULL ACROSS",
+   "pull38": {
+    "_why": "the flight room's gates for the walk pilot (Bot/Walk38Span.cs): each gate's lip (the take-off edge), its ring and the landing point (world metres)",
+    "gates": [
+     {
+      "name": "gate A",
+      "lip": [
+       0,
+       0,
+       79.5
+      ],
+      "ring": [
+       0,
+       15,
+       46.5
+      ],
+      "land": [
+       0,
+       10,
+       47.5
+      ]
+     }
+    ]
+   },
+   "grappleNodes": [
+    [
+     0,
+     15,
+     46.5
+    ]
+   ],
+   "grapple": "ONE ring 5 m over the landing, 3 m past its lip: from the pier's lip, look up and PULL",
+   "routeVia": [
+    [
+     [
+      0,
+      0,
+      80.5
+     ],
+     [
+      0,
+      10,
+      46.5
+     ]
+    ]
+   ],
+   "lessons": [
+    {
+     "promptPad": "LOOK UP. {grapple} PULL.",
+     "kind": "reached",
+     "rect": [
+      -6,
+      41.5,
+      6,
+      49.5
+     ],
+     "minY": 9.5,
+     "prompt": "LOOK UP. {grapple} PULL."
+    }
+   ],
+   "lessons31": [
+    {
+     "promptPad": "LOOK UP. {grapple} PULL.",
+     "kind": "reached",
+     "rect": [
+      -6,
+      41.5,
+      6,
+      49.5
+     ],
+     "minY": 9.5,
+     "prompt": "LOOK UP. {grapple} PULL."
+    }
+   ],
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       0,
+       85.5
+      ],
+      [
+       0,
+       0,
+       80.5
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       10,
+       46.5
+      ],
+      [
+       0,
+       0,
+       39.5
+      ]
+     ],
+     "maxSeconds": 6
+    }
+   ],
+   "frames36": {
+    "mid": [
+     0,
+     0,
+     80.5,
+     0,
+     0.305
+    ],
+    "exit": [
+     0,
+     10,
+     46.5,
+     0,
+     -0.4
+    ]
+   },
+   "fallReturn43": {
+    "belowY": -3,
+    "to": [
+     0,
+     0,
+     81
+    ],
+    "yawDeg": 0,
+    "damage": 10,
+    "by": [
+     {
+      "rect": [
+       -18,
+       49.5,
+       18,
+       87.5
+      ],
+      "to": [
+       0,
+       0,
+       81
+      ],
+      "yawDeg": 0
+     },
+     {
+      "rect": [
+       -18,
+       37.5,
+       18,
+       49.5
+      ],
+      "to": [
+       0,
+       10,
+       46.5
+      ],
+      "yawDeg": 0
+     }
+    ],
+    "_why": "NIGHT46 A1 (FLOW-AUDIT row 3; A-4): a fall into THE GAP -> back on the pier's lip 1.5 m before it (was the room's start for 25 % of max health); a fall off the landing's far side -> back on the landing; 10 health"
+   }
+  },
+  {
+   "id": "p3",
+   "name": "4.3 KNOT YARD",
+   "kind": "room",
+   "rect": [
+    -20,
+    -6.5,
+    20,
+    33.5
+   ],
+   "height": 14,
+   "roof": true,
+   "par": 35,
+   "job36": "practise",
+   "verb36": "kills give pulls: swing deck lip to anchorage over the void (two pulls a lap); the KNOT straight over",
+   "spawn": {
+    "at": [
+     5,
+     0,
+     26
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    0,
+    0,
+    -4.5
+   ],
+   "arena36": true,
+   "grappleNodes": [
+    [
+     -14,
+     9,
+     22.5
+    ],
+    [
+     0,
+     12,
+     7.5
+    ],
+    [
+     14,
+     9,
+     4.5
+    ]
+   ],
+   "grapple": "THREE rings (card: Molecule): RN over the exit deck's lip 14 m east (AW -> AE) and RS over the entry deck's lip 14 m west (AE -> AW), 9 m: the swings anchorage to anchorage, one way round (the air loop, two pulls a lap); the KNOT dead ahead of the door (12 m, lz 26): one pull over the void onto the exit deck (the shortcut). Placed by `n46span reach` (the carry measured)",
+   "waves": [
+    [
+     "husk",
+     "husk",
+     "husk",
+     "husk"
+    ],
+    [
+     "spitter",
+     "spitter",
+     "husk",
+     "husk",
+     "husk"
+    ],
+    [
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "husk",
+     "husk"
+    ]
+   ],
+   "lessons": [
+    {
+     "promptPad": "KILLS GIVE PULLS.",
+     "kind": "husksDead",
+     "n": 4,
+     "prompt": "KILLS GIVE PULLS."
+    }
+   ],
+   "lessons31": [
+    {
+     "promptPad": "KILLS GIVE PULLS.",
+     "kind": "husksDead",
+     "n": 4,
+     "prompt": "KILLS GIVE PULLS."
+    }
+   ],
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       0,
+       31.5
+      ],
+      [
+       -1.5,
+       0,
+       24.2
+      ],
+      [
+       -7,
+       0,
+       23.5
+      ],
+      [
+       -7,
+       0,
+       3.5
+      ],
+      [
+       0,
+       0,
+       -4.5
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       12.5,
+       0,
+       32
+      ],
+      [
+       12.5,
+       2.5,
+       23.5
+      ],
+      [
+       15,
+       2.5,
+       3.5
+      ],
+      [
+       12.5,
+       2.5,
+       2.2
+      ],
+      [
+       12.5,
+       0,
+       -5.2
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -12.5,
+       0,
+       32
+      ],
+      [
+       -12.5,
+       2.5,
+       23.5
+      ],
+      [
+       -15,
+       2.5,
+       3.5
+      ]
+     ]
+    }
+   ],
+   "frames36": {
+    "mid": [
+     0,
+     0,
+     30.5,
+     0,
+     0.06
+    ],
+    "exit": [
+     8,
+     0,
+     -0.5,
+     53.13,
+     -0.05
+    ]
+   },
+   "nodes": [
+    [
+     -7,
+     0,
+     2.5
+    ],
+    [
+     -3,
+     0,
+     1.5
+    ],
+    [
+     6,
+     0,
+     2.5
+    ],
+    [
+     10,
+     0,
+     1.5
+    ],
+    [
+     -7,
+     0,
+     3.5
+    ],
+    [
+     -5,
+     0,
+     -2.5
+    ],
+    [
+     0,
+     0,
+     -3.5
+    ],
+    [
+     5,
+     0,
+     -2.5
+    ],
+    [
+     -7,
+     0,
+     6.5
+    ],
+    [
+     8,
+     0,
+     -1.5
+    ]
+   ],
+   "highNodes": [
+    [
+     -13,
+     2.5,
+     11.5
+    ],
+    [
+     -13,
+     2.5,
+     6.5
+    ],
+    [
+     13,
+     2.5,
+     11.5
+    ],
+    [
+     13,
+     2.5,
+     6.5
+    ],
+    [
+     13,
+     2.5,
+     16.5
+    ]
+   ],
+   "waveNodes43": [
+    [
+     [
+      -7,
+      0,
+      2.5
+     ],
+     [
+      -3,
+      0,
+      1.5
+     ],
+     [
+      6,
+      0,
+      2.5
+     ],
+     [
+      10,
+      0,
+      1.5
+     ]
+    ],
+    [
+     [
+      -13,
+      2.5,
+      11.5
+     ],
+     [
+      -13,
+      2.5,
+      6.5
+     ],
+     [
+      13,
+      2.5,
+      11.5
+     ],
+     [
+      13,
+      2.5,
+      6.5
+     ],
+     [
+      13,
+      2.5,
+      16.5
+     ]
+    ],
+    [
+     [
+      -7,
+      0,
+      3.5
+     ],
+     [
+      -5,
+      0,
+      -2.5
+     ],
+     [
+      0,
+      0,
+      -3.5
+     ],
+     [
+      5,
+      0,
+      -2.5
+     ],
+     [
+      -7,
+      0,
+      6.5
+     ],
+     [
+      8,
+      0,
+      -1.5
+     ]
+    ]
+   ],
+   "waveNodes43_why": "NIGHT46 A1 (THE TIE-OFF's flow plan 8): wave 1 on the exit deck at the cable's and AE's north ends (in view from the door, 31-33 m); wave 2 on the anchorage tops (the spitters in the open; its husks come down the ramps); wave 3 from the coils and the cable's north end (the card's State change: the crossing becomes their file)",
+   "fallReturn43": {
+    "belowY": -1.5,
+    "to": [
+     0,
+     0,
+     24
+    ],
+    "yawDeg": 0,
+    "damage": 5,
+    "by": [
+     {
+      "rect": [
+       -11,
+       13.5,
+       11,
+       22.5
+      ],
+      "to": [
+       0,
+       0,
+       24
+      ],
+      "yawDeg": 0
+     },
+     {
+      "rect": [
+       -11,
+       4.5,
+       11,
+       13.5
+      ],
+      "to": [
+       0,
+       0,
+       3
+      ],
+      "yawDeg": 0
+     }
+    ],
+    "_why": "NIGHT46 A1 (THE TIE-OFF's Hazard both ways; A-4): feet under the fall line in the void band -> back on the deck lip it was crossed from (the south half to the entry deck's lip, the north half to the exit deck's), 5 health"
+   },
+   "spawn_why": "NIGHT46 A1 (F17, Part D 1): the retry point at the first foothold (the clamp), 7.5 m inside the door; the door itself carries your speed in",
+   "span46_why": "A1 (span46, THE TIE-OFF): n40's p3 cut (3 boxes, 2 ramps, 6 lights); void lz 11..29; cable lx -9..-5; anchorages lx +-11..18 lz 9..31 2.5 m; rings 9 / knot 12 m"
+  },
+  {
+   "id": "p4",
+   "name": "4.4 PULL LINE",
+   "kind": "link",
+   "rect": [
+    -20,
+    -102.5,
+    20,
+    -10.5
+   ],
+   "height": 32,
+   "roof": true,
+   "par": 5,
+   "job36": "test",
+   "verb36": "two rising gates, one charge each",
+   "spawn": {
+    "at": [
+     0,
+     0,
+     -12.5
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    0,
+    0,
+    -100.5
+   ],
+   "loomRoom37": true,
+   "respawnY": -3,
+   "respawnY_why": "a fall into the void is back at the room's start (Campaign24's respawnY, a share of health: design.n29.roomRules.fallCostFraction): 1 m of drop under the take-off is already a miss, so no move but the pull lives long enough over the void to cross it",
+   "noride38": true,
+   "limit": [
+    "pistolOnly"
+   ],
+   "limitReason": "PULL ACROSS",
+   "pull38": {
+    "_why": "the flight room's gates for the walk pilot (Bot/Walk38Span.cs): each gate's lip (the take-off edge), its ring and the landing point (world metres)",
+    "gates": [
+     {
+      "name": "gate A",
+      "lip": [
+       0,
+       0,
+       -18.5
+      ],
+      "ring": [
+       0,
+       15,
+       -51.5
+      ],
+      "land": [
+       0,
+       10,
+       -50.5
+      ]
+     },
+     {
+      "name": "gate B",
+      "lip": [
+       0,
+       10,
+       -60.5
+      ],
+      "ring": [
+       0,
+       25,
+       -93.5
+      ],
+      "land": [
+       0,
+       20,
+       -92.5
+      ]
+     }
+    ]
+   },
+   "grappleNodes": [
+    [
+     0,
+     15,
+     -51.5
+    ],
+    [
+     0,
+     25,
+     -93.5
+    ]
+   ],
+   "grapple": "TWO rings, one over each landing: pull up to pier B, run its 12 m, pull up to pier C (one charge each: the second gate spends the last one)",
+   "routeVia": [
+    [
+     [
+      0,
+      0,
+      -17.5
+     ],
+     [
+      0,
+      10,
+      -51.5
+     ]
+    ],
+    [
+     [
+      0,
+      10,
+      -59.5
+     ],
+     [
+      0,
+      20,
+      -93.5
+     ]
+    ]
+   ],
+   "lessons": [
+    {
+     "promptPad": "",
+     "kind": "reached",
+     "rect": [
+      -6,
+      -60.5,
+      6,
+      -48.5
+     ],
+     "minY": 9.5,
+     "prompt": ""
+    },
+    {
+     "promptPad": "TWO CHARGES. TWO PULLS.",
+     "kind": "reached",
+     "rect": [
+      -6,
+      -98.5,
+      6,
+      -90.5
+     ],
+     "minY": 19.5,
+     "prompt": "TWO CHARGES. TWO PULLS."
+    }
+   ],
+   "lessons31": [
+    {
+     "promptPad": "",
+     "kind": "reached",
+     "rect": [
+      -6,
+      -60.5,
+      6,
+      -48.5
+     ],
+     "minY": 9.5,
+     "prompt": ""
+    },
+    {
+     "promptPad": "TWO CHARGES. TWO PULLS.",
+     "kind": "reached",
+     "rect": [
+      -6,
+      -98.5,
+      6,
+      -90.5
+     ],
+     "minY": 19.5,
+     "prompt": "TWO CHARGES. TWO PULLS."
+    }
+   ],
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       0,
+       -12.5
+      ],
+      [
+       0,
+       0,
+       -17.5
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       10,
+       -50.5
+      ],
+      [
+       0,
+       10,
+       -59.5
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       20,
+       -93.5
+      ],
+      [
+       0,
+       0,
+       -100.5
+      ]
+     ],
+     "maxSeconds": 8
+    }
+   ],
+   "frames36": {
+    "mid": [
+     0,
+     0,
+     -17.5,
+     0,
+     0.305
+    ],
+    "exit": [
+     0,
+     10,
+     -59.5,
+     0,
+     0.305
+    ]
+   },
+   "fallReturn43": {
+    "belowY": -3,
+    "to": [
+     0,
+     0,
+     -17
+    ],
+    "yawDeg": 0,
+    "damage": 10,
+    "by": [
+     {
+      "rect": [
+       -20,
+       -48.5,
+       20,
+       -10.5
+      ],
+      "to": [
+       0,
+       0,
+       -17
+      ],
+      "yawDeg": 0
+     },
+     {
+      "rect": [
+       -20,
+       -90.5,
+       20,
+       -48.5
+      ],
+      "to": [
+       0,
+       10,
+       -59
+      ],
+      "yawDeg": 0
+     },
+     {
+      "rect": [
+       -20,
+       -102.5,
+       20,
+       -90.5
+      ],
+      "to": [
+       0,
+       20,
+       -93.5
+      ],
+      "yawDeg": 0
+     }
+    ],
+    "_why": "NIGHT46 A1 (FLOW-AUDIT row 3; A-4): a fall into GAP A -> back on the entry pier's lip; into GAP B -> back on pier B's lip (was the room's start for 25 % of max health); off pier C -> pier C; 10 health"
+   }
+  },
+  {
+   "id": "p5",
+   "name": "4.5 SPOOL HALL",
+   "kind": "room",
+   "rect": [
+    -28,
+    -142.5,
+    8,
+    -106.5
+   ],
+   "height": 14,
+   "roof": true,
+   "par": 36,
+   "job36": "combine",
+   "verb36": "the whip: the spitters stand on the GREAT SPOOL across the void: whip one to you, or pull onto the island; the air loop gallery -> spool -> tail spool -> ride -> gallery",
+   "spawn": {
+    "at": [
+     -1,
+     0,
+     -113
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    -17,
+    0,
+    -140.5
+   ],
+   "arena36": true,
+   "grappleNodes": [
+    [
+     -10,
+     10,
+     -125.5
+    ],
+    [
+     -26,
+     8,
+     -108.5
+    ],
+    [
+     5.5,
+     9,
+     -120.5
+    ]
+   ],
+   "grapple": "THREE rings (card: Molecule, flow plan 3b): R1 over the GREAT SPOOL (10 m), R2 over the tail spool (8 m), R3 over the gallery's south end (9 m): gallery -> spool -> tail spool -> the south wall's ride -> gallery",
+   "waves": [
+    [
+     "husk",
+     "husk",
+     "husk",
+     "husk",
+     "swarmer",
+     "swarmer"
+    ],
+    [
+     "spitter",
+     "spitter",
+     "husk",
+     "husk",
+     "husk"
+    ],
+    [
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "swarmer",
+     "spitter",
+     "spitter"
+    ]
+   ],
+   "lessons": [
+    {
+     "promptPad": "{grapple} AT AN ENEMY: WHIP.",
+     "kind": "husksDead",
+     "n": 4,
+     "prompt": "{grapple} AT AN ENEMY: WHIP."
+    }
+   ],
+   "lessons31": [
+    {
+     "promptPad": "{grapple} AT AN ENEMY: WHIP.",
+     "kind": "husksDead",
+     "n": 4,
+     "prompt": "{grapple} AT AN ENEMY: WHIP."
+    }
+   ],
+   "proofs": [
+    {
+     "kind": "walk",
+     "points": [
+      [
+       0,
+       0,
+       -108.5
+      ],
+      [
+       -10,
+       0,
+       -110.5
+      ],
+      [
+       -22.5,
+       0,
+       -112.5
+      ],
+      [
+       -23,
+       0,
+       -124.5
+      ],
+      [
+       -23,
+       0,
+       -137.5
+      ],
+      [
+       -17,
+       0,
+       -140.5
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       6,
+       0,
+       -108
+      ],
+      [
+       6,
+       4,
+       -119.5
+      ],
+      [
+       6,
+       4,
+       -134.5
+      ]
+     ]
+    },
+    {
+     "kind": "walk",
+     "points": [
+      [
+       -10,
+       0,
+       -138.5
+      ],
+      [
+       -10,
+       2.5,
+       -128.5
+      ],
+      [
+       -10,
+       2.5,
+       -122.5
+      ]
+     ]
+    }
+   ],
+   "frames36": {
+    "mid": [
+     0,
+     0,
+     -109.5,
+     33.69,
+     0.05
+    ],
+    "exit": [
+     -12,
+     0,
+     -137.5,
+     45,
+     0
+    ]
+   },
+   "nodes": [
+    [
+     -6,
+     0,
+     -137.5
+    ],
+    [
+     -2,
+     0,
+     -137.5
+    ],
+    [
+     -14,
+     0,
+     -137.5
+    ],
+    [
+     -24,
+     0,
+     -121.5
+    ],
+    [
+     -24,
+     0,
+     -127.5
+    ],
+    [
+     -23,
+     0,
+     -132.5
+    ],
+    [
+     -16,
+     0,
+     -138.5
+    ],
+    [
+     -22,
+     0,
+     -140.5
+    ],
+    [
+     -10,
+     0,
+     -140.5
+    ],
+    [
+     -2,
+     0,
+     -140.5
+    ]
+   ],
+   "highNodes": [
+    [
+     -13,
+     2.5,
+     -123.5
+    ],
+    [
+     -7,
+     2.5,
+     -123.5
+    ],
+    [
+     -10,
+     2.5,
+     -127.5
+    ],
+    [
+     -12,
+     2.5,
+     -124.5
+    ],
+    [
+     -8,
+     2.5,
+     -127.5
+    ],
+    [
+     5.5,
+     4,
+     -133.5
+    ],
+    [
+     -10,
+     2.5,
+     -124.5
+    ]
+   ],
+   "waveNodes43": [
+    [
+     [
+      -13,
+      2.5,
+      -123.5
+     ],
+     [
+      -7,
+      2.5,
+      -123.5
+     ],
+     [
+      -10,
+      2.5,
+      -127.5
+     ],
+     [
+      -6,
+      0,
+      -137.5
+     ],
+     [
+      -2,
+      0,
+      -137.5
+     ],
+     [
+      -14,
+      0,
+      -137.5
+     ]
+    ],
+    [
+     [
+      -12,
+      2.5,
+      -124.5
+     ],
+     [
+      -8,
+      2.5,
+      -127.5
+     ],
+     [
+      -24,
+      0,
+      -121.5
+     ],
+     [
+      -24,
+      0,
+      -127.5
+     ],
+     [
+      -23,
+      0,
+      -132.5
+     ]
+    ],
+    [
+     [
+      5.5,
+      4,
+      -133.5
+     ],
+     [
+      -10,
+      2.5,
+      -124.5
+     ],
+     [
+      -16,
+      0,
+      -138.5
+     ],
+     [
+      -22,
+      0,
+      -140.5
+     ],
+     [
+      -10,
+      0,
+      -140.5
+     ],
+     [
+      -2,
+      0,
+      -140.5
+     ]
+    ]
+   ],
+   "waveNodes43_why": "NIGHT46 A1 (THE SPOOL HALL's flow plan 8): wave 1 on the north walkway's east half and the gallery's north end (in view from the door, east of the spool); wave 2 on the GREAT SPOOL (the captain's island) and the west walkway; wave 3 on the gallery, the spool and the north walkway (ahead of a player going round to the exit). A wave's kinds take its nodes at random (Campaign24.SpawnWave): a husk on the spool comes off by the payout",
+   "fallReturn43": {
+    "belowY": -1.5,
+    "to": [
+     -13,
+     0,
+     -115
+    ],
+    "yawDeg": 0,
+    "damage": 5,
+    "by": [
+     {
+      "rect": [
+       -21,
+       -125.5,
+       3,
+       -116.5
+      ],
+      "to": [
+       -13,
+       0,
+       -115
+      ],
+      "yawDeg": 0
+     },
+     {
+      "rect": [
+       -21,
+       -135.5,
+       3,
+       -125.5
+      ],
+      "to": [
+       -13,
+       0,
+       -137
+      ],
+      "yawDeg": 0
+     }
+    ],
+    "_why": "NIGHT46 A1 (THE SPOOL HALL's Hazard both ways; A-4): feet under the fall line in the winding pit -> back on the walkway lip it was crossed from (the south half to the south walkway, the north half to the north walkway), 5 health"
+   },
+   "spawn_why": "NIGHT46 A1 (F17, Part D 1): the retry point at the first foothold (the winch), 6.5 m inside the door",
+   "span46_why": "A1 (span46, THE SPOOL HALL): n40's p5 cut (2 boxes, 1 ramps, 4 lights); pit lx -11..13 lz 10..29; spool +-5 lz 15..23 2.5 m; gallery lx 13..18 lz 12..29 4 m; tail spool 2.5 m"
+  },
+  {
+   "id": "o1",
+   "name": "4.8 THREAD LINE",
+   "kind": "link",
+   "rect": [
+    -29,
+    -196.5,
+    -5,
+    -146.5
+   ],
+   "height": 20,
+   "roof": true,
+   "par": 20,
+   "job36": "rehearse",
+   "verb36": "grapple pull + tower ride + pull",
+   "spawn": {
+    "at": [
+     -17,
+     0,
+     -148.5
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    -17,
+    0,
+    -194.5
+   ],
+   "loomRoom37": true,
+   "respawnY": -5,
+   "respawnY_why": "a fall into the void is back at the room's start (Campaign24's respawnY, the share of health design.n29.roomRules.fallCostFraction): rehearsal, not punishment",
+   "grappleNodes": [
+    [
+     -17,
+     9,
+     -161.5
+    ],
+    [
+     -18,
+     9,
+     -193.5
+    ]
+   ],
+   "grapple": "two threads: one over the void before the tower (pull 1), one over the far ledge (pull 2, from the tower's ride or its top)",
+   "lessons": [
+    {
+     "promptPad": "{grapple} PULL. RIDE. PULL.",
+     "kind": "reached",
+     "prompt": "{grapple} PULL. RIDE. PULL.",
+     "rect": [
+      -29,
+      -196.5,
+      -5,
+      -190.5
+     ],
+     "minY": -0.2
+    }
+   ],
+   "lessons31": [
+    {
+     "promptPad": "{grapple} PULL. RIDE. PULL.",
+     "kind": "reached",
+     "prompt": "{grapple} PULL. RIDE. PULL.",
+     "rect": [
+      -29,
+      -196.5,
+      -5,
+      -190.5
+     ],
+     "minY": -0.2
+    }
+   ],
+   "frames36": {
+    "mid": [
+     -17,
+     0,
+     -149.5,
+     0,
+     0.4
+    ],
+    "exit": [
+     -12,
+     6,
+     -182.5,
+     28.61,
+     0.111
+    ]
+   },
+   "fallReturn43": {
+    "belowY": -5,
+    "to": [
+     -17,
+     0,
+     -151
+    ],
+    "yawDeg": 0,
+    "damage": 10,
+    "by": [
+     {
+      "rect": [
+       -29,
+       -196.5,
+       -5,
+       -146.5
+      ],
+      "to": [
+       -17,
+       0,
+       -151
+      ],
+      "yawDeg": 0
+     }
+    ],
+    "_why": "NIGHT46 A1 (FLOW-AUDIT row 3; A-4): a fall into o1's void -> back on its entry lip 1.5 m before the void (was the room's start for 25 % of max health), 10 health. THE LOOM's own rules in this room are not changed"
+   }
+  },
+  {
+   "id": "o2",
+   "name": "4.9 SWING ANCHOR",
+   "kind": "link",
+   "rect": [
+    -31,
+    -246.5,
+    -3,
+    -200.5
+   ],
+   "height": 20,
+   "roof": true,
+   "par": 20,
+   "job36": "rehearse",
+   "verb36": "pull to a moving anchor + hook a knee and pull away (the tear)",
+   "spawn": {
+    "at": [
+     -17,
+     0,
+     -202.5
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    -17,
+    0,
+    -244.5
+   ],
+   "loomRoom37": true,
+   "respawnY": -5,
+   "respawnY_why": "a fall into the void is back at the room's start (Campaign24's respawnY, the share of health design.n29.roomRules.fallCostFraction): rehearsal, not punishment",
+   "grappleNodes": [
+    [
+     -17,
+     11,
+     -217.5
+    ],
+    [
+     -17,
+     8,
+     -227.5
+    ],
+    [
+     -19,
+     9,
+     -242.5
+    ]
+   ],
+   "grapple": "the SWING ANCHOR (node 1: Game/SurvivalSim.Loom37.cs moves it east-west), a thread over the post (node 2), the far thread over the exit ledge (node 3)",
+   "loomSwing37": {
+    "node": 0,
+    "rest": [
+     -17,
+     11,
+     -217.5
+    ],
+    "ampX": 7,
+    "periodS": 3.2,
+    "_why": "the anchor's swing: +- ampX m east-west about its rest, one period in periodS (design.n37.loom37.swingAmpM / swingPeriodS win when present)"
+   },
+   "kneeTarget37": {
+    "at": [
+     -13,
+     7,
+     -228.5
+    ],
+    "why": "the practice knee (loom40: a grapple node): hook it from the post, then pull away to the far thread (node 3): it tears (a cyan burst), back 3 s later"
+   },
+   "lessons": [
+    {
+     "promptPad": "{grapple} HOOK KNEE. {grapple} PULL AWAY.",
+     "kind": "reached",
+     "prompt": "{grapple} HOOK KNEE. {grapple} PULL AWAY.",
+     "rect": [
+      -31,
+      -246.5,
+      -3,
+      -238.5
+     ],
+     "minY": -0.2
+    }
+   ],
+   "lessons31": [
+    {
+     "promptPad": "{grapple} HOOK KNEE. {grapple} PULL AWAY.",
+     "kind": "reached",
+     "prompt": "{grapple} HOOK KNEE. {grapple} PULL AWAY.",
+     "rect": [
+      -31,
+      -246.5,
+      -3,
+      -238.5
+     ],
+     "minY": -0.2
+    }
+   ],
+   "frames36": {
+    "mid": [
+     -17,
+     0,
+     -203.5,
+     0,
+     0.4
+    ],
+    "exit": [
+     -17,
+     4,
+     -229.5,
+     -104.036,
+     0.327
+    ]
+   },
+   "fallReturn43": {
+    "belowY": -5,
+    "to": [
+     -17,
+     0,
+     -205
+    ],
+    "yawDeg": 0,
+    "damage": 10,
+    "by": [
+     {
+      "rect": [
+       -31,
+       -246.5,
+       -3,
+       -200.5
+      ],
+      "to": [
+       -17,
+       0,
+       -205
+      ],
+      "yawDeg": 0
+     }
+    ],
+    "_why": "NIGHT46 A1 (FLOW-AUDIT row 3; A-4): a fall into o2's void -> back on its entry lip 1.5 m before the void (was the room's start for 25 % of max health), 10 health. THE LOOM's own rules in this room are not changed"
+   }
+  },
+  {
+   "id": "o3",
+   "name": "4.10 THE NARROWS",
+   "kind": "boss",
+   "rect": [
+    -39,
+    -306.5,
+    5,
+    -250.5
+   ],
+   "height": 30,
+   "roof": true,
+   "par": 60,
+   "job36": "boss",
+   "verb36": "the BEND: hook a lit knee, shoot its seam in the slow motion or pull away (the exam of level 4's grapple)",
+   "spawn": {
+    "at": [
+     -17,
+     0,
+     -252.5
+    ],
+    "yawDeg": 0
+   },
+   "exit": [
+    -17,
+    0,
+    -256.5
+   ],
+   "loomRoom37": true,
+   "boss": "loom37",
+   "respawnY": -12,
+   "respawnY_why": "the campaign's fallback only: with design.n37.loom37 on, Game/SurvivalSim.Loom37.cs catches a fall first (feet under design.n37.loom37.fallY) and puts the player on the last anchor ledge for -20 HP",
+   "grappleNodes": [
+    [
+     -31,
+     11,
+     -266.5
+    ],
+    [
+     -3,
+     11,
+     -266.5
+    ],
+    [
+     -27,
+     11,
+     -280.5
+    ],
+    [
+     -7,
+     11,
+     -280.5
+    ],
+    [
+     -31,
+     11,
+     -294.5
+    ],
+    [
+     -3,
+     11,
+     -294.5
+    ]
+   ],
+   "grapple": "THE FRAME's rings (L-cards.md section 3): one ring over each hold of the three pairs; THE LOOM's six knees join them as moving nodes (Game/SurvivalSim.Loom37.cs)",
+   "loom37": {
+    "_why": "THE LOOM FRAME's data for Game/SurvivalSim.Loom37.cs (NIGHT47 builder L, gen-n47-span.cjs): anchors = the room's grappleNodes in order; ledges = the holds (a fall comes back to the last one stood on); stations = where THE LOOM hangs per phase (its leg's pair of knees 7-8 m in front of that phase's holds); webWalls = the sheet across each pair; all world metres",
+    "anchors": [
+     {
+      "id": "t1w",
+      "node": 0,
+      "at": [
+       -31,
+       11,
+       -266.5
+      ],
+      "pair": 1,
+      "ledge": "t1w"
+     },
+     {
+      "id": "t1e",
+      "node": 1,
+      "at": [
+       -3,
+       11,
+       -266.5
+      ],
+      "pair": 1,
+      "ledge": "t1e"
+     },
+     {
+      "id": "t2w",
+      "node": 2,
+      "at": [
+       -27,
+       11,
+       -280.5
+      ],
+      "pair": 2,
+      "ledge": "t2w"
+     },
+     {
+      "id": "t2e",
+      "node": 3,
+      "at": [
+       -7,
+       11,
+       -280.5
+      ],
+      "pair": 2,
+      "ledge": "t2e"
+     },
+     {
+      "id": "t3w",
+      "node": 4,
+      "at": [
+       -31,
+       11,
+       -294.5
+      ],
+      "pair": 3,
+      "ledge": "t3w"
+     },
+     {
+      "id": "t3e",
+      "node": 5,
+      "at": [
+       -3,
+       11,
+       -294.5
+      ],
+      "pair": 3,
+      "ledge": "t3e"
+     }
+    ],
+    "ledges": [
+     {
+      "id": "start",
+      "at": [
+       -17,
+       0,
+       -254.5
+      ],
+      "rect": [
+       -39,
+       -258.5,
+       5,
+       -250.5
+      ],
+      "y": 0,
+      "pair": 0
+     },
+     {
+      "id": "t1w",
+      "at": [
+       -31,
+       6,
+       -268
+      ],
+      "rect": [
+       -35,
+       -271,
+       -27,
+       -265
+      ],
+      "y": 6,
+      "pair": 1
+     },
+     {
+      "id": "t1e",
+      "at": [
+       -3,
+       6,
+       -268
+      ],
+      "rect": [
+       -7,
+       -271,
+       1,
+       -265
+      ],
+      "y": 6,
+      "pair": 1
+     },
+     {
+      "id": "t2w",
+      "at": [
+       -27,
+       6,
+       -282
+      ],
+      "rect": [
+       -31,
+       -285,
+       -23,
+       -279
+      ],
+      "y": 6,
+      "pair": 2
+     },
+     {
+      "id": "t2e",
+      "at": [
+       -7,
+       6,
+       -282
+      ],
+      "rect": [
+       -11,
+       -285,
+       -3,
+       -279
+      ],
+      "y": 6,
+      "pair": 2
+     },
+     {
+      "id": "t3w",
+      "at": [
+       -31,
+       6,
+       -296
+      ],
+      "rect": [
+       -35,
+       -299,
+       -27,
+       -293
+      ],
+      "y": 6,
+      "pair": 3
+     },
+     {
+      "id": "t3e",
+      "at": [
+       -3,
+       6,
+       -296
+      ],
+      "rect": [
+       -7,
+       -299,
+       1,
+       -293
+      ],
+      "y": 6,
+      "pair": 3
+     }
+    ],
+    "stations": [
+     [
+      -17,
+      20,
+      -282.5
+     ],
+     [
+      -17,
+      20,
+      -289
+     ],
+     [
+      -17,
+      20,
+      -296.5
+     ]
+    ],
+    "webWalls": [
+     {
+      "min": [
+       -27,
+       -24,
+       -268.3
+      ],
+      "max": [
+       -7,
+       16,
+       -267.7
+      ]
+     },
+     {
+      "min": [
+       -23,
+       -24,
+       -282.3
+      ],
+      "max": [
+       -11,
+       16,
+       -281.7
+      ]
+     },
+     {
+      "min": [
+       -27,
+       -24,
+       -296.3
+      ],
+      "max": [
+       -7,
+       16,
+       -295.7
+      ]
+     }
+    ],
+    "towers": [
+     {
+      "pair": 1,
+      "rectW": [
+       -35,
+       -271,
+       -27,
+       -265
+      ],
+      "rectE": [
+       -7,
+       -271,
+       1,
+       -265
+      ],
+      "top": 6
+     },
+     {
+      "pair": 2,
+      "rectW": [
+       -31,
+       -285,
+       -23,
+       -279
+      ],
+      "rectE": [
+       -11,
+       -285,
+       -3,
+       -279
+      ],
+      "top": 6
+     },
+     {
+      "pair": 3,
+      "rectW": [
+       -35,
+       -299,
+       -27,
+       -293
+      ],
+      "rectE": [
+       -7,
+       -299,
+       1,
+       -293
+      ],
+      "top": 6
+     }
+    ]
+   },
+   "frames36": {
+    "mid": [
+     -17,
+     0,
+     -254.5,
+     0,
+     0.32
+    ],
+    "exit": [
+     -31,
+     6,
+     -268,
+     -20,
+     0.2
+    ]
+   },
+   "loom40NoRide": {
+    "_why": "THE LOOM FRAME (NIGHT47): no ride wall refuses a ride (the card: the side walls and the holds' faces always ride; the frame's footing is the hook and the ride, never the floor). Kept as data with empty phase lists so loom40's switch finds the row.",
+    "rideWalls": 0,
+    "phase1": [],
+    "phase2": []
+   },
+   "span47_why": "L-cards.md section 3 THE LOOM FRAME (G39): the canyon crossing (140 m) cut to a 56 m well round THE LOOM; three pairs of holds, one a phase, forward",
+   "loom47Posts": [
+    {
+     "min": [
+      -35,
+      -24,
+      -271
+     ],
+     "max": [
+      -27,
+      6,
+      -265
+     ]
+    },
+    {
+     "min": [
+      -7,
+      -24,
+      -271
+     ],
+     "max": [
+      1,
+      6,
+      -265
+     ]
+    }
+   ],
+   "loom47Posts_why": "P1's near posts (L-cards.md section 3 State change): they stand until THE LOOM cuts its frame at P1 -> P2, then fall into the void (loom47 on)"
+  }
+ ],
+ "doors": [
+  {
+   "id": "d1",
+   "between": [
+    "p1",
+    "p2"
+   ],
+   "rect": [
+    -2,
+    87.5,
+    2,
+    91.5
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  },
+  {
+   "id": "d2",
+   "between": [
+    "p2",
+    "p3"
+   ],
+   "rect": [
+    -2,
+    33.5,
+    2,
+    37.5
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  },
+  {
+   "id": "d3",
+   "between": [
+    "p3",
+    "p4"
+   ],
+   "rect": [
+    -2,
+    -10.5,
+    2,
+    -6.5
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  },
+  {
+   "id": "d4",
+   "between": [
+    "p4",
+    "p5"
+   ],
+   "rect": [
+    -2,
+    -106.5,
+    2,
+    -102.5
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  },
+  {
+   "id": "d5",
+   "between": [
+    "p5",
+    "o1"
+   ],
+   "rect": [
+    -19,
+    -146.5,
+    -15,
+    -142.5
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  },
+  {
+   "id": "d6",
+   "between": [
+    "o1",
+    "o2"
+   ],
+   "rect": [
+    -19,
+    -200.5,
+    -15,
+    -196.5
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  },
+  {
+   "id": "d7",
+   "between": [
+    "o2",
+    "o3"
+   ],
+   "rect": [
+    -19,
+    -250.5,
+    -15,
+    -246.5
+   ],
+   "height": 4.5,
+   "checkpoint": true
+  }
+ ],
+ "boxes": [
+  {
+   "zone": "p2",
+   "kind": "deck",
+   "min": [
+    -6,
+    -14,
+    41.5
+   ],
+   "max": [
+    6,
+    10,
+    49.5
+   ],
+   "job": "line",
+   "why": "gate A's LANDING (12 m wide, 10 m above the take-off, 30 m of void before it; its faces noride): only the grapple's pull reaches it (the gate)",
+   "note": "gate A's LANDING (12 m wide, 10 m above the take-off, 30 m of void before it; its faces noride): only the grapple's pull reaches it (the gate)",
+   "noride": true,
+   "gate": {
+    "verb": "grapple",
+    "from": [
+     0,
+     0,
+     80
+    ],
+    "to": [
+     0,
+     10,
+     47.5
+    ],
+    "id": "p2-gateA",
+    "runUp": 6,
+    "why": "30 m of void and 10 m up: one pull (the ring over the landing, or its front face), under 0.9 x the 40 m range; the room is LIMIT pistolOnly (no THUNDERCLAP boost, no PULSE blast), the best apex left (3.41 m) is under the rise, no ride wall in reach (builder E's envelopes)"
+   }
+  },
+  {
+   "zone": "p2",
+   "kind": "hull",
+   "min": [
+    -18,
+    -14,
+    37.5
+   ],
+   "max": [
+    -17.8,
+    22,
+    87.5
+   ],
+   "job": "line",
+   "why": "the west wall's NORIDE liner over the void (dull, ridged, no cyan): a ride along the room's wall would skip every gate (D-6); only the grapple crosses",
+   "note": "the west wall's NORIDE liner over the void (dull, ridged, no cyan): a ride along the room's wall would skip every gate (D-6); only the grapple crosses",
+   "noride": true
+  },
+  {
+   "zone": "p2",
+   "kind": "hull",
+   "min": [
+    17.8,
+    -14,
+    37.5
+   ],
+   "max": [
+    18,
+    22,
+    87.5
+   ],
+   "job": "line",
+   "why": "the east wall's NORIDE liner over the void (dull, ridged, no cyan): a ride along the room's wall would skip every gate (D-6); only the grapple crosses",
+   "note": "the east wall's NORIDE liner over the void (dull, ridged, no cyan): a ride along the room's wall would skip every gate (D-6); only the grapple crosses",
+   "noride": true
+  },
+  {
+   "zone": "p4",
+   "kind": "deck",
+   "min": [
+    -6,
+    -14,
+    -60.5
+   ],
+   "max": [
+    6,
+    10,
+    -48.5
+   ],
+   "job": "line",
+   "why": "gate A's LANDING (12 m wide, 10 m above the take-off, 30 m of void before it; its faces noride): only the grapple's pull reaches it (the gate)",
+   "note": "gate A's LANDING (12 m wide, 10 m above the take-off, 30 m of void before it; its faces noride): only the grapple's pull reaches it (the gate)",
+   "noride": true,
+   "gate": {
+    "verb": "grapple",
+    "from": [
+     0,
+     0,
+     -18
+    ],
+    "to": [
+     0,
+     10,
+     -50.5
+    ],
+    "id": "p4-gateA",
+    "runUp": 6,
+    "why": "30 m of void and 10 m up: one pull (the ring over the landing, or its front face), under 0.9 x the 40 m range; the room is LIMIT pistolOnly (no THUNDERCLAP boost, no PULSE blast), the best apex left (3.41 m) is under the rise, no ride wall in reach (builder E's envelopes)"
+   }
+  },
+  {
+   "zone": "p4",
+   "kind": "deck",
+   "min": [
+    -6,
+    -14,
+    -98.5
+   ],
+   "max": [
+    6,
+    20,
+    -90.5
+   ],
+   "job": "line",
+   "why": "gate B's LANDING (12 m wide, 10 m above the take-off, 30 m of void before it; its faces noride): only the grapple's pull reaches it (the gate)",
+   "note": "gate B's LANDING (12 m wide, 10 m above the take-off, 30 m of void before it; its faces noride): only the grapple's pull reaches it (the gate)",
+   "noride": true,
+   "gate": {
+    "verb": "grapple",
+    "from": [
+     0,
+     10,
+     -60
+    ],
+    "to": [
+     0,
+     20,
+     -92.5
+    ],
+    "id": "p4-gateB",
+    "runUp": 6,
+    "why": "30 m of void and 10 m up: one pull (the ring over the landing, or its front face), under 0.9 x the 40 m range; the room is LIMIT pistolOnly (no THUNDERCLAP boost, no PULSE blast), the best apex left (3.41 m) is under the rise, no ride wall in reach (builder E's envelopes)"
+   }
+  },
+  {
+   "zone": "p4",
+   "kind": "hull",
+   "min": [
+    -20,
+    -14,
+    -102.5
+   ],
+   "max": [
+    -19.8,
+    32,
+    -10.5
+   ],
+   "job": "line",
+   "why": "the west wall's NORIDE liner over the void (dull, ridged, no cyan): a ride along the room's wall would skip every gate (D-6); only the grapple crosses",
+   "note": "the west wall's NORIDE liner over the void (dull, ridged, no cyan): a ride along the room's wall would skip every gate (D-6); only the grapple crosses",
+   "noride": true
+  },
+  {
+   "zone": "p4",
+   "kind": "hull",
+   "min": [
+    19.8,
+    -14,
+    -102.5
+   ],
+   "max": [
+    20,
+    32,
+    -10.5
+   ],
+   "job": "line",
+   "why": "the east wall's NORIDE liner over the void (dull, ridged, no cyan): a ride along the room's wall would skip every gate (D-6); only the grapple crosses",
+   "note": "the east wall's NORIDE liner over the void (dull, ridged, no cyan): a ride along the room's wall would skip every gate (D-6); only the grapple crosses",
+   "noride": true
+  },
+  {
+   "zone": "o1",
+   "kind": "wall",
+   "min": [
+    -14,
+    -14,
+    -183.5
+   ],
+   "max": [
+    -10,
+    6,
+    -165.5
+   ],
+   "job": "line",
+   "why": "TOWER: the ride wall between two threads (its west face is ridden north, 18 m = ~1.7 s of ride); its top (y 6) is a ledge to land on",
+   "note": "TOWER: the ride wall between two threads (its west face is ridden north, 18 m = ~1.7 s of ride); its top (y 6) is a ledge to land on",
+   "ride": true
+  },
+  {
+   "zone": "o2",
+   "kind": "deck",
+   "min": [
+    -20,
+    -14,
+    -231.5
+   ],
+   "max": [
+    -14,
+    4,
+    -224.5
+   ],
+   "job": "line",
+   "why": "THE POST: a 6 x 7 m stone top at y 4 to land on after the swing; the practice knee hangs off its east side",
+   "note": "THE POST: a 6 x 7 m stone top at y 4 to land on after the swing; the practice knee hangs off its east side"
+  },
+  {
+   "zone": "o3",
+   "kind": "wall",
+   "min": [
+    -31,
+    -24,
+    -285
+   ],
+   "max": [
+    -23,
+    6,
+    -279
+   ],
+   "ride": true,
+   "job": "line",
+   "why": "HOLD t2w: P2 THE WEAVE's inner posts (20 m apart, under THE LOOM's flank): the posts behind are cut off (the anchor cut rule), the sweep covers them; its faces ride (the post-to-post route), its top a hold (a fall comes back here)",
+   "note": "HOLD t2w: P2 THE WEAVE's inner posts (20 m apart, under THE LOOM's flank): the posts behind are cut off (the anchor cut rule), the sweep covers them; its faces ride (the post-to-post route), its top a hold (a fall comes back here)"
+  },
+  {
+   "zone": "o3",
+   "kind": "wall",
+   "min": [
+    -11,
+    -24,
+    -285
+   ],
+   "max": [
+    -3,
+    6,
+    -279
+   ],
+   "ride": true,
+   "job": "line",
+   "why": "HOLD t2e: P2 THE WEAVE's inner posts (20 m apart, under THE LOOM's flank): the posts behind are cut off (the anchor cut rule), the sweep covers them; its faces ride (the post-to-post route), its top a hold (a fall comes back here)",
+   "note": "HOLD t2e: P2 THE WEAVE's inner posts (20 m apart, under THE LOOM's flank): the posts behind are cut off (the anchor cut rule), the sweep covers them; its faces ride (the post-to-post route), its top a hold (a fall comes back here)"
+  },
+  {
+   "zone": "o3",
+   "kind": "wall",
+   "min": [
+    -35,
+    -24,
+    -299
+   ],
+   "max": [
+    -27,
+    6,
+    -293
+   ],
+   "ride": true,
+   "job": "line",
+   "why": "HOLD t3w: P3 THE UNRAVEL's far posts: the last pair, the void and the frame beam behind them; its faces ride (the post-to-post route), its top a hold (a fall comes back here)",
+   "note": "HOLD t3w: P3 THE UNRAVEL's far posts: the last pair, the void and the frame beam behind them; its faces ride (the post-to-post route), its top a hold (a fall comes back here)"
+  },
+  {
+   "zone": "o3",
+   "kind": "wall",
+   "min": [
+    -7,
+    -24,
+    -299
+   ],
+   "max": [
+    1,
+    6,
+    -293
+   ],
+   "ride": true,
+   "job": "line",
+   "why": "HOLD t3e: P3 THE UNRAVEL's far posts: the last pair, the void and the frame beam behind them; its faces ride (the post-to-post route), its top a hold (a fall comes back here)",
+   "note": "HOLD t3e: P3 THE UNRAVEL's far posts: the last pair, the void and the frame beam behind them; its faces ride (the post-to-post route), its top a hold (a fall comes back here)"
+  },
+  {
+   "zone": "p3",
+   "kind": "hull",
+   "min": [
+    -11,
+    0,
+    22.5
+   ],
+   "max": [
+    -9,
+    1,
+    22.8
+   ],
+   "job": "cover",
+   "why": "a 1 m RAILING along the entry deck's lip (west of the cable) (the flow plan's hazard line: the void is crossed on purpose, by a jump or a pull, never by a backward strafe; the walk r1 fell off this edge without it); it is also half cover",
+   "note": "a 1 m RAILING along the entry deck's lip (west of the cable) (the flow plan's hazard line: the void is crossed on purpose, by a jump or a pull, never by a backward strafe; the walk r1 fell off this edge without it); it is also half cover"
+  },
+  {
+   "zone": "p3",
+   "kind": "hull",
+   "min": [
+    -5,
+    0,
+    22.5
+   ],
+   "max": [
+    11,
+    1,
+    22.8
+   ],
+   "job": "cover",
+   "why": "a 1 m RAILING along the entry deck's lip (east of the cable) (the flow plan's hazard line: the void is crossed on purpose, by a jump or a pull, never by a backward strafe; the walk r1 fell off this edge without it); it is also half cover",
+   "note": "a 1 m RAILING along the entry deck's lip (east of the cable) (the flow plan's hazard line: the void is crossed on purpose, by a jump or a pull, never by a backward strafe; the walk r1 fell off this edge without it); it is also half cover"
+  },
+  {
+   "zone": "p3",
+   "kind": "hull",
+   "min": [
+    -11,
+    0,
+    4.2
+   ],
+   "max": [
+    -9,
+    1,
+    4.5
+   ],
+   "job": "cover",
+   "why": "a 1 m RAILING along the exit deck's lip (west of the cable) (the flow plan's hazard line: the void is crossed on purpose, by a jump or a pull, never by a backward strafe; the walk r1 fell off this edge without it); it is also half cover",
+   "note": "a 1 m RAILING along the exit deck's lip (west of the cable) (the flow plan's hazard line: the void is crossed on purpose, by a jump or a pull, never by a backward strafe; the walk r1 fell off this edge without it); it is also half cover"
+  },
+  {
+   "zone": "p3",
+   "kind": "hull",
+   "min": [
+    -5,
+    0,
+    4.2
+   ],
+   "max": [
+    11,
+    1,
+    4.5
+   ],
+   "job": "cover",
+   "why": "a 1 m RAILING along the exit deck's lip (east of the cable) (the flow plan's hazard line: the void is crossed on purpose, by a jump or a pull, never by a backward strafe; the walk r1 fell off this edge without it); it is also half cover",
+   "note": "a 1 m RAILING along the exit deck's lip (east of the cable) (the flow plan's hazard line: the void is crossed on purpose, by a jump or a pull, never by a backward strafe; the walk r1 fell off this edge without it); it is also half cover"
+  },
+  {
+   "zone": "p3",
+   "kind": "hull",
+   "min": [
+    -9,
+    0,
+    4.5
+   ],
+   "max": [
+    -8.7,
+    1,
+    22.5
+   ],
+   "job": "cover",
+   "why": "a 1 m RAILING along the cable's west side (the file stays on it) (the flow plan's hazard line: the void is crossed on purpose, by a jump or a pull, never by a backward strafe; the walk r1 fell off this edge without it); it is also half cover",
+   "note": "a 1 m RAILING along the cable's west side (the file stays on it) (the flow plan's hazard line: the void is crossed on purpose, by a jump or a pull, never by a backward strafe; the walk r1 fell off this edge without it); it is also half cover"
+  },
+  {
+   "zone": "p3",
+   "kind": "hull",
+   "min": [
+    -5.3,
+    0,
+    4.5
+   ],
+   "max": [
+    -5,
+    1,
+    22.5
+   ],
+   "job": "cover",
+   "why": "a 1 m RAILING along the cable's east side (the flow plan's hazard line: the void is crossed on purpose, by a jump or a pull, never by a backward strafe; the walk r1 fell off this edge without it); it is also half cover",
+   "note": "a 1 m RAILING along the cable's east side (the flow plan's hazard line: the void is crossed on purpose, by a jump or a pull, never by a backward strafe; the walk r1 fell off this edge without it); it is also half cover"
+  },
+  {
+   "zone": "p3",
+   "kind": "deck",
+   "min": [
+    -18,
+    0,
+    2.5
+   ],
+   "max": [
+    -11,
+    2.5,
+    24.5
+   ],
+   "job": "line",
+   "why": "the WEST ANCHORAGE (AW, 2.5 m, lx -18..-11, lz 9..31; card: Molecule's AW): a spitter's stand in the open, the south swing's landing; its north-east edge is the one-way drop onto the exit deck (flow plan 3c)",
+   "note": "the WEST ANCHORAGE (AW, 2.5 m, lx -18..-11, lz 9..31; card: Molecule's AW): a spitter's stand in the open, the south swing's landing; its north-east edge is the one-way drop onto the exit deck (flow plan 3c)"
+  },
+  {
+   "zone": "p3",
+   "kind": "deck",
+   "min": [
+    11,
+    0,
+    2.5
+   ],
+   "max": [
+    18,
+    2.5,
+    24.5
+   ],
+   "job": "line",
+   "why": "the EAST ANCHORAGE (AE, 2.5 m, lx 11..18, lz 9..31; card: Molecule's AE): a spitter's stand, the north swing's landing, and with its two ramps the walkers' second crossing (the ground loop, flow plan 3a)",
+   "note": "the EAST ANCHORAGE (AE, 2.5 m, lx 11..18, lz 9..31; card: Molecule's AE): a spitter's stand, the north swing's landing, and with its two ramps the walkers' second crossing (the ground loop, flow plan 3a)"
+  },
+  {
+   "zone": "p3",
+   "kind": "hull",
+   "min": [
+    -20,
+    0,
+    -6.5
+   ],
+   "max": [
+    -18,
+    14,
+    33.5
+   ],
+   "job": "line",
+   "why": "the WEST ANCHORAGE MASONRY (roof-high, behind AW; card: Every-solid rule): the room ~30 m wide, no strip behind the stand",
+   "note": "the WEST ANCHORAGE MASONRY (roof-high, behind AW; card: Every-solid rule): the room ~30 m wide, no strip behind the stand"
+  },
+  {
+   "zone": "p3",
+   "kind": "hull",
+   "min": [
+    18,
+    0,
+    -6.5
+   ],
+   "max": [
+    20,
+    14,
+    33.5
+   ],
+   "job": "line",
+   "why": "the EAST ANCHORAGE MASONRY (roof-high, behind AE): the room ~30 m wide",
+   "note": "the EAST ANCHORAGE MASONRY (roof-high, behind AE): the room ~30 m wide"
+  },
+  {
+   "zone": "p3",
+   "kind": "hull",
+   "min": [
+    -18,
+    0,
+    24.5
+   ],
+   "max": [
+    -14,
+    14,
+    33.5
+   ],
+   "job": "line",
+   "why": "the masonry beside AW's south ramp (roof-high): the entry deck's west corner closed (the door frames the room)",
+   "note": "the masonry beside AW's south ramp (roof-high): the entry deck's west corner closed (the door frames the room)"
+  },
+  {
+   "zone": "p3",
+   "kind": "hull",
+   "min": [
+    14,
+    0,
+    24.5
+   ],
+   "max": [
+    18,
+    14,
+    33.5
+   ],
+   "job": "line",
+   "why": "the masonry beside AE's south ramp (roof-high): the entry deck's east corner closed",
+   "note": "the masonry beside AE's south ramp (roof-high): the entry deck's east corner closed"
+  },
+  {
+   "zone": "p3",
+   "kind": "hull",
+   "min": [
+    -18,
+    0,
+    -6.5
+   ],
+   "max": [
+    -11,
+    14,
+    2.5
+   ],
+   "job": "line",
+   "why": "the masonry north of AW (roof-high): AW's only ways off are its ramp, the drop and the pulls (flow plan 3c / 3d)",
+   "note": "the masonry north of AW (roof-high): AW's only ways off are its ramp, the drop and the pulls (flow plan 3c / 3d)"
+  },
+  {
+   "zone": "p3",
+   "kind": "hull",
+   "min": [
+    14,
+    0,
+    -6.5
+   ],
+   "max": [
+    18,
+    14,
+    2.5
+   ],
+   "job": "line",
+   "why": "the masonry beside AE's north ramp (roof-high): the exit deck's east corner closed",
+   "note": "the masonry beside AE's north ramp (roof-high): the exit deck's east corner closed"
+  },
+  {
+   "zone": "p3",
+   "kind": "hull",
+   "min": [
+    -7.5,
+    0,
+    25.5
+   ],
+   "max": [
+    -3.5,
+    1.2,
+    26.5
+   ],
+   "job": "cover",
+   "why": "the cable's CLAMP (1.2 m; flow plan 1 first foothold, 7 m in at the cable's south end, OFF the door's line of sight and the spawn's way in): cover from the anchorages' spitters, one jump",
+   "note": "the cable's CLAMP (1.2 m; flow plan 1 first foothold, 7 m in at the cable's south end, OFF the door's line of sight and the spawn's way in): cover from the anchorages' spitters, one jump"
+  },
+  {
+   "zone": "p3",
+   "kind": "hull",
+   "min": [
+    -1.75,
+    12.6,
+    5.75
+   ],
+   "max": [
+    1.75,
+    14,
+    9.25
+   ],
+   "job": "marker",
+   "why": "the great KNOT (card: Landmark): the main cable's tied-off end round the KNOT ring's hanger, hung from the roof over the ring (the shortcut's pull), dead ahead from the door under the room's one amber lamp; out of reach (no one stands on it)",
+   "note": "the great KNOT (card: Landmark): the main cable's tied-off end round the KNOT ring's hanger, hung from the roof over the ring (the shortcut's pull), dead ahead from the door under the room's one amber lamp; out of reach (no one stands on it)"
+  },
+  {
+   "zone": "p3",
+   "kind": "hull",
+   "min": [
+    -11,
+    0,
+    24.5
+   ],
+   "max": [
+    -9,
+    1.2,
+    25.5
+   ],
+   "job": "cover",
+   "why": "a BOLLARD at the cable's south end (1.2 m; flow plan 5, the south-west quadrant): the file's last cover before the deck",
+   "note": "a BOLLARD at the cable's south end (1.2 m; flow plan 5, the south-west quadrant): the file's last cover before the deck"
+  },
+  {
+   "zone": "p3",
+   "kind": "hull",
+   "min": [
+    -8,
+    0,
+    -0.5
+   ],
+   "max": [
+    -4,
+    1.2,
+    0.5
+   ],
+   "job": "cover",
+   "why": "a COIL of slack cable (1.2 m; flow plan 5, the north-west quadrant; card: the swarmers' nest)",
+   "note": "a COIL of slack cable (1.2 m; flow plan 5, the north-west quadrant; card: the swarmers' nest)"
+  },
+  {
+   "zone": "p3",
+   "kind": "hull",
+   "min": [
+    3,
+    0,
+    -0.5
+   ],
+   "max": [
+    7,
+    1.2,
+    0.5
+   ],
+   "job": "cover",
+   "why": "a second COIL (1.2 m; flow plan 5, the north-east quadrant)",
+   "note": "a second COIL (1.2 m; flow plan 5, the north-east quadrant)"
+  },
+  {
+   "zone": "p1",
+   "kind": "hull",
+   "min": [
+    -16,
+    0,
+    124.5
+   ],
+   "max": [
+    -6,
+    12,
+    127.5
+   ],
+   "job": "line",
+   "why": "the WEST HOIST HOUSE (roof-high, lz 0..3; card: Every-solid rule, Light story): the short dark entry passage's wall and the yard's south wall (the frame round the first view)",
+   "note": "the WEST HOIST HOUSE (roof-high, lz 0..3; card: Every-solid rule, Light story): the short dark entry passage's wall and the yard's south wall (the frame round the first view)"
+  },
+  {
+   "zone": "p1",
+   "kind": "hull",
+   "min": [
+    6,
+    0,
+    124.5
+   ],
+   "max": [
+    16,
+    12,
+    127.5
+   ],
+   "job": "line",
+   "why": "the EAST HOIST HOUSE (roof-high): the entry passage 12 m wide and 3 m deep; it opens on the whole yard at lz 3 (flow plan 1)",
+   "note": "the EAST HOIST HOUSE (roof-high): the entry passage 12 m wide and 3 m deep; it opens on the whole yard at lz 3 (flow plan 1)"
+  },
+  {
+   "zone": "p1",
+   "kind": "deck",
+   "min": [
+    -16,
+    0,
+    91.5
+   ],
+   "max": [
+    -8,
+    4,
+    109.5
+   ],
+   "job": "line",
+   "why": "the LOADING TERRACE (4 m, lx -16..-8, lz 18..36; card: Molecule's T): the spitters' stand and the GREAT HOOK pull's landing; its front edge is the one-way drop (flow plan 3c)",
+   "note": "the LOADING TERRACE (4 m, lx -16..-8, lz 18..36; card: Molecule's T): the spitters' stand and the GREAT HOOK pull's landing; its front edge is the one-way drop (flow plan 3c)"
+  },
+  {
+   "zone": "p1",
+   "kind": "hull",
+   "min": [
+    -3.5,
+    0,
+    104.5
+   ],
+   "max": [
+    3.5,
+    5.5,
+    112.5
+   ],
+   "job": "cover",
+   "why": "the CABLE DRUM standing on its flange (5.5 m, 7 x 8 m, out of a double jump; card: Hero prop): the ground loop's centre (flow plan 3a: the strafe round it), full cover from the terrace's spitters on one side at a time",
+   "note": "the CABLE DRUM standing on its flange (5.5 m, 7 x 8 m, out of a double jump; card: Hero prop): the ground loop's centre (flow plan 3a: the strafe round it), full cover from the terrace's spitters on one side at a time"
+  },
+  {
+   "zone": "p1",
+   "kind": "hull",
+   "min": [
+    7.7,
+    0,
+    101.5
+   ],
+   "max": [
+    8,
+    1,
+    115.5
+   ],
+   "job": "cover",
+   "why": "a 1 m RAILING along the hoist well's west lip (the east lane's side) (the flow plan's hazard line: the void is crossed on purpose, by a jump or a pull, never by a backward strafe; the walk r1 fell off this edge without it); it is also half cover",
+   "note": "a 1 m RAILING along the hoist well's west lip (the east lane's side) (the flow plan's hazard line: the void is crossed on purpose, by a jump or a pull, never by a backward strafe; the walk r1 fell off this edge without it); it is also half cover"
+  },
+  {
+   "zone": "p1",
+   "kind": "hull",
+   "min": [
+    8,
+    0,
+    115.5
+   ],
+   "max": [
+    15.4,
+    1,
+    115.8
+   ],
+   "job": "cover",
+   "why": "a 1 m RAILING along the hoist well's south lip (the flow plan's hazard line: the void is crossed on purpose, by a jump or a pull, never by a backward strafe; the walk r1 fell off this edge without it); it is also half cover",
+   "note": "a 1 m RAILING along the hoist well's south lip (the flow plan's hazard line: the void is crossed on purpose, by a jump or a pull, never by a backward strafe; the walk r1 fell off this edge without it); it is also half cover"
+  },
+  {
+   "zone": "p1",
+   "kind": "hull",
+   "min": [
+    8,
+    0,
+    101.2
+   ],
+   "max": [
+    15.4,
+    1,
+    101.5
+   ],
+   "job": "cover",
+   "why": "a 1 m RAILING along the hoist well's north lip (the flow plan's hazard line: the void is crossed on purpose, by a jump or a pull, never by a backward strafe; the walk r1 fell off this edge without it); it is also half cover",
+   "note": "a 1 m RAILING along the hoist well's north lip (the flow plan's hazard line: the void is crossed on purpose, by a jump or a pull, never by a backward strafe; the walk r1 fell off this edge without it); it is also half cover"
+  },
+  {
+   "zone": "p1",
+   "kind": "wall",
+   "min": [
+    15.4,
+    -14,
+    99.5
+   ],
+   "max": [
+    16,
+    12,
+    117.5
+   ],
+   "job": "line",
+   "why": "the HOIST WELL's RIDE PANEL (the east wall over the well, floor to roof, cyan trim; card: Every-solid rule, flow plan 3b): the air loop's ride north between the two pulls (roof-high: `n46span reach` round 2 landed the hoist pull's pop ON a 7 m panel's top)",
+   "note": "the HOIST WELL's RIDE PANEL (the east wall over the well, floor to roof, cyan trim; card: Every-solid rule, flow plan 3b): the air loop's ride north between the two pulls (roof-high: `n46span reach` round 2 landed the hoist pull's pop ON a 7 m panel's top)",
+   "ride": true,
+   "ride36": {
+    "face": "W",
+    "planeX": 15.4,
+    "lz": [
+     10,
+     28
+    ]
+   }
+  },
+  {
+   "zone": "p1",
+   "kind": "hull",
+   "min": [
+    10,
+    0,
+    91.5
+   ],
+   "max": [
+    16,
+    12,
+    99.5
+   ],
+   "job": "line",
+   "why": "the ENGINE HOUSE (roof-high, the north-east corner; card: Every-solid rule): no pocket behind the well, the exit framed",
+   "note": "the ENGINE HOUSE (roof-high, the north-east corner; card: Every-solid rule): no pocket behind the well, the exit framed"
+  },
+  {
+   "zone": "p1",
+   "kind": "hull",
+   "min": [
+    -6,
+    0,
+    118.5
+   ],
+   "max": [
+    -2,
+    1.2,
+    119.5
+   ],
+   "job": "cover",
+   "why": "a cable CRATE (1.2 m; flow plan 1 first foothold, 7 m from the spawn; 5: the south-west quadrant)",
+   "note": "a cable CRATE (1.2 m; flow plan 1 first foothold, 7 m from the spawn; 5: the south-west quadrant)"
+  },
+  {
+   "zone": "p1",
+   "kind": "hull",
+   "min": [
+    3,
+    0,
+    117.5
+   ],
+   "max": [
+    6,
+    1.2,
+    118.5
+   ],
+   "job": "cover",
+   "why": "a cable crate (1.2 m; flow plan 5: the south-east quadrant)",
+   "note": "a cable crate (1.2 m; flow plan 5: the south-east quadrant)"
+  },
+  {
+   "zone": "p1",
+   "kind": "hull",
+   "min": [
+    -6,
+    0,
+    97.5
+   ],
+   "max": [
+    -3,
+    1.2,
+    98.5
+   ],
+   "job": "cover",
+   "why": "a cable crate (1.2 m; flow plan 5: the north-west quadrant, under the terrace's spitters)",
+   "note": "a cable crate (1.2 m; flow plan 5: the north-west quadrant, under the terrace's spitters)"
+  },
+  {
+   "zone": "p1",
+   "kind": "hull",
+   "min": [
+    3,
+    0,
+    97.5
+   ],
+   "max": [
+    6,
+    1.2,
+    98.5
+   ],
+   "job": "cover",
+   "why": "a cable crate (1.2 m; flow plan 5: the north-east quadrant)",
+   "note": "a cable crate (1.2 m; flow plan 5: the north-east quadrant)"
+  },
+  {
+   "zone": "p5",
+   "kind": "hull",
+   "min": [
+    -21,
+    0,
+    -116.5
+   ],
+   "max": [
+    -11.5,
+    1,
+    -116.2
+   ],
+   "job": "cover",
+   "why": "a 1 m RAILING along the winding pit's south lip (the entry walkway, west of the gangway) (the flow plan's hazard line: the void is crossed on purpose, by a jump or a pull, never by a backward strafe; the walk r1 fell off this edge without it); it is also half cover",
+   "note": "a 1 m RAILING along the winding pit's south lip (the entry walkway, west of the gangway) (the flow plan's hazard line: the void is crossed on purpose, by a jump or a pull, never by a backward strafe; the walk r1 fell off this edge without it); it is also half cover"
+  },
+  {
+   "zone": "p5",
+   "kind": "hull",
+   "min": [
+    -8.5,
+    0,
+    -116.5
+   ],
+   "max": [
+    3,
+    1,
+    -116.2
+   ],
+   "job": "cover",
+   "why": "a 1 m RAILING along the winding pit's south lip (east of the gangway) (the flow plan's hazard line: the void is crossed on purpose, by a jump or a pull, never by a backward strafe; the walk r1 fell off this edge without it); it is also half cover",
+   "note": "a 1 m RAILING along the winding pit's south lip (east of the gangway) (the flow plan's hazard line: the void is crossed on purpose, by a jump or a pull, never by a backward strafe; the walk r1 fell off this edge without it); it is also half cover"
+  },
+  {
+   "zone": "p5",
+   "kind": "hull",
+   "min": [
+    -21,
+    0,
+    -135.8
+   ],
+   "max": [
+    -11.5,
+    1,
+    -135.5
+   ],
+   "job": "cover",
+   "why": "a 1 m RAILING along the winding pit's north lip (west of the payout) (the flow plan's hazard line: the void is crossed on purpose, by a jump or a pull, never by a backward strafe; the walk r1 fell off this edge without it); it is also half cover",
+   "note": "a 1 m RAILING along the winding pit's north lip (west of the payout) (the flow plan's hazard line: the void is crossed on purpose, by a jump or a pull, never by a backward strafe; the walk r1 fell off this edge without it); it is also half cover"
+  },
+  {
+   "zone": "p5",
+   "kind": "hull",
+   "min": [
+    -8.5,
+    0,
+    -135.8
+   ],
+   "max": [
+    3,
+    1,
+    -135.5
+   ],
+   "job": "cover",
+   "why": "a 1 m RAILING along the winding pit's north lip (east of the payout) (the flow plan's hazard line: the void is crossed on purpose, by a jump or a pull, never by a backward strafe; the walk r1 fell off this edge without it); it is also half cover",
+   "note": "a 1 m RAILING along the winding pit's north lip (east of the payout) (the flow plan's hazard line: the void is crossed on purpose, by a jump or a pull, never by a backward strafe; the walk r1 fell off this edge without it); it is also half cover"
+  },
+  {
+   "zone": "p5",
+   "kind": "hull",
+   "min": [
+    -21.3,
+    0,
+    -135.5
+   ],
+   "max": [
+    -21,
+    1,
+    -116.5
+   ],
+   "job": "cover",
+   "why": "a 1 m RAILING along the winding pit's west lip (the west walkway) (the flow plan's hazard line: the void is crossed on purpose, by a jump or a pull, never by a backward strafe; the walk r1 fell off this edge without it); it is also half cover",
+   "note": "a 1 m RAILING along the winding pit's west lip (the west walkway) (the flow plan's hazard line: the void is crossed on purpose, by a jump or a pull, never by a backward strafe; the walk r1 fell off this edge without it); it is also half cover"
+  },
+  {
+   "zone": "p5",
+   "kind": "hull",
+   "min": [
+    3,
+    0,
+    -118.5
+   ],
+   "max": [
+    3.3,
+    1,
+    -116.5
+   ],
+   "job": "cover",
+   "why": "a 1 m RAILING along the winding pit's east lip beside the gallery's ramp (the flow plan's hazard line: the void is crossed on purpose, by a jump or a pull, never by a backward strafe; the walk r1 fell off this edge without it); it is also half cover",
+   "note": "a 1 m RAILING along the winding pit's east lip beside the gallery's ramp (the flow plan's hazard line: the void is crossed on purpose, by a jump or a pull, never by a backward strafe; the walk r1 fell off this edge without it); it is also half cover"
+  },
+  {
+   "zone": "p5",
+   "kind": "hull",
+   "min": [
+    3,
+    4,
+    -135.5
+   ],
+   "max": [
+    3.3,
+    5,
+    -118.5
+   ],
+   "job": "cover",
+   "why": "a 1 m RAILING along the gallery's inner edge over the pit (its north end stays open: the one-way drop) (the flow plan's hazard line: the void is crossed on purpose, by a jump or a pull, never by a backward strafe; the walk r1 fell off this edge without it); it is also half cover",
+   "note": "a 1 m RAILING along the gallery's inner edge over the pit (its north end stays open: the one-way drop) (the flow plan's hazard line: the void is crossed on purpose, by a jump or a pull, never by a backward strafe; the walk r1 fell off this edge without it); it is also half cover"
+  },
+  {
+   "zone": "p5",
+   "kind": "deck",
+   "min": [
+    -15,
+    0,
+    -129.5
+   ],
+   "max": [
+    -5,
+    2.5,
+    -121.5
+   ],
+   "job": "line",
+   "why": "the GREAT SPOOL (2.5 m, 10 x 8 m, alone in the pit; card: Landmark, Hero prop): the island the wave-2 spitters and the health stand on (the whip's and the pull's target), the air loop's centre node",
+   "note": "the GREAT SPOOL (2.5 m, 10 x 8 m, alone in the pit; card: Landmark, Hero prop): the island the wave-2 spitters and the health stand on (the whip's and the pull's target), the air loop's centre node"
+  },
+  {
+   "zone": "p5",
+   "kind": "deck",
+   "min": [
+    3,
+    0,
+    -135.5
+   ],
+   "max": [
+    8,
+    4,
+    -118.5
+   ],
+   "job": "line",
+   "why": "the GALLERY (4 m, lx 13..18, lz 12..29; card: Molecule's E): the spitters' high stand; its north end is the one-way drop that breaks the circle (flow plan 3c)",
+   "note": "the GALLERY (4 m, lx 13..18, lz 12..29; card: Molecule's E): the spitters' high stand; its north end is the one-way drop that breaks the circle (flow plan 3c)"
+  },
+  {
+   "zone": "p5",
+   "kind": "deck",
+   "min": [
+    -28,
+    0,
+    -110.5
+   ],
+   "max": [
+    -24,
+    2.5,
+    -106.5
+   ],
+   "job": "line",
+   "why": "the TAIL SPOOL (2.5 m, the south-west corner; card: Molecule's T): the air loop's west node and the south wall ride's take-off (flow plan 3b); a double jump or its ramp up",
+   "note": "the TAIL SPOOL (2.5 m, the south-west corner; card: Molecule's T): the air loop's west node and the south wall ride's take-off (flow plan 3b); a double jump or its ramp up"
+  },
+  {
+   "zone": "p5",
+   "kind": "wall",
+   "min": [
+    -23,
+    0,
+    -107.1
+   ],
+   "max": [
+    -4,
+    14,
+    -106.5
+   ],
+   "job": "line",
+   "why": "the SOUTH WALL's RIDE PANEL (lx -13..6, floor to roof: no top ledge to land on, cyan trim; card: Every-solid rule, flow plan 3b): the air loop's ride east from the tail spool to the gallery's ring (the door is at lx 8..12)",
+   "note": "the SOUTH WALL's RIDE PANEL (lx -13..6, floor to roof: no top ledge to land on, cyan trim; card: Every-solid rule, flow plan 3b): the air loop's ride east from the tail spool to the gallery's ring (the door is at lx 8..12)",
+   "ride": true
+  },
+  {
+   "zone": "p5",
+   "kind": "hull",
+   "min": [
+    -7,
+    0,
+    -114
+   ],
+   "max": [
+    -3,
+    1.2,
+    -113
+   ],
+   "job": "cover",
+   "why": "a WINCH block (1.2 m; flow plan 1 first foothold, 6 m from the door; 5: the south-east quadrant)",
+   "note": "a WINCH block (1.2 m; flow plan 1 first foothold, 6 m from the door; 5: the south-east quadrant)"
+  },
+  {
+   "zone": "p5",
+   "kind": "hull",
+   "min": [
+    -20,
+    0,
+    -110.5
+   ],
+   "max": [
+    -18,
+    1.2,
+    -109.5
+   ],
+   "job": "cover",
+   "why": "a BOLLARD (1.2 m; flow plan 5: the south-west quadrant)",
+   "note": "a BOLLARD (1.2 m; flow plan 5: the south-west quadrant)"
+  },
+  {
+   "zone": "p5",
+   "kind": "hull",
+   "min": [
+    -22,
+    0,
+    -139.5
+   ],
+   "max": [
+    -19,
+    1.2,
+    -138.5
+   ],
+   "job": "cover",
+   "why": "a cable block (1.2 m; flow plan 5: the north-west quadrant, by the exit)",
+   "note": "a cable block (1.2 m; flow plan 5: the north-west quadrant, by the exit)"
+  },
+  {
+   "zone": "p5",
+   "kind": "hull",
+   "min": [
+    -6,
+    0,
+    -139.5
+   ],
+   "max": [
+    -3,
+    1.2,
+    -138.5
+   ],
+   "job": "cover",
+   "why": "a cable block (1.2 m; flow plan 5: the north-east quadrant)",
+   "note": "a cable block (1.2 m; flow plan 5: the north-east quadrant)"
+  }
+ ],
+ "ramps": [
+  {
+   "zone": "p3",
+   "from": [
+    -12.5,
+    32.5
+   ],
+   "to": [
+    -12.5,
+    24.5
+   ],
+   "width": 3,
+   "rise": 2.5,
+   "job": "climb",
+   "why": "AW's SOUTH RAMP (2.5 m over 8 m; card: Every-solid rule): the walkers' way up from the entry deck (GG NIGHT20) and the player's; AW has no other ramp",
+   "note": "AW's SOUTH RAMP (2.5 m over 8 m; card: Every-solid rule): the walkers' way up from the entry deck (GG NIGHT20) and the player's; AW has no other ramp"
+  },
+  {
+   "zone": "p3",
+   "from": [
+    12.5,
+    32.5
+   ],
+   "to": [
+    12.5,
+    24.5
+   ],
+   "width": 3,
+   "rise": 2.5,
+   "job": "climb",
+   "why": "AE's SOUTH RAMP (2.5 m over 8 m; flow plan 3a): the ground loop's way back to the entry deck, the walkers' route",
+   "note": "AE's SOUTH RAMP (2.5 m over 8 m; flow plan 3a): the ground loop's way back to the entry deck, the walkers' route"
+  },
+  {
+   "zone": "p3",
+   "from": [
+    12.5,
+    -5.5
+   ],
+   "to": [
+    12.5,
+    2.5
+   ],
+   "width": 3,
+   "rise": 2.5,
+   "job": "climb",
+   "why": "AE's NORTH RAMP (2.5 m over 8 m; flow plan 3a): the ground loop's way up from the exit deck (the swarmers' long way round)",
+   "note": "AE's NORTH RAMP (2.5 m over 8 m; flow plan 3a): the ground loop's way up from the exit deck (the swarmers' long way round)"
+  },
+  {
+   "zone": "p1",
+   "from": [
+    -12,
+    119.5
+   ],
+   "to": [
+    -12,
+    109.5
+   ],
+   "width": 3,
+   "rise": 4,
+   "job": "climb",
+   "why": "the terrace's RAMP (4 m over 10 m; card: Every-solid rule): the walkers' way up (GG NIGHT20) and the slow way under the spitters' fire",
+   "note": "the terrace's RAMP (4 m over 10 m; card: Every-solid rule): the walkers' way up (GG NIGHT20) and the slow way under the spitters' fire"
+  },
+  {
+   "zone": "p5",
+   "from": [
+    -10,
+    -116.5
+   ],
+   "to": [
+    -10,
+    -121.5
+   ],
+   "width": 3,
+   "rise": 2.5,
+   "job": "climb",
+   "why": "the spool's WINDING GANGWAY (2.5 m over 5 m, from the south walkway; card: Molecule, the r2 change): the walkers' straight way from the spool to the door side (r1's meter: with only the west walkway round, p5's dwell 15.2 s and dead 11.4 s), the strafe loop's centre crossing",
+   "note": "the spool's WINDING GANGWAY (2.5 m over 5 m, from the south walkway; card: Molecule, the r2 change): the walkers' straight way from the spool to the door side (r1's meter: with only the west walkway round, p5's dwell 15.2 s and dead 11.4 s), the strafe loop's centre crossing"
+  },
+  {
+   "zone": "p5",
+   "from": [
+    -10,
+    -135.5
+   ],
+   "to": [
+    -10,
+    -129.5
+   ],
+   "width": 3,
+   "rise": 2.5,
+   "job": "climb",
+   "why": "the spool's CABLE PAYOUT (2.5 m over 6 m, from the north walkway; card: Every-solid rule): the walkers' way onto the island (GG NIGHT20: no floor the player stands on that they cannot reach) and the strafe loop's centre crossing north",
+   "note": "the spool's CABLE PAYOUT (2.5 m over 6 m, from the north walkway; card: Every-solid rule): the walkers' way onto the island (GG NIGHT20: no floor the player stands on that they cannot reach) and the strafe loop's centre crossing north"
+  },
+  {
+   "zone": "p5",
+   "from": [
+    6,
+    -108.5
+   ],
+   "to": [
+    6,
+    -118.5
+   ],
+   "width": 3,
+   "rise": 4,
+   "job": "climb",
+   "why": "the gallery's RAMP (4 m over 10 m; card: Every-solid rule): the walkers' way up and the ground loop's east leg (flow plan 3a)",
+   "note": "the gallery's RAMP (4 m over 10 m; card: Every-solid rule): the walkers' way up and the ground loop's east leg (flow plan 3a)"
+  },
+  {
+   "zone": "p5",
+   "from": [
+    -26.5,
+    -118.5
+   ],
+   "to": [
+    -26.5,
+    -110.5
+   ],
+   "width": 3,
+   "rise": 2.5,
+   "job": "climb",
+   "why": "the tail spool's RAMP (2.5 m over 8 m, along the west wall; card: Every-solid rule): the walkers' way up, the player's way down to the west walkway",
+   "note": "the tail spool's RAMP (2.5 m over 8 m, along the west wall; card: Every-solid rule): the walkers' way up, the player's way down to the west walkway"
+  }
+ ],
+ "pads": [],
+ "grapple": [],
+ "pits": [
+  {
+   "zone": "p2",
+   "rect": [
+    -18,
+    79.5,
+    -4,
+    87.5
+   ],
+   "floorY": -14,
+   "job": "hazard",
+   "why": "the void beside the entry pier (west): the pier is the only floor at the door",
+   "note": "the void beside the entry pier (west): the pier is the only floor at the door"
+  },
+  {
+   "zone": "p2",
+   "rect": [
+    4,
+    79.5,
+    18,
+    87.5
+   ],
+   "floorY": -14,
+   "job": "hazard",
+   "why": "the void beside the entry pier (east)",
+   "note": "the void beside the entry pier (east)"
+  },
+  {
+   "zone": "p2",
+   "rect": [
+    -18,
+    49.5,
+    18,
+    79.5
+   ],
+   "floorY": -14,
+   "job": "hazard",
+   "why": "THE GAP: 30 m of void wall to wall, no floor (a fall is back at the door)",
+   "note": "THE GAP: 30 m of void wall to wall, no floor (a fall is back at the door)"
+  },
+  {
+   "zone": "p2",
+   "rect": [
+    -18,
+    37.5,
+    -6,
+    49.5
+   ],
+   "floorY": -14,
+   "job": "hazard",
+   "why": "the void beside the landing (west): the landing is a pier",
+   "note": "the void beside the landing (west): the landing is a pier"
+  },
+  {
+   "zone": "p2",
+   "rect": [
+    6,
+    37.5,
+    18,
+    49.5
+   ],
+   "floorY": -14,
+   "job": "hazard",
+   "why": "the void beside the landing (east)",
+   "note": "the void beside the landing (east)"
+  },
+  {
+   "zone": "p4",
+   "rect": [
+    -20,
+    -18.5,
+    -4,
+    -10.5
+   ],
+   "floorY": -14,
+   "job": "hazard",
+   "why": "the void beside the entry pier (west)",
+   "note": "the void beside the entry pier (west)"
+  },
+  {
+   "zone": "p4",
+   "rect": [
+    4,
+    -18.5,
+    20,
+    -10.5
+   ],
+   "floorY": -14,
+   "job": "hazard",
+   "why": "the void beside the entry pier (east)",
+   "note": "the void beside the entry pier (east)"
+  },
+  {
+   "zone": "p4",
+   "rect": [
+    -20,
+    -48.5,
+    20,
+    -18.5
+   ],
+   "floorY": -14,
+   "job": "hazard",
+   "why": "GAP A: 30 m of void wall to wall",
+   "note": "GAP A: 30 m of void wall to wall"
+  },
+  {
+   "zone": "p4",
+   "rect": [
+    -20,
+    -60.5,
+    -6,
+    -48.5
+   ],
+   "floorY": -14,
+   "job": "hazard",
+   "why": "the void beside pier B (west)",
+   "note": "the void beside pier B (west)"
+  },
+  {
+   "zone": "p4",
+   "rect": [
+    6,
+    -60.5,
+    20,
+    -48.5
+   ],
+   "floorY": -14,
+   "job": "hazard",
+   "why": "the void beside pier B (east)",
+   "note": "the void beside pier B (east)"
+  },
+  {
+   "zone": "p4",
+   "rect": [
+    -20,
+    -90.5,
+    20,
+    -60.5
+   ],
+   "floorY": -14,
+   "job": "hazard",
+   "why": "GAP B: 30 m of void wall to wall",
+   "note": "GAP B: 30 m of void wall to wall"
+  },
+  {
+   "zone": "p4",
+   "rect": [
+    -20,
+    -102.5,
+    -6,
+    -90.5
+   ],
+   "floorY": -14,
+   "job": "hazard",
+   "why": "the void beside pier C (west)",
+   "note": "the void beside pier C (west)"
+  },
+  {
+   "zone": "p4",
+   "rect": [
+    6,
+    -102.5,
+    20,
+    -90.5
+   ],
+   "floorY": -14,
+   "job": "hazard",
+   "why": "the void beside pier C (east)",
+   "note": "the void beside pier C (east)"
+  },
+  {
+   "zone": "o1",
+   "rect": [
+    -29,
+    -190.5,
+    -5,
+    -152.5
+   ],
+   "floorY": -14,
+   "job": "hazard",
+   "why": "the void the thread line crosses: no floor between the ledges (a fall lands 14 m down and is taken back to the start)",
+   "note": "the void the thread line crosses: no floor between the ledges (a fall lands 14 m down and is taken back to the start)"
+  },
+  {
+   "zone": "o2",
+   "rect": [
+    -31,
+    -238.5,
+    -3,
+    -206.5
+   ],
+   "floorY": -14,
+   "job": "hazard",
+   "why": "the void under the swinging anchor: no floor between the ledges and the post",
+   "note": "the void under the swinging anchor: no floor between the ledges and the post"
+  },
+  {
+   "zone": "o3",
+   "rect": [
+    -39,
+    -306.5,
+    5,
+    -258.5
+   ],
+   "floorY": -24,
+   "job": "hazard",
+   "why": "THE VOID under the frame (the card's hazard): no floor past the start ledge; a fall is a lip return to the last hold (THE LOOM's fall rule)",
+   "note": "THE VOID under the frame (the card's hazard): no floor past the start ledge; a fall is a lip return to the last hold (THE LOOM's fall rule)"
+  },
+  {
+   "zone": "p3",
+   "rect": [
+    -11,
+    4.5,
+    -9,
+    22.5
+   ],
+   "floorY": -14,
+   "job": "hazard",
+   "why": "THE TIE-OFF's VOID (west of the cable, lz 11..29; card: Hazard both ways): the floor that fell between the anchorages; to the player a lip return (5 health, back on the lip it was crossed from: A-4); to an enemy knocked off the cable: ended by rooms43 after 2 s under the floor, so the door counts it but it gives NO pull back (no kill event: a known limit tonight, the lead's card gate)",
+   "note": "THE TIE-OFF's VOID (west of the cable, lz 11..29; card: Hazard both ways): the floor that fell between the anchorages; to the player a lip return (5 health, back on the lip it was crossed from: A-4); to an enemy knocked off the cable: ended by rooms43 after 2 s under the floor, so the door counts it but it gives NO pull back (no kill event: a known limit tonight, the lead's card gate)"
+  },
+  {
+   "zone": "p3",
+   "rect": [
+    -5,
+    4.5,
+    11,
+    22.5
+   ],
+   "floorY": -14,
+   "job": "hazard",
+   "why": "THE TIE-OFF's VOID (east of the cable, lz 11..29; card: Spatial law, flow plan 6): it cuts the room's straight line: the cable, the east anchorage or a pull; to the player a lip return (5 health, back on the lip it was crossed from: A-4); to an enemy punched, whipped or knocked in: ended by rooms43 after 2 s under the floor, so the door counts it but it gives NO pull back (no kill event: a known limit tonight, the lead's card gate)",
+   "note": "THE TIE-OFF's VOID (east of the cable, lz 11..29; card: Spatial law, flow plan 6): it cuts the room's straight line: the cable, the east anchorage or a pull; to the player a lip return (5 health, back on the lip it was crossed from: A-4); to an enemy punched, whipped or knocked in: ended by rooms43 after 2 s under the floor, so the door counts it but it gives NO pull back (no kill event: a known limit tonight, the lead's card gate)"
+  },
+  {
+   "zone": "p1",
+   "rect": [
+    8,
+    101.5,
+    16,
+    115.5
+   ],
+   "floorY": -14,
+   "job": "hazard",
+   "why": "the HOIST WELL (lx 8..16, lz 12..26; card: Hazard both ways, flow plan 6): it cuts the yard's east side so the ride over it is the faster way north; to the player a lip return (5 health, back on the lip it was crossed from: A-4); to an enemy launched or whipped in: ended by rooms43 after 2 s under the floor, so the door counts it but it gives NO pull back (no kill event: a known limit tonight, the lead's card gate)",
+   "note": "the HOIST WELL (lx 8..16, lz 12..26; card: Hazard both ways, flow plan 6): it cuts the yard's east side so the ride over it is the faster way north; to the player a lip return (5 health, back on the lip it was crossed from: A-4); to an enemy launched or whipped in: ended by rooms43 after 2 s under the floor, so the door counts it but it gives NO pull back (no kill event: a known limit tonight, the lead's card gate)"
+  },
+  {
+   "zone": "p5",
+   "rect": [
+    -21,
+    -121.5,
+    -11.5,
+    -116.5
+   ],
+   "floorY": -14,
+   "job": "hazard",
+   "why": "the WINDING PIT (card: Hazard both ways, Spatial law; flow plan 6): it makes the spool an island from the entry side and cuts the hall's middle so the walkway round it is the strafe loop; to the player a lip return (5 health, back on the lip it was crossed from: A-4); to an enemy whipped short or knocked off a walkway: ended by rooms43 after 2 s under the floor, so the door counts it but it gives NO pull back (no kill event: a known limit tonight, the lead's card gate) (south-west, beside the gangway)",
+   "note": "the WINDING PIT (card: Hazard both ways, Spatial law; flow plan 6): it makes the spool an island from the entry side and cuts the hall's middle so the walkway round it is the strafe loop; to the player a lip return (5 health, back on the lip it was crossed from: A-4); to an enemy whipped short or knocked off a walkway: ended by rooms43 after 2 s under the floor, so the door counts it but it gives NO pull back (no kill event: a known limit tonight, the lead's card gate) (south-west, beside the gangway)"
+  },
+  {
+   "zone": "p5",
+   "rect": [
+    -8.5,
+    -121.5,
+    3,
+    -116.5
+   ],
+   "floorY": -14,
+   "job": "hazard",
+   "why": "the WINDING PIT (card: Hazard both ways, Spatial law; flow plan 6): it makes the spool an island from the entry side and cuts the hall's middle so the walkway round it is the strafe loop; to the player a lip return (5 health, back on the lip it was crossed from: A-4); to an enemy whipped short or knocked off a walkway: ended by rooms43 after 2 s under the floor, so the door counts it but it gives NO pull back (no kill event: a known limit tonight, the lead's card gate) (south-east, beside the gangway)",
+   "note": "the WINDING PIT (card: Hazard both ways, Spatial law; flow plan 6): it makes the spool an island from the entry side and cuts the hall's middle so the walkway round it is the strafe loop; to the player a lip return (5 health, back on the lip it was crossed from: A-4); to an enemy whipped short or knocked off a walkway: ended by rooms43 after 2 s under the floor, so the door counts it but it gives NO pull back (no kill event: a known limit tonight, the lead's card gate) (south-east, beside the gangway)"
+  },
+  {
+   "zone": "p5",
+   "rect": [
+    -21,
+    -129.5,
+    -15,
+    -121.5
+   ],
+   "floorY": -14,
+   "job": "hazard",
+   "why": "the WINDING PIT (card: Hazard both ways, Spatial law; flow plan 6): it makes the spool an island from the entry side and cuts the hall's middle so the walkway round it is the strafe loop; to the player a lip return (5 health, back on the lip it was crossed from: A-4); to an enemy whipped short or knocked off a walkway: ended by rooms43 after 2 s under the floor, so the door counts it but it gives NO pull back (no kill event: a known limit tonight, the lead's card gate) (west of the spool)",
+   "note": "the WINDING PIT (card: Hazard both ways, Spatial law; flow plan 6): it makes the spool an island from the entry side and cuts the hall's middle so the walkway round it is the strafe loop; to the player a lip return (5 health, back on the lip it was crossed from: A-4); to an enemy whipped short or knocked off a walkway: ended by rooms43 after 2 s under the floor, so the door counts it but it gives NO pull back (no kill event: a known limit tonight, the lead's card gate) (west of the spool)"
+  },
+  {
+   "zone": "p5",
+   "rect": [
+    -5,
+    -129.5,
+    3,
+    -121.5
+   ],
+   "floorY": -14,
+   "job": "hazard",
+   "why": "the WINDING PIT (card: Hazard both ways, Spatial law; flow plan 6): it makes the spool an island from the entry side and cuts the hall's middle so the walkway round it is the strafe loop; to the player a lip return (5 health, back on the lip it was crossed from: A-4); to an enemy whipped short or knocked off a walkway: ended by rooms43 after 2 s under the floor, so the door counts it but it gives NO pull back (no kill event: a known limit tonight, the lead's card gate) (east of the spool)",
+   "note": "the WINDING PIT (card: Hazard both ways, Spatial law; flow plan 6): it makes the spool an island from the entry side and cuts the hall's middle so the walkway round it is the strafe loop; to the player a lip return (5 health, back on the lip it was crossed from: A-4); to an enemy whipped short or knocked off a walkway: ended by rooms43 after 2 s under the floor, so the door counts it but it gives NO pull back (no kill event: a known limit tonight, the lead's card gate) (east of the spool)"
+  },
+  {
+   "zone": "p5",
+   "rect": [
+    -21,
+    -135.5,
+    -11.5,
+    -129.5
+   ],
+   "floorY": -14,
+   "job": "hazard",
+   "why": "the WINDING PIT (card: Hazard both ways, Spatial law; flow plan 6): it makes the spool an island from the entry side and cuts the hall's middle so the walkway round it is the strafe loop; to the player a lip return (5 health, back on the lip it was crossed from: A-4); to an enemy whipped short or knocked off a walkway: ended by rooms43 after 2 s under the floor, so the door counts it but it gives NO pull back (no kill event: a known limit tonight, the lead's card gate) (north-west, beside the payout)",
+   "note": "the WINDING PIT (card: Hazard both ways, Spatial law; flow plan 6): it makes the spool an island from the entry side and cuts the hall's middle so the walkway round it is the strafe loop; to the player a lip return (5 health, back on the lip it was crossed from: A-4); to an enemy whipped short or knocked off a walkway: ended by rooms43 after 2 s under the floor, so the door counts it but it gives NO pull back (no kill event: a known limit tonight, the lead's card gate) (north-west, beside the payout)"
+  },
+  {
+   "zone": "p5",
+   "rect": [
+    -8.5,
+    -135.5,
+    3,
+    -129.5
+   ],
+   "floorY": -14,
+   "job": "hazard",
+   "why": "the WINDING PIT (card: Hazard both ways, Spatial law; flow plan 6): it makes the spool an island from the entry side and cuts the hall's middle so the walkway round it is the strafe loop; to the player a lip return (5 health, back on the lip it was crossed from: A-4); to an enemy whipped short or knocked off a walkway: ended by rooms43 after 2 s under the floor, so the door counts it but it gives NO pull back (no kill event: a known limit tonight, the lead's card gate) (north-east, beside the payout)",
+   "note": "the WINDING PIT (card: Hazard both ways, Spatial law; flow plan 6): it makes the spool an island from the entry side and cuts the hall's middle so the walkway round it is the strafe loop; to the player a lip return (5 health, back on the lip it was crossed from: A-4); to an enemy whipped short or knocked off a walkway: ended by rooms43 after 2 s under the floor, so the door counts it but it gives NO pull back (no kill event: a known limit tonight, the lead's card gate) (north-east, beside the payout)"
+  }
+ ],
+ "tunnels": [],
+ "lights": [
+  {
+   "id": "p2-L1",
+   "room": "p2",
+   "kind": "ceiling",
+   "at": [
+    0,
+    21.95,
+    83.5
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 8,
+   "intensity": 1
+  },
+  {
+   "id": "p2-L2",
+   "room": "p2",
+   "kind": "ceiling",
+   "at": [
+    0,
+    21.95,
+    45.5
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    4,
+    0.1
+   ],
+   "color": "white",
+   "range": 14,
+   "intensity": 1
+  },
+  {
+   "id": "p2-L3",
+   "room": "p2",
+   "kind": "pool",
+   "at": [
+    0,
+    0.025,
+    81.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2,
+    2,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 5,
+   "intensity": 1
+  },
+  {
+   "id": "p2-L4",
+   "room": "p2",
+   "kind": "pool",
+   "at": [
+    0,
+    10.025,
+    45.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 9,
+   "intensity": 1.8
+  },
+  {
+   "id": "p4-L1",
+   "room": "p4",
+   "kind": "ceiling",
+   "at": [
+    0,
+    31.95,
+    -14.5
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 8,
+   "intensity": 1
+  },
+  {
+   "id": "p4-L2",
+   "room": "p4",
+   "kind": "ceiling",
+   "at": [
+    0,
+    31.95,
+    -54.5
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    4,
+    0.1
+   ],
+   "color": "white",
+   "range": 14,
+   "intensity": 1
+  },
+  {
+   "id": "p4-L3",
+   "room": "p4",
+   "kind": "ceiling",
+   "at": [
+    0,
+    31.95,
+    -94.5
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    4,
+    0.1
+   ],
+   "color": "white",
+   "range": 14,
+   "intensity": 1
+  },
+  {
+   "id": "p4-L4",
+   "room": "p4",
+   "kind": "pool",
+   "at": [
+    0,
+    0.025,
+    -16.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2,
+    2,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 5,
+   "intensity": 1
+  },
+  {
+   "id": "p4-L5",
+   "room": "p4",
+   "kind": "pool",
+   "at": [
+    0,
+    10.025,
+    -54.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 9,
+   "intensity": 1.6
+  },
+  {
+   "id": "p4-L6",
+   "room": "p4",
+   "kind": "pool",
+   "at": [
+    0,
+    20.025,
+    -94.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 9,
+   "intensity": 1.8
+  },
+  {
+   "id": "o1-L1",
+   "room": "o1",
+   "kind": "pool",
+   "at": [
+    -17,
+    0.025,
+    -193.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.05
+   ],
+   "color": "amber",
+   "range": 6,
+   "intensity": 1.2
+  },
+  {
+   "id": "o2-L1",
+   "room": "o2",
+   "kind": "pool",
+   "at": [
+    -17,
+    0.025,
+    -242.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.05
+   ],
+   "color": "amber",
+   "range": 6,
+   "intensity": 1.2
+  },
+  {
+   "id": "o3-t2w",
+   "room": "o3",
+   "kind": "pool",
+   "at": [
+    -27,
+    6.025,
+    -282
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.05
+   ],
+   "color": "white",
+   "range": 7,
+   "intensity": 1.3,
+   "job": "light",
+   "why": "the hold t2w's pool: a hold reads as a hold from the door"
+  },
+  {
+   "id": "o3-t2e",
+   "room": "o3",
+   "kind": "pool",
+   "at": [
+    -7,
+    6.025,
+    -282
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.05
+   ],
+   "color": "white",
+   "range": 7,
+   "intensity": 1.3,
+   "job": "light",
+   "why": "the hold t2e's pool: a hold reads as a hold from the door"
+  },
+  {
+   "id": "o3-t3w",
+   "room": "o3",
+   "kind": "pool",
+   "at": [
+    -31,
+    6.025,
+    -296
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.05
+   ],
+   "color": "white",
+   "range": 7,
+   "intensity": 1.3,
+   "job": "light",
+   "why": "the hold t3w's pool: a hold reads as a hold from the door"
+  },
+  {
+   "id": "o3-t3e",
+   "room": "o3",
+   "kind": "pool",
+   "at": [
+    -3,
+    6.025,
+    -296
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.05
+   ],
+   "color": "white",
+   "range": 7,
+   "intensity": 1.3,
+   "job": "light",
+   "why": "the hold t3e's pool: a hold reads as a hold from the door"
+  },
+  {
+   "id": "o3-start",
+   "room": "o3",
+   "kind": "pool",
+   "at": [
+    -17,
+    0.025,
+    -254.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    4,
+    4,
+    0.05
+   ],
+   "color": "amber",
+   "range": 8,
+   "intensity": 1.3,
+   "job": "light",
+   "why": "the start ledge's pool, amber as the canyon's o3-L7 (round 2c: cyan here flooded the 44 x 8 m ledge floor and filled the lead's n47-r1c reveal and posts-fall frames with a flat cyan plane; cyan is for player-usable trims only)"
+  },
+  {
+   "room": "p3",
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "id": "p3-knot",
+   "kind": "ceiling",
+   "at": [
+    0,
+    13.95,
+    5
+   ],
+   "size": [
+    2,
+    2,
+    0.1
+   ],
+   "color": "amber",
+   "range": 13,
+   "intensity": 1.5
+  },
+  {
+   "room": "p3",
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "id": "p3-aw",
+   "kind": "ceiling",
+   "at": [
+    -15,
+    13.95,
+    9.5
+   ],
+   "size": [
+    3,
+    4,
+    0.1
+   ],
+   "color": "white",
+   "range": 8,
+   "intensity": 0.8
+  },
+  {
+   "room": "p3",
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "id": "p3-ae",
+   "kind": "ceiling",
+   "at": [
+    15,
+    13.95,
+    9.5
+   ],
+   "size": [
+    3,
+    4,
+    0.1
+   ],
+   "color": "white",
+   "range": 8,
+   "intensity": 0.8
+  },
+  {
+   "room": "p3",
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "id": "p3-exit",
+   "kind": "ceiling",
+   "at": [
+    0,
+    13.95,
+    -1.5
+   ],
+   "size": [
+    4,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 10,
+   "intensity": 1
+  },
+  {
+   "room": "p3",
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "id": "p3-pool",
+   "kind": "pool",
+   "at": [
+    0,
+    0.025,
+    -4
+   ],
+   "size": [
+    2.5,
+    2.5,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.6
+  },
+  {
+   "room": "p1",
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "id": "p1-yard",
+   "kind": "ceiling",
+   "at": [
+    0,
+    11.95,
+    109.5
+   ],
+   "size": [
+    4,
+    4,
+    0.1
+   ],
+   "color": "white",
+   "range": 10,
+   "intensity": 1
+  },
+  {
+   "room": "p1",
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "id": "p1-hook",
+   "kind": "ceiling",
+   "at": [
+    -8,
+    11.95,
+    103.5
+   ],
+   "size": [
+    3,
+    3,
+    0.1
+   ],
+   "color": "amber",
+   "range": 12,
+   "intensity": 1.5
+  },
+  {
+   "room": "p1",
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "id": "p1-land",
+   "kind": "pool",
+   "at": [
+    -10.5,
+    4.025,
+    101.5
+   ],
+   "size": [
+    2.5,
+    2.5,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 6,
+   "intensity": 1.2
+  },
+  {
+   "room": "p1",
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "id": "p1-pool",
+   "kind": "pool",
+   "at": [
+    0,
+    0.025,
+    93.5
+   ],
+   "size": [
+    2.5,
+    2.5,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.6
+  },
+  {
+   "room": "p5",
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "id": "p5-spool",
+   "kind": "ceiling",
+   "at": [
+    -10,
+    13.95,
+    -125.5
+   ],
+   "size": [
+    3,
+    3,
+    0.1
+   ],
+   "color": "amber",
+   "range": 13,
+   "intensity": 1.5
+  },
+  {
+   "room": "p5",
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "id": "p5-north",
+   "kind": "ceiling",
+   "at": [
+    -14,
+    13.95,
+    -139.5
+   ],
+   "size": [
+    4,
+    3,
+    0.1
+   ],
+   "color": "white",
+   "range": 10,
+   "intensity": 0.9
+  },
+  {
+   "room": "p5",
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "id": "p5-pool",
+   "kind": "pool",
+   "at": [
+    -17,
+    0.025,
+    -140.5
+   ],
+   "size": [
+    2.5,
+    2.5,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.6
+  }
+ ],
+ "props": [
+  {
+   "id": "p5-P1",
+   "room": "p5",
+   "kind": "healthPickup",
+   "at": [
+    -10,
+    3.4,
+    -125.5
+   ],
+   "size": [
+    0.6,
+    0.6,
+    0.6
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "pickup": true,
+   "job": "reward",
+   "why": "the room's health on the GREAT SPOOL's top (card: the pickup; DECIDE46 N-9: bait): the exposed island, reached by a pull, the payout or the 6 m jump, under the spitters"
+  },
+  {
+   "id": "o3-beam",
+   "room": "o3",
+   "kind": "truss",
+   "at": [
+    -17,
+    25,
+    -306
+   ],
+   "size": [
+    44,
+    2,
+    1
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "decor": true,
+   "job": "landmark",
+   "why": "THE FRAME BEAM (the card's landmark): the iron truss across the far wall that carries the warp up to the machine; seen from the door"
+  }
+ ],
+ "surfaces": []
+}

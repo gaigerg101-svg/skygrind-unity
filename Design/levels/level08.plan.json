@@ -1,0 +1,755 @@
+{
+  "_why": "LEVEL 8, SPEED (NIGHT25; forked by builder L from builder C's generated level08 to give each room its own GEOMETRY: a race track). C's ids, enemies (waves), pars and limits are kept. THE STARTING LINE is a two-baffle chicane with a slide tunnel through the first baffle (a cut; the report prints the long way and the cut). THE CHICANE is a weave of two baffles with a bridge deck on the west edge reached by a wall-jump flue (the wall-kick line; the report prints both times). THE LONG STRAIGHT is a straight with an 8 m pit across it: a jump pad hops it (a grapple node hangs above the gap), a narrow bridge on the west edge walks it (slow), a stair is the recovery. Web coordinates: x east, y up, z SOUTH; metres. See LEVEL-FORMAT.md.",
+  "id": "level08",
+  "name": "LEVEL 8 SPEED",
+  "floorSize": 188,
+  "killPlaneY": -30,
+  "wallHeight": 14,
+  "rooms": [
+    {
+      "id": "p1",
+      "name": "THE STARTING LINE",
+      "kind": "room",
+      "par": 33,
+      "botMedian": 33,
+      "parCap": 87,
+      "waves": [
+        [
+          "husk",
+          "husk",
+          "husk",
+          "husk",
+          "husk",
+          "husk",
+          "swarmer",
+          "swarmer",
+          "swarmer",
+          "swarmer"
+        ],
+        [
+          "husk",
+          "husk",
+          "husk",
+          "husk",
+          "husk",
+          "husk",
+          "swarmer",
+          "swarmer",
+          "swarmer",
+          "swarmer",
+          "swarmer",
+          "swarmer"
+        ]
+      ],
+      "rect": [
+        -26,
+        30,
+        26,
+        78
+      ],
+      "spawn": {
+        "at": [
+          0,
+          0,
+          72
+        ],
+        "yawDeg": 0
+      },
+      "exit": [
+        0,
+        0,
+        34
+      ],
+      "nodes": [
+        [
+          -20,
+          0,
+          72
+        ],
+        [
+          -8,
+          0,
+          70
+        ],
+        [
+          14,
+          0,
+          68
+        ],
+        [
+          20,
+          0,
+          62
+        ],
+        [
+          14,
+          0,
+          50
+        ],
+        [
+          -18,
+          0,
+          50
+        ],
+        [
+          -16,
+          0,
+          38
+        ],
+        [
+          12,
+          0,
+          38
+        ]
+      ],
+      "shortcuts": [
+        {
+          "name": "slide cut",
+          "tunnelZone": "p1",
+          "a": [
+            -9,
+            0,
+            64
+          ],
+          "b": [
+            -9,
+            0,
+            52
+          ],
+          "minGain": 2,
+          "note": "the tunnel through the first baffle against going round it by the east gap"
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "name": "THE CHICANE",
+      "kind": "room",
+      "par": 56,
+      "botMedian": 56,
+      "parCap": 137.5,
+      "waves": [
+        [
+          "husk",
+          "husk",
+          "husk",
+          "husk",
+          "husk",
+          "husk",
+          "charger",
+          "charger",
+          "swarmer",
+          "swarmer",
+          "swarmer",
+          "swarmer"
+        ],
+        [
+          "husk",
+          "husk",
+          "husk",
+          "husk",
+          "husk",
+          "husk",
+          "drone",
+          "drone",
+          "drone",
+          "charger",
+          "charger",
+          "charger",
+          "charger",
+          "husk",
+          "husk",
+          "drone",
+          "drone",
+          "drone",
+          "spitter",
+          "spitter"
+        ]
+      ],
+      "rect": [
+        -26,
+        -24,
+        26,
+        24
+      ],
+      "spawn": {
+        "at": [
+          0,
+          0,
+          18
+        ],
+        "yawDeg": 0
+      },
+      "exit": [
+        0,
+        0,
+        -20
+      ],
+      "nodes": [
+        [
+          20,
+          0,
+          20
+        ],
+        [
+          -4,
+          0,
+          20
+        ],
+        [
+          18,
+          0,
+          11
+        ],
+        [
+          -8,
+          0,
+          11
+        ],
+        [
+          10,
+          0,
+          3
+        ],
+        [
+          -8,
+          0,
+          3
+        ],
+        [
+          16,
+          0,
+          -4
+        ],
+        [
+          0,
+          0,
+          -14
+        ]
+      ],
+      "highNodes": [
+        [
+          -22,
+          3.4,
+          -4
+        ],
+        [
+          -22,
+          3.4,
+          -12
+        ],
+        [
+          -18,
+          3.4,
+          -8
+        ]
+      ],
+      "wallRoute": {
+        "goalY": 3.4,
+        "after": [
+          -19,
+          3.4,
+          -12
+        ],
+        "note": "the wall-kick line: the flue up to the bridge deck, along it over the baffles, the ramp down; timed against the weave on the floor"
+      }
+    },
+    {
+      "id": "p3",
+      "name": "THE LONG STRAIGHT",
+      "kind": "room",
+      "par": 82,
+      "botMedian": 82,
+      "parCap": 173,
+      "waves": [
+        [
+          "husk",
+          "husk",
+          "husk",
+          "husk",
+          "husk",
+          "husk",
+          "husk",
+          "husk",
+          "charger",
+          "charger",
+          "charger",
+          "swarmer",
+          "swarmer",
+          "swarmer",
+          "swarmer"
+        ],
+        [
+          "husk",
+          "husk",
+          "husk",
+          "husk",
+          "husk",
+          "husk",
+          "drone",
+          "drone",
+          "drone",
+          "charger",
+          "charger",
+          "charger",
+          "swarmer",
+          "swarmer",
+          "swarmer",
+          "swarmer",
+          "charger",
+          "charger",
+          "charger",
+          "drone",
+          "drone",
+          "husk",
+          "husk"
+        ]
+      ],
+      "rect": [
+        -26,
+        -78,
+        26,
+        -30
+      ],
+      "spawn": {
+        "at": [
+          0,
+          0,
+          -36
+        ],
+        "yawDeg": 0
+      },
+      "exit": [
+        0,
+        0,
+        -74
+      ],
+      "respawnY": -3,
+      "nodes": [
+        [
+          -18,
+          0,
+          -38
+        ],
+        [
+          18,
+          0,
+          -38
+        ],
+        [
+          -14,
+          0,
+          -44
+        ],
+        [
+          14,
+          0,
+          -44
+        ],
+        [
+          -24,
+          0,
+          -54
+        ],
+        [
+          -14,
+          0,
+          -64
+        ],
+        [
+          10,
+          0,
+          -64
+        ],
+        [
+          0,
+          0,
+          -70
+        ]
+      ],
+      "highNodes": [
+        [
+          20,
+          4,
+          -74
+        ],
+        [
+          20,
+          4,
+          -64
+        ]
+      ]
+    }
+  ],
+  "doors": [
+    {
+      "id": "d1",
+      "between": [
+        "p1",
+        "p2"
+      ],
+      "rect": [
+        -4,
+        24,
+        4,
+        30
+      ],
+      "checkpoint": true
+    },
+    {
+      "id": "d2",
+      "between": [
+        "p2",
+        "p3"
+      ],
+      "rect": [
+        -4,
+        -30,
+        4,
+        -24
+      ],
+      "checkpoint": true
+    }
+  ],
+  "boxes": [
+    {
+      "zone": "p1",
+      "kind": "hull",
+      "min": [
+        -26,
+        0,
+        54
+      ],
+      "max": [
+        -12,
+        5,
+        60
+      ],
+      "note": "baffle A, west piece (the tunnel is its gap)"
+    },
+    {
+      "zone": "p1",
+      "kind": "hull",
+      "min": [
+        -6,
+        0,
+        54
+      ],
+      "max": [
+        8,
+        5,
+        60
+      ],
+      "note": "baffle A, middle piece (the east gap x 8..26 is the long way round)"
+    },
+    {
+      "zone": "p1",
+      "kind": "hull",
+      "min": [
+        -8,
+        0,
+        44
+      ],
+      "max": [
+        26,
+        5,
+        47
+      ],
+      "note": "baffle B (the way round it is the west gap x -26..-8)"
+    },
+    {
+      "zone": "p2",
+      "kind": "hull",
+      "min": [
+        -14,
+        0,
+        14
+      ],
+      "max": [
+        14,
+        5,
+        17
+      ],
+      "note": "baffle C1 (east gap x 14..26)"
+    },
+    {
+      "zone": "p2",
+      "kind": "hull",
+      "min": [
+        -4,
+        0,
+        6
+      ],
+      "max": [
+        26,
+        5,
+        9
+      ],
+      "note": "baffle C2 (west gap x -12..-4)"
+    },
+    {
+      "zone": "p2",
+      "kind": "hull",
+      "min": [
+        -14,
+        0,
+        -2
+      ],
+      "max": [
+        14,
+        5,
+        1
+      ],
+      "note": "baffle C3 (east gap)"
+    },
+    {
+      "zone": "p2",
+      "kind": "hull",
+      "min": [
+        -4,
+        0,
+        -10
+      ],
+      "max": [
+        26,
+        5,
+        -7
+      ],
+      "note": "baffle D (west gap)"
+    },
+    {
+      "zone": "p2",
+      "kind": "slab",
+      "min": [
+        -23,
+        0,
+        0
+      ],
+      "max": [
+        -21,
+        18,
+        24
+      ],
+      "note": "wall-jump wall west (the corridor between the walls is 5 m)"
+    },
+    {
+      "zone": "p2",
+      "kind": "slab",
+      "min": [
+        -16,
+        0,
+        0
+      ],
+      "max": [
+        -14,
+        18,
+        24
+      ],
+      "note": "wall-jump wall east"
+    },
+    {
+      "zone": "p2",
+      "kind": "deck",
+      "min": [
+        -26,
+        0,
+        -16
+      ],
+      "max": [
+        -12,
+        3.4,
+        0
+      ],
+      "note": "the bridge deck over the baffles (3.4 m, only the wall line reaches its south end; a ramp at the north end)"
+    },
+    {
+      "zone": "p3",
+      "kind": "deck",
+      "min": [
+        14,
+        0,
+        -76
+      ],
+      "max": [
+        26,
+        4,
+        -62
+      ],
+      "note": "the east shelf (tier 2)"
+    },
+    {
+      "zone": "p3",
+      "kind": "hull",
+      "min": [
+        -10,
+        0,
+        -44
+      ],
+      "max": [
+        -6,
+        3,
+        -40
+      ],
+      "note": "pillar"
+    },
+    {
+      "zone": "p3",
+      "kind": "hull",
+      "min": [
+        6,
+        0,
+        -44
+      ],
+      "max": [
+        10,
+        3,
+        -40
+      ],
+      "note": "pillar"
+    },
+    {
+      "zone": "p3",
+      "kind": "hull",
+      "min": [
+        -4,
+        0,
+        -68
+      ],
+      "max": [
+        0,
+        3,
+        -64
+      ],
+      "note": "pillar"
+    },
+    {
+      "zone": "p3",
+      "kind": "deck",
+      "min": [
+        -26,
+        -4.5,
+        -58
+      ],
+      "max": [
+        -22,
+        0,
+        -50
+      ],
+      "note": "the narrow bridge on the west edge (walkers cross by it: the slow way)"
+    },
+    {
+      "zone": "p3",
+      "kind": "deck",
+      "min": [
+        14,
+        -4.5,
+        -52
+      ],
+      "max": [
+        18,
+        -2.4,
+        -50
+      ],
+      "note": "recovery stair, step 1"
+    },
+    {
+      "zone": "p3",
+      "kind": "deck",
+      "min": [
+        10,
+        -4.5,
+        -52
+      ],
+      "max": [
+        14,
+        -1.2,
+        -50
+      ],
+      "note": "recovery stair, step 2"
+    }
+  ],
+  "ramps": [
+    {
+      "zone": "p2",
+      "from": [
+        -19,
+        -22
+      ],
+      "to": [
+        -19,
+        -16
+      ],
+      "width": 6,
+      "rise": 3.4,
+      "note": "down the north end of the bridge deck"
+    },
+    {
+      "zone": "p3",
+      "from": [
+        2,
+        -70
+      ],
+      "to": [
+        14,
+        -70
+      ],
+      "width": 6,
+      "rise": 4,
+      "note": "up to the east shelf"
+    }
+  ],
+  "pads": [
+    {
+      "zone": "p3",
+      "at": [
+        0,
+        0,
+        -47
+      ],
+      "target": [
+        0,
+        0,
+        -61
+      ],
+      "apexAbove": 3,
+      "note": "the pad hops the pit"
+    }
+  ],
+  "grapple": [
+    {
+      "zone": "p3",
+      "at": [
+        0,
+        9,
+        -54
+      ],
+      "note": "a node over the gap (the ARCLINE crosses it too)"
+    }
+  ],
+  "pits": [
+    {
+      "zone": "p3",
+      "rect": [
+        -26,
+        -58,
+        26,
+        -50
+      ],
+      "floorY": -3.5,
+      "note": "an 8 m pit across the straight"
+    }
+  ],
+  "tunnels": [
+    {
+      "zone": "p1",
+      "rect": [
+        -12,
+        54,
+        -6,
+        60
+      ],
+      "ceiling": 1.2,
+      "note": "the slide cut through baffle A"
+    }
+  ]
+}

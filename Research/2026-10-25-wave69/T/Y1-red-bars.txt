@@ -1,0 +1,18 @@
+# Y1: n69-red-bars.cjs (n69-T tree, the Y1 fix) dry run on the NIGHT68 reds copied to the main tree's Logs/n69 (read only), 2026-10-25 10:03:05
+# cmd: node Tools/night/n69-red-bars.cjs --slate /c/Users/gaige/dev/SKYGRIND-unity/Logs/n69/slate.json --logs /c/Users/gaige/dev/SKYGRIND-unity/Logs/n69
+kb3 (kiln, launch): red 1.13 (exercised 20/20) -> mainBar 1.33; deaths A 0 / B 2, stall A 22.7 % (A GREEN 10/10, B GREEN 10/10)
+v2 (spire, launch): red 0.87 (exercised 20/20) -> mainBar 1.25; deaths A 0 / B 0, stall A 19 % (A GREEN 10/10, B GREEN 10/10)
+g8 (iceline, ride): red 0.63 (exercised 17/20) -> mainBar 1.25; deaths A 1 / B 3, stall A 30.1 % (A GREEN 10/10, B GREEN 10/10)
+n69-red-bars: 3 / 3 rooms read (dry: --write sets them)
+# exit 0
+# the same rooms in Logs/n69/red-bars.txt (NIGHT68's final red bars, copied by the lead):
+g8 (iceline, ride): red 0.63 (exercised 17/20) -> mainBar 1.25; deaths A 1 / B 3, stall A 30.1 % (A GREEN 10/10, B GREEN 10/10)
+v2 (spire, launch): red 0.87 (exercised 20/20) -> mainBar 1.25; deaths A 0 / B 0, stall A 19 % (A GREEN 10/10, B GREEN 10/10)
+kb3 (kiln, launch): red 1.13 (exercised 20/20) -> mainBar 1.33; deaths A 0 / B 2, stall A 22.7 % (A GREEN 10/10, B GREEN 10/10)
+# the reds' own STYLE lines (made on NIGHT68's rule; the bars read only the pooled ratio and the flow SUMMARYs):
+red-kiln/kb3: M2 VERB FAIL | room kb3, verb launch, pooled ratio 1.13
+red-kiln/kb3: STYLE above DULL 84.3 % vs need 95.0 %
+red-spire/v2: M2 VERB FAIL | room v2, verb launch, pooled ratio 0.87
+red-spire/v2: STYLE above DULL 81.8 % vs need 82.2 %
+red-iceline/g8: M2 VERB FAIL | room g8, verb ride, pooled ratio 0.63
+red-iceline/g8: STYLE above DULL 18.2 % vs need 41.2 %

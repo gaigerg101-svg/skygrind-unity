@@ -1,0 +1,771 @@
+{
+ "_why": "NIGHT26 builder M (GG: the first map is too wide; he wants platforming sections that use the wall jump and the dash). Plan FRAGMENTS in LOCAL coordinates (start z = 0, walk north, 28 m wide), one per verb: shaft (the wall jump), dash (the dash only), hop (the pad chain), hall (the wall-ride hall). Written by Tools/night/gen-platforming-kits.py; `--place KIT OX OZ PREFIX` moves one into a level plan. See the script's docstring for the splice rules.",
+ "kits": {
+  "shaft": {
+   "len": 50,
+   "rooms": [
+    {
+     "id": "shaft",
+     "name": "PLATFORMING 1: WALL JUMP",
+     "kind": "link",
+     "rect": [
+      -14,
+      -50,
+      14,
+      0
+     ],
+     "par": 4,
+     "spawn": {
+      "at": [
+       0,
+       0,
+       -2
+      ],
+      "yawDeg": 0
+     },
+     "exit": [
+      0,
+      0,
+      -46
+     ],
+     "routeVia": [
+      [
+       [
+        0,
+        0,
+        -6
+       ],
+       [
+        0,
+        3.4,
+        -29
+       ]
+      ]
+     ],
+     "wallRoute": {
+      "required": true,
+      "goalY": 3.4,
+      "note": "the shaft's wall line is the only way up: the deck is 3.4 m, a jump reaches 1.5 m (the wall-jump climber tops out near 3.8 m: a 9 m deck is NOT reachable; the walls are 9+ m high)"
+     }
+    }
+   ],
+   "boxes": [
+    {
+     "zone": "shaft",
+     "kind": "slab",
+     "min": [
+      -4.5,
+      0,
+      -24
+     ],
+     "max": [
+      -2.5,
+      9.4,
+      -8
+     ],
+     "note": "wall-jump wall west (the corridor between the walls is 5 m)"
+    },
+    {
+     "zone": "shaft",
+     "kind": "slab",
+     "min": [
+      2.5,
+      0,
+      -24
+     ],
+     "max": [
+      4.5,
+      9.4,
+      -8
+     ],
+     "note": "wall-jump wall east"
+    },
+    {
+     "zone": "shaft",
+     "kind": "deck",
+     "min": [
+      -14,
+      0,
+      -34
+     ],
+     "max": [
+      14,
+      3.4,
+      -24
+     ],
+     "note": "the top deck (3.4 m, only the wall line reaches it)"
+    }
+   ],
+   "ramps": [
+    {
+     "zone": "shaft",
+     "from": [
+      0,
+      -44
+     ],
+     "to": [
+      0,
+      -34
+     ],
+     "width": 8,
+     "rise": 3.4,
+     "note": "down the north side of the deck (the way on; a long gentle ramp)"
+    }
+   ],
+   "pads": [],
+   "pits": [],
+   "grapple": []
+  },
+  "dash": {
+   "len": 44,
+   "rooms": [
+    {
+     "id": "dash",
+     "name": "PLATFORMING 2: DASH",
+     "kind": "link",
+     "rect": [
+      -14,
+      -44,
+      14,
+      0
+     ],
+     "par": 4,
+     "spawn": {
+      "at": [
+       0,
+       0,
+       -2
+      ],
+      "yawDeg": 0
+     },
+     "exit": [
+      0,
+      0,
+      -42
+     ],
+     "dashGap": {
+      "from": [
+       0,
+       0,
+       -17
+      ],
+      "to": [
+       0,
+       0,
+       -25.0
+      ],
+      "gap": 6.0,
+      "note": "validate: a plain running jump falls short, a dash from the lip lands"
+     }
+    }
+   ],
+   "boxes": [
+    {
+     "zone": "dash",
+     "kind": "deck",
+     "min": [
+      10,
+      -4.5,
+      -20
+     ],
+     "max": [
+      14,
+      -2.4,
+      -18
+     ],
+     "note": "recovery stair, step 1 (from the pit floor)"
+    },
+    {
+     "zone": "dash",
+     "kind": "deck",
+     "min": [
+      6,
+      -4.5,
+      -20
+     ],
+     "max": [
+      10,
+      -1.2,
+      -18
+     ],
+     "note": "recovery stair, step 2 (then up to the floor)"
+    }
+   ],
+   "ramps": [],
+   "pads": [],
+   "grapple": [],
+   "pits": [
+    {
+     "zone": "dash",
+     "rect": [
+      -14,
+      -24.0,
+      14,
+      -18
+     ],
+     "floorY": -3.5,
+     "note": "a 6 m pit across the hall: dash it (the stair at its south-east corner is the walk-back)"
+    }
+   ]
+  },
+  "hop": {
+   "len": 66,
+   "rooms": [
+    {
+     "id": "hop",
+     "name": "PLATFORMING 3: PAD HOP",
+     "kind": "link",
+     "rect": [
+      -14,
+      -66,
+      14,
+      0
+     ],
+     "par": 6,
+     "spawn": {
+      "at": [
+       0,
+       0,
+       -2
+      ],
+      "yawDeg": 0
+     },
+     "exit": [
+      0,
+      0,
+      -64
+     ]
+    }
+   ],
+   "boxes": [
+    {
+     "zone": "hop",
+     "kind": "deck",
+     "min": [
+      10,
+      -4.5,
+      -14
+     ],
+     "max": [
+      14,
+      -2.4,
+      -12
+     ],
+     "note": "recovery stair, step 1 (from the pit floor)"
+    },
+    {
+     "zone": "hop",
+     "kind": "deck",
+     "min": [
+      6,
+      -4.5,
+      -14
+     ],
+     "max": [
+      10,
+      -1.2,
+      -12
+     ],
+     "note": "recovery stair, step 2 (then up to the floor)"
+    },
+    {
+     "zone": "hop",
+     "kind": "deck",
+     "min": [
+      10,
+      -4.5,
+      -54
+     ],
+     "max": [
+      14,
+      -2.4,
+      -52
+     ],
+     "note": "recovery stair, step 1 (from the pit floor)"
+    },
+    {
+     "zone": "hop",
+     "kind": "deck",
+     "min": [
+      6,
+      -4.5,
+      -54
+     ],
+     "max": [
+      10,
+      -1.2,
+      -52
+     ],
+     "note": "recovery stair, step 2 (then up to the floor)"
+    },
+    {
+     "zone": "hop",
+     "kind": "deck",
+     "min": [
+      -3,
+      -4.5,
+      -21
+     ],
+     "max": [
+      3,
+      0,
+      -15
+     ],
+     "note": "hop platform 1 (6 x 6, top at floor level)"
+    },
+    {
+     "zone": "hop",
+     "kind": "deck",
+     "min": [
+      -3,
+      -4.5,
+      -35
+     ],
+     "max": [
+      3,
+      0,
+      -29
+     ],
+     "note": "hop platform 2 (6 x 6, top at floor level)"
+    },
+    {
+     "zone": "hop",
+     "kind": "deck",
+     "min": [
+      -3,
+      -4.5,
+      -49
+     ],
+     "max": [
+      3,
+      0,
+      -43
+     ],
+     "note": "hop platform 3 (6 x 6, top at floor level)"
+    }
+   ],
+   "ramps": [],
+   "pads": [
+    {
+     "zone": "hop",
+     "at": [
+      0,
+      0,
+      -9
+     ],
+     "target": [
+      0,
+      0,
+      -18
+     ],
+     "apexAbove": 3,
+     "note": "the first pad: throws you onto platform 1"
+    },
+    {
+     "zone": "hop",
+     "at": [
+      0,
+      0,
+      -18.0
+     ],
+     "target": [
+      0,
+      0,
+      -32.0
+     ],
+     "apexAbove": 3,
+     "note": "the pad on platform 1: throws you to platform 2"
+    },
+    {
+     "zone": "hop",
+     "at": [
+      0,
+      0,
+      -32.0
+     ],
+     "target": [
+      0,
+      0,
+      -46.0
+     ],
+     "apexAbove": 3,
+     "note": "the pad on platform 2: throws you to platform 3"
+    },
+    {
+     "zone": "hop",
+     "at": [
+      0,
+      0,
+      -46.0
+     ],
+     "target": [
+      0,
+      0,
+      -58
+     ],
+     "apexAbove": 3,
+     "note": "the pad on platform 3: throws you to the far floor"
+    }
+   ],
+   "grapple": [],
+   "pits": [
+    {
+     "zone": "hop",
+     "rect": [
+      -14,
+      -54,
+      14,
+      -12
+     ],
+     "floorY": -3.5,
+     "note": "a 42 m pit: three platforms, a pad on each; stairs at both edges (walk-back and way on)"
+    }
+   ]
+  },
+  "hall": {
+   "len": 88,
+   "rooms": [
+    {
+     "id": "hall",
+     "name": "PLATFORMING 4: WALL-RIDE HALL",
+     "kind": "link",
+     "rect": [
+      -14,
+      -88,
+      14,
+      0
+     ],
+     "par": 8,
+     "spawn": {
+      "at": [
+       0,
+       0,
+       -2
+      ],
+      "yawDeg": 0
+     },
+     "exit": [
+      0,
+      0,
+      -86
+     ],
+     "hallRoute": {
+      "from": [
+       -3.1,
+       0,
+       -2
+      ],
+      "jumpAtZ": -25.2,
+      "lip": [
+       -3.1,
+       7.0,
+       -25.7
+      ],
+      "to": [
+       0,
+       0,
+       -86
+      ],
+      "gaps": [
+       [
+        -42,
+        -46.5
+       ],
+       [
+        -58.5,
+        -63
+       ],
+       [
+        -72,
+        -76
+       ]
+      ],
+      "minFloorOverWall": 2.0,
+      "note": "validate: the scripted wall ride along the walls (dashing the gaps) against RIVAL's graph on the pit floor; the wall route must be at least 2x faster"
+     }
+    }
+   ],
+   "boxes": [
+    {
+     "zone": "hall",
+     "kind": "deck",
+     "min": [
+      10,
+      -4.5,
+      -28
+     ],
+     "max": [
+      14,
+      -2.4,
+      -26
+     ],
+     "note": "recovery stair, step 1 (from the pit floor)"
+    },
+    {
+     "zone": "hall",
+     "kind": "deck",
+     "min": [
+      6,
+      -4.5,
+      -28
+     ],
+     "max": [
+      10,
+      -1.2,
+      -26
+     ],
+     "note": "recovery stair, step 2 (then up to the floor)"
+    },
+    {
+     "zone": "hall",
+     "kind": "deck",
+     "min": [
+      10,
+      -4.5,
+      -76
+     ],
+     "max": [
+      14,
+      -2.4,
+      -74
+     ],
+     "note": "recovery stair, step 1 (from the pit floor)"
+    },
+    {
+     "zone": "hall",
+     "kind": "deck",
+     "min": [
+      6,
+      -4.5,
+      -76
+     ],
+     "max": [
+      10,
+      -1.2,
+      -74
+     ],
+     "note": "recovery stair, step 2 (then up to the floor)"
+    },
+    {
+     "zone": "hall",
+     "kind": "slab",
+     "min": [
+      -5.5,
+      -4.5,
+      -42
+     ],
+     "max": [
+      -3.5,
+      19.0,
+      -30
+     ],
+     "note": "rideable wall, west, run 1 (12 m)"
+    },
+    {
+     "zone": "hall",
+     "kind": "slab",
+     "min": [
+      3.5,
+      -4.5,
+      -42
+     ],
+     "max": [
+      5.5,
+      19.0,
+      -30
+     ],
+     "note": "rideable wall, east, run 1 (12 m)"
+    },
+    {
+     "zone": "hall",
+     "kind": "slab",
+     "min": [
+      -5.5,
+      -4.5,
+      -58.5
+     ],
+     "max": [
+      -3.5,
+      19.0,
+      -46.5
+     ],
+     "note": "rideable wall, west, run 2 (12 m)"
+    },
+    {
+     "zone": "hall",
+     "kind": "slab",
+     "min": [
+      3.5,
+      -4.5,
+      -58.5
+     ],
+     "max": [
+      5.5,
+      19.0,
+      -46.5
+     ],
+     "note": "rideable wall, east, run 2 (12 m)"
+    },
+    {
+     "zone": "hall",
+     "kind": "slab",
+     "min": [
+      -5.5,
+      -4.5,
+      -72
+     ],
+     "max": [
+      -3.5,
+      19.0,
+      -63
+     ],
+     "note": "rideable wall, west, run 3 (9 m)"
+    },
+    {
+     "zone": "hall",
+     "kind": "slab",
+     "min": [
+      3.5,
+      -4.5,
+      -72
+     ],
+     "max": [
+      5.5,
+      19.0,
+      -63
+     ],
+     "note": "rideable wall, east, run 3 (9 m)"
+    },
+    {
+     "zone": "hall",
+     "kind": "deck",
+     "min": [
+      -14,
+      0,
+      -26
+     ],
+     "max": [
+      5.5,
+      7.0,
+      -22
+     ],
+     "note": "the launch deck (7 m up): the wall route starts high and sinks along the walls; the far floor is back at 0"
+    },
+    {
+     "zone": "hall",
+     "kind": "hull",
+     "min": [
+      -14,
+      -4.5,
+      -37
+     ],
+     "max": [
+      5.5,
+      -0.8,
+      -35
+     ],
+     "note": "floor-route partition 1 (opening at the east edge): the pit floor is a serpentine; low enough for the wall route to pass over"
+    },
+    {
+     "zone": "hall",
+     "kind": "hull",
+     "min": [
+      -5.5,
+      -4.5,
+      -53
+     ],
+     "max": [
+      14,
+      -0.8,
+      -51
+     ],
+     "note": "floor-route partition 2 (opening at the west edge)"
+    },
+    {
+     "zone": "hall",
+     "kind": "hull",
+     "min": [
+      -5.5,
+      -4.5,
+      -69
+     ],
+     "max": [
+      14,
+      -0.8,
+      -67
+     ],
+     "note": "floor-route partition 3 (opening at the west edge): the way to the far stair doubles back"
+    }
+   ],
+   "pads": [],
+   "ramps": [
+    {
+     "zone": "hall",
+     "from": [
+      0,
+      -1
+     ],
+     "to": [
+      0,
+      -22
+     ],
+     "width": 8,
+     "rise": 7.0,
+     "note": "up to the launch deck (21 m, a gentle run-up)"
+    }
+   ],
+   "grapple": [],
+   "pits": [
+    {
+     "zone": "hall",
+     "rect": [
+      -14,
+      -76,
+      14,
+      -26
+     ],
+     "floorY": -3.5,
+     "note": "a 48 m pit under the walls; the stairs at both ends, the partitions make the floor route a serpentine"
+    }
+   ],
+   "rideable": [
+    [
+     -4.5,
+     -30,
+     -42
+    ],
+    [
+     -4.5,
+     -46.5,
+     -58.5
+    ],
+    [
+     -4.5,
+     -63,
+     -72
+    ],
+    [
+     4.5,
+     -30,
+     -42
+    ],
+    [
+     4.5,
+     -46.5,
+     -58.5
+    ],
+    [
+     4.5,
+     -63,
+     -72
+    ]
+   ]
+  }
+ },
+ "order": [
+  "shaft",
+  "dash",
+  "hop",
+  "hall"
+ ]
+}

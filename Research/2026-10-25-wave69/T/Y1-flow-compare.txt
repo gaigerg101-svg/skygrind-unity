@@ -1,0 +1,8 @@
+# Y1 five-level walk compare: 2026-10-25 10:06:58
+# cmd: diff <(grep -v -i -E 'wall time|^n46flow: seeds' /c/Users/gaige/dev/SKYGRIND-unity/Logs/n69/flow-base.txt) <(grep -v -i -E 'wall time|^n46flow: seeds' Research/2026-10-25-wave69/T/Y1-flow-off67.txt) (n69-gates.sh --flow's compare)
+Y1 flow --off67: EQUAL to main's Logs/n69/flow-base.txt (the lead's t0 base, 10:00), 5 level summaries
+n46flow n52-foundry SUMMARY: GREEN 10/10; stall 30.8 %, longest stall 3.2 s, air 55.4 %, kill gap 2.3 / 25.1 s, nearest 6.9 m, dwell 14.0 s, dead 18.7 s, deaths 13, falls 0, clear 126.7 s
+n46flow n52-iceline SUMMARY: GREEN 10/10; stall 34.8 %, longest stall 4.3 s, air 37.1 %, kill gap 1.4 / 66.3 s, nearest 6.3 m, dwell 12.9 s, dead 26.6 s, deaths 5, falls 143, clear 234.3 s
+n46flow n57-kiln SUMMARY: GREEN 10/10; stall 18.8 %, longest stall 3.9 s, air 58.9 %, kill gap 1.2 / 15.3 s, nearest 5.6 m, dwell 16.4 s, dead 11.2 s, deaths 1, falls 0, clear 170.2 s
+n46flow n52-span SUMMARY: GREEN 10/10; stall 14.5 %, longest stall 4.0 s, air 57.3 %, kill gap 1.4 / 19.0 s, nearest 6.6 m, dwell 6.0 s, dead 6.2 s, deaths 0, falls 107, clear 88.7 s
+n46flow n52-spire SUMMARY: GREEN 10/10; stall 17.5 %, longest stall 3.9 s, air 59.2 %, kill gap 2.1 / 41.8 s, nearest 6.6 m, dwell 5.9 s, dead 8.4 s, deaths 0, falls 0, clear 151.1 s

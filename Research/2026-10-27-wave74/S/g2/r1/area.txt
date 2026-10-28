@@ -1,0 +1,11 @@
+# command: node Tools/night/n70-area.cjs --level iceline --dir C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/ice-g2 --touches Research/2026-10-27-wave74/S/g2/r1/skip.txt g2
+# sha: 291d40fad; time: 2026-10-28 00:37:15
+n70-area: room g2; plan C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/ice-g2/iceline.plan.json, level C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/ice-g2/n67-iceline.json (the round's folder C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/n74S/ice-g2); touches Research/2026-10-27-wave74/S/g2/r1/skip.txt (15 touch rows, 0 launch kills); card none
+OPEN  PASS largest open square 7.0 m (x -3.0..4.0, z -38.5..-31.5; 15 pieces on a 21.0 x 28.0 m rect; 12 m or less passes)
+P1    N/A  the last wave (charger husk husk) has no ranged enemy (spitter / drone)
+P4    FAIL 4 / 6 standing solids >= 1.75 m do a job ((a) touched 4, (b) sight 0, (c) launch kill 0); no job: box(5.5,0,-58..9,4,-53) line: THE EAST GANTRY (4 m: th; box(3.8,0,-36..5.3,3.5,-34.5) cover: THE DOOR POST (a 3.5 m 
+P5    PASS walk line in a ranged spawn's sight at 6-24 m 0.0 % (>= 50 %), line65 0.0 % (<= walk - 30 points: no); line65's nearest enemy spawn 1.5 m (<= 6: yes); 0 ranged spawns
+P9    N/A  no plane 1 m or more up with a short side of 6 m or more
+P11   N/A  the card names no TOWER / GALLERY / SPLIT LEVEL (no card)
+P17   PASS 1 / 1 ride walls 4 m tall and 8 m long; 0 non-ride wall(s) in that band; the strip = ride: true (ride36 faces 1)
+n70-area: FAIL g2 (3/4)

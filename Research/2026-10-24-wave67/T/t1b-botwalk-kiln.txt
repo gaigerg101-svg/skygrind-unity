@@ -1,0 +1,25 @@
+# the lead's question: levelgen's console line 'bot walk: ... DID NOT reach the last exit' on n67-kiln (t1a-run-kiln.txt), against n57-kiln's OWN plan run the same way
+# timeout 600 dotnet Temp/SimHarness/bin/Release/net10.0/SimHarness.dll levelgen <plan> <scratch out> --walk --report <scratch md>; sha e4fae1a2; 2026-10-24 11:27:15
+## Design/levels/n57/kiln.plan.json
+  plan checks: 0 problems
+  level report: 0 errors -> C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/4ec22190-70cd-45bd-bf05-90e7159adc38/scratchpad/lg/kiln.md (2.4 s)
+  bot walk: ; DID NOT reach the last exit; zone at the end kb1
+# exit 1
+## Design/levels/n52/iceline.plan.json
+  plan checks: 0 problems
+  level report: 0 errors -> C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/4ec22190-70cd-45bd-bf05-90e7159adc38/scratchpad/lg/iceline.md (1.6 s)
+  bot walk: room 1 exit at 6.5 s; room 2 exit at 34.0 s; room 3 exit at 37.8 s; room 4 exit at 41.5 s; room 5 exit at 72.5 s; DID NOT reach the last exit; zone at the end g5
+# exit 1
+## Design/levels/n52/spire.plan.json
+  plan checks: 0 problems
+  level report: 1 errors -> C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/4ec22190-70cd-45bd-bf05-90e7159adc38/scratchpad/lg/spire.md (1.8 s)
+  bot walk: room 1 exit at 2.2 s; room 2 exit at 27.7 s; DID NOT reach the last exit; zone at the end 
+# exit 1
+## Design/levels/n52/foundry.plan.json
+  plan checks: 1 problems
+  level report: 0 errors -> C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/4ec22190-70cd-45bd-bf05-90e7159adc38/scratchpad/lg/foundry.md (1.8 s)
+  bot walk: ; DID NOT reach the last exit; zone at the end a1
+# exit 1
+## n67-kiln (gen-slots --run, t1a-run-kiln.txt)
+    bot walk: ; DID NOT reach the last exit; zone at the end kb1
+## the code: Tools/SimHarness/Harness.N24.Level.cs:59-94 (a 90 s autopilot from the run start to each room's exit in turn; not a level report row: the report Reports/LEVEL-n57-kiln-validate.md, tracked, last written by 8419921a, has 0 errors / 34 checks and no bot-walk row; levelgen exits 1 when the walk does not finish)

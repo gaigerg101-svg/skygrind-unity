@@ -1,0 +1,13 @@
+{
+ "_why": "NIGHT74 builder S (builder-brief R step 3; Tools/night/n70-verbs-of.cjs reads id, level, verb): the verb of each room S guards with Tools/night/n70-red.sh SLATE=Research/2026-10-27-wave74/S/slate-s.json. A room's verb is its card's (Research/2026-10-27-wave74/S/card-<id>.md) and its file's verb65 (g4 parry, kb2c ride, v5 ride, v2 launch: the verbs NIGHT71's cards named; no verb is changed tonight).",
+ "slices": [
+  { "id": "g4", "level": "iceline", "verb": "parry" },
+  { "id": "g1", "level": "iceline", "verb": "ride" },
+  { "id": "g6", "level": "iceline", "verb": "launch" },
+  { "id": "g2", "level": "iceline", "verb": "ride" },
+  { "id": "g7", "level": "iceline", "verb": "ride" },
+  { "id": "kb2c", "level": "kiln", "verb": "ride" },
+  { "id": "v5", "level": "spire", "verb": "ride" },
+  { "id": "v2", "level": "spire", "verb": "launch" }
+ ]
+}

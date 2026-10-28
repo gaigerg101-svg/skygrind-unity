@@ -1,0 +1,6 @@
+8cd8564c7cacc7a87fb5388b5ff3805ac2cf072f7248279679f5bce530c64254 *Temp/SimHarness/bin/Release/net10.0/SimHarness.dll
+# Y2 chain (sequential, one dotnet job at a time): the five-level walk, then the kb3 red + its skip; started 2026-10-25 10:18:37
+walk exit 0 10:25:54
+red exit 0 10:27:35
+skip exit 0 10:33:48
+chain done 10:33:49

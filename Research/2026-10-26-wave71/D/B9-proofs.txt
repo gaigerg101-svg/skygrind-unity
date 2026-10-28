@@ -1,0 +1,41 @@
+proofs at 3bdbd2e7a 11:43:44: WheelHintRender wheelHintDone wheelHintShown wheelHintSet HotbarWheelHint WheelHintMinGuns WheelHintFormat TheWheelHintTeachesPadPlayersWithThreeGuns
+== WheelHintRender: (a1) worktree hits 1
+   Assets/Scripts/Game/UiHotbar.cs:581:        void WheelHintRender(int owned, bool pad)
+== wheelHintDone: (a1) worktree hits 3
+   Assets/Scripts/Game/UiHotbar.cs:85:        static bool wheelHintDone; // the pad's wheel was opened this session: the hint never shows again
+   Assets/Scripts/Game/UiHotbar.cs:585:            if (rs.open && rs.pad) wheelHintDone = true;
+   Assets/Scripts/Game/UiHotbar.cs:586:            bool show = HotbarWheelHint.Show(pad, owned, wheelHintDone, game.flow == Flow.Playing);
+== wheelHintShown: (a1) worktree hits 3
+   Assets/Scripts/Game/UiHotbar.cs:86:        bool wheelHintShown;
+   Assets/Scripts/Game/UiHotbar.cs:592:            if (show == wheelHintShown) return;
+   Assets/Scripts/Game/UiHotbar.cs:593:            wheelHintShown = show;
+== wheelHintSet: (a1) worktree hits 4
+   Assets/Scripts/Game/UiHotbar.cs:87:        GlyphSet wheelHintSet = (GlyphSet)(-1);
+   Assets/Scripts/Game/UiHotbar.cs:587:            if (show && PlayerDevices.Glyphs != wheelHintSet)
+   Assets/Scripts/Game/UiHotbar.cs:589:                wheelHintSet = PlayerDevices.Glyphs;
+   Assets/Scripts/Game/UiHotbar.cs:590:                wheelHintText.text = string.Format(UnityTuning.WheelHintFormat, PromptText.For("weaponWheel", true, Glyphs.Button(PadButtonName.Y, wheelHintSet))); // on change only; N
+== HotbarWheelHint: (a1) worktree hits 10
+   Assets/Scripts/Game/UiHotbar.cs:35:    public static class HotbarWheelHint
+   Assets/Scripts/Game/UiHotbar.cs:358:            // (HotbarWheelHint) and text stay built, never shown.
+   Assets/Scripts/Game/UiHotbar.cs:580:        /// <summary>NIGHT16 U3-29.7: the hold-Y hint (HotbarWheelHint): its text per glyph set, set on change only.</summary>
+   Assets/Scripts/Game/UiHotbar.cs:586:            bool show = HotbarWheelHint.Show(pad, owned, wheelHintDone, game.flow == Flow.Playing);
+   Assets/Tests/EditMode/Game/FeelHudTests.cs:4:// (no scene): FeelHudMath (UiFeelHud.cs), HotbarWheelHint / HotbarLabel (UiHotbar.cs), FeelStrip's layout (FeelStrip.cs).
+   Assets/Tests/EditMode/Game/FeelHudTests.cs:95:            Assert.IsTrue(HotbarWheelHint.Show(true, 3, false, true));
+   Assets/Tests/EditMode/Game/FeelHudTests.cs:96:            Assert.IsFalse(HotbarWheelHint.Show(false, 3, false, true), "keyboard: no hint");
+   Assets/Tests/EditMode/Game/FeelHudTests.cs:97:            Assert.IsFalse(HotbarWheelHint.Show(true, 2, false, true), "two guns: the d-pad is enough");
+   Assets/Tests/EditMode/Game/FeelHudTests.cs:98:            Assert.IsFalse(HotbarWheelHint.Show(true, 5, true, true), "the wheel was opened this session");
+   Assets/Tests/EditMode/Game/FeelHudTests.cs:99:            Assert.IsFalse(HotbarWheelHint.Show(true, 5, false, false), "not playing");
+== WheelHintMinGuns: (a1) worktree hits 3
+   Assets/Scripts/Game/UiHotbar.cs:37:        /// <summary>Shown while a pad is the last device, the player owns WheelHintMinGuns+ guns, playing, until the wheel opened once this session.</summary>
+   Assets/Scripts/Game/UiHotbar.cs:38:        public static bool Show(bool padLast, int owned, bool wheelOpened, bool playing) => playing && padLast && owned >= UnityTuning.WheelHintMinGuns && !wheelOpened;
+   Assets/Scripts/Game/UnityTuning.FeelHud.cs:72:        public const int WheelHintMinGuns = 3; // with two guns the d-pad's cycle is enough
+== WheelHintFormat: (a1) worktree hits 2
+   Assets/Scripts/Game/UiHotbar.cs:590:                wheelHintText.text = string.Format(UnityTuning.WheelHintFormat, PromptText.For("weaponWheel", true, Glyphs.Button(PadButtonName.Y, wheelHintSet))); // on change only; N
+   Assets/Scripts/Game/UnityTuning.FeelHud.cs:73:        public const string WheelHintFormat = "HOLD {0}: WEAPON WHEEL";
+== TheWheelHintTeachesPadPlayersWithThreeGuns: (a1) worktree hits 3
+   Assets/Tests/EditMode/Game/FeelHudTests.cs:93:        public void TheWheelHintTeachesPadPlayersWithThreeGuns()
+   Logs/e53-mid-tests.xml:8868:                                <test-case id="2486" name="TheWheelHintTeachesPadPlayersWithThreeGuns" fullname="Skygrind.Game.Tests.FeelHudTests.TheWheelHintTeachesPadPlayersWithThreeGuns" me
+   Logs/n54-close-tests.xml:8970:                                <test-case id="2505" name="TheWheelHintTeachesPadPlayersWithThreeGuns" fullname="Skygrind.Game.Tests.FeelHudTests.TheWheelHintTeachesPadPlayersWithThreeGuns" 
+(a2) main-tree untracked hits (7 files): none
+(a3) main-tree Logs/n71 + Research/2026-10-26* script hits: none
+(a4) UnityEvent m_MethodName hits: 0

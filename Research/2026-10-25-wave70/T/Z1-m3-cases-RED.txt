@@ -1,0 +1,41 @@
+# command: bash Tools/night/n70-m3-cases.sh --at 08455efa   (the t0 readers on Z1's cases; run from builder T's tree)
+# sha: 08455efa + the Z1 working copy (the cases); time: 2026-10-25 22:57:31
+n70-m3-cases: the launch M3 readers on saved runs and throw charts (the readers at 08455efa)
+  case 1 kb3 (NIGHT69 a1's kb3 r1d: its one probe (seed 1) burst on the queue, no pit: a1 read FAIL; its 20-seed chart holds 14 / 20; Logs/n69/r1-kiln/verbs-launch.txt, chart Research/2026-10-25-forge70/spike/throws-kb3-n69r1d.txt): n65-verbs.sh FAIL, the GATE pack FAIL, n70-next FAIL (expected PASS: WRONG)
+      n65-verbs.sh: n65-verbs launch M3: kb3 FAIL (the launched body went into no pit and no lava) (the slate's launch test: a GREEN line, launch36 1 or more, 'in a pit yes' or 'in lava yes' on the launched body; the pilot said: launch36 1, launched body husk #1 (the target: yes), in a pit no, in lava no)
+      the pack:     n70-m3-pack-case: kb3 FAIL || M3 (the slate's launch test: a GREEN line, launch36 1 or more, 'in a pit yes' or 'in lava yes' on the launched body): FAIL (the launched body went into no pit and no lava) (launched body husk #1 (the target: yes), in a pit no, in lava no)
+      n70-next:     -- M3
+  case 2 v2 (NIGHT69 a1's v2 s1b: its one probe blocked at 0.3 m (kills 3, no pit): a1 read FAIL; its chart holds 20 / 20 (15 in the crypt); Logs/n69/r1-spire/verbs-launch.txt, chart Research/2026-10-25-forge70/spike/throws-v2-n69s1b.txt): n65-verbs.sh FAIL, the GATE pack FAIL, n70-next FAIL (expected PASS: WRONG)
+      n65-verbs.sh: n65-verbs launch M3: v2 FAIL (the launched body went into no pit and no lava) (the slate's launch test: a GREEN line, launch36 1 or more, 'in a pit yes' or 'in lava yes' on the launched body; the pilot said: launch36 1, launched body husk #1 (the target: yes), in a pit no, in lava no)
+      the pack:     n70-m3-pack-case: v2 FAIL || M3 (the slate's launch test: a GREEN line, launch36 1 or more, 'in a pit yes' or 'in lava yes' on the launched body): FAIL (the launched body went into no pit and no lava) (launched body husk #1 (the target: yes), in a pit no, in lava no)
+      n70-next:     -- M3
+  case 3 kb3 (the shipped kb3's chart 7 / 20 under a planted probe that fell into the quench (one seed, one sample); Research/2026-10-25-wave70/T/Z1-m3-planted.txt, chart Research/2026-10-25-forge70/spike/throws-kb3-shipped.txt): n65-verbs.sh PASS, the GATE pack PASS, n70-next PASS (expected FAIL: WRONG)
+      n65-verbs.sh: n65-verbs launch M3: kb3 PASS (the slate's launch test: a GREEN line, launch36 1 or more, 'in a pit yes' or 'in lava yes' on the launched body; the pilot said: launch36 1, launched body husk #1 (the target: yes), in a pit YES, in lava no)
+      the pack:     n70-m3-pack-case: kb3 PASS || M3 (the slate's launch test: a GREEN line, launch36 1 or more, 'in a pit yes' or 'in lava yes' on the launched body): PASS (launched body husk #1 (the target: yes), in a pit yes, in lava no)
+      n70-next:     ok M3
+  case 4 v2 (NIGHT68 r2's v2: GREEN, in a pit YES, and no throw chart; Logs/n68/r2-spire/verbs-launch.txt, chart none): n65-verbs.sh PASS, the GATE pack PASS, n70-next PASS (expected FAIL: WRONG)
+      n65-verbs.sh: n65-verbs launch M3: v2 PASS (the slate's launch test: a GREEN line, launch36 1 or more, 'in a pit yes' or 'in lava yes' on the launched body; the pilot said: launch36 1, launched body not printed (a probe before Y2), in a pit YES, in lava no)
+      the pack:     n70-m3-pack-case: v2 PASS || M3 (the slate's launch test: a GREEN line, launch36 1 or more, 'in a pit yes' or 'in lava yes' on the launched body): PASS (launched body not printed (a probe before Y2), in a pit yes, in lava no)
+      n70-next:     ok M3
+  case 5 P6 (planted: 9 GREEN candidates + 11 RED probes whose bursts killed 3 (a RED probe's burst never counts: 9 / 20); Research/2026-10-25-wave70/T/Z1-m3-planted.txt, chart Research/2026-10-25-wave70/T/Z1-chart-P6.txt): n65-verbs.sh FAIL, the GATE pack FAIL, n70-next FAIL (expected FAIL: OK)
+      n65-verbs.sh: n65-verbs launch M3: P6 FAIL (the launched body went into no pit and no lava) (the slate's launch test: a GREEN line, launch36 1 or more, 'in a pit yes' or 'in lava yes' on the launched body; the pilot said: launch36 1, launched body husk #1 (the target: yes), in a pit no, in lava no)
+      the pack:     n70-m3-pack-case: P6 FAIL || M3 (the slate's launch test: a GREEN line, launch36 1 or more, 'in a pit yes' or 'in lava yes' on the launched body): FAIL (the launched body went into no pit and no lava) (launched body husk #1 (the target: yes), in a pit no, in lava no)
+      n70-next:     -- M3
+  case 6 P7 (planted: exactly 10 candidates (pit, lava, kills 2) beside Y2's non-candidates (RED in a pit, GREEN launch36 0 in a pit, kills 1); Research/2026-10-25-wave70/T/Z1-m3-planted.txt, chart Research/2026-10-25-wave70/T/Z1-chart-P7.txt): n65-verbs.sh PASS, the GATE pack PASS, n70-next PASS (expected PASS: OK)
+      n65-verbs.sh: n65-verbs launch M3: P7 PASS (the slate's launch test: a GREEN line, launch36 1 or more, 'in a pit yes' or 'in lava yes' on the launched body; the pilot said: launch36 1, launched body husk #1 (the target: yes), in a pit no, in lava YES)
+      the pack:     n70-m3-pack-case: P7 PASS || M3 (the slate's launch test: a GREEN line, launch36 1 or more, 'in a pit yes' or 'in lava yes' on the launched body): PASS (launched body husk #1 (the target: yes), in a pit no, in lava yes)
+      n70-next:     ok M3
+  case 7 P8 (planted: P6's probes under a summary line that claims 20 / 20; Research/2026-10-25-wave70/T/Z1-m3-planted.txt, chart Research/2026-10-25-wave70/T/Z1-chart-P8.txt): n65-verbs.sh PASS, the GATE pack PASS, n70-next PASS (expected FAIL: WRONG)
+      n65-verbs.sh: n65-verbs launch M3: P8 PASS (the slate's launch test: a GREEN line, launch36 1 or more, 'in a pit yes' or 'in lava yes' on the launched body; the pilot said: launch36 1, launched body husk #1 (the target: yes), in a pit YES, in lava no)
+      the pack:     n70-m3-pack-case: P8 PASS || M3 (the slate's launch test: a GREEN line, launch36 1 or more, 'in a pit yes' or 'in lava yes' on the launched body): PASS (launched body husk #1 (the target: yes), in a pit yes, in lava no)
+      n70-next:     ok M3
+  case 8 P9 (planted: 3 / 3 GREEN pit probes, a chart over 3 seeds (D-3 reads 20); Research/2026-10-25-wave70/T/Z1-m3-planted.txt, chart Research/2026-10-25-wave70/T/Z1-chart-P9.txt): n65-verbs.sh PASS, the GATE pack PASS, n70-next PASS (expected FAIL: WRONG)
+      n65-verbs.sh: n65-verbs launch M3: P9 PASS (the slate's launch test: a GREEN line, launch36 1 or more, 'in a pit yes' or 'in lava yes' on the launched body; the pilot said: launch36 1, launched body husk #1 (the target: yes), in a pit YES, in lava no)
+      the pack:     n70-m3-pack-case: P9 PASS || M3 (the slate's launch test: a GREEN line, launch36 1 or more, 'in a pit yes' or 'in lava yes' on the launched body): PASS (launched body husk #1 (the target: yes), in a pit yes, in lava no)
+      n70-next:     ok M3
+  case 9 kb3 (another room's chart (v2 s1b's 20 / 20) saved as kb3's; Logs/n69/r1-kiln/verbs-launch.txt, chart Research/2026-10-25-forge70/spike/throws-v2-n69s1b.txt): n65-verbs.sh FAIL, the GATE pack FAIL, n70-next FAIL (expected FAIL: OK)
+      n65-verbs.sh: n65-verbs launch M3: kb3 FAIL (the launched body went into no pit and no lava) (the slate's launch test: a GREEN line, launch36 1 or more, 'in a pit yes' or 'in lava yes' on the launched body; the pilot said: launch36 1, launched body husk #1 (the target: yes), in a pit no, in lava no)
+      the pack:     n70-m3-pack-case: kb3 FAIL || M3 (the slate's launch test: a GREEN line, launch36 1 or more, 'in a pit yes' or 'in lava yes' on the launched body): FAIL (the launched body went into no pit and no lava) (launched body husk #1 (the target: yes), in a pit no, in lava no)
+      n70-next:     -- M3
+n70-m3-cases: 9 / 27 reader readings as the rule expects (RED)
+exit 1

@@ -1,0 +1,25 @@
+# command: dotnet run --project Tools/SimHarness -c Release --no-build -- n46flow --level n52-foundry --rooms a3,a4 --seeds 2 --verbs65 --plant-verb65 a3:grapple,a4:slide --no-geo
+# sha: 5eba5d0b (branch n65-T; tracked changes uncommitted: 4 file(s))
+# time: 2026-10-23 15:56:10 -> 2026-10-23 15:56:25 (local)
+# exit: 0
+
+n46flow: seeds 1..2, cap 240 s per room, rows forced on: none, off switch: none; pilot: Walk38Pilot + the ported autopilot (normal)
+n46flow n52-foundry (loaded n52-foundry; BaseId n45-foundry): 2/2 walks through a3..a4; level time median 62.7 s; the pilot's lava rule: out of lava 119 steps, held at an edge 14 steps, chases round it 0, detours 0; put at the next room (a link not crossed in max(30 s, 3 x par) or a cleared room not left in 15 s) 0; stuck46 burrowers ended 0
+  room       kind | stall%  maxStall  air% | kgap med/max | near med/p10/p90 | dwell  dead | deaths falls | clear (k/n)    | geometry
+  a3         room |   33.7      4.0  49.3 |  2.8 / 10.6  |  7.1 /  2.4 / 13.4  |   4.6   9.4 |      1     0 |   38.6 (2/2) | -
+  a4         room |   33.0      2.9  52.4 |  4.4 / 6.9   |  9.6 /  5.0 / 12.8  |  10.9   5.2 |      1     0 |   21.3 (2/2) | -
+  LEVEL           |   33.4      4.0  50.4 |  3.8 / 10.6  |  8.6 /  3.0 / 13.0  |  15.5  14.6 |      2     0 |   59.9 sum of medians
+n46flow n52-foundry SUMMARY: GREEN 2/2; stall 33.4 %, longest stall 4.0 s, air 50.4 %, kill gap 3.8 / 10.6 s, nearest 8.6 m, dwell 15.5 s, dead 14.6 s, deaths 2, falls 0, clear 59.9 s
+  style      kind |  DULL  COOL  BOLD  AIRB  SAVA  SKYG (% of fight steps) | top rank med / max (seeds)
+  a3         room |  55.4  25.3  19.3   0.0   0.0   0.0                    | BOLD / BOLD (2)
+  a4         room |  67.6  32.4   0.0   0.0   0.0   0.0                    | COOL / COOL (2)
+  LEVEL           |  59.8  27.9  12.3   0.0   0.0   0.0                    | top BOLD
+n46flow n52-foundry STYLE: DULL 59.8 % of 92 s of fight; above DULL 40.2 %; rooms reaching SAVAGE 0/2; top rank BOLD
+n46flow n52-foundry PAYOFFS: heal36 HP per close kill by rank: DULL - (0), COOL 4.00 (1), BOLD - (0), AIRBORNE - (0), SAVAGE - (0), SKYGRIND - (0); RIDE KILL refund per ride kill by rank: DULL 0.00 (5), COOL 0.00 (2), BOLD 0.00 (1), AIRBORNE - (0), SAVAGE - (0), SKYGRIND - (0)
+n46flow n52-foundry TOKENS: attack starts inside the sim cone (camera.fovDeg 74 / 2) 13/19 = 68.4 % (by kind: spitter 6/12, swarmer 4/4, husk 3/3); tokens56 thinks waited out of view 366, advances 0
+n46flow n52-foundry RANGED: hit rate by the player's speed at the shot: stand 1/2 = 50.0 %, run 2/10 = 20.0 %, fast 0/0 = - %, dash 0/0 = - %; dash / stand NaN %, fast+dash / stand NaN %
+n46flow n52-foundry IDLE: idle in place 5.1 % of enemy-alive steps; per enemy (alive >= 2 s, 27): median 4.0 %, p90 11.0 %, over 20 %: 0 (0.0 %); by kind: swarmer 3.4 %, husk 7.7 %, spitter 3.9 %
+n46flow n52-foundry VERBS65 (--verbs65: the verb-aware pilot in rooms with verb65; planted a3:grapple, a4:slide with bot43 false):
+  a3     verb65 grapple      | trigger held 0 of 7040 fight steps (0.0 %), episodes 0, performed: - | REFUSED: verb65 'grapple' is not a verb this pilot performs (7040 steps; the inner pilot ran)
+  a4     verb65 slide        | trigger held 0 of 4020 fight steps (0.0 %), episodes 0, performed: slides 0
+n46flow n52-foundry: wall time 14 s

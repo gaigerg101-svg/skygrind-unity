@@ -1,0 +1,780 @@
+{
+ "_why": "NIGHT68 S r1h applied (THE ROOST'S LIP: the ride lands on the east roost again; wave 2 as shipped: the stall guard). NIGHT68 S r1g applied (kb2: THE DECK RAMP 14 m). NIGHT68 S r1f applied (THE DECK RAMP 19 m from the door's end: the flue wall's ride the short way to the east roost again (I2); THE BELLOWS and its pool out: no pad to the spitters). NIGHT68 S r1e applied (the roost ramps back to 9.5 m: the stall guard; wave 2 three spitters alone: the return finds a spitter). NIGHT68 S r1d applied (the barrow 0.5 m west; a floor node 1 m east of the slag cake: levelgen). NIGHT68 S r1c applied (both roost ramps doubled 9.5 -> 19 m from the door's end; waves 2-3 three spitters each; the barrow and the cake 1.5 / 1 m east; the lesson's rect clear of the deck ramp). NIGHT68 S r1b applied (THE BARROW 0.9 m: levelgen's tier rule). NIGHT68 S r1 applied (the parry room: THE EAST ROOST (the charging deck halved) and THE WEST ROOST flank the exit chute, one ramp each; the pillars, the barrow run, the lip and the draught out (the bellows kept); THE BARROW 1.2 m; waves 2-3 on the roosts; verb65 parry, line65). NIGHT67 T1a (Tools/night/gen-slots.cjs --level kiln --export): n57-kiln's room kb2 (3.2 THE CHARGING FLOOR) exactly as Design/levels/n57/kiln.plan.json has it: the row (every key), its zone-keyed pieces (boxes, ramps, pads, grapple, pits, tunnels), its room-keyed pieces (lights, props). The slot's starting point: rebuild it here (every new piece with a job and a why), give the row bot43: false, verb65 (the slate's verb) and line65 (the verb's line, 3+ waypoints); never an area67 block (refused). A key the row drops needs a reason in drop{}. The room's opening: top-level \"opening\": \"vista\" | \"ambushed\" | \"ambusher\" | \"held\" (and \"opening_why\"); left out, the room keeps n57-kiln's.",
+ "room": "kb2",
+ "row": {
+  "id": "kb2",
+  "name": "3.2 THE CHARGING FLOOR",
+  "kind": "room",
+  "rect": [
+   -10,
+   -103.5,
+   10,
+   -75.5
+  ],
+  "height": 14,
+  "roof": true,
+  "par": 60,
+  "job36": "teach",
+  "card57": "THE CHARGING FLOOR",
+  "verb36": "the THUNDERCLAP boost out of the pack onto the charging deck (4.5 m: its walkers' ramp is the long way round); the flue wall's ride down the east lane onto the deck; the bellows from the lane's end",
+  "spawn": {
+   "at": [
+    1.5,
+    0,
+    -80.5
+   ],
+   "yawDeg": 0
+  },
+  "spawn_why": "NIGHT57 L (card kb2, Molecule: the apron): 5 m in and 1.5 m off the door's axis (T-119: a back-step stays out of the door's 4 m band)",
+  "exit": [
+   0,
+   0,
+   -101.5
+  ],
+  "arena36": true,
+  "waves": [
+   [
+    "husk",
+    "husk",
+    "husk",
+    "swarmer",
+    "swarmer",
+    "swarmer",
+    "swarmer"
+   ],
+   [
+    "spitter",
+    "spitter",
+    "husk",
+    "husk",
+    "husk"
+   ],
+   [
+    "swarmer",
+    "swarmer",
+    "swarmer",
+    "swarmer",
+    "spitter",
+    "spitter"
+   ]
+  ],
+  "roles43": [
+   "fodder (the pack floods the charging floor: boost out of it)",
+   "ranged + fodder (the spitters hold the roosts; the husks come down the ramps: return the globs)",
+   "fodder + ranged (the swarmers drop off the roosts at you while the spitters lob: return the globs)"
+  ],
+  "roles43_why": "NIGHT57 L (card kb2, The 30 s problem; R-2 / R-3): the level's first fight uses the roles level 1 taught (fodder, ranged): the boost is the only new thing; wave 2 puts the ranged where the boost reaches them first",
+  "nodes": [
+   [
+    -2.5,
+    0,
+    -92.5
+   ],
+   [
+    0.5,
+    0,
+    -93
+   ],
+   [
+    -2.5,
+    0,
+    -96.5
+   ],
+   [
+    -1,
+    0,
+    -100
+   ],
+   [
+    -1.5,
+    0,
+    -95
+   ],
+   [
+    -4.5,
+    0,
+    -93
+   ]
+  ],
+  "highNodes": [
+   [
+    -8,
+    4.5,
+    -101
+   ],
+   [
+    -5.5,
+    4.5,
+    -101.5
+   ],
+   [
+    4,
+    4.5,
+    -101.5
+   ],
+   [
+    8,
+    4.5,
+    -101
+   ]
+  ],
+  "nodes_why": "NIGHT71 R: the west roost's inner high node -4 -> -5.5 (the roost now ends at x -4). NIGHT57 L (card kb2, Molecule; R-4): the pack on the open charging floor 13-25 m from the door (spawn31: the entry's cone only past 12 m), the ranged on the deck and the barrow run",
+  "waveNodes43": [
+   [
+    [
+     -2.5,
+     0,
+     -92.5
+    ],
+    [
+     0.5,
+     0,
+     -93
+    ],
+    [
+     -2.5,
+     0,
+     -96.5
+    ],
+    [
+     -1,
+     0,
+     -100
+    ],
+    [
+     -1.5,
+     0,
+     -95
+    ],
+    [
+     -4.5,
+     0,
+     -93
+    ]
+   ],
+   [
+    [
+     -8,
+     4.5,
+     -101
+    ],
+    [
+     -5.5,
+     4.5,
+     -101.5
+    ],
+    [
+     4,
+     4.5,
+     -101.5
+    ],
+    [
+     8,
+     4.5,
+     -101
+    ]
+   ],
+   [
+    [
+     -8,
+     4.5,
+     -101
+    ],
+    [
+     -5.5,
+     4.5,
+     -101.5
+    ],
+    [
+     4,
+     4.5,
+     -101.5
+    ],
+    [
+     8,
+     4.5,
+     -101
+    ]
+   ]
+  ],
+  "waveNodes43_why": "NIGHT68 S r1 (card kb2): wave 1 (the pack) on the floor in front of the chute (the boost lesson's fight); waves 2 and 3 (the spitters, with the husks / swarmers that come down the ramps) only on the two roosts (P1: every node of the last wave's set 4.5 m up), 15-22 m from the pack's floor",
+  "lessons": [
+   {
+    "promptPad": "JUMP IN. SHOOT {fire} DOWN. FLY.",
+    "kind": "reached",
+    "rect": [
+     -2.5,
+     -86,
+     2.4,
+     -82
+    ],
+    "minY": -0.2,
+    "prompt": "JUMP IN. SHOOT {fire} DOWN. FLY."
+   }
+  ],
+  "lessons31": [
+   {
+    "promptPad": "JUMP IN. SHOOT {fire} DOWN. FLY.",
+    "kind": "reached",
+    "rect": [
+     -2.5,
+     -86,
+     2.4,
+     -82
+    ],
+    "minY": -0.2,
+    "prompt": "JUMP IN. SHOOT {fire} DOWN. FLY."
+   }
+  ],
+  "proofs": [
+   {
+    "kind": "walk",
+    "points": [
+     [
+      1.5,
+      0,
+      -81
+     ],
+     [
+      0.5,
+      0,
+      -91
+     ],
+     [
+      -3,
+      0,
+      -95
+     ],
+     [
+      -1,
+      0,
+      -97
+     ],
+     [
+      0,
+      0,
+      -101.5
+     ],
+     [
+      1,
+      0,
+      -94
+     ],
+     [
+      1,
+      0,
+      -86
+     ],
+     [
+      1.5,
+      0,
+      -81
+     ]
+    ]
+   },
+   {
+    "kind": "walk",
+    "points": [
+     [
+      3.9,
+      0,
+      -84
+     ],
+     [
+      3.9,
+      4.5,
+      -98.5
+     ],
+     [
+      6,
+      4.5,
+      -101
+     ]
+    ]
+   },
+   {
+    "kind": "walk",
+    "points": [
+     [
+      -8.5,
+      0,
+      -87
+     ],
+     [
+      -8.5,
+      4.5,
+      -98.5
+     ],
+     [
+      -6,
+      4.5,
+      -101
+     ]
+    ]
+   },
+   {
+    "kind": "walk",
+    "points": [
+     [
+      8,
+      0,
+      -79
+     ],
+     [
+      8,
+      0,
+      -90
+     ]
+    ]
+   }
+  ],
+  "frames36": {
+   "mid": [
+    0,
+    0,
+    -77.5,
+    0,
+    0.1
+   ],
+   "exit": [
+    6,
+    4.5,
+    -100.5,
+    0,
+    -0.3
+   ]
+  },
+  "frames52": {
+   "_why": "NIGHT57 L the room frames (a452 / a157): the door just crossed (the pack's floor, the charging deck and the flue wall beyond), the fight from the apron, the deck's top",
+   "entry": [
+    0,
+    0,
+    -77,
+    0,
+    0.04
+   ],
+   "mid": [
+    -1,
+    0,
+    -84,
+    15,
+    0.05
+   ],
+   "high": [
+    6,
+    4.5,
+    -100,
+    160,
+    -0.25
+   ]
+  },
+  "kiln57_why": "NIGHT57 L (Tools/night/gen-n57-kiln.cjs; docs/ROOMS.md, Level 3 as n57-kiln, kb2 THE CHARGING FLOOR): built from scratch (no n52 piece): 20 x 28 x 14 m, three planes (0 / 2.5 / 4.5 m), the flue wall (a 17 m ride, also the foothold), the bellows and the draught (pads), the stack; the boost card and the worm's pass (kiln47 beat 2, by room id) kept",
+  "bot43": false,
+  "verb65": "parry",
+  "line65": [
+   [
+    1.5,
+    0,
+    -81
+   ],
+   [
+    0.5,
+    0,
+    -88
+   ],
+   [
+    0,
+    0,
+    -93
+   ]
+  ],
+  "card65": "Research/2026-10-24-wave67/cards/kb2.md",
+  "waves_why": "NIGHT68 S r1h (card kb2): wave 2 as shipped (two spitters, three husks) on the roosts: r1e-r1g's three lone spitters kited the walk bot on the floor (r1g flow-A seed 10 out of time, stall A 31.5 %); wave 3 as shipped"
+ },
+ "boxes": [
+  {
+   "zone": "kb2",
+   "kind": "wall",
+   "min": [
+    5.4,
+    0,
+    -95.5
+   ],
+   "max": [
+    6,
+    14,
+    -78.5
+   ],
+   "job": "molecule: the one-way ride, the flue wall (and the foothold)",
+   "why": "THE FLUE WALL (ride, cyan, 17 m, 3-20 m in, floor to roof): ride its east face down the east lane out of the pack and off its end onto the charging deck (the walk round is the deck ramp's long way); its near end is the foothold beside the spawn (R5: 3 m in, above the eye)",
+   "note": "THE FLUE WALL (ride, cyan, 17 m, 3-20 m in, floor to roof): ride its east face down the east lane out of the pack and off its end onto the charging deck (the walk round is the deck ramp's long way); its near end is the foothold beside the spawn (R5: 3 m in, above the eye)",
+   "ride": true,
+   "ride36": {
+    "face": "E",
+    "planeX": 6,
+    "lz": [
+     3,
+     20
+    ]
+   }
+  },
+  {
+   "zone": "kb2",
+   "kind": "deck",
+   "min": [
+    2,
+    0,
+    -103.5
+   ],
+   "max": [
+    10,
+    4.5,
+    -98.5
+   ],
+   "job": "verb it celebrates: THE EAST ROOST (the spitters' perch the returned glob reaches and the THUNDERCLAP does not)",
+   "why": "NIGHT68 S r1 (card kb2): the charging deck halved in depth (8 x 8 -> 8 x 5; P9: an 8 x 8 plane with one climb FAILed): the spitters' east roost at the chute's side, 15-22 m from the pack's floor (the shotgun's 8 deg cone puts about 1 of 8 pellets on a spitter there; a returned glob deals 24 + 40 = 64 >= 60)",
+   "note": "THE EAST ROOST (4.5 m, 8 x 5 m east of the exit chute): the charging deck halved (8 x 8 -> 8 x 5): the spitters' east roost, 15-22 m from the pack's floor, out of the THUNDERCLAP's spread; the walkers come up the deck ramp, the flue wall's ride carries over the chute's mouth onto it"
+  },
+  {
+   "zone": "kb2",
+   "kind": "deck",
+   "min": [
+    -5,
+    0,
+    -98.5
+   ],
+   "max": [
+    -3.5,
+    0.9,
+    -96
+   ],
+   "job": "molecule: the small boost (T-5)",
+   "why": "NIGHT68 S r1 (card kb2): moved from the old tipping lip (now the chute's mouth) to the west roost's foot: the small boost still reaches a 4.5 m lip; r1c: 1 m east, 2 m clear of the long west ramp",
+   "note": "THE SLAG CAKE (0.9 m at the west roost's foot): the small boost (jump, look down, fire) from it reaches the roost's lip (T-5: small, then big)"
+  },
+  {
+   "zone": "kb2",
+   "kind": "hull",
+   "min": [
+    -6,
+    0,
+    -76.5
+   ],
+   "max": [
+    -2,
+    14,
+    -75.5
+   ],
+   "job": "molecule: the entrance gated (the door's west liner)",
+   "why": "the DOOR's west LINER (1 m thick, noride): no ride across the doorway: the fight goes into the room (the walk pilot rode the door wall: dwell, NIGHT52 kb3)",
+   "note": "the DOOR's west LINER (1 m thick, noride): no ride across the doorway: the fight goes into the room (the walk pilot rode the door wall: dwell, NIGHT52 kb3)",
+   "noride": true
+  },
+  {
+   "zone": "kb2",
+   "kind": "hull",
+   "min": [
+    2,
+    0,
+    -76.5
+   ],
+   "max": [
+    5.4,
+    14,
+    -75.5
+   ],
+   "job": "molecule: the entrance gated (the door's east liner)",
+   "why": "the DOOR's east LINER (1 m thick, noride): as the west's: the room's ride is the flue wall",
+   "note": "the DOOR's east LINER (1 m thick, noride): as the west's: the room's ride is the flue wall",
+   "noride": true
+  },
+  {
+   "zone": "kb2",
+   "kind": "deck",
+   "min": [
+    -10,
+    0,
+    -103.5
+   ],
+   "max": [
+    -4,
+    4.5,
+    -98.5
+   ],
+   "note": "THE WEST ROOST (4.5 m, 6 x 5 m west of the exit chute): the spitters' west roost; its walkers' ramp runs up the west wall",
+   "job": "verb it celebrates: THE WEST ROOST (the spitters' second perch: two lob lines cross the pack's floor)",
+   "why": "NIGHT71 R (Research/2026-10-26-wave71/R/kb2/card.md): x -2 -> -4 (8 -> 6 m wide): the two roosts were mirror images across the door axis x = 0 (room check I1 63 %, the shipped room PASSes it: Logs/n71/play/kiln/red/kb2/room-check.txt); the chute between the roosts is now x -4..2, off the axis. NIGHT68 S r1 (card kb2): added: the spitters' second roost, flanking the exit chute with the east roost (a 4 m chute between them, x -2..2), 15-22 m from the pack's floor; reached on foot only by THE WEST RAMP"
+  },
+  {
+   "zone": "kb2",
+   "kind": "deck",
+   "min": [
+    -5,
+    0,
+    -86
+   ],
+   "max": [
+    -3,
+    0.9,
+    -83
+   ],
+   "note": "THE BARROW (0.9 m, 2 x 3 m, 5-8 m in, west of the lesson): a tipped ore barrow: the pack's pivot near the door (the stack's job without a floor-to-roof pillar); the boost lesson's floor stays open",
+   "job": "molecule: THE BARROW (low cover the pack wraps round; OPEN)",
+   "why": "NIGHT68 S r1 (card kb2): added where THE STACK stood, 0.9 m not 14 m (r1b: a 1 m top is a tier levelgen makes walkers reach) (GG 2026-10-12: 'random pillars that serve no purpose'): the pack wraps round it near the door; it keeps the floor's open square under 12 m (OPEN); r1c: 1.5 m east, 2 m clear of the long west ramp; r1d: 0.5 m west, clear of the boost lesson's rect (levelgen's lesson check)"
+  },
+  {
+   "zone": "kb2",
+   "kind": "deck",
+   "min": [
+    6,
+    0,
+    -98.5
+   ],
+   "max": [
+    10,
+    4.5,
+    -95.5
+   ],
+   "note": "THE ROOST'S LIP (4.5 m, 4 x 3 m: the east roost's north end in the east lane, where the flue wall's ride ends)",
+   "job": "verb it celebrates: THE ROOST'S LIP (the flue wall's ride lands on the east roost: the ride's shortcut, room-check I2)",
+   "why": "NIGHT68 S r1h (card kb2; the card critic: 'restore the ride's shortcut'): added: r1-r1g's ride ended over the east lane's floor (I2 1.10 vs the shipped 1.44); the lip puts its landing on the roost, reached on foot only by the deck ramp round the flue wall"
+  }
+ ],
+ "ramps": [
+  {
+   "zone": "kb2",
+   "from": [
+    3.9,
+    -84.5
+   ],
+   "to": [
+    3.9,
+    -98.5
+   ],
+   "width": 3,
+   "rise": 4.5,
+   "job": "molecule: the walkers' climb to the charging deck",
+   "why": "NIGHT68 S r1g (card kb2): 14 m (r1 9.5 m read room-check I2 1.11 against the shipped 1.44; r1f's 19 m raised stall A to 23.7 % against the ceiling 18.6): the walk from the ride's start to the east roost leaves the east lane and climbs it",
+   "note": "THE DECK RAMP (4.5 m over 14 m, flush to the flue wall's west face): the walkers' climb onto the east roost; the long way round for a player (the flue wall's ride is the short one)"
+  },
+  {
+   "zone": "kb2",
+   "from": [
+    -8.5,
+    -89
+   ],
+   "to": [
+    -8.5,
+    -98.5
+   ],
+   "width": 3,
+   "rise": 4.5,
+   "note": "THE WEST RAMP (4.5 m over 9.5 m along the west wall): the walkers' climb onto the west roost (GG: a route enemies can climb); the long way up for a player",
+   "job": "molecule: the walkers' climb to the west roost",
+   "why": "NIGHT68 S r1e (card kb2): back to 9.5 m (r1c's 19 m raised the walk bot's stall A to 24.9 % against the shipped 18.6 % and bought no ratio); added in r1 with the west roost"
+  }
+ ],
+ "pads": [
+  {
+   "zone": "kb2",
+   "at": [
+    8,
+    0,
+    -92.5
+   ],
+   "target": [
+    8,
+    4.5,
+    -97
+   ],
+   "apexAbove": 2,
+   "job": "molecule: the upward line, the bellows",
+   "why": "NIGHT71 R (Research/2026-10-26-wave71/R/kb2/card.md): the shipped room's BELLOWS given back (rule 1: the shipped kb2 had 2 pads, the NIGHT68 rebuild 0): at the flue lane's end (between the flue wall and the east wall), it throws you onto THE ROOST'S LIP (4.5 m) beside the east roost's spitters; the pack that follows you down the lane is left on the floor",
+   "note": "the bellows"
+  },
+  {
+   "zone": "kb2",
+   "at": [
+    -5.5,
+    0,
+    -90.5
+   ],
+   "target": [
+    -7,
+    4.5,
+    -100.5
+   ],
+   "apexAbove": 2,
+   "job": "molecule: the upward line, the draught",
+   "why": "NIGHT71 R (Research/2026-10-26-wave71/R/kb2/card.md): the shipped room's DRAUGHT given back (rule 1): on the pack's floor west of the barrow, it throws you out of the pack onto THE WEST ROOST (4.5 m), into wave 2's spitters (punch them, or parry their globs on the way up)",
+   "note": "the draught"
+  }
+ ],
+ "grapple": [],
+ "pits": [],
+ "tunnels": [],
+ "lights": [
+  {
+   "id": "kb2-L1",
+   "room": "kb2",
+   "kind": "ceiling",
+   "at": [
+    0,
+    13.95,
+    -80.5
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    4,
+    0.1
+   ],
+   "color": "white",
+   "range": 12,
+   "intensity": 0.9
+  },
+  {
+   "id": "kb2-L2",
+   "room": "kb2",
+   "kind": "ceiling",
+   "at": [
+    -2,
+    13.95,
+    -90.5
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    6,
+    4,
+    0.1
+   ],
+   "color": "white",
+   "range": 12,
+   "intensity": 1.1
+  },
+  {
+   "id": "kb2-L3",
+   "room": "kb2",
+   "kind": "ceiling",
+   "at": [
+    -2,
+    13.95,
+    -99.5
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    4,
+    4,
+    0.1
+   ],
+   "color": "white",
+   "range": 12,
+   "intensity": 1
+  },
+  {
+   "id": "kb2-L4",
+   "room": "kb2",
+   "kind": "pool",
+   "at": [
+    6,
+    4.525,
+    -101
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.05
+   ],
+   "color": "white",
+   "range": 9,
+   "intensity": 1
+  },
+  {
+   "id": "kb2-L5",
+   "room": "kb2",
+   "kind": "pool",
+   "at": [
+    -6,
+    4.525,
+    -101
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.5,
+    2.5,
+    0.05
+   ],
+   "color": "white",
+   "range": 7,
+   "intensity": 0.9
+  },
+  {
+   "id": "kb2-L7",
+   "room": "kb2",
+   "kind": "pool",
+   "at": [
+    -1.5,
+    0.025,
+    -101.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2.5,
+    2.5,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 8,
+   "intensity": 1.7
+  }
+ ],
+ "props": [
+  {
+   "id": "kb2-P1",
+   "room": "kb2",
+   "kind": "healthPickup",
+   "at": [
+    8,
+    0.9,
+    -86
+   ],
+   "size": [
+    0.6,
+    0.6,
+    0.6
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "pickup": true,
+   "job": "reward",
+   "card57": "30 s problem: the reward on the risky leg",
+   "why": "the health in the east lane, halfway down the flue wall (the riskiest leg: the pack follows you in, and the lane is closed at its end but for the bellows): ride or run for it"
+  }
+ ],
+ "drop": {}
+}

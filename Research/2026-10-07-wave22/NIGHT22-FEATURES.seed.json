@@ -1,0 +1,87 @@
+{
+  "schema": "night22-features/1",
+  "about": "Seeded by the wave-22 forge. The run copies this file to NIGHT22-FEATURES.json at U3-36.1 and then never edits the contracts; the lead flips passes only on that night's evidence (a Player reel line or harness line printed that session). Proof-first: each row's scenario file is written and seen RED (feature off or absent) before the feature is built.",
+  "features": [
+    {
+      "id": "arcline",
+      "owner": "M",
+      "scenario": "FeelReel.N22.Arcline.cs (reel `arcline2`)",
+      "switch": "design.n21.arcline",
+      "check": "reel arcline2 on the Player, keyboard and pad: the terminal BUY (5500, ISLANDS open) is played in the scenario, 3 or more husks stand in a line, one press yanks the nearest (arclinePull 1), a second press inside 15 s attaches to a node or surface (ropeAttach 1) and the player's speed after it is 20 m/s or more; a VIRTUAL PAD press of Y (not forcedMove; copy the `rbcycle` scenario in Game/FeelReel.N20.cs: `InputSystem.AddDevice<Gamepad>` and `QueueStateEvent`) fires the yank; the chip reads READY, COOLDOWN (seconds) and NO TARGET as three different looks (none red); M-MAGENTA 0, S12 0 on the pad pass, M10 PASS",
+      "passes": false,
+      "evidence": null
+    },
+    {
+      "id": "stamp",
+      "owner": "S",
+      "scenario": "FeelReel.N22.Stamp.cs (reel `stamp`)",
+      "switch": "design.n21.stamp",
+      "check": "reel stamp: after a round clear an inked grade letter enters in 200 to 300 ms (feel-metrics M9 entrance target 90-300 ms) with 0 M9 pop-ins on the stamp element; the RESULTS grade card rect does not intersect the POINTS rect (telemetry rects, T-11); a scripted run reaches grade S + peak SS + no revive and prints roundGrade p=true once (the round P); M-MAGENTA 0",
+      "passes": false,
+      "evidence": null
+    },
+    {
+      "id": "deadline",
+      "owner": "S",
+      "scenario": "FeelReel.N22.Deadline.cs (reel `deadline`)",
+      "switch": "design.n21.deadline",
+      "check": "reel deadline: a DEADLINE twist round shows a fuse bar (number as the bar, text 18 px or more at 1080p, M10 PASS, DANGER role, a pulse in the last 5 s) and a separate +N pop on a kill; chase --twist deadline over 30 seeds at rounds 10 and 15: the KITE survives at most 50 % of its normal median at BOTH rounds (NIGHT21 measured round 10 only: 48 %, 10 seeds); deadlineBurn never kills",
+      "passes": false,
+      "evidence": null
+    },
+    {
+      "id": "grind",
+      "owner": "W",
+      "scenario": "FeelReel.N22.Grind.cs (reel `grind`)",
+      "switch": "design.n21.grind",
+      "check": "the Player smoke has a GRIND step that picks THE GRIND on TITLE's MODE row with the pad and reaches wave 2 (PASS line); reel grind shows the WAVE banner, a telegraphed reshape and one death; RESULTS shows the wave and the best wave, and the best wave survives a restart (Records21 persisted); a GRIND tape replays EQUAL; the ROUND banner is not shown in the GRIND",
+      "passes": false,
+      "evidence": null
+    },
+    {
+      "id": "replay",
+      "owner": "W",
+      "scenario": "FeelReel.N22.Replay.cs (reel `replay`)",
+      "switch": "design.n21.replay (turned on only when this passes)",
+      "check": "THE FIRST CUT: starts only after the other eight rows are green. DOWN and a round clear offer VIEW; VIEW replays the last 10 s at half speed from the recorded camera path; the ring records every 2nd step and replays interpolated, and the measured camera error against the live path is 0.05 m or less (NOT zero by construction); the reel shows the replay frames; leaving the replay returns to RESULTS. 60-minute cap: SHORT with the slice committed and the switch off",
+      "passes": false,
+      "evidence": null
+    },
+    {
+      "id": "challenge",
+      "owner": "W2",
+      "scenario": "FeelReel.N22.Code.cs (reel `code`)",
+      "switch": "design.n21.challenge",
+      "check": "TITLE has a CODE field the pad can fill and RESULTS shows the run's code; a code carrying a mutator starts a run in which that mutator is active (a test reads the run state, not only the tape bytes); a decoded-code run records the same tape as the raw run; reel code",
+      "passes": false,
+      "evidence": null
+    },
+    {
+      "id": "ghost-daily",
+      "owner": "W2",
+      "scenario": "FeelReel.N22.Ghost.cs (reel `ghostdaily`)",
+      "switch": "design.n22.ghostDaily",
+      "check": "the DAILY's ghost unlocks after a first DAILY clear and not before (a test); RESULTS says AHEAD or BEHIND YOUR GHOST with the seconds; reel ghostdaily; --off22 restores NIGHT21's DAILY",
+      "passes": false,
+      "evidence": null
+    },
+    {
+      "id": "dusk-clock",
+      "owner": "W2",
+      "scenario": "FeelReel.N22.Dusk.cs (reel `dusk`)",
+      "switch": "design.n22.duskClock",
+      "check": "the sky's mean frame luminance on the reel at rounds 1, 8 and 15 falls monotonically (the median of a window, not one frame; a new LUM meter in feel-metrics); the sky moves toward violet and cyan, never magenta or red-orange; the colour roles hold (M11 and M-MAGENTA unchanged); no new shader that is not in the Player (Resources or Always Included); --off22 restores NIGHT21's sky",
+      "passes": false,
+      "evidence": null
+    },
+    {
+      "id": "haptics",
+      "owner": "M",
+      "scenario": "FeelReel.N22.Haptics.cs (haptics log in the reel header)",
+      "switch": "design.n22.haptics",
+      "check": "ImpactFrames already pulses the pad for impact tiers (Game/ImpactFrames.cs, Rumble.Play, only with VIBRATION on and the pad in use): Rumble already has Kill / Hurt / Parry (Game/Input/Rumble.cs, called from SurvivalGame.Init.cs); this row adds the missing classes (shockwave, ARCLINE attach, DOWN) as distinct patterns on that same Rumble class, through ReaderInput.ApplySettings' strength path, and a haptics log (event, low / high motor values, ms) written per scenario into the reel; a pad pass with no pad connected logs nothing and throws nothing; the VIBRATION setting off silences every pattern (a test); no audio",
+      "passes": false,
+      "evidence": null
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+# command: bash Tools/night/dn-check-wt.sh C:/Users/gaige/AppData/Local/Temp/claude/n71-B/dn   (worktree n71-B)
+# sha: the tree committed as cfa64c526 (B1 voice71; base t0b 106dd56e7)
+# time: 2026-10-26 ~11:25 MST (t0 + 0:39), real 1m56s
+== Skygrind.Game.csproj: 0 error(s)
+== Skygrind.Game.Tests.csproj: 0 error(s)
+== Skygrind.Core.Tests.csproj: 0 error(s)
+== Assembly-CSharp-Editor.csproj: 0 error(s)
+dn-check total errors: 0

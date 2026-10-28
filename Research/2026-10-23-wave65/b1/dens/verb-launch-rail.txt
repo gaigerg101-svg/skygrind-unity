@@ -1,0 +1,6 @@
+# command: dotnet run --project Tools/SimHarness -c Release --no-build -- n65verb launch --level Design/levels/n65-foundry.json --room b1 --pose -9,2.5,-158.5,0
+# sha: cb4e5ff6; time: 2026-10-23 18:27:55
+n65verb launch: level n65-foundry (Design/levels/n65-foundry.json), room b1 "1.6 THE KNOCKOUT YARD", seed 1; pose (-9.0, 2.5, -158.5) yaw 0.0 from --pose; off switch none
+  burst at (-7.1, 1.5, -159.9) hits 3 kills 3
+  target husk #1 at (-7.8, 0.6, -159.5) (from (-9.0, 1.0, -158.5)), dash at step 0, punch at step 0 in state Ground
+n65verb launch: GREEN | room b1 | launch36 1, flight end body thrown 0.4 m (max 0.3 m), bursts 1 (hits 3, kills 3) | landed (-7.6, 1.7, -159.7), in a pit no, in lava no, target dead (launch36) | pose --pose

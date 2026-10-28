@@ -1,0 +1,16 @@
+{
+  "intentDot": 0.35,
+  "intentDot_why": "M1 (G2, DECIDE42 D-4 'a wall jump only when moving into the wall or riding it'): an air press near a wall (not riding it) is a wall jump only when the stick points at least this much into the wall (-wish . n; 0.35 = about 20 deg off parallel). A press with the stick along the wall, away from it or centred is the double jump. Today any press within the 0.12 m probe of a remembered wall was a wall jump (MovementMath.AirJump, CODE-FACTS G2). ride40's attach asks 0.1 (design.n40.ride40.inputDot): a jump AT a wall asks a little more than a ride along it.",
+  "outSpeed": 5,
+  "outSpeed_why": "M1 (G2: 'you fly bcak so fast'): the wall jump's push out from the wall, m/s (was PortExport wallJump.outSpeed 8). 5 still clears a 4 m shaft's far wall from a standing press (n42move measure: the shaft row) and keeps the along-wall speed as before.",
+  "v0Mult": 1,
+  "v0Mult_why": "M1 (D-4 'a smaller back push, more lift'): the wall jump's up speed as a share of the jump's v0 (was wallJump.v0Mult 0.9): a full jump's height off the wall instead of 81 %.",
+  "landSeconds": 0.1,
+  "landSeconds_why": "M1 (G2 card: 'no wall jump within the first steps of a landing'): falling with a floor predicted within this time (the web's jump buffer, jump.bufferTime 0.1 s, landingSoon's own window), a press beside a wall is NOT a wall jump: it stays buffered and becomes the ground jump on the landing. Today the wall jump won ahead of the predicted landing (AirJump checks the wall first).",
+  "rideOutMax": 5,
+  "rideOutMax_why": "M1 (G2 card: 'the ride's jump-off keeps its pitch rule but caps its back speed'): a SHORT ride's jump-off (rideShortSeconds) goes out from the wall at most this fast, m/s (today 8.5-8.6 m/s out: wallride35's outSpeed 8 scaled up by ride39's exit boost; n42move wall, the jumpoff rows). Its up speed (the pitch rule) and its along-wall speed are kept.",
+  "rideShortSeconds": 0.3,
+  "rideShortSeconds_why": "M1: the cap bites only on a jump-off from a ride younger than this (a jump that caught a wall for a moment, then the release: the fling GG felt). A longer ride's jump-off is the chain's: capping every jump-off took THE GANTRY's chain (n41-foundry b2-g1 / b2-g2) from +32 / +26 % to +10 / +10 % at 7 m/s and to RED (does not cross) at 5 m/s (n42move gates --wf), against G1 ('the wallride section ... not fun'). 0.3 s = cornerMinHold 0.35 s's order: a ride the player chose has lasted longer.",
+  "bounceDot": 0.5,
+  "bounceDot_why": "M1 (G2): flow34's slide bounce (a slide into a wall reflected at full speed) only when the slide heads at least this much into the wall (cos 60 deg off the wall's normal = 30 deg into it); a slide that grazes the wall (was: any slide 3 deg into it, slideDir . n < -0.05) jumps as the slide jump."
+}

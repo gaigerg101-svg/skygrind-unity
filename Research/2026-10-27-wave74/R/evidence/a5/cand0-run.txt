@@ -1,0 +1,2 @@
+n70-red: 4 jobs on n65-foundry in 52 s; outputs under Research/2026-10-27-wave74/R/evidence/a5/cand0/<room>/ (23:29:33)
+  a5: flow-A.txt flow-B.txt flow-V.txt pads.txt plan.png plan.svg room-check.txt 

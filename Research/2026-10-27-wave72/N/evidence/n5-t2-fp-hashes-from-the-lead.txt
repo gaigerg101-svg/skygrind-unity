@@ -1,0 +1,12 @@
+[fingerprint] seed 1 step 600 hash dfdd05762df49c52
+[fingerprint] seed 1 step 1200 hash 66593a513b073a85
+[fingerprint] seed 1 step 1800 hash e6f4baade691903f
+[fingerprint] seed 1 step 2400 hash 8385df3a777362a6
+[fingerprint] seed 1 step 3000 hash 56aff577da384163
+[fingerprint] seed 1 step 3600 hash 8c86b054fb55f4d8
+[fingerprint] seed 1 step 4200 hash 0fb6df20c66ae457
+[fingerprint] seed 1 step 4800 hash ff1f9e21b80d1090
+[fingerprint] seed 1 step 5400 hash 742c0a6d6bfd5db0
+[fingerprint] seed 1 step 6000 hash f16cbbc486f72835
+[fingerprint] seed 1 step 6600 hash 21f7e178e3281112
+[fingerprint] seed 1 step 7200 hash 3e3796b62d40accb

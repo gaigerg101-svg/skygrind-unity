@@ -1,0 +1,21 @@
+# THIRD-PARTY: what SKYGRIND vendors, and under which licence
+
+D-72 (NIGHT19, 2026-10-06; GG's ASSETS switch, replacing D-30): permissive art and code (CC0, MIT, BSD-3, OFL, Unlicense)
+may be pulled in, each licence read at its LICENSE file before the import, vendored with the licence beside it. No audio
+(CLAUDE.md rule 7). The Player build ships these notices (a `licenses.txt` beside the exe or a CREDITS screen: not done
+yet, NIGHT19-LOG's close).
+
+| Name | Version | URL | SPDX | Path | Used for | Checked |
+| --- | --- | --- | --- | --- | --- | --- |
+| Kenney Input Prompts | 1.4 (zip from kenney.nl) | https://kenney.nl/assets/input-prompts | CC0-1.0 | `Assets/ThirdParty/KenneyInputPrompts/` (License.txt; an atlas of the Xbox, PlayStation and Switch buttons in `Resources/KenneyInputPromptsAtlas.png`) | the pad's prompt glyphs (PromptText, PromptGlyphs; builder P) | 2026-10-06 (builder P) |
+| Kenney Particle Pack | 1.1 | https://kenney.nl/assets/particle-pack | CC0-1.0 | `Assets/ThirdParty/KenneyParticles/` (License.txt; star_06, trace_06, circle_02, twirl_02, spark_07, flare_01 from "PNG (Black background)", unmodified) | the hit spark, the gust's air, the rings, the ZAPPER's arc, the fuse light (builder V) | 2026-10-06 (builder V) |
+| Spring-It-On (Daniel Holden) | main | https://github.com/orangeduck/Spring-It-On | MIT | ported into `Assets/Scripts/Game/Viewmodel.Springs.cs` (the MIT notice in its header) | the hands' kick springs (half-life springs; builder V) | 2026-10-06 (builder V) |
+| UIEffect (mob-sakai) | 5.9.7 | https://github.com/mob-sakai/UIEffect | MIT | `Packages/manifest.json` (git, `path=Packages/src#5.9.7`); `Assets/ProjectSettings/UIEffectProjectSettings.asset` | the HUD plates' edge glow, the rank-up shine, TITLE / RESULTS reveals (NIGHT20 builder H, `Assets/Scripts/HudFx20/`) | 2026-10-06 23:17 (the lead: LICENSE.md at the tag) |
+| LitMotion (annulusgames) | 2.0.2 | https://github.com/annulusgames/LitMotion | MIT | `Packages/manifest.json` (git, `path=src/LitMotion/Assets/LitMotion#v2.0.2`) | per-character slab reveals (NIGHT20 builder H) | 2026-10-06 23:20 (the lead: LICENSE at the tag) |
+| KvantStream (Keijiro Takahashi) | master | https://github.com/keijiro/KvantStream | MIT (in its README) | re-implemented (~10 lines: the tail = head + v x T) in `Assets/Scripts/Game/SpeedLines20.cs` (the notice in its header) | the AIR world-space speed streaks (NIGHT20 builder V) | 2026-10-06 (builder V) |
+| Godot-Particles-Tunnel-Speed-Lines (MikeFrom) | main | https://github.com/MikeFrom/Godot-Particles-Tunnel-Speed-Lines | CC0-1.0 | rewritten in C# in `SpeedLines20.cs` / `SpeedLines20.shader` (the ring layout, tangent quads) | the streaks' spawn ring (NIGHT20 builder V) | 2026-10-06 (builder V) |
+| godot-motion-blur (Bauxitedev) | master | https://github.com/Bauxitedev/godot-motion-blur | MIT | ported into `Assets/Shaders/Resources/TravelBlur.shader` and `Assets/Scripts/Game/Render/TravelBlurFeature.cs` (the notice in the headers) | the travel blur on boosts, linear velocity only (NIGHT20 builder V) | 2026-10-06 (builder V) |
+| blur-pro-urp (Daniel Ilett) | main | https://github.com/daniel-ilett/blur-pro-urp | MIT | the render-graph pass recipe in `TravelBlurFeature.cs` (the notice in its header) | the travel blur's full-screen pass (NIGHT20 builder V) | 2026-10-06 (builder V) |
+| my-godotshaders WindTrailWithLoops (dip000) | main | https://github.com/dip000/my-godotshaders | MIT (Copyright (c) 2023 Adrián) | ported into `Assets/Scripts/Game/MovementFx.Wind20.cs` (the notice in its header) | the long slide's wind wisps (NIGHT20 builder V) | 2026-10-06 (builder V) |
+| Kenney Particle Pack (more) | 1.1 | https://kenney.nl/assets/particle-pack | CC0-1.0 | `smoke_04.png`, `dirt_01.png` added beside the six above (unmodified) | the landing / slide puffs and the climb's dust (NIGHT20 builder V) | 2026-10-06 (builder V) |
+| Share Tech Mono (Carrois Type Design) | Regular (google/fonts `ofl/sharetechmono`) | https://github.com/google/fonts/tree/main/ofl/sharetechmono | OFL-1.1 (Reserved Font Name "Share Tech") | `Assets/Fonts/ShareTechMono/` (OFL.txt) | the HUD's tabular numerals (builder H; the TMP SDF asset is not baked yet: a derived asset must not carry the reserved name) | 2026-10-06 (builder H) |

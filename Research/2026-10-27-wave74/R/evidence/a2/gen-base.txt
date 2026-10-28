@@ -1,0 +1,70 @@
+openings: C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/a2/base/openings65.json b1 ambushed, a8 held
+gen-n65-foundry: Design/levels/n52/foundry.plan.json -> C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/a2/base/foundry.plan.json (slots b1,a8; rebuilt: b1, a8); every other room, door, piece and key n52's bit for bit
+  slot a2: old Design/levels/n65/rooms-n52/a2.json: n52's room exactly; boxes 1, ramps 1, pads 0, grapple 0, pits 0, tunnels 0, lights 3, props 0, teach35 2
+  slot a3: old Design/levels/n65/rooms-n52/a3.json: n52's room exactly; boxes 12, ramps 2, pads 2, grapple 0, pits 1, tunnels 0, lights 5, props 1, teach35 2
+  slot a4: old Design/levels/n65/rooms-n52/a4.json: n52's room exactly; boxes 1, ramps 2, pads 0, grapple 0, pits 0, tunnels 0, lights 3, props 0, teach35 0
+  slot a5: old Design/levels/n65/rooms-n52/a5.json: n52's room exactly; boxes 12, ramps 3, pads 3, grapple 0, pits 1, tunnels 0, lights 8, props 3, teach35 0
+  slot b1: latest Design/levels/n65/rooms/b1.json: REBUILT; boxes 12 -> 14*, ramps 2 -> 5*, pads 2 -> 2*, grapple 0, pits 1 -> 0*, tunnels 0, lights 6 -> 8*, props 3 -> 8*, teach35 0; note = why filled on 21
+    row keys: keep 10, replace 10, add 7, drop 4
+    drop    bridges45: read only by Tools/SimHarness/Harness.N45.Yard.cs (n45yard's bridge probe on the old yard); the river and its two bridges are gone in the rebuilt room (card b1 section 3)
+    drop    bridges45_why: the doc line of bridges45, dropped with it (the bridges are gone)
+    drop    card52_why: doc only (nothing reads it): NIGHT52's card history of the old yard; the rebuilt room's card is card65 (Research/2026-10-23-wave65/cards/b1.md)
+    drop    ext53_why: doc only (nothing reads it): EXT53's mirror fix of the old yard (the tipped ladle); the ladle is gone in the rebuild
+    replace name
+    replace verb36
+    replace spawn
+    add     waves_why
+    replace proofs
+    replace frames36
+    replace frames52
+    add     frames65
+    add     line65_why
+    add     line65
+    add     card65
+    add     bot43
+    add     verb65
+    replace nodes
+    replace highNodes
+    replace waveNodes43
+    replace waveNodes43_why
+  slot b2: old Design/levels/n65/rooms-n52/b2.json: n52's room exactly; boxes 13, ramps 0, pads 0, grapple 0, pits 2, tunnels 0, lights 12, props 0, teach35 0
+  slot a8: latest Design/levels/n65/rooms/a8.json: REBUILT; boxes 6 -> 6*, ramps 0 -> 2*, pads 0 -> 1*, grapple 0, pits 1 -> 0*, tunnels 0, lights 5 -> 5*, props 0 -> 5*, teach35 0; note = why filled on 9
+    row keys: keep 10, replace 12, add 12, drop 2
+    drop    foundry43_why: doc only (nothing reads it): NIGHT43 L1's note on the old pit, panels and perch; all gone in the rebuild (card a8 section 3)
+    drop    foundry46_why: doc only (nothing reads it): NIGHT46 F-3's note on lesson 0's old rect; the rect is rewritten for P1's foot and afterLesson43_why says why
+    replace name
+    replace verb36
+    replace exit
+    replace lessons
+    replace lessons31
+    replace routeVia
+    replace proofs
+    replace frames36
+    add     frames65
+    add     line65
+    add     card65
+    add     bot43
+    add     verb65
+    add     standIns
+    add     standIns31
+    add     standIns36
+    replace nodes
+    add     highNodes
+    add     waveNodes43
+    add     waveNodes43_why
+    replace reachFrom
+    replace waves
+    add     waves_why
+    replace afterLesson43_why
+shipped before: Design/levels/n65-foundry.json 4ecf438a86b060f5d62bbbd79e32d153b1cffb40766b792c09f6a4b7cab6ea13, Assets/StreamingAssets/Design/levels/n65-foundry.json 4ecf438a86b060f5d62bbbd79e32d153b1cffb40766b792c09f6a4b7cab6ea13
+  levelgen n65-foundry: 2377054 chars -> C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/a2/base/foundry.json; 194 boxes + the floor, 5 barriers, 15 wedges, 8 pads, 0 grapple nodes, 21 zones (a1, a2, a3, a4, a5, b1, b2, a6, a7,
+    plan checks: 1 problems
+      ground spawn 21 (-9.8, 0, -240.6): a player's capsule there overlaps collision box 80 (wall)
+    level report: 1 errors -> C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/a2/base/LEVEL-n65-foundry-validate.md (2.9 s)
+      | closedRoom | ERROR | a3: no `roof: true` |
+    bot walk: ; DID NOT reach the last exit; zone at the end a1
+levelgen --walk: 1 ERROR row(s), all the roofless a3's own (closedRoom a3: no `roof: true`): allowed (NIGHT72 N0)
+n65-foundry --finish: C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/a2/base/foundry.json -> C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/a2/base/n65-foundry.json (2380938 chars, both copies identical); a9 bit-equal to n52-foundry's; kept rooms a1 a6 a7 a9 bit-equal;slots b1,a8: a2 old, a3 old, a4 old, a5 old, b1 latest rebuilt, b2 old, a8 latest rebuilt
+levelgen --walk: 1 ERROR row(s), all the roofless a3's own (allowed, NIGHT72 N0)
+shipped after:  Design/levels/n65-foundry.json 4ecf438a86b060f5d62bbbd79e32d153b1cffb40766b792c09f6a4b7cab6ea13, Assets/StreamingAssets/Design/levels/n65-foundry.json 4ecf438a86b060f5d62bbbd79e32d153b1cffb40766b792c09f6a4b7cab6ea13 (byte-identical: --out writes only C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/a2/base)
+the round's level: C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/a2/base/n65-foundry.json b5c1135534732fa62e1ab6335bb3c48a9cd4409521763feaacff528fbde14df6; plan C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/a2/base/foundry.plan.json, report C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/a2/base/LEVEL-n65-foundry-validate.md, openings C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/a2/base/openings65.json

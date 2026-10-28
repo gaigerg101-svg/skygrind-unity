@@ -1,0 +1,82 @@
+{
+ "_why": "NIGHT65 builder S round 1 (card Research/2026-10-23-wave65/cards/a8.md rev 3, heights set against the enemies' grid: ai.grid jumpUp 2.2, step 0.6): THE SPILLWAY, rebuilt from scratch in slot a8 (14 x 22 m, roofed). The one verb is the pierce from the ride: ride the west wall north beside a 2.5 m lane and fire the charged KESTREL down the file of husks coming south out of the hatch; the ride ends with the jump-off onto the 2.4 m hatch ledge. Every piece carries its job and why.",
+ "room": "a8",
+ "opening": "held",
+ "opening_why": "card a8 section 4: wave 1's four husks hold the hatch ledge, seen down the lane from the sluice's west flank, then file down the lane (held)",
+ "row": {
+  "id": "a8",
+  "name": "1.10 THE SPILLWAY",
+  "kind": "room",
+  "rect": [-7,-364,7,-342],
+  "height": 9,
+  "roof": true,
+  "par": 24,
+  "job36": "teach",
+  "verb36": "the ride beside the lane, then a charged shot from the wall pierces the file",
+  "spawn": {"at":[0,0,-343.5],"yawDeg":0},
+  "exit": [0,0,-363],
+  "lessons": [{"promptPad":"HOLD {jump} ON A WALL: RIDE","kind":"reached","rect":[-6,-347.5,1,-342.5],"minY":-0.2,"prompt":"HOLD {jump} ON A WALL: RIDE"},{"promptPad":"HOLD {altFire}: SLOW. {fire}: PIERCE","kind":"shots","n":1,"prompt":"HOLD {altFire}: SLOW. {fire}: PIERCE"}],
+  "lessons31": [{"promptPad":"HOLD {jump} ON A WALL: RIDE","kind":"reached","rect":[-6,-347.5,1,-342.5],"minY":-0.2,"prompt":"HOLD {jump} ON A WALL: RIDE"},{"promptPad":"HOLD {altFire}: SLOW. {fire}: PIERCE","kind":"shots","n":1,"prompt":"HOLD {altFire}: SLOW. {fire}: PIERCE"}],
+  "routeVia": [[[-5.5,0,-345.5],[-5,2.4,-362]]],
+  "proofs": [
+   {"kind":"walk","points":[[0,0,-343.5],[-4.6,0,-346],[-4.6,0,-349],[-5.3,0,-351],[-5.3,0,-358.8],[2.5,0,-359],[2.5,0,-363],[0,0,-363]]},
+   {"kind":"walk","points":[[2.5,0,-359.2],[2.1,0,-361],[-3.6,2.4,-361],[-5,2.4,-362]]}
+  ],
+  "frames36": {"mid":[-5.4,0,-346,-8,0],"exit":[0,0,-360.5,0,0]},
+  "frames65": {"entry":[0,0,-343,0,0.05],"ride":[-5.8,2.2,-350,0,-0.08],"ledge":[-5,2.4,-362.3,-90,-0.12],"pit":[2.5,0,-350.5,60,0.15],"exit":[2.5,0,-359.2,32,0]},
+  "line65": [[0,0,-343.8],[4.5,0,-360],[2.6,0,-361.2],[0,0,-363]],
+  "card65": "Research/2026-10-23-wave65/cards/a8.md",
+  "bot43": false,
+  "verb65": "pierce",
+  "arena36": true,
+  "standIns": [{"at":[4.5,0,-360.0],"mode":"static"},{"at":[4.91,0,-361.5],"mode":"static"},{"at":[5.32,0,-363.0],"mode":"static"}],
+  "standIns31": [{"at":[4.5,0,-360.0],"mode":"static"},{"at":[4.91,0,-361.5],"mode":"static"},{"at":[5.32,0,-363.0],"mode":"static"}],
+  "standIns36": [{"at":[4.5,0,-360.0],"job":"marker","why":"THE TALLY (NIGHT66 S round 2, a8 C; skip v2: on the ledge, in file only along the lane, every charged shot hit 1 body because the pilot charges from wherever it first sees them, Research/2026-10-23-wave66/a8/r2/B): the first of three static stand-ins on the north apron in a file on the ray from the room's spawn, (0, 1.6 m eye, -343.5), across THE TAILRACE: the ray to the first's aim point passes the second and third within 0.05 m sideways and inside their bodies (my arithmetic), so the charged shot from the door kills the file; a floor tap never hurts a stand-in (Combat.cs:1464); they hold wave 1 until they die or teach46's 8 s hold (Campaign24.cs:850-851): the pit becomes the pierce's range, the line the door looks down"},{"at":[4.91,0,-361.5],"job":"marker","why":"THE TALLY's second, 1.55 m behind the first on the spawn's ray"},{"at":[5.32,0,-363.0],"job":"marker","why":"THE TALLY's third, against the north wall"}],
+  "nodes": [[5.5,0,-357.5],[6.5,0,-357.5],[6.5,0,-359.5]],
+  "highNodes": [[-5.5,2.4,-362.5],[-4.5,2.4,-363.5],[-4.5,2.4,-360.5],[-5.5,2.4,-360.5]],
+  "waveNodes43": [[[-5.5,2.4,-362.5],[-4.5,2.4,-363.5],[-4.5,2.4,-360.5],[-5.5,2.4,-360.5]],[[-5.4,0,-358.5]]],
+  "waveNodes43_why": "NIGHT66 S round 1 (verb plan a8, lever A, THE HEAD SPITTER): wave 2 (husk, husk, spitter) spawns at the lane's head, (-5.4, 0, -358.5), 1.5 m south of P7's face (one node: Campaign24.SpawnWave picks each enemy's node at random from its wave's list, so the spitter can be placed only as its own wave's node): its husks file south down the lane with the spitter holding behind them (spitter minRange 6), so from the mouth one level charged shot takes the file and the spitter (pierce33: 24 bodies), while the gun needs 2 + 2 + 3 taps under its lobs; wave 2 no longer starts on the tailrace stair. Before, NIGHT65 S round 3: wave 1 stays on the hatch ledge. Both reviews r2 asked for it in the lane; the root cause of the 0-body pierce was the missing drop link (P7's face, fixed at b877f6b3: the file is in the lane by 2 s, hold52 --trace, and n65verb pierce hits 3); spawned in the lane it put the stall guard out of the red's band (48.8 on seeds 11-20 at d075ee04). Before that (card a8 section 4; round 2, gg-proxy r1 BLOCKING: the tailrace's only job was its own way out): wave 1 (husk x4) on the 2.4 m hatch ledge: they drop into the lane's north end and file south down it, the only walk route south (the sluice and the 2.3 m pit lips close the east); wave 2's two husks start on the tailrace stair's head landing (the validator's walkers never stand on a pit floor: nodes there read ERROR 'not reached by walkers'), so they come up out of the tailrace behind the file, a second front; its spitter on the north apron's east",
+  "reachFrom": [-5,2.4,-362],
+  "waves": [["husk","husk","husk","husk","husk","husk"],["husk","husk","spitter"]],
+  "waves_why": "NIGHT66 S round 1 (verb plan a8, lever B): wave 1 four -> six husks on the hatch ledge's four nodes, so the file down the lane is 12 taps for the gun against one charged shot (NIGHT65's 6-husk try, 19.5 vs 16.2 s, ran on v1's confounded control: re-measured here)",
+  "afterLesson43": 0,
+  "afterLesson43_why": "NIGHT65 S round 2 (kept from NIGHT43 L1 / NIGHT46 F-3): wave 0 waits for lesson 0; the rect now covers the spawn and the apron's west half (round 1: the rect at the wall's foot held wave 1 for the 8 s hold while the walk pilot stood at the spawn: maxStall 8.0 s on every seed, dead 10.9-16.2 s), so the file leaves the hatch as you enter and the prompt reads while it comes down the lane"
+ },
+ "boxes": [
+  {"zone":"a8","kind":"wall","min":[-7,0,-362],"max":[-6.6,6,-345],"job":"ride","ride":true,"ride36":{"face":"E","planeX":-6.6,"lz":[3,20]},"why":"P1 THE SPILLWAY WALL (card a8): the verb's piece: the ride north beside the file (in line with your look), one flush 17 m face (EXT53); its end is the jump-off onto the hatch ledge (rule 15)"},
+  {"zone":"a8","kind":"wall","min":[-3.5,0,-358],"max":[-3.4,6,-347.5],"ride":true,"ride36":{"face":"E","planeX":-3.4,"lz":[5.5,16]},"job":"ride","why":"NIGHT66 S round 3 (the r1 level-design review's BLOCKING, 'THE TAILRACE ... removed its last enemy job; fill it or give it one'; its pad move was measured in round 2 and lowered M1 0.89 -> 0.75, a8/r2/D): THE TAILRACE is filled and its stair cut, so the east half is floor at 0; its ride now runs from the floor. P14 THE SLUICE's east skin (round 3, the level-design review r2 BLOCKING): the sluice's pit-side face as a ride from the pit floor to 6 m: a 10.5 m ride over THE TAILRACE whose miss lands by THE TAILRACE PAD, as P3's why says"},
+  {"zone":"a8","kind":"wall","min":[-4.1,0,-358],"max":[-3.5,6,-347.5],"ride":true,"ride36":{"face":"W","planeX":-4.1,"lz":[5.5,16]},"job":"foothold","why":"P3 THE SLUICE (card a8; round 2, the level-design review r1 BLOCKING, rule 13: its 0.6 m top at 2.4 m was a standable catwalk over the lane): raised to 6 m and a ride wall: the lane becomes two ride walls 2.5 m apart (ride one, wall-jump across, ride the other: the hand-off), its east face a 10.5 m ride over THE TAILRACE whose miss lands by the pad; still the foothold (R5), 7.5-18 m from d9's centre, closing the lane's east side so the file stays a line"},
+  {"zone":"a8","kind":"hull","min":[-3.9,2.4,-364],"max":[-3.6,3.4,-362],"job":"screen","why":"P12 THE HATCH RAIL (round 2: the pierce pilot showed wave 1 leaving the ledge by its east face, behind the sluice, not filing down the lane): a 1 m rail on the ledge's east edge north of P8's top, so the ledge's only ways off are P8 (east, the long way) and the south face's drop into the lane: the file's shortest way to you is the lane"},
+  {"zone":"a8","kind":"hull","min":[-2.6,0,-360],"max":[1.8,2.3,-359.8],"job":"curb","why":"P10 THE RAMP CURB (round 2; the third card pass's I2 point): a 2.3 m curb along P8's south edge where the ramp is under 2.2 m high (x -2.6..1.8), so no grid jump (ai.grid jumpUp 2.2) goes from the strip onto the ramp's side: the walk onto the ledge starts at P8's foot, the ride stays the shortcut"},
+  {"zone":"a8","kind":"deck","min":[-6.6,0,-364],"max":[-3.6,2.4,-360],"job":"perch","why":"P7 THE HATCH LEDGE (card a8; round 3: its south face moved 0.5 m to z -360, on a nav cell boundary, so the grid has drop links from the ledge's edge cells (z -360.5) to the lane's (z -359.5): at z -359.5 the face sat on the cells' centres and no drop link formed, so wave 1 left the ledge east (hold52 --trace) and the file formed only at 6 s): the hatch (wave 1's nodes) and the ride's landing; 2.4 m, over the grid's jumpUp 2.2, so it is reached on foot only by P8 (I2 by ratio); its south and east faces drop to the lane and the apron"}
+ ],
+ "ramps": [
+  {"zone":"a8","from":[-5.85,-344.5],"to":[-5.85,-347.5],"width":1.5,"rise":1.2,"job":"takeoff","why":"P11 THE TAKE-OFF RAMP (round 2, gg-proxy r1 BLOCKING: the ride attaches at about 1.5 m and must reach the 2.4 m ledge): a 1.2 m run-up along THE SPILLWAY WALL's south foot (x -6.6..-5.1, 21.8 deg; the lane's mouth keeps a 1 m floor passage beside it); a jump off its top attaches at about 2.7 m, over the ledge, so the held ride lands on it with no pitch-up (a ramp, not a deck: a 1 m step deck got no nav node, a validator ERROR)"},
+  {"zone":"a8","from":[1.8,-361],"to":[-3.6,-361],"width":2,"rise":2.4,"job":"climb","why":"P8 THE HATCH RAMP (card a8): the climb onto the ledge for husks and for the player on foot, from the north apron rising west onto the ledge's east face (GG NIGHT20 'a route that enemies can climb up'); the long way round from the lane, so the ride is the shortcut (I2 ~1.42)"}
+ ],
+ "pads": [
+  {"zone":"a8","at":[2.5,0,-352.5],"target":[-5,2.4,-361.8],"apexAbove":2,"job":"pad","why":"NIGHT66 S round 3 (the r1 level-design review's BLOCKING, 'THE TAILRACE ... removed its last enemy job; fill it or give it one'; its pad move was measured in round 2 and lowered M1 0.89 -> 0.75, a8/r2/D): THE TAILRACE is filled and its stair cut, so the east half is floor at 0; the pad stands on the new floor, still the throw onto the ledge behind the file. P6 THE TAILRACE PAD (card a8): the pit's reason and the player's way out: a cyan pad that throws you onto the hatch ledge behind the file. NIGHT66 S round 2 tried it at the pit's south-west, (-2.5, -2.3, -348.5), apex 4 (the r1 level-design review's fix for THE TAILRACE): touched on 5 / 10 seeds, but skip v2 M1 0.89 -> 0.75 and M2 FAIL (Research/2026-10-23-wave66/a8/r2/D): reverted"}
+ ],
+ "grapple": [],
+ "pits": [],
+ "tunnels": [],
+ "lights": [
+  {"id":"a8-ride","room":"a8","kind":"wall","at":[-6.55,1.2,-353.5],"normal":[1,0,0],"size":[17,0.2,0.1],"color":"cyan","range":6,"intensity":1.1},
+  {"id":"a8-sluice","room":"a8","kind":"wall","at":[-4.15,1.2,-352.75],"normal":[-1,0,0],"size":[10.5,0.2,0.1],"color":"cyan","range":5,"intensity":1.0},
+  {"id":"a8-hatch","room":"a8","kind":"ceiling","at":[-5,8.95,-362],"normal":[0,-1,0],"size":[2.5,3,0.1],"color":"orange","range":8,"intensity":1.2,"danger":true},
+  {"id":"a8-lane","room":"a8","kind":"ceiling","at":[-5.35,8.95,-352.5],"normal":[0,-1,0],"size":[2.5,6,0.1],"color":"white","range":9,"intensity":1},
+  {"id":"a8-exit","room":"a8","kind":"pool","at":[0,0.025,-363],"normal":[0,1,0],"size":[2.5,1.8,0.05],"color":"cyan","range":7,"intensity":1.6}
+ ],
+ "props": [
+  {"id":"a8-edge","room":"a8","kind":"edgeLight","at":[-5.1,2.35,-360.05],"size":[3,0.1,0.1],"yawDeg":0,"collider":false,"decor":true,"job":"read","why":"D5 the ledge's south lip: the landing reads from the wall (kit lamp)"},
+  {"id":"a8-P1","room":"a8","kind":"healthPickup","at":[1,0.9,-352.5],"size":[0.6,0.6,0.6],"yawDeg":0,"collider":false,"pickup":true,"job":"reward","why":"D7 (round 2, gg-proxy r1 BLOCKING): the health beside THE TAILRACE PAD on the pit floor: going down pays, then the pad throws you onto the ledge behind the file"},
+  {"id":"a8-lampLane","room":"a8","kind":"lamp","at":[-5.35,8.2,-352.5],"size":[0.6,1.4,0.6],"yawDeg":0,"collider":false,"decor":true,"job":"fixture","why":"density pass: the hanging lamp the lane's ceiling light hangs from (kit lamp, amber)"},
+  {"id":"a8-exitFrame","room":"a8","kind":"doorFrame","at":[0,2.4,-363.9],"size":[5,4.8,0.3],"yawDeg":0,"collider":false,"decor":true,"job":"exit","why":"density pass: d10's frame under its lintel light (the lit exit)"},
+  {"id":"a8-lintel","room":"a8","kind":"lintelLight","at":[0,4.6,-363.9],"size":[4,0.2,0.2],"yawDeg":0,"collider":false,"decor":true,"job":"exit","why":"D6 the exit's frame over d10 (kit lamp)"}
+ ],
+ "teach35": [],
+ "drop": {
+  "foundry43_why": "doc only (nothing reads it): NIGHT43 L1's note on the old pit, panels and perch; all gone in the rebuild (card a8 section 3)",
+  "foundry46_why": "doc only (nothing reads it): NIGHT46 F-3's note on lesson 0's old rect; the rect is rewritten for P1's foot and afterLesson43_why says why"
+ }
+}

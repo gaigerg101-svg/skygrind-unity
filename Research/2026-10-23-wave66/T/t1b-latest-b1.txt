@@ -1,0 +1,94 @@
+# command: dotnet run --project Tools/SimHarness -c Release --no-build -- n65verb skip --level /c/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/b545c660-8250-4a8f-9419-f29ef22d3556/scratchpad/latest/n65-foundry-latest.json --room b1 --seeds 10 --bars C:/Users/gaige/dev/SKYGRIND-unity/Logs/n66/slate.json
+# sha: 7b2139b2 (tree 9 dirty paths), 2026-10-24 00:53:51 USMST, /c/Users/gaige/dev/SKYGRIND-unity/.claude/worktrees/agent-af48e888c59fa3626
+
+n65verb skip v2: level C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/b545c660-8250-4a8f-9419-f29ef22d3556/scratchpad/latest/n65-foundry-latest.json, room b1, verb65 launch, refuse launch, seeds 1..10 (--seeds 10), cap 120.0 s, bar 1.25 from the default 1.25 (C:/Users/gaige/dev/SKYGRIND-unity/Logs/n66/slate.json b1.mainBar is null), need 7 exercised
+  runs: verb-aware = Walk38Pilot + n46flow's lava rule + the ported autopilot (normal) + the verb-aware layer; refused-in = the same with the verb refused inside the layer (episodes declined, holds and approach released) and the inner pilot's verb presses dropped; walker = the plain pilot with the verb's presses dropped. Not invulnerable. A run that does not clear counts the cap.
+  seed 1 verb-aware: cleared yes in 21.3 s | deaths 0, falls 0 | launch36 3 | STYLE above DULL 69.6 %, top BOLD | walked 139.7 m, shots 14 (charged 2, bodies hit per charged shot 0/1) | trigger held 257 steps
+  seed 1 refused-in: cleared yes in 46.7 s | deaths 0, falls 0 | launch36 0 | STYLE above DULL 43.3 %, top BOLD | walked 176.7 m, shots 35 (charged 4, bodies hit per charged shot 0/1/1/0) | presses refused 50 (episodes declined 11, the inner pilot's presses dropped 39)
+  seed 1 walker:     cleared yes in 30.1 s | deaths 0, falls 0 | launch36 0 | STYLE above DULL 37.3 %, top COOL | walked 140.7 m, shots 24 (charged 4, bodies hit per charged shot 1/1/1/2) | presses refused 86
+  seed 1 => ratio 1.41 (the faster refusal: walker 30.1 s / verb-aware 21.3 s) | exercised
+  seed 1 touches (verb-aware, steps): box(-6.5,0,-158.5..-1.5,2.4,-157.5) 22; box(-1.5,0,-158.5..6,2.4,-157.5) 248; box(-6.4,0,-171.5..-1.5,2.4,-170.5) 33; box(-4.6,0,-170.5..-4,5.5,-160.5) 31; box(6.6,0,-171.5..10,2.4,-170.5) 10; box(6,3.4,-177..10,4,-160) 268; box(2.5,0,-175.6..5.5,1,-175) 26; box(1,0,-166.7..2.2,2.2,-165.5) 12; box(-7,0,-155.5..-4,3.5,-152.5) 36; ramp(8,-149.5,10.5,4,4) 77; pad(3,0,-153) 14 | launch36 kills: (-7.3, 2.3, -159.0) kills 3; (9.6, 5.4, -163.7) kills 2 wall; (-2.4, 1.3, -170.0) kills 2 wall
+  seed 2 verb-aware: cleared yes in 22.0 s | deaths 0, falls 0 | launch36 1 | STYLE above DULL 69.2 %, top SAVAGE | walked 155.9 m, shots 17 (charged 3, bodies hit per charged shot 0/1/1) | trigger held 182 steps
+  seed 2 refused-in: cleared yes in 37.1 s | deaths 0, falls 0 | launch36 0 | STYLE above DULL 22.7 %, top COOL | walked 200.9 m, shots 37 (charged 5, bodies hit per charged shot 0/0/0/1/0) | presses refused 13 (episodes declined 13, the inner pilot's presses dropped 0)
+  seed 2 walker:     cleared yes in 57.5 s | deaths 0, falls 0 | launch36 0 | STYLE above DULL 74.0 %, top AIRBORNE | walked 276.7 m, shots 43 (charged 6, bodies hit per charged shot 0/0/1/0/0/1) | presses refused 0
+  seed 2 => ratio 1.69 (the faster refusal: refused-in 37.1 s / verb-aware 22.0 s) | exercised
+  seed 2 touches (verb-aware, steps): box(-10,0,-180..-9.4,12,-148) 86; box(-6.4,0,-171.5..-1.5,2.4,-170.5) 130; box(1.5,0,-171.5..6,2.4,-170.5) 123; box(-4.6,0,-170.5..-4,5.5,-160.5) 20; box(6,3.4,-177..10,4,-160) 60; box(6,0,-165.6..6.6,3.4,-165) 21; box(2.5,0,-175.6..5.5,1,-175) 62; box(1,0,-166.7..2.2,2.2,-165.5) 2; ramp(-7.9,-169,2,3,1) 75; ramp(-7.9,-173,2,3,1) 25; pad(3,0,-153) 7 | launch36 kills: (-8.9, 1.4, -174.5) kills 2 wall
+  seed 3 verb-aware: cleared yes in 25.9 s | deaths 0, falls 0 | launch36 2 | STYLE above DULL 71.2 %, top AIRBORNE | walked 163.4 m, shots 19 (charged 3, bodies hit per charged shot 1/1/1) | trigger held 341 steps
+  seed 3 refused-in: cleared yes in 43.7 s | deaths 0, falls 0 | launch36 0 | STYLE above DULL 43.1 %, top COOL | walked 269.7 m, shots 38 (charged 6, bodies hit per charged shot 1/0/0/0/0/1) | presses refused 23 (episodes declined 11, the inner pilot's presses dropped 12)
+  seed 3 walker:     cleared yes in 50.7 s | deaths 0, falls 0 | launch36 0 | STYLE above DULL 48.1 %, top BOLD | walked 177.2 m, shots 26 (charged 5, bodies hit per charged shot 1/0/0/0/1) | presses refused 22
+  seed 3 => ratio 1.69 (the faster refusal: refused-in 43.7 s / verb-aware 25.9 s) | exercised
+  seed 3 touches (verb-aware, steps): box(-10,0,-180..-9.4,12,-148) 429; box(-6.5,0,-158.5..-1.5,2.4,-157.5) 70; box(-1.5,0,-158.5..6,2.4,-157.5) 51; box(-4.6,0,-170.5..-4,5.5,-160.5) 244; box(-7,0,-155.5..-4,3.5,-152.5) 190; ramp(-7.95,-156.5,2,2.9,1) 45; ramp(-7.95,-160.5,2,2.9,1) 110; pad(3,0,-153) 15 | launch36 kills: (-6.8, 1.9, -160.1) kills 2; (-5.2, 1.7, -160.1) kills 3
+  seed 4 verb-aware: cleared yes in 27.2 s | deaths 0, falls 0 | launch36 3 | STYLE above DULL 74.9 %, top SAVAGE | walked 205.5 m, shots 29 (charged 2, bodies hit per charged shot 0/1) | trigger held 560 steps
+  seed 4 refused-in: cleared yes in 38.8 s | deaths 0, falls 0 | launch36 0 | STYLE above DULL 46.4 %, top BOLD | walked 242.1 m, shots 40 (charged 7, bodies hit per charged shot 0/1/0/1/0/1/1) | presses refused 43 (episodes declined 8, the inner pilot's presses dropped 35)
+  seed 4 walker:     cleared yes in 29.4 s | deaths 0, falls 0 | launch36 0 | STYLE above DULL 50.3 %, top BOLD | walked 161.8 m, shots 30 (charged 3, bodies hit per charged shot 0/2/1) | presses refused 0
+  seed 4 => ratio 1.08 (the faster refusal: walker 29.4 s / verb-aware 27.2 s) | exercised
+  seed 4 touches (verb-aware, steps): box(-10,0,-180..-9.4,12,-148) 275; box(-6.5,0,-158.5..-1.5,2.4,-157.5) 29; box(-1.5,0,-158.5..6,2.4,-157.5) 5; box(-6.4,0,-171.5..-1.5,2.4,-170.5) 135; box(1.5,0,-171.5..6,2.4,-170.5) 3; box(-4.6,0,-170.5..-4,5.5,-160.5) 11; box(6.6,0,-171.5..10,2.4,-170.5) 192; box(6,3.4,-177..10,4,-160) 95; box(-7,0,-155.5..-4,3.5,-152.5) 36; ramp(-7.95,-156.5,2,2.9,1) 3; ramp(-7.95,-160.5,2,2.9,1) 22; ramp(-7.9,-169,2,3,1) 18; ramp(-7.9,-173,2,3,1) 48; pad(-4,0,-173.5) 6 | launch36 kills: (-8.7, 1.0, -148.7) kills 1 wall; (9.2, 1.1, -175.8) kills 1 wall
+  seed 5 verb-aware: cleared yes in 22.1 s | deaths 0, falls 0 | launch36 2 | STYLE above DULL 73.7 %, top AIRBORNE | walked 148.5 m, shots 16 (charged 2, bodies hit per charged shot 1/1) | trigger held 314 steps
+  seed 5 refused-in: cleared yes in 27.0 s | deaths 0, falls 0 | launch36 0 | STYLE above DULL 63.3 %, top BOLD | walked 150.4 m, shots 29 (charged 3, bodies hit per charged shot 1/2/1) | presses refused 8 (episodes declined 8, the inner pilot's presses dropped 0)
+  seed 5 walker:     cleared yes in 45.1 s | deaths 0, falls 0 | launch36 0 | STYLE above DULL 9.9 %, top COOL | walked 316.1 m, shots 35 (charged 6, bodies hit per charged shot 1/1/1/0/1/1) | presses refused 0
+  seed 5 => ratio 1.22 (the faster refusal: refused-in 27.0 s / verb-aware 22.1 s) | exercised
+  seed 5 touches (verb-aware, steps): box(-10,0,-180..-9.4,12,-148) 131; box(-6.5,0,-158.5..-1.5,2.4,-157.5) 37; box(-6.4,0,-171.5..-1.5,2.4,-170.5) 25; box(1.5,0,-171.5..6,2.4,-170.5) 93; box(-7,0,-155.5..-4,3.5,-152.5) 36; ramp(-7.95,-156.5,2,2.9,1) 12; ramp(-7.95,-160.5,2,2.9,1) 32; ramp(-7.9,-169,2,3,1) 22; ramp(-7.9,-173,2,3,1) 6 | launch36 kills: (-7.3, 2.3, -159.0) kills 3
+  seed 6 verb-aware: cleared yes in 28.8 s | deaths 0, falls 0 | launch36 1 | STYLE above DULL 75.9 %, top SAVAGE | walked 191.0 m, shots 30 (charged 2, bodies hit per charged shot 1/0) | trigger held 385 steps
+  seed 6 refused-in: cleared yes in 35.4 s | deaths 0, falls 0 | launch36 0 | STYLE above DULL 32.8 %, top COOL | walked 181.9 m, shots 30 (charged 4, bodies hit per charged shot 0/0/1/1) | presses refused 14 (episodes declined 14, the inner pilot's presses dropped 0)
+  seed 6 walker:     cleared yes in 46.9 s | deaths 0, falls 0 | launch36 0 | STYLE above DULL 16.9 %, top COOL | walked 187.0 m, shots 31 (charged 3, bodies hit per charged shot 0/1/1) | presses refused 0
+  seed 6 => ratio 1.23 (the faster refusal: refused-in 35.4 s / verb-aware 28.8 s) | exercised
+  seed 6 touches (verb-aware, steps): box(-10,0,-180..-9.4,12,-148) 23; box(-6.5,0,-158.5..-1.5,2.4,-157.5) 264; box(-1.5,0,-158.5..6,2.4,-157.5) 201; box(-6.4,0,-171.5..-1.5,2.4,-170.5) 257; box(1.5,0,-171.5..6,2.4,-170.5) 154; box(-4.6,0,-170.5..-4,5.5,-160.5) 276; box(6.6,0,-171.5..10,2.4,-170.5) 229; box(6,3.4,-177..10,4,-160) 148; box(6,0,-176.8..6.6,3.4,-176.2) 20; box(2.5,0,-175.6..5.5,1,-175) 101; box(-7,0,-155.5..-4,3.5,-152.5) 47; ramp(-7.95,-156.5,2,2.9,1) 28; ramp(-7.95,-160.5,2,2.9,1) 5; ramp(8,-149.5,10.5,4,4) 15; pad(3,0,-153) 7 | launch36 kills: (8.4, 1.2, -160.7) kills 1 wall
+  seed 7 verb-aware: cleared yes in 22.6 s | deaths 0, falls 0 | launch36 1 | STYLE above DULL 52.8 %, top AIRBORNE | walked 178.6 m, shots 20 (charged 1, bodies hit per charged shot 1) | trigger held 195 steps
+  seed 7 refused-in: cleared yes in 35.7 s | deaths 0, falls 0 | launch36 0 | STYLE above DULL 14.8 %, top COOL | walked 184.8 m, shots 35 (charged 4, bodies hit per charged shot 0/1/1/1) | presses refused 25 (episodes declined 14, the inner pilot's presses dropped 11)
+  seed 7 walker:     cleared yes in 39.2 s | deaths 0, falls 0 | launch36 0 | STYLE above DULL 32.1 %, top COOL | walked 255.5 m, shots 44 (charged 5, bodies hit per charged shot 0/0/1/1/0) | presses refused 70
+  seed 7 => ratio 1.58 (the faster refusal: refused-in 35.7 s / verb-aware 22.6 s) | exercised
+  seed 7 touches (verb-aware, steps): box(-10,0,-180..-9.4,12,-148) 225; box(-6.4,0,-171.5..-1.5,2.4,-170.5) 63; box(1.5,0,-171.5..6,2.4,-170.5) 40; box(-4.6,0,-170.5..-4,5.5,-160.5) 142; ramp(-7.9,-169,2,3,1) 89; ramp(-7.9,-173,2,3,1) 74; pad(3,0,-153) 7; pad(-4,0,-173.5) 12 | launch36 kills: (5.9, 1.1, -179.4) kills 1 wall
+  seed 8 verb-aware: cleared yes in 33.1 s | deaths 0, falls 0 | launch36 1 | STYLE above DULL 67.5 %, top AIRBORNE | walked 219.6 m, shots 23 (charged 2, bodies hit per charged shot 0/0) | trigger held 548 steps
+  seed 8 refused-in: cleared yes in 40.8 s | deaths 0, falls 0 | launch36 0 | STYLE above DULL 48.8 %, top COOL | walked 242.4 m, shots 35 (charged 5, bodies hit per charged shot 1/1/1/0/1) | presses refused 11 (episodes declined 11, the inner pilot's presses dropped 0)
+  seed 8 walker:     cleared yes in 33.3 s | deaths 0, falls 0 | launch36 0 | STYLE above DULL 32.7 %, top COOL | walked 185.1 m, shots 39 (charged 5, bodies hit per charged shot 0/0/0/0/2) | presses refused 0
+  seed 8 => ratio 1.01 (the faster refusal: walker 33.3 s / verb-aware 33.1 s) | exercised
+  seed 8 touches (verb-aware, steps): box(-10,0,-180..-9.4,12,-148) 294; box(-6.5,0,-158.5..-1.5,2.4,-157.5) 17; box(-1.5,0,-158.5..6,2.4,-157.5) 10; box(-6.4,0,-171.5..-1.5,2.4,-170.5) 20; box(1.5,0,-171.5..6,2.4,-170.5) 153; box(-4.6,0,-170.5..-4,5.5,-160.5) 759; box(6.6,0,-171.5..10,2.4,-170.5) 49; box(6,3.4,-177..10,4,-160) 184; box(6,0,-171..6.6,3.4,-170.4) 31; box(-7,0,-155.5..-4,3.5,-152.5) 103; ramp(-7.95,-156.5,2,2.9,1) 82; ramp(-7.95,-160.5,2,2.9,1) 83; ramp(-7.9,-169,2,3,1) 9; ramp(-7.9,-173,2,3,1) 30; pad(-4,0,-173.5) 7 | launch36 kills: (-3.5, 1.0, -163.7) kills 3
+  seed 9 verb-aware: cleared yes in 34.5 s | deaths 0, falls 0 | launch36 1 | STYLE above DULL 48.4 %, top BOLD | walked 230.4 m, shots 26 (charged 1, bodies hit per charged shot 1) | trigger held 402 steps
+  seed 9 refused-in: cleared yes in 47.3 s | deaths 0, falls 0 | launch36 0 | STYLE above DULL 22.7 %, top COOL | walked 309.4 m, shots 52 (charged 4, bodies hit per charged shot 1/1/0/1) | presses refused 9 (episodes declined 9, the inner pilot's presses dropped 0)
+  seed 9 walker:     cleared yes in 43.0 s | deaths 0, falls 0 | launch36 0 | STYLE above DULL 15.7 %, top COOL | walked 279.1 m, shots 47 (charged 6, bodies hit per charged shot 0/1/0/1/1/1) | presses refused 115
+  seed 9 => ratio 1.25 (the faster refusal: walker 43.0 s / verb-aware 34.5 s) | exercised
+  seed 9 touches (verb-aware, steps): box(-10,0,-180..-9.4,12,-148) 15; box(-1.5,0,-158.5..6,2.4,-157.5) 87; box(-6.4,0,-171.5..-1.5,2.4,-170.5) 333; box(1.5,0,-171.5..6,2.4,-170.5) 48; box(-4.6,0,-170.5..-4,5.5,-160.5) 968; box(6,3.4,-177..10,4,-160) 190; box(6,0,-165.6..6.6,3.4,-165) 22; box(1,0,-166.7..2.2,2.2,-165.5) 41; box(-7,0,-155.5..-4,3.5,-152.5) 36; ramp(8,-149.5,10.5,4,4) 95; pad(3,0,-153) 7; pad(-4,0,-173.5) 32 | launch36 kills: (-0.2, 1.2, -172.2) kills 4
+  seed 10 verb-aware: cleared yes in 30.1 s | deaths 0, falls 0 | launch36 1 | STYLE above DULL 75.0 %, top AIRBORNE | walked 219.7 m, shots 34 (charged 4, bodies hit per charged shot 1/1/0/1) | trigger held 251 steps
+  seed 10 refused-in: cleared yes in 43.3 s | deaths 0, falls 0 | launch36 0 | STYLE above DULL 34.1 %, top BOLD | walked 236.9 m, shots 34 (charged 7, bodies hit per charged shot 0/0/0/1/0/0/0) | presses refused 10 (episodes declined 10, the inner pilot's presses dropped 0)
+  seed 10 walker:     cleared yes in 76.1 s | deaths 0, falls 0 | launch36 0 | STYLE above DULL 11.9 %, top COOL | walked 404.5 m, shots 49 (charged 9, bodies hit per charged shot 1/0/0/1/0/0/1/0/1) | presses refused 37
+  seed 10 => ratio 1.44 (the faster refusal: refused-in 43.3 s / verb-aware 30.1 s) | exercised
+  seed 10 touches (verb-aware, steps): box(-10,0,-180..-9.4,12,-148) 120; box(-6.5,0,-158.5..-1.5,2.4,-157.5) 45; box(-6.4,0,-171.5..-1.5,2.4,-170.5) 88; box(-4.6,0,-170.5..-4,5.5,-160.5) 129; box(2.5,0,-175.6..5.5,1,-175) 22; box(-7,0,-155.5..-4,3.5,-152.5) 341; ramp(-7.95,-156.5,2,2.9,1) 40; ramp(-7.95,-160.5,2,2.9,1) 127; ramp(-7.9,-173,2,3,1) 38; ramp(8,-149.5,10.5,4,4) 35; pad(-4,0,-173.5) 7 | launch36 kills: (2.5, 1.0, -148.6) kills 1 wall
+n65verb skip: M1 PASS | room b1, ratio 1.33 vs bar 1.25, exercised 10/10
+n65verb skip: M2 PASS | room b1, STYLE above DULL verb-aware 67.5 % vs the faster refusal 33.4 % (+15 needed), over the 10 exercised seed(s)
+n65verb skip: totals | room b1 | median clear (all seeds; the cap for a non-clear): verb-aware 26.5 s, refused-in 39.8 s, walker 44.1 s | cleared 10 / 10 / 10 of 10 | deaths 0 / 0 / 0 | launch36 16 / 0 / 0 | presses refused (refused-in) 206, (walker) 330 | walked (median m) 184.8 / 218.9 / 221.3 | shots (median) 21.5 / 35.0 / 37.0 | wall time 97 s
+n65verb skip touch: room b1 | box(-10,0,-180..-9.4,12,-148) | seeds 9/10 | steps 1598 | ride: P1 THE WEST RAIL
+n65verb skip touch: room b1 | box(-6.5,0,-158.5..-1.5,2.4,-157.5) | seeds 7/10 | steps 484 | gate: P2 THE SLAG WALL, west
+n65verb skip touch: room b1 | box(-1.5,0,-158.5..6,2.4,-157.5) | seeds 6/10 | steps 602 | gate: P3 THE SLAG WALL, east
+n65verb skip touch: room b1 | box(-6.4,0,-171.5..-1.5,2.4,-170.5) | seeds 9/10 | steps 1084 | gate: P12 THE NORTH SLAG LINE, west
+n65verb skip touch: room b1 | box(1.5,0,-171.5..6,2.4,-170.5) | seeds 7/10 | steps 614 | gate: P13 THE NORTH SLAG LINE, east
+n65verb skip touch: room b1 | box(-4.6,0,-170.5..-4,5.5,-160.5) | seeds 9/10 | steps 2580 | ride: P15 THE LADLE
+n65verb skip touch: room b1 | box(6.6,0,-171.5..10,2.4,-170.5) | seeds 4/10 | steps 480 | gate: P14 THE NORTH SLAG LINE under the gantry
+n65verb skip touch: room b1 | box(6,3.4,-177..10,4,-160) | seeds 6/10 | steps 945 | perch: P4 THE GANTRY
+n65verb skip touch: room b1 | box(6,0,-165.6..6.6,3.4,-165) | seeds 2/10 | steps 43 | cover: P6 THE GANTRY POST, south
+n65verb skip touch: room b1 | box(6,0,-171..6.6,3.4,-170.4) | seeds 1/10 | steps 31 | cover: P6 THE GANTRY POST, middle
+n65verb skip touch: room b1 | box(6,0,-176.8..6.6,3.4,-176.2) | seeds 1/10 | steps 20 | cover: P6 THE GANTRY POST, north
+n65verb skip touch: room b1 | box(2.5,0,-175.6..5.5,1,-175) | seeds 4/10 | steps 211 | cover: P18 THE CASTING TROUGH
+n65verb skip touch: room b1 | box(1,0,-166.7..2.2,2.2,-165.5) | seeds 3/10 | steps 55 | cover: P7 THE ANVIL
+n65verb skip touch: room b1 | box(-7,0,-155.5..-4,3.5,-152.5) | seeds 8/10 | steps 825 | foothold: P8 THE FURNACE
+n65verb skip touch: room b1 | ramp(-7.95,-156.5,2,2.9,1) | seeds 6/10 | steps 210 | ramp
+n65verb skip touch: room b1 | ramp(-7.95,-160.5,2,2.9,1) | seeds 6/10 | steps 379 | ramp
+n65verb skip touch: room b1 | ramp(-7.9,-169,2,3,1) | seeds 5/10 | steps 213 | ramp
+n65verb skip touch: room b1 | ramp(-7.9,-173,2,3,1) | seeds 6/10 | steps 221 | ramp
+n65verb skip touch: room b1 | ramp(8,-149.5,10.5,4,4) | seeds 4/10 | steps 222 | ramp
+n65verb skip touch: room b1 | pad(3,0,-153) | seeds 6/10 | steps 57 | pad
+n65verb skip touch: room b1 | pad(-4,0,-173.5) | seeds 5/10 | steps 64 | pad
+n65verb skip launchkill: room b1 | seed 1 | at (-7.3, 2.3, -159.0) kills 3
+n65verb skip launchkill: room b1 | seed 1 | at (9.6, 5.4, -163.7) kills 2 wall
+n65verb skip launchkill: room b1 | seed 1 | at (-2.4, 1.3, -170.0) kills 2 wall
+n65verb skip launchkill: room b1 | seed 2 | at (-8.9, 1.4, -174.5) kills 2 wall
+n65verb skip launchkill: room b1 | seed 3 | at (-6.8, 1.9, -160.1) kills 2
+n65verb skip launchkill: room b1 | seed 3 | at (-5.2, 1.7, -160.1) kills 3
+n65verb skip launchkill: room b1 | seed 4 | at (-8.7, 1.0, -148.7) kills 1 wall
+n65verb skip launchkill: room b1 | seed 4 | at (9.2, 1.1, -175.8) kills 1 wall
+n65verb skip launchkill: room b1 | seed 5 | at (-7.3, 2.3, -159.0) kills 3
+n65verb skip launchkill: room b1 | seed 6 | at (8.4, 1.2, -160.7) kills 1 wall
+n65verb skip launchkill: room b1 | seed 7 | at (5.9, 1.1, -179.4) kills 1 wall
+n65verb skip launchkill: room b1 | seed 8 | at (-3.5, 1.0, -163.7) kills 3
+n65verb skip launchkill: room b1 | seed 9 | at (-0.2, 1.2, -172.2) kills 4
+n65verb skip launchkill: room b1 | seed 10 | at (2.5, 1.0, -148.6) kills 1 wall
+# exit 0, 00:55:29

@@ -1,0 +1,17 @@
+z3-compare: Research/2026-10-25-wave70/T/Z3-skip-v2-RED.txt (RED) vs Research/2026-10-25-wave70/T/Z3-skip-v2-GREEN3.txt (GREEN)
+  header             RED   1 lines, GREEN   1: IDENTICAL
+  runs (the three)   RED   1 lines, GREEN   1: IDENTICAL
+  seed verb-aware    RED   3 lines, GREEN   3: IDENTICAL
+  seed refused-in    RED   3 lines, GREEN   3: IDENTICAL
+  seed walker        RED   3 lines, GREEN   3: IDENTICAL
+  seed touches       RED   3 lines, GREEN   3: IDENTICAL
+  touch table        RED  17 lines, GREEN  17: IDENTICAL
+  launchkill         RED   6 lines, GREEN   6: IDENTICAL
+  new in GREEN: 3 committed seed lines, 1 committed runs line
+    seed 1: verb-aware launch36 2, yes in 56.2 s | committed launch36 4, yes in 48.9 s | fire held 695 steps (a launchable body inside 12 m: hp above the launch bound and at or under launch36's burst; no episode running), of them a building charge kept held 0, a switch pistol <-> shotgun asked to drop a charge or a queued tap 0, closed on it 693 steps, gun shots in a held step 0
+    seed 2: verb-aware launch36 2, yes in 36.6 s | committed launch36 3, yes in 30.4 s | fire held 339 steps (a launchable body inside 12 m: hp above the launch bound and at or under launch36's burst; no episode running), of them a building charge kept held 0, a switch pistol <-> shotgun asked to drop a charge or a queued tap 21, closed on it 337 steps, gun shots in a held step 0
+    seed 3: verb-aware launch36 2, yes in 57.6 s | committed launch36 4, yes in 38.4 s | fire held 1059 steps (a launchable body inside 12 m: hp above the launch bound and at or under launch36's burst; no episode running), of them a building charge kept held 16, a switch pistol <-> shotgun asked to drop a charge or a queued tap 16, closed on it 1057 steps, gun shots in a held step 0
+  RED   M2: n65verb skip: M2 VERB FAIL | room v2, verb launch, pooled ratio 0.80 vs mainBar 1.25 (mainBar), sets 1-3 0.80 (3/3), exercised 3 / 3 (need 3), median of all 3 seeds 0.80, refusal fired on 3 of 3 exercised seeds (by construction: an exercised seed refused a press), the refused run used the verb on 0 exercised seed(s), STYLE above DULL 67.2 % vs need 70.0 % (the faster refusal 75.0 % - 5: STYLE FAIL; NIGHT68's min(refusal + 15, max(refusal, 95)) 90.0 %, not the verdict) | the pooled ratio is under the bar
+  GREEN M2: n65verb skip: M2 VERB FAIL | room v2, verb launch, pooled ratio 0.92 vs mainBar 1.25 (mainBar), sets 1-3 0.92 (3/3), exercised 3 / 3 (need 3), median of all 3 seeds 0.92, refusal fired on 3 of 3 exercised seeds (by construction: an exercised seed refused a press), the refused run used the verb on 0 exercised seed(s), STYLE above DULL 87.6 % vs need 70.0 % (the faster refusal 75.0 % - 5: STYLE PASS; NIGHT68's min(refusal + 15, max(refusal, 95)) 90.0 %, not the verdict); the verb side per seed = the faster of verb-aware and committed: committed on 3 of 3 seeds (1, 2, 3), the verb-aware run alone: ratio 0.80 with 3 / 3 exercised, deaths on the chosen runs 0 (verb-aware 0, committed 0), launch36 per run median verb-aware 2.0 / committed 4.0 (the card's target reads verb-aware), gun shots in a committed held step 0 | the pooled ratio is under the bar
+z3-compare: Research/2026-10-25-wave70/T/Z3-skip-v2-RED.txt (RED) vs Research/2026-10-25-wave70/T/Z3-skip-v2-NOCOMMIT3.txt (NOCOMMIT, --no-commit): 49 / 49 lines, IDENTICAL (the # headers, the exit clock and the totals wall time aside)
+z3-compare: PASS

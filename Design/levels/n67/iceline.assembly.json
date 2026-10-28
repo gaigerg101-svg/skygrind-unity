@@ -1,0 +1,73 @@
+{
+ "_why": "NIGHT67: what the last gen-slots.cjs --level iceline plan step assembled (read by --finish for generatedBy; the lead's, never committed by a builder)",
+ "level": "iceline",
+ "slots": "g4,g1,g6,g2,g7,g3,g5,g8",
+ "plan": "Design/levels/n67/iceline.plan.json",
+ "at": "2026-10-28T08:12:18.386Z",
+ "rooms": [
+  {
+   "id": "g1",
+   "use": "latest",
+   "file": "Design/levels/n67/iceline/rooms/g1.json",
+   "rebuilt": true,
+   "passSha": null,
+   "verb65": "ride"
+  },
+  {
+   "id": "g2",
+   "use": "latest",
+   "file": "Design/levels/n67/iceline/rooms/g2.json",
+   "rebuilt": true,
+   "passSha": null,
+   "verb65": "ride"
+  },
+  {
+   "id": "g3",
+   "use": "latest",
+   "file": "Design/levels/n67/iceline/rooms/g3.json",
+   "rebuilt": true,
+   "passSha": null,
+   "verb65": "ride"
+  },
+  {
+   "id": "g4",
+   "use": "latest",
+   "file": "Design/levels/n67/iceline/rooms/g4.json",
+   "rebuilt": true,
+   "passSha": null,
+   "verb65": "parry"
+  },
+  {
+   "id": "g5",
+   "use": "latest",
+   "file": "Design/levels/n67/iceline/rooms/g5.json",
+   "rebuilt": true,
+   "passSha": null,
+   "verb65": "ride"
+  },
+  {
+   "id": "g6",
+   "use": "latest",
+   "file": "Design/levels/n67/iceline/rooms/g6.json",
+   "rebuilt": true,
+   "passSha": null,
+   "verb65": "launch"
+  },
+  {
+   "id": "g7",
+   "use": "latest",
+   "file": "Design/levels/n67/iceline/rooms/g7.json",
+   "rebuilt": true,
+   "passSha": null,
+   "verb65": "ride"
+  },
+  {
+   "id": "g8",
+   "use": "latest",
+   "file": "Design/levels/n67/iceline/rooms/g8.json",
+   "rebuilt": true,
+   "passSha": null,
+   "verb65": "ride"
+  }
+ ]
+}

@@ -1,0 +1,8 @@
+# command: node Tools/night/n70-patch-share.cjs --level spire --room Design/levels/n67/spire/rooms/v2.json v2
+# sha: 70e86859c; time: 2026-10-27 23:45:31
+n70-patch-share: room v2 | shipped Design/levels/n67/spire/rooms-base/v2.json vs rebuilt Design/levels/n67/spire/rooms/v2.json
+| room | shipped pieces kept | by kind (kept / shipped) | rect / spawn / exit | waves |
+|---|---|---|---|---|
+| v2 | 0 / 17 (0 %) | boxes 0 / 11, ramps 0 / 4, pads 0 / 2, pits 0 / 0 | rect same, spawn same, exit same | waves changed |
+  rebuilt room pieces: boxes 9, ramps 3, pads 3, pits 1 | the rule: PASS at <= 25 % of the shipped room's pieces kept (geometry-equal; job / why text ignored)
+n70-patch-share: PASS v2 (0 % kept)

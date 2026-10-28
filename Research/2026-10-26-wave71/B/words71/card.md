@@ -1,0 +1,11 @@
+# words71 (B2, design.n71.words71; view row, OFF in the repo, ON in the play build) - code 690300a38
+**Visible change (one sentence, for the spotter):** with the THUNDERCLAP in hand at THE KILN WYRM the order reads "Swap to the gauntlet: punch its head" (not "Punch the head to stagger it"), and a gauntlet lesson waits until the gauntlet is in hand.
+**Why not {punch} (the slate's wording):** with design.n48.wyrmTell48 OFF (the repo) a fist punch does NOT stagger the wyrm (SurvivalSim.N48.Brawl.cs:124-146 needs t48On; only a gauntlet HitEvent does, SurvivalSim.Boss30.cs:282-310), so the variants name the gauntlet as the hand to take.
+**Rule:** a line names a weapon when it holds a numbers.names phrase; not held = not Loadout.Weapon and no "SWAP". Boss orders (bar hint, its fight-line copy, bossRule61's rule line) -> numbers.lines variant in place (queue, holds, order64 untouched); unlisted orders and every lesson wait.
+**Limits (not covered):** the top message slot h33Slot (lessons only when text36 and teach43 are both off); "punch {fire}" gauntlet lines (no plain phrase); wyrmCharge "{punch} ITS HEAD AS IT COMES" orders the fist, which does nothing to it with wyrmTell48 OFF (a wording / boss call for GG: DECIDE71). The teach card's wait is not same-run clean (its pop restarts on a flip): judge it on the two-run counter.
+**Off:** the row off, -skygrindNoWords71, -skygrindOff71 (or older).
+**Proof (the lead; a build with n71.words71 ON):** `bash Tools/night/n71-reels.sh <tag> wk,n57-kiln,boss63,-skygrindSameRun63,n71.words71 wkoff,n57-kiln,boss63,-skygrindNoWords71`
+then verbs37 x5 ON and OFF: `... w1,n52-foundry,verbs37 w2,n52-iceline,verbs37 w3,n57-kiln,verbs37 w4,n52-span,verbs37 w5,n52-spire,verbs37` and the same five with `,-skygrindNoWords71`.
+Read `[words71] lines naming a weapon not held N frames` (ON: N 0; OFF: N > 0; `would` > 0 in the ON run is the red in the same run) and the verbs37 totals (27 / 29 / 31 / 31 / 31 both ways). The pair for the spotter: wk-on/ vs wk-off/ B63-wyrm-idle or -windup.
+**Numbers:** dn-check 0 errors (dn-check.txt); n71-gates --no-editor all GREEN, golden 0 mismatches, fingerprints EQUAL x12 (gates.txt). Player numbers: not checked (NEEDS-LEAD).
+**EditMode:** N71WordsTests (5 tests; not run by me).

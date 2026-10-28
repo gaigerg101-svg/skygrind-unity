@@ -1,0 +1,60 @@
+{
+  "_why": "NIGHT67's slate, seeded by the forge FORGE67 (2026-10-24 after NIGHT66's close; GG: 'finish prompt'). Eight slices: T0 (the carried-over instruments judged, the reds re-measured), five rooms (a4 first: one guard from a GATE; then a2, which needs a room change on the amended pilot; a3, a5, a8), LV (the level row: branch A / A-lean only) and PC (GG's play card). b1 stays NIGHT65's room (DECIDE66 D-3) and b2 a slot unless GG's own message names them (then n67-slate-add.cjs). A doneWhen is written before any measurement and never loosened; only the lead edits this file. The mainBars are NIGHT66's (max(1.25, red65 + 0.20)); T0 recomputes a2's and a8's on the amended pilot.",
+  "ROOM": [
+    "the room's verb plan (Research/2026-10-23-wave66/plans/<id>.md) holds; a change of lever updates it in the same commit",
+    "a GATE needs M1-M4 and every GUARD held on one main-tree round on the T0-passed tool, with skip v2 also on seeds 11-20 (the GATE pack's fresh skip, `--seed 11 --seeds 10`: M1 >= the bar with >= 7 / 10 exercised on both seed sets), the room file unchanged since that round, and that round read by a level review (the GATE critic writes it when none did); a room without such a round is SHORT (the sim is deterministic: a second round of an unchanged room only repeats its numbers; FORGE67 red team 2)",
+    "M1: skip v2 prints `M1 PASS` on the GATE round's level: the median over the exercised seeds of the paired ratio (the faster refusal's clear time / the verb-aware clear time) >= this room's mainBar, with >= 7 of 10 seeds exercised; a ride room within 0.10 of its bar reads UNSURE (verdict-T1b-r3.md)",
+    "M2: STYLE above DULL on the verb-aware run >= the faster refusal's + 15 points",
+    "M3: the room's own verb pilot GREEN on its plan's line (a5: a launched body 'in lava yes'; a3: a kill from the wall, `n65verb ride --shoot` (n67-round-verbs.sh's verbs-ride.txt); a8 and a2: the pierce through >= 2 bodies; a4: a parried glob kills a spitter)",
+    "M4: every piece added or moved since NIGHT66's t0 (e37083cf) passes the decoration checker (`node Tools/night/n67-deco.cjs --base e37083cf <room> --touches <the round's verbs-skip.txt>`); a round should add or move a collider piece with a job",
+    "GUARDS: the walk bot (n46flow seeds 1-10 and 11-20) clears 10 / 10; deaths A / B and stall on flow V (n46flow --verbs65) at or under the room's ceilings in this slate (deathsAMax, deathsBMax, stallVMax: the higher of the two reds, Logs/n67/red and Logs/n67/red65, measured on the T0 tool and written by the lead at T0 before r1 is judged); the room check's items (n59-l-room.py); air65's flights handed on; levelgen --walk 0 ERROR",
+    "the room's spawn (its retry point) is never moved toward the verb's line (the skip starts there; NIGHT66's a3)",
+    "the blind SPOT (a fresh skygrind-spotter on the GATE pack's spot-A / spot-B) names the piece that serves the verb; a skygrind-critic PASS on the GATE round"
+  ],
+  "slices": [
+    { "id": "T0", "owner": "lead", "state": "todo", "passes": false, "verdict": null, "spot": null, "passSha": null, "passFiles": null,
+      "title": "The carried-over instruments judged: the charge rule's reach, the timeout, T1c's fix 2 and its clean-round proof; the pierce reds re-measured",
+      "why": "Picked into main at FORGE67 and never judged (d25ea7d8, 8cc3f0be); a2's stall guard comes from the verb pilot's charge rule; T1c's line 3 failed on the lead's mid-round writes (Logs/n66/verdict-T1c-r2.md).",
+      "row": "none (tools)", "red": "skip v2 at T1b's PASS (Logs/n66/verdict-T1b-r3.md), Logs/n66/r2",
+      "doneWhen": [
+        "the charge rule: builder T's eight unjudged after-runs (T's tree, Research/2026-10-23-wave66/T/t1b-amend-after-*.txt) re-run on main's DLL and their seed / SUMMARY / M1 lines diffed (identical means d25ea7d8 is the code T measured); skip v2 before (Logs/n66/r2/verbs-skip.txt) / after on Logs/n66/r2/n65-foundry.json for a2 and a8 (the seed lines: charged shots, bodies per KESTREL charged shot); n46flow --verbs65's stall %, 'trigger held' and 'charged shots' lines; the trigger rule by reading Harness.N65.VerbPilot.cs:206-221; planted: two bodies 1.5 m off the ray, no trigger",
+        "the timeout: skip v2 on a8 at the carry-over level exits by itself on 10 / 10 seeds (no kill); a planted hang (`N65_VERBS_TIMEOUT=60 bash Tools/night/n65-verbs.sh skip <level> a8 --seeds 200`) ends at the timeout with its printed seed lines kept",
+        "a clean main-tree round r1: its tracked-status.txt before equals after; no commit, pick or slot write on port/stage3 between its start and its end (git log times); its table lists exactly the round's rooms; its iso pictures drawn from the round's plan",
+        "the reds on the T0 tool, before r1 is judged: red65's skip for all six rooms and red65's flow V for a2 and a8 re-run (the copies from Logs/n66 renamed *-n66-109d9dcd.txt), every mainBar rewritten by max(1.25, red65 + 0.20), and every room's ceilings (deathsAMax, deathsBMax, stallVMax) written as the higher of the two reds"
+      ],
+      "visible": "n/a (tools)", "spotPose": null },
+    { "id": "a2", "owner": "R", "state": "todo", "passes": false, "verdict": null, "spot": null, "passSha": null, "passFiles": null, "mainBar": 1.25,
+      "title": "1.2 THE RANGE: the rack and the charge (a room change needed: the stall guard and a bar that rises)", "why": "On the amended pilot (T's unjudged after-runs): M1 1.49 against a bar that becomes 1.47 (red65 1.27); stall V 29.1 % against the reds' 12.4 / 24.1, still a GUARD FAIL; about half of M1 a tax on the refuser (Logs/n66/r2/review-level.md). FORGE67 red team 1.",
+      "row": "slot a2 of n65.foundry65", "red": "Logs/n67/red/a2 and Logs/n67/red65/a2", "doneWhen": ["the ROOM list"], "visible": "the room's verb piece reads at a glance", "spotPose": "the GATE pack's iso pair" },
+    { "id": "a4", "owner": "S", "state": "todo", "passes": false, "verdict": null, "spot": null, "passSha": null, "passFiles": null, "mainBar": 1.42,
+      "title": "1.4 THE SPITTING GALLERY: the parry and THE BELLOWS FIN (M1 PASS 1.57 in S's tree; one walk-bot death)", "why": "One guard from a GATE: a walk-bot death on seed 13; S's carry-over pickup kept seed 13 alive (the full set not re-run).",
+      "row": "slot a4 of n65.foundry65", "red": "Logs/n67/red/a4 and Logs/n67/red65/a4", "doneWhen": ["the ROOM list", "the parry teach beat kept: its lessons and the parry the room asks for (VERBS.md)"], "visible": "the gallery and the glob's line read at a glance", "spotPose": "the GATE pack's iso pair" },
+    { "id": "a3", "owner": "R", "state": "todo", "passes": false, "verdict": null, "spot": null, "passSha": null, "passFiles": null, "mainBar": 1.25,
+      "title": "1.3 THE RUNNER: the ride the better line (1.13 on NIGHT66 r2)", "why": "The ride pilot rides from the swarm floor mid-fight; the spawn move gamed the skip's start (put back); THE SLAG RUN carry-over unmeasured.",
+      "row": "slot a3 of n65.foundry65", "red": "Logs/n67/red/a3 and Logs/n67/red65/a3", "doneWhen": ["the ROOM list", "the room's spawn back at NIGHT65's position, [0, 0, -59.5] (`git show e37083cf:Design/levels/n65/rooms/a3.json`; NIGHT66 moved it to [2.5, 1.45, -61.8]), and the skip re-measured from it", "`n53ridekill ride` GREEN on a wall inside a3's rect"], "visible": "the ride and what it reaches read at a glance", "spotPose": "the GATE pack's iso pair" },
+    { "id": "a5", "owner": "R", "state": "todo", "passes": false, "verdict": null, "spot": null, "passSha": null, "passFiles": null, "mainBar": 1.31,
+      "title": "1.5 THE POUR: the slide-launch into lava where launches land (DECIDE66 D-2: THE SPILL)", "why": "1.25 with deaths 1 / 4, then 0.80 UNSURE in band; THE POUR never took a body; THE SPILL carry-over unmeasured.",
+      "row": "slot a5 of n65.foundry65", "red": "Logs/n67/red/a5 and Logs/n67/red65/a5", "doneWhen": ["the ROOM list"], "visible": "the slide line and the lava it throws into read at a glance", "spotPose": "the GATE pack's iso pair" },
+    { "id": "a8", "owner": "S", "state": "todo", "passes": false, "verdict": null, "spot": null, "passSha": null, "passFiles": null, "mainBar": 1.25,
+      "title": "1.10 THE SPILLWAY: the pierce down the lane (UNSURE 1.03, 4 / 10 exercised)", "why": "The walker beats the pierce (15.4 vs 18.6 s); THE TALLY stand-ins and the filled tailrace (carry-over) unmeasured; the charge rule (T0) changes its pilot.",
+      "row": "slot a8 of n65.foundry65", "red": "Logs/n67/red/a8 and Logs/n67/red65/a8", "doneWhen": ["the ROOM list"], "visible": "the lane and its file read at a glance", "spotPose": "the GATE pack's iso pair" },
+    { "id": "LV", "owner": "lead", "state": "todo", "passes": false, "verdict": null, "spot": null, "passSha": null, "passFiles": null,
+      "title": "The level row ON: n65-foundry with every PASSed room (branch A and A-lean only)", "why": "The rooms reach the shipped game only with the row; the Player items live here.",
+      "row": "design.n65.foundry65 (levelFrom n52-foundry, levelTo n65-foundry; -skygrindOff65)", "red": "rc0 = Builds/n66-freeze",
+      "doneWhen": [
+        "LV starts at the first room PASS, no later than 5:30; slots65.json holds at least one room set new by n65-slot-set.cjs; every other slot equals n52-foundry's room (gen --check on the old slots); no slot changes after rc1 starts",
+        "rc1 is a real build of HEAD named n67-freeze: tour65 on n65-foundry frames every new room with wave 1 live; verbs37 on n52-foundry (now the swap to n65-foundry) 27 / 27 and on the four other levels as rc0 (29 / 31 / 31 / 31 on n52-iceline, n57-kiln, n52-span, n52-spire); NRE 0; `-skygrindOff65` boots n52-foundry; the smoke DONE",
+        "the sim: `n46flow --level n65-foundry --seeds 10` and `--first 11` clear 10 / 10 with deaths and stall within both reds' bands; `n39views wall n65-foundry` rows 9 / 10 / 11 PASS",
+        "the flip by n67-freeze-rows.cjs (passFiles naming the level files and slots65.json) before 6:30; its commit adds n65-foundry to n67-gates.sh's --flow list and re-makes the flow base; after it, n46flow on the five other levels with `--off65` equals Logs/n67/flow-base-a0.txt; LV's own critic PASS"
+      ],
+      "visible": "level 1 is the rebuilt one", "spotPose": "tour65's entry pose of a PASSed room, rc0 vs rc1" },
+    { "id": "PC", "owner": "lead", "state": "todo", "passes": false, "verdict": null, "spot": null, "passSha": null, "passFiles": null,
+      "title": "GG's play card: a play build with every PASSed room against the old level, plus eye63's X / Y",
+      "why": "GG has not played since 2026-10-20; NIGHT65's play build is still unanswered.", "row": "none (the report's section 2)", "red": "none",
+      "doneWhen": [
+        "NIGHT67-REPORT.md section 2: the play builds that exist (branch A / A-lean: Builds/n67-freeze with the row; branch C with a PASS: Builds/n67-play-passed, a data swap on Builds/n66-freeze by n65-play-build.sh of `gen-n65-foundry.cjs --run --out=Logs/n67/play-passed` (slots65.json's set: the PASSed rooms new, every other old), its boot run or not run), what to try in each room, the one question, about five minutes",
+        "DECIDE67.md holds the questions for his answers"
+      ],
+      "visible": "n/a (a card)", "spotPose": null }
+  ]
+}

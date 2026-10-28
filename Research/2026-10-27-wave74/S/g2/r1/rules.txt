@@ -1,0 +1,18 @@
+# command: python -I Tools/night/n74-room-rules.py room Design/levels/n67/iceline/rooms/g2.json
+# sha: 291d40fad; time: 2026-10-28 00:35:21
+iceline/g2  rect [-12.0, -58.0, 9.0, -30.0]  spawn [0.0, 0.0, -34.5] yaw 0  floor 0.0
+  PLANES  PASS  planes 3 (0.0 m: 384 cells, 2.0 m: 60 cells, 4.0 m: 52 cells)
+  COVER   PASS  cover: free-standing high 3, low 2, between 0 (0 without a job), none 0
+  LOOPS   PASS  loops 6 (floor holes 2 + closed pad / ride routes 4 of 4)
+  REAR    PASS  rear arc: 0 of 4 wave-1 usable nodes behind the entry facing (all waves: 0 node uses behind)
+  VIEW    PASS  view: enemy in view at 0.00 s (4 of 4 wave-1 nodes seen at entry)
+  CROSS   PASS  cross: chord 35.0 m, dash 1.46 s, walk 4.4 s (bar 2.0 s at dash)
+  EXPOSE  RED  exposure: 66 % of 1035 floor-sample pairs see each other (bar 60 %); longest clear line 27.7 m (medium band 19.5 m)
+  CLIMB   PASS  climb: 3 tier group(s), 0 not reached by walker links
+    free-standing high piece: hull [-5.0, 0.0, -47.0]-[-1.0, 3.2, -43.0] h 3.20 job "line: THE ANVIL (4 x 4 m, 3.2 m: the mass a warden"
+    free-standing high piece: hull [3.8, 0.0, -36.0]-[5.3, 3.5, -34.5] h 3.50 job "cover: THE DOOR POST (a 3.5 m post 6.5-8 m inside "
+    free-standing high piece: hull [-8.2, 0.0, -44.0]-[-6.7, 3.5, -42.5] h 3.50 job "cover: THE WARDEN'S POST (a 3.5 m post west of the"
+    free-standing low piece: hull [1.5, 0.0, -40.0]-[3.5, 1.2, -38.5] h 1.20 job "cover: THE QUENCH RAIL (1.2 m low cover east of th"
+    free-standing low piece: hull [-9.0, 0.0, -37.5]-[-7.0, 1.2, -36.0] h 1.20 job "cover: THE RUN-UP RAIL (1.2 m low cover at the sta"
+    walkers reach every tier: climb: 3 tier group(s), 0 not reached by walker links
+  core 5/5 PASS, extra 2/3 PASS

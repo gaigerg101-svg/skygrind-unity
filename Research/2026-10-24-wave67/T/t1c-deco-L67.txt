@@ -1,0 +1,50 @@
+# n67-deco.cjs on L67 (T1c step 1); sha d141dbe6 + the uncommitted n67-deco.cjs; 2026-10-24 11:52:05
+
+## 1. level 1 unchanged: node Tools/night/n67-deco.cjs --selftest (b1, NIGHT66's touch file)
+  PASS D-p a light marking 'P' (a prefix, not an exact key / id) FAILs
+  PASS D-w a light marking a bounding wall of the room FAILs
+n67-deco --selftest: PASS (10 / 10 planted cases; test a's planted pair is t1c-deco-plant.sh's, on a skip v2 run)
+# exit 0
+
+## 2. L67=iceline node Tools/night/n67-deco.cjs g8 --touches Logs/n67/dry-final-iceline/verbs-skip.txt   (the base: the room file's first commit)
+n67-deco: room g8 (level iceline), Design/levels/n67/iceline/rooms/g8.json against Design/levels/n67/iceline/rooms/g8.json at 350a1474 (the file's first commit): 24 items now (24 at the base); new or moved: 0 (0 pieces judged, 0 dressing not judged) | touches: 11 pieces from Logs/n67/dry-final-iceline/verbs-skip.txt; launch kills 0; ranged spots 5; walk-line samples 22; cyan markers in the room 1
+n67-deco: PASS | room g8, base 350a1474: 0 piece(s) added or moved, 0 pass, 0 FAIL; dressing 0 not judged
+# exit 0
+
+## 3. a planted rebuilt g8 (--plant: crate A in a corner, crate B a step ahead of the spawn), judged against its first commit
+n67-deco --plant: g8's room file + crate A box(-9.3,0,-249.3..-8.3,1,-248.3) (corner) + crate B box(-0.8,0,-230.3..0.8,0.3,-228.7) (step) -> C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/4ec22190-70cd-45bd-bf05-90e7159adc38/scratchpad/g8-plant.json
+n67-deco: room g8 (level iceline), C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/4ec22190-70cd-45bd-bf05-90e7159adc38/scratchpad/g8-plant.json against Design/levels/n67/iceline/rooms/g8.json at 350a1474 (the file's first commit): 26 items now (24 at the base); new or moved: 2 (2 pieces judged, 0 dressing not judged) | touches: 11 pieces from Logs/n67/dry-final-iceline/verbs-skip.txt; launch kills 0; ranged spots 5; walk-line samples 22; cyan markers in the room 1
+  FAIL added box(-9.3,0,-249.3..-8.3,1,-248.3) | cover: PLANTED: PLANTED crate A | a touched no (not in the touch table); b sight no (cuts 0 of the 80 sights clear without it (110 spot-to-walk-line sights)); c launch no (no launch36 kill on it); d marker no (n/a (not a cyan marker))
+  FAIL added box(-0.8,0,-230.3..0.8,0.3,-228.7) | step: PLANTED: PLANTED crate B | a touched no (not in the touch table); b sight no (cuts 0 of the 80 sights clear without it (110 spot-to-walk-line sights)); c launch no (no launch36 kill on it); d marker no (n/a (not a cyan marker))
+n67-deco: FAIL | room g8, base 350a1474: 2 piece(s) added or moved, 0 pass, 2 FAIL; dressing 0 not judged
+# exit 1 (1: crate A FAILs)
+
+## 4. the planted cases on an L67 room: node Tools/night/n67-deco.cjs --level kiln --selftest kb3 Logs/n67/dry-kiln/verbs-skip.txt
+n67-deco --selftest: room kb3 (its cyan markers stripped), touches Logs/n67/dry-kiln/verbs-skip.txt: 27 items now (22 at the base); new or moved: 5 (5 pieces judged, 0 dressing not judged) | touches: 16 pieces from Logs/n67/dry-kiln/verbs-skip.txt; launch kills 0; ranged spots 14; walk-line samples 24; cyan markers in the room 2
+  PASS added box(-4.01,0,-210.33..-3.01,1.9,-209.33) | cover: PLANTED: PLANTED B+ cover on a clear spitter sight | a touched no (not in the touch table); b sight YES (cuts 13 of the 173 sights clear without it (336 spot-to-walk-line sights)); c launch no (no launch36 kill on it); d marker no (n/a (not a cyan marker))
+  FAIL added box(9.55,0.1,-209.4..9.85,13.9,-208.6) | cover: PLANTED: PLANTED B- a box inside verb it celebrates | a touched no (not in the touch table); b sight no (cuts 0 of the 160 sights clear without it (336 spot-to-walk-line sights)); c launch no (no launch36 kill on it); d marker no (n/a (not a cyan marker))
+  FAIL added box(-9.3,0,-199.2..-8.3,1,-198.2) | cover: PLANTED: PLANTED A- a 1 m crate in a corner | a touched no (not in the touch table); b sight no (cuts 0 of the 160 sights clear without it (336 spot-to-walk-line sights)); c launch no (no launch36 kill on it); d marker no (n/a (not a cyan marker))
+  FAIL added light(kb3-plantD-@-9.5,6,-198) | light kb3-plantD- cyan | a touched no (n/a (light)); b sight no (n/a (no solid)); c launch no (n/a); d marker no (cyan marker 1 of 2 in the room (at most 2); the exit 27.7 m off (6 m); no marks (only the exit counts))
+  PASS added light(kb3-plantD+@1,0.03,-224) | light kb3-plantD+ cyan | a touched no (n/a (light)); b sight no (n/a (no solid)); c launch no (n/a); d marker YES (cyan marker 2 of 2 in the room (at most 2); the exit 1.0 m off (6 m); no marks (only the exit counts))
+  PASS added light(kb3-plantDm+@4.75,14.5,-200.57) | light kb3-plantDm+ cyan | a touched no (n/a (light)); b sight no (n/a (no solid)); c launch no (n/a); d marker YES (cyan marker 1 of 2 in the room (at most 2); the exit 23.9 m off (6 m); marks 'box(4,0,-202..5.5,14,-199.15)': box(4,0,-202..5.5,14,-199.15) 0.5 m off, its job a)   (second judge: the marks cases)
+  FAIL added light(kb3-plantDm-@-8.8,1.5,-198.7) | light kb3-plantDm- cyan | a touched no (n/a (light)); b sight no (n/a (no solid)); c launch no (n/a); d marker no (cyan marker 2 of 2 in the room (at most 2); the exit 26.8 m off (6 m); marks 'box(-9.3,0,-199.2..-8.3,1,-198.2)': box(-9.3,0,-199.2..-8.3,1,-198.2) 0.5 m off, its job none (it passes no test a-c))   (second judge: the marks cases)
+  FAIL added light(kb3-plantDp-@4.75,14.5,-200.57) | light kb3-plantDp- cyan | a touched no (n/a (light)); b sight no (n/a (no solid)); c launch no (n/a); d marker no (cyan marker 1 of 2 in the room (at most 2); the exit 23.9 m off (6 m); marks 'P': no piece of the room has that exact key or id)   (third judge: a prefix, a bounding wall)
+  FAIL added light(kb3-plantDw-@9.7,14.5,-209) | light kb3-plantDw- cyan | a touched no (n/a (light)); b sight no (n/a (no solid)); c launch no (n/a); d marker no (cyan marker 2 of 2 in the room (at most 2); the exit 17.9 m off (6 m); marks 'box(9.4,0,-217.5..10,14,-200.5)': box(9.4,0,-217.5..10,14,-200.5) is a bounding wall of the room (never a target))   (third judge: a prefix, a bounding wall)
+  PASS B+ test b reads YES on a clear sight
+  PASS B- test b reads no inside a wall
+  n/a  C+ test c reads YES under a launch kill (nothing to plant in kb3: no launch kill in the table)
+  PASS A- every test no, the piece FAILs
+  PASS D- a corner light with no marks FAILs
+  PASS D+ a light beside the exit PASSes
+  PASS D+m a light marking a working piece beside it PASSes
+  PASS D-m a light marking a piece with no job FAILs
+  PASS D-p a light marking 'P' (a prefix, not an exact key / id) FAILs
+  PASS D-w a light marking a bounding wall of the room FAILs
+n67-deco --selftest: PASS (9 / 9 planted cases, 1 n/a in kb3; test a's planted pair is t1c-deco-plant.sh's, on a skip v2 run)
+# exit 0
+
+## 5. refusals: an unknown level; level 1 without --base
+n67-deco: REFUSED: level span is not in Tools/night/levels67.json
+# exit 2
+usage: [L67=<L>] node Tools/night/n67-deco.cjs [--level <L>] [--base <sha>] <room> [--touches <skip v2 output>]... [--file <room file>]  |  --plant <room> <out.json>  (--base: required for level 1; with a level, default the room file's first commit)
+# exit 2

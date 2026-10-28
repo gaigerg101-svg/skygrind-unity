@@ -1,0 +1,30 @@
+// NIGHT33 shared commit (the lead): adds design.n33 to Design/unity-config.json (every row off), then copy with n24-sync.sh.
+// Run: node Tools/night/n33-config-block.cjs   (refuses to run twice)
+const fs = require("fs");
+const file = "C:/Users/gaige/dev/SKYGRIND-unity/Design/unity-config.json";
+const raw = fs.readFileSync(file, "utf8");
+const d = JSON.parse(raw);
+const eol = raw.includes("\r\n") ? "\r\n" : "\n";
+const tail = eol + "    }" + eol + "  }" + eol + "}";
+if (!raw.endsWith(tail)) throw new Error("unexpected config ending");
+if (d.design.n33) throw new Error("design.n33 already exists");
+d.design.n33 = {
+  _why: "NIGHT33 (GG 2026-10-11, after playing NIGHT32: 'more elements' in every arena, better effects and lighting (lights 'placed and floating'), the arena design is poor, the HUD 'looks so AI generated', the zoom is 'a forced angle', enemies 'run into lava', ULTRAKILL-style trigger spawns, bosses 'still way too tanky', the grapple should pull you to the enemy and stop at it with 'a little damage', a stronger piercing pistol charge, campaign points that buy something; 'I expect major major changes'). Every row is off in the shared commit and turned on only when its contract passes. Off (--off33 / -skygrindOff33, and every older off switch): NIGHT32's game bit for bit. Unity-only numbers each carry a _why (the web never had these systems). Design: Design/levels/DESIGN33.md; defaults: DECIDE33.md; research: Research/2026-10-11-wave33/.",
+  ai33: { _why: "Builder E (DESIGN33 E): enemies never walk into lava on their own: a lava mask in the nav grid (NavField SetBlocked) filled at the run's start, the same mask in LevelValidate24, and an edge guard after the crowd's pushes, a husk's last straight run and the charger's dash (stunned at the edge). Knockback by the player can still throw them in. Builder E adds its numbers with their _why.", enabled: false },
+  spawns33: { _why: "Builder E (DESIGN33 E, D-7): ULTRAKILL-style trigger spawns: a room's `triggers33` (a rect, its wave, its own far-side spawn spots, an early flag) read in StepFight; a 0.6 s red-orange spawn tell before each enemy appears; a lava room's first wave waits for its trigger line. Builder E adds its numbers with their _why.", enabled: false },
+  bosses33: { _why: "Builder E (DESIGN33 E, D-2): bosses 'still way too tanky' at 26-39 s pilot fights: the pilot band is now 15-22 s (harness p50 about 18 s; a person about 40 s), by per-boss hpMult overrides and the Crown pool; the anti-camp stays. Builder E adds its numbers with their _why.", enabled: false },
+  whip33: { _why: "Builder W (DESIGN33 W, D-3): the whip: a tap latches the first enemy on the ray; light enemies come to you, heavier ones pull you and you stop 1.5 m short with a small hit and 2-3 steps of hitstop; rings and boss joints stay pull targets; a whip kill gives no charge back. No Mover.cs edit. Builder W adds its numbers with their _why.", enabled: false },
+  pierce33: { _why: "Builder W (DESIGN33 W, D-4): the charged KESTREL shot pierces everything in a line (the LONGWAVE's pierce) at 8-10x damage, with a beam under a new event name, hitstop and a camera kick; cooldown 4 s. Builder W adds its numbers with their _why.", enabled: false },
+  devices33: { _why: "Builder R (DESIGN33 R): arena devices that move the player or threaten it (updraft fan, hazard vent with a tell, moving platform), each deterministic, each with a tell and a refuge within 6 m, at most 3 device types per room. Builder R adds its numbers with their _why.", enabled: false },
+  shop33: { _why: "Builder P (DESIGN33 P, D-6): campaign points carry across levels and are spent in a SHOP between levels on eight upgrades (two weapon mods, one movement perk, one wildcard per slot); prices 1x / 2x / 4x a level's measured typical earn; the owned upgrades and the banked points are on the run's tape. Builder P adds its numbers with their _why.", enabled: false },
+  hud33: { _why: "View only (U, D-1): the HUD and the front UI rebuilt (U1 spec): no panel fills, one 20-degree slash motif, text with a 2 px shadow, 64 / 24 / 16 px type, bone-white points, one top-centre message slot, the door hint as a world marker. Unity-only view numbers in UnityTuning.Hud33.cs.", enabled: false },
+  look33: { _why: "View only (L): every light has a visible fixture (no floating light), six fixture types, a neutral-tonemapped post profile, local lava light, dust / embers / haze / sparks. Unity-only view numbers in UnityTuning.Look33.cs.", enabled: false },
+  kit33: { _why: "View and flow (K): the arena kit (K1's 39 elements) and the dressing pass on every level; while on, the campaign plays the dressed n33 files (levelSwap, applied after NIGHT32's swaps in Curriculum25.N33Levels). Decor adds no colliders; cover pieces collide (they are in the n33 level files, so they are on the run's tape as the level id).", enabled: false, levelSwap: { "n32-foundry": "n33-foundry", "n32-iceline": "n33-iceline", "n32-kiln": "n33-kiln", "n32-span": "n33-span", "n32-spire": "n33-spire" } },
+  arenas33: { _why: "View and flow (R): the overhauled rooms (at least two per level, levels 1-5) live in K's n33 files; this row gates R's own view pieces and reel. The devices are the sim row devices33.", enabled: false },
+  view33: { _why: "View only (W, D-5): LT zoom changes the WORLD FOV only; the gun lowers 4-6 cm and eases in 120 ms, never slides to the centre or rolls; idle sway, speed-scaled bob, a landing dip, a recoil spring per weapon; the rope's hook head, sag and snap. Unity-only view numbers in UnityTuning.*33.cs.", enabled: false },
+};
+const block = JSON.stringify(d.design.n33, null, 2).split("\n").map((l, i) => (i === 0 ? l : "    " + l)).join(eol);
+const head = raw.slice(0, raw.length - tail.length);
+fs.writeFileSync(file, head + eol + "    }," + eol + "    \"n33\": " + block + eol + "  }" + eol + "}");
+JSON.parse(fs.readFileSync(file, "utf8"));
+console.log("design.n33 added: " + Object.keys(d.design.n33).filter((k) => k !== "_why").join(", "));

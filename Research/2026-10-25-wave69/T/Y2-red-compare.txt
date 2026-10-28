@@ -1,0 +1,26 @@
+# Y2: the kb3 red re-made on the n69 harness (n69-T: Y1 + Y3 + Y2) vs NIGHT68's final red Logs/n68/red-kiln/kb3/ (main tree, read only); 2026-10-25 10:34:03
+# cmds: ROOMS=kb3 bash Tools/night/n69-red.sh 3 n57-kiln Research/2026-10-25-wave69/T/Y2-red-kiln (Y2-red-run.txt), then bash Tools/night/n65-verbs.sh skip Design/levels/n57-kiln.json kb3 --plant-verb65 kb3:launch --seeds 20 (NIGHT68's red skip command) > Research/2026-10-25-wave69/T/Y2-red-kiln/kb3/skip.txt
+## flow-A.txt: diff of the lines apart from '#' headers and wall time
+EQUAL
+## flow-B.txt: diff of the lines apart from '#' headers and wall time
+EQUAL
+## flow-V.txt: diff of the lines apart from '#' headers and wall time
+EQUAL
+## pads.txt: diff of the lines apart from '#' headers and wall time
+1c1
+< hold52: level n57-kiln (C:\Users\gaige\dev\SKYGRIND-unity\Design\levels\n57-kiln.json), room kb3 "3.3 THE PRESS HALL" rect [-10,-225.5,10,-197.5], off switch none
+---
+> hold52: level n57-kiln (C:\Users\gaige\dev\SKYGRIND-unity\.claude\worktrees\agent-af48e888c59fa3626\Design\levels\n57-kiln.json), room kb3 "3.3 THE PRESS HALL" rect [-10,-225.5,10,-197.5], off switch none
+## room-check.txt: diff of the lines apart from '#' headers and wall time
+EQUAL
+## skip.txt: diff of the lines apart from '#' headers and wall time
+107c107
+< n65verb skip: M2 VERB FAIL | room kb3, verb launch, pooled ratio 1.13 vs mainBar 1.25 (default: no --bars), sets 1-10 1.15 (10/10), 11-20 1.03 (10/10), exercised 20 / 20 (need 14), median of all 20 seeds 1.13, refusal fired on 20 of 20 exercised seeds (by construction: an exercised seed refused a press), the refused run used the verb on 0 exercised seed(s), STYLE above DULL 84.3 % vs need 95.0 % (the faster refusal 80.6 %: min(refusal + 15, max(refusal, 95))) | the pooled ratio is under the bar
+---
+> n65verb skip: M2 VERB FAIL | room kb3, verb launch, pooled ratio 1.13 vs mainBar 1.25 (default: no --bars), sets 1-10 1.15 (10/10), 11-20 1.03 (10/10), exercised 20 / 20 (need 14), median of all 20 seeds 1.13, refusal fired on 20 of 20 exercised seeds (by construction: an exercised seed refused a press), the refused run used the verb on 0 exercised seed(s), STYLE above DULL 84.3 % vs need 75.6 % (the faster refusal 80.6 % - 5: STYLE PASS; NIGHT68's min(refusal + 15, max(refusal, 95)) 95.0 %, not the verdict) | the pooled ratio is under the bar
+172d171
+< exit 0
+## the pooled ratios
+NIGHT68 red: M2 VERB FAIL | room kb3, verb launch, pooled ratio 1.13 vs mainBar 1.25 (default: no --bars), sets 1-10 1.15 (10/10), 11-20 1.03 (10/10), exercised 20 / 20
+n69 harness: M2 VERB FAIL | room kb3, verb launch, pooled ratio 1.13 vs mainBar 1.25 (default: no --bars), sets 1-10 1.15 (10/10), 11-20 1.03 (10/10), exercised 20 / 20
+## the bar from it: max(1.25, 1.13 + 0.20) = 1.33 (the slate rule's arithmetic, the same as Logs/n69/red-bars.txt's kb3 line; n69-red-bars.cjs not run on this folder: its --logs needs a red-<L>/<id>/ layout). The flow A / B SUMMARYs (the ceilings' inputs) are EQUAL above. The reds stand.

@@ -1,0 +1,18 @@
+n0b diffs 11:11:29 t0b b80afc2fa; scratchpad leveldiff.cjs (names aside)
+== HEAD shipped n52-foundry (A) vs regenerated shipped (B)
+top: collision
+top: navGrid
+data.boxes: 201 vs 200; only in A 1, only in B 0
+campaign.teach35: only in A 0, only in B 1 {"A":[],"B":["{\"id\":\"l1.wallrun\",\"room\":\"a3\",\"rect\":[-9,-84,-6,-60],\"minY\":0.3}"]}
+campaign.rooms a3: roof
+== the hotfixed raw at HEAD (A) vs the regenerated raw (B)
+top: collision
+top: navGrid
+campaign.rooms a3: roof
+== collision.boxes / navGrid chars: hotfixed raw vs regenerated
+C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/699f7fa0-58df-46a1-afe7-1fa627be0b9e/scratchpad/n52-head-raw.json _why:1133 name:13 generatedBy:83 source:31 floorSize:3 killPlaneY:3 collision:11875 core:152 spawns:1271 pads:538 grappleNodes:2 zoneParts:1216 navGrid:2353484 data:16634 campaign:84695 lava:242
+  collision keys: boxes:arr202 barriers:arr5 wedges:arr10
+  navGrid keys: source:string cell:number size:number origin:number columnCenter:string count:number linkKinds:object linkCounts:object nodes:object links:object tagAt:string corePreset:string
+Design/levels/n52/foundry.json _why:1133 name:13 generatedBy:83 source:31 floorSize:3 killPlaneY:3 collision:11822 core:152 spawns:1271 pads:538 grappleNodes:2 zoneParts:1216 navGrid:2255055 data:16634 campaign:84696 lava:242
+  collision keys: boxes:arr201 barriers:arr5 wedges:arr10
+  navGrid keys: source:string cell:number size:number origin:number columnCenter:string count:number linkKinds:object linkCounts:object nodes:object links:object tagAt:string corePreset:string

@@ -1,0 +1,46 @@
+== Design/levels/n65/rooms/a2.json
+# command: python -I Tools/night/n74-room-rules.py room Design/levels/n65/rooms/a2.json
+# sha: f084bc4ea; time: 2026-10-27 23:17:56
+n65/a2  rect [-7.0, -55.0, 7.0, -35.0]  spawn [0.0, 0.0, -37.0] yaw 0  floor 0.0
+  PLANES  PASS  planes 2 (0.0 m: 229 cells, 2.5 m: 25 cells)
+  COVER   PASS  cover: free-standing high 2, low 0, between 0 (0 without a job), none 0
+  LOOPS   RED  loops 1 (floor holes 1 + closed pad / ride routes 0 of 0)
+  REAR    PASS  rear arc: 0 of 6 wave-1 usable nodes behind the entry facing (all waves: 0 node uses behind)
+  VIEW    PASS  view: enemy in view at 0.00 s (6 of 6 wave-1 nodes seen at entry)
+  CROSS   PASS  cross: chord 24.4 m, dash 1.02 s, walk 3.1 s (bar 2.0 s at dash)
+  EXPOSE  RED  exposure: 62 % of 351 floor-sample pairs see each other (bar 60 %); longest clear line 21.6 m (medium band 19.5 m)
+  CLIMB   RED  climb: 1 tier group(s), 1 not reached by walker links (at 2.5 m near (6, -53))
+    free-standing high piece: deck [1.5, 0.0, -51.0]-[3.5, 2.5, -49.0] h 2.50 job "climb"
+    free-standing high piece: hull [-5.0, 0.0, -46.0]-[-2.5, 2.2, -40.5] h 2.20 job "line"
+    walkers reach every tier: climb: 1 tier group(s), 1 not reached by walker links (at 2.5 m near (6, -53))
+  core 4/5 PASS, extra 1/3 PASS
+== Research/2026-10-27-wave74/R/a2-two-standins.json
+# command: python -I Tools/night/n74-room-rules.py room Research/2026-10-27-wave74/R/a2-two-standins.json
+# sha: f084bc4ea; time: 2026-10-27 23:17:56
+2026-10-27-wave74/a2  rect [-7.0, -55.0, 7.0, -35.0]  spawn [0.0, 0.0, -37.0] yaw 0  floor 0.0
+  PLANES  PASS  planes 2 (0.0 m: 229 cells, 2.5 m: 25 cells)
+  COVER   PASS  cover: free-standing high 2, low 0, between 0 (0 without a job), none 0
+  LOOPS   RED  loops 1 (floor holes 1 + closed pad / ride routes 0 of 0)
+  REAR    PASS  rear arc: 0 of 6 wave-1 usable nodes behind the entry facing (all waves: 0 node uses behind)
+  VIEW    PASS  view: enemy in view at 0.00 s (6 of 6 wave-1 nodes seen at entry)
+  CROSS   PASS  cross: chord 24.4 m, dash 1.02 s, walk 3.1 s (bar 2.0 s at dash)
+  EXPOSE  RED  exposure: 62 % of 351 floor-sample pairs see each other (bar 60 %); longest clear line 21.6 m (medium band 19.5 m)
+  CLIMB   RED  climb: 1 tier group(s), 1 not reached by walker links (at 2.5 m near (6, -53))
+    free-standing high piece: deck [1.5, 0.0, -51.0]-[3.5, 2.5, -49.0] h 2.50 job "climb"
+    free-standing high piece: hull [-5.0, 0.0, -46.0]-[-2.5, 2.2, -40.5] h 2.20 job "line"
+    walkers reach every tier: climb: 1 tier group(s), 1 not reached by walker links (at 2.5 m near (6, -53))
+  core 4/5 PASS, extra 1/3 PASS
+== Design/levels/n65/rooms-n52/a2.json
+# command: python -I Tools/night/n74-room-rules.py room Design/levels/n65/rooms-n52/a2.json
+# sha: f084bc4ea; time: 2026-10-27 23:17:56
+n65/a2  rect [-7.0, -55.0, 7.0, -35.0]  spawn [0.0, 0.0, -37.0] yaw 0  floor 0.0
+  PLANES  PASS  planes 2 (0.0 m: 235 cells, 2.0 m: 30 cells)
+  COVER   RED  cover: free-standing high 0, low 0, between 0 (0 without a job), none 0 [no free-standing cover]
+  LOOPS   RED  loops 0 (floor holes 0 + closed pad / ride routes 0 of 0)
+  REAR    PASS  rear arc: 0 of 2 wave-1 usable nodes behind the entry facing (all waves: 0 node uses behind)
+  VIEW    PASS  view: enemy in view at 0.00 s (2 of 2 wave-1 nodes seen at entry)
+  CROSS   PASS  cross: chord 24.4 m, dash 1.02 s, walk 3.1 s (bar 2.0 s at dash)
+  EXPOSE  RED  exposure: 96 % of 406 floor-sample pairs see each other (bar 60 %); longest clear line 21.6 m (medium band 19.5 m)
+  CLIMB   PASS  climb: 1 tier group(s), 0 not reached by walker links
+    walkers reach every tier: climb: 1 tier group(s), 0 not reached by walker links
+  core 3/5 PASS, extra 2/3 PASS

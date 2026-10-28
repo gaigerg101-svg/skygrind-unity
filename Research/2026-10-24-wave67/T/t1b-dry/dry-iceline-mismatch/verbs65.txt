@@ -1,0 +1,3 @@
+# command: node Tools/night/n67-verbs-of.cjs Logs/n67/dry-iceline-mismatch/slate-at-start.json Logs/n67/dry-iceline-mismatch/n67-iceline.json g8
+# sha: e4fae1a2; time: 2026-10-24 11:26:16
+verb65 g8 pierce (slate ride): MISMATCH (the room file's verb65 differs from the slate's verb)

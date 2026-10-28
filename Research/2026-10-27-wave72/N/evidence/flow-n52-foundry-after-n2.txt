@@ -1,0 +1,25 @@
+n46flow: seeds 1..10, cap 240 s per room, rows forced on: none, off switch: none; pilot: Walk38Pilot + the ported autopilot (normal)
+n46flow n52-foundry (loaded n52-foundry; BaseId n45-foundry): 10/10 walks through a2..a8; level time median 237.5 s; the pilot's lava rule: out of lava 1215 steps, held at an edge 11373 steps, chases round it 22, detours 10; put at the next room (a link not crossed in max(30 s, 3 x par) or a cleared room not left in 15 s) 14; stuck46 burrowers ended 0
+  room       kind | stall%  maxStall  air% | kgap med/max | near med/p10/p90 | dwell  dead | deaths falls | clear (k/n)    | geometry
+  a2         room |   12.4      0.8  73.9 |  2.8 / 9.8   |  8.0 /  3.0 / 14.9  |   1.4   8.2 |      0     0 |   14.7 (10/10) | floor 280 m2, tiers 2, loop n (0 m2), pockets 0, sight 23.1 m, w1 in view 2/2
+  a3         room |   35.3      3.5  52.8 |  2.2 / 16.3  |  4.9 /  1.2 / 11.2  |   3.4  10.0 |     10     0 |   33.6 (10/10) | floor 435 m2, tiers 4, loop n (3.5 m2), pockets 5, sight 28.3 m, w1 in view 0/4
+  a4         room |   34.9      2.9  49.2 |  4.4 / 10.0  |  9.4 /  5.0 / 12.8  |   5.2   4.2 |      1     0 |   14.5 (10/10) | floor 152 m2, tiers 2, loop n (1.5 m2), pockets 0, sight 16.6 m, w1 in view 3/3
+  a5         room |   36.6      2.3  50.5 |  2.3 / 10.1  |  6.8 /  3.1 / 11.3  |   1.1   2.0 |      6     0 |   29.1 (10/10) | floor 576 m2, tiers 4, loop n (27.6 m2), pockets 1, sight 36.4 m, w1 in view 6/6
+  b1         room |   24.5      1.8  54.4 |  2.2 / 14.8  |  7.3 /  2.7 / 12.4  |   3.0   2.0 |      5     0 |   41.8 (10/10) | floor 517 m2, tiers 3, loop y (90.3 m2), pockets 0, sight 35.6 m, w1 in view 1/3
+  a8         room |   33.4      1.3  41.0 |  1.5 / 5.2   |  4.6 /  2.6 / 10.7  |   0.0   0.7 |      0     0 |    5.6 (10/10) | floor 308 m2, tiers 3, loop n (0 m2), pockets 0, sight 13.2 m, w1 in view 3/3
+  LEVEL           |   30.2      3.5  53.9 |  2.3 / 16.3  |  6.7 /  2.3 / 12.1  |  14.1  27.0 |     22     0 |  139.3 sum of medians
+n46flow n52-foundry SUMMARY: GREEN 10/10; stall 30.2 %, longest stall 3.5 s, air 53.9 %, kill gap 2.3 / 16.3 s, nearest 6.7 m, dwell 14.1 s, dead 27.0 s, deaths 22, falls 0, clear 139.3 s
+  style      kind |  DULL  COOL  BOLD  AIRB  SAVA  SKYG (% of fight steps) | top rank med / max (seeds)
+  a2         room |  21.1  46.1  29.8   3.0   0.0   0.0                    | BOLD / AIRBORNE (10)
+  a3         room |  27.9  29.8  28.2  12.6   1.5   0.0                    | AIRBORNE / SAVAGE (10)
+  a4         room |  64.6   9.7  22.4   3.3   0.0   0.0                    | COOL / AIRBORNE (10)
+  a5         room |  73.9  21.7   4.4   0.0   0.0   0.0                    | COOL / BOLD (10)
+  b1         room |  70.2  21.8   5.6   0.0   2.4   0.0                    | BOLD / SAVAGE (10)
+  a8         room |  31.3  30.0  19.8   9.7   9.2   0.0                    | COOL / SAVAGE (10)
+  LEVEL           |  52.9  25.2  16.1   4.4   1.5   0.0                    | top SAVAGE
+n46flow n52-foundry STYLE: DULL 52.9 % of 1319 s of fight; above DULL 47.1 %; rooms reaching SAVAGE 3/6; top rank SAVAGE
+n46flow n52-foundry PAYOFFS: heal36 HP per close kill by rank: DULL 9.45 (33), COOL 8.68 (25), BOLD 8.92 (6), AIRBORNE 10.00 (1), SAVAGE 9.13 (4), SKYGRIND - (0); RIDE KILL refund per ride kill by rank: DULL 0.00 (42), COOL 0.00 (30), BOLD 0.00 (14), AIRBORNE 0.00 (3), SAVAGE 0.00 (1), SKYGRIND - (0)
+n46flow n52-foundry TOKENS: attack starts inside the sim cone (camera.fovDeg 74 / 2) 308/374 = 82.4 % (by kind: spitter 191/241, husk 99/104, swarmer 18/29); tokens56 thinks waited out of view 7527, advances 4
+n46flow n52-foundry RANGED: hit rate by the player's speed at the shot: stand 30/70 = 42.9 %, run 34/141 = 24.1 %, fast 3/18 = 16.7 %, dash 0/0 = - %; dash / stand NaN %, fast+dash / stand 39 %
+n46flow n52-foundry IDLE: idle in place 7.8 % of enemy-alive steps; per enemy (alive >= 2 s, 386): median 5.3 %, p90 16.8 %, over 20 %: 31 (8.0 %); by kind: husk 9.6 %, spitter 5.0 %, swarmer 7.7 %
+n46flow n52-foundry: wall time 107 s

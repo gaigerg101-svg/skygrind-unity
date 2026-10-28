@@ -1,0 +1,9 @@
+# command: bash Tools/night/n65-verbs.sh pierce C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/a2/cand0/n65-foundry.json a2
+# sha: e4ed8b901; time: 2026-10-27 23:01:29
+  put-in loadout (a2, BEFORE entering it: the room's own award, if any, comes on entry): awards of the rooms before it given: none; owned revolver
+  entry loadout (pilot, a2, on entering): owned revolver, in hand revolver, pending none
+n65verb pierce: level n65-foundry (C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/a2/cand0/n65-foundry.json), room a2 "1.2 KESTREL", seed 1; pose (0.0, 0.0, -38.0) yaw -17.8 from line65[0]; off switch none
+  aim line65's first segment: yaw -17.8 deg, pitch 7.4 deg at the release; held 110 steps (0.9 s), charge35Full 1, charged shots 1; bodies in the room before 2 (stand-ins 2)
+n65verb pierce: GREEN | room a2 | the charged shot hit 2 bodies, kills 2, stand-ins killed 2/2 | aim line65's first segment | pose line65[0]
+n65verb: exit 0
+n65-verbs pierce on C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/a2/cand0/n65-foundry.json (a2): GREEN 1, RED 0, UNSURE 0

@@ -1,0 +1,4 @@
+# command: dotnet <the round-4 build>/SimHarness.dll n46flow --level n52-foundry,n52-iceline,n57-kiln,n52-span,n52-spire --seeds 10 --off67 --out <scratch>/flow-z3d.txt, diffed against Research/2026-10-25-wave70/T/flow-base-t0.txt (wall-time and seeds lines aside)
+# sha: 09b9001f (build C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/6cb0a03b-4981-4743-8f49-6cccc18ebf8d/scratchpad/sim-z3d); start 2026-10-25 23:38:35
+n46flow exit 0 at 23:43:03; 5 level summaries
+the five-level walk on the round-4 build: EQUAL to the t0 base

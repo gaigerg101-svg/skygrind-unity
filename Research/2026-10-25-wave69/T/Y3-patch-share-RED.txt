@@ -1,0 +1,7 @@
+# Y3 RED: the command on the t0 code (no tool). 2026-10-25 10:08:02
+# git cat-file -e d9e22d48:Tools/night/n69-patch-share.cjs
+fatal: path 'Tools/night/n69-patch-share.cjs' exists on disk, but not in 'd9e22d48'
+# exit 128
+# cmd (the main tree, t0 + the Y1 pick; read only): node C:/Users/gaige/dev/SKYGRIND-unity/Tools/night/n69-patch-share.cjs --level kiln kb3
+Error: Cannot find module 'C:\Users\gaige\dev\SKYGRIND-unity\Tools\night\n69-patch-share.cjs'
+# exit 1

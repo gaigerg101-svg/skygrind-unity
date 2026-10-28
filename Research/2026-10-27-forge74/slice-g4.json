@@ -1,0 +1,5 @@
+{"state": "todo", "passes": false, "verdict": null, "spot": null, "passSha": null, "passFiles": [], "id": "g4", "track": "rooms", "owner": "S", "est": 100,
+ "title": "S g4 THE ORB YARD given raised play space (keeps its ice glide floor); then LV-iceline67 flips with it",
+ "why": "H train: the n67 g4 is flatter than the shipped n52 g4 (SPOT names the shipped room's raised blocks and second ramp; gg-proxy-start lists g4 as worse); GG 2026-10-09 \"more action packed\".",
+ "row": "design.n67.iceline67", "on": "n67.iceline67", "red": "tour65 planted g4:0/0/-100/0/0.1 on n74-h0 (n67 flat vs n52 raised)", "visible": "two-build planted g4 pair, and the n52 g4 as the bar",
+ "doneWhen": ["as a2's doneWhen, for g4 on n67-iceline", "at the planted pose the blind spotter does not name the shipped n52 g4 as the one with more raised play space"]}

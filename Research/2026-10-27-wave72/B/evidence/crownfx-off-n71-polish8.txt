@@ -1,0 +1,13 @@
+# command: python -I Tools/night/n72-crownfx.py n71-polish8-OFF <the five frames Logs/feel/n71-forge72/bp/boss63/shot-N30-B63-crown37-{idle,flinch,tell,windup,stagger}.png>
+# builder B, worktree n72-B at b80afc2fa (t0b), 2026-10-27 10:49:29 USMST; the frames are the lead's n71-polish8 Player frames (bossfx72 does not exist in that build: the OFF half)
+# bars fixed BEFORE any bossfx72 frame existed: coverage <= 15 % of the 300 px disc, body >= 15000 px, visible in >= 4 of 5, tell and windup frames' danger-hue share <= 20 %
+n71-polish8-OFF	shot-N30-B63-crown37-idle.png	cover  24.2%	danger-hue share   0.0%	cyan body  34871 mass   77743	danger body      0 mass       0	visible NO
+n71-polish8-OFF	shot-N30-B63-crown37-flinch.png	cover  12.3%	danger-hue share   4.5%	cyan body   4454 mass       0	danger body  40231 mass   40306	visible NO
+n71-polish8-OFF	shot-N30-B63-crown37-tell.png	cover  25.5%	danger-hue share  26.8%	cyan body      0 mass       0	danger body 118028 mass  229727	visible NO
+n71-polish8-OFF	shot-N30-B63-crown37-windup.png	cover  13.9%	danger-hue share   5.7%	cyan body   4804 mass       0	danger body  90803 mass    4095	visible NO
+n71-polish8-OFF	shot-N30-B63-crown37-stagger.png	cover  16.8%	danger-hue share   1.4%	cyan body  29532 mass   84673	danger body  23035 mass       0	visible NO
+n71-polish8-OFF	TOTAL	visible 0 of 5	worst coverage 25.5% (bar 15%)	coverage FAIL	body FAIL (bar 4 of 5)	tell frames' danger-hue share max 26.8% (bar 20%) FAIL
+# planted case:
+planted burst: {'cover': np.float64(65.24485729980569), 'cone': np.float64(0.0), 'cyan': (6335, 250360), 'danger': (0, 0), 'visible': False}
+planted ring : {'cover': np.float64(4.605268551845141), 'cone': np.float64(0.0), 'cyan': (18422, 0), 'danger': (0, 0), 'visible': np.True_}
+planted case PASS

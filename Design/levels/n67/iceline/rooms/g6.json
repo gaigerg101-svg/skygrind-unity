@@ -1,0 +1,413 @@
+{
+ "_why": "NIGHT74 S g6 r1 (Research/2026-10-27-wave74/S/card-g6.md): THE WEST SHELF + its stair + THE GUN LIFT, THE EAST RACK, THE PIER, THE CART; the rect, the waves, the lessons, the plinth and the KESTREL are the shipped room's. NIGHT67 T1a (Tools/night/gen-slots.cjs --level iceline --export): n52-iceline's room g6 (2.6 THE ARMOURY) exactly as Design/levels/n52/iceline.plan.json has it: the row (every key), its zone-keyed pieces (boxes, ramps, pads, grapple, pits, tunnels), its room-keyed pieces (lights, props, surfaces). The slot's starting point: rebuild it here (every new piece with a job and a why), give the row bot43: false, verb65 (the slate's verb) and line65 (the verb's line, 3+ waypoints); never an area67 block (refused). A key the row drops needs a reason in drop{}. The room's opening: top-level \"opening\": \"vista\" | \"ambushed\" | \"ambusher\" | \"held\" (and \"opening_why\"); left out, the room keeps n52-iceline's.",
+ "room": "g6",
+ "row": {
+  "id": "g6",
+  "name": "2.6 THE ARMOURY",
+  "kind": "room",
+  "rect": [
+   -7,
+   -180,
+   7,
+   -162
+  ],
+  "height": 6,
+  "roof": true,
+  "par": 8,
+  "job36": "reward",
+  "verb36": "the KESTREL returns: shoot the two husks",
+  "spawn": {
+   "at": [
+    0,
+    0,
+    -163.5
+   ],
+   "yawDeg": 0
+  },
+  "exit": [
+   0,
+   0,
+   -178.5
+  ],
+  "waves": [
+   [
+    "husk",
+    "husk"
+   ],
+   [
+    "husk"
+   ]
+  ],
+  "lessons": [
+   {
+    "promptPad": "KESTREL BACK: {fire} THE FAR ONES",
+    "kind": "husksDead",
+    "n": 2,
+    "prompt": "KESTREL BACK: {fire} THE FAR ONES"
+   },
+   {
+    "promptPad": "{dash} INTO IT. {fire} THE GAUNTLET.",
+    "kind": "husksDead",
+    "n": 3,
+    "prompt": "{dash} INTO IT. {fire} THE GAUNTLET."
+   }
+  ],
+  "lessons31": [
+   {
+    "promptPad": "KESTREL BACK: {fire} THE FAR ONES",
+    "kind": "husksDead",
+    "n": 2,
+    "prompt": "KESTREL BACK: {fire} THE FAR ONES"
+   },
+   {
+    "promptPad": "{dash} INTO IT. {fire} THE GAUNTLET.",
+    "kind": "husksDead",
+    "n": 3,
+    "prompt": "{dash} INTO IT. {fire} THE GAUNTLET."
+   }
+  ],
+  "proofs": [
+   {
+    "kind": "walk",
+    "points": [
+     [
+      0,
+      0,
+      -163.5
+     ],
+     [
+      2,
+      0,
+      -167
+     ],
+     [
+      0,
+      0,
+      -173
+     ],
+     [
+      0,
+      0,
+      -178.5
+     ]
+    ]
+   },
+   {
+    "kind": "walk",
+    "points": [
+     [
+      -5.5,
+      0,
+      -164
+     ],
+     [
+      -5.5,
+      2,
+      -168.5
+     ],
+     [
+      -5.5,
+      2,
+      -173
+     ]
+    ]
+   }
+  ],
+  "frames36": {
+   "mid": [
+    4,
+    0,
+    -164,
+    18.435,
+    -0.047
+   ],
+   "exit": [
+    0,
+    0,
+    -172,
+    0,
+    -0.075
+   ]
+  },
+  "nodes": [
+   [
+    -3,
+    0,
+    -176.5
+   ],
+   [
+    3,
+    0,
+    -176.5
+   ]
+  ],
+  "afterLesson43": [
+   -1,
+   0
+  ],
+  "afterLesson43_why": "rooms43 (E1): wave 1 (the FUSION husk) waits for lesson 0 (the two KESTREL kills), so the gauntlet lesson comes after the gun's, never on top of it",
+  "waveNodes43": [
+   null,
+   [
+    [
+     4.5,
+     0,
+     -177.5
+    ]
+   ]
+  ],
+  "waveNodes43_why": "rooms43 (E1 round 2): wave 1's own spot, the far end of the dash lane (x 4.5, 15.5 m in; the lane from the door line 2 m in is 13.5 m long and empty: the plinth stands on the axis): the husk walks down the lane at you, a dash (6 m at 24 m/s) plus a swing closes it",
+  "iceline43_why": "NIGHT43 E1 (G19): the gun-again room teaches the dash into a gauntlet hit (W1's FUSION) on one husk that comes in down a straight lane after the KESTREL's two; lesson 1 counts 3 kills from the stage's start (husksDead counts from the stage's start: the KESTREL's 2 + this one)",
+  "bot43": false,
+  "verb65": "launch",
+  "line65": [
+   [
+    0,
+    0,
+    -164.5
+   ],
+   [
+    0,
+    0,
+    -170
+   ],
+   [
+    0.5,
+    0,
+    -175
+   ],
+   [
+    3,
+    0,
+    -176.5
+   ]
+  ],
+  "line65_why": "NIGHT74 S g6 r1 (Research/2026-10-27-wave74/S/card-g6.md): the launch line: the dash lane from the door past the plinth to the far husks, the throw at the east rack",
+  "card65": "Research/2026-10-27-wave74/S/card-g6.md"
+ },
+ "boxes": [
+  {
+   "zone": "g6",
+   "kind": "deck",
+   "min": [
+    -7,
+    0,
+    -177
+   ],
+   "max": [
+    -4,
+    2,
+    -168
+   ],
+   "job": "line: THE WEST SHELF (2 m: the armoury's raised shelf over the dash lane: shoot down the far husks, throw a husk at its face)",
+   "why": "NIGHT74 S g6 r1 (Research/2026-10-27-wave74/S/card-g6.md): the room was one bare floor: a 3 x 9 m shelf along the west wall, 2 m high and rimmed, the second floor plane; the ramp and the gun lift both end on it.",
+   "note": "THE WEST SHELF (2 m, 3 x 9 m, west wall)"
+  },
+  {
+   "zone": "g6",
+   "kind": "hull",
+   "min": [
+    4.3,
+    0,
+    -176
+   ],
+   "max": [
+    5.5,
+    2.5,
+    -169
+   ],
+   "job": "line: THE EAST RACK (a free-standing 2.5 m gun rack: the burst wall beside the dash lane and the cover from the far husks' line)",
+   "why": "NIGHT74 S g6 r1 (Research/2026-10-27-wave74/S/card-g6.md): NIGHT71 R's east rack idea, free-standing (1.2 x 7 m): a husk thrown at it bursts on its face; a circuit round it.",
+   "note": "THE EAST RACK (2.5 m, 1.2 x 7 m, free-standing)"
+  },
+  {
+   "zone": "g6",
+   "kind": "hull",
+   "min": [
+    -3.6,
+    0,
+    -170
+   ],
+   "max": [
+    -2,
+    2.2,
+    -168.4
+   ],
+   "job": "cover: THE PIER (a 2.2 m pillar west of the plinth: high cover on the way to the far husks)",
+   "why": "NIGHT74 S g6 r1 (Research/2026-10-27-wave74/S/card-g6.md): a 1.6 x 1.6 x 2.2 m pillar (high cover, 1.75 m or more) 1.4 m west of the plinth's line, 8.4 m inside the door (not R5's 4-8 m foothold band); clear of the entry's sight lines to both wave-1 nodes.",
+   "note": "THE PIER (2.2 m, 1.6 x 1.6 m)"
+  },
+  {
+   "zone": "g6",
+   "kind": "hull",
+   "min": [
+    2,
+    0,
+    -171.5
+   ],
+   "max": [
+    3.6,
+    1.2,
+    -170
+   ],
+   "job": "cover: THE CART (1.2 m low cover east of the dash lane: hop it or shelter behind it from the far husks)",
+   "why": "NIGHT74 S g6 r1 (Research/2026-10-27-wave74/S/card-g6.md): a 1.6 x 1.5 x 1.2 m low piece (1.0-1.25 m) 2 m east of the axis, clear of the walk line.",
+   "note": "THE CART (1.2 m, 1.6 x 1.5 m)"
+  }
+ ],
+ "ramps": [
+  {
+   "zone": "g6",
+   "from": [
+    -5.5,
+    -164
+   ],
+   "to": [
+    -5.5,
+    -168
+   ],
+   "width": 2.5,
+   "rise": 2,
+   "job": "climb: THE SHELF STAIR (the walkers' and the player's way onto the west shelf: 2 m over 4 m, beside the door)",
+   "why": "NIGHT74 S g6 r1 (Research/2026-10-27-wave74/S/card-g6.md): a route enemies can climb to every floor (GG, NIGHT20): on the shelf's south end, in the door's view on the left.",
+   "note": "THE SHELF STAIR"
+  }
+ ],
+ "pads": [
+  {
+   "zone": "g6",
+   "at": [
+    -2.5,
+    0,
+    -173.5
+   ],
+   "target": [
+    -5.5,
+    2,
+    -172.5
+   ],
+   "apexAbove": 1.5,
+   "job": "line: THE GUN LIFT (a jump pad from the floor onto the west shelf: the launch room's way up)",
+   "why": "NIGHT74 S g6 r1 (Research/2026-10-27-wave74/S/card-g6.md): the shelf's second way up (the stair is the walkers'): a pad 2.5 m west of the dash lane, its flight clear of the pier.",
+   "note": "THE GUN LIFT"
+  }
+ ],
+ "grapple": [],
+ "pits": [],
+ "tunnels": [],
+ "lights": [
+  {
+   "id": "g6-L1",
+   "room": "g6",
+   "kind": "ceiling",
+   "at": [
+    0,
+    5.95,
+    -167
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    3,
+    3,
+    0.1
+   ],
+   "color": "cyan",
+   "range": 7,
+   "intensity": 1.2
+  },
+  {
+   "id": "g6-L2",
+   "room": "g6",
+   "kind": "ceiling",
+   "at": [
+    0,
+    5.95,
+    -176
+   ],
+   "normal": [
+    0,
+    -1,
+    0
+   ],
+   "size": [
+    6,
+    2,
+    0.1
+   ],
+   "color": "white",
+   "range": 8,
+   "intensity": 1
+  },
+  {
+   "id": "g6-L3",
+   "room": "g6",
+   "kind": "pool",
+   "at": [
+    0,
+    0.025,
+    -178.5
+   ],
+   "normal": [
+    0,
+    1,
+    0
+   ],
+   "size": [
+    2,
+    2,
+    0.05
+   ],
+   "color": "cyan",
+   "range": 6,
+   "intensity": 1.4
+  }
+ ],
+ "props": [
+  {
+   "id": "g6-P1",
+   "room": "g6",
+   "kind": "plinth",
+   "at": [
+    0,
+    0.3,
+    -167
+   ],
+   "size": [
+    1.2,
+    0.6,
+    1.2
+   ],
+   "yawDeg": 0,
+   "collider": true,
+   "job": "reward",
+   "why": "the KESTREL's plinth, 3.5 m from the door on the axis: the gun is the first thing in the room (design.n40.iceline40.awards gives it on entry)"
+  },
+  {
+   "id": "g6-P2",
+   "room": "g6",
+   "kind": "weaponPickup",
+   "at": [
+    0,
+    1,
+    -167
+   ],
+   "size": [
+    0.6,
+    0.6,
+    0.6
+   ],
+   "yawDeg": 0,
+   "collider": false,
+   "pickup": true,
+   "job": "reward",
+   "why": "the KESTREL on its plinth, in view from the door (the row's award gives it on entry anyway)",
+   "weapon": "revolver"
+  }
+ ],
+ "surfaces": [],
+ "drop": {}
+}

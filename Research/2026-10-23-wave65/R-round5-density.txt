@@ -1,0 +1,75 @@
+# NIGHT65 builder R density pass (DECIDE65 D-9, for Builds/n65-play-latest, unreviewed; branch n65-R5 from af10b9cb; room files 8610275c + fbfc7b33)
+# Every command below ran in this tree on the level assembled by `node Tools/night/gen-n65-foundry.cjs --slots=latest --run`
+# (levelgen --walk 0 ERROR, "errors: 0 (46 checks)"), with Temp/SimHarness/bin/Release/net10.0/SimHarness.dll; ~4:20-4:40 on the night clock.
+# The outputs: <id>/round5/ (a5/round5/levelgen-report.md is the assembled level's levelgen report).
+
+## The pieces added (job each; role colour per CLAUDE.md rule 8). The verb's own pieces are not moved.
+a5 THE CRUCIBLE (the spotter's "nothing above 2.5 m"):
+- THE OVERHEAD CRANE: two solid columns, THE CRANE'S EAST COLUMN hull [9.4, 2.5, -140]..[10, 10, -139] (gantry deck to roof; a post on the
+  gantry the spitters' perch has round it) and THE CRANE'S WEST COLUMN hull [-10, 0, -137.5]..[-9.4, 10, -136.5] (floor to roof by THE WEST RIM;
+  the rim keeps 2.4 m), and its bridge, prop a5-P6 truss at [-0.2, 9.6, -137] size [18.4, 0.8, 1.2] over the pour. Job: the room's landmark
+  above 2.5 m, read from the door; metal structure colour.
+- THE LADLE HOOK: prop a5-P7 chain at [-2.5, 7.9, -137.5] (4 m) and a5-P8 lamp at [-2.5, 5.6, -137.5] (warm white). Job: the light fixture
+  over the pour; it says where the iron goes.
+- THE WEST RIM's edge: prop a5-P9 hazardStripe at [-7.2, 0.02, -137.75] size [0.3, 0.03, 6.5]. Job: danger edge of the pour on the rim's walk;
+  red-orange.
+- the exit's wall lamp: prop a5-P10 lamp at [-2.9, 3.8, -143.9] (warm white). Job: the lit exit.
+- THE COOLING PIPES: prop a5-P11 wallPipe at [-9.9, 3, -120] size [0.2, 1.2, 12]. Job: the west wall's dressing from the door to the crucible
+  (the empty south half); metal.
+- THE MOULD CRATES: hull [-6, 0, -123.5]..[-4.3, 1.2, -121.8] (low cover 1.2 m). Job: floor cover from the gantry's spitter on the south
+  floor, west of THE SLIDE LANE; it faces the floor, not the slider. First placed at [-8.5..-6.5, z -121..-119.5]: it blocked walk proof 1, moved.
+a2 THE KESTREL:
+- the exit's wall lamp: prop a2-P6 lamp at [-2.9, 3.8, -54.9] (warm white). Job: the lit exit.
+- THE PRESS LAMP: prop a2-P7 chain at [-3.75, 5.9, -42.5] and a2-P8 lamp at [-3.75, 4.65, -42.5] (warm white). Job: the light over THE PRESS
+  and the mark, the firing step.
+- THE FEED PIPES: prop a2-P9 wallPipe at [6.9, 4.2, -50] size [0.2, 1.2, 9]. Job: the east wall over THE BREECH, where the stand-ins wait; metal.
+- THE ENTRY PILASTER: prop a2-P10 pilaster at [-6.9, 3.5, -38] size [0.2, 7, 0.8]. Job: frames the teach strip's west side at the door.
+a3 THE RIDE:
+- the exit's wall lamp: prop a3-P10 lamp at [-2.9, 3.8, -84.9] (warm white). Job: the lit exit.
+- THE MOULD PILASTERS: props a3-P11 at [-9.9, 5, -64] and a3-P12 at [-9.9, 5, -82] (size [0.2, 10, 0.8]). Job: ribs on the west wall, the
+  swarm floor's side; stone.
+- THE CRANE'S WEST RAIL: prop a3-P13 truss at [-5, 9.4, -72] size [0.6, 0.6, 20]. Job: the roof's line over the swarm floor; metal.
+- THE SPRUE BLOCKS hull [-8, 0, -78]..[-6.5, 1.2, -76.5] was added in 8610275c and taken out in fbfc7b33: with it, a3's DULL went to
+  68.3 / 70.2 (set B over the red's 69.6, which breaks D-5's MAIN "DULL under the red"); without it, 63.4 / 61.9.
+
+## bash Tools/night/n65-red.sh 4 n65-foundry tmpR/q6 (copied to <id>/round5/), the table (node Tools/night/n65-table.cjs tmpR/q6)
+| a2 | PASS (FAIL R5 foothold) | 66.5 / 70.0 (73.9 / 78.8) | 30.2 / 22.9 (12.4 / 11.9) | 48.7 / 50.3 (21.1 / 23.6) | BOLD / SAVAGE (10) (BOLD / AIRBORNE (10)) | 0 / 0 (0 / 0) | 18.7 / 25.1 (14.7 / 13.0) | 1 / 1 (none) |  |
+| a3 | PASS (PASS) | 54.2 / 53.0 (50.3 / 50.6) | 38.0 / 29.1 (39.3 / 38.6) | 63.4 / 61.9 (56.8 / 69.6) | COOL / BOLD (10) (BOLD / AIRBORNE (10)) | 0 / 0 (6 / 2) | 23.4 / 32.4 (36.3 / 26.6) | 1 / 1 (2 / 2) | GREEN (GREEN) |
+| a5 | PASS (FAIL R5 foothold) | 56.9 / 53.0 (51.7 / 49.2) | 31.0 / 26.9 (44.4 / 43.5) | 50.5 / 60.1 (70.4 / 69.4) | BOLD / AIRBORNE (10) (COOL / AIRBORNE (10)) | 0 / 2 (0 / 2) | 31.8 / 30.9 (22.8 / 28.9) | 1 / 1 (3 / 3) |  |
+(columns: room check (red) | air % A / B | stall % A / B | DULL % A / B | top rank | deaths | clear s | pads | ride)
+- a2 and a3: every number equals round 4's (R-round4-fix.txt). a2's changes are props only; a3's solid was taken out.
+- a5 against round 4 (59.1 / 49.8 DULL, 0 / 0 deaths, 30.6 / 24.2 stall, 50.8 / 52.3 air): DULL 50.5 / 60.1 (A down 8.6, B up 10.3),
+  deaths 0 / 2 (the red's 0 / 2), stall 31.0 / 26.9, air 56.9 / 53.0 (both now over the red's 51.7 / 49.2). n46flow GREEN 10 / 10 on both sets.
+
+## room checks against round 4 (diff of room-check.txt)
+- a2, a3: identical but for the sha and time lines.
+- a5: R8 "0 untagged of 12 solids" (was 9); I1 no mirror 26 % (was 22 %; < 60 % PASS; 12 solids, 111 m2). Every item still PASS.
+  The rise is the new solids' mirrors across x = 0: THE MOULD CRATES (x -6..-4.3) mirror onto INGOT S (x 3..6), the west column onto the rail's end.
+
+## pads (hold52 --pads)
+pad52 a2 pad 4 at [-3.75,2.2,-45] target [6.3,2.5,-51.2] launched yes apex 4.5 landed [6.36,2.5,-51.24] miss 0.07 m PASS
+pad52 a3 pad 0 at [9,2.5,-84] target [-0.5,0,-61.5] launched yes apex 7 landed [-0.55,0,-61.38] miss 0.13 m PASS
+pad52 a5 pad 1 at [-6,0,-131.5] target [5.5,2.5,-141.5] launched yes apex 4.5 landed [5.52,2.5,-141.52] miss 0.03 m PASS
+
+## the verb pilots (tmpR/q6v, copied to <id>/round5/)
+n65verb skip --verbs65 --level Design/levels/n65-foundry.json --room a2 --seeds 5:
+n65verb skip: RED | room a2, verb65 pierce, refuse pierce | seeds exercising the refusal 5/5 (need 3; presses refused 4393, the verb used 26 time(s) when allowed) | on those: verb-aware: cleared 5/5, median 19.7 s, deaths 0, STYLE above DULL 67.3 %, trigger held 6252 steps | refused: cleared 5/5, median 18.9 s, deaths 0, STYLE above DULL 31.3 % | the room clears as well without the verb: it can be skipped (by this pilot)
+n65verb skip --verbs65 ... --room a3 --seeds 5:
+n65verb skip: RED | room a3, verb65 ride, refuse ride | seeds exercising the refusal 5/5 (need 3; presses refused 3621, the verb used 36 time(s) when allowed) | on those: verb-aware: cleared 5/5, median 33.7 s, deaths 0, STYLE above DULL 35.7 %, trigger held 2921 steps | refused: cleared 5/5, median 24.2 s, deaths 0, STYLE above DULL 16.6 % | the room clears as well without the verb: it can be skipped (by this pilot)
+n65verb skip --verbs65 ... --room a5 --seeds 5:
+n65verb skip: GREEN | room a5, verb65 launch+slide, refuse launch | seeds exercising the refusal 3/5 (need 3; presses refused 201, the verb used 4 time(s) when allowed) | on those: verb-aware: cleared 3/3, median 20.5 s, deaths 0, STYLE above DULL 73.1 %, trigger held 957 steps | refused: cleared 3/3, median 31.8 s, deaths 0, STYLE above DULL 59.1 % | the verb is hard to skip for this pilot (slower by >= 25 %)
+n65verb pierce --level Design/levels/n65-foundry.json --room a2:
+n65verb pierce: GREEN | room a2 | the charged shot hit 3 bodies, kills 3, stand-ins killed 3/3 | aim line65's first segment | pose line65[0]
+n65verb launch --level Design/levels/n65-foundry.json --room a5 --slide:
+n65verb launch: GREEN | room a5 | launch36 1, flight end wall thrown 3.3 m (max 3.2 m), bursts 1 (hits 2, kills 2) | landed (0.0, 1.5, -123.9), in a pit no, in lava no, target dead (launch36) | pose line65[0]
+n53ridekill ride --level Design/levels/n65-foundry.json --room a3:
+n53ridekill ride: GREEN | level n65-foundry, room a3, rideKill53 on True | ride yes (WallRideStart 1), kill on the wall yes, rideKill53 events 1, bar after 0.650 vs the foot kill's 0.150 (+0.500, one boost = 0.500) | foot kill yes, paid no
+
+## read honestly
+- The guards the lead named hold: room checks all PASS (no item flips; a5's I1 number is 4 points more mirrored), clears 10 / 10 on both
+  sets, deaths and stall within the red's band, the verb pilots GREEN as before (a2 / a3 skip were RED before this pass and still are).
+- a5's DULL set B is 60.1 %, 0.1 over the card's own aim of 60 (9.3 under the red). The two sets moved in opposite directions by 8-10 points
+  on a change of cover only; read it as the walk bot's seed noise, not as an effect of the dressing. Not checked: which new solid moved it.
+- a5's skip: 3 of 5 seeds exercise the refusal (the minimum); round 4's line is in the older format (no exercise count), so not comparable.
+- Not checked: how any of it reads on screen (no Player, no frame tonight); the props' yaw signs; whether the crane reads as a crane from the
+  door. The props are decor with no collider: no sim system reads them.

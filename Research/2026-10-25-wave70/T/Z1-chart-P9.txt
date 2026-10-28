@@ -1,0 +1,8 @@
+# command: planted (Research/2026-10-25-wave70/T/z1-make-planted.cjs), room P9
+## seed 1
+n65verb launch: GREEN | room P9 | launch36 1, flight end timeout thrown 12.8 m (max 12.8 m), bursts 0 (hits 0, kills 0) | launched body husk #1 (the target: yes), landed (0.0, -2.1, 0.0), in a pit YES, in lava no, target dead (planted) | pose line65[0] (planted)
+## seed 2
+n65verb launch: GREEN | room P9 | launch36 1, flight end timeout thrown 12.8 m (max 12.8 m), bursts 0 (hits 0, kills 0) | launched body husk #1 (the target: yes), landed (0.0, -2.1, 0.0), in a pit YES, in lava no, target dead (planted) | pose line65[0] (planted)
+## seed 3
+n65verb launch: GREEN | room P9 | launch36 1, flight end timeout thrown 12.8 m (max 12.8 m), bursts 0 (hits 0, kills 0) | launched body husk #1 (the target: yes), landed (0.0, -2.1, 0.0), in a pit YES, in lava no, target dead (planted) | pose line65[0] (planted)
+n70-throws: 3 probes | GREEN 3 | thrown median 12.8 m (min 12.8, max 12.8) | ends timeout 3 | in a pit 3, in lava 0, bursts killing >= 2: 0 | M3 candidates (D-3) 3 / 3

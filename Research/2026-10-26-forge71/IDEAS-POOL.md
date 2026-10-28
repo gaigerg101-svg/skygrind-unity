@@ -1,0 +1,30 @@
+# FORGE71 idea pool (S2: written before scoring; the lenses in ~/.claude/skills/wave-forge/lenses.md)
+
+Compact cards: id, pitch, lens, owner hook (OWNER.md / THREADS), build, proof, cost, risk. Scored in DECISIONS.md D-3
+(owner fit x3, player impact x3, fits the game x2, feasible x2, provable x1, novelty x1; /60).
+
+| id | pitch (as a player would say it) | lens | owner hook | build | proof | cost | risk | score |
+|---|---|---|---|---|---|---|---|---|
+| C-01 | "I can finally play the rebuilt rooms" (every rebuilt room ON in a play build, labelled) | 8 debt | "every single level needs a complete arena overhaul" (10-09); none of n65-n70's rooms played | n65-play-build.sh, rows ON in the build config, best candidates from n70-R / n70-S | the build boots each level (reel), PLAY71.md | 0:45 | a candidate fails a guard (boot, walk) | 55 |
+| C-02 | "small rooms that each want ONE move" (action blocks) | 2 genre | "a lot smaller and more action packed like ... Ultra Kilikow" (10-09); "incentivize mechanics" (10-12) | per slot: one verb, research patterns A-E | guards + GG's play | 0:40 each | levelgen limits (2 kinds/wave, spawn31) | 52 |
+| C-03 | "the hazard is where I'd throw them anyway" (pattern A on launch rooms) | 2 | "random lava pits ... that serve no purpose" (10-12) | kb3 / v2 pit on the approach lane | throw chart ends (info), GG's play | in C-02 | queue on the throw line (w69) | 44 |
+| C-04 | "a shortcut only the grapple / ride opens" (pattern E) | 3 | "incentivize mechanics" | a verb-only route per room | route reel or walk with the verb | in C-02 | ride pilot limits (T-66) | 40 |
+| C-05 | "the boss tells me one thing at a time" | 7 constraint | T-155; "way too much instruction" (10-14) | one arbiter over centre / bar / world labels; orders name the held weapon | max simultaneous instruction texts per frame on boss reels: 2+ -> 1 | 1:00 | text paths spread over 3 systems | 49 |
+| C-06 | "bosses never wear my colour" | 1 fantasy | "effect colores everything doenst feel alligned" (10-22); rule 8 | boss materials / VFX off the player's cyan, no magenta outside RIVAL | cyan / magenta px on boss frames (gg-proxy rc2: 5 shots, 13 / 20) -> 0 | 1:00 | a colour meter's fringe (L-147) | 47 |
+| C-07 | "the wyrm actually moves like a beast" | 1 | "boss animations are too rigid" (10-22); T-154 | bossMotion63 follow-up: body sway / coil on the wyrm (render-only) | pixel motion per second on the wyrm reel vs off | 1:20 | render-only must not touch the sim | 41 |
+| C-08 | "the camera doesn't hitch" (frame pacing) | 6 tech | "less choppy" (10-20); T-152 | profile the spike (-skygrindProfile), fix the top main-thread source; a VSYNC-on bench switch | bench p99 / max ms, before / after, same build settings | 1:30 | the spike may be the engine's | 45 |
+| C-09 | "my press is never eaten by a freeze" (input buffer through hitstop) | 2 | T-78 the slow verbs | a buffered press through the freeze, behind a row (sim: golden with the row off) | steps from press to act inside a freeze: 10-36 -> <= 2 | 1:20 | Skygrind.Core; replays with the row OFF must stay exact | 43 |
+| C-10 | "the gun swap is instant" | 2 | T-78 (gun-up 15 steps) | shorter gun-up behind a row | steps 15 -> 6-8 on a reel | 0:40 | is it the web's number (config)? | 38 |
+| C-11 | "kills crunch" (bigger, rarer kicks) | 1 | T-77; GG's NIGHT16 "kills not crunchy" | feel46 kicks re-tuned bigger and rarer, ON in play only | blind pair a spotter can name | 1:00 | blind pairs said "same" before | 37 |
+| C-12 | "the guns kick like they mean it" (guns48 re-framed) | 1 | T-86 | retake the frames with guns48 ON, ship in play | spotter names it | 0:40 | the row may be stale | 34 |
+| C-13 | "the kill doesn't white out the screen" | 8 | T-105 | the f3-f4 source: the HDR streak or the body's first frames | wash box f0-f8 <= +0.25 | 1:00 | two prior nights missed | 33 |
+| C-14 | "fewer dead switches" (old OFF rows gone) | 7 | GG 2026-10-26 "Dead code + old OFF rows" | the auditor's DELETE rows, one per commit | gates GREEN per commit; lines removed | 1:30 | over-deletion (R2) | 46 |
+| C-15 | "the code is smaller" (proven-dead batches 37-51) | 7 | FORGE61 "kill dead code" (10-22) | Part A batches | compile 0 errors, gates | in C-14 | public read-outs named in reels | 35 |
+| C-16 | "old night scripts gone" (Tools/night n41-n63 not referenced) | 7 | "things we might have moved past" | list only (scripts are history; a gate may call them) | a reference grep | 0:20 | breaking a gate | 22 |
+| C-17 | "I see the A/B I never answered" (eye63 X / Y) in the play card | 8 | T-152 (b), DECIDE64 | link Builds/n64-abx / aby in PLAY71.md | GG's answer | 0:05 | none | 30 |
+| C-18 | "the bot is my co-pilot, not my judge" (each room's card prints walk deaths, stall, verb uses) | 3 | GG "Bots guard, I judge" | the card template + numbers already printed | the card exists per room | 0:10 each | none | 36 |
+| C-19 | "level 3 is good now" (kiln's rooms all rebuilt as blocks) | 1 | level 3 "just isn't good" (10-13) | C-02 on kiln's 5 slots | GG's play | 3:00 | too many rooms for one builder | 42 |
+| C-20 | "the ride is slow-motion cool again" | 1 | slow-mo "needs to be extremely slow" (10-13), shipped slow39 | check slow39 in a reel; no change unless broken | a reel line | 0:20 | probably fine | 20 |
+| C-21 | "a room select so I can jump to any rebuilt room" | 5 show a friend | GG's play time is short (<= 1.5 h testing, MEMORY) | level select reaches each level; a per-room start is moonshot | PLAY71.md steps work in the build | 0:30 / 2:00 | a per-room start touches run flow | 39 |
+| C-22 | moonshot: "the arena reshapes mid-fight" (a wall drops, a pit opens at wave 3) | 3 | "incentivize mechanics" | a level event per wave, behind a row | GG's play | 2:00 | levelgen + sim timing (whole steps) | 31 |
+| C-23 | "the instrument agrees with me" (calibrate the bot to GG's ranking once he plays) | 8 | R3 rec 6 | after GG's play: rank vs M2 | Spearman over the rooms he rates | next night | needs GG's play first | 28 |

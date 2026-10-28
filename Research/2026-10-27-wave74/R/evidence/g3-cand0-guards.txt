@@ -1,0 +1,46 @@
+levelgen --walk: 0 ERROR (none; 5 s)
+shipped after:  Design/levels/n67-iceline.json 71310b9b469fc009be5ae13092d74950fe18472242c8279b80c076a88a376467, Assets/StreamingAssets/Design/levels/n67-iceline.json 71310b9b469fc009be5ae13092d74950fe18472242c8279b80c07
+the round's level: C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/ice/g3/cand0/n67-iceline.json 860f85390fba6594792747f99f5db46e7a0b92414754610b
+== g3 cand0 (g3)
+  PASS R2 no dead ends      0 dead-end cells of 193 (2 m x 0.5 m cells; 0 bridges)
+  FAIL R5 foothold          no box above the eye (1.6 m) reaching 4-8 m inside the entry
+  PASS R8 every job         0 untagged of 8 solids
+  n/c  IN VIEW ambushed     not measured: no foothold (R5 FAIL) | without the foothold clauses: FAIL, 3 of 3 nodes in use fail: [-4.5,0,-75.5] 16.1 m from the door, a line into the entry corridor; [-6
+  PASS I1 no mirror         mirror overlap 31 % across the door axis x = 0 (d2; 8 solids, 156 m2 footprint; < 60 % PASS)
+  PASS I2 ride shortcut     ride 15 m at x 11.4..12 z -79..-64: best side -1 dir -1: walk 34.6 m / ride 15.0 m = 2.31; ride 16 m at x -12..-11.4 z -82..-66: best side +1 dir +1: walk 18.7 m / ride 16.
+  n/c  I3 teach verb needed not a grapple-pull teach room (ride lessons: I2; whip, pad and slide lessons: not computed)
+  PASS I4 pads clear        2 pads, 4 walk lines; all clear (nearest line distances 6.0, 2.8 m)
+ROOM g3: FAIL R5 foothold
+-- flow-A
+n46flow n67-iceline SUMMARY: GREEN 10/10; stall 67.2 %, longest stall 3.2 s, air 2.4 %, kill gap 1.3 / 3.4 s, nearest 0.8 m, dwell 0.3 s, dead 4.2 s, deaths 0, falls 0, clear 17.6 s
+n46flow n67-iceline STYLE: DULL 91.1 % of 178 s of fight; above DULL 8.9 %; rooms reaching SAVAGE 0/1; top rank COOL
+-- flow-B
+n46flow n67-iceline SUMMARY: GREEN 10/10; stall 67.9 %, longest stall 3.2 s, air 1.8 %, kill gap 1.3 / 2.9 s, nearest 0.8 m, dwell 0.3 s, dead 4.2 s, deaths 0, falls 0, clear 17.4 s
+n46flow n67-iceline STYLE: DULL 90.9 % of 176 s of fight; above DULL 9.1 %; rooms reaching SAVAGE 0/1; top rank COOL
+-- flow-V
+n46flow n67-iceline SUMMARY: GREEN 10/10; stall 67.2 %, longest stall 3.2 s, air 2.4 %, kill gap 1.3 / 3.4 s, nearest 0.8 m, dwell 0.3 s, dead 4.2 s, deaths 0, falls 0, clear 17.6 s
+n46flow n67-iceline STYLE: DULL 91.1 % of 178 s of fight; above DULL 8.9 %; rooms reaching SAVAGE 0/1; top rank COOL
+  g3     verb65 ride         | trigger held 0 of 21366 fight steps (0.0 %), episodes 0, performed: wall rides 0 (the face: g3 W x 11.4 (-79..-64); off-line ride starts cut 0 wall contacts)
+n65-air n67-iceline g3 "2.3 THE TIPPLE RIDES" (C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/ice/g3/cand0/iceline.plan.json):
+n65-air g3: air pieces 8 (rides 2, decks 2, ledges 2, pads 2), hand-offs 28, longest floor-free chain 8, dead ends 0/6 | without the dash-jump: hand-offs 17, chain 7, dead ends 0/6 | flights handed on: 4 of 4 on one path (3 without the dash-jump)
+pad52 g3 pad 9 at [-9,0,-87] target [8.5,4,-82.5] launched yes apex 6 landed [8.59,4,-82.48] miss 0.09 m PASS
+pad52 g3 pad 10 at [10,4,-85] target [-9,4,-64.5] launched yes apex 6 landed [-9.04,4,-64.46] miss 0.06 m PASS
+n53ridekill ride: GREEN | level n67-iceline, room g3, rideKill53 on True | ride yes (WallRideStart 1), kill on the wall yes, rideKill53 events 1, bar after 0.650 vs the foot kill's 0.150 (+0.500, one boost = 0.500) | foot kill yes, paid no
+Research/2026-10-27-wave74/R/evidence/g3/cand0/g3/ride-pilot.txt:n65verb ride: level n67-iceline (C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/ice/g3/cand0/n67-iceline.json), room g3 "2.3 THE TIPPLE RIDES", seed 1; pose (1
+Research/2026-10-27-wave74/R/evidence/g3/cand0/g3/ride-pilot.txt:n65verb ride --shoot: RED | room g3 | ride yes (2.4 s on the wall, 17.4 m along it, WallRideStart 1) | look off the wall at most 179.8 deg | shots from the wall 0 (off it 0) | kills from the wall 0 (other kills 0) | pose line65[0] | no
+n65verb skip: M1 UNSURE | room g3, ratio - vs bar 1.25 (default: no --bars), exercised 0/20 | too few seeds exercised (0 < 14): the comparison does not test the verb
+n65verb skip: M2 VERB UNSURE | room g3, verb ride, pooled ratio - vs mainBar 1.25 (default: no --bars), sets 1-10 - (0/10), 11-20 - (0/10), exercised 0 / 20 (need 14), median of all 20 seeds 1.00, refusal fired on 0 of 0 exercised seeds (by construction: an exercised seed refused a press), the refused run used the verb on 0 exer
+n70-area: room g3; plan C:/Users/gaige/AppData/Local/Temp/claude/C--Users-gaige-dev-SKYGRIND-unity/07ef7707-bc3a-4541-8901-f98169a14875/scratchpad/ice/g3/cand0/iceline.plan.json, level C:/Users/gaige/
+OPEN  PASS largest open square 11.0 m (x -6.0..5.0, z -73.0..-62.0; 10 pieces on a 24.0 x 28.0 m rect; 12 m or less passes)
+P1    N/A  the last wave (swarmer swarmer swarmer swarmer swarmer swarmer swarmer swarmer) has no ranged enemy (spitter / drone)
+P4    FAIL 1 / 4 standing solids >= 1.75 m do a job ((a) touched 1, (b) sight 0, (c) launch kill 0); no job: box(5,0,-86..12,4,-79) line: THE TIPPLE HEAD (the hig; box(-12,0,-66..-6,4,-62) line: THE W
+P5    PASS walk line in a ranged spawn's sight at 6-24 m 0.0 % (>= 50 %), line65 0.0 % (<= walk - 30 points: no); line65's nearest enemy spawn 3.8 m (<= 6: yes); 0 ranged spawns
+P9    FAIL 0 / 1 planes with 2 climb tops >= 8 m apart: box(5,0,-86..12,4,-79) 7.0 x 7.0 m at 4.0 m: 7 climb top(s), farthest apart 2.0 m (NO)
+P11   N/A  the card names no TOWER / GALLERY / SPLIT LEVEL (no card)
+P17   PASS 2 / 2 ride walls 4 m tall and 8 m long; 0 non-ride wall(s) in that band; the strip = ride: true (ride36 faces 2)
+n70-area: FAIL g3 (3/5)
+n70-deco: FAIL | room g3, base 16116dead: 13 piece(s) added or moved, 1 pass, 12 FAIL; dressing 6 not judged
+  rebuilt room pieces: boxes 6, ramps 2, pads 2, pits 0 | the rule: PASS at <= 25 % of the shipped room's pieces kept (geometry-equal; job / why text ignored)
+n70-patch-share: PASS g3 (0 % kept)
+  core 5/5 PASS, extra 3/3 PASS
+finished

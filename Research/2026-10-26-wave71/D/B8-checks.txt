@@ -1,0 +1,13 @@
+cmd: bash Tools/night/dn-check-wt.sh <scratch>/dn
+base sha: 7c9546104 + the uncommitted batch 8 diff
+ Assets/Scripts/Game/UiHotbar.cs            | 30 ------------------------------
+ Assets/Scripts/Game/UnityTuning.FeelHud.cs | 15 ---------------
+ Assets/Tests/EditMode/Game/FeelHudTests.cs | 21 ++-------------------
+ 3 files changed, 2 insertions(+), 64 deletions(-)
+start: 11:54:03
+== Skygrind.Game.csproj: 0 error(s)
+== Skygrind.Game.Tests.csproj: 0 error(s)
+== Skygrind.Core.Tests.csproj: 0 error(s)
+== Assembly-CSharp-Editor.csproj: 0 error(s)
+dn-check total errors: 0
+end: 11:55:19

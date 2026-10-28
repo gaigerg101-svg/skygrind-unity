@@ -1,0 +1,12 @@
+# g4 THE ORB YARD r6 (level 2, iceline; NIGHT74 S, the lead's slice: raised play space; built on NIGHT71 R's g4 r3, doors, spawn, exit, waves, lesson kept)
+- **Why:** the spotter named the shipped THE REACH as "raised blocks with cyan edges and a second ramp on the left" against our flat floor; gg-proxy: "a flat floor with one ramp" (Logs/n74/verdict-LV-iceline67.md). GG 2026-10-09: "more action packed".
+- **The one verb: parry** ("{fire} AS THE YELLOW ORB ARRIVES"; the glove cannot reach a drone, its parried orb can). Pattern D: the returned orb kills the drone over the far side.
+- **A entry:** the door floor with the two 1.2 m blocks kept (THE WEST SLUICE HEAD, THE EAST RUN-UP BLOCK onto the lock wall); the stage's edge, the ledge ramp and the gallery stair fill the view from the door (spawn 0, 0, -96, facing -z).
+- **B the verb's line:** THE ICE STAGE = the pond raised 0.9 m into a rimmed deck (10.5 x 6 m) with the ice on top (surfaces band 0.4 .. 1.4): skate it under the orbs between THE STAGE STEP (south ramp) and THE STAGE DROP (north ramp); the two ice posts break the orb lines.
+- **C the fight:** wave 1 one drone, wave 2 two, over the far floor and the gallery (nodes kept); an enemy is in view from the door.
+- **D the reward:** the health on the stage's centre (y 1.8); the returned orb kills the drone.
+- **E the shortcuts only the verb opens:** THE LOCK WALL ride (east, 18 m) onto THE GALLERY (4 m), the three hoists (canal, return, ledge).
+- **New:** THE ICE STAGE (deck), THE STAGE STEP and THE STAGE DROP (0.9 m ramps), THE LEDGE RAMP (2.5 m over 4.5 m, the second ramp, on the left from the door). **Floor planes:** 0 / 2.5 / 4 (the stage merges into the floor plane at 0.9).
+- **Kept (PRINCIPLES rule 1):** the ice glide (VERBS row 16), the lock wall ride, the gallery and its winch house, the west ledge, its ice hopper and far stair, both ice posts, the three pads, the walkers' climb onto both decks, the waves and the lesson.
+- **Guards:** the room's chain below (Research/2026-10-27-wave74/S/g4/), the meter table (Tools/night/n74-room-rules.py room Design/levels/n67/iceline/rooms/g4.json). A guard is never the verdict: the lead's two-build tour65 pair on g4:0/0/-100/0/0.1 and the blind spotter are.
+- **Files:** Design/levels/n67/iceline/rooms/g4.json, Research/2026-10-27-wave74/S/g4/{make-g4-r6.cjs,red-base,r6}. The full iceline slot list: `g4`.

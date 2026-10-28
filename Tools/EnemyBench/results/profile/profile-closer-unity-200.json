@@ -1,0 +1,65 @@
+[
+ {
+  "tag": "profile",
+  "variant": "closer-unity",
+  "n": 200,
+  "aliveAtEnd": 200,
+  "within3mAtEnd": 144,
+  "fps": 376.0266087241473,
+  "measuredSeconds": 30.0005365,
+  "frameMs": {
+   "count": 11281,
+   "mean": 2.6593141119955073,
+   "p50": 2.4672052823007107,
+   "p99": 6.732901092618704,
+   "worst1pctMean": 8.362080217792396,
+   "max": 29.25340086221695
+  },
+  "frameWindowMeansMs": [
+   2.4331131383806124,
+   2.946349735483999,
+   2.5795431630942893,
+   2.6818120714650258,
+   2.7612596905501254,
+   2.6101547273607832
+  ],
+  "stepsPerSecond": 119.99785403837696,
+  "stepMs": {
+   "count": 3600,
+   "mean": 0.9161586111111115,
+   "p50": 0.8426,
+   "p99": 1.5573,
+   "worst1pctMean": 1.6782111111111113,
+   "max": 2.0552
+  },
+  "losRaysPerSecond": 799.9856935891796,
+  "flowRebuilds": 1,
+  "profile": true,
+  "phaseMsPerStep": {
+   "gridAndFlow": 0.008122805555555555,
+   "lineOfSight": 0.024511777777777778,
+   "steerAndSeparation": 0.41639275,
+   "moveAndPushOut": 0.46661230555555555
+  },
+  "neighbourChecksPerStep": 10433.252777777778,
+  "warmSeconds": 10,
+  "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+  "graphicsApi": "Direct3D12",
+  "gpuMemoryMB": 7891,
+  "cpu": "AMD Ryzen AI 9 HX 370 w/ Radeon 890M ",
+  "logicalCores": 24,
+  "ramMB": 64633,
+  "os": "Windows 11  (10.0.26200)",
+  "unity": "6000.3.7f1",
+  "editor": false,
+  "backend": "Mono",
+  "developmentBuild": false,
+  "screen": "1920x1080",
+  "fullScreenMode": "Windowed",
+  "vSyncCount": 0,
+  "targetFrameRate": -1,
+  "quality": "PC",
+  "utc": "2026-10-01T03:07:12.9687279Z",
+  "powerPlans": "Silent x17"
+ }
+]
