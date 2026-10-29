@@ -688,6 +688,11 @@ namespace Skygrind.Game
             leftDirty = false;
             float y = -margin;
             y = Brief55LeftTop(y); // NIGHT55 K brief55 (UiBrief55.cs): under the room counter's plate while it shows (y itself with the row off)
+            if (controlsRt != null && controlsRt.gameObject.activeSelf) // PG3: the controls card (UiControlsCard.cs), first in the column
+            {
+                controlsRt.anchoredPosition = new Vector2(margin, y);
+                y -= controlsH + UnityTuning.LeftColumnGap;
+            }
             if (lessonRt.gameObject.activeSelf)
             {
                 lessonRt.anchoredPosition = new Vector2(margin, y);

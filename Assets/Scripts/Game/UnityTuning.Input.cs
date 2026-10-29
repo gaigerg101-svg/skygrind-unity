@@ -32,6 +32,9 @@ namespace Skygrind.Game
             ("sprint", "SPRINT"), ("punch", "MELEE"), ("nextWeapon", "NEXT GUN"), ("altFire", "ZOOM"),
         };
         public const double PadHintSeconds = 8.0;
+        // PG3 (GG 2026-10-28: "show controls at the start and display them longer ... and also remind you at times"): the controls card (UiControlsCard.cs) shows
+        // ControlsCardSeconds at a run's start, then a two-line reminder for ControlsRemindSeconds every ControlsRemindEvery seconds of play.
+        public const double ControlsCardSeconds = 14.0, ControlsRemindSeconds = 7.0, ControlsRemindEvery = 150.0;
 
         // NIGHT20 row 6: CONTROLS' GAMEPAD page. Its hint line before NIGHT20 (words), and with the drawn glyphs: "<A> SELECT,
         // THEN PRESS A PAD BUTTON · <B> BACK" (the glyphs placed by ControlsPad20.HintLine).

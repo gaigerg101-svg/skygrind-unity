@@ -143,6 +143,7 @@ namespace Skygrind.Game
             BuildPrompts();
             BuildFirstFifteen(); // NIGHT20 E1
             BuildPadHint(); // NIGHT20: the first-pad hint card
+            BuildControlsCard(); // PG3: the controls card at a run's start and its reminders (UiControlsCard.cs)
         }
 
         // --- NIGHT17 U3-30.8: the verb prompts (glyph + verb, "[SHIFT] BOOST") ------------------------------------------------
@@ -716,6 +717,7 @@ namespace Skygrind.Game
             RenderPrompts(frameDt); // NIGHT17 U3-30.8: the verb prompts
             RenderFirstFifteen(frameDt); // NIGHT20 E1: the moments of need
             RenderPadHint(frameDt); // NIGHT20: the first-pad hint card
+            RenderControlsCard(frameDt); // PG3: the controls card (UiControlsCard.cs)
             // The hint: shown for ui.hintTime, then the next; the panel fades in and out over CardFade.
             float fade = (float)(frameDt / UnityTuning.CardFade);
             if (hintOn)
