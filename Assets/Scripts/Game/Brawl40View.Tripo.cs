@@ -25,6 +25,14 @@ namespace Skygrind.Game
                 {
                     tripoSolidRoots ??= new[] { bodyRoot, armR, armL, fistR, fistL };
                     for (int i = 0; i < tripoSolidRoots.Length; i++) tripoSlot.HideSolids(tripoSolidRoots[i]);
+                    // PG3 (GG 2026-10-28: "updated animations"): the model cut into body / legs / arms (TripoLimbs) and each piece handed to the brute's own bone, after the pill parts
+                    // are hidden, so the walk cycle, the lean and the haymaker / slam / block poses move the model as they moved the pills
+                    TripoLimbs limbs = TripoLimbs.Make("icebreaker", tripoSlot.Model.transform);
+                    if (limbs != null)
+                    {
+                        tripoSlot.Rebind(); // first, while the parts are still under the model: the flash keeps them after they move to the bones
+                        limbs.Ride(lean != null ? lean : torso, legL, legR, armL, armR);
+                    }
                 }
             }
             tripoSlot.Show(cfg, true); // nearFade63 (NearHide63, just before) flips forceRenderingOff on these parts too: set them off again every frame

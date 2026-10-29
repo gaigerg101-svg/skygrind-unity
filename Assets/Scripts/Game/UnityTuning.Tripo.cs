@@ -16,6 +16,8 @@ namespace Skygrind.Game
         // --- orientation: yaw about each model's own up axis (deg), applied before it is fitted; 0 = the model's front already faces +Z (the way a body, a boss or a gun faces) ---
         // the KESTREL and THUNDERCLAP files point their muzzle down -Z (pg3-tripo kill12 frame: the KESTREL's muzzle ring faced the camera)
         // the gauntlet's and the torch's reference images were framed the same way (front to the left); the parts are round, so their yaw does not show
+        // the three text-made guns (STITCHER, COMET, LONGWAVE) also come muzzle-back (pg3-tripo8 swapall: each muzzle faced the camera)
+        public const float TripoYawStitcher = 180f, TripoYawComet = 180f, TripoYawLongwave = 180f;
         public const float TripoYawGauntlet = 180f, TripoYawTorch = 180f, TripoYawKestrelCylinder = 0f, TripoYawThunderclapPump = 0f;
         public const float TripoYawKestrel = 180f, TripoYawThunderclap = 180f, TripoYawHusk = 0f, TripoYawSwarmer = 0f, TripoYawSpitter = 0f, TripoYawCharger = 0f,
             TripoYawWarden = 0f, TripoYawDrone = 0f, TripoYawWick = 0f, TripoYawIcebreaker = 0f, TripoYawCrown = 0f, TripoYawLoom = 0f;
@@ -29,6 +31,9 @@ namespace Skygrind.Game
                 case "thunderclap": return TripoYawThunderclap;
                 case "gauntlet": return TripoYawGauntlet;
                 case "torch": return TripoYawTorch;
+                case "stitcher": return TripoYawStitcher;
+                case "comet": return TripoYawComet;
+                case "longwave": return TripoYawLongwave;
                 case "kestrel-cylinder": return TripoYawKestrelCylinder;
                 case "thunderclap-pump": return TripoYawThunderclapPump;
                 case "husk": return TripoYawHusk;
@@ -91,6 +96,25 @@ namespace Skygrind.Game
         public const float TripoWindupBackDeg = 16f, TripoWindupRate = 3f, TripoStrikeDeg = 26f, TripoStrikeReach = 0.14f, TripoStrikeDecay = 5f;
         /// <summary>The drone's hover: bob (share of its size) and rate (Hz), and its bank into its motion (deg at full speed).</summary>
         public const float TripoHoverShare = 0.06f, TripoHoverHz = 0.7f, TripoDroneBankDeg = 14f;
+        // --- the limbs (TripoLimbs.cs: cut out of the static meshes by position; shares of the model's height unless named otherwise) ---
+        /// <summary>The hip (legs below it): husk / warden, spitter (long legs); a quadruped's belly: charger, swarmer.</summary>
+        public const float TripoHip = 0.44f, TripoHipSpitter = 0.5f, TripoBellyCharger = 0.34f, TripoBellySwarmer = 0.42f;
+        /// <summary>The arms' band top and their shoulder pivot height.</summary>
+        public const float TripoShoulderTop = 0.86f, TripoShoulderPivot = 0.8f;
+        /// <summary>An arm is outside this share of the torso band's half-width (husk; the spitter's arms hang closer).</summary>
+        public const float TripoArmOut = 0.62f, TripoArmOutSpitter = 0.42f, TripoArmOutBrute = 0.58f;
+        /// <summary>THE ICEBREAKER's arms reach down to this share of its height (its fists hang near the ground; below it the feet stay legs).</summary>
+        public const float TripoBruteArmFloor = 0.08f;
+        /// <summary>A quadruped's front share of its length kept with the body (the head, the horns, the lenses).</summary>
+        public const float TripoQuadHeadShare = 0.24f;
+        /// <summary>The walk's leg swing and arm counter-swing at full walk (deg); the wind-up's arm raise and the release's throw (deg).</summary>
+        public const float TripoLegSwingDeg = 24f, TripoArmSwingDeg = 18f, TripoArmRaiseDeg = 105f, TripoArmThrowDeg = 40f;
+        /// <summary>The leg pivot's lift into the body above the cut (share of height): the seam opens less at the hip.</summary>
+        public const float TripoHipPivotLift = 0.04f;
+        /// <summary>The polish (GG 2026-10-28: "animations need to be cleaner"): how fast the walk's weight follows the speed (per s); the strike's snap-out rate (x the settle time);
+        /// the shoulders' twist against the stride (deg); the idle breath (Hz, body pitch deg, arm sway deg) while standing.</summary>
+        public const float TripoWalkBlendRate = 6f, TripoStrikeSnap = 12f, TripoTwistDeg = 5f, TripoBreathHz = 0.35f, TripoBreathDeg = 1.6f, TripoArmIdleDeg = 3f;
+
         /// <summary>A measured speed above this (m/s) is a teleport (a spawn, a pool reuse): no walk that frame.</summary>
         public const float TripoTeleportSpeed = 40f;
 

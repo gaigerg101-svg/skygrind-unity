@@ -28,6 +28,8 @@ namespace Skygrind.Game
                 float size = drone ? 2f * (float)cfg.Num("drone.radius") : height;
                 if (tripo.Attach(root, drone ? TripoModels.Fit.Widest : TripoModels.Fit.Height, size, Quaternion.Euler(0, UnityTuning.TripoYawDeg(kind), 0), false, drone, -1, true) != null)
                 {
+                    tripoLimbs = TripoLimbs.Make(kind, tripo.Model.transform); // PG3: legs and arms cut out to swing (TripoLimbs.cs); null for the drone
+                    if (tripoLimbs != null) tripo.Rebind();
                     int keep = UnityTuning.TripoKeepPills(kind);
                     for (int i = 0; i < anchors.Length; i++)
                     {
@@ -46,9 +48,10 @@ namespace Skygrind.Game
 
         /// <summary>PG3 (GG 2026-10-28): set by the view before Apply: this body is winding up an attack (a husk / swarmer / spitter's windupSteps, a spitter's tell). The other kinds leave it false.</summary>
         public bool tripoAttack;
+        TripoLimbs tripoLimbs;
         Vector3 tripoLast;
         bool tripoHasLast, tripoWasAttack;
-        float tripoSpeed, tripoPhase, tripoWind, tripoStrike, tripoClock;
+        float tripoSpeed, tripoWalk, tripoPhase, tripoWind, tripoStrike, tripoClock;
 
         /// <summary>The model's walk and attack, on its holder (the fit and the root's own move, turn, squash and flinch are untouched): a step bob, a waddle and a forward lean that grow
         /// with the root's measured ground speed; the wind-up rears back, the release lunges forward and settles; the drone hovers and banks. UnityTuning.Tripo* has the sizes.</summary>
@@ -63,14 +66,19 @@ namespace Skygrind.Game
             tripoLast = p;
             tripoHasLast = true;
             tripoSpeed = Mathf.Lerp(tripoSpeed, sp, 1f - Mathf.Exp(-dt * 10f));
-            float walk = Mathf.Clamp01(tripoSpeed / UnityTuning.TripoWalkFullSpeed);
+            // the walk's weight eases in and out on its own (a start or a stop blends over ~0.3 s, never a snap)
+            tripoWalk = Mathf.Lerp(tripoWalk, Mathf.Clamp01(tripoSpeed / UnityTuning.TripoWalkFullSpeed), 1f - Mathf.Exp(-dt * UnityTuning.TripoWalkBlendRate));
+            float walk = tripoWalk;
             tripoPhase += dt * tripoSpeed / UnityTuning.TripoStrideM * Mathf.PI;
             tripoClock += dt;
             if (tripoWasAttack && !tripoAttack) tripoStrike = 1f; // the release
             tripoWasAttack = tripoAttack;
             tripoWind = Mathf.MoveTowards(tripoWind, tripoAttack ? 1f : 0f, dt * (tripoAttack ? UnityTuning.TripoWindupRate : 4f * UnityTuning.TripoWindupRate));
             tripoStrike = Mathf.Max(0f, tripoStrike - dt * UnityTuning.TripoStrikeDecay);
-            float strike = tripoStrike * tripoStrike;
+            float wind = tripoWind * tripoWind * (3f - 2f * tripoWind); // smoothstep: the wind-up eases in and holds
+            float since = 1f - tripoStrike; // 0 at the release .. 1 settled
+            float strike = tripoStrike > 0f ? Mathf.Min(1f, since * UnityTuning.TripoStrikeSnap) * (1f - since) * (1f - since) : 0f; // a snap out, then an ease back
+            float breath = Mathf.Sin(tripoClock * UnityTuning.TripoBreathHz * 2f * Mathf.PI) * (1f - walk); // the idle sway, standing only
             Transform h = tripo.Model.transform;
             if (kind == "drone")
             {
@@ -79,11 +87,14 @@ namespace Skygrind.Game
                 h.localRotation = Quaternion.Euler(UnityTuning.TripoDroneBankDeg * walk, 0f, Mathf.Sin(tripoClock * 1.3f) * 3f);
                 return;
             }
-            float bob = Mathf.Abs(Mathf.Sin(tripoPhase)) * UnityTuning.TripoBobShare * height * walk;
-            float roll = Mathf.Sin(tripoPhase) * UnityTuning.TripoWaddleDeg * walk;
-            float pitch = UnityTuning.TripoLeanDeg * walk - UnityTuning.TripoWindupBackDeg * tripoWind + UnityTuning.TripoStrikeDeg * strike;
+            float s = Mathf.Sin(tripoPhase);
+            float bob = s * s * UnityTuning.TripoBobShare * height * walk; // sin^2: a smooth rise and fall each step (|sin| had a hard corner at the foot fall)
+            float roll = s * UnityTuning.TripoWaddleDeg * walk;
+            float twist = s * UnityTuning.TripoTwistDeg * walk; // the shoulders turn against the stride
+            float pitch = UnityTuning.TripoLeanDeg * walk - UnityTuning.TripoWindupBackDeg * wind + UnityTuning.TripoStrikeDeg * strike + UnityTuning.TripoBreathDeg * breath;
             h.localPosition = new Vector3(0f, bob, UnityTuning.TripoStrikeReach * height * strike);
-            h.localRotation = Quaternion.Euler(pitch, 0f, roll);
+            h.localRotation = Quaternion.Euler(pitch, twist, roll);
+            tripoLimbs?.Pose(tripoPhase, walk, wind, strike, breath);
         }
     }
 

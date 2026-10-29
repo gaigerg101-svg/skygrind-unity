@@ -12,7 +12,7 @@ namespace Skygrind.Game
 {
     public sealed partial class Viewmodel
     {
-        TripoSlot kestrelTripo, thunderTripo, gauntletTripo, torchTripo, cylinderTripo, pumpTripo;
+        TripoSlot kestrelTripo, thunderTripo, gauntletTripo, torchTripo, cylinderTripo, pumpTripo, stitcherTripo, cometTripo, longwaveTripo;
 
         /// <summary>The frame's Tripo models for the guns that have one (see the file's header), and the moving parts' own models.</summary>
         void TripoFrame()
@@ -27,12 +27,45 @@ namespace Skygrind.Game
             TripoGun(thunderTripo, "shotgun");
             TripoGun(gauntletTripo, "gauntlet");
             TripoGun(torchTripo, "torch");
+            stitcherTripo ??= new TripoSlot("stitcher");
+            cometTripo ??= new TripoSlot("comet");
+            longwaveTripo ??= new TripoSlot("longwave");
+            TripoGun(stitcherTripo, "nailgun"); // the rigs' names are the weapon ids (STITCHER nailgun, COMET rocket, LONGWAVE rail)
+            TripoGun(cometTripo, "rocket");
+            TripoGun(longwaveTripo, "rail");
+            TripoArm();
             // the cylinder file's axis is already its z (its diameter is its longest side, so it is not re-laid); the pump's axis is its long side
             if (rigs.TryGetValue("revolver", out Rig kestrel)) TripoPart(kestrelTripo, cylinderTripo, kestrel.cylinder, false);
             if (rigs.TryGetValue("shotgun", out Rig thunder)) TripoPart(thunderTripo, pumpTripo, thunder.part, true);
         }
 
-        TripoSlot TripoSlotOf(string rigName) => rigName == "revolver" ? kestrelTripo : rigName == "shotgun" ? thunderTripo : rigName == "gauntlet" ? gauntletTripo : rigName == "torch" ? torchTripo : null;
+        TripoSlot armTripo;
+
+        /// <summary>PG3: the quick punch's fist (the left arm, ArmBuild's "arm" mesh) wears the gauntlet model too: fitted to the arm's length along z and its middle, the blocky arm hidden while
+        /// it shows; the knuckles' parry flash plate stays.</summary>
+        void TripoArm()
+        {
+            if (armRoot == null) return;
+            armTripo ??= new TripoSlot("gauntlet");
+            if (armTripo.Missing) return;
+            if (armTripo.NeedsAttach(cfg))
+            {
+                Transform arm = armRoot.Find("arm");
+                MeshFilter mf = arm != null ? arm.GetComponent<MeshFilter>() : null;
+                if (mf == null || mf.sharedMesh == null) return;
+                Bounds bb = mf.sharedMesh.bounds;
+                GameObject m = armTripo.Attach(armRoot, TripoModels.Fit.Length, bb.size.z, Quaternion.Euler(0, UnityTuning.TripoYawDeg("gauntlet"), 0), true, true, Layer, false);
+                if (m != null)
+                {
+                    m.transform.localPosition = arm.localPosition + bb.center;
+                    armTripo.Hide(arm.GetComponent<Renderer>());
+                }
+            }
+            armTripo.Show(cfg);
+        }
+
+        TripoSlot TripoSlotOf(string rigName) => rigName == "revolver" ? kestrelTripo : rigName == "shotgun" ? thunderTripo : rigName == "gauntlet" ? gauntletTripo : rigName == "torch" ? torchTripo
+            : rigName == "nailgun" ? stitcherTripo : rigName == "rocket" ? cometTripo : rigName == "rail" ? longwaveTripo : null;
 
         /// <summary>PG3 (GG 2026-10-28: "gun model charge needs to actually match gun"): from Glow50Frame each frame. While a gun's model shows, gunglow50's steps (cubes laid on the pill barrel)
         /// stop drawing for it and the model's own accents fill instead: TripoGlowRest + TripoGlowPerStep per lit quarter of the gun in hand, TripoGlowFlash at the full-charge flash.</summary>
@@ -48,7 +81,7 @@ namespace Skygrind.Game
                     if (r != null && r.forceRenderingOff != model) r.forceRenderingOff = model;
                 }
             }
-            foreach (string rigName in new[] { "revolver", "shotgun", "gauntlet", "torch" })
+            foreach (string rigName in new[] { "revolver", "shotgun", "gauntlet", "torch", "nailgun", "rocket", "rail" })
             {
                 TripoSlot s = TripoSlotOf(rigName);
                 if (s == null || !s.Shown) continue;
@@ -87,6 +120,9 @@ namespace Skygrind.Game
                 {
                     m.transform.localPosition = new Vector3(0, bb.center.y, fwd ? bb.max.z - len * 0.5f : bb.min.z + len * 0.5f); // the muzzle end on the kit's, the middle at the kit's height
                     slot.HideSolids(rig.t, null, rig.gem);
+                    // the STITCHER's drum and the COMET's / LONGWAVE's ring are see-through glow parts on the pill gun's shape: they would float over the model
+                    foreach (Transform glow in new[] { rig.drum, rig.ring })
+                        if (glow != null) foreach (Renderer r in glow.GetComponentsInChildren<Renderer>(true)) slot.Hide(r);
                 }
             }
             slot.Show(cfg);

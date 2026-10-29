@@ -7,6 +7,8 @@ import colorsys, glob, os
 from PIL import Image, ImageEnhance
 
 SAT, CON, BRI = 1.7, 1.15, 1.08
+# cyan glows only on the player's things (CLAUDE.md rule 8: cyan is player-usable; rule W: cyan on a boss means "shoot here"): an enemy's or a boss's teal / ice never glows
+PLAYER = {'kestrel', 'kestrel-cylinder', 'thunderclap', 'thunderclap-pump', 'gauntlet', 'torch', 'stitcher', 'comet', 'longwave'}
 root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
 out = os.path.join(root, 'Assets', 'Resources', 'Tripo', 'Textures')
 for src in sorted(glob.glob(os.path.join(root, 'Inbox', 'tripo', '*', '*.fbm', '*_basecolor.JPEG'))):
@@ -23,7 +25,7 @@ for src in sorted(glob.glob(os.path.join(root, 'Inbox', 'tripo', '*', '*.fbm', '
             r, gg, b = sp[x, y]
             h, s, v = colorsys.rgb_to_hsv(r / 255, gg / 255, b / 255)
             hue = h * 360
-            cyan = 165 <= hue <= 205 and s > 0.45 and v > 0.55
+            cyan = mid in PLAYER and 165 <= hue <= 205 and s > 0.45 and v > 0.55
             amber = (15 <= hue <= 50) and s > 0.6 and v > 0.75
             if cyan or amber:
                 ep[x, y] = (r, gg, b)

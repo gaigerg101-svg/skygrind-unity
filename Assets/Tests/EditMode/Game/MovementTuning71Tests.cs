@@ -40,8 +40,8 @@ namespace Skygrind.Game.Tests
             GameConfig c = Cfg();
             double h = R.Apply(c, new string[0]);
             Assert.That(R.UltraOn, Is.True);
-            Assert.That(h, Is.EqualTo(5.07).Within(1e-9));
-            Assert.That(c.movement.jump.apexTime, Is.EqualTo(0.702).Within(1e-9));
+            Assert.That(h, Is.EqualTo(4.0).Within(1e-9)); // GG 2026-10-28: the jump lower (was 5.07)
+            Assert.That(c.movement.jump.apexTime, Is.EqualTo(0.6235).Within(1e-9));
             Assert.That(c.movement.jump.fallGravityMult, Is.EqualTo(1.0).Within(1e-9));
             Assert.That(c.movement.dash.speed, Is.EqualTo(25.46).Within(1e-9));
             Assert.That(c.movement.dash.duration, Is.EqualTo(0.2).Within(1e-9));

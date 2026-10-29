@@ -118,12 +118,13 @@ Aim assist defaults: mouse off, pad "assist" (`design.aimAssist`); change it und
 
 ## 4. Download and run
 
-- Download: the GitHub Release `pg3-final2` (https://github.com/gaigerg101-svg/skygrind-unity/releases/tag/pg3-final2), or itch.io.
+- Download: the latest GitHub Release (https://github.com/gaigerg101-svg/skygrind-unity/releases/latest), or itch.io (https://gaiger101.itch.io/skygrind).
 - Platform: Windows x64 only. The Player is built for `StandaloneWindows64`; no other platform was built or tested (not checked).
 - Run: unzip the folder and start `SKYGRIND.exe`. The folder holds `SKYGRIND.exe`, `SKYGRIND_Data`, `UnityPlayer.dll`, `D3D12`,
   `MonoBleedingEdge`, `DirectML.dll` and `UnityCrashHandler64.exe` (as in `Builds/n74-play`, 394 MB unpacked).
-- The Release build is `Builds/pg3-final2` (commit 642fa681a, 2026-10-28), with the PG3 sound and music. Checked with the sound
-  muted: the built-in smoke test passed, the movement check passed on all four levels, the kiln boss check passed.
+- The latest Release build is `Builds/pg3-t11` (commit 1d3ba26e7, 2026-10-28): the PG3 sound and music (41 tracks), the Tripo models for every
+  gun, enemy and four bosses, the lower jump. Checked with the sound muted: the built-in smoke test passed, the movement check passed on all
+  four levels, the WICK, ICEBREAKER, CROWN and LOOM boss checks passed. The earlier `pg3-final2` Release (sound, no models) stays up.
 - Speed reference, old: at tag `u2a-demo` (2026-10-02) the Player's frame time was median 3.35 ms and worst 1 % 8.37 ms on GG's
   laptop. It has not been re-measured for PG3 (not checked).
 - Optional start-up flags (CLAUDE.md, HANDOFF.md): `-skygrindSmoke -logFile <file>` runs the built-in smoke test and quits;

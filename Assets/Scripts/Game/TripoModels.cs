@@ -360,15 +360,26 @@ namespace Skygrind.Game
                 return null;
             }
             Model.SetActive(false);
-            rends = Model.GetComponentsInChildren<Renderer>(true);
+            Rebind();
+            TripoModels.Made(id);
+            return Model;
+        }
+
+        /// <summary>Collect the model's drawing renderers again (after TripoLimbs cut it into parts: the flash and the glow then reach the parts).</summary>
+        public void Rebind()
+        {
+            if (Model == null) return;
+            var all = new List<Renderer>();
+            foreach (Renderer x in Model.GetComponentsInChildren<Renderer>(true)) if (x.enabled) all.Add(x);
+            rends = all.ToArray();
+            lastFlash = -1f;
+            lastGlow = -1f;
             baseColors = new Color[rends.Length];
             for (int i = 0; i < rends.Length; i++)
             {
                 Material m = rends[i].sharedMaterial;
                 baseColors[i] = m == null ? Color.white : m.HasProperty(BaseColorId) ? m.GetColor(BaseColorId) : m.HasProperty(ColorId) ? m.GetColor(ColorId) : Color.white;
             }
-            TripoModels.Made(id);
-            return Model;
         }
 
         /// <summary>A pill part the model replaces: not drawn while the model shows (forceRenderingOff and no shadow; the renderer, its bounds and its property blocks stay), drawn again when it hides.</summary>

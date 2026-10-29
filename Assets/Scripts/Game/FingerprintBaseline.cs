@@ -151,6 +151,8 @@ namespace Skygrind.Game
         /// it at boot). The web's movement (SimHarness, the gates, the Core tests) never sets it, so they keep `Hashes`.</summary>
         public static bool Ultra71;
 
+        // PG3 (GG 2026-10-28: "jump height needs to be lower"): re-recorded for design.ultra71's jump 4.0 m / apexTime 0.6235 (was 5.07 / 0.702) from Builds/pg3-jump,
+        // two -skygrindFingerprint runs identical (Logs/player/pg3-jump-fp-1.log, -2.log), written by Tools/night/n72-fp-update.cjs. A deliberate behaviour change.
         // GG 2026-10-26: the composed run with design.ultra71's movement (the ULTRAKILL profile), recorded by the Player's -skygrindFingerprint.
         // NIGHT72 N5b (ground.friction and ground.accel 31.07 in design.ultra71.set, ULTRAKILL's walk lerp at the 120 Hz step): re-recorded from
         // Builds/n72-t2 (built at ba47bb280): the lead's two runs identical (Logs/player/n72-t2-fp-1.log, -2.log; only the wall-time field differs).
@@ -159,18 +161,18 @@ namespace Skygrind.Game
         // step 7200 hash 92c635b17cf30663 (round 4, 36 kills, 80 shots, 4303 earned, 0 alive). A deliberate behaviour change, recorded in its own commit.
         public static readonly string[] Ultra71Hashes =
         {
-            "step 600 hash dfdd05762df49c52",
-            "step 1200 hash 66593a513b073a85",
-            "step 1800 hash e6f4baade691903f",
-            "step 2400 hash 8385df3a777362a6",
-            "step 3000 hash 56aff577da384163",
-            "step 3600 hash 8c86b054fb55f4d8",
-            "step 4200 hash 0fb6df20c66ae457",
-            "step 4800 hash ff1f9e21b80d1090",
-            "step 5400 hash 742c0a6d6bfd5db0",
-            "step 6000 hash f16cbbc486f72835",
-            "step 6600 hash 21f7e178e3281112",
-            "step 7200 hash 3e3796b62d40accb",
+            "step 600 hash 6d79a4ce2ed1e947",
+            "step 1200 hash abda1e164e21be69",
+            "step 1800 hash b26de12b6a716e4b",
+            "step 2400 hash e762295723b78ac9",
+            "step 3000 hash 764bc3da810881c9",
+            "step 3600 hash 1e8edf0921dfbb88",
+            "step 4200 hash 6740b7679cdc9759",
+            "step 4800 hash 6a2de89ac01ed5e7",
+            "step 5400 hash d649d58ee46836ff",
+            "step 6000 hash aeb03ca5ddad5d2f",
+            "step 6600 hash 65651ed520af0106",
+            "step 7200 hash fe3fd1523becf139",
         };
 
         /// <summary>The baseline the running game is judged by: Ultra71Hashes under the ULTRAKILL profile, else the web movement's Hashes.</summary>
